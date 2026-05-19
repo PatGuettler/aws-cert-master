@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AWS certification practice exams — exam-style timing, scoring, and study plans from official AWS resources."
+    />
+    <title>AWS Cert Master — Practice Tests</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <button
+        id="menu-btn"
+        class="menu-btn"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="drawer"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <h1 id="header-title" class="site-title">AWS Cert Master</h1>
+      <div id="exam-timer" class="timer hidden" aria-live="polite">90:00</div>
+    </header>
+
+    <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
+    <aside id="drawer" class="drawer" aria-label="Settings menu">
+      <div class="drawer-header">
+        <h2>Menu</h2>
+      </div>
+      <section class="drawer-section">
+        <h3>Certification</h3>
+        <ul id="cert-list" class="cert-list"></ul>
+      </section>
+      <section class="drawer-section">
+        <h3>Test options</h3>
+        <label class="option-row">
+          <span>90-minute time limit</span>
+          <span class="toggle">
+            <input id="opt-time-limit" type="checkbox" checked />
+            <span class="toggle-slider"></span>
+          </span>
+        </label>
+        <label class="option-row">
+          <span>Feedback after each answer</span>
+          <span class="toggle">
+            <input id="opt-feedback" type="checkbox" />
+            <span class="toggle-slider"></span>
+          </span>
+        </label>
+        <label class="option-row">
+          <span>Show AWS doc links in feedback</span>
+          <span class="toggle">
+            <input id="opt-doc-links" type="checkbox" checked />
+            <span class="toggle-slider"></span>
+          </span>
+        </label>
+      </section>
+    </aside>
+
+    <main>
+      <section id="view-home" class="view">
+        <div class="hero">
+          <h2 id="home-cert-name">AWS Certified Cloud Practitioner</h2>
+          <p class="cert-code" id="home-cert-code">CLF-C02</p>
+          <p>
+            Practice in the same format as the real exam: question count, time
+            limit, and scaled pass/fail scoring. No account required.
+          </p>
+          <p id="pool-warning" class="hidden" role="status"></p>
+          <div class="exam-meta">
+            <div class="meta-card">
+              <strong id="meta-questions">65</strong>
+              <span>Questions</span>
+            </div>
+            <div class="meta-card">
+              <strong id="meta-time">90</strong>
+              <span>Minutes</span>
+            </div>
+            <div class="meta-card">
+              <strong id="meta-pass">700</strong>
+              <span>Passing score</span>
+            </div>
+          </div>
+          <button id="btn-start" type="button" class="btn btn-primary">
+            Start practice exam
+          </button>
+        </div>
+        <div class="domain-overview">
+          <h3>Exam domains (CLF-C02)</h3>
+          <ul id="domain-list" class="domain-list"></ul>
+        </div>
+      </section>
+
+      <section id="view-exam" class="view hidden">
+        <div class="exam-progress">
+          <span id="progress-label">Question 1 of 65</span>
+          <div class="progress-bar" aria-hidden="true">
+            <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+        <article id="question-card" class="question-card"></article>
+        <nav class="exam-nav" aria-label="Exam navigation">
+          <button id="btn-prev" type="button" class="btn btn-outline" disabled>
+            Previous
+          </button>
+          <button id="btn-next" type="button" class="btn btn-secondary">
+            Next
+          </button>
+          <button id="btn-finish" type="button" class="btn btn-primary hidden">
+            Submit exam
+          </button>
+        </nav>
+        <div
+          id="question-grid"
+          class="question-grid"
+          aria-label="Question navigator"
+        ></div>
+      </section>
+
+      <section id="view-results" class="view hidden">
+        <div id="results-header" class="results-header">
+          <h2 id="results-title">Results</h2>
+          <p class="score-display" id="results-score">0 / 1000</p>
+          <p id="results-detail"></p>
+        </div>
+        <div class="domain-results">
+          <h3>Performance by domain</h3>
+          <div id="domain-results-body"></div>
+        </div>
+        <div class="results-actions">
+          <button id="btn-study-plan" type="button" class="btn btn-primary">
+            View study plan
+          </button>
+          <button id="btn-retake" type="button" class="btn btn-secondary">
+            Retake exam
+          </button>
+          <button id="btn-home" type="button" class="btn btn-outline">
+            Back to home
+          </button>
+        </div>
+        <p class="disclaimer">
+          Scores are approximated from your practice answers and are not
+          official AWS exam results. Passing score 700/1000 mirrors the CLF-C02
+          exam guide.
+        </p>
+      </section>
+
+      <section id="view-study" class="view hidden">
+        <div class="study-plan">
+          <h2>Personalized study plan</h2>
+          <p>
+            Based on domains where you scored below 70%, these official AWS
+            training and documentation links can help you improve.
+          </p>
+          <div id="study-plan-content"></div>
+        </div>
+        <div class="results-actions" style="margin-top: 1.5rem">
+          <button id="btn-back-results" type="button" class="btn btn-outline">
+            Back to results
+          </button>
+          <button type="button" class="btn btn-secondary" id="btn-retake-study">
+            Retake exam
+          </button>
+        </div>
+        <p class="disclaimer">
+          All links point to aws.amazon.com, docs.aws.amazon.com, or
+          explore.skillbuilder.aws. Verify URLs remain current before your exam
+          date.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Unofficial practice tool. Not affiliated with Amazon Web Services.
+        Questions are community-maintained in JSON — edit and push to update
+        this site.
+      </p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+    <script>
+      document.getElementById("btn-retake-study")?.addEventListener("click", () => {
+        document.getElementById("btn-retake")?.click();
+      });
+    </script>
+  </body>
+</html>
