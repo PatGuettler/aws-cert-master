@@ -628,6 +628,18 @@ main {
   border-color: var(--aws-squid-light);
 }
 
+.q-dot.correct {
+  background: var(--aws-green);
+  color: var(--on-brand);
+  border-color: var(--aws-green);
+}
+
+.q-dot.incorrect {
+  background: var(--aws-red);
+  color: var(--on-brand);
+  border-color: var(--aws-red);
+}
+
 .q-dot.current {
   border-color: var(--aws-orange);
   box-shadow: 0 0 0 2px var(--aws-orange);

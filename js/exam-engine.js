@@ -27,6 +27,8 @@ export function runExam({
   /** @type {number|null} */
   let timerId = null;
   let remainingSeconds = cert.exam.timeLimitMinutes * 60;
+  /** Questions for which the user clicked Next (or Finish) and saw right/wrong feedback */
+  const revealed = new Set();
 
   const timerEl = document.getElementById("exam-timer");
   const progressFill = document.getElementById("progress-fill");
@@ -85,6 +87,13 @@ export function runExam({
     onResponsesChange({ ...responses });
   }
 
+  /**
+   * @param {Question} q
+   */
+  function isRevealed(q) {
+    return settings.immediateFeedback && revealed.has(q.id);
+  }
+
   function renderQuestionGrid() {
     if (!qGrid) return;
     qGrid.innerHTML = "";
@@ -94,7 +103,15 @@ export function runExam({
       dot.className = "q-dot";
       dot.textContent = String(i + 1);
       dot.title = `Question ${i + 1}`;
-      if ((responses[q.id] ?? []).length > 0) dot.classList.add("answered");
+
+      if (isRevealed(q)) {
+        const correct = isQuestionCorrect(q, getSelected(q));
+        dot.classList.add(correct ? "correct" : "incorrect");
+        dot.title = `Question ${i + 1} — ${correct ? "Correct" : "Incorrect"}`;
+      } else if ((responses[q.id] ?? []).length > 0) {
+        dot.classList.add("answered");
+      }
+
       if (i === index) dot.classList.add("current");
       dot.addEventListener("click", () => {
         index = i;
@@ -200,10 +217,21 @@ export function runExam({
     return panel;
   }
 
+  /**
+   * Reveal right/wrong for the current question (called from Next / Finish).
+   * @returns {boolean} true if this click only revealed feedback (caller should not advance yet)
+   */
+  function revealCurrentIfNeeded() {
+    const q = questions[index];
+    if (!settings.immediateFeedback || revealed.has(q.id)) return false;
+    revealed.add(q.id);
+    render();
+    return true;
+  }
+
   function render() {
     const q = questions[index];
-    const showFeedback =
-      settings.immediateFeedback && getSelected(q).length > 0;
+    const showFeedback = isRevealed(q);
     const atEnd = index === questions.length - 1;
 
     if (progressFill) {
@@ -239,8 +267,18 @@ export function runExam({
     renderQuestionGrid();
 
     if (btnPrev) btnPrev.disabled = index === 0;
-    if (btnNext) btnNext.classList.toggle("hidden", atEnd);
-    if (btnFinish) btnFinish.classList.toggle("hidden", !atEnd);
+
+    const awaitingReveal =
+      settings.immediateFeedback && !revealed.has(q.id);
+
+    if (btnNext) {
+      btnNext.classList.toggle("hidden", atEnd);
+      btnNext.textContent = awaitingReveal ? "Check answer" : "Next";
+    }
+    if (btnFinish) {
+      btnFinish.classList.toggle("hidden", !atEnd);
+      btnFinish.textContent = awaitingReveal ? "Check answer" : "Submit exam";
+    }
   }
 
   btnPrev?.addEventListener("click", () => {
@@ -251,6 +289,7 @@ export function runExam({
   });
 
   btnNext?.addEventListener("click", () => {
+    if (revealCurrentIfNeeded()) return;
     if (index < questions.length - 1) {
       index++;
       render();
@@ -258,6 +297,8 @@ export function runExam({
   });
 
   btnFinish?.addEventListener("click", () => {
+    if (revealCurrentIfNeeded()) return;
+
     const unanswered = questions.filter(
       (q) => (responses[q.id] ?? []).length === 0
     ).length;
