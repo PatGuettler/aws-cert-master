@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """Regenerate data/cloud-practitioner.json — run from repo root."""
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "cloud-practitioner.json"
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from question_bank.clf_c02_extended import EXTENDED  # noqa: E402
 
 DOMAINS = [
     {
@@ -448,16 +452,25 @@ RAW = [
      [("Savings Plans", "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html")]),
 ]
 
+# Minimum questions per domain needed for one CLF-C02-weighted exam (65 questions).
+EXAM_DOMAIN_MIN = {
+    "cloud-concepts": 16,
+    "security-compliance": 20,
+    "technology-services": 22,
+    "billing-pricing-support": 8,
+}
+
+ALL_RAW = RAW + EXTENDED
+
+
 def build_questions():
     questions = []
-    for i, row in enumerate(RAW, start=1):
+    for i, row in enumerate(ALL_RAW, start=1):
         domain, qtype, text, opts, correct, explanation, docs = row
-        scored = i <= 50  # first 50 scored like CLF-C02
         questions.append({
             "id": f"clf-q{i:03d}",
             "domain": domain,
             "type": qtype,
-            "scored": scored,
             "text": text,
             "options": [{"id": oid, "text": otext} for oid, otext in opts],
             "correct": correct,
@@ -466,10 +479,23 @@ def build_questions():
         })
     return questions
 
+
+def validate_pool(questions):
+    by_domain = {}
+    for q in questions:
+        by_domain[q["domain"]] = by_domain.get(q["domain"], 0) + 1
+    errors = []
+    for domain_id, minimum in EXAM_DOMAIN_MIN.items():
+        count = by_domain.get(domain_id, 0)
+        if count < minimum:
+            errors.append(f"{domain_id}: have {count}, need {minimum} for one weighted exam")
+    if errors:
+        raise SystemExit("Question pool too small per CLF-C02 domain:\n" + "\n".join(errors))
+
+
 def main():
     questions = build_questions()
-    if len(questions) < 65:
-        raise SystemExit(f"Need 65 questions, have {len(questions)}")
+    validate_pool(questions)
 
     payload = {
         "id": "cloud-practitioner",
@@ -481,12 +507,18 @@ def main():
             "timeLimitMinutes": 90,
             "passingScore": 700,
             "maxScore": 1000,
+            "selectionMode": "weighted-random",
         },
         "domains": DOMAINS,
-        "questions": questions[:65],
+        "questions": questions,
     }
     OUT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {len(payload['questions'])} questions to {OUT}")
+    by_domain = {}
+    for q in questions:
+        by_domain[q["domain"]] = by_domain.get(q["domain"], 0) + 1
+    print(f"Wrote {len(questions)} questions to {OUT}")
+    for d in DOMAINS:
+        print(f"  {d['id']}: {by_domain.get(d['id'], 0)} (exam uses ~{EXAM_DOMAIN_MIN[d['id']]} per attempt)")
 
 if __name__ == "__main__":
     main()
