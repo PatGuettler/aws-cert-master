@@ -5,7 +5,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "data" / "cloud-practitioner.json"
+EXAMS_DIR = ROOT / "data" / "exams"
+OUT = EXAMS_DIR / "cloud-practitioner.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from question_bank.clf_c02_extended import EXTENDED  # noqa: E402
@@ -512,6 +513,7 @@ def main():
         "domains": DOMAINS,
         "questions": questions,
     }
+    EXAMS_DIR.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     by_domain = {}
     for q in questions:
@@ -519,6 +521,11 @@ def main():
     print(f"Wrote {len(questions)} questions to {OUT}")
     for d in DOMAINS:
         print(f"  {d['id']}: {by_domain.get(d['id'], 0)} (exam uses ~{EXAM_DOMAIN_MIN[d['id']]} per attempt)")
+
+    from build_exams_index import main as build_index  # noqa: E402
+
+    print()
+    build_index()
 
 if __name__ == "__main__":
     main()

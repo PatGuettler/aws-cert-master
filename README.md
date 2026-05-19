@@ -1,6 +1,6 @@
 # AWS Cert Master
 
-Unofficial **static** practice exams for AWS certifications, designed for [GitHub Pages](https://pages.github.com/). No login, no backend — questions live in JSON files you edit in this repo.
+Unofficial **static** practice exams for AWS certifications, designed for [GitHub Pages](https://pages.github.com/). No login, no backend — each exam is a JSON file under `data/exams/`.
 
 ## Live site
 
@@ -8,15 +8,21 @@ After enabling GitHub Pages (see [Deploy](#deploy)), your site will be at:
 
 `https://<your-github-username>.github.io/aws-cert-master/`
 
-## Current certifications
+## Exams (dynamic list)
 
-| Cert | Code | Question file |
-|------|------|----------------|
-| AWS Certified Cloud Practitioner | CLF-C02 | [`data/cloud-practitioner.json`](data/cloud-practitioner.json) |
+The hamburger menu loads exams from **`data/exams-index.json`**, which is built automatically from every `*.json` file in **`data/exams/`**.
 
-More certs can be added by creating a new JSON file and registering it in [`data/certs-registry.json`](data/certs-registry.json).
+| Exam | Code | File |
+|------|------|------|
+| AWS Certified Cloud Practitioner | CLF-C02 | [`data/exams/cloud-practitioner.json`](data/exams/cloud-practitioner.json) |
 
-## Exam format (CLF-C02)
+**Add an exam:** drop `data/exams/my-exam.json` (valid exam schema) → run `python3 scripts/build-exams-index.py` → commit both the JSON and updated `data/exams-index.json` → push.
+
+**Remove an exam:** delete its JSON from `data/exams/` → rebuild the index → push.
+
+GitHub Actions runs the index builder on every Pages deploy, so pushes that only change exam JSON still refresh the menu after deploy.
+
+## Exam format (CLF-C02 example)
 
 The practice test mirrors the official [CLF-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/examguides/cloud-practitioner-02.html):
 
@@ -34,78 +40,80 @@ Each attempt **randomly** selects 65 questions from the bank using those weights
 - **90 minutes** (toggle off in the menu)
 - **Passing score 700 / 1000** (scaled approximation from scored answers only)
 
-Retakes draw a different mix from the bank when enough questions exist per domain.
-
-Open the **hamburger menu** to:
-
-- Switch certification (as more are added)
-- Turn the **90-minute time limit** on or off
-- Enable **feedback after each answer** (correct/incorrect + explanation)
-- Toggle **AWS documentation links** in feedback
-
-After the exam you get a **pass/fail report**, **domain breakdown**, optional **study plan** with official AWS Skill Builder, documentation, and whitepaper links for weak domains.
+Open the **hamburger menu → Exams** (nested section) to switch exams and configure options.
 
 ## Updating questions
 
-1. Edit **`data/cloud-practitioner.json`** (or the JSON for another cert).
-2. Commit and push to `main`.
-3. GitHub Pages redeploys automatically; refresh the site to see changes.
+1. Edit the exam file under **`data/exams/`** (e.g. `cloud-practitioner.json`).
+2. Run `python3 scripts/build-exams-index.py` if you added or removed an exam file (not required for question-only edits).
+3. Commit and push to `main`.
 
-### Question JSON shape
+### Exam JSON shape (top level)
+
+```json
+{
+  "id": "cloud-practitioner",
+  "name": "AWS Certified Cloud Practitioner",
+  "code": "CLF-C02",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 50,
+    "timeLimitMinutes": 90,
+    "passingScore": 700,
+    "maxScore": 1000
+  },
+  "domains": [{ "id": "cloud-concepts", "name": "...", "weight": 24, "resources": [] }],
+  "questions": []
+}
+```
+
+Each question:
 
 ```json
 {
   "id": "clf-q001",
   "domain": "cloud-concepts",
   "type": "multiple-choice",
-  "scored": true,
   "text": "Question stem here?",
-  "options": [
-    { "id": "a", "text": "Answer A" },
-    { "id": "b", "text": "Answer B" }
-  ],
+  "options": [{ "id": "a", "text": "Answer A" }],
   "correct": ["a"],
   "explanation": "Why this answer is correct.",
-  "docs": [
-    {
-      "title": "AWS Well-Architected Framework",
-      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-    }
-  ]
+  "docs": [{ "title": "...", "url": "https://docs.aws.amazon.com/..." }]
 }
 ```
 
-- **`type`**: `"multiple-choice"` (one correct) or `"multiple-response"` (two or more correct).
-- **`domain`**: Must match a `domains[].id` in the same file.
-- **`scored`**: Optional in the bank; each exam assigns 50 scored / 15 unscored at random. You do not need to set this in JSON.
+- **`id`** (exam): must be unique across files; used in the menu and URL hash (`#cloud-practitioner`).
+- **`domains[].weight`**: should sum to **100** for weighted random selection.
+- **`scored`** on questions: optional; each attempt assigns 50 scored / 15 unscored at random.
 
-### Regenerate or extend the question bank
+### Regenerate the CLF-C02 question bank
 
 ```bash
 python3 scripts/generate-questions.py
 ```
 
-This merges `scripts/generate-questions.py` (base) + `scripts/question_bank/clf_c02_extended.py` and overwrites `data/cloud-practitioner.json` with the full pool. Prefer editing those Python files or the JSON directly once you customize content. The generator validates that each domain has enough questions for one weighted exam.
+Writes `data/exams/cloud-practitioner.json` and refreshes `data/exams-index.json`.
 
 ## Project layout
 
 ```
-index.html              # App shell
-css/styles.css          # Styles
-js/                     # ES modules (loader, exam, scoring, study plan)
+index.html
+css/styles.css
+js/                     # cert-loader loads exams-index + exam JSON
 data/
-  certs-registry.json   # List of certs and JSON paths
-  cloud-practitioner.json
+  exams-index.json      # Auto-generated manifest (commit this file)
+  exams/
+    cloud-practitioner.json
 scripts/
+  build-exams-index.py  # Scan data/exams/*.json → exams-index.json
   generate-questions.py
 ```
 
 ## Local preview
 
-GitHub Pages serves the repo root. Preview locally with any static server, for example:
-
 ```bash
 cd aws-cert-master
+python3 scripts/build-exams-index.py   # if you changed data/exams/
 python3 -m http.server 8080
 ```
 
@@ -113,19 +121,16 @@ Open `http://localhost:8080/`. ES modules require HTTP (not `file://`).
 
 ## Deploy
 
-1. Push this repository to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-4. Choose branch **`main`** and folder **`/ (root)`**.
-5. Save. The site updates within a few minutes after each push to `main`.
+1. Push to GitHub on `main`.
+2. Enable **GitHub Pages** (Actions workflow in `.github/workflows/pages.yml` runs `build-exams-index.py` before deploy).
 
-`.nojekyll` is included so GitHub Pages does not process the site with Jekyll (which can break paths).
+Or use **Settings → Pages → Deploy from branch `main` / root** and run the index script locally before each push if you do not use Actions.
 
-## Adding another certification
+## Optional ad bar
 
-1. Copy `data/cloud-practitioner.json` as a template (update `id`, `name`, `code`, `exam`, `domains`, `questions`).
-2. Add an entry to `data/certs-registry.json` with `"available": true` and the correct `dataFile` path.
-3. Commit and push.
+A small sponsored area (bottom or side) can be enabled without affecting the exam UI. Ads are **hidden during active exams**.
+
+See **[docs/ADS_SETUP.md](docs/ADS_SETUP.md)** for Google AdSense integration, `ads.txt`, and `data/ads-config.json` options.
 
 ## Disclaimer
 

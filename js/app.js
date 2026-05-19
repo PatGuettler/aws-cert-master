@@ -1,24 +1,29 @@
 import {
-  loadRegistry,
+  loadExamIndex,
   loadCert,
   selectExamQuestions,
   getDomainPoolStatus,
+  clearExamCaches,
 } from "./cert-loader.js";
 import { loadSettings } from "./storage.js";
 import { initMenu } from "./menu.js";
 import { runExam } from "./exam-engine.js";
 import { scoreExam } from "./scoring.js";
 import { buildStudyPlan } from "./study-plan.js";
+import { initAds, updateAdVisibility } from "./ads.js";
 
-const DEFAULT_CERT_ID = "cloud-practitioner";
-let activeCertId = DEFAULT_CERT_ID;
+let activeCertId = "";
 /** @type {ReturnType<typeof initMenu>|null} */
 let menuApi = null;
 
 /** @type {import('./cert-loader.js').CertData|null} */
 let currentCert = null;
 /** @type {import('./config.js').ExamSettings} */
-let settings = loadSettings(DEFAULT_CERT_ID);
+let settings = {
+  timeLimitEnabled: true,
+  immediateFeedback: false,
+  showDocLinks: true,
+};
 /** @type {import('./cert-loader.js').Question[]} */
 let examQuestions = [];
 /** @type {Record<string, string[]>} */
@@ -43,20 +48,57 @@ function showView(name) {
     el?.classList.toggle("hidden", key !== name);
   });
   examTimer?.classList.toggle("hidden", name !== "exam");
+  updateAdVisibility(name !== "exam");
 }
 
 function setHeaderTitle(text) {
   if (headerTitle) headerTitle.textContent = text;
 }
 
+/**
+ * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
+ */
+function resolveInitialExamId(exams) {
+  const fromHash = window.location.hash.replace(/^#/, "");
+  if (fromHash && exams.some((e) => e.id === fromHash)) return fromHash;
+  if (activeCertId && exams.some((e) => e.id === activeCertId)) {
+    return activeCertId;
+  }
+  return exams[0]?.id ?? "";
+}
+
 async function init() {
-  const registry = await loadRegistry();
-  await switchCert(DEFAULT_CERT_ID, registry);
+  clearExamCaches();
+  const exams = await loadExamIndex({ reload: true });
+
+  if (exams.length === 0) {
+    setHeaderTitle("AWS Cert Master");
+    const main = document.querySelector("main");
+    if (main) {
+      main.innerHTML = `<p role="alert">No exams found. Add a JSON file under <code>data/exams/</code> and run <code>python3 scripts/build-exams-index.py</code>.</p>`;
+    }
+    menuApi = initMenu({
+      exams: [],
+      getActiveCertId: () => "",
+      settings,
+      onExamChange: () => {},
+      onSettingsChange: (next) => {
+        settings = next;
+      },
+    });
+    return;
+  }
+
+  activeCertId = resolveInitialExamId(exams);
+  settings = loadSettings(activeCertId);
+
+  await switchCert(activeCertId);
+
   menuApi = initMenu({
-    registry,
+    exams,
     getActiveCertId: () => activeCertId,
     settings,
-    onCertChange: (id) => switchCert(id, registry),
+    onExamChange: switchCert,
     onSettingsChange: (next) => {
       settings = next;
     },
@@ -65,10 +107,18 @@ async function init() {
 
 /**
  * @param {string} certId
- * @param {import('./cert-loader.js').CertRegistryEntry[]} registry
  */
-async function switchCert(certId, registry) {
+async function switchCert(certId) {
+  const exams = await loadExamIndex({ reload: true });
+  menuApi?.updateExamList(exams);
+
+  if (!exams.some((e) => e.id === certId)) {
+    certId = exams[0]?.id ?? certId;
+  }
+
   activeCertId = certId;
+  window.location.hash = certId;
+
   currentCert = await loadCert(certId);
   settings = loadSettings(certId);
   menuApi?.setActiveCert(certId);
@@ -128,6 +178,11 @@ function renderHome() {
       li.innerHTML = `<span>${d.name}</span><strong>${d.weight}%</strong>`;
       domainList.appendChild(li);
     }
+  }
+
+  const domainHeading = document.getElementById("domain-heading");
+  if (domainHeading) {
+    domainHeading.textContent = `Exam domains (${cert.code})`;
   }
 }
 
@@ -269,6 +324,8 @@ document.getElementById("btn-back-results")?.addEventListener("click", () => {
   showView("results");
   setHeaderTitle("Exam Results");
 });
+
+initAds();
 
 init().catch((err) => {
   console.error(err);

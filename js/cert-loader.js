@@ -1,10 +1,10 @@
 /**
- * @typedef {Object} CertRegistryEntry
+ * @typedef {Object} ExamIndexEntry
  * @property {string} id
  * @property {string} name
  * @property {string} code
  * @property {string} dataFile
- * @property {boolean} available
+ * @property {number} [questionCount]
  */
 
 /**
@@ -59,7 +59,7 @@
  * @property {Question[]} questions
  */
 
-const registryCache = { data: /** @type {CertRegistryEntry[]|null} */ (null) };
+const indexCache = { data: /** @type {ExamIndexEntry[]|null} */ (null) };
 const certCache = new Map();
 
 /**
@@ -70,32 +70,69 @@ function resolvePath(basePath) {
   return new URL(basePath, base).href;
 }
 
-export async function loadRegistry() {
-  if (registryCache.data) return registryCache.data;
-  const res = await fetch(resolvePath("data/certs-registry.json"));
-  if (!res.ok) throw new Error("Failed to load certification registry");
+/** @deprecated Use loadExamIndex — kept for compatibility */
+export const loadRegistry = loadExamIndex;
+
+/**
+ * Load the exam list from data/exams-index.json (built from data/exams/*.json).
+ * @param {{ reload?: boolean }} [opts]
+ * @returns {Promise<ExamIndexEntry[]>}
+ */
+export async function loadExamIndex(opts = {}) {
+  if (!opts.reload && indexCache.data) return indexCache.data;
+
+  const res = await fetch(resolvePath("data/exams-index.json"), {
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    throw new Error(
+      "Failed to load exam index. Run: python3 scripts/build-exams-index.py"
+    );
+  }
   const json = await res.json();
-  registryCache.data = json.certs;
-  return registryCache.data;
+  if (!Array.isArray(json.exams)) {
+    throw new Error("Invalid exams-index.json: missing exams array");
+  }
+  indexCache.data = json.exams;
+  return indexCache.data;
 }
 
 /**
  * @param {string} certId
+ * @param {{ reload?: boolean }} [opts]
  * @returns {Promise<CertData>}
  */
-export async function loadCert(certId) {
-  if (certCache.has(certId)) return certCache.get(certId);
+export async function loadCert(certId, opts = {}) {
+  if (!opts.reload && certCache.has(certId)) return certCache.get(certId);
 
-  const registry = await loadRegistry();
-  const entry = registry.find((c) => c.id === certId);
-  if (!entry) throw new Error(`Unknown certification: ${certId}`);
-  if (!entry.available) throw new Error(`${entry.name} is not available yet`);
+  const index = await loadExamIndex(opts);
+  const entry = index.find((c) => c.id === certId);
+  if (!entry) {
+    throw new Error(
+      `Unknown exam "${certId}". Add data/exams/<name>.json and rebuild the index.`
+    );
+  }
 
-  const res = await fetch(resolvePath(entry.dataFile));
-  if (!res.ok) throw new Error(`Failed to load ${entry.name} questions`);
+  const res = await fetch(resolvePath(entry.dataFile), { cache: "no-store" });
+  if (!res.ok) {
+    throw new Error(`Failed to load ${entry.name} (${entry.dataFile})`);
+  }
   const data = await res.json();
+  if (data.id !== certId) {
+    console.warn(
+      `Exam file id "${data.id}" does not match index id "${certId}"`
+    );
+  }
   certCache.set(certId, data);
   return data;
+}
+
+/**
+ * Clear cached index and exam data (e.g. after index refresh).
+ */
+export function clearExamCaches() {
+  indexCache.data = null;
+  certCache.clear();
 }
 
 /**
@@ -129,7 +166,7 @@ export function allocateByDomainWeight(domains, total) {
 
 /**
  * @param {CertData} cert
- * @returns {{ domainId: string, required: number, available: number }[]}
+ * @returns {{ domainId: string, name: string, required: number, available: number }[]}
  */
 export function getDomainPoolStatus(cert) {
   const counts = allocateByDomainWeight(cert.domains, cert.exam.totalQuestions);
@@ -147,7 +184,7 @@ export function getDomainPoolStatus(cert) {
 }
 
 /**
- * Build one exam: domain-weighted random sample, 50 scored / 15 unscored, shuffled order and options.
+ * Build one exam: domain-weighted random sample, scored/unscored split, shuffled order and options.
  * @param {CertData} cert
  * @returns {Question[]}
  */

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
       content="AWS certification practice exams — exam-style timing, scoring, and study plans from official AWS resources."
@@ -33,9 +34,15 @@
       <div class="drawer-header">
         <h2>Menu</h2>
       </div>
-      <section class="drawer-section">
-        <h3>Certification</h3>
-        <ul id="cert-list" class="cert-list"></ul>
+      <section class="drawer-section drawer-section-exams">
+        <h3>Exams</h3>
+        <div class="drawer-nested" aria-label="Available practice exams">
+          <ul id="exam-list" class="cert-list exam-list"></ul>
+          <p id="exam-list-empty" class="exam-list-empty hidden">
+            No exams in <code>data/exams/</code>. Add a JSON file and run
+            <code>python3 scripts/build-exams-index.py</code>.
+          </p>
+        </div>
       </section>
       <section class="drawer-section">
         <h3>Test options</h3>
@@ -63,6 +70,7 @@
       </section>
     </aside>
 
+    <div class="page-shell" id="page-shell">
     <main>
       <section id="view-home" class="view">
         <div class="hero">
@@ -98,7 +106,7 @@
           </button>
         </div>
         <div class="domain-overview">
-          <h3>Exam domains (CLF-C02)</h3>
+          <h3 id="domain-heading">Exam domains</h3>
           <ul id="domain-list" class="domain-list"></ul>
         </div>
       </section>
@@ -181,6 +189,16 @@
         </p>
       </section>
     </main>
+
+    <aside
+      id="ad-slot"
+      class="ad-slot ad-slot--bottom hidden"
+      aria-label="Advertisement"
+      aria-hidden="true"
+    >
+      <div id="ad-container" class="ad-container"></div>
+    </aside>
+    </div>
 
     <footer class="site-footer">
       <p>
