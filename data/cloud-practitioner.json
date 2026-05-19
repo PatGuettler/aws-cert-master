@@ -7,7 +7,8 @@
     "scoredQuestions": 50,
     "timeLimitMinutes": 90,
     "passingScore": 700,
-    "maxScore": 1000
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
   },
   "domains": [
     {
@@ -108,7 +109,6 @@
       "id": "clf-q001",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which benefit of cloud computing lets you provision resources in minutes instead of waiting weeks for hardware?",
       "options": [
         {
@@ -143,7 +143,6 @@
       "id": "clf-q002",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "A company wants to pay only for the compute capacity it uses, with no long-term contracts. Which cloud model supports this?",
       "options": [
         {
@@ -178,7 +177,6 @@
       "id": "clf-q003",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which AWS Well-Architected pillar focuses on protecting information and systems?",
       "options": [
         {
@@ -213,7 +211,6 @@
       "id": "clf-q004",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "What is an Availability Zone?",
       "options": [
         {
@@ -248,7 +245,6 @@
       "id": "clf-q005",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which deployment model gives a company exclusive use of cloud infrastructure on-premises while using AWS-managed services patterns?",
       "options": [
         {
@@ -283,7 +279,6 @@
       "id": "clf-q006",
       "domain": "cloud-concepts",
       "type": "multiple-response",
-      "scored": true,
       "text": "Which are advantages of cloud computing? (Select TWO.)",
       "options": [
         {
@@ -324,7 +319,6 @@
       "id": "clf-q007",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which service provides a central view to manage billing, support, and IAM across AWS accounts?",
       "options": [
         {
@@ -359,7 +353,6 @@
       "id": "clf-q008",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "The AWS Cloud Adoption Framework (CAF) is primarily used to help organizations with:",
       "options": [
         {
@@ -394,7 +387,6 @@
       "id": "clf-q009",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which statement best describes elasticity in AWS?",
       "options": [
         {
@@ -429,7 +421,6 @@
       "id": "clf-q010",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Edge locations are used primarily by which service to cache content closer to users?",
       "options": [
         {
@@ -464,7 +455,6 @@
       "id": "clf-q011",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which pillar of the Well-Architected Framework focuses on running and monitoring systems to deliver business value?",
       "options": [
         {
@@ -499,7 +489,6 @@
       "id": "clf-q012",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "A startup needs to run a web application with minimal server management. Which compute option is most appropriate at a high level?",
       "options": [
         {
@@ -534,7 +523,6 @@
       "id": "clf-q013",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which AWS service helps you create and manage AWS accounts with governance guardrails?",
       "options": [
         {
@@ -569,7 +557,6 @@
       "id": "clf-q014",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "High availability in AWS is best achieved by:",
       "options": [
         {
@@ -604,7 +591,6 @@
       "id": "clf-q015",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which tool provides a customized view of AWS service health and alerts for your account?",
       "options": [
         {
@@ -639,7 +625,6 @@
       "id": "clf-q016",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": true,
       "text": "The AWS Acceptable Use Policy describes:",
       "options": [
         {
@@ -674,7 +659,6 @@
       "id": "clf-q017",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Under the AWS shared responsibility model, which task is the customer's responsibility?",
       "options": [
         {
@@ -709,7 +693,6 @@
       "id": "clf-q018",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which IAM feature allows temporary security credentials for users and roles?",
       "options": [
         {
@@ -744,7 +727,6 @@
       "id": "clf-q019",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "What does the principle of least privilege recommend?",
       "options": [
         {
@@ -779,7 +761,6 @@
       "id": "clf-q020",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which service provides centralized governance and compliance reports for AWS agreements and certifications?",
       "options": [
         {
@@ -814,7 +795,6 @@
       "id": "clf-q021",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Multi-factor authentication (MFA) for the AWS account root user is recommended because:",
       "options": [
         {
@@ -849,7 +829,6 @@
       "id": "clf-q022",
       "domain": "security-compliance",
       "type": "multiple-response",
-      "scored": true,
       "text": "Which are AWS services or features that help detect security threats? (Select TWO.)",
       "options": [
         {
@@ -889,7 +868,6 @@
       "id": "clf-q023",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "AWS KMS is primarily used for:",
       "options": [
         {
@@ -924,7 +902,6 @@
       "id": "clf-q024",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which network feature acts as a virtual firewall at the instance level in a VPC?",
       "options": [
         {
@@ -959,7 +936,6 @@
       "id": "clf-q025",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "AWS CloudTrail is used to:",
       "options": [
         {
@@ -994,7 +970,6 @@
       "id": "clf-q026",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which service helps you analyze, investigate, and identify the root cause of security findings?",
       "options": [
         {
@@ -1029,7 +1004,6 @@
       "id": "clf-q027",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Encryption of data at rest on Amazon S3 is often implemented using:",
       "options": [
         {
@@ -1064,7 +1038,6 @@
       "id": "clf-q028",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "An IAM policy is:",
       "options": [
         {
@@ -1099,7 +1072,6 @@
       "id": "clf-q029",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "AWS Shield Standard provides:",
       "options": [
         {
@@ -1134,7 +1106,6 @@
       "id": "clf-q030",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which compliance concept means AWS undergoes third-party audits for standards such as ISO and SOC?",
       "options": [
         {
@@ -1169,7 +1140,6 @@
       "id": "clf-q031",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Federation with corporate identity providers commonly uses:",
       "options": [
         {
@@ -1204,7 +1174,6 @@
       "id": "clf-q032",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Network ACLs in a VPC are:",
       "options": [
         {
@@ -1239,7 +1208,6 @@
       "id": "clf-q033",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which AWS service provides DDoS protection and web application firewall capabilities?",
       "options": [
         {
@@ -1274,7 +1242,6 @@
       "id": "clf-q034",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which service provides resizable compute capacity in the cloud?",
       "options": [
         {
@@ -1309,7 +1276,6 @@
       "id": "clf-q035",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Amazon S3 is best described as:",
       "options": [
         {
@@ -1344,7 +1310,6 @@
       "id": "clf-q036",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which database service is fully managed and serverless with automatic scaling?",
       "options": [
         {
@@ -1379,7 +1344,6 @@
       "id": "clf-q037",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Amazon RDS is used for:",
       "options": [
         {
@@ -1414,7 +1378,6 @@
       "id": "clf-q038",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which service decouples application components using message queues?",
       "options": [
         {
@@ -1449,7 +1412,6 @@
       "id": "clf-q039",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "AWS Lambda runs code:",
       "options": [
         {
@@ -1484,7 +1446,6 @@
       "id": "clf-q040",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Amazon VPC allows you to:",
       "options": [
         {
@@ -1519,7 +1480,6 @@
       "id": "clf-q041",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which service is a managed Kubernetes control plane?",
       "options": [
         {
@@ -1554,7 +1514,6 @@
       "id": "clf-q042",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Amazon CloudWatch is primarily used for:",
       "options": [
         {
@@ -1589,7 +1548,6 @@
       "id": "clf-q043",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which storage service provides block volumes for EC2 instances?",
       "options": [
         {
@@ -1624,7 +1582,6 @@
       "id": "clf-q044",
       "domain": "technology-services",
       "type": "multiple-response",
-      "scored": true,
       "text": "Which are AWS compute services? (Select TWO.)",
       "options": [
         {
@@ -1664,7 +1621,6 @@
       "id": "clf-q045",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Amazon Route 53 provides:",
       "options": [
         {
@@ -1699,7 +1655,6 @@
       "id": "clf-q046",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "AWS CloudFormation helps you:",
       "options": [
         {
@@ -1734,7 +1689,6 @@
       "id": "clf-q047",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Amazon API Gateway is used to:",
       "options": [
         {
@@ -1769,7 +1723,6 @@
       "id": "clf-q048",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Which service is best for breaking a monolith into microservices with event-driven communication?",
       "options": [
         {
@@ -1804,7 +1757,6 @@
       "id": "clf-q049",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "Amazon Aurora is:",
       "options": [
         {
@@ -1839,7 +1791,6 @@
       "id": "clf-q050",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": true,
       "text": "AWS Elastic Beanstalk is designed to:",
       "options": [
         {
@@ -1874,7 +1825,6 @@
       "id": "clf-q051",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "Which pricing model offers the largest discount for steady-state workloads with a 1- or 3-year commitment?",
       "options": [
         {
@@ -1909,7 +1859,6 @@
       "id": "clf-q052",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "AWS Cost Explorer allows you to:",
       "options": [
         {
@@ -1944,7 +1893,6 @@
       "id": "clf-q053",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "Which support plan includes 24/7 access to Cloud Support Engineers via phone and chat?",
       "options": [
         {
@@ -1975,7 +1923,6 @@
       "id": "clf-q054",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "The AWS Free Tier:",
       "options": [
         {
@@ -2010,7 +1957,6 @@
       "id": "clf-q055",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "Consolidated billing in AWS Organizations:",
       "options": [
         {
@@ -2045,7 +1991,6 @@
       "id": "clf-q056",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "AWS Budgets can:",
       "options": [
         {
@@ -2080,7 +2025,6 @@
       "id": "clf-q057",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "Spot Instances are appropriate when:",
       "options": [
         {
@@ -2115,7 +2059,6 @@
       "id": "clf-q058",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "Which document provides estimates of service pricing for planning?",
       "options": [
         {
@@ -2150,7 +2093,6 @@
       "id": "clf-q059",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "AWS Trusted Advisor provides:",
       "options": [
         {
@@ -2185,7 +2127,6 @@
       "id": "clf-q060",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "Which is TRUE about AWS Support Basic plan?",
       "options": [
         {
@@ -2220,7 +2161,6 @@
       "id": "clf-q061",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "AWS Cost and Usage Report (CUR) delivers:",
       "options": [
         {
@@ -2255,7 +2195,6 @@
       "id": "clf-q062",
       "domain": "billing-pricing-support",
       "type": "multiple-choice",
-      "scored": false,
       "text": "Moving data OUT of AWS to the internet generally:",
       "options": [
         {
@@ -2290,7 +2229,6 @@
       "id": "clf-q063",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "scored": false,
       "text": "Amazon SNS is used for:",
       "options": [
         {
@@ -2325,7 +2263,6 @@
       "id": "clf-q064",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "scored": false,
       "text": "AWS Config is used to:",
       "options": [
         {
@@ -2360,7 +2297,6 @@
       "id": "clf-q065",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "scored": false,
       "text": "A Region in AWS is:",
       "options": [
         {
@@ -2388,6 +2324,2860 @@
         {
           "title": "Regions and AZs",
           "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q066",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon Athena allows you to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Query data in S3 using standard SQL"
+        },
+        {
+          "id": "b",
+          "text": "Manage EC2 Auto Scaling only"
+        },
+        {
+          "id": "c",
+          "text": "Create IAM roles"
+        },
+        {
+          "id": "d",
+          "text": "Ship Snowball Edge"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena is serverless interactive query service for S3 data.",
+      "docs": [
+        {
+          "title": "Amazon Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q067",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "Savings Plans apply to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compute usage in exchange for a commitment to a consistent amount ($/hour)"
+        },
+        {
+          "id": "b",
+          "text": "Only S3 Glacier"
+        },
+        {
+          "id": "c",
+          "text": "Only Route 53 domains"
+        },
+        {
+          "id": "d",
+          "text": "Support plan fees only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Savings Plans offer lower prices on compute in return for a one- or three-year commitment.",
+      "docs": [
+        {
+          "title": "Savings Plans",
+          "url": "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q068",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which Well-Architected pillar focuses on minimizing the environmental impact of running cloud workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sustainability"
+        },
+        {
+          "id": "b",
+          "text": "Security"
+        },
+        {
+          "id": "c",
+          "text": "Reliability"
+        },
+        {
+          "id": "d",
+          "text": "Performance Efficiency"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sustainability focuses on energy efficiency and reducing waste in cloud architectures.",
+      "docs": [
+        {
+          "title": "Sustainability pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q069",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Fault tolerance in the AWS Cloud is most closely associated with which concept?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Single-AZ deployment"
+        },
+        {
+          "id": "b",
+          "text": "Designing for component failure without service interruption"
+        },
+        {
+          "id": "c",
+          "text": "Using one large instance"
+        },
+        {
+          "id": "d",
+          "text": "Disabling backups"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Fault-tolerant designs continue operating when components fail, often using redundancy across AZs.",
+      "docs": [
+        {
+          "title": "Reliability pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q070",
+      "domain": "cloud-concepts",
+      "type": "multiple-response",
+      "text": "Which are characteristics of the AWS Cloud? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elasticity"
+        },
+        {
+          "id": "b",
+          "text": "Fixed physical server ownership by customers"
+        },
+        {
+          "id": "c",
+          "text": "Broad network access"
+        },
+        {
+          "id": "d",
+          "text": "Manual capacity planning only"
+        },
+        {
+          "id": "e",
+          "text": "Measured service"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "NIST-style characteristics include on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service.",
+      "docs": [
+        {
+          "title": "AWS Overview",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q071",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "AWS Service Catalog allows organizations to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create and manage approved catalogs of IT services for users"
+        },
+        {
+          "id": "b",
+          "text": "Replace IAM policies"
+        },
+        {
+          "id": "c",
+          "text": "Monitor physical data centers"
+        },
+        {
+          "id": "d",
+          "text": "Ship Snowball devices"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Catalog helps govern which products users can deploy from approved templates.",
+      "docs": [
+        {
+          "title": "AWS Service Catalog",
+          "url": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q072",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which statement describes the AWS shared responsibility model?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS is responsible for everything"
+        },
+        {
+          "id": "b",
+          "text": "Security and compliance are shared between AWS and the customer"
+        },
+        {
+          "id": "c",
+          "text": "Customers manage physical hardware"
+        },
+        {
+          "id": "d",
+          "text": "AWS manages guest operating systems on EC2"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "AWS secures the cloud; customers secure what they run in the cloud.",
+      "docs": [
+        {
+          "title": "Shared Responsibility",
+          "url": "https://aws.amazon.com/compliance/shared-responsibility-model/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q073",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "A company needs to run workloads with the lowest possible operational overhead for an unpredictable web app. Which approach aligns with cloud value?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buy data center hardware in advance"
+        },
+        {
+          "id": "b",
+          "text": "Use managed and serverless services"
+        },
+        {
+          "id": "c",
+          "text": "Avoid monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Single server in one AZ"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Managed/serverless services reduce undifferentiated heavy lifting and scale with demand.",
+      "docs": [
+        {
+          "title": "AWS Cloud Value",
+          "url": "https://aws.amazon.com/what-is-cloud-computing/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q074",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which AWS service provides a single sign-on experience to multiple AWS accounts and business applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM Identity Center"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "c",
+          "text": "AWS Batch"
+        },
+        {
+          "id": "d",
+          "text": "Amazon EBS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM Identity Center (AWS SSO) centralizes access to accounts and SAML applications.",
+      "docs": [
+        {
+          "title": "IAM Identity Center",
+          "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q075",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Disaster recovery strategies on AWS often use:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multiple Regions and backup services"
+        },
+        {
+          "id": "b",
+          "text": "A single laptop"
+        },
+        {
+          "id": "c",
+          "text": "Disabling snapshots"
+        },
+        {
+          "id": "d",
+          "text": "Removing IAM roles"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cross-Region replication and backups support RTO/RPO goals for DR.",
+      "docs": [
+        {
+          "title": "Disaster Recovery",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q076",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which benefit describes trading upfront data center costs for pay-as-you-go pricing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Variable expense instead of capital expense"
+        },
+        {
+          "id": "b",
+          "text": "Unlimited free usage"
+        },
+        {
+          "id": "c",
+          "text": "No need for architecture"
+        },
+        {
+          "id": "d",
+          "text": "Elimination of all security"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud converts CapEx to OpEx with consumption-based pricing.",
+      "docs": [
+        {
+          "title": "Six advantages",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q077",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "The AWS Well-Architected Tool is used to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review workloads against best practices"
+        },
+        {
+          "id": "b",
+          "text": "Replace CloudTrail"
+        },
+        {
+          "id": "c",
+          "text": "Register domains"
+        },
+        {
+          "id": "d",
+          "text": "Create EC2 AMIs only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "The tool helps document and improve architectures using the Well-Architected Framework.",
+      "docs": [
+        {
+          "title": "Well-Architected Tool",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/userguide/intro.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q078",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which is an example of horizontal scaling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adding more EC2 instances behind a load balancer"
+        },
+        {
+          "id": "b",
+          "text": "Upgrading to a larger instance size only"
+        },
+        {
+          "id": "c",
+          "text": "Using a single bigger disk"
+        },
+        {
+          "id": "d",
+          "text": "Disabling Auto Scaling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Horizontal scaling adds instances; vertical scaling increases size of one instance.",
+      "docs": [
+        {
+          "title": "AWS Auto Scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q079",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "AWS Local Zones are designed to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Place compute closer to end users in metro areas"
+        },
+        {
+          "id": "b",
+          "text": "Replace all Regions"
+        },
+        {
+          "id": "c",
+          "text": "Store IAM policies"
+        },
+        {
+          "id": "d",
+          "text": "Provide email hosting"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Local Zones extend AWS infrastructure closer to populations for low-latency workloads.",
+      "docs": [
+        {
+          "title": "AWS Local Zones",
+          "url": "https://aws.amazon.com/about-aws/global-infrastructure/localzones/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q080",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which pillar emphasizes using computing resources efficiently and adapting to changing requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Performance Efficiency"
+        },
+        {
+          "id": "b",
+          "text": "Cost Optimization only"
+        },
+        {
+          "id": "c",
+          "text": "Sustainability only"
+        },
+        {
+          "id": "d",
+          "text": "None of the above"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Performance Efficiency focuses on efficient use of IT and computing resources.",
+      "docs": [
+        {
+          "title": "Performance Efficiency",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q081",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Hybrid cloud typically means:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Combining on-premises infrastructure with AWS Cloud"
+        },
+        {
+          "id": "b",
+          "text": "Using only one Availability Zone"
+        },
+        {
+          "id": "c",
+          "text": "No VPN connectivity"
+        },
+        {
+          "id": "d",
+          "text": "Only SaaS products"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid connects existing data centers to AWS via VPN, Direct Connect, or Outposts.",
+      "docs": [
+        {
+          "title": "Hybrid cloud",
+          "url": "https://aws.amazon.com/hybrid/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q082",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which AWS program helps partners deliver solutions to customers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Partner Network (APN)"
+        },
+        {
+          "id": "b",
+          "text": "AWS Budgets"
+        },
+        {
+          "id": "c",
+          "text": "Amazon S3 Glacier"
+        },
+        {
+          "id": "d",
+          "text": "VPC Flow Logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "APN includes consulting and technology partners that build on AWS.",
+      "docs": [
+        {
+          "title": "AWS Partner Network",
+          "url": "https://aws.amazon.com/partners/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q083",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "AWS Wickr is categorized under which type of service at a high level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secure enterprise communication"
+        },
+        {
+          "id": "b",
+          "text": "Object storage"
+        },
+        {
+          "id": "c",
+          "text": "Data warehouse"
+        },
+        {
+          "id": "d",
+          "text": "DNS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Wickr provides encrypted messaging for enterprises (communications/collaboration category).",
+      "docs": [
+        {
+          "title": "AWS Wickr",
+          "url": "https://aws.amazon.com/wickr/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q084",
+      "domain": "cloud-concepts",
+      "type": "multiple-choice",
+      "text": "Which describes economies of scale on AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS aggregates usage to pass savings to customers"
+        },
+        {
+          "id": "b",
+          "text": "Each customer builds their own data centers"
+        },
+        {
+          "id": "c",
+          "text": "Pricing never changes"
+        },
+        {
+          "id": "d",
+          "text": "Only Enterprise accounts benefit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Large-scale infrastructure allows AWS to offer competitive pay-as-you-go pricing.",
+      "docs": [
+        {
+          "title": "AWS Pricing",
+          "url": "https://aws.amazon.com/pricing/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q085",
+      "domain": "cloud-concepts",
+      "type": "multiple-response",
+      "text": "Which are pillars of the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reliability"
+        },
+        {
+          "id": "b",
+          "text": "Procurement"
+        },
+        {
+          "id": "c",
+          "text": "Cost Optimization"
+        },
+        {
+          "id": "d",
+          "text": "Marketing"
+        },
+        {
+          "id": "e",
+          "text": "Security"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Six pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q086",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Amazon Inspector is primarily used to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scan workloads for software vulnerabilities"
+        },
+        {
+          "id": "b",
+          "text": "Register domain names"
+        },
+        {
+          "id": "c",
+          "text": "Create S3 buckets"
+        },
+        {
+          "id": "d",
+          "text": "Manage payroll"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Inspector assesses EC2 and container workloads for vulnerabilities.",
+      "docs": [
+        {
+          "title": "Amazon Inspector",
+          "url": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q087",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Amazon Macie helps discover and protect:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sensitive data in Amazon S3"
+        },
+        {
+          "id": "b",
+          "text": "EC2 instance types"
+        },
+        {
+          "id": "c",
+          "text": "Route tables"
+        },
+        {
+          "id": "d",
+          "text": "IAM user names only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Macie uses machine learning to find sensitive data such as PII in S3.",
+      "docs": [
+        {
+          "title": "Amazon Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q088",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "AWS Secrets Manager is designed to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rotate, manage, and retrieve secrets"
+        },
+        {
+          "id": "b",
+          "text": "Replace VPC"
+        },
+        {
+          "id": "c",
+          "text": "Host static websites"
+        },
+        {
+          "id": "d",
+          "text": "Provide GPS tracking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets Manager stores credentials and can automate rotation.",
+      "docs": [
+        {
+          "title": "AWS Secrets Manager",
+          "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q089",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which IAM entity is intended for applications and AWS services to call AWS APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM role"
+        },
+        {
+          "id": "b",
+          "text": "Root user for daily tasks"
+        },
+        {
+          "id": "c",
+          "text": "Public access keys in code repos"
+        },
+        {
+          "id": "d",
+          "text": "Billing contact"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Roles provide temporary credentials without embedding long-term keys.",
+      "docs": [
+        {
+          "title": "IAM roles",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q090",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "AWS Certificate Manager (ACM) provides:",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSL/TLS certificates for AWS services"
+        },
+        {
+          "id": "b",
+          "text": "Physical security badges"
+        },
+        {
+          "id": "c",
+          "text": "EC2 instance families"
+        },
+        {
+          "id": "d",
+          "text": "S3 lifecycle rules"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ACM provisions and manages public and private SSL/TLS certificates.",
+      "docs": [
+        {
+          "title": "AWS Certificate Manager",
+          "url": "https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q091",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Penetration testing of certain AWS services without prior approval is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allowed for a defined list of services under AWS policy"
+        },
+        {
+          "id": "b",
+          "text": "Never allowed"
+        },
+        {
+          "id": "c",
+          "text": "Only for GovCloud"
+        },
+        {
+          "id": "d",
+          "text": "Managed by S3 only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS has a policy describing permitted security testing on specific services.",
+      "docs": [
+        {
+          "title": "Penetration testing",
+          "url": "https://aws.amazon.com/security/penetration-testing/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q092",
+      "domain": "security-compliance",
+      "type": "multiple-response",
+      "text": "Which are customer responsibilities under the shared responsibility model? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Encrypting customer data in S3 as needed"
+        },
+        {
+          "id": "b",
+          "text": "Physical security of data centers"
+        },
+        {
+          "id": "c",
+          "text": "Managing IAM access policies"
+        },
+        {
+          "id": "d",
+          "text": "Patching the hypervisor"
+        },
+        {
+          "id": "e",
+          "text": "Hardware maintenance"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Customers manage data, identity, platform configuration, and application security in the cloud.",
+      "docs": [
+        {
+          "title": "Shared Responsibility",
+          "url": "https://aws.amazon.com/compliance/shared-responsibility-model/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q093",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "AWS Audit Manager helps:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continuously audit AWS usage against controls"
+        },
+        {
+          "id": "b",
+          "text": "Replace CloudWatch"
+        },
+        {
+          "id": "c",
+          "text": "Ship Snowball"
+        },
+        {
+          "id": "d",
+          "text": "Create CloudFront distributions"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Audit Manager automates evidence collection for audits and compliance frameworks.",
+      "docs": [
+        {
+          "title": "AWS Audit Manager",
+          "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q094",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "IAM Access Analyzer helps identify:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resources shared with external entities"
+        },
+        {
+          "id": "b",
+          "text": "Lowest EC2 price"
+        },
+        {
+          "id": "c",
+          "text": "S3 object size"
+        },
+        {
+          "id": "d",
+          "text": "Domain expiration"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access Analyzer finds unintended access from outside your account or organization.",
+      "docs": [
+        {
+          "title": "IAM Access Analyzer",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q095",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which service aggregates security alerts from multiple AWS accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Security Hub"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "c",
+          "text": "AWS Amplify"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Rekognition"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security Hub collects findings from GuardDuty, Inspector, Macie, and partner tools.",
+      "docs": [
+        {
+          "title": "AWS Security Hub",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q096",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Encryption of data in transit to S3 is commonly achieved using:",
+      "options": [
+        {
+          "id": "a",
+          "text": "HTTPS (TLS)"
+        },
+        {
+          "id": "b",
+          "text": "FTP without encryption"
+        },
+        {
+          "id": "c",
+          "text": "Plain HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use TLS when accessing S3 via REST APIs or the console.",
+      "docs": [
+        {
+          "title": "S3 security",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q097",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "The AWS root user should be used:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only for tasks that require root credentials"
+        },
+        {
+          "id": "b",
+          "text": "For daily development"
+        },
+        {
+          "id": "c",
+          "text": "Shared across the team"
+        },
+        {
+          "id": "d",
+          "text": "Embedded in application code"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Create IAM users/roles for daily work; secure root with MFA and minimal use.",
+      "docs": [
+        {
+          "title": "IAM root best practices",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q098",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Amazon Cognito provides:",
+      "options": [
+        {
+          "id": "a",
+          "text": "User sign-up, sign-in, and access control for web and mobile apps"
+        },
+        {
+          "id": "b",
+          "text": "Block storage"
+        },
+        {
+          "id": "c",
+          "text": "Data warehouse ETL"
+        },
+        {
+          "id": "d",
+          "text": "Hardware VPN appliances"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cognito handles user directories, federation, and OAuth/OIDC flows for apps.",
+      "docs": [
+        {
+          "title": "Amazon Cognito",
+          "url": "https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q099",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "AWS Firewall Manager is used to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centrally configure WAF rules across accounts"
+        },
+        {
+          "id": "b",
+          "text": "Replace IAM"
+        },
+        {
+          "id": "c",
+          "text": "Monitor billing only"
+        },
+        {
+          "id": "d",
+          "text": "Create RDS snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firewall Manager applies AWS WAF and VPC security policies across an organization.",
+      "docs": [
+        {
+          "title": "AWS Firewall Manager",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/fms-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q100",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which protects against common DDoS attacks on CloudFront and Route 53 at no extra charge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Shield Standard"
+        },
+        {
+          "id": "b",
+          "text": "AWS Shield Advanced only"
+        },
+        {
+          "id": "c",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "d",
+          "text": "AWS Glue"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shield Standard is automatically included for all customers.",
+      "docs": [
+        {
+          "title": "AWS Shield",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q101",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "AWS CloudHSM provides:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hardware security modules you control"
+        },
+        {
+          "id": "b",
+          "text": "Free public Wi-Fi"
+        },
+        {
+          "id": "c",
+          "text": "DNS caching"
+        },
+        {
+          "id": "d",
+          "text": "Email filtering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudHSM offers dedicated HSM instances for keys you manage.",
+      "docs": [
+        {
+          "title": "AWS CloudHSM",
+          "url": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q102",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Compliance reports for HIPAA, PCI, and similar frameworks are often accessed through:",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Batch"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Lightsail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifact provides compliance documentation customers need for audits.",
+      "docs": [
+        {
+          "title": "AWS Artifact",
+          "url": "https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q103",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "A security group rule change is an example of:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security in the cloud (customer responsibility)"
+        },
+        {
+          "id": "b",
+          "text": "Physical security of AWS"
+        },
+        {
+          "id": "c",
+          "text": "Hypervisor patching by AWS"
+        },
+        {
+          "id": "d",
+          "text": "Global edge caching"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Customers configure security groups and NACLs for their VPC resources.",
+      "docs": [
+        {
+          "title": "VPC security",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q104",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "AWS IAM policy evaluation logic includes:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Explicit deny overrides allow"
+        },
+        {
+          "id": "b",
+          "text": "Deny is ignored"
+        },
+        {
+          "id": "c",
+          "text": "Root is denied always"
+        },
+        {
+          "id": "d",
+          "text": "S3 has no policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "By default requests are denied; explicit allow grants access unless explicit deny exists.",
+      "docs": [
+        {
+          "title": "Policy evaluation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q105",
+      "domain": "security-compliance",
+      "type": "multiple-response",
+      "text": "Which services support encryption? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "b",
+          "text": "Amazon VPC Flow Logs only unencrypted"
+        },
+        {
+          "id": "c",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "d",
+          "text": "Paper mail"
+        },
+        {
+          "id": "e",
+          "text": "On-premises tape only"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "S3 and EBS support encryption at rest; many services integrate with KMS.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q106",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "AWS Network Firewall is a:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed network firewall for VPCs"
+        },
+        {
+          "id": "b",
+          "text": "S3 storage class"
+        },
+        {
+          "id": "c",
+          "text": "Database engine"
+        },
+        {
+          "id": "d",
+          "text": "Email service"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Firewall provides stateful inspection for VPC traffic.",
+      "docs": [
+        {
+          "title": "AWS Network Firewall",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q107",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Amazon GuardDuty uses primarily:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Threat detection based on logs and activity"
+        },
+        {
+          "id": "b",
+          "text": "Physical access cards"
+        },
+        {
+          "id": "c",
+          "text": "Domain registration"
+        },
+        {
+          "id": "d",
+          "text": "S3 static hosting"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty analyzes CloudTrail, VPC Flow Logs, and DNS logs for threats.",
+      "docs": [
+        {
+          "title": "GuardDuty",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q108",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon Elastic File System (EFS) provides:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scalable NFS file storage for EC2"
+        },
+        {
+          "id": "b",
+          "text": "Object storage"
+        },
+        {
+          "id": "c",
+          "text": "DNS routing"
+        },
+        {
+          "id": "d",
+          "text": "Relational OLTP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EFS is managed NFS for Linux workloads across AZs.",
+      "docs": [
+        {
+          "title": "Amazon EFS",
+          "url": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q109",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Snowball is used to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transfer large amounts of data into and out of AWS"
+        },
+        {
+          "id": "b",
+          "text": "Run Lambda functions"
+        },
+        {
+          "id": "c",
+          "text": "Manage IAM users"
+        },
+        {
+          "id": "d",
+          "text": "Host WordPress only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snowball devices provide petabyte-scale offline data migration.",
+      "docs": [
+        {
+          "title": "AWS Snowball",
+          "url": "https://docs.aws.amazon.com/snowball/latest/developer-guide/whatissnow.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q110",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon Redshift is a:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data warehouse service"
+        },
+        {
+          "id": "b",
+          "text": "Mobile push service"
+        },
+        {
+          "id": "c",
+          "text": "VPN client"
+        },
+        {
+          "id": "d",
+          "text": "Certificate authority"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Redshift is a managed analytics warehouse for SQL queries at scale.",
+      "docs": [
+        {
+          "title": "Amazon Redshift",
+          "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q111",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Glue is primarily a:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Serverless data integration and ETL service"
+        },
+        {
+          "id": "b",
+          "text": "CDN"
+        },
+        {
+          "id": "c",
+          "text": "Firewall appliance"
+        },
+        {
+          "id": "d",
+          "text": "Email archive"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue discovers, prepares, and integrates data for analytics.",
+      "docs": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q112",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon Kinesis is used for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Real-time streaming data ingestion and processing"
+        },
+        {
+          "id": "b",
+          "text": "Static website hosting only"
+        },
+        {
+          "id": "c",
+          "text": "IAM federation"
+        },
+        {
+          "id": "d",
+          "text": "Reserved Instance purchases"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kinesis collects, processes, and analyzes streaming data.",
+      "docs": [
+        {
+          "title": "Amazon Kinesis",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q113",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Step Functions orchestrates:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Distributed workflows across AWS services"
+        },
+        {
+          "id": "b",
+          "text": "S3 bucket naming"
+        },
+        {
+          "id": "c",
+          "text": "Physical shipping"
+        },
+        {
+          "id": "d",
+          "text": "Domain transfers"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Step Functions coordinates Lambda, ECS, and other services in visual workflows.",
+      "docs": [
+        {
+          "title": "AWS Step Functions",
+          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q114",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon ElastiCache is used for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "In-memory caching (Redis/Memcached)"
+        },
+        {
+          "id": "b",
+          "text": "Long-term archival"
+        },
+        {
+          "id": "c",
+          "text": "DNS failover"
+        },
+        {
+          "id": "d",
+          "text": "Compliance PDFs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ElastiCache improves application performance with microsecond latency caching.",
+      "docs": [
+        {
+          "title": "Amazon ElastiCache",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q115",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS App Runner deploys:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Containerized web applications at scale"
+        },
+        {
+          "id": "b",
+          "text": "On-premises routers"
+        },
+        {
+          "id": "c",
+          "text": "IAM policies"
+        },
+        {
+          "id": "d",
+          "text": "Snowmobile trucks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "App Runner builds and runs container apps from source or image with minimal ops.",
+      "docs": [
+        {
+          "title": "AWS App Runner",
+          "url": "https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q116",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon Lightsail is best for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simple applications, websites, and dev environments at a fixed price"
+        },
+        {
+          "id": "b",
+          "text": "Exabyte-scale data lakes only"
+        },
+        {
+          "id": "c",
+          "text": "Mainframe migration only"
+        },
+        {
+          "id": "d",
+          "text": "IAM organization SCPs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lightsail bundles compute, storage, and networking for easy projects.",
+      "docs": [
+        {
+          "title": "Amazon Lightsail",
+          "url": "https://docs.aws.amazon.com/lightsail/latest/userguide/what-is-amazon-lightsail.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q117",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Systems Manager helps you:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Manage and operate EC2 and hybrid nodes at scale"
+        },
+        {
+          "id": "b",
+          "text": "Replace Route 53"
+        },
+        {
+          "id": "c",
+          "text": "Buy reserved capacity only"
+        },
+        {
+          "id": "d",
+          "text": "Register trademarks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Systems Manager provides patch, run command, parameter store, and inventory features.",
+      "docs": [
+        {
+          "title": "AWS Systems Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q118",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon EMR is used for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Big data processing with Apache Spark and Hadoop"
+        },
+        {
+          "id": "b",
+          "text": "Email delivery"
+        },
+        {
+          "id": "c",
+          "text": "SSL certificates"
+        },
+        {
+          "id": "d",
+          "text": "VPC peering only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EMR runs big data frameworks on managed clusters.",
+      "docs": [
+        {
+          "title": "Amazon EMR",
+          "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q119",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Fargate allows you to run containers:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Without managing servers"
+        },
+        {
+          "id": "b",
+          "text": "Only on-premises"
+        },
+        {
+          "id": "c",
+          "text": "Without networking"
+        },
+        {
+          "id": "d",
+          "text": "Only on Windows 95"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fargate is serverless compute for ECS and EKS workloads.",
+      "docs": [
+        {
+          "title": "AWS Fargate",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q120",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon WorkSpaces provides:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed desktop virtualization (DaaS)"
+        },
+        {
+          "id": "b",
+          "text": "Object storage"
+        },
+        {
+          "id": "c",
+          "text": "IoT device firmware"
+        },
+        {
+          "id": "d",
+          "text": "Snowball ordering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WorkSpaces delivers cloud-based Windows or Linux desktops.",
+      "docs": [
+        {
+          "title": "Amazon WorkSpaces",
+          "url": "https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q121",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Database Migration Service (DMS) helps:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Migrate databases to AWS with minimal downtime"
+        },
+        {
+          "id": "b",
+          "text": "Replace CloudFront"
+        },
+        {
+          "id": "c",
+          "text": "Scan malware on laptops"
+        },
+        {
+          "id": "d",
+          "text": "Manage payroll"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMS supports homogeneous and heterogeneous database migrations.",
+      "docs": [
+        {
+          "title": "AWS DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q122",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon MQ is a managed service for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apache ActiveMQ and RabbitMQ brokers"
+        },
+        {
+          "id": "b",
+          "text": "S3 lifecycle"
+        },
+        {
+          "id": "c",
+          "text": "EC2 reservations"
+        },
+        {
+          "id": "d",
+          "text": "IAM MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Amazon MQ hosts message brokers for apps moving from on-premises messaging.",
+      "docs": [
+        {
+          "title": "Amazon MQ",
+          "url": "https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q123",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Amplify helps developers:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Build and deploy full-stack web and mobile apps"
+        },
+        {
+          "id": "b",
+          "text": "Operate physical data centers"
+        },
+        {
+          "id": "c",
+          "text": "Replace AWS Organizations"
+        },
+        {
+          "id": "d",
+          "text": "Audit PCI only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Amplify provides frontend hosting, APIs, auth, and CI/CD for apps.",
+      "docs": [
+        {
+          "title": "AWS Amplify",
+          "url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q124",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon SageMaker is used for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Building, training, and deploying machine learning models"
+        },
+        {
+          "id": "b",
+          "text": "DNS routing"
+        },
+        {
+          "id": "c",
+          "text": "S3 replication only"
+        },
+        {
+          "id": "d",
+          "text": "Snowball repair"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker is a broad ML platform for the full model lifecycle.",
+      "docs": [
+        {
+          "title": "Amazon SageMaker",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q125",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Transit Gateway connects:",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPCs and on-premises networks through a central hub"
+        },
+        {
+          "id": "b",
+          "text": "Only two S3 buckets"
+        },
+        {
+          "id": "c",
+          "text": "IAM users to payroll"
+        },
+        {
+          "id": "d",
+          "text": "Edge locations to laptops only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transit Gateway simplifies network architecture at scale.",
+      "docs": [
+        {
+          "title": "AWS Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q126",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon DocumentDB (with MongoDB compatibility) is a:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed document database"
+        },
+        {
+          "id": "b",
+          "text": "CDN"
+        },
+        {
+          "id": "c",
+          "text": "Firewall"
+        },
+        {
+          "id": "d",
+          "text": "Data transfer report"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DocumentDB stores JSON-like documents with MongoDB API compatibility.",
+      "docs": [
+        {
+          "title": "Amazon DocumentDB",
+          "url": "https://docs.aws.amazon.com/documentdb/latest/developerguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q127",
+      "domain": "technology-services",
+      "type": "multiple-response",
+      "text": "Which are AWS storage services? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EC2 Instance Connect only"
+        },
+        {
+          "id": "c",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "d",
+          "text": "AWS IAM"
+        },
+        {
+          "id": "e",
+          "text": "Amazon CloudWatch alarms"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "S3 is object storage; EBS is block storage for EC2.",
+      "docs": [
+        {
+          "title": "AWS Storage",
+          "url": "https://aws.amazon.com/products/storage/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q128",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Direct Connect provides:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dedicated private connectivity from on-premises to AWS"
+        },
+        {
+          "id": "b",
+          "text": "Free public internet for all"
+        },
+        {
+          "id": "c",
+          "text": "S3 object encryption keys"
+        },
+        {
+          "id": "d",
+          "text": "Lambda runtime only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Direct Connect establishes private network links to AWS.",
+      "docs": [
+        {
+          "title": "AWS Direct Connect",
+          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q129",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon CloudFront integrates with which origin at a high level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3, ALB, EC2, and custom origins"
+        },
+        {
+          "id": "b",
+          "text": "Only paper archives"
+        },
+        {
+          "id": "c",
+          "text": "IAM policies"
+        },
+        {
+          "id": "d",
+          "text": "Cost Explorer"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFront caches content from many AWS and custom HTTP origins.",
+      "docs": [
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q130",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Batch runs:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Batch computing jobs at any scale"
+        },
+        {
+          "id": "b",
+          "text": "Real-time chat only"
+        },
+        {
+          "id": "c",
+          "text": "Domain WHOIS"
+        },
+        {
+          "id": "d",
+          "text": "MFA devices"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Batch dynamically provisions compute for batch workloads.",
+      "docs": [
+        {
+          "title": "AWS Batch",
+          "url": "https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q131",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon OpenSearch Service is used for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Search, log analytics, and visualization"
+        },
+        {
+          "id": "b",
+          "text": "GPU training only"
+        },
+        {
+          "id": "c",
+          "text": "Snowball ordering"
+        },
+        {
+          "id": "d",
+          "text": "IAM SSO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpenSearch Service runs OpenSearch/Elasticsearch for search and observability.",
+      "docs": [
+        {
+          "title": "Amazon OpenSearch",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q132",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS IoT Core enables:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Connected devices to interact with cloud applications"
+        },
+        {
+          "id": "b",
+          "text": "Only email hosting"
+        },
+        {
+          "id": "c",
+          "text": "Reserved Instance sharing"
+        },
+        {
+          "id": "d",
+          "text": "Artifact downloads"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IoT Core is a managed cloud service for billions of devices.",
+      "docs": [
+        {
+          "title": "AWS IoT Core",
+          "url": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q133",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon FSx provides:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Managed third-party file systems (Windows, Lustre, NetApp, OpenZFS)"
+        },
+        {
+          "id": "b",
+          "text": "DNS only"
+        },
+        {
+          "id": "c",
+          "text": "IAM keys"
+        },
+        {
+          "id": "d",
+          "text": "Support cases"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FSx offers fully managed Windows File Server, Lustre, ONTAP, and more.",
+      "docs": [
+        {
+          "title": "Amazon FSx",
+          "url": "https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q134",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS CodeDeploy automates:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application deployments to EC2, Lambda, and on-premises"
+        },
+        {
+          "id": "b",
+          "text": "S3 bucket creation only"
+        },
+        {
+          "id": "c",
+          "text": "Root password resets"
+        },
+        {
+          "id": "d",
+          "text": "Snowmobile driving"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CodeDeploy rolls out application revisions with minimal downtime.",
+      "docs": [
+        {
+          "title": "AWS CodeDeploy",
+          "url": "https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q135",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon Rekognition provides:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Image and video analysis using machine learning"
+        },
+        {
+          "id": "b",
+          "text": "Block storage"
+        },
+        {
+          "id": "c",
+          "text": "VPC peering"
+        },
+        {
+          "id": "d",
+          "text": "Billing consolidation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rekognition detects objects, faces, text, and inappropriate content in media.",
+      "docs": [
+        {
+          "title": "Amazon Rekognition",
+          "url": "https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q136",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "AWS Site-to-Site VPN connects:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Your data center to a VPC over an encrypted tunnel"
+        },
+        {
+          "id": "b",
+          "text": "Two S3 buckets only"
+        },
+        {
+          "id": "c",
+          "text": "Users to Twitter"
+        },
+        {
+          "id": "d",
+          "text": "Artifact to Macie"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Site-to-Site VPN creates IPsec tunnels between your network and AWS.",
+      "docs": [
+        {
+          "title": "AWS Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q137",
+      "domain": "technology-services",
+      "type": "multiple-choice",
+      "text": "Amazon Comprehend is a:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Natural language processing (NLP) service"
+        },
+        {
+          "id": "b",
+          "text": "Hardware load balancer"
+        },
+        {
+          "id": "c",
+          "text": "S3 storage tier"
+        },
+        {
+          "id": "d",
+          "text": "Support plan"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Comprehend finds insights and relationships in text using ML.",
+      "docs": [
+        {
+          "title": "Amazon Comprehend",
+          "url": "https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q138",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "The AWS Pricing Calculator helps you:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estimate monthly AWS costs before deployment"
+        },
+        {
+          "id": "b",
+          "text": "Patch Windows servers"
+        },
+        {
+          "id": "c",
+          "text": "Create IAM groups"
+        },
+        {
+          "id": "d",
+          "text": "Enable GuardDuty"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Build estimates for services and configurations at calculator.aws.",
+      "docs": [
+        {
+          "title": "AWS Pricing Calculator",
+          "url": "https://calculator.aws/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q139",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "Which pricing model lets you use spare EC2 capacity at up to 90% discount with possible interruption?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spot Instances"
+        },
+        {
+          "id": "b",
+          "text": "Dedicated Hosts only"
+        },
+        {
+          "id": "c",
+          "text": "On-Demand with no interruption"
+        },
+        {
+          "id": "d",
+          "text": "Enterprise support fee"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Spot Instances use unused capacity at steep discounts.",
+      "docs": [
+        {
+          "title": "Spot Instances",
+          "url": "https://aws.amazon.com/ec2/spot/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q140",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "AWS Developer Support plan is differentiated from Basic by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Business hours email access to Cloud Support for technical issues"
+        },
+        {
+          "id": "b",
+          "text": "24/7 phone for all accounts"
+        },
+        {
+          "id": "c",
+          "text": "Dedicated TAM"
+        },
+        {
+          "id": "d",
+          "text": "Unlimited free usage"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Developer adds technical support during business hours via email.",
+      "docs": [
+        {
+          "title": "Support plans",
+          "url": "https://aws.amazon.com/premiumsupport/plans/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q141",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "Billing alerts based on actual or forecasted spend can be configured in:",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Budgets"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "VPC Flow Logs"
+        },
+        {
+          "id": "d",
+          "text": "Amazon EKS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Budgets sends alerts when cost or usage exceeds thresholds you define.",
+      "docs": [
+        {
+          "title": "AWS Budgets",
+          "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q142",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "Reserved Instance benefits in Organizations consolidated billing:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Can apply across accounts in the same organization"
+        },
+        {
+          "id": "b",
+          "text": "Never apply across accounts"
+        },
+        {
+          "id": "c",
+          "text": "Only for S3"
+        },
+        {
+          "id": "d",
+          "text": "Only in GovCloud"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RI and Savings Plan discounts can share across linked accounts.",
+      "docs": [
+        {
+          "title": "Consolidated billing",
+          "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q143",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "AWS Enterprise Support includes:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Concierge support team and a Technical Account Manager (TAM) option"
+        },
+        {
+          "id": "b",
+          "text": "No technical support"
+        },
+        {
+          "id": "c",
+          "text": "Only documentation"
+        },
+        {
+          "id": "d",
+          "text": "Free Snowmobile"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Enterprise provides highest level of proactive and reactive support.",
+      "docs": [
+        {
+          "title": "Enterprise Support",
+          "url": "https://aws.amazon.com/premiumsupport/plans/enterprise/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q144",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "Which tool gives free recommendations to reduce cost and improve security?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Trusted Advisor"
+        },
+        {
+          "id": "b",
+          "text": "AWS Artifact only"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "d",
+          "text": "AWS Snowball"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Trusted Advisor checks cost optimization, performance, security, and fault tolerance.",
+      "docs": [
+        {
+          "title": "Trusted Advisor",
+          "url": "https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q145",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "Data transfer IN to AWS from the internet is generally:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Free for many services"
+        },
+        {
+          "id": "b",
+          "text": "More expensive than transfer out"
+        },
+        {
+          "id": "c",
+          "text": "Charged per IAM user"
+        },
+        {
+          "id": "d",
+          "text": "Not measurable"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Inbound data transfer is often free; outbound charges commonly apply (verify per service).",
+      "docs": [
+        {
+          "title": "Data transfer pricing",
+          "url": "https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer"
+        }
+      ]
+    },
+    {
+      "id": "clf-q146",
+      "domain": "billing-pricing-support",
+      "type": "multiple-response",
+      "text": "Which are AWS cost management tools? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Cost Explorer"
+        },
+        {
+          "id": "b",
+          "text": "Amazon GuardDuty"
+        },
+        {
+          "id": "c",
+          "text": "AWS Budgets"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Cognito"
+        },
+        {
+          "id": "e",
+          "text": "AWS WAF"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Cost Explorer and Budgets help analyze and control spending.",
+      "docs": [
+        {
+          "title": "AWS Billing and Cost Management",
+          "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "clf-q147",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "On-Demand Instances are ideal when:",
+      "options": [
+        {
+          "id": "a",
+          "text": "You need short-term, flexible compute without upfront payment"
+        },
+        {
+          "id": "b",
+          "text": "You require 3-year commitment"
+        },
+        {
+          "id": "c",
+          "text": "You cannot tolerate stopping"
+        },
+        {
+          "id": "d",
+          "text": "You only use Spot"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "On-Demand has no commitment; pay per second/hour depending on service.",
+      "docs": [
+        {
+          "title": "On-Demand pricing",
+          "url": "https://aws.amazon.com/ec2/pricing/on-demand/"
+        }
+      ]
+    },
+    {
+      "id": "clf-q148",
+      "domain": "billing-pricing-support",
+      "type": "multiple-choice",
+      "text": "AWS Marketplace allows customers to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Find, buy, and deploy third-party software on AWS"
+        },
+        {
+          "id": "b",
+          "text": "Replace AWS Support"
+        },
+        {
+          "id": "c",
+          "text": "Avoid all charges"
+        },
+        {
+          "id": "d",
+          "text": "Manage physical cables"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Marketplace offers SaaS, AMIs, and data products from independent vendors.",
+      "docs": [
+        {
+          "title": "AWS Marketplace",
+          "url": "https://aws.amazon.com/marketplace"
         }
       ]
     }
