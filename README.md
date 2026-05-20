@@ -132,7 +132,7 @@ Progress is saved **in this browser only** — no account required.
 
 | Feature | Description |
 |---------|-------------|
-| **Score history** | Past attempts on the home page; trend line on results |
+| **Progress dashboard** | Score trends, domain trends, weak areas, timing, and full history |
 | **Resume exam** | Auto-saves every 30s; prompt on return (expires after 24h) |
 | **Bookmarks** | Mark questions for review (like the real exam) |
 | **Adaptive pool** | Missed questions appear more often over time |

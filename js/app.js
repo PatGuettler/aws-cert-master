@@ -23,7 +23,8 @@ import { scoreExam } from "./scoring.js";
 import { buildStudyPlan } from "./study-plan.js";
 import { initAds, updateAdVisibility } from "./ads.js";
 import { initStorageNotice } from "./storage-notice.js";
-import { renderHistoryPanel, buildTrendLine } from "./history-ui.js";
+import { buildTrendLine } from "./history-ui.js";
+import { renderDashboard, renderProgressTeaser } from "./dashboard-ui.js";
 import { initDataPanel } from "./data-panel.js";
 import { renderBookmarkReview } from "./review-ui.js";
 
@@ -54,6 +55,7 @@ let sessionMode = "exam";
 
 const views = {
   home: document.getElementById("view-home"),
+  dashboard: document.getElementById("view-dashboard"),
   exam: document.getElementById("view-exam"),
   results: document.getElementById("view-results"),
   study: document.getElementById("view-study"),
@@ -94,6 +96,9 @@ function minutesSince(iso) {
 function refreshDataViews() {
   if (currentCert && activeCertId) {
     renderHome();
+    if (!views.dashboard?.classList.contains("hidden")) {
+      renderDashboard(activeCertId, currentCert, { onHistoryChange: refreshDataViews });
+    }
     if (lastResult) renderResults();
   }
 }
@@ -128,6 +133,7 @@ function restoreExam(resume) {
       index: resume.index,
       remainingSeconds: resume.remainingSeconds,
       revealed: resume.revealed,
+      startedAt: resume.startedAt,
     },
   });
 }
@@ -165,6 +171,8 @@ async function init() {
       onSettingsChange: (next) => {
         settings = next;
       },
+      onNavigateHome: () => {},
+      onNavigateDashboard: () => {},
     });
     initDataPanel({
       getActiveCertId: () => "",
@@ -188,6 +196,8 @@ async function init() {
     onSettingsChange: (next) => {
       settings = next;
     },
+    onNavigateHome: goHome,
+    onNavigateDashboard: showDashboard,
   });
 
   initDataPanel({
@@ -287,7 +297,14 @@ function renderHome() {
   document.getElementById("domain-heading").textContent =
     `Exam domains (${cert.code})`;
 
-  renderHistoryPanel(activeCertId, cert, { onHistoryChange: refreshDataViews });
+  renderProgressTeaser(activeCertId, cert);
+}
+
+function showDashboard() {
+  if (!currentCert) return;
+  showView("dashboard");
+  setHeaderTitle("Your progress");
+  renderDashboard(activeCertId, currentCert, { onHistoryChange: refreshDataViews });
 }
 
 function launchExamSession(questions, mode) {
@@ -347,7 +364,10 @@ function startDrill() {
   launchExamSession(questions, "drill");
 }
 
-function finishExam() {
+/**
+ * @param {{ durationSeconds?: number }} [meta]
+ */
+function finishExam(meta = {}) {
   if (!currentCert) return;
   examController?.stopTimer?.();
   clearResumeState(activeCertId);
@@ -363,6 +383,7 @@ function finishExam() {
     totalScored: lastResult.totalScored,
     domainBreakdown: lastResult.domainBreakdown,
     missedQuestions: lastResult.missedQuestions,
+    durationSeconds: meta.durationSeconds ?? 0,
     type: sessionMode === "drill" ? "drill" : "exam",
   };
 
@@ -527,6 +548,10 @@ function goHome() {
 }
 
 document.getElementById("btn-start")?.addEventListener("click", startExam);
+document.getElementById("btn-open-dashboard")?.addEventListener("click", showDashboard);
+document.getElementById("btn-dashboard-home")?.addEventListener("click", goHome);
+document.getElementById("btn-dashboard-start")?.addEventListener("click", startExam);
+document.getElementById("btn-view-dashboard")?.addEventListener("click", showDashboard);
 document.getElementById("btn-home")?.addEventListener("click", goHome);
 document.getElementById("btn-retake")?.addEventListener("click", startExam);
 document.getElementById("btn-drill")?.addEventListener("click", startDrill);

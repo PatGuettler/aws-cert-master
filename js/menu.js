@@ -7,6 +7,8 @@ import { loadSettings, saveSettings } from "./storage.js";
  * @param {import('./config.js').ExamSettings} opts.settings
  * @param {(certId: string) => void} opts.onExamChange
  * @param {(settings: import('./config.js').ExamSettings) => void} opts.onSettingsChange
+ * @param {() => void} opts.onNavigateHome
+ * @param {() => void} opts.onNavigateDashboard
  */
 export function initMenu({
   exams,
@@ -14,6 +16,8 @@ export function initMenu({
   settings,
   onExamChange,
   onSettingsChange,
+  onNavigateHome,
+  onNavigateDashboard,
 }) {
   let activeCertId = getActiveCertId();
   /** @type {import('./cert-loader.js').ExamIndexEntry[]} */
@@ -49,6 +53,16 @@ export function initMenu({
   });
 
   overlay?.addEventListener("click", closeDrawer);
+
+  document.getElementById("drawer-nav-home")?.addEventListener("click", () => {
+    onNavigateHome();
+    closeDrawer();
+  });
+
+  document.getElementById("drawer-nav-dashboard")?.addEventListener("click", () => {
+    onNavigateDashboard();
+    closeDrawer();
+  });
 
   function renderExamList() {
     if (!examListEl) return;

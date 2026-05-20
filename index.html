@@ -6,7 +6,9 @@
     <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
-      content="AWS certification practice exams — exam-style timing, scoring, and study plans from official AWS resources."
+      content="Free AWS CLF-C02 practice exams — no login, no account. 
+      65 questions, domain-weighted scoring, and personalized 
+      study plans. Same format as the real exam."
     />
     <title>AWS Cert Master — Practice Tests</title>
     <link rel="stylesheet" href="css/styles.css" />
@@ -37,6 +39,14 @@
       <div class="drawer-header">
         <h2>Menu</h2>
       </div>
+      <nav class="drawer-nav" aria-label="Main navigation">
+        <button type="button" id="drawer-nav-home" class="drawer-nav-btn">
+          Home
+        </button>
+        <button type="button" id="drawer-nav-dashboard" class="drawer-nav-btn">
+          Your progress
+        </button>
+      </nav>
       <section class="drawer-section drawer-section-exams">
         <h3>Exams</h3>
         <div class="drawer-nested" aria-label="Available practice exams">
@@ -46,25 +56,6 @@
             <code>python3 scripts/build-exams-index.py</code>.
           </p>
         </div>
-      </section>
-      <section class="drawer-section drawer-section-data">
-        <h3>My data</h3>
-        <p class="drawer-hint">Stored in this browser only.</p>
-        <div class="data-actions">
-          <button type="button" id="btn-export-data" class="btn btn-outline btn-block">
-            Export backup
-          </button>
-          <label class="btn btn-outline btn-block import-label">
-            Import backup
-            <input id="import-data-file" type="file" accept="application/json" hidden />
-          </label>
-        </div>
-        <p class="drawer-subhead">Clear data</p>
-        <button type="button" id="btn-clear-history" class="btn-text">Clear exam history</button>
-        <button type="button" id="btn-clear-weak" class="btn-text">Clear weak question stats</button>
-        <button type="button" id="btn-clear-bookmarks" class="btn-text">Clear bookmarks</button>
-        <button type="button" id="btn-clear-resume" class="btn-text">Clear saved exam (resume)</button>
-        <button type="button" id="btn-clear-all" class="btn-text btn-text-danger">Clear everything</button>
       </section>
       <section class="drawer-section">
         <h3>Test options</h3>
@@ -90,6 +81,27 @@
           </span>
         </label>
       </section>
+      <details class="drawer-details drawer-section-data">
+        <summary>My data</summary>
+        <div class="drawer-details-body">
+          <p class="drawer-hint">Stored in this browser only.</p>
+          <div class="data-actions">
+            <button type="button" id="btn-export-data" class="btn btn-outline btn-block">
+              Export backup
+            </button>
+            <label class="btn btn-outline btn-block import-label">
+              Import backup
+              <input id="import-data-file" type="file" accept="application/json" hidden />
+            </label>
+          </div>
+          <p class="drawer-subhead">Clear data</p>
+          <button type="button" id="btn-clear-history" class="btn-text">Clear exam history</button>
+          <button type="button" id="btn-clear-weak" class="btn-text">Clear weak question stats</button>
+          <button type="button" id="btn-clear-bookmarks" class="btn-text">Clear bookmarks</button>
+          <button type="button" id="btn-clear-resume" class="btn-text">Clear saved exam (resume)</button>
+          <button type="button" id="btn-clear-all" class="btn-text btn-text-danger">Clear everything</button>
+        </div>
+      </details>
     </aside>
 
     <div class="page-shell" id="page-shell">
@@ -131,17 +143,31 @@
           <h3 id="domain-heading">Exam domains</h3>
           <ul id="domain-list" class="domain-list"></ul>
         </div>
-        <section id="history-panel" class="history-panel is-open">
-          <button
-            type="button"
-            id="history-panel-toggle"
-            class="history-panel-toggle"
-            aria-expanded="true"
-          >
-            Your history
+        <section class="progress-teaser" aria-labelledby="progress-teaser-heading">
+          <h3 id="progress-teaser-heading">Your progress</h3>
+          <p id="progress-teaser-summary" class="progress-teaser-summary">
+            Finish a practice exam to see score trends, weak domains, and more.
+          </p>
+          <button type="button" id="btn-open-dashboard" class="btn btn-outline">
+            Open progress dashboard
           </button>
-          <div id="history-panel-body" class="history-panel-body"></div>
         </section>
+      </section>
+
+      <section id="view-dashboard" class="view hidden">
+        <div class="dashboard-header">
+          <h2 id="dashboard-cert-name">Progress</h2>
+          <p class="cert-code" id="dashboard-cert-code"></p>
+        </div>
+        <div id="dashboard-root" class="dashboard-root"></div>
+        <div class="dashboard-actions">
+          <button type="button" id="btn-dashboard-home" class="btn btn-outline">
+            Back to home
+          </button>
+          <button type="button" id="btn-dashboard-start" class="btn btn-primary">
+            Start practice exam
+          </button>
+        </div>
       </section>
 
       <section id="view-exam" class="view hidden">
@@ -193,6 +219,9 @@
           </button>
           <button id="btn-retake" type="button" class="btn btn-secondary">
             Retake exam
+          </button>
+          <button id="btn-view-dashboard" type="button" class="btn btn-outline">
+            View progress dashboard
           </button>
           <button id="btn-home" type="button" class="btn btn-outline">
             Back to home

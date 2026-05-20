@@ -15,7 +15,7 @@ import { getBookmarks, toggleBookmark, saveResumeState } from "./storage.js";
  * @param {ExamSettings} opts.settings
  * @param {Record<string, string[]>} opts.responses
  * @param {(responses: Record<string, string[]>) => void} opts.onResponsesChange
- * @param {() => void} opts.onFinish
+ * @param {(meta: { durationSeconds: number }) => void} opts.onFinish
  * @param {boolean} [opts.isDrill]
  * @param {{ index?: number, remainingSeconds?: number, revealed?: string[] }} [opts.resume]
  */
@@ -38,7 +38,17 @@ export function runExam({
   let remainingSeconds =
     resume?.remainingSeconds ?? cert.exam.timeLimitMinutes * 60;
   const revealed = new Set(resume?.revealed ?? []);
+  const sessionStartedAt = resume?.startedAt ?? Date.now();
   let bookmarks = getBookmarks(certId);
+
+  function getDurationSeconds() {
+    return Math.max(1, Math.round((Date.now() - sessionStartedAt) / 1000));
+  }
+
+  function finishSession() {
+    stopTimers();
+    onFinish({ durationSeconds: getDurationSeconds() });
+  }
 
   const timerEl = document.getElementById("exam-timer");
   const progressFill = document.getElementById("progress-fill");
@@ -58,6 +68,7 @@ export function runExam({
       index,
       revealed: [...revealed],
       settings: { ...settings },
+      startedAt: sessionStartedAt,
     });
   }
 
@@ -87,8 +98,7 @@ export function runExam({
       remainingSeconds--;
       updateTimerDisplay();
       if (remainingSeconds <= 0) {
-        stopTimers();
-        onFinish();
+        finishSession();
       }
     }, 1000);
   }
@@ -361,8 +371,7 @@ export function runExam({
     ) {
       return;
     }
-    stopTimers();
-    onFinish();
+    finishSession();
   });
 
   startTimer();
