@@ -16,16 +16,29 @@ const AWS_CERT_SORT = {
   "security-specialty": 120,
 };
 
+/** @type {Record<string, number>} */
+const COMPTIA_CERT_SORT = {
+  "comptia-a-plus": 10,
+  "comptia-network-plus": 20,
+  "comptia-security-plus": 30,
+  "comptia-cysa-plus": 40,
+  "comptia-linux-plus": 50,
+};
+
 /**
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
+ * @param {Record<string, number>} sortMap
+ * @param {string} vendor
  */
-function sortAwsExams(exams) {
-  return [...exams].sort((a, b) => {
-    const oa = AWS_CERT_SORT[a.id] ?? 500;
-    const ob = AWS_CERT_SORT[b.id] ?? 500;
-    if (oa !== ob) return oa - ob;
-    return a.name.localeCompare(b.name);
-  });
+function sortVendorExams(exams, sortMap, vendor) {
+  return [...exams]
+    .filter((e) => (e.vendor ?? "aws") === vendor)
+    .sort((a, b) => {
+      const oa = sortMap[a.id] ?? 500;
+      const ob = sortMap[b.id] ?? 500;
+      if (oa !== ob) return oa - ob;
+      return a.name.localeCompare(b.name);
+    });
 }
 
 /**
@@ -56,6 +69,8 @@ export function initMenu({
   const drawer = document.getElementById("drawer");
   const examListAws = document.getElementById("exam-list-aws");
   const examListAwsEmpty = document.getElementById("exam-list-aws-empty");
+  const examListComptia = document.getElementById("exam-list-comptia");
+  const examListComptiaEmpty = document.getElementById("exam-list-comptia-empty");
   const timeLimitToggle = document.getElementById("opt-time-limit");
   const feedbackToggle = document.getElementById("opt-feedback");
   const docLinksToggle = document.getElementById("opt-doc-links");
@@ -118,9 +133,8 @@ export function initMenu({
   }
 
   function renderExamList() {
-    const awsExams = sortAwsExams(
-      examList.filter((e) => (e.vendor ?? "aws") === "aws")
-    );
+    const awsExams = sortVendorExams(examList, AWS_CERT_SORT, "aws");
+    const comptiaExams = sortVendorExams(examList, COMPTIA_CERT_SORT, "comptia");
 
     if (awsExams.length === 0) {
       examListAwsEmpty?.classList.remove("hidden");
@@ -128,7 +142,14 @@ export function initMenu({
       examListAwsEmpty?.classList.add("hidden");
     }
 
+    if (comptiaExams.length === 0) {
+      examListComptiaEmpty?.classList.remove("hidden");
+    } else {
+      examListComptiaEmpty?.classList.add("hidden");
+    }
+
     renderList(examListAws, awsExams);
+    renderList(examListComptia, comptiaExams);
   }
 
   renderExamList();
@@ -153,7 +174,11 @@ export function initMenu({
 
   function setActiveCert(certId) {
     activeCertId = certId;
-    examListAws?.querySelectorAll("button[data-exam-id]").forEach((btn) => {
+    const selector = "button[data-exam-id]";
+    examListAws?.querySelectorAll(selector).forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.examId === certId);
+    });
+    examListComptia?.querySelectorAll(selector).forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.examId === certId);
     });
   }

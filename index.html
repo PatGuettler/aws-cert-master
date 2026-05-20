@@ -6,7 +6,7 @@
     <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
-      content="Free AWS certification practice exams — no login. Domain-weighted questions, timed exams, progress tracking, and study plans for CLF-C02, SAA-C03, and more."
+      content="Free AWS and CompTIA certification practice exams — no login. Timed exams, acronym drills, progress tracking, and study plans."
     />
     <title>AWS Cert Master — Practice Tests</title>
     <link rel="stylesheet" href="css/styles.css" />
@@ -58,7 +58,12 @@
         </details>
         <details class="drawer-cert-group">
           <summary>CompTIA</summary>
-          <p class="drawer-placeholder">Practice exams coming soon.</p>
+          <div class="drawer-nested" aria-label="CompTIA practice exams">
+            <ul id="exam-list-comptia" class="cert-list exam-list"></ul>
+            <p id="exam-list-comptia-empty" class="exam-list-empty hidden">
+              No CompTIA exams found. Run <code>python3 scripts/generate_comptia_exams.py</code>.
+            </p>
+          </div>
         </details>
       </section>
       <section class="drawer-section">
@@ -116,11 +121,13 @@
     <main>
       <section id="view-landing" class="view">
         <div class="landing-hero">
-          <h2>Practice AWS certifications — free, in your browser</h2>
+          <h2>Certification practice — free, in your browser</h2>
           <p class="landing-lead">
-            AWS Cert Master is an unofficial study tool with exam-style practice tests,
-            domain-weighted question pools, scoring, progress tracking, and links to
-            official AWS documentation. No account or install required.
+            AWS Cert Master is an unofficial study tool for <strong>AWS</strong> and
+            <strong>CompTIA</strong> certifications: exam-style practice tests,
+            domain-weighted question pools, progress dashboards, and
+            <strong>acronym drills</strong> for CompTIA (a prep mode most tools skip).
+            No account or install required.
           </p>
         </div>
 
@@ -137,20 +144,36 @@
           </button>
           <button type="button" class="landing-tile landing-tile-action" id="landing-tile-clf">
             <span class="landing-tile-icon" aria-hidden="true">▶</span>
-            <span class="landing-tile-label">Quick start</span>
+            <span class="landing-tile-label">Quick start AWS</span>
             <span class="landing-tile-desc">Cloud Practitioner (CLF-C02)</span>
+          </button>
+          <button type="button" class="landing-tile landing-tile-action" id="landing-tile-secplus">
+            <span class="landing-tile-icon" aria-hidden="true">▶</span>
+            <span class="landing-tile-label">Quick start CompTIA</span>
+            <span class="landing-tile-desc">Security+ (SY0-701)</span>
           </button>
         </div>
 
-        <section class="landing-section" aria-labelledby="landing-certs-heading">
-          <h3 id="landing-certs-heading">
+        <section class="landing-section" aria-labelledby="landing-aws-heading">
+          <h3 id="landing-aws-heading">
             AWS certifications
-            <span class="landing-count">(<span id="landing-exam-count">0</span> available)</span>
+            <span class="landing-count">(<span id="landing-aws-count">0</span>)</span>
           </h3>
           <p class="landing-hint">
             Choose an exam to see domains, start a timed practice test, and track your history.
           </p>
-          <div id="landing-cert-grid" class="landing-cert-grid"></div>
+          <div id="landing-cert-grid-aws" class="landing-cert-grid"></div>
+        </section>
+
+        <section class="landing-section" aria-labelledby="landing-comptia-heading">
+          <h3 id="landing-comptia-heading">
+            CompTIA certifications
+            <span class="landing-count">(<span id="landing-comptia-count">0</span>)</span>
+          </h3>
+          <p class="landing-hint">
+            Includes <strong>acronym study</strong> on each exam page — CompTIA tests assume you know common IT abbreviations cold.
+          </p>
+          <div id="landing-cert-grid-comptia" class="landing-cert-grid"></div>
         </section>
 
         <section class="landing-section landing-howto" id="how-to">
@@ -175,6 +198,10 @@
             <li>
               <strong>Track progress</strong> on the dashboard; export or clear your data
               under <em>My data</em> in the menu.
+            </li>
+            <li>
+              <strong>CompTIA only:</strong> use <em>Study acronyms</em> on the exam page to
+              drill abbreviations both ways before a full practice test.
             </li>
           </ol>
           <p class="landing-note">
@@ -216,10 +243,25 @@
               <span>Passing score</span>
             </div>
           </div>
-          <button id="btn-start" type="button" class="btn btn-primary">
-            Start practice exam
-          </button>
+          <div class="cert-actions">
+            <button id="btn-start" type="button" class="btn btn-primary">
+              Start practice exam
+            </button>
+            <button id="btn-study-acronyms" type="button" class="btn btn-secondary hidden">
+              Study acronyms
+            </button>
+          </div>
         </div>
+        <section id="cert-acronym-callout" class="cert-acronym-callout hidden">
+          <h3>CompTIA acronym prep</h3>
+          <p>
+            CompTIA exams use heavy shorthand (ports, protocols, roles, attacks). Our acronym quiz
+            trains both directions—term to meaning and meaning to term—so stems on the real exam feel familiar.
+          </p>
+          <button type="button" id="btn-study-acronyms-inline" class="btn btn-outline">
+            Open acronym study
+          </button>
+        </section>
         <div class="domain-overview">
           <h3 id="domain-heading">Exam domains</h3>
           <ul id="domain-list" class="domain-list"></ul>
@@ -233,6 +275,17 @@
             Open progress dashboard
           </button>
         </section>
+      </section>
+
+      <section id="view-acronyms" class="view hidden">
+        <nav class="cert-breadcrumb">
+          <button type="button" id="btn-acronyms-back-cert" class="btn-text-link">
+            ← Back to exam page
+          </button>
+        </nav>
+        <h2 id="acronym-view-title">Acronym study</h2>
+        <p class="cert-code" id="acronym-view-code"></p>
+        <div id="acronym-root" class="acronym-root"></div>
       </section>
 
       <section id="view-dashboard" class="view hidden">

@@ -1,0 +1,3626 @@
+{
+  "id": "comptia-security-plus",
+  "name": "CompTIA Security+",
+  "code": "SY0-701",
+  "vendor": "comptia",
+  "exam": {
+    "totalQuestions": 90,
+    "scoredQuestions": 80,
+    "timeLimitMinutes": 90,
+    "passingScore": 750,
+    "maxScore": 900,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "general",
+      "name": "Domain 1: General Security Concepts",
+      "weight": 12,
+      "resources": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "threats",
+      "name": "Domain 2: Threats, Vulnerabilities, and Mitigations",
+      "weight": 22,
+      "resources": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "name": "Domain 3: Security Architecture",
+      "weight": 18,
+      "resources": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Domain 4: Security Operations",
+      "weight": 28,
+      "resources": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "program",
+      "name": "Domain 5: Security Program Management",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cptsec-q001",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which principle requires granting only necessary permissions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Least privilege"
+        },
+        {
+          "id": "b",
+          "text": "Defense in depth only name"
+        },
+        {
+          "id": "c",
+          "text": "Security through obscurity"
+        },
+        {
+          "id": "d",
+          "text": "Implicit allow all"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least privilege limits access to the minimum required.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q002",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "A new contractor needs file share access. Which principle limits them to read-only on one folder?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Least privilege"
+        },
+        {
+          "id": "b",
+          "text": "Defense in depth only name"
+        },
+        {
+          "id": "c",
+          "text": "Security through obscurity"
+        },
+        {
+          "id": "d",
+          "text": "Implicit allow all"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least privilege limits access to the minimum required.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q003",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which control type is a firewall rule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Technical"
+        },
+        {
+          "id": "b",
+          "text": "Managerial policy only"
+        },
+        {
+          "id": "c",
+          "text": "Physical badge reader class"
+        },
+        {
+          "id": "d",
+          "text": "Detective audit log review only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firewalls are technical preventive controls.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q004",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which hashing algorithm is considered legacy and weak?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MD5"
+        },
+        {
+          "id": "b",
+          "text": "SHA-256"
+        },
+        {
+          "id": "c",
+          "text": "SHA-3"
+        },
+        {
+          "id": "d",
+          "text": "bcrypt for passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MD5 has known collision weaknesses.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q005",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which encryption type uses the same key for encrypt and decrypt?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Symmetric"
+        },
+        {
+          "id": "b",
+          "text": "Asymmetric key pair"
+        },
+        {
+          "id": "c",
+          "text": "Quantum one-time pad only consumer"
+        },
+        {
+          "id": "d",
+          "text": "Hashing reversible"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AES is symmetric encryption.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q006",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which document defines acceptable use of corporate systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AUP (Acceptable Use Policy)"
+        },
+        {
+          "id": "b",
+          "text": "MOU for partnerships"
+        },
+        {
+          "id": "c",
+          "text": "SLA uptime"
+        },
+        {
+          "id": "d",
+          "text": "BPA bulk purchase"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AUP sets user behavior expectations.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q007",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which factor is something you are?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Biometric fingerprint"
+        },
+        {
+          "id": "b",
+          "text": "Smart card possession"
+        },
+        {
+          "id": "c",
+          "text": "Password knowledge"
+        },
+        {
+          "id": "d",
+          "text": "OTP token possession"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Biometrics are inherence factors.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q008",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which activity maps controls to compliance frameworks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gap analysis"
+        },
+        {
+          "id": "b",
+          "text": "Pen test only"
+        },
+        {
+          "id": "c",
+          "text": "Phishing simulation only"
+        },
+        {
+          "id": "d",
+          "text": "Disk defrag"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Gap analysis compares current state to required controls.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q009",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which symmetric mode provides confidentiality and authenticity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GCM"
+        },
+        {
+          "id": "b",
+          "text": "ECB alone"
+        },
+        {
+          "id": "c",
+          "text": "ROT13"
+        },
+        {
+          "id": "d",
+          "text": "Base64"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GCM is an AEAD mode for AES.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q010",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which term is data remaining after deletion attempts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data remanence"
+        },
+        {
+          "id": "b",
+          "text": "Tokenization mapping"
+        },
+        {
+          "id": "c",
+          "text": "Salting passwords"
+        },
+        {
+          "id": "d",
+          "text": "DNS cache"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Remanence requires secure wiping or destruction.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q011",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which agreement outlines shared responsibilities between orgs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MOU/MOA"
+        },
+        {
+          "id": "b",
+          "text": "NDA only secrecy"
+        },
+        {
+          "id": "c",
+          "text": "AUP user rules"
+        },
+        {
+          "id": "d",
+          "text": "EULA consumer software"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MOUs define cooperative responsibilities.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q012",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which control validates identity before access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Authentication"
+        },
+        {
+          "id": "b",
+          "text": "Authorization grants rights after"
+        },
+        {
+          "id": "c",
+          "text": "Accounting logs only"
+        },
+        {
+          "id": "d",
+          "text": "Availability uptime"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Authentication verifies identity.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q013",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which key exchange uses public and private key pairs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asymmetric cryptography"
+        },
+        {
+          "id": "b",
+          "text": "Symmetric AES only one key"
+        },
+        {
+          "id": "c",
+          "text": "Hashing one-way"
+        },
+        {
+          "id": "d",
+          "text": "Encoding not encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RSA/ECC use key pairs.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q014",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which security model labels data and enforces need-to-know?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mandatory Access Control (MAC)"
+        },
+        {
+          "id": "b",
+          "text": "Discretionary DAC owner choice only"
+        },
+        {
+          "id": "c",
+          "text": "Role RBAC only always MAC"
+        },
+        {
+          "id": "d",
+          "text": "Open access"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MAC uses classification labels.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q015",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which process removes access when role changes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deprovisioning / access revocation"
+        },
+        {
+          "id": "b",
+          "text": "Onboarding adds access"
+        },
+        {
+          "id": "c",
+          "text": "Patch Tuesday"
+        },
+        {
+          "id": "d",
+          "text": "Capacity planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Offboarding must revoke credentials promptly.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q016",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which type of assessment is a tabletop exercise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Discussion-based simulation"
+        },
+        {
+          "id": "b",
+          "text": "Full red team live attack only"
+        },
+        {
+          "id": "c",
+          "text": "Vulnerability scan automated only"
+        },
+        {
+          "id": "d",
+          "text": "Hardware inventory"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tabletops walk through scenarios verbally.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q017",
+      "domain": "general",
+      "type": "multiple-choice",
+      "text": "Which regulation protects EU personal data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GDPR"
+        },
+        {
+          "id": "b",
+          "text": "HIPAA US health only"
+        },
+        {
+          "id": "c",
+          "text": "PCI DSS cards only"
+        },
+        {
+          "id": "d",
+          "text": "FERPA education US"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GDPR governs EU personal data processing.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q018",
+      "domain": "general",
+      "type": "multiple-response",
+      "text": "Which TWO are detective controls? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "SIEM alerting"
+        },
+        {
+          "id": "b",
+          "text": "Turnstile"
+        },
+        {
+          "id": "c",
+          "text": "Log review"
+        },
+        {
+          "id": "d",
+          "text": "Encryption"
+        },
+        {
+          "id": "e",
+          "text": "Fence"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "SIEM and log review detect events after they occur.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q019",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which attack tricks users into revealing credentials?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Phishing"
+        },
+        {
+          "id": "b",
+          "text": "SQL injection database"
+        },
+        {
+          "id": "c",
+          "text": "ARP storm L2"
+        },
+        {
+          "id": "d",
+          "text": "Bad capacitor hardware"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Phishing uses social engineering via email/sites.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q020",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which malware self-replicates across networks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worm"
+        },
+        {
+          "id": "b",
+          "text": "Trojan needs disguise"
+        },
+        {
+          "id": "c",
+          "text": "Adware only ads"
+        },
+        {
+          "id": "d",
+          "text": "Rootkit hides only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Worms spread automatically without user action.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q021",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which vulnerability class injects SQL in input fields?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SQL injection"
+        },
+        {
+          "id": "b",
+          "text": "XSS client browser"
+        },
+        {
+          "id": "c",
+          "text": "CSRF forged request"
+        },
+        {
+          "id": "d",
+          "text": "Race condition timing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Unsanitized input can alter database queries.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q022",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which wireless attack captures handshakes for offline crack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "WPA2 handshake capture"
+        },
+        {
+          "id": "b",
+          "text": "Evil twin only captive"
+        },
+        {
+          "id": "c",
+          "text": "Bluejacking contact card"
+        },
+        {
+          "id": "d",
+          "text": "RFID skimming"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Captured handshakes enable offline password attacks.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q023",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which threat actor is motivated by financial gain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organized crime"
+        },
+        {
+          "id": "b",
+          "text": "Hacktivist ideology"
+        },
+        {
+          "id": "c",
+          "text": "Insider accidental only always"
+        },
+        {
+          "id": "d",
+          "text": "Nation-state espionage only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Financially motivated actors seek profit.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q024",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which mitigation reduces XSS impact in browsers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Content Security Policy (CSP)"
+        },
+        {
+          "id": "b",
+          "text": "Disable HTTPS"
+        },
+        {
+          "id": "c",
+          "text": "Use HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Store secrets in cookies without flags"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CSP restricts script sources.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q025",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which attack floods with SYN packets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SYN flood DoS"
+        },
+        {
+          "id": "b",
+          "text": "Ping of death modern patched"
+        },
+        {
+          "id": "c",
+          "text": "Pass-the-hash"
+        },
+        {
+          "id": "d",
+          "text": "LDAP injection"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SYN floods exhaust connection tables.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q026",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which fileless technique lives in memory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Living-off-the-land / in-memory PowerShell"
+        },
+        {
+          "id": "b",
+          "text": "Stored on USB only always"
+        },
+        {
+          "id": "c",
+          "text": "Printed hardcopy"
+        },
+        {
+          "id": "d",
+          "text": "Tape backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fileless malware avoids disk artifacts.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q027",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which social engineering uses impersonation by phone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vishing"
+        },
+        {
+          "id": "b",
+          "text": "Smishing SMS"
+        },
+        {
+          "id": "c",
+          "text": "Phishing email"
+        },
+        {
+          "id": "d",
+          "text": "Whaling CEO email only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vishing is voice phishing.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q028",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which OWASP risk is broken access control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A01 Broken Access Control"
+        },
+        {
+          "id": "b",
+          "text": "A03 Injection only"
+        },
+        {
+          "id": "c",
+          "text": "A10 SSRF only always first"
+        },
+        {
+          "id": "d",
+          "text": "None"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access control failures allow unauthorized actions.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q029",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which botnet command channel uses DNS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DNS tunneling/C2"
+        },
+        {
+          "id": "b",
+          "text": "ICMP only always"
+        },
+        {
+          "id": "c",
+          "text": "Physical courier"
+        },
+        {
+          "id": "d",
+          "text": "Fax"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Attackers hide C2 in DNS queries.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q030",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which supply chain risk affects third-party libraries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compromised dependency update"
+        },
+        {
+          "id": "b",
+          "text": "Local keyboard failure"
+        },
+        {
+          "id": "c",
+          "text": "Monitor burn-in"
+        },
+        {
+          "id": "d",
+          "text": "Low toner"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tampered libraries inject backdoors.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q031",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which physical attack follows authorized person through door?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tailgating"
+        },
+        {
+          "id": "b",
+          "text": "Shoulder surfing screen"
+        },
+        {
+          "id": "c",
+          "text": "Dumpster diving docs"
+        },
+        {
+          "id": "d",
+          "text": "War driving Wi-Fi"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tailgating bypasses physical controls.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q032",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which ransomware defense helps restore without paying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Offline immutable backups"
+        },
+        {
+          "id": "b",
+          "text": "Single online NAS only"
+        },
+        {
+          "id": "c",
+          "text": "Disable AV for speed"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin password"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clean backups enable recovery without ransom.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q033",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which IoT risk comes from default credentials?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compromised device recruitment to botnets"
+        },
+        {
+          "id": "b",
+          "text": "Lower latency"
+        },
+        {
+          "id": "c",
+          "text": "Better encryption default"
+        },
+        {
+          "id": "d",
+          "text": "Automatic patching always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Default passwords enable mass compromise.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q034",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which technique moves laterally using stolen hashes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pass-the-hash"
+        },
+        {
+          "id": "b",
+          "text": "SQLi web"
+        },
+        {
+          "id": "c",
+          "text": "DNS poisoning"
+        },
+        {
+          "id": "d",
+          "text": "Cable crosstalk"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PtH reuses NTLM hashes without cracking.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q035",
+      "domain": "threats",
+      "type": "multiple-response",
+      "text": "Which TWO are social engineering? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretexting"
+        },
+        {
+          "id": "b",
+          "text": "Patch management"
+        },
+        {
+          "id": "c",
+          "text": "Baiting USB drop"
+        },
+        {
+          "id": "d",
+          "text": "RAID 5"
+        },
+        {
+          "id": "e",
+          "text": "STP loop guard"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Pretexting and baiting manipulate users.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q036",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "(comptia-security-plus pool) Supplemental threats item 1: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q037",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "(comptia-security-plus pool) Supplemental threats item 2: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q038",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which design places DMZ between internet and internal LAN?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perimeter segmentation with DMZ"
+        },
+        {
+          "id": "b",
+          "text": "Flat network"
+        },
+        {
+          "id": "c",
+          "text": "Single firewall port open all"
+        },
+        {
+          "id": "d",
+          "text": "No segmentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMZ hosts public services separately.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q039",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which cloud model customer manages OS on VMs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IaaS"
+        },
+        {
+          "id": "b",
+          "text": "SaaS apps"
+        },
+        {
+          "id": "c",
+          "text": "FaaS only code"
+        },
+        {
+          "id": "d",
+          "text": "On-prem mainframe only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaaS provides compute/network you patch.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q040",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which technology isolates microservices with policy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service mesh / micro-segmentation"
+        },
+        {
+          "id": "b",
+          "text": "Hub repeater"
+        },
+        {
+          "id": "c",
+          "text": "Analog modem"
+        },
+        {
+          "id": "d",
+          "text": "KVM switch"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mesh enforces east-west traffic rules.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q041",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which HSM use case protects encryption keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Key generation and storage in hardware"
+        },
+        {
+          "id": "b",
+          "text": "Email marketing"
+        },
+        {
+          "id": "c",
+          "text": "DNS caching"
+        },
+        {
+          "id": "d",
+          "text": "Printer spooling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HSMs protect keys from OS extraction.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q042",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which Zero Trust principle verifies every request?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Never trust, always verify"
+        },
+        {
+          "id": "b",
+          "text": "Trust LAN users implicitly"
+        },
+        {
+          "id": "c",
+          "text": "VPN means full trust"
+        },
+        {
+          "id": "d",
+          "text": "SSID hidden equals secure"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Zero Trust validates continuously.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q043",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which protocol secures web traffic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TLS 1.2/1.3"
+        },
+        {
+          "id": "b",
+          "text": "HTTP cleartext"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "FTP active cleartext"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "TLS encrypts HTTP and other apps.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q044",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which design pattern provides read-only DNS for malware?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Split DNS (internal vs external views)"
+        },
+        {
+          "id": "b",
+          "text": "Single open resolver to world"
+        },
+        {
+          "id": "c",
+          "text": "Hosts file only enterprise"
+        },
+        {
+          "id": "d",
+          "text": "WINS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Split DNS controls name resolution paths.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q045",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which container risk is shared kernel escape?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Container breakout to host"
+        },
+        {
+          "id": "b",
+          "text": "GPU driver marketing"
+        },
+        {
+          "id": "c",
+          "text": "LCD dead pixel"
+        },
+        {
+          "id": "d",
+          "text": "Keyboard layout"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kernel bugs can break isolation.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q046",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which authentication adds code from phone app?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TOTP/MFA app"
+        },
+        {
+          "id": "b",
+          "text": "Single password only"
+        },
+        {
+          "id": "c",
+          "text": "Shared kiosk login"
+        },
+        {
+          "id": "d",
+          "text": "MAC filtering Wi-Fi only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "TOTP is a second factor.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q047",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which network appliance inspects TLS with corporate CA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSL forward proxy / inspection"
+        },
+        {
+          "id": "b",
+          "text": "Unmanaged hub"
+        },
+        {
+          "id": "c",
+          "text": "Analog phone"
+        },
+        {
+          "id": "d",
+          "text": "Label printer"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Corporate CA enables authorized inspection.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q048",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which architecture uses jump host for admin access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bastion host in management zone"
+        },
+        {
+          "id": "b",
+          "text": "RDP open to internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet from anywhere"
+        },
+        {
+          "id": "d",
+          "text": "Admin on user VLAN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bastions consolidate privileged access.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q049",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which SDLC phase includes threat modeling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design"
+        },
+        {
+          "id": "b",
+          "text": "Disposal only"
+        },
+        {
+          "id": "c",
+          "text": "Marketing launch"
+        },
+        {
+          "id": "d",
+          "text": "Toner replacement"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Threat modeling during design finds flaws early.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q050",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which data protection tokenizes PAN for payments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tokenization replacing sensitive value"
+        },
+        {
+          "id": "b",
+          "text": "MD5 password storage"
+        },
+        {
+          "id": "c",
+          "text": "Base64 encoding"
+        },
+        {
+          "id": "d",
+          "text": "Compression zip"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tokens are non-sensitive substitutes.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q051",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which wireless design uses 802.1X for enterprise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "WPA3-Enterprise with RADIUS"
+        },
+        {
+          "id": "b",
+          "text": "WEP shared key"
+        },
+        {
+          "id": "c",
+          "text": "Open guest for all corp"
+        },
+        {
+          "id": "d",
+          "text": "MAC hide SSID only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Enterprise Wi-Fi uses 802.1X authentication.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q052",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which backup site is fully equipped hot standby?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hot site"
+        },
+        {
+          "id": "b",
+          "text": "Cold site empty shell"
+        },
+        {
+          "id": "c",
+          "text": "Warm partial"
+        },
+        {
+          "id": "d",
+          "text": "Tape only offsite"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hot sites enable fast failover.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q053",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which encryption protects data at rest on disk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Full-disk encryption (BitLocker/LUKS class)"
+        },
+        {
+          "id": "b",
+          "text": "TLS in transit only"
+        },
+        {
+          "id": "c",
+          "text": "Screen filter privacy"
+        },
+        {
+          "id": "d",
+          "text": "Cable shielding"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FDE protects stored data if drive stolen.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q054",
+      "domain": "architecture",
+      "type": "multiple-response",
+      "text": "Which TWO are availability controls? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Load balancer"
+        },
+        {
+          "id": "b",
+          "text": "DLP content inspect"
+        },
+        {
+          "id": "c",
+          "text": "RAID redundancy"
+        },
+        {
+          "id": "d",
+          "text": "Background check"
+        },
+        {
+          "id": "e",
+          "text": "Security awareness training"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Load balancing and RAID improve availability.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q055",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which log source shows Windows security events?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security event log"
+        },
+        {
+          "id": "b",
+          "text": "Application only crashes"
+        },
+        {
+          "id": "c",
+          "text": "Setup only"
+        },
+        {
+          "id": "d",
+          "text": "Forwarded DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security log captures auth and policy events.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q056",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which tool aggregates logs for correlation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SIEM"
+        },
+        {
+          "id": "b",
+          "text": "Cable tester"
+        },
+        {
+          "id": "c",
+          "text": "Multimeter"
+        },
+        {
+          "id": "d",
+          "text": "Label maker"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SIEM correlates events across sources.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q057",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which incident phase contains eradication?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Containment, eradication, recovery sequence"
+        },
+        {
+          "id": "b",
+          "text": "Budget planning"
+        },
+        {
+          "id": "c",
+          "text": "Marketing"
+        },
+        {
+          "id": "d",
+          "text": "Cable labeling only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IR lifecycle includes eradication of threat.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q058",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which scan type is non-authenticated external?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unauthenticated vulnerability scan"
+        },
+        {
+          "id": "b",
+          "text": "Full memory dump"
+        },
+        {
+          "id": "c",
+          "text": "HR interview"
+        },
+        {
+          "id": "d",
+          "text": "Badge print"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "External scans find exposed services.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q059",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which playbook step preserves forensic evidence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chain of custody documentation"
+        },
+        {
+          "id": "b",
+          "text": "Delete logs quickly"
+        },
+        {
+          "id": "c",
+          "text": "Reimage before snapshot"
+        },
+        {
+          "id": "d",
+          "text": "Power off all without photos"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Chain of custody maintains admissibility.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q060",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which EDR capability rolls back malicious changes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automated remediation / isolation"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet inventory"
+        },
+        {
+          "id": "c",
+          "text": "DNS MX change"
+        },
+        {
+          "id": "d",
+          "text": "Printer driver"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EDR can isolate hosts and remove payloads.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q061",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which command on Linux shows listening ports?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ss -tuln or netstat"
+        },
+        {
+          "id": "b",
+          "text": "ls -la"
+        },
+        {
+          "id": "c",
+          "text": "chmod"
+        },
+        {
+          "id": "d",
+          "text": "mount"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ss lists open sockets and ports.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q062",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Windows tool exports local security policy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "secpol.msc / LGPO"
+        },
+        {
+          "id": "b",
+          "text": "Paint"
+        },
+        {
+          "id": "c",
+          "text": "Notepad only"
+        },
+        {
+          "id": "d",
+          "text": "Calculator"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Local policy tools manage security settings.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q063",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which metric measures time to restore service?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MTTR"
+        },
+        {
+          "id": "b",
+          "text": "MTBF between failures"
+        },
+        {
+          "id": "c",
+          "text": "RPO data loss window"
+        },
+        {
+          "id": "d",
+          "text": "MFA adoption rate"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mean Time To Repair tracks recovery speed.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q064",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which phishing defense validates sender domain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DMARC with SPF/DKIM"
+        },
+        {
+          "id": "b",
+          "text": "Open relay SMTP"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Telnet banner"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Email authentication reduces spoofed mail.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q065",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which access review frequency meets least privilege ongoing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Periodic recertification"
+        },
+        {
+          "id": "b",
+          "text": "Never review"
+        },
+        {
+          "id": "c",
+          "text": "Only at hire"
+        },
+        {
+          "id": "d",
+          "text": "After breach only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Recertification removes stale permissions.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q066",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Linux file integrity tool uses baselines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AIDE/Tripwire class HIDS"
+        },
+        {
+          "id": "b",
+          "text": "cron only"
+        },
+        {
+          "id": "c",
+          "text": "cups"
+        },
+        {
+          "id": "d",
+          "text": "whoami"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FIM detects unauthorized file changes.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q067",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which network capture requires promiscuous mode?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Full packet capture on span port"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "DNS A record edit"
+        },
+        {
+          "id": "d",
+          "text": "LDAP join"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Promiscuous NIC sees mirrored traffic.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q068",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which vulnerability severity uses CVSS score?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Critical/High/Medium/Low ranking"
+        },
+        {
+          "id": "b",
+          "text": "T-shirt size only"
+        },
+        {
+          "id": "c",
+          "text": "Random number"
+        },
+        {
+          "id": "d",
+          "text": "Ping time"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CVSS standardizes severity scoring.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q069",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which change requires emergency CAB documentation after?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Emergency change with retrospective review"
+        },
+        {
+          "id": "b",
+          "text": "Silent prod change no record"
+        },
+        {
+          "id": "c",
+          "text": "Skip testing always"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Emergency changes still need audit trail.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q070",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which cloud logging service tracks API calls?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudTrail / Azure Activity Log class"
+        },
+        {
+          "id": "b",
+          "text": "S3 object only silent"
+        },
+        {
+          "id": "c",
+          "text": "GPU metrics only"
+        },
+        {
+          "id": "d",
+          "text": "Printer log"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Control plane logs record API activity.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q071",
+      "domain": "operations",
+      "type": "multiple-response",
+      "text": "Which TWO are containment actions? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network isolation VLAN"
+        },
+        {
+          "id": "b",
+          "text": "Public press release first"
+        },
+        {
+          "id": "c",
+          "text": "Disable compromised account"
+        },
+        {
+          "id": "d",
+          "text": "Delete all backups"
+        },
+        {
+          "id": "e",
+          "text": "Ignore alerts"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Isolation and account disable limit blast radius.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q072",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-security-plus pool) Supplemental operations item 1: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q073",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-security-plus pool) Supplemental operations item 2: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q074",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-security-plus pool) Supplemental operations item 3: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q075",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-security-plus pool) Supplemental operations item 4: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q076",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-security-plus pool) Supplemental operations item 5: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q077",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-security-plus pool) Supplemental operations item 6: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q078",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which framework lists Identify, Protect, Detect, Respond, Recover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NIST Cybersecurity Framework"
+        },
+        {
+          "id": "b",
+          "text": "ITIL only service desk"
+        },
+        {
+          "id": "c",
+          "text": "Agile sprint"
+        },
+        {
+          "id": "d",
+          "text": "Six Sigma DMAIC only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CSF core functions organize security program.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q079",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which audit type is performed by external assessors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Third-party audit"
+        },
+        {
+          "id": "b",
+          "text": "Self-assessment only"
+        },
+        {
+          "id": "c",
+          "text": "Daily standup"
+        },
+        {
+          "id": "d",
+          "text": "Helpdesk ticket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "External audits provide independent assurance.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q080",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which policy requires reporting lost mobile devices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mobile device / incident reporting policy"
+        },
+        {
+          "id": "b",
+          "text": "Vacation policy"
+        },
+        {
+          "id": "c",
+          "text": "Dress code"
+        },
+        {
+          "id": "d",
+          "text": "Catering policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lost devices must be reported quickly.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q081",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which metric measures phishing simulation click rate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Failure rate / susceptibility"
+        },
+        {
+          "id": "b",
+          "text": "MTBF hardware"
+        },
+        {
+          "id": "c",
+          "text": "Disk RPM"
+        },
+        {
+          "id": "d",
+          "text": "Monitor nits"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Click rates gauge awareness effectiveness.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q082",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which role approves risk acceptance exceptions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk owner / management"
+        },
+        {
+          "id": "b",
+          "text": "Intern"
+        },
+        {
+          "id": "c",
+          "text": "Any user"
+        },
+        {
+          "id": "d",
+          "text": "Vendor only always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management accepts residual risk formally.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q083",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which document defines scope for penetration test?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rules of engagement (RoE)"
+        },
+        {
+          "id": "b",
+          "text": "Employee handbook hobbies"
+        },
+        {
+          "id": "c",
+          "text": "Menu cafeteria"
+        },
+        {
+          "id": "d",
+          "text": "Logo guidelines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RoE defines targets and limits for testing.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q084",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which compliance standard applies to payment cards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PCI DSS"
+        },
+        {
+          "id": "b",
+          "text": "HIPAA PHI"
+        },
+        {
+          "id": "c",
+          "text": "FERPA students"
+        },
+        {
+          "id": "d",
+          "text": "COPPA children web only always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PCI DSS secures cardholder data.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q085",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which BCP component defines RTO/RPO?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Business impact analysis"
+        },
+        {
+          "id": "b",
+          "text": "Pen test report only"
+        },
+        {
+          "id": "c",
+          "text": "Org chart only"
+        },
+        {
+          "id": "d",
+          "text": "Cable map only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BIA drives recovery objectives.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q086",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which training reduces social engineering success?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security awareness program"
+        },
+        {
+          "id": "b",
+          "text": "Only annual hardware training"
+        },
+        {
+          "id": "c",
+          "text": "None ever"
+        },
+        {
+          "id": "d",
+          "text": "Only developers"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Awareness teaches spotting scams.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q087",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which vendor risk review examines SOC 2 report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Third-party risk management"
+        },
+        {
+          "id": "b",
+          "text": "Ignore vendor security"
+        },
+        {
+          "id": "c",
+          "text": "Purchase cheapest only"
+        },
+        {
+          "id": "d",
+          "text": "Skip contracts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "TPRM evaluates supplier controls.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q088",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which data classification label restricts to HR only?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confidential / internal label"
+        },
+        {
+          "id": "b",
+          "text": "Public marketing"
+        },
+        {
+          "id": "c",
+          "text": "Unlabeled default external"
+        },
+        {
+          "id": "d",
+          "text": "Open source"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Classification drives handling rules.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q089",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which governance body prioritizes security projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Steering committee / CAB"
+        },
+        {
+          "id": "b",
+          "text": "Random users"
+        },
+        {
+          "id": "c",
+          "text": "Printer vendor"
+        },
+        {
+          "id": "d",
+          "text": "Cafeteria staff"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Governance allocates resources to risks.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q090",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which KPI tracks patch compliance percentage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Patch SLA adherence"
+        },
+        {
+          "id": "b",
+          "text": "Coffee consumption"
+        },
+        {
+          "id": "c",
+          "text": "Desk plant count"
+        },
+        {
+          "id": "d",
+          "text": "Font choice"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patch metrics show exposure window.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q091",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which legal hold preserves evidence during litigation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Litigation hold on relevant data"
+        },
+        {
+          "id": "b",
+          "text": "Auto-delete all mail"
+        },
+        {
+          "id": "c",
+          "text": "Wipe laptops immediately"
+        },
+        {
+          "id": "d",
+          "text": "Disable backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Legal hold prevents spoliation.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q092",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which standardizes security ops procedures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Runbooks and playbooks"
+        },
+        {
+          "id": "b",
+          "text": "Ad hoc only always"
+        },
+        {
+          "id": "c",
+          "text": "Verbal only"
+        },
+        {
+          "id": "d",
+          "text": "Sticky notes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Runbooks ensure consistent response.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q093",
+      "domain": "program",
+      "type": "multiple-choice",
+      "text": "Which privacy principle minimizes collected data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data minimization"
+        },
+        {
+          "id": "b",
+          "text": "Collect everything just in case"
+        },
+        {
+          "id": "c",
+          "text": "Never delete"
+        },
+        {
+          "id": "d",
+          "text": "Share freely"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Collect only what is necessary.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q094",
+      "domain": "program",
+      "type": "multiple-response",
+      "text": "Which TWO are governance activities? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Policy development"
+        },
+        {
+          "id": "b",
+          "text": "Cable crimping"
+        },
+        {
+          "id": "c",
+          "text": "Risk register maintenance"
+        },
+        {
+          "id": "d",
+          "text": "GPU overclock"
+        },
+        {
+          "id": "e",
+          "text": "Toner ordering"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Policies and risk registers are governance tasks.",
+      "docs": [
+        {
+          "title": "Security+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    }
+  ],
+  "acronyms": [
+    {
+      "term": "CIA",
+      "expansion": "Confidentiality, Integrity, Availability",
+      "hint": "Core security triad",
+      "category": "Concepts"
+    },
+    {
+      "term": "AAA",
+      "expansion": "Authentication, Authorization, Accounting",
+      "hint": "Access control framework",
+      "category": "Concepts"
+    },
+    {
+      "term": "MFA",
+      "expansion": "Multi-Factor Authentication",
+      "hint": "Two or more auth factors",
+      "category": "Identity"
+    },
+    {
+      "term": "SSO",
+      "expansion": "Single Sign-On",
+      "hint": "One login for multiple apps",
+      "category": "Identity"
+    },
+    {
+      "term": "IAM",
+      "expansion": "Identity and Access Management",
+      "hint": "Manages digital identities",
+      "category": "Identity"
+    },
+    {
+      "term": "PKI",
+      "expansion": "Public Key Infrastructure",
+      "hint": "Certificates and CAs",
+      "category": "Cryptography"
+    },
+    {
+      "term": "CA",
+      "expansion": "Certificate Authority",
+      "hint": "Issues digital certificates",
+      "category": "Cryptography"
+    },
+    {
+      "term": "AES",
+      "expansion": "Advanced Encryption Standard",
+      "hint": "Symmetric encryption standard",
+      "category": "Cryptography"
+    },
+    {
+      "term": "RSA",
+      "expansion": "Rivest-Shamir-Adleman",
+      "hint": "Asymmetric encryption algorithm",
+      "category": "Cryptography"
+    },
+    {
+      "term": "ECC",
+      "expansion": "Elliptic Curve Cryptography",
+      "hint": "Efficient public-key crypto",
+      "category": "Cryptography"
+    },
+    {
+      "term": "HMAC",
+      "expansion": "Hash-based Message Authentication Code",
+      "hint": "Integrity with secret key",
+      "category": "Cryptography"
+    },
+    {
+      "term": "SHA",
+      "expansion": "Secure Hash Algorithm",
+      "hint": "Cryptographic hash family",
+      "category": "Cryptography"
+    },
+    {
+      "term": "SSL",
+      "expansion": "Secure Sockets Layer",
+      "hint": "Legacy term often meaning TLS",
+      "category": "Cryptography"
+    },
+    {
+      "term": "TLS",
+      "expansion": "Transport Layer Security",
+      "hint": "Secures data in transit",
+      "category": "Cryptography"
+    },
+    {
+      "term": "VPN",
+      "expansion": "Virtual Private Network",
+      "hint": "Encrypted remote connectivity",
+      "category": "Network Security"
+    },
+    {
+      "term": "IPsec",
+      "expansion": "Internet Protocol Security",
+      "hint": "Network layer VPN suite",
+      "category": "Network Security"
+    },
+    {
+      "term": "NAT",
+      "expansion": "Network Address Translation",
+      "hint": "Address translation at gateway",
+      "category": "Network Security"
+    },
+    {
+      "term": "ACL",
+      "expansion": "Access Control List",
+      "hint": "Traffic filter rules",
+      "category": "Network Security"
+    },
+    {
+      "term": "SIEM",
+      "expansion": "Security Information and Event Management",
+      "hint": "Log aggregation and correlation",
+      "category": "Operations"
+    },
+    {
+      "term": "SOAR",
+      "expansion": "Security Orchestration, Automation and Response",
+      "hint": "Automates incident workflows",
+      "category": "Operations"
+    },
+    {
+      "term": "EDR",
+      "expansion": "Endpoint Detection and Response",
+      "hint": "Monitors endpoint threats",
+      "category": "Operations"
+    },
+    {
+      "term": "XDR",
+      "expansion": "Extended Detection and Response",
+      "hint": "Cross-domain detection platform",
+      "category": "Operations"
+    },
+    {
+      "term": "IDS",
+      "expansion": "Intrusion Detection System",
+      "hint": "Detects intrusions",
+      "category": "Operations"
+    },
+    {
+      "term": "IPS",
+      "expansion": "Intrusion Prevention System",
+      "hint": "Blocks intrusions inline",
+      "category": "Operations"
+    },
+    {
+      "term": "DLP",
+      "expansion": "Data Loss Prevention",
+      "hint": "Prevents unauthorized data exfil",
+      "category": "Operations"
+    },
+    {
+      "term": "NIDS",
+      "expansion": "Network IDS",
+      "hint": "Monitors network traffic",
+      "category": "Operations"
+    },
+    {
+      "term": "HIDS",
+      "expansion": "Host IDS",
+      "hint": "Monitors individual hosts",
+      "category": "Operations"
+    },
+    {
+      "term": "CVE",
+      "expansion": "Common Vulnerabilities and Exposures",
+      "hint": "Vulnerability identifier",
+      "category": "Threats"
+    },
+    {
+      "term": "CVSS",
+      "expansion": "Common Vulnerability Scoring System",
+      "hint": "Vulnerability severity score",
+      "category": "Threats"
+    },
+    {
+      "term": "IOC",
+      "expansion": "Indicator of Compromise",
+      "hint": "Artifact suggesting breach",
+      "category": "Threats"
+    },
+    {
+      "term": "TTP",
+      "expansion": "Tactics, Techniques, and Procedures",
+      "hint": "Attacker behavior patterns",
+      "category": "Threats"
+    },
+    {
+      "term": "APT",
+      "expansion": "Advanced Persistent Threat",
+      "hint": "Long-term targeted attacker",
+      "category": "Threats"
+    },
+    {
+      "term": "MITM",
+      "expansion": "Man-in-the-Middle",
+      "hint": "Intercepts communications",
+      "category": "Threats"
+    },
+    {
+      "term": "DoS",
+      "expansion": "Denial of Service",
+      "hint": "Disrupts availability",
+      "category": "Threats"
+    },
+    {
+      "term": "DDoS",
+      "expansion": "Distributed Denial of Service",
+      "hint": "DoS from botnet",
+      "category": "Threats"
+    },
+    {
+      "term": "XSS",
+      "expansion": "Cross-Site Scripting",
+      "hint": "Inject scripts into web apps",
+      "category": "Threats"
+    },
+    {
+      "term": "CSRF",
+      "expansion": "Cross-Site Request Forgery",
+      "hint": "Forces authenticated actions",
+      "category": "Threats"
+    },
+    {
+      "term": "SQLi",
+      "expansion": "SQL Injection",
+      "hint": "Manipulates database queries",
+      "category": "Threats"
+    },
+    {
+      "term": "RFI",
+      "expansion": "Remote File Inclusion",
+      "hint": "Includes remote files in web apps",
+      "category": "Threats"
+    },
+    {
+      "term": "LFI",
+      "expansion": "Local File Inclusion",
+      "hint": "Includes local files improperly",
+      "category": "Threats"
+    },
+    {
+      "term": "GDPR",
+      "expansion": "General Data Protection Regulation",
+      "hint": "EU privacy regulation",
+      "category": "Governance"
+    },
+    {
+      "term": "HIPAA",
+      "expansion": "Health Insurance Portability and Accountability Act",
+      "hint": "US healthcare privacy",
+      "category": "Governance"
+    },
+    {
+      "term": "PCI DSS",
+      "expansion": "Payment Card Industry Data Security Standard",
+      "hint": "Card data security standard",
+      "category": "Governance"
+    },
+    {
+      "term": "SOC",
+      "expansion": "Service Organization Control",
+      "hint": "Audit report on controls",
+      "category": "Governance"
+    },
+    {
+      "term": "BCP",
+      "expansion": "Business Continuity Plan",
+      "hint": "Maintains operations during disruption",
+      "category": "Governance"
+    },
+    {
+      "term": "DRP",
+      "expansion": "Disaster Recovery Plan",
+      "hint": "Restores IT after disaster",
+      "category": "Governance"
+    },
+    {
+      "term": "RTO",
+      "expansion": "Recovery Time Objective",
+      "hint": "Max acceptable downtime",
+      "category": "Governance"
+    },
+    {
+      "term": "RPO",
+      "expansion": "Recovery Point Objective",
+      "hint": "Max acceptable data loss window",
+      "category": "Governance"
+    },
+    {
+      "term": "MOU",
+      "expansion": "Memorandum of Understanding",
+      "hint": "Non-binding agreement outline",
+      "category": "Governance"
+    },
+    {
+      "term": "NDA",
+      "expansion": "Non-Disclosure Agreement",
+      "hint": "Protects confidential information",
+      "category": "Governance"
+    },
+    {
+      "term": "AUP",
+      "expansion": "Acceptable Use Policy",
+      "hint": "Defines permitted system use",
+      "category": "Governance"
+    },
+    {
+      "term": "RBAC",
+      "expansion": "Role-Based Access Control",
+      "hint": "Permissions by job role",
+      "category": "Architecture"
+    },
+    {
+      "term": "MAC",
+      "expansion": "Mandatory Access Control",
+      "hint": "Label-based access enforcement",
+      "category": "Architecture"
+    },
+    {
+      "term": "DAC",
+      "expansion": "Discretionary Access Control",
+      "hint": "Owner decides access",
+      "category": "Architecture"
+    },
+    {
+      "term": "ABAC",
+      "expansion": "Attribute-Based Access Control",
+      "hint": "Policies on attributes",
+      "category": "Architecture"
+    }
+  ]
+}

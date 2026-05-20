@@ -1,0 +1,3310 @@
+{
+  "id": "comptia-cysa-plus",
+  "name": "CompTIA CySA+",
+  "code": "CS0-003",
+  "vendor": "comptia",
+  "exam": {
+    "totalQuestions": 85,
+    "scoredQuestions": 75,
+    "timeLimitMinutes": 165,
+    "passingScore": 750,
+    "maxScore": 900,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "operations",
+      "name": "Domain 1: Security Operations",
+      "weight": 33,
+      "resources": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "vulnerability",
+      "name": "Domain 2: Vulnerability Management",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "incident",
+      "name": "Domain 3: Incident Response and Management",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "reporting",
+      "name": "Domain 4: Reporting and Communication",
+      "weight": 17,
+      "resources": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cptcys-q001",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which data source shows DNS queries leaving the network?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DNS logs / passive DNS"
+        },
+        {
+          "id": "b",
+          "text": "Printer queue"
+        },
+        {
+          "id": "c",
+          "text": "GPU temp"
+        },
+        {
+          "id": "d",
+          "text": "Keyboard layout"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DNS telemetry reveals C2 and exfil domains.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q002",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which SIEM rule detects brute force logins?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multiple failed logins followed by success from same IP"
+        },
+        {
+          "id": "b",
+          "text": "Single successful login"
+        },
+        {
+          "id": "c",
+          "text": "User changed wallpaper"
+        },
+        {
+          "id": "d",
+          "text": "DHCP renew"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Failed-then-success patterns indicate guessing.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q003",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which tool runs YARA rules on disk images?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forensic scanner / sandbox"
+        },
+        {
+          "id": "b",
+          "text": "Cable tester"
+        },
+        {
+          "id": "c",
+          "text": "Label maker"
+        },
+        {
+          "id": "d",
+          "text": "Projector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "YARA matches malware signatures and patterns.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q004",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which EDR alert indicates credential dumping?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LSASS access by unusual process"
+        },
+        {
+          "id": "b",
+          "text": "User opened Excel"
+        },
+        {
+          "id": "c",
+          "text": "Windows Update"
+        },
+        {
+          "id": "d",
+          "text": "Screen lock"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Credential tools touch LSASS memory.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q005",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which NetFlow metadata shows talkers without full packets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flow records (src/dst IP, port, bytes)"
+        },
+        {
+          "id": "b",
+          "text": "Full PCAP always required"
+        },
+        {
+          "id": "c",
+          "text": "BIOS version"
+        },
+        {
+          "id": "d",
+          "text": "Monitor serial"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Flows summarize conversations efficiently.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q006",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which UEBA use case finds impossible travel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Same account logins from distant geos quickly"
+        },
+        {
+          "id": "b",
+          "text": "User works late once"
+        },
+        {
+          "id": "c",
+          "text": "Patch reboot"
+        },
+        {
+          "id": "d",
+          "text": "DNS cache flush"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Impossible travel suggests credential compromise.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q007",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which syslog severity is most urgent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Emergency (0)"
+        },
+        {
+          "id": "b",
+          "text": "Debug only"
+        },
+        {
+          "id": "c",
+          "text": "Informational 6"
+        },
+        {
+          "id": "d",
+          "text": "Notice 5"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Severity 0 is highest urgency.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q008",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which hunting hypothesis tests new C2 domain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Query proxy/DNS for rare newly seen domains"
+        },
+        {
+          "id": "b",
+          "text": "Delete all logs"
+        },
+        {
+          "id": "c",
+          "text": "Disable AV"
+        },
+        {
+          "id": "d",
+          "text": "Ignore TLS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rare domains may indicate C2 beacons.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q009",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Windows event ID indicates logon failure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4625"
+        },
+        {
+          "id": "b",
+          "text": "4624 success logon"
+        },
+        {
+          "id": "c",
+          "text": "1102 audit cleared maybe"
+        },
+        {
+          "id": "d",
+          "text": "7045 service installed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "4625 logs failed authentication.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q010",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which Linux log shows SSH authentication?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/var/log/auth.log or secure"
+        },
+        {
+          "id": "b",
+          "text": "/var/log/cups"
+        },
+        {
+          "id": "c",
+          "text": "/var/log/wtmp only sessions list"
+        },
+        {
+          "id": "d",
+          "text": "/etc/hosts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Auth log captures sshd events.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q011",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which SOAR action automatically blocks IP at firewall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automated containment playbook"
+        },
+        {
+          "id": "b",
+          "text": "Manual email only"
+        },
+        {
+          "id": "c",
+          "text": "Weekly report only"
+        },
+        {
+          "id": "d",
+          "text": "Ignore alert"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SOAR integrates with firewalls for blocking.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q012",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which indicator type is a file hash?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IOC hash (MD5/SHA256)"
+        },
+        {
+          "id": "b",
+          "text": "Employee ID badge"
+        },
+        {
+          "id": "c",
+          "text": "Desk number"
+        },
+        {
+          "id": "d",
+          "text": "Cable color"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hashes identify known malicious files.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q013",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which packet field helps correlate NATed internal hosts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X-Forwarded-For or internal IP in proxy logs"
+        },
+        {
+          "id": "b",
+          "text": "TTL only always unique"
+        },
+        {
+          "id": "c",
+          "text": "Ethernet brand"
+        },
+        {
+          "id": "d",
+          "text": "Keyboard language"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Proxy logs preserve internal client identity.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q014",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which ATT&CK tactic is initial access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Initial Access"
+        },
+        {
+          "id": "b",
+          "text": "Impact only"
+        },
+        {
+          "id": "c",
+          "text": "Exfil only always first"
+        },
+        {
+          "id": "d",
+          "text": "None"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Initial Access covers entry vectors.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q015",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which data retention supports long-term hunt queries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hot/warm/cold tiered log storage"
+        },
+        {
+          "id": "b",
+          "text": "Delete after 1 hour always"
+        },
+        {
+          "id": "c",
+          "text": "Paper printouts only"
+        },
+        {
+          "id": "d",
+          "text": "No timestamps"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retention enables historical correlation.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q016",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which baseline deviation triggers anomaly alert?",
+      "options": [
+        {
+          "id": "a",
+          "text": "New service listening on workstation"
+        },
+        {
+          "id": "b",
+          "text": "Scheduled backup success"
+        },
+        {
+          "id": "c",
+          "text": "Expected patch reboot"
+        },
+        {
+          "id": "d",
+          "text": "Normal login 9am"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "New listeners may indicate malware.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q017",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which threat feed integration enriches alerts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "STIX/TAXII intel feeds"
+        },
+        {
+          "id": "b",
+          "text": "Random blog only"
+        },
+        {
+          "id": "c",
+          "text": "Weather API"
+        },
+        {
+          "id": "d",
+          "text": "Stock ticker"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Structured feeds add context to IOCs.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q018",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which secure method collects logs from cloud SaaS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "API-based log ingestion with OAuth/service account"
+        },
+        {
+          "id": "b",
+          "text": "Public FTP anonymous"
+        },
+        {
+          "id": "c",
+          "text": "Email logs unencrypted"
+        },
+        {
+          "id": "d",
+          "text": "Disable TLS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vendor APIs pull audit logs securely.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q019",
+      "domain": "operations",
+      "type": "multiple-response",
+      "text": "Which TWO are log normalization benefits? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consistent field names"
+        },
+        {
+          "id": "b",
+          "text": "Eliminates need for analysts"
+        },
+        {
+          "id": "c",
+          "text": "Cross-source correlation"
+        },
+        {
+          "id": "d",
+          "text": "Guaranteed zero false positives"
+        },
+        {
+          "id": "e",
+          "text": "Unified timestamps/time zones"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Normalization enables correlation across sources.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q020",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental operations item 1: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q021",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental operations item 2: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q022",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental operations item 3: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q023",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental operations item 4: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q024",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental operations item 5: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q025",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental operations item 6: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q026",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental operations item 7: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q027",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental operations item 8: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q028",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which scan credentialed on hosts finds missing patches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Authenticated vulnerability scan"
+        },
+        {
+          "id": "b",
+          "text": "Ping sweep only"
+        },
+        {
+          "id": "c",
+          "text": "Port scan no auth limited"
+        },
+        {
+          "id": "d",
+          "text": "Social media scan"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Credentialed scans see installed patches.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q029",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which CVSS metric reflects exploit availability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exploitability subscore / EPSS context"
+        },
+        {
+          "id": "b",
+          "text": "Color of server"
+        },
+        {
+          "id": "c",
+          "text": "Rack unit height"
+        },
+        {
+          "id": "d",
+          "text": "Cable length"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Exploitability indicates ease of abuse.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q030",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which prioritization uses asset criticality and exposure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk-based vulnerability management"
+        },
+        {
+          "id": "b",
+          "text": "Scan once never remediate"
+        },
+        {
+          "id": "c",
+          "text": "Fix alphabetically"
+        },
+        {
+          "id": "d",
+          "text": "Ignore internet facing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Context prioritizes real risk over raw count.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q031",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which container scan checks image layers for CVEs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CI registry image scanning"
+        },
+        {
+          "id": "b",
+          "text": "Only runtime EDR always enough"
+        },
+        {
+          "id": "c",
+          "text": "Ignore base image"
+        },
+        {
+          "id": "d",
+          "text": "Scan only README"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image scans catch vulnerable packages early.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q032",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which false positive reduction validates exploit path?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Manual validation / PoC in lab"
+        },
+        {
+          "id": "b",
+          "text": "Auto-close all highs"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Delete tickets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Validation confirms exploitable issues.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q033",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which web finding is reflected XSS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Script reflected in immediate response"
+        },
+        {
+          "id": "b",
+          "text": "Stored in DB only"
+        },
+        {
+          "id": "c",
+          "text": "DOM-based client only"
+        },
+        {
+          "id": "d",
+          "text": "SQL error"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reflected XSS echoes input in page.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q034",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which compliance scan mode is safe for production?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved maintenance window with rate limits"
+        },
+        {
+          "id": "b",
+          "text": "Aggressive exploit mode peak hours"
+        },
+        {
+          "id": "c",
+          "text": "Denial scan unlimited"
+        },
+        {
+          "id": "d",
+          "text": "No change control"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Controlled scans avoid outages.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q035",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which KPI tracks mean time to remediate criticals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MTTR for vulns"
+        },
+        {
+          "id": "b",
+          "text": "Printer uptime"
+        },
+        {
+          "id": "c",
+          "text": "Coffee budget"
+        },
+        {
+          "id": "d",
+          "text": "Desk count"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Remediation SLAs measure fix speed.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q036",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which database stores vuln scan results over time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VM platform database / ticketing integration"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet on USB only"
+        },
+        {
+          "id": "c",
+          "text": "Paper binder"
+        },
+        {
+          "id": "d",
+          "text": "Sticky note"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Central tracking trends exposure.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q037",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which configuration baseline tool checks CIS benchmarks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SCAP/CIS-CAT class tools"
+        },
+        {
+          "id": "b",
+          "text": "Ping"
+        },
+        {
+          "id": "c",
+          "text": "Traceroute"
+        },
+        {
+          "id": "d",
+          "text": "WHOIS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Benchmark tools compare settings to CIS.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q038",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which web header mitigates clickjacking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X-Frame-Options or CSP frame-ancestors"
+        },
+        {
+          "id": "b",
+          "text": "Server: Apache only"
+        },
+        {
+          "id": "c",
+          "text": "ETag"
+        },
+        {
+          "id": "d",
+          "text": "Expires past"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Frame control headers reduce UI redress.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q039",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which patch strategy groups systems by role?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ring / phased deployment"
+        },
+        {
+          "id": "b",
+          "text": "All prod at once no pilot"
+        },
+        {
+          "id": "c",
+          "text": "Never patch"
+        },
+        {
+          "id": "d",
+          "text": "Random daily reboots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rings test before broad rollout.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q040",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which asset discovery finds shadow IT cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud access security broker / DNS logs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore SaaS"
+        },
+        {
+          "id": "c",
+          "text": "Only AD computers"
+        },
+        {
+          "id": "d",
+          "text": "Manual guess"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CASB/DNS reveal unsanctioned cloud use.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q041",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which severity needs emergency change if exploited in wild?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Critical with active exploitation"
+        },
+        {
+          "id": "b",
+          "text": "Informational open port banner"
+        },
+        {
+          "id": "c",
+          "text": "Low informational typo"
+        },
+        {
+          "id": "d",
+          "text": "Cosmetic"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Active exploitation elevates urgency.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q042",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which scanner plugin category checks SSL/TLS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Service detection / SSL cipher tests"
+        },
+        {
+          "id": "b",
+          "text": "Printer ink"
+        },
+        {
+          "id": "c",
+          "text": "Monitor brightness"
+        },
+        {
+          "id": "d",
+          "text": "Keyboard firmware"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSL tests find weak protocols/ciphers.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q043",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which compensating control mitigates unpatched legacy app?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network segmentation and WAF"
+        },
+        {
+          "id": "b",
+          "text": "Publish to internet"
+        },
+        {
+          "id": "c",
+          "text": "Share admin password"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Segmentation limits exposure when patch impossible.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q044",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which bug bounty provides external testing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crowdsourced coordinated disclosure"
+        },
+        {
+          "id": "b",
+          "text": "Ignore researchers"
+        },
+        {
+          "id": "c",
+          "text": "Threaten reporters"
+        },
+        {
+          "id": "d",
+          "text": "No process"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bug bounties harness external talent legally.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q045",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "Which metric shows vuln backlog trend?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Open critical count over time"
+        },
+        {
+          "id": "b",
+          "text": "Number of cables"
+        },
+        {
+          "id": "c",
+          "text": "Desk plants"
+        },
+        {
+          "id": "d",
+          "text": "Font size"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Trending open criticals shows program health.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q046",
+      "domain": "vulnerability",
+      "type": "multiple-response",
+      "text": "Which TWO are common scan limitations? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "False positives"
+        },
+        {
+          "id": "b",
+          "text": "Perfect accuracy always"
+        },
+        {
+          "id": "c",
+          "text": "Credential requirement for depth"
+        },
+        {
+          "id": "d",
+          "text": "Eliminates need for pen tests"
+        },
+        {
+          "id": "e",
+          "text": "Network bandwidth impact"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Scans may miss context, need creds, and affect networks.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q047",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental vulnerability item 1: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q048",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental vulnerability item 2: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q049",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental vulnerability item 3: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q050",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental vulnerability item 4: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q051",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental vulnerability item 5: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q052",
+      "domain": "vulnerability",
+      "type": "multiple-choice",
+      "text": "(comptia-cysa-plus pool) Supplemental vulnerability item 6: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q053",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which phase follows containment in IR?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eradication"
+        },
+        {
+          "id": "b",
+          "text": "Preparation only loop"
+        },
+        {
+          "id": "c",
+          "text": "Ignore"
+        },
+        {
+          "id": "d",
+          "text": "Marketing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "After containment, remove threat and recover.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q054",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which artifact preserves volatile memory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Memory dump before power off"
+        },
+        {
+          "id": "b",
+          "text": "Delete logs first"
+        },
+        {
+          "id": "c",
+          "text": "Reimage immediately no capture"
+        },
+        {
+          "id": "d",
+          "text": "Ship disk unencrypted"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAM holds encryption keys and malware.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q055",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which legal concern requires counsel during breach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Notification obligations and liability"
+        },
+        {
+          "id": "b",
+          "text": "Logo color"
+        },
+        {
+          "id": "c",
+          "text": "Office layout"
+        },
+        {
+          "id": "d",
+          "text": "Coffee brand"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Legal guides regulatory notifications.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q056",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which ransomware first response isolates hosts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disconnect from network / EDR isolate"
+        },
+        {
+          "id": "b",
+          "text": "Pay immediately always first"
+        },
+        {
+          "id": "c",
+          "text": "Delete backups"
+        },
+        {
+          "id": "d",
+          "text": "Email all customers unverified link"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Isolation prevents spread.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q057",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which hash verifies evidence integrity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SHA-256 of image"
+        },
+        {
+          "id": "b",
+          "text": "Rename file"
+        },
+        {
+          "id": "c",
+          "text": "Edit metadata"
+        },
+        {
+          "id": "d",
+          "text": "Compress with password only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cryptographic hashes detect tampering.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q058",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which communication channel is out-of-band during IR?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separate phone bridge not on compromised email"
+        },
+        {
+          "id": "b",
+          "text": "Original email thread only"
+        },
+        {
+          "id": "c",
+          "text": "Attacker chat"
+        },
+        {
+          "id": "d",
+          "text": "Public social post first"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OOB avoids attacker monitoring.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q059",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which role leads technical containment actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Incident commander with technical leads"
+        },
+        {
+          "id": "b",
+          "text": "Uninvolved intern alone"
+        },
+        {
+          "id": "c",
+          "text": "Sales team only"
+        },
+        {
+          "id": "d",
+          "text": "Random user"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IC coordinates technical responders.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q060",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which timeline documents actions with UTC timestamps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Incident chronology / war room notes"
+        },
+        {
+          "id": "b",
+          "text": "Verbal only"
+        },
+        {
+          "id": "c",
+          "text": "No notes"
+        },
+        {
+          "id": "d",
+          "text": "After action only no realtime"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Timelines support forensics and compliance.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q061",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which malware analysis sandbox avoids production risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isolated lab sandbox network"
+        },
+        {
+          "id": "b",
+          "text": "Run on domain controller"
+        },
+        {
+          "id": "c",
+          "text": "Execute on CFO laptop"
+        },
+        {
+          "id": "d",
+          "text": "Disable AV prod"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Sandboxes detonate samples safely.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q062",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which indicator sharing format is structured?",
+      "options": [
+        {
+          "id": "a",
+          "text": "STIX 2.x"
+        },
+        {
+          "id": "b",
+          "text": "Plain email only"
+        },
+        {
+          "id": "c",
+          "text": "Fax"
+        },
+        {
+          "id": "d",
+          "text": "Sticky note"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "STIX standardizes threat intel.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q063",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which recovery step validates clean restore?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scan restored systems before reconnecting"
+        },
+        {
+          "id": "b",
+          "text": "Immediately join production VLAN"
+        },
+        {
+          "id": "c",
+          "text": "Disable backups"
+        },
+        {
+          "id": "d",
+          "text": "Skip verification"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Verify cleanliness before production return.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q064",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which phishing IR collects headers and URLs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Email forensics preserving headers"
+        },
+        {
+          "id": "b",
+          "text": "Delete message"
+        },
+        {
+          "id": "c",
+          "text": "Click links to test"
+        },
+        {
+          "id": "d",
+          "text": "Forward to all staff"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Headers reveal sending infrastructure.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q065",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which post-incident activity improves future response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned / after-action review"
+        },
+        {
+          "id": "b",
+          "text": "Hide report"
+        },
+        {
+          "id": "c",
+          "text": "Punish reporters"
+        },
+        {
+          "id": "d",
+          "text": "Skip documentation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AAR updates playbooks and controls.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q066",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which data breach notification may have time limits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Regulatory deadlines (e.g., 72-hour GDPR class)"
+        },
+        {
+          "id": "b",
+          "text": "Never notify"
+        },
+        {
+          "id": "c",
+          "text": "Wait one year always"
+        },
+        {
+          "id": "d",
+          "text": "Only if press asks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Many laws mandate timely notification.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q067",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which containment avoids tipping attacker?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Silent blocking via firewall vs loud shutdown"
+        },
+        {
+          "id": "b",
+          "text": "Email attacker hello"
+        },
+        {
+          "id": "c",
+          "text": "Public tweet details"
+        },
+        {
+          "id": "d",
+          "text": "Delete evidence"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stealthy containment preserves investigation.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q068",
+      "domain": "incident",
+      "type": "multiple-choice",
+      "text": "Which forensic image is bit-for-bit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forensic disk image (E01/DD)"
+        },
+        {
+          "id": "b",
+          "text": "Copied loose files only"
+        },
+        {
+          "id": "c",
+          "text": "Screenshot only"
+        },
+        {
+          "id": "d",
+          "text": "Printed PDF"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bit-for-bit images include slack/unallocated.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q069",
+      "domain": "incident",
+      "type": "multiple-response",
+      "text": "Which TWO are preparation activities? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Playbooks"
+        },
+        {
+          "id": "b",
+          "text": "Ignore backups"
+        },
+        {
+          "id": "c",
+          "text": "Tabletop exercises"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        },
+        {
+          "id": "e",
+          "text": "Single person only no contacts"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Playbooks and tabletops prepare teams.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q070",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which audience needs executive summary with business impact?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leadership / board"
+        },
+        {
+          "id": "b",
+          "text": "Cable installers only"
+        },
+        {
+          "id": "c",
+          "text": "Intern hobby club"
+        },
+        {
+          "id": "d",
+          "text": "Random internet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Executives need risk and impact summary.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q071",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which chart shows vuln trend over quarters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Line chart of open criticals"
+        },
+        {
+          "id": "b",
+          "text": "Pie of coffee flavors"
+        },
+        {
+          "id": "c",
+          "text": "Org chart"
+        },
+        {
+          "id": "d",
+          "text": "Floor plan"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Trend lines communicate program progress.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q072",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which compliance report maps controls to requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliance crosswalk matrix"
+        },
+        {
+          "id": "b",
+          "text": "Meme collection"
+        },
+        {
+          "id": "c",
+          "text": "Vacation schedule"
+        },
+        {
+          "id": "d",
+          "text": "Lunch menu"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Crosswalks show control coverage.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q073",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which metric communicates detection mean time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MTTD"
+        },
+        {
+          "id": "b",
+          "text": "MTBF hardware"
+        },
+        {
+          "id": "c",
+          "text": "Pages per minute printer"
+        },
+        {
+          "id": "d",
+          "text": "Nits brightness"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mean Time To Detect measures detection speed.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q074",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which communication avoids sensitive IOC details publicly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sanitized public statement"
+        },
+        {
+          "id": "b",
+          "text": "Full malware source public"
+        },
+        {
+          "id": "c",
+          "text": "Credentials in press release"
+        },
+        {
+          "id": "d",
+          "text": "Live C2 keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Public comms must not aid attackers.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q075",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which ticketing field ensures accountability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assigned owner and due date"
+        },
+        {
+          "id": "b",
+          "text": "Blank assignee"
+        },
+        {
+          "id": "c",
+          "text": "No priority ever"
+        },
+        {
+          "id": "d",
+          "text": "Closed immediately"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ownership drives remediation.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q076",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which report type is after-action following incident?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Post-incident report (PIR)"
+        },
+        {
+          "id": "b",
+          "text": "Marketing brochure"
+        },
+        {
+          "id": "c",
+          "text": "Holiday party"
+        },
+        {
+          "id": "d",
+          "text": "Org picnic"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PIR documents timeline and improvements.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q077",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which KPI shows phishing report rate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Users reporting suspicious email percentage"
+        },
+        {
+          "id": "b",
+          "text": "Clicks only without reporting"
+        },
+        {
+          "id": "c",
+          "text": "Ignore reports"
+        },
+        {
+          "id": "d",
+          "text": "Delete button usage"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reporting rate measures awareness engagement.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q078",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which visualization compares risk before/after controls?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk heat map / residual risk chart"
+        },
+        {
+          "id": "b",
+          "text": "Random word cloud only"
+        },
+        {
+          "id": "c",
+          "text": "Logo sheet"
+        },
+        {
+          "id": "d",
+          "text": "Font sample"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Heat maps show risk movement.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q079",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which stakeholder needs technical IOC list?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SOC / IR team"
+        },
+        {
+          "id": "b",
+          "text": "All public Twitter"
+        },
+        {
+          "id": "c",
+          "text": "Untrained users raw"
+        },
+        {
+          "id": "d",
+          "text": "Competitors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Technical teams consume IOC details securely.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q080",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which frequency suits vuln status to management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monthly or quarterly dashboard"
+        },
+        {
+          "id": "b",
+          "text": "Never"
+        },
+        {
+          "id": "c",
+          "text": "Every minute"
+        },
+        {
+          "id": "d",
+          "text": "Once per decade"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Regular cadence keeps leadership informed.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q081",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which document defines communication escalation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Communications plan in IR plan"
+        },
+        {
+          "id": "b",
+          "text": "Ad hoc rumors"
+        },
+        {
+          "id": "c",
+          "text": "Only verbal"
+        },
+        {
+          "id": "d",
+          "text": "Ignore legal"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Comms plans define spokespeople and channels.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q082",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which privacy concern applies to incident reports?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redact personal data not needed"
+        },
+        {
+          "id": "b",
+          "text": "Publish all employee SSNs"
+        },
+        {
+          "id": "c",
+          "text": "Share medical records freely"
+        },
+        {
+          "id": "d",
+          "text": "Post passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reports must minimize sensitive personal data.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q083",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which standard metric is false positive rate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FP rate of detection rules"
+        },
+        {
+          "id": "b",
+          "text": "Number of monitors"
+        },
+        {
+          "id": "c",
+          "text": "Desk size"
+        },
+        {
+          "id": "d",
+          "text": "Cable color"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FP rate tunes detection efficiency.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q084",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which briefing covers lessons for engineers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Technical retrospective"
+        },
+        {
+          "id": "b",
+          "text": "Only HR gossip"
+        },
+        {
+          "id": "c",
+          "text": "Unrelated finance"
+        },
+        {
+          "id": "d",
+          "text": "Cafeteria review"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Engineers need technical fixes and root cause.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q085",
+      "domain": "reporting",
+      "type": "multiple-choice",
+      "text": "Which regulatory report follows payment breach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PCI incident reporting to brands/acquirer"
+        },
+        {
+          "id": "b",
+          "text": "Ignore PCI"
+        },
+        {
+          "id": "c",
+          "text": "Only blog post"
+        },
+        {
+          "id": "d",
+          "text": "Tweet only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PCI has specific breach reporting paths.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    },
+    {
+      "id": "cptcys-q086",
+      "domain": "reporting",
+      "type": "multiple-response",
+      "text": "Which TWO belong in executive dashboard? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Open critical vuln count"
+        },
+        {
+          "id": "b",
+          "text": "Every raw log line"
+        },
+        {
+          "id": "c",
+          "text": "MTTR/MTTD trends"
+        },
+        {
+          "id": "d",
+          "text": "Individual user passwords"
+        },
+        {
+          "id": "e",
+          "text": "Full malware reverse engineering"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Executives need summarized risk and metrics.",
+      "docs": [
+        {
+          "title": "CySA+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/cybersecurity-analyst"
+        }
+      ]
+    }
+  ],
+  "acronyms": [
+    {
+      "term": "SOC",
+      "expansion": "Security Operations Center",
+      "hint": "Team monitoring security events",
+      "category": "Operations"
+    },
+    {
+      "term": "SIEM",
+      "expansion": "Security Information and Event Management",
+      "hint": "Central log correlation",
+      "category": "Operations"
+    },
+    {
+      "term": "SOAR",
+      "expansion": "Security Orchestration, Automation and Response",
+      "hint": "Automates response playbooks",
+      "category": "Operations"
+    },
+    {
+      "term": "EDR",
+      "expansion": "Endpoint Detection and Response",
+      "hint": "Endpoint telemetry and response",
+      "category": "Operations"
+    },
+    {
+      "term": "XDR",
+      "expansion": "Extended Detection and Response",
+      "hint": "Unified detection across domains",
+      "category": "Operations"
+    },
+    {
+      "term": "UEBA",
+      "expansion": "User and Entity Behavior Analytics",
+      "hint": "Detects anomalous behavior",
+      "category": "Operations"
+    },
+    {
+      "term": "IOC",
+      "expansion": "Indicator of Compromise",
+      "hint": "Sign of potential intrusion",
+      "category": "Operations"
+    },
+    {
+      "term": "TTP",
+      "expansion": "Tactics, Techniques, and Procedures",
+      "hint": "Adversary behavior model",
+      "category": "Operations"
+    },
+    {
+      "term": "MITRE ATT&CK",
+      "expansion": "Adversarial Tactics, Techniques, and Common Knowledge",
+      "hint": "ATT&CK knowledge base",
+      "category": "Operations"
+    },
+    {
+      "term": "YARA",
+      "expansion": "Yet Another Recursive Acronym",
+      "hint": "Pattern matching for malware",
+      "category": "Operations"
+    },
+    {
+      "term": "STIX",
+      "expansion": "Structured Threat Information Expression",
+      "hint": "Threat intel format",
+      "category": "Operations"
+    },
+    {
+      "term": "TAXII",
+      "expansion": "Trusted Automated Exchange of Intelligence Information",
+      "hint": "Transports threat intel",
+      "category": "Operations"
+    },
+    {
+      "term": "CVSS",
+      "expansion": "Common Vulnerability Scoring System",
+      "hint": "Vulnerability severity scoring",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "CVE",
+      "expansion": "Common Vulnerabilities and Exposures",
+      "hint": "Public vulnerability ID",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "CPE",
+      "expansion": "Common Platform Enumeration",
+      "hint": "Standardized platform naming",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "CWE",
+      "expansion": "Common Weakness Enumeration",
+      "hint": "Software weakness categories",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "NVD",
+      "expansion": "National Vulnerability Database",
+      "hint": "US CVE repository",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "VM",
+      "expansion": "Vulnerability Management",
+      "hint": "Lifecycle of finding/fixing flaws",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "PT",
+      "expansion": "Penetration Test",
+      "hint": "Authorized simulated attack",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "DAST",
+      "expansion": "Dynamic Application Security Testing",
+      "hint": "Tests running web apps",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "SAST",
+      "expansion": "Static Application Security Testing",
+      "hint": "Analyzes source code",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "SCA",
+      "expansion": "Software Composition Analysis",
+      "hint": "Scans third-party components",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "WAF",
+      "expansion": "Web Application Firewall",
+      "hint": "Filters HTTP traffic to apps",
+      "category": "Vulnerability"
+    },
+    {
+      "term": "CASB",
+      "expansion": "Cloud Access Security Broker",
+      "hint": "Monitors cloud app use",
+      "category": "Operations"
+    },
+    {
+      "term": "DNS",
+      "expansion": "Domain Name System",
+      "hint": "Name resolution protocol",
+      "category": "Operations"
+    },
+    {
+      "term": "PCAP",
+      "expansion": "Packet Capture",
+      "hint": "Recorded network traffic",
+      "category": "Operations"
+    },
+    {
+      "term": "NetFlow",
+      "expansion": "Network Flow Export",
+      "hint": "Metadata about conversations",
+      "category": "Operations"
+    },
+    {
+      "term": "TLS",
+      "expansion": "Transport Layer Security",
+      "hint": "Encrypts traffic in transit",
+      "category": "Operations"
+    },
+    {
+      "term": "JA3",
+      "expansion": "TLS Client Fingerprint Hash",
+      "hint": "Fingerprints TLS clients",
+      "category": "Operations"
+    },
+    {
+      "term": "IR",
+      "expansion": "Incident Response",
+      "hint": "Process handling security incidents",
+      "category": "Incident"
+    },
+    {
+      "term": "PIR",
+      "expansion": "Post-Incident Review",
+      "hint": "After-action report",
+      "category": "Incident"
+    },
+    {
+      "term": "RFI",
+      "expansion": "Request for Information",
+      "hint": "Gathers vendor/security info",
+      "category": "Reporting"
+    },
+    {
+      "term": "KPI",
+      "expansion": "Key Performance Indicator",
+      "hint": "Measures program effectiveness",
+      "category": "Reporting"
+    },
+    {
+      "term": "KRI",
+      "expansion": "Key Risk Indicator",
+      "hint": "Early warning risk metric",
+      "category": "Reporting"
+    },
+    {
+      "term": "MTTD",
+      "expansion": "Mean Time To Detect",
+      "hint": "Average detection delay",
+      "category": "Reporting"
+    },
+    {
+      "term": "MTTR",
+      "expansion": "Mean Time To Respond/Recover",
+      "hint": "Average response/recovery time",
+      "category": "Reporting"
+    },
+    {
+      "term": "SLA",
+      "expansion": "Service Level Agreement",
+      "hint": "Service expectation contract",
+      "category": "Reporting"
+    },
+    {
+      "term": "GDPR",
+      "expansion": "General Data Protection Regulation",
+      "hint": "EU data protection law",
+      "category": "Reporting"
+    },
+    {
+      "term": "HIPAA",
+      "expansion": "Health Insurance Portability and Accountability Act",
+      "hint": "US health data rules",
+      "category": "Reporting"
+    },
+    {
+      "term": "PCI DSS",
+      "expansion": "Payment Card Industry Data Security Standard",
+      "hint": "Cardholder data standard",
+      "category": "Reporting"
+    },
+    {
+      "term": "FOIA",
+      "expansion": "Freedom of Information Act",
+      "hint": "US public records law",
+      "category": "Reporting"
+    },
+    {
+      "term": "Chain of Custody",
+      "expansion": "Evidence handling record",
+      "hint": "Documents evidence control",
+      "category": "Incident"
+    },
+    {
+      "term": "DFIR",
+      "expansion": "Digital Forensics and Incident Response",
+      "hint": "Forensics plus IR discipline",
+      "category": "Incident"
+    },
+    {
+      "term": "RAM",
+      "expansion": "Random Access Memory",
+      "hint": "Volatile memory for forensics",
+      "category": "Incident"
+    },
+    {
+      "term": "SSD",
+      "expansion": "Solid State Drive",
+      "hint": "Non-volatile storage imaging",
+      "category": "Incident"
+    },
+    {
+      "term": "E01",
+      "expansion": "Expert Witness Format",
+      "hint": "Forensic disk image format",
+      "category": "Incident"
+    },
+    {
+      "term": "CSV",
+      "expansion": "Comma-Separated Values",
+      "hint": "Common export for reporting",
+      "category": "Reporting"
+    },
+    {
+      "term": "JSON",
+      "expansion": "JavaScript Object Notation",
+      "hint": "Structured data interchange",
+      "category": "Reporting"
+    },
+    {
+      "term": "API",
+      "expansion": "Application Programming Interface",
+      "hint": "Programmatic integration",
+      "category": "Operations"
+    },
+    {
+      "term": "IAM",
+      "expansion": "Identity and Access Management",
+      "hint": "Cloud identity controls",
+      "category": "Operations"
+    }
+  ]
+}

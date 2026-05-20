@@ -58,6 +58,8 @@
  * @property {ExamConfig} exam
  * @property {Domain[]} domains
  * @property {Question[]} questions
+ * @property {string} [vendor]
+ * @property {import('./acronym-engine.js').AcronymEntry[]} [acronyms]
  */
 
 const indexCache = { data: /** @type {ExamIndexEntry[]|null} */ (null) };

@@ -1,0 +1,3358 @@
+{
+  "id": "comptia-linux-plus",
+  "name": "CompTIA Linux+",
+  "code": "XK0-005",
+  "vendor": "comptia",
+  "exam": {
+    "totalQuestions": 90,
+    "scoredQuestions": 80,
+    "timeLimitMinutes": 90,
+    "passingScore": 720,
+    "maxScore": 900,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "management",
+      "name": "Domain 1: System Management",
+      "weight": 32,
+      "resources": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Domain 2: Security",
+      "weight": 21,
+      "resources": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "name": "Domain 3: Scripting, Containers, and Automation",
+      "weight": 29,
+      "resources": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "name": "Domain 4: Troubleshooting",
+      "weight": 18,
+      "resources": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cptlin-q001",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which command shows current kernel version?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uname -r"
+        },
+        {
+          "id": "b",
+          "text": "lsblk"
+        },
+        {
+          "id": "c",
+          "text": "whoami"
+        },
+        {
+          "id": "d",
+          "text": "date"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "uname -r prints the running kernel release.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q002",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which file defines static hostname on systemd systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/etc/hostname"
+        },
+        {
+          "id": "b",
+          "text": "/etc/hosts only mappings"
+        },
+        {
+          "id": "c",
+          "text": "/boot/grub.cfg"
+        },
+        {
+          "id": "d",
+          "text": "/var/log/messages"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "/etc/hostname sets the system hostname.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q003",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which command installs packages on RHEL-family systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "dnf or yum"
+        },
+        {
+          "id": "b",
+          "text": "apt on Debian"
+        },
+        {
+          "id": "c",
+          "text": "pacman Arch only"
+        },
+        {
+          "id": "d",
+          "text": "zypper always on RHEL"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RHEL derivatives use dnf/yum.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q004",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which permission octal is rwx for owner, r-- group/other?",
+      "options": [
+        {
+          "id": "a",
+          "text": "744"
+        },
+        {
+          "id": "b",
+          "text": "640"
+        },
+        {
+          "id": "c",
+          "text": "777 always secure"
+        },
+        {
+          "id": "d",
+          "text": "000"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "7= rwx, 4= r-- gives 744.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q005",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which systemd command enables service at boot?",
+      "options": [
+        {
+          "id": "a",
+          "text": "systemctl enable servicename"
+        },
+        {
+          "id": "b",
+          "text": "service start only temp"
+        },
+        {
+          "id": "c",
+          "text": "init.d only legacy always required"
+        },
+        {
+          "id": "d",
+          "text": "kill -9"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "enable creates boot-time symlink.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q006",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which partition should mount /home separately for user data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/home"
+        },
+        {
+          "id": "b",
+          "text": "/boot firmware always on home"
+        },
+        {
+          "id": "c",
+          "text": "/proc virtual"
+        },
+        {
+          "id": "d",
+          "text": "/dev device nodes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Separate /home eases reinstalls and quotas.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q007",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which command lists block devices and filesystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "lsblk -f"
+        },
+        {
+          "id": "b",
+          "text": "ps aux"
+        },
+        {
+          "id": "c",
+          "text": "free -h memory only"
+        },
+        {
+          "id": "d",
+          "text": "id"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "lsblk shows disks, partitions, and FS types.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q008",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which file configures default boot loader entries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/etc/default/grub then grub2-mkconfig"
+        },
+        {
+          "id": "b",
+          "text": "/etc/fstab mounts"
+        },
+        {
+          "id": "c",
+          "text": "/etc/passwd users"
+        },
+        {
+          "id": "d",
+          "text": "/etc/motd banner"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GRUB defaults live in /etc/default/grub.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q009",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which RAID level stripes with parity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAID 5"
+        },
+        {
+          "id": "b",
+          "text": "RAID 0 mirror"
+        },
+        {
+          "id": "c",
+          "text": "RAID 1 stripe only"
+        },
+        {
+          "id": "d",
+          "text": "RAID 10 always parity"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAID 5 uses distributed parity.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q010",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which command adds user with home directory on Linux?",
+      "options": [
+        {
+          "id": "a",
+          "text": "useradd -m username"
+        },
+        {
+          "id": "b",
+          "text": "userdel"
+        },
+        {
+          "id": "c",
+          "text": "groupadd only"
+        },
+        {
+          "id": "d",
+          "text": "passwd only without account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "useradd -m creates home directory.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q011",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which LVM component groups physical volumes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Volume Group (VG)"
+        },
+        {
+          "id": "b",
+          "text": "Logical Volume only"
+        },
+        {
+          "id": "c",
+          "text": "Partition table MBR only"
+        },
+        {
+          "id": "d",
+          "text": "Inode table"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VG pools PVs for LV allocation.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q012",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which cron file is for user-specific jobs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "crontab -e per user"
+        },
+        {
+          "id": "b",
+          "text": "/etc/issue"
+        },
+        {
+          "id": "c",
+          "text": "/etc/hosts"
+        },
+        {
+          "id": "d",
+          "text": "/boot/vmlinuz"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "User crontabs are edited with crontab -e.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q013",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which command shows mounted filesystems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "mount or findmnt"
+        },
+        {
+          "id": "b",
+          "text": "uname"
+        },
+        {
+          "id": "c",
+          "text": "history"
+        },
+        {
+          "id": "d",
+          "text": "alias"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "mount/findmnt list active mounts.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q014",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which signal gracefully terminates process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SIGTERM (15)"
+        },
+        {
+          "id": "b",
+          "text": "SIGKILL first always required"
+        },
+        {
+          "id": "c",
+          "text": "SIGSTOP to terminate"
+        },
+        {
+          "id": "d",
+          "text": "SIGHUP only logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SIGTERM allows cleanup before exit.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q015",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which environment file sets locale system-wide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/etc/locale.conf or /etc/default/locale"
+        },
+        {
+          "id": "b",
+          "text": "/etc/shadow passwords"
+        },
+        {
+          "id": "c",
+          "text": "/etc/sudoers"
+        },
+        {
+          "id": "d",
+          "text": "/root/.bashrc only one user"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "System locale configured in locale files.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q016",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which command changes file owner?",
+      "options": [
+        {
+          "id": "a",
+          "text": "chown user:group file"
+        },
+        {
+          "id": "b",
+          "text": "chmod changes mode not owner"
+        },
+        {
+          "id": "c",
+          "text": "chgrp only group sometimes"
+        },
+        {
+          "id": "d",
+          "text": "umask shell default"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "chown sets user and group ownership.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q017",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which tool partitions disks interactively?",
+      "options": [
+        {
+          "id": "a",
+          "text": "fdisk or parted"
+        },
+        {
+          "id": "b",
+          "text": "nano text only"
+        },
+        {
+          "id": "c",
+          "text": "curl download"
+        },
+        {
+          "id": "d",
+          "text": "ssh remote shell"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "fdisk/parted manage partition tables.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q018",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "Which log holds systemd journal persistent entries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/var/log/journal/ with journalctl"
+        },
+        {
+          "id": "b",
+          "text": "/tmp only volatile always"
+        },
+        {
+          "id": "c",
+          "text": "/etc/motd"
+        },
+        {
+          "id": "d",
+          "text": "/dev/null permanent store joke"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "journalctl reads systemd journal.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q019",
+      "domain": "management",
+      "type": "multiple-response",
+      "text": "Which TWO are valid package managers? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "apt"
+        },
+        {
+          "id": "b",
+          "text": "npm only always system"
+        },
+        {
+          "id": "c",
+          "text": "dnf"
+        },
+        {
+          "id": "d",
+          "text": "pip for kernel modules always"
+        },
+        {
+          "id": "e",
+          "text": "zypper"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "apt, dnf, and zypper manage distro packages.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q020",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental management item 1: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q021",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental management item 2: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q022",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental management item 3: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q023",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental management item 4: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q024",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental management item 5: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q025",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental management item 6: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q026",
+      "domain": "management",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental management item 7: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q027",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which file stores hashed passwords?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/etc/shadow"
+        },
+        {
+          "id": "b",
+          "text": "/etc/passwd public fields"
+        },
+        {
+          "id": "c",
+          "text": "/etc/group"
+        },
+        {
+          "id": "d",
+          "text": "/etc/hosts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shadow stores password hashes readable by root.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q028",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which command sets SELinux mode enforcing temporarily?",
+      "options": [
+        {
+          "id": "a",
+          "text": "setenforce 1"
+        },
+        {
+          "id": "b",
+          "text": "getenforce only view"
+        },
+        {
+          "id": "c",
+          "text": "semanage only persistent"
+        },
+        {
+          "id": "d",
+          "text": "iptables"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "setenforce toggles enforcing/permissive until reboot if not persistent.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q029",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which SSH config disables root login?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PermitRootLogin no in sshd_config"
+        },
+        {
+          "id": "b",
+          "text": "Port 22 only change"
+        },
+        {
+          "id": "c",
+          "text": "AllowUsers root only"
+        },
+        {
+          "id": "d",
+          "text": "PasswordAuthentication yes always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Disabling root SSH reduces brute force risk.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q030",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which firewall tool on RHEL 8+ is default?",
+      "options": [
+        {
+          "id": "a",
+          "text": "firewalld (nftables backend)"
+        },
+        {
+          "id": "b",
+          "text": "iptables legacy only always"
+        },
+        {
+          "id": "c",
+          "text": "ufw on RHEL default"
+        },
+        {
+          "id": "d",
+          "text": "Windows Defender"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "firewalld manages zones on RHEL family.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q031",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which permission on private key file is recommended?",
+      "options": [
+        {
+          "id": "a",
+          "text": "600"
+        },
+        {
+          "id": "b",
+          "text": "777"
+        },
+        {
+          "id": "c",
+          "text": "644 world readable private key bad"
+        },
+        {
+          "id": "d",
+          "text": "1777 sticky"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Private keys should be user-read/write only.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q032",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which PAM module can deny login after failures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pam_tally2/faillock class"
+        },
+        {
+          "id": "b",
+          "text": "pam_loginui GUI"
+        },
+        {
+          "id": "c",
+          "text": "pam_coffee"
+        },
+        {
+          "id": "d",
+          "text": "pam_printer"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Account lockout modules limit guessing.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q033",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which command lists SELinux context of file?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ls -Z"
+        },
+        {
+          "id": "b",
+          "text": "ls -l only DAC"
+        },
+        {
+          "id": "c",
+          "text": "chmod"
+        },
+        {
+          "id": "d",
+          "text": "df -h"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ls -Z shows SELinux security context.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q034",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which GPG use case signs packages in repo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RPM/DEB repository signing"
+        },
+        {
+          "id": "b",
+          "text": "Disk defrag"
+        },
+        {
+          "id": "c",
+          "text": "CPU governor"
+        },
+        {
+          "id": "d",
+          "text": "Wi-Fi SSID"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Signed repos prevent tampered packages.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q035",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which sudoers directive runs command as root?",
+      "options": [
+        {
+          "id": "a",
+          "text": "user ALL=(ALL) ALL carefully scoped"
+        },
+        {
+          "id": "b",
+          "text": "NOPASSWD: ALL for everyone always"
+        },
+        {
+          "id": "c",
+          "text": "Allow any binary"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "sudo grants elevated commands with audit.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q036",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which audit framework logs syscalls on Linux?",
+      "options": [
+        {
+          "id": "a",
+          "text": "auditd"
+        },
+        {
+          "id": "b",
+          "text": "cups printing"
+        },
+        {
+          "id": "c",
+          "text": "bluetoothd"
+        },
+        {
+          "id": "d",
+          "text": "cron only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "auditd records security-relevant events.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q037",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which SSH key type is modern default?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ed25519"
+        },
+        {
+          "id": "b",
+          "text": "RSA 512 weak"
+        },
+        {
+          "id": "c",
+          "text": "DSA deprecated"
+        },
+        {
+          "id": "d",
+          "text": "HTTP key"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ed25519 offers strong security and performance.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q038",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which file limits login attempts in sshd?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MaxAuthTries in sshd_config"
+        },
+        {
+          "id": "b",
+          "text": "PermitEmptyPasswords yes bad"
+        },
+        {
+          "id": "c",
+          "text": "X11Forwarding only"
+        },
+        {
+          "id": "d",
+          "text": "Banner only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MaxAuthTries caps authentication attempts.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q039",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which command updates CA trust store on RHEL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "update-ca-trust"
+        },
+        {
+          "id": "b",
+          "text": "apt update"
+        },
+        {
+          "id": "c",
+          "text": "grub-install"
+        },
+        {
+          "id": "d",
+          "text": "fsck"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "update-ca-trust refreshes system CAs.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q040",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which kernel parameter hardens IP forwarding when not router?",
+      "options": [
+        {
+          "id": "a",
+          "text": "net.ipv4.ip_forward=0"
+        },
+        {
+          "id": "b",
+          "text": "enable always"
+        },
+        {
+          "id": "c",
+          "text": "ignore routing"
+        },
+        {
+          "id": "d",
+          "text": "disable firewall"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Disable forwarding on non-router hosts.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q041",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which tool scans packages for known CVEs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "vendor scanner / trivy on packages"
+        },
+        {
+          "id": "b",
+          "text": "figlet banner"
+        },
+        {
+          "id": "c",
+          "text": " cowsay"
+        },
+        {
+          "id": "d",
+          "text": "fortune"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Package scanners match versions to CVE databases.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q042",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which access control uses MAC labels on RHEL?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SELinux"
+        },
+        {
+          "id": "b",
+          "text": "UAC Windows"
+        },
+        {
+          "id": "c",
+          "text": "Gatekeeper macOS only"
+        },
+        {
+          "id": "d",
+          "text": "BIOS password only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SELinux enforces mandatory access control.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q043",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which fail2ban action modifies firewall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ban IP via iptables/nftables integration"
+        },
+        {
+          "id": "b",
+          "text": "send postcard"
+        },
+        {
+          "id": "c",
+          "text": "print ticket"
+        },
+        {
+          "id": "d",
+          "text": "change wallpaper"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "fail2ban triggers firewall blocks on abuse.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q044",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which file should never be world-writable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/etc/passwd and critical system files"
+        },
+        {
+          "id": "b",
+          "text": "/tmp can be sticky 1777"
+        },
+        {
+          "id": "c",
+          "text": "world writable shadow good"
+        },
+        {
+          "id": "d",
+          "text": "777 /etc/shadow"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Critical system files must not be world-writable.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q045",
+      "domain": "security",
+      "type": "multiple-response",
+      "text": "Which TWO harden SSH? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Key-based auth"
+        },
+        {
+          "id": "b",
+          "text": "PermitRootLogin yes always"
+        },
+        {
+          "id": "c",
+          "text": "Disable weak ciphers"
+        },
+        {
+          "id": "d",
+          "text": "Use telnet instead"
+        },
+        {
+          "id": "e",
+          "text": "Change default port optionally plus controls"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Keys, strong ciphers, and hardening reduce SSH risk.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q046",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which shebang uses bash?",
+      "options": [
+        {
+          "id": "a",
+          "text": "#!/bin/bash"
+        },
+        {
+          "id": "b",
+          "text": "#!/bin/python always bash"
+        },
+        {
+          "id": "c",
+          "text": "#!/bin/sh only forbidden"
+        },
+        {
+          "id": "d",
+          "text": "#!no shebang required always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shebang selects interpreter.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q047",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which Ansible file defines tasks against hosts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Playbook YAML"
+        },
+        {
+          "id": "b",
+          "text": "Inventory only hosts list"
+        },
+        {
+          "id": "c",
+          "text": "ansible.cfg only"
+        },
+        {
+          "id": "d",
+          "text": "hosts file DNS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Playbooks declare tasks and roles.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q048",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which Git command shows working tree changes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "git status"
+        },
+        {
+          "id": "b",
+          "text": "git push deploy"
+        },
+        {
+          "id": "c",
+          "text": "git init first time only"
+        },
+        {
+          "id": "d",
+          "text": "git remote"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "git status shows modified/untracked files.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q049",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which container command runs interactive shell in image?",
+      "options": [
+        {
+          "id": "a",
+          "text": "docker run -it image /bin/bash"
+        },
+        {
+          "id": "b",
+          "text": "docker delete only"
+        },
+        {
+          "id": "c",
+          "text": "docker network only"
+        },
+        {
+          "id": "d",
+          "text": "docker volume only always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "docker run -it starts interactive container.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q050",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which systemd unit type is timer?",
+      "options": [
+        {
+          "id": "a",
+          "text": ".timer unit"
+        },
+        {
+          "id": "b",
+          "text": ".socket only network"
+        },
+        {
+          "id": "c",
+          "text": ".mount only"
+        },
+        {
+          "id": "d",
+          "text": ".path only always required"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Timers schedule systemd services.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q051",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which CI stage runs automated tests on commit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CI pipeline test stage"
+        },
+        {
+          "id": "b",
+          "text": "Manual fax only"
+        },
+        {
+          "id": "c",
+          "text": "Production deploy only always first"
+        },
+        {
+          "id": "d",
+          "text": "Ignore hooks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CI runs tests on each change.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q052",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which Python construct loops over list?",
+      "options": [
+        {
+          "id": "a",
+          "text": "for item in list:"
+        },
+        {
+          "id": "b",
+          "text": "while True infinite only"
+        },
+        {
+          "id": "c",
+          "text": "goto"
+        },
+        {
+          "id": "d",
+          "text": "switch case native"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "for loops iterate sequences in Python.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q053",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which kubectl command applies manifest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "kubectl apply -f file.yaml"
+        },
+        {
+          "id": "b",
+          "text": "kubectl delete only"
+        },
+        {
+          "id": "c",
+          "text": "kubectl config only"
+        },
+        {
+          "id": "d",
+          "text": "kubectl version only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "apply reconciles desired state from YAML.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q054",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which infrastructure approach defines resources in code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Infrastructure as Code (Terraform/Ansible class)"
+        },
+        {
+          "id": "b",
+          "text": "Manual click ops only"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet CMDB only"
+        },
+        {
+          "id": "d",
+          "text": "Sticky note diagram"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IaC versions infrastructure definitions.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q055",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which shell variable is exit code of last command?",
+      "options": [
+        {
+          "id": "a",
+          "text": "$?"
+        },
+        {
+          "id": "b",
+          "text": "$$ PID"
+        },
+        {
+          "id": "c",
+          "text": "$# arg count"
+        },
+        {
+          "id": "d",
+          "text": "$0 script name"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "$? holds last command return status.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q056",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which Dockerfile instruction sets base image?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FROM"
+        },
+        {
+          "id": "b",
+          "text": "RUN executes build step"
+        },
+        {
+          "id": "c",
+          "text": "CMD default command"
+        },
+        {
+          "id": "d",
+          "text": "COPY files"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FROM selects starting image layer.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q057",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which cron special string runs daily?",
+      "options": [
+        {
+          "id": "a",
+          "text": "@daily"
+        },
+        {
+          "id": "b",
+          "text": "@reboot only startup"
+        },
+        {
+          "id": "c",
+          "text": "@yearly only"
+        },
+        {
+          "id": "d",
+          "text": "@manual"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "@daily is midnight shortcut.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q058",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which Git branching model uses main and feature branches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Feature branch workflow"
+        },
+        {
+          "id": "b",
+          "text": "No branches ever"
+        },
+        {
+          "id": "c",
+          "text": "Single commit only"
+        },
+        {
+          "id": "d",
+          "text": "Delete history daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Feature branches isolate work.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q059",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which podman difference from docker daemon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rootless containers without central daemon"
+        },
+        {
+          "id": "b",
+          "text": "Requires Windows only"
+        },
+        {
+          "id": "c",
+          "text": "No OCI support"
+        },
+        {
+          "id": "d",
+          "text": "Cannot run containers"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Podman can run rootless without dockerd.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q060",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which YAML feature defines reusable task collections in Ansible?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roles"
+        },
+        {
+          "id": "b",
+          "text": "Handlers only notify"
+        },
+        {
+          "id": "c",
+          "text": "Inventory groups only"
+        },
+        {
+          "id": "d",
+          "text": "Vault only encrypt"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Roles bundle tasks, vars, and templates.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q061",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which shell test checks file exists?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[ -f file ]"
+        },
+        {
+          "id": "b",
+          "text": "[ -d directory only ]"
+        },
+        {
+          "id": "c",
+          "text": "grep file"
+        },
+        {
+          "id": "d",
+          "text": "echo file"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "-f tests regular file existence.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q062",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which version manager helps multiple Python versions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pyenv class tool"
+        },
+        {
+          "id": "b",
+          "text": "only system python frozen"
+        },
+        {
+          "id": "c",
+          "text": "notepad"
+        },
+        {
+          "id": "d",
+          "text": "cups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "pyenv manages parallel Python installs.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q063",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "Which git hook runs before commit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pre-commit hook"
+        },
+        {
+          "id": "b",
+          "text": "post-merge only"
+        },
+        {
+          "id": "c",
+          "text": "pre-push only deploy"
+        },
+        {
+          "id": "d",
+          "text": "no hooks exist"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "pre-commit can lint/test before commit completes.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q064",
+      "domain": "automation",
+      "type": "multiple-response",
+      "text": "Which TWO are container best practices? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Run as non-root user"
+        },
+        {
+          "id": "b",
+          "text": "Use latest tag only always in prod"
+        },
+        {
+          "id": "c",
+          "text": "Scan images for CVEs"
+        },
+        {
+          "id": "d",
+          "text": "Store secrets in image layers"
+        },
+        {
+          "id": "e",
+          "text": "Pin image digests/tags"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Non-root, scanning, and pinning improve container security.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q065",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental automation item 1: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q066",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental automation item 2: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q067",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental automation item 3: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q068",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental automation item 4: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q069",
+      "domain": "automation",
+      "type": "multiple-choice",
+      "text": "(comptia-linux-plus pool) Supplemental automation item 5: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q070",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which command traces route to remote host?",
+      "options": [
+        {
+          "id": "a",
+          "text": "traceroute or tracepath"
+        },
+        {
+          "id": "b",
+          "text": "touch file"
+        },
+        {
+          "id": "c",
+          "text": "mkdir"
+        },
+        {
+          "id": "d",
+          "text": "cal calendar"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Traceroute shows hops and latency.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q071",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which log priority is critical kernel messages?",
+      "options": [
+        {
+          "id": "a",
+          "text": "kern crit in dmesg/journal"
+        },
+        {
+          "id": "b",
+          "text": "debug only"
+        },
+        {
+          "id": "c",
+          "text": "info only"
+        },
+        {
+          "id": "d",
+          "text": "user mail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Critical kernel issues appear in dmesg.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q072",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Server boot drops to emergency mode. Likely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/etc/fstab UUID typo prevents mount"
+        },
+        {
+          "id": "b",
+          "text": "GPU driver marketing"
+        },
+        {
+          "id": "c",
+          "text": "User typo in email"
+        },
+        {
+          "id": "d",
+          "text": "DNS MX wrong"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bad fstab entries trigger emergency mode.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q073",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which command checks listening TCP ports?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ss -tlnp"
+        },
+        {
+          "id": "b",
+          "text": "df -h disk"
+        },
+        {
+          "id": "c",
+          "text": "free -m"
+        },
+        {
+          "id": "d",
+          "text": "who"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ss lists listening sockets with processes.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q074",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "High load average, low CPU. Suspect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I/O wait or blocked processes"
+        },
+        {
+          "id": "b",
+          "text": "CPU always at fault"
+        },
+        {
+          "id": "c",
+          "text": "Network cable color"
+        },
+        {
+          "id": "d",
+          "text": "Monitor brightness"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Load can reflect uninterruptible I/O wait.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q075",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Permission denied on script. Fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "chmod +x script or invoke with bash"
+        },
+        {
+          "id": "b",
+          "text": "Delete script"
+        },
+        {
+          "id": "c",
+          "text": "Rename only"
+        },
+        {
+          "id": "d",
+          "text": "Disable SELinux always first"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Execute bit or explicit interpreter needed.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q076",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "DNS resolution fails on host. Check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/etc/resolv.conf nameservers and dig test"
+        },
+        {
+          "id": "b",
+          "text": "/etc/shadow"
+        },
+        {
+          "id": "c",
+          "text": "/boot only"
+        },
+        {
+          "id": "d",
+          "text": "/dev/random"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resolver config and queries diagnose DNS.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q077",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Out of disk space on /. Find large files?",
+      "options": [
+        {
+          "id": "a",
+          "text": "du -sh /* and journalctl --disk-usage"
+        },
+        {
+          "id": "b",
+          "text": "format disk immediately"
+        },
+        {
+          "id": "c",
+          "text": "ignore"
+        },
+        {
+          "id": "d",
+          "text": "disable logging always only fix"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "du and journal size help locate usage.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q078",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Service fails with SELinux denial. Tool?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ausearch / audit2why and booleans"
+        },
+        {
+          "id": "b",
+          "text": "turn off SELinux permanently first always"
+        },
+        {
+          "id": "c",
+          "text": "delete logs"
+        },
+        {
+          "id": "d",
+          "text": "chmod 777"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Audit logs and booleans address SELinux denials.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q079",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Network interface down after reboot. Check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ONBOOT=yes in ifcfg or netplan config"
+        },
+        {
+          "id": "b",
+          "text": "random reboot again only"
+        },
+        {
+          "id": "c",
+          "text": "change hostname only"
+        },
+        {
+          "id": "d",
+          "text": "edit /etc/shadow"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Persistent config must enable interface at boot.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q080",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Cron job not running. Verify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crontab syntax, service crond active, and paths"
+        },
+        {
+          "id": "b",
+          "text": "Assume cron broken OS-wide"
+        },
+        {
+          "id": "c",
+          "text": "Disable firewalld only fix"
+        },
+        {
+          "id": "d",
+          "text": "Reinstall kernel daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cron issues often syntax, service, or environment PATH.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q081",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Memory leak suspected on process. Command?",
+      "options": [
+        {
+          "id": "a",
+          "text": "top/htop or ps aux --sort=-%mem"
+        },
+        {
+          "id": "b",
+          "text": "fdisk"
+        },
+        {
+          "id": "c",
+          "text": "parted"
+        },
+        {
+          "id": "d",
+          "text": "cal"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Process monitors show RSS growth over time.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q082",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Cannot sudo despite group membership. Cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Require tty, expired password, or sudoers rule"
+        },
+        {
+          "id": "b",
+          "text": "GPU driver"
+        },
+        {
+          "id": "c",
+          "text": "Monitor cable"
+        },
+        {
+          "id": "d",
+          "text": "Printer queue"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "sudoers and PAM settings restrict elevation.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q083",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "SSH host key changed warning. Action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verify out-of-band before accepting new key"
+        },
+        {
+          "id": "b",
+          "text": "Always accept blindly"
+        },
+        {
+          "id": "c",
+          "text": "Disable encryption"
+        },
+        {
+          "id": "d",
+          "text": "Share private key"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Host key changes may indicate MITM.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q084",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Filesystem read-only remounted. Check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "dmesg for disk errors and smartctl health"
+        },
+        {
+          "id": "b",
+          "text": "DNS"
+        },
+        {
+          "id": "c",
+          "text": "NTP only"
+        },
+        {
+          "id": "d",
+          "text": "Locale"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Disk errors trigger read-only remounts protecting data.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q085",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Container cannot bind port 80. Reason?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-root cannot bind privileged ports or port in use"
+        },
+        {
+          "id": "b",
+          "text": "Always kernel bug"
+        },
+        {
+          "id": "c",
+          "text": "Need more RGB"
+        },
+        {
+          "id": "d",
+          "text": "Disable network"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ports below 1024 or conflicts block bind.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q086",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "System time skew breaks Kerberos/ TLS. Fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enable chronyd/systemd-timesyncd sync"
+        },
+        {
+          "id": "b",
+          "text": "Set random time"
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS"
+        },
+        {
+          "id": "d",
+          "text": "Ignore certificates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Time sync is required for auth and certs.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    },
+    {
+      "id": "cptlin-q087",
+      "domain": "troubleshooting",
+      "type": "multiple-response",
+      "text": "Which TWO diagnose network connectivity? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "ping"
+        },
+        {
+          "id": "b",
+          "text": "Cable toner only app layer"
+        },
+        {
+          "id": "c",
+          "text": "curl/telnet to port"
+        },
+        {
+          "id": "d",
+          "text": "chmod network"
+        },
+        {
+          "id": "e",
+          "text": "traceroute"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "ping, port tests, and traceroute test connectivity layers.",
+      "docs": [
+        {
+          "title": "Linux+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/linux"
+        }
+      ]
+    }
+  ],
+  "acronyms": [
+    {
+      "term": "CLI",
+      "expansion": "Command Line Interface",
+      "hint": "Text-based shell control",
+      "category": "Management"
+    },
+    {
+      "term": "GUI",
+      "expansion": "Graphical User Interface",
+      "hint": "Visual desktop environment",
+      "category": "Management"
+    },
+    {
+      "term": "SSH",
+      "expansion": "Secure Shell",
+      "hint": "Encrypted remote administration",
+      "category": "Security"
+    },
+    {
+      "term": "SFTP",
+      "expansion": "SSH File Transfer Protocol",
+      "hint": "Secure file transfer over SSH",
+      "category": "Security"
+    },
+    {
+      "term": "SCP",
+      "expansion": "Secure Copy Protocol",
+      "hint": "Copy files over SSH",
+      "category": "Security"
+    },
+    {
+      "term": "sudo",
+      "expansion": "SuperUser DO",
+      "hint": "Runs commands as root with policy",
+      "category": "Security"
+    },
+    {
+      "term": "PAM",
+      "expansion": "Pluggable Authentication Modules",
+      "hint": "Linux authentication framework",
+      "category": "Security"
+    },
+    {
+      "term": "SELinux",
+      "expansion": "Security-Enhanced Linux",
+      "hint": "Mandatory access control on Linux",
+      "category": "Security"
+    },
+    {
+      "term": "AppArmor",
+      "expansion": "Application Armor",
+      "hint": "Path-based MAC on Linux",
+      "category": "Security"
+    },
+    {
+      "term": "ACL",
+      "expansion": "Access Control List",
+      "hint": "Fine-grained POSIX permissions",
+      "category": "Security"
+    },
+    {
+      "term": "UID",
+      "expansion": "User Identifier",
+      "hint": "Numeric user ID",
+      "category": "Management"
+    },
+    {
+      "term": "GID",
+      "expansion": "Group Identifier",
+      "hint": "Numeric group ID",
+      "category": "Management"
+    },
+    {
+      "term": "PID",
+      "expansion": "Process Identifier",
+      "hint": "Unique process number",
+      "category": "Management"
+    },
+    {
+      "term": "PPID",
+      "expansion": "Parent Process Identifier",
+      "hint": "PID of parent process",
+      "category": "Management"
+    },
+    {
+      "term": "systemd",
+      "expansion": "System Daemon",
+      "hint": "Init and service manager",
+      "category": "Management"
+    },
+    {
+      "term": "GRUB",
+      "expansion": "GRand Unified Bootloader",
+      "hint": "Boot loader on many distros",
+      "category": "Management"
+    },
+    {
+      "term": "UEFI",
+      "expansion": "Unified Extensible Firmware Interface",
+      "hint": "Modern firmware interface",
+      "category": "Management"
+    },
+    {
+      "term": "LVM",
+      "expansion": "Logical Volume Manager",
+      "hint": "Flexible disk volume management",
+      "category": "Storage"
+    },
+    {
+      "term": "PV",
+      "expansion": "Physical Volume",
+      "hint": "LVM disk component",
+      "category": "Storage"
+    },
+    {
+      "term": "VG",
+      "expansion": "Volume Group",
+      "hint": "LVM pool of PVs",
+      "category": "Storage"
+    },
+    {
+      "term": "LV",
+      "expansion": "Logical Volume",
+      "hint": "LVM formatted volume",
+      "category": "Storage"
+    },
+    {
+      "term": "RAID",
+      "expansion": "Redundant Array of Independent Disks",
+      "hint": "Disk redundancy/performance",
+      "category": "Storage"
+    },
+    {
+      "term": "EXT4",
+      "expansion": "Fourth Extended Filesystem",
+      "hint": "Common Linux filesystem",
+      "category": "Storage"
+    },
+    {
+      "term": "XFS",
+      "expansion": "X File System",
+      "hint": "High-performance journaling FS",
+      "category": "Storage"
+    },
+    {
+      "term": "Btrfs",
+      "expansion": "B-Tree File System",
+      "hint": "Copy-on-write filesystem",
+      "category": "Storage"
+    },
+    {
+      "term": "NFS",
+      "expansion": "Network File System",
+      "hint": "Remote file sharing protocol",
+      "category": "Storage"
+    },
+    {
+      "term": "CIFS",
+      "expansion": "Common Internet File System",
+      "hint": "SMB file sharing protocol",
+      "category": "Storage"
+    },
+    {
+      "term": "cron",
+      "expansion": "Chronograph (scheduled jobs)",
+      "hint": "Time-based job scheduler",
+      "category": "Automation"
+    },
+    {
+      "term": "at",
+      "expansion": "At (scheduled once)",
+      "hint": "One-time job scheduler",
+      "category": "Automation"
+    },
+    {
+      "term": "YAML",
+      "expansion": "YAML Ain't Markup Language",
+      "hint": "Data format for Ansible/K8s",
+      "category": "Automation"
+    },
+    {
+      "term": "JSON",
+      "expansion": "JavaScript Object Notation",
+      "hint": "Structured config/data format",
+      "category": "Automation"
+    },
+    {
+      "term": "Git",
+      "expansion": "Global Information Tracker",
+      "hint": "Distributed version control",
+      "category": "Automation"
+    },
+    {
+      "term": "CI/CD",
+      "expansion": "Continuous Integration/Continuous Delivery",
+      "hint": "Automated build/deploy pipeline",
+      "category": "Automation"
+    },
+    {
+      "term": "Docker",
+      "expansion": "Container runtime platform",
+      "hint": "Packages apps in containers",
+      "category": "Automation"
+    },
+    {
+      "term": "Podman",
+      "expansion": "Pod Manager",
+      "hint": "Daemonless container engine",
+      "category": "Automation"
+    },
+    {
+      "term": "Kubernetes",
+      "expansion": "K8s container orchestrator",
+      "hint": "Orchestrates container workloads",
+      "category": "Automation"
+    },
+    {
+      "term": "kubectl",
+      "expansion": "Kubernetes control CLI",
+      "hint": "CLI for Kubernetes API",
+      "category": "Automation"
+    },
+    {
+      "term": "Ansible",
+      "expansion": "Automation engine",
+      "hint": "Agentless configuration management",
+      "category": "Automation"
+    },
+    {
+      "term": "Terraform",
+      "expansion": "Infrastructure as Code tool",
+      "hint": "Provisions cloud resources",
+      "category": "Automation"
+    },
+    {
+      "term": "bash",
+      "expansion": "Bourne Again SHell",
+      "hint": "Common Linux shell",
+      "category": "Automation"
+    },
+    {
+      "term": "shebang",
+      "expansion": "#! interpreter line",
+      "hint": "Script interpreter directive",
+      "category": "Automation"
+    },
+    {
+      "term": "APT",
+      "expansion": "Advanced Package Tool",
+      "hint": "Debian/Ubuntu package manager",
+      "category": "Management"
+    },
+    {
+      "term": "DNF",
+      "expansion": "Dandified YUM",
+      "hint": "Fedora/RHEL package manager",
+      "category": "Management"
+    },
+    {
+      "term": "RPM",
+      "expansion": "Red Hat Package Manager",
+      "hint": "Package format on RHEL family",
+      "category": "Management"
+    },
+    {
+      "term": "journald",
+      "expansion": "Systemd journal daemon",
+      "hint": "Binary system logging",
+      "category": "Troubleshooting"
+    },
+    {
+      "term": "dmesg",
+      "expansion": "Display message",
+      "hint": "Kernel ring buffer messages",
+      "category": "Troubleshooting"
+    },
+    {
+      "term": "strace",
+      "expansion": "System call trace",
+      "hint": "Traces process syscalls",
+      "category": "Troubleshooting"
+    },
+    {
+      "term": "tcpdump",
+      "expansion": "TCP dump",
+      "hint": "Captures network packets",
+      "category": "Troubleshooting"
+    },
+    {
+      "term": "iptables",
+      "expansion": "IP tables firewall",
+      "hint": "Legacy netfilter frontend",
+      "category": "Security"
+    },
+    {
+      "term": "nftables",
+      "expansion": "Netfilter tables",
+      "hint": "Modern netfilter framework",
+      "category": "Security"
+    },
+    {
+      "term": "firewalld",
+      "expansion": "Dynamic firewall daemon",
+      "hint": "Zone-based firewall on RHEL",
+      "category": "Security"
+    },
+    {
+      "term": "GPG",
+      "expansion": "GNU Privacy Guard",
+      "hint": "Encryption and signing tool",
+      "category": "Security"
+    }
+  ]
+}

@@ -573,6 +573,152 @@ main {
   text-decoration: underline;
 }
 
+.cert-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.cert-acronym-callout {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--aws-orange);
+  box-shadow: var(--shadow);
+}
+
+.cert-acronym-callout h3 {
+  margin: 0 0 0.5rem;
+}
+
+.cert-acronym-callout p {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Acronym study */
+.acronym-root {
+  margin-top: 1rem;
+}
+
+.acronym-intro p {
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0 0 0.85rem;
+}
+
+.acronym-intro-meta {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.acronym-mode-label {
+  display: block;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.acronym-mode-select {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 0.35rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.acronym-quiz {
+  padding: 1.25rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.acronym-progress {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.acronym-prompt-label {
+  margin: 1rem 0 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.acronym-prompt {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--heading-accent);
+}
+
+.acronym-hint {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.acronym-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.acronym-option {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.95rem;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.acronym-option:hover:not(:disabled) {
+  border-color: var(--aws-orange);
+}
+
+.acronym-option:disabled {
+  cursor: default;
+}
+
+.acronym-option.correct {
+  border-color: var(--aws-green);
+  background: color-mix(in srgb, var(--aws-green) 12%, var(--bg));
+}
+
+.acronym-option.incorrect {
+  border-color: var(--aws-red);
+  background: color-mix(in srgb, var(--aws-red) 10%, var(--bg));
+}
+
+.acronym-feedback {
+  margin: 1rem 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.acronym-results {
+  padding: 1.25rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.acronym-score {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
 /* Cert practice home */
 .hero {
   text-align: center;

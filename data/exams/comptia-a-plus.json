@@ -1,0 +1,3873 @@
+{
+  "id": "comptia-a-plus",
+  "name": "CompTIA A+",
+  "code": "220-1101 / 1102",
+  "vendor": "comptia",
+  "exam": {
+    "totalQuestions": 85,
+    "scoredQuestions": 75,
+    "timeLimitMinutes": 90,
+    "passingScore": 675,
+    "maxScore": 900,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "mobile-devices",
+      "name": "Domain 1: Mobile Devices",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "Domain 2: Networking",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "name": "Domain 3: Hardware",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "virtualization-cloud",
+      "name": "Domain 4: Virtualization and Cloud",
+      "weight": 11,
+      "resources": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "name": "Domain 5: Hardware and Network Troubleshooting",
+      "weight": 29,
+      "resources": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cptapl-q001",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which connector is most common on modern Android smartphones for charging and data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "USB-C"
+        },
+        {
+          "id": "b",
+          "text": "Micro-USB"
+        },
+        {
+          "id": "c",
+          "text": "Mini-USB"
+        },
+        {
+          "id": "d",
+          "text": "FireWire 400"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "USB-C is the standard reversible connector on current mobile devices.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q002",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "A technician must replace a damaged charging port on a flagship phone. Which port type is most likely required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "USB-C"
+        },
+        {
+          "id": "b",
+          "text": "Micro-USB"
+        },
+        {
+          "id": "c",
+          "text": "Mini-USB"
+        },
+        {
+          "id": "d",
+          "text": "FireWire 400"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "USB-C is the standard reversible connector on current mobile devices.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q003",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which mobile feature uses short-range NFC for contactless payments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tap to pay (NFC)"
+        },
+        {
+          "id": "b",
+          "text": "GPS triangulation"
+        },
+        {
+          "id": "c",
+          "text": "802.11ac only"
+        },
+        {
+          "id": "d",
+          "text": "LiDAR mapping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "NFC enables proximity-based transactions on mobile wallets.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q004",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which iOS setting remotely locks and displays a message on a lost device?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lost Mode in Find My"
+        },
+        {
+          "id": "b",
+          "text": "AirDrop"
+        },
+        {
+          "id": "c",
+          "text": "Handoff"
+        },
+        {
+          "id": "d",
+          "text": "Screen Time"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lost Mode locks the device and can show owner contact info via iCloud.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q005",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "An iPhone is missing. Which feature lets IT lock it and show a recovery phone number?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lost Mode in Find My"
+        },
+        {
+          "id": "b",
+          "text": "AirDrop"
+        },
+        {
+          "id": "c",
+          "text": "Handoff"
+        },
+        {
+          "id": "d",
+          "text": "Screen Time"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lost Mode locks the device and can show owner contact info via iCloud.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q006",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which Android permission category controls access to the device camera?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Camera"
+        },
+        {
+          "id": "b",
+          "text": "Storage manager"
+        },
+        {
+          "id": "c",
+          "text": "NFC"
+        },
+        {
+          "id": "d",
+          "text": "Developer options"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Camera permission gates photo/video capture apps.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q007",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which laptop feature converts a 2-in-1 into tablet mode via a rotating hinge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Convertible (360-degree hinge)"
+        },
+        {
+          "id": "b",
+          "text": "Docking station"
+        },
+        {
+          "id": "c",
+          "text": "KVM switch"
+        },
+        {
+          "id": "d",
+          "text": "RAID 0"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Convertibles use rotating or detachable hinges for tablet use.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q008",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which cellular generation introduced LTE-Advanced with higher throughput?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4G LTE"
+        },
+        {
+          "id": "b",
+          "text": "2G GSM"
+        },
+        {
+          "id": "c",
+          "text": "3G EDGE"
+        },
+        {
+          "id": "d",
+          "text": "1G analog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "4G LTE brought broadband-class mobile data speeds.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q009",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Users report slow mobile data on an older phone limited to EDGE. Which generation should they upgrade toward for LTE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4G LTE"
+        },
+        {
+          "id": "b",
+          "text": "2G GSM"
+        },
+        {
+          "id": "c",
+          "text": "3G EDGE"
+        },
+        {
+          "id": "d",
+          "text": "1G analog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "4G LTE brought broadband-class mobile data speeds.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q010",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which mobile OS component sandboxed apps to limit cross-app data access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application sandbox"
+        },
+        {
+          "id": "b",
+          "text": "Boot loader"
+        },
+        {
+          "id": "c",
+          "text": "Kernel panic handler"
+        },
+        {
+          "id": "d",
+          "text": "CMOS battery"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mobile OSes isolate apps in sandboxes for security.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q011",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which accessory extends laptop ports when the mobile device has limited I/O?",
+      "options": [
+        {
+          "id": "a",
+          "text": "USB-C hub or docking station"
+        },
+        {
+          "id": "b",
+          "text": "Surge protector only"
+        },
+        {
+          "id": "c",
+          "text": "PoE injector"
+        },
+        {
+          "id": "d",
+          "text": "Crossover cable"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Docks and hubs add HDMI, USB-A, Ethernet, and charging.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q012",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "A ultrabook has one USB-C port. Which accessory adds HDMI and wired Ethernet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "USB-C hub or docking station"
+        },
+        {
+          "id": "b",
+          "text": "Surge protector only"
+        },
+        {
+          "id": "c",
+          "text": "PoE injector"
+        },
+        {
+          "id": "d",
+          "text": "Crossover cable"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Docks and hubs add HDMI, USB-A, Ethernet, and charging.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q013",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which screen technology offers deep blacks on many flagship phones?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OLED"
+        },
+        {
+          "id": "b",
+          "text": "TN panel"
+        },
+        {
+          "id": "c",
+          "text": "CRTs"
+        },
+        {
+          "id": "d",
+          "text": "Plasma"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OLED pixels emit their own light, enabling true blacks.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q014",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which mobile troubleshooting step clears stuck network registration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toggle airplane mode or reseat SIM"
+        },
+        {
+          "id": "b",
+          "text": "Flash BIOS"
+        },
+        {
+          "id": "c",
+          "text": "Replace CMOS"
+        },
+        {
+          "id": "d",
+          "text": "Run CHKDSK"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Airplane mode resets the cellular radio registration.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q015",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "A phone shows 'No Service' after travel. What is the first mobile-specific step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toggle airplane mode or reseat SIM"
+        },
+        {
+          "id": "b",
+          "text": "Flash BIOS"
+        },
+        {
+          "id": "c",
+          "text": "Replace CMOS"
+        },
+        {
+          "id": "d",
+          "text": "Run CHKDSK"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Airplane mode resets the cellular radio registration.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q016",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which biometric method maps facial geometry on supported devices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Facial recognition (Face ID class)"
+        },
+        {
+          "id": "b",
+          "text": "Magnetic stripe"
+        },
+        {
+          "id": "c",
+          "text": "Smart card contact"
+        },
+        {
+          "id": "d",
+          "text": "WEP key"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Structured-light or IR facial mapping unlocks devices.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q017",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which tablet input accessory is pressure-sensitive for drawing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Active stylus"
+        },
+        {
+          "id": "b",
+          "text": "Capacitive passive stick only"
+        },
+        {
+          "id": "c",
+          "text": "Trackball"
+        },
+        {
+          "id": "d",
+          "text": "Touchpad"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Active styluses support pressure and palm rejection.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q018",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which mobile deployment model installs a work profile separate from personal apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Android Enterprise work profile"
+        },
+        {
+          "id": "b",
+          "text": "Dual BIOS"
+        },
+        {
+          "id": "c",
+          "text": "RAID 1"
+        },
+        {
+          "id": "d",
+          "text": "Hyper-V replica"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Work profiles containerize corporate data on BYOD devices.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q019",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which connector did Apple Lightning replace on older iPhones?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30-pin dock connector"
+        },
+        {
+          "id": "b",
+          "text": "USB-B"
+        },
+        {
+          "id": "c",
+          "text": "DisplayPort"
+        },
+        {
+          "id": "d",
+          "text": "eSATA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lightning superseded the wide 30-pin connector.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q020",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which mobile battery best practice preserves longevity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid prolonged 100% charge and extreme heat"
+        },
+        {
+          "id": "b",
+          "text": "Always drain to 0%"
+        },
+        {
+          "id": "c",
+          "text": "Fast-charge continuously overnight in hot car"
+        },
+        {
+          "id": "d",
+          "text": "Remove battery while plugged in"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Heat and constant full charge accelerate lithium wear.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q021",
+      "domain": "mobile-devices",
+      "type": "multiple-choice",
+      "text": "Which wireless standard is typical for tethering a phone to a laptop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wi-Fi hotspot (802.11)"
+        },
+        {
+          "id": "b",
+          "text": "Zigbee only"
+        },
+        {
+          "id": "c",
+          "text": "Bluetooth LE mesh only"
+        },
+        {
+          "id": "d",
+          "text": "IrDA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Personal hotspots share cellular data over Wi-Fi.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q022",
+      "domain": "mobile-devices",
+      "type": "multiple-response",
+      "text": "Which TWO are common mobile device display issues? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ghost touch"
+        },
+        {
+          "id": "b",
+          "text": "Dead pixels"
+        },
+        {
+          "id": "c",
+          "text": "RAID degradation"
+        },
+        {
+          "id": "d",
+          "text": "POST beep codes"
+        },
+        {
+          "id": "e",
+          "text": "Burn-in on OLED"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "e"
+      ],
+      "explanation": "Touch, pixel defects, and OLED burn-in are mobile display concerns.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q023",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which TCP port does HTTPS use by default?",
+      "options": [
+        {
+          "id": "a",
+          "text": "443"
+        },
+        {
+          "id": "b",
+          "text": "80"
+        },
+        {
+          "id": "c",
+          "text": "21"
+        },
+        {
+          "id": "d",
+          "text": "23"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HTTPS encrypts HTTP traffic on port 443.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q024",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "A firewall rule must allow secure web browsing. Which port should be opened?",
+      "options": [
+        {
+          "id": "a",
+          "text": "443"
+        },
+        {
+          "id": "b",
+          "text": "80"
+        },
+        {
+          "id": "c",
+          "text": "21"
+        },
+        {
+          "id": "d",
+          "text": "23"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HTTPS encrypts HTTP traffic on port 443.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q025",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which OSI layer handles logical addressing with IP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Layer 3 (Network)"
+        },
+        {
+          "id": "b",
+          "text": "Layer 1"
+        },
+        {
+          "id": "c",
+          "text": "Layer 2"
+        },
+        {
+          "id": "d",
+          "text": "Layer 7 only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Layer 3 routes packets using IP addresses.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q026",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which cable category supports 1 Gbps to 100 meters on copper?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cat 5e or higher"
+        },
+        {
+          "id": "b",
+          "text": "Cat 3"
+        },
+        {
+          "id": "c",
+          "text": "Coax RG-59 only"
+        },
+        {
+          "id": "d",
+          "text": "Twinax"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cat 5e/6/6a meet Gigabit Ethernet specs.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q027",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which device separates collision domains on each port?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Switch"
+        },
+        {
+          "id": "b",
+          "text": "Hub"
+        },
+        {
+          "id": "c",
+          "text": "Repeater"
+        },
+        {
+          "id": "d",
+          "text": "Patch panel only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Switches forward frames per MAC address, isolating collisions.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q028",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which protocol dynamically assigns IPv4 addresses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DHCP"
+        },
+        {
+          "id": "b",
+          "text": "DNS"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "SNMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DHCP leases IP, mask, gateway, and DNS to clients.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q029",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which wireless band offers more channels but shorter range than 2.4 GHz?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 GHz"
+        },
+        {
+          "id": "b",
+          "text": "900 MHz ISM only"
+        },
+        {
+          "id": "c",
+          "text": "AM broadcast"
+        },
+        {
+          "id": "d",
+          "text": "Sub-1 GHz LoRa only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "5 GHz has more non-overlapping channels at reduced range.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q030",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which DNS record maps a hostname to an IPv4 address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A record"
+        },
+        {
+          "id": "b",
+          "text": "MX"
+        },
+        {
+          "id": "c",
+          "text": "SRV"
+        },
+        {
+          "id": "d",
+          "text": "CNAME only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "A records resolve names to IPv4 addresses.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q031",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which tool verifies Layer 1/Layer 2 link on an RJ-45 drop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cable tester or certifier"
+        },
+        {
+          "id": "b",
+          "text": "Multimeter only for CPU"
+        },
+        {
+          "id": "c",
+          "text": "Torque wrench"
+        },
+        {
+          "id": "d",
+          "text": "Tone generator alone without probe"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cable testers check continuity, pairs, and often wire map.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q032",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which IPv4 classless mask equals a /24 network?",
+      "options": [
+        {
+          "id": "a",
+          "text": "255.255.255.0"
+        },
+        {
+          "id": "b",
+          "text": "255.0.0.0"
+        },
+        {
+          "id": "c",
+          "text": "255.255.254.0"
+        },
+        {
+          "id": "d",
+          "text": "255.255.255.252"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "/24 leaves 8 host bits: 255.255.255.0.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q033",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which protocol synchronizes time across networked devices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NTP"
+        },
+        {
+          "id": "b",
+          "text": "Telnet"
+        },
+        {
+          "id": "c",
+          "text": "POP3"
+        },
+        {
+          "id": "d",
+          "text": "IMAP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "NTP keeps clocks aligned for logs and certificates.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q034",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which connector is standard on twisted-pair Ethernet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RJ-45"
+        },
+        {
+          "id": "b",
+          "text": "RJ-11"
+        },
+        {
+          "id": "c",
+          "text": "BNC"
+        },
+        {
+          "id": "d",
+          "text": "F-type"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RJ-45 is the 8P8C connector for Ethernet.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q035",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which address range is private RFC 1918 space?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10.0.0.0/8"
+        },
+        {
+          "id": "b",
+          "text": "8.8.8.0/24 public"
+        },
+        {
+          "id": "c",
+          "text": "169.254.0.0 APIPA example still link-local"
+        },
+        {
+          "id": "d",
+          "text": "1.1.1.0/24"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "10/8, 172.16/12, and 192.168/16 are private.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q036",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which wireless security mode provides per-user authentication on enterprise WLANs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "WPA2/WPA3-Enterprise (802.1X)"
+        },
+        {
+          "id": "b",
+          "text": "WEP"
+        },
+        {
+          "id": "c",
+          "text": "Open SSID"
+        },
+        {
+          "id": "d",
+          "text": "SSID hiding alone"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "802.1X with RADIUS authenticates users individually.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q037",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which command on Windows displays the IP configuration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ipconfig"
+        },
+        {
+          "id": "b",
+          "text": "ifconfig on Linux primarily"
+        },
+        {
+          "id": "c",
+          "text": "format"
+        },
+        {
+          "id": "d",
+          "text": "diskpart"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ipconfig /all shows IPv4, DNS, and MAC on Windows.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q038",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which fiber connector is common in data centers with a latch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LC"
+        },
+        {
+          "id": "b",
+          "text": "RJ-45"
+        },
+        {
+          "id": "c",
+          "text": "DE-9"
+        },
+        {
+          "id": "d",
+          "text": "Centronics 36"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "LC is widely used on SFP/SFP+ transceivers.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q039",
+      "domain": "networking",
+      "type": "multiple-choice",
+      "text": "Which protocol resolves MAC addresses from known IPv4 addresses on a LAN?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ARP"
+        },
+        {
+          "id": "b",
+          "text": "ICMP only"
+        },
+        {
+          "id": "c",
+          "text": "SMTP"
+        },
+        {
+          "id": "d",
+          "text": "LDAP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ARP maps IP to MAC on the local segment.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q040",
+      "domain": "networking",
+      "type": "multiple-response",
+      "text": "Which TWO are valid IPv6 address types? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Global unicast"
+        },
+        {
+          "id": "b",
+          "text": "Link-local (fe80::/10)"
+        },
+        {
+          "id": "c",
+          "text": "Broadcast (like IPv4)"
+        },
+        {
+          "id": "d",
+          "text": "WEP key"
+        },
+        {
+          "id": "e",
+          "text": "Loopback (::1)"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "e"
+      ],
+      "explanation": "IPv6 uses unicast, link-local, and ::1 loopback; no broadcast.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q041",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which component temporarily holds running programs and active data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAM"
+        },
+        {
+          "id": "b",
+          "text": "HDD"
+        },
+        {
+          "id": "c",
+          "text": "ROM BIOS chip only"
+        },
+        {
+          "id": "d",
+          "text": "PSU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAM is volatile working memory for the CPU.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q042",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which CPU socket type must match the motherboard?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Physical socket standard (e.g., LGA1700, AM5)"
+        },
+        {
+          "id": "b",
+          "text": "DDR5 speed only"
+        },
+        {
+          "id": "c",
+          "text": "Case form factor"
+        },
+        {
+          "id": "d",
+          "text": "Monitor refresh rate"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CPU package must fit the board socket/chipset.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q043",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which storage interface offers NVMe speeds over PCIe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M.2 NVMe"
+        },
+        {
+          "id": "b",
+          "text": "PATA"
+        },
+        {
+          "id": "c",
+          "text": "Floppy"
+        },
+        {
+          "id": "d",
+          "text": "IDE ribbon"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "NVMe SSDs on M.2 use PCIe lanes.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q044",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which printer technology uses toner and a heated fuser?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laser"
+        },
+        {
+          "id": "b",
+          "text": "Inkjet"
+        },
+        {
+          "id": "c",
+          "text": "Dot matrix"
+        },
+        {
+          "id": "d",
+          "text": "Thermal receipt only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Laser printers fuse toner to paper with heat.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q045",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which power supply rating indicates higher efficiency at typical loads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80 PLUS Gold or better"
+        },
+        {
+          "id": "b",
+          "text": "ATX size only"
+        },
+        {
+          "id": "c",
+          "text": "Molex count"
+        },
+        {
+          "id": "d",
+          "text": "RGB lighting"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "80 PLUS tiers reflect efficiency at 20/50/100% load.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q046",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which RAID level mirrors data across two disks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAID 1"
+        },
+        {
+          "id": "b",
+          "text": "RAID 0"
+        },
+        {
+          "id": "c",
+          "text": "RAID 5 alone without parity description"
+        },
+        {
+          "id": "d",
+          "text": "JBOD striping only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAID 1 writes identical copies for redundancy.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q047",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which tool measures voltage, continuity, and resistance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multimeter"
+        },
+        {
+          "id": "b",
+          "text": "Torx driver"
+        },
+        {
+          "id": "c",
+          "text": "Cable crimper only"
+        },
+        {
+          "id": "d",
+          "text": "Anti-static bag"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multimeters diagnose power and circuit issues.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q048",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which BIOS/UEFI setting boots from USB for OS installation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boot order / boot override"
+        },
+        {
+          "id": "b",
+          "text": "Spread spectrum always off"
+        },
+        {
+          "id": "c",
+          "text": "CPU fan curve RGB"
+        },
+        {
+          "id": "d",
+          "text": "Secure Boot disable only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boot order or one-time boot menu selects install media.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q049",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which GPU resource is most critical for 3D gaming performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VRAM and GPU core"
+        },
+        {
+          "id": "b",
+          "text": "Keyboard polling rate"
+        },
+        {
+          "id": "c",
+          "text": "Case fan CFM only"
+        },
+        {
+          "id": "d",
+          "text": "Sound card SNR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Graphics workloads depend on GPU and video memory.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q050",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which laptop component replacement requires matching wattage and connector?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AC adapter"
+        },
+        {
+          "id": "b",
+          "text": "LCD hinge grease"
+        },
+        {
+          "id": "c",
+          "text": "Touchpad firmware"
+        },
+        {
+          "id": "d",
+          "text": "Wi-Fi SSID"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Adapters must meet voltage, amperage, and tip specs.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q051",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which ESD practice protects components during repair?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wrist strap bonded to ground"
+        },
+        {
+          "id": "b",
+          "text": "Work on carpet in dry winter"
+        },
+        {
+          "id": "c",
+          "text": "Touch PSU while plugged in"
+        },
+        {
+          "id": "d",
+          "text": "Wrap board in plastic"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Grounded straps dissipate static safely.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q052",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which connector powers most discrete GPUs directly from the PSU?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6/8-pin PCIe power"
+        },
+        {
+          "id": "b",
+          "text": "SATA data"
+        },
+        {
+          "id": "c",
+          "text": "USB-A"
+        },
+        {
+          "id": "d",
+          "text": "PS/2"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "High-watt GPUs need dedicated PCIe power connectors.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q053",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which memory type is error-correcting and common on servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ECC RAM"
+        },
+        {
+          "id": "b",
+          "text": "Non-ECC SO-DIMM only in all cases"
+        },
+        {
+          "id": "c",
+          "text": "VRAM"
+        },
+        {
+          "id": "d",
+          "text": "Cache L1 only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ECC detects/corrects single-bit memory errors.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q054",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which symptom suggests failing capacitors on a motherboard?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bulging or leaking capacitors"
+        },
+        {
+          "id": "b",
+          "text": "Higher FPS"
+        },
+        {
+          "id": "c",
+          "text": "Lower latency ping"
+        },
+        {
+          "id": "d",
+          "text": "Brighter display"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bad caps cause instability, boot failures, or shutdowns.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q055",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which printer maintenance fixes streaks on laser output?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace drum or toner cartridge"
+        },
+        {
+          "id": "b",
+          "text": "Flash BIOS"
+        },
+        {
+          "id": "c",
+          "text": "Defrag HDD"
+        },
+        {
+          "id": "d",
+          "text": "Renew DHCP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Worn drums or low toner cause repeating streaks.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q056",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which form factor is smallest for mainstream desktop boards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mini-ITX"
+        },
+        {
+          "id": "b",
+          "text": "E-ATX"
+        },
+        {
+          "id": "c",
+          "text": "ATX full tower only"
+        },
+        {
+          "id": "d",
+          "text": "SSI CEB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mini-ITX is the compact consumer standard.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q057",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which primary PC cooling assembly transfers heat from the CPU to air?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CPU heatsink and fan"
+        },
+        {
+          "id": "b",
+          "text": "Only thermal paste without a heatsink"
+        },
+        {
+          "id": "c",
+          "text": "LCD backlight inverter"
+        },
+        {
+          "id": "d",
+          "text": "Inkjet fuser unit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Heatsinks spread heat; fans move air across fins.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q058",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which display interface commonly supports daisy-chaining multiple monitors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DisplayPort"
+        },
+        {
+          "id": "b",
+          "text": "VGA analog only"
+        },
+        {
+          "id": "c",
+          "text": "PS/2 keyboard"
+        },
+        {
+          "id": "d",
+          "text": "RJ-11 telephone"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DisplayPort MST can chain compatible monitors.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q059",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which motherboard component manages communication between CPU, RAM, and PCIe devices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chipset (PCH)"
+        },
+        {
+          "id": "b",
+          "text": "CRT electron gun"
+        },
+        {
+          "id": "c",
+          "text": "Toner hopper"
+        },
+        {
+          "id": "d",
+          "text": "Ribbon cable only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "The chipset routes I/O and peripheral traffic.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q060",
+      "domain": "hardware",
+      "type": "multiple-choice",
+      "text": "Which storage technology has no spinning platters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Solid-state drive (SSD)"
+        },
+        {
+          "id": "b",
+          "text": "Traditional HDD"
+        },
+        {
+          "id": "c",
+          "text": "Floppy disk"
+        },
+        {
+          "id": "d",
+          "text": "Magnetic tape cartridge"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSDs use flash memory with no mechanical spindles.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q061",
+      "domain": "hardware",
+      "type": "multiple-response",
+      "text": "Which TWO are hot-swappable in many server designs? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "SATA/SAS drive in hot-swap bay"
+        },
+        {
+          "id": "b",
+          "text": "CPU without shutdown"
+        },
+        {
+          "id": "c",
+          "text": "Fans in redundant trays"
+        },
+        {
+          "id": "d",
+          "text": "System RAM while powered"
+        },
+        {
+          "id": "e",
+          "text": "PSU in redundant module"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Drives, fans, and redundant PSUs often support hot swap.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q062",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which hypervisor runs directly on hardware without a host OS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Type 1 (bare-metal)"
+        },
+        {
+          "id": "b",
+          "text": "Type 2 hosted only"
+        },
+        {
+          "id": "c",
+          "text": "Container runtime only"
+        },
+        {
+          "id": "d",
+          "text": "BIOS utility"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Type 1 hypervisors (ESXi, Hyper-V host) sit on bare metal.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q063",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which cloud model provides ready-to-use applications over the internet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SaaS"
+        },
+        {
+          "id": "b",
+          "text": "IaaS only"
+        },
+        {
+          "id": "c",
+          "text": "PaaS only"
+        },
+        {
+          "id": "d",
+          "text": "Private cloud on-prem only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SaaS delivers apps like email or CRM as a service.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q064",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which virtual network device connects VMs to the physical LAN?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual switch (vSwitch)"
+        },
+        {
+          "id": "b",
+          "text": "Virtual PSU"
+        },
+        {
+          "id": "c",
+          "text": "Virtual GPU driver only"
+        },
+        {
+          "id": "d",
+          "text": "Virtual CMOS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "vSwitches bridge VM NICs to physical uplinks.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q065",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which resource can be oversubscribed carefully in VDI pools?",
+      "options": [
+        {
+          "id": "a",
+          "text": "vCPU and RAM (with monitoring)"
+        },
+        {
+          "id": "b",
+          "text": "Physical monitor count"
+        },
+        {
+          "id": "c",
+          "text": "Keyboard layout"
+        },
+        {
+          "id": "d",
+          "text": "Printer paper"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VDI hosts share CPU/RAM across many sessions with limits.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q066",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which Azure service category is IaaS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virtual Machines"
+        },
+        {
+          "id": "b",
+          "text": "Microsoft 365 apps"
+        },
+        {
+          "id": "c",
+          "text": "Azure DevOps boards SaaS"
+        },
+        {
+          "id": "d",
+          "text": "DNS registrar only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMs are infrastructure you manage at the OS layer.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q067",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which feature snapshots a VM state for rollback?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Checkpoint / snapshot"
+        },
+        {
+          "id": "b",
+          "text": "Defragment VHD only"
+        },
+        {
+          "id": "c",
+          "text": "RAID 0"
+        },
+        {
+          "id": "d",
+          "text": "Overclock vCPU"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snapshots capture disk and memory state points.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q068",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which container shares the host kernel unlike full VMs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Docker-style container"
+        },
+        {
+          "id": "b",
+          "text": "Full hardware VM always isolated kernel"
+        },
+        {
+          "id": "c",
+          "text": "Physical server"
+        },
+        {
+          "id": "d",
+          "text": "Tape backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Containers share the OS kernel with isolation namespaces.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q069",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which cloud deployment mixes on-premises and public cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hybrid cloud"
+        },
+        {
+          "id": "b",
+          "text": "Air gap only"
+        },
+        {
+          "id": "c",
+          "text": "Sneaker net"
+        },
+        {
+          "id": "d",
+          "text": "Standalone kiosk"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid connects private datacenter workloads to public cloud.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q070",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which AWS offering is object storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EC2 compute"
+        },
+        {
+          "id": "c",
+          "text": "Amazon RDS DB engine"
+        },
+        {
+          "id": "d",
+          "text": "Amazon VPC router"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 stores objects in buckets with high durability.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q071",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which virtual disk format is common on VMware?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VMDK"
+        },
+        {
+          "id": "b",
+          "text": "DOCX"
+        },
+        {
+          "id": "c",
+          "text": "MP4"
+        },
+        {
+          "id": "d",
+          "text": "ISO only for install media"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMDK is VMware's virtual disk format.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q072",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which practice right-sizes cloud VMs to control cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monitor utilization and resize instances"
+        },
+        {
+          "id": "b",
+          "text": "Always use largest SKU"
+        },
+        {
+          "id": "c",
+          "text": "Disable billing alerts"
+        },
+        {
+          "id": "d",
+          "text": "Never use autoscaling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rightsizing matches instance size to actual load.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q073",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which Google workspace tier is SaaS productivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Google Workspace"
+        },
+        {
+          "id": "b",
+          "text": "Compute Engine IaaS"
+        },
+        {
+          "id": "c",
+          "text": "Cloud Spanner DB"
+        },
+        {
+          "id": "d",
+          "text": "Cloud VPN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Workspace provides Gmail, Drive, and Docs as SaaS.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q074",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which hypervisor feature deduplicates identical memory pages across VMs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Memory ballooning / transparent page sharing class features"
+        },
+        {
+          "id": "b",
+          "text": "RGB fan control"
+        },
+        {
+          "id": "c",
+          "text": "Overvoltage CPU"
+        },
+        {
+          "id": "d",
+          "text": "Disable NIC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hypervisors optimize RAM via sharing and balloon drivers.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q075",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which remote access protocol commonly accesses Windows VMs in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDP"
+        },
+        {
+          "id": "b",
+          "text": "Telnet"
+        },
+        {
+          "id": "c",
+          "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "SNMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RDP provides GUI remote desktop to Windows hosts.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q076",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which license concern applies when migrating Windows desktops to VDI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Windows licensing for virtual desktops (VDI/SPLA rules)"
+        },
+        {
+          "id": "b",
+          "text": "Monitor refresh licensing"
+        },
+        {
+          "id": "c",
+          "text": "Keyboard layout patent"
+        },
+        {
+          "id": "d",
+          "text": "HDMI copyright"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VDI requires appropriate Microsoft licensing.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q077",
+      "domain": "virtualization-cloud",
+      "type": "multiple-choice",
+      "text": "Which metric triggers auto-scaling of web servers in cloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CPU or request latency thresholds"
+        },
+        {
+          "id": "b",
+          "text": "Desktop wallpaper color"
+        },
+        {
+          "id": "c",
+          "text": "USB device count"
+        },
+        {
+          "id": "d",
+          "text": "Fan RPM only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Autoscale adds/removes instances on load metrics.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q078",
+      "domain": "virtualization-cloud",
+      "type": "multiple-response",
+      "text": "Which TWO are benefits of virtualization? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hardware consolidation"
+        },
+        {
+          "id": "b",
+          "text": "Mandatory single OS globally"
+        },
+        {
+          "id": "c",
+          "text": "Fast provisioning from templates"
+        },
+        {
+          "id": "d",
+          "text": "Eliminates all patching"
+        },
+        {
+          "id": "e",
+          "text": "Isolated test labs"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "VMs consolidate hardware, clone quickly, and isolate environments.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q079",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "A PC powers on but shows no video. Which step comes first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verify monitor input and cable seating"
+        },
+        {
+          "id": "b",
+          "text": "Replace CPU immediately"
+        },
+        {
+          "id": "c",
+          "text": "Flash BIOS first"
+        },
+        {
+          "id": "d",
+          "text": "Replace PSU without checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Display path checks are quick and non-destructive.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q080",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Intermittent Wi-Fi drops on one laptop only. Best next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Update Wi-Fi driver and check power management settings"
+        },
+        {
+          "id": "b",
+          "text": "Replace access point first"
+        },
+        {
+          "id": "c",
+          "text": "Change ISP"
+        },
+        {
+          "id": "d",
+          "text": "Replace all cables in building"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Client-specific issues often involve drivers or power save.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q081",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "A workstation cannot reach internal sites by name but can by IP. Likely cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DNS failure or misconfiguration"
+        },
+        {
+          "id": "b",
+          "text": "Bad GPU"
+        },
+        {
+          "id": "c",
+          "text": "Low toner"
+        },
+        {
+          "id": "d",
+          "text": "RAID 0 failure"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Name resolution failures point to DNS.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q082",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Blue screen after new RAM install. First action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reseat modules and verify compatibility/slots"
+        },
+        {
+          "id": "b",
+          "text": "Install newest game"
+        },
+        {
+          "id": "c",
+          "text": "Enable RAID 5"
+        },
+        {
+          "id": "d",
+          "text": "Disable NIC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Improper seating or incompatible RAM causes crashes.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q083",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Printer queue stuck with jobs. Quick fix on Windows?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Restart print spooler service"
+        },
+        {
+          "id": "b",
+          "text": "Replace fuser"
+        },
+        {
+          "id": "c",
+          "text": "Flash printer BIOS always first"
+        },
+        {
+          "id": "d",
+          "text": "Change DNS MX"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Spooler restart clears stuck print jobs.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q084",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "No POST beeps and no fans spin. Suspect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PSU failure or front panel power connection"
+        },
+        {
+          "id": "b",
+          "text": "Monitor OSD"
+        },
+        {
+          "id": "c",
+          "text": "Driver update"
+        },
+        {
+          "id": "d",
+          "text": "User GPO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "No power delivery suggests PSU or power button wiring.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q085",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Slow boot after many startup apps. Remediation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unnecessary startup programs"
+        },
+        {
+          "id": "b",
+          "text": "Add second GPU"
+        },
+        {
+          "id": "c",
+          "text": "Increase wallpaper resolution"
+        },
+        {
+          "id": "d",
+          "text": "Disable DHCP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Startup bloat delays logon and boot time.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q086",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Laptop overheats and throttles under load. Best maintenance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clean vents and replace dried thermal paste if needed"
+        },
+        {
+          "id": "b",
+          "text": "Block vents for quiet"
+        },
+        {
+          "id": "c",
+          "text": "Disable fans in BIOS"
+        },
+        {
+          "id": "d",
+          "text": "Remove heat sink"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dust and paste degradation cause thermal throttling.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q087",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Network link light off on one desk. First hardware check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Test with known-good cable and switch port"
+        },
+        {
+          "id": "b",
+          "text": "Replace server CPU"
+        },
+        {
+          "id": "c",
+          "text": "Reinstall OS"
+        },
+        {
+          "id": "d",
+          "text": "Change domain password"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Swap testing isolates cable, NIC, or port faults.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q088",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "USB device not recognized on one port. Try?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Different port and Device Manager check"
+        },
+        {
+          "id": "b",
+          "text": "Replace monitor"
+        },
+        {
+          "id": "c",
+          "text": "Flash BIOS before any port test"
+        },
+        {
+          "id": "d",
+          "text": "Format C:"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Port, cable, or driver issues are common USB faults.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q089",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Clicking hard drive and slow access. Likely issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Imminent drive failure \u2014 back up and replace"
+        },
+        {
+          "id": "b",
+          "text": "GPU overheating"
+        },
+        {
+          "id": "c",
+          "text": "Low ink"
+        },
+        {
+          "id": "d",
+          "text": "Stale DNS cache only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mechanical clicking indicates failing HDD.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q090",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Mobile device rapid battery drain after update. Step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check battery usage report and reset network settings if radio stuck"
+        },
+        {
+          "id": "b",
+          "text": "Replace screen"
+        },
+        {
+          "id": "c",
+          "text": "Flash desktop BIOS"
+        },
+        {
+          "id": "d",
+          "text": "Change RAID level"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Updates can increase radio usage; usage stats identify culprits.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q091",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Cannot join domain \u2014 time skew error. Fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sync system time with domain controller/NTP"
+        },
+        {
+          "id": "b",
+          "text": "Replace keyboard"
+        },
+        {
+          "id": "c",
+          "text": "Disable firewall entirely"
+        },
+        {
+          "id": "d",
+          "text": "Add RAM"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kerberos fails when client clock skew exceeds policy.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q092",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Projector shows no signal from laptop. Check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Correct input source and duplicate/extend display mode"
+        },
+        {
+          "id": "b",
+          "text": "Replace projector lamp first always"
+        },
+        {
+          "id": "c",
+          "text": "Update printer driver"
+        },
+        {
+          "id": "d",
+          "text": "Run disk defrag"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Input selection and display mirroring are common misses.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q093",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Random shutdowns under gaming load only. Suspect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PSU insufficient wattage or overheating GPU/CPU"
+        },
+        {
+          "id": "b",
+          "text": "DNS"
+        },
+        {
+          "id": "c",
+          "text": "SMTP"
+        },
+        {
+          "id": "d",
+          "text": "Low toner"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Peak power or thermal limits cause load-specific shutdowns.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q094",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Workstation gets APIPA 169.254.x.x address. Cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DHCP unreachable or failed lease"
+        },
+        {
+          "id": "b",
+          "text": "Correct static DNS"
+        },
+        {
+          "id": "c",
+          "text": "Valid gateway"
+        },
+        {
+          "id": "d",
+          "text": "Working DHCP server"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "APIPA indicates no DHCP offer received.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q095",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "POST beep codes indicate RAM not detected. What should you try first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Power off, reseat RAM, and test one module at a time"
+        },
+        {
+          "id": "b",
+          "text": "Replace the GPU first"
+        },
+        {
+          "id": "c",
+          "text": "Disable Secure Boot only"
+        },
+        {
+          "id": "d",
+          "text": "Format the boot drive"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAM detection failures are often seating, slot, or module faults.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q096",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "After a patch panel change, an entire floor loses wired network. Best focus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verify cable pairs, switch port VLANs, and link lights"
+        },
+        {
+          "id": "b",
+          "text": "Reinstall every PC OS"
+        },
+        {
+          "id": "c",
+          "text": "Replace all monitors"
+        },
+        {
+          "id": "d",
+          "text": "Change Wi-Fi passphrase only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Physical layer and switch port mapping errors affect many hosts at once.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q097",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "An inkjet printer shows color banding and streaks. First maintenance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Run print-head cleaning and alignment"
+        },
+        {
+          "id": "b",
+          "text": "Replace the laser fuser"
+        },
+        {
+          "id": "c",
+          "text": "Flash the motherboard BIOS"
+        },
+        {
+          "id": "d",
+          "text": "Defragment the HDD"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clogged nozzles and misalignment cause banding on inkjets.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q098",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "A replaced laptop touchscreen is inaccurate at the edges. Next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calibrate the touch panel in OS settings"
+        },
+        {
+          "id": "b",
+          "text": "Replace the PSU"
+        },
+        {
+          "id": "c",
+          "text": "Disable DHCP"
+        },
+        {
+          "id": "d",
+          "text": "Enable RAID 0"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Calibration maps touch coordinates to the display.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q099",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Windows reports MEMORY_MANAGEMENT BSOD after a driver update. What helps isolate it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roll back the driver and test RAM with a memory diagnostic"
+        },
+        {
+          "id": "b",
+          "text": "Increase screen brightness"
+        },
+        {
+          "id": "c",
+          "text": "Disable the print spooler only"
+        },
+        {
+          "id": "d",
+          "text": "Change DNS to public only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bad drivers and faulty RAM both trigger memory management crashes.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q100",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "An external monitor flickers only when using a USB-C dock. Likely fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Update dock firmware and GPU/display drivers"
+        },
+        {
+          "id": "b",
+          "text": "Replace keyboard caps"
+        },
+        {
+          "id": "c",
+          "text": "Lower toner density"
+        },
+        {
+          "id": "d",
+          "text": "Disable NTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Docks and GPU drivers must support the display mode and bandwidth.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q101",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "A desktop wakes from sleep immediately at night without user input. Check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review wake timers, scheduled tasks, and peripheral wake settings"
+        },
+        {
+          "id": "b",
+          "text": "Replace CPU thermal paste first"
+        },
+        {
+          "id": "c",
+          "text": "Flash printer firmware"
+        },
+        {
+          "id": "d",
+          "text": "Change cable category to Cat3"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Scheduled tasks, mice, keyboards, and network adapters can wake the system.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    },
+    {
+      "id": "cptapl-q102",
+      "domain": "troubleshooting",
+      "type": "multiple-response",
+      "text": "Which TWO steps are safe general troubleshooting practices? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Document symptoms and changes"
+        },
+        {
+          "id": "b",
+          "text": "Change many variables at once"
+        },
+        {
+          "id": "c",
+          "text": "Establish a theory and test"
+        },
+        {
+          "id": "d",
+          "text": "Skip backups before disk work"
+        },
+        {
+          "id": "e",
+          "text": "Verify fixes with users"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Structured troubleshooting changes one thing at a time and verifies outcomes.",
+      "docs": [
+        {
+          "title": "A+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ]
+    }
+  ],
+  "acronyms": [
+    {
+      "term": "BIOS",
+      "expansion": "Basic Input/Output System",
+      "hint": "Firmware that initializes hardware at boot",
+      "category": "Hardware"
+    },
+    {
+      "term": "UEFI",
+      "expansion": "Unified Extensible Firmware Interface",
+      "hint": "Modern firmware interface replacing legacy BIOS",
+      "category": "Hardware"
+    },
+    {
+      "term": "CPU",
+      "expansion": "Central Processing Unit",
+      "hint": "Primary processor executing instructions",
+      "category": "Hardware"
+    },
+    {
+      "term": "GPU",
+      "expansion": "Graphics Processing Unit",
+      "hint": "Accelerates rendering and parallel compute",
+      "category": "Hardware"
+    },
+    {
+      "term": "RAM",
+      "expansion": "Random Access Memory",
+      "hint": "Volatile memory for active workloads",
+      "category": "Hardware"
+    },
+    {
+      "term": "SSD",
+      "expansion": "Solid State Drive",
+      "hint": "Flash storage without moving parts",
+      "category": "Storage"
+    },
+    {
+      "term": "HDD",
+      "expansion": "Hard Disk Drive",
+      "hint": "Magnetic spinning-platter storage",
+      "category": "Storage"
+    },
+    {
+      "term": "NVMe",
+      "expansion": "Non-Volatile Memory express",
+      "hint": "PCIe protocol for fast SSDs",
+      "category": "Storage"
+    },
+    {
+      "term": "SATA",
+      "expansion": "Serial Advanced Technology Attachment",
+      "hint": "Common drive interface for HDD/SSD",
+      "category": "Storage"
+    },
+    {
+      "term": "RAID",
+      "expansion": "Redundant Array of Independent Disks",
+      "hint": "Combines disks for performance or redundancy",
+      "category": "Storage"
+    },
+    {
+      "term": "USB",
+      "expansion": "Universal Serial Bus",
+      "hint": "Standard peripheral interconnect",
+      "category": "Mobile/IO"
+    },
+    {
+      "term": "NFC",
+      "expansion": "Near Field Communication",
+      "hint": "Short-range contactless communication",
+      "category": "Mobile"
+    },
+    {
+      "term": "LCD",
+      "expansion": "Liquid Crystal Display",
+      "hint": "Flat-panel display technology",
+      "category": "Mobile"
+    },
+    {
+      "term": "OLED",
+      "expansion": "Organic Light-Emitting Diode",
+      "hint": "Self-emissive display with deep blacks",
+      "category": "Mobile"
+    },
+    {
+      "term": "Wi-Fi",
+      "expansion": "Wireless Fidelity (IEEE 802.11)",
+      "hint": "Wireless LAN brand/protocol family",
+      "category": "Networking"
+    },
+    {
+      "term": "TCP",
+      "expansion": "Transmission Control Protocol",
+      "hint": "Connection-oriented transport protocol",
+      "category": "Networking"
+    },
+    {
+      "term": "IP",
+      "expansion": "Internet Protocol",
+      "hint": "Layer 3 addressing and routing",
+      "category": "Networking"
+    },
+    {
+      "term": "DNS",
+      "expansion": "Domain Name System",
+      "hint": "Resolves names to IP addresses",
+      "category": "Networking"
+    },
+    {
+      "term": "DHCP",
+      "expansion": "Dynamic Host Configuration Protocol",
+      "hint": "Automates IP address assignment",
+      "category": "Networking"
+    },
+    {
+      "term": "HTTP",
+      "expansion": "Hypertext Transfer Protocol",
+      "hint": "Web traffic on port 80 by default",
+      "category": "Networking"
+    },
+    {
+      "term": "HTTPS",
+      "expansion": "HTTP Secure",
+      "hint": "HTTP over TLS, port 443",
+      "category": "Networking"
+    },
+    {
+      "term": "FTP",
+      "expansion": "File Transfer Protocol",
+      "hint": "Transfers files, often ports 20/21",
+      "category": "Networking"
+    },
+    {
+      "term": "SSH",
+      "expansion": "Secure Shell",
+      "hint": "Encrypted remote terminal/file access",
+      "category": "Networking"
+    },
+    {
+      "term": "RJ-45",
+      "expansion": "Registered Jack 45",
+      "hint": "8P8C connector for Ethernet",
+      "category": "Cabling"
+    },
+    {
+      "term": "PoE",
+      "expansion": "Power over Ethernet",
+      "hint": "Delivers power on Ethernet pairs",
+      "category": "Networking"
+    },
+    {
+      "term": "VPN",
+      "expansion": "Virtual Private Network",
+      "hint": "Encrypted tunnel over public networks",
+      "category": "Networking"
+    },
+    {
+      "term": "SSID",
+      "expansion": "Service Set Identifier",
+      "hint": "Wireless network name",
+      "category": "Wireless"
+    },
+    {
+      "term": "WPA2",
+      "expansion": "Wi-Fi Protected Access 2",
+      "hint": "Wi-Fi security using AES-CCMP",
+      "category": "Wireless"
+    },
+    {
+      "term": "ESD",
+      "expansion": "Electrostatic Discharge",
+      "hint": "Static shock that damages components",
+      "category": "Safety"
+    },
+    {
+      "term": "ATX",
+      "expansion": "Advanced Technology eXtended",
+      "hint": "Common PC motherboard/power form factor",
+      "category": "Hardware"
+    },
+    {
+      "term": "POST",
+      "expansion": "Power-On Self-Test",
+      "hint": "Firmware diagnostics at startup",
+      "category": "Troubleshooting"
+    },
+    {
+      "term": "BSOD",
+      "expansion": "Blue Screen of Death",
+      "hint": "Windows stop error screen",
+      "category": "Troubleshooting"
+    },
+    {
+      "term": "APIPA",
+      "expansion": "Automatic Private IP Addressing",
+      "hint": "169.254.x.x self-assigned address",
+      "category": "Networking"
+    },
+    {
+      "term": "MAC",
+      "expansion": "Media Access Control",
+      "hint": "Hardware address on NIC",
+      "category": "Networking"
+    },
+    {
+      "term": "IPv4",
+      "expansion": "Internet Protocol version 4",
+      "hint": "32-bit address space",
+      "category": "Networking"
+    },
+    {
+      "term": "IPv6",
+      "expansion": "Internet Protocol version 6",
+      "hint": "128-bit address space",
+      "category": "Networking"
+    },
+    {
+      "term": "HDMI",
+      "expansion": "High-Definition Multimedia Interface",
+      "hint": "Audio/video digital connector",
+      "category": "Mobile/IO"
+    },
+    {
+      "term": "DisplayPort",
+      "expansion": "DisplayPort",
+      "hint": "Digital display interface from VESA",
+      "category": "Mobile/IO"
+    },
+    {
+      "term": "BYOD",
+      "expansion": "Bring Your Own Device",
+      "hint": "Personal devices accessing corporate resources",
+      "category": "Mobile"
+    },
+    {
+      "term": "MDM",
+      "expansion": "Mobile Device Management",
+      "hint": "Central policy control for mobile endpoints",
+      "category": "Mobile"
+    },
+    {
+      "term": "IaaS",
+      "expansion": "Infrastructure as a Service",
+      "hint": "Cloud VMs and networks you manage",
+      "category": "Cloud"
+    },
+    {
+      "term": "SaaS",
+      "expansion": "Software as a Service",
+      "hint": "Cloud-hosted applications",
+      "category": "Cloud"
+    },
+    {
+      "term": "PaaS",
+      "expansion": "Platform as a Service",
+      "hint": "Managed runtime for developers",
+      "category": "Cloud"
+    },
+    {
+      "term": "VDI",
+      "expansion": "Virtual Desktop Infrastructure",
+      "hint": "Hosted desktops from datacenter",
+      "category": "Virtualization"
+    },
+    {
+      "term": "Hyper-V",
+      "expansion": "Microsoft Hyper-V",
+      "hint": "Windows Type 1/2 hypervisor",
+      "category": "Virtualization"
+    },
+    {
+      "term": "TPM",
+      "expansion": "Trusted Platform Module",
+      "hint": "Hardware root of trust chip",
+      "category": "Security"
+    },
+    {
+      "term": "UEFI Secure Boot",
+      "expansion": "Secure Boot",
+      "hint": "Validates OS bootloader signatures",
+      "category": "Security"
+    },
+    {
+      "term": "LCD inverter",
+      "expansion": "Inverter board",
+      "hint": "Backlight power for some laptop screens",
+      "category": "Mobile"
+    },
+    {
+      "term": "SO-DIMM",
+      "expansion": "Small Outline Dual In-Line Memory Module",
+      "hint": "Compact RAM form for laptops",
+      "category": "Hardware"
+    },
+    {
+      "term": "ECC",
+      "expansion": "Error-Correcting Code",
+      "hint": "Memory that fixes single-bit errors",
+      "category": "Hardware"
+    }
+  ]
+}

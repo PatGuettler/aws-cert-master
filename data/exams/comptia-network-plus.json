@@ -1,0 +1,3463 @@
+{
+  "id": "comptia-network-plus",
+  "name": "CompTIA Network+",
+  "code": "N10-009",
+  "vendor": "comptia",
+  "exam": {
+    "totalQuestions": 90,
+    "scoredQuestions": 80,
+    "timeLimitMinutes": 90,
+    "passingScore": 720,
+    "maxScore": 900,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "concepts",
+      "name": "Domain 1: Networking Concepts",
+      "weight": 24,
+      "resources": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "implementation",
+      "name": "Domain 2: Network Implementation",
+      "weight": 19,
+      "resources": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Domain 3: Network Operations",
+      "weight": 16,
+      "resources": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Domain 4: Network Security",
+      "weight": 19,
+      "resources": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "name": "Domain 5: Network Troubleshooting",
+      "weight": 22,
+      "resources": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cptnet-q001",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which model has seven layers including Application and Transport?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OSI model"
+        },
+        {
+          "id": "b",
+          "text": "TCP/IP 4-layer only name"
+        },
+        {
+          "id": "c",
+          "text": "DoD 2-layer"
+        },
+        {
+          "id": "d",
+          "text": "ISO 9001"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "The OSI reference model defines seven layers.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q002",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "On the Network+ exam, which reference model includes Session, Presentation, and Application layers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OSI model"
+        },
+        {
+          "id": "b",
+          "text": "TCP/IP 4-layer only name"
+        },
+        {
+          "id": "c",
+          "text": "DoD 2-layer"
+        },
+        {
+          "id": "d",
+          "text": "ISO 9001"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "The OSI reference model defines seven layers.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q003",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which protocol provides connectionless delivery at Layer 4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "UDP"
+        },
+        {
+          "id": "b",
+          "text": "TCP"
+        },
+        {
+          "id": "c",
+          "text": "SCTP always ordered"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "UDP has no handshake or guaranteed delivery.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q004",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which IPv6 address is the loopback address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "::1/128"
+        },
+        {
+          "id": "b",
+          "text": "127.0.0.1"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0"
+        },
+        {
+          "id": "d",
+          "text": "255.255.255.255"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IPv6 loopback is ::1.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q005",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which subnet mask creates four equal subnets from a /24?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/26"
+        },
+        {
+          "id": "b",
+          "text": "/25"
+        },
+        {
+          "id": "c",
+          "text": "/30"
+        },
+        {
+          "id": "d",
+          "text": "/32"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "/26 yields four subnets with 62 usable hosts each in a classful-style split.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q006",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which port does DNS use for queries primarily?",
+      "options": [
+        {
+          "id": "a",
+          "text": "53"
+        },
+        {
+          "id": "b",
+          "text": "443"
+        },
+        {
+          "id": "c",
+          "text": "22"
+        },
+        {
+          "id": "d",
+          "text": "3389"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DNS typically uses UDP/TCP port 53.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q007",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which wireless standard introduced WPA3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "802.11ax era security updates include WPA3"
+        },
+        {
+          "id": "b",
+          "text": "802.11b WEP only"
+        },
+        {
+          "id": "c",
+          "text": "802.3 Ethernet"
+        },
+        {
+          "id": "d",
+          "text": "Bluetooth Classic"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WPA3 strengthens Wi-Fi authentication and encryption.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q008",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which device operates at Layer 3 and routes between networks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Router"
+        },
+        {
+          "id": "b",
+          "text": "Unmanaged switch"
+        },
+        {
+          "id": "c",
+          "text": "Hub"
+        },
+        {
+          "id": "d",
+          "text": "Patch panel"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Routers forward based on IP routing tables.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q009",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which cable type is immune to EMI for long campus runs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Single-mode fiber"
+        },
+        {
+          "id": "b",
+          "text": "Cat 3 UTP"
+        },
+        {
+          "id": "c",
+          "text": "Coax RG-59 only"
+        },
+        {
+          "id": "d",
+          "text": "Flat telephone wire"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fiber uses light, avoiding electrical interference.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q010",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which QoS mechanism marks packets for priority treatment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DSCP"
+        },
+        {
+          "id": "b",
+          "text": "ARP"
+        },
+        {
+          "id": "c",
+          "text": "SMTP"
+        },
+        {
+          "id": "d",
+          "text": "POP3"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Differentiated Services Code Point marks traffic classes.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q011",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which topology has a single cable backbone with terminators?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bus (legacy Ethernet coax)"
+        },
+        {
+          "id": "b",
+          "text": "Full mesh modern default"
+        },
+        {
+          "id": "c",
+          "text": "Star over switch is not bus"
+        },
+        {
+          "id": "d",
+          "text": "Ring Token Ring class"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Classic bus topology uses coax with end terminators.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q012",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which IPv4 address is limited broadcast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "255.255.255.255"
+        },
+        {
+          "id": "b",
+          "text": "127.0.0.1"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0"
+        },
+        {
+          "id": "d",
+          "text": "224.0.0.1"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "255.255.255.255 is local broadcast.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q013",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which protocol maps port numbers to services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Well-known ports in TCP/UDP (e.g., 80 HTTP)"
+        },
+        {
+          "id": "b",
+          "text": "DNS only MX"
+        },
+        {
+          "id": "c",
+          "text": "ICMP type 0 only"
+        },
+        {
+          "id": "d",
+          "text": "LDAP schema"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IANA assigns well-known ports for services.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q014",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which encapsulation order is correct for TCP/IP stack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data, Segment, Packet, Frame, Bits"
+        },
+        {
+          "id": "b",
+          "text": "Bits first at application"
+        },
+        {
+          "id": "c",
+          "text": "Frame before packet always wrong"
+        },
+        {
+          "id": "d",
+          "text": "Segment at layer 2"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PDU names change per layer down the stack.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q015",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which IPv6 feature eliminates NAT need in pure deployments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Large address space"
+        },
+        {
+          "id": "b",
+          "text": "WEP"
+        },
+        {
+          "id": "c",
+          "text": "SSID hiding"
+        },
+        {
+          "id": "d",
+          "text": "MAC filtering only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "128-bit addresses reduce NAT dependency.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q016",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which network type spans a city between campuses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MAN"
+        },
+        {
+          "id": "b",
+          "text": "PAN"
+        },
+        {
+          "id": "c",
+          "text": "LAN only single floor"
+        },
+        {
+          "id": "d",
+          "text": "SAN storage network not geographic MAN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Metropolitan Area Networks cover cities.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q017",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which ICMP message supports ping?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Echo Request/Echo Reply"
+        },
+        {
+          "id": "b",
+          "text": "SYN-ACK"
+        },
+        {
+          "id": "c",
+          "text": "DHCP OFFER"
+        },
+        {
+          "id": "d",
+          "text": "ARP Reply"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ping uses ICMP echo messages.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q018",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "(Network+ pool) Supplemental concepts item 1: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q019",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "(Network+ pool) Supplemental concepts item 2: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q020",
+      "domain": "concepts",
+      "type": "multiple-response",
+      "text": "Which TWO are private IPv4 ranges? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "192.168.1.0/24"
+        },
+        {
+          "id": "b",
+          "text": "172.16.0.0/12"
+        },
+        {
+          "id": "c",
+          "text": "8.8.8.0/24"
+        },
+        {
+          "id": "d",
+          "text": "1.1.1.0/24"
+        },
+        {
+          "id": "e",
+          "text": "11.0.0.0/8 public"
+        }
+      ],
+      "correct": [
+        "a",
+        "b"
+      ],
+      "explanation": "192.168/16 and 172.16/12 are RFC 1918 private space.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q021",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which routing protocol is distance-vector and uses hop count?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RIP"
+        },
+        {
+          "id": "b",
+          "text": "OSPF link-state"
+        },
+        {
+          "id": "c",
+          "text": "BGP path vector external"
+        },
+        {
+          "id": "d",
+          "text": "IS-IS only datacenter"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RIP selects paths by hop count with limits.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q022",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which VLAN ID is reserved on Cisco-style switches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4095 or implementation-specific reserved; VLAN 1 default"
+        },
+        {
+          "id": "b",
+          "text": "VLAN 0 data"
+        },
+        {
+          "id": "c",
+          "text": "VLAN 9999 always routing"
+        },
+        {
+          "id": "d",
+          "text": "VLAN -1"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VLAN 1 is default; vendors reserve certain IDs.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q023",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which PoE standard supports up to 30W per port (802.3at)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PoE+"
+        },
+        {
+          "id": "b",
+          "text": "PoE 802.3af 15.4W class"
+        },
+        {
+          "id": "c",
+          "text": "Passive 24V always"
+        },
+        {
+          "id": "d",
+          "text": "USB-A power"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "802.3at (PoE+) delivers higher wattage.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q024",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which DNS server type holds authoritative zone records?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Primary authoritative server"
+        },
+        {
+          "id": "b",
+          "text": "Root hint only client"
+        },
+        {
+          "id": "c",
+          "text": "DHCP server"
+        },
+        {
+          "id": "d",
+          "text": "NTP stratum 0"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Authoritative servers store zone data.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q025",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which WAN technology uses virtual circuits over packet switching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frame Relay (legacy) / MPLS VPN concept"
+        },
+        {
+          "id": "b",
+          "text": "Dial-up modem only"
+        },
+        {
+          "id": "c",
+          "text": "Parallel printer cable"
+        },
+        {
+          "id": "d",
+          "text": "HDMI"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Many WANs use label-switched or VC technologies.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q026",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which firewall rule direction blocks inbound by default in hardened design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Implicit deny inbound after explicit permits"
+        },
+        {
+          "id": "b",
+          "text": "Allow all then log"
+        },
+        {
+          "id": "c",
+          "text": "Deny outbound only"
+        },
+        {
+          "id": "d",
+          "text": "Permit any any first"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Default deny inbound is a security baseline.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q027",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which 802.11 mode bonds channels for higher throughput?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Channel bonding / 40/80/160 MHz widths"
+        },
+        {
+          "id": "b",
+          "text": "WEP shared key"
+        },
+        {
+          "id": "c",
+          "text": "Half duplex fiber"
+        },
+        {
+          "id": "d",
+          "text": "CSMA/CD on switch"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Wider channels increase Wi-Fi data rates.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q028",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which device terminates many SSL VPN sessions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPN concentrator or firewall with VPN"
+        },
+        {
+          "id": "b",
+          "text": "Unmanaged hub"
+        },
+        {
+          "id": "c",
+          "text": "Analog modem bank only"
+        },
+        {
+          "id": "d",
+          "text": "KVM"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN gateways handle encrypted remote access.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q029",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which IPv6 configuration method uses routers to advertise prefixes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SLAAC with RA"
+        },
+        {
+          "id": "b",
+          "text": "ARP only"
+        },
+        {
+          "id": "c",
+          "text": "WINS"
+        },
+        {
+          "id": "d",
+          "text": "NetBIOS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Router Advertisements enable SLAAC addressing.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q030",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which cable tester result indicates split pair wiring fault?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wire map shows pins crossed between pairs"
+        },
+        {
+          "id": "b",
+          "text": "Link light green only"
+        },
+        {
+          "id": "c",
+          "text": "Ping success"
+        },
+        {
+          "id": "d",
+          "text": "DNS OK"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Split pairs cause crosstalk and errors.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q031",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which SD-WAN benefit optimizes multi-link use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dynamic path selection by application/policy"
+        },
+        {
+          "id": "b",
+          "text": "Static route only one link"
+        },
+        {
+          "id": "c",
+          "text": "Disable encryption"
+        },
+        {
+          "id": "d",
+          "text": "Remove QoS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SD-WAN steers traffic across MPLS/broadband/LTE.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q032",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which switch feature prevents loops while allowing redundancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spanning Tree Protocol (STP/RSTP)"
+        },
+        {
+          "id": "b",
+          "text": "Port mirroring"
+        },
+        {
+          "id": "c",
+          "text": "PoE"
+        },
+        {
+          "id": "d",
+          "text": "VLAN tagging only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "STP blocks redundant paths to avoid loops.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q033",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which authentication protocol is used with WPA2-Enterprise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "802.1X with EAP"
+        },
+        {
+          "id": "b",
+          "text": "WEP key index"
+        },
+        {
+          "id": "c",
+          "text": "MAC clone only"
+        },
+        {
+          "id": "d",
+          "text": "SSID broadcast off"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "802.1X controls port access before Wi-Fi data.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q034",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which IPv4 CIDR block has 14 usable host addresses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/28"
+        },
+        {
+          "id": "b",
+          "text": "/24"
+        },
+        {
+          "id": "c",
+          "text": "/16"
+        },
+        {
+          "id": "d",
+          "text": "/8"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "/28 leaves 4 host bits = 16 addresses, 14 usable.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q035",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which load balancer mode distributes based on source IP hash?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Source IP affinity / persistence"
+        },
+        {
+          "id": "b",
+          "text": "Round robin DNS only always layer 7"
+        },
+        {
+          "id": "c",
+          "text": "Broadcast storm"
+        },
+        {
+          "id": "d",
+          "text": "ARP proxy only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Persistence sticks sessions to the same backend.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q036",
+      "domain": "implementation",
+      "type": "multiple-choice",
+      "text": "Which transceiver form factor is hot-swappable on switches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SFP/SFP+"
+        },
+        {
+          "id": "b",
+          "text": "RJ-11"
+        },
+        {
+          "id": "c",
+          "text": "DE-9 serial"
+        },
+        {
+          "id": "d",
+          "text": "Molex"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SFP modules plug into switch slots for fiber/copper.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q037",
+      "domain": "implementation",
+      "type": "multiple-response",
+      "text": "Which TWO are required for a functioning DHCP IPv4 lease? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Available addresses in scope"
+        },
+        {
+          "id": "b",
+          "text": "Default gateway option often provided"
+        },
+        {
+          "id": "c",
+          "text": "WEP key index"
+        },
+        {
+          "id": "d",
+          "text": "MX record"
+        },
+        {
+          "id": "e",
+          "text": "Subnet mask"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "e"
+      ],
+      "explanation": "DHCP scopes need addresses, mask, and usually gateway/DNS options.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q038",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which documentation shows device interconnections and ports?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network diagram / ladder diagram"
+        },
+        {
+          "id": "b",
+          "text": "Privacy policy"
+        },
+        {
+          "id": "c",
+          "text": "Employee handbook"
+        },
+        {
+          "id": "d",
+          "text": "Toner inventory"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Diagrams map topology for operations.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q039",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which SNMP version adds encryption and authentication?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SNMPv3"
+        },
+        {
+          "id": "b",
+          "text": "SNMPv1 community public only"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SNMPv3 supports authPriv security models.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q040",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which backup type copies only changed blocks since last full?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Incremental"
+        },
+        {
+          "id": "b",
+          "text": "Full every time only"
+        },
+        {
+          "id": "c",
+          "text": "Mirror snap always full copy"
+        },
+        {
+          "id": "d",
+          "text": "Archive tape label"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Incrementals store changes since last backup of any type.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q041",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which KPI measures time between failures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MTBF"
+        },
+        {
+          "id": "b",
+          "text": "MTTR repair time"
+        },
+        {
+          "id": "c",
+          "text": "RPO"
+        },
+        {
+          "id": "d",
+          "text": "RTO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mean Time Between Failures indicates reliability.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q042",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which change management step validates rollback?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Backout plan documented before change"
+        },
+        {
+          "id": "b",
+          "text": "Skip CAB"
+        },
+        {
+          "id": "c",
+          "text": "Deploy Friday 5 PM always"
+        },
+        {
+          "id": "d",
+          "text": "No testing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rollback plans reduce outage risk.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q043",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which log source shows authentication failures on Linux?",
+      "options": [
+        {
+          "id": "a",
+          "text": "/var/log/auth.log or secure"
+        },
+        {
+          "id": "b",
+          "text": "access.log web only"
+        },
+        {
+          "id": "c",
+          "text": "spooler"
+        },
+        {
+          "id": "d",
+          "text": "CUPS error"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Auth logs capture SSH and sudo events.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q044",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which monitoring alert indicates interface saturation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sustained high utilization/errors on SNMP ifInOctets"
+        },
+        {
+          "id": "b",
+          "text": "User birthday"
+        },
+        {
+          "id": "c",
+          "text": "Printer low ink once"
+        },
+        {
+          "id": "d",
+          "text": "Desktop wallpaper change"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Interface counters reveal congestion and errors.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q045",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which wireless survey tool heatmaps signal strength?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site survey software with AP on a map"
+        },
+        {
+          "id": "b",
+          "text": "Cable toner"
+        },
+        {
+          "id": "c",
+          "text": "Multimeter"
+        },
+        {
+          "id": "d",
+          "text": "Torque driver"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Surveys visualize RSSI and interference.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q046",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which SLA metric defines allowed yearly downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Availability percentage (e.g., 99.9%)"
+        },
+        {
+          "id": "b",
+          "text": "MTBF only"
+        },
+        {
+          "id": "c",
+          "text": "Password length"
+        },
+        {
+          "id": "d",
+          "text": "SSID name"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Availability SLAs express uptime targets.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q047",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which configuration management stores device configs centrally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Git-backed repo or NCM tool"
+        },
+        {
+          "id": "b",
+          "text": "Sticky notes"
+        },
+        {
+          "id": "c",
+          "text": "Local only on each device unversioned"
+        },
+        {
+          "id": "d",
+          "text": "Spreadsheet on USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Versioned configs enable audit and rollback.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q048",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which patch window practice reduces user impact?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maintenance window with notifications"
+        },
+        {
+          "id": "b",
+          "text": "Silent prod patch noon"
+        },
+        {
+          "id": "c",
+          "text": "Never patch"
+        },
+        {
+          "id": "d",
+          "text": "Disable AV first always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Scheduled windows coordinate downtime.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q049",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which DNS monitoring detects hijacking or stale records?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Synthetic queries and DNSSEC validation where used"
+        },
+        {
+          "id": "b",
+          "text": "Ping only one host"
+        },
+        {
+          "id": "c",
+          "text": "Ignore TTL"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Proactive DNS checks catch poisoned or stale answers.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q050",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which cable management aids airflow in racks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertical/horizontal managers and dress paths"
+        },
+        {
+          "id": "b",
+          "text": "Cable spaghetti blocking vents"
+        },
+        {
+          "id": "c",
+          "text": "Zip ties over-tightened crushing pairs"
+        },
+        {
+          "id": "d",
+          "text": "Loose coils on floor"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Proper dressing improves cooling and troubleshooting.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q051",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which wireless controller function pushes SSID configs to APs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centralized WLAN management"
+        },
+        {
+          "id": "b",
+          "text": "Per-AP manual only always"
+        },
+        {
+          "id": "c",
+          "text": "DHCP server role only"
+        },
+        {
+          "id": "d",
+          "text": "SMTP relay"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Controllers provision lightweight APs at scale.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q052",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which incident severity involves total site outage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sev 1 / P1 critical"
+        },
+        {
+          "id": "b",
+          "text": "Low cosmetic"
+        },
+        {
+          "id": "c",
+          "text": "Enhancement request"
+        },
+        {
+          "id": "d",
+          "text": "Training ticket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "P1 incidents are business-critical outages.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q053",
+      "domain": "operations",
+      "type": "multiple-choice",
+      "text": "Which tool captures packets for protocol analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wireshark/tcpdump"
+        },
+        {
+          "id": "b",
+          "text": "Ping only"
+        },
+        {
+          "id": "c",
+          "text": "Tracert only"
+        },
+        {
+          "id": "d",
+          "text": "Speedtest alone"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Packet captures decode conversations on the wire.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q054",
+      "domain": "operations",
+      "type": "multiple-response",
+      "text": "Which TWO are network hardening steps? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unused ports"
+        },
+        {
+          "id": "b",
+          "text": "Use default SNMP public"
+        },
+        {
+          "id": "c",
+          "text": "Implement ACLs"
+        },
+        {
+          "id": "d",
+          "text": "Publish admin passwords"
+        },
+        {
+          "id": "e",
+          "text": "Enable secure management (SSH)"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Disable unused services, ACLs, and secure management reduce attack surface.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q055",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which attack floods a target with traffic to deny service?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DoS/DDoS"
+        },
+        {
+          "id": "b",
+          "text": "Phishing email only"
+        },
+        {
+          "id": "c",
+          "text": "Shoulder surfing"
+        },
+        {
+          "id": "d",
+          "text": "Dumpster diving"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Volume-based attacks overwhelm resources.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q056",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which port security feature limits MAC addresses on a switch port?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Port security sticky/learned limits"
+        },
+        {
+          "id": "b",
+          "text": "VLAN hopping always desired"
+        },
+        {
+          "id": "c",
+          "text": "STP root guard off"
+        },
+        {
+          "id": "d",
+          "text": "Open DHCP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Port security restricts learned MAC count.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q057",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which VPN protocol runs on SSL/TLS port 443 often?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OpenVPN or SSL VPN variants"
+        },
+        {
+          "id": "b",
+          "text": "PPTP only"
+        },
+        {
+          "id": "c",
+          "text": "Telnet VPN"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSL VPNs traverse firewalls using HTTPS port.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q058",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which wireless attack uses rogue AP with same SSID?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Evil twin"
+        },
+        {
+          "id": "b",
+          "text": "Bluejacking only"
+        },
+        {
+          "id": "c",
+          "text": "Tailgating physical"
+        },
+        {
+          "id": "d",
+          "text": "SQL injection"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Evil twins trick clients into malicious APs.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q059",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which NAC solution checks endpoint health before network access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "802.1X with posture assessment"
+        },
+        {
+          "id": "b",
+          "text": "WEP rotation"
+        },
+        {
+          "id": "c",
+          "text": "MAC spoof allowed"
+        },
+        {
+          "id": "d",
+          "text": "Open guest always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "NAC validates compliance before admission.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q060",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which encryption protects Wi-Fi payloads in WPA2-PSK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AES-CCMP"
+        },
+        {
+          "id": "b",
+          "text": "WEP RC4"
+        },
+        {
+          "id": "c",
+          "text": "Plaintext"
+        },
+        {
+          "id": "d",
+          "text": "ROT13"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WPA2 personal uses AES with CCMP.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q061",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which firewall type inspects application layer data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Next-generation firewall (NGFW)"
+        },
+        {
+          "id": "b",
+          "text": "Layer 1 hub"
+        },
+        {
+          "id": "c",
+          "text": "Passive patch panel"
+        },
+        {
+          "id": "d",
+          "text": "Repeater"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "NGFWs include app-aware policies.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q062",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which certificate problem breaks HTTPS trust?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expired or untrusted CA signature"
+        },
+        {
+          "id": "b",
+          "text": "Valid SAN match"
+        },
+        {
+          "id": "c",
+          "text": "Correct chain"
+        },
+        {
+          "id": "d",
+          "text": "Trusted root"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Browsers warn on bad cert chains or expiry.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q063",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which segmentation limits east-west malware spread?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Micro-segmentation / VLAN ACLs"
+        },
+        {
+          "id": "b",
+          "text": "Flat network one VLAN"
+        },
+        {
+          "id": "c",
+          "text": "Shared admin password"
+        },
+        {
+          "id": "d",
+          "text": "Disable logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Segmentation contains lateral movement.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q064",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which remote access method avoids exposing RDP directly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPN then RDP over private network"
+        },
+        {
+          "id": "b",
+          "text": "RDP port-forwarded open to internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "d",
+          "text": "FTP admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN reduces exposure of management ports.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q065",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which attack captures DHCP offers to become default gateway?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DHCP starvation/spoofing (rogue server)"
+        },
+        {
+          "id": "b",
+          "text": "ARP only unrelated"
+        },
+        {
+          "id": "c",
+          "text": "DNSSEC"
+        },
+        {
+          "id": "d",
+          "text": "NTP leap"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rogue DHCP can redirect traffic via bad gateway.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q066",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which HIDS tool monitors host logs and integrity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OSSEC/Wazuh-class HIDS"
+        },
+        {
+          "id": "b",
+          "text": "Unmanaged hub"
+        },
+        {
+          "id": "c",
+          "text": "Cable tester"
+        },
+        {
+          "id": "d",
+          "text": "Label maker"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HIDS agents detect file and log anomalies.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q067",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which wireless mitigation reduces rogue AP risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "WIPS scanning and ACL on wired uplinks"
+        },
+        {
+          "id": "b",
+          "text": "Hide SSID only"
+        },
+        {
+          "id": "c",
+          "text": "WEP"
+        },
+        {
+          "id": "d",
+          "text": "Disable encryption for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Wireless IPS detects unauthorized APs.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q068",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which authentication factor is a hardware token?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Something you have"
+        },
+        {
+          "id": "b",
+          "text": "Something you are only"
+        },
+        {
+          "id": "c",
+          "text": "Somewhere you are always"
+        },
+        {
+          "id": "d",
+          "text": "Something you ignore"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tokens are possession factors.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q069",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which protocol secures SNMP monitoring?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SNMPv3 authPriv"
+        },
+        {
+          "id": "b",
+          "text": "SNMPv1 public/private defaults"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "HTTP basic only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SNMPv3 encrypts and authenticates messages.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q070",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which email security record helps prevent spoofing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SPF/DKIM/DMARC"
+        },
+        {
+          "id": "b",
+          "text": "MX only"
+        },
+        {
+          "id": "c",
+          "text": "A record only"
+        },
+        {
+          "id": "d",
+          "text": "CNAME loop"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Email auth records reduce forged sender mail.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q071",
+      "domain": "security",
+      "type": "multiple-response",
+      "text": "Which TWO mitigate VLAN hopping? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable DTP/auto-trunk on access ports"
+        },
+        {
+          "id": "b",
+          "text": "Enable native VLAN tagging best practices"
+        },
+        {
+          "id": "c",
+          "text": "Use default VLAN 1 for all user traffic"
+        },
+        {
+          "id": "d",
+          "text": "Publish SNMP community"
+        },
+        {
+          "id": "e",
+          "text": "Prune unused VLANs from trunks"
+        }
+      ],
+      "correct": [
+        "a",
+        "e"
+      ],
+      "explanation": "Secure trunk/access port settings and VLAN pruning reduce hopping.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q072",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "High latency to a remote site over VPN. First check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Measure path with traceroute/MTR and check link utilization"
+        },
+        {
+          "id": "b",
+          "text": "Replace all PCs"
+        },
+        {
+          "id": "c",
+          "text": "Change DNS MX"
+        },
+        {
+          "id": "d",
+          "text": "Disable STP globally"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Path and congestion analysis isolates WAN issues.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q073",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Users get wrong IP subnet after office move. Cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mis-scoped DHCP or relay pointing to old server"
+        },
+        {
+          "id": "b",
+          "text": "GPU driver"
+        },
+        {
+          "id": "c",
+          "text": "Low ink"
+        },
+        {
+          "id": "d",
+          "text": "Monitor refresh"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DHCP scope/relay errors assign wrong networks.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q074",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Intermittent CRC errors on one switch port. Fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace patch cable and inspect SFP/transceiver"
+        },
+        {
+          "id": "b",
+          "text": "Update desktop wallpaper"
+        },
+        {
+          "id": "c",
+          "text": "Flash BIOS on laptops"
+        },
+        {
+          "id": "d",
+          "text": "Change AD password policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bad cables or optics cause CRC/FCS errors.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q075",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Wi-Fi clients connect but captive portal never appears. Check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DNS and firewall rules for walled garden URLs"
+        },
+        {
+          "id": "b",
+          "text": "Printer queue"
+        },
+        {
+          "id": "c",
+          "text": "RAID rebuild"
+        },
+        {
+          "id": "d",
+          "text": "CPU paste"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Portals require DNS/HTTP allow lists to redirect.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q076",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Single host cannot reach internet but peers can. Next?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compare gateway, DNS, and ACL on host vs working peer"
+        },
+        {
+          "id": "b",
+          "text": "Replace core router first"
+        },
+        {
+          "id": "c",
+          "text": "Reinstall building OS"
+        },
+        {
+          "id": "d",
+          "text": "Disable DHCP globally"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Host-specific config or ACL differs from working stations.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q077",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Duplicate IP warnings on LAN. Resolution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identify conflicting static/DHCP leases and reconcile"
+        },
+        {
+          "id": "b",
+          "text": "Add second default gateway randomly"
+        },
+        {
+          "id": "c",
+          "text": "Disable ARP"
+        },
+        {
+          "id": "d",
+          "text": "Enable WEP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Duplicate addresses break connectivity for both hosts.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q078",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Slow file share on gigabit link. Verify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Negotiated speed/duplex and cable category"
+        },
+        {
+          "id": "b",
+          "text": "Toner level"
+        },
+        {
+          "id": "c",
+          "text": "Keyboard layout"
+        },
+        {
+          "id": "d",
+          "text": "BIOS date"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Half-duplex or 100 Mbps link reduces throughput.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q079",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "BGP session down after firewall change. Likely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TCP 179 blocked between peers"
+        },
+        {
+          "id": "b",
+          "text": "DNS failure"
+        },
+        {
+          "id": "c",
+          "text": "SMTP relay"
+        },
+        {
+          "id": "d",
+          "text": "Printer spooler"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BGP uses TCP port 179 between routers.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q080",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "VoIP choppy on congested link. Mitigate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Implement QoS marking/queuing for voice VLAN"
+        },
+        {
+          "id": "b",
+          "text": "Disable VLANs"
+        },
+        {
+          "id": "c",
+          "text": "Remove PoE"
+        },
+        {
+          "id": "d",
+          "text": "Use hub"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Priority queuing protects real-time traffic.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q081",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Remote office tunnel up but no routes to HQ subnets. Fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Advertise/install correct phase 2 selectors/static routes"
+        },
+        {
+          "id": "b",
+          "text": "Change SSID"
+        },
+        {
+          "id": "c",
+          "text": "Replace mouse"
+        },
+        {
+          "id": "d",
+          "text": "Update GPU driver"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Missing routes prevent cross-site reachability.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q082",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "SSL cert warning on internal site only. Cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Internal CA not trusted on client or cert name mismatch"
+        },
+        {
+          "id": "b",
+          "text": "External DNS root issue only always"
+        },
+        {
+          "id": "c",
+          "text": "Low RAM"
+        },
+        {
+          "id": "d",
+          "text": "Wrong keyboard"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Trust store or SAN mismatch causes local HTTPS warnings.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q083",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Multicast video fails across subnets. Need?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IGMP snooping and PIM routing configured"
+        },
+        {
+          "id": "b",
+          "text": "Disable STP"
+        },
+        {
+          "id": "c",
+          "text": "Use WEP"
+        },
+        {
+          "id": "d",
+          "text": "Flat single VLAN only always wrong for large net"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multicast routing controls group membership across VLANs.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q084",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Fiber link flaps every few minutes. Inspect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dirty connectors, bend radius, and optical power levels"
+        },
+        {
+          "id": "b",
+          "text": "DNS TTL"
+        },
+        {
+          "id": "c",
+          "text": "SMTP banner"
+        },
+        {
+          "id": "d",
+          "text": "User GPO wallpaper"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Physical layer issues cause intermittent fiber links.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q085",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "After lightning, switch stack partial failure. Step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check PoE budget, damaged ports, and redundant power"
+        },
+        {
+          "id": "b",
+          "text": "Format laptops"
+        },
+        {
+          "id": "c",
+          "text": "Renew DHCP on clients only"
+        },
+        {
+          "id": "d",
+          "text": "Disable UPS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Power surges damage ports/modules; verify hardware health.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q086",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Captive portal auth works on Android not iOS. Check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Private MAC/Wi-Fi privacy randomization breaking portal auth"
+        },
+        {
+          "id": "b",
+          "text": "RAID level"
+        },
+        {
+          "id": "c",
+          "text": "Printer driver"
+        },
+        {
+          "id": "d",
+          "text": "CPU socket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Random MAC features can break MAC-based portal policies.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q087",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Traceroute stops at firewall. Interpretation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ICMP/time-exceeded filtered \u2014 not always outage"
+        },
+        {
+          "id": "b",
+          "text": "Target definitely down always"
+        },
+        {
+          "id": "c",
+          "text": "DNS broken always"
+        },
+        {
+          "id": "d",
+          "text": "Cable bad always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Filters hide hops; verify with allowed probes/end-to-end tests.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q088",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "(Network+ pool) Supplemental troubleshooting item 1: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q089",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "(Network+ pool) Supplemental troubleshooting item 2: which best practice improves reliability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow change control and monitor metrics"
+        },
+        {
+          "id": "b",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "c",
+          "text": "Skip backups"
+        },
+        {
+          "id": "d",
+          "text": "Ignore vendor docs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational discipline reduces outages and misconfigurations.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    },
+    {
+      "id": "cptnet-q090",
+      "domain": "troubleshooting",
+      "type": "multiple-response",
+      "text": "Which TWO tools diagnose DNS issues? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "nslookup/dig"
+        },
+        {
+          "id": "b",
+          "text": "Cable toner only"
+        },
+        {
+          "id": "c",
+          "text": "Resolve with known server"
+        },
+        {
+          "id": "d",
+          "text": "Multimeter continuity on RJ-45 for app layer"
+        },
+        {
+          "id": "e",
+          "text": "Check forward/reverse zones"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Query tools and zone checks validate DNS resolution.",
+      "docs": [
+        {
+          "title": "Network+ Exam Objectives",
+          "url": "https://www.comptia.org/certifications/network"
+        }
+      ]
+    }
+  ],
+  "acronyms": [
+    {
+      "term": "OSI",
+      "expansion": "Open Systems Interconnection",
+      "hint": "7-layer network reference model",
+      "category": "Networking"
+    },
+    {
+      "term": "TCP",
+      "expansion": "Transmission Control Protocol",
+      "hint": "Connection-oriented Layer 4 protocol",
+      "category": "Networking"
+    },
+    {
+      "term": "UDP",
+      "expansion": "User Datagram Protocol",
+      "hint": "Connectionless Layer 4 protocol",
+      "category": "Networking"
+    },
+    {
+      "term": "IP",
+      "expansion": "Internet Protocol",
+      "hint": "Layer 3 logical addressing",
+      "category": "Networking"
+    },
+    {
+      "term": "ICMP",
+      "expansion": "Internet Control Message Protocol",
+      "hint": "Diagnostics like ping/traceroute",
+      "category": "Networking"
+    },
+    {
+      "term": "ARP",
+      "expansion": "Address Resolution Protocol",
+      "hint": "Maps IP to MAC on LAN",
+      "category": "Networking"
+    },
+    {
+      "term": "DNS",
+      "expansion": "Domain Name System",
+      "hint": "Name to IP resolution",
+      "category": "Networking"
+    },
+    {
+      "term": "DHCP",
+      "expansion": "Dynamic Host Configuration Protocol",
+      "hint": "Automated IP configuration",
+      "category": "Networking"
+    },
+    {
+      "term": "NAT",
+      "expansion": "Network Address Translation",
+      "hint": "Translates private to public addresses",
+      "category": "Networking"
+    },
+    {
+      "term": "PAT",
+      "expansion": "Port Address Translation",
+      "hint": "NAT overload using ports",
+      "category": "Networking"
+    },
+    {
+      "term": "VLAN",
+      "expansion": "Virtual Local Area Network",
+      "hint": "Logical LAN segmentation",
+      "category": "Switching"
+    },
+    {
+      "term": "STP",
+      "expansion": "Spanning Tree Protocol",
+      "hint": "Prevents switching loops",
+      "category": "Switching"
+    },
+    {
+      "term": "PoE",
+      "expansion": "Power over Ethernet",
+      "hint": "Power on Ethernet pairs",
+      "category": "Infrastructure"
+    },
+    {
+      "term": "QoS",
+      "expansion": "Quality of Service",
+      "hint": "Prioritizes traffic classes",
+      "category": "Networking"
+    },
+    {
+      "term": "MPLS",
+      "expansion": "Multiprotocol Label Switching",
+      "hint": "Label-switched WAN forwarding",
+      "category": "WAN"
+    },
+    {
+      "term": "BGP",
+      "expansion": "Border Gateway Protocol",
+      "hint": "Inter-domain routing on the internet",
+      "category": "Routing"
+    },
+    {
+      "term": "OSPF",
+      "expansion": "Open Shortest Path First",
+      "hint": "Link-state IGP routing protocol",
+      "category": "Routing"
+    },
+    {
+      "term": "RIP",
+      "expansion": "Routing Information Protocol",
+      "hint": "Distance-vector routing protocol",
+      "category": "Routing"
+    },
+    {
+      "term": "VPN",
+      "expansion": "Virtual Private Network",
+      "hint": "Encrypted tunnel over untrusted networks",
+      "category": "Security"
+    },
+    {
+      "term": "IPsec",
+      "expansion": "Internet Protocol Security",
+      "hint": "Suite securing IP communications",
+      "category": "Security"
+    },
+    {
+      "term": "SSL",
+      "expansion": "Secure Sockets Layer (legacy name)",
+      "hint": "Predecessor terminology for TLS on HTTPS",
+      "category": "Security"
+    },
+    {
+      "term": "TLS",
+      "expansion": "Transport Layer Security",
+      "hint": "Encrypts application traffic",
+      "category": "Security"
+    },
+    {
+      "term": "WPA3",
+      "expansion": "Wi-Fi Protected Access 3",
+      "hint": "Latest Wi-Fi security generation",
+      "category": "Wireless"
+    },
+    {
+      "term": "SSID",
+      "expansion": "Service Set Identifier",
+      "hint": "Wireless network name",
+      "category": "Wireless"
+    },
+    {
+      "term": "RF",
+      "expansion": "Radio Frequency",
+      "hint": "Wireless signal spectrum",
+      "category": "Wireless"
+    },
+    {
+      "term": "SNR",
+      "expansion": "Signal-to-Noise Ratio",
+      "hint": "Wireless signal quality metric",
+      "category": "Wireless"
+    },
+    {
+      "term": "MTU",
+      "expansion": "Maximum Transmission Unit",
+      "hint": "Largest packet size on interface",
+      "category": "Networking"
+    },
+    {
+      "term": "CRC",
+      "expansion": "Cyclic Redundancy Check",
+      "hint": "Error detection in frames",
+      "category": "Networking"
+    },
+    {
+      "term": "FCS",
+      "expansion": "Frame Check Sequence",
+      "hint": "Ethernet trailer error field",
+      "category": "Networking"
+    },
+    {
+      "term": "LLDP",
+      "expansion": "Link Layer Discovery Protocol",
+      "hint": "Neighbor discovery on switches",
+      "category": "Operations"
+    },
+    {
+      "term": "SNMP",
+      "expansion": "Simple Network Management Protocol",
+      "hint": "Monitors network devices",
+      "category": "Operations"
+    },
+    {
+      "term": "NTP",
+      "expansion": "Network Time Protocol",
+      "hint": "Synchronizes clocks",
+      "category": "Operations"
+    },
+    {
+      "term": "Syslog",
+      "expansion": "System Logging Protocol",
+      "hint": "Centralized log messaging",
+      "category": "Operations"
+    },
+    {
+      "term": "ACL",
+      "expansion": "Access Control List",
+      "hint": "Permit/deny traffic rules",
+      "category": "Security"
+    },
+    {
+      "term": "DoS",
+      "expansion": "Denial of Service",
+      "hint": "Availability attack",
+      "category": "Security"
+    },
+    {
+      "term": "DDoS",
+      "expansion": "Distributed Denial of Service",
+      "hint": "DoS from many sources",
+      "category": "Security"
+    },
+    {
+      "term": "IDS",
+      "expansion": "Intrusion Detection System",
+      "hint": "Detects suspicious activity",
+      "category": "Security"
+    },
+    {
+      "term": "IPS",
+      "expansion": "Intrusion Prevention System",
+      "hint": "Blocks detected threats inline",
+      "category": "Security"
+    },
+    {
+      "term": "NAC",
+      "expansion": "Network Access Control",
+      "hint": "Admits compliant endpoints",
+      "category": "Security"
+    },
+    {
+      "term": "802.1X",
+      "expansion": "Port-Based Network Access Control",
+      "hint": "Authenticates devices before LAN access",
+      "category": "Security"
+    },
+    {
+      "term": "RADIUS",
+      "expansion": "Remote Authentication Dial-In User Service",
+      "hint": "Central AAA for network access",
+      "category": "Security"
+    },
+    {
+      "term": "TACACS+",
+      "expansion": "Terminal Access Controller Access-Control System Plus",
+      "hint": "Cisco-oriented AAA protocol",
+      "category": "Security"
+    },
+    {
+      "term": "SD-WAN",
+      "expansion": "Software-Defined WAN",
+      "hint": "Policy-based WAN path selection",
+      "category": "WAN"
+    },
+    {
+      "term": "ISP",
+      "expansion": "Internet Service Provider",
+      "hint": "Provides internet connectivity",
+      "category": "WAN"
+    },
+    {
+      "term": "CPE",
+      "expansion": "Customer Premises Equipment",
+      "hint": "Customer-side WAN/router gear",
+      "category": "WAN"
+    },
+    {
+      "term": "MTBF",
+      "expansion": "Mean Time Between Failures",
+      "hint": "Reliability metric",
+      "category": "Operations"
+    },
+    {
+      "term": "MTTR",
+      "expansion": "Mean Time To Repair/Recover",
+      "hint": "Recovery time metric",
+      "category": "Operations"
+    },
+    {
+      "term": "SLA",
+      "expansion": "Service Level Agreement",
+      "hint": "Contracted service expectations",
+      "category": "Operations"
+    },
+    {
+      "term": "UPS",
+      "expansion": "Uninterruptible Power Supply",
+      "hint": "Battery backup for gear",
+      "category": "Infrastructure"
+    },
+    {
+      "term": "PDU",
+      "expansion": "Power Distribution Unit",
+      "hint": "Rack power distribution",
+      "category": "Infrastructure"
+    }
+  ]
+}

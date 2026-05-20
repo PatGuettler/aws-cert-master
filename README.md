@@ -27,7 +27,21 @@ The hamburger menu loads exams from **`data/exams-index.json`**, which is built 
 | AWS Certified Advanced Networking – Specialty | ANS-C01 |
 | AWS Certified Security – Specialty | SCS-C02 |
 
-Each cert has its own JSON under `data/exams/` (70–225+ practice questions per exam). Questions align with **official exam guide domains** and link to **AWS documentation** — they are **not** real exam items (AWS exam content is confidential).
+### CompTIA (top 5)
+
+| Exam | Code |
+|------|------|
+| CompTIA A+ | 220-1101 / 1102 |
+| CompTIA Network+ | N10-009 |
+| CompTIA Security+ | SY0-701 |
+| CompTIA CySA+ | CS0-003 |
+| CompTIA Linux+ | XK0-005 |
+
+Each cert has its own JSON under `data/exams/` (70–225+ practice questions per exam). Questions align with **official exam guide domains** and link to vendor docs — they are **not** real exam items (exam content is confidential).
+
+**CompTIA acronym study:** each CompTIA JSON includes an `acronyms` array. On the exam page, use **Study acronyms** for a quiz that explains why drilling abbreviations helps before full practice exams.
+
+**Regenerate CompTIA banks:** `python3 scripts/generate_comptia_exams.py`
 
 **Regenerate all AWS banks:** `python3 scripts/generate_all_aws_exams.py`  
 **Rebuild menu index:** `python3 scripts/build-exams-index.py`

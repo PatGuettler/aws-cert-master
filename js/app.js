@@ -26,6 +26,7 @@ import { initStorageNotice } from "./storage-notice.js";
 import { buildTrendLine } from "./history-ui.js";
 import { renderDashboard, renderProgressTeaser } from "./dashboard-ui.js";
 import { renderLanding } from "./landing-ui.js";
+import { runAcronymQuiz } from "./acronym-engine.js";
 
 const LAST_CERT_KEY = "aws-cert-master:lastCert";
 import { initDataPanel } from "./data-panel.js";
@@ -59,12 +60,16 @@ let sessionMode = "exam";
 const views = {
   landing: document.getElementById("view-landing"),
   cert: document.getElementById("view-cert"),
+  acronyms: document.getElementById("view-acronyms"),
   dashboard: document.getElementById("view-dashboard"),
   exam: document.getElementById("view-exam"),
   results: document.getElementById("view-results"),
   study: document.getElementById("view-study"),
   review: document.getElementById("view-review"),
 };
+
+/** @type {{ stop: () => void }|null} */
+let acronymController = null;
 
 const headerTitle = document.getElementById("header-title");
 const examTimer = document.getElementById("exam-timer");
@@ -89,16 +94,20 @@ function parseRoute(exams) {
   const raw = window.location.hash.replace(/^#/, "").trim();
   if (!raw) return { type: "landing" };
 
-  let certId = "";
-  if (raw.startsWith("cert/")) {
-    certId = raw.slice(5);
-  } else {
-    certId = raw;
+  const parts = raw.split("/").filter(Boolean);
+
+  if (parts[0] === "cert" && parts[1] && exams.some((e) => e.id === parts[1])) {
+    if (parts[2] === "acronyms") {
+      return { type: "acronyms", certId: parts[1] };
+    }
+    return { type: "cert", certId: parts[1] };
   }
 
-  if (certId && exams.some((e) => e.id === certId)) {
-    return { type: "cert", certId };
+  const legacyId = parts[0];
+  if (legacyId && exams.some((e) => e.id === legacyId)) {
+    return { type: "cert", certId: legacyId };
   }
+
   return { type: "landing" };
 }
 
@@ -113,9 +122,8 @@ function getDefaultCertId(exams) {
   return exams[0]?.id ?? "";
 }
 
-function setCertHash(certId) {
-  const base = window.location.pathname + window.location.search;
-  window.location.hash = `cert/${certId}`;
+function setCertHash(certId, sub = "") {
+  window.location.hash = sub ? `cert/${certId}/${sub}` : `cert/${certId}`;
 }
 
 function clearAppHash() {
@@ -153,21 +161,28 @@ async function openCert(certId) {
  */
 function syncCertFilterOptions(select, selectedId) {
   if (!select) return;
-  const awsExams = examIndexList
-    .filter((e) => (e.vendor ?? "aws") === "aws")
-    .sort((a, b) => a.name.localeCompare(b.name));
+  const allExams = [...examIndexList].sort((a, b) => {
+    const va = a.vendor ?? "aws";
+    const vb = b.vendor ?? "aws";
+    if (va !== vb) return va.localeCompare(vb);
+    return a.name.localeCompare(b.name);
+  });
 
   const prev = select.value || selectedId;
   select.innerHTML = "";
-  for (const exam of awsExams) {
+  for (const exam of allExams) {
     const opt = document.createElement("option");
     opt.value = exam.id;
-    opt.textContent = exam.code ? `${exam.name} (${exam.code})` : exam.name;
+    const vendor =
+      exam.vendor === "comptia" ? "CompTIA" : "AWS";
+    opt.textContent = exam.code
+      ? `[${vendor}] ${exam.name} (${exam.code})`
+      : `[${vendor}] ${exam.name}`;
     select.appendChild(opt);
   }
-  if (awsExams.some((e) => e.id === prev)) select.value = prev;
-  else if (awsExams.some((e) => e.id === selectedId)) select.value = selectedId;
-  else if (awsExams[0]) select.value = awsExams[0].id;
+  if (allExams.some((e) => e.id === prev)) select.value = prev;
+  else if (allExams.some((e) => e.id === selectedId)) select.value = selectedId;
+  else if (allExams[0]) select.value = allExams[0].id;
 }
 
 /**
@@ -216,6 +231,10 @@ function refreshDataViews() {
   if (!currentCert || !activeCertId) return;
   if (active === "cert") {
     populateCert();
+    return;
+  }
+  if (active === "acronyms" && currentCert) {
+    showAcronyms({ fromRoute: true });
     return;
   }
   if (active === "results" && lastResult) {
@@ -313,6 +332,9 @@ async function init() {
       setCertHash(route.certId);
     }
     await tryResumePrompt();
+  } else if (route.type === "acronyms") {
+    await switchCert(route.certId, { fromRoute: true });
+    showAcronyms({ fromRoute: true });
   } else {
     clearAppHash();
     currentCert = null;
@@ -335,11 +357,27 @@ async function init() {
   window.addEventListener("hashchange", () => {
     const route = parseRoute(examIndexList);
     if (route.type === "landing") {
+      acronymController?.stop();
       showLanding();
       return;
     }
-    if (route.type === "cert" && route.certId !== activeCertId) {
-      switchCert(route.certId, { fromRoute: true });
+    if (route.type === "acronyms") {
+      if (route.certId !== activeCertId) {
+        switchCert(route.certId, { fromRoute: true }).then(() =>
+          showAcronyms({ fromRoute: true })
+        );
+      } else {
+        showAcronyms({ fromRoute: true });
+      }
+      return;
+    }
+    acronymController?.stop();
+    if (route.type === "cert") {
+      if (route.certId !== activeCertId) {
+        switchCert(route.certId, { fromRoute: true });
+      } else if (getActiveView() !== "cert") {
+        showCertView();
+      }
     }
   });
 
@@ -469,6 +507,54 @@ function populateCert() {
     `Exam domains (${cert.code})`;
 
   renderProgressTeaser(activeCertId, cert);
+
+  const isComptia = cert.vendor === "comptia";
+  const hasAcronyms = (cert.acronyms?.length ?? 0) > 0;
+  const showAcr = isComptia && hasAcronyms;
+
+  document.getElementById("cert-acronym-callout")?.classList.toggle("hidden", !showAcr);
+  document.getElementById("btn-study-acronyms")?.classList.toggle("hidden", !showAcr);
+  document.getElementById("btn-study-acronyms-inline")?.classList.toggle(
+    "hidden",
+    !showAcr
+  );
+}
+
+/**
+ * @param {{ fromRoute?: boolean }} [opts]
+ */
+function showAcronyms(opts = {}) {
+  if (!currentCert) return;
+  const acronyms = currentCert.acronyms ?? [];
+  if (acronyms.length === 0) {
+    window.alert("No acronyms available for this certification.");
+    return;
+  }
+
+  if (!opts.fromRoute) {
+    setCertHash(activeCertId, "acronyms");
+  }
+
+  showView("acronyms");
+  setHeaderTitle(`${currentCert.code} — Acronyms`);
+
+  document.getElementById("acronym-view-title").textContent =
+    `Acronym study — ${currentCert.name}`;
+  document.getElementById("acronym-view-code").textContent = currentCert.code;
+
+  const root = document.getElementById("acronym-root");
+  if (!root) return;
+
+  acronymController?.stop();
+  acronymController = runAcronymQuiz({
+    cert: currentCert,
+    container: root,
+    onExit: () => {
+      acronymController?.stop();
+      showCertView();
+      setCertHash(activeCertId);
+    },
+  });
 }
 
 async function showDashboard() {
@@ -736,10 +822,22 @@ document.getElementById("btn-back-landing")?.addEventListener("click", goLanding
 document.getElementById("btn-dashboard-home")?.addEventListener("click", goLanding);
 document.getElementById("landing-tile-dashboard")?.addEventListener("click", showDashboard);
 document.getElementById("landing-tile-browse")?.addEventListener("click", () => {
-  document.getElementById("landing-cert-grid")?.scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("landing-aws-heading")
+    ?.scrollIntoView({ behavior: "smooth" });
 });
 document.getElementById("landing-tile-clf")?.addEventListener("click", () => {
   openCert("cloud-practitioner");
+});
+document.getElementById("landing-tile-secplus")?.addEventListener("click", () => {
+  openCert("comptia-security-plus");
+});
+document.getElementById("btn-study-acronyms")?.addEventListener("click", showAcronyms);
+document.getElementById("btn-study-acronyms-inline")?.addEventListener("click", showAcronyms);
+document.getElementById("btn-acronyms-back-cert")?.addEventListener("click", () => {
+  acronymController?.stop();
+  showCertView();
+  setCertHash(activeCertId);
 });
 document.getElementById("btn-dashboard-start")?.addEventListener("click", async () => {
   const certId =

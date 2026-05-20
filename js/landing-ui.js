@@ -14,8 +14,17 @@ const AWS_CERT_SORT = {
   "security-specialty": 120,
 };
 
+/** @type {Record<string, number>} */
+const COMPTIA_CERT_SORT = {
+  "comptia-a-plus": 10,
+  "comptia-network-plus": 20,
+  "comptia-security-plus": 30,
+  "comptia-cysa-plus": 40,
+  "comptia-linux-plus": 50,
+};
+
 /** @type {Record<string, string>} */
-const LEVEL_LABEL = {
+const AWS_LEVEL_LABEL = {
   "cloud-practitioner": "Foundational",
   "ai-practitioner": "Foundational",
   "solutions-architect-associate": "Associate",
@@ -32,29 +41,31 @@ const LEVEL_LABEL = {
 
 /**
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
- * @param {(certId: string) => void} onSelectCert
+ * @param {Record<string, number>} sortMap
+ * @param {string} vendor
  */
-export function renderLanding(exams, onSelectCert) {
-  const grid = document.getElementById("landing-cert-grid");
-  const countEl = document.getElementById("landing-exam-count");
-  if (!grid) return;
-
-  const awsExams = exams
-    .filter((e) => (e.vendor ?? "aws") === "aws")
+function filterAndSort(exams, sortMap, vendor) {
+  return exams
+    .filter((e) => (e.vendor ?? "aws") === vendor)
     .sort((a, b) => {
-      const oa = AWS_CERT_SORT[a.id] ?? 500;
-      const ob = AWS_CERT_SORT[b.id] ?? 500;
+      const oa = sortMap[a.id] ?? 500;
+      const ob = sortMap[b.id] ?? 500;
       if (oa !== ob) return oa - ob;
       return a.name.localeCompare(b.name);
     });
+}
 
-  if (countEl) {
-    countEl.textContent = String(awsExams.length);
-  }
-
+/**
+ * @param {HTMLElement|null} grid
+ * @param {import('./cert-loader.js').ExamIndexEntry[]} items
+ * @param {string} levelDefault
+ * @param {string} metaSuffix
+ * @param {(certId: string) => void} onSelectCert
+ */
+function renderGrid(grid, items, levelDefault, metaSuffix, onSelectCert) {
+  if (!grid) return;
   grid.innerHTML = "";
-
-  for (const exam of awsExams) {
+  for (const exam of items) {
     const tile = document.createElement("button");
     tile.type = "button";
     tile.className = "landing-cert-tile";
@@ -62,7 +73,7 @@ export function renderLanding(exams, onSelectCert) {
 
     const level = document.createElement("span");
     level.className = "landing-cert-tile-level";
-    level.textContent = LEVEL_LABEL[exam.id] ?? "AWS";
+    level.textContent = levelDefault;
 
     const title = document.createElement("span");
     title.className = "landing-cert-tile-title";
@@ -74,10 +85,36 @@ export function renderLanding(exams, onSelectCert) {
 
     const meta = document.createElement("span");
     meta.className = "landing-cert-tile-meta";
-    meta.textContent = `${exam.questionCount ?? "—"} questions in bank`;
+    meta.textContent = `${exam.questionCount ?? "—"} questions${metaSuffix}`;
 
     tile.append(level, title, code, meta);
     tile.addEventListener("click", () => onSelectCert(exam.id));
     grid.appendChild(tile);
   }
+}
+
+/**
+ * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
+ * @param {(certId: string) => void} onSelectCert
+ */
+export function renderLanding(exams, onSelectCert) {
+  const awsGrid = document.getElementById("landing-cert-grid-aws");
+  const comptiaGrid = document.getElementById("landing-cert-grid-comptia");
+  const awsCount = document.getElementById("landing-aws-count");
+  const comptiaCount = document.getElementById("landing-comptia-count");
+
+  const awsExams = filterAndSort(exams, AWS_CERT_SORT, "aws");
+  const comptiaExams = filterAndSort(exams, COMPTIA_CERT_SORT, "comptia");
+
+  if (awsCount) awsCount.textContent = String(awsExams.length);
+  if (comptiaCount) comptiaCount.textContent = String(comptiaExams.length);
+
+  renderGrid(awsGrid, awsExams, "AWS", " in bank", onSelectCert);
+  renderGrid(
+    comptiaGrid,
+    comptiaExams,
+    "CompTIA",
+    " · includes acronym drill",
+    onSelectCert
+  );
 }
