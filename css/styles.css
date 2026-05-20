@@ -92,6 +92,26 @@ input[type="radio"] {
   display: none !important;
 }
 
+.init-error {
+  padding: 2rem 1.5rem;
+  max-width: 36rem;
+  margin: 0 auto;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.init-error h2 {
+  margin: 0 0 0.75rem;
+  color: var(--aws-red);
+}
+
+.init-error-hint {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+
 /* Header */
 .site-header {
   position: sticky;

@@ -14,13 +14,7 @@ const pageShell = document.getElementById("page-shell");
 const adSlot = document.getElementById("ad-slot");
 const adContainer = document.getElementById("ad-container");
 
-/**
- * @param {string} basePath
- */
-function resolvePath(basePath) {
-  const base = document.querySelector("base")?.href ?? window.location.href;
-  return new URL(basePath, base).href;
-}
+import { resolveAssetPath } from "./paths.js";
 
 /**
  * @returns {Promise<object|null>}
@@ -28,7 +22,7 @@ function resolvePath(basePath) {
 async function loadAdsConfig() {
   if (config) return config;
   try {
-    const res = await fetch(resolvePath("data/ads-config.json"), {
+    const res = await fetch(resolveAssetPath("data/ads-config.json"), {
       cache: "no-store",
     });
     if (!res.ok) return null;

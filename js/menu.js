@@ -175,12 +175,11 @@ export function initMenu({
   function setActiveCert(certId) {
     activeCertId = certId;
     const selector = "button[data-exam-id]";
-    examListAws?.querySelectorAll(selector).forEach((btn) => {
-      btn.classList.toggle("active", btn.dataset.examId === certId);
-    });
-    examListComptia?.querySelectorAll(selector).forEach((btn) => {
-      btn.classList.toggle("active", btn.dataset.examId === certId);
-    });
+    for (const list of [examListAws, examListComptia]) {
+      list?.querySelectorAll(selector).forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.examId === certId);
+      });
+    }
   }
 
   function refreshSettings(newSettings) {

@@ -9,6 +9,19 @@
       content="Free AWS and CompTIA certification practice exams — no login. Timed exams, acronym drills, progress tracking, and study plans."
     />
     <title>AWS Cert Master — Practice Tests</title>
+    <script>
+      (function () {
+        var p = location.pathname;
+        if (/\.html$/i.test(p)) {
+          p = p.slice(0, p.lastIndexOf("/") + 1);
+        } else if (!p.endsWith("/")) {
+          p = p + "/";
+        }
+        var b = document.createElement("base");
+        b.href = p;
+        document.head.appendChild(b);
+      })();
+    </script>
     <link rel="stylesheet" href="css/styles.css" />
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3981092943886508"
@@ -119,7 +132,8 @@
 
     <div class="page-shell" id="page-shell">
     <main>
-      <section id="view-landing" class="view">
+      <section id="view-error" class="view hidden" aria-live="polite"></section>
+      <section id="view-landing" class="view hidden">
         <div class="landing-hero">
           <h2>Certification practice — free, in your browser</h2>
           <p class="landing-lead">

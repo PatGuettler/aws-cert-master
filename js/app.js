@@ -28,11 +28,14 @@ import { renderDashboard, renderProgressTeaser } from "./dashboard-ui.js";
 import { renderLanding } from "./landing-ui.js";
 import { runAcronymQuiz } from "./acronym-engine.js";
 
-const LAST_CERT_KEY = "aws-cert-master:lastCert";
 import { initDataPanel } from "./data-panel.js";
 import { renderBookmarkReview } from "./review-ui.js";
+import { getSiteRoot } from "./paths.js";
+
+const LAST_CERT_KEY = "aws-cert-master:lastCert";
 
 let activeCertId = "";
+let appReady = false;
 /** @type {import('./cert-loader.js').ExamIndexEntry[]} */
 let examIndexList = [];
 /** @type {ReturnType<typeof initMenu>|null} */
@@ -58,6 +61,7 @@ let examController = null;
 let sessionMode = "exam";
 
 const views = {
+  error: document.getElementById("view-error"),
   landing: document.getElementById("view-landing"),
   cert: document.getElementById("view-cert"),
   acronyms: document.getElementById("view-acronyms"),
@@ -74,12 +78,18 @@ let acronymController = null;
 const headerTitle = document.getElementById("header-title");
 const examTimer = document.getElementById("exam-timer");
 
+function hideAllViews() {
+  Object.values(views).forEach((el) => el?.classList.add("hidden"));
+  examTimer?.classList.add("hidden");
+}
+
 function showView(name) {
   Object.entries(views).forEach(([key, el]) => {
     el?.classList.toggle("hidden", key !== name);
   });
   examTimer?.classList.toggle("hidden", name !== "exam");
   updateAdVisibility(name !== "exam");
+  window.scrollTo(0, 0);
 }
 
 function setHeaderTitle(text) {
@@ -88,7 +98,7 @@ function setHeaderTitle(text) {
 
 /**
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
- * @returns {{ type: 'landing' } | { type: 'cert', certId: string }}
+ * @returns {{ type: 'landing' } | { type: 'cert', certId: string } | { type: 'acronyms', certId: string }}
  */
 function parseRoute(exams) {
   const raw = window.location.hash.replace(/^#/, "").trim();
@@ -96,7 +106,8 @@ function parseRoute(exams) {
 
   const parts = raw.split("/").filter(Boolean);
 
-  if (parts[0] === "cert" && parts[1] && exams.some((e) => e.id === parts[1])) {
+  if (parts[0] === "cert" && parts[1]) {
+    if (!exams.some((e) => e.id === parts[1])) return { type: "landing" };
     if (parts[2] === "acronyms") {
       return { type: "acronyms", certId: parts[1] };
     }
@@ -112,6 +123,27 @@ function parseRoute(exams) {
 }
 
 /**
+ * Redirect #cloud-practitioner → #cert/cloud-practitioner and strip unknown hashes.
+ * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
+ */
+function normalizeHash(exams) {
+  const raw = window.location.hash.replace(/^#/, "").trim();
+  if (!raw) return;
+
+  if (raw.startsWith("cert/")) return;
+
+  const legacyId = raw.split("/")[0];
+  const base = window.location.pathname + window.location.search;
+
+  if (exams.some((e) => e.id === legacyId)) {
+    history.replaceState(null, "", `${base}#cert/${legacyId}`);
+    return;
+  }
+
+  history.replaceState(null, "", base);
+}
+
+/**
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
  */
 function getDefaultCertId(exams) {
@@ -123,7 +155,11 @@ function getDefaultCertId(exams) {
 }
 
 function setCertHash(certId, sub = "") {
-  window.location.hash = sub ? `cert/${certId}/${sub}` : `cert/${certId}`;
+  const hash = sub ? `cert/${certId}/${sub}` : `cert/${certId}`;
+  const current = window.location.hash.replace(/^#/, "");
+  if (current !== hash) {
+    window.location.hash = hash;
+  }
 }
 
 function clearAppHash() {
@@ -290,10 +326,64 @@ async function tryResumePrompt() {
   else clearResumeState(activeCertId);
 }
 
+function showBootstrapError(err) {
+  appReady = true;
+  hideAllViews();
+  const errView = document.getElementById("view-error");
+  if (errView) {
+    errView.classList.remove("hidden");
+    errView.innerHTML = `
+      <div class="init-error" role="alert">
+        <h2>Could not load exams</h2>
+        <p>${err.message}</p>
+        <p class="init-error-hint">Tried loading from: <code>${getSiteRoot()}data/exams-index.json</code></p>
+        <p>After pushing updates, wait for GitHub Pages to finish deploying, then hard-refresh (Ctrl+Shift+R).</p>
+        <button type="button" class="btn btn-primary" onclick="location.reload()">Retry</button>
+      </div>`;
+  }
+  setHeaderTitle("AWS Cert Master");
+}
+
+/**
+ * @param {{ type: string, certId?: string }} route
+ */
+async function applyRoute(route) {
+  if (route.type === "landing") {
+    acronymController?.stop();
+    examController?.stopTimer?.();
+    currentCert = null;
+    clearAppHash();
+    showLanding();
+    return;
+  }
+
+  if (route.type === "acronyms") {
+    await switchCert(route.certId, { fromRoute: true });
+    showAcronyms({ fromRoute: true });
+    return;
+  }
+
+  if (route.type === "cert") {
+    await switchCert(route.certId, { fromRoute: true });
+    await tryResumePrompt();
+  }
+}
+
 async function init() {
   purgeStaleResumeStates();
   clearExamCaches();
-  const exams = await loadExamIndex({ reload: true });
+
+  hideAllViews();
+
+  let exams;
+  try {
+    exams = await loadExamIndex({ reload: true });
+  } catch (err) {
+    console.error(err);
+    showBootstrapError(err);
+    return;
+  }
+
   examIndexList = exams;
 
   if (exams.length === 0) {
@@ -322,25 +412,9 @@ async function init() {
     return;
   }
 
+  normalizeHash(exams);
   activeCertId = getDefaultCertId(exams);
   settings = loadSettings(activeCertId);
-
-  const route = parseRoute(exams);
-  if (route.type === "cert") {
-    await switchCert(route.certId, { fromRoute: true });
-    if (!window.location.hash.includes("cert/")) {
-      setCertHash(route.certId);
-    }
-    await tryResumePrompt();
-  } else if (route.type === "acronyms") {
-    await switchCert(route.certId, { fromRoute: true });
-    showAcronyms({ fromRoute: true });
-  } else {
-    clearAppHash();
-    currentCert = null;
-    showLanding();
-    setHeaderTitle("AWS Cert Master");
-  }
 
   menuApi = initMenu({
     exams,
@@ -354,32 +428,22 @@ async function init() {
     onNavigateDashboard: showDashboard,
   });
 
+  renderLanding(examIndexList, openCert);
+
   window.addEventListener("hashchange", () => {
-    const route = parseRoute(examIndexList);
-    if (route.type === "landing") {
-      acronymController?.stop();
-      showLanding();
-      return;
-    }
-    if (route.type === "acronyms") {
-      if (route.certId !== activeCertId) {
-        switchCert(route.certId, { fromRoute: true }).then(() =>
-          showAcronyms({ fromRoute: true })
-        );
-      } else {
-        showAcronyms({ fromRoute: true });
-      }
-      return;
-    }
-    acronymController?.stop();
-    if (route.type === "cert") {
-      if (route.certId !== activeCertId) {
-        switchCert(route.certId, { fromRoute: true });
-      } else if (getActiveView() !== "cert") {
-        showCertView();
-      }
-    }
+    if (!appReady) return;
+    normalizeHash(examIndexList);
+    applyRoute(parseRoute(examIndexList));
   });
+
+  window.addEventListener("popstate", () => {
+    if (!appReady) return;
+    normalizeHash(examIndexList);
+    applyRoute(parseRoute(examIndexList));
+  });
+
+  appReady = true;
+  await applyRoute(parseRoute(exams));
 
   initDataPanel({
     getScopeCertId: () => {
@@ -567,6 +631,7 @@ async function showDashboard() {
     settings = loadSettings(activeCertId);
     menuApi?.setActiveCert(activeCertId);
   }
+  clearAppHash();
   showView("dashboard");
   setHeaderTitle("Your progress");
   syncCertFilterOptions(
@@ -811,9 +876,8 @@ function renderStudyPlan() {
 }
 
 function goLanding() {
-  examController?.stopTimer?.();
-  clearAppHash();
-  showLanding();
+  if (!appReady) return;
+  applyRoute({ type: "landing" });
 }
 
 document.getElementById("btn-start")?.addEventListener("click", startExam);

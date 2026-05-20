@@ -1,10 +1,8 @@
-# Optional: deploy to GitHub Pages on push to main.
-# You can also enable Pages manually in repo Settings (root / main).
 name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   workflow_dispatch:
 
 permissions:
@@ -14,21 +12,29 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Build exams index from data/exams/*.json
-        run: python3 scripts/build-exams-index.py
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build exam index
+        run: |
+          python3 scripts/build-exams-index.py
+          if [ -f scripts/generate_comptia_exams.py ]; then
+            python3 scripts/generate_comptia_exams.py || true
+          fi
+
       - uses: actions/configure-pages@v5
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
-      - id: deployment
-        uses: actions/deploy-pages@v4
+
+      - uses: actions/deploy-pages@v4

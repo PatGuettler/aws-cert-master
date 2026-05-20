@@ -65,13 +65,7 @@
 const indexCache = { data: /** @type {ExamIndexEntry[]|null} */ (null) };
 const certCache = new Map();
 
-/**
- * @param {string} basePath
- */
-function resolvePath(basePath) {
-  const base = document.querySelector("base")?.href ?? window.location.href;
-  return new URL(basePath, base).href;
-}
+import { resolveAssetPath } from "./paths.js";
 
 /** @deprecated Use loadExamIndex — kept for compatibility */
 export const loadRegistry = loadExamIndex;
@@ -84,7 +78,7 @@ export const loadRegistry = loadExamIndex;
 export async function loadExamIndex(opts = {}) {
   if (!opts.reload && indexCache.data) return indexCache.data;
 
-  const res = await fetch(resolvePath("data/exams-index.json"), {
+  const res = await fetch(resolveAssetPath("data/exams-index.json"), {
     cache: "no-store",
   });
   if (!res.ok) {
@@ -116,7 +110,7 @@ export async function loadCert(certId, opts = {}) {
     );
   }
 
-  const res = await fetch(resolvePath(entry.dataFile), { cache: "no-store" });
+  const res = await fetch(resolveAssetPath(entry.dataFile), { cache: "no-store" });
   if (!res.ok) {
     throw new Error(`Failed to load ${entry.name} (${entry.dataFile})`);
   }
