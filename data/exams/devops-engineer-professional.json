@@ -1,0 +1,3796 @@
+{
+  "id": "devops-engineer-professional",
+  "name": "AWS Certified DevOps Engineer \u2013 Professional",
+  "code": "DOP-C02",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 75,
+    "scoredQuestions": 60,
+    "timeLimitMinutes": 180,
+    "passingScore": 750,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "sdlc-automation",
+      "name": "Domain 1: SDLC Automation",
+      "weight": 22,
+      "resources": [
+        {
+          "title": "DOP-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+        },
+        {
+          "title": "AWS CodePipeline",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "config-management-iac",
+      "name": "Domain 2: Configuration Management and Infrastructure as Code",
+      "weight": 17,
+      "resources": [
+        {
+          "title": "AWS CloudFormation",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+        },
+        {
+          "title": "AWS CDK",
+          "url": "https://docs.aws.amazon.com/cdk/v2/guide/home.html"
+        }
+      ]
+    },
+    {
+      "id": "resilient-cloud-solutions",
+      "name": "Domain 3: Resilient Cloud Solutions",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Auto Scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        },
+        {
+          "title": "Amazon Route 53 routing",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "monitoring-logging",
+      "name": "Domain 4: Monitoring, Logging, and Incident Response",
+      "weight": 18,
+      "resources": [
+        {
+          "title": "Amazon CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        },
+        {
+          "title": "AWS CloudTrail",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "incident-event-response",
+      "name": "Domain 5: Incident and Event Response",
+      "weight": 14,
+      "resources": [
+        {
+          "title": "Amazon EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        },
+        {
+          "title": "AWS Systems Manager Incident Manager",
+          "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "reliability-resilience",
+      "name": "Domain 6: Reliability and Resilience",
+      "weight": 14,
+      "resources": [
+        {
+          "title": "AWS Fault Injection Service",
+          "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
+        },
+        {
+          "title": "AWS Resilience Hub",
+          "url": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "dop-q001",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to orchestrate CI/CD with manual approvals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CodePipeline with manual approval actions"
+        },
+        {
+          "id": "b",
+          "text": "Direct prod deploy on commit"
+        },
+        {
+          "id": "c",
+          "text": "No tests"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds in repo"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Manual approvals gate production.",
+      "docs": [
+        {
+          "title": "CodePipeline approvals",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-approve-or-reject.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q002",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run tests in isolated build environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CodeBuild with privileged mode only when needed"
+        },
+        {
+          "id": "b",
+          "text": "Build on prod server"
+        },
+        {
+          "id": "c",
+          "text": "Disable tests"
+        },
+        {
+          "id": "d",
+          "text": "Cache secrets in logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CodeBuild scales build fleet elastically.",
+      "docs": [
+        {
+          "title": "CodeBuild",
+          "url": "https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q003",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to implement GitOps for EKS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
+        },
+        {
+          "id": "b",
+          "text": "kubectl apply from laptops prod"
+        },
+        {
+          "id": "c",
+          "text": "No drift detection"
+        },
+        {
+          "id": "d",
+          "text": "Shared kubeconfig"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GitOps reconciles cluster state from Git.",
+      "docs": [
+        {
+          "title": "EKS GitOps",
+          "url": "https://aws.amazon.com/kubernetes/gitops/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q004",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to sign and verify container images?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Notation/Cosign with ECR and admission controls"
+        },
+        {
+          "id": "b",
+          "text": "Pull :latest unsigned"
+        },
+        {
+          "id": "c",
+          "text": "Ignore digest pinning"
+        },
+        {
+          "id": "d",
+          "text": "Public registry trust all"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image signing prevents tampered deploys.",
+      "docs": [
+        {
+          "title": "ECR image scanning",
+          "url": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q005",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deploy Lambda with canary traffic shifting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CodeDeploy for Lambda"
+        },
+        {
+          "id": "b",
+          "text": "All-at-once always"
+        },
+        {
+          "id": "c",
+          "text": "No rollback"
+        },
+        {
+          "id": "d",
+          "text": "Ignore alarms"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Canary releases limit blast radius.",
+      "docs": [
+        {
+          "title": "Lambda canary",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/configuring-alias-routing.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q006",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to store pipeline artifacts immutably?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CodePipeline S3 artifact store with encryption"
+        },
+        {
+          "id": "b",
+          "text": "Mutable latest overwrite"
+        },
+        {
+          "id": "c",
+          "text": "No KMS"
+        },
+        {
+          "id": "d",
+          "text": "Public artifact bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Artifacts should be versioned and encrypted.",
+      "docs": [
+        {
+          "title": "CodePipeline artifacts",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/artifacts.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q007",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to trigger pipelines from Git webhooks securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CodeStar Connections with IAM"
+        },
+        {
+          "id": "b",
+          "text": "Open webhook no secret"
+        },
+        {
+          "id": "c",
+          "text": "SSH keys in repo"
+        },
+        {
+          "id": "d",
+          "text": "Disable TLS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connections use OAuth to external Git.",
+      "docs": [
+        {
+          "title": "CodeStar Connections",
+          "url": "https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q008",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run compliance tests in pipeline?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudFormation Guard or cfn-nag in CodeBuild"
+        },
+        {
+          "id": "b",
+          "text": "Skip policy checks"
+        },
+        {
+          "id": "c",
+          "text": "Allow 0.0.0.0/0 always"
+        },
+        {
+          "id": "d",
+          "text": "No SAR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Policy-as-code catches misconfigurations early.",
+      "docs": [
+        {
+          "title": "CloudFormation Guard",
+          "url": "https://docs.aws.amazon.com/cfn-guard/latest/ug/what-is-guard.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q009",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to orchestrate CI/CD with manual approvals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CodePipeline with manual approval actions"
+        },
+        {
+          "id": "b",
+          "text": "Direct prod deploy on commit"
+        },
+        {
+          "id": "c",
+          "text": "No tests"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds in repo"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Manual approvals gate production.",
+      "docs": [
+        {
+          "title": "CodePipeline approvals",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-approve-or-reject.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q010",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to orchestrate CI/CD with manual approvals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CodePipeline with manual approval actions"
+        },
+        {
+          "id": "b",
+          "text": "Direct prod deploy on commit"
+        },
+        {
+          "id": "c",
+          "text": "No tests"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds in repo"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Manual approvals gate production.",
+      "docs": [
+        {
+          "title": "CodePipeline approvals",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-approve-or-reject.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q011",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "A team must orchestrate CI/CD with manual approvals. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CodePipeline with manual approval actions"
+        },
+        {
+          "id": "b",
+          "text": "Direct prod deploy on commit"
+        },
+        {
+          "id": "c",
+          "text": "No tests"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds in repo"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Manual approvals gate production.",
+      "docs": [
+        {
+          "title": "CodePipeline approvals",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-approve-or-reject.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q012",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to run tests in isolated build environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CodeBuild with privileged mode only when needed"
+        },
+        {
+          "id": "b",
+          "text": "Build on prod server"
+        },
+        {
+          "id": "c",
+          "text": "Disable tests"
+        },
+        {
+          "id": "d",
+          "text": "Cache secrets in logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CodeBuild scales build fleet elastically.",
+      "docs": [
+        {
+          "title": "CodeBuild",
+          "url": "https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q013",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to run tests in isolated build environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CodeBuild with privileged mode only when needed"
+        },
+        {
+          "id": "b",
+          "text": "Build on prod server"
+        },
+        {
+          "id": "c",
+          "text": "Disable tests"
+        },
+        {
+          "id": "d",
+          "text": "Cache secrets in logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CodeBuild scales build fleet elastically.",
+      "docs": [
+        {
+          "title": "CodeBuild",
+          "url": "https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q014",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "A team must run tests in isolated build environments. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CodeBuild with privileged mode only when needed"
+        },
+        {
+          "id": "b",
+          "text": "Build on prod server"
+        },
+        {
+          "id": "c",
+          "text": "Disable tests"
+        },
+        {
+          "id": "d",
+          "text": "Cache secrets in logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CodeBuild scales build fleet elastically.",
+      "docs": [
+        {
+          "title": "CodeBuild",
+          "url": "https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q015",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to implement GitOps for EKS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
+        },
+        {
+          "id": "b",
+          "text": "kubectl apply from laptops prod"
+        },
+        {
+          "id": "c",
+          "text": "No drift detection"
+        },
+        {
+          "id": "d",
+          "text": "Shared kubeconfig"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GitOps reconciles cluster state from Git.",
+      "docs": [
+        {
+          "title": "EKS GitOps",
+          "url": "https://aws.amazon.com/kubernetes/gitops/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q016",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to implement GitOps for EKS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
+        },
+        {
+          "id": "b",
+          "text": "kubectl apply from laptops prod"
+        },
+        {
+          "id": "c",
+          "text": "No drift detection"
+        },
+        {
+          "id": "d",
+          "text": "Shared kubeconfig"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GitOps reconciles cluster state from Git.",
+      "docs": [
+        {
+          "title": "EKS GitOps",
+          "url": "https://aws.amazon.com/kubernetes/gitops/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q017",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "A team must implement GitOps for EKS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
+        },
+        {
+          "id": "b",
+          "text": "kubectl apply from laptops prod"
+        },
+        {
+          "id": "c",
+          "text": "No drift detection"
+        },
+        {
+          "id": "d",
+          "text": "Shared kubeconfig"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GitOps reconciles cluster state from Git.",
+      "docs": [
+        {
+          "title": "EKS GitOps",
+          "url": "https://aws.amazon.com/kubernetes/gitops/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q018",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to sign and verify container images?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Notation/Cosign with ECR and admission controls"
+        },
+        {
+          "id": "b",
+          "text": "Pull :latest unsigned"
+        },
+        {
+          "id": "c",
+          "text": "Ignore digest pinning"
+        },
+        {
+          "id": "d",
+          "text": "Public registry trust all"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image signing prevents tampered deploys.",
+      "docs": [
+        {
+          "title": "ECR image scanning",
+          "url": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q019",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to sign and verify container images?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Notation/Cosign with ECR and admission controls"
+        },
+        {
+          "id": "b",
+          "text": "Pull :latest unsigned"
+        },
+        {
+          "id": "c",
+          "text": "Ignore digest pinning"
+        },
+        {
+          "id": "d",
+          "text": "Public registry trust all"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image signing prevents tampered deploys.",
+      "docs": [
+        {
+          "title": "ECR image scanning",
+          "url": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q020",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "A team must sign and verify container images. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Notation/Cosign with ECR and admission controls"
+        },
+        {
+          "id": "b",
+          "text": "Pull :latest unsigned"
+        },
+        {
+          "id": "c",
+          "text": "Ignore digest pinning"
+        },
+        {
+          "id": "d",
+          "text": "Public registry trust all"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image signing prevents tampered deploys.",
+      "docs": [
+        {
+          "title": "ECR image scanning",
+          "url": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q021",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to define reusable infrastructure modules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CDK constructs or CloudFormation modules"
+        },
+        {
+          "id": "b",
+          "text": "Copy-paste templates"
+        },
+        {
+          "id": "c",
+          "text": "Undocumented params"
+        },
+        {
+          "id": "d",
+          "text": "No versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Modules promote reuse and standards.",
+      "docs": [
+        {
+          "title": "CDK",
+          "url": "https://docs.aws.amazon.com/cdk/v2/guide/home.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q022",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to detect configuration drift on servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Compliance and AWS Config"
+        },
+        {
+          "id": "b",
+          "text": "Snowflake servers"
+        },
+        {
+          "id": "c",
+          "text": "No inventory"
+        },
+        {
+          "id": "d",
+          "text": "Ignore drift"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compliance reports deviations.",
+      "docs": [
+        {
+          "title": "SSM compliance",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q023",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage Ansible/Chef at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS OpsWorks or SSM State Manager"
+        },
+        {
+          "id": "b",
+          "text": "Manual SSH config"
+        },
+        {
+          "id": "c",
+          "text": "No idempotency"
+        },
+        {
+          "id": "d",
+          "text": "Shared root"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Configuration management enforces desired state.",
+      "docs": [
+        {
+          "title": "OpsWorks",
+          "url": "https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q024",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to import existing resources into IaC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudFormation resource import"
+        },
+        {
+          "id": "b",
+          "text": "Recreate prod destroy"
+        },
+        {
+          "id": "c",
+          "text": "Ignore dependencies"
+        },
+        {
+          "id": "d",
+          "text": "Manual only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resource import brings legacy under management.",
+      "docs": [
+        {
+          "title": "Resource import",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q025",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use stack sets for multi-account rollout?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudFormation StackSets"
+        },
+        {
+          "id": "b",
+          "text": "Click each account"
+        },
+        {
+          "id": "c",
+          "text": "Email templates"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "StackSets deploy stacks across accounts/OUs.",
+      "docs": [
+        {
+          "title": "StackSets",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q026",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to parameterize environments safely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM Parameter Store hierarchies per env"
+        },
+        {
+          "id": "b",
+          "text": "Prod params in dev account shared"
+        },
+        {
+          "id": "c",
+          "text": "Hard-code secrets"
+        },
+        {
+          "id": "d",
+          "text": "Git prod passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hierarchical parameters separate environments.",
+      "docs": [
+        {
+          "title": "Parameter Store",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q027",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to validate templates before deploy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cfn-lint and CloudFormation change sets"
+        },
+        {
+          "id": "b",
+          "text": "Deploy untested template prod"
+        },
+        {
+          "id": "c",
+          "text": "Disable rollback"
+        },
+        {
+          "id": "d",
+          "text": "No change set"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Change sets preview modifications.",
+      "docs": [
+        {
+          "title": "Change sets",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q028",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage SAM transforms for serverless?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS::Serverless transform"
+        },
+        {
+          "id": "b",
+          "text": "Zip upload manual only forever"
+        },
+        {
+          "id": "c",
+          "text": "No template"
+        },
+        {
+          "id": "d",
+          "text": "Disable rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SAM simplifies Lambda/API definitions.",
+      "docs": [
+        {
+          "title": "SAM transform",
+          "url": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-generated-resources.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q029",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which service should you use to define reusable infrastructure modules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CDK constructs or CloudFormation modules"
+        },
+        {
+          "id": "b",
+          "text": "Copy-paste templates"
+        },
+        {
+          "id": "c",
+          "text": "Undocumented params"
+        },
+        {
+          "id": "d",
+          "text": "No versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Modules promote reuse and standards.",
+      "docs": [
+        {
+          "title": "CDK",
+          "url": "https://docs.aws.amazon.com/cdk/v2/guide/home.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q030",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to define reusable infrastructure modules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CDK constructs or CloudFormation modules"
+        },
+        {
+          "id": "b",
+          "text": "Copy-paste templates"
+        },
+        {
+          "id": "c",
+          "text": "Undocumented params"
+        },
+        {
+          "id": "d",
+          "text": "No versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Modules promote reuse and standards.",
+      "docs": [
+        {
+          "title": "CDK",
+          "url": "https://docs.aws.amazon.com/cdk/v2/guide/home.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q031",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "A team must define reusable infrastructure modules. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CDK constructs or CloudFormation modules"
+        },
+        {
+          "id": "b",
+          "text": "Copy-paste templates"
+        },
+        {
+          "id": "c",
+          "text": "Undocumented params"
+        },
+        {
+          "id": "d",
+          "text": "No versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Modules promote reuse and standards.",
+      "docs": [
+        {
+          "title": "CDK",
+          "url": "https://docs.aws.amazon.com/cdk/v2/guide/home.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q032",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "Which service should you use to detect configuration drift on servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Compliance and AWS Config"
+        },
+        {
+          "id": "b",
+          "text": "Snowflake servers"
+        },
+        {
+          "id": "c",
+          "text": "No inventory"
+        },
+        {
+          "id": "d",
+          "text": "Ignore drift"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compliance reports deviations.",
+      "docs": [
+        {
+          "title": "SSM compliance",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q033",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to detect configuration drift on servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Compliance and AWS Config"
+        },
+        {
+          "id": "b",
+          "text": "Snowflake servers"
+        },
+        {
+          "id": "c",
+          "text": "No inventory"
+        },
+        {
+          "id": "d",
+          "text": "Ignore drift"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compliance reports deviations.",
+      "docs": [
+        {
+          "title": "SSM compliance",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q034",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "A team must detect configuration drift on servers. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Compliance and AWS Config"
+        },
+        {
+          "id": "b",
+          "text": "Snowflake servers"
+        },
+        {
+          "id": "c",
+          "text": "No inventory"
+        },
+        {
+          "id": "d",
+          "text": "Ignore drift"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compliance reports deviations.",
+      "docs": [
+        {
+          "title": "SSM compliance",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q035",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run chaos experiments safely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Fault Injection Simulator"
+        },
+        {
+          "id": "b",
+          "text": "Chaos in prod without guardrails"
+        },
+        {
+          "id": "c",
+          "text": "No rollback"
+        },
+        {
+          "id": "d",
+          "text": "Ignore blast radius"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FIS injects controlled failures.",
+      "docs": [
+        {
+          "title": "FIS",
+          "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q036",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to define RTO/RPO in resilience hub?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Resilience Hub"
+        },
+        {
+          "id": "b",
+          "text": "No targets"
+        },
+        {
+          "id": "c",
+          "text": "Hope"
+        },
+        {
+          "id": "d",
+          "text": "Never test DR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resilience Hub assesses apps against policies.",
+      "docs": [
+        {
+          "title": "Resilience Hub",
+          "url": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q037",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to multi-AZ RDS with automatic failover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Multi-AZ"
+        },
+        {
+          "id": "b",
+          "text": "Single AZ prod"
+        },
+        {
+          "id": "c",
+          "text": "No backups"
+        },
+        {
+          "id": "d",
+          "text": "Manual DNS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-AZ fails over to standby.",
+      "docs": [
+        {
+          "title": "RDS Multi-AZ",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q038",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to queue-based load leveling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SQS with Auto Scaling on queue depth"
+        },
+        {
+          "id": "b",
+          "text": "Scale on hope"
+        },
+        {
+          "id": "c",
+          "text": "No DLQ"
+        },
+        {
+          "id": "d",
+          "text": "Unbounded queue no alarm"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Backpressure protects downstream systems.",
+      "docs": [
+        {
+          "title": "SQS scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q039",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to regional failover for stateless tier?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 failover + AMIs/Launch templates in DR Region"
+        },
+        {
+          "id": "b",
+          "text": "Single Region stateless still"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Ignore health"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stateless tiers are easier to failover.",
+      "docs": [
+        {
+          "title": "Route 53 failover",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q040",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use circuit breaker pattern in microservices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "API Gateway throttling and client retries with jitter"
+        },
+        {
+          "id": "b",
+          "text": "Retry storm infinite"
+        },
+        {
+          "id": "c",
+          "text": "No timeouts"
+        },
+        {
+          "id": "d",
+          "text": "Cascade failure"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Circuit breakers prevent cascading outages.",
+      "docs": [
+        {
+          "title": "API throttling",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q041",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deploy ECS services across AZs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ECS service scheduler spread"
+        },
+        {
+          "id": "b",
+          "text": "Single AZ tasks"
+        },
+        {
+          "id": "c",
+          "text": "No health check"
+        },
+        {
+          "id": "d",
+          "text": "Desired count 1 prod"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Spread placement increases availability.",
+      "docs": [
+        {
+          "title": "ECS AZ",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-rebalancing.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q042",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to immutable infrastructure for EC2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Auto Scaling with golden AMI/Image Builder"
+        },
+        {
+          "id": "b",
+          "text": "SSH mutate prod"
+        },
+        {
+          "id": "c",
+          "text": "No rolling update"
+        },
+        {
+          "id": "d",
+          "text": "Shared snowflake"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Immutable deploys replace instances instead of patching live.",
+      "docs": [
+        {
+          "title": "Image Builder",
+          "url": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q043",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which service should you use to run chaos experiments safely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Fault Injection Simulator"
+        },
+        {
+          "id": "b",
+          "text": "Chaos in prod without guardrails"
+        },
+        {
+          "id": "c",
+          "text": "No rollback"
+        },
+        {
+          "id": "d",
+          "text": "Ignore blast radius"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FIS injects controlled failures.",
+      "docs": [
+        {
+          "title": "FIS",
+          "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q044",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to run chaos experiments safely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Fault Injection Simulator"
+        },
+        {
+          "id": "b",
+          "text": "Chaos in prod without guardrails"
+        },
+        {
+          "id": "c",
+          "text": "No rollback"
+        },
+        {
+          "id": "d",
+          "text": "Ignore blast radius"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FIS injects controlled failures.",
+      "docs": [
+        {
+          "title": "FIS",
+          "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q045",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "A team must run chaos experiments safely. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Fault Injection Simulator"
+        },
+        {
+          "id": "b",
+          "text": "Chaos in prod without guardrails"
+        },
+        {
+          "id": "c",
+          "text": "No rollback"
+        },
+        {
+          "id": "d",
+          "text": "Ignore blast radius"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "FIS injects controlled failures.",
+      "docs": [
+        {
+          "title": "FIS",
+          "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q046",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "Which service should you use to define RTO/RPO in resilience hub?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Resilience Hub"
+        },
+        {
+          "id": "b",
+          "text": "No targets"
+        },
+        {
+          "id": "c",
+          "text": "Hope"
+        },
+        {
+          "id": "d",
+          "text": "Never test DR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resilience Hub assesses apps against policies.",
+      "docs": [
+        {
+          "title": "Resilience Hub",
+          "url": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q047",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to define RTO/RPO in resilience hub?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Resilience Hub"
+        },
+        {
+          "id": "b",
+          "text": "No targets"
+        },
+        {
+          "id": "c",
+          "text": "Hope"
+        },
+        {
+          "id": "d",
+          "text": "Never test DR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resilience Hub assesses apps against policies.",
+      "docs": [
+        {
+          "title": "Resilience Hub",
+          "url": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q048",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "A team must define RTO/RPO in resilience hub. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Resilience Hub"
+        },
+        {
+          "id": "b",
+          "text": "No targets"
+        },
+        {
+          "id": "c",
+          "text": "Hope"
+        },
+        {
+          "id": "d",
+          "text": "Never test DR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resilience Hub assesses apps against policies.",
+      "docs": [
+        {
+          "title": "Resilience Hub",
+          "url": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q049",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to correlate logs metrics and traces?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch Application Signals / X-Ray / Logs"
+        },
+        {
+          "id": "b",
+          "text": "grep only"
+        },
+        {
+          "id": "c",
+          "text": "No tracing"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Unified observability speeds incident response.",
+      "docs": [
+        {
+          "title": "Application Signals",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q050",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to create composite alarms to reduce noise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch composite alarms"
+        },
+        {
+          "id": "b",
+          "text": "Alert on every blip"
+        },
+        {
+          "id": "c",
+          "text": "No runbooks"
+        },
+        {
+          "id": "d",
+          "text": "Pager for dev metrics"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Composite alarms combine child alarms logically.",
+      "docs": [
+        {
+          "title": "Composite alarms",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q051",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to export logs to SIEM?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
+        },
+        {
+          "id": "b",
+          "text": "Manual copy logs"
+        },
+        {
+          "id": "c",
+          "text": "Public log bucket"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming exports integrate with analytics/SIEM.",
+      "docs": [
+        {
+          "title": "Subscription filters",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q052",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to audit privileged actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudTrail management events and CloudTrail Lake"
+        },
+        {
+          "id": "b",
+          "text": "Disable trail"
+        },
+        {
+          "id": "c",
+          "text": "No integrity validation"
+        },
+        {
+          "id": "d",
+          "text": "Shared root"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudTrail Lake enables SQL analytics on events.",
+      "docs": [
+        {
+          "title": "CloudTrail Lake",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q053",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to monitor CI/CD pipeline failures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CodePipeline CloudWatch events and notifications"
+        },
+        {
+          "id": "b",
+          "text": "Silent fail prod"
+        },
+        {
+          "id": "c",
+          "text": "No SNS"
+        },
+        {
+          "id": "d",
+          "text": "Ignore broken builds"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Event-driven notifications alert owners.",
+      "docs": [
+        {
+          "title": "CodePipeline events",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q054",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to track deployment frequency DORA metrics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CodePipeline + custom metrics to CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Yearly deploy"
+        },
+        {
+          "id": "d",
+          "text": "Manual spreadsheet only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DORA metrics measure delivery performance.",
+      "docs": [
+        {
+          "title": "DORA",
+          "url": "https://aws.amazon.com/devops/dora-metrics/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q055",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use Synthetics for critical user journeys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch Synthetics canaries"
+        },
+        {
+          "id": "b",
+          "text": "No probing"
+        },
+        {
+          "id": "c",
+          "text": "Ignore 5xx"
+        },
+        {
+          "id": "d",
+          "text": "Test only localhost"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Canaries detect outages before users.",
+      "docs": [
+        {
+          "title": "Synthetics",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q056",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to alert on Auto Scaling failures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ASG lifecycle hooks and SNS"
+        },
+        {
+          "id": "b",
+          "text": "Silent scale fail"
+        },
+        {
+          "id": "c",
+          "text": "No capacity"
+        },
+        {
+          "id": "d",
+          "text": "Ignore launch errors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lifecycle hooks enable debugging launch issues.",
+      "docs": [
+        {
+          "title": "ASG lifecycle",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q057",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which service should you use to correlate logs metrics and traces?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch Application Signals / X-Ray / Logs"
+        },
+        {
+          "id": "b",
+          "text": "grep only"
+        },
+        {
+          "id": "c",
+          "text": "No tracing"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Unified observability speeds incident response.",
+      "docs": [
+        {
+          "title": "Application Signals",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q058",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to correlate logs metrics and traces?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch Application Signals / X-Ray / Logs"
+        },
+        {
+          "id": "b",
+          "text": "grep only"
+        },
+        {
+          "id": "c",
+          "text": "No tracing"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Unified observability speeds incident response.",
+      "docs": [
+        {
+          "title": "Application Signals",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q059",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "A team must correlate logs metrics and traces. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch Application Signals / X-Ray / Logs"
+        },
+        {
+          "id": "b",
+          "text": "grep only"
+        },
+        {
+          "id": "c",
+          "text": "No tracing"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Unified observability speeds incident response.",
+      "docs": [
+        {
+          "title": "Application Signals",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q060",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which service should you use to create composite alarms to reduce noise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch composite alarms"
+        },
+        {
+          "id": "b",
+          "text": "Alert on every blip"
+        },
+        {
+          "id": "c",
+          "text": "No runbooks"
+        },
+        {
+          "id": "d",
+          "text": "Pager for dev metrics"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Composite alarms combine child alarms logically.",
+      "docs": [
+        {
+          "title": "Composite alarms",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q061",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to create composite alarms to reduce noise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch composite alarms"
+        },
+        {
+          "id": "b",
+          "text": "Alert on every blip"
+        },
+        {
+          "id": "c",
+          "text": "No runbooks"
+        },
+        {
+          "id": "d",
+          "text": "Pager for dev metrics"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Composite alarms combine child alarms logically.",
+      "docs": [
+        {
+          "title": "Composite alarms",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q062",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "A team must create composite alarms to reduce noise. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch composite alarms"
+        },
+        {
+          "id": "b",
+          "text": "Alert on every blip"
+        },
+        {
+          "id": "c",
+          "text": "No runbooks"
+        },
+        {
+          "id": "d",
+          "text": "Pager for dev metrics"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Composite alarms combine child alarms logically.",
+      "docs": [
+        {
+          "title": "Composite alarms",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q063",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which service should you use to export logs to SIEM?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
+        },
+        {
+          "id": "b",
+          "text": "Manual copy logs"
+        },
+        {
+          "id": "c",
+          "text": "Public log bucket"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming exports integrate with analytics/SIEM.",
+      "docs": [
+        {
+          "title": "Subscription filters",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q064",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to export logs to SIEM?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
+        },
+        {
+          "id": "b",
+          "text": "Manual copy logs"
+        },
+        {
+          "id": "c",
+          "text": "Public log bucket"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming exports integrate with analytics/SIEM.",
+      "docs": [
+        {
+          "title": "Subscription filters",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q065",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "A team must export logs to SIEM. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
+        },
+        {
+          "id": "b",
+          "text": "Manual copy logs"
+        },
+        {
+          "id": "c",
+          "text": "Public log bucket"
+        },
+        {
+          "id": "d",
+          "text": "No encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming exports integrate with analytics/SIEM.",
+      "docs": [
+        {
+          "title": "Subscription filters",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q066",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to route operational events to targets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EventBridge rules to SNS/Lambda/SSM"
+        },
+        {
+          "id": "b",
+          "text": "Email one person only"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Ignore events"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EventBridge reacts to AWS API and custom events.",
+      "docs": [
+        {
+          "title": "EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q067",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage incidents with runbooks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Incident Manager"
+        },
+        {
+          "id": "b",
+          "text": "Ad hoc war room only"
+        },
+        {
+          "id": "c",
+          "text": "No roles"
+        },
+        {
+          "id": "d",
+          "text": "No timelines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Incident Manager coordinates response.",
+      "docs": [
+        {
+          "title": "Incident Manager",
+          "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q068",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to auto-remediate non-compliant resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM Automation documents triggered by Config"
+        },
+        {
+          "id": "b",
+          "text": "Manual fix months later"
+        },
+        {
+          "id": "c",
+          "text": "Ignore Config"
+        },
+        {
+          "id": "d",
+          "text": "Disable rules"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Automation executes approved remediation.",
+      "docs": [
+        {
+          "title": "SSM Automation",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q069",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to isolate compromised EC2 quickly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security group isolation runbook or NACL deny"
+        },
+        {
+          "id": "b",
+          "text": "Leave instance in prod VLAN"
+        },
+        {
+          "id": "c",
+          "text": "No snapshot"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Isolation limits lateral movement.",
+      "docs": [
+        {
+          "title": "Incident response",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/aws-security-incident-response-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q070",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to aggregate security findings for triage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Security Hub"
+        },
+        {
+          "id": "b",
+          "text": "Siloed tools only"
+        },
+        {
+          "id": "c",
+          "text": "Ignore critical"
+        },
+        {
+          "id": "d",
+          "text": "No ticketing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security Hub prioritizes findings.",
+      "docs": [
+        {
+          "title": "Security Hub",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q071",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to capture forensics disk/memory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM Automation snapshot volumes with preservation"
+        },
+        {
+          "id": "b",
+          "text": "Overwrite disks"
+        },
+        {
+          "id": "c",
+          "text": "Terminate immediately"
+        },
+        {
+          "id": "d",
+          "text": "No chain of custody"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Preserve evidence before remediation.",
+      "docs": [
+        {
+          "title": "Forensics",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/aws-security-incident-response-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q072",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to notify on-call from alarms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SNS to AWS Chatbot or PagerDuty integration"
+        },
+        {
+          "id": "b",
+          "text": "Email only no escalation"
+        },
+        {
+          "id": "c",
+          "text": "Ignore pages"
+        },
+        {
+          "id": "d",
+          "text": "No runbook link"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Integrations route alerts to on-call.",
+      "docs": [
+        {
+          "title": "AWS Chatbot",
+          "url": "https://docs.aws.amazon.com/chatbot/latest/adminguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q073",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to document post-incident reviews?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Runbooks and knowledge base in Incident Manager"
+        },
+        {
+          "id": "b",
+          "text": "No blameless postmortem"
+        },
+        {
+          "id": "c",
+          "text": "Repeat same incident"
+        },
+        {
+          "id": "d",
+          "text": "Hide timeline"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Post-incident reviews improve systems.",
+      "docs": [
+        {
+          "title": "Incident Manager",
+          "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q074",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which service should you use to route operational events to targets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EventBridge rules to SNS/Lambda/SSM"
+        },
+        {
+          "id": "b",
+          "text": "Email one person only"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Ignore events"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EventBridge reacts to AWS API and custom events.",
+      "docs": [
+        {
+          "title": "EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q075",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to route operational events to targets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EventBridge rules to SNS/Lambda/SSM"
+        },
+        {
+          "id": "b",
+          "text": "Email one person only"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Ignore events"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EventBridge reacts to AWS API and custom events.",
+      "docs": [
+        {
+          "title": "EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q076",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "A team must route operational events to targets. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EventBridge rules to SNS/Lambda/SSM"
+        },
+        {
+          "id": "b",
+          "text": "Email one person only"
+        },
+        {
+          "id": "c",
+          "text": "No automation"
+        },
+        {
+          "id": "d",
+          "text": "Ignore events"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EventBridge reacts to AWS API and custom events.",
+      "docs": [
+        {
+          "title": "EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q077",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "Which service should you use to manage incidents with runbooks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Incident Manager"
+        },
+        {
+          "id": "b",
+          "text": "Ad hoc war room only"
+        },
+        {
+          "id": "c",
+          "text": "No roles"
+        },
+        {
+          "id": "d",
+          "text": "No timelines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Incident Manager coordinates response.",
+      "docs": [
+        {
+          "title": "Incident Manager",
+          "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q078",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to manage incidents with runbooks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Incident Manager"
+        },
+        {
+          "id": "b",
+          "text": "Ad hoc war room only"
+        },
+        {
+          "id": "c",
+          "text": "No roles"
+        },
+        {
+          "id": "d",
+          "text": "No timelines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Incident Manager coordinates response.",
+      "docs": [
+        {
+          "title": "Incident Manager",
+          "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q079",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "A team must manage incidents with runbooks. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Incident Manager"
+        },
+        {
+          "id": "b",
+          "text": "Ad hoc war room only"
+        },
+        {
+          "id": "c",
+          "text": "No roles"
+        },
+        {
+          "id": "d",
+          "text": "No timelines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Incident Manager coordinates response.",
+      "docs": [
+        {
+          "title": "Incident Manager",
+          "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q080",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to validate recovery procedures regularly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled DR drills with CloudFormation"
+        },
+        {
+          "id": "b",
+          "text": "Never test restore"
+        },
+        {
+          "id": "c",
+          "text": "Hope"
+        },
+        {
+          "id": "d",
+          "text": "Outdated runbook"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Testing confirms RTO/RPO assumptions.",
+      "docs": [
+        {
+          "title": "DR testing",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q081",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use cell-based blast isolation for EKS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separate clusters/accounts per cell"
+        },
+        {
+          "id": "b",
+          "text": "One cluster everything"
+        },
+        {
+          "id": "c",
+          "text": "Cluster-admin for all devs prod"
+        },
+        {
+          "id": "d",
+          "text": "No network policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cells contain failures.",
+      "docs": [
+        {
+          "title": "EKS best practices",
+          "url": "https://docs.aws.amazon.com/eks/latest/best-practices/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q082",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to protect against regional failure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-Region active-passive or active-active"
+        },
+        {
+          "id": "b",
+          "text": "Single Region"
+        },
+        {
+          "id": "c",
+          "text": "No backups cross-Region"
+        },
+        {
+          "id": "d",
+          "text": "Ignore DNS failover"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-Region designs address Regional disasters.",
+      "docs": [
+        {
+          "title": "DR whitepaper",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q083",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to ensure idempotent deployments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CodeDeploy hooks and health checks"
+        },
+        {
+          "id": "b",
+          "text": "Deploy twice corrupts data"
+        },
+        {
+          "id": "c",
+          "text": "No rollback"
+        },
+        {
+          "id": "d",
+          "text": "Ignore health"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Idempotency makes retries safe.",
+      "docs": [
+        {
+          "title": "CodeDeploy",
+          "url": "https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q084",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to load test before peak events?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Distributed Load Testing on AWS or third-party in VPC"
+        },
+        {
+          "id": "b",
+          "text": "Hope capacity enough"
+        },
+        {
+          "id": "c",
+          "text": "Test prod users unaware"
+        },
+        {
+          "id": "d",
+          "text": "No metrics"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Load testing validates scaling policies.",
+      "docs": [
+        {
+          "title": "DLT solution",
+          "url": "https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/solution-overview.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q085",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use SQS visibility timeout correctly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adjust visibility to processing time"
+        },
+        {
+          "id": "b",
+          "text": "Too short duplicate processing"
+        },
+        {
+          "id": "c",
+          "text": "Too long stuck messages"
+        },
+        {
+          "id": "d",
+          "text": "No DLQ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Visibility timeout prevents duplicate work.",
+      "docs": [
+        {
+          "title": "SQS visibility",
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q086",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to design EKS control plane resilience?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-AZ worker nodes and pod topology spread"
+        },
+        {
+          "id": "b",
+          "text": "Single node cluster prod"
+        },
+        {
+          "id": "c",
+          "text": "No PDB"
+        },
+        {
+          "id": "d",
+          "text": "Ignore kube-proxy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Spread constraints improve pod availability.",
+      "docs": [
+        {
+          "title": "Topology spread",
+          "url": "https://docs.aws.amazon.com/eks/latest/best-practices/topology.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q087",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to backup EKS etcd application state?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Velero backups to S3"
+        },
+        {
+          "id": "b",
+          "text": "No backups"
+        },
+        {
+          "id": "c",
+          "text": "Only etcd default (managed by AWS)"
+        },
+        {
+          "id": "d",
+          "text": "Ignore PV snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Velero backs up Kubernetes resources and PVs.",
+      "docs": [
+        {
+          "title": "Velero on EKS",
+          "url": "https://aws.amazon.com/blogs/containers/backup-and-restore-your-amazon-eks-cluster-resources-using-velero/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q088",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which service should you use to validate recovery procedures regularly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled DR drills with CloudFormation"
+        },
+        {
+          "id": "b",
+          "text": "Never test restore"
+        },
+        {
+          "id": "c",
+          "text": "Hope"
+        },
+        {
+          "id": "d",
+          "text": "Outdated runbook"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Testing confirms RTO/RPO assumptions.",
+      "docs": [
+        {
+          "title": "DR testing",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q089",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to validate recovery procedures regularly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled DR drills with CloudFormation"
+        },
+        {
+          "id": "b",
+          "text": "Never test restore"
+        },
+        {
+          "id": "c",
+          "text": "Hope"
+        },
+        {
+          "id": "d",
+          "text": "Outdated runbook"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Testing confirms RTO/RPO assumptions.",
+      "docs": [
+        {
+          "title": "DR testing",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q090",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "A team must validate recovery procedures regularly. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled DR drills with CloudFormation"
+        },
+        {
+          "id": "b",
+          "text": "Never test restore"
+        },
+        {
+          "id": "c",
+          "text": "Hope"
+        },
+        {
+          "id": "d",
+          "text": "Outdated runbook"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Testing confirms RTO/RPO assumptions.",
+      "docs": [
+        {
+          "title": "DR testing",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q091",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "Which service should you use to use cell-based blast isolation for EKS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separate clusters/accounts per cell"
+        },
+        {
+          "id": "b",
+          "text": "One cluster everything"
+        },
+        {
+          "id": "c",
+          "text": "Cluster-admin for all devs prod"
+        },
+        {
+          "id": "d",
+          "text": "No network policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cells contain failures.",
+      "docs": [
+        {
+          "title": "EKS best practices",
+          "url": "https://docs.aws.amazon.com/eks/latest/best-practices/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q092",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to use cell-based blast isolation for EKS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separate clusters/accounts per cell"
+        },
+        {
+          "id": "b",
+          "text": "One cluster everything"
+        },
+        {
+          "id": "c",
+          "text": "Cluster-admin for all devs prod"
+        },
+        {
+          "id": "d",
+          "text": "No network policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cells contain failures.",
+      "docs": [
+        {
+          "title": "EKS best practices",
+          "url": "https://docs.aws.amazon.com/eks/latest/best-practices/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q093",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "A team must use cell-based blast isolation for EKS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separate clusters/accounts per cell"
+        },
+        {
+          "id": "b",
+          "text": "One cluster everything"
+        },
+        {
+          "id": "c",
+          "text": "Cluster-admin for all devs prod"
+        },
+        {
+          "id": "d",
+          "text": "No network policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cells contain failures.",
+      "docs": [
+        {
+          "title": "EKS best practices",
+          "url": "https://docs.aws.amazon.com/eks/latest/best-practices/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q094",
+      "domain": "sdlc-automation",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q095",
+      "domain": "config-management-iac",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q096",
+      "domain": "sdlc-automation",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified DevOps Engineer \u2013 Professional? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "DOP-C02 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "AWS CodePipeline"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "DOP-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q097",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'DOP-C02 Exam Guide', what should you do FIRST when addressing SDLC Automation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as DOP-C02 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "DOP-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q098",
+      "domain": "sdlc-automation",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS CodePipeline', what should you do FIRST when addressing SDLC Automation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS CodePipeline describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS CodePipeline",
+          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q099",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS CloudFormation', what should you do FIRST when addressing Configuration Management and Infrastructure as Code objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS CloudFormation describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS CloudFormation",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q100",
+      "domain": "config-management-iac",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS CDK', what should you do FIRST when addressing Configuration Management and Infrastructure as Code objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS CDK describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS CDK",
+          "url": "https://docs.aws.amazon.com/cdk/v2/guide/home.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q101",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Auto Scaling', what should you do FIRST when addressing Resilient Cloud Solutions objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Auto Scaling describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Auto Scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q102",
+      "domain": "resilient-cloud-solutions",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Route 53 routing', what should you do FIRST when addressing Resilient Cloud Solutions objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Route 53 routing describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Route 53 routing",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q103",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon CloudWatch', what should you do FIRST when addressing Monitoring, Logging, and Incident Response objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon CloudWatch describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q104",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS CloudTrail', what should you do FIRST when addressing Monitoring, Logging, and Incident Response objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS CloudTrail describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS CloudTrail",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q105",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon EventBridge', what should you do FIRST when addressing Incident and Event Response objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon EventBridge describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q106",
+      "domain": "incident-event-response",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Systems Manager Incident Manager', what should you do FIRST when addressing Incident and Event Response objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Systems Manager Incident Manager describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Systems Manager Incident Manager",
+          "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/what-is-incident-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q107",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Fault Injection Service', what should you do FIRST when addressing Reliability and Resilience objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Fault Injection Service describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Fault Injection Service",
+          "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
+        }
+      ]
+    },
+    {
+      "id": "dop-q108",
+      "domain": "reliability-resilience",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Resilience Hub', what should you do FIRST when addressing Reliability and Resilience objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Resilience Hub describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Resilience Hub",
+          "url": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html"
+        }
+      ]
+    }
+  ]
+}

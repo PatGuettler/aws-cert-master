@@ -1,0 +1,3392 @@
+{
+  "id": "data-engineer-associate",
+  "name": "AWS Certified Data Engineer \u2013 Associate",
+  "code": "DEA-C01",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 50,
+    "timeLimitMinutes": 130,
+    "passingScore": 720,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "ingestion-transformation",
+      "name": "Domain 1: Data Ingestion and Transformation",
+      "weight": 34,
+      "resources": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        },
+        {
+          "title": "Amazon Kinesis Data Streams",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "data-store-management",
+      "name": "Domain 2: Data Store Management",
+      "weight": 26,
+      "resources": [
+        {
+          "title": "Amazon Redshift",
+          "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html"
+        },
+        {
+          "title": "Amazon S3",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "data-operations",
+      "name": "Domain 3: Data Operations and Support",
+      "weight": 22,
+      "resources": [
+        {
+          "title": "Amazon EMR",
+          "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html"
+        },
+        {
+          "title": "AWS Lake Formation",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html"
+        }
+      ]
+    },
+    {
+      "id": "data-security-governance",
+      "name": "Domain 4: Data Security and Governance",
+      "weight": 18,
+      "resources": [
+        {
+          "title": "AWS Lake Formation permissions",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/access-control-overview.html"
+        },
+        {
+          "title": "Amazon Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "dea-q001",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to catalog and transform data in a data lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "Amazon WorkSpaces"
+        },
+        {
+          "id": "d",
+          "text": "AWS Artifact"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue runs Spark-based ETL jobs.",
+      "docs": [
+        {
+          "title": "Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q002",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to ingest real-time streaming data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Streams or Firehose"
+        },
+        {
+          "id": "b",
+          "text": "Batch FTP nightly only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Glacier for hot path"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kinesis handles high-throughput streams.",
+      "docs": [
+        {
+          "title": "Kinesis",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q003",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to prepare data visually for analytics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue DataBrew"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel only"
+        },
+        {
+          "id": "c",
+          "text": "No recipes"
+        },
+        {
+          "id": "d",
+          "text": "Prod edits without version"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DataBrew cleans and normalizes data without code.",
+      "docs": [
+        {
+          "title": "DataBrew",
+          "url": "https://docs.aws.amazon.com/databrew/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q004",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to migrate on-premises databases to AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DMS"
+        },
+        {
+          "id": "b",
+          "text": "USB stick only"
+        },
+        {
+          "id": "c",
+          "text": "Screenshots of tables"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CDC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Database Migration Service supports homogeneous and heterogeneous migrations.",
+      "docs": [
+        {
+          "title": "AWS DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q005",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to orchestrate complex ETL dependencies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
+        },
+        {
+          "id": "b",
+          "text": "Cron on one server"
+        },
+        {
+          "id": "c",
+          "text": "Manual rerun chains"
+        },
+        {
+          "id": "d",
+          "text": "No retries"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Orchestrators manage task DAGs.",
+      "docs": [
+        {
+          "title": "MWAA",
+          "url": "https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q006",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to transform data with SQL in the data lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Athena or Spark on Glue"
+        },
+        {
+          "id": "b",
+          "text": "grep S3 objects only"
+        },
+        {
+          "id": "c",
+          "text": "No partitioning"
+        },
+        {
+          "id": "d",
+          "text": "Scan all data always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena queries S3 with Presto/Trino SQL.",
+      "docs": [
+        {
+          "title": "Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q007",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to incrementally process lake house tables?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apache Iceberg/Hudi/Delta on Glue or EMR"
+        },
+        {
+          "id": "b",
+          "text": "Overwrite full table hourly expensive"
+        },
+        {
+          "id": "c",
+          "text": "No ACID"
+        },
+        {
+          "id": "d",
+          "text": "Duplicate rows always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Table formats support upserts and time travel.",
+      "docs": [
+        {
+          "title": "Glue Iceberg",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-iceberg.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q008",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to ingest SaaS app data into S3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon AppFlow"
+        },
+        {
+          "id": "b",
+          "text": "Manual CSV export only"
+        },
+        {
+          "id": "c",
+          "text": "Scrape HTML"
+        },
+        {
+          "id": "d",
+          "text": "Email attachments"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AppFlow integrates Salesforce, SAP, and others.",
+      "docs": [
+        {
+          "title": "AppFlow",
+          "url": "https://docs.aws.amazon.com/appflow/latest/userguide/what-is-appflow.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q009",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to catalog and transform data in a data lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "Amazon WorkSpaces"
+        },
+        {
+          "id": "d",
+          "text": "AWS Artifact"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue runs Spark-based ETL jobs.",
+      "docs": [
+        {
+          "title": "Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q010",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to catalog and transform data in a data lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "Amazon WorkSpaces"
+        },
+        {
+          "id": "d",
+          "text": "AWS Artifact"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue runs Spark-based ETL jobs.",
+      "docs": [
+        {
+          "title": "Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q011",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "A team must catalog and transform data in a data lake. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "Amazon WorkSpaces"
+        },
+        {
+          "id": "d",
+          "text": "AWS Artifact"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glue runs Spark-based ETL jobs.",
+      "docs": [
+        {
+          "title": "Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q012",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to ingest real-time streaming data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Streams or Firehose"
+        },
+        {
+          "id": "b",
+          "text": "Batch FTP nightly only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Glacier for hot path"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kinesis handles high-throughput streams.",
+      "docs": [
+        {
+          "title": "Kinesis",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q013",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to ingest real-time streaming data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Streams or Firehose"
+        },
+        {
+          "id": "b",
+          "text": "Batch FTP nightly only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Glacier for hot path"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kinesis handles high-throughput streams.",
+      "docs": [
+        {
+          "title": "Kinesis",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q014",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "A team must ingest real-time streaming data. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Streams or Firehose"
+        },
+        {
+          "id": "b",
+          "text": "Batch FTP nightly only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "Glacier for hot path"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kinesis handles high-throughput streams.",
+      "docs": [
+        {
+          "title": "Kinesis",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q015",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to prepare data visually for analytics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue DataBrew"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel only"
+        },
+        {
+          "id": "c",
+          "text": "No recipes"
+        },
+        {
+          "id": "d",
+          "text": "Prod edits without version"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DataBrew cleans and normalizes data without code.",
+      "docs": [
+        {
+          "title": "DataBrew",
+          "url": "https://docs.aws.amazon.com/databrew/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q016",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to prepare data visually for analytics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue DataBrew"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel only"
+        },
+        {
+          "id": "c",
+          "text": "No recipes"
+        },
+        {
+          "id": "d",
+          "text": "Prod edits without version"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DataBrew cleans and normalizes data without code.",
+      "docs": [
+        {
+          "title": "DataBrew",
+          "url": "https://docs.aws.amazon.com/databrew/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q017",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "A team must prepare data visually for analytics. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue DataBrew"
+        },
+        {
+          "id": "b",
+          "text": "Manual Excel only"
+        },
+        {
+          "id": "c",
+          "text": "No recipes"
+        },
+        {
+          "id": "d",
+          "text": "Prod edits without version"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DataBrew cleans and normalizes data without code.",
+      "docs": [
+        {
+          "title": "DataBrew",
+          "url": "https://docs.aws.amazon.com/databrew/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q018",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to migrate on-premises databases to AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DMS"
+        },
+        {
+          "id": "b",
+          "text": "USB stick only"
+        },
+        {
+          "id": "c",
+          "text": "Screenshots of tables"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CDC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Database Migration Service supports homogeneous and heterogeneous migrations.",
+      "docs": [
+        {
+          "title": "AWS DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q019",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to migrate on-premises databases to AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DMS"
+        },
+        {
+          "id": "b",
+          "text": "USB stick only"
+        },
+        {
+          "id": "c",
+          "text": "Screenshots of tables"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CDC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Database Migration Service supports homogeneous and heterogeneous migrations.",
+      "docs": [
+        {
+          "title": "AWS DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q020",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "A team must migrate on-premises databases to AWS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DMS"
+        },
+        {
+          "id": "b",
+          "text": "USB stick only"
+        },
+        {
+          "id": "c",
+          "text": "Screenshots of tables"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CDC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Database Migration Service supports homogeneous and heterogeneous migrations.",
+      "docs": [
+        {
+          "title": "AWS DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q021",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to orchestrate complex ETL dependencies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
+        },
+        {
+          "id": "b",
+          "text": "Cron on one server"
+        },
+        {
+          "id": "c",
+          "text": "Manual rerun chains"
+        },
+        {
+          "id": "d",
+          "text": "No retries"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Orchestrators manage task DAGs.",
+      "docs": [
+        {
+          "title": "MWAA",
+          "url": "https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q022",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to orchestrate complex ETL dependencies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
+        },
+        {
+          "id": "b",
+          "text": "Cron on one server"
+        },
+        {
+          "id": "c",
+          "text": "Manual rerun chains"
+        },
+        {
+          "id": "d",
+          "text": "No retries"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Orchestrators manage task DAGs.",
+      "docs": [
+        {
+          "title": "MWAA",
+          "url": "https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q023",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "A team must orchestrate complex ETL dependencies. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
+        },
+        {
+          "id": "b",
+          "text": "Cron on one server"
+        },
+        {
+          "id": "c",
+          "text": "Manual rerun chains"
+        },
+        {
+          "id": "d",
+          "text": "No retries"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Orchestrators manage task DAGs.",
+      "docs": [
+        {
+          "title": "MWAA",
+          "url": "https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q024",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to transform data with SQL in the data lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Athena or Spark on Glue"
+        },
+        {
+          "id": "b",
+          "text": "grep S3 objects only"
+        },
+        {
+          "id": "c",
+          "text": "No partitioning"
+        },
+        {
+          "id": "d",
+          "text": "Scan all data always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena queries S3 with Presto/Trino SQL.",
+      "docs": [
+        {
+          "title": "Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q025",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to transform data with SQL in the data lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Athena or Spark on Glue"
+        },
+        {
+          "id": "b",
+          "text": "grep S3 objects only"
+        },
+        {
+          "id": "c",
+          "text": "No partitioning"
+        },
+        {
+          "id": "d",
+          "text": "Scan all data always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena queries S3 with Presto/Trino SQL.",
+      "docs": [
+        {
+          "title": "Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q026",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "A team must transform data with SQL in the data lake. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Athena or Spark on Glue"
+        },
+        {
+          "id": "b",
+          "text": "grep S3 objects only"
+        },
+        {
+          "id": "c",
+          "text": "No partitioning"
+        },
+        {
+          "id": "d",
+          "text": "Scan all data always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Athena queries S3 with Presto/Trino SQL.",
+      "docs": [
+        {
+          "title": "Athena",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q027",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to petabyte-scale cloud data warehouse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Redshift"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "Amazon MQ"
+        },
+        {
+          "id": "d",
+          "text": "Route 53"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Redshift analyzes structured data at scale.",
+      "docs": [
+        {
+          "title": "Redshift",
+          "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q028",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to transactional data lake queries with ACID?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
+        },
+        {
+          "id": "b",
+          "text": "Random JSON only no schema"
+        },
+        {
+          "id": "c",
+          "text": "Public write bucket"
+        },
+        {
+          "id": "d",
+          "text": "No compaction"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Iceberg adds transactions to data lakes.",
+      "docs": [
+        {
+          "title": "Iceberg",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-iceberg.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q029",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to low-latency key-value for metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Flat file on NFS"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Unsharded MySQL on laptop"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB scales operational metadata stores.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q030",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to archive cold data cheaply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 Glacier storage classes"
+        },
+        {
+          "id": "b",
+          "text": "Standard for all cold data"
+        },
+        {
+          "id": "c",
+          "text": "Delete archives needed"
+        },
+        {
+          "id": "d",
+          "text": "No lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glacier tiers reduce long-term storage cost.",
+      "docs": [
+        {
+          "title": "Glacier",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/glacier-storage-classes.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q031",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to search and log analytics on semi-structured data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon OpenSearch Service"
+        },
+        {
+          "id": "b",
+          "text": "grep across all S3 forever"
+        },
+        {
+          "id": "c",
+          "text": "No indexes"
+        },
+        {
+          "id": "d",
+          "text": "Single shard only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpenSearch indexes logs and text.",
+      "docs": [
+        {
+          "title": "OpenSearch",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q032",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage table permissions in a data lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Lake Formation"
+        },
+        {
+          "id": "b",
+          "text": "S3 ACLs only for everything"
+        },
+        {
+          "id": "c",
+          "text": "Public lake"
+        },
+        {
+          "id": "d",
+          "text": "No column-level security"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lake Formation centralizes fine-grained access.",
+      "docs": [
+        {
+          "title": "Lake Formation",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q033",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run big data frameworks like Spark?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EMR"
+        },
+        {
+          "id": "b",
+          "text": "Single t2.micro for TB"
+        },
+        {
+          "id": "c",
+          "text": "No autoscaling"
+        },
+        {
+          "id": "d",
+          "text": "Ignore spot"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EMR runs Hadoop, Spark, Presto, and more.",
+      "docs": [
+        {
+          "title": "EMR",
+          "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q034",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to replicate ongoing changes from RDS to S3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DMS with S3 target or zero-ETL integrations"
+        },
+        {
+          "id": "b",
+          "text": "Nightly full dump only for huge DB"
+        },
+        {
+          "id": "c",
+          "text": "Drop WAL"
+        },
+        {
+          "id": "d",
+          "text": "No CDC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CDC pipelines keep the lake fresh.",
+      "docs": [
+        {
+          "title": "DMS CDC",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q035",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which service should you use to petabyte-scale cloud data warehouse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Redshift"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "Amazon MQ"
+        },
+        {
+          "id": "d",
+          "text": "Route 53"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Redshift analyzes structured data at scale.",
+      "docs": [
+        {
+          "title": "Redshift",
+          "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q036",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to petabyte-scale cloud data warehouse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Redshift"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "Amazon MQ"
+        },
+        {
+          "id": "d",
+          "text": "Route 53"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Redshift analyzes structured data at scale.",
+      "docs": [
+        {
+          "title": "Redshift",
+          "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q037",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "A team must petabyte-scale cloud data warehouse. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Redshift"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "Amazon MQ"
+        },
+        {
+          "id": "d",
+          "text": "Route 53"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Redshift analyzes structured data at scale.",
+      "docs": [
+        {
+          "title": "Redshift",
+          "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q038",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which service should you use to transactional data lake queries with ACID?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
+        },
+        {
+          "id": "b",
+          "text": "Random JSON only no schema"
+        },
+        {
+          "id": "c",
+          "text": "Public write bucket"
+        },
+        {
+          "id": "d",
+          "text": "No compaction"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Iceberg adds transactions to data lakes.",
+      "docs": [
+        {
+          "title": "Iceberg",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-iceberg.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q039",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to transactional data lake queries with ACID?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
+        },
+        {
+          "id": "b",
+          "text": "Random JSON only no schema"
+        },
+        {
+          "id": "c",
+          "text": "Public write bucket"
+        },
+        {
+          "id": "d",
+          "text": "No compaction"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Iceberg adds transactions to data lakes.",
+      "docs": [
+        {
+          "title": "Iceberg",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-iceberg.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q040",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "A team must transactional data lake queries with ACID. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
+        },
+        {
+          "id": "b",
+          "text": "Random JSON only no schema"
+        },
+        {
+          "id": "c",
+          "text": "Public write bucket"
+        },
+        {
+          "id": "d",
+          "text": "No compaction"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Iceberg adds transactions to data lakes.",
+      "docs": [
+        {
+          "title": "Iceberg",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-iceberg.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q041",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which service should you use to low-latency key-value for metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Flat file on NFS"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Unsharded MySQL on laptop"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB scales operational metadata stores.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q042",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to low-latency key-value for metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Flat file on NFS"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Unsharded MySQL on laptop"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB scales operational metadata stores.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q043",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "A team must low-latency key-value for metadata. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Flat file on NFS"
+        },
+        {
+          "id": "c",
+          "text": "Spreadsheet"
+        },
+        {
+          "id": "d",
+          "text": "Unsharded MySQL on laptop"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB scales operational metadata stores.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q044",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which service should you use to archive cold data cheaply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 Glacier storage classes"
+        },
+        {
+          "id": "b",
+          "text": "Standard for all cold data"
+        },
+        {
+          "id": "c",
+          "text": "Delete archives needed"
+        },
+        {
+          "id": "d",
+          "text": "No lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glacier tiers reduce long-term storage cost.",
+      "docs": [
+        {
+          "title": "Glacier",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/glacier-storage-classes.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q045",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to archive cold data cheaply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 Glacier storage classes"
+        },
+        {
+          "id": "b",
+          "text": "Standard for all cold data"
+        },
+        {
+          "id": "c",
+          "text": "Delete archives needed"
+        },
+        {
+          "id": "d",
+          "text": "No lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glacier tiers reduce long-term storage cost.",
+      "docs": [
+        {
+          "title": "Glacier",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/glacier-storage-classes.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q046",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "A team must archive cold data cheaply. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 Glacier storage classes"
+        },
+        {
+          "id": "b",
+          "text": "Standard for all cold data"
+        },
+        {
+          "id": "c",
+          "text": "Delete archives needed"
+        },
+        {
+          "id": "d",
+          "text": "No lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Glacier tiers reduce long-term storage cost.",
+      "docs": [
+        {
+          "title": "Glacier",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/glacier-storage-classes.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q047",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "Which service should you use to search and log analytics on semi-structured data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon OpenSearch Service"
+        },
+        {
+          "id": "b",
+          "text": "grep across all S3 forever"
+        },
+        {
+          "id": "c",
+          "text": "No indexes"
+        },
+        {
+          "id": "d",
+          "text": "Single shard only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpenSearch indexes logs and text.",
+      "docs": [
+        {
+          "title": "OpenSearch",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q048",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to search and log analytics on semi-structured data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon OpenSearch Service"
+        },
+        {
+          "id": "b",
+          "text": "grep across all S3 forever"
+        },
+        {
+          "id": "c",
+          "text": "No indexes"
+        },
+        {
+          "id": "d",
+          "text": "Single shard only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpenSearch indexes logs and text.",
+      "docs": [
+        {
+          "title": "OpenSearch",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q049",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "A team must search and log analytics on semi-structured data. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon OpenSearch Service"
+        },
+        {
+          "id": "b",
+          "text": "grep across all S3 forever"
+        },
+        {
+          "id": "c",
+          "text": "No indexes"
+        },
+        {
+          "id": "d",
+          "text": "Single shard only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpenSearch indexes logs and text.",
+      "docs": [
+        {
+          "title": "OpenSearch",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q050",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to monitor ETL job failures and retries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
+        },
+        {
+          "id": "b",
+          "text": "Silent failures"
+        },
+        {
+          "id": "c",
+          "text": "No DLQ"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational monitoring ensures pipeline reliability.",
+      "docs": [
+        {
+          "title": "Glue monitoring",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q051",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to optimize Redshift query performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sort keys, distribution keys, and RA3 sizing"
+        },
+        {
+          "id": "b",
+          "text": "Scan all tables full"
+        },
+        {
+          "id": "c",
+          "text": "No vacuum"
+        },
+        {
+          "id": "d",
+          "text": "Tiny node for PB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Physical design affects warehouse performance.",
+      "docs": [
+        {
+          "title": "Redshift tuning",
+          "url": "https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q052",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to partition S3 data for Athena cost savings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hive-style partitions (year/month/day)"
+        },
+        {
+          "id": "b",
+          "text": "Single folder all data"
+        },
+        {
+          "id": "c",
+          "text": "Tiny files problem ignored"
+        },
+        {
+          "id": "d",
+          "text": "CSV only huge"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Partition pruning reduces data scanned.",
+      "docs": [
+        {
+          "title": "Athena partitions",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q053",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to track data lineage across pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue Data Catalog lineage or third-party"
+        },
+        {
+          "id": "b",
+          "text": "Unknown sources"
+        },
+        {
+          "id": "c",
+          "text": "No ownership"
+        },
+        {
+          "id": "d",
+          "text": "Delete catalog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lineage supports impact analysis.",
+      "docs": [
+        {
+          "title": "Glue lineage",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/data-lineage.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q054",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to backfill historical partitions idempotently?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glue workflows with job bookmarks"
+        },
+        {
+          "id": "b",
+          "text": "Duplicate rows uncontrolled"
+        },
+        {
+          "id": "c",
+          "text": "Manual reruns chaos"
+        },
+        {
+          "id": "d",
+          "text": "No idempotency keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bookmarks prevent reprocessing unchanged data.",
+      "docs": [
+        {
+          "title": "Job bookmarks",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q055",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage schema evolution in streams?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glue Schema Registry for Kafka/Kinesis"
+        },
+        {
+          "id": "b",
+          "text": "Free-text payloads forever"
+        },
+        {
+          "id": "c",
+          "text": "Break consumers silently"
+        },
+        {
+          "id": "d",
+          "text": "No compatibility mode"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schema Registry enforces Avro/JSON schemas.",
+      "docs": [
+        {
+          "title": "Schema Registry",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q056",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deliver data quality checks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glue Data Quality rules"
+        },
+        {
+          "id": "b",
+          "text": "Assume perfect data"
+        },
+        {
+          "id": "c",
+          "text": "No alerts"
+        },
+        {
+          "id": "d",
+          "text": "Prod only discovery"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data Quality evaluates row/column rules.",
+      "docs": [
+        {
+          "title": "Glue Data Quality",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/glue-data-quality.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q057",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to coordinate cross-account data sharing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lake Formation resource links and RAM"
+        },
+        {
+          "id": "b",
+          "text": "Public buckets"
+        },
+        {
+          "id": "c",
+          "text": "Hard-coded keys"
+        },
+        {
+          "id": "d",
+          "text": "Email CSV cross account"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAM shares subnets and LF shares data catalog.",
+      "docs": [
+        {
+          "title": "Lake Formation cross-account",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/cross-account-permissions.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q058",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to monitor ETL job failures and retries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
+        },
+        {
+          "id": "b",
+          "text": "Silent failures"
+        },
+        {
+          "id": "c",
+          "text": "No DLQ"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational monitoring ensures pipeline reliability.",
+      "docs": [
+        {
+          "title": "Glue monitoring",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q059",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to monitor ETL job failures and retries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
+        },
+        {
+          "id": "b",
+          "text": "Silent failures"
+        },
+        {
+          "id": "c",
+          "text": "No DLQ"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational monitoring ensures pipeline reliability.",
+      "docs": [
+        {
+          "title": "Glue monitoring",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q060",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "A team must monitor ETL job failures and retries. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
+        },
+        {
+          "id": "b",
+          "text": "Silent failures"
+        },
+        {
+          "id": "c",
+          "text": "No DLQ"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SLA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Operational monitoring ensures pipeline reliability.",
+      "docs": [
+        {
+          "title": "Glue monitoring",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q061",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to optimize Redshift query performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sort keys, distribution keys, and RA3 sizing"
+        },
+        {
+          "id": "b",
+          "text": "Scan all tables full"
+        },
+        {
+          "id": "c",
+          "text": "No vacuum"
+        },
+        {
+          "id": "d",
+          "text": "Tiny node for PB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Physical design affects warehouse performance.",
+      "docs": [
+        {
+          "title": "Redshift tuning",
+          "url": "https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q062",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to optimize Redshift query performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sort keys, distribution keys, and RA3 sizing"
+        },
+        {
+          "id": "b",
+          "text": "Scan all tables full"
+        },
+        {
+          "id": "c",
+          "text": "No vacuum"
+        },
+        {
+          "id": "d",
+          "text": "Tiny node for PB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Physical design affects warehouse performance.",
+      "docs": [
+        {
+          "title": "Redshift tuning",
+          "url": "https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q063",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "A team must optimize Redshift query performance. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sort keys, distribution keys, and RA3 sizing"
+        },
+        {
+          "id": "b",
+          "text": "Scan all tables full"
+        },
+        {
+          "id": "c",
+          "text": "No vacuum"
+        },
+        {
+          "id": "d",
+          "text": "Tiny node for PB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Physical design affects warehouse performance.",
+      "docs": [
+        {
+          "title": "Redshift tuning",
+          "url": "https://docs.aws.amazon.com/redshift/latest/dg/c_best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q064",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to partition S3 data for Athena cost savings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hive-style partitions (year/month/day)"
+        },
+        {
+          "id": "b",
+          "text": "Single folder all data"
+        },
+        {
+          "id": "c",
+          "text": "Tiny files problem ignored"
+        },
+        {
+          "id": "d",
+          "text": "CSV only huge"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Partition pruning reduces data scanned.",
+      "docs": [
+        {
+          "title": "Athena partitions",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q065",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to partition S3 data for Athena cost savings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hive-style partitions (year/month/day)"
+        },
+        {
+          "id": "b",
+          "text": "Single folder all data"
+        },
+        {
+          "id": "c",
+          "text": "Tiny files problem ignored"
+        },
+        {
+          "id": "d",
+          "text": "CSV only huge"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Partition pruning reduces data scanned.",
+      "docs": [
+        {
+          "title": "Athena partitions",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q066",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "A team must partition S3 data for Athena cost savings. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hive-style partitions (year/month/day)"
+        },
+        {
+          "id": "b",
+          "text": "Single folder all data"
+        },
+        {
+          "id": "c",
+          "text": "Tiny files problem ignored"
+        },
+        {
+          "id": "d",
+          "text": "CSV only huge"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Partition pruning reduces data scanned.",
+      "docs": [
+        {
+          "title": "Athena partitions",
+          "url": "https://docs.aws.amazon.com/athena/latest/ug/partitions.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q067",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "Which service should you use to track data lineage across pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue Data Catalog lineage or third-party"
+        },
+        {
+          "id": "b",
+          "text": "Unknown sources"
+        },
+        {
+          "id": "c",
+          "text": "No ownership"
+        },
+        {
+          "id": "d",
+          "text": "Delete catalog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lineage supports impact analysis.",
+      "docs": [
+        {
+          "title": "Glue lineage",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/data-lineage.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q068",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to track data lineage across pipelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue Data Catalog lineage or third-party"
+        },
+        {
+          "id": "b",
+          "text": "Unknown sources"
+        },
+        {
+          "id": "c",
+          "text": "No ownership"
+        },
+        {
+          "id": "d",
+          "text": "Delete catalog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lineage supports impact analysis.",
+      "docs": [
+        {
+          "title": "Glue lineage",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/data-lineage.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q069",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "A team must track data lineage across pipelines. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue Data Catalog lineage or third-party"
+        },
+        {
+          "id": "b",
+          "text": "Unknown sources"
+        },
+        {
+          "id": "c",
+          "text": "No ownership"
+        },
+        {
+          "id": "d",
+          "text": "Delete catalog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lineage supports impact analysis.",
+      "docs": [
+        {
+          "title": "Glue lineage",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/data-lineage.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q070",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to column-level security in the lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lake Formation column/row filters"
+        },
+        {
+          "id": "b",
+          "text": "All users SELECT *"
+        },
+        {
+          "id": "c",
+          "text": "Public ACL"
+        },
+        {
+          "id": "d",
+          "text": "Root for analysts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "LF fine-grained permissions mask columns.",
+      "docs": [
+        {
+          "title": "LF security",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filtering.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q071",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to encrypt data at rest in S3 and Redshift?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only buckets"
+        },
+        {
+          "id": "c",
+          "text": "Disable encryption"
+        },
+        {
+          "id": "d",
+          "text": "Shared plaintext keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS provides auditable encryption keys.",
+      "docs": [
+        {
+          "title": "KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q072",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to mask sensitive columns in queries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
+        },
+        {
+          "id": "b",
+          "text": "Expose SSN in views"
+        },
+        {
+          "id": "c",
+          "text": "Copy prod to dev raw"
+        },
+        {
+          "id": "d",
+          "text": "Email exports"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Masking limits exposure of sensitive fields.",
+      "docs": [
+        {
+          "title": "Redshift masking",
+          "url": "https://docs.aws.amazon.com/redshift/latest/dg/t_ddm.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q073",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to audit access to tables?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudTrail for Lake Formation and S3 data events"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous access"
+        },
+        {
+          "id": "d",
+          "text": "Delete audit bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data events log object-level S3 access.",
+      "docs": [
+        {
+          "title": "CloudTrail data events",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q074",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to classify PII in the lake automatically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "b",
+          "text": "Manual grep once"
+        },
+        {
+          "id": "c",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Macie discovers sensitive data in S3.",
+      "docs": [
+        {
+          "title": "Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q075",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to enforce retention and legal hold?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3 Object Lock and lifecycle policies"
+        },
+        {
+          "id": "b",
+          "text": "Delete regulated data early"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Ignore compliance"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Object Lock supports WORM retention.",
+      "docs": [
+        {
+          "title": "S3 Object Lock",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q076",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage secrets for JDBC connections in Glue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glue connections with Secrets Manager"
+        },
+        {
+          "id": "b",
+          "text": "Password in job script"
+        },
+        {
+          "id": "c",
+          "text": "Git commit creds"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin password"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connections store credentials securely.",
+      "docs": [
+        {
+          "title": "Glue connections",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/glue-connections.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q077",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to apply tags for cost allocation on data assets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost allocation tags on S3 buckets and jobs"
+        },
+        {
+          "id": "b",
+          "text": "No tags"
+        },
+        {
+          "id": "c",
+          "text": "One account no allocation"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CUR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tags attribute pipeline cost to teams.",
+      "docs": [
+        {
+          "title": "Billing tags",
+          "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q078",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which service should you use to column-level security in the lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lake Formation column/row filters"
+        },
+        {
+          "id": "b",
+          "text": "All users SELECT *"
+        },
+        {
+          "id": "c",
+          "text": "Public ACL"
+        },
+        {
+          "id": "d",
+          "text": "Root for analysts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "LF fine-grained permissions mask columns.",
+      "docs": [
+        {
+          "title": "LF security",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filtering.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q079",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to column-level security in the lake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lake Formation column/row filters"
+        },
+        {
+          "id": "b",
+          "text": "All users SELECT *"
+        },
+        {
+          "id": "c",
+          "text": "Public ACL"
+        },
+        {
+          "id": "d",
+          "text": "Root for analysts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "LF fine-grained permissions mask columns.",
+      "docs": [
+        {
+          "title": "LF security",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filtering.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q080",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "A team must column-level security in the lake. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lake Formation column/row filters"
+        },
+        {
+          "id": "b",
+          "text": "All users SELECT *"
+        },
+        {
+          "id": "c",
+          "text": "Public ACL"
+        },
+        {
+          "id": "d",
+          "text": "Root for analysts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "LF fine-grained permissions mask columns.",
+      "docs": [
+        {
+          "title": "LF security",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/data-filtering.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q081",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which service should you use to encrypt data at rest in S3 and Redshift?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only buckets"
+        },
+        {
+          "id": "c",
+          "text": "Disable encryption"
+        },
+        {
+          "id": "d",
+          "text": "Shared plaintext keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS provides auditable encryption keys.",
+      "docs": [
+        {
+          "title": "KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q082",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to encrypt data at rest in S3 and Redshift?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only buckets"
+        },
+        {
+          "id": "c",
+          "text": "Disable encryption"
+        },
+        {
+          "id": "d",
+          "text": "Shared plaintext keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS provides auditable encryption keys.",
+      "docs": [
+        {
+          "title": "KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q083",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "A team must encrypt data at rest in S3 and Redshift. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only buckets"
+        },
+        {
+          "id": "c",
+          "text": "Disable encryption"
+        },
+        {
+          "id": "d",
+          "text": "Shared plaintext keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS provides auditable encryption keys.",
+      "docs": [
+        {
+          "title": "KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q084",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "Which service should you use to mask sensitive columns in queries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
+        },
+        {
+          "id": "b",
+          "text": "Expose SSN in views"
+        },
+        {
+          "id": "c",
+          "text": "Copy prod to dev raw"
+        },
+        {
+          "id": "d",
+          "text": "Email exports"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Masking limits exposure of sensitive fields.",
+      "docs": [
+        {
+          "title": "Redshift masking",
+          "url": "https://docs.aws.amazon.com/redshift/latest/dg/t_ddm.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q085",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to mask sensitive columns in queries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
+        },
+        {
+          "id": "b",
+          "text": "Expose SSN in views"
+        },
+        {
+          "id": "c",
+          "text": "Copy prod to dev raw"
+        },
+        {
+          "id": "d",
+          "text": "Email exports"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Masking limits exposure of sensitive fields.",
+      "docs": [
+        {
+          "title": "Redshift masking",
+          "url": "https://docs.aws.amazon.com/redshift/latest/dg/t_ddm.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q086",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "A team must mask sensitive columns in queries. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
+        },
+        {
+          "id": "b",
+          "text": "Expose SSN in views"
+        },
+        {
+          "id": "c",
+          "text": "Copy prod to dev raw"
+        },
+        {
+          "id": "d",
+          "text": "Email exports"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Masking limits exposure of sensitive fields.",
+      "docs": [
+        {
+          "title": "Redshift masking",
+          "url": "https://docs.aws.amazon.com/redshift/latest/dg/t_ddm.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q087",
+      "domain": "ingestion-transformation",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q088",
+      "domain": "data-store-management",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q089",
+      "domain": "ingestion-transformation",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Data Engineer \u2013 Associate? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Kinesis Data Streams"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q090",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Glue', what should you do FIRST when addressing Data Ingestion and Transformation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Glue describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Glue",
+          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q091",
+      "domain": "ingestion-transformation",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Kinesis Data Streams', what should you do FIRST when addressing Data Ingestion and Transformation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Kinesis Data Streams describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Kinesis Data Streams",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q092",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Redshift', what should you do FIRST when addressing Data Store Management objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Redshift describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Redshift",
+          "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q093",
+      "domain": "data-store-management",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon S3', what should you do FIRST when addressing Data Store Management objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon S3 describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon S3",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q094",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon EMR', what should you do FIRST when addressing Data Operations and Support objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon EMR describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon EMR",
+          "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q095",
+      "domain": "data-operations",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Lake Formation', what should you do FIRST when addressing Data Operations and Support objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Lake Formation describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Lake Formation",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q096",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Lake Formation permissions', what should you do FIRST when addressing Data Security and Governance objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Lake Formation permissions describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Lake Formation permissions",
+          "url": "https://docs.aws.amazon.com/lake-formation/latest/dg/access-control-overview.html"
+        }
+      ]
+    },
+    {
+      "id": "dea-q097",
+      "domain": "data-security-governance",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Macie', what should you do FIRST when addressing Data Security and Governance objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Macie describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    }
+  ]
+}

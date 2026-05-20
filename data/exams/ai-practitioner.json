@@ -1,0 +1,3513 @@
+{
+  "id": "ai-practitioner",
+  "name": "AWS Certified AI Practitioner",
+  "code": "AIF-C01",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 50,
+    "timeLimitMinutes": 90,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "ai-ml-fundamentals",
+      "name": "Domain 1: Fundamentals of AI and ML",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "AIF-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-ai-practitioner/"
+        },
+        {
+          "title": "Amazon SageMaker",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
+        },
+        {
+          "title": "AWS Machine Learning",
+          "url": "https://aws.amazon.com/machine-learning/"
+        }
+      ]
+    },
+    {
+      "id": "generative-ai-fundamentals",
+      "name": "Domain 2: Fundamentals of Generative AI",
+      "weight": 24,
+      "resources": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        },
+        {
+          "title": "Generative AI on AWS",
+          "url": "https://aws.amazon.com/generative-ai/"
+        }
+      ]
+    },
+    {
+      "id": "foundation-model-applications",
+      "name": "Domain 3: Applications of Foundation Models",
+      "weight": 28,
+      "resources": [
+        {
+          "title": "Amazon Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        },
+        {
+          "title": "Knowledge Bases for Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "responsible-ai",
+      "name": "Domain 4: Guidelines for Responsible AI",
+      "weight": 14,
+      "resources": [
+        {
+          "title": "Responsible AI",
+          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
+        },
+        {
+          "title": "Amazon SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "ai-security-governance",
+      "name": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "weight": 14,
+      "resources": [
+        {
+          "title": "AWS IAM",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
+        },
+        {
+          "title": "Amazon Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "aif-q001",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to train and deploy custom ML models with managed infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Rekognition"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "d",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker provides end-to-end ML building, training, and deployment.",
+      "docs": [
+        {
+          "title": "Amazon SageMaker",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q002",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to label raw data for supervised learning at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Ground Truth"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Connect"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ground Truth helps create labeled datasets using human and automated labeling.",
+      "docs": [
+        {
+          "title": "SageMaker Ground Truth",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q003",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run batch inference on large datasets without managing servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Batch Transform"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EC2 Auto Scaling only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowball"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Route 53"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Batch Transform runs predictions on large datasets asynchronously.",
+      "docs": [
+        {
+          "title": "Batch Transform",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q004",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to store and version ML model artifacts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Model Registry"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 Glacier only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon MQ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Model Registry catalogs models for approval and deployment workflows.",
+      "docs": [
+        {
+          "title": "Model Registry",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q005",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to perform time-series forecasting with AutoML capabilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Canvas or Autopilot"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Kinesis Video Streams"
+        },
+        {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "d",
+          "text": "Amazon SES"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker Autopilot and Canvas support low-code ML including forecasting use cases.",
+      "docs": [
+        {
+          "title": "SageMaker Autopilot",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q006",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to classify images with a pre-trained API without building models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Rekognition"
+        },
+        {
+          "id": "b",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Redshift"
+        },
+        {
+          "id": "d",
+          "text": "AWS CloudTrail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rekognition provides pre-built computer vision APIs.",
+      "docs": [
+        {
+          "title": "Amazon Rekognition",
+          "url": "https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q007",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to convert text to lifelike speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Textract"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Comprehend"
+        },
+        {
+          "id": "d",
+          "text": "AWS Lambda only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Polly is a text-to-speech service.",
+      "docs": [
+        {
+          "title": "Amazon Polly",
+          "url": "https://docs.aws.amazon.com/polly/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q008",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to extract text and data from scanned documents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Textract"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "c",
+          "text": "Amazon MQ"
+        },
+        {
+          "id": "d",
+          "text": "AWS Direct Connect"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Textract uses ML to read forms and tables from documents.",
+      "docs": [
+        {
+          "title": "Amazon Textract",
+          "url": "https://docs.aws.amazon.com/textract/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q009",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to discover insights and relationships in unstructured text?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Comprehend"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Shield"
+        },
+        {
+          "id": "d",
+          "text": "Amazon VPC"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Comprehend is a natural language processing (NLP) service.",
+      "docs": [
+        {
+          "title": "Amazon Comprehend",
+          "url": "https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q010",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to translate text between languages at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Translate"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Config"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Inspector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Translate provides neural machine translation.",
+      "docs": [
+        {
+          "title": "Amazon Translate",
+          "url": "https://docs.aws.amazon.com/translate/latest/dg/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q011",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to search for similar vectors in embedding datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon OpenSearch Service or Aurora pgvector"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 Glacier Deep Archive only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Budgets"
+        },
+        {
+          "id": "d",
+          "text": "Amazon WorkSpaces"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vector search supports similarity queries for embeddings in search engines or databases.",
+      "docs": [
+        {
+          "title": "OpenSearch k-NN",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/knn.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q012",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to orchestrate ML pipelines with repeatable steps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Pipelines"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Lightsail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker Pipelines automates end-to-end ML workflows.",
+      "docs": [
+        {
+          "title": "SageMaker Pipelines",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q013",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which service should you use to train and deploy custom ML models with managed infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Rekognition"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "d",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker provides end-to-end ML building, training, and deployment.",
+      "docs": [
+        {
+          "title": "Amazon SageMaker",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q014",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to train and deploy custom ML models with managed infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Rekognition"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "d",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker provides end-to-end ML building, training, and deployment.",
+      "docs": [
+        {
+          "title": "Amazon SageMaker",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q015",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "A team must train and deploy custom ML models with managed infrastructure. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Rekognition"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "d",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SageMaker provides end-to-end ML building, training, and deployment.",
+      "docs": [
+        {
+          "title": "Amazon SageMaker",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q016",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which service should you use to label raw data for supervised learning at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Ground Truth"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Connect"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ground Truth helps create labeled datasets using human and automated labeling.",
+      "docs": [
+        {
+          "title": "SageMaker Ground Truth",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q017",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to label raw data for supervised learning at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Ground Truth"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Connect"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ground Truth helps create labeled datasets using human and automated labeling.",
+      "docs": [
+        {
+          "title": "SageMaker Ground Truth",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q018",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "A team must label raw data for supervised learning at scale. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Ground Truth"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Connect"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Ground Truth helps create labeled datasets using human and automated labeling.",
+      "docs": [
+        {
+          "title": "SageMaker Ground Truth",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q019",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to access foundation models from multiple providers through one API?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EC2 only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowcone"
+        },
+        {
+          "id": "d",
+          "text": "Amazon RDS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock offers FMs from Amazon and partners via a unified API.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q020",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to invoke models for text generation with on-demand throughput?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS CloudFormation"
+        },
+        {
+          "id": "d",
+          "text": "Amazon EFS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock supports on-demand and provisioned throughput for inference.",
+      "docs": [
+        {
+          "title": "Bedrock inference",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q021",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to customize a foundation model with labeled examples for a specific task?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock model customization (fine-tuning)"
+        },
+        {
+          "id": "b",
+          "text": "AWS KMS only"
+        },
+        {
+          "id": "c",
+          "text": "Amazon CloudWatch Logs only"
+        },
+        {
+          "id": "d",
+          "text": "VPC Flow Logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fine-tuning adapts FMs using your domain-specific data.",
+      "docs": [
+        {
+          "title": "Model customization",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q022",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to compare latency and quality across foundation models in a playground?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock console playgrounds"
+        },
+        {
+          "id": "b",
+          "text": "AWS Cost Explorer only"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Inspector"
+        },
+        {
+          "id": "d",
+          "text": "AWS Artifact"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Playgrounds let you experiment with prompts and models.",
+      "docs": [
+        {
+          "title": "Bedrock playgrounds",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/playgrounds.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q023",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to generate images from text prompts using AWS generative AI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Titan Image Generator or Stability AI models in Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Glacier"
+        },
+        {
+          "id": "c",
+          "text": "AWS DataSync only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon MQ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock supports image generation models for creative workloads.",
+      "docs": [
+        {
+          "title": "Bedrock image models",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q024",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to understand tokens as billing units for generative models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Token-based pricing on Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "EBS volume IOPS"
+        },
+        {
+          "id": "c",
+          "text": "Data transfer in only"
+        },
+        {
+          "id": "d",
+          "text": "IAM policy size"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Generative models often bill per input/output tokens.",
+      "docs": [
+        {
+          "title": "Bedrock pricing",
+          "url": "https://aws.amazon.com/bedrock/pricing/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q025",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to reduce hallucinations by grounding responses in private data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retrieval Augmented Generation (RAG)"
+        },
+        {
+          "id": "b",
+          "text": "Spot Instances"
+        },
+        {
+          "id": "c",
+          "text": "S3 Transfer Acceleration only"
+        },
+        {
+          "id": "d",
+          "text": "Reserved Instances"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAG retrieves relevant documents before the model generates an answer.",
+      "docs": [
+        {
+          "title": "RAG on Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q026",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to store prompt templates and versions for teams?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Prompt Management or similar versioning patterns"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 lifecycle only"
+        },
+        {
+          "id": "c",
+          "text": "Route 53"
+        },
+        {
+          "id": "d",
+          "text": "AWS Snowmobile"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managing prompts as code/templates improves consistency and governance.",
+      "docs": [
+        {
+          "title": "Prompt engineering",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q027",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to evaluate model outputs for quality before production?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Model evaluation in Amazon Bedrock or SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "AWS Budgets"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Cognito only"
+        },
+        {
+          "id": "d",
+          "text": "VPC peering"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Systematic evaluation compares models and prompts against benchmarks.",
+      "docs": [
+        {
+          "title": "Bedrock evaluation",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q028",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use embeddings to represent text for semantic search?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Titan Embeddings or Cohere Embed on Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS snapshots"
+        },
+        {
+          "id": "c",
+          "text": "AWS Shield Standard only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon WorkMail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Embeddings convert text to vectors for similarity search.",
+      "docs": [
+        {
+          "title": "Embeddings",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/embeddings.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q029",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which service should you use to access foundation models from multiple providers through one API?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EC2 only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowcone"
+        },
+        {
+          "id": "d",
+          "text": "Amazon RDS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock offers FMs from Amazon and partners via a unified API.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q030",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to access foundation models from multiple providers through one API?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EC2 only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowcone"
+        },
+        {
+          "id": "d",
+          "text": "Amazon RDS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock offers FMs from Amazon and partners via a unified API.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q031",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "A team must access foundation models from multiple providers through one API. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EC2 only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowcone"
+        },
+        {
+          "id": "d",
+          "text": "Amazon RDS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock offers FMs from Amazon and partners via a unified API.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q032",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which service should you use to invoke models for text generation with on-demand throughput?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS CloudFormation"
+        },
+        {
+          "id": "d",
+          "text": "Amazon EFS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock supports on-demand and provisioned throughput for inference.",
+      "docs": [
+        {
+          "title": "Bedrock inference",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q033",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to invoke models for text generation with on-demand throughput?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS CloudFormation"
+        },
+        {
+          "id": "d",
+          "text": "Amazon EFS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock supports on-demand and provisioned throughput for inference.",
+      "docs": [
+        {
+          "title": "Bedrock inference",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q034",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "A team must invoke models for text generation with on-demand throughput. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS CloudFormation"
+        },
+        {
+          "id": "d",
+          "text": "Amazon EFS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock supports on-demand and provisioned throughput for inference.",
+      "docs": [
+        {
+          "title": "Bedrock inference",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q035",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "Which service should you use to customize a foundation model with labeled examples for a specific task?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock model customization (fine-tuning)"
+        },
+        {
+          "id": "b",
+          "text": "AWS KMS only"
+        },
+        {
+          "id": "c",
+          "text": "Amazon CloudWatch Logs only"
+        },
+        {
+          "id": "d",
+          "text": "VPC Flow Logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fine-tuning adapts FMs using your domain-specific data.",
+      "docs": [
+        {
+          "title": "Model customization",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q036",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to customize a foundation model with labeled examples for a specific task?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock model customization (fine-tuning)"
+        },
+        {
+          "id": "b",
+          "text": "AWS KMS only"
+        },
+        {
+          "id": "c",
+          "text": "Amazon CloudWatch Logs only"
+        },
+        {
+          "id": "d",
+          "text": "VPC Flow Logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fine-tuning adapts FMs using your domain-specific data.",
+      "docs": [
+        {
+          "title": "Model customization",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q037",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "A team must customize a foundation model with labeled examples for a specific task. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock model customization (fine-tuning)"
+        },
+        {
+          "id": "b",
+          "text": "AWS KMS only"
+        },
+        {
+          "id": "c",
+          "text": "Amazon CloudWatch Logs only"
+        },
+        {
+          "id": "d",
+          "text": "VPC Flow Logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fine-tuning adapts FMs using your domain-specific data.",
+      "docs": [
+        {
+          "title": "Model customization",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q038",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to build a conversational assistant that calls APIs and queries data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Agents"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 Intelligent-Tiering only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowball Edge"
+        },
+        {
+          "id": "d",
+          "text": "Amazon RDS Proxy only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Agents orchestrate FM reasoning with tools and knowledge bases.",
+      "docs": [
+        {
+          "title": "Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q039",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to connect private documents to a foundation model for Q&A?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge Bases for Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Glacier"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Lightsail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Knowledge bases ingest, chunk, embed, and retrieve documents for RAG.",
+      "docs": [
+        {
+          "title": "Knowledge Bases",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q040",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to chunk documents and store vectors for retrieval?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS FIFO only"
+        },
+        {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Macie only for blocking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vector stores hold embeddings for semantic retrieval in RAG pipelines.",
+      "docs": [
+        {
+          "title": "Knowledge base vector stores",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q041",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to expose a generative AI feature behind a REST API to web clients?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Direct Connect only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Inspector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "API Gateway + Lambda is a common serverless pattern for GenAI apps.",
+      "docs": [
+        {
+          "title": "API Gateway",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q042",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to cache frequent model responses to reduce cost and latency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ElastiCache or API-level caching"
+        },
+        {
+          "id": "b",
+          "text": "AWS Snowmobile"
+        },
+        {
+          "id": "c",
+          "text": "Amazon WorkSpaces"
+        },
+        {
+          "id": "d",
+          "text": "AWS Artifact"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Caching repeated prompts lowers inference spend and improves UX.",
+      "docs": [
+        {
+          "title": "Caching best practices",
+          "url": "https://aws.amazon.com/builders-library/implementing-health-aware-load-balancing/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q043",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run inference in a VPC without public internet for data residency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock VPC endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Public S3 buckets"
+        },
+        {
+          "id": "c",
+          "text": "Root access keys in code"
+        },
+        {
+          "id": "d",
+          "text": "Unencrypted EBS only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC endpoints keep Bedrock traffic on the AWS network.",
+      "docs": [
+        {
+          "title": "Bedrock VPC",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/vpc-interface-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q044",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to stream tokens to clients for responsive chat UIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Converse API with streaming"
+        },
+        {
+          "id": "b",
+          "text": "Batch Transform only"
+        },
+        {
+          "id": "c",
+          "text": "S3 Glacier"
+        },
+        {
+          "id": "d",
+          "text": "AWS Organizations SCPs only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming returns partial responses as the model generates text.",
+      "docs": [
+        {
+          "title": "Converse API",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q045",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to moderate harmful content in model inputs and outputs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53 health checks only"
+        },
+        {
+          "id": "c",
+          "text": "AWS CUR"
+        },
+        {
+          "id": "d",
+          "text": "Snowball"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Guardrails filter topics, PII, and harmful content.",
+      "docs": [
+        {
+          "title": "Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q046",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to log prompts and completions for audit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch Logs and model invocation logging"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Polly only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Budgets"
+        },
+        {
+          "id": "d",
+          "text": "Amazon MQ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Invocation logging supports compliance and troubleshooting.",
+      "docs": [
+        {
+          "title": "Model invocation logging",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q047",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deploy a small custom model at the edge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS IoT Greengrass with optimized models or edge devices"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Redshift"
+        },
+        {
+          "id": "c",
+          "text": "AWS Glue DataBrew only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Connect"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Edge inference places models closer to devices when cloud latency is too high.",
+      "docs": [
+        {
+          "title": "Edge ML",
+          "url": "https://docs.aws.amazon.com/greengrass/v2/developerguide/what-is-greengrass.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q048",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which service should you use to build a conversational assistant that calls APIs and queries data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Agents"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 Intelligent-Tiering only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowball Edge"
+        },
+        {
+          "id": "d",
+          "text": "Amazon RDS Proxy only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Agents orchestrate FM reasoning with tools and knowledge bases.",
+      "docs": [
+        {
+          "title": "Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q049",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to build a conversational assistant that calls APIs and queries data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Agents"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 Intelligent-Tiering only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowball Edge"
+        },
+        {
+          "id": "d",
+          "text": "Amazon RDS Proxy only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Agents orchestrate FM reasoning with tools and knowledge bases.",
+      "docs": [
+        {
+          "title": "Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q050",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "A team must build a conversational assistant that calls APIs and queries data. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Agents"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3 Intelligent-Tiering only"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowball Edge"
+        },
+        {
+          "id": "d",
+          "text": "Amazon RDS Proxy only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Agents orchestrate FM reasoning with tools and knowledge bases.",
+      "docs": [
+        {
+          "title": "Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q051",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which service should you use to connect private documents to a foundation model for Q&A?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge Bases for Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Glacier"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Lightsail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Knowledge bases ingest, chunk, embed, and retrieve documents for RAG.",
+      "docs": [
+        {
+          "title": "Knowledge Bases",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q052",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to connect private documents to a foundation model for Q&A?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge Bases for Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Glacier"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Lightsail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Knowledge bases ingest, chunk, embed, and retrieve documents for RAG.",
+      "docs": [
+        {
+          "title": "Knowledge Bases",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q053",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "A team must connect private documents to a foundation model for Q&A. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge Bases for Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Glacier"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Lightsail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Knowledge bases ingest, chunk, embed, and retrieve documents for RAG.",
+      "docs": [
+        {
+          "title": "Knowledge Bases",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q054",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which service should you use to chunk documents and store vectors for retrieval?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS FIFO only"
+        },
+        {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Macie only for blocking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vector stores hold embeddings for semantic retrieval in RAG pipelines.",
+      "docs": [
+        {
+          "title": "Knowledge base vector stores",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q055",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to chunk documents and store vectors for retrieval?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS FIFO only"
+        },
+        {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Macie only for blocking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vector stores hold embeddings for semantic retrieval in RAG pipelines.",
+      "docs": [
+        {
+          "title": "Knowledge base vector stores",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q056",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "A team must chunk documents and store vectors for retrieval. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS FIFO only"
+        },
+        {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Macie only for blocking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vector stores hold embeddings for semantic retrieval in RAG pipelines.",
+      "docs": [
+        {
+          "title": "Knowledge base vector stores",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q057",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "Which service should you use to expose a generative AI feature behind a REST API to web clients?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Direct Connect only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Inspector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "API Gateway + Lambda is a common serverless pattern for GenAI apps.",
+      "docs": [
+        {
+          "title": "API Gateway",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q058",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to expose a generative AI feature behind a REST API to web clients?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Direct Connect only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Inspector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "API Gateway + Lambda is a common serverless pattern for GenAI apps.",
+      "docs": [
+        {
+          "title": "API Gateway",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q059",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "A team must expose a generative AI feature behind a REST API to web clients. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Direct Connect only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Inspector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "API Gateway + Lambda is a common serverless pattern for GenAI apps.",
+      "docs": [
+        {
+          "title": "API Gateway",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q060",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to detect bias and explain model predictions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Clarify"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "d",
+          "text": "Amazon API Gateway"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clarify provides fairness and explainability tools for ML.",
+      "docs": [
+        {
+          "title": "SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q061",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to document model cards and human review for high-risk AI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI governance processes on AWS"
+        },
+        {
+          "id": "b",
+          "text": "Disabling CloudTrail"
+        },
+        {
+          "id": "c",
+          "text": "Sharing root keys"
+        },
+        {
+          "id": "d",
+          "text": "Public AMIs by default"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Governance includes documentation, human oversight, and risk assessment.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q062",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to ensure training data represents diverse populations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inclusive dataset design and Clarify bias metrics"
+        },
+        {
+          "id": "b",
+          "text": "Using only synthetic test users"
+        },
+        {
+          "id": "c",
+          "text": "Ignoring class imbalance"
+        },
+        {
+          "id": "d",
+          "text": "Removing all labels"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Representative data reduces unfair outcomes across groups.",
+      "docs": [
+        {
+          "title": "Fairness in ML",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-data-bias-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q063",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to inform users they interact with AI-generated content?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transparency and disclosure best practices"
+        },
+        {
+          "id": "b",
+          "text": "Hiding model limitations"
+        },
+        {
+          "id": "c",
+          "text": "Publishing root credentials"
+        },
+        {
+          "id": "d",
+          "text": "Disabling encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transparency builds trust and meets emerging AI regulations.",
+      "docs": [
+        {
+          "title": "Responsible AI practices",
+          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q064",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to minimize collection of personal data in fine-tuning datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data minimization and anonymization"
+        },
+        {
+          "id": "b",
+          "text": "Storing all PII in prompts"
+        },
+        {
+          "id": "c",
+          "text": "Public datasets with secrets"
+        },
+        {
+          "id": "d",
+          "text": "No access controls"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Collect only necessary data and remove identifiers where possible.",
+      "docs": [
+        {
+          "title": "Data privacy",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/architecting-for-the-cloud/data-privacy.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q065",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to establish human-in-the-loop for consequential decisions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon A2I or review workflows in SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "Fully automated approvals with no audit"
+        },
+        {
+          "id": "c",
+          "text": "Deleting all logs"
+        },
+        {
+          "id": "d",
+          "text": "Single-AZ only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Human review reduces risk for high-impact predictions.",
+      "docs": [
+        {
+          "title": "Amazon A2I",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-use-augmented-ai-a2i-human-review-loops.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q066",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to test models for robustness to prompt injection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Red teaming and guardrails for GenAI"
+        },
+        {
+          "id": "b",
+          "text": "Disabling authentication"
+        },
+        {
+          "id": "c",
+          "text": "Using production data in dev without controls"
+        },
+        {
+          "id": "d",
+          "text": "Ignoring OWASP LLM risks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Adversarial prompt testing improves GenAI application security.",
+      "docs": [
+        {
+          "title": "GenAI security",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q067",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to track model lineage from dataset to deployment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Lineage or MLflow on SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "Unversioned S3 overwrites only"
+        },
+        {
+          "id": "c",
+          "text": "No tags"
+        },
+        {
+          "id": "d",
+          "text": "Shared IAM users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lineage supports reproducibility and audit.",
+      "docs": [
+        {
+          "title": "SageMaker Lineage",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/lineage-tracking.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q068",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which service should you use to detect bias and explain model predictions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Clarify"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "d",
+          "text": "Amazon API Gateway"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clarify provides fairness and explainability tools for ML.",
+      "docs": [
+        {
+          "title": "SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q069",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to detect bias and explain model predictions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Clarify"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "d",
+          "text": "Amazon API Gateway"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clarify provides fairness and explainability tools for ML.",
+      "docs": [
+        {
+          "title": "SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q070",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "A team must detect bias and explain model predictions. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Clarify"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "d",
+          "text": "Amazon API Gateway"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Clarify provides fairness and explainability tools for ML.",
+      "docs": [
+        {
+          "title": "SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q071",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "Which service should you use to document model cards and human review for high-risk AI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI governance processes on AWS"
+        },
+        {
+          "id": "b",
+          "text": "Disabling CloudTrail"
+        },
+        {
+          "id": "c",
+          "text": "Sharing root keys"
+        },
+        {
+          "id": "d",
+          "text": "Public AMIs by default"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Governance includes documentation, human oversight, and risk assessment.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q072",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to document model cards and human review for high-risk AI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI governance processes on AWS"
+        },
+        {
+          "id": "b",
+          "text": "Disabling CloudTrail"
+        },
+        {
+          "id": "c",
+          "text": "Sharing root keys"
+        },
+        {
+          "id": "d",
+          "text": "Public AMIs by default"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Governance includes documentation, human oversight, and risk assessment.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q073",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "A team must document model cards and human review for high-risk AI. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible AI governance processes on AWS"
+        },
+        {
+          "id": "b",
+          "text": "Disabling CloudTrail"
+        },
+        {
+          "id": "c",
+          "text": "Sharing root keys"
+        },
+        {
+          "id": "d",
+          "text": "Public AMIs by default"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Governance includes documentation, human oversight, and risk assessment.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q074",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to encrypt model artifacts and training data at rest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS with Amazon S3 and SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "Plaintext secrets in code"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages keys for encryption across AI data stores.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q075",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to control which IAM principals can invoke Bedrock models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM policies for bedrock:InvokeModel"
+        },
+        {
+          "id": "b",
+          "text": "Anonymous access"
+        },
+        {
+          "id": "c",
+          "text": "Root user daily use"
+        },
+        {
+          "id": "d",
+          "text": "Wildcard * on all actions for everyone"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least-privilege IAM restricts model access.",
+      "docs": [
+        {
+          "title": "Bedrock IAM",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q076",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to discover sensitive training data in S3 buckets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowball only"
+        },
+        {
+          "id": "d",
+          "text": "Route 53"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Macie finds PII and sensitive data in object storage.",
+      "docs": [
+        {
+          "title": "Amazon Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q077",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to audit API calls to AI services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudTrail"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Rekognition only for DNS"
+        },
+        {
+          "id": "c",
+          "text": "S3 lifecycle"
+        },
+        {
+          "id": "d",
+          "text": "EBS encryption by default only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudTrail logs management and data events for governance.",
+      "docs": [
+        {
+          "title": "CloudTrail",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q078",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to isolate training jobs in a private network?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker in VPC mode"
+        },
+        {
+          "id": "b",
+          "text": "Internet-facing databases with no auth"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0/0 on all ports"
+        },
+        {
+          "id": "d",
+          "text": "Public subnets only for data"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC config keeps training traffic private.",
+      "docs": [
+        {
+          "title": "SageMaker VPC",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/interface-vpc-endpoint.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q079",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to rotate API keys and secrets for third-party models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "b",
+          "text": "Hard-coded keys in Git"
+        },
+        {
+          "id": "c",
+          "text": "Emailing passwords"
+        },
+        {
+          "id": "d",
+          "text": "S3 public ACLs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secrets Manager automates secret rotation.",
+      "docs": [
+        {
+          "title": "Secrets Manager",
+          "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q080",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to apply organizational policies across AI accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Organizations SCPs"
+        },
+        {
+          "id": "b",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Disable MFA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCPs set guardrails for services including Bedrock and SageMaker.",
+      "docs": [
+        {
+          "title": "Organizations SCPs",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q081",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to monitor model endpoints for drift?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SageMaker Model Monitor"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SES"
+        },
+        {
+          "id": "c",
+          "text": "AWS Artifact only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Lightsail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Model Monitor detects data and quality drift in production.",
+      "docs": [
+        {
+          "title": "Model Monitor",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q082",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which service should you use to encrypt model artifacts and training data at rest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS with Amazon S3 and SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "Plaintext secrets in code"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages keys for encryption across AI data stores.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q083",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to encrypt model artifacts and training data at rest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS with Amazon S3 and SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "Plaintext secrets in code"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages keys for encryption across AI data stores.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q084",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "A team must encrypt model artifacts and training data at rest. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS with Amazon S3 and SageMaker"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "Plaintext secrets in code"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS manages keys for encryption across AI data stores.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q085",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "Which service should you use to control which IAM principals can invoke Bedrock models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM policies for bedrock:InvokeModel"
+        },
+        {
+          "id": "b",
+          "text": "Anonymous access"
+        },
+        {
+          "id": "c",
+          "text": "Root user daily use"
+        },
+        {
+          "id": "d",
+          "text": "Wildcard * on all actions for everyone"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least-privilege IAM restricts model access.",
+      "docs": [
+        {
+          "title": "Bedrock IAM",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q086",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to control which IAM principals can invoke Bedrock models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM policies for bedrock:InvokeModel"
+        },
+        {
+          "id": "b",
+          "text": "Anonymous access"
+        },
+        {
+          "id": "c",
+          "text": "Root user daily use"
+        },
+        {
+          "id": "d",
+          "text": "Wildcard * on all actions for everyone"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least-privilege IAM restricts model access.",
+      "docs": [
+        {
+          "title": "Bedrock IAM",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q087",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "A team must control which IAM principals can invoke Bedrock models. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM policies for bedrock:InvokeModel"
+        },
+        {
+          "id": "b",
+          "text": "Anonymous access"
+        },
+        {
+          "id": "c",
+          "text": "Root user daily use"
+        },
+        {
+          "id": "d",
+          "text": "Wildcard * on all actions for everyone"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least-privilege IAM restricts model access.",
+      "docs": [
+        {
+          "title": "Bedrock IAM",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q088",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified AI Practitioner? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AIF-C01 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Amazon SageMaker"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "AIF-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-ai-practitioner/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q089",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q090",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q091",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AIF-C01 Exam Guide', what should you do FIRST when addressing Fundamentals of AI and ML objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AIF-C01 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AIF-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-ai-practitioner/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q092",
+      "domain": "ai-ml-fundamentals",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon SageMaker', what should you do FIRST when addressing Fundamentals of AI and ML objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon SageMaker describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon SageMaker",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q093",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Bedrock', what should you do FIRST when addressing Fundamentals of Generative AI objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q094",
+      "domain": "generative-ai-fundamentals",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Generative AI on AWS', what should you do FIRST when addressing Fundamentals of Generative AI objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Generative AI on AWS describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Generative AI on AWS",
+          "url": "https://aws.amazon.com/generative-ai/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q095",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Bedrock Agents', what should you do FIRST when addressing Applications of Foundation Models objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Bedrock Agents describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q096",
+      "domain": "foundation-model-applications",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Knowledge Bases for Amazon Bedrock', what should you do FIRST when addressing Applications of Foundation Models objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Knowledge Bases for Amazon Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Knowledge Bases for Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q097",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Responsible AI', what should you do FIRST when addressing Guidelines for Responsible AI objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Responsible AI describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
+        }
+      ]
+    },
+    {
+      "id": "aif-q098",
+      "domain": "responsible-ai",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon SageMaker Clarify', what should you do FIRST when addressing Guidelines for Responsible AI objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon SageMaker Clarify describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon SageMaker Clarify",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q099",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS IAM', what should you do FIRST when addressing Security, Compliance, and Governance for AI Solutions objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS IAM describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS IAM",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "aif-q100",
+      "domain": "ai-security-governance",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Macie', what should you do FIRST when addressing Security, Compliance, and Governance for AI Solutions objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Macie describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    }
+  ]
+}

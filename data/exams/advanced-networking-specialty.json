@@ -1,0 +1,3396 @@
+{
+  "id": "advanced-networking-specialty",
+  "name": "AWS Certified Advanced Networking \u2013 Specialty",
+  "code": "ANS-C01",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 50,
+    "timeLimitMinutes": 180,
+    "passingScore": 750,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "network-design",
+      "name": "Domain 1: Network Design",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "ANS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
+        },
+        {
+          "title": "Amazon VPC",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        },
+        {
+          "title": "AWS Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "network-implementation",
+      "name": "Domain 2: Network Implementation",
+      "weight": 26,
+      "resources": [
+        {
+          "title": "AWS Direct Connect",
+          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html"
+        },
+        {
+          "title": "AWS Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "network-management",
+      "name": "Domain 3: Network Management and Operation",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "VPC Flow Logs",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
+        },
+        {
+          "title": "AWS Network Manager",
+          "url": "https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-network-manager-cloudwan.html"
+        }
+      ]
+    },
+    {
+      "id": "network-security",
+      "name": "Domain 4: Network Security, Compliance, and Governance",
+      "weight": 24,
+      "resources": [
+        {
+          "title": "AWS Network Firewall",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+        },
+        {
+          "title": "AWS PrivateLink",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "ans-q001",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to connect many VPCs without full mesh peering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Transit Gateway"
+        },
+        {
+          "id": "b",
+          "text": "n^2 peering"
+        },
+        {
+          "id": "c",
+          "text": "Single flat network"
+        },
+        {
+          "id": "d",
+          "text": "Internet routing only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transit Gateway is a regional network hub.",
+      "docs": [
+        {
+          "title": "Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q002",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to extend on-prem routing into AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transit Gateway Connect or VPN/DX attachments"
+        },
+        {
+          "id": "b",
+          "text": "Static public IPs only"
+        },
+        {
+          "id": "c",
+          "text": "No BGP"
+        },
+        {
+          "id": "d",
+          "text": "Ignore ASN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connect integrates SD-WAN/third-party appliances.",
+      "docs": [
+        {
+          "title": "TGW Connect",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q003",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to design IPv6-only workloads in VPC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IPv6 CIDR blocks and egress-only IGW"
+        },
+        {
+          "id": "b",
+          "text": "Disable IPv6 always"
+        },
+        {
+          "id": "c",
+          "text": "NAT64 confusion unplanned"
+        },
+        {
+          "id": "d",
+          "text": "Ignore DNS AAAA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS supports dual-stack and IPv6-only subnets.",
+      "docs": [
+        {
+          "title": "IPv6",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ipv6.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q004",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to segment traffic with centralized inspection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gateway Load Balancer with firewall appliances"
+        },
+        {
+          "id": "b",
+          "text": "Hairpin all via NAT uninspected"
+        },
+        {
+          "id": "c",
+          "text": "No mirroring"
+        },
+        {
+          "id": "d",
+          "text": "0.0.0.0/0 DB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GWLB inserts transparent appliances in path.",
+      "docs": [
+        {
+          "title": "GWLB",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q005",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to allocate IP addresses at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IPAM in VPC IP Address Manager"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet IP tracking"
+        },
+        {
+          "id": "c",
+          "text": "Overlapping CIDRs"
+        },
+        {
+          "id": "d",
+          "text": "Manual errors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IPAM plans and monitors IP usage.",
+      "docs": [
+        {
+          "title": "VPC IPAM",
+          "url": "https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q006",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to private connectivity to SaaS providers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS PrivateLink interface endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Public internet SaaS DB"
+        },
+        {
+          "id": "c",
+          "text": "Open security group"
+        },
+        {
+          "id": "d",
+          "text": "Ignore endpoint policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PrivateLink keeps traffic on AWS network.",
+      "docs": [
+        {
+          "title": "PrivateLink",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q007",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to multi-account network architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shared services VPC via RAM and TGW"
+        },
+        {
+          "id": "b",
+          "text": "Duplicate NAT per account unoptimized"
+        },
+        {
+          "id": "c",
+          "text": "No segmentation"
+        },
+        {
+          "id": "d",
+          "text": "Flat IAM"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hub-spoke is common for enterprise networks.",
+      "docs": [
+        {
+          "title": "Network segmentation",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q008",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to optimize cross-AZ traffic costs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep chatty tiers in same AZ when possible and use AZ-aware endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Cross-AZ for every packet unnecessarily"
+        },
+        {
+          "id": "c",
+          "text": "Ignore architecture"
+        },
+        {
+          "id": "d",
+          "text": "Single NAT for all AZ imbalanced"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cross-AZ traffic has charges; design thoughtfully.",
+      "docs": [
+        {
+          "title": "VPC pricing",
+          "url": "https://aws.amazon.com/vpc/pricing/"
+        }
+      ]
+    },
+    {
+      "id": "ans-q009",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to connect many VPCs without full mesh peering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Transit Gateway"
+        },
+        {
+          "id": "b",
+          "text": "n^2 peering"
+        },
+        {
+          "id": "c",
+          "text": "Single flat network"
+        },
+        {
+          "id": "d",
+          "text": "Internet routing only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transit Gateway is a regional network hub.",
+      "docs": [
+        {
+          "title": "Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q010",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to connect many VPCs without full mesh peering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Transit Gateway"
+        },
+        {
+          "id": "b",
+          "text": "n^2 peering"
+        },
+        {
+          "id": "c",
+          "text": "Single flat network"
+        },
+        {
+          "id": "d",
+          "text": "Internet routing only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transit Gateway is a regional network hub.",
+      "docs": [
+        {
+          "title": "Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q011",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "A team must connect many VPCs without full mesh peering. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Transit Gateway"
+        },
+        {
+          "id": "b",
+          "text": "n^2 peering"
+        },
+        {
+          "id": "c",
+          "text": "Single flat network"
+        },
+        {
+          "id": "d",
+          "text": "Internet routing only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transit Gateway is a regional network hub.",
+      "docs": [
+        {
+          "title": "Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q012",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to extend on-prem routing into AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transit Gateway Connect or VPN/DX attachments"
+        },
+        {
+          "id": "b",
+          "text": "Static public IPs only"
+        },
+        {
+          "id": "c",
+          "text": "No BGP"
+        },
+        {
+          "id": "d",
+          "text": "Ignore ASN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connect integrates SD-WAN/third-party appliances.",
+      "docs": [
+        {
+          "title": "TGW Connect",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q013",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to extend on-prem routing into AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transit Gateway Connect or VPN/DX attachments"
+        },
+        {
+          "id": "b",
+          "text": "Static public IPs only"
+        },
+        {
+          "id": "c",
+          "text": "No BGP"
+        },
+        {
+          "id": "d",
+          "text": "Ignore ASN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connect integrates SD-WAN/third-party appliances.",
+      "docs": [
+        {
+          "title": "TGW Connect",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q014",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "A team must extend on-prem routing into AWS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transit Gateway Connect or VPN/DX attachments"
+        },
+        {
+          "id": "b",
+          "text": "Static public IPs only"
+        },
+        {
+          "id": "c",
+          "text": "No BGP"
+        },
+        {
+          "id": "d",
+          "text": "Ignore ASN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connect integrates SD-WAN/third-party appliances.",
+      "docs": [
+        {
+          "title": "TGW Connect",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q015",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to design IPv6-only workloads in VPC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IPv6 CIDR blocks and egress-only IGW"
+        },
+        {
+          "id": "b",
+          "text": "Disable IPv6 always"
+        },
+        {
+          "id": "c",
+          "text": "NAT64 confusion unplanned"
+        },
+        {
+          "id": "d",
+          "text": "Ignore DNS AAAA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS supports dual-stack and IPv6-only subnets.",
+      "docs": [
+        {
+          "title": "IPv6",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ipv6.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q016",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to design IPv6-only workloads in VPC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IPv6 CIDR blocks and egress-only IGW"
+        },
+        {
+          "id": "b",
+          "text": "Disable IPv6 always"
+        },
+        {
+          "id": "c",
+          "text": "NAT64 confusion unplanned"
+        },
+        {
+          "id": "d",
+          "text": "Ignore DNS AAAA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS supports dual-stack and IPv6-only subnets.",
+      "docs": [
+        {
+          "title": "IPv6",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ipv6.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q017",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "A team must design IPv6-only workloads in VPC. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IPv6 CIDR blocks and egress-only IGW"
+        },
+        {
+          "id": "b",
+          "text": "Disable IPv6 always"
+        },
+        {
+          "id": "c",
+          "text": "NAT64 confusion unplanned"
+        },
+        {
+          "id": "d",
+          "text": "Ignore DNS AAAA"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS supports dual-stack and IPv6-only subnets.",
+      "docs": [
+        {
+          "title": "IPv6",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ipv6.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q018",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to segment traffic with centralized inspection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gateway Load Balancer with firewall appliances"
+        },
+        {
+          "id": "b",
+          "text": "Hairpin all via NAT uninspected"
+        },
+        {
+          "id": "c",
+          "text": "No mirroring"
+        },
+        {
+          "id": "d",
+          "text": "0.0.0.0/0 DB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GWLB inserts transparent appliances in path.",
+      "docs": [
+        {
+          "title": "GWLB",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q019",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to segment traffic with centralized inspection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gateway Load Balancer with firewall appliances"
+        },
+        {
+          "id": "b",
+          "text": "Hairpin all via NAT uninspected"
+        },
+        {
+          "id": "c",
+          "text": "No mirroring"
+        },
+        {
+          "id": "d",
+          "text": "0.0.0.0/0 DB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GWLB inserts transparent appliances in path.",
+      "docs": [
+        {
+          "title": "GWLB",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q020",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "A team must segment traffic with centralized inspection. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gateway Load Balancer with firewall appliances"
+        },
+        {
+          "id": "b",
+          "text": "Hairpin all via NAT uninspected"
+        },
+        {
+          "id": "c",
+          "text": "No mirroring"
+        },
+        {
+          "id": "d",
+          "text": "0.0.0.0/0 DB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GWLB inserts transparent appliances in path.",
+      "docs": [
+        {
+          "title": "GWLB",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q021",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to allocate IP addresses at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IPAM in VPC IP Address Manager"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet IP tracking"
+        },
+        {
+          "id": "c",
+          "text": "Overlapping CIDRs"
+        },
+        {
+          "id": "d",
+          "text": "Manual errors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IPAM plans and monitors IP usage.",
+      "docs": [
+        {
+          "title": "VPC IPAM",
+          "url": "https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q022",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to allocate IP addresses at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IPAM in VPC IP Address Manager"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet IP tracking"
+        },
+        {
+          "id": "c",
+          "text": "Overlapping CIDRs"
+        },
+        {
+          "id": "d",
+          "text": "Manual errors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IPAM plans and monitors IP usage.",
+      "docs": [
+        {
+          "title": "VPC IPAM",
+          "url": "https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q023",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "A team must allocate IP addresses at scale. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IPAM in VPC IP Address Manager"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet IP tracking"
+        },
+        {
+          "id": "c",
+          "text": "Overlapping CIDRs"
+        },
+        {
+          "id": "d",
+          "text": "Manual errors"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IPAM plans and monitors IP usage.",
+      "docs": [
+        {
+          "title": "VPC IPAM",
+          "url": "https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q024",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "Which service should you use to private connectivity to SaaS providers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS PrivateLink interface endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Public internet SaaS DB"
+        },
+        {
+          "id": "c",
+          "text": "Open security group"
+        },
+        {
+          "id": "d",
+          "text": "Ignore endpoint policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PrivateLink keeps traffic on AWS network.",
+      "docs": [
+        {
+          "title": "PrivateLink",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q025",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to private connectivity to SaaS providers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS PrivateLink interface endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Public internet SaaS DB"
+        },
+        {
+          "id": "c",
+          "text": "Open security group"
+        },
+        {
+          "id": "d",
+          "text": "Ignore endpoint policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PrivateLink keeps traffic on AWS network.",
+      "docs": [
+        {
+          "title": "PrivateLink",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q026",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "A team must private connectivity to SaaS providers. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS PrivateLink interface endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Public internet SaaS DB"
+        },
+        {
+          "id": "c",
+          "text": "Open security group"
+        },
+        {
+          "id": "d",
+          "text": "Ignore endpoint policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PrivateLink keeps traffic on AWS network.",
+      "docs": [
+        {
+          "title": "PrivateLink",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q027",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to create dedicated private link to AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Direct Connect"
+        },
+        {
+          "id": "b",
+          "text": "VPN only for 10G steady"
+        },
+        {
+          "id": "c",
+          "text": "Consumer ISP"
+        },
+        {
+          "id": "d",
+          "text": "No redundancy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Direct Connect provides private high-bandwidth links.",
+      "docs": [
+        {
+          "title": "Direct Connect",
+          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q028",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to encrypt VPN over internet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-Site VPN with IKEv2"
+        },
+        {
+          "id": "b",
+          "text": "Telnet"
+        },
+        {
+          "id": "c",
+          "text": "HTTP API keys"
+        },
+        {
+          "id": "d",
+          "text": "No PFS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN uses IPsec tunnels.",
+      "docs": [
+        {
+          "title": "Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q029",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to accelerate TCP traffic globally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Global Accelerator"
+        },
+        {
+          "id": "b",
+          "text": "Single Region latency"
+        },
+        {
+          "id": "c",
+          "text": "Ignore health checks"
+        },
+        {
+          "id": "d",
+          "text": "Anycast DIY"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global Accelerator uses AWS edge network.",
+      "docs": [
+        {
+          "title": "Global Accelerator",
+          "url": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q030",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deploy SD-WAN integrated with AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transit Gateway Connect partners"
+        },
+        {
+          "id": "b",
+          "text": "Manual static routes only"
+        },
+        {
+          "id": "c",
+          "text": "No monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Ignore BGP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connect supports SD-WAN appliances.",
+      "docs": [
+        {
+          "title": "TGW Connect",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q031",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to implement Direct Connect resilience?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dual DX locations or DX + VPN backup"
+        },
+        {
+          "id": "b",
+          "text": "Single DX router"
+        },
+        {
+          "id": "c",
+          "text": "No failover"
+        },
+        {
+          "id": "d",
+          "text": "Ignore BFD"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resilient hybrid uses redundant paths.",
+      "docs": [
+        {
+          "title": "DX resilience",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/aws-direct-connect-for-amazon-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q032",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to configure BGP communities on DX?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route filtering with BGP communities"
+        },
+        {
+          "id": "b",
+          "text": "Accept all routes blindly"
+        },
+        {
+          "id": "c",
+          "text": "Leak default to customer"
+        },
+        {
+          "id": "d",
+          "text": "No max-prefix"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BGP policies control route advertisement.",
+      "docs": [
+        {
+          "title": "DX BGP",
+          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/routing-and-bgp.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q033",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to host Network Firewall in multiple AZs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Firewall endpoints per AZ"
+        },
+        {
+          "id": "b",
+          "text": "Single AZ firewall"
+        },
+        {
+          "id": "c",
+          "text": "No autoscaling endpoints"
+        },
+        {
+          "id": "d",
+          "text": "Bypass inspection"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Firewall is managed stateful inspection.",
+      "docs": [
+        {
+          "title": "Network Firewall",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q034",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use Cloud WAN for global backbone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Cloud WAN core network policies"
+        },
+        {
+          "id": "b",
+          "text": "Manual VPN mesh worldwide"
+        },
+        {
+          "id": "c",
+          "text": "Ignore segmentation"
+        },
+        {
+          "id": "d",
+          "text": "No policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cloud WAN builds global networks with policies.",
+      "docs": [
+        {
+          "title": "Cloud WAN",
+          "url": "https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q035",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to create dedicated private link to AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Direct Connect"
+        },
+        {
+          "id": "b",
+          "text": "VPN only for 10G steady"
+        },
+        {
+          "id": "c",
+          "text": "Consumer ISP"
+        },
+        {
+          "id": "d",
+          "text": "No redundancy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Direct Connect provides private high-bandwidth links.",
+      "docs": [
+        {
+          "title": "Direct Connect",
+          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q036",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to create dedicated private link to AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Direct Connect"
+        },
+        {
+          "id": "b",
+          "text": "VPN only for 10G steady"
+        },
+        {
+          "id": "c",
+          "text": "Consumer ISP"
+        },
+        {
+          "id": "d",
+          "text": "No redundancy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Direct Connect provides private high-bandwidth links.",
+      "docs": [
+        {
+          "title": "Direct Connect",
+          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q037",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "A team must create dedicated private link to AWS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Direct Connect"
+        },
+        {
+          "id": "b",
+          "text": "VPN only for 10G steady"
+        },
+        {
+          "id": "c",
+          "text": "Consumer ISP"
+        },
+        {
+          "id": "d",
+          "text": "No redundancy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Direct Connect provides private high-bandwidth links.",
+      "docs": [
+        {
+          "title": "Direct Connect",
+          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q038",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to encrypt VPN over internet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-Site VPN with IKEv2"
+        },
+        {
+          "id": "b",
+          "text": "Telnet"
+        },
+        {
+          "id": "c",
+          "text": "HTTP API keys"
+        },
+        {
+          "id": "d",
+          "text": "No PFS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN uses IPsec tunnels.",
+      "docs": [
+        {
+          "title": "Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q039",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to encrypt VPN over internet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-Site VPN with IKEv2"
+        },
+        {
+          "id": "b",
+          "text": "Telnet"
+        },
+        {
+          "id": "c",
+          "text": "HTTP API keys"
+        },
+        {
+          "id": "d",
+          "text": "No PFS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN uses IPsec tunnels.",
+      "docs": [
+        {
+          "title": "Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q040",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "A team must encrypt VPN over internet. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site-to-Site VPN with IKEv2"
+        },
+        {
+          "id": "b",
+          "text": "Telnet"
+        },
+        {
+          "id": "c",
+          "text": "HTTP API keys"
+        },
+        {
+          "id": "d",
+          "text": "No PFS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPN uses IPsec tunnels.",
+      "docs": [
+        {
+          "title": "Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q041",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to accelerate TCP traffic globally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Global Accelerator"
+        },
+        {
+          "id": "b",
+          "text": "Single Region latency"
+        },
+        {
+          "id": "c",
+          "text": "Ignore health checks"
+        },
+        {
+          "id": "d",
+          "text": "Anycast DIY"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global Accelerator uses AWS edge network.",
+      "docs": [
+        {
+          "title": "Global Accelerator",
+          "url": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q042",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to accelerate TCP traffic globally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Global Accelerator"
+        },
+        {
+          "id": "b",
+          "text": "Single Region latency"
+        },
+        {
+          "id": "c",
+          "text": "Ignore health checks"
+        },
+        {
+          "id": "d",
+          "text": "Anycast DIY"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global Accelerator uses AWS edge network.",
+      "docs": [
+        {
+          "title": "Global Accelerator",
+          "url": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q043",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "A team must accelerate TCP traffic globally. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Global Accelerator"
+        },
+        {
+          "id": "b",
+          "text": "Single Region latency"
+        },
+        {
+          "id": "c",
+          "text": "Ignore health checks"
+        },
+        {
+          "id": "d",
+          "text": "Anycast DIY"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global Accelerator uses AWS edge network.",
+      "docs": [
+        {
+          "title": "Global Accelerator",
+          "url": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q044",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to deploy SD-WAN integrated with AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transit Gateway Connect partners"
+        },
+        {
+          "id": "b",
+          "text": "Manual static routes only"
+        },
+        {
+          "id": "c",
+          "text": "No monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Ignore BGP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connect supports SD-WAN appliances.",
+      "docs": [
+        {
+          "title": "TGW Connect",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q045",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to deploy SD-WAN integrated with AWS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transit Gateway Connect partners"
+        },
+        {
+          "id": "b",
+          "text": "Manual static routes only"
+        },
+        {
+          "id": "c",
+          "text": "No monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Ignore BGP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connect supports SD-WAN appliances.",
+      "docs": [
+        {
+          "title": "TGW Connect",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q046",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "A team must deploy SD-WAN integrated with AWS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transit Gateway Connect partners"
+        },
+        {
+          "id": "b",
+          "text": "Manual static routes only"
+        },
+        {
+          "id": "c",
+          "text": "No monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Ignore BGP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Connect supports SD-WAN appliances.",
+      "docs": [
+        {
+          "title": "TGW Connect",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q047",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to implement Direct Connect resilience?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dual DX locations or DX + VPN backup"
+        },
+        {
+          "id": "b",
+          "text": "Single DX router"
+        },
+        {
+          "id": "c",
+          "text": "No failover"
+        },
+        {
+          "id": "d",
+          "text": "Ignore BFD"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resilient hybrid uses redundant paths.",
+      "docs": [
+        {
+          "title": "DX resilience",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/aws-direct-connect-for-amazon-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q048",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to implement Direct Connect resilience?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dual DX locations or DX + VPN backup"
+        },
+        {
+          "id": "b",
+          "text": "Single DX router"
+        },
+        {
+          "id": "c",
+          "text": "No failover"
+        },
+        {
+          "id": "d",
+          "text": "Ignore BFD"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resilient hybrid uses redundant paths.",
+      "docs": [
+        {
+          "title": "DX resilience",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/aws-direct-connect-for-amazon-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q049",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "A team must implement Direct Connect resilience. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dual DX locations or DX + VPN backup"
+        },
+        {
+          "id": "b",
+          "text": "Single DX router"
+        },
+        {
+          "id": "c",
+          "text": "No failover"
+        },
+        {
+          "id": "d",
+          "text": "Ignore BFD"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resilient hybrid uses redundant paths.",
+      "docs": [
+        {
+          "title": "DX resilience",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/aws-direct-connect-for-amazon-connect.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q050",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to visualize global network topology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Manager topology"
+        },
+        {
+          "id": "b",
+          "text": "Ping map on whiteboard"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Ignore TGW"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Manager shows TGW/Cloud WAN topology.",
+      "docs": [
+        {
+          "title": "Network Manager",
+          "url": "https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-network-manager-cloudwan.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q051",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to analyze VPC traffic metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Flow Logs to S3 or CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "Full packet capture always unscoped"
+        },
+        {
+          "id": "c",
+          "text": "No logs"
+        },
+        {
+          "id": "d",
+          "text": "Ignore rejected traffic"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Flow Logs capture ACCEPT/REJECT metadata.",
+      "docs": [
+        {
+          "title": "Flow Logs",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q052",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to troubleshoot reachability between resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Reachability Analyzer"
+        },
+        {
+          "id": "b",
+          "text": "Guess routes"
+        },
+        {
+          "id": "c",
+          "text": "Telnet random ports"
+        },
+        {
+          "id": "d",
+          "text": "Disable routes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reachability Analyzer tests path existence.",
+      "docs": [
+        {
+          "title": "Reachability Analyzer",
+          "url": "https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q053",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to monitor TGW metrics and routes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch metrics for Transit Gateway"
+        },
+        {
+          "id": "b",
+          "text": "No alarms"
+        },
+        {
+          "id": "c",
+          "text": "Ignore blackholes"
+        },
+        {
+          "id": "d",
+          "text": "Static routes only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "TGW publishes bytes and packet metrics.",
+      "docs": [
+        {
+          "title": "TGW monitoring",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/transit-gateway-cloudwatch.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q054",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to detect network access anomalies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty with DNS/VPC findings"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Disable GuardDuty"
+        },
+        {
+          "id": "d",
+          "text": "No remediation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty analyzes flow and DNS logs.",
+      "docs": [
+        {
+          "title": "GuardDuty",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q055",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to automate remediation for open SG rules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Config rules + Lambda remediation"
+        },
+        {
+          "id": "b",
+          "text": "Manual audit yearly"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0/0 SSH allowed"
+        },
+        {
+          "id": "d",
+          "text": "No SNS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Automated remediation reduces exposure window.",
+      "docs": [
+        {
+          "title": "Config remediation",
+          "url": "https://docs.aws.amazon.com/config/latest/developerguide/remediation.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q056",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use Network Access Analyzer for unintended access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network Access Analyzer"
+        },
+        {
+          "id": "b",
+          "text": "Assume SG correct"
+        },
+        {
+          "id": "c",
+          "text": "No analysis"
+        },
+        {
+          "id": "d",
+          "text": "Public RDS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "NAA finds paths that allow unintended access.",
+      "docs": [
+        {
+          "title": "Network Access Analyzer",
+          "url": "https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/what-is-network-access-analyzer.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q057",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to capture packets for deep inspection when required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Traffic mirroring to security appliance"
+        },
+        {
+          "id": "b",
+          "text": "Mirror all prod always unscoped"
+        },
+        {
+          "id": "c",
+          "text": "No filter"
+        },
+        {
+          "id": "d",
+          "text": "Ignore privacy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mirroring copies packets to analysis ENI.",
+      "docs": [
+        {
+          "title": "Traffic mirroring",
+          "url": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q058",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which service should you use to visualize global network topology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Manager topology"
+        },
+        {
+          "id": "b",
+          "text": "Ping map on whiteboard"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Ignore TGW"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Manager shows TGW/Cloud WAN topology.",
+      "docs": [
+        {
+          "title": "Network Manager",
+          "url": "https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-network-manager-cloudwan.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q059",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to visualize global network topology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Manager topology"
+        },
+        {
+          "id": "b",
+          "text": "Ping map on whiteboard"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Ignore TGW"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Manager shows TGW/Cloud WAN topology.",
+      "docs": [
+        {
+          "title": "Network Manager",
+          "url": "https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-network-manager-cloudwan.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q060",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "A team must visualize global network topology. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Manager topology"
+        },
+        {
+          "id": "b",
+          "text": "Ping map on whiteboard"
+        },
+        {
+          "id": "c",
+          "text": "No telemetry"
+        },
+        {
+          "id": "d",
+          "text": "Ignore TGW"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Manager shows TGW/Cloud WAN topology.",
+      "docs": [
+        {
+          "title": "Network Manager",
+          "url": "https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-network-manager-cloudwan.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q061",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which service should you use to analyze VPC traffic metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Flow Logs to S3 or CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "Full packet capture always unscoped"
+        },
+        {
+          "id": "c",
+          "text": "No logs"
+        },
+        {
+          "id": "d",
+          "text": "Ignore rejected traffic"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Flow Logs capture ACCEPT/REJECT metadata.",
+      "docs": [
+        {
+          "title": "Flow Logs",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q062",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to analyze VPC traffic metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Flow Logs to S3 or CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "Full packet capture always unscoped"
+        },
+        {
+          "id": "c",
+          "text": "No logs"
+        },
+        {
+          "id": "d",
+          "text": "Ignore rejected traffic"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Flow Logs capture ACCEPT/REJECT metadata.",
+      "docs": [
+        {
+          "title": "Flow Logs",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q063",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "A team must analyze VPC traffic metadata. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Flow Logs to S3 or CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "Full packet capture always unscoped"
+        },
+        {
+          "id": "c",
+          "text": "No logs"
+        },
+        {
+          "id": "d",
+          "text": "Ignore rejected traffic"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Flow Logs capture ACCEPT/REJECT metadata.",
+      "docs": [
+        {
+          "title": "Flow Logs",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q064",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "Which service should you use to troubleshoot reachability between resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Reachability Analyzer"
+        },
+        {
+          "id": "b",
+          "text": "Guess routes"
+        },
+        {
+          "id": "c",
+          "text": "Telnet random ports"
+        },
+        {
+          "id": "d",
+          "text": "Disable routes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reachability Analyzer tests path existence.",
+      "docs": [
+        {
+          "title": "Reachability Analyzer",
+          "url": "https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q065",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to troubleshoot reachability between resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Reachability Analyzer"
+        },
+        {
+          "id": "b",
+          "text": "Guess routes"
+        },
+        {
+          "id": "c",
+          "text": "Telnet random ports"
+        },
+        {
+          "id": "d",
+          "text": "Disable routes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reachability Analyzer tests path existence.",
+      "docs": [
+        {
+          "title": "Reachability Analyzer",
+          "url": "https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q066",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "A team must troubleshoot reachability between resources. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Reachability Analyzer"
+        },
+        {
+          "id": "b",
+          "text": "Guess routes"
+        },
+        {
+          "id": "c",
+          "text": "Telnet random ports"
+        },
+        {
+          "id": "d",
+          "text": "Disable routes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Reachability Analyzer tests path existence.",
+      "docs": [
+        {
+          "title": "Reachability Analyzer",
+          "url": "https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q067",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to stateful inspection at VPC perimeter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Firewall"
+        },
+        {
+          "id": "b",
+          "text": "NACL only for app logic"
+        },
+        {
+          "id": "c",
+          "text": "Ignore egress"
+        },
+        {
+          "id": "d",
+          "text": "Open RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Firewall filters L3-L4 and domain lists.",
+      "docs": [
+        {
+          "title": "Network Firewall",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q068",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to domain filtering for outbound traffic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network Firewall domain list rules"
+        },
+        {
+          "id": "b",
+          "text": "Allow all domains"
+        },
+        {
+          "id": "c",
+          "text": "No TLS inspection policy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore egress"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Domain rules restrict where instances can connect.",
+      "docs": [
+        {
+          "title": "Domain filtering",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups-domain.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q069",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to protect L7 APIs from bots?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF with Bot Control"
+        },
+        {
+          "id": "b",
+          "text": "Security group only"
+        },
+        {
+          "id": "c",
+          "text": "No rate limit"
+        },
+        {
+          "id": "d",
+          "text": "Ignore OWASP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF mitigates application attacks.",
+      "docs": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q070",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to mTLS between services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "API Gateway mutual TLS or ALB trust stores"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only internal"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed no rotation"
+        },
+        {
+          "id": "d",
+          "text": "Shared cert everywhere"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "mTLS authenticates client certificates.",
+      "docs": [
+        {
+          "title": "API Gateway mTLS",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mutual-auth.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q071",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to private API access without public internet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "API Gateway private REST APIs with VPC endpoint"
+        },
+        {
+          "id": "b",
+          "text": "Public API keys in mobile"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0/0 invoke"
+        },
+        {
+          "id": "d",
+          "text": "No resource policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Private APIs restrict access via VPCe.",
+      "docs": [
+        {
+          "title": "Private APIs",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-private-apis.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q072",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to centralize egress through inspection VPC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TGW route tables to firewall VPC"
+        },
+        {
+          "id": "b",
+          "text": "Direct internet egress every VPC"
+        },
+        {
+          "id": "c",
+          "text": "No logging"
+        },
+        {
+          "id": "d",
+          "text": "Split tunnel mistakes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Centralized egress simplifies policy enforcement.",
+      "docs": [
+        {
+          "title": "Centralized egress",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q073",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to mitigate DDoS on public endpoints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shield Advanced with WAF and RTM"
+        },
+        {
+          "id": "b",
+          "text": "Ignore volumetric attack"
+        },
+        {
+          "id": "c",
+          "text": "No runbook"
+        },
+        {
+          "id": "d",
+          "text": "Single small instance"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shield Advanced provides DDoS response team.",
+      "docs": [
+        {
+          "title": "Shield Advanced",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-advanced-summary.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q074",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to segment privileged admin access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM Session Manager instead of bastion SSH"
+        },
+        {
+          "id": "b",
+          "text": "Public bastion 22 open"
+        },
+        {
+          "id": "c",
+          "text": "Shared SSH key"
+        },
+        {
+          "id": "d",
+          "text": "Password auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Session Manager audits shell access without open ports.",
+      "docs": [
+        {
+          "title": "Session Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q075",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which service should you use to stateful inspection at VPC perimeter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Firewall"
+        },
+        {
+          "id": "b",
+          "text": "NACL only for app logic"
+        },
+        {
+          "id": "c",
+          "text": "Ignore egress"
+        },
+        {
+          "id": "d",
+          "text": "Open RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Firewall filters L3-L4 and domain lists.",
+      "docs": [
+        {
+          "title": "Network Firewall",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q076",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to stateful inspection at VPC perimeter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Firewall"
+        },
+        {
+          "id": "b",
+          "text": "NACL only for app logic"
+        },
+        {
+          "id": "c",
+          "text": "Ignore egress"
+        },
+        {
+          "id": "d",
+          "text": "Open RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Firewall filters L3-L4 and domain lists.",
+      "docs": [
+        {
+          "title": "Network Firewall",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q077",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A team must stateful inspection at VPC perimeter. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Firewall"
+        },
+        {
+          "id": "b",
+          "text": "NACL only for app logic"
+        },
+        {
+          "id": "c",
+          "text": "Ignore egress"
+        },
+        {
+          "id": "d",
+          "text": "Open RDP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Network Firewall filters L3-L4 and domain lists.",
+      "docs": [
+        {
+          "title": "Network Firewall",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q078",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which service should you use to domain filtering for outbound traffic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network Firewall domain list rules"
+        },
+        {
+          "id": "b",
+          "text": "Allow all domains"
+        },
+        {
+          "id": "c",
+          "text": "No TLS inspection policy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore egress"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Domain rules restrict where instances can connect.",
+      "docs": [
+        {
+          "title": "Domain filtering",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups-domain.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q079",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to domain filtering for outbound traffic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network Firewall domain list rules"
+        },
+        {
+          "id": "b",
+          "text": "Allow all domains"
+        },
+        {
+          "id": "c",
+          "text": "No TLS inspection policy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore egress"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Domain rules restrict where instances can connect.",
+      "docs": [
+        {
+          "title": "Domain filtering",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups-domain.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q080",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A team must domain filtering for outbound traffic. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network Firewall domain list rules"
+        },
+        {
+          "id": "b",
+          "text": "Allow all domains"
+        },
+        {
+          "id": "c",
+          "text": "No TLS inspection policy"
+        },
+        {
+          "id": "d",
+          "text": "Ignore egress"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Domain rules restrict where instances can connect.",
+      "docs": [
+        {
+          "title": "Domain filtering",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups-domain.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q081",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which service should you use to protect L7 APIs from bots?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF with Bot Control"
+        },
+        {
+          "id": "b",
+          "text": "Security group only"
+        },
+        {
+          "id": "c",
+          "text": "No rate limit"
+        },
+        {
+          "id": "d",
+          "text": "Ignore OWASP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF mitigates application attacks.",
+      "docs": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q082",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to protect L7 APIs from bots?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF with Bot Control"
+        },
+        {
+          "id": "b",
+          "text": "Security group only"
+        },
+        {
+          "id": "c",
+          "text": "No rate limit"
+        },
+        {
+          "id": "d",
+          "text": "Ignore OWASP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF mitigates application attacks.",
+      "docs": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q083",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A team must protect L7 APIs from bots. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF with Bot Control"
+        },
+        {
+          "id": "b",
+          "text": "Security group only"
+        },
+        {
+          "id": "c",
+          "text": "No rate limit"
+        },
+        {
+          "id": "d",
+          "text": "Ignore OWASP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF mitigates application attacks.",
+      "docs": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q084",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which service should you use to mTLS between services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "API Gateway mutual TLS or ALB trust stores"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only internal"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed no rotation"
+        },
+        {
+          "id": "d",
+          "text": "Shared cert everywhere"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "mTLS authenticates client certificates.",
+      "docs": [
+        {
+          "title": "API Gateway mTLS",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mutual-auth.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q085",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to mTLS between services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "API Gateway mutual TLS or ALB trust stores"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only internal"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed no rotation"
+        },
+        {
+          "id": "d",
+          "text": "Shared cert everywhere"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "mTLS authenticates client certificates.",
+      "docs": [
+        {
+          "title": "API Gateway mTLS",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mutual-auth.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q086",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A team must mTLS between services. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "API Gateway mutual TLS or ALB trust stores"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only internal"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed no rotation"
+        },
+        {
+          "id": "d",
+          "text": "Shared cert everywhere"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "mTLS authenticates client certificates.",
+      "docs": [
+        {
+          "title": "API Gateway mTLS",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mutual-auth.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q087",
+      "domain": "network-design",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Advanced Networking \u2013 Specialty? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "ANS-C01 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Amazon VPC"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "ANS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
+        }
+      ]
+    },
+    {
+      "id": "ans-q088",
+      "domain": "network-implementation",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q089",
+      "domain": "network-design",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q090",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'ANS-C01 Exam Guide', what should you do FIRST when addressing Network Design objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as ANS-C01 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "ANS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
+        }
+      ]
+    },
+    {
+      "id": "ans-q091",
+      "domain": "network-design",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon VPC', what should you do FIRST when addressing Network Design objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon VPC describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon VPC",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q092",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Direct Connect', what should you do FIRST when addressing Network Implementation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Direct Connect describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Direct Connect",
+          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q093",
+      "domain": "network-implementation",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Site-to-Site VPN', what should you do FIRST when addressing Network Implementation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Site-to-Site VPN describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q094",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'VPC Flow Logs', what should you do FIRST when addressing Network Management and Operation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as VPC Flow Logs describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "VPC Flow Logs",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q095",
+      "domain": "network-management",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Network Manager', what should you do FIRST when addressing Network Management and Operation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Network Manager describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Network Manager",
+          "url": "https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-network-manager-cloudwan.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q096",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Network Firewall', what should you do FIRST when addressing Network Security, Compliance, and Governance objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Network Firewall describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Network Firewall",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+        }
+      ]
+    },
+    {
+      "id": "ans-q097",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS PrivateLink', what should you do FIRST when addressing Network Security, Compliance, and Governance objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS PrivateLink describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS PrivateLink",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,12 +1,89 @@
 {
   "exams": [
     {
+      "id": "advanced-networking-specialty",
+      "name": "AWS Certified Advanced Networking \u2013 Specialty",
+      "code": "ANS-C01",
+      "dataFile": "data/exams/advanced-networking-specialty.json",
+      "questionCount": 97
+    },
+    {
+      "id": "ai-practitioner",
+      "name": "AWS Certified AI Practitioner",
+      "code": "AIF-C01",
+      "dataFile": "data/exams/ai-practitioner.json",
+      "questionCount": 100
+    },
+    {
       "id": "cloud-practitioner",
       "name": "AWS Certified Cloud Practitioner",
       "code": "CLF-C02",
       "dataFile": "data/exams/cloud-practitioner.json",
-      "questionCount": 148
+      "questionCount": 225
+    },
+    {
+      "id": "cloudops-engineer-associate",
+      "name": "AWS Certified CloudOps Engineer \u2013 Associate",
+      "code": "SOA-C02",
+      "dataFile": "data/exams/cloudops-engineer-associate.json",
+      "questionCount": 104
+    },
+    {
+      "id": "data-engineer-associate",
+      "name": "AWS Certified Data Engineer \u2013 Associate",
+      "code": "DEA-C01",
+      "dataFile": "data/exams/data-engineer-associate.json",
+      "questionCount": 97
+    },
+    {
+      "id": "developer-associate",
+      "name": "AWS Certified Developer \u2013 Associate",
+      "code": "DVA-C02",
+      "dataFile": "data/exams/developer-associate.json",
+      "questionCount": 96
+    },
+    {
+      "id": "devops-engineer-professional",
+      "name": "AWS Certified DevOps Engineer \u2013 Professional",
+      "code": "DOP-C02",
+      "dataFile": "data/exams/devops-engineer-professional.json",
+      "questionCount": 108
+    },
+    {
+      "id": "generative-ai-developer-professional",
+      "name": "AWS Certified Generative AI Developer \u2013 Professional",
+      "code": "AIP-C01",
+      "dataFile": "data/exams/generative-ai-developer-professional.json",
+      "questionCount": 94
+    },
+    {
+      "id": "machine-learning-engineer-associate",
+      "name": "AWS Certified Machine Learning Engineer \u2013 Associate",
+      "code": "MLA-C01",
+      "dataFile": "data/exams/machine-learning-engineer-associate.json",
+      "questionCount": 97
+    },
+    {
+      "id": "security-specialty",
+      "name": "AWS Certified Security \u2013 Specialty",
+      "code": "SCS-C02",
+      "dataFile": "data/exams/security-specialty.json",
+      "questionCount": 105
+    },
+    {
+      "id": "solutions-architect-associate",
+      "name": "AWS Certified Solutions Architect \u2013 Associate",
+      "code": "SAA-C03",
+      "dataFile": "data/exams/solutions-architect-associate.json",
+      "questionCount": 93
+    },
+    {
+      "id": "solutions-architect-professional",
+      "name": "AWS Certified Solutions Architect \u2013 Professional",
+      "code": "SAP-C02",
+      "dataFile": "data/exams/solutions-architect-professional.json",
+      "questionCount": 103
     }
   ],
-  "generatedAt": "2026-05-19T12:06:38.356078+00:00"
+  "generatedAt": "2026-05-20T02:49:09.012297+00:00"
 }

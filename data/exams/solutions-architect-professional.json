@@ -1,0 +1,3596 @@
+{
+  "id": "solutions-architect-professional",
+  "name": "AWS Certified Solutions Architect \u2013 Professional",
+  "code": "SAP-C02",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 75,
+    "scoredQuestions": 60,
+    "timeLimitMinutes": 180,
+    "passingScore": 750,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "organizational-complexity",
+      "name": "Domain 1: Design Solutions for Organizational Complexity",
+      "weight": 26,
+      "resources": [
+        {
+          "title": "SAP-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
+        },
+        {
+          "title": "AWS Organizations",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "new-solutions",
+      "name": "Domain 2: Design for New Solutions",
+      "weight": 29,
+      "resources": [
+        {
+          "title": "AWS Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        },
+        {
+          "title": "AWS Service Catalog",
+          "url": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "continuous-improvement",
+      "name": "Domain 3: Continuous Improvement for Existing Solutions",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "AWS Compute Optimizer",
+          "url": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html"
+        },
+        {
+          "title": "Migration Evaluator",
+          "url": "https://aws.amazon.com/migration-evaluator/"
+        }
+      ]
+    },
+    {
+      "id": "migration-modernization",
+      "name": "Domain 4: Accelerate Workload Migration and Modernization",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "AWS Migration Hub",
+          "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/what-is-migrationhub.html"
+        },
+        {
+          "title": "AWS Application Migration Service",
+          "url": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "sap-q001",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to govern hundreds of accounts with SCPs and OU structure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Organizations"
+        },
+        {
+          "id": "b",
+          "text": "Single account only"
+        },
+        {
+          "id": "c",
+          "text": "Email-based approvals"
+        },
+        {
+          "id": "d",
+          "text": "No SCPs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Organizations provides multi-account governance.",
+      "docs": [
+        {
+          "title": "Organizations",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q002",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to establish landing zones with guardrails?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Control Tower"
+        },
+        {
+          "id": "b",
+          "text": "Manual account vending only"
+        },
+        {
+          "id": "c",
+          "text": "Shared root"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Control Tower automates multi-account setup.",
+      "docs": [
+        {
+          "title": "Control Tower",
+          "url": "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q003",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to share subnets across accounts securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Resource Access Manager (RAM)"
+        },
+        {
+          "id": "b",
+          "text": "Hard-coded VPC peering mesh chaos"
+        },
+        {
+          "id": "c",
+          "text": "Public CIDR overlap"
+        },
+        {
+          "id": "d",
+          "text": "Open SG"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAM shares VPC subnets for shared services.",
+      "docs": [
+        {
+          "title": "RAM",
+          "url": "https://docs.aws.amazon.com/ram/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q004",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to centralize DNS and hybrid resolution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 Resolver endpoints and rules"
+        },
+        {
+          "id": "b",
+          "text": "/etc/hosts fleet"
+        },
+        {
+          "id": "c",
+          "text": "Public DNS for internal only"
+        },
+        {
+          "id": "d",
+          "text": "No forwarding"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resolver rules route DNS between on-prem and VPC.",
+      "docs": [
+        {
+          "title": "Route 53 Resolver",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q005",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to implement network hub-and-spoke at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Transit Gateway"
+        },
+        {
+          "id": "b",
+          "text": "Full mesh peering n^2"
+        },
+        {
+          "id": "c",
+          "text": "Single flat VPC"
+        },
+        {
+          "id": "d",
+          "text": "Internet-only routing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transit Gateway connects VPCs and on-prem.",
+      "docs": [
+        {
+          "title": "Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q006",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to enforce service control for regulated workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organizations SCPs and permission boundaries"
+        },
+        {
+          "id": "b",
+          "text": "Admin * for everyone"
+        },
+        {
+          "id": "c",
+          "text": "Disable CloudTrail org-wide"
+        },
+        {
+          "id": "d",
+          "text": "No separation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCPs limit maximum permissions per OU.",
+      "docs": [
+        {
+          "title": "SCPs",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q007",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to provide self-service approved products?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Service Catalog"
+        },
+        {
+          "id": "b",
+          "text": "Unvetted CloudFormation any user"
+        },
+        {
+          "id": "c",
+          "text": "No portfolio"
+        },
+        {
+          "id": "d",
+          "text": "Shared prod creds"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Service Catalog standardizes vetted deployments.",
+      "docs": [
+        {
+          "title": "Service Catalog",
+          "url": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q008",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to audit cross-account access patterns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM Access Analyzer and CloudTrail"
+        },
+        {
+          "id": "b",
+          "text": "No logging"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous cross-account"
+        },
+        {
+          "id": "d",
+          "text": "Ignore findings"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access Analyzer finds external access.",
+      "docs": [
+        {
+          "title": "Access Analyzer",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q009",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which service should you use to govern hundreds of accounts with SCPs and OU structure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Organizations"
+        },
+        {
+          "id": "b",
+          "text": "Single account only"
+        },
+        {
+          "id": "c",
+          "text": "Email-based approvals"
+        },
+        {
+          "id": "d",
+          "text": "No SCPs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Organizations provides multi-account governance.",
+      "docs": [
+        {
+          "title": "Organizations",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q010",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to govern hundreds of accounts with SCPs and OU structure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Organizations"
+        },
+        {
+          "id": "b",
+          "text": "Single account only"
+        },
+        {
+          "id": "c",
+          "text": "Email-based approvals"
+        },
+        {
+          "id": "d",
+          "text": "No SCPs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Organizations provides multi-account governance.",
+      "docs": [
+        {
+          "title": "Organizations",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q011",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "A team must govern hundreds of accounts with SCPs and OU structure. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Organizations"
+        },
+        {
+          "id": "b",
+          "text": "Single account only"
+        },
+        {
+          "id": "c",
+          "text": "Email-based approvals"
+        },
+        {
+          "id": "d",
+          "text": "No SCPs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Organizations provides multi-account governance.",
+      "docs": [
+        {
+          "title": "Organizations",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q012",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which service should you use to establish landing zones with guardrails?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Control Tower"
+        },
+        {
+          "id": "b",
+          "text": "Manual account vending only"
+        },
+        {
+          "id": "c",
+          "text": "Shared root"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Control Tower automates multi-account setup.",
+      "docs": [
+        {
+          "title": "Control Tower",
+          "url": "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q013",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to establish landing zones with guardrails?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Control Tower"
+        },
+        {
+          "id": "b",
+          "text": "Manual account vending only"
+        },
+        {
+          "id": "c",
+          "text": "Shared root"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Control Tower automates multi-account setup.",
+      "docs": [
+        {
+          "title": "Control Tower",
+          "url": "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q014",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "A team must establish landing zones with guardrails. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Control Tower"
+        },
+        {
+          "id": "b",
+          "text": "Manual account vending only"
+        },
+        {
+          "id": "c",
+          "text": "Shared root"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Control Tower automates multi-account setup.",
+      "docs": [
+        {
+          "title": "Control Tower",
+          "url": "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q015",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which service should you use to share subnets across accounts securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Resource Access Manager (RAM)"
+        },
+        {
+          "id": "b",
+          "text": "Hard-coded VPC peering mesh chaos"
+        },
+        {
+          "id": "c",
+          "text": "Public CIDR overlap"
+        },
+        {
+          "id": "d",
+          "text": "Open SG"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAM shares VPC subnets for shared services.",
+      "docs": [
+        {
+          "title": "RAM",
+          "url": "https://docs.aws.amazon.com/ram/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q016",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to share subnets across accounts securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Resource Access Manager (RAM)"
+        },
+        {
+          "id": "b",
+          "text": "Hard-coded VPC peering mesh chaos"
+        },
+        {
+          "id": "c",
+          "text": "Public CIDR overlap"
+        },
+        {
+          "id": "d",
+          "text": "Open SG"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAM shares VPC subnets for shared services.",
+      "docs": [
+        {
+          "title": "RAM",
+          "url": "https://docs.aws.amazon.com/ram/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q017",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "A team must share subnets across accounts securely. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Resource Access Manager (RAM)"
+        },
+        {
+          "id": "b",
+          "text": "Hard-coded VPC peering mesh chaos"
+        },
+        {
+          "id": "c",
+          "text": "Public CIDR overlap"
+        },
+        {
+          "id": "d",
+          "text": "Open SG"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAM shares VPC subnets for shared services.",
+      "docs": [
+        {
+          "title": "RAM",
+          "url": "https://docs.aws.amazon.com/ram/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q018",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which service should you use to centralize DNS and hybrid resolution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 Resolver endpoints and rules"
+        },
+        {
+          "id": "b",
+          "text": "/etc/hosts fleet"
+        },
+        {
+          "id": "c",
+          "text": "Public DNS for internal only"
+        },
+        {
+          "id": "d",
+          "text": "No forwarding"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resolver rules route DNS between on-prem and VPC.",
+      "docs": [
+        {
+          "title": "Route 53 Resolver",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q019",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to centralize DNS and hybrid resolution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 Resolver endpoints and rules"
+        },
+        {
+          "id": "b",
+          "text": "/etc/hosts fleet"
+        },
+        {
+          "id": "c",
+          "text": "Public DNS for internal only"
+        },
+        {
+          "id": "d",
+          "text": "No forwarding"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resolver rules route DNS between on-prem and VPC.",
+      "docs": [
+        {
+          "title": "Route 53 Resolver",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q020",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "A team must centralize DNS and hybrid resolution. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 Resolver endpoints and rules"
+        },
+        {
+          "id": "b",
+          "text": "/etc/hosts fleet"
+        },
+        {
+          "id": "c",
+          "text": "Public DNS for internal only"
+        },
+        {
+          "id": "d",
+          "text": "No forwarding"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Resolver rules route DNS between on-prem and VPC.",
+      "docs": [
+        {
+          "title": "Route 53 Resolver",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q021",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "Which service should you use to implement network hub-and-spoke at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Transit Gateway"
+        },
+        {
+          "id": "b",
+          "text": "Full mesh peering n^2"
+        },
+        {
+          "id": "c",
+          "text": "Single flat VPC"
+        },
+        {
+          "id": "d",
+          "text": "Internet-only routing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transit Gateway connects VPCs and on-prem.",
+      "docs": [
+        {
+          "title": "Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q022",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to implement network hub-and-spoke at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Transit Gateway"
+        },
+        {
+          "id": "b",
+          "text": "Full mesh peering n^2"
+        },
+        {
+          "id": "c",
+          "text": "Single flat VPC"
+        },
+        {
+          "id": "d",
+          "text": "Internet-only routing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transit Gateway connects VPCs and on-prem.",
+      "docs": [
+        {
+          "title": "Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q023",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "A team must implement network hub-and-spoke at scale. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Transit Gateway"
+        },
+        {
+          "id": "b",
+          "text": "Full mesh peering n^2"
+        },
+        {
+          "id": "c",
+          "text": "Single flat VPC"
+        },
+        {
+          "id": "d",
+          "text": "Internet-only routing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transit Gateway connects VPCs and on-prem.",
+      "docs": [
+        {
+          "title": "Transit Gateway",
+          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q024",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to design event-driven microservices across accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EventBridge with cross-account buses"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "FTP batch"
+        },
+        {
+          "id": "d",
+          "text": "Shared DB monolith"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EventBridge routes events between services and accounts.",
+      "docs": [
+        {
+          "title": "EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q025",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to build data mesh with domain ownership?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lake Formation tags and federated governance"
+        },
+        {
+          "id": "b",
+          "text": "One team owns all data"
+        },
+        {
+          "id": "c",
+          "text": "Public lake"
+        },
+        {
+          "id": "d",
+          "text": "No contracts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data mesh decentralizes ownership with standards.",
+      "docs": [
+        {
+          "title": "Data mesh on AWS",
+          "url": "https://aws.amazon.com/big-data/datalakes-and-analytics/modern-data-architecture/"
+        }
+      ]
+    },
+    {
+      "id": "sap-q026",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use cell-based architecture for blast-radius control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sharding workloads by cell (account/VPC/Region)"
+        },
+        {
+          "id": "b",
+          "text": "Single global stack"
+        },
+        {
+          "id": "c",
+          "text": "No fault isolation"
+        },
+        {
+          "id": "d",
+          "text": "Shared state everywhere"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cells limit failure impact to a partition.",
+      "docs": [
+        {
+          "title": "Reliability pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q027",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to implement active-active multi-Region front end?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 + CloudFront + multi-Region ALB"
+        },
+        {
+          "id": "b",
+          "text": "Single Region for global users"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Manual failover only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-Region designs improve availability.",
+      "docs": [
+        {
+          "title": "Disaster Recovery whitepaper",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q028",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to choose storage for millions of small objects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 with prefix scaling and lifecycle"
+        },
+        {
+          "id": "b",
+          "text": "One giant EBS volume"
+        },
+        {
+          "id": "c",
+          "text": "EFS for static web only wrong tier"
+        },
+        {
+          "id": "d",
+          "text": "Glacier for hot path"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 scales key prefixes automatically.",
+      "docs": [
+        {
+          "title": "S3 performance",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q029",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to design ML platform for many teams?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker Studio domains with separate VPC and roles"
+        },
+        {
+          "id": "b",
+          "text": "One shared notebook prod"
+        },
+        {
+          "id": "c",
+          "text": "Root in notebooks"
+        },
+        {
+          "id": "d",
+          "text": "No isolation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-tenant ML platforms need account/VPC isolation.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q030",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to integrate SaaS with private connectivity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS PrivateLink and SaaS marketplace offerings"
+        },
+        {
+          "id": "b",
+          "text": "Public DB over internet"
+        },
+        {
+          "id": "c",
+          "text": "0.0.0.0/0 database"
+        },
+        {
+          "id": "d",
+          "text": "VPN hairpin all traffic"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "PrivateLink keeps consumer traffic off the public internet.",
+      "docs": [
+        {
+          "title": "PrivateLink",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q031",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to select database for global low-latency writes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DynamoDB global tables or Aurora Global Database"
+        },
+        {
+          "id": "b",
+          "text": "Single-AZ MySQL on EC2"
+        },
+        {
+          "id": "c",
+          "text": "No replication"
+        },
+        {
+          "id": "d",
+          "text": "Synchronous cross-Region app locks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global databases target multi-Region apps.",
+      "docs": [
+        {
+          "title": "Aurora Global Database",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q032",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which service should you use to design event-driven microservices across accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EventBridge with cross-account buses"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "FTP batch"
+        },
+        {
+          "id": "d",
+          "text": "Shared DB monolith"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EventBridge routes events between services and accounts.",
+      "docs": [
+        {
+          "title": "EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q033",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to design event-driven microservices across accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EventBridge with cross-account buses"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "FTP batch"
+        },
+        {
+          "id": "d",
+          "text": "Shared DB monolith"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EventBridge routes events between services and accounts.",
+      "docs": [
+        {
+          "title": "EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q034",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "A team must design event-driven microservices across accounts. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EventBridge with cross-account buses"
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "FTP batch"
+        },
+        {
+          "id": "d",
+          "text": "Shared DB monolith"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EventBridge routes events between services and accounts.",
+      "docs": [
+        {
+          "title": "EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q035",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which service should you use to build data mesh with domain ownership?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lake Formation tags and federated governance"
+        },
+        {
+          "id": "b",
+          "text": "One team owns all data"
+        },
+        {
+          "id": "c",
+          "text": "Public lake"
+        },
+        {
+          "id": "d",
+          "text": "No contracts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data mesh decentralizes ownership with standards.",
+      "docs": [
+        {
+          "title": "Data mesh on AWS",
+          "url": "https://aws.amazon.com/big-data/datalakes-and-analytics/modern-data-architecture/"
+        }
+      ]
+    },
+    {
+      "id": "sap-q036",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to build data mesh with domain ownership?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lake Formation tags and federated governance"
+        },
+        {
+          "id": "b",
+          "text": "One team owns all data"
+        },
+        {
+          "id": "c",
+          "text": "Public lake"
+        },
+        {
+          "id": "d",
+          "text": "No contracts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data mesh decentralizes ownership with standards.",
+      "docs": [
+        {
+          "title": "Data mesh on AWS",
+          "url": "https://aws.amazon.com/big-data/datalakes-and-analytics/modern-data-architecture/"
+        }
+      ]
+    },
+    {
+      "id": "sap-q037",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "A team must build data mesh with domain ownership. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lake Formation tags and federated governance"
+        },
+        {
+          "id": "b",
+          "text": "One team owns all data"
+        },
+        {
+          "id": "c",
+          "text": "Public lake"
+        },
+        {
+          "id": "d",
+          "text": "No contracts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data mesh decentralizes ownership with standards.",
+      "docs": [
+        {
+          "title": "Data mesh on AWS",
+          "url": "https://aws.amazon.com/big-data/datalakes-and-analytics/modern-data-architecture/"
+        }
+      ]
+    },
+    {
+      "id": "sap-q038",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which service should you use to use cell-based architecture for blast-radius control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sharding workloads by cell (account/VPC/Region)"
+        },
+        {
+          "id": "b",
+          "text": "Single global stack"
+        },
+        {
+          "id": "c",
+          "text": "No fault isolation"
+        },
+        {
+          "id": "d",
+          "text": "Shared state everywhere"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cells limit failure impact to a partition.",
+      "docs": [
+        {
+          "title": "Reliability pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q039",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to use cell-based architecture for blast-radius control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sharding workloads by cell (account/VPC/Region)"
+        },
+        {
+          "id": "b",
+          "text": "Single global stack"
+        },
+        {
+          "id": "c",
+          "text": "No fault isolation"
+        },
+        {
+          "id": "d",
+          "text": "Shared state everywhere"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cells limit failure impact to a partition.",
+      "docs": [
+        {
+          "title": "Reliability pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q040",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "A team must use cell-based architecture for blast-radius control. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sharding workloads by cell (account/VPC/Region)"
+        },
+        {
+          "id": "b",
+          "text": "Single global stack"
+        },
+        {
+          "id": "c",
+          "text": "No fault isolation"
+        },
+        {
+          "id": "d",
+          "text": "Shared state everywhere"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cells limit failure impact to a partition.",
+      "docs": [
+        {
+          "title": "Reliability pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q041",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which service should you use to implement active-active multi-Region front end?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 + CloudFront + multi-Region ALB"
+        },
+        {
+          "id": "b",
+          "text": "Single Region for global users"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Manual failover only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-Region designs improve availability.",
+      "docs": [
+        {
+          "title": "Disaster Recovery whitepaper",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q042",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to implement active-active multi-Region front end?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 + CloudFront + multi-Region ALB"
+        },
+        {
+          "id": "b",
+          "text": "Single Region for global users"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Manual failover only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-Region designs improve availability.",
+      "docs": [
+        {
+          "title": "Disaster Recovery whitepaper",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q043",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "A team must implement active-active multi-Region front end. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 + CloudFront + multi-Region ALB"
+        },
+        {
+          "id": "b",
+          "text": "Single Region for global users"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Manual failover only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-Region designs improve availability.",
+      "docs": [
+        {
+          "title": "Disaster Recovery whitepaper",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q044",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which service should you use to choose storage for millions of small objects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 with prefix scaling and lifecycle"
+        },
+        {
+          "id": "b",
+          "text": "One giant EBS volume"
+        },
+        {
+          "id": "c",
+          "text": "EFS for static web only wrong tier"
+        },
+        {
+          "id": "d",
+          "text": "Glacier for hot path"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 scales key prefixes automatically.",
+      "docs": [
+        {
+          "title": "S3 performance",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q045",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to choose storage for millions of small objects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 with prefix scaling and lifecycle"
+        },
+        {
+          "id": "b",
+          "text": "One giant EBS volume"
+        },
+        {
+          "id": "c",
+          "text": "EFS for static web only wrong tier"
+        },
+        {
+          "id": "d",
+          "text": "Glacier for hot path"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 scales key prefixes automatically.",
+      "docs": [
+        {
+          "title": "S3 performance",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q046",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "A team must choose storage for millions of small objects. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 with prefix scaling and lifecycle"
+        },
+        {
+          "id": "b",
+          "text": "One giant EBS volume"
+        },
+        {
+          "id": "c",
+          "text": "EFS for static web only wrong tier"
+        },
+        {
+          "id": "d",
+          "text": "Glacier for hot path"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 scales key prefixes automatically.",
+      "docs": [
+        {
+          "title": "S3 performance",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q047",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "Which service should you use to design ML platform for many teams?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker Studio domains with separate VPC and roles"
+        },
+        {
+          "id": "b",
+          "text": "One shared notebook prod"
+        },
+        {
+          "id": "c",
+          "text": "Root in notebooks"
+        },
+        {
+          "id": "d",
+          "text": "No isolation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-tenant ML platforms need account/VPC isolation.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q048",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to design ML platform for many teams?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker Studio domains with separate VPC and roles"
+        },
+        {
+          "id": "b",
+          "text": "One shared notebook prod"
+        },
+        {
+          "id": "c",
+          "text": "Root in notebooks"
+        },
+        {
+          "id": "d",
+          "text": "No isolation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-tenant ML platforms need account/VPC isolation.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q049",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "A team must design ML platform for many teams. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SageMaker Studio domains with separate VPC and roles"
+        },
+        {
+          "id": "b",
+          "text": "One shared notebook prod"
+        },
+        {
+          "id": "c",
+          "text": "Root in notebooks"
+        },
+        {
+          "id": "d",
+          "text": "No isolation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-tenant ML platforms need account/VPC isolation.",
+      "docs": [
+        {
+          "title": "SageMaker Studio",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q050",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to right-size thousands of instances using ML recommendations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Compute Optimizer at scale"
+        },
+        {
+          "id": "b",
+          "text": "Ignore metrics"
+        },
+        {
+          "id": "c",
+          "text": "largest instance always"
+        },
+        {
+          "id": "d",
+          "text": "No CUR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compute Optimizer analyzes utilization patterns.",
+      "docs": [
+        {
+          "title": "Compute Optimizer",
+          "url": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q051",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to refactor monolith to microservices incrementally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
+        },
+        {
+          "id": "b",
+          "text": "Big bang rewrite only"
+        },
+        {
+          "id": "c",
+          "text": "No observability"
+        },
+        {
+          "id": "d",
+          "text": "Shared schema forever"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Incremental extraction reduces migration risk.",
+      "docs": [
+        {
+          "title": "Microservices on AWS",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q052",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to reduce NAT Gateway costs for S3 access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3 Gateway endpoints and interface endpoints design"
+        },
+        {
+          "id": "b",
+          "text": "All traffic via NAT"
+        },
+        {
+          "id": "c",
+          "text": "Public S3 only"
+        },
+        {
+          "id": "d",
+          "text": "Ignore endpoint policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints remove NAT charges for AWS service traffic.",
+      "docs": [
+        {
+          "title": "VPC endpoints",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q053",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to modernize Windows .NET apps with containers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ECS on AWS Fargate or App2Container"
+        },
+        {
+          "id": "b",
+          "text": "Lift-and-shift only forever"
+        },
+        {
+          "id": "c",
+          "text": "Ignore licensing"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Containerization improves portability and density.",
+      "docs": [
+        {
+          "title": "App2Container",
+          "url": "https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q054",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to implement FinOps showback with tags and CUR?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost allocation tags and Athena on CUR"
+        },
+        {
+          "id": "b",
+          "text": "No tags"
+        },
+        {
+          "id": "c",
+          "text": "One undifferentiated bill"
+        },
+        {
+          "id": "d",
+          "text": "Ignore anomalies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CUR plus tags enables chargeback/showback.",
+      "docs": [
+        {
+          "title": "CUR",
+          "url": "https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q055",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to improve RTO by warming standby in second Region?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pilot light or warm standby DR patterns"
+        },
+        {
+          "id": "b",
+          "text": "Backup only no restore test"
+        },
+        {
+          "id": "c",
+          "text": "Single AZ"
+        },
+        {
+          "id": "d",
+          "text": "No automation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DR strategies trade cost vs RTO/RPO.",
+      "docs": [
+        {
+          "title": "DR patterns",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q056",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to decompose Lambda monolith into Step Functions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Step Functions Express/Standard workflows"
+        },
+        {
+          "id": "b",
+          "text": "One giant Lambda timeout max"
+        },
+        {
+          "id": "c",
+          "text": "No state machine"
+        },
+        {
+          "id": "d",
+          "text": "Ignore idempotency"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Step Functions manage orchestration and retries.",
+      "docs": [
+        {
+          "title": "Step Functions",
+          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q057",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to optimize Aurora I/O with Serverless v2 and readers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aurora Serverless v2 scaling"
+        },
+        {
+          "id": "b",
+          "text": "Fixed biggest instance 24/7 for dev"
+        },
+        {
+          "id": "c",
+          "text": "No reader endpoints"
+        },
+        {
+          "id": "d",
+          "text": "Ignore cache"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Serverless v2 scales ACUs with workload.",
+      "docs": [
+        {
+          "title": "Aurora Serverless v2",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q058",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which service should you use to right-size thousands of instances using ML recommendations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Compute Optimizer at scale"
+        },
+        {
+          "id": "b",
+          "text": "Ignore metrics"
+        },
+        {
+          "id": "c",
+          "text": "largest instance always"
+        },
+        {
+          "id": "d",
+          "text": "No CUR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compute Optimizer analyzes utilization patterns.",
+      "docs": [
+        {
+          "title": "Compute Optimizer",
+          "url": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q059",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to right-size thousands of instances using ML recommendations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Compute Optimizer at scale"
+        },
+        {
+          "id": "b",
+          "text": "Ignore metrics"
+        },
+        {
+          "id": "c",
+          "text": "largest instance always"
+        },
+        {
+          "id": "d",
+          "text": "No CUR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compute Optimizer analyzes utilization patterns.",
+      "docs": [
+        {
+          "title": "Compute Optimizer",
+          "url": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q060",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "A team must right-size thousands of instances using ML recommendations. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Compute Optimizer at scale"
+        },
+        {
+          "id": "b",
+          "text": "Ignore metrics"
+        },
+        {
+          "id": "c",
+          "text": "largest instance always"
+        },
+        {
+          "id": "d",
+          "text": "No CUR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compute Optimizer analyzes utilization patterns.",
+      "docs": [
+        {
+          "title": "Compute Optimizer",
+          "url": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q061",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which service should you use to refactor monolith to microservices incrementally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
+        },
+        {
+          "id": "b",
+          "text": "Big bang rewrite only"
+        },
+        {
+          "id": "c",
+          "text": "No observability"
+        },
+        {
+          "id": "d",
+          "text": "Shared schema forever"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Incremental extraction reduces migration risk.",
+      "docs": [
+        {
+          "title": "Microservices on AWS",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q062",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to refactor monolith to microservices incrementally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
+        },
+        {
+          "id": "b",
+          "text": "Big bang rewrite only"
+        },
+        {
+          "id": "c",
+          "text": "No observability"
+        },
+        {
+          "id": "d",
+          "text": "Shared schema forever"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Incremental extraction reduces migration risk.",
+      "docs": [
+        {
+          "title": "Microservices on AWS",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q063",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "A team must refactor monolith to microservices incrementally. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
+        },
+        {
+          "id": "b",
+          "text": "Big bang rewrite only"
+        },
+        {
+          "id": "c",
+          "text": "No observability"
+        },
+        {
+          "id": "d",
+          "text": "Shared schema forever"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Incremental extraction reduces migration risk.",
+      "docs": [
+        {
+          "title": "Microservices on AWS",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q064",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which service should you use to reduce NAT Gateway costs for S3 access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3 Gateway endpoints and interface endpoints design"
+        },
+        {
+          "id": "b",
+          "text": "All traffic via NAT"
+        },
+        {
+          "id": "c",
+          "text": "Public S3 only"
+        },
+        {
+          "id": "d",
+          "text": "Ignore endpoint policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints remove NAT charges for AWS service traffic.",
+      "docs": [
+        {
+          "title": "VPC endpoints",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q065",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to reduce NAT Gateway costs for S3 access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3 Gateway endpoints and interface endpoints design"
+        },
+        {
+          "id": "b",
+          "text": "All traffic via NAT"
+        },
+        {
+          "id": "c",
+          "text": "Public S3 only"
+        },
+        {
+          "id": "d",
+          "text": "Ignore endpoint policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints remove NAT charges for AWS service traffic.",
+      "docs": [
+        {
+          "title": "VPC endpoints",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q066",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "A team must reduce NAT Gateway costs for S3 access. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3 Gateway endpoints and interface endpoints design"
+        },
+        {
+          "id": "b",
+          "text": "All traffic via NAT"
+        },
+        {
+          "id": "c",
+          "text": "Public S3 only"
+        },
+        {
+          "id": "d",
+          "text": "Ignore endpoint policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Endpoints remove NAT charges for AWS service traffic.",
+      "docs": [
+        {
+          "title": "VPC endpoints",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q067",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which service should you use to modernize Windows .NET apps with containers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ECS on AWS Fargate or App2Container"
+        },
+        {
+          "id": "b",
+          "text": "Lift-and-shift only forever"
+        },
+        {
+          "id": "c",
+          "text": "Ignore licensing"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Containerization improves portability and density.",
+      "docs": [
+        {
+          "title": "App2Container",
+          "url": "https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q068",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to modernize Windows .NET apps with containers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ECS on AWS Fargate or App2Container"
+        },
+        {
+          "id": "b",
+          "text": "Lift-and-shift only forever"
+        },
+        {
+          "id": "c",
+          "text": "Ignore licensing"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Containerization improves portability and density.",
+      "docs": [
+        {
+          "title": "App2Container",
+          "url": "https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q069",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "A team must modernize Windows .NET apps with containers. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ECS on AWS Fargate or App2Container"
+        },
+        {
+          "id": "b",
+          "text": "Lift-and-shift only forever"
+        },
+        {
+          "id": "c",
+          "text": "Ignore licensing"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Containerization improves portability and density.",
+      "docs": [
+        {
+          "title": "App2Container",
+          "url": "https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q070",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "Which service should you use to implement FinOps showback with tags and CUR?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost allocation tags and Athena on CUR"
+        },
+        {
+          "id": "b",
+          "text": "No tags"
+        },
+        {
+          "id": "c",
+          "text": "One undifferentiated bill"
+        },
+        {
+          "id": "d",
+          "text": "Ignore anomalies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CUR plus tags enables chargeback/showback.",
+      "docs": [
+        {
+          "title": "CUR",
+          "url": "https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q071",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to implement FinOps showback with tags and CUR?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost allocation tags and Athena on CUR"
+        },
+        {
+          "id": "b",
+          "text": "No tags"
+        },
+        {
+          "id": "c",
+          "text": "One undifferentiated bill"
+        },
+        {
+          "id": "d",
+          "text": "Ignore anomalies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CUR plus tags enables chargeback/showback.",
+      "docs": [
+        {
+          "title": "CUR",
+          "url": "https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q072",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "A team must implement FinOps showback with tags and CUR. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost allocation tags and Athena on CUR"
+        },
+        {
+          "id": "b",
+          "text": "No tags"
+        },
+        {
+          "id": "c",
+          "text": "One undifferentiated bill"
+        },
+        {
+          "id": "d",
+          "text": "Ignore anomalies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CUR plus tags enables chargeback/showback.",
+      "docs": [
+        {
+          "title": "CUR",
+          "url": "https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q073",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to discover on-premises servers for migration planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Application Discovery Service and Migration Hub"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet guesses"
+        },
+        {
+          "id": "c",
+          "text": "No dependency map"
+        },
+        {
+          "id": "d",
+          "text": "Skip assessment"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Discovery collects utilization and dependencies.",
+      "docs": [
+        {
+          "title": "Application Discovery Service",
+          "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q074",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to rehost VMs with minimal changes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Application Migration Service (MGN)"
+        },
+        {
+          "id": "b",
+          "text": "Manual copy VMDK USB only"
+        },
+        {
+          "id": "c",
+          "text": "No replication"
+        },
+        {
+          "id": "d",
+          "text": "Ignore networking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MGN replicates and cuts over servers.",
+      "docs": [
+        {
+          "title": "MGN",
+          "url": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q075",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to migrate databases with minimal downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DMS homogeneous/heterogeneous"
+        },
+        {
+          "id": "b",
+          "text": "Dump SQL stop business days"
+        },
+        {
+          "id": "c",
+          "text": "No CDC"
+        },
+        {
+          "id": "d",
+          "text": "Ignore charset"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMS supports ongoing replication.",
+      "docs": [
+        {
+          "title": "DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q076",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to move exabytes with physical appliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Snowball Edge or Snowmobile"
+        },
+        {
+          "id": "b",
+          "text": "Slow consumer ISP upload only"
+        },
+        {
+          "id": "c",
+          "text": "Email disks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snow devices transfer huge datasets offline.",
+      "docs": [
+        {
+          "title": "Snowball",
+          "url": "https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q077",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to modernize VMware workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VMware Cloud on AWS or MGN"
+        },
+        {
+          "id": "b",
+          "text": "Rebuild hypervisor manually"
+        },
+        {
+          "id": "c",
+          "text": "Ignore networking"
+        },
+        {
+          "id": "d",
+          "text": "No DR"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VMC extends vSphere to AWS.",
+      "docs": [
+        {
+          "title": "VMware Cloud on AWS",
+          "url": "https://docs.aws.amazon.com/vmc/latest/userguide/what-is-vmware-cloud-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q078",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to transfer SFTP data to S3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Transfer Family"
+        },
+        {
+          "id": "b",
+          "text": "Open FTP anonymous"
+        },
+        {
+          "id": "c",
+          "text": "Email zip"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket uploads"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Transfer Family manages SFTP/FTPS to S3.",
+      "docs": [
+        {
+          "title": "Transfer Family",
+          "url": "https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-family.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q079",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to containerize legacy apps during migration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS App2Container and ECS/EKS"
+        },
+        {
+          "id": "b",
+          "text": "Keep snowflake servers forever"
+        },
+        {
+          "id": "c",
+          "text": "No CI/CD"
+        },
+        {
+          "id": "d",
+          "text": "Manual deploy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Containers standardize packaging for cloud.",
+      "docs": [
+        {
+          "title": "App2Container",
+          "url": "https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q080",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to track migration portfolio in one place?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Migration Hub"
+        },
+        {
+          "id": "b",
+          "text": "Ad hoc spreadsheets only"
+        },
+        {
+          "id": "c",
+          "text": "No status"
+        },
+        {
+          "id": "d",
+          "text": "Ignore waves"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Migration Hub aggregates progress.",
+      "docs": [
+        {
+          "title": "Migration Hub",
+          "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/what-is-migrationhub.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q081",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which service should you use to discover on-premises servers for migration planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Application Discovery Service and Migration Hub"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet guesses"
+        },
+        {
+          "id": "c",
+          "text": "No dependency map"
+        },
+        {
+          "id": "d",
+          "text": "Skip assessment"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Discovery collects utilization and dependencies.",
+      "docs": [
+        {
+          "title": "Application Discovery Service",
+          "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q082",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to discover on-premises servers for migration planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Application Discovery Service and Migration Hub"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet guesses"
+        },
+        {
+          "id": "c",
+          "text": "No dependency map"
+        },
+        {
+          "id": "d",
+          "text": "Skip assessment"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Discovery collects utilization and dependencies.",
+      "docs": [
+        {
+          "title": "Application Discovery Service",
+          "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q083",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "A team must discover on-premises servers for migration planning. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Application Discovery Service and Migration Hub"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet guesses"
+        },
+        {
+          "id": "c",
+          "text": "No dependency map"
+        },
+        {
+          "id": "d",
+          "text": "Skip assessment"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Discovery collects utilization and dependencies.",
+      "docs": [
+        {
+          "title": "Application Discovery Service",
+          "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q084",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which service should you use to rehost VMs with minimal changes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Application Migration Service (MGN)"
+        },
+        {
+          "id": "b",
+          "text": "Manual copy VMDK USB only"
+        },
+        {
+          "id": "c",
+          "text": "No replication"
+        },
+        {
+          "id": "d",
+          "text": "Ignore networking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MGN replicates and cuts over servers.",
+      "docs": [
+        {
+          "title": "MGN",
+          "url": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q085",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to rehost VMs with minimal changes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Application Migration Service (MGN)"
+        },
+        {
+          "id": "b",
+          "text": "Manual copy VMDK USB only"
+        },
+        {
+          "id": "c",
+          "text": "No replication"
+        },
+        {
+          "id": "d",
+          "text": "Ignore networking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MGN replicates and cuts over servers.",
+      "docs": [
+        {
+          "title": "MGN",
+          "url": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q086",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "A team must rehost VMs with minimal changes. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Application Migration Service (MGN)"
+        },
+        {
+          "id": "b",
+          "text": "Manual copy VMDK USB only"
+        },
+        {
+          "id": "c",
+          "text": "No replication"
+        },
+        {
+          "id": "d",
+          "text": "Ignore networking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MGN replicates and cuts over servers.",
+      "docs": [
+        {
+          "title": "MGN",
+          "url": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q087",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which service should you use to migrate databases with minimal downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DMS homogeneous/heterogeneous"
+        },
+        {
+          "id": "b",
+          "text": "Dump SQL stop business days"
+        },
+        {
+          "id": "c",
+          "text": "No CDC"
+        },
+        {
+          "id": "d",
+          "text": "Ignore charset"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMS supports ongoing replication.",
+      "docs": [
+        {
+          "title": "DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q088",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to migrate databases with minimal downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DMS homogeneous/heterogeneous"
+        },
+        {
+          "id": "b",
+          "text": "Dump SQL stop business days"
+        },
+        {
+          "id": "c",
+          "text": "No CDC"
+        },
+        {
+          "id": "d",
+          "text": "Ignore charset"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMS supports ongoing replication.",
+      "docs": [
+        {
+          "title": "DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q089",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "A team must migrate databases with minimal downtime. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DMS homogeneous/heterogeneous"
+        },
+        {
+          "id": "b",
+          "text": "Dump SQL stop business days"
+        },
+        {
+          "id": "c",
+          "text": "No CDC"
+        },
+        {
+          "id": "d",
+          "text": "Ignore charset"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DMS supports ongoing replication.",
+      "docs": [
+        {
+          "title": "DMS",
+          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q090",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "Which service should you use to move exabytes with physical appliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Snowball Edge or Snowmobile"
+        },
+        {
+          "id": "b",
+          "text": "Slow consumer ISP upload only"
+        },
+        {
+          "id": "c",
+          "text": "Email disks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snow devices transfer huge datasets offline.",
+      "docs": [
+        {
+          "title": "Snowball",
+          "url": "https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q091",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to move exabytes with physical appliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Snowball Edge or Snowmobile"
+        },
+        {
+          "id": "b",
+          "text": "Slow consumer ISP upload only"
+        },
+        {
+          "id": "c",
+          "text": "Email disks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snow devices transfer huge datasets offline.",
+      "docs": [
+        {
+          "title": "Snowball",
+          "url": "https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q092",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "A team must move exabytes with physical appliance. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Snowball Edge or Snowmobile"
+        },
+        {
+          "id": "b",
+          "text": "Slow consumer ISP upload only"
+        },
+        {
+          "id": "c",
+          "text": "Email disks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Snow devices transfer huge datasets offline.",
+      "docs": [
+        {
+          "title": "Snowball",
+          "url": "https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q093",
+      "domain": "organizational-complexity",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Professional? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "SAP-C02 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "AWS Organizations"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "SAP-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
+        }
+      ]
+    },
+    {
+      "id": "sap-q094",
+      "domain": "organizational-complexity",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q095",
+      "domain": "new-solutions",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q096",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'SAP-C02 Exam Guide', what should you do FIRST when addressing Design Solutions for Organizational Complexity objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as SAP-C02 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "SAP-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
+        }
+      ]
+    },
+    {
+      "id": "sap-q097",
+      "domain": "organizational-complexity",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Organizations', what should you do FIRST when addressing Design Solutions for Organizational Complexity objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Organizations describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Organizations",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q098",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Well-Architected Framework', what should you do FIRST when addressing Design for New Solutions objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Well-Architected Framework describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q099",
+      "domain": "new-solutions",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Service Catalog', what should you do FIRST when addressing Design for New Solutions objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Service Catalog describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Service Catalog",
+          "url": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q100",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Compute Optimizer', what should you do FIRST when addressing Continuous Improvement for Existing Solutions objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Compute Optimizer describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Compute Optimizer",
+          "url": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q101",
+      "domain": "continuous-improvement",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Migration Evaluator', what should you do FIRST when addressing Continuous Improvement for Existing Solutions objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Migration Evaluator describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Migration Evaluator",
+          "url": "https://aws.amazon.com/migration-evaluator/"
+        }
+      ]
+    },
+    {
+      "id": "sap-q102",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Migration Hub', what should you do FIRST when addressing Accelerate Workload Migration and Modernization objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Migration Hub describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Migration Hub",
+          "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/what-is-migrationhub.html"
+        }
+      ]
+    },
+    {
+      "id": "sap-q103",
+      "domain": "migration-modernization",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Application Migration Service', what should you do FIRST when addressing Accelerate Workload Migration and Modernization objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Application Migration Service describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Application Migration Service",
+          "url": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html"
+        }
+      ]
+    }
+  ]
+}

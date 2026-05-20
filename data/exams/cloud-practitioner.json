@@ -2,6 +2,7 @@
   "id": "cloud-practitioner",
   "name": "AWS Certified Cloud Practitioner",
   "code": "CLF-C02",
+  "vendor": "aws",
   "exam": {
     "totalQuestions": 65,
     "scoredQuestions": 50,
@@ -5377,7 +5378,7 @@
       "correct": [
         "d"
       ],
-      "explanation": "Envision is the first CAF transformation phase — it demonstrates how the Cloud will accelerate business outcomes by identifying transformation opportunities and creating a foundation for your digital transformation.",
+      "explanation": "Envision is the first CAF transformation phase \u2014 it demonstrates how the Cloud will accelerate business outcomes by identifying transformation opportunities and creating a foundation for your digital transformation.",
       "docs": [
         {
           "title": "AWS Cloud Adoption Framework",
@@ -5582,7 +5583,7 @@
       "correct": [
         "d"
       ],
-      "explanation": "Refactor / Re-architect involves reimagining how the application is architected using cloud-native features. It is driven by the need to add features, improve scalability, performance, security, and agility — such as moving from a monolith to microservices or adopting serverless architectures.",
+      "explanation": "Refactor / Re-architect involves reimagining how the application is architected using cloud-native features. It is driven by the need to add features, improve scalability, performance, security, and agility \u2014 such as moving from a monolith to microservices or adopting serverless architectures.",
       "docs": [
         {
           "title": "Cloud Migration Strategies: The 7Rs",
@@ -6244,7 +6245,7 @@
       "id": "clf-q180",
       "domain": "technology-services",
       "type": "multiple-choice",
-      "text": "Which AWS service allows you to test web and mobile applications against real desktop browsers and mobile devices concurrently — not emulators — with the ability to configure device settings like GPS, language, and Wi-Fi?",
+      "text": "Which AWS service allows you to test web and mobile applications against real desktop browsers and mobile devices concurrently \u2014 not emulators \u2014 with the ability to configure device settings like GPS, language, and Wi-Fi?",
       "options": [
         {
           "id": "a",
@@ -6402,7 +6403,7 @@
       "correct": [
         "c"
       ],
-      "explanation": "AWS IQ lets customers quickly find professional help from AWS Certified third-party experts for on-demand project work. It provides video-conferencing, contract management, secure collaboration, and integrated billing — charges are added directly to your AWS bill per milestone.",
+      "explanation": "AWS IQ lets customers quickly find professional help from AWS Certified third-party experts for on-demand project work. It provides video-conferencing, contract management, secure collaboration, and integrated billing \u2014 charges are added directly to your AWS bill per milestone.",
       "docs": [
         {
           "title": "AWS IQ",
@@ -6572,7 +6573,7 @@
       "correct": [
         "b"
       ],
-      "explanation": "Amazon Kendra is an ML-powered enterprise search service that returns highly accurate answers from unstructured data such as documents, FAQs, and manuals — going beyond keyword search to understand natural language queries.",
+      "explanation": "Amazon Kendra is an ML-powered enterprise search service that returns highly accurate answers from unstructured data such as documents, FAQs, and manuals \u2014 going beyond keyword search to understand natural language queries.",
       "docs": [
         {
           "title": "Amazon Kendra",
@@ -6849,7 +6850,7 @@
       "correct": [
         "b"
       ],
-      "explanation": "Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available in-memory cache specifically for DynamoDB that delivers up to 10x performance improvement, reducing response times from milliseconds to microseconds — even at millions of requests per second.",
+      "explanation": "Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available in-memory cache specifically for DynamoDB that delivers up to 10x performance improvement, reducing response times from milliseconds to microseconds \u2014 even at millions of requests per second.",
       "docs": [
         {
           "title": "Amazon DynamoDB Accelerator (DAX)",
@@ -6951,7 +6952,7 @@
       "correct": [
         "c"
       ],
-      "explanation": "S3 Intelligent-Tiering automatically moves objects between multiple access tiers based on actual access patterns — from Frequent Access to Infrequent Access to Archive tiers — with no retrieval fees and no minimum storage duration for the Frequent/Infrequent tiers.",
+      "explanation": "S3 Intelligent-Tiering automatically moves objects between multiple access tiers based on actual access patterns \u2014 from Frequent Access to Infrequent Access to Archive tiers \u2014 with no retrieval fees and no minimum storage duration for the Frequent/Infrequent tiers.",
       "docs": [
         {
           "title": "Amazon S3 Intelligent-Tiering",
@@ -7547,7 +7548,7 @@
       "correct": [
         "c"
       ],
-      "explanation": "An EC2 Dedicated Host is a physical server with EC2 instance capacity fully dedicated to your use. Unlike Dedicated Instances (which run on hardware dedicated to you but don't give visibility into the host), Dedicated Hosts give you visibility and control over the physical server — useful for BYOL licensing and compliance requirements.",
+      "explanation": "An EC2 Dedicated Host is a physical server with EC2 instance capacity fully dedicated to your use. Unlike Dedicated Instances (which run on hardware dedicated to you but don't give visibility into the host), Dedicated Hosts give you visibility and control over the physical server \u2014 useful for BYOL licensing and compliance requirements.",
       "docs": [
         {
           "title": "EC2 Dedicated Hosts",
@@ -7615,7 +7616,7 @@
       "correct": [
         "c"
       ],
-      "explanation": "AWS Compute Optimizer uses ML to analyze historical utilization data and recommends optimal AWS resource configurations for EC2 instances, Auto Scaling groups, EBS volumes, Lambda functions, and ECS services on Fargate — helping reduce costs while improving performance.",
+      "explanation": "AWS Compute Optimizer uses ML to analyze historical utilization data and recommends optimal AWS resource configurations for EC2 instances, Auto Scaling groups, EBS volumes, Lambda functions, and ECS services on Fargate \u2014 helping reduce costs while improving performance.",
       "docs": [
         {
           "title": "AWS Compute Optimizer",
@@ -7717,7 +7718,7 @@
       "correct": [
         "b"
       ],
-      "explanation": "CloudTrail records who did what — API calls, user actions, and account activity — primarily for governance, compliance, and auditing. CloudWatch monitors how resources are performing — metrics, logs, alarms, and dashboards — primarily for operational visibility and troubleshooting.",
+      "explanation": "CloudTrail records who did what \u2014 API calls, user actions, and account activity \u2014 primarily for governance, compliance, and auditing. CloudWatch monitors how resources are performing \u2014 metrics, logs, alarms, and dashboards \u2014 primarily for operational visibility and troubleshooting.",
       "docs": [
         {
           "title": "AWS CloudTrail",
@@ -7737,25 +7738,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Performance Efficiency — choosing regions closer to users"
+          "text": "Performance Efficiency \u2014 choosing regions closer to users"
         },
         {
           "id": "b",
-          "text": "Data residency and compliance — choosing an AWS Region that meets regulatory requirements"
+          "text": "Data residency and compliance \u2014 choosing an AWS Region that meets regulatory requirements"
         },
         {
           "id": "c",
-          "text": "Cost Optimization — using cheaper regions"
+          "text": "Cost Optimization \u2014 using cheaper regions"
         },
         {
           "id": "d",
-          "text": "Sustainability — minimizing carbon footprint by region"
+          "text": "Sustainability \u2014 minimizing carbon footprint by region"
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "AWS Regions are geographically isolated. When choosing a Region, data residency and compliance requirements — such as GDPR in Europe — often dictate which Region to use. Data does not leave a Region unless you explicitly choose to move it.",
+      "explanation": "AWS Regions are geographically isolated. When choosing a Region, data residency and compliance requirements \u2014 such as GDPR in Europe \u2014 often dictate which Region to use. Data does not leave a Region unless you explicitly choose to move it.",
       "docs": [
         {
           "title": "AWS Global Infrastructure",
@@ -7789,7 +7790,7 @@
       "correct": [
         "c"
       ],
-      "explanation": "An IAM Credential Report is a downloadable CSV report that lists all IAM users in your account and the status of their various credentials — including whether passwords and access keys are enabled, when they were last used, and whether MFA is enabled. It helps with auditing and compliance.",
+      "explanation": "An IAM Credential Report is a downloadable CSV report that lists all IAM users in your account and the status of their various credentials \u2014 including whether passwords and access keys are enabled, when they were last used, and whether MFA is enabled. It helps with auditing and compliance.",
       "docs": [
         {
           "title": "IAM Credential Reports",

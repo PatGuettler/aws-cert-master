@@ -1,0 +1,3645 @@
+{
+  "id": "cloudops-engineer-associate",
+  "name": "AWS Certified CloudOps Engineer \u2013 Associate",
+  "code": "SOA-C02",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 50,
+    "timeLimitMinutes": 130,
+    "passingScore": 720,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "monitoring-logging",
+      "name": "Domain 1: Monitoring, Logging, Analysis, Remediation, and Performance Optimization",
+      "weight": 22,
+      "resources": [
+        {
+          "title": "Amazon CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        },
+        {
+          "title": "AWS Systems Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "reliability-continuity",
+      "name": "Domain 2: Reliability and Business Continuity",
+      "weight": 22,
+      "resources": [
+        {
+          "title": "AWS Backup",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+        },
+        {
+          "title": "Elastic Disaster Recovery",
+          "url": "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
+        }
+      ]
+    },
+    {
+      "id": "deployment-automation",
+      "name": "Domain 3: Deployment, Provisioning, and Automation",
+      "weight": 22,
+      "resources": [
+        {
+          "title": "AWS CloudFormation",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+        },
+        {
+          "title": "AWS OpsWorks",
+          "url": "https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "security-compliance",
+      "name": "Domain 4: Security and Compliance",
+      "weight": 16,
+      "resources": [
+        {
+          "title": "AWS Config",
+          "url": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html"
+        },
+        {
+          "title": "Amazon Inspector",
+          "url": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html"
+        }
+      ]
+    },
+    {
+      "id": "networking-content",
+      "name": "Domain 5: Networking and Content Delivery",
+      "weight": 18,
+      "resources": [
+        {
+          "title": "Amazon VPC",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        },
+        {
+          "title": "Elastic Load Balancing",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "soa-q001",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to collect metrics and logs from EC2 and AWS services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "Ping script only"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Email logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch is the primary monitoring service.",
+      "docs": [
+        {
+          "title": "CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q002",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run operational tasks like patching at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Systems Manager"
+        },
+        {
+          "id": "b",
+          "text": "SSH each host manually"
+        },
+        {
+          "id": "c",
+          "text": "Disable patching"
+        },
+        {
+          "id": "d",
+          "text": "Shared root SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Systems Manager automates fleet operations.",
+      "docs": [
+        {
+          "title": "Systems Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q003",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to aggregate logs across accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch cross-account observability or Centralized logging"
+        },
+        {
+          "id": "b",
+          "text": "Local disk only"
+        },
+        {
+          "id": "c",
+          "text": "Delete logs"
+        },
+        {
+          "id": "d",
+          "text": "No subscription filters"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Observability links accounts for unified views.",
+      "docs": [
+        {
+          "title": "CloudWatch cross-account",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q004",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to trace API calls for troubleshooting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudTrail"
+        },
+        {
+          "id": "b",
+          "text": "Guess only"
+        },
+        {
+          "id": "c",
+          "text": "Disable trail"
+        },
+        {
+          "id": "d",
+          "text": "No S3 bucket policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudTrail records API activity.",
+      "docs": [
+        {
+          "title": "CloudTrail",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q005",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to capture VPC traffic metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Flow Logs"
+        },
+        {
+          "id": "b",
+          "text": "Packet sniff all prod without policy"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "Disable NACLs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Flow Logs capture IP traffic metadata.",
+      "docs": [
+        {
+          "title": "VPC Flow Logs",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q006",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to create dashboards for golden signals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch dashboards and alarms"
+        },
+        {
+          "id": "b",
+          "text": "No visualization"
+        },
+        {
+          "id": "c",
+          "text": "Ignore latency"
+        },
+        {
+          "id": "d",
+          "text": "No on-call"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dashboards centralize operational metrics.",
+      "docs": [
+        {
+          "title": "Dashboards",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q007",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use synthetic canaries to monitor endpoints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch Synthetics"
+        },
+        {
+          "id": "b",
+          "text": "Manual browser checks only"
+        },
+        {
+          "id": "c",
+          "text": "No alerting"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SSL expiry"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Canaries run scheduled tests against URLs.",
+      "docs": [
+        {
+          "title": "Synthetics",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q008",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to store configuration compliance history?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Config"
+        },
+        {
+          "id": "b",
+          "text": "Undocumented drift"
+        },
+        {
+          "id": "c",
+          "text": "No rules"
+        },
+        {
+          "id": "d",
+          "text": "Disable recording"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Config tracks resource configuration over time.",
+      "docs": [
+        {
+          "title": "AWS Config",
+          "url": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q009",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which service should you use to collect metrics and logs from EC2 and AWS services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "Ping script only"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Email logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch is the primary monitoring service.",
+      "docs": [
+        {
+          "title": "CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q010",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to collect metrics and logs from EC2 and AWS services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "Ping script only"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Email logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch is the primary monitoring service.",
+      "docs": [
+        {
+          "title": "CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q011",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "A team must collect metrics and logs from EC2 and AWS services. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "Ping script only"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Email logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch is the primary monitoring service.",
+      "docs": [
+        {
+          "title": "CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q012",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which service should you use to run operational tasks like patching at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Systems Manager"
+        },
+        {
+          "id": "b",
+          "text": "SSH each host manually"
+        },
+        {
+          "id": "c",
+          "text": "Disable patching"
+        },
+        {
+          "id": "d",
+          "text": "Shared root SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Systems Manager automates fleet operations.",
+      "docs": [
+        {
+          "title": "Systems Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q013",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to run operational tasks like patching at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Systems Manager"
+        },
+        {
+          "id": "b",
+          "text": "SSH each host manually"
+        },
+        {
+          "id": "c",
+          "text": "Disable patching"
+        },
+        {
+          "id": "d",
+          "text": "Shared root SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Systems Manager automates fleet operations.",
+      "docs": [
+        {
+          "title": "Systems Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q014",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "A team must run operational tasks like patching at scale. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Systems Manager"
+        },
+        {
+          "id": "b",
+          "text": "SSH each host manually"
+        },
+        {
+          "id": "c",
+          "text": "Disable patching"
+        },
+        {
+          "id": "d",
+          "text": "Shared root SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Systems Manager automates fleet operations.",
+      "docs": [
+        {
+          "title": "Systems Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q015",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which service should you use to aggregate logs across accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch cross-account observability or Centralized logging"
+        },
+        {
+          "id": "b",
+          "text": "Local disk only"
+        },
+        {
+          "id": "c",
+          "text": "Delete logs"
+        },
+        {
+          "id": "d",
+          "text": "No subscription filters"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Observability links accounts for unified views.",
+      "docs": [
+        {
+          "title": "CloudWatch cross-account",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q016",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to aggregate logs across accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch cross-account observability or Centralized logging"
+        },
+        {
+          "id": "b",
+          "text": "Local disk only"
+        },
+        {
+          "id": "c",
+          "text": "Delete logs"
+        },
+        {
+          "id": "d",
+          "text": "No subscription filters"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Observability links accounts for unified views.",
+      "docs": [
+        {
+          "title": "CloudWatch cross-account",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q017",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "A team must aggregate logs across accounts. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch cross-account observability or Centralized logging"
+        },
+        {
+          "id": "b",
+          "text": "Local disk only"
+        },
+        {
+          "id": "c",
+          "text": "Delete logs"
+        },
+        {
+          "id": "d",
+          "text": "No subscription filters"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Observability links accounts for unified views.",
+      "docs": [
+        {
+          "title": "CloudWatch cross-account",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q018",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "Which service should you use to trace API calls for troubleshooting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudTrail"
+        },
+        {
+          "id": "b",
+          "text": "Guess only"
+        },
+        {
+          "id": "c",
+          "text": "Disable trail"
+        },
+        {
+          "id": "d",
+          "text": "No S3 bucket policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudTrail records API activity.",
+      "docs": [
+        {
+          "title": "CloudTrail",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q019",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to trace API calls for troubleshooting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudTrail"
+        },
+        {
+          "id": "b",
+          "text": "Guess only"
+        },
+        {
+          "id": "c",
+          "text": "Disable trail"
+        },
+        {
+          "id": "d",
+          "text": "No S3 bucket policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudTrail records API activity.",
+      "docs": [
+        {
+          "title": "CloudTrail",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q020",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "A team must trace API calls for troubleshooting. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudTrail"
+        },
+        {
+          "id": "b",
+          "text": "Guess only"
+        },
+        {
+          "id": "c",
+          "text": "Disable trail"
+        },
+        {
+          "id": "d",
+          "text": "No S3 bucket policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudTrail records API activity.",
+      "docs": [
+        {
+          "title": "CloudTrail",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q021",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to automate backups across services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Backup"
+        },
+        {
+          "id": "b",
+          "text": "Manual snapshots only"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Single AZ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS Backup applies plans to multiple resources.",
+      "docs": [
+        {
+          "title": "AWS Backup",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q022",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to replicate servers to AWS for DR with minimal downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Elastic Disaster Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Tape only"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore networking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Elastic DR replicates and orchestrates failover.",
+      "docs": [
+        {
+          "title": "Elastic DR",
+          "url": "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q023",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to maintain RDS backups and point-in-time recovery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automated RDS backups"
+        },
+        {
+          "id": "b",
+          "text": "No backups"
+        },
+        {
+          "id": "c",
+          "text": "Delete snapshots"
+        },
+        {
+          "id": "d",
+          "text": "Single AZ prod only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RDS backups enable PITR within retention.",
+      "docs": [
+        {
+          "title": "RDS backups",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q024",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to health check and failover DNS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 health checks and failover routing"
+        },
+        {
+          "id": "b",
+          "text": "Static DNS never changes"
+        },
+        {
+          "id": "c",
+          "text": "Ignore app health"
+        },
+        {
+          "id": "d",
+          "text": "No secondary Region"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Route 53 routes away from unhealthy endpoints.",
+      "docs": [
+        {
+          "title": "Route 53 health checks",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q025",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to scale EC2 automatically on CPU?",
+      "options": [
+        {
+          "id": "a",
+          "text": "EC2 Auto Scaling policies"
+        },
+        {
+          "id": "b",
+          "text": "Fixed capacity forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual scale at 3am"
+        },
+        {
+          "id": "d",
+          "text": "Disable alarms"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Auto Scaling adjusts capacity from metrics.",
+      "docs": [
+        {
+          "title": "Auto Scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q026",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to distribute traffic for HA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic Load Balancing across AZs"
+        },
+        {
+          "id": "b",
+          "text": "Single instance"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Sticky to unhealthy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ELB spans AZs for resilience.",
+      "docs": [
+        {
+          "title": "ELB",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q027",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to restore objects deleted from S3 accidentally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3 versioning and MFA Delete"
+        },
+        {
+          "id": "b",
+          "text": "No versioning"
+        },
+        {
+          "id": "c",
+          "text": "Public delete API"
+        },
+        {
+          "id": "d",
+          "text": "Ignore lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Versioning retains prior object versions.",
+      "docs": [
+        {
+          "title": "S3 versioning",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q028",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to test DR with game days using isolated stacks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudFormation stack sets in DR Region"
+        },
+        {
+          "id": "b",
+          "text": "Untested runbooks"
+        },
+        {
+          "id": "c",
+          "text": "Hope"
+        },
+        {
+          "id": "d",
+          "text": "Same credentials no rotation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Regular DR exercises validate RTO/RPO.",
+      "docs": [
+        {
+          "title": "DR on AWS",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q029",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which service should you use to automate backups across services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Backup"
+        },
+        {
+          "id": "b",
+          "text": "Manual snapshots only"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Single AZ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS Backup applies plans to multiple resources.",
+      "docs": [
+        {
+          "title": "AWS Backup",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q030",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to automate backups across services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Backup"
+        },
+        {
+          "id": "b",
+          "text": "Manual snapshots only"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Single AZ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS Backup applies plans to multiple resources.",
+      "docs": [
+        {
+          "title": "AWS Backup",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q031",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "A team must automate backups across services. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Backup"
+        },
+        {
+          "id": "b",
+          "text": "Manual snapshots only"
+        },
+        {
+          "id": "c",
+          "text": "No retention"
+        },
+        {
+          "id": "d",
+          "text": "Single AZ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS Backup applies plans to multiple resources.",
+      "docs": [
+        {
+          "title": "AWS Backup",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q032",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which service should you use to replicate servers to AWS for DR with minimal downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Elastic Disaster Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Tape only"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore networking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Elastic DR replicates and orchestrates failover.",
+      "docs": [
+        {
+          "title": "Elastic DR",
+          "url": "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q033",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to replicate servers to AWS for DR with minimal downtime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Elastic Disaster Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Tape only"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore networking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Elastic DR replicates and orchestrates failover.",
+      "docs": [
+        {
+          "title": "Elastic DR",
+          "url": "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q034",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "A team must replicate servers to AWS for DR with minimal downtime. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Elastic Disaster Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Tape only"
+        },
+        {
+          "id": "c",
+          "text": "No RPO"
+        },
+        {
+          "id": "d",
+          "text": "Ignore networking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Elastic DR replicates and orchestrates failover.",
+      "docs": [
+        {
+          "title": "Elastic DR",
+          "url": "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q035",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which service should you use to maintain RDS backups and point-in-time recovery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automated RDS backups"
+        },
+        {
+          "id": "b",
+          "text": "No backups"
+        },
+        {
+          "id": "c",
+          "text": "Delete snapshots"
+        },
+        {
+          "id": "d",
+          "text": "Single AZ prod only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RDS backups enable PITR within retention.",
+      "docs": [
+        {
+          "title": "RDS backups",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q036",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to maintain RDS backups and point-in-time recovery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automated RDS backups"
+        },
+        {
+          "id": "b",
+          "text": "No backups"
+        },
+        {
+          "id": "c",
+          "text": "Delete snapshots"
+        },
+        {
+          "id": "d",
+          "text": "Single AZ prod only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RDS backups enable PITR within retention.",
+      "docs": [
+        {
+          "title": "RDS backups",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q037",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "A team must maintain RDS backups and point-in-time recovery. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automated RDS backups"
+        },
+        {
+          "id": "b",
+          "text": "No backups"
+        },
+        {
+          "id": "c",
+          "text": "Delete snapshots"
+        },
+        {
+          "id": "d",
+          "text": "Single AZ prod only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RDS backups enable PITR within retention.",
+      "docs": [
+        {
+          "title": "RDS backups",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q038",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "Which service should you use to health check and failover DNS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 health checks and failover routing"
+        },
+        {
+          "id": "b",
+          "text": "Static DNS never changes"
+        },
+        {
+          "id": "c",
+          "text": "Ignore app health"
+        },
+        {
+          "id": "d",
+          "text": "No secondary Region"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Route 53 routes away from unhealthy endpoints.",
+      "docs": [
+        {
+          "title": "Route 53 health checks",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q039",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to health check and failover DNS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 health checks and failover routing"
+        },
+        {
+          "id": "b",
+          "text": "Static DNS never changes"
+        },
+        {
+          "id": "c",
+          "text": "Ignore app health"
+        },
+        {
+          "id": "d",
+          "text": "No secondary Region"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Route 53 routes away from unhealthy endpoints.",
+      "docs": [
+        {
+          "title": "Route 53 health checks",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q040",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "A team must health check and failover DNS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 health checks and failover routing"
+        },
+        {
+          "id": "b",
+          "text": "Static DNS never changes"
+        },
+        {
+          "id": "c",
+          "text": "Ignore app health"
+        },
+        {
+          "id": "d",
+          "text": "No secondary Region"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Route 53 routes away from unhealthy endpoints.",
+      "docs": [
+        {
+          "title": "Route 53 health checks",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q041",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to provision infrastructure from templates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudFormation"
+        },
+        {
+          "id": "b",
+          "text": "Manual console only"
+        },
+        {
+          "id": "c",
+          "text": "Undocumented"
+        },
+        {
+          "id": "d",
+          "text": "Snowball"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFormation automates resource provisioning.",
+      "docs": [
+        {
+          "title": "CloudFormation",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q042",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to patch Windows and Linux fleets on schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Patch Manager"
+        },
+        {
+          "id": "b",
+          "text": "Never patch"
+        },
+        {
+          "id": "c",
+          "text": "Ad hoc SSH"
+        },
+        {
+          "id": "d",
+          "text": "Disable SSM agent"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patch Manager automates compliance baselines.",
+      "docs": [
+        {
+          "title": "Patch Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q043",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use desired state configuration for instances?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager State Manager"
+        },
+        {
+          "id": "b",
+          "text": "Drift forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual config"
+        },
+        {
+          "id": "d",
+          "text": "Golden AMI only no updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "State Manager applies consistent configurations.",
+      "docs": [
+        {
+          "title": "State Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q044",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to store parameters and secrets for apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Parameter Store and Secrets Manager"
+        },
+        {
+          "id": "b",
+          "text": "Hard-code in user data public"
+        },
+        {
+          "id": "c",
+          "text": "Git secrets"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Parameter Store provides hierarchical config.",
+      "docs": [
+        {
+          "title": "Parameter Store",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q045",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run commands on many instances without SSH keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Run Command"
+        },
+        {
+          "id": "b",
+          "text": "Shared SSH keys in wiki"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "0.0.0.0/0 SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Run Command executes securely via SSM agent.",
+      "docs": [
+        {
+          "title": "Run Command",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/execute-remote-commands.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q046",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to create golden AMIs with Image Builder?",
+      "options": [
+        {
+          "id": "a",
+          "text": "EC2 Image Builder"
+        },
+        {
+          "id": "b",
+          "text": "Manual one-off AMIs untracked"
+        },
+        {
+          "id": "c",
+          "text": "No scanning"
+        },
+        {
+          "id": "d",
+          "text": "Public AMIs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Image Builder pipelines produce hardened images.",
+      "docs": [
+        {
+          "title": "Image Builder",
+          "url": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q047",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deploy application stacks with Elastic Beanstalk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Elastic Beanstalk"
+        },
+        {
+          "id": "b",
+          "text": "FTP deploy"
+        },
+        {
+          "id": "c",
+          "text": "Manual jar copy prod"
+        },
+        {
+          "id": "d",
+          "text": "No health reporting"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Beanstalk manages app platform layers.",
+      "docs": [
+        {
+          "title": "Elastic Beanstalk",
+          "url": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q048",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use OpsWorks for Chef/Puppet style config (legacy patterns)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS OpsWorks"
+        },
+        {
+          "id": "b",
+          "text": "Unmanaged snowflake servers"
+        },
+        {
+          "id": "c",
+          "text": "No config management"
+        },
+        {
+          "id": "d",
+          "text": "Disable logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpsWorks automates configuration with Chef/Puppet.",
+      "docs": [
+        {
+          "title": "OpsWorks",
+          "url": "https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q049",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to provision infrastructure from templates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudFormation"
+        },
+        {
+          "id": "b",
+          "text": "Manual console only"
+        },
+        {
+          "id": "c",
+          "text": "Undocumented"
+        },
+        {
+          "id": "d",
+          "text": "Snowball"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFormation automates resource provisioning.",
+      "docs": [
+        {
+          "title": "CloudFormation",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q050",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to provision infrastructure from templates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudFormation"
+        },
+        {
+          "id": "b",
+          "text": "Manual console only"
+        },
+        {
+          "id": "c",
+          "text": "Undocumented"
+        },
+        {
+          "id": "d",
+          "text": "Snowball"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFormation automates resource provisioning.",
+      "docs": [
+        {
+          "title": "CloudFormation",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q051",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "A team must provision infrastructure from templates. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudFormation"
+        },
+        {
+          "id": "b",
+          "text": "Manual console only"
+        },
+        {
+          "id": "c",
+          "text": "Undocumented"
+        },
+        {
+          "id": "d",
+          "text": "Snowball"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFormation automates resource provisioning.",
+      "docs": [
+        {
+          "title": "CloudFormation",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q052",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to patch Windows and Linux fleets on schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Patch Manager"
+        },
+        {
+          "id": "b",
+          "text": "Never patch"
+        },
+        {
+          "id": "c",
+          "text": "Ad hoc SSH"
+        },
+        {
+          "id": "d",
+          "text": "Disable SSM agent"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patch Manager automates compliance baselines.",
+      "docs": [
+        {
+          "title": "Patch Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q053",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to patch Windows and Linux fleets on schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Patch Manager"
+        },
+        {
+          "id": "b",
+          "text": "Never patch"
+        },
+        {
+          "id": "c",
+          "text": "Ad hoc SSH"
+        },
+        {
+          "id": "d",
+          "text": "Disable SSM agent"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patch Manager automates compliance baselines.",
+      "docs": [
+        {
+          "title": "Patch Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q054",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "A team must patch Windows and Linux fleets on schedule. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Patch Manager"
+        },
+        {
+          "id": "b",
+          "text": "Never patch"
+        },
+        {
+          "id": "c",
+          "text": "Ad hoc SSH"
+        },
+        {
+          "id": "d",
+          "text": "Disable SSM agent"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patch Manager automates compliance baselines.",
+      "docs": [
+        {
+          "title": "Patch Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q055",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to use desired state configuration for instances?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager State Manager"
+        },
+        {
+          "id": "b",
+          "text": "Drift forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual config"
+        },
+        {
+          "id": "d",
+          "text": "Golden AMI only no updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "State Manager applies consistent configurations.",
+      "docs": [
+        {
+          "title": "State Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q056",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to use desired state configuration for instances?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager State Manager"
+        },
+        {
+          "id": "b",
+          "text": "Drift forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual config"
+        },
+        {
+          "id": "d",
+          "text": "Golden AMI only no updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "State Manager applies consistent configurations.",
+      "docs": [
+        {
+          "title": "State Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q057",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "A team must use desired state configuration for instances. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager State Manager"
+        },
+        {
+          "id": "b",
+          "text": "Drift forever"
+        },
+        {
+          "id": "c",
+          "text": "Manual config"
+        },
+        {
+          "id": "d",
+          "text": "Golden AMI only no updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "State Manager applies consistent configurations.",
+      "docs": [
+        {
+          "title": "State Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q058",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "Which service should you use to store parameters and secrets for apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Parameter Store and Secrets Manager"
+        },
+        {
+          "id": "b",
+          "text": "Hard-code in user data public"
+        },
+        {
+          "id": "c",
+          "text": "Git secrets"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Parameter Store provides hierarchical config.",
+      "docs": [
+        {
+          "title": "Parameter Store",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q059",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to store parameters and secrets for apps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Parameter Store and Secrets Manager"
+        },
+        {
+          "id": "b",
+          "text": "Hard-code in user data public"
+        },
+        {
+          "id": "c",
+          "text": "Git secrets"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Parameter Store provides hierarchical config.",
+      "docs": [
+        {
+          "title": "Parameter Store",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q060",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "A team must store parameters and secrets for apps. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager Parameter Store and Secrets Manager"
+        },
+        {
+          "id": "b",
+          "text": "Hard-code in user data public"
+        },
+        {
+          "id": "c",
+          "text": "Git secrets"
+        },
+        {
+          "id": "d",
+          "text": "Email passwords"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Parameter Store provides hierarchical config.",
+      "docs": [
+        {
+          "title": "Parameter Store",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q061",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to scan EC2 for vulnerabilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Inspector"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "No scanning"
+        },
+        {
+          "id": "d",
+          "text": "Disable agent"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Inspector assesses EC2 and ECR.",
+      "docs": [
+        {
+          "title": "Inspector",
+          "url": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q062",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to enforce CIS benchmarks on instances?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager compliance and Config rules"
+        },
+        {
+          "id": "b",
+          "text": "No baseline"
+        },
+        {
+          "id": "c",
+          "text": "Allow any port"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compliance reports drift from desired state.",
+      "docs": [
+        {
+          "title": "SSM compliance",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q063",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to rotate database passwords automatically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secrets Manager rotation"
+        },
+        {
+          "id": "b",
+          "text": "Static password 10 years"
+        },
+        {
+          "id": "c",
+          "text": "Wiki password"
+        },
+        {
+          "id": "d",
+          "text": "Email creds"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rotation limits credential exposure window.",
+      "docs": [
+        {
+          "title": "Secrets rotation",
+          "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q064",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to apply SCPs to prevent disabling CloudTrail?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Organizations SCP"
+        },
+        {
+          "id": "b",
+          "text": "Allow cloudtrail:StopLogging everywhere"
+        },
+        {
+          "id": "c",
+          "text": "Root daily"
+        },
+        {
+          "id": "d",
+          "text": "No org"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCPs set preventive guardrails.",
+      "docs": [
+        {
+          "title": "SCPs",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q065",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to enable GuardDuty in all member accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty organization admin account"
+        },
+        {
+          "id": "b",
+          "text": "Isolated blind accounts"
+        },
+        {
+          "id": "c",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "d",
+          "text": "Disable S3 protection"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Delegated admin centralizes threat detection.",
+      "docs": [
+        {
+          "title": "GuardDuty organizations",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_organizations.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q066",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to encrypt EBS volumes by default?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Account-level EBS encryption by default"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext volumes"
+        },
+        {
+          "id": "c",
+          "text": "Public snapshots"
+        },
+        {
+          "id": "d",
+          "text": "Disable KMS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Default encryption protects new volumes.",
+      "docs": [
+        {
+          "title": "EBS encryption",
+          "url": "https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q067",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use IAM roles instead of access keys on servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "EC2 instance profiles"
+        },
+        {
+          "id": "b",
+          "text": "Keys in user data"
+        },
+        {
+          "id": "c",
+          "text": "Keys in AMI"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Roles provide temporary credentials.",
+      "docs": [
+        {
+          "title": "Instance profiles",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q068",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to audit S3 bucket policy changes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Config rules and CloudTrail"
+        },
+        {
+          "id": "b",
+          "text": "No trail"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "Delete logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Config rules detect noncompliant buckets.",
+      "docs": [
+        {
+          "title": "Config S3 rules",
+          "url": "https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-read-prohibited.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q069",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which service should you use to scan EC2 for vulnerabilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Inspector"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "No scanning"
+        },
+        {
+          "id": "d",
+          "text": "Disable agent"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Inspector assesses EC2 and ECR.",
+      "docs": [
+        {
+          "title": "Inspector",
+          "url": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q070",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to scan EC2 for vulnerabilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Inspector"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "No scanning"
+        },
+        {
+          "id": "d",
+          "text": "Disable agent"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Inspector assesses EC2 and ECR.",
+      "docs": [
+        {
+          "title": "Inspector",
+          "url": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q071",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "A team must scan EC2 for vulnerabilities. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Inspector"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "No scanning"
+        },
+        {
+          "id": "d",
+          "text": "Disable agent"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Inspector assesses EC2 and ECR.",
+      "docs": [
+        {
+          "title": "Inspector",
+          "url": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q072",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "Which service should you use to enforce CIS benchmarks on instances?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager compliance and Config rules"
+        },
+        {
+          "id": "b",
+          "text": "No baseline"
+        },
+        {
+          "id": "c",
+          "text": "Allow any port"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compliance reports drift from desired state.",
+      "docs": [
+        {
+          "title": "SSM compliance",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q073",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to enforce CIS benchmarks on instances?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager compliance and Config rules"
+        },
+        {
+          "id": "b",
+          "text": "No baseline"
+        },
+        {
+          "id": "c",
+          "text": "Allow any port"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compliance reports drift from desired state.",
+      "docs": [
+        {
+          "title": "SSM compliance",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q074",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "A team must enforce CIS benchmarks on instances. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Systems Manager compliance and Config rules"
+        },
+        {
+          "id": "b",
+          "text": "No baseline"
+        },
+        {
+          "id": "c",
+          "text": "Allow any port"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compliance reports drift from desired state.",
+      "docs": [
+        {
+          "title": "SSM compliance",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q075",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to host private subnets for application tiers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon VPC"
+        },
+        {
+          "id": "b",
+          "text": "Public DB only"
+        },
+        {
+          "id": "c",
+          "text": "Flat network"
+        },
+        {
+          "id": "d",
+          "text": "No routing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC isolates networks in AWS.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q076",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to connect on-premises to AWS privately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Site-to-Site VPN or Direct Connect"
+        },
+        {
+          "id": "b",
+          "text": "Public RDS over internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "RDP 0.0.0.0/0"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid connectivity links data centers to VPC.",
+      "docs": [
+        {
+          "title": "Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q077",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deliver HTTPS globally with low latency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudFront with ACM certificates"
+        },
+        {
+          "id": "b",
+          "text": "Single EC2 in one AZ for world"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Self-signed expired"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFront caches at edge locations.",
+      "docs": [
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q078",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to private access to S3 without internet gateway?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gateway VPC endpoint for S3"
+        },
+        {
+          "id": "b",
+          "text": "NAT for all S3"
+        },
+        {
+          "id": "c",
+          "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "Disable endpoint policy"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Gateway endpoints keep S3 traffic private.",
+      "docs": [
+        {
+          "title": "S3 endpoints",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q079",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to balance traffic across instances in multiple AZs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Load Balancer"
+        },
+        {
+          "id": "b",
+          "text": "Round-robin DNS to changing IPs only"
+        },
+        {
+          "id": "c",
+          "text": "Single instance"
+        },
+        {
+          "id": "d",
+          "text": "No health check"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ALB operates at Layer 7 across AZs.",
+      "docs": [
+        {
+          "title": "ALB",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q080",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to resolve internal service names in VPC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Route 53 private hosted zones"
+        },
+        {
+          "id": "b",
+          "text": "Hard-coded IPs in code"
+        },
+        {
+          "id": "c",
+          "text": "/etc/hosts fleet"
+        },
+        {
+          "id": "d",
+          "text": "No DNS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Private zones provide internal DNS.",
+      "docs": [
+        {
+          "title": "Private hosted zones",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q081",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to inspect east-west traffic in VPC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Traffic mirroring or Network Firewall"
+        },
+        {
+          "id": "b",
+          "text": "No visibility"
+        },
+        {
+          "id": "c",
+          "text": "Disable flow logs"
+        },
+        {
+          "id": "d",
+          "text": "Allow all"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mirroring sends copies to security appliances.",
+      "docs": [
+        {
+          "title": "Traffic mirroring",
+          "url": "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q082",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to accelerate SaaS over internet with AWS network?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Global Accelerator"
+        },
+        {
+          "id": "b",
+          "text": "Single Region only for global users"
+        },
+        {
+          "id": "c",
+          "text": "Ignore routing"
+        },
+        {
+          "id": "d",
+          "text": "No health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global Accelerator uses AWS edge for TCP/UDP.",
+      "docs": [
+        {
+          "title": "Global Accelerator",
+          "url": "https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q083",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which service should you use to host private subnets for application tiers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon VPC"
+        },
+        {
+          "id": "b",
+          "text": "Public DB only"
+        },
+        {
+          "id": "c",
+          "text": "Flat network"
+        },
+        {
+          "id": "d",
+          "text": "No routing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC isolates networks in AWS.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q084",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to host private subnets for application tiers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon VPC"
+        },
+        {
+          "id": "b",
+          "text": "Public DB only"
+        },
+        {
+          "id": "c",
+          "text": "Flat network"
+        },
+        {
+          "id": "d",
+          "text": "No routing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC isolates networks in AWS.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q085",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "A team must host private subnets for application tiers. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon VPC"
+        },
+        {
+          "id": "b",
+          "text": "Public DB only"
+        },
+        {
+          "id": "c",
+          "text": "Flat network"
+        },
+        {
+          "id": "d",
+          "text": "No routing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC isolates networks in AWS.",
+      "docs": [
+        {
+          "title": "VPC",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q086",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which service should you use to connect on-premises to AWS privately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Site-to-Site VPN or Direct Connect"
+        },
+        {
+          "id": "b",
+          "text": "Public RDS over internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "RDP 0.0.0.0/0"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid connectivity links data centers to VPC.",
+      "docs": [
+        {
+          "title": "Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q087",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to connect on-premises to AWS privately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Site-to-Site VPN or Direct Connect"
+        },
+        {
+          "id": "b",
+          "text": "Public RDS over internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "RDP 0.0.0.0/0"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid connectivity links data centers to VPC.",
+      "docs": [
+        {
+          "title": "Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q088",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "A team must connect on-premises to AWS privately. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Site-to-Site VPN or Direct Connect"
+        },
+        {
+          "id": "b",
+          "text": "Public RDS over internet"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "RDP 0.0.0.0/0"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid connectivity links data centers to VPC.",
+      "docs": [
+        {
+          "title": "Site-to-Site VPN",
+          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q089",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "Which service should you use to deliver HTTPS globally with low latency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudFront with ACM certificates"
+        },
+        {
+          "id": "b",
+          "text": "Single EC2 in one AZ for world"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Self-signed expired"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFront caches at edge locations.",
+      "docs": [
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q090",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to deliver HTTPS globally with low latency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudFront with ACM certificates"
+        },
+        {
+          "id": "b",
+          "text": "Single EC2 in one AZ for world"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Self-signed expired"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFront caches at edge locations.",
+      "docs": [
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q091",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "A team must deliver HTTPS globally with low latency. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudFront with ACM certificates"
+        },
+        {
+          "id": "b",
+          "text": "Single EC2 in one AZ for world"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Self-signed expired"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFront caches at edge locations.",
+      "docs": [
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q092",
+      "domain": "reliability-continuity",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q093",
+      "domain": "monitoring-logging",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified CloudOps Engineer \u2013 Associate? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "AWS Systems Manager"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "Amazon CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q094",
+      "domain": "monitoring-logging",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q095",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon CloudWatch', what should you do FIRST when addressing Monitoring, Logging, Analysis, Remediation, and Performance Optimization objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon CloudWatch describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q096",
+      "domain": "monitoring-logging",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Systems Manager', what should you do FIRST when addressing Monitoring, Logging, Analysis, Remediation, and Performance Optimization objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Systems Manager describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Systems Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q097",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Backup', what should you do FIRST when addressing Reliability and Business Continuity objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Backup describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Backup",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q098",
+      "domain": "reliability-continuity",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Elastic Disaster Recovery', what should you do FIRST when addressing Reliability and Business Continuity objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Elastic Disaster Recovery describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Elastic Disaster Recovery",
+          "url": "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q099",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS CloudFormation', what should you do FIRST when addressing Deployment, Provisioning, and Automation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS CloudFormation describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS CloudFormation",
+          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q100",
+      "domain": "deployment-automation",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS OpsWorks', what should you do FIRST when addressing Deployment, Provisioning, and Automation objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS OpsWorks describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS OpsWorks",
+          "url": "https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q101",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Config', what should you do FIRST when addressing Security and Compliance objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Config describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Config",
+          "url": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q102",
+      "domain": "security-compliance",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Inspector', what should you do FIRST when addressing Security and Compliance objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Inspector describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Inspector",
+          "url": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q103",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon VPC', what should you do FIRST when addressing Networking and Content Delivery objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon VPC describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon VPC",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        }
+      ]
+    },
+    {
+      "id": "soa-q104",
+      "domain": "networking-content",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Elastic Load Balancing', what should you do FIRST when addressing Networking and Content Delivery objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Elastic Load Balancing describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Elastic Load Balancing",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    }
+  ]
+}

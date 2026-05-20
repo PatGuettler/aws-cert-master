@@ -218,6 +218,41 @@ input[type="radio"] {
   color: var(--text-muted);
 }
 
+.drawer-cert-group {
+  margin-bottom: 0.5rem;
+}
+
+.drawer-cert-group summary {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+}
+
+.drawer-cert-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.drawer-cert-group summary::before {
+  content: "▸ ";
+  color: var(--aws-orange);
+}
+
+.drawer-cert-group[open] summary::before {
+  content: "▾ ";
+}
+
+.drawer-placeholder {
+  margin: 0.35rem 0 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  border-left: 3px solid var(--border);
+}
+
 .drawer-section-exams .drawer-nested {
   margin-top: 0.25rem;
   padding: 0.5rem 0 0.5rem 0.85rem;
@@ -965,6 +1000,33 @@ footer.site-footer {
 /* Progress dashboard */
 .dashboard-header {
   margin-bottom: 1.25rem;
+}
+
+.dashboard-cert-filter,
+.data-cert-filter-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.dashboard-cert-filter-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.dashboard-cert-select,
+.data-cert-select {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
 }
 
 .dashboard-header h2 {

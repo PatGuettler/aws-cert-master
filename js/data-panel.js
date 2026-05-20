@@ -10,11 +10,17 @@ import {
 
 /**
  * @param {Object} opts
+ * @param {() => string} opts.getScopeCertId
  * @param {() => string} opts.getActiveCertId
  * @param {() => string[]} opts.getCertIds
  * @param {() => void} opts.onDataChange
  */
-export function initDataPanel({ getActiveCertId, getCertIds, onDataChange }) {
+export function initDataPanel({
+  getScopeCertId,
+  getActiveCertId,
+  getCertIds,
+  onDataChange,
+}) {
   const exportBtn = document.getElementById("btn-export-data");
   const importInput = document.getElementById("import-data-file");
   const clearHistoryBtn = document.getElementById("btn-clear-history");
@@ -22,6 +28,11 @@ export function initDataPanel({ getActiveCertId, getCertIds, onDataChange }) {
   const clearBookmarksBtn = document.getElementById("btn-clear-bookmarks");
   const clearResumeBtn = document.getElementById("btn-clear-resume");
   const clearAllBtn = document.getElementById("btn-clear-all");
+
+  function scopeLabel() {
+    const id = getScopeCertId();
+    return id || "this certification";
+  }
 
   exportBtn?.addEventListener("click", () => {
     const blob = exportAllData(getCertIds());
@@ -51,31 +62,49 @@ export function initDataPanel({ getActiveCertId, getCertIds, onDataChange }) {
   });
 
   clearHistoryBtn?.addEventListener("click", () => {
-    const id = getActiveCertId();
+    const id = getScopeCertId();
     if (!id) return;
-    if (!window.confirm(`Clear all exam history for this certification?`)) return;
+    if (
+      !window.confirm(
+        `Clear all exam history for ${scopeLabel()}?`
+      )
+    ) {
+      return;
+    }
     clearHistory(id);
     onDataChange();
   });
 
   clearWeakBtn?.addEventListener("click", () => {
-    const id = getActiveCertId();
+    const id = getScopeCertId();
     if (!id) return;
-    if (!window.confirm(`Clear weak-question stats for this certification?`)) return;
+    if (
+      !window.confirm(
+        `Clear weak-question stats for ${scopeLabel()}?`
+      )
+    ) {
+      return;
+    }
     clearWeakQuestions(id);
     onDataChange();
   });
 
   clearBookmarksBtn?.addEventListener("click", () => {
-    const id = getActiveCertId();
+    const id = getScopeCertId();
     if (!id) return;
-    if (!window.confirm(`Clear all bookmarked questions for this certification?`)) return;
+    if (
+      !window.confirm(
+        `Clear all bookmarked questions for ${scopeLabel()}?`
+      )
+    ) {
+      return;
+    }
     clearBookmarks(id);
     onDataChange();
   });
 
   clearResumeBtn?.addEventListener("click", () => {
-    const id = getActiveCertId();
+    const id = getScopeCertId();
     if (!id) return;
     clearResumeState(id);
     window.alert("Saved in-progress exam cleared.");

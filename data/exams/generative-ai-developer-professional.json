@@ -1,0 +1,3290 @@
+{
+  "id": "generative-ai-developer-professional",
+  "name": "AWS Certified Generative AI Developer \u2013 Professional",
+  "code": "AIP-C01",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 75,
+    "scoredQuestions": 60,
+    "timeLimitMinutes": 180,
+    "passingScore": 750,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "foundation-model-integration",
+      "name": "Domain 1: Foundation Model Integration and Architecture",
+      "weight": 28,
+      "resources": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        },
+        {
+          "title": "Amazon Bedrock Runtime API",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "rag-knowledge",
+      "name": "Domain 2: RAG and Knowledge Integration",
+      "weight": 24,
+      "resources": [
+        {
+          "title": "Knowledge Bases for Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        },
+        {
+          "title": "Amazon OpenSearch Serverless",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html"
+        }
+      ]
+    },
+    {
+      "id": "agents-orchestration",
+      "name": "Domain 3: Agents, Tools, and Orchestration",
+      "weight": 24,
+      "resources": [
+        {
+          "title": "Amazon Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        },
+        {
+          "title": "Amazon Step Functions",
+          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "security-governance-genai",
+      "name": "Domain 4: Security, Testing, and Governance for GenAI Applications",
+      "weight": 24,
+      "resources": [
+        {
+          "title": "Amazon Bedrock Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        },
+        {
+          "title": "IAM for Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "aip-q001",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to invoke multiple FMs through unified APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Self-host all models on laptop"
+        },
+        {
+          "id": "c",
+          "text": "FTP prompts"
+        },
+        {
+          "id": "d",
+          "text": "Public API keys in repo"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock abstracts model providers.",
+      "docs": [
+        {
+          "title": "Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q002",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to choose model by latency vs quality tradeoff?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock model IDs and inference profiles"
+        },
+        {
+          "id": "b",
+          "text": "Always largest model"
+        },
+        {
+          "id": "c",
+          "text": "Ignore cost"
+        },
+        {
+          "id": "d",
+          "text": "No evaluation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Different models optimize for speed, cost, or capability.",
+      "docs": [
+        {
+          "title": "Model IDs",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q003",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to implement streaming responses in chat UI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock ConverseStream API"
+        },
+        {
+          "id": "b",
+          "text": "Poll S3 for full response only"
+        },
+        {
+          "id": "c",
+          "text": "Block UI until done"
+        },
+        {
+          "id": "d",
+          "text": "Disable TLS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming improves perceived latency.",
+      "docs": [
+        {
+          "title": "ConverseStream",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q004",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to provision throughput for steady high TPS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provisioned Throughput on Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "On-demand only for constant flood"
+        },
+        {
+          "id": "c",
+          "text": "Ignore quotas"
+        },
+        {
+          "id": "d",
+          "text": "No monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Provisioned throughput reserves model capacity.",
+      "docs": [
+        {
+          "title": "Provisioned throughput",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q005",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to fine-tune models with proprietary data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock model customization"
+        },
+        {
+          "id": "b",
+          "text": "Send secrets in training file public"
+        },
+        {
+          "id": "c",
+          "text": "No holdout set"
+        },
+        {
+          "id": "d",
+          "text": "Ignore license"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Customization adapts FMs to domain tasks.",
+      "docs": [
+        {
+          "title": "Customization",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q006",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deploy custom model weights securely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Imported models in Bedrock or SageMaker endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Public S3 model bucket"
+        },
+        {
+          "id": "c",
+          "text": "No encryption"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin key"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Protect weights as intellectual property.",
+      "docs": [
+        {
+          "title": "Imported models",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q007",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to abstract model vendor behind application interface?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adapter layer with model routing"
+        },
+        {
+          "id": "b",
+          "text": "Hard-code one vendor API everywhere"
+        },
+        {
+          "id": "c",
+          "text": "No fallback"
+        },
+        {
+          "id": "d",
+          "text": "Ignore timeouts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Abstraction enables swapping models.",
+      "docs": [
+        {
+          "title": "GenAI patterns",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q008",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to log token usage for cost governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudWatch metrics and cost allocation tags"
+        },
+        {
+          "id": "b",
+          "text": "No metering"
+        },
+        {
+          "id": "c",
+          "text": "Ignore budgets"
+        },
+        {
+          "id": "d",
+          "text": "Unlimited prod tests"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Token usage drives GenAI cost.",
+      "docs": [
+        {
+          "title": "Bedrock monitoring",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q009",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to invoke multiple FMs through unified APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Self-host all models on laptop"
+        },
+        {
+          "id": "c",
+          "text": "FTP prompts"
+        },
+        {
+          "id": "d",
+          "text": "Public API keys in repo"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock abstracts model providers.",
+      "docs": [
+        {
+          "title": "Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q010",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to invoke multiple FMs through unified APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Self-host all models on laptop"
+        },
+        {
+          "id": "c",
+          "text": "FTP prompts"
+        },
+        {
+          "id": "d",
+          "text": "Public API keys in repo"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock abstracts model providers.",
+      "docs": [
+        {
+          "title": "Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q011",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "A team must invoke multiple FMs through unified APIs. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Self-host all models on laptop"
+        },
+        {
+          "id": "c",
+          "text": "FTP prompts"
+        },
+        {
+          "id": "d",
+          "text": "Public API keys in repo"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Bedrock abstracts model providers.",
+      "docs": [
+        {
+          "title": "Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q012",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to choose model by latency vs quality tradeoff?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock model IDs and inference profiles"
+        },
+        {
+          "id": "b",
+          "text": "Always largest model"
+        },
+        {
+          "id": "c",
+          "text": "Ignore cost"
+        },
+        {
+          "id": "d",
+          "text": "No evaluation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Different models optimize for speed, cost, or capability.",
+      "docs": [
+        {
+          "title": "Model IDs",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q013",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to choose model by latency vs quality tradeoff?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock model IDs and inference profiles"
+        },
+        {
+          "id": "b",
+          "text": "Always largest model"
+        },
+        {
+          "id": "c",
+          "text": "Ignore cost"
+        },
+        {
+          "id": "d",
+          "text": "No evaluation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Different models optimize for speed, cost, or capability.",
+      "docs": [
+        {
+          "title": "Model IDs",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q014",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "A team must choose model by latency vs quality tradeoff. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock model IDs and inference profiles"
+        },
+        {
+          "id": "b",
+          "text": "Always largest model"
+        },
+        {
+          "id": "c",
+          "text": "Ignore cost"
+        },
+        {
+          "id": "d",
+          "text": "No evaluation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Different models optimize for speed, cost, or capability.",
+      "docs": [
+        {
+          "title": "Model IDs",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q015",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to implement streaming responses in chat UI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock ConverseStream API"
+        },
+        {
+          "id": "b",
+          "text": "Poll S3 for full response only"
+        },
+        {
+          "id": "c",
+          "text": "Block UI until done"
+        },
+        {
+          "id": "d",
+          "text": "Disable TLS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming improves perceived latency.",
+      "docs": [
+        {
+          "title": "ConverseStream",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q016",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to implement streaming responses in chat UI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock ConverseStream API"
+        },
+        {
+          "id": "b",
+          "text": "Poll S3 for full response only"
+        },
+        {
+          "id": "c",
+          "text": "Block UI until done"
+        },
+        {
+          "id": "d",
+          "text": "Disable TLS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming improves perceived latency.",
+      "docs": [
+        {
+          "title": "ConverseStream",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q017",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "A team must implement streaming responses in chat UI. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock ConverseStream API"
+        },
+        {
+          "id": "b",
+          "text": "Poll S3 for full response only"
+        },
+        {
+          "id": "c",
+          "text": "Block UI until done"
+        },
+        {
+          "id": "d",
+          "text": "Disable TLS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming improves perceived latency.",
+      "docs": [
+        {
+          "title": "ConverseStream",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q018",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to provision throughput for steady high TPS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provisioned Throughput on Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "On-demand only for constant flood"
+        },
+        {
+          "id": "c",
+          "text": "Ignore quotas"
+        },
+        {
+          "id": "d",
+          "text": "No monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Provisioned throughput reserves model capacity.",
+      "docs": [
+        {
+          "title": "Provisioned throughput",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q019",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to provision throughput for steady high TPS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provisioned Throughput on Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "On-demand only for constant flood"
+        },
+        {
+          "id": "c",
+          "text": "Ignore quotas"
+        },
+        {
+          "id": "d",
+          "text": "No monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Provisioned throughput reserves model capacity.",
+      "docs": [
+        {
+          "title": "Provisioned throughput",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q020",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "A team must provision throughput for steady high TPS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provisioned Throughput on Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "On-demand only for constant flood"
+        },
+        {
+          "id": "c",
+          "text": "Ignore quotas"
+        },
+        {
+          "id": "d",
+          "text": "No monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Provisioned throughput reserves model capacity.",
+      "docs": [
+        {
+          "title": "Provisioned throughput",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q021",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to fine-tune models with proprietary data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock model customization"
+        },
+        {
+          "id": "b",
+          "text": "Send secrets in training file public"
+        },
+        {
+          "id": "c",
+          "text": "No holdout set"
+        },
+        {
+          "id": "d",
+          "text": "Ignore license"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Customization adapts FMs to domain tasks.",
+      "docs": [
+        {
+          "title": "Customization",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q022",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to fine-tune models with proprietary data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock model customization"
+        },
+        {
+          "id": "b",
+          "text": "Send secrets in training file public"
+        },
+        {
+          "id": "c",
+          "text": "No holdout set"
+        },
+        {
+          "id": "d",
+          "text": "Ignore license"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Customization adapts FMs to domain tasks.",
+      "docs": [
+        {
+          "title": "Customization",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q023",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "A team must fine-tune models with proprietary data. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock model customization"
+        },
+        {
+          "id": "b",
+          "text": "Send secrets in training file public"
+        },
+        {
+          "id": "c",
+          "text": "No holdout set"
+        },
+        {
+          "id": "d",
+          "text": "Ignore license"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Customization adapts FMs to domain tasks.",
+      "docs": [
+        {
+          "title": "Customization",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q024",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to ingest PDFs into a knowledge base?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge Bases for Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Paste into prompt only"
+        },
+        {
+          "id": "c",
+          "text": "Public index"
+        },
+        {
+          "id": "d",
+          "text": "No chunking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Knowledge bases handle ingestion and chunking.",
+      "docs": [
+        {
+          "title": "Knowledge Bases",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q025",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to choose chunking strategy for technical docs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixed-size vs hierarchical chunking in KB"
+        },
+        {
+          "id": "b",
+          "text": "One giant chunk"
+        },
+        {
+          "id": "c",
+          "text": "No overlap"
+        },
+        {
+          "id": "d",
+          "text": "Ignore metadata"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Chunk size affects retrieval precision.",
+      "docs": [
+        {
+          "title": "KB chunking",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-chunking.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q026",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to store embeddings in vector database?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
+        },
+        {
+          "id": "b",
+          "text": "grep S3 for semantics"
+        },
+        {
+          "id": "c",
+          "text": "CSV vectors in email"
+        },
+        {
+          "id": "d",
+          "text": "No index"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vector DBs enable similarity search.",
+      "docs": [
+        {
+          "title": "OpenSearch vectors",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/knn.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q027",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to filter retrieval by tenant metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Metadata filters on KB retrieval"
+        },
+        {
+          "id": "b",
+          "text": "Return all tenants data"
+        },
+        {
+          "id": "c",
+          "text": "No ACL"
+        },
+        {
+          "id": "d",
+          "text": "Shared index no tags"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Metadata filters enforce multi-tenant isolation.",
+      "docs": [
+        {
+          "title": "KB retrieval",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-retrieve.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q028",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to refresh stale documents in RAG index?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sync jobs and S3 event-driven ingestion"
+        },
+        {
+          "id": "b",
+          "text": "Never update index"
+        },
+        {
+          "id": "c",
+          "text": "Manual reupload chaos"
+        },
+        {
+          "id": "d",
+          "text": "Ignore versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Pipelines keep knowledge current.",
+      "docs": [
+        {
+          "title": "KB data source sync",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-sync.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q029",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to evaluate retrieval precision/recall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAG evaluation metrics and human review"
+        },
+        {
+          "id": "b",
+          "text": "Assume perfect retrieval"
+        },
+        {
+          "id": "c",
+          "text": "No test set"
+        },
+        {
+          "id": "d",
+          "text": "Only demo prompts"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Evaluation prevents garbage-in for generation.",
+      "docs": [
+        {
+          "title": "RAG evaluation",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-evaluation.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q030",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to hybrid search keyword plus vector?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OpenSearch hybrid query with KB"
+        },
+        {
+          "id": "b",
+          "text": "Vector only for SKU codes"
+        },
+        {
+          "id": "c",
+          "text": "Keyword only for concepts"
+        },
+        {
+          "id": "d",
+          "text": "No tuning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hybrid search improves recall on mixed queries.",
+      "docs": [
+        {
+          "title": "Hybrid search",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/knn.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q031",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to cite sources in answers to users?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retrieval citations from KB responses"
+        },
+        {
+          "id": "b",
+          "text": "Hallucinate sources"
+        },
+        {
+          "id": "c",
+          "text": "Hide docs"
+        },
+        {
+          "id": "d",
+          "text": "No attribution"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Citations improve trust and auditability.",
+      "docs": [
+        {
+          "title": "KB citations",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q032",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which service should you use to ingest PDFs into a knowledge base?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge Bases for Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Paste into prompt only"
+        },
+        {
+          "id": "c",
+          "text": "Public index"
+        },
+        {
+          "id": "d",
+          "text": "No chunking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Knowledge bases handle ingestion and chunking.",
+      "docs": [
+        {
+          "title": "Knowledge Bases",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q033",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to ingest PDFs into a knowledge base?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge Bases for Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Paste into prompt only"
+        },
+        {
+          "id": "c",
+          "text": "Public index"
+        },
+        {
+          "id": "d",
+          "text": "No chunking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Knowledge bases handle ingestion and chunking.",
+      "docs": [
+        {
+          "title": "Knowledge Bases",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q034",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "A team must ingest PDFs into a knowledge base. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge Bases for Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Paste into prompt only"
+        },
+        {
+          "id": "c",
+          "text": "Public index"
+        },
+        {
+          "id": "d",
+          "text": "No chunking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Knowledge bases handle ingestion and chunking.",
+      "docs": [
+        {
+          "title": "Knowledge Bases",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q035",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which service should you use to choose chunking strategy for technical docs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixed-size vs hierarchical chunking in KB"
+        },
+        {
+          "id": "b",
+          "text": "One giant chunk"
+        },
+        {
+          "id": "c",
+          "text": "No overlap"
+        },
+        {
+          "id": "d",
+          "text": "Ignore metadata"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Chunk size affects retrieval precision.",
+      "docs": [
+        {
+          "title": "KB chunking",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-chunking.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q036",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to choose chunking strategy for technical docs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixed-size vs hierarchical chunking in KB"
+        },
+        {
+          "id": "b",
+          "text": "One giant chunk"
+        },
+        {
+          "id": "c",
+          "text": "No overlap"
+        },
+        {
+          "id": "d",
+          "text": "Ignore metadata"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Chunk size affects retrieval precision.",
+      "docs": [
+        {
+          "title": "KB chunking",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-chunking.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q037",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "A team must choose chunking strategy for technical docs. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixed-size vs hierarchical chunking in KB"
+        },
+        {
+          "id": "b",
+          "text": "One giant chunk"
+        },
+        {
+          "id": "c",
+          "text": "No overlap"
+        },
+        {
+          "id": "d",
+          "text": "Ignore metadata"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Chunk size affects retrieval precision.",
+      "docs": [
+        {
+          "title": "KB chunking",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-chunking.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q038",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which service should you use to store embeddings in vector database?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
+        },
+        {
+          "id": "b",
+          "text": "grep S3 for semantics"
+        },
+        {
+          "id": "c",
+          "text": "CSV vectors in email"
+        },
+        {
+          "id": "d",
+          "text": "No index"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vector DBs enable similarity search.",
+      "docs": [
+        {
+          "title": "OpenSearch vectors",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/knn.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q039",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to store embeddings in vector database?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
+        },
+        {
+          "id": "b",
+          "text": "grep S3 for semantics"
+        },
+        {
+          "id": "c",
+          "text": "CSV vectors in email"
+        },
+        {
+          "id": "d",
+          "text": "No index"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vector DBs enable similarity search.",
+      "docs": [
+        {
+          "title": "OpenSearch vectors",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/knn.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q040",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "A team must store embeddings in vector database. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
+        },
+        {
+          "id": "b",
+          "text": "grep S3 for semantics"
+        },
+        {
+          "id": "c",
+          "text": "CSV vectors in email"
+        },
+        {
+          "id": "d",
+          "text": "No index"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vector DBs enable similarity search.",
+      "docs": [
+        {
+          "title": "OpenSearch vectors",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/knn.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q041",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "Which service should you use to filter retrieval by tenant metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Metadata filters on KB retrieval"
+        },
+        {
+          "id": "b",
+          "text": "Return all tenants data"
+        },
+        {
+          "id": "c",
+          "text": "No ACL"
+        },
+        {
+          "id": "d",
+          "text": "Shared index no tags"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Metadata filters enforce multi-tenant isolation.",
+      "docs": [
+        {
+          "title": "KB retrieval",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-retrieve.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q042",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to filter retrieval by tenant metadata?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Metadata filters on KB retrieval"
+        },
+        {
+          "id": "b",
+          "text": "Return all tenants data"
+        },
+        {
+          "id": "c",
+          "text": "No ACL"
+        },
+        {
+          "id": "d",
+          "text": "Shared index no tags"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Metadata filters enforce multi-tenant isolation.",
+      "docs": [
+        {
+          "title": "KB retrieval",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-retrieve.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q043",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "A team must filter retrieval by tenant metadata. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Metadata filters on KB retrieval"
+        },
+        {
+          "id": "b",
+          "text": "Return all tenants data"
+        },
+        {
+          "id": "c",
+          "text": "No ACL"
+        },
+        {
+          "id": "d",
+          "text": "Shared index no tags"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Metadata filters enforce multi-tenant isolation.",
+      "docs": [
+        {
+          "title": "KB retrieval",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-retrieve.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q044",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to build tool-using agents that call APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Agents with action groups"
+        },
+        {
+          "id": "b",
+          "text": "Prompt-only no tools"
+        },
+        {
+          "id": "c",
+          "text": "Hard-code API keys client"
+        },
+        {
+          "id": "d",
+          "text": "Ignore auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Agents plan and invoke tools.",
+      "docs": [
+        {
+          "title": "Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q045",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to orchestrate multi-step GenAI workflows?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Step Functions calling Bedrock and Lambda"
+        },
+        {
+          "id": "b",
+          "text": "One Lambda 15 min max chain"
+        },
+        {
+          "id": "c",
+          "text": "No error handling"
+        },
+        {
+          "id": "d",
+          "text": "Ignore idempotency"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Step Functions manage long workflows.",
+      "docs": [
+        {
+          "title": "Step Functions",
+          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q046",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to validate tool inputs to prevent injection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Input schemas and guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Pass raw user SQL to DB"
+        },
+        {
+          "id": "c",
+          "text": "No validation"
+        },
+        {
+          "id": "d",
+          "text": "Disable auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Validate and sanitize tool parameters.",
+      "docs": [
+        {
+          "title": "Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q047",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use OpenAPI schemas for agent actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Action groups with OpenAPI"
+        },
+        {
+          "id": "b",
+          "text": "Undocumented REST"
+        },
+        {
+          "id": "c",
+          "text": "Wildcard IAM"
+        },
+        {
+          "id": "d",
+          "text": "HTTP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpenAPI defines agent-callable operations.",
+      "docs": [
+        {
+          "title": "Action groups",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q048",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to handle long-running agent tasks asynchronously?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SQS + Lambda workers with status API"
+        },
+        {
+          "id": "b",
+          "text": "Sync API 15 min block"
+        },
+        {
+          "id": "c",
+          "text": "No timeout"
+        },
+        {
+          "id": "d",
+          "text": "Lose state on crash"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Async patterns improve reliability.",
+      "docs": [
+        {
+          "title": "Lambda async",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q049",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to combine agents with human approval?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Step Functions .waitForTaskToken"
+        },
+        {
+          "id": "b",
+          "text": "Auto-execute financial trades"
+        },
+        {
+          "id": "c",
+          "text": "No approval"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SOX"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Human approval gates high-risk actions.",
+      "docs": [
+        {
+          "title": "Task tokens",
+          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token"
+        }
+      ]
+    },
+    {
+      "id": "aip-q050",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to trace agent reasoning for debug?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock trace and CloudWatch logs"
+        },
+        {
+          "id": "b",
+          "text": "Black box only"
+        },
+        {
+          "id": "c",
+          "text": "Log secrets"
+        },
+        {
+          "id": "d",
+          "text": "Disable tracing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Traces help debug agent loops.",
+      "docs": [
+        {
+          "title": "Agent trace",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/trace-events.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q051",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to version agent instructions and tools?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agent aliases and versions"
+        },
+        {
+          "id": "b",
+          "text": "Edit prod agent live only"
+        },
+        {
+          "id": "c",
+          "text": "No rollback"
+        },
+        {
+          "id": "d",
+          "text": "Shared draft prod"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Versioning supports safe releases.",
+      "docs": [
+        {
+          "title": "Agent versions",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-deploy.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q052",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to build tool-using agents that call APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Agents with action groups"
+        },
+        {
+          "id": "b",
+          "text": "Prompt-only no tools"
+        },
+        {
+          "id": "c",
+          "text": "Hard-code API keys client"
+        },
+        {
+          "id": "d",
+          "text": "Ignore auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Agents plan and invoke tools.",
+      "docs": [
+        {
+          "title": "Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q053",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to build tool-using agents that call APIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Agents with action groups"
+        },
+        {
+          "id": "b",
+          "text": "Prompt-only no tools"
+        },
+        {
+          "id": "c",
+          "text": "Hard-code API keys client"
+        },
+        {
+          "id": "d",
+          "text": "Ignore auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Agents plan and invoke tools.",
+      "docs": [
+        {
+          "title": "Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q054",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "A team must build tool-using agents that call APIs. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Agents with action groups"
+        },
+        {
+          "id": "b",
+          "text": "Prompt-only no tools"
+        },
+        {
+          "id": "c",
+          "text": "Hard-code API keys client"
+        },
+        {
+          "id": "d",
+          "text": "Ignore auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Agents plan and invoke tools.",
+      "docs": [
+        {
+          "title": "Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q055",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to orchestrate multi-step GenAI workflows?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Step Functions calling Bedrock and Lambda"
+        },
+        {
+          "id": "b",
+          "text": "One Lambda 15 min max chain"
+        },
+        {
+          "id": "c",
+          "text": "No error handling"
+        },
+        {
+          "id": "d",
+          "text": "Ignore idempotency"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Step Functions manage long workflows.",
+      "docs": [
+        {
+          "title": "Step Functions",
+          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q056",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to orchestrate multi-step GenAI workflows?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Step Functions calling Bedrock and Lambda"
+        },
+        {
+          "id": "b",
+          "text": "One Lambda 15 min max chain"
+        },
+        {
+          "id": "c",
+          "text": "No error handling"
+        },
+        {
+          "id": "d",
+          "text": "Ignore idempotency"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Step Functions manage long workflows.",
+      "docs": [
+        {
+          "title": "Step Functions",
+          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q057",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "A team must orchestrate multi-step GenAI workflows. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Step Functions calling Bedrock and Lambda"
+        },
+        {
+          "id": "b",
+          "text": "One Lambda 15 min max chain"
+        },
+        {
+          "id": "c",
+          "text": "No error handling"
+        },
+        {
+          "id": "d",
+          "text": "Ignore idempotency"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Step Functions manage long workflows.",
+      "docs": [
+        {
+          "title": "Step Functions",
+          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q058",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to validate tool inputs to prevent injection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Input schemas and guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Pass raw user SQL to DB"
+        },
+        {
+          "id": "c",
+          "text": "No validation"
+        },
+        {
+          "id": "d",
+          "text": "Disable auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Validate and sanitize tool parameters.",
+      "docs": [
+        {
+          "title": "Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q059",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to validate tool inputs to prevent injection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Input schemas and guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Pass raw user SQL to DB"
+        },
+        {
+          "id": "c",
+          "text": "No validation"
+        },
+        {
+          "id": "d",
+          "text": "Disable auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Validate and sanitize tool parameters.",
+      "docs": [
+        {
+          "title": "Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q060",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "A team must validate tool inputs to prevent injection. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Input schemas and guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Pass raw user SQL to DB"
+        },
+        {
+          "id": "c",
+          "text": "No validation"
+        },
+        {
+          "id": "d",
+          "text": "Disable auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Validate and sanitize tool parameters.",
+      "docs": [
+        {
+          "title": "Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q061",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "Which service should you use to use OpenAPI schemas for agent actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Action groups with OpenAPI"
+        },
+        {
+          "id": "b",
+          "text": "Undocumented REST"
+        },
+        {
+          "id": "c",
+          "text": "Wildcard IAM"
+        },
+        {
+          "id": "d",
+          "text": "HTTP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpenAPI defines agent-callable operations.",
+      "docs": [
+        {
+          "title": "Action groups",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q062",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to use OpenAPI schemas for agent actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Action groups with OpenAPI"
+        },
+        {
+          "id": "b",
+          "text": "Undocumented REST"
+        },
+        {
+          "id": "c",
+          "text": "Wildcard IAM"
+        },
+        {
+          "id": "d",
+          "text": "HTTP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpenAPI defines agent-callable operations.",
+      "docs": [
+        {
+          "title": "Action groups",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q063",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "A team must use OpenAPI schemas for agent actions. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Action groups with OpenAPI"
+        },
+        {
+          "id": "b",
+          "text": "Undocumented REST"
+        },
+        {
+          "id": "c",
+          "text": "Wildcard IAM"
+        },
+        {
+          "id": "d",
+          "text": "HTTP only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "OpenAPI defines agent-callable operations.",
+      "docs": [
+        {
+          "title": "Action groups",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q064",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to block harmful prompts and responses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Allow any content"
+        },
+        {
+          "id": "c",
+          "text": "Log PII publicly"
+        },
+        {
+          "id": "d",
+          "text": "Disable filters"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Guardrails enforce content policies.",
+      "docs": [
+        {
+          "title": "Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q065",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to red-team GenAI applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structured adversarial testing"
+        },
+        {
+          "id": "b",
+          "text": "Ship without security review"
+        },
+        {
+          "id": "c",
+          "text": "Ignore OWASP LLM Top 10"
+        },
+        {
+          "id": "d",
+          "text": "Prod data in prompts logged"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Red teaming finds jailbreaks and leaks.",
+      "docs": [
+        {
+          "title": "GenAI security",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q066",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to apply least privilege to InvokeModel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM policies scoped to model ARNs"
+        },
+        {
+          "id": "b",
+          "text": "bedrock:* for all users"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous invoke"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Scope permissions to required models only.",
+      "docs": [
+        {
+          "title": "Bedrock IAM",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q067",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to encrypt prompts/responses at rest in logs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "KMS for CloudWatch Logs and S3"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext sensitive logs"
+        },
+        {
+          "id": "c",
+          "text": "Public log bucket"
+        },
+        {
+          "id": "d",
+          "text": "No retention limits"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Encryption protects logged interactions.",
+      "docs": [
+        {
+          "title": "KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q068",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to prevent training data leakage in prompts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Data masking and policy on PII"
+        },
+        {
+          "id": "b",
+          "text": "Paste customer records in prompts"
+        },
+        {
+          "id": "c",
+          "text": "Share logs externally"
+        },
+        {
+          "id": "d",
+          "text": "No DLP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Minimize sensitive data in prompts.",
+      "docs": [
+        {
+          "title": "Responsible AI",
+          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
+        }
+      ]
+    },
+    {
+      "id": "aip-q069",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to audit model invocations across accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudTrail data events for Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "No trail"
+        },
+        {
+          "id": "c",
+          "text": "Disable logging"
+        },
+        {
+          "id": "d",
+          "text": "Shared keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudTrail supports governance.",
+      "docs": [
+        {
+          "title": "CloudTrail",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q070",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to test regression when changing prompts/models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automated evaluation datasets in pipeline"
+        },
+        {
+          "id": "b",
+          "text": "Change prod prompt Friday"
+        },
+        {
+          "id": "c",
+          "text": "No metrics"
+        },
+        {
+          "id": "d",
+          "text": "Ignore quality drop"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CI evaluation catches regressions.",
+      "docs": [
+        {
+          "title": "Model evaluation",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q071",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to meet residency requirements for inference?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedrock Regions and VPC endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Cross-Region invoke violating policy"
+        },
+        {
+          "id": "c",
+          "text": "Public internet only"
+        },
+        {
+          "id": "d",
+          "text": "Ignore data map"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Choose Regions and endpoints per compliance.",
+      "docs": [
+        {
+          "title": "Bedrock endpoints",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/vpc-interface-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q072",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which service should you use to block harmful prompts and responses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Allow any content"
+        },
+        {
+          "id": "c",
+          "text": "Log PII publicly"
+        },
+        {
+          "id": "d",
+          "text": "Disable filters"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Guardrails enforce content policies.",
+      "docs": [
+        {
+          "title": "Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q073",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to block harmful prompts and responses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Allow any content"
+        },
+        {
+          "id": "c",
+          "text": "Log PII publicly"
+        },
+        {
+          "id": "d",
+          "text": "Disable filters"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Guardrails enforce content policies.",
+      "docs": [
+        {
+          "title": "Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q074",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "A team must block harmful prompts and responses. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock Guardrails"
+        },
+        {
+          "id": "b",
+          "text": "Allow any content"
+        },
+        {
+          "id": "c",
+          "text": "Log PII publicly"
+        },
+        {
+          "id": "d",
+          "text": "Disable filters"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Guardrails enforce content policies.",
+      "docs": [
+        {
+          "title": "Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q075",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which service should you use to red-team GenAI applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structured adversarial testing"
+        },
+        {
+          "id": "b",
+          "text": "Ship without security review"
+        },
+        {
+          "id": "c",
+          "text": "Ignore OWASP LLM Top 10"
+        },
+        {
+          "id": "d",
+          "text": "Prod data in prompts logged"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Red teaming finds jailbreaks and leaks.",
+      "docs": [
+        {
+          "title": "GenAI security",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q076",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to red-team GenAI applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structured adversarial testing"
+        },
+        {
+          "id": "b",
+          "text": "Ship without security review"
+        },
+        {
+          "id": "c",
+          "text": "Ignore OWASP LLM Top 10"
+        },
+        {
+          "id": "d",
+          "text": "Prod data in prompts logged"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Red teaming finds jailbreaks and leaks.",
+      "docs": [
+        {
+          "title": "GenAI security",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q077",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "A team must red-team GenAI applications. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structured adversarial testing"
+        },
+        {
+          "id": "b",
+          "text": "Ship without security review"
+        },
+        {
+          "id": "c",
+          "text": "Ignore OWASP LLM Top 10"
+        },
+        {
+          "id": "d",
+          "text": "Prod data in prompts logged"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Red teaming finds jailbreaks and leaks.",
+      "docs": [
+        {
+          "title": "GenAI security",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-ai-nlp-security/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q078",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which service should you use to apply least privilege to InvokeModel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM policies scoped to model ARNs"
+        },
+        {
+          "id": "b",
+          "text": "bedrock:* for all users"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous invoke"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Scope permissions to required models only.",
+      "docs": [
+        {
+          "title": "Bedrock IAM",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q079",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to apply least privilege to InvokeModel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM policies scoped to model ARNs"
+        },
+        {
+          "id": "b",
+          "text": "bedrock:* for all users"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous invoke"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Scope permissions to required models only.",
+      "docs": [
+        {
+          "title": "Bedrock IAM",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q080",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "A team must apply least privilege to InvokeModel. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM policies scoped to model ARNs"
+        },
+        {
+          "id": "b",
+          "text": "bedrock:* for all users"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous invoke"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Scope permissions to required models only.",
+      "docs": [
+        {
+          "title": "Bedrock IAM",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q081",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "Which service should you use to encrypt prompts/responses at rest in logs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "KMS for CloudWatch Logs and S3"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext sensitive logs"
+        },
+        {
+          "id": "c",
+          "text": "Public log bucket"
+        },
+        {
+          "id": "d",
+          "text": "No retention limits"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Encryption protects logged interactions.",
+      "docs": [
+        {
+          "title": "KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q082",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to encrypt prompts/responses at rest in logs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "KMS for CloudWatch Logs and S3"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext sensitive logs"
+        },
+        {
+          "id": "c",
+          "text": "Public log bucket"
+        },
+        {
+          "id": "d",
+          "text": "No retention limits"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Encryption protects logged interactions.",
+      "docs": [
+        {
+          "title": "KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q083",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "A team must encrypt prompts/responses at rest in logs. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "KMS for CloudWatch Logs and S3"
+        },
+        {
+          "id": "b",
+          "text": "Plaintext sensitive logs"
+        },
+        {
+          "id": "c",
+          "text": "Public log bucket"
+        },
+        {
+          "id": "d",
+          "text": "No retention limits"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Encryption protects logged interactions.",
+      "docs": [
+        {
+          "title": "KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q084",
+      "domain": "foundation-model-integration",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q085",
+      "domain": "foundation-model-integration",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Generative AI Developer \u2013 Professional? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Bedrock"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Bedrock Runtime API"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q086",
+      "domain": "rag-knowledge",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q087",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Bedrock', what should you do FIRST when addressing Foundation Model Integration and Architecture objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q088",
+      "domain": "foundation-model-integration",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Bedrock Runtime API', what should you do FIRST when addressing Foundation Model Integration and Architecture objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Bedrock Runtime API describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock Runtime API",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q089",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Knowledge Bases for Amazon Bedrock', what should you do FIRST when addressing RAG and Knowledge Integration objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Knowledge Bases for Amazon Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Knowledge Bases for Amazon Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q090",
+      "domain": "rag-knowledge",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon OpenSearch Serverless', what should you do FIRST when addressing RAG and Knowledge Integration objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon OpenSearch Serverless describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon OpenSearch Serverless",
+          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q091",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Bedrock Agents', what should you do FIRST when addressing Agents, Tools, and Orchestration objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Bedrock Agents describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock Agents",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q092",
+      "domain": "agents-orchestration",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Step Functions', what should you do FIRST when addressing Agents, Tools, and Orchestration objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Step Functions describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Step Functions",
+          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q093",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Bedrock Guardrails', what should you do FIRST when addressing Security, Testing, and Governance for GenAI Applications objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Bedrock Guardrails describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Bedrock Guardrails",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+        }
+      ]
+    },
+    {
+      "id": "aip-q094",
+      "domain": "security-governance-genai",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'IAM for Bedrock', what should you do FIRST when addressing Security, Testing, and Governance for GenAI Applications objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as IAM for Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "IAM for Bedrock",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+        }
+      ]
+    }
+  ]
+}

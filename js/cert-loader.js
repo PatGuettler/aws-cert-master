@@ -3,6 +3,7 @@
  * @property {string} id
  * @property {string} name
  * @property {string} code
+ * @property {string} [vendor]
  * @property {string} dataFile
  * @property {number} [questionCount]
  */

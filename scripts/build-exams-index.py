@@ -52,6 +52,7 @@ def build_index() -> dict:
             "id": data["id"],
             "name": data["name"],
             "code": data.get("code", ""),
+            "vendor": data.get("vendor", "aws"),
             "dataFile": f"data/exams/{path.name}",
             "questionCount": len(data["questions"]),
         })

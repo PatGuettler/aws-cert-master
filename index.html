@@ -48,14 +48,20 @@
         </button>
       </nav>
       <section class="drawer-section drawer-section-exams">
-        <h3>Exams</h3>
-        <div class="drawer-nested" aria-label="Available practice exams">
-          <ul id="exam-list" class="cert-list exam-list"></ul>
-          <p id="exam-list-empty" class="exam-list-empty hidden">
-            No exams in <code>data/exams/</code>. Add a JSON file and run
-            <code>python3 scripts/build-exams-index.py</code>.
-          </p>
-        </div>
+        <h3>Certifications</h3>
+        <details class="drawer-cert-group" open>
+          <summary>AWS Cert</summary>
+          <div class="drawer-nested" aria-label="AWS practice exams">
+            <ul id="exam-list-aws" class="cert-list exam-list"></ul>
+            <p id="exam-list-aws-empty" class="exam-list-empty hidden">
+              No AWS exams found. Run <code>python3 scripts/build-exams-index.py</code>.
+            </p>
+          </div>
+        </details>
+        <details class="drawer-cert-group">
+          <summary>CompTIA</summary>
+          <p class="drawer-placeholder">Practice exams coming soon.</p>
+        </details>
       </section>
       <section class="drawer-section">
         <h3>Test options</h3>
@@ -85,6 +91,10 @@
         <summary>My data</summary>
         <div class="drawer-details-body">
           <p class="drawer-hint">Stored in this browser only.</p>
+          <label class="data-cert-filter-label" for="data-cert-filter">
+            Apply actions to
+            <select id="data-cert-filter" class="data-cert-select"></select>
+          </label>
           <div class="data-actions">
             <button type="button" id="btn-export-data" class="btn btn-outline btn-block">
               Export backup
@@ -110,11 +120,9 @@
         <div class="hero">
           <h2 id="home-cert-name">AWS Certified Cloud Practitioner</h2>
           <p class="cert-code" id="home-cert-code">CLF-C02</p>
-          <p>
-            Each attempt draws <strong>65 random questions</strong> from the bank
-            using official CLF-C02 domain weights (24% / 30% / 34% / 12%), with
-            shuffled order and answer choices. Same format as the real exam: 50
-            scored questions, 90 minutes, pass/fail at 700. No account required.
+          <p id="home-cert-description">
+            Each attempt draws random questions from the bank using official exam
+            domain weights, with shuffled order and answer choices. No account required.
           </p>
           <p id="pool-warning" class="hidden" role="status"></p>
           <div class="exam-meta">
@@ -156,6 +164,10 @@
 
       <section id="view-dashboard" class="view hidden">
         <div class="dashboard-header">
+          <label class="dashboard-cert-filter" for="dashboard-cert-filter">
+            <span class="dashboard-cert-filter-label">View progress for</span>
+            <select id="dashboard-cert-filter" class="dashboard-cert-select"></select>
+          </label>
           <h2 id="dashboard-cert-name">Progress</h2>
           <p class="cert-code" id="dashboard-cert-code"></p>
         </div>

@@ -1,0 +1,3260 @@
+{
+  "id": "solutions-architect-associate",
+  "name": "AWS Certified Solutions Architect \u2013 Associate",
+  "code": "SAA-C03",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 50,
+    "timeLimitMinutes": 130,
+    "passingScore": 720,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "resilient-architectures",
+      "name": "Domain 1: Design Resilient Architectures",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "SAA-C03 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+        },
+        {
+          "title": "Reliability pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
+        },
+        {
+          "title": "Amazon Route 53",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "high-performing-architectures",
+      "name": "Domain 2: Design High-Performing Architectures",
+      "weight": 28,
+      "resources": [
+        {
+          "title": "Performance Efficiency pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html"
+        },
+        {
+          "title": "Amazon CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "secure-architectures",
+      "name": "Domain 3: Design Secure Architectures",
+      "weight": 24,
+      "resources": [
+        {
+          "title": "Security pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html"
+        },
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "cost-optimized-architectures",
+      "name": "Domain 4: Design Cost-Optimized Architectures",
+      "weight": 18,
+      "resources": [
+        {
+          "title": "Cost Optimization pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html"
+        },
+        {
+          "title": "AWS Cost Explorer",
+          "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "saa-q001",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to distribute incoming application traffic across multiple targets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Macie"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ELB health-checks targets and routes traffic.",
+      "docs": [
+        {
+          "title": "Elastic Load Balancing",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q002",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to route DNS traffic based on latency, geolocation, or failover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Batch"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Polly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Route 53 supports multiple routing policies for resilience.",
+      "docs": [
+        {
+          "title": "Route 53",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q003",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to replicate a relational database to a standby in another AZ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Multi-AZ"
+        },
+        {
+          "id": "b",
+          "text": "Single-AZ RDS with no backups"
+        },
+        {
+          "id": "c",
+          "text": "S3 Standard only"
+        },
+        {
+          "id": "d",
+          "text": "On-premises tape"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-AZ synchronously replicates for HA within a Region.",
+      "docs": [
+        {
+          "title": "RDS Multi-AZ",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q004",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to store static assets with high durability and serve globally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 with Amazon CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS only"
+        },
+        {
+          "id": "c",
+          "text": "Instance store only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon MQ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 plus CloudFront delivers durable storage and edge caching.",
+      "docs": [
+        {
+          "title": "Amazon S3",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q005",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to automatically replace unhealthy EC2 instances in a group?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EC2 Auto Scaling with ELB"
+        },
+        {
+          "id": "b",
+          "text": "Manual SSH fixes only"
+        },
+        {
+          "id": "c",
+          "text": "Single instance"
+        },
+        {
+          "id": "d",
+          "text": "Disabling health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Auto Scaling maintains desired capacity using health checks.",
+      "docs": [
+        {
+          "title": "Auto Scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q006",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to cache database read-heavy workloads in memory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ElastiCache"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Glacier"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowball"
+        },
+        {
+          "id": "d",
+          "text": "Amazon WorkDocs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ElastiCache (Redis/Memcached) reduces database load.",
+      "docs": [
+        {
+          "title": "Amazon ElastiCache",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q007",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to decouple microservices with asynchronous messaging?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon SQS or Amazon SNS"
+        },
+        {
+          "id": "b",
+          "text": "Direct tight coupling only"
+        },
+        {
+          "id": "c",
+          "text": "Shared local disk"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Messaging improves fault isolation between services.",
+      "docs": [
+        {
+          "title": "Amazon SQS",
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q008",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to backup on-premises workloads to AWS for DR?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Backup or AWS Elastic Disaster Recovery"
+        },
+        {
+          "id": "b",
+          "text": "Deleting snapshots"
+        },
+        {
+          "id": "c",
+          "text": "Single AZ only"
+        },
+        {
+          "id": "d",
+          "text": "No RTO planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "AWS Backup centralizes backup policies across services.",
+      "docs": [
+        {
+          "title": "AWS Backup",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q009",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run active-active databases across Regions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB global tables or Aurora Global Database"
+        },
+        {
+          "id": "b",
+          "text": "Single laptop SQLite"
+        },
+        {
+          "id": "c",
+          "text": "Unreplicated EBS"
+        },
+        {
+          "id": "d",
+          "text": "No backups"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Global databases support multi-Region resilience.",
+      "docs": [
+        {
+          "title": "DynamoDB global tables",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q010",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to protect against DDoS at the edge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Shield and AWS WAF with CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "Public SSH on port 22"
+        },
+        {
+          "id": "c",
+          "text": "Disabled logging"
+        },
+        {
+          "id": "d",
+          "text": "Root keys in Git"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shield and WAF mitigate network and application attacks.",
+      "docs": [
+        {
+          "title": "AWS Shield",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q011",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to distribute incoming application traffic across multiple targets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Macie"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ELB health-checks targets and routes traffic.",
+      "docs": [
+        {
+          "title": "Elastic Load Balancing",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q012",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to distribute incoming application traffic across multiple targets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Macie"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ELB health-checks targets and routes traffic.",
+      "docs": [
+        {
+          "title": "Elastic Load Balancing",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q013",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "A team must distribute incoming application traffic across multiple targets. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elastic Load Balancing"
+        },
+        {
+          "id": "b",
+          "text": "Amazon S3"
+        },
+        {
+          "id": "c",
+          "text": "AWS Glue"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Macie"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ELB health-checks targets and routes traffic.",
+      "docs": [
+        {
+          "title": "Elastic Load Balancing",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q014",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to route DNS traffic based on latency, geolocation, or failover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Batch"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Polly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Route 53 supports multiple routing policies for resilience.",
+      "docs": [
+        {
+          "title": "Route 53",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q015",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to route DNS traffic based on latency, geolocation, or failover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Batch"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Polly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Route 53 supports multiple routing policies for resilience.",
+      "docs": [
+        {
+          "title": "Route 53",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q016",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "A team must route DNS traffic based on latency, geolocation, or failover. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Batch"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Polly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Route 53 supports multiple routing policies for resilience.",
+      "docs": [
+        {
+          "title": "Route 53",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q017",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to replicate a relational database to a standby in another AZ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Multi-AZ"
+        },
+        {
+          "id": "b",
+          "text": "Single-AZ RDS with no backups"
+        },
+        {
+          "id": "c",
+          "text": "S3 Standard only"
+        },
+        {
+          "id": "d",
+          "text": "On-premises tape"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-AZ synchronously replicates for HA within a Region.",
+      "docs": [
+        {
+          "title": "RDS Multi-AZ",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q018",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to replicate a relational database to a standby in another AZ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Multi-AZ"
+        },
+        {
+          "id": "b",
+          "text": "Single-AZ RDS with no backups"
+        },
+        {
+          "id": "c",
+          "text": "S3 Standard only"
+        },
+        {
+          "id": "d",
+          "text": "On-premises tape"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-AZ synchronously replicates for HA within a Region.",
+      "docs": [
+        {
+          "title": "RDS Multi-AZ",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q019",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "A team must replicate a relational database to a standby in another AZ. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon RDS Multi-AZ"
+        },
+        {
+          "id": "b",
+          "text": "Single-AZ RDS with no backups"
+        },
+        {
+          "id": "c",
+          "text": "S3 Standard only"
+        },
+        {
+          "id": "d",
+          "text": "On-premises tape"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multi-AZ synchronously replicates for HA within a Region.",
+      "docs": [
+        {
+          "title": "RDS Multi-AZ",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q020",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to store static assets with high durability and serve globally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 with Amazon CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS only"
+        },
+        {
+          "id": "c",
+          "text": "Instance store only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon MQ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 plus CloudFront delivers durable storage and edge caching.",
+      "docs": [
+        {
+          "title": "Amazon S3",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q021",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to store static assets with high durability and serve globally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 with Amazon CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS only"
+        },
+        {
+          "id": "c",
+          "text": "Instance store only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon MQ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 plus CloudFront delivers durable storage and edge caching.",
+      "docs": [
+        {
+          "title": "Amazon S3",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q022",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "A team must store static assets with high durability and serve globally. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 with Amazon CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "Amazon EBS only"
+        },
+        {
+          "id": "c",
+          "text": "Instance store only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon MQ"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 plus CloudFront delivers durable storage and edge caching.",
+      "docs": [
+        {
+          "title": "Amazon S3",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q023",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to automatically replace unhealthy EC2 instances in a group?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EC2 Auto Scaling with ELB"
+        },
+        {
+          "id": "b",
+          "text": "Manual SSH fixes only"
+        },
+        {
+          "id": "c",
+          "text": "Single instance"
+        },
+        {
+          "id": "d",
+          "text": "Disabling health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Auto Scaling maintains desired capacity using health checks.",
+      "docs": [
+        {
+          "title": "Auto Scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q024",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to automatically replace unhealthy EC2 instances in a group?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EC2 Auto Scaling with ELB"
+        },
+        {
+          "id": "b",
+          "text": "Manual SSH fixes only"
+        },
+        {
+          "id": "c",
+          "text": "Single instance"
+        },
+        {
+          "id": "d",
+          "text": "Disabling health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Auto Scaling maintains desired capacity using health checks.",
+      "docs": [
+        {
+          "title": "Auto Scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q025",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "A team must automatically replace unhealthy EC2 instances in a group. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EC2 Auto Scaling with ELB"
+        },
+        {
+          "id": "b",
+          "text": "Manual SSH fixes only"
+        },
+        {
+          "id": "c",
+          "text": "Single instance"
+        },
+        {
+          "id": "d",
+          "text": "Disabling health checks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Auto Scaling maintains desired capacity using health checks.",
+      "docs": [
+        {
+          "title": "Auto Scaling",
+          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q026",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to serve content from edge locations close to users?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "Amazon RDS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Config"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Inspector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFront is AWS's global CDN.",
+      "docs": [
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q027",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to run code without managing servers for spiky traffic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Lambda"
+        },
+        {
+          "id": "b",
+          "text": "Physical colocation only"
+        },
+        {
+          "id": "c",
+          "text": "Single large EC2 with no scaling"
+        },
+        {
+          "id": "d",
+          "text": "Tape backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lambda scales automatically with request volume.",
+      "docs": [
+        {
+          "title": "AWS Lambda",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q028",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use a purpose-built NoSQL database with single-digit ms latency at any scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Self-hosted FTP"
+        },
+        {
+          "id": "c",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "d",
+          "text": "Amazon WorkSpaces"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB scales horizontally for high-throughput workloads.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q029",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to process streaming data in real time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
+        },
+        {
+          "id": "b",
+          "text": "Batch-only cron on one server"
+        },
+        {
+          "id": "c",
+          "text": "S3 Glacier for hot path"
+        },
+        {
+          "id": "d",
+          "text": "Email polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kinesis ingests and processes streaming data.",
+      "docs": [
+        {
+          "title": "Kinesis",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q030",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to accelerate transfer of large datasets into S3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS DataSync or S3 Transfer Acceleration"
+        },
+        {
+          "id": "b",
+          "text": "Serial floppy disks"
+        },
+        {
+          "id": "c",
+          "text": "Uncompressed HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Disabling multipart upload"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DataSync automates secure online data transfer.",
+      "docs": [
+        {
+          "title": "AWS DataSync",
+          "url": "https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q031",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use GP3 or io2 EBS volumes for consistent IOPS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EBS volume types"
+        },
+        {
+          "id": "b",
+          "text": "Instance store for all backups"
+        },
+        {
+          "id": "c",
+          "text": "S3 for block IO"
+        },
+        {
+          "id": "d",
+          "text": "Route 53"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EBS offers SSD volumes tuned for throughput and IOPS.",
+      "docs": [
+        {
+          "title": "EBS volume types",
+          "url": "https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q032",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to place EC2 instances in a cluster placement group for HPC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "EC2 cluster placement groups"
+        },
+        {
+          "id": "b",
+          "text": "Random regions"
+        },
+        {
+          "id": "c",
+          "text": "Single thread only"
+        },
+        {
+          "id": "d",
+          "text": "No networking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cluster placement minimizes latency between instances.",
+      "docs": [
+        {
+          "title": "Placement groups",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q033",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to analyze petabytes of data in a data warehouse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Redshift"
+        },
+        {
+          "id": "b",
+          "text": "Amazon SNS"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Cognito"
+        },
+        {
+          "id": "d",
+          "text": "AWS Artifact"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Redshift is a managed petabyte-scale warehouse.",
+      "docs": [
+        {
+          "title": "Amazon Redshift",
+          "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q034",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use ElastiCache to reduce read latency for sessions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon ElastiCache for Redis"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Glacier"
+        },
+        {
+          "id": "c",
+          "text": "AWS Snowcone only"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Macie"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Redis provides sub-millisecond in-memory data access.",
+      "docs": [
+        {
+          "title": "ElastiCache Redis",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q035",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deliver API traffic with throttling and caching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon API Gateway"
+        },
+        {
+          "id": "b",
+          "text": "Raw TCP to database"
+        },
+        {
+          "id": "c",
+          "text": "S3 as API server only"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "API Gateway manages REST/HTTP APIs at scale.",
+      "docs": [
+        {
+          "title": "API Gateway",
+          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q036",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to serve content from edge locations close to users?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "Amazon RDS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Config"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Inspector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFront is AWS's global CDN.",
+      "docs": [
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q037",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to serve content from edge locations close to users?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "Amazon RDS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Config"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Inspector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFront is AWS's global CDN.",
+      "docs": [
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q038",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "A team must serve content from edge locations close to users. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "Amazon RDS"
+        },
+        {
+          "id": "c",
+          "text": "AWS Config"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Inspector"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudFront is AWS's global CDN.",
+      "docs": [
+        {
+          "title": "CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q039",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to run code without managing servers for spiky traffic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Lambda"
+        },
+        {
+          "id": "b",
+          "text": "Physical colocation only"
+        },
+        {
+          "id": "c",
+          "text": "Single large EC2 with no scaling"
+        },
+        {
+          "id": "d",
+          "text": "Tape backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lambda scales automatically with request volume.",
+      "docs": [
+        {
+          "title": "AWS Lambda",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q040",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to run code without managing servers for spiky traffic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Lambda"
+        },
+        {
+          "id": "b",
+          "text": "Physical colocation only"
+        },
+        {
+          "id": "c",
+          "text": "Single large EC2 with no scaling"
+        },
+        {
+          "id": "d",
+          "text": "Tape backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lambda scales automatically with request volume.",
+      "docs": [
+        {
+          "title": "AWS Lambda",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q041",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "A team must run code without managing servers for spiky traffic. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Lambda"
+        },
+        {
+          "id": "b",
+          "text": "Physical colocation only"
+        },
+        {
+          "id": "c",
+          "text": "Single large EC2 with no scaling"
+        },
+        {
+          "id": "d",
+          "text": "Tape backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lambda scales automatically with request volume.",
+      "docs": [
+        {
+          "title": "AWS Lambda",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q042",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to use a purpose-built NoSQL database with single-digit ms latency at any scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Self-hosted FTP"
+        },
+        {
+          "id": "c",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "d",
+          "text": "Amazon WorkSpaces"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB scales horizontally for high-throughput workloads.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q043",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to use a purpose-built NoSQL database with single-digit ms latency at any scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Self-hosted FTP"
+        },
+        {
+          "id": "c",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "d",
+          "text": "Amazon WorkSpaces"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB scales horizontally for high-throughput workloads.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q044",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "A team must use a purpose-built NoSQL database with single-digit ms latency at any scale. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon DynamoDB"
+        },
+        {
+          "id": "b",
+          "text": "Self-hosted FTP"
+        },
+        {
+          "id": "c",
+          "text": "Amazon EBS"
+        },
+        {
+          "id": "d",
+          "text": "Amazon WorkSpaces"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DynamoDB scales horizontally for high-throughput workloads.",
+      "docs": [
+        {
+          "title": "DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q045",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to process streaming data in real time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
+        },
+        {
+          "id": "b",
+          "text": "Batch-only cron on one server"
+        },
+        {
+          "id": "c",
+          "text": "S3 Glacier for hot path"
+        },
+        {
+          "id": "d",
+          "text": "Email polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kinesis ingests and processes streaming data.",
+      "docs": [
+        {
+          "title": "Kinesis",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q046",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to process streaming data in real time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
+        },
+        {
+          "id": "b",
+          "text": "Batch-only cron on one server"
+        },
+        {
+          "id": "c",
+          "text": "S3 Glacier for hot path"
+        },
+        {
+          "id": "d",
+          "text": "Email polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kinesis ingests and processes streaming data.",
+      "docs": [
+        {
+          "title": "Kinesis",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q047",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "A team must process streaming data in real time. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
+        },
+        {
+          "id": "b",
+          "text": "Batch-only cron on one server"
+        },
+        {
+          "id": "c",
+          "text": "S3 Glacier for hot path"
+        },
+        {
+          "id": "d",
+          "text": "Email polling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Kinesis ingests and processes streaming data.",
+      "docs": [
+        {
+          "title": "Kinesis",
+          "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q048",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to enforce MFA and least privilege for human access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS IAM with MFA"
+        },
+        {
+          "id": "b",
+          "text": "Shared root credentials"
+        },
+        {
+          "id": "c",
+          "text": "Wildcard admin for all users"
+        },
+        {
+          "id": "d",
+          "text": "Public S3 ACLs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM policies and MFA protect account access.",
+      "docs": [
+        {
+          "title": "IAM best practices",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q049",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to encrypt data at rest in S3 with customer-managed keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS on Amazon S3"
+        },
+        {
+          "id": "b",
+          "text": "Unencrypted public buckets"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSE-KMS integrates with AWS KMS for key control.",
+      "docs": [
+        {
+          "title": "S3 encryption",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q050",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to filter HTTP requests for SQL injection and XSS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "b",
+          "text": "Security groups only for L7 rules"
+        },
+        {
+          "id": "c",
+          "text": "NACL for app logic"
+        },
+        {
+          "id": "d",
+          "text": "S3 lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF protects web applications at Layer 7.",
+      "docs": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q051",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to provide temporary credentials to applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM roles with STS"
+        },
+        {
+          "id": "b",
+          "text": "Long-term access keys in code"
+        },
+        {
+          "id": "c",
+          "text": "Root user for apps"
+        },
+        {
+          "id": "d",
+          "text": "Passwords in AMIs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Roles supply short-lived credentials via STS.",
+      "docs": [
+        {
+          "title": "IAM roles",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q052",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to detect malicious activity and unauthorized behavior?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon GuardDuty"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Polly"
+        },
+        {
+          "id": "c",
+          "text": "AWS Budgets"
+        },
+        {
+          "id": "d",
+          "text": "Amazon Lightsail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty analyzes CloudTrail, VPC Flow Logs, and DNS.",
+      "docs": [
+        {
+          "title": "GuardDuty",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q053",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to private connectivity from VPC to AWS services without internet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC interface endpoints (AWS PrivateLink)"
+        },
+        {
+          "id": "b",
+          "text": "0.0.0.0/0 on database port"
+        },
+        {
+          "id": "c",
+          "text": "Public subnets for DB only"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Interface endpoints keep traffic on the AWS network.",
+      "docs": [
+        {
+          "title": "VPC endpoints",
+          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q054",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to centralize security findings across accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Security Hub"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Rekognition for CVEs"
+        },
+        {
+          "id": "c",
+          "text": "S3 analytics only"
+        },
+        {
+          "id": "d",
+          "text": "Route 53"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security Hub aggregates compliance and threat findings.",
+      "docs": [
+        {
+          "title": "Security Hub",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q055",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to record all API activity for audit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS CloudTrail"
+        },
+        {
+          "id": "b",
+          "text": "Deleting logs daily"
+        },
+        {
+          "id": "c",
+          "text": "No IAM"
+        },
+        {
+          "id": "d",
+          "text": "Disable encryption"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudTrail logs management events across services.",
+      "docs": [
+        {
+          "title": "CloudTrail",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q056",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage SSL/TLS certificates for ALB and CloudFront?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Certificate Manager"
+        },
+        {
+          "id": "b",
+          "text": "Self-signed only in prod without rotation"
+        },
+        {
+          "id": "c",
+          "text": "FTP certificates"
+        },
+        {
+          "id": "d",
+          "text": "SSH keys for HTTPS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ACM provisions and renews TLS certificates.",
+      "docs": [
+        {
+          "title": "ACM",
+          "url": "https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q057",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to isolate subnets with stateless subnet firewalls?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Network ACLs combined with security groups"
+        },
+        {
+          "id": "b",
+          "text": "Open SG 0.0.0.0/0 on all ports"
+        },
+        {
+          "id": "c",
+          "text": "No segmentation"
+        },
+        {
+          "id": "d",
+          "text": "Public RDS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Defense in depth uses NACLs and security groups.",
+      "docs": [
+        {
+          "title": "VPC security",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q058",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to enforce MFA and least privilege for human access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS IAM with MFA"
+        },
+        {
+          "id": "b",
+          "text": "Shared root credentials"
+        },
+        {
+          "id": "c",
+          "text": "Wildcard admin for all users"
+        },
+        {
+          "id": "d",
+          "text": "Public S3 ACLs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM policies and MFA protect account access.",
+      "docs": [
+        {
+          "title": "IAM best practices",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q059",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to enforce MFA and least privilege for human access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS IAM with MFA"
+        },
+        {
+          "id": "b",
+          "text": "Shared root credentials"
+        },
+        {
+          "id": "c",
+          "text": "Wildcard admin for all users"
+        },
+        {
+          "id": "d",
+          "text": "Public S3 ACLs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM policies and MFA protect account access.",
+      "docs": [
+        {
+          "title": "IAM best practices",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q060",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "A team must enforce MFA and least privilege for human access. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS IAM with MFA"
+        },
+        {
+          "id": "b",
+          "text": "Shared root credentials"
+        },
+        {
+          "id": "c",
+          "text": "Wildcard admin for all users"
+        },
+        {
+          "id": "d",
+          "text": "Public S3 ACLs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "IAM policies and MFA protect account access.",
+      "docs": [
+        {
+          "title": "IAM best practices",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q061",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to encrypt data at rest in S3 with customer-managed keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS on Amazon S3"
+        },
+        {
+          "id": "b",
+          "text": "Unencrypted public buckets"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSE-KMS integrates with AWS KMS for key control.",
+      "docs": [
+        {
+          "title": "S3 encryption",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q062",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to encrypt data at rest in S3 with customer-managed keys?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS on Amazon S3"
+        },
+        {
+          "id": "b",
+          "text": "Unencrypted public buckets"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSE-KMS integrates with AWS KMS for key control.",
+      "docs": [
+        {
+          "title": "S3 encryption",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q063",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "A team must encrypt data at rest in S3 with customer-managed keys. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS on Amazon S3"
+        },
+        {
+          "id": "b",
+          "text": "Unencrypted public buckets"
+        },
+        {
+          "id": "c",
+          "text": "HTTP only"
+        },
+        {
+          "id": "d",
+          "text": "Disable versioning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSE-KMS integrates with AWS KMS for key control.",
+      "docs": [
+        {
+          "title": "S3 encryption",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q064",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to filter HTTP requests for SQL injection and XSS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "b",
+          "text": "Security groups only for L7 rules"
+        },
+        {
+          "id": "c",
+          "text": "NACL for app logic"
+        },
+        {
+          "id": "d",
+          "text": "S3 lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF protects web applications at Layer 7.",
+      "docs": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q065",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to filter HTTP requests for SQL injection and XSS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "b",
+          "text": "Security groups only for L7 rules"
+        },
+        {
+          "id": "c",
+          "text": "NACL for app logic"
+        },
+        {
+          "id": "d",
+          "text": "S3 lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF protects web applications at Layer 7.",
+      "docs": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q066",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "A team must filter HTTP requests for SQL injection and XSS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF"
+        },
+        {
+          "id": "b",
+          "text": "Security groups only for L7 rules"
+        },
+        {
+          "id": "c",
+          "text": "NACL for app logic"
+        },
+        {
+          "id": "d",
+          "text": "S3 lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF protects web applications at Layer 7.",
+      "docs": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q067",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to commit to consistent compute usage for lower hourly rates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Savings Plans or Reserved Instances"
+        },
+        {
+          "id": "b",
+          "text": "On-Demand only for steady 24/7"
+        },
+        {
+          "id": "c",
+          "text": "Ignoring rightsizing"
+        },
+        {
+          "id": "d",
+          "text": "Over-provisioning always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Commitment discounts reduce compute cost for steady workloads.",
+      "docs": [
+        {
+          "title": "Savings Plans",
+          "url": "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q068",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use spare EC2 capacity at steep discount for fault-tolerant batch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EC2 Spot Instances"
+        },
+        {
+          "id": "b",
+          "text": "Dedicated Hosts for all stateful DBs without DR"
+        },
+        {
+          "id": "c",
+          "text": "On-Demand for interruptible only"
+        },
+        {
+          "id": "d",
+          "text": "Largest instance always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Spot offers unused capacity at lower prices.",
+      "docs": [
+        {
+          "title": "Spot Instances",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q069",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to analyze spending trends and forecasts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Cost Explorer"
+        },
+        {
+          "id": "b",
+          "text": "Disabling CUR"
+        },
+        {
+          "id": "c",
+          "text": "No tags"
+        },
+        {
+          "id": "d",
+          "text": "Ignoring recommendations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cost Explorer visualizes and forecasts AWS spend.",
+      "docs": [
+        {
+          "title": "Cost Explorer",
+          "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q070",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to move infrequently accessed data to cheaper storage class?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 Intelligent-Tiering or Glacier classes"
+        },
+        {
+          "id": "b",
+          "text": "Standard for all archival"
+        },
+        {
+          "id": "c",
+          "text": "Deleting objects instead of tiering"
+        },
+        {
+          "id": "d",
+          "text": "No lifecycle"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 storage classes optimize cost by access pattern.",
+      "docs": [
+        {
+          "title": "S3 storage classes",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q071",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to stop non-production instances on a schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Instance scheduling with Lambda or Instance Scheduler"
+        },
+        {
+          "id": "b",
+          "text": "Leave dev running 24/7"
+        },
+        {
+          "id": "c",
+          "text": "No monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Maximum size always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Scheduling reduces off-hours waste.",
+      "docs": [
+        {
+          "title": "Instance Scheduler",
+          "url": "https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-aws/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q072",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to right-size EC2 using utilization metrics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Compute Optimizer"
+        },
+        {
+          "id": "b",
+          "text": "Never review metrics"
+        },
+        {
+          "id": "c",
+          "text": "One size fits all"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CPU graphs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Compute Optimizer recommends instance sizes.",
+      "docs": [
+        {
+          "title": "Compute Optimizer",
+          "url": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q073",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to share Reserved Instance benefits across accounts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Organizations consolidated billing"
+        },
+        {
+          "id": "b",
+          "text": "Separate unlinked accounts only"
+        },
+        {
+          "id": "c",
+          "text": "No CUR"
+        },
+        {
+          "id": "d",
+          "text": "Disable Cost Allocation Tags"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Consolidated billing shares RI/SP discounts.",
+      "docs": [
+        {
+          "title": "Consolidated billing",
+          "url": "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q074",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to archive EBS snapshots no longer needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Snapshot lifecycle policies"
+        },
+        {
+          "id": "b",
+          "text": "Infinite snapshots"
+        },
+        {
+          "id": "c",
+          "text": "No lifecycle"
+        },
+        {
+          "id": "d",
+          "text": "Public snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Lifecycle policies delete stale snapshots to save cost.",
+      "docs": [
+        {
+          "title": "EBS snapshots",
+          "url": "https://docs.aws.amazon.com/ebs/latest/userguide/ebs-deleting-snaps.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q075",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use Aurora Serverless v2 for variable database load?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Aurora Serverless v2"
+        },
+        {
+          "id": "b",
+          "text": "Largest provisioned instance 24/7 for spiky dev"
+        },
+        {
+          "id": "c",
+          "text": "Self-managed on laptop"
+        },
+        {
+          "id": "d",
+          "text": "No auto pause/scaling"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Serverless v2 scales ACUs with demand.",
+      "docs": [
+        {
+          "title": "Aurora Serverless",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q076",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to deliver static websites from S3 without EC2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon S3 static website hosting with CloudFront"
+        },
+        {
+          "id": "b",
+          "text": "EC2 fleet for static PNGs only"
+        },
+        {
+          "id": "c",
+          "text": "EFS for HTML only at highest tier"
+        },
+        {
+          "id": "d",
+          "text": "VPN for images"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "S3 + CloudFront minimizes compute for static sites.",
+      "docs": [
+        {
+          "title": "S3 static hosting",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q077",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to commit to consistent compute usage for lower hourly rates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Savings Plans or Reserved Instances"
+        },
+        {
+          "id": "b",
+          "text": "On-Demand only for steady 24/7"
+        },
+        {
+          "id": "c",
+          "text": "Ignoring rightsizing"
+        },
+        {
+          "id": "d",
+          "text": "Over-provisioning always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Commitment discounts reduce compute cost for steady workloads.",
+      "docs": [
+        {
+          "title": "Savings Plans",
+          "url": "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q078",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to commit to consistent compute usage for lower hourly rates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Savings Plans or Reserved Instances"
+        },
+        {
+          "id": "b",
+          "text": "On-Demand only for steady 24/7"
+        },
+        {
+          "id": "c",
+          "text": "Ignoring rightsizing"
+        },
+        {
+          "id": "d",
+          "text": "Over-provisioning always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Commitment discounts reduce compute cost for steady workloads.",
+      "docs": [
+        {
+          "title": "Savings Plans",
+          "url": "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q079",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "A team must commit to consistent compute usage for lower hourly rates. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Savings Plans or Reserved Instances"
+        },
+        {
+          "id": "b",
+          "text": "On-Demand only for steady 24/7"
+        },
+        {
+          "id": "c",
+          "text": "Ignoring rightsizing"
+        },
+        {
+          "id": "d",
+          "text": "Over-provisioning always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Commitment discounts reduce compute cost for steady workloads.",
+      "docs": [
+        {
+          "title": "Savings Plans",
+          "url": "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q080",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "Which service should you use to use spare EC2 capacity at steep discount for fault-tolerant batch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EC2 Spot Instances"
+        },
+        {
+          "id": "b",
+          "text": "Dedicated Hosts for all stateful DBs without DR"
+        },
+        {
+          "id": "c",
+          "text": "On-Demand for interruptible only"
+        },
+        {
+          "id": "d",
+          "text": "Largest instance always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Spot offers unused capacity at lower prices.",
+      "docs": [
+        {
+          "title": "Spot Instances",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q081",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to use spare EC2 capacity at steep discount for fault-tolerant batch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EC2 Spot Instances"
+        },
+        {
+          "id": "b",
+          "text": "Dedicated Hosts for all stateful DBs without DR"
+        },
+        {
+          "id": "c",
+          "text": "On-Demand for interruptible only"
+        },
+        {
+          "id": "d",
+          "text": "Largest instance always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Spot offers unused capacity at lower prices.",
+      "docs": [
+        {
+          "title": "Spot Instances",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q082",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "A team must use spare EC2 capacity at steep discount for fault-tolerant batch. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon EC2 Spot Instances"
+        },
+        {
+          "id": "b",
+          "text": "Dedicated Hosts for all stateful DBs without DR"
+        },
+        {
+          "id": "c",
+          "text": "On-Demand for interruptible only"
+        },
+        {
+          "id": "d",
+          "text": "Largest instance always"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Spot offers unused capacity at lower prices.",
+      "docs": [
+        {
+          "title": "Spot Instances",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q083",
+      "domain": "high-performing-architectures",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q084",
+      "domain": "resilient-architectures",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Associate? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "SAA-C03 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Reliability pillar"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "SAA-C03 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+        }
+      ]
+    },
+    {
+      "id": "saa-q085",
+      "domain": "resilient-architectures",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q086",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'SAA-C03 Exam Guide', what should you do FIRST when addressing Design Resilient Architectures objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as SAA-C03 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "SAA-C03 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+        }
+      ]
+    },
+    {
+      "id": "saa-q087",
+      "domain": "resilient-architectures",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Reliability pillar', what should you do FIRST when addressing Design Resilient Architectures objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Reliability pillar describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Reliability pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q088",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Performance Efficiency pillar', what should you do FIRST when addressing Design High-Performing Architectures objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Performance Efficiency pillar describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Performance Efficiency pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q089",
+      "domain": "high-performing-architectures",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon CloudFront', what should you do FIRST when addressing Design High-Performing Architectures objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon CloudFront describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon CloudFront",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q090",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Security pillar', what should you do FIRST when addressing Design Secure Architectures objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Security pillar describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Security pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q091",
+      "domain": "secure-architectures",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS KMS', what should you do FIRST when addressing Design Secure Architectures objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS KMS describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q092",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Cost Optimization pillar', what should you do FIRST when addressing Design Cost-Optimized Architectures objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Cost Optimization pillar describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Cost Optimization pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "saa-q093",
+      "domain": "cost-optimized-architectures",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Cost Explorer', what should you do FIRST when addressing Design Cost-Optimized Architectures objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Cost Explorer describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Cost Explorer",
+          "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html"
+        }
+      ]
+    }
+  ]
+}

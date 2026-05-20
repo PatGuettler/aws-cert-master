@@ -12,11 +12,27 @@ After enabling GitHub Pages (see [Deploy](#deploy)), your site will be at:
 
 The hamburger menu loads exams from **`data/exams-index.json`**, which is built automatically from every `*.json` file in **`data/exams/`**.
 
-| Exam | Code | File |
-|------|------|------|
-| AWS Certified Cloud Practitioner | CLF-C02 | [`data/exams/cloud-practitioner.json`](data/exams/cloud-practitioner.json) |
+| Exam | Code |
+|------|------|
+| AWS Certified Cloud Practitioner | CLF-C02 |
+| AWS Certified AI Practitioner | AIF-C01 |
+| AWS Certified Solutions Architect – Associate | SAA-C03 |
+| AWS Certified Developer – Associate | DVA-C02 |
+| AWS Certified Machine Learning Engineer – Associate | MLA-C01 |
+| AWS Certified Data Engineer – Associate | DEA-C01 |
+| AWS Certified CloudOps Engineer – Associate | SOA-C02 |
+| AWS Certified Solutions Architect – Professional | SAP-C02 |
+| AWS Certified DevOps Engineer – Professional | DOP-C02 |
+| AWS Certified Generative AI Developer – Professional | AIP-C01 |
+| AWS Certified Advanced Networking – Specialty | ANS-C01 |
+| AWS Certified Security – Specialty | SCS-C02 |
 
-**Add an exam:** drop `data/exams/my-exam.json` (valid exam schema) → run `python3 scripts/build-exams-index.py` → commit both the JSON and updated `data/exams-index.json` → push.
+Each cert has its own JSON under `data/exams/` (70–225+ practice questions per exam). Questions align with **official exam guide domains** and link to **AWS documentation** — they are **not** real exam items (AWS exam content is confidential).
+
+**Regenerate all AWS banks:** `python3 scripts/generate_all_aws_exams.py`  
+**Rebuild menu index:** `python3 scripts/build-exams-index.py`
+
+**Add an exam:** drop `data/exams/my-exam.json` (valid exam schema, include `"vendor": "aws"`) → rebuild index → push.
 
 **Remove an exam:** delete its JSON from `data/exams/` → rebuild the index → push.
 
@@ -40,7 +56,7 @@ Each attempt **randomly** selects 65 questions from the bank using those weights
 - **90 minutes** (toggle off in the menu)
 - **Passing score 700 / 1000** (scaled approximation from scored answers only)
 
-Open the **hamburger menu → Exams** (nested section) to switch exams and configure options.
+Open the **hamburger menu → AWS Cert** to switch exams. **CompTIA** is a placeholder for future exams. Use **My data** to filter export/clear actions by certification, or the **progress dashboard** filter to view history per cert.
 
 ## Updating questions
 

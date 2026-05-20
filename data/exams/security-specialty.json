@@ -1,0 +1,3694 @@
+{
+  "id": "security-specialty",
+  "name": "AWS Certified Security \u2013 Specialty",
+  "code": "SCS-C02",
+  "vendor": "aws",
+  "exam": {
+    "totalQuestions": 65,
+    "scoredQuestions": 50,
+    "timeLimitMinutes": 180,
+    "passingScore": 750,
+    "maxScore": 1000,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "detection",
+      "name": "Domain 1: Detection",
+      "weight": 18,
+      "resources": [
+        {
+          "title": "SCS-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-security-specialty/"
+        },
+        {
+          "title": "Amazon GuardDuty",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "incident-response",
+      "name": "Domain 2: Incident Response",
+      "weight": 14,
+      "resources": [
+        {
+          "title": "AWS Security Hub",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+        },
+        {
+          "title": "Amazon Detective",
+          "url": "https://docs.aws.amazon.com/detective/latest/userguide/what-is-detective.html"
+        }
+      ]
+    },
+    {
+      "id": "iam",
+      "name": "Domain 3: Identity and Access Management",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "AWS IAM",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
+        },
+        {
+          "title": "IAM Identity Center",
+          "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "infrastructure-security",
+      "name": "Domain 4: Infrastructure Security",
+      "weight": 17,
+      "resources": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        },
+        {
+          "title": "AWS Shield",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "data-protection",
+      "name": "Domain 5: Data Protection",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        },
+        {
+          "title": "Amazon Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "security-governance",
+      "name": "Domain 6: Security Foundations and Governance",
+      "weight": 11,
+      "resources": [
+        {
+          "title": "AWS Config",
+          "url": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html"
+        },
+        {
+          "title": "AWS Audit Manager",
+          "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "scs-q001",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to detect malicious API activity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon GuardDuty"
+        },
+        {
+          "id": "b",
+          "text": "No logging"
+        },
+        {
+          "id": "c",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "d",
+          "text": "Disable org admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty analyzes CloudTrail, DNS, and flow logs.",
+      "docs": [
+        {
+          "title": "GuardDuty",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q002",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to find suspicious IAM behavior?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty IAM anomaly findings"
+        },
+        {
+          "id": "b",
+          "text": "Shared root creds"
+        },
+        {
+          "id": "c",
+          "text": "No MFA"
+        },
+        {
+          "id": "d",
+          "text": "Ignore Access Analyzer"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty monitors credential exfiltration patterns.",
+      "docs": [
+        {
+          "title": "GuardDuty IAM",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q003",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to aggregate findings from multiple tools?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Security Hub"
+        },
+        {
+          "id": "b",
+          "text": "Siloed spreadsheets"
+        },
+        {
+          "id": "c",
+          "text": "No severity"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CIS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security Hub normalizes findings.",
+      "docs": [
+        {
+          "title": "Security Hub",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q004",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to detect malware on EC2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty Malware Protection"
+        },
+        {
+          "id": "b",
+          "text": "Assume clean"
+        },
+        {
+          "id": "c",
+          "text": "Disable scanning"
+        },
+        {
+          "id": "d",
+          "text": "Ignore EBS snapshots"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Malware Protection scans EBS volumes.",
+      "docs": [
+        {
+          "title": "Malware Protection",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/malware-protection.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q005",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to monitor S3 data events for exfiltration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudTrail data events and Macie"
+        },
+        {
+          "id": "b",
+          "text": "No data events"
+        },
+        {
+          "id": "c",
+          "text": "Public bucket"
+        },
+        {
+          "id": "d",
+          "text": "Ignore anomalies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Data events log object-level API activity.",
+      "docs": [
+        {
+          "title": "CloudTrail data events",
+          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q006",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to detect threats in Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty EKS Protection"
+        },
+        {
+          "id": "b",
+          "text": "Disable audit logs"
+        },
+        {
+          "id": "c",
+          "text": "Public API endpoint open"
+        },
+        {
+          "id": "d",
+          "text": "Cluster-admin for all"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "EKS Protection analyzes audit logs.",
+      "docs": [
+        {
+          "title": "EKS Protection",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-eks-protection.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q007",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to identify compromised credentials?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Credential reports and Access Analyzer"
+        },
+        {
+          "id": "b",
+          "text": "Never rotate keys"
+        },
+        {
+          "id": "c",
+          "text": "Keys in Git"
+        },
+        {
+          "id": "d",
+          "text": "No SCP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Regular credential hygiene reduces risk.",
+      "docs": [
+        {
+          "title": "IAM credential report",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q008",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use detective investigation graphs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Detective"
+        },
+        {
+          "id": "b",
+          "text": "Manual grep only"
+        },
+        {
+          "id": "c",
+          "text": "Delete logs"
+        },
+        {
+          "id": "d",
+          "text": "No correlation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Detective visualizes security data.",
+      "docs": [
+        {
+          "title": "Detective",
+          "url": "https://docs.aws.amazon.com/detective/latest/userguide/what-is-detective.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q009",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which service should you use to detect malicious API activity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon GuardDuty"
+        },
+        {
+          "id": "b",
+          "text": "No logging"
+        },
+        {
+          "id": "c",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "d",
+          "text": "Disable org admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty analyzes CloudTrail, DNS, and flow logs.",
+      "docs": [
+        {
+          "title": "GuardDuty",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q010",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to detect malicious API activity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon GuardDuty"
+        },
+        {
+          "id": "b",
+          "text": "No logging"
+        },
+        {
+          "id": "c",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "d",
+          "text": "Disable org admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty analyzes CloudTrail, DNS, and flow logs.",
+      "docs": [
+        {
+          "title": "GuardDuty",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q011",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "A team must detect malicious API activity. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon GuardDuty"
+        },
+        {
+          "id": "b",
+          "text": "No logging"
+        },
+        {
+          "id": "c",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "d",
+          "text": "Disable org admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty analyzes CloudTrail, DNS, and flow logs.",
+      "docs": [
+        {
+          "title": "GuardDuty",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q012",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which service should you use to find suspicious IAM behavior?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty IAM anomaly findings"
+        },
+        {
+          "id": "b",
+          "text": "Shared root creds"
+        },
+        {
+          "id": "c",
+          "text": "No MFA"
+        },
+        {
+          "id": "d",
+          "text": "Ignore Access Analyzer"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty monitors credential exfiltration patterns.",
+      "docs": [
+        {
+          "title": "GuardDuty IAM",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q013",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to find suspicious IAM behavior?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty IAM anomaly findings"
+        },
+        {
+          "id": "b",
+          "text": "Shared root creds"
+        },
+        {
+          "id": "c",
+          "text": "No MFA"
+        },
+        {
+          "id": "d",
+          "text": "Ignore Access Analyzer"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty monitors credential exfiltration patterns.",
+      "docs": [
+        {
+          "title": "GuardDuty IAM",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q014",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "A team must find suspicious IAM behavior. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty IAM anomaly findings"
+        },
+        {
+          "id": "b",
+          "text": "Shared root creds"
+        },
+        {
+          "id": "c",
+          "text": "No MFA"
+        },
+        {
+          "id": "d",
+          "text": "Ignore Access Analyzer"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "GuardDuty monitors credential exfiltration patterns.",
+      "docs": [
+        {
+          "title": "GuardDuty IAM",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q015",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "Which service should you use to aggregate findings from multiple tools?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Security Hub"
+        },
+        {
+          "id": "b",
+          "text": "Siloed spreadsheets"
+        },
+        {
+          "id": "c",
+          "text": "No severity"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CIS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security Hub normalizes findings.",
+      "docs": [
+        {
+          "title": "Security Hub",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q016",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to aggregate findings from multiple tools?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Security Hub"
+        },
+        {
+          "id": "b",
+          "text": "Siloed spreadsheets"
+        },
+        {
+          "id": "c",
+          "text": "No severity"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CIS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security Hub normalizes findings.",
+      "docs": [
+        {
+          "title": "Security Hub",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q017",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "A team must aggregate findings from multiple tools. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Security Hub"
+        },
+        {
+          "id": "b",
+          "text": "Siloed spreadsheets"
+        },
+        {
+          "id": "c",
+          "text": "No severity"
+        },
+        {
+          "id": "d",
+          "text": "Ignore CIS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security Hub normalizes findings.",
+      "docs": [
+        {
+          "title": "Security Hub",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q018",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to automate containment playbooks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM Automation and Security Hub custom actions"
+        },
+        {
+          "id": "b",
+          "text": "Manual slow response"
+        },
+        {
+          "id": "c",
+          "text": "No runbooks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore severity"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Automation speeds containment.",
+      "docs": [
+        {
+          "title": "SSM Automation",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q019",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to preserve forensic evidence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isolate instance and snapshot volumes"
+        },
+        {
+          "id": "b",
+          "text": "Terminate immediately"
+        },
+        {
+          "id": "c",
+          "text": "Overwrite disk"
+        },
+        {
+          "id": "d",
+          "text": "Delete CloudTrail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Preserve before remediation when possible.",
+      "docs": [
+        {
+          "title": "IR guide",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/aws-security-incident-response-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q020",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to route incidents to ticketing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "EventBridge to Jira/ServiceNow via Lambda"
+        },
+        {
+          "id": "b",
+          "text": "Email only"
+        },
+        {
+          "id": "c",
+          "text": "No tracking"
+        },
+        {
+          "id": "d",
+          "text": "Lost context"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Integrations maintain incident records.",
+      "docs": [
+        {
+          "title": "EventBridge",
+          "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q021",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to classify and prioritize findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Hub severity and workflow status"
+        },
+        {
+          "id": "b",
+          "text": "Treat all LOW as ignore prod"
+        },
+        {
+          "id": "c",
+          "text": "No SLA"
+        },
+        {
+          "id": "d",
+          "text": "Duplicate work"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Prioritization focuses limited resources.",
+      "docs": [
+        {
+          "title": "Security Hub workflows",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-workflow.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q022",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to perform organization-wide IR?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty delegated admin and Organizations"
+        },
+        {
+          "id": "b",
+          "text": "Account silos"
+        },
+        {
+          "id": "c",
+          "text": "Inconsistent response"
+        },
+        {
+          "id": "d",
+          "text": "No central view"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Delegated admin centralizes security services.",
+      "docs": [
+        {
+          "title": "Organizations security",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_security_incident-response.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q023",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to test IR with simulations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Game days and FIS experiments"
+        },
+        {
+          "id": "b",
+          "text": "Untested plan"
+        },
+        {
+          "id": "c",
+          "text": "First real attack is test"
+        },
+        {
+          "id": "d",
+          "text": "No metrics"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Exercises validate runbooks.",
+      "docs": [
+        {
+          "title": "FIS",
+          "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q024",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to notify stakeholders during breach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pre-defined communications plan"
+        },
+        {
+          "id": "b",
+          "text": "Ad hoc tweets"
+        },
+        {
+          "id": "c",
+          "text": "Hide legal"
+        },
+        {
+          "id": "d",
+          "text": "No roles"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Communications plans meet regulatory needs.",
+      "docs": [
+        {
+          "title": "IR guide",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/aws-security-incident-response-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q025",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to integrate threat intel feeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GuardDuty threat lists and partner integrations"
+        },
+        {
+          "id": "b",
+          "text": "Ignore intel"
+        },
+        {
+          "id": "c",
+          "text": "Block nothing"
+        },
+        {
+          "id": "d",
+          "text": "Allow known bad IPs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Threat intel improves detection.",
+      "docs": [
+        {
+          "title": "GuardDuty filters",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_filters.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q026",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which service should you use to automate containment playbooks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM Automation and Security Hub custom actions"
+        },
+        {
+          "id": "b",
+          "text": "Manual slow response"
+        },
+        {
+          "id": "c",
+          "text": "No runbooks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore severity"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Automation speeds containment.",
+      "docs": [
+        {
+          "title": "SSM Automation",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q027",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to automate containment playbooks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM Automation and Security Hub custom actions"
+        },
+        {
+          "id": "b",
+          "text": "Manual slow response"
+        },
+        {
+          "id": "c",
+          "text": "No runbooks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore severity"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Automation speeds containment.",
+      "docs": [
+        {
+          "title": "SSM Automation",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q028",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "A team must automate containment playbooks. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM Automation and Security Hub custom actions"
+        },
+        {
+          "id": "b",
+          "text": "Manual slow response"
+        },
+        {
+          "id": "c",
+          "text": "No runbooks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore severity"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Automation speeds containment.",
+      "docs": [
+        {
+          "title": "SSM Automation",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q029",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "Which service should you use to preserve forensic evidence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isolate instance and snapshot volumes"
+        },
+        {
+          "id": "b",
+          "text": "Terminate immediately"
+        },
+        {
+          "id": "c",
+          "text": "Overwrite disk"
+        },
+        {
+          "id": "d",
+          "text": "Delete CloudTrail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Preserve before remediation when possible.",
+      "docs": [
+        {
+          "title": "IR guide",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/aws-security-incident-response-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q030",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to preserve forensic evidence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isolate instance and snapshot volumes"
+        },
+        {
+          "id": "b",
+          "text": "Terminate immediately"
+        },
+        {
+          "id": "c",
+          "text": "Overwrite disk"
+        },
+        {
+          "id": "d",
+          "text": "Delete CloudTrail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Preserve before remediation when possible.",
+      "docs": [
+        {
+          "title": "IR guide",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/aws-security-incident-response-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q031",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "A team must preserve forensic evidence. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isolate instance and snapshot volumes"
+        },
+        {
+          "id": "b",
+          "text": "Terminate immediately"
+        },
+        {
+          "id": "c",
+          "text": "Overwrite disk"
+        },
+        {
+          "id": "d",
+          "text": "Delete CloudTrail"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Preserve before remediation when possible.",
+      "docs": [
+        {
+          "title": "IR guide",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/aws-security-incident-response-guide.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q032",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to enforce MFA for console users?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM MFA policies"
+        },
+        {
+          "id": "b",
+          "text": "Password only"
+        },
+        {
+          "id": "c",
+          "text": "SMS only weak policy"
+        },
+        {
+          "id": "d",
+          "text": "Shared users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MFA reduces account takeover risk.",
+      "docs": [
+        {
+          "title": "IAM MFA",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q033",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use permission boundaries for delegated admins?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM permission boundaries"
+        },
+        {
+          "id": "b",
+          "text": "Unbounded AdminAccess delegates"
+        },
+        {
+          "id": "c",
+          "text": "No SCP"
+        },
+        {
+          "id": "d",
+          "text": "Ignore least privilege"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boundaries cap maximum permissions.",
+      "docs": [
+        {
+          "title": "Permission boundaries",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q034",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to federate workforce access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM Identity Center with external IdP"
+        },
+        {
+          "id": "b",
+          "text": "Long-term IAM users for all staff"
+        },
+        {
+          "id": "c",
+          "text": "Password email"
+        },
+        {
+          "id": "d",
+          "text": "No SSO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Identity Center centralizes workforce access.",
+      "docs": [
+        {
+          "title": "IAM Identity Center",
+          "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q035",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to implement ABAC with session tags?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM policies conditioned on aws:PrincipalTag"
+        },
+        {
+          "id": "b",
+          "text": "Static roles per combo explosion"
+        },
+        {
+          "id": "c",
+          "text": "No tags"
+        },
+        {
+          "id": "d",
+          "text": "Ignore scoping"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ABAC scales authorization with attributes.",
+      "docs": [
+        {
+          "title": "ABAC",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q036",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to rotate access keys automatically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lambda rotation or eliminate keys with roles"
+        },
+        {
+          "id": "b",
+          "text": "Keys never rotated 5 years"
+        },
+        {
+          "id": "c",
+          "text": "Keys in code"
+        },
+        {
+          "id": "d",
+          "text": "Shared key"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Prefer roles; rotate keys if required.",
+      "docs": [
+        {
+          "title": "Key rotation",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q037",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to audit cross-account role assumptions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudTrail AssumeRole events"
+        },
+        {
+          "id": "b",
+          "text": "No trail"
+        },
+        {
+          "id": "c",
+          "text": "ExternalId not used"
+        },
+        {
+          "id": "d",
+          "text": "Wildcard trust"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "ExternalId mitigates confused deputy.",
+      "docs": [
+        {
+          "title": "Cross-account roles",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q038",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to restrict access by IP with policy conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "aws:SourceIp condition keys"
+        },
+        {
+          "id": "b",
+          "text": "Allow * no conditions"
+        },
+        {
+          "id": "c",
+          "text": "Ignore VPN"
+        },
+        {
+          "id": "d",
+          "text": "Bypass with compromised role only\u2014still log"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Condition keys enforce network context.",
+      "docs": [
+        {
+          "title": "Policy conditions",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q039",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use IAM Access Analyzer for external access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Access Analyzer"
+        },
+        {
+          "id": "b",
+          "text": "Manual bucket checks only"
+        },
+        {
+          "id": "c",
+          "text": "Public ACLs"
+        },
+        {
+          "id": "d",
+          "text": "Ignore findings"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access Analyzer finds unintended public/cross-account access.",
+      "docs": [
+        {
+          "title": "Access Analyzer",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q040",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which service should you use to enforce MFA for console users?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM MFA policies"
+        },
+        {
+          "id": "b",
+          "text": "Password only"
+        },
+        {
+          "id": "c",
+          "text": "SMS only weak policy"
+        },
+        {
+          "id": "d",
+          "text": "Shared users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MFA reduces account takeover risk.",
+      "docs": [
+        {
+          "title": "IAM MFA",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q041",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to enforce MFA for console users?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM MFA policies"
+        },
+        {
+          "id": "b",
+          "text": "Password only"
+        },
+        {
+          "id": "c",
+          "text": "SMS only weak policy"
+        },
+        {
+          "id": "d",
+          "text": "Shared users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MFA reduces account takeover risk.",
+      "docs": [
+        {
+          "title": "IAM MFA",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q042",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "A team must enforce MFA for console users. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM MFA policies"
+        },
+        {
+          "id": "b",
+          "text": "Password only"
+        },
+        {
+          "id": "c",
+          "text": "SMS only weak policy"
+        },
+        {
+          "id": "d",
+          "text": "Shared users"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "MFA reduces account takeover risk.",
+      "docs": [
+        {
+          "title": "IAM MFA",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q043",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which service should you use to use permission boundaries for delegated admins?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM permission boundaries"
+        },
+        {
+          "id": "b",
+          "text": "Unbounded AdminAccess delegates"
+        },
+        {
+          "id": "c",
+          "text": "No SCP"
+        },
+        {
+          "id": "d",
+          "text": "Ignore least privilege"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boundaries cap maximum permissions.",
+      "docs": [
+        {
+          "title": "Permission boundaries",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q044",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to use permission boundaries for delegated admins?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM permission boundaries"
+        },
+        {
+          "id": "b",
+          "text": "Unbounded AdminAccess delegates"
+        },
+        {
+          "id": "c",
+          "text": "No SCP"
+        },
+        {
+          "id": "d",
+          "text": "Ignore least privilege"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boundaries cap maximum permissions.",
+      "docs": [
+        {
+          "title": "Permission boundaries",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q045",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "A team must use permission boundaries for delegated admins. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM permission boundaries"
+        },
+        {
+          "id": "b",
+          "text": "Unbounded AdminAccess delegates"
+        },
+        {
+          "id": "c",
+          "text": "No SCP"
+        },
+        {
+          "id": "d",
+          "text": "Ignore least privilege"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boundaries cap maximum permissions.",
+      "docs": [
+        {
+          "title": "Permission boundaries",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q046",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "Which service should you use to federate workforce access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM Identity Center with external IdP"
+        },
+        {
+          "id": "b",
+          "text": "Long-term IAM users for all staff"
+        },
+        {
+          "id": "c",
+          "text": "Password email"
+        },
+        {
+          "id": "d",
+          "text": "No SSO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Identity Center centralizes workforce access.",
+      "docs": [
+        {
+          "title": "IAM Identity Center",
+          "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q047",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to federate workforce access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM Identity Center with external IdP"
+        },
+        {
+          "id": "b",
+          "text": "Long-term IAM users for all staff"
+        },
+        {
+          "id": "c",
+          "text": "Password email"
+        },
+        {
+          "id": "d",
+          "text": "No SSO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Identity Center centralizes workforce access.",
+      "docs": [
+        {
+          "title": "IAM Identity Center",
+          "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q048",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "A team must federate workforce access. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IAM Identity Center with external IdP"
+        },
+        {
+          "id": "b",
+          "text": "Long-term IAM users for all staff"
+        },
+        {
+          "id": "c",
+          "text": "Password email"
+        },
+        {
+          "id": "d",
+          "text": "No SSO"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Identity Center centralizes workforce access.",
+      "docs": [
+        {
+          "title": "IAM Identity Center",
+          "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q049",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to protect web apps from OWASP Top 10?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF managed rule groups"
+        },
+        {
+          "id": "b",
+          "text": "No WAF"
+        },
+        {
+          "id": "c",
+          "text": "Security group as WAF"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SQLi"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed rules address common attacks.",
+      "docs": [
+        {
+          "title": "WAF managed rules",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q050",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to mitigate DDoS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Shield and Route 53 routing policies"
+        },
+        {
+          "id": "b",
+          "text": "Single small instance"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore attack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shield Standard is automatic; Advanced adds RTM.",
+      "docs": [
+        {
+          "title": "Shield",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q051",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to harden EC2 AMIs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "EC2 Image Builder CIS benchmarks"
+        },
+        {
+          "id": "b",
+          "text": "Default AMI public"
+        },
+        {
+          "id": "c",
+          "text": "No patching"
+        },
+        {
+          "id": "d",
+          "text": "Open ports"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hardened images reduce attack surface.",
+      "docs": [
+        {
+          "title": "Image Builder",
+          "url": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q052",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to block public S3 access account-wide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3 Block Public Access at account level"
+        },
+        {
+          "id": "b",
+          "text": "ACL public-read"
+        },
+        {
+          "id": "c",
+          "text": "Ignore Macie"
+        },
+        {
+          "id": "d",
+          "text": "No Config rule"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Account-level BPA prevents accidental exposure.",
+      "docs": [
+        {
+          "title": "Block Public Access",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q053",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to secure EKS API endpoint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Private endpoint and restricted public access CIDRs"
+        },
+        {
+          "id": "b",
+          "text": "0.0.0.0/0 public API"
+        },
+        {
+          "id": "c",
+          "text": "No RBAC"
+        },
+        {
+          "id": "d",
+          "text": "Anonymous auth"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Restrict Kubernetes API exposure.",
+      "docs": [
+        {
+          "title": "EKS cluster endpoint",
+          "url": "https://docs.aws.amazon.com/eks/latest/userguide/cluster-endpoint.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q054",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage host-based firewall with SSM?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM State Manager for host firewall rules"
+        },
+        {
+          "id": "b",
+          "text": "Disable host firewall"
+        },
+        {
+          "id": "c",
+          "text": "Ad hoc iptables"
+        },
+        {
+          "id": "d",
+          "text": "No compliance"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "State Manager enforces host configuration.",
+      "docs": [
+        {
+          "title": "State Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q055",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use Network Firewall for egress control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Network Firewall"
+        },
+        {
+          "id": "b",
+          "text": "Any outbound allowed"
+        },
+        {
+          "id": "c",
+          "text": "No domain filter"
+        },
+        {
+          "id": "d",
+          "text": "Ignore malware C2"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Egress filtering limits data exfiltration.",
+      "docs": [
+        {
+          "title": "Network Firewall",
+          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q056",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to implement bastion-less admin access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSM Session Manager"
+        },
+        {
+          "id": "b",
+          "text": "Public SSH 22"
+        },
+        {
+          "id": "c",
+          "text": "Shared PEM on wiki"
+        },
+        {
+          "id": "d",
+          "text": "Password SSH"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Session Manager provides audited shell access.",
+      "docs": [
+        {
+          "title": "Session Manager",
+          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q057",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which service should you use to protect web apps from OWASP Top 10?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF managed rule groups"
+        },
+        {
+          "id": "b",
+          "text": "No WAF"
+        },
+        {
+          "id": "c",
+          "text": "Security group as WAF"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SQLi"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed rules address common attacks.",
+      "docs": [
+        {
+          "title": "WAF managed rules",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q058",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to protect web apps from OWASP Top 10?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF managed rule groups"
+        },
+        {
+          "id": "b",
+          "text": "No WAF"
+        },
+        {
+          "id": "c",
+          "text": "Security group as WAF"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SQLi"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed rules address common attacks.",
+      "docs": [
+        {
+          "title": "WAF managed rules",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q059",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "A team must protect web apps from OWASP Top 10. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS WAF managed rule groups"
+        },
+        {
+          "id": "b",
+          "text": "No WAF"
+        },
+        {
+          "id": "c",
+          "text": "Security group as WAF"
+        },
+        {
+          "id": "d",
+          "text": "Ignore SQLi"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Managed rules address common attacks.",
+      "docs": [
+        {
+          "title": "WAF managed rules",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q060",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "Which service should you use to mitigate DDoS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Shield and Route 53 routing policies"
+        },
+        {
+          "id": "b",
+          "text": "Single small instance"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore attack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shield Standard is automatic; Advanced adds RTM.",
+      "docs": [
+        {
+          "title": "Shield",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q061",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to mitigate DDoS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Shield and Route 53 routing policies"
+        },
+        {
+          "id": "b",
+          "text": "Single small instance"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore attack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shield Standard is automatic; Advanced adds RTM.",
+      "docs": [
+        {
+          "title": "Shield",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q062",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "A team must mitigate DDoS. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Shield and Route 53 routing policies"
+        },
+        {
+          "id": "b",
+          "text": "Single small instance"
+        },
+        {
+          "id": "c",
+          "text": "No health checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore attack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shield Standard is automatic; Advanced adds RTM.",
+      "docs": [
+        {
+          "title": "Shield",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q063",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to encrypt S3 with CMKs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS"
+        },
+        {
+          "id": "b",
+          "text": "SSE-S3 only when CMK required"
+        },
+        {
+          "id": "c",
+          "text": "No encryption"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CMKs give customer control and audit via KMS.",
+      "docs": [
+        {
+          "title": "SSE-KMS",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q064",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to enforce encryption in transit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed expired"
+        },
+        {
+          "id": "d",
+          "text": "Ignore cert pinning needs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "TLS protects data in motion.",
+      "docs": [
+        {
+          "title": "TLS policies",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q065",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to classify and protect PII in S3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Train ML on prod PII raw"
+        },
+        {
+          "id": "d",
+          "text": "Public datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Macie discovers sensitive data.",
+      "docs": [
+        {
+          "title": "Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q066",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage CMK rotation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatic annual rotation in KMS"
+        },
+        {
+          "id": "b",
+          "text": "Static key material forever"
+        },
+        {
+          "id": "c",
+          "text": "Disable CloudTrail KMS"
+        },
+        {
+          "id": "d",
+          "text": "Shared admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "KMS supports automatic key rotation.",
+      "docs": [
+        {
+          "title": "KMS rotation",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q067",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to use HSM-backed keys for strict compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CloudHSM or KMS custom key store"
+        },
+        {
+          "id": "b",
+          "text": "Export plaintext key"
+        },
+        {
+          "id": "c",
+          "text": "Store key in code"
+        },
+        {
+          "id": "d",
+          "text": "Email key"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudHSM provides single-tenant HSMs.",
+      "docs": [
+        {
+          "title": "CloudHSM",
+          "url": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q068",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to tokenize PAN data in applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PCI patterns with encryption and minimal storage"
+        },
+        {
+          "id": "b",
+          "text": "Store CVV"
+        },
+        {
+          "id": "c",
+          "text": "Log full card numbers"
+        },
+        {
+          "id": "d",
+          "text": "Public S3 PAN"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Follow PCI DSS for cardholder data.",
+      "docs": [
+        {
+          "title": "PCI on AWS",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/pci-dss-payment-applications-on-aws/pci-dss-payment-applications-on-aws.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q069",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to secure RDS at rest and in transit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDS encryption and SSL connections"
+        },
+        {
+          "id": "b",
+          "text": "Unencrypted snapshots public"
+        },
+        {
+          "id": "c",
+          "text": "No SSL"
+        },
+        {
+          "id": "d",
+          "text": "Default weak password"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RDS supports encryption and SSL/TLS.",
+      "docs": [
+        {
+          "title": "RDS encryption",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q070",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to implement S3 Object Lock for WORM?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3 Object Lock governance/compliance modes"
+        },
+        {
+          "id": "b",
+          "text": "Delete regulated records"
+        },
+        {
+          "id": "c",
+          "text": "No versioning"
+        },
+        {
+          "id": "d",
+          "text": "Ignore legal hold"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Object Lock prevents deletion during retention.",
+      "docs": [
+        {
+          "title": "Object Lock",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q071",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which service should you use to encrypt S3 with CMKs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS"
+        },
+        {
+          "id": "b",
+          "text": "SSE-S3 only when CMK required"
+        },
+        {
+          "id": "c",
+          "text": "No encryption"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CMKs give customer control and audit via KMS.",
+      "docs": [
+        {
+          "title": "SSE-KMS",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q072",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to encrypt S3 with CMKs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS"
+        },
+        {
+          "id": "b",
+          "text": "SSE-S3 only when CMK required"
+        },
+        {
+          "id": "c",
+          "text": "No encryption"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CMKs give customer control and audit via KMS.",
+      "docs": [
+        {
+          "title": "SSE-KMS",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q073",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A team must encrypt S3 with CMKs. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSE-KMS"
+        },
+        {
+          "id": "b",
+          "text": "SSE-S3 only when CMK required"
+        },
+        {
+          "id": "c",
+          "text": "No encryption"
+        },
+        {
+          "id": "d",
+          "text": "Public bucket"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CMKs give customer control and audit via KMS.",
+      "docs": [
+        {
+          "title": "SSE-KMS",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q074",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which service should you use to enforce encryption in transit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed expired"
+        },
+        {
+          "id": "d",
+          "text": "Ignore cert pinning needs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "TLS protects data in motion.",
+      "docs": [
+        {
+          "title": "TLS policies",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q075",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to enforce encryption in transit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed expired"
+        },
+        {
+          "id": "d",
+          "text": "Ignore cert pinning needs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "TLS protects data in motion.",
+      "docs": [
+        {
+          "title": "TLS policies",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q076",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A team must enforce encryption in transit. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed expired"
+        },
+        {
+          "id": "d",
+          "text": "Ignore cert pinning needs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "TLS protects data in motion.",
+      "docs": [
+        {
+          "title": "TLS policies",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q077",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "Which service should you use to classify and protect PII in S3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Train ML on prod PII raw"
+        },
+        {
+          "id": "d",
+          "text": "Public datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Macie discovers sensitive data.",
+      "docs": [
+        {
+          "title": "Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q078",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to classify and protect PII in S3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Train ML on prod PII raw"
+        },
+        {
+          "id": "d",
+          "text": "Public datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Macie discovers sensitive data.",
+      "docs": [
+        {
+          "title": "Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q079",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A team must classify and protect PII in S3. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon Macie"
+        },
+        {
+          "id": "b",
+          "text": "Ignore findings"
+        },
+        {
+          "id": "c",
+          "text": "Train ML on prod PII raw"
+        },
+        {
+          "id": "d",
+          "text": "Public datasets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Macie discovers sensitive data.",
+      "docs": [
+        {
+          "title": "Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q080",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to continuous compliance auditing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Audit Manager"
+        },
+        {
+          "id": "b",
+          "text": "Annual manual only"
+        },
+        {
+          "id": "c",
+          "text": "No evidence"
+        },
+        {
+          "id": "d",
+          "text": "Ignore controls"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Audit Manager collects evidence for frameworks.",
+      "docs": [
+        {
+          "title": "Audit Manager",
+          "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q081",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to evaluate configs against rules?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Config conformance packs"
+        },
+        {
+          "id": "b",
+          "text": "No recording"
+        },
+        {
+          "id": "c",
+          "text": "Manual checks"
+        },
+        {
+          "id": "d",
+          "text": "Ignore drift"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Config rules detect noncompliance.",
+      "docs": [
+        {
+          "title": "Config rules",
+          "url": "https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q082",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to prevent disabling security logging with SCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Organizations SCP denying cloudtrail:StopLogging"
+        },
+        {
+          "id": "b",
+          "text": "Allow stop logging all"
+        },
+        {
+          "id": "c",
+          "text": "No org"
+        },
+        {
+          "id": "d",
+          "text": "Root daily"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SCPs apply guardrails across accounts.",
+      "docs": [
+        {
+          "title": "SCPs",
+          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q083",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to centralize log storage with immutability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S3 Object Lock for log bucket"
+        },
+        {
+          "id": "b",
+          "text": "Mutable log bucket attacker deletes"
+        },
+        {
+          "id": "c",
+          "text": "No MFA delete"
+        },
+        {
+          "id": "d",
+          "text": "Short retention only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Immutable logs support forensics.",
+      "docs": [
+        {
+          "title": "Logging best practices",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-monitoring-for-application-owners/logging-best-practices.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q084",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to risk assessment for new workloads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Well-Architected Security reviews"
+        },
+        {
+          "id": "b",
+          "text": "Ship without review"
+        },
+        {
+          "id": "c",
+          "text": "Ignore data classification"
+        },
+        {
+          "id": "d",
+          "text": "No threat model"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Well-Architected reviews improve security posture.",
+      "docs": [
+        {
+          "title": "Security pillar",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q085",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to manage security exceptions with time bounds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved exception workflow in GRC tool"
+        },
+        {
+          "id": "b",
+          "text": "Permanent 0.0.0.0/0"
+        },
+        {
+          "id": "c",
+          "text": "Ignore expiry"
+        },
+        {
+          "id": "d",
+          "text": "No approval"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Time-bound exceptions reduce lingering risk.",
+      "docs": [
+        {
+          "title": "GRC",
+          "url": "https://aws.amazon.com/compliance/"
+        }
+      ]
+    },
+    {
+      "id": "scs-q086",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to map controls to CIS AWS Foundations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Security Hub CIS benchmark"
+        },
+        {
+          "id": "b",
+          "text": "Ignore standard"
+        },
+        {
+          "id": "c",
+          "text": "No remediation"
+        },
+        {
+          "id": "d",
+          "text": "Disable standard"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Security Hub runs automated compliance checks.",
+      "docs": [
+        {
+          "title": "CIS benchmark",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-cis.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q087",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "Which AWS service or feature is BEST to document shared responsibility for SaaS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Customer manages data in SaaS; AWS manages cloud"
+        },
+        {
+          "id": "b",
+          "text": "Customer patches hypervisor"
+        },
+        {
+          "id": "c",
+          "text": "AWS configures SGs customer ignores"
+        },
+        {
+          "id": "d",
+          "text": "Blame only vendor"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Understand responsibility splits per service model.",
+      "docs": [
+        {
+          "title": "Shared responsibility",
+          "url": "https://aws.amazon.com/compliance/shared-responsibility-model/"
+        }
+      ]
+    },
+    {
+      "id": "scs-q088",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "Which service should you use to continuous compliance auditing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Audit Manager"
+        },
+        {
+          "id": "b",
+          "text": "Annual manual only"
+        },
+        {
+          "id": "c",
+          "text": "No evidence"
+        },
+        {
+          "id": "d",
+          "text": "Ignore controls"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Audit Manager collects evidence for frameworks.",
+      "docs": [
+        {
+          "title": "Audit Manager",
+          "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q089",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "What is the MOST appropriate AWS solution to continuous compliance auditing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Audit Manager"
+        },
+        {
+          "id": "b",
+          "text": "Annual manual only"
+        },
+        {
+          "id": "c",
+          "text": "No evidence"
+        },
+        {
+          "id": "d",
+          "text": "Ignore controls"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Audit Manager collects evidence for frameworks.",
+      "docs": [
+        {
+          "title": "Audit Manager",
+          "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q090",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "A team must continuous compliance auditing. Which option meets the requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS Audit Manager"
+        },
+        {
+          "id": "b",
+          "text": "Annual manual only"
+        },
+        {
+          "id": "c",
+          "text": "No evidence"
+        },
+        {
+          "id": "d",
+          "text": "Ignore controls"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Audit Manager collects evidence for frameworks.",
+      "docs": [
+        {
+          "title": "Audit Manager",
+          "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q091",
+      "domain": "detection",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Security \u2013 Specialty? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "SCS-C02 Exam Guide"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Amazon GuardDuty"
+        },
+        {
+          "id": "d",
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "docs": [
+        {
+          "title": "SCS-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-security-specialty/"
+        }
+      ]
+    },
+    {
+      "id": "scs-q092",
+      "domain": "incident-response",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q093",
+      "domain": "detection",
+      "type": "multiple-response",
+      "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for failure and automate recovery"
+        },
+        {
+          "id": "b",
+          "text": "Ignore monitoring to reduce cost"
+        },
+        {
+          "id": "c",
+          "text": "Test recovery procedures"
+        },
+        {
+          "id": "d",
+          "text": "Use single-AZ for all production data stores"
+        },
+        {
+          "id": "e",
+          "text": "Document architecture decisions"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": "Reliability and operational excellence emphasize automation, testing, and learning from failure.",
+      "docs": [
+        {
+          "title": "Well-Architected Framework",
+          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q094",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'SCS-C02 Exam Guide', what should you do FIRST when addressing Detection objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as SCS-C02 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "SCS-C02 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-security-specialty/"
+        }
+      ]
+    },
+    {
+      "id": "scs-q095",
+      "domain": "detection",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon GuardDuty', what should you do FIRST when addressing Detection objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon GuardDuty describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon GuardDuty",
+          "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q096",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Security Hub', what should you do FIRST when addressing Incident Response objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Security Hub describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Security Hub",
+          "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q097",
+      "domain": "incident-response",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Detective', what should you do FIRST when addressing Incident Response objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Detective describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Detective",
+          "url": "https://docs.aws.amazon.com/detective/latest/userguide/what-is-detective.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q098",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS IAM', what should you do FIRST when addressing Identity and Access Management objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS IAM describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS IAM",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q099",
+      "domain": "iam",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'IAM Identity Center', what should you do FIRST when addressing Identity and Access Management objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as IAM Identity Center describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "IAM Identity Center",
+          "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q100",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS WAF', what should you do FIRST when addressing Infrastructure Security objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS WAF describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS WAF",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q101",
+      "domain": "infrastructure-security",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Shield', what should you do FIRST when addressing Infrastructure Security objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Shield describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Shield",
+          "url": "https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q102",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS KMS', what should you do FIRST when addressing Data Protection objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS KMS describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q103",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'Amazon Macie', what should you do FIRST when addressing Data Protection objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as Amazon Macie describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "Amazon Macie",
+          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q104",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Config', what should you do FIRST when addressing Security Foundations and Governance objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Config describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Config",
+          "url": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html"
+        }
+      ]
+    },
+    {
+      "id": "scs-q105",
+      "domain": "security-governance",
+      "type": "multiple-choice",
+      "text": "According to AWS best practices documented in 'AWS Audit Manager', what should you do FIRST when addressing Security Foundations and Governance objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable security logging to reduce noise"
+        },
+        {
+          "id": "c",
+          "text": "Use root user credentials for daily operations"
+        },
+        {
+          "id": "d",
+          "text": "Skip backup and recovery planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Official guides such as AWS Audit Manager describe domain objectives; practice designs should follow AWS documented best practices.",
+      "docs": [
+        {
+          "title": "AWS Audit Manager",
+          "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html"
+        }
+      ]
+    }
+  ]
+}

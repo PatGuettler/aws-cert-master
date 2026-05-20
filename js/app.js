@@ -86,20 +86,81 @@ function resolveInitialExamId(exams) {
   if (activeCertId && exams.some((e) => e.id === activeCertId)) {
     return activeCertId;
   }
+  const preferred = exams.find((e) => e.id === "cloud-practitioner");
+  if (preferred) return preferred.id;
   return exams[0]?.id ?? "";
+}
+
+/**
+ * @param {HTMLSelectElement|null} select
+ * @param {string} selectedId
+ */
+function syncCertFilterOptions(select, selectedId) {
+  if (!select) return;
+  const awsExams = examIndexList
+    .filter((e) => (e.vendor ?? "aws") === "aws")
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  const prev = select.value || selectedId;
+  select.innerHTML = "";
+  for (const exam of awsExams) {
+    const opt = document.createElement("option");
+    opt.value = exam.id;
+    opt.textContent = exam.code ? `${exam.name} (${exam.code})` : exam.name;
+    select.appendChild(opt);
+  }
+  if (awsExams.some((e) => e.id === prev)) select.value = prev;
+  else if (awsExams.some((e) => e.id === selectedId)) select.value = selectedId;
+  else if (awsExams[0]) select.value = awsExams[0].id;
+}
+
+/**
+ * @param {import('./cert-loader.js').CertData} cert
+ */
+function buildCertDescription(cert) {
+  const weights = cert.domains.map((d) => `${d.weight}%`).join(" / ");
+  const e = cert.exam;
+  return `Each attempt draws <strong>${e.totalQuestions} random questions</strong> from the bank using official <strong>${cert.code}</strong> domain weights (${weights}), with shuffled order and answer choices. Mirrors the real exam format: ${e.scoredQuestions} scored questions, ${e.timeLimitMinutes} minutes, pass/fail at ${e.passingScore}. Unofficial practice — not actual exam content.`;
+}
+
+async function renderDashboardForFilter() {
+  const select = document.getElementById("dashboard-cert-filter");
+  const certId = select?.value || activeCertId;
+  if (!certId) return;
+
+  const cert =
+    certId === activeCertId && currentCert
+      ? currentCert
+      : await loadCert(certId);
+
+  renderDashboard(certId, cert, { onHistoryChange: refreshDataViews });
 }
 
 function minutesSince(iso) {
   return Math.round((Date.now() - new Date(iso).getTime()) / 60000);
 }
 
+function getActiveView() {
+  for (const [key, el] of Object.entries(views)) {
+    if (el && !el.classList.contains("hidden")) return key;
+  }
+  return "home";
+}
+
 function refreshDataViews() {
-  if (currentCert && activeCertId) {
-    renderHome();
-    if (!views.dashboard?.classList.contains("hidden")) {
-      renderDashboard(activeCertId, currentCert, { onHistoryChange: refreshDataViews });
-    }
-    if (lastResult) renderResults();
+  if (!currentCert || !activeCertId) return;
+
+  const active = getActiveView();
+  if (active === "dashboard") {
+    renderDashboardForFilter();
+    return;
+  }
+  if (active === "home") {
+    populateHome();
+    return;
+  }
+  if (active === "results" && lastResult) {
+    renderResults();
   }
 }
 
@@ -175,6 +236,7 @@ async function init() {
       onNavigateDashboard: () => {},
     });
     initDataPanel({
+      getScopeCertId: () => "",
       getActiveCertId: () => "",
       getCertIds: () => [],
       onDataChange: refreshDataViews,
@@ -201,10 +263,25 @@ async function init() {
   });
 
   initDataPanel({
+    getScopeCertId: () => {
+      const sel = document.getElementById("data-cert-filter");
+      return sel?.value || activeCertId;
+    },
     getActiveCertId: () => activeCertId,
     getCertIds: () => examIndexList.map((e) => e.id),
     onDataChange: refreshDataViews,
   });
+
+  syncCertFilterOptions(
+    document.getElementById("data-cert-filter"),
+    activeCertId
+  );
+  document.getElementById("dashboard-cert-filter")?.addEventListener(
+    "change",
+    () => {
+      renderDashboardForFilter();
+    }
+  );
 }
 
 /**
@@ -226,17 +303,28 @@ async function switchCert(certId) {
   settings = loadSettings(certId);
   menuApi?.setActiveCert(certId);
   menuApi?.refreshSettings(settings);
-  renderHome();
+  syncCertFilterOptions(
+    document.getElementById("data-cert-filter"),
+    activeCertId
+  );
+  const dashFilter = document.getElementById("dashboard-cert-filter");
+  if (dashFilter && !views.dashboard?.classList.contains("hidden")) {
+    dashFilter.value = certId;
+  }
+  showView("home");
+  populateHome();
   setHeaderTitle(currentCert.name);
 }
 
-function renderHome() {
+function populateHome() {
   if (!currentCert) return;
-  showView("home");
 
   const cert = currentCert;
   document.getElementById("home-cert-name").textContent = cert.name;
   document.getElementById("home-cert-code").textContent = cert.code;
+
+  const desc = document.getElementById("home-cert-description");
+  if (desc) desc.innerHTML = buildCertDescription(cert);
 
   const poolWarning = document.getElementById("pool-warning");
   const poolStatus = getDomainPoolStatus(cert);
@@ -300,11 +388,21 @@ function renderHome() {
   renderProgressTeaser(activeCertId, cert);
 }
 
-function showDashboard() {
+function renderHome() {
   if (!currentCert) return;
+  showView("home");
+  populateHome();
+}
+
+async function showDashboard() {
+  if (!examIndexList.length) return;
   showView("dashboard");
   setHeaderTitle("Your progress");
-  renderDashboard(activeCertId, currentCert, { onHistoryChange: refreshDataViews });
+  syncCertFilterOptions(
+    document.getElementById("dashboard-cert-filter"),
+    activeCertId
+  );
+  await renderDashboardForFilter();
 }
 
 function launchExamSession(questions, mode) {
@@ -550,7 +648,12 @@ function goHome() {
 document.getElementById("btn-start")?.addEventListener("click", startExam);
 document.getElementById("btn-open-dashboard")?.addEventListener("click", showDashboard);
 document.getElementById("btn-dashboard-home")?.addEventListener("click", goHome);
-document.getElementById("btn-dashboard-start")?.addEventListener("click", startExam);
+document.getElementById("btn-dashboard-start")?.addEventListener("click", async () => {
+  const certId =
+    document.getElementById("dashboard-cert-filter")?.value || activeCertId;
+  if (certId && certId !== activeCertId) await switchCert(certId);
+  startExam();
+});
 document.getElementById("btn-view-dashboard")?.addEventListener("click", showDashboard);
 document.getElementById("btn-home")?.addEventListener("click", goHome);
 document.getElementById("btn-retake")?.addEventListener("click", startExam);

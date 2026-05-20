@@ -502,6 +502,7 @@ def main():
         "id": "cloud-practitioner",
         "name": "AWS Certified Cloud Practitioner",
         "code": "CLF-C02",
+        "vendor": "aws",
         "exam": {
             "totalQuestions": 65,
             "scoredQuestions": 50,
@@ -522,10 +523,14 @@ def main():
     for d in DOMAINS:
         print(f"  {d['id']}: {by_domain.get(d['id'], 0)} (exam uses ~{EXAM_DOMAIN_MIN[d['id']]} per attempt)")
 
-    from build_exams_index import main as build_index  # noqa: E402
+    import importlib.util
 
+    index_script = ROOT / "scripts" / "build-exams-index.py"
+    spec = importlib.util.spec_from_file_location("build_exams_index", index_script)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)  # type: ignore[union-attr]
     print()
-    build_index()
+    module.main()
 
 if __name__ == "__main__":
     main()
