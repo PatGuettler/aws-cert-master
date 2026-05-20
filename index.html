@@ -47,6 +47,25 @@
           </p>
         </div>
       </section>
+      <section class="drawer-section drawer-section-data">
+        <h3>My data</h3>
+        <p class="drawer-hint">Stored in this browser only.</p>
+        <div class="data-actions">
+          <button type="button" id="btn-export-data" class="btn btn-outline btn-block">
+            Export backup
+          </button>
+          <label class="btn btn-outline btn-block import-label">
+            Import backup
+            <input id="import-data-file" type="file" accept="application/json" hidden />
+          </label>
+        </div>
+        <p class="drawer-subhead">Clear data</p>
+        <button type="button" id="btn-clear-history" class="btn-text">Clear exam history</button>
+        <button type="button" id="btn-clear-weak" class="btn-text">Clear weak question stats</button>
+        <button type="button" id="btn-clear-bookmarks" class="btn-text">Clear bookmarks</button>
+        <button type="button" id="btn-clear-resume" class="btn-text">Clear saved exam (resume)</button>
+        <button type="button" id="btn-clear-all" class="btn-text btn-text-danger">Clear everything</button>
+      </section>
       <section class="drawer-section">
         <h3>Test options</h3>
         <label class="option-row">
@@ -112,6 +131,17 @@
           <h3 id="domain-heading">Exam domains</h3>
           <ul id="domain-list" class="domain-list"></ul>
         </div>
+        <section id="history-panel" class="history-panel is-open">
+          <button
+            type="button"
+            id="history-panel-toggle"
+            class="history-panel-toggle"
+            aria-expanded="true"
+          >
+            Your history
+          </button>
+          <div id="history-panel-body" class="history-panel-body"></div>
+        </section>
       </section>
 
       <section id="view-exam" class="view hidden">
@@ -145,6 +175,7 @@
           <h2 id="results-title">Results</h2>
           <p class="score-display" id="results-score">0 / 1000</p>
           <p id="results-detail"></p>
+          <p id="results-trend" class="results-trend hidden"></p>
         </div>
         <div class="domain-results">
           <h3>Performance by domain</h3>
@@ -153,6 +184,12 @@
         <div class="results-actions">
           <button id="btn-study-plan" type="button" class="btn btn-primary">
             View study plan
+          </button>
+          <button id="btn-review-bookmarks" type="button" class="btn btn-secondary hidden">
+            Review flagged questions
+          </button>
+          <button id="btn-drill" type="button" class="btn btn-secondary">
+            Drill weak questions
           </button>
           <button id="btn-retake" type="button" class="btn btn-secondary">
             Retake exam
@@ -166,6 +203,19 @@
           official AWS exam results. Passing score 700/1000 mirrors the CLF-C02
           exam guide.
         </p>
+      </section>
+
+      <section id="view-review" class="view hidden">
+        <div class="study-plan">
+          <h2>Flagged for review</h2>
+          <p>Questions you marked during the exam, with correct answers and explanations.</p>
+          <div id="bookmark-review-content"></div>
+        </div>
+        <div class="results-actions" style="margin-top: 1.5rem">
+          <button id="btn-back-results-from-review" type="button" class="btn btn-outline">
+            Back to results
+          </button>
+        </div>
       </section>
 
       <section id="view-study" class="view hidden">

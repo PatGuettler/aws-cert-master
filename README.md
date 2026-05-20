@@ -126,6 +126,21 @@ Open `http://localhost:8080/`. ES modules require HTTP (not `file://`).
 
 Or use **Settings → Pages → Deploy from branch `main` / root** and run the index script locally before each push if you do not use Actions.
 
+## Browser-only progress (localStorage)
+
+Progress is saved **in this browser only** — no account required.
+
+| Feature | Description |
+|---------|-------------|
+| **Score history** | Past attempts on the home page; trend line on results |
+| **Resume exam** | Auto-saves every 30s; prompt on return (expires after 24h) |
+| **Bookmarks** | Mark questions for review (like the real exam) |
+| **Adaptive pool** | Missed questions appear more often over time |
+| **Drill mode** | Up to 20 weak/missed questions after an exam |
+| **My Data** (menu) | Export/import backup, clear history or everything |
+
+Use **Export backup** in the menu before switching browsers or clearing site data.
+
 ## Optional ad bar
 
 A small sponsored area (bottom or side) can be enabled without affecting the exam UI. Ads are **hidden during active exams**.

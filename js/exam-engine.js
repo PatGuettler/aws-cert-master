@@ -1,4 +1,5 @@
 import { isQuestionCorrect } from "./scoring.js";
+import { getBookmarks, toggleBookmark, saveResumeState } from "./storage.js";
 
 /**
  * @typedef {import('./cert-loader.js').Question} Question
@@ -9,26 +10,35 @@ import { isQuestionCorrect } from "./scoring.js";
 /**
  * @param {Object} opts
  * @param {CertData} opts.cert
+ * @param {string} opts.certId
  * @param {Question[]} opts.questions
  * @param {ExamSettings} opts.settings
  * @param {Record<string, string[]>} opts.responses
  * @param {(responses: Record<string, string[]>) => void} opts.onResponsesChange
  * @param {() => void} opts.onFinish
+ * @param {boolean} [opts.isDrill]
+ * @param {{ index?: number, remainingSeconds?: number, revealed?: string[] }} [opts.resume]
  */
 export function runExam({
   cert,
+  certId,
   questions,
   settings,
   responses,
   onResponsesChange,
   onFinish,
+  isDrill = false,
+  resume,
 }) {
-  let index = 0;
+  let index = resume?.index ?? 0;
   /** @type {number|null} */
   let timerId = null;
-  let remainingSeconds = cert.exam.timeLimitMinutes * 60;
-  /** Questions for which the user clicked Next (or Finish) and saw right/wrong feedback */
-  const revealed = new Set();
+  /** @type {number|null} */
+  let saveIntervalId = null;
+  let remainingSeconds =
+    resume?.remainingSeconds ?? cert.exam.timeLimitMinutes * 60;
+  const revealed = new Set(resume?.revealed ?? []);
+  let bookmarks = getBookmarks(certId);
 
   const timerEl = document.getElementById("exam-timer");
   const progressFill = document.getElementById("progress-fill");
@@ -39,6 +49,18 @@ export function runExam({
   const btnNext = document.getElementById("btn-next");
   const btnFinish = document.getElementById("btn-finish");
 
+  function persistResume() {
+    if (isDrill) return;
+    saveResumeState(certId, {
+      questions,
+      responses: { ...responses },
+      remainingSeconds,
+      index,
+      revealed: [...revealed],
+      settings: { ...settings },
+    });
+  }
+
   function formatTime(sec) {
     const m = Math.floor(sec / 60);
     const s = sec % 60;
@@ -47,8 +69,8 @@ export function runExam({
 
   function updateTimerDisplay() {
     if (!timerEl) return;
-    if (!settings.timeLimitEnabled) {
-      timerEl.textContent = "No limit";
+    if (!settings.timeLimitEnabled || isDrill) {
+      timerEl.textContent = isDrill ? "Drill — no limit" : "No limit";
       timerEl.classList.remove("warning");
       return;
     }
@@ -59,22 +81,26 @@ export function runExam({
   function startTimer() {
     timerEl?.classList.remove("hidden");
     updateTimerDisplay();
-    if (!settings.timeLimitEnabled) return;
+    if (!settings.timeLimitEnabled || isDrill) return;
 
     timerId = window.setInterval(() => {
       remainingSeconds--;
       updateTimerDisplay();
       if (remainingSeconds <= 0) {
-        stopTimer();
+        stopTimers();
         onFinish();
       }
     }, 1000);
   }
 
-  function stopTimer() {
+  function stopTimers() {
     if (timerId !== null) {
       clearInterval(timerId);
       timerId = null;
+    }
+    if (saveIntervalId !== null) {
+      clearInterval(saveIntervalId);
+      saveIntervalId = null;
     }
   }
 
@@ -85,6 +111,7 @@ export function runExam({
   function setSelected(q, selected) {
     responses[q.id] = selected;
     onResponsesChange({ ...responses });
+    persistResume();
   }
 
   /**
@@ -103,6 +130,8 @@ export function runExam({
       dot.className = "q-dot";
       dot.textContent = String(i + 1);
       dot.title = `Question ${i + 1}`;
+
+      if (bookmarks.has(q.id)) dot.classList.add("bookmarked");
 
       if (isRevealed(q)) {
         const correct = isQuestionCorrect(q, getSelected(q));
@@ -217,15 +246,12 @@ export function runExam({
     return panel;
   }
 
-  /**
-   * Reveal right/wrong for the current question (called from Next / Finish).
-   * @returns {boolean} true if this click only revealed feedback (caller should not advance yet)
-   */
   function revealCurrentIfNeeded() {
     const q = questions[index];
     if (!settings.immediateFeedback || revealed.has(q.id)) return false;
     revealed.add(q.id);
     render();
+    persistResume();
     return true;
   }
 
@@ -244,13 +270,32 @@ export function runExam({
     if (questionCard) {
       questionCard.innerHTML = "";
 
+      const headerRow = document.createElement("div");
+      headerRow.className = "question-card-header";
+
       const typeLine = document.createElement("p");
       typeLine.className = "question-type";
       typeLine.textContent =
         q.type === "multiple-response"
           ? "Multiple response — select TWO or more answers"
           : "Multiple choice — select ONE answer";
-      questionCard.appendChild(typeLine);
+      headerRow.appendChild(typeLine);
+
+      const bookmarkBtn = document.createElement("button");
+      bookmarkBtn.type = "button";
+      bookmarkBtn.className = `btn-bookmark${bookmarks.has(q.id) ? " is-active" : ""}`;
+      bookmarkBtn.textContent = bookmarks.has(q.id)
+        ? "★ Marked for review"
+        : "☆ Mark for review";
+      bookmarkBtn.setAttribute("aria-pressed", bookmarks.has(q.id) ? "true" : "false");
+      bookmarkBtn.addEventListener("click", () => {
+        toggleBookmark(certId, q.id);
+        bookmarks = getBookmarks(certId);
+        render();
+      });
+      headerRow.appendChild(bookmarkBtn);
+
+      questionCard.appendChild(headerRow);
 
       const text = document.createElement("p");
       text.className = "question-text";
@@ -277,7 +322,11 @@ export function runExam({
     }
     if (btnFinish) {
       btnFinish.classList.toggle("hidden", !atEnd);
-      btnFinish.textContent = awaitingReveal ? "Check answer" : "Submit exam";
+      btnFinish.textContent = awaitingReveal
+        ? "Check answer"
+        : isDrill
+          ? "Finish drill"
+          : "Submit exam";
     }
   }
 
@@ -285,6 +334,7 @@ export function runExam({
     if (index > 0) {
       index--;
       render();
+      persistResume();
     }
   });
 
@@ -293,6 +343,7 @@ export function runExam({
     if (index < questions.length - 1) {
       index++;
       render();
+      persistResume();
     }
   });
 
@@ -310,12 +361,18 @@ export function runExam({
     ) {
       return;
     }
-    stopTimer();
+    stopTimers();
     onFinish();
   });
 
   startTimer();
+  if (!isDrill) {
+    saveIntervalId = window.setInterval(persistResume, 30000);
+    persistResume();
+  }
   render();
 
-  return { stopTimer };
+  return {
+    stopTimer: stopTimers,
+  };
 }

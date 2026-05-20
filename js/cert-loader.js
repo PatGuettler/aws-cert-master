@@ -184,11 +184,41 @@ export function getDomainPoolStatus(cert) {
 }
 
 /**
+ * @param {Record<string, { attempts: number, correct: number }>} weakMap
+ * @param {string} questionId
+ */
+function questionAccuracy(weakMap, questionId) {
+  const s = weakMap[questionId];
+  if (!s || s.attempts === 0) return 0.5;
+  return s.correct / s.attempts;
+}
+
+/**
+ * Bias pool toward lower-accuracy questions, then shuffle within tiers.
+ * @param {Question[]} pool
+ * @param {Record<string, { attempts: number, correct: number }>} weakMap
+ */
+function sortPoolByWeakness(pool, weakMap) {
+  const copy = [...pool];
+  copy.sort((a, b) => questionAccuracy(weakMap, a.id) - questionAccuracy(weakMap, b.id));
+  const chunk = Math.max(1, Math.ceil(copy.length / 3));
+  const tiers = [];
+  for (let i = 0; i < copy.length; i += chunk) {
+    const slice = copy.slice(i, i + chunk);
+    shuffle(slice);
+    tiers.push(...slice);
+  }
+  return tiers.length ? tiers : copy;
+}
+
+/**
  * Build one exam: domain-weighted random sample, scored/unscored split, shuffled order and options.
  * @param {CertData} cert
+ * @param {{ certId?: string, weakMap?: Record<string, { attempts: number, correct: number }> }} [opts]
  * @returns {Question[]}
  */
-export function selectExamQuestions(cert) {
+export function selectExamQuestions(cert, opts = {}) {
+  const weakMap = opts.weakMap ?? {};
   const total = cert.exam.totalQuestions;
   const unscoredCount = total - cert.exam.scoredQuestions;
   const perDomain = allocateByDomainWeight(cert.domains, total);
@@ -205,7 +235,10 @@ export function selectExamQuestions(cert) {
 
   for (const domain of cert.domains) {
     const need = perDomain[domain.id] ?? 0;
-    const pool = (byDomain[domain.id] ?? []).filter((q) => !usedIds.has(q.id));
+    let pool = (byDomain[domain.id] ?? []).filter((q) => !usedIds.has(q.id));
+    if (Object.keys(weakMap).length > 0) {
+      pool = sortPoolByWeakness(pool, weakMap);
+    }
     const picked = sampleWithoutReplacement(pool, need);
     for (const q of picked) {
       usedIds.add(q.id);
@@ -232,6 +265,75 @@ export function selectExamQuestions(cert) {
   }));
 
   return examSet;
+}
+
+const DRILL_MAX = 20;
+
+/**
+ * @param {CertData} cert
+ * @param {string[]} missedIds
+ * @param {Record<string, { attempts: number, correct: number }>} weakMap
+ * @returns {Question[]}
+ */
+export function selectDrillQuestions(cert, missedIds, weakMap = {}) {
+  const bank = new Map(cert.questions.map((q) => [q.id, q]));
+  /** @type {Question[]} */
+  let pool = missedIds.map((id) => bank.get(id)).filter(Boolean);
+
+  if (pool.length < 10) {
+    const extras = cert.questions
+      .filter((q) => !pool.some((p) => p.id === q.id))
+      .sort(
+        (a, b) => questionAccuracy(weakMap, a.id) - questionAccuracy(weakMap, b.id)
+      )
+      .slice(0, DRILL_MAX - pool.length);
+    pool = [...pool, ...extras];
+  }
+
+  shuffle(pool);
+  return pool.slice(0, DRILL_MAX).map(prepareQuestionForExam);
+}
+
+/**
+ * @param {CertData} cert
+ * @param {Record<string, { attempts: number, correct: number }>} weakMap
+ * @returns {{ domainId: string, name: string, weight: number, accuracy: number|null, isWeakest: boolean }[]}
+ */
+export function getDomainAccuracySummary(cert, weakMap) {
+  /** @type {Record<string, { attempts: number, correct: number }>} */
+  const byDomain = {};
+  for (const q of cert.questions) {
+    const s = weakMap[q.id];
+    if (!s) continue;
+    if (!byDomain[q.domain]) byDomain[q.domain] = { attempts: 0, correct: 0 };
+    byDomain[q.domain].attempts += s.attempts;
+    byDomain[q.domain].correct += s.correct;
+  }
+
+  const rows = cert.domains.map((d) => {
+    const agg = byDomain[d.id];
+    const accuracy =
+      agg && agg.attempts >= 5
+        ? Math.round((agg.correct / agg.attempts) * 100)
+        : null;
+    return {
+      domainId: d.id,
+      name: d.name,
+      weight: d.weight,
+      accuracy,
+      isWeakest: false,
+    };
+  });
+
+  const withAcc = rows.filter((r) => r.accuracy !== null);
+  if (withAcc.length > 0) {
+    const min = Math.min(...withAcc.map((r) => r.accuracy ?? 100));
+    for (const r of rows) {
+      if (r.accuracy === min) r.isWeakest = true;
+    }
+  }
+
+  return rows;
 }
 
 /**

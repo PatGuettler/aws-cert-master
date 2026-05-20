@@ -2,17 +2,34 @@ import {
   loadExamIndex,
   loadCert,
   selectExamQuestions,
+  selectDrillQuestions,
   getDomainPoolStatus,
+  getDomainAccuracySummary,
   clearExamCaches,
 } from "./cert-loader.js";
-import { loadSettings } from "./storage.js";
+import {
+  loadSettings,
+  appendHistory,
+  updateWeakQuestions,
+  getWeakQuestions,
+  getResumeState,
+  clearResumeState,
+  getBookmarks,
+  purgeStaleResumeStates,
+} from "./storage.js";
 import { initMenu } from "./menu.js";
 import { runExam } from "./exam-engine.js";
 import { scoreExam } from "./scoring.js";
 import { buildStudyPlan } from "./study-plan.js";
 import { initAds, updateAdVisibility } from "./ads.js";
+import { initStorageNotice } from "./storage-notice.js";
+import { renderHistoryPanel, buildTrendLine } from "./history-ui.js";
+import { initDataPanel } from "./data-panel.js";
+import { renderBookmarkReview } from "./review-ui.js";
 
 let activeCertId = "";
+/** @type {import('./cert-loader.js').ExamIndexEntry[]} */
+let examIndexList = [];
 /** @type {ReturnType<typeof initMenu>|null} */
 let menuApi = null;
 
@@ -32,12 +49,15 @@ let responses = {};
 let lastResult = null;
 /** @type {{ stopTimer: () => void }|null} */
 let examController = null;
+/** @type {'exam'|'drill'} */
+let sessionMode = "exam";
 
 const views = {
   home: document.getElementById("view-home"),
   exam: document.getElementById("view-exam"),
   results: document.getElementById("view-results"),
   study: document.getElementById("view-study"),
+  review: document.getElementById("view-review"),
 };
 
 const headerTitle = document.getElementById("header-title");
@@ -67,9 +87,69 @@ function resolveInitialExamId(exams) {
   return exams[0]?.id ?? "";
 }
 
+function minutesSince(iso) {
+  return Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+}
+
+function refreshDataViews() {
+  if (currentCert && activeCertId) {
+    renderHome();
+    if (lastResult) renderResults();
+  }
+}
+
+/**
+ * @param {object} resume
+ */
+function restoreExam(resume) {
+  if (!currentCert) return;
+  sessionMode = "exam";
+  examQuestions = resume.questions;
+  responses = { ...resume.responses };
+  settings = resume.settings
+    ? { ...settings, ...resume.settings }
+    : loadSettings(activeCertId);
+
+  showView("exam");
+  setHeaderTitle(`${currentCert.code} — Practice Exam (resumed)`);
+  examController?.stopTimer?.();
+
+  examController = runExam({
+    cert: currentCert,
+    certId: activeCertId,
+    questions: examQuestions,
+    settings,
+    responses,
+    onResponsesChange: (r) => {
+      responses = r;
+    },
+    onFinish: finishExam,
+    resume: {
+      index: resume.index,
+      remainingSeconds: resume.remainingSeconds,
+      revealed: resume.revealed,
+    },
+  });
+}
+
+async function tryResumePrompt() {
+  const resume = getResumeState(activeCertId);
+  if (!resume || !currentCert) return;
+
+  const mins = minutesSince(resume.savedAt);
+  const timeLeft = Math.floor((resume.remainingSeconds ?? 0) / 60);
+  const ok = window.confirm(
+    `You have an exam in progress from ${mins} minute(s) ago (${timeLeft} minute(s) remaining on the timer). Resume?`
+  );
+  if (ok) restoreExam(resume);
+  else clearResumeState(activeCertId);
+}
+
 async function init() {
+  purgeStaleResumeStates();
   clearExamCaches();
   const exams = await loadExamIndex({ reload: true });
+  examIndexList = exams;
 
   if (exams.length === 0) {
     setHeaderTitle("AWS Cert Master");
@@ -86,6 +166,11 @@ async function init() {
         settings = next;
       },
     });
+    initDataPanel({
+      getActiveCertId: () => "",
+      getCertIds: () => [],
+      onDataChange: refreshDataViews,
+    });
     return;
   }
 
@@ -93,6 +178,7 @@ async function init() {
   settings = loadSettings(activeCertId);
 
   await switchCert(activeCertId);
+  await tryResumePrompt();
 
   menuApi = initMenu({
     exams,
@@ -103,6 +189,12 @@ async function init() {
       settings = next;
     },
   });
+
+  initDataPanel({
+    getActiveCertId: () => activeCertId,
+    getCertIds: () => examIndexList.map((e) => e.id),
+    onDataChange: refreshDataViews,
+  });
 }
 
 /**
@@ -110,6 +202,7 @@ async function init() {
  */
 async function switchCert(certId) {
   const exams = await loadExamIndex({ reload: true });
+  examIndexList = exams;
   menuApi?.updateExamList(exams);
 
   if (!exams.some((e) => e.id === certId)) {
@@ -155,14 +248,8 @@ function renderHome() {
     poolWarning?.classList.add("hidden");
   }
 
-  const metaQuestions = document.getElementById("meta-questions");
-  if (metaQuestions) {
-    metaQuestions.textContent = String(examSize);
-  }
-  const metaBank = document.getElementById("meta-bank");
-  if (metaBank) {
-    metaBank.textContent = String(bankSize);
-  }
+  document.getElementById("meta-questions").textContent = String(examSize);
+  document.getElementById("meta-bank").textContent = String(bankSize);
   document.getElementById("meta-time").textContent = String(
     cert.exam.timeLimitMinutes
   );
@@ -170,52 +257,130 @@ function renderHome() {
     cert.exam.passingScore
   );
 
+  const weakMap = getWeakQuestions(activeCertId);
+  const domainAcc = getDomainAccuracySummary(cert, weakMap);
+
   const domainList = document.getElementById("domain-list");
   if (domainList) {
     domainList.innerHTML = "";
-    for (const d of cert.domains) {
+    for (const d of domainAcc) {
       const li = document.createElement("li");
-      li.innerHTML = `<span>${d.name}</span><strong>${d.weight}%</strong>`;
+      const label = document.createElement("span");
+      label.textContent = d.name;
+      const right = document.createElement("strong");
+      if (d.accuracy !== null) {
+        right.textContent = `${d.weight}% · ${d.accuracy}% acc`;
+        if (d.isWeakest) {
+          const warn = document.createElement("span");
+          warn.className = "domain-weak-badge";
+          warn.textContent = " ⚠ Weakest";
+          right.appendChild(warn);
+        }
+      } else {
+        right.textContent = `${d.weight}%`;
+      }
+      li.append(label, right);
       domainList.appendChild(li);
     }
   }
 
-  const domainHeading = document.getElementById("domain-heading");
-  if (domainHeading) {
-    domainHeading.textContent = `Exam domains (${cert.code})`;
-  }
+  document.getElementById("domain-heading").textContent =
+    `Exam domains (${cert.code})`;
+
+  renderHistoryPanel(activeCertId, cert, { onHistoryChange: refreshDataViews });
 }
 
-function startExam() {
+function launchExamSession(questions, mode) {
   if (!currentCert) return;
 
+  sessionMode = mode;
+  examQuestions = questions;
   responses = {};
-  examQuestions = selectExamQuestions(currentCert);
 
   showView("exam");
-  setHeaderTitle(`${currentCert.code} — Practice Exam`);
+  setHeaderTitle(
+    mode === "drill"
+      ? `${currentCert.code} — Drill`
+      : `${currentCert.code} — Practice Exam`
+  );
 
-  if (examController?.stopTimer) examController.stopTimer();
+  examController?.stopTimer?.();
 
   examController = runExam({
     cert: currentCert,
+    certId: activeCertId,
     questions: examQuestions,
-    settings,
+    settings:
+      mode === "drill"
+        ? { ...settings, timeLimitEnabled: false }
+        : settings,
     responses,
     onResponsesChange: (r) => {
       responses = r;
     },
     onFinish: finishExam,
+    isDrill: mode === "drill",
   });
+}
+
+function startExam() {
+  if (!currentCert) return;
+  clearResumeState(activeCertId);
+  const weakMap = getWeakQuestions(activeCertId);
+  const questions = selectExamQuestions(currentCert, { certId: activeCertId, weakMap });
+  launchExamSession(questions, "exam");
+}
+
+function startDrill() {
+  if (!currentCert || !lastResult) return;
+  clearResumeState(activeCertId);
+  const weakMap = getWeakQuestions(activeCertId);
+  const questions = selectDrillQuestions(
+    currentCert,
+    lastResult.missedQuestions,
+    weakMap
+  );
+  if (questions.length === 0) {
+    window.alert("No questions available for drill mode.");
+    return;
+  }
+  launchExamSession(questions, "drill");
 }
 
 function finishExam() {
   if (!currentCert) return;
-  examController?.stopTimer();
+  examController?.stopTimer?.();
+  clearResumeState(activeCertId);
+
   lastResult = scoreExam(currentCert, examQuestions, responses);
+
+  const entry = {
+    date: new Date().toISOString(),
+    scaledScore: lastResult.scaledScore,
+    passed: lastResult.passed,
+    percent: lastResult.percent,
+    correctCount: lastResult.correctCount,
+    totalScored: lastResult.totalScored,
+    domainBreakdown: lastResult.domainBreakdown,
+    missedQuestions: lastResult.missedQuestions,
+    type: sessionMode === "drill" ? "drill" : "exam",
+  };
+
+  appendHistory(activeCertId, entry);
+
+  if (sessionMode === "exam") {
+    updateWeakQuestions(
+      activeCertId,
+      lastResult.missedQuestions,
+      examQuestions.map((q) => q.id)
+    );
+  }
+
   renderResults();
   showView("results");
-  setHeaderTitle("Exam Results");
+  setHeaderTitle(
+    sessionMode === "drill" ? "Drill Results" : "Exam Results"
+  );
 }
 
 function renderResults() {
@@ -225,19 +390,44 @@ function renderResults() {
   const title = document.getElementById("results-title");
   const scoreEl = document.getElementById("results-score");
   const detail = document.getElementById("results-detail");
+  const trendEl = document.getElementById("results-trend");
 
   const pass = lastResult.passed;
-  header?.classList.toggle("pass", pass);
-  header?.classList.toggle("fail", !pass);
+  const isDrill = sessionMode === "drill";
+
+  header?.classList.toggle("pass", pass && !isDrill);
+  header?.classList.toggle("fail", !pass && !isDrill);
 
   if (title) {
-    title.textContent = pass ? "Pass" : "Fail";
+    title.textContent = isDrill
+      ? "Drill complete"
+      : pass
+        ? "Pass"
+        : "Fail";
   }
   if (scoreEl) {
-    scoreEl.textContent = `${lastResult.scaledScore} / ${currentCert.exam.maxScore}`;
+    scoreEl.textContent = isDrill
+      ? `${lastResult.percent}% correct`
+      : `${lastResult.scaledScore} / ${currentCert.exam.maxScore}`;
   }
   if (detail) {
-    detail.textContent = `${lastResult.correctCount} of ${lastResult.totalScored} scored questions correct (${lastResult.percent}%). Passing score: ${currentCert.exam.passingScore}.`;
+    detail.textContent = `${lastResult.correctCount} of ${lastResult.totalScored} scored questions correct (${lastResult.percent}%).${
+      isDrill
+        ? ""
+        : ` Passing score: ${currentCert.exam.passingScore}.`
+    }`;
+  }
+
+  if (trendEl) {
+    if (isDrill) {
+      trendEl.textContent =
+        "Drill sessions are saved separately and do not affect your main exam score trend.";
+      trendEl.classList.remove("hidden");
+    } else {
+      const line = buildTrendLine(activeCertId, currentCert, lastResult);
+      trendEl.textContent = line;
+      trendEl.classList.toggle("hidden", !line);
+    }
   }
 
   const domainBody = document.getElementById("domain-results-body");
@@ -264,6 +454,23 @@ function renderResults() {
       domainBody.appendChild(row);
     }
   }
+
+  const drillBtn = document.getElementById("btn-drill");
+  drillBtn?.classList.toggle("hidden", isDrill);
+
+  const bookmarkBtn = document.getElementById("btn-review-bookmarks");
+  const bookmarks = getBookmarks(activeCertId);
+  const flagged = examQuestions.filter((q) => bookmarks.has(q.id));
+  bookmarkBtn?.classList.toggle("hidden", flagged.length === 0);
+}
+
+function openBookmarkReview() {
+  if (!currentCert) return;
+  const bookmarks = getBookmarks(activeCertId);
+  const flagged = examQuestions.filter((q) => bookmarks.has(q.id));
+  renderBookmarkReview(flagged, responses, settings);
+  showView("review");
+  setHeaderTitle("Flagged questions");
 }
 
 function renderStudyPlan() {
@@ -313,18 +520,30 @@ function renderStudyPlan() {
   }
 }
 
-document.getElementById("btn-start")?.addEventListener("click", startExam);
-document.getElementById("btn-home")?.addEventListener("click", () => {
-  examController?.stopTimer();
+function goHome() {
+  examController?.stopTimer?.();
+  clearResumeState(activeCertId);
   renderHome();
-});
+}
+
+document.getElementById("btn-start")?.addEventListener("click", startExam);
+document.getElementById("btn-home")?.addEventListener("click", goHome);
 document.getElementById("btn-retake")?.addEventListener("click", startExam);
+document.getElementById("btn-drill")?.addEventListener("click", startDrill);
 document.getElementById("btn-study-plan")?.addEventListener("click", renderStudyPlan);
+document.getElementById("btn-review-bookmarks")?.addEventListener("click", openBookmarkReview);
 document.getElementById("btn-back-results")?.addEventListener("click", () => {
   showView("results");
-  setHeaderTitle("Exam Results");
+  setHeaderTitle(sessionMode === "drill" ? "Drill Results" : "Exam Results");
+});
+document.getElementById("btn-back-results-from-review")?.addEventListener("click", () => {
+  showView("results");
+  setHeaderTitle(sessionMode === "drill" ? "Drill Results" : "Exam Results");
 });
 
+document.getElementById("btn-retake-study")?.addEventListener("click", startExam);
+
+initStorageNotice();
 initAds();
 
 init().catch((err) => {
