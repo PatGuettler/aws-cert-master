@@ -39,7 +39,7 @@ Serve the repo root with any static server and open `/questions/`, `/cert/cloud-
 
 ## Ads
 
-Ad units render on static SEO pages (bottom slot from `data/ads-config.json`). The interactive app still hides ads during an active exam via `js/ads.js`.
+Ad units render on static SEO pages and the interactive app as a fixed bottom bar (`data/ads-config.json`), including during exams.
 
 After deploy, submit **https://practicecert.com/sitemap.xml** in [Google Search Console](https://search.google.com/search-console) and request indexing for `/`, `/browse/`, and a few `/cert/` URLs.
 

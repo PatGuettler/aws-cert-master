@@ -1,6 +1,6 @@
 /**
- * Lightweight ad slot — hidden during active exams.
- * Configure in data/ads-config.json (copy from ads-config.example.json).
+ * Fixed bottom ad bar on all app views (including during exams).
+ * Configure in data/ads-config.json.
  */
 
 /** @type {object|null} */
@@ -10,7 +10,6 @@ let scriptLoaded = false;
 /** @type {boolean} */
 let adRendered = false;
 
-const pageShell = document.getElementById("page-shell");
 const adSlot = document.getElementById("ad-slot");
 const adContainer = document.getElementById("ad-container");
 
@@ -33,14 +32,8 @@ async function loadAdsConfig() {
   }
 }
 
-/**
- * @param {object} cfg
- */
-function applyPlacement(cfg) {
-  const placement = cfg.placement === "side" ? "side" : "bottom";
-  pageShell?.classList.toggle("layout-side-ad", placement === "side");
-  adSlot?.classList.toggle("ad-slot--side", placement === "side");
-  adSlot?.classList.toggle("ad-slot--bottom", placement === "bottom");
+function applyBarLayout() {
+  adSlot?.classList.add("ad-slot--bar");
 }
 
 /**
@@ -102,7 +95,7 @@ async function renderAdSense(cfg) {
   ins.style.display = "block";
   ins.setAttribute("data-ad-client", cfg.adsense.client);
   ins.setAttribute("data-ad-slot", cfg.adsense.slot);
-  ins.setAttribute("data-ad-format", cfg.adsense.format ?? "auto");
+  ins.setAttribute("data-ad-format", cfg.adsense.format ?? "horizontal");
   if (cfg.adsense.fullWidthResponsive !== false) {
     ins.setAttribute("data-full-width-responsive", "true");
   }
@@ -121,7 +114,7 @@ export async function initAds() {
   const cfg = await loadAdsConfig();
   if (!cfg?.enabled) return;
 
-  applyPlacement(cfg);
+  applyBarLayout();
 
   if (cfg.provider === "custom") {
     renderCustomAd(cfg);
@@ -135,16 +128,15 @@ export async function initAds() {
 
   if (adRendered && adSlot) {
     adSlot.classList.remove("hidden");
-    updateAdVisibility(true);
+    adSlot.setAttribute("aria-hidden", "false");
+    document.body.classList.add("has-ad-bar");
   }
 }
 
-/**
- * Hide ads during the exam so they never cover questions.
- * @param {boolean} visible
- */
-export function updateAdVisibility(visible) {
+/** @deprecated Kept for callers; bar is always visible when enabled. */
+export function updateAdVisibility(_visible) {
   if (!adSlot || !config?.enabled || !adRendered) return;
-  adSlot.classList.toggle("hidden", !visible);
-  adSlot.setAttribute("aria-hidden", visible ? "false" : "true");
+  adSlot.classList.remove("hidden");
+  adSlot.setAttribute("aria-hidden", "false");
+  document.body.classList.add("has-ad-bar");
 }

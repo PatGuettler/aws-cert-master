@@ -33,6 +33,7 @@
   --radius: 8px;
   --font: "Amazon Ember", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --header-h: 56px;
+  --ad-bar-h: 90px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1201,52 +1202,31 @@ footer.site-footer {
   color: var(--text-muted);
 }
 
-/* Ads — hidden during exam via .hidden on #ad-slot */
+body.has-ad-bar {
+  padding-bottom: var(--ad-bar-h);
+}
+
+/* Ads — fixed horizontal bar at bottom of viewport */
 .page-shell {
   max-width: 900px;
   margin: 0 auto;
 }
 
-.page-shell.layout-side-ad {
+.ad-slot--bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: env(safe-area-inset-bottom, 0);
+  z-index: 90;
+  margin: 0;
+  padding: 0.35rem 0.75rem;
   max-width: none;
-}
-
-@media (min-width: 1024px) {
-  .page-shell.layout-side-ad {
-    display: grid;
-    grid-template-columns: minmax(0, 900px) 140px;
-    gap: 1rem;
-    justify-content: center;
-    align-items: start;
-    padding: 0 1rem;
-  }
-
-  .page-shell.layout-side-ad .ad-slot--side {
-    position: sticky;
-    top: calc(var(--header-h) + 0.75rem);
-  }
-}
-
-.ad-slot {
-  margin: 0 auto 1rem;
-  padding: 0.5rem 1rem;
-  max-width: 900px;
-  border: 1px dashed var(--border);
-  border-radius: var(--radius);
+  border: none;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
   background: var(--surface);
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
-}
-
-.ad-slot--bottom {
-  width: 100%;
-}
-
-.ad-slot--side {
-  min-height: 250px;
-}
-
-.page-shell.layout-side-ad .ad-slot--side .ad-container {
-  min-height: 250px;
 }
 
 .ad-slot-label {
@@ -1255,28 +1235,24 @@ footer.site-footer {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-muted);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
 }
 
-.ad-container {
+.ad-slot--bar .ad-container {
   min-height: 50px;
-  max-height: 90px;
+  max-height: calc(var(--ad-bar-h) - 12px);
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-.ad-slot--side .ad-container {
-  max-height: 600px;
-  min-height: 250px;
+  width: 100%;
 }
 
 .ad-container .adsbygoogle {
   display: block;
   width: 100%;
-  max-width: 728px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -1861,6 +1837,10 @@ footer.site-footer {
 /* Programmatic SEO — standalone question pages */
 .seo-question-body {
   min-height: 100vh;
+}
+
+.seo-question-body.has-ad-bar {
+  padding-bottom: var(--ad-bar-h);
 }
 
 .seo-question-header {

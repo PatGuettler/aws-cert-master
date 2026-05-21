@@ -51,6 +51,10 @@ See `scripts/question_bank/official_docs.py` if you use the optional generators.
 
 Python scripts under `scripts/` can rebuild entire banks from fact catalogs. They are **not** run for exam JSON in CI — maintainers run them locally when adding hundreds of questions at once, then commit the JSON here.
 
+## Copyright and originality
+
+Practice questions in this repo are **original** study items. Do **not** copy stems, answer choices, or explanations from AWS Skill Builder, certification exams, brain dumps, or other proprietary training banks. It is fine to cover the same **exam guide objectives** and link to **official AWS documentation**—rewrite scenarios in your own words.
+
 ## SEO pages (automatic on deploy)
 
 CI runs `scripts/build-question-pages.py`, which generates crawlable HTML from these JSON files (`questions/`, `cert/`, `browse/`, `sitemap.xml`). See `docs/SEO.md`. The slug index `data/questions-slugs.json` is updated on each deploy build (committed copy is optional for local preview).

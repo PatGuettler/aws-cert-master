@@ -1,9 +1,9 @@
 # Ad bar setup guide
 
-Cert Master includes a **small, optional ad slot** that:
+Cert Master includes an optional **fixed bottom ad bar** that:
 
-- Shows on **home**, **results**, and **study plan** views
-- **Hides completely** while a practice **exam is in progress** (no overlap with questions)
+- Shows on **all app views**, including during practice exams
+- Stays in a **horizontal bar** fixed to the bottom of the viewport (content gets bottom padding so nothing is covered)
 - Loads only after you enable it in `data/ads-config.json`
 - Supports **Google AdSense** or a simple **custom text link**
 
@@ -23,7 +23,7 @@ Cert Master includes a **small, optional ad slot** that:
 
 4. Commit, push, and wait for GitHub Pages to redeploy.
 
-5. Open your live site (not `file://`) and confirm the slot appears below the main content (or on the right on wide screens if using side placement).
+5. Open your live site (not `file://`) and confirm the bar appears fixed along the bottom on every page.
 
 ---
 
@@ -34,7 +34,7 @@ File: **`data/ads-config.json`**
 | Field | Description |
 |--------|-------------|
 | `enabled` | `true` to show ads; `false` to hide (default). |
-| `placement` | `"bottom"` (default) or `"side"` (right column on screens ≥ 1024px). |
+| `placement` | `"bar"` — fixed horizontal bar at the bottom (legacy `"bottom"` / `"side"` are ignored). |
 | `provider` | `"adsense"` or `"custom"`. |
 
 ### Google AdSense (`provider: "adsense"`)
@@ -132,27 +132,11 @@ After deploy, check: `https://your-site/ads.txt`
 
 ---
 
-## Placement options
+## Layout
 
-### Bottom (default)
+The ad uses a **fixed horizontal bar** (`#ad-slot.ad-slot--bar`) pinned to the bottom of the viewport. When ads load, `body` gets `has-ad-bar` and extra bottom padding (`--ad-bar-h`, 90px) so exam controls and footer content stay above the bar.
 
-- Slim bar under `main`, above the footer.
-- Max height ~90px so it stays unobtrusive.
-- Works on all screen sizes.
-
-### Side (`"placement": "side"`)
-
-- On viewports **≥ 1024px**, ad moves to a **140px** column to the right of content.
-- Sticky below the header while scrolling.
-- On smaller screens, falls back to bottom layout behavior.
-
----
-
-## Behavior during exams
-
-`js/ads.js` + `js/app.js` call `updateAdVisibility(false)` when `view-exam` is active. The `#ad-slot` element gets `hidden` and `aria-hidden="true"`. Ads return when the user finishes, views results, or goes home.
-
-No ad scripts are required for the exam view when `enabled` is false.
+AdSense uses `data-ad-format="horizontal"` for a wide banner-style unit.
 
 ---
 
@@ -163,8 +147,8 @@ No ad scripts are required for the exam view when `enabled` is false.
 | `data/ads-config.json` | Your live settings (commit or keep private). |
 | `data/ads-config.example.json` | Template without secrets. |
 | `js/ads.js` | Loads config, injects AdSense or custom link. |
-| `index.html` | `#ad-slot` markup inside `#page-shell`. |
-| `css/styles.css` | `.ad-slot`, layout for bottom/side. |
+| `index.html` | `#ad-slot` markup (sibling of `#page-shell`, fixed at bottom). |
+| `css/styles.css` | `.ad-slot--bar`, `body.has-ad-bar`. |
 | `docs/ADS_SETUP.md` | This guide. |
 
 ---
@@ -175,7 +159,7 @@ No ad scripts are required for the exam view when `enabled` is false.
 |--------|-------------|
 | No ad bar at all | Set `"enabled": true`. Check browser console. Ensure you use `http://localhost` or HTTPS, not `file://`. |
 | Blank box | AdSense still approving site; wrong slot ID; ad blocker enabled. |
-| Ad shows during exam | Hard refresh; confirm latest `js/app.js` is deployed. |
+| Content hidden behind bar | Hard refresh; confirm `body.has-ad-bar` and `--ad-bar-h` padding in `css/styles.css`. |
 | AdSense script error | Client ID must include `ca-pub-` prefix; site domain must match AdSense property. |
 | Only want a text link | Use `"provider": "custom"` — no AdSense script loaded. |
 

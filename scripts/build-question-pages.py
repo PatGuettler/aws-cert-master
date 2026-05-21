@@ -69,13 +69,20 @@ def render_ad_unit() -> str:
     if not ADS_SLOT:
         return ""
     return (
-        '<aside class="ad-slot ad-slot--inline" aria-label="Advertisement">'
+        '<aside class="ad-slot ad-slot--bar" aria-label="Advertisement">'
+        '<div class="ad-container">'
         f'<ins class="adsbygoogle" style="display:block" '
         f'data-ad-client="{escape(ADS_CLIENT)}" data-ad-slot="{escape(ADS_SLOT)}" '
-        'data-ad-format="auto" data-full-width-responsive="true"></ins>'
+        'data-ad-format="horizontal" data-full-width-responsive="true"></ins>'
+        "</div>"
         "<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>"
         "</aside>"
     )
+
+
+def seo_body_class(extra: str = "") -> str:
+    base = "seo-question-body has-ad-bar"
+    return f"{base} {extra}".strip() if extra else base
 
 
 def render_seo_head(
@@ -224,7 +231,7 @@ def render_question_page(
   <head>
 {head}
   </head>
-  <body class="seo-question-body">
+  <body class="{seo_body_class()}">
     <header class="site-header seo-question-header">
       <a href="{escape(home_url)}" class="seo-brand-link">Cert Master</a>
     </header>
@@ -273,8 +280,8 @@ def render_question_page(
         </section>
       </article>
 
-      {render_ad_unit()}
     </main>
+    {render_ad_unit()}
     <footer class="site-footer">
       <p>
         Unofficial practice tool — not affiliated with AWS, Microsoft, Google, or CompTIA.
@@ -343,7 +350,7 @@ def render_questions_hub(registry: dict, exams_by_id: dict) -> str:
   <head>
 {head}
   </head>
-  <body class="seo-question-body">
+  <body class="{seo_body_class()}">
     <header class="site-header seo-question-header">
       <a href="{escape(home)}" class="seo-brand-link">Cert Master</a>
     </header>
@@ -361,8 +368,8 @@ def render_questions_hub(registry: dict, exams_by_id: dict) -> str:
         answer breakdown, and official documentation links.
       </p>
       {''.join(sections)}
-      {render_ad_unit()}
     </main>
+    {render_ad_unit()}
     <footer class="site-footer"><p><a href="{escape(home)}">Home</a> · <a href="{escape(browse)}">Browse exams</a></p></footer>
   </body>
 </html>
@@ -463,7 +470,7 @@ def render_cert_page(
   <head>
 {head}
   </head>
-  <body class="seo-question-body">
+  <body class="{seo_body_class()}">
     <header class="site-header seo-question-header">
       <a href="{escape(home)}" class="seo-brand-link">Cert Master</a>
     </header>
@@ -495,8 +502,8 @@ def render_cert_page(
         </section>
         {q_section}
       </article>
-      {render_ad_unit()}
     </main>
+    {render_ad_unit()}
     <footer class="site-footer">
       <p>Unofficial practice — not affiliated with {escape(vendor_label)}.
       <a href="{escape(home)}">Cert Master home</a></p>
@@ -557,7 +564,7 @@ def render_browse_page(index: dict) -> str:
   <head>
 {head}
   </head>
-  <body class="seo-question-body">
+  <body class="{seo_body_class()}">
     <header class="site-header seo-question-header">
       <a href="{escape(home)}" class="seo-brand-link">Cert Master</a>
     </header>
@@ -567,8 +574,8 @@ def render_browse_page(index: dict) -> str:
       <p><a class="btn btn-primary" href="{escape(home)}">Open interactive exam picker</a></p>
       {''.join(sections)}
       <p><a href="{escape(site_url('/questions/'))}">Practice question library</a> — every question has its own SEO page.</p>
-      {render_ad_unit()}
     </main>
+    {render_ad_unit()}
     <footer class="site-footer"><p><a href="{escape(home)}">Home</a></p></footer>
   </body>
 </html>

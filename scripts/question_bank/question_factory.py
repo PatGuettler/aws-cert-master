@@ -194,7 +194,58 @@ def _multi_response_for_exam(exam_id: str, domains: list[dict], rng: random.Rand
     return out
 
 
+def _build_devops_raw_questions(min_total: int, seed: int) -> list[RawQuestion]:
+    """DOP-C02: scenario-first pool aligned to exam guide topics (original stems)."""
+    from question_bank.dop_c02_scenarios import DOP_SCENARIO_QUESTIONS
+
+    spec = EXAM_BY_ID["devops-engineer-professional"]
+    domains = spec["domains"]
+    rng = random.Random(seed + hash("devops-engineer-professional") % 10000)
+    exam_facts = ALL_BANKS.get("devops-engineer-professional", {})
+
+    raw: list[RawQuestion] = list(DOP_SCENARIO_QUESTIONS)
+    total_weight = sum(d["weight"] for d in domains)
+
+    for domain in domains:
+        did = domain["id"]
+        weight = domain["weight"]
+        by_domain = sum(1 for r in raw if r[0] == did)
+        target = max(8, int(min_total * weight / total_weight) + 3)
+        if by_domain >= target:
+            continue
+        facts = exam_facts.get(did, [])
+        if not facts:
+            continue
+        domain_raw = _pad_domain("devops-engineer-professional", did, facts, target - by_domain, rng)
+        raw.extend(domain_raw)
+
+    raw.extend(_multi_response_for_exam("devops-engineer-professional", domains, rng))
+    raw = dedupe_raw(raw)
+
+    fact_pool = list(itertools.chain.from_iterable(exam_facts.values()))
+    attempt = 0
+    seen = {r[2] for r in raw}
+    while len(raw) < min_total and fact_pool and attempt < min_total * 4:
+        fact = fact_pool[attempt % len(fact_pool)]
+        domain_id = domains[attempt % len(domains)]["id"]
+        prefix = rng.choice(SCENARIO_PREFIXES)
+        candidate = _fact_to_mcq(domain_id, fact, prefix)
+        if candidate[2] not in seen:
+            raw.append(candidate)
+            seen.add(candidate[2])
+        attempt += 1
+
+    if len(raw) < min_total:
+        raise SystemExit(
+            f"devops-engineer-professional: generated {len(raw)} unique questions, need {min_total}."
+        )
+    return raw
+
+
 def build_raw_questions(exam_id: str, min_total: int, seed: int = 42) -> list[RawQuestion]:
+    if exam_id == "devops-engineer-professional":
+        return _build_devops_raw_questions(min_total, seed)
+
     spec = EXAM_BY_ID[exam_id]
     domains = spec["domains"]
     rng = random.Random(seed + hash(exam_id) % 10000)

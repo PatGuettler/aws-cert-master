@@ -21,7 +21,7 @@ import { initMenu } from "./menu.js";
 import { runExam } from "./exam-engine.js";
 import { scoreExam } from "./scoring.js";
 import { buildStudyPlan } from "./study-plan.js";
-import { initAds, updateAdVisibility } from "./ads.js";
+import { initAds } from "./ads.js";
 import { initStorageNotice } from "./storage-notice.js";
 import { buildTrendLine } from "./history-ui.js";
 import { renderDashboard, renderProgressTeaser } from "./dashboard-ui.js";
@@ -101,7 +101,6 @@ function showView(name) {
     el?.classList.toggle("hidden", key !== name);
   });
   examTimer?.classList.toggle("hidden", name !== "exam");
-  updateAdVisibility(name !== "exam");
   window.scrollTo(0, 0);
 }
 
