@@ -82,7 +82,7 @@
       "id": "saa-q001",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to distribute incoming application traffic across multiple targets?",
+      "text": "During peak traffic, the platform team must distribute incoming application traffic across multiple targets. What should they do FIRST? distribute incoming application traffic across multiple targets.",
       "options": [
         {
           "id": "a",
@@ -116,7 +116,7 @@
       "id": "saa-q002",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to route DNS traffic based on latency, geolocation, or failover?",
+      "text": "The DevOps team is automating releases and must route DNS traffic based on latency, geolocation, or failover. Which design fits best? route DNS traffic based on latency, geolocation, or failover.",
       "options": [
         {
           "id": "a",
@@ -150,7 +150,7 @@
       "id": "saa-q003",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to replicate a relational database to a standby in another AZ?",
+      "text": "A regulated workload requires the organization to replicate a relational database to a standby in another AZ. Which solution is BEST? replicate a relational database to a standby in another AZ.",
       "options": [
         {
           "id": "a",
@@ -184,7 +184,7 @@
       "id": "saa-q004",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to store static assets with high durability and serve globally?",
+      "text": "Operations reports a need to store static assets with high durability and serve globally. What is the MOST operationally efficient solution? store static assets with high durability and serve globally.",
       "options": [
         {
           "id": "a",
@@ -218,7 +218,7 @@
       "id": "saa-q005",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to automatically replace unhealthy EC2 instances in a group?",
+      "text": "The DevOps team is automating releases and must automatically replace unhealthy EC2 instances in a group. Which design fits best? automatically replace unhealthy EC2 instances in a group.",
       "options": [
         {
           "id": "a",
@@ -252,7 +252,7 @@
       "id": "saa-q006",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to cache database read-heavy workloads in memory?",
+      "text": "An audit found gaps: the organization must cache database read-heavy workloads in memory. Which option addresses this? cache database read-heavy workloads in memory.",
       "options": [
         {
           "id": "a",
@@ -286,7 +286,7 @@
       "id": "saa-q007",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to decouple microservices with asynchronous messaging?",
+      "text": "A regulated workload requires the organization to decouple microservices with asynchronous messaging. Which solution is BEST? decouple microservices with asynchronous messaging.",
       "options": [
         {
           "id": "a",
@@ -320,7 +320,7 @@
       "id": "saa-q008",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to backup on-premises workloads to AWS for DR?",
+      "text": "During peak traffic, the platform team must backup on-premises workloads to AWS for DR. What should they do FIRST? backup on-premises workloads to AWS for DR.",
       "options": [
         {
           "id": "a",
@@ -354,7 +354,7 @@
       "id": "saa-q009",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run active-active databases across Regions?",
+      "text": "After a design review, leadership requires the team to run active-active databases across Regions. Which approach is MOST reliable? run active-active databases across Regions.",
       "options": [
         {
           "id": "a",
@@ -388,7 +388,7 @@
       "id": "saa-q010",
       "domain": "resilient-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to protect against DDoS at the edge?",
+      "text": "While troubleshooting latency, engineers determine they must protect against DDoS at the edge. Which action is appropriate? protect against DDoS at the edge.",
       "options": [
         {
           "id": "a",
@@ -896,43 +896,9 @@
     },
     {
       "id": "saa-q025",
-      "domain": "resilient-architectures",
-      "type": "multiple-choice",
-      "text": "A team must automatically replace unhealthy EC2 instances in a group. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon EC2 Auto Scaling with ELB"
-        },
-        {
-          "id": "b",
-          "text": "Manual SSH fixes only"
-        },
-        {
-          "id": "c",
-          "text": "Single instance"
-        },
-        {
-          "id": "d",
-          "text": "Disabling health checks"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Auto Scaling maintains desired capacity using health checks.",
-      "docs": [
-        {
-          "title": "Auto Scaling",
-          "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q026",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to serve content from edge locations close to users?",
+      "text": "During peak traffic, the platform team must serve content from edge locations close to users. What should they do FIRST? serve content from edge locations close to users.",
       "options": [
         {
           "id": "a",
@@ -963,10 +929,10 @@
       ]
     },
     {
-      "id": "saa-q027",
+      "id": "saa-q026",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run code without managing servers for spiky traffic?",
+      "text": "A regulated workload requires the organization to run code without managing servers for spiky traffic. Which solution is BEST? run code without managing servers for spiky traffic.",
       "options": [
         {
           "id": "a",
@@ -997,10 +963,10 @@
       ]
     },
     {
-      "id": "saa-q028",
+      "id": "saa-q027",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use a purpose-built NoSQL database with single-digit ms latency at any scale?",
+      "text": "During peak traffic, the platform team must use a purpose-built NoSQL database with single-digit ms latency at any scale. What should they do FIRST? use a purpose-built NoSQL database with single-digit ms latency at any scale.",
       "options": [
         {
           "id": "a",
@@ -1031,10 +997,10 @@
       ]
     },
     {
-      "id": "saa-q029",
+      "id": "saa-q028",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to process streaming data in real time?",
+      "text": "After a design review, leadership requires the team to process streaming data in real time. Which approach is MOST reliable? process streaming data in real time.",
       "options": [
         {
           "id": "a",
@@ -1065,10 +1031,10 @@
       ]
     },
     {
-      "id": "saa-q030",
+      "id": "saa-q029",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to accelerate transfer of large datasets into S3?",
+      "text": "Operations reports a need to accelerate transfer of large datasets into S3. What is the MOST operationally efficient solution? accelerate transfer of large datasets into S3.",
       "options": [
         {
           "id": "a",
@@ -1099,10 +1065,10 @@
       ]
     },
     {
-      "id": "saa-q031",
+      "id": "saa-q030",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use GP3 or io2 EBS volumes for consistent IOPS?",
+      "text": "Operations reports a need to use GP3 or io2 EBS volumes for consistent IOPS. What is the MOST operationally efficient solution? use GP3 or io2 EBS volumes for consistent IOPS.",
       "options": [
         {
           "id": "a",
@@ -1133,10 +1099,10 @@
       ]
     },
     {
-      "id": "saa-q032",
+      "id": "saa-q031",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to place EC2 instances in a cluster placement group for HPC?",
+      "text": "After a design review, leadership requires the team to place EC2 instances in a cluster placement group for HPC. Which approach is MOST reliable? place EC2 instances in a cluster placement group for HPC.",
       "options": [
         {
           "id": "a",
@@ -1167,10 +1133,10 @@
       ]
     },
     {
-      "id": "saa-q033",
+      "id": "saa-q032",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to analyze petabytes of data in a data warehouse?",
+      "text": "A regulated workload requires the organization to analyze petabytes of data in a data warehouse. Which solution is BEST? analyze petabytes of data in a data warehouse.",
       "options": [
         {
           "id": "a",
@@ -1201,10 +1167,10 @@
       ]
     },
     {
-      "id": "saa-q034",
+      "id": "saa-q033",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use ElastiCache to reduce read latency for sessions?",
+      "text": "Operations reports a need to use ElastiCache to reduce read latency for sessions. What is the MOST operationally efficient solution? use ElastiCache to reduce read latency for sessions.",
       "options": [
         {
           "id": "a",
@@ -1235,10 +1201,10 @@
       ]
     },
     {
-      "id": "saa-q035",
+      "id": "saa-q034",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deliver API traffic with throttling and caching?",
+      "text": "Operations reports a need to deliver API traffic with throttling and caching. What is the MOST operationally efficient solution? deliver API traffic with throttling and caching.",
       "options": [
         {
           "id": "a",
@@ -1269,7 +1235,7 @@
       ]
     },
     {
-      "id": "saa-q036",
+      "id": "saa-q035",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "Which service should you use to serve content from edge locations close to users?",
@@ -1303,7 +1269,7 @@
       ]
     },
     {
-      "id": "saa-q037",
+      "id": "saa-q036",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to serve content from edge locations close to users?",
@@ -1337,7 +1303,7 @@
       ]
     },
     {
-      "id": "saa-q038",
+      "id": "saa-q037",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "A team must serve content from edge locations close to users. Which option meets the requirement?",
@@ -1371,7 +1337,7 @@
       ]
     },
     {
-      "id": "saa-q039",
+      "id": "saa-q038",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "Which service should you use to run code without managing servers for spiky traffic?",
@@ -1405,7 +1371,7 @@
       ]
     },
     {
-      "id": "saa-q040",
+      "id": "saa-q039",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to run code without managing servers for spiky traffic?",
@@ -1439,7 +1405,7 @@
       ]
     },
     {
-      "id": "saa-q041",
+      "id": "saa-q040",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "A team must run code without managing servers for spiky traffic. Which option meets the requirement?",
@@ -1473,7 +1439,7 @@
       ]
     },
     {
-      "id": "saa-q042",
+      "id": "saa-q041",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "Which service should you use to use a purpose-built NoSQL database with single-digit ms latency at any scale?",
@@ -1507,7 +1473,7 @@
       ]
     },
     {
-      "id": "saa-q043",
+      "id": "saa-q042",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to use a purpose-built NoSQL database with single-digit ms latency at any scale?",
@@ -1541,7 +1507,7 @@
       ]
     },
     {
-      "id": "saa-q044",
+      "id": "saa-q043",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "A team must use a purpose-built NoSQL database with single-digit ms latency at any scale. Which option meets the requirement?",
@@ -1575,7 +1541,7 @@
       ]
     },
     {
-      "id": "saa-q045",
+      "id": "saa-q044",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "Which service should you use to process streaming data in real time?",
@@ -1609,7 +1575,7 @@
       ]
     },
     {
-      "id": "saa-q046",
+      "id": "saa-q045",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to process streaming data in real time?",
@@ -1643,7 +1609,7 @@
       ]
     },
     {
-      "id": "saa-q047",
+      "id": "saa-q046",
       "domain": "high-performing-architectures",
       "type": "multiple-choice",
       "text": "A team must process streaming data in real time. Which option meets the requirement?",
@@ -1677,10 +1643,10 @@
       ]
     },
     {
-      "id": "saa-q048",
+      "id": "saa-q047",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to enforce MFA and least privilege for human access?",
+      "text": "A regulated workload requires the organization to enforce MFA and least privilege for human access. Which solution is BEST? enforce MFA and least privilege for human access.",
       "options": [
         {
           "id": "a",
@@ -1711,10 +1677,10 @@
       ]
     },
     {
-      "id": "saa-q049",
+      "id": "saa-q048",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to encrypt data at rest in S3 with customer-managed keys?",
+      "text": "During peak traffic, the platform team must encrypt data at rest in S3 with customer-managed keys. What should they do FIRST? encrypt data at rest in S3 with customer-managed keys.",
       "options": [
         {
           "id": "a",
@@ -1745,10 +1711,10 @@
       ]
     },
     {
-      "id": "saa-q050",
+      "id": "saa-q049",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to filter HTTP requests for SQL injection and XSS?",
+      "text": "For cost and security, the team must filter HTTP requests for SQL injection and XSS. What is the recommended approach? filter HTTP requests for SQL injection and XSS.",
       "options": [
         {
           "id": "a",
@@ -1779,10 +1745,10 @@
       ]
     },
     {
-      "id": "saa-q051",
+      "id": "saa-q050",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to provide temporary credentials to applications?",
+      "text": "Operations reports a need to provide temporary credentials to applications. What is the MOST operationally efficient solution? provide temporary credentials to applications.",
       "options": [
         {
           "id": "a",
@@ -1813,10 +1779,10 @@
       ]
     },
     {
-      "id": "saa-q052",
+      "id": "saa-q051",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to detect malicious activity and unauthorized behavior?",
+      "text": "Operations reports a need to detect malicious activity and unauthorized behavior. What is the MOST operationally efficient solution? detect malicious activity and unauthorized behavior.",
       "options": [
         {
           "id": "a",
@@ -1847,10 +1813,10 @@
       ]
     },
     {
-      "id": "saa-q053",
+      "id": "saa-q052",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to private connectivity from VPC to AWS services without internet?",
+      "text": "While troubleshooting latency, engineers determine they must private connectivity from VPC to AWS services without internet. Which action is appropriate? private connectivity from VPC to AWS services without internet.",
       "options": [
         {
           "id": "a",
@@ -1881,10 +1847,10 @@
       ]
     },
     {
-      "id": "saa-q054",
+      "id": "saa-q053",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to centralize security findings across accounts?",
+      "text": "After a design review, leadership requires the team to centralize security findings across accounts. Which approach is MOST reliable? centralize security findings across accounts.",
       "options": [
         {
           "id": "a",
@@ -1915,10 +1881,10 @@
       ]
     },
     {
-      "id": "saa-q055",
+      "id": "saa-q054",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to record all API activity for audit?",
+      "text": "For cost and security, the team must record all API activity for audit. What is the recommended approach? record all API activity for audit.",
       "options": [
         {
           "id": "a",
@@ -1949,10 +1915,10 @@
       ]
     },
     {
-      "id": "saa-q056",
+      "id": "saa-q055",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to manage SSL/TLS certificates for ALB and CloudFront?",
+      "text": "A company needs to manage SSL/TLS certificates for ALB and CloudFront. Which option meets the requirement with the LEAST implementation effort? manage SSL/TLS certificates for ALB and CloudFront.",
       "options": [
         {
           "id": "a",
@@ -1983,10 +1949,10 @@
       ]
     },
     {
-      "id": "saa-q057",
+      "id": "saa-q056",
       "domain": "secure-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to isolate subnets with stateless subnet firewalls?",
+      "text": "A hybrid environment must support a goal to isolate subnets with stateless subnet firewalls without changing application code. What should you implement? isolate subnets with stateless subnet firewalls.",
       "options": [
         {
           "id": "a",
@@ -2017,7 +1983,7 @@
       ]
     },
     {
-      "id": "saa-q058",
+      "id": "saa-q057",
       "domain": "secure-architectures",
       "type": "multiple-choice",
       "text": "Which service should you use to enforce MFA and least privilege for human access?",
@@ -2051,7 +2017,7 @@
       ]
     },
     {
-      "id": "saa-q059",
+      "id": "saa-q058",
       "domain": "secure-architectures",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to enforce MFA and least privilege for human access?",
@@ -2085,7 +2051,7 @@
       ]
     },
     {
-      "id": "saa-q060",
+      "id": "saa-q059",
       "domain": "secure-architectures",
       "type": "multiple-choice",
       "text": "A team must enforce MFA and least privilege for human access. Which option meets the requirement?",
@@ -2119,7 +2085,7 @@
       ]
     },
     {
-      "id": "saa-q061",
+      "id": "saa-q060",
       "domain": "secure-architectures",
       "type": "multiple-choice",
       "text": "Which service should you use to encrypt data at rest in S3 with customer-managed keys?",
@@ -2153,7 +2119,7 @@
       ]
     },
     {
-      "id": "saa-q062",
+      "id": "saa-q061",
       "domain": "secure-architectures",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to encrypt data at rest in S3 with customer-managed keys?",
@@ -2187,7 +2153,7 @@
       ]
     },
     {
-      "id": "saa-q063",
+      "id": "saa-q062",
       "domain": "secure-architectures",
       "type": "multiple-choice",
       "text": "A team must encrypt data at rest in S3 with customer-managed keys. Which option meets the requirement?",
@@ -2221,7 +2187,7 @@
       ]
     },
     {
-      "id": "saa-q064",
+      "id": "saa-q063",
       "domain": "secure-architectures",
       "type": "multiple-choice",
       "text": "Which service should you use to filter HTTP requests for SQL injection and XSS?",
@@ -2255,7 +2221,7 @@
       ]
     },
     {
-      "id": "saa-q065",
+      "id": "saa-q064",
       "domain": "secure-architectures",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to filter HTTP requests for SQL injection and XSS?",
@@ -2289,7 +2255,7 @@
       ]
     },
     {
-      "id": "saa-q066",
+      "id": "saa-q065",
       "domain": "secure-architectures",
       "type": "multiple-choice",
       "text": "A team must filter HTTP requests for SQL injection and XSS. Which option meets the requirement?",
@@ -2323,10 +2289,10 @@
       ]
     },
     {
-      "id": "saa-q067",
+      "id": "saa-q066",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to commit to consistent compute usage for lower hourly rates?",
+      "text": "A regulated workload requires the organization to commit to consistent compute usage for lower hourly rates. Which solution is BEST? commit to consistent compute usage for lower hourly rates.",
       "options": [
         {
           "id": "a",
@@ -2357,10 +2323,10 @@
       ]
     },
     {
-      "id": "saa-q068",
+      "id": "saa-q067",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use spare EC2 capacity at steep discount for fault-tolerant batch?",
+      "text": "A company needs to use spare EC2 capacity at steep discount for fault-tolerant batch. Which option meets the requirement with the LEAST implementation effort? use spare EC2 capacity at steep discount for fault-tolerant batch.",
       "options": [
         {
           "id": "a",
@@ -2391,10 +2357,10 @@
       ]
     },
     {
-      "id": "saa-q069",
+      "id": "saa-q068",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to analyze spending trends and forecasts?",
+      "text": "After a design review, leadership requires the team to analyze spending trends and forecasts. Which approach is MOST reliable? analyze spending trends and forecasts.",
       "options": [
         {
           "id": "a",
@@ -2425,10 +2391,10 @@
       ]
     },
     {
-      "id": "saa-q070",
+      "id": "saa-q069",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to move infrequently accessed data to cheaper storage class?",
+      "text": "A company needs to move infrequently accessed data to cheaper storage class. Which option meets the requirement with the LEAST implementation effort? move infrequently accessed data to cheaper storage class.",
       "options": [
         {
           "id": "a",
@@ -2459,10 +2425,10 @@
       ]
     },
     {
-      "id": "saa-q071",
+      "id": "saa-q070",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to stop non-production instances on a schedule?",
+      "text": "After a design review, leadership requires the team to stop non-production instances on a schedule. Which approach is MOST reliable? stop non-production instances on a schedule.",
       "options": [
         {
           "id": "a",
@@ -2493,10 +2459,10 @@
       ]
     },
     {
-      "id": "saa-q072",
+      "id": "saa-q071",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to right-size EC2 using utilization metrics?",
+      "text": "For cost and security, the team must right-size EC2 using utilization metrics. What is the recommended approach? right-size EC2 using utilization metrics.",
       "options": [
         {
           "id": "a",
@@ -2527,10 +2493,10 @@
       ]
     },
     {
-      "id": "saa-q073",
+      "id": "saa-q072",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to share Reserved Instance benefits across accounts?",
+      "text": "Operations reports a need to share Reserved Instance benefits across accounts. What is the MOST operationally efficient solution? share Reserved Instance benefits across accounts.",
       "options": [
         {
           "id": "a",
@@ -2561,10 +2527,10 @@
       ]
     },
     {
-      "id": "saa-q074",
+      "id": "saa-q073",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to archive EBS snapshots no longer needed?",
+      "text": "A hybrid environment must support a goal to archive EBS snapshots no longer needed without changing application code. What should you implement? archive EBS snapshots no longer needed.",
       "options": [
         {
           "id": "a",
@@ -2595,10 +2561,10 @@
       ]
     },
     {
-      "id": "saa-q075",
+      "id": "saa-q074",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use Aurora Serverless v2 for variable database load?",
+      "text": "Operations reports a need to use Aurora Serverless v2 for variable database load. What is the MOST operationally efficient solution? use Aurora Serverless v2 for variable database load.",
       "options": [
         {
           "id": "a",
@@ -2629,10 +2595,10 @@
       ]
     },
     {
-      "id": "saa-q076",
+      "id": "saa-q075",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deliver static websites from S3 without EC2?",
+      "text": "A company needs to deliver static websites from S3 without EC2. Which option meets the requirement with the LEAST implementation effort? deliver static websites from S3 without EC2.",
       "options": [
         {
           "id": "a",
@@ -2663,7 +2629,7 @@
       ]
     },
     {
-      "id": "saa-q077",
+      "id": "saa-q076",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
       "text": "Which service should you use to commit to consistent compute usage for lower hourly rates?",
@@ -2697,7 +2663,7 @@
       ]
     },
     {
-      "id": "saa-q078",
+      "id": "saa-q077",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to commit to consistent compute usage for lower hourly rates?",
@@ -2731,7 +2697,7 @@
       ]
     },
     {
-      "id": "saa-q079",
+      "id": "saa-q078",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
       "text": "A team must commit to consistent compute usage for lower hourly rates. Which option meets the requirement?",
@@ -2765,7 +2731,7 @@
       ]
     },
     {
-      "id": "saa-q080",
+      "id": "saa-q079",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
       "text": "Which service should you use to use spare EC2 capacity at steep discount for fault-tolerant batch?",
@@ -2799,7 +2765,7 @@
       ]
     },
     {
-      "id": "saa-q081",
+      "id": "saa-q080",
       "domain": "cost-optimized-architectures",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to use spare EC2 capacity at steep discount for fault-tolerant batch?",
@@ -2833,80 +2799,7 @@
       ]
     },
     {
-      "id": "saa-q082",
-      "domain": "cost-optimized-architectures",
-      "type": "multiple-choice",
-      "text": "A team must use spare EC2 capacity at steep discount for fault-tolerant batch. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon EC2 Spot Instances"
-        },
-        {
-          "id": "b",
-          "text": "Dedicated Hosts for all stateful DBs without DR"
-        },
-        {
-          "id": "c",
-          "text": "On-Demand for interruptible only"
-        },
-        {
-          "id": "d",
-          "text": "Largest instance always"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Spot offers unused capacity at lower prices.",
-      "docs": [
-        {
-          "title": "Spot Instances",
-          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q083",
-      "domain": "high-performing-architectures",
-      "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS KMS"
-        },
-        {
-          "id": "b",
-          "text": "Amazon Route 53"
-        },
-        {
-          "id": "c",
-          "text": "AWS Secrets Manager"
-        },
-        {
-          "id": "d",
-          "text": "Amazon CloudFront only for DNS"
-        },
-        {
-          "id": "e",
-          "text": "AWS Batch"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
-      "docs": [
-        {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q084",
+      "id": "saa-q081",
       "domain": "resilient-architectures",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -2946,7 +2839,7 @@
       ]
     },
     {
-      "id": "saa-q085",
+      "id": "saa-q082",
       "domain": "resilient-architectures",
       "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Associate? (Select TWO.)",
@@ -2985,274 +2878,41 @@
       ]
     },
     {
-      "id": "saa-q086",
-      "domain": "resilient-architectures",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'SAA-C03 Exam Guide', what should you do FIRST when addressing Design Resilient Architectures objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as SAA-C03 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "SAA-C03 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
-        }
-      ]
-    },
-    {
-      "id": "saa-q087",
-      "domain": "resilient-architectures",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Reliability pillar', what should you do FIRST when addressing Design Resilient Architectures objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Reliability pillar describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Reliability pillar",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q088",
+      "id": "saa-q083",
       "domain": "high-performing-architectures",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Performance Efficiency pillar', what should you do FIRST when addressing Design High-Performing Architectures objectives?",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+          "text": "AWS KMS"
         },
         {
           "id": "b",
-          "text": "Disable security logging to reduce noise"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "Use root user credentials for daily operations"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "Skip backup and recovery planning"
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
         }
       ],
       "correct": [
-        "a"
+        "a",
+        "c"
       ],
-      "explanation": "Official guides such as Performance Efficiency pillar describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Performance Efficiency pillar",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q089",
-      "domain": "high-performing-architectures",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon CloudFront', what should you do FIRST when addressing Design High-Performing Architectures objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon CloudFront describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon CloudFront",
-          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q090",
-      "domain": "secure-architectures",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Security pillar', what should you do FIRST when addressing Design Secure Architectures objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Security pillar describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Security pillar",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q091",
-      "domain": "secure-architectures",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS KMS', what should you do FIRST when addressing Design Secure Architectures objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS KMS describe domain objectives; practice designs should follow AWS documented best practices.",
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
       "docs": [
         {
           "title": "AWS KMS",
           "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q092",
-      "domain": "cost-optimized-architectures",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Cost Optimization pillar', what should you do FIRST when addressing Design Cost-Optimized Architectures objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Cost Optimization pillar describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Cost Optimization pillar",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q093",
-      "domain": "cost-optimized-architectures",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Cost Explorer', what should you do FIRST when addressing Design Cost-Optimized Architectures objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Cost Explorer describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Cost Explorer",
-          "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html"
         }
       ]
     }

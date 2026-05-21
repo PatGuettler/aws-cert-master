@@ -97,7 +97,7 @@
       "id": "aif-q001",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to train and deploy custom ML models with managed infrastructure?",
+      "text": "The DevOps team is automating releases and must train and deploy custom ML models with managed infrastructure. Which design fits best? train and deploy custom ML models with managed infrastructure.",
       "options": [
         {
           "id": "a",
@@ -131,7 +131,7 @@
       "id": "aif-q002",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to label raw data for supervised learning at scale?",
+      "text": "A regulated workload requires the organization to label raw data for supervised learning at scale. Which solution is BEST? label raw data for supervised learning at scale.",
       "options": [
         {
           "id": "a",
@@ -165,7 +165,7 @@
       "id": "aif-q003",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run batch inference on large datasets without managing servers?",
+      "text": "During peak traffic, the platform team must run batch inference on large datasets without managing servers. What should they do FIRST? run batch inference on large datasets without managing servers.",
       "options": [
         {
           "id": "a",
@@ -199,7 +199,7 @@
       "id": "aif-q004",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to store and version ML model artifacts?",
+      "text": "A company needs to store and version ML model artifacts. Which option meets the requirement with the LEAST implementation effort? store and version ML model artifacts.",
       "options": [
         {
           "id": "a",
@@ -233,7 +233,7 @@
       "id": "aif-q005",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to perform time-series forecasting with AutoML capabilities?",
+      "text": "A regulated workload requires the organization to perform time-series forecasting with AutoML capabilities. Which solution is BEST? perform time-series forecasting with AutoML capabilities.",
       "options": [
         {
           "id": "a",
@@ -267,7 +267,7 @@
       "id": "aif-q006",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to classify images with a pre-trained API without building models?",
+      "text": "The DevOps team is automating releases and must classify images with a pre-trained API without building models. Which design fits best? classify images with a pre-trained API without building models.",
       "options": [
         {
           "id": "a",
@@ -301,7 +301,7 @@
       "id": "aif-q007",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to convert text to lifelike speech?",
+      "text": "An audit found gaps: the organization must convert text to lifelike speech. Which option addresses this? convert text to lifelike speech.",
       "options": [
         {
           "id": "a",
@@ -335,7 +335,7 @@
       "id": "aif-q008",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to extract text and data from scanned documents?",
+      "text": "For cost and security, the team must extract text and data from scanned documents. What is the recommended approach? extract text and data from scanned documents.",
       "options": [
         {
           "id": "a",
@@ -369,7 +369,7 @@
       "id": "aif-q009",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to discover insights and relationships in unstructured text?",
+      "text": "An audit found gaps: the organization must discover insights and relationships in unstructured text. Which option addresses this? discover insights and relationships in unstructured text.",
       "options": [
         {
           "id": "a",
@@ -403,7 +403,7 @@
       "id": "aif-q010",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to translate text between languages at scale?",
+      "text": "During peak traffic, the platform team must translate text between languages at scale. What should they do FIRST? translate text between languages at scale.",
       "options": [
         {
           "id": "a",
@@ -437,7 +437,7 @@
       "id": "aif-q011",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to search for similar vectors in embedding datasets?",
+      "text": "The DevOps team is automating releases and must search for similar vectors in embedding datasets. Which design fits best? search for similar vectors in embedding datasets.",
       "options": [
         {
           "id": "a",
@@ -471,7 +471,7 @@
       "id": "aif-q012",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to orchestrate ML pipelines with repeatable steps?",
+      "text": "A company needs to orchestrate ML pipelines with repeatable steps. Which option meets the requirement with the LEAST implementation effort? orchestrate ML pipelines with repeatable steps.",
       "options": [
         {
           "id": "a",
@@ -673,43 +673,9 @@
     },
     {
       "id": "aif-q018",
-      "domain": "ai-ml-fundamentals",
-      "type": "multiple-choice",
-      "text": "A team must label raw data for supervised learning at scale. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon SageMaker Ground Truth"
-        },
-        {
-          "id": "b",
-          "text": "Amazon Macie"
-        },
-        {
-          "id": "c",
-          "text": "AWS Artifact"
-        },
-        {
-          "id": "d",
-          "text": "Amazon Connect"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Ground Truth helps create labeled datasets using human and automated labeling.",
-      "docs": [
-        {
-          "title": "SageMaker Ground Truth",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q019",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to access foundation models from multiple providers through one API?",
+      "text": "While troubleshooting latency, engineers determine they must access foundation models from multiple providers through one API. Which action is appropriate? access foundation models from multiple providers through one API.",
       "options": [
         {
           "id": "a",
@@ -740,10 +706,10 @@
       ]
     },
     {
-      "id": "aif-q020",
+      "id": "aif-q019",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to invoke models for text generation with on-demand throughput?",
+      "text": "During peak traffic, the platform team must invoke models for text generation with on-demand throughput. What should they do FIRST? invoke models for text generation with on-demand throughput.",
       "options": [
         {
           "id": "a",
@@ -774,10 +740,10 @@
       ]
     },
     {
-      "id": "aif-q021",
+      "id": "aif-q020",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to customize a foundation model with labeled examples for a specific task?",
+      "text": "For cost and security, the team must customize a foundation model with labeled examples for a specific task. What is the recommended approach? customize a foundation model with labeled examples for a specific task.",
       "options": [
         {
           "id": "a",
@@ -808,10 +774,10 @@
       ]
     },
     {
-      "id": "aif-q022",
+      "id": "aif-q021",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to compare latency and quality across foundation models in a playground?",
+      "text": "A company needs to compare latency and quality across foundation models in a playground. Which option meets the requirement with the LEAST implementation effort? compare latency and quality across foundation models in a playground.",
       "options": [
         {
           "id": "a",
@@ -842,10 +808,10 @@
       ]
     },
     {
-      "id": "aif-q023",
+      "id": "aif-q022",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to generate images from text prompts using AWS generative AI?",
+      "text": "An audit found gaps: the organization must generate images from text prompts using AWS generative AI. Which option addresses this? generate images from text prompts using AWS generative AI.",
       "options": [
         {
           "id": "a",
@@ -876,10 +842,10 @@
       ]
     },
     {
-      "id": "aif-q024",
+      "id": "aif-q023",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to understand tokens as billing units for generative models?",
+      "text": "A company needs to understand tokens as billing units for generative models. Which option meets the requirement with the LEAST implementation effort? understand tokens as billing units for generative models.",
       "options": [
         {
           "id": "a",
@@ -910,10 +876,10 @@
       ]
     },
     {
-      "id": "aif-q025",
+      "id": "aif-q024",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to reduce hallucinations by grounding responses in private data?",
+      "text": "While troubleshooting latency, engineers determine they must reduce hallucinations by grounding responses in private data. Which action is appropriate? reduce hallucinations by grounding responses in private data.",
       "options": [
         {
           "id": "a",
@@ -944,10 +910,10 @@
       ]
     },
     {
-      "id": "aif-q026",
+      "id": "aif-q025",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to store prompt templates and versions for teams?",
+      "text": "A company needs to store prompt templates and versions for teams. Which option meets the requirement with the LEAST implementation effort? store prompt templates and versions for teams.",
       "options": [
         {
           "id": "a",
@@ -978,10 +944,10 @@
       ]
     },
     {
-      "id": "aif-q027",
+      "id": "aif-q026",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to evaluate model outputs for quality before production?",
+      "text": "An audit found gaps: the organization must evaluate model outputs for quality before production. Which option addresses this? evaluate model outputs for quality before production.",
       "options": [
         {
           "id": "a",
@@ -1012,10 +978,10 @@
       ]
     },
     {
-      "id": "aif-q028",
+      "id": "aif-q027",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use embeddings to represent text for semantic search?",
+      "text": "A hybrid environment must support a goal to use embeddings to represent text for semantic search without changing application code. What should you implement? use embeddings to represent text for semantic search.",
       "options": [
         {
           "id": "a",
@@ -1046,7 +1012,7 @@
       ]
     },
     {
-      "id": "aif-q029",
+      "id": "aif-q028",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
       "text": "Which service should you use to access foundation models from multiple providers through one API?",
@@ -1080,7 +1046,7 @@
       ]
     },
     {
-      "id": "aif-q030",
+      "id": "aif-q029",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to access foundation models from multiple providers through one API?",
@@ -1114,7 +1080,7 @@
       ]
     },
     {
-      "id": "aif-q031",
+      "id": "aif-q030",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
       "text": "A team must access foundation models from multiple providers through one API. Which option meets the requirement?",
@@ -1148,7 +1114,7 @@
       ]
     },
     {
-      "id": "aif-q032",
+      "id": "aif-q031",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
       "text": "Which service should you use to invoke models for text generation with on-demand throughput?",
@@ -1182,7 +1148,7 @@
       ]
     },
     {
-      "id": "aif-q033",
+      "id": "aif-q032",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to invoke models for text generation with on-demand throughput?",
@@ -1216,7 +1182,7 @@
       ]
     },
     {
-      "id": "aif-q034",
+      "id": "aif-q033",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
       "text": "A team must invoke models for text generation with on-demand throughput. Which option meets the requirement?",
@@ -1250,7 +1216,7 @@
       ]
     },
     {
-      "id": "aif-q035",
+      "id": "aif-q034",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
       "text": "Which service should you use to customize a foundation model with labeled examples for a specific task?",
@@ -1284,7 +1250,7 @@
       ]
     },
     {
-      "id": "aif-q036",
+      "id": "aif-q035",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to customize a foundation model with labeled examples for a specific task?",
@@ -1318,7 +1284,7 @@
       ]
     },
     {
-      "id": "aif-q037",
+      "id": "aif-q036",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-choice",
       "text": "A team must customize a foundation model with labeled examples for a specific task. Which option meets the requirement?",
@@ -1352,10 +1318,10 @@
       ]
     },
     {
-      "id": "aif-q038",
+      "id": "aif-q037",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to build a conversational assistant that calls APIs and queries data?",
+      "text": "While troubleshooting latency, engineers determine they must build a conversational assistant that calls APIs and queries data. Which action is appropriate? build a conversational assistant that calls APIs and queries data.",
       "options": [
         {
           "id": "a",
@@ -1386,10 +1352,10 @@
       ]
     },
     {
-      "id": "aif-q039",
+      "id": "aif-q038",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to connect private documents to a foundation model for Q&A?",
+      "text": "Operations reports a need to connect private documents to a foundation model for Q&A. What is the MOST operationally efficient solution? connect private documents to a foundation model for Q&A.",
       "options": [
         {
           "id": "a",
@@ -1420,10 +1386,10 @@
       ]
     },
     {
-      "id": "aif-q040",
+      "id": "aif-q039",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to chunk documents and store vectors for retrieval?",
+      "text": "A regulated workload requires the organization to chunk documents and store vectors for retrieval. Which solution is BEST? chunk documents and store vectors for retrieval.",
       "options": [
         {
           "id": "a",
@@ -1454,10 +1420,10 @@
       ]
     },
     {
-      "id": "aif-q041",
+      "id": "aif-q040",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to expose a generative AI feature behind a REST API to web clients?",
+      "text": "Operations reports a need to expose a generative AI feature behind a REST API to web clients. What is the MOST operationally efficient solution? expose a generative AI feature behind a REST API to web clients.",
       "options": [
         {
           "id": "a",
@@ -1488,10 +1454,10 @@
       ]
     },
     {
-      "id": "aif-q042",
+      "id": "aif-q041",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to cache frequent model responses to reduce cost and latency?",
+      "text": "While troubleshooting latency, engineers determine they must cache frequent model responses to reduce cost and latency. Which action is appropriate? cache frequent model responses to reduce cost and latency.",
       "options": [
         {
           "id": "a",
@@ -1522,10 +1488,10 @@
       ]
     },
     {
-      "id": "aif-q043",
+      "id": "aif-q042",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run inference in a VPC without public internet for data residency?",
+      "text": "After a design review, leadership requires the team to run inference in a VPC without public internet for data residency. Which approach is MOST reliable? run inference in a VPC without public internet for data residency.",
       "options": [
         {
           "id": "a",
@@ -1556,10 +1522,10 @@
       ]
     },
     {
-      "id": "aif-q044",
+      "id": "aif-q043",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to stream tokens to clients for responsive chat UIs?",
+      "text": "During peak traffic, the platform team must stream tokens to clients for responsive chat UIs. What should they do FIRST? stream tokens to clients for responsive chat UIs.",
       "options": [
         {
           "id": "a",
@@ -1590,10 +1556,10 @@
       ]
     },
     {
-      "id": "aif-q045",
+      "id": "aif-q044",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to moderate harmful content in model inputs and outputs?",
+      "text": "Operations reports a need to moderate harmful content in model inputs and outputs. What is the MOST operationally efficient solution? moderate harmful content in model inputs and outputs.",
       "options": [
         {
           "id": "a",
@@ -1624,10 +1590,10 @@
       ]
     },
     {
-      "id": "aif-q046",
+      "id": "aif-q045",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to log prompts and completions for audit?",
+      "text": "After a design review, leadership requires the team to log prompts and completions for audit. Which approach is MOST reliable? log prompts and completions for audit.",
       "options": [
         {
           "id": "a",
@@ -1658,10 +1624,10 @@
       ]
     },
     {
-      "id": "aif-q047",
+      "id": "aif-q046",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deploy a small custom model at the edge?",
+      "text": "Operations reports a need to deploy a small custom model at the edge. What is the MOST operationally efficient solution? deploy a small custom model at the edge.",
       "options": [
         {
           "id": "a",
@@ -1692,7 +1658,7 @@
       ]
     },
     {
-      "id": "aif-q048",
+      "id": "aif-q047",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "Which service should you use to build a conversational assistant that calls APIs and queries data?",
@@ -1726,7 +1692,7 @@
       ]
     },
     {
-      "id": "aif-q049",
+      "id": "aif-q048",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to build a conversational assistant that calls APIs and queries data?",
@@ -1760,7 +1726,7 @@
       ]
     },
     {
-      "id": "aif-q050",
+      "id": "aif-q049",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "A team must build a conversational assistant that calls APIs and queries data. Which option meets the requirement?",
@@ -1794,7 +1760,7 @@
       ]
     },
     {
-      "id": "aif-q051",
+      "id": "aif-q050",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "Which service should you use to connect private documents to a foundation model for Q&A?",
@@ -1828,7 +1794,7 @@
       ]
     },
     {
-      "id": "aif-q052",
+      "id": "aif-q051",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to connect private documents to a foundation model for Q&A?",
@@ -1862,7 +1828,7 @@
       ]
     },
     {
-      "id": "aif-q053",
+      "id": "aif-q052",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "A team must connect private documents to a foundation model for Q&A. Which option meets the requirement?",
@@ -1896,7 +1862,7 @@
       ]
     },
     {
-      "id": "aif-q054",
+      "id": "aif-q053",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "Which service should you use to chunk documents and store vectors for retrieval?",
@@ -1930,7 +1896,7 @@
       ]
     },
     {
-      "id": "aif-q055",
+      "id": "aif-q054",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to chunk documents and store vectors for retrieval?",
@@ -1964,7 +1930,7 @@
       ]
     },
     {
-      "id": "aif-q056",
+      "id": "aif-q055",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "A team must chunk documents and store vectors for retrieval. Which option meets the requirement?",
@@ -1998,7 +1964,7 @@
       ]
     },
     {
-      "id": "aif-q057",
+      "id": "aif-q056",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "Which service should you use to expose a generative AI feature behind a REST API to web clients?",
@@ -2032,7 +1998,7 @@
       ]
     },
     {
-      "id": "aif-q058",
+      "id": "aif-q057",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to expose a generative AI feature behind a REST API to web clients?",
@@ -2066,7 +2032,7 @@
       ]
     },
     {
-      "id": "aif-q059",
+      "id": "aif-q058",
       "domain": "foundation-model-applications",
       "type": "multiple-choice",
       "text": "A team must expose a generative AI feature behind a REST API to web clients. Which option meets the requirement?",
@@ -2100,10 +2066,10 @@
       ]
     },
     {
-      "id": "aif-q060",
+      "id": "aif-q059",
       "domain": "responsible-ai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to detect bias and explain model predictions?",
+      "text": "During peak traffic, the platform team must detect bias and explain model predictions. What should they do FIRST? detect bias and explain model predictions.",
       "options": [
         {
           "id": "a",
@@ -2134,10 +2100,10 @@
       ]
     },
     {
-      "id": "aif-q061",
+      "id": "aif-q060",
       "domain": "responsible-ai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to document model cards and human review for high-risk AI?",
+      "text": "An audit found gaps: the organization must document model cards and human review for high-risk AI. Which option addresses this? document model cards and human review for high-risk AI.",
       "options": [
         {
           "id": "a",
@@ -2168,10 +2134,10 @@
       ]
     },
     {
-      "id": "aif-q062",
+      "id": "aif-q061",
       "domain": "responsible-ai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to ensure training data represents diverse populations?",
+      "text": "Operations reports a need to ensure training data represents diverse populations. What is the MOST operationally efficient solution? ensure training data represents diverse populations.",
       "options": [
         {
           "id": "a",
@@ -2202,10 +2168,10 @@
       ]
     },
     {
-      "id": "aif-q063",
+      "id": "aif-q062",
       "domain": "responsible-ai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to inform users they interact with AI-generated content?",
+      "text": "A hybrid environment must support a goal to inform users they interact with AI-generated content without changing application code. What should you implement? inform users they interact with AI-generated content.",
       "options": [
         {
           "id": "a",
@@ -2236,10 +2202,10 @@
       ]
     },
     {
-      "id": "aif-q064",
+      "id": "aif-q063",
       "domain": "responsible-ai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to minimize collection of personal data in fine-tuning datasets?",
+      "text": "While troubleshooting latency, engineers determine they must minimize collection of personal data in fine-tuning datasets. Which action is appropriate? minimize collection of personal data in fine-tuning datasets.",
       "options": [
         {
           "id": "a",
@@ -2270,10 +2236,10 @@
       ]
     },
     {
-      "id": "aif-q065",
+      "id": "aif-q064",
       "domain": "responsible-ai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to establish human-in-the-loop for consequential decisions?",
+      "text": "While troubleshooting latency, engineers determine they must establish human-in-the-loop for consequential decisions. Which action is appropriate? establish human-in-the-loop for consequential decisions.",
       "options": [
         {
           "id": "a",
@@ -2304,10 +2270,10 @@
       ]
     },
     {
-      "id": "aif-q066",
+      "id": "aif-q065",
       "domain": "responsible-ai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to test models for robustness to prompt injection?",
+      "text": "For cost and security, the team must test models for robustness to prompt injection. What is the recommended approach? test models for robustness to prompt injection.",
       "options": [
         {
           "id": "a",
@@ -2338,10 +2304,10 @@
       ]
     },
     {
-      "id": "aif-q067",
+      "id": "aif-q066",
       "domain": "responsible-ai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to track model lineage from dataset to deployment?",
+      "text": "An audit found gaps: the organization must track model lineage from dataset to deployment. Which option addresses this? track model lineage from dataset to deployment.",
       "options": [
         {
           "id": "a",
@@ -2372,7 +2338,7 @@
       ]
     },
     {
-      "id": "aif-q068",
+      "id": "aif-q067",
       "domain": "responsible-ai",
       "type": "multiple-choice",
       "text": "Which service should you use to detect bias and explain model predictions?",
@@ -2406,7 +2372,7 @@
       ]
     },
     {
-      "id": "aif-q069",
+      "id": "aif-q068",
       "domain": "responsible-ai",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to detect bias and explain model predictions?",
@@ -2440,7 +2406,7 @@
       ]
     },
     {
-      "id": "aif-q070",
+      "id": "aif-q069",
       "domain": "responsible-ai",
       "type": "multiple-choice",
       "text": "A team must detect bias and explain model predictions. Which option meets the requirement?",
@@ -2474,7 +2440,7 @@
       ]
     },
     {
-      "id": "aif-q071",
+      "id": "aif-q070",
       "domain": "responsible-ai",
       "type": "multiple-choice",
       "text": "Which service should you use to document model cards and human review for high-risk AI?",
@@ -2508,78 +2474,10 @@
       ]
     },
     {
-      "id": "aif-q072",
-      "domain": "responsible-ai",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to document model cards and human review for high-risk AI?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Responsible AI governance processes on AWS"
-        },
-        {
-          "id": "b",
-          "text": "Disabling CloudTrail"
-        },
-        {
-          "id": "c",
-          "text": "Sharing root keys"
-        },
-        {
-          "id": "d",
-          "text": "Public AMIs by default"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Governance includes documentation, human oversight, and risk assessment.",
-      "docs": [
-        {
-          "title": "Responsible AI",
-          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
-        }
-      ]
-    },
-    {
-      "id": "aif-q073",
-      "domain": "responsible-ai",
-      "type": "multiple-choice",
-      "text": "A team must document model cards and human review for high-risk AI. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Responsible AI governance processes on AWS"
-        },
-        {
-          "id": "b",
-          "text": "Disabling CloudTrail"
-        },
-        {
-          "id": "c",
-          "text": "Sharing root keys"
-        },
-        {
-          "id": "d",
-          "text": "Public AMIs by default"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Governance includes documentation, human oversight, and risk assessment.",
-      "docs": [
-        {
-          "title": "Responsible AI",
-          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
-        }
-      ]
-    },
-    {
-      "id": "aif-q074",
+      "id": "aif-q071",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to encrypt model artifacts and training data at rest?",
+      "text": "A company needs to encrypt model artifacts and training data at rest. Which option meets the requirement with the LEAST implementation effort? encrypt model artifacts and training data at rest.",
       "options": [
         {
           "id": "a",
@@ -2610,10 +2508,10 @@
       ]
     },
     {
-      "id": "aif-q075",
+      "id": "aif-q072",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to control which IAM principals can invoke Bedrock models?",
+      "text": "During peak traffic, the platform team must control which IAM principals can invoke Bedrock models. What should they do FIRST? control which IAM principals can invoke Bedrock models.",
       "options": [
         {
           "id": "a",
@@ -2644,10 +2542,10 @@
       ]
     },
     {
-      "id": "aif-q076",
+      "id": "aif-q073",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to discover sensitive training data in S3 buckets?",
+      "text": "A regulated workload requires the organization to discover sensitive training data in S3 buckets. Which solution is BEST? discover sensitive training data in S3 buckets.",
       "options": [
         {
           "id": "a",
@@ -2678,10 +2576,10 @@
       ]
     },
     {
-      "id": "aif-q077",
+      "id": "aif-q074",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to audit API calls to AI services?",
+      "text": "For cost and security, the team must audit API calls to AI services. What is the recommended approach? audit API calls to AI services.",
       "options": [
         {
           "id": "a",
@@ -2712,10 +2610,10 @@
       ]
     },
     {
-      "id": "aif-q078",
+      "id": "aif-q075",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to isolate training jobs in a private network?",
+      "text": "A hybrid environment must support a goal to isolate training jobs in a private network without changing application code. What should you implement? isolate training jobs in a private network.",
       "options": [
         {
           "id": "a",
@@ -2746,10 +2644,10 @@
       ]
     },
     {
-      "id": "aif-q079",
+      "id": "aif-q076",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to rotate API keys and secrets for third-party models?",
+      "text": "A hybrid environment must support a goal to rotate API keys and secrets for third-party models without changing application code. What should you implement? rotate API keys and secrets for third-party models.",
       "options": [
         {
           "id": "a",
@@ -2780,10 +2678,10 @@
       ]
     },
     {
-      "id": "aif-q080",
+      "id": "aif-q077",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to apply organizational policies across AI accounts?",
+      "text": "A company needs to apply organizational policies across AI accounts. Which option meets the requirement with the LEAST implementation effort? apply organizational policies across AI accounts.",
       "options": [
         {
           "id": "a",
@@ -2814,10 +2712,10 @@
       ]
     },
     {
-      "id": "aif-q081",
+      "id": "aif-q078",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to monitor model endpoints for drift?",
+      "text": "While troubleshooting latency, engineers determine they must monitor model endpoints for drift. Which action is appropriate? monitor model endpoints for drift.",
       "options": [
         {
           "id": "a",
@@ -2848,7 +2746,7 @@
       ]
     },
     {
-      "id": "aif-q082",
+      "id": "aif-q079",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
       "text": "Which service should you use to encrypt model artifacts and training data at rest?",
@@ -2882,7 +2780,7 @@
       ]
     },
     {
-      "id": "aif-q083",
+      "id": "aif-q080",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to encrypt model artifacts and training data at rest?",
@@ -2916,7 +2814,7 @@
       ]
     },
     {
-      "id": "aif-q084",
+      "id": "aif-q081",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
       "text": "A team must encrypt model artifacts and training data at rest. Which option meets the requirement?",
@@ -2950,7 +2848,7 @@
       ]
     },
     {
-      "id": "aif-q085",
+      "id": "aif-q082",
       "domain": "ai-security-governance",
       "type": "multiple-choice",
       "text": "Which service should you use to control which IAM principals can invoke Bedrock models?",
@@ -2984,75 +2882,7 @@
       ]
     },
     {
-      "id": "aif-q086",
-      "domain": "ai-security-governance",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to control which IAM principals can invoke Bedrock models?",
-      "options": [
-        {
-          "id": "a",
-          "text": "IAM policies for bedrock:InvokeModel"
-        },
-        {
-          "id": "b",
-          "text": "Anonymous access"
-        },
-        {
-          "id": "c",
-          "text": "Root user daily use"
-        },
-        {
-          "id": "d",
-          "text": "Wildcard * on all actions for everyone"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Least-privilege IAM restricts model access.",
-      "docs": [
-        {
-          "title": "Bedrock IAM",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q087",
-      "domain": "ai-security-governance",
-      "type": "multiple-choice",
-      "text": "A team must control which IAM principals can invoke Bedrock models. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "IAM policies for bedrock:InvokeModel"
-        },
-        {
-          "id": "b",
-          "text": "Anonymous access"
-        },
-        {
-          "id": "c",
-          "text": "Root user daily use"
-        },
-        {
-          "id": "d",
-          "text": "Wildcard * on all actions for everyone"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Least-privilege IAM restricts model access.",
-      "docs": [
-        {
-          "title": "Bedrock IAM",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q088",
+      "id": "aif-q083",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified AI Practitioner? (Select TWO.)",
@@ -3091,7 +2921,7 @@
       ]
     },
     {
-      "id": "aif-q089",
+      "id": "aif-q084",
       "domain": "ai-ml-fundamentals",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3131,7 +2961,7 @@
       ]
     },
     {
-      "id": "aif-q090",
+      "id": "aif-q085",
       "domain": "generative-ai-fundamentals",
       "type": "multiple-response",
       "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
@@ -3166,346 +2996,6 @@
         {
           "title": "AWS KMS",
           "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q091",
-      "domain": "ai-ml-fundamentals",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AIF-C01 Exam Guide', what should you do FIRST when addressing Fundamentals of AI and ML objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AIF-C01 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AIF-C01 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-ai-practitioner/"
-        }
-      ]
-    },
-    {
-      "id": "aif-q092",
-      "domain": "ai-ml-fundamentals",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon SageMaker', what should you do FIRST when addressing Fundamentals of AI and ML objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon SageMaker describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon SageMaker",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q093",
-      "domain": "generative-ai-fundamentals",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon Bedrock', what should you do FIRST when addressing Fundamentals of Generative AI objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon Bedrock",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q094",
-      "domain": "generative-ai-fundamentals",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Generative AI on AWS', what should you do FIRST when addressing Fundamentals of Generative AI objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Generative AI on AWS describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Generative AI on AWS",
-          "url": "https://aws.amazon.com/generative-ai/"
-        }
-      ]
-    },
-    {
-      "id": "aif-q095",
-      "domain": "foundation-model-applications",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon Bedrock Agents', what should you do FIRST when addressing Applications of Foundation Models objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon Bedrock Agents describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon Bedrock Agents",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q096",
-      "domain": "foundation-model-applications",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Knowledge Bases for Amazon Bedrock', what should you do FIRST when addressing Applications of Foundation Models objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Knowledge Bases for Amazon Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Knowledge Bases for Amazon Bedrock",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q097",
-      "domain": "responsible-ai",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Responsible AI', what should you do FIRST when addressing Guidelines for Responsible AI objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Responsible AI describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Responsible AI",
-          "url": "https://aws.amazon.com/machine-learning/responsible-ai/"
-        }
-      ]
-    },
-    {
-      "id": "aif-q098",
-      "domain": "responsible-ai",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon SageMaker Clarify', what should you do FIRST when addressing Guidelines for Responsible AI objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon SageMaker Clarify describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon SageMaker Clarify",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q099",
-      "domain": "ai-security-governance",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS IAM', what should you do FIRST when addressing Security, Compliance, and Governance for AI Solutions objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS IAM describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS IAM",
-          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q100",
-      "domain": "ai-security-governance",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon Macie', what should you do FIRST when addressing Security, Compliance, and Governance for AI Solutions objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon Macie describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon Macie",
-          "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
         }
       ]
     }

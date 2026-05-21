@@ -78,7 +78,7 @@
       "id": "mla-q001",
       "domain": "data-preparation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to visually prepare tabular data for ML without code?",
+      "text": "A regulated workload requires the organization to visually prepare tabular data for ML without code. Which solution is BEST? visually prepare tabular data for ML without code.",
       "options": [
         {
           "id": "a",
@@ -112,7 +112,7 @@
       "id": "mla-q002",
       "domain": "data-preparation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run ETL on large datasets in a data lake?",
+      "text": "While troubleshooting latency, engineers determine they must run ETL on large datasets in a data lake. Which action is appropriate? run ETL on large datasets in a data lake.",
       "options": [
         {
           "id": "a",
@@ -146,7 +146,7 @@
       "id": "mla-q003",
       "domain": "data-preparation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to label images for object detection?",
+      "text": "A hybrid environment must support a goal to label images for object detection without changing application code. What should you implement? label images for object detection.",
       "options": [
         {
           "id": "a",
@@ -180,7 +180,7 @@
       "id": "mla-q004",
       "domain": "data-preparation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to detect schema and statistics on S3 data?",
+      "text": "During peak traffic, the platform team must detect schema and statistics on S3 data. What should they do FIRST? detect schema and statistics on S3 data.",
       "options": [
         {
           "id": "a",
@@ -214,7 +214,7 @@
       "id": "mla-q005",
       "domain": "data-preparation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to handle class imbalance in training data?",
+      "text": "After a design review, leadership requires the team to handle class imbalance in training data. Which approach is MOST reliable? handle class imbalance in training data.",
       "options": [
         {
           "id": "a",
@@ -248,7 +248,7 @@
       "id": "mla-q006",
       "domain": "data-preparation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to split data into train/validation/test without leakage?",
+      "text": "The DevOps team is automating releases and must split data into train/validation/test without leakage. Which design fits best? split data into train/validation/test without leakage.",
       "options": [
         {
           "id": "a",
@@ -282,7 +282,7 @@
       "id": "mla-q007",
       "domain": "data-preparation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to store feature values for online inference?",
+      "text": "Operations reports a need to store feature values for online inference. What is the MOST operationally efficient solution? store feature values for online inference.",
       "options": [
         {
           "id": "a",
@@ -316,7 +316,7 @@
       "id": "mla-q008",
       "domain": "data-preparation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to anonymize PII before model training?",
+      "text": "After a design review, leadership requires the team to anonymize PII before model training. Which approach is MOST reliable? anonymize PII before model training.",
       "options": [
         {
           "id": "a",
@@ -824,43 +824,9 @@
     },
     {
       "id": "mla-q023",
-      "domain": "data-preparation",
-      "type": "multiple-choice",
-      "text": "A team must handle class imbalance in training data. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
-        },
-        {
-          "id": "b",
-          "text": "Ignore minority class"
-        },
-        {
-          "id": "c",
-          "text": "Leak test labels"
-        },
-        {
-          "id": "d",
-          "text": "Single class only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Imbalanced data requires sampling or weighted loss.",
-      "docs": [
-        {
-          "title": "Imbalanced data",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-train-debug.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q024",
       "domain": "model-development",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to train models with managed infrastructure and spot savings?",
+      "text": "During peak traffic, the platform team must train models with managed infrastructure and spot savings. What should they do FIRST? train models with managed infrastructure and spot savings.",
       "options": [
         {
           "id": "a",
@@ -891,10 +857,10 @@
       ]
     },
     {
-      "id": "mla-q025",
+      "id": "mla-q024",
       "domain": "model-development",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to tune hyperparameters automatically?",
+      "text": "A hybrid environment must support a goal to tune hyperparameters automatically without changing application code. What should you implement? tune hyperparameters automatically.",
       "options": [
         {
           "id": "a",
@@ -925,10 +891,10 @@
       ]
     },
     {
-      "id": "mla-q026",
+      "id": "mla-q025",
       "domain": "model-development",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to track experiments and parameters?",
+      "text": "A company needs to track experiments and parameters. Which option meets the requirement with the LEAST implementation effort? track experiments and parameters.",
       "options": [
         {
           "id": "a",
@@ -959,10 +925,10 @@
       ]
     },
     {
-      "id": "mla-q027",
+      "id": "mla-q026",
       "domain": "model-development",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use built-in algorithms for common ML tasks?",
+      "text": "A regulated workload requires the organization to use built-in algorithms for common ML tasks. Which solution is BEST? use built-in algorithms for common ML tasks.",
       "options": [
         {
           "id": "a",
@@ -993,10 +959,10 @@
       ]
     },
     {
-      "id": "mla-q028",
+      "id": "mla-q027",
       "domain": "model-development",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to bring custom Docker container for training?",
+      "text": "A hybrid environment must support a goal to bring custom Docker container for training without changing application code. What should you implement? bring custom Docker container for training.",
       "options": [
         {
           "id": "a",
@@ -1027,10 +993,10 @@
       ]
     },
     {
-      "id": "mla-q029",
+      "id": "mla-q028",
       "domain": "model-development",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to distributed training across multiple GPUs?",
+      "text": "A company needs to distributed training across multiple GPUs. Which option meets the requirement with the LEAST implementation effort? distributed training across multiple GPUs.",
       "options": [
         {
           "id": "a",
@@ -1061,10 +1027,10 @@
       ]
     },
     {
-      "id": "mla-q030",
+      "id": "mla-q029",
       "domain": "model-development",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to version datasets and models together?",
+      "text": "After a design review, leadership requires the team to version datasets and models together. Which approach is MOST reliable? version datasets and models together.",
       "options": [
         {
           "id": "a",
@@ -1095,10 +1061,10 @@
       ]
     },
     {
-      "id": "mla-q031",
+      "id": "mla-q030",
       "domain": "model-development",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to debug training with real-time metrics?",
+      "text": "After a design review, leadership requires the team to debug training with real-time metrics. Which approach is MOST reliable? debug training with real-time metrics.",
       "options": [
         {
           "id": "a",
@@ -1129,7 +1095,7 @@
       ]
     },
     {
-      "id": "mla-q032",
+      "id": "mla-q031",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "Which service should you use to train models with managed infrastructure and spot savings?",
@@ -1163,7 +1129,7 @@
       ]
     },
     {
-      "id": "mla-q033",
+      "id": "mla-q032",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to train models with managed infrastructure and spot savings?",
@@ -1197,7 +1163,7 @@
       ]
     },
     {
-      "id": "mla-q034",
+      "id": "mla-q033",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "A team must train models with managed infrastructure and spot savings. Which option meets the requirement?",
@@ -1231,7 +1197,7 @@
       ]
     },
     {
-      "id": "mla-q035",
+      "id": "mla-q034",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "Which service should you use to tune hyperparameters automatically?",
@@ -1265,7 +1231,7 @@
       ]
     },
     {
-      "id": "mla-q036",
+      "id": "mla-q035",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to tune hyperparameters automatically?",
@@ -1299,7 +1265,7 @@
       ]
     },
     {
-      "id": "mla-q037",
+      "id": "mla-q036",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "A team must tune hyperparameters automatically. Which option meets the requirement?",
@@ -1333,7 +1299,7 @@
       ]
     },
     {
-      "id": "mla-q038",
+      "id": "mla-q037",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "Which service should you use to track experiments and parameters?",
@@ -1367,7 +1333,7 @@
       ]
     },
     {
-      "id": "mla-q039",
+      "id": "mla-q038",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to track experiments and parameters?",
@@ -1401,7 +1367,7 @@
       ]
     },
     {
-      "id": "mla-q040",
+      "id": "mla-q039",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "A team must track experiments and parameters. Which option meets the requirement?",
@@ -1435,7 +1401,7 @@
       ]
     },
     {
-      "id": "mla-q041",
+      "id": "mla-q040",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "Which service should you use to use built-in algorithms for common ML tasks?",
@@ -1469,7 +1435,7 @@
       ]
     },
     {
-      "id": "mla-q042",
+      "id": "mla-q041",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to use built-in algorithms for common ML tasks?",
@@ -1503,7 +1469,7 @@
       ]
     },
     {
-      "id": "mla-q043",
+      "id": "mla-q042",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "A team must use built-in algorithms for common ML tasks. Which option meets the requirement?",
@@ -1537,7 +1503,7 @@
       ]
     },
     {
-      "id": "mla-q044",
+      "id": "mla-q043",
       "domain": "model-development",
       "type": "multiple-choice",
       "text": "Which service should you use to bring custom Docker container for training?",
@@ -1571,78 +1537,10 @@
       ]
     },
     {
-      "id": "mla-q045",
-      "domain": "model-development",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to bring custom Docker container for training?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker custom training images"
-        },
-        {
-          "id": "b",
-          "text": "Arbitrary root on public hub only"
-        },
-        {
-          "id": "c",
-          "text": "No tests"
-        },
-        {
-          "id": "d",
-          "text": "Secrets in image layers"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Custom containers package proprietary dependencies.",
-      "docs": [
-        {
-          "title": "Custom containers",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q046",
-      "domain": "model-development",
-      "type": "multiple-choice",
-      "text": "A team must bring custom Docker container for training. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker custom training images"
-        },
-        {
-          "id": "b",
-          "text": "Arbitrary root on public hub only"
-        },
-        {
-          "id": "c",
-          "text": "No tests"
-        },
-        {
-          "id": "d",
-          "text": "Secrets in image layers"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Custom containers package proprietary dependencies.",
-      "docs": [
-        {
-          "title": "Custom containers",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q047",
+      "id": "mla-q044",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deploy real-time inference behind an endpoint?",
+      "text": "Operations reports a need to deploy real-time inference behind an endpoint. What is the MOST operationally efficient solution? deploy real-time inference behind an endpoint.",
       "options": [
         {
           "id": "a",
@@ -1673,10 +1571,10 @@
       ]
     },
     {
-      "id": "mla-q048",
+      "id": "mla-q045",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run asynchronous inference for large payloads?",
+      "text": "The DevOps team is automating releases and must run asynchronous inference for large payloads. Which design fits best? run asynchronous inference for large payloads.",
       "options": [
         {
           "id": "a",
@@ -1707,10 +1605,10 @@
       ]
     },
     {
-      "id": "mla-q049",
+      "id": "mla-q046",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deploy multiple models behind one endpoint?",
+      "text": "Operations reports a need to deploy multiple models behind one endpoint. What is the MOST operationally efficient solution? deploy multiple models behind one endpoint.",
       "options": [
         {
           "id": "a",
@@ -1741,10 +1639,10 @@
       ]
     },
     {
-      "id": "mla-q050",
+      "id": "mla-q047",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to orchestrate ML CI/CD steps?",
+      "text": "A hybrid environment must support a goal to orchestrate ML CI/CD steps without changing application code. What should you implement? orchestrate ML CI/CD steps.",
       "options": [
         {
           "id": "a",
@@ -1775,10 +1673,10 @@
       ]
     },
     {
-      "id": "mla-q051",
+      "id": "mla-q048",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use infrastructure as code for SageMaker resources?",
+      "text": "For cost and security, the team must use infrastructure as code for SageMaker resources. What is the recommended approach? use infrastructure as code for SageMaker resources.",
       "options": [
         {
           "id": "a",
@@ -1809,10 +1707,10 @@
       ]
     },
     {
-      "id": "mla-q052",
+      "id": "mla-q049",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to A/B test model variants in production?",
+      "text": "During peak traffic, the platform team must A/B test model variants in production. What should they do FIRST? A/B test model variants in production.",
       "options": [
         {
           "id": "a",
@@ -1843,10 +1741,10 @@
       ]
     },
     {
-      "id": "mla-q053",
+      "id": "mla-q050",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to containerize inference for Kubernetes?",
+      "text": "Operations reports a need to containerize inference for Kubernetes. What is the MOST operationally efficient solution? containerize inference for Kubernetes.",
       "options": [
         {
           "id": "a",
@@ -1877,10 +1775,10 @@
       ]
     },
     {
-      "id": "mla-q054",
+      "id": "mla-q051",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to schedule batch scoring nightly?",
+      "text": "An audit found gaps: the organization must schedule batch scoring nightly. Which option addresses this? schedule batch scoring nightly.",
       "options": [
         {
           "id": "a",
@@ -1911,7 +1809,7 @@
       ]
     },
     {
-      "id": "mla-q055",
+      "id": "mla-q052",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "Which service should you use to deploy real-time inference behind an endpoint?",
@@ -1945,7 +1843,7 @@
       ]
     },
     {
-      "id": "mla-q056",
+      "id": "mla-q053",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to deploy real-time inference behind an endpoint?",
@@ -1979,7 +1877,7 @@
       ]
     },
     {
-      "id": "mla-q057",
+      "id": "mla-q054",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "A team must deploy real-time inference behind an endpoint. Which option meets the requirement?",
@@ -2013,7 +1911,7 @@
       ]
     },
     {
-      "id": "mla-q058",
+      "id": "mla-q055",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "Which service should you use to run asynchronous inference for large payloads?",
@@ -2047,7 +1945,7 @@
       ]
     },
     {
-      "id": "mla-q059",
+      "id": "mla-q056",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to run asynchronous inference for large payloads?",
@@ -2081,7 +1979,7 @@
       ]
     },
     {
-      "id": "mla-q060",
+      "id": "mla-q057",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "A team must run asynchronous inference for large payloads. Which option meets the requirement?",
@@ -2115,7 +2013,7 @@
       ]
     },
     {
-      "id": "mla-q061",
+      "id": "mla-q058",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "Which service should you use to deploy multiple models behind one endpoint?",
@@ -2149,7 +2047,7 @@
       ]
     },
     {
-      "id": "mla-q062",
+      "id": "mla-q059",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to deploy multiple models behind one endpoint?",
@@ -2183,7 +2081,7 @@
       ]
     },
     {
-      "id": "mla-q063",
+      "id": "mla-q060",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "A team must deploy multiple models behind one endpoint. Which option meets the requirement?",
@@ -2217,7 +2115,7 @@
       ]
     },
     {
-      "id": "mla-q064",
+      "id": "mla-q061",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "Which service should you use to orchestrate ML CI/CD steps?",
@@ -2251,7 +2149,7 @@
       ]
     },
     {
-      "id": "mla-q065",
+      "id": "mla-q062",
       "domain": "deployment-orchestration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to orchestrate ML CI/CD steps?",
@@ -2285,44 +2183,10 @@
       ]
     },
     {
-      "id": "mla-q066",
-      "domain": "deployment-orchestration",
-      "type": "multiple-choice",
-      "text": "A team must orchestrate ML CI/CD steps. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker Pipelines with CodePipeline"
-        },
-        {
-          "id": "b",
-          "text": "Manual clicks only"
-        },
-        {
-          "id": "c",
-          "text": "No tests"
-        },
-        {
-          "id": "d",
-          "text": "Deploy to prod without approval"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Pipelines define reproducible ML workflows.",
-      "docs": [
-        {
-          "title": "Pipelines",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q067",
+      "id": "mla-q063",
       "domain": "monitoring-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to detect data drift in production features?",
+      "text": "For cost and security, the team must detect data drift in production features. What is the recommended approach? detect data drift in production features.",
       "options": [
         {
           "id": "a",
@@ -2353,10 +2217,10 @@
       ]
     },
     {
-      "id": "mla-q068",
+      "id": "mla-q064",
       "domain": "monitoring-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to explain individual predictions to stakeholders?",
+      "text": "A regulated workload requires the organization to explain individual predictions to stakeholders. Which solution is BEST? explain individual predictions to stakeholders.",
       "options": [
         {
           "id": "a",
@@ -2387,10 +2251,10 @@
       ]
     },
     {
-      "id": "mla-q069",
+      "id": "mla-q065",
       "domain": "monitoring-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to encrypt training volumes and model artifacts?",
+      "text": "The DevOps team is automating releases and must encrypt training volumes and model artifacts. Which design fits best? encrypt training volumes and model artifacts.",
       "options": [
         {
           "id": "a",
@@ -2421,10 +2285,10 @@
       ]
     },
     {
-      "id": "mla-q070",
+      "id": "mla-q066",
       "domain": "monitoring-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to restrict notebook internet access for compliance?",
+      "text": "While troubleshooting latency, engineers determine they must restrict notebook internet access for compliance. Which action is appropriate? restrict notebook internet access for compliance.",
       "options": [
         {
           "id": "a",
@@ -2455,10 +2319,10 @@
       ]
     },
     {
-      "id": "mla-q071",
+      "id": "mla-q067",
       "domain": "monitoring-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to capture inference payloads for audit (where allowed)?",
+      "text": "A company needs to capture inference payloads for audit (where allowed). Which option meets the requirement with the LEAST implementation effort? capture inference payloads for audit (where allowed).",
       "options": [
         {
           "id": "a",
@@ -2489,10 +2353,10 @@
       ]
     },
     {
-      "id": "mla-q072",
+      "id": "mla-q068",
       "domain": "monitoring-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to automatically roll back bad deployments?",
+      "text": "A hybrid environment must support a goal to automatically roll back bad deployments without changing application code. What should you implement? automatically roll back bad deployments.",
       "options": [
         {
           "id": "a",
@@ -2523,10 +2387,10 @@
       ]
     },
     {
-      "id": "mla-q073",
+      "id": "mla-q069",
       "domain": "monitoring-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to scan containers for CVEs before deploy?",
+      "text": "For cost and security, the team must scan containers for CVEs before deploy. What is the recommended approach? scan containers for CVEs before deploy.",
       "options": [
         {
           "id": "a",
@@ -2557,10 +2421,10 @@
       ]
     },
     {
-      "id": "mla-q074",
+      "id": "mla-q070",
       "domain": "monitoring-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to audit who invoked endpoints?",
+      "text": "An audit found gaps: the organization must audit who invoked endpoints. Which option addresses this? audit who invoked endpoints.",
       "options": [
         {
           "id": "a",
@@ -2591,7 +2455,7 @@
       ]
     },
     {
-      "id": "mla-q075",
+      "id": "mla-q071",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "Which service should you use to detect data drift in production features?",
@@ -2625,7 +2489,7 @@
       ]
     },
     {
-      "id": "mla-q076",
+      "id": "mla-q072",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to detect data drift in production features?",
@@ -2659,7 +2523,7 @@
       ]
     },
     {
-      "id": "mla-q077",
+      "id": "mla-q073",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "A team must detect data drift in production features. Which option meets the requirement?",
@@ -2693,7 +2557,7 @@
       ]
     },
     {
-      "id": "mla-q078",
+      "id": "mla-q074",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "Which service should you use to explain individual predictions to stakeholders?",
@@ -2727,7 +2591,7 @@
       ]
     },
     {
-      "id": "mla-q079",
+      "id": "mla-q075",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to explain individual predictions to stakeholders?",
@@ -2761,7 +2625,7 @@
       ]
     },
     {
-      "id": "mla-q080",
+      "id": "mla-q076",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "A team must explain individual predictions to stakeholders. Which option meets the requirement?",
@@ -2795,7 +2659,7 @@
       ]
     },
     {
-      "id": "mla-q081",
+      "id": "mla-q077",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "Which service should you use to encrypt training volumes and model artifacts?",
@@ -2829,7 +2693,7 @@
       ]
     },
     {
-      "id": "mla-q082",
+      "id": "mla-q078",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to encrypt training volumes and model artifacts?",
@@ -2863,7 +2727,7 @@
       ]
     },
     {
-      "id": "mla-q083",
+      "id": "mla-q079",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "A team must encrypt training volumes and model artifacts. Which option meets the requirement?",
@@ -2897,7 +2761,7 @@
       ]
     },
     {
-      "id": "mla-q084",
+      "id": "mla-q080",
       "domain": "monitoring-security",
       "type": "multiple-choice",
       "text": "Which service should you use to restrict notebook internet access for compliance?",
@@ -2931,75 +2795,7 @@
       ]
     },
     {
-      "id": "mla-q085",
-      "domain": "monitoring-security",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to restrict notebook internet access for compliance?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker Studio in VPC-only mode"
-        },
-        {
-          "id": "b",
-          "text": "Open ingress 0.0.0.0/0"
-        },
-        {
-          "id": "c",
-          "text": "Download arbitrary binaries unvetted"
-        },
-        {
-          "id": "d",
-          "text": "Root in notebook"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "VPC-only Studio limits data exfiltration.",
-      "docs": [
-        {
-          "title": "Studio VPC",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-and-internet-access.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q086",
-      "domain": "monitoring-security",
-      "type": "multiple-choice",
-      "text": "A team must restrict notebook internet access for compliance. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker Studio in VPC-only mode"
-        },
-        {
-          "id": "b",
-          "text": "Open ingress 0.0.0.0/0"
-        },
-        {
-          "id": "c",
-          "text": "Download arbitrary binaries unvetted"
-        },
-        {
-          "id": "d",
-          "text": "Root in notebook"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "VPC-only Studio limits data exfiltration.",
-      "docs": [
-        {
-          "title": "Studio VPC",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-and-internet-access.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q087",
+      "id": "mla-q081",
       "domain": "data-preparation",
       "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified Machine Learning Engineer \u2013 Associate? (Select TWO.)",
@@ -3038,46 +2834,7 @@
       ]
     },
     {
-      "id": "mla-q088",
-      "domain": "model-development",
-      "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS KMS"
-        },
-        {
-          "id": "b",
-          "text": "Amazon Route 53"
-        },
-        {
-          "id": "c",
-          "text": "AWS Secrets Manager"
-        },
-        {
-          "id": "d",
-          "text": "Amazon CloudFront only for DNS"
-        },
-        {
-          "id": "e",
-          "text": "AWS Batch"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
-      "docs": [
-        {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q089",
+      "id": "mla-q082",
       "domain": "data-preparation",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3117,274 +2874,41 @@
       ]
     },
     {
-      "id": "mla-q090",
-      "domain": "data-preparation",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon SageMaker Data Wrangler', what should you do FIRST when addressing Data Preparation for Machine Learning objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon SageMaker Data Wrangler describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon SageMaker Data Wrangler",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q091",
-      "domain": "data-preparation",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Glue', what should you do FIRST when addressing Data Preparation for Machine Learning objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Glue describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Glue",
-          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q092",
+      "id": "mla-q083",
       "domain": "model-development",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon SageMaker training', what should you do FIRST when addressing ML Model Development objectives?",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+          "text": "AWS KMS"
         },
         {
           "id": "b",
-          "text": "Disable security logging to reduce noise"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "Use root user credentials for daily operations"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "Skip backup and recovery planning"
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
         }
       ],
       "correct": [
-        "a"
+        "a",
+        "c"
       ],
-      "explanation": "Official guides such as Amazon SageMaker training describe domain objectives; practice designs should follow AWS documented best practices.",
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
       "docs": [
         {
-          "title": "Amazon SageMaker training",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q093",
-      "domain": "model-development",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'SageMaker Model Registry', what should you do FIRST when addressing ML Model Development objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as SageMaker Model Registry describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "SageMaker Model Registry",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q094",
-      "domain": "deployment-orchestration",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'SageMaker endpoints', what should you do FIRST when addressing Deployment and Orchestration of ML Workflows objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as SageMaker endpoints describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "SageMaker endpoints",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q095",
-      "domain": "deployment-orchestration",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon SageMaker Pipelines', what should you do FIRST when addressing Deployment and Orchestration of ML Workflows objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon SageMaker Pipelines describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon SageMaker Pipelines",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q096",
-      "domain": "monitoring-security",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'SageMaker Model Monitor', what should you do FIRST when addressing ML Solution Monitoring, Maintenance, and Security objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as SageMaker Model Monitor describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "SageMaker Model Monitor",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q097",
-      "domain": "monitoring-security",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon SageMaker Clarify', what should you do FIRST when addressing ML Solution Monitoring, Maintenance, and Security objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon SageMaker Clarify describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon SageMaker Clarify",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html"
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
         }
       ]
     }

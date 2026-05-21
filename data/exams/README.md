@@ -51,6 +51,10 @@ See `scripts/question_bank/official_docs.py` if you use the optional generators.
 
 Python scripts under `scripts/` can rebuild entire banks from fact catalogs. They are **not** run for exam JSON in CI — maintainers run them locally when adding hundreds of questions at once, then commit the JSON here.
 
+## Pause and resume
+
+Practice exams auto-save progress in the browser (localStorage) every 30 seconds and when you use **Pause & exit**. On the exam page, use **Continue exam** or **Start fresh** within seven days.
+
 ## Copyright and originality
 
 Practice questions in this repo are **original** study items. Do **not** copy stems, answer choices, or explanations from AWS Skill Builder, certification exams, brain dumps, or other proprietary training banks. It is fine to cover the same **exam guide objectives** and link to **official AWS documentation**—rewrite scenarios in your own words.

@@ -19,6 +19,7 @@ import { questionPageUrl } from "./routes.js";
  * @param {(responses: Record<string, string[]>) => void} opts.onResponsesChange
  * @param {(meta: { durationSeconds: number }) => void} opts.onFinish
  * @param {boolean} [opts.isDrill]
+ * @param {boolean} [opts.isKeytrain]
  * @param {{ index?: number, remainingSeconds?: number, revealed?: string[] }} [opts.resume]
  */
 export function runExam({
@@ -30,6 +31,7 @@ export function runExam({
   onResponsesChange,
   onFinish,
   isDrill = false,
+  isKeytrain = false,
   resume,
 }) {
   let index = resume?.index ?? 0;
@@ -65,10 +67,12 @@ export function runExam({
   const btnPrev = document.getElementById("btn-prev");
   const btnNext = document.getElementById("btn-next");
   const btnFinish = document.getElementById("btn-finish");
+  const btnPause = document.getElementById("btn-pause-exam");
 
   function persistResume() {
-    if (isDrill) return;
+    if (isDrill || isKeytrain) return;
     saveResumeState(certId, {
+      mode: "exam",
       questions,
       responses: { ...responses },
       remainingSeconds,
@@ -359,6 +363,9 @@ export function runExam({
           ? "Finish drill"
           : "Submit exam";
     }
+    if (btnPause) {
+      btnPause.classList.toggle("hidden", isDrill || isKeytrain);
+    }
   }
 
   btnPrev?.addEventListener("click", () => {
@@ -396,13 +403,19 @@ export function runExam({
   });
 
   startTimer();
-  if (!isDrill) {
+  if (!isDrill && !isKeytrain) {
     saveIntervalId = window.setInterval(persistResume, 30000);
     persistResume();
   }
   render();
 
+  function pauseAndExit() {
+    persistResume();
+    stopTimers();
+  }
+
   return {
     stopTimer: stopTimers,
+    pauseAndExit,
   };
 }

@@ -6,7 +6,15 @@
       "code": "ANS-C01",
       "vendor": "aws",
       "dataFile": "data/exams/advanced-networking-specialty.json",
-      "questionCount": 97
+      "questionCount": 84
+    },
+    {
+      "id": "ai-900",
+      "name": "Microsoft Azure AI Fundamentals",
+      "code": "AI-900",
+      "vendor": "azure",
+      "dataFile": "data/exams/ai-900.json",
+      "questionCount": 72
     },
     {
       "id": "ai-practitioner",
@@ -14,7 +22,71 @@
       "code": "AIF-C01",
       "vendor": "aws",
       "dataFile": "data/exams/ai-practitioner.json",
-      "questionCount": 100
+      "questionCount": 85
+    },
+    {
+      "id": "associate-cloud-engineer",
+      "name": "Google Associate Cloud Engineer",
+      "code": "ACE",
+      "vendor": "google",
+      "dataFile": "data/exams/associate-cloud-engineer.json",
+      "questionCount": 75
+    },
+    {
+      "id": "az-104",
+      "name": "Microsoft Azure Administrator",
+      "code": "AZ-104",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-104.json",
+      "questionCount": 75
+    },
+    {
+      "id": "az-204",
+      "name": "Microsoft Azure Developer Associate",
+      "code": "AZ-204",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-204.json",
+      "questionCount": 75
+    },
+    {
+      "id": "az-305",
+      "name": "Microsoft Azure Solutions Architect Expert",
+      "code": "AZ-305",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-305.json",
+      "questionCount": 72
+    },
+    {
+      "id": "az-400",
+      "name": "Microsoft Azure DevOps Engineer Expert",
+      "code": "AZ-400",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-400.json",
+      "questionCount": 75
+    },
+    {
+      "id": "az-500",
+      "name": "Microsoft Azure Security Engineer Associate",
+      "code": "AZ-500",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-500.json",
+      "questionCount": 72
+    },
+    {
+      "id": "az-900",
+      "name": "Microsoft Azure Fundamentals",
+      "code": "AZ-900",
+      "vendor": "azure",
+      "dataFile": "data/exams/az-900.json",
+      "questionCount": 69
+    },
+    {
+      "id": "cloud-digital-leader",
+      "name": "Google Cloud Digital Leader",
+      "code": "CDL",
+      "vendor": "google",
+      "dataFile": "data/exams/cloud-digital-leader.json",
+      "questionCount": 72
     },
     {
       "id": "cloud-practitioner",
@@ -30,7 +102,7 @@
       "code": "SOA-C02",
       "vendor": "aws",
       "dataFile": "data/exams/cloudops-engineer-associate.json",
-      "questionCount": 104
+      "questionCount": 86
     },
     {
       "id": "comptia-a-plus",
@@ -46,7 +118,7 @@
       "code": "CV0-004",
       "vendor": "comptia",
       "dataFile": "data/exams/comptia-cloud-plus.json",
-      "questionCount": 85
+      "questionCount": 80
     },
     {
       "id": "comptia-cysa-plus",
@@ -55,6 +127,14 @@
       "vendor": "comptia",
       "dataFile": "data/exams/comptia-cysa-plus.json",
       "questionCount": 86
+    },
+    {
+      "id": "comptia-data-plus",
+      "name": "CompTIA Data+",
+      "code": "DA0-001",
+      "vendor": "comptia",
+      "dataFile": "data/exams/comptia-data-plus.json",
+      "questionCount": 66
     },
     {
       "id": "comptia-linux-plus",
@@ -73,6 +153,22 @@
       "questionCount": 90
     },
     {
+      "id": "comptia-pentest-plus",
+      "name": "CompTIA PenTest+",
+      "code": "PT0-002",
+      "vendor": "comptia",
+      "dataFile": "data/exams/comptia-pentest-plus.json",
+      "questionCount": 66
+    },
+    {
+      "id": "comptia-project-plus",
+      "name": "CompTIA Project+",
+      "code": "PK0-005",
+      "vendor": "comptia",
+      "dataFile": "data/exams/comptia-project-plus.json",
+      "questionCount": 80
+    },
+    {
       "id": "comptia-security-plus",
       "name": "CompTIA Security+",
       "code": "SY0-701",
@@ -81,12 +177,20 @@
       "questionCount": 94
     },
     {
+      "id": "comptia-server-plus",
+      "name": "CompTIA Server+",
+      "code": "SK0-005",
+      "vendor": "comptia",
+      "dataFile": "data/exams/comptia-server-plus.json",
+      "questionCount": 84
+    },
+    {
       "id": "data-engineer-associate",
       "name": "AWS Certified Data Engineer \u2013 Associate",
       "code": "DEA-C01",
       "vendor": "aws",
       "dataFile": "data/exams/data-engineer-associate.json",
-      "questionCount": 97
+      "questionCount": 83
     },
     {
       "id": "database-specialty",
@@ -94,7 +198,7 @@
       "code": "DBS-C01",
       "vendor": "aws",
       "dataFile": "data/exams/database-specialty.json",
-      "questionCount": 94
+      "questionCount": 84
     },
     {
       "id": "developer-associate",
@@ -102,7 +206,7 @@
       "code": "DVA-C02",
       "vendor": "aws",
       "dataFile": "data/exams/developer-associate.json",
-      "questionCount": 96
+      "questionCount": 83
     },
     {
       "id": "devops-engineer-professional",
@@ -110,7 +214,15 @@
       "code": "DOP-C02",
       "vendor": "aws",
       "dataFile": "data/exams/devops-engineer-professional.json",
-      "questionCount": 95
+      "questionCount": 87
+    },
+    {
+      "id": "dp-900",
+      "name": "Microsoft Azure Data Fundamentals",
+      "code": "DP-900",
+      "vendor": "azure",
+      "dataFile": "data/exams/dp-900.json",
+      "questionCount": 72
     },
     {
       "id": "generative-ai-developer-professional",
@@ -118,7 +230,7 @@
       "code": "AIP-C01",
       "vendor": "aws",
       "dataFile": "data/exams/generative-ai-developer-professional.json",
-      "questionCount": 94
+      "questionCount": 82
     },
     {
       "id": "machine-learning-engineer-associate",
@@ -126,7 +238,7 @@
       "code": "MLA-C01",
       "vendor": "aws",
       "dataFile": "data/exams/machine-learning-engineer-associate.json",
-      "questionCount": 97
+      "questionCount": 83
     },
     {
       "id": "machine-learning-specialty",
@@ -134,7 +246,47 @@
       "code": "MLS-C01",
       "vendor": "aws",
       "dataFile": "data/exams/machine-learning-specialty.json",
-      "questionCount": 93
+      "questionCount": 84
+    },
+    {
+      "id": "professional-cloud-architect",
+      "name": "Google Professional Cloud Architect",
+      "code": "PCA",
+      "vendor": "google",
+      "dataFile": "data/exams/professional-cloud-architect.json",
+      "questionCount": 75
+    },
+    {
+      "id": "professional-cloud-devops-engineer",
+      "name": "Google Professional Cloud DevOps Engineer",
+      "code": "PCDO",
+      "vendor": "google",
+      "dataFile": "data/exams/professional-cloud-devops-engineer.json",
+      "questionCount": 72
+    },
+    {
+      "id": "professional-cloud-security-engineer",
+      "name": "Google Professional Cloud Security Engineer",
+      "code": "PCSE",
+      "vendor": "google",
+      "dataFile": "data/exams/professional-cloud-security-engineer.json",
+      "questionCount": 72
+    },
+    {
+      "id": "professional-data-engineer",
+      "name": "Google Professional Data Engineer",
+      "code": "PDE",
+      "vendor": "google",
+      "dataFile": "data/exams/professional-data-engineer.json",
+      "questionCount": 72
+    },
+    {
+      "id": "sc-900",
+      "name": "Microsoft Security, Compliance, and Identity Fundamentals",
+      "code": "SC-900",
+      "vendor": "azure",
+      "dataFile": "data/exams/sc-900.json",
+      "questionCount": 72
     },
     {
       "id": "security-specialty",
@@ -142,7 +294,7 @@
       "code": "SCS-C02",
       "vendor": "aws",
       "dataFile": "data/exams/security-specialty.json",
-      "questionCount": 105
+      "questionCount": 88
     },
     {
       "id": "solutions-architect-associate",
@@ -150,7 +302,7 @@
       "code": "SAA-C03",
       "vendor": "aws",
       "dataFile": "data/exams/solutions-architect-associate.json",
-      "questionCount": 93
+      "questionCount": 83
     },
     {
       "id": "solutions-architect-professional",
@@ -158,8 +310,8 @@
       "code": "SAP-C02",
       "vendor": "aws",
       "dataFile": "data/exams/solutions-architect-professional.json",
-      "questionCount": 103
+      "questionCount": 88
     }
   ],
-  "generatedAt": "2026-05-21T02:30:10.077007+00:00"
+  "generatedAt": "2026-05-21T22:46:21.592802+00:00"
 }

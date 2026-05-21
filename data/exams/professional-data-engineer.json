@@ -70,7 +70,7 @@
       "id": "pde-q001",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Designing data processing systems for Google Professional Data Engineer?",
+      "text": "You are preparing for Google Professional Data Engineer and reviewing Designing data processing systems. Which source aligns with official Google Cloud documentation and exam guides?",
       "options": [
         {
           "id": "a",
@@ -102,77 +102,9 @@
     },
     {
       "id": "pde-q002",
-      "domain": "data-lifecycle",
-      "type": "multiple-choice",
-      "text": "According to 'PDE exam guide', what is a documented best practice for Designing data processing systems?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "PDE exam guide reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "PDE exam guide",
-          "url": "https://cloud.google.com/learn/certification/guides/data-engineer"
-        }
-      ]
-    },
-    {
-      "id": "pde-q003",
-      "domain": "data-lifecycle",
-      "type": "multiple-choice",
-      "text": "According to 'Dataflow', what is a documented best practice for Designing data processing systems?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Dataflow reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
-        }
-      ]
-    },
-    {
-      "id": "pde-q004",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Ingesting and processing data for Google Professional Data Engineer?",
+      "text": "You are preparing for Google Professional Data Engineer and reviewing Ingesting and processing data. Which source aligns with official Google Cloud documentation and exam guides?",
       "options": [
         {
           "id": "a",
@@ -203,78 +135,10 @@
       ]
     },
     {
-      "id": "pde-q005",
-      "domain": "ingestion-storage",
-      "type": "multiple-choice",
-      "text": "According to 'Pub/Sub', what is a documented best practice for Ingesting and processing data?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Pub/Sub reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Pub/Sub",
-          "url": "https://cloud.google.com/pubsub/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "pde-q006",
-      "domain": "ingestion-storage",
-      "type": "multiple-choice",
-      "text": "According to 'BigQuery', what is a documented best practice for Ingesting and processing data?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "BigQuery reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "BigQuery",
-          "url": "https://cloud.google.com/bigquery/docs/introduction"
-        }
-      ]
-    },
-    {
-      "id": "pde-q007",
+      "id": "pde-q003",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Storing and analyzing data for Google Professional Data Engineer?",
+      "text": "You are preparing for Google Professional Data Engineer and reviewing Storing and analyzing data. Which source aligns with official Google Cloud documentation and exam guides?",
       "options": [
         {
           "id": "a",
@@ -305,44 +169,10 @@
       ]
     },
     {
-      "id": "pde-q008",
-      "domain": "analysis-modeling",
-      "type": "multiple-choice",
-      "text": "According to 'Bigtable', what is a documented best practice for Storing and analyzing data?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Bigtable reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Bigtable",
-          "url": "https://cloud.google.com/bigtable/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "pde-q009",
+      "id": "pde-q004",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Reliability, policies, and processes for Google Professional Data Engineer?",
+      "text": "You are preparing for Google Professional Data Engineer and reviewing Reliability, policies, and processes. Which source aligns with official Google Cloud documentation and exam guides?",
       "options": [
         {
           "id": "a",
@@ -373,44 +203,10 @@
       ]
     },
     {
-      "id": "pde-q010",
-      "domain": "reliability-ops",
-      "type": "multiple-choice",
-      "text": "According to 'Dataplex', what is a documented best practice for Reliability, policies, and processes?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Dataplex reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Dataplex",
-          "url": "https://cloud.google.com/dataplex/docs"
-        }
-      ]
-    },
-    {
-      "id": "pde-q011",
+      "id": "pde-q005",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to batch and stream with Apache Beam?",
+      "text": "A regulated workload requires the organization to batch and stream with Apache Beam. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -441,10 +237,10 @@
       ]
     },
     {
-      "id": "pde-q012",
+      "id": "pde-q006",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to orchestrate batch pipelines?",
+      "text": "While troubleshooting latency, engineers determine they must orchestrate batch pipelines. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -475,7 +271,7 @@
       ]
     },
     {
-      "id": "pde-q013",
+      "id": "pde-q007",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to batch and stream with Apache Beam?",
@@ -509,7 +305,7 @@
       ]
     },
     {
-      "id": "pde-q014",
+      "id": "pde-q008",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam?",
@@ -543,7 +339,7 @@
       ]
     },
     {
-      "id": "pde-q015",
+      "id": "pde-q009",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "A platform team must batch and stream with Apache Beam. Which option aligns with Google best practices?",
@@ -577,7 +373,7 @@
       ]
     },
     {
-      "id": "pde-q016",
+      "id": "pde-q010",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to orchestrate batch pipelines?",
@@ -611,7 +407,7 @@
       ]
     },
     {
-      "id": "pde-q017",
+      "id": "pde-q011",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to orchestrate batch pipelines?",
@@ -645,7 +441,7 @@
       ]
     },
     {
-      "id": "pde-q018",
+      "id": "pde-q012",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "A platform team must orchestrate batch pipelines. Which option aligns with Google best practices?",
@@ -679,7 +475,7 @@
       ]
     },
     {
-      "id": "pde-q019",
+      "id": "pde-q013",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "For cost-aware operations, you should batch and stream with Apache Beam.",
@@ -713,7 +509,75 @@
       ]
     },
     {
-      "id": "pde-q020",
+      "id": "pde-q014",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "A data team must orchestrate batch pipelines.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Composer (managed Airflow)"
+        },
+        {
+          "id": "b",
+          "text": "Cron USB"
+        },
+        {
+          "id": "c",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Composer schedules complex workflows.",
+      "docs": [
+        {
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q015",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to batch and stream with Apache Beam.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Cron on laptop only"
+        },
+        {
+          "id": "c",
+          "text": "Email CSV"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "docs": [
+        {
+          "title": "Dataflow",
+          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        }
+      ]
+    },
+    {
+      "id": "pde-q016",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "A cloud engineer needs to orchestrate batch pipelines.",
@@ -747,78 +611,10 @@
       ]
     },
     {
-      "id": "pde-q021",
+      "id": "pde-q017",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "A data team must batch and stream with Apache Beam.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Dataflow"
-        },
-        {
-          "id": "b",
-          "text": "Cron on laptop only"
-        },
-        {
-          "id": "c",
-          "text": "Email CSV"
-        },
-        {
-          "id": "d",
-          "text": "FTP"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
-      "docs": [
-        {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
-        }
-      ]
-    },
-    {
-      "id": "pde-q022",
-      "domain": "data-lifecycle",
-      "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to orchestrate batch pipelines.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Composer (managed Airflow)"
-        },
-        {
-          "id": "b",
-          "text": "Cron USB"
-        },
-        {
-          "id": "c",
-          "text": "Manual FTP"
-        },
-        {
-          "id": "d",
-          "text": "Telnet"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Composer schedules complex workflows.",
-      "docs": [
-        {
-          "title": "Cloud Composer",
-          "url": "https://cloud.google.com/composer/docs"
-        }
-      ]
-    },
-    {
-      "id": "pde-q023",
-      "domain": "data-lifecycle",
-      "type": "multiple-choice",
-      "text": "Which capability is provided by Cloud Dataflow rather than Cloud Composer (managed Airflow) when you need to batch and stream with Apache Beam?",
+      "text": "Two designs were proposed. Design A would batch and stream with Apache Beam. Design B would orchestrate batch pipelines. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -853,10 +649,10 @@
       ]
     },
     {
-      "id": "pde-q024",
+      "id": "pde-q018",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Cloud Composer (managed Airflow) rather than Cloud Dataflow when you need to orchestrate batch pipelines?",
+      "text": "Two designs were proposed. Design A would orchestrate batch pipelines. Design B would batch and stream with Apache Beam. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -891,7 +687,7 @@
       ]
     },
     {
-      "id": "pde-q025",
+      "id": "pde-q019",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 1)?",
@@ -925,7 +721,7 @@
       ]
     },
     {
-      "id": "pde-q026",
+      "id": "pde-q020",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to orchestrate batch pipelines (variant 1)?",
@@ -959,7 +755,7 @@
       ]
     },
     {
-      "id": "pde-q027",
+      "id": "pde-q021",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "A platform team must batch and stream with Apache Beam (variant 2). Which option aligns with Google best practices?",
@@ -993,7 +789,7 @@
       ]
     },
     {
-      "id": "pde-q028",
+      "id": "pde-q022",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to orchestrate batch pipelines (variant 2)?",
@@ -1027,7 +823,7 @@
       ]
     },
     {
-      "id": "pde-q029",
+      "id": "pde-q023",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 3)?",
@@ -1061,7 +857,7 @@
       ]
     },
     {
-      "id": "pde-q030",
+      "id": "pde-q024",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "A platform team must orchestrate batch pipelines (variant 3). Which option aligns with Google best practices?",
@@ -1095,10 +891,10 @@
       ]
     },
     {
-      "id": "pde-q031",
+      "id": "pde-q025",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to real-time messaging?",
+      "text": "The DevOps team is automating releases and must real-time messaging. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -1129,10 +925,10 @@
       ]
     },
     {
-      "id": "pde-q032",
+      "id": "pde-q026",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to warehouse analytics?",
+      "text": "An audit found gaps: the organization must warehouse analytics. Which option addresses this?",
       "options": [
         {
           "id": "a",
@@ -1163,10 +959,10 @@
       ]
     },
     {
-      "id": "pde-q033",
+      "id": "pde-q027",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to stream into BigQuery?",
+      "text": "After a design review, leadership requires the team to stream into BigQuery. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -1197,7 +993,7 @@
       ]
     },
     {
-      "id": "pde-q034",
+      "id": "pde-q028",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to real-time messaging?",
@@ -1231,7 +1027,7 @@
       ]
     },
     {
-      "id": "pde-q035",
+      "id": "pde-q029",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to real-time messaging?",
@@ -1265,7 +1061,7 @@
       ]
     },
     {
-      "id": "pde-q036",
+      "id": "pde-q030",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "A platform team must real-time messaging. Which option aligns with Google best practices?",
@@ -1299,7 +1095,7 @@
       ]
     },
     {
-      "id": "pde-q037",
+      "id": "pde-q031",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to warehouse analytics?",
@@ -1333,7 +1129,7 @@
       ]
     },
     {
-      "id": "pde-q038",
+      "id": "pde-q032",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to warehouse analytics?",
@@ -1367,7 +1163,7 @@
       ]
     },
     {
-      "id": "pde-q039",
+      "id": "pde-q033",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "A platform team must warehouse analytics. Which option aligns with Google best practices?",
@@ -1401,7 +1197,7 @@
       ]
     },
     {
-      "id": "pde-q040",
+      "id": "pde-q034",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to stream into BigQuery?",
@@ -1435,7 +1231,7 @@
       ]
     },
     {
-      "id": "pde-q041",
+      "id": "pde-q035",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to stream into BigQuery?",
@@ -1469,7 +1265,7 @@
       ]
     },
     {
-      "id": "pde-q042",
+      "id": "pde-q036",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "A platform team must stream into BigQuery. Which option aligns with Google best practices?",
@@ -1503,7 +1299,7 @@
       ]
     },
     {
-      "id": "pde-q043",
+      "id": "pde-q037",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "A data team must real-time messaging.",
@@ -1537,7 +1333,7 @@
       ]
     },
     {
-      "id": "pde-q044",
+      "id": "pde-q038",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "Your startup is building on Google Cloud and needs to warehouse analytics.",
@@ -1571,7 +1367,7 @@
       ]
     },
     {
-      "id": "pde-q045",
+      "id": "pde-q039",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "For cost-aware operations, you should stream into BigQuery.",
@@ -1605,7 +1401,7 @@
       ]
     },
     {
-      "id": "pde-q046",
+      "id": "pde-q040",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "A cloud engineer needs to real-time messaging.",
@@ -1639,7 +1435,7 @@
       ]
     },
     {
-      "id": "pde-q047",
+      "id": "pde-q041",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
       "text": "A data team must warehouse analytics.",
@@ -1673,10 +1469,10 @@
       ]
     },
     {
-      "id": "pde-q048",
+      "id": "pde-q042",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to wide-column low-latency store?",
+      "text": "While troubleshooting latency, engineers determine they must wide-column low-latency store. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -1707,10 +1503,10 @@
       ]
     },
     {
-      "id": "pde-q049",
+      "id": "pde-q043",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to train models on structured data?",
+      "text": "Operations reports a need to train models on structured data. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -1741,7 +1537,7 @@
       ]
     },
     {
-      "id": "pde-q050",
+      "id": "pde-q044",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to wide-column low-latency store?",
@@ -1775,7 +1571,7 @@
       ]
     },
     {
-      "id": "pde-q051",
+      "id": "pde-q045",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to wide-column low-latency store?",
@@ -1809,7 +1605,7 @@
       ]
     },
     {
-      "id": "pde-q052",
+      "id": "pde-q046",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
       "text": "A platform team must wide-column low-latency store. Which option aligns with Google best practices?",
@@ -1843,7 +1639,7 @@
       ]
     },
     {
-      "id": "pde-q053",
+      "id": "pde-q047",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to train models on structured data?",
@@ -1877,7 +1673,7 @@
       ]
     },
     {
-      "id": "pde-q054",
+      "id": "pde-q048",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to train models on structured data?",
@@ -1911,7 +1707,7 @@
       ]
     },
     {
-      "id": "pde-q055",
+      "id": "pde-q049",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
       "text": "A platform team must train models on structured data. Which option aligns with Google best practices?",
@@ -1945,10 +1741,10 @@
       ]
     },
     {
-      "id": "pde-q056",
+      "id": "pde-q050",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "A cloud engineer needs to wide-column low-latency store.",
+      "text": "Your startup is building on Google Cloud and needs to wide-column low-latency store.",
       "options": [
         {
           "id": "a",
@@ -1979,10 +1775,10 @@
       ]
     },
     {
-      "id": "pde-q057",
+      "id": "pde-q051",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to train models on structured data.",
+      "text": "A cloud engineer needs to train models on structured data.",
       "options": [
         {
           "id": "a",
@@ -2013,10 +1809,10 @@
       ]
     },
     {
-      "id": "pde-q058",
+      "id": "pde-q052",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "A data team must wide-column low-latency store.",
+      "text": "For cost-aware operations, you should wide-column low-latency store.",
       "options": [
         {
           "id": "a",
@@ -2047,10 +1843,10 @@
       ]
     },
     {
-      "id": "pde-q059",
+      "id": "pde-q053",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "For cost-aware operations, you should train models on structured data.",
+      "text": "A data team must train models on structured data.",
       "options": [
         {
           "id": "a",
@@ -2081,10 +1877,10 @@
       ]
     },
     {
-      "id": "pde-q060",
+      "id": "pde-q054",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Cloud Bigtable rather than BigQuery ML when you need to wide-column low-latency store?",
+      "text": "Two designs were proposed. Design A would wide-column low-latency store. Design B would train models on structured data. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -2119,10 +1915,10 @@
       ]
     },
     {
-      "id": "pde-q061",
+      "id": "pde-q055",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Which capability is provided by BigQuery ML rather than Cloud Bigtable when you need to train models on structured data?",
+      "text": "Two designs were proposed. Design A would train models on structured data. Design B would wide-column low-latency store. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -2157,7 +1953,7 @@
       ]
     },
     {
-      "id": "pde-q062",
+      "id": "pde-q056",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to wide-column low-latency store (variant 1)?",
@@ -2191,7 +1987,7 @@
       ]
     },
     {
-      "id": "pde-q063",
+      "id": "pde-q057",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to train models on structured data (variant 1)?",
@@ -2225,7 +2021,7 @@
       ]
     },
     {
-      "id": "pde-q064",
+      "id": "pde-q058",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
       "text": "A platform team must wide-column low-latency store (variant 2). Which option aligns with Google best practices?",
@@ -2259,10 +2055,10 @@
       ]
     },
     {
-      "id": "pde-q065",
+      "id": "pde-q059",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to govern data lakes?",
+      "text": "For cost and security, the team must govern data lakes. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -2293,10 +2089,10 @@
       ]
     },
     {
-      "id": "pde-q066",
+      "id": "pde-q060",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to monitor pipeline SLAs?",
+      "text": "Operations reports a need to monitor pipeline SLAs. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -2327,7 +2123,7 @@
       ]
     },
     {
-      "id": "pde-q067",
+      "id": "pde-q061",
       "domain": "reliability-ops",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to govern data lakes?",
@@ -2361,7 +2157,7 @@
       ]
     },
     {
-      "id": "pde-q068",
+      "id": "pde-q062",
       "domain": "reliability-ops",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to govern data lakes?",
@@ -2395,7 +2191,7 @@
       ]
     },
     {
-      "id": "pde-q069",
+      "id": "pde-q063",
       "domain": "reliability-ops",
       "type": "multiple-choice",
       "text": "A platform team must govern data lakes. Which option aligns with Google best practices?",
@@ -2429,7 +2225,7 @@
       ]
     },
     {
-      "id": "pde-q070",
+      "id": "pde-q064",
       "domain": "reliability-ops",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to monitor pipeline SLAs?",
@@ -2463,7 +2259,7 @@
       ]
     },
     {
-      "id": "pde-q071",
+      "id": "pde-q065",
       "domain": "reliability-ops",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to monitor pipeline SLAs?",
@@ -2497,7 +2293,7 @@
       ]
     },
     {
-      "id": "pde-q072",
+      "id": "pde-q066",
       "domain": "reliability-ops",
       "type": "multiple-choice",
       "text": "A platform team must monitor pipeline SLAs. Which option aligns with Google best practices?",
@@ -2531,75 +2327,7 @@
       ]
     },
     {
-      "id": "pde-q073",
-      "domain": "reliability-ops",
-      "type": "multiple-choice",
-      "text": "For cost-aware operations, you should govern data lakes.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Dataplex"
-        },
-        {
-          "id": "b",
-          "text": "Shadow catalogs"
-        },
-        {
-          "id": "c",
-          "text": "No lineage"
-        },
-        {
-          "id": "d",
-          "text": "Public buckets"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Dataplex manages metadata and quality.",
-      "docs": [
-        {
-          "title": "Dataplex",
-          "url": "https://cloud.google.com/dataplex/docs"
-        }
-      ]
-    },
-    {
-      "id": "pde-q074",
-      "domain": "reliability-ops",
-      "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to monitor pipeline SLAs.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Monitoring dashboards and alerts"
-        },
-        {
-          "id": "b",
-          "text": "No metrics"
-        },
-        {
-          "id": "c",
-          "text": "Annual check"
-        },
-        {
-          "id": "d",
-          "text": "Disable paging"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Monitoring validates pipeline health.",
-      "docs": [
-        {
-          "title": "Cloud Monitoring",
-          "url": "https://cloud.google.com/monitoring/docs"
-        }
-      ]
-    },
-    {
-      "id": "pde-q075",
+      "id": "pde-q067",
       "domain": "reliability-ops",
       "type": "multiple-choice",
       "text": "A cloud engineer needs to govern data lakes.",
@@ -2633,7 +2361,75 @@
       ]
     },
     {
-      "id": "pde-q076",
+      "id": "pde-q068",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "For cost-aware operations, you should monitor pipeline SLAs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Monitoring dashboards and alerts"
+        },
+        {
+          "id": "b",
+          "text": "No metrics"
+        },
+        {
+          "id": "c",
+          "text": "Annual check"
+        },
+        {
+          "id": "d",
+          "text": "Disable paging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring validates pipeline health.",
+      "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q069",
+      "domain": "reliability-ops",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to govern data lakes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dataplex"
+        },
+        {
+          "id": "b",
+          "text": "Shadow catalogs"
+        },
+        {
+          "id": "c",
+          "text": "No lineage"
+        },
+        {
+          "id": "d",
+          "text": "Public buckets"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dataplex manages metadata and quality.",
+      "docs": [
+        {
+          "title": "Dataplex",
+          "url": "https://cloud.google.com/dataplex/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q070",
       "domain": "reliability-ops",
       "type": "multiple-choice",
       "text": "A data team must monitor pipeline SLAs.",
@@ -2667,10 +2463,10 @@
       ]
     },
     {
-      "id": "pde-q077",
+      "id": "pde-q071",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Dataplex rather than Cloud Monitoring dashboards and alerts when you need to govern data lakes?",
+      "text": "Two designs were proposed. Design A would govern data lakes. Design B would monitor pipeline SLAs. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",
@@ -2705,10 +2501,10 @@
       ]
     },
     {
-      "id": "pde-q078",
+      "id": "pde-q072",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Cloud Monitoring dashboards and alerts rather than Dataplex when you need to monitor pipeline SLAs?",
+      "text": "Two designs were proposed. Design A would monitor pipeline SLAs. Design B would govern data lakes. The team must pick the approach aligned with vendor best practices. Which choice is correct?",
       "options": [
         {
           "id": "a",

@@ -82,7 +82,7 @@
       "id": "ans-q001",
       "domain": "network-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to connect many VPCs without full mesh peering?",
+      "text": "A regulated workload requires the organization to connect many VPCs without full mesh peering. Which solution is BEST? connect many VPCs without full mesh peering.",
       "options": [
         {
           "id": "a",
@@ -116,7 +116,7 @@
       "id": "ans-q002",
       "domain": "network-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to extend on-prem routing into AWS?",
+      "text": "A regulated workload requires the organization to extend on-prem routing into AWS. Which solution is BEST? extend on-prem routing into AWS.",
       "options": [
         {
           "id": "a",
@@ -150,7 +150,7 @@
       "id": "ans-q003",
       "domain": "network-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to design IPv6-only workloads in VPC?",
+      "text": "The DevOps team is automating releases and must design IPv6-only workloads in VPC. Which design fits best? design IPv6-only workloads in VPC.",
       "options": [
         {
           "id": "a",
@@ -184,7 +184,7 @@
       "id": "ans-q004",
       "domain": "network-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to segment traffic with centralized inspection?",
+      "text": "After a design review, leadership requires the team to segment traffic with centralized inspection. Which approach is MOST reliable? segment traffic with centralized inspection.",
       "options": [
         {
           "id": "a",
@@ -218,7 +218,7 @@
       "id": "ans-q005",
       "domain": "network-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to allocate IP addresses at scale?",
+      "text": "During peak traffic, the platform team must allocate IP addresses at scale. What should they do FIRST? allocate IP addresses at scale.",
       "options": [
         {
           "id": "a",
@@ -252,7 +252,7 @@
       "id": "ans-q006",
       "domain": "network-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to private connectivity to SaaS providers?",
+      "text": "A company needs to private connectivity to SaaS providers. Which option meets the requirement with the LEAST implementation effort? private connectivity to SaaS providers.",
       "options": [
         {
           "id": "a",
@@ -286,7 +286,7 @@
       "id": "ans-q007",
       "domain": "network-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to multi-account network architecture?",
+      "text": "Operations reports a need to multi-account network architecture. What is the MOST operationally efficient solution? multi-account network architecture.",
       "options": [
         {
           "id": "a",
@@ -320,7 +320,7 @@
       "id": "ans-q008",
       "domain": "network-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to optimize cross-AZ traffic costs?",
+      "text": "After a design review, leadership requires the team to optimize cross-AZ traffic costs. Which approach is MOST reliable? optimize cross-AZ traffic costs.",
       "options": [
         {
           "id": "a",
@@ -896,77 +896,9 @@
     },
     {
       "id": "ans-q025",
-      "domain": "network-design",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to private connectivity to SaaS providers?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS PrivateLink interface endpoints"
-        },
-        {
-          "id": "b",
-          "text": "Public internet SaaS DB"
-        },
-        {
-          "id": "c",
-          "text": "Open security group"
-        },
-        {
-          "id": "d",
-          "text": "Ignore endpoint policies"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "PrivateLink keeps traffic on AWS network.",
-      "docs": [
-        {
-          "title": "PrivateLink",
-          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q026",
-      "domain": "network-design",
-      "type": "multiple-choice",
-      "text": "A team must private connectivity to SaaS providers. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS PrivateLink interface endpoints"
-        },
-        {
-          "id": "b",
-          "text": "Public internet SaaS DB"
-        },
-        {
-          "id": "c",
-          "text": "Open security group"
-        },
-        {
-          "id": "d",
-          "text": "Ignore endpoint policies"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "PrivateLink keeps traffic on AWS network.",
-      "docs": [
-        {
-          "title": "PrivateLink",
-          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q027",
       "domain": "network-implementation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to create dedicated private link to AWS?",
+      "text": "An audit found gaps: the organization must create dedicated private link to AWS. Which option addresses this? create dedicated private link to AWS.",
       "options": [
         {
           "id": "a",
@@ -997,10 +929,10 @@
       ]
     },
     {
-      "id": "ans-q028",
+      "id": "ans-q026",
       "domain": "network-implementation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to encrypt VPN over internet?",
+      "text": "During peak traffic, the platform team must encrypt VPN over internet. What should they do FIRST? encrypt VPN over internet.",
       "options": [
         {
           "id": "a",
@@ -1031,10 +963,10 @@
       ]
     },
     {
-      "id": "ans-q029",
+      "id": "ans-q027",
       "domain": "network-implementation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to accelerate TCP traffic globally?",
+      "text": "A hybrid environment must support a goal to accelerate TCP traffic globally without changing application code. What should you implement? accelerate TCP traffic globally.",
       "options": [
         {
           "id": "a",
@@ -1065,10 +997,10 @@
       ]
     },
     {
-      "id": "ans-q030",
+      "id": "ans-q028",
       "domain": "network-implementation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deploy SD-WAN integrated with AWS?",
+      "text": "While troubleshooting latency, engineers determine they must deploy SD-WAN integrated with AWS. Which action is appropriate? deploy SD-WAN integrated with AWS.",
       "options": [
         {
           "id": "a",
@@ -1099,10 +1031,10 @@
       ]
     },
     {
-      "id": "ans-q031",
+      "id": "ans-q029",
       "domain": "network-implementation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to implement Direct Connect resilience?",
+      "text": "A regulated workload requires the organization to implement Direct Connect resilience. Which solution is BEST? implement Direct Connect resilience.",
       "options": [
         {
           "id": "a",
@@ -1133,10 +1065,10 @@
       ]
     },
     {
-      "id": "ans-q032",
+      "id": "ans-q030",
       "domain": "network-implementation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to configure BGP communities on DX?",
+      "text": "During peak traffic, the platform team must configure BGP communities on DX. What should they do FIRST? configure BGP communities on DX.",
       "options": [
         {
           "id": "a",
@@ -1167,10 +1099,10 @@
       ]
     },
     {
-      "id": "ans-q033",
+      "id": "ans-q031",
       "domain": "network-implementation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to host Network Firewall in multiple AZs?",
+      "text": "During peak traffic, the platform team must host Network Firewall in multiple AZs. What should they do FIRST? host Network Firewall in multiple AZs.",
       "options": [
         {
           "id": "a",
@@ -1201,10 +1133,10 @@
       ]
     },
     {
-      "id": "ans-q034",
+      "id": "ans-q032",
       "domain": "network-implementation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use Cloud WAN for global backbone?",
+      "text": "Operations reports a need to use Cloud WAN for global backbone. What is the MOST operationally efficient solution? use Cloud WAN for global backbone.",
       "options": [
         {
           "id": "a",
@@ -1235,7 +1167,7 @@
       ]
     },
     {
-      "id": "ans-q035",
+      "id": "ans-q033",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "Which service should you use to create dedicated private link to AWS?",
@@ -1269,7 +1201,7 @@
       ]
     },
     {
-      "id": "ans-q036",
+      "id": "ans-q034",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to create dedicated private link to AWS?",
@@ -1303,7 +1235,7 @@
       ]
     },
     {
-      "id": "ans-q037",
+      "id": "ans-q035",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "A team must create dedicated private link to AWS. Which option meets the requirement?",
@@ -1337,7 +1269,7 @@
       ]
     },
     {
-      "id": "ans-q038",
+      "id": "ans-q036",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "Which service should you use to encrypt VPN over internet?",
@@ -1371,7 +1303,7 @@
       ]
     },
     {
-      "id": "ans-q039",
+      "id": "ans-q037",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to encrypt VPN over internet?",
@@ -1405,7 +1337,7 @@
       ]
     },
     {
-      "id": "ans-q040",
+      "id": "ans-q038",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "A team must encrypt VPN over internet. Which option meets the requirement?",
@@ -1439,7 +1371,7 @@
       ]
     },
     {
-      "id": "ans-q041",
+      "id": "ans-q039",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "Which service should you use to accelerate TCP traffic globally?",
@@ -1473,7 +1405,7 @@
       ]
     },
     {
-      "id": "ans-q042",
+      "id": "ans-q040",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to accelerate TCP traffic globally?",
@@ -1507,7 +1439,7 @@
       ]
     },
     {
-      "id": "ans-q043",
+      "id": "ans-q041",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "A team must accelerate TCP traffic globally. Which option meets the requirement?",
@@ -1541,7 +1473,7 @@
       ]
     },
     {
-      "id": "ans-q044",
+      "id": "ans-q042",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "Which service should you use to deploy SD-WAN integrated with AWS?",
@@ -1575,7 +1507,7 @@
       ]
     },
     {
-      "id": "ans-q045",
+      "id": "ans-q043",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to deploy SD-WAN integrated with AWS?",
@@ -1609,7 +1541,7 @@
       ]
     },
     {
-      "id": "ans-q046",
+      "id": "ans-q044",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "A team must deploy SD-WAN integrated with AWS. Which option meets the requirement?",
@@ -1643,7 +1575,7 @@
       ]
     },
     {
-      "id": "ans-q047",
+      "id": "ans-q045",
       "domain": "network-implementation",
       "type": "multiple-choice",
       "text": "Which service should you use to implement Direct Connect resilience?",
@@ -1677,78 +1609,10 @@
       ]
     },
     {
-      "id": "ans-q048",
-      "domain": "network-implementation",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to implement Direct Connect resilience?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Dual DX locations or DX + VPN backup"
-        },
-        {
-          "id": "b",
-          "text": "Single DX router"
-        },
-        {
-          "id": "c",
-          "text": "No failover"
-        },
-        {
-          "id": "d",
-          "text": "Ignore BFD"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Resilient hybrid uses redundant paths.",
-      "docs": [
-        {
-          "title": "DX resilience",
-          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/aws-direct-connect-for-amazon-connect.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q049",
-      "domain": "network-implementation",
-      "type": "multiple-choice",
-      "text": "A team must implement Direct Connect resilience. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Dual DX locations or DX + VPN backup"
-        },
-        {
-          "id": "b",
-          "text": "Single DX router"
-        },
-        {
-          "id": "c",
-          "text": "No failover"
-        },
-        {
-          "id": "d",
-          "text": "Ignore BFD"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Resilient hybrid uses redundant paths.",
-      "docs": [
-        {
-          "title": "DX resilience",
-          "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/aws-direct-connect-for-amazon-connect.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q050",
+      "id": "ans-q046",
       "domain": "network-management",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to visualize global network topology?",
+      "text": "After a design review, leadership requires the team to visualize global network topology. Which approach is MOST reliable? visualize global network topology.",
       "options": [
         {
           "id": "a",
@@ -1779,10 +1643,10 @@
       ]
     },
     {
-      "id": "ans-q051",
+      "id": "ans-q047",
       "domain": "network-management",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to analyze VPC traffic metadata?",
+      "text": "A hybrid environment must support a goal to analyze VPC traffic metadata without changing application code. What should you implement? analyze VPC traffic metadata.",
       "options": [
         {
           "id": "a",
@@ -1813,10 +1677,10 @@
       ]
     },
     {
-      "id": "ans-q052",
+      "id": "ans-q048",
       "domain": "network-management",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to troubleshoot reachability between resources?",
+      "text": "An audit found gaps: the organization must troubleshoot reachability between resources. Which option addresses this? troubleshoot reachability between resources.",
       "options": [
         {
           "id": "a",
@@ -1847,10 +1711,10 @@
       ]
     },
     {
-      "id": "ans-q053",
+      "id": "ans-q049",
       "domain": "network-management",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to monitor TGW metrics and routes?",
+      "text": "The DevOps team is automating releases and must monitor TGW metrics and routes. Which design fits best? monitor TGW metrics and routes.",
       "options": [
         {
           "id": "a",
@@ -1881,10 +1745,10 @@
       ]
     },
     {
-      "id": "ans-q054",
+      "id": "ans-q050",
       "domain": "network-management",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to detect network access anomalies?",
+      "text": "For cost and security, the team must detect network access anomalies. What is the recommended approach? detect network access anomalies.",
       "options": [
         {
           "id": "a",
@@ -1915,10 +1779,10 @@
       ]
     },
     {
-      "id": "ans-q055",
+      "id": "ans-q051",
       "domain": "network-management",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to automate remediation for open SG rules?",
+      "text": "The DevOps team is automating releases and must automate remediation for open SG rules. Which design fits best? automate remediation for open SG rules.",
       "options": [
         {
           "id": "a",
@@ -1949,10 +1813,10 @@
       ]
     },
     {
-      "id": "ans-q056",
+      "id": "ans-q052",
       "domain": "network-management",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use Network Access Analyzer for unintended access?",
+      "text": "For cost and security, the team must use Network Access Analyzer for unintended access. What is the recommended approach? use Network Access Analyzer for unintended access.",
       "options": [
         {
           "id": "a",
@@ -1983,10 +1847,10 @@
       ]
     },
     {
-      "id": "ans-q057",
+      "id": "ans-q053",
       "domain": "network-management",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to capture packets for deep inspection when required?",
+      "text": "During peak traffic, the platform team must capture packets for deep inspection when required. What should they do FIRST? capture packets for deep inspection when required.",
       "options": [
         {
           "id": "a",
@@ -2017,7 +1881,7 @@
       ]
     },
     {
-      "id": "ans-q058",
+      "id": "ans-q054",
       "domain": "network-management",
       "type": "multiple-choice",
       "text": "Which service should you use to visualize global network topology?",
@@ -2051,7 +1915,7 @@
       ]
     },
     {
-      "id": "ans-q059",
+      "id": "ans-q055",
       "domain": "network-management",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to visualize global network topology?",
@@ -2085,7 +1949,7 @@
       ]
     },
     {
-      "id": "ans-q060",
+      "id": "ans-q056",
       "domain": "network-management",
       "type": "multiple-choice",
       "text": "A team must visualize global network topology. Which option meets the requirement?",
@@ -2119,7 +1983,7 @@
       ]
     },
     {
-      "id": "ans-q061",
+      "id": "ans-q057",
       "domain": "network-management",
       "type": "multiple-choice",
       "text": "Which service should you use to analyze VPC traffic metadata?",
@@ -2153,7 +2017,7 @@
       ]
     },
     {
-      "id": "ans-q062",
+      "id": "ans-q058",
       "domain": "network-management",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to analyze VPC traffic metadata?",
@@ -2187,7 +2051,7 @@
       ]
     },
     {
-      "id": "ans-q063",
+      "id": "ans-q059",
       "domain": "network-management",
       "type": "multiple-choice",
       "text": "A team must analyze VPC traffic metadata. Which option meets the requirement?",
@@ -2221,7 +2085,7 @@
       ]
     },
     {
-      "id": "ans-q064",
+      "id": "ans-q060",
       "domain": "network-management",
       "type": "multiple-choice",
       "text": "Which service should you use to troubleshoot reachability between resources?",
@@ -2255,7 +2119,7 @@
       ]
     },
     {
-      "id": "ans-q065",
+      "id": "ans-q061",
       "domain": "network-management",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to troubleshoot reachability between resources?",
@@ -2289,7 +2153,7 @@
       ]
     },
     {
-      "id": "ans-q066",
+      "id": "ans-q062",
       "domain": "network-management",
       "type": "multiple-choice",
       "text": "A team must troubleshoot reachability between resources. Which option meets the requirement?",
@@ -2323,10 +2187,10 @@
       ]
     },
     {
-      "id": "ans-q067",
+      "id": "ans-q063",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to stateful inspection at VPC perimeter?",
+      "text": "For cost and security, the team must stateful inspection at VPC perimeter. What is the recommended approach? stateful inspection at VPC perimeter.",
       "options": [
         {
           "id": "a",
@@ -2357,10 +2221,10 @@
       ]
     },
     {
-      "id": "ans-q068",
+      "id": "ans-q064",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to domain filtering for outbound traffic?",
+      "text": "An audit found gaps: the organization must domain filtering for outbound traffic. Which option addresses this? domain filtering for outbound traffic.",
       "options": [
         {
           "id": "a",
@@ -2391,10 +2255,10 @@
       ]
     },
     {
-      "id": "ans-q069",
+      "id": "ans-q065",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to protect L7 APIs from bots?",
+      "text": "A hybrid environment must support a goal to protect L7 APIs from bots without changing application code. What should you implement? protect L7 APIs from bots.",
       "options": [
         {
           "id": "a",
@@ -2425,10 +2289,10 @@
       ]
     },
     {
-      "id": "ans-q070",
+      "id": "ans-q066",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to mTLS between services?",
+      "text": "During peak traffic, the platform team must mTLS between services. What should they do FIRST? mTLS between services.",
       "options": [
         {
           "id": "a",
@@ -2459,10 +2323,10 @@
       ]
     },
     {
-      "id": "ans-q071",
+      "id": "ans-q067",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to private API access without public internet?",
+      "text": "During peak traffic, the platform team must private API access without public internet. What should they do FIRST? private API access without public internet.",
       "options": [
         {
           "id": "a",
@@ -2493,10 +2357,10 @@
       ]
     },
     {
-      "id": "ans-q072",
+      "id": "ans-q068",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to centralize egress through inspection VPC?",
+      "text": "After a design review, leadership requires the team to centralize egress through inspection VPC. Which approach is MOST reliable? centralize egress through inspection VPC.",
       "options": [
         {
           "id": "a",
@@ -2527,10 +2391,10 @@
       ]
     },
     {
-      "id": "ans-q073",
+      "id": "ans-q069",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to mitigate DDoS on public endpoints?",
+      "text": "Operations reports a need to mitigate DDoS on public endpoints. What is the MOST operationally efficient solution? mitigate DDoS on public endpoints.",
       "options": [
         {
           "id": "a",
@@ -2561,10 +2425,10 @@
       ]
     },
     {
-      "id": "ans-q074",
+      "id": "ans-q070",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to segment privileged admin access?",
+      "text": "While troubleshooting latency, engineers determine they must segment privileged admin access. Which action is appropriate? segment privileged admin access.",
       "options": [
         {
           "id": "a",
@@ -2595,7 +2459,7 @@
       ]
     },
     {
-      "id": "ans-q075",
+      "id": "ans-q071",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "Which service should you use to stateful inspection at VPC perimeter?",
@@ -2629,7 +2493,7 @@
       ]
     },
     {
-      "id": "ans-q076",
+      "id": "ans-q072",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to stateful inspection at VPC perimeter?",
@@ -2663,7 +2527,7 @@
       ]
     },
     {
-      "id": "ans-q077",
+      "id": "ans-q073",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "A team must stateful inspection at VPC perimeter. Which option meets the requirement?",
@@ -2697,7 +2561,7 @@
       ]
     },
     {
-      "id": "ans-q078",
+      "id": "ans-q074",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "Which service should you use to domain filtering for outbound traffic?",
@@ -2731,7 +2595,7 @@
       ]
     },
     {
-      "id": "ans-q079",
+      "id": "ans-q075",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to domain filtering for outbound traffic?",
@@ -2765,7 +2629,7 @@
       ]
     },
     {
-      "id": "ans-q080",
+      "id": "ans-q076",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "A team must domain filtering for outbound traffic. Which option meets the requirement?",
@@ -2799,7 +2663,7 @@
       ]
     },
     {
-      "id": "ans-q081",
+      "id": "ans-q077",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "Which service should you use to protect L7 APIs from bots?",
@@ -2833,7 +2697,7 @@
       ]
     },
     {
-      "id": "ans-q082",
+      "id": "ans-q078",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to protect L7 APIs from bots?",
@@ -2867,7 +2731,7 @@
       ]
     },
     {
-      "id": "ans-q083",
+      "id": "ans-q079",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "A team must protect L7 APIs from bots. Which option meets the requirement?",
@@ -2901,7 +2765,7 @@
       ]
     },
     {
-      "id": "ans-q084",
+      "id": "ans-q080",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "Which service should you use to mTLS between services?",
@@ -2935,7 +2799,7 @@
       ]
     },
     {
-      "id": "ans-q085",
+      "id": "ans-q081",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to mTLS between services?",
@@ -2969,80 +2833,46 @@
       ]
     },
     {
-      "id": "ans-q086",
-      "domain": "network-security",
-      "type": "multiple-choice",
-      "text": "A team must mTLS between services. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "API Gateway mutual TLS or ALB trust stores"
-        },
-        {
-          "id": "b",
-          "text": "HTTP only internal"
-        },
-        {
-          "id": "c",
-          "text": "Self-signed no rotation"
-        },
-        {
-          "id": "d",
-          "text": "Shared cert everywhere"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "mTLS authenticates client certificates.",
-      "docs": [
-        {
-          "title": "API Gateway mTLS",
-          "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mutual-auth.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q087",
-      "domain": "network-implementation",
+      "id": "ans-q082",
+      "domain": "network-design",
       "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Advanced Networking \u2013 Specialty? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "AWS KMS"
+          "text": "ANS-C01 Exam Guide"
         },
         {
           "id": "b",
-          "text": "Amazon Route 53"
+          "text": "Unofficial leaked exam dumps"
         },
         {
           "id": "c",
-          "text": "AWS Secrets Manager"
+          "text": "Amazon VPC"
         },
         {
           "id": "d",
-          "text": "Amazon CloudFront only for DNS"
+          "text": "Disable all logging"
         },
         {
           "id": "e",
-          "text": "AWS Batch"
+          "text": "Share root account keys"
         }
       ],
       "correct": [
         "a",
         "c"
       ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
       "docs": [
         {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+          "title": "ANS-C01 Exam Guide",
+          "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
         }
       ]
     },
     {
-      "id": "ans-q088",
+      "id": "ans-q083",
       "domain": "network-design",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3082,313 +2912,41 @@
       ]
     },
     {
-      "id": "ans-q089",
-      "domain": "network-design",
+      "id": "ans-q084",
+      "domain": "network-implementation",
       "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Advanced Networking \u2013 Specialty? (Select TWO.)",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "ANS-C01 Exam Guide"
+          "text": "AWS KMS"
         },
         {
           "id": "b",
-          "text": "Unofficial leaked exam dumps"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "Amazon VPC"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "Disable all logging"
+          "text": "Amazon CloudFront only for DNS"
         },
         {
           "id": "e",
-          "text": "Share root account keys"
+          "text": "AWS Batch"
         }
       ],
       "correct": [
         "a",
         "c"
       ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
       "docs": [
         {
-          "title": "ANS-C01 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
-        }
-      ]
-    },
-    {
-      "id": "ans-q090",
-      "domain": "network-design",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'ANS-C01 Exam Guide', what should you do FIRST when addressing Network Design objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as ANS-C01 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "ANS-C01 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
-        }
-      ]
-    },
-    {
-      "id": "ans-q091",
-      "domain": "network-design",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon VPC', what should you do FIRST when addressing Network Design objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon VPC describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon VPC",
-          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q092",
-      "domain": "network-implementation",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Direct Connect', what should you do FIRST when addressing Network Implementation objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Direct Connect describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Direct Connect",
-          "url": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q093",
-      "domain": "network-implementation",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Site-to-Site VPN', what should you do FIRST when addressing Network Implementation objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Site-to-Site VPN describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Site-to-Site VPN",
-          "url": "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q094",
-      "domain": "network-management",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'VPC Flow Logs', what should you do FIRST when addressing Network Management and Operation objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as VPC Flow Logs describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "VPC Flow Logs",
-          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q095",
-      "domain": "network-management",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Network Manager', what should you do FIRST when addressing Network Management and Operation objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Network Manager describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Network Manager",
-          "url": "https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-network-manager-cloudwan.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q096",
-      "domain": "network-security",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Network Firewall', what should you do FIRST when addressing Network Security, Compliance, and Governance objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Network Firewall describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Network Firewall",
-          "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q097",
-      "domain": "network-security",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS PrivateLink', what should you do FIRST when addressing Network Security, Compliance, and Governance objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS PrivateLink describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS PrivateLink",
-          "url": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html"
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
         }
       ]
     }

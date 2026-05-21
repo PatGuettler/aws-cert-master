@@ -78,7 +78,7 @@
       "id": "sap-q001",
       "domain": "organizational-complexity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to govern hundreds of accounts with SCPs and OU structure?",
+      "text": "A regulated workload requires the organization to govern hundreds of accounts with SCPs and OU structure. Which solution is BEST? govern hundreds of accounts with SCPs and OU structure.",
       "options": [
         {
           "id": "a",
@@ -112,7 +112,7 @@
       "id": "sap-q002",
       "domain": "organizational-complexity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to establish landing zones with guardrails?",
+      "text": "While troubleshooting latency, engineers determine they must establish landing zones with guardrails. Which action is appropriate? establish landing zones with guardrails.",
       "options": [
         {
           "id": "a",
@@ -146,7 +146,7 @@
       "id": "sap-q003",
       "domain": "organizational-complexity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to share subnets across accounts securely?",
+      "text": "After a design review, leadership requires the team to share subnets across accounts securely. Which approach is MOST reliable? share subnets across accounts securely.",
       "options": [
         {
           "id": "a",
@@ -180,7 +180,7 @@
       "id": "sap-q004",
       "domain": "organizational-complexity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to centralize DNS and hybrid resolution?",
+      "text": "During peak traffic, the platform team must centralize DNS and hybrid resolution. What should they do FIRST? centralize DNS and hybrid resolution.",
       "options": [
         {
           "id": "a",
@@ -214,7 +214,7 @@
       "id": "sap-q005",
       "domain": "organizational-complexity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to implement network hub-and-spoke at scale?",
+      "text": "Operations reports a need to implement network hub-and-spoke at scale. What is the MOST operationally efficient solution? implement network hub-and-spoke at scale.",
       "options": [
         {
           "id": "a",
@@ -248,7 +248,7 @@
       "id": "sap-q006",
       "domain": "organizational-complexity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to enforce service control for regulated workloads?",
+      "text": "A hybrid environment must support a goal to enforce service control for regulated workloads without changing application code. What should you implement? enforce service control for regulated workloads.",
       "options": [
         {
           "id": "a",
@@ -282,7 +282,7 @@
       "id": "sap-q007",
       "domain": "organizational-complexity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to provide self-service approved products?",
+      "text": "For cost and security, the team must provide self-service approved products. What is the recommended approach? provide self-service approved products.",
       "options": [
         {
           "id": "a",
@@ -316,7 +316,7 @@
       "id": "sap-q008",
       "domain": "organizational-complexity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to audit cross-account access patterns?",
+      "text": "After a design review, leadership requires the team to audit cross-account access patterns. Which approach is MOST reliable? audit cross-account access patterns.",
       "options": [
         {
           "id": "a",
@@ -824,43 +824,9 @@
     },
     {
       "id": "sap-q023",
-      "domain": "organizational-complexity",
-      "type": "multiple-choice",
-      "text": "A team must implement network hub-and-spoke at scale. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS Transit Gateway"
-        },
-        {
-          "id": "b",
-          "text": "Full mesh peering n^2"
-        },
-        {
-          "id": "c",
-          "text": "Single flat VPC"
-        },
-        {
-          "id": "d",
-          "text": "Internet-only routing"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Transit Gateway connects VPCs and on-prem.",
-      "docs": [
-        {
-          "title": "Transit Gateway",
-          "url": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q024",
       "domain": "new-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to design event-driven microservices across accounts?",
+      "text": "During peak traffic, the platform team must design event-driven microservices across accounts. What should they do FIRST? design event-driven microservices across accounts.",
       "options": [
         {
           "id": "a",
@@ -891,10 +857,10 @@
       ]
     },
     {
-      "id": "sap-q025",
+      "id": "sap-q024",
       "domain": "new-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to build data mesh with domain ownership?",
+      "text": "A company needs to build data mesh with domain ownership. Which option meets the requirement with the LEAST implementation effort? build data mesh with domain ownership.",
       "options": [
         {
           "id": "a",
@@ -925,10 +891,10 @@
       ]
     },
     {
-      "id": "sap-q026",
+      "id": "sap-q025",
       "domain": "new-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use cell-based architecture for blast-radius control?",
+      "text": "Operations reports a need to use cell-based architecture for blast-radius control. What is the MOST operationally efficient solution? use cell-based architecture for blast-radius control.",
       "options": [
         {
           "id": "a",
@@ -959,10 +925,10 @@
       ]
     },
     {
-      "id": "sap-q027",
+      "id": "sap-q026",
       "domain": "new-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to implement active-active multi-Region front end?",
+      "text": "Operations reports a need to implement active-active multi-Region front end. What is the MOST operationally efficient solution? implement active-active multi-Region front end.",
       "options": [
         {
           "id": "a",
@@ -993,10 +959,10 @@
       ]
     },
     {
-      "id": "sap-q028",
+      "id": "sap-q027",
       "domain": "new-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to choose storage for millions of small objects?",
+      "text": "Operations reports a need to choose storage for millions of small objects. What is the MOST operationally efficient solution? choose storage for millions of small objects.",
       "options": [
         {
           "id": "a",
@@ -1027,10 +993,10 @@
       ]
     },
     {
-      "id": "sap-q029",
+      "id": "sap-q028",
       "domain": "new-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to design ML platform for many teams?",
+      "text": "For cost and security, the team must design ML platform for many teams. What is the recommended approach? design ML platform for many teams.",
       "options": [
         {
           "id": "a",
@@ -1061,10 +1027,10 @@
       ]
     },
     {
-      "id": "sap-q030",
+      "id": "sap-q029",
       "domain": "new-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to integrate SaaS with private connectivity?",
+      "text": "Operations reports a need to integrate SaaS with private connectivity. What is the MOST operationally efficient solution? integrate SaaS with private connectivity.",
       "options": [
         {
           "id": "a",
@@ -1095,10 +1061,10 @@
       ]
     },
     {
-      "id": "sap-q031",
+      "id": "sap-q030",
       "domain": "new-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to select database for global low-latency writes?",
+      "text": "Operations reports a need to select database for global low-latency writes. What is the MOST operationally efficient solution? select database for global low-latency writes.",
       "options": [
         {
           "id": "a",
@@ -1129,7 +1095,7 @@
       ]
     },
     {
-      "id": "sap-q032",
+      "id": "sap-q031",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "Which service should you use to design event-driven microservices across accounts?",
@@ -1163,7 +1129,7 @@
       ]
     },
     {
-      "id": "sap-q033",
+      "id": "sap-q032",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to design event-driven microservices across accounts?",
@@ -1197,7 +1163,7 @@
       ]
     },
     {
-      "id": "sap-q034",
+      "id": "sap-q033",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "A team must design event-driven microservices across accounts. Which option meets the requirement?",
@@ -1231,7 +1197,7 @@
       ]
     },
     {
-      "id": "sap-q035",
+      "id": "sap-q034",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "Which service should you use to build data mesh with domain ownership?",
@@ -1265,7 +1231,7 @@
       ]
     },
     {
-      "id": "sap-q036",
+      "id": "sap-q035",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to build data mesh with domain ownership?",
@@ -1299,7 +1265,7 @@
       ]
     },
     {
-      "id": "sap-q037",
+      "id": "sap-q036",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "A team must build data mesh with domain ownership. Which option meets the requirement?",
@@ -1333,7 +1299,7 @@
       ]
     },
     {
-      "id": "sap-q038",
+      "id": "sap-q037",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "Which service should you use to use cell-based architecture for blast-radius control?",
@@ -1367,7 +1333,7 @@
       ]
     },
     {
-      "id": "sap-q039",
+      "id": "sap-q038",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to use cell-based architecture for blast-radius control?",
@@ -1401,7 +1367,7 @@
       ]
     },
     {
-      "id": "sap-q040",
+      "id": "sap-q039",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "A team must use cell-based architecture for blast-radius control. Which option meets the requirement?",
@@ -1435,7 +1401,7 @@
       ]
     },
     {
-      "id": "sap-q041",
+      "id": "sap-q040",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "Which service should you use to implement active-active multi-Region front end?",
@@ -1469,7 +1435,7 @@
       ]
     },
     {
-      "id": "sap-q042",
+      "id": "sap-q041",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to implement active-active multi-Region front end?",
@@ -1503,7 +1469,7 @@
       ]
     },
     {
-      "id": "sap-q043",
+      "id": "sap-q042",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "A team must implement active-active multi-Region front end. Which option meets the requirement?",
@@ -1537,7 +1503,7 @@
       ]
     },
     {
-      "id": "sap-q044",
+      "id": "sap-q043",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "Which service should you use to choose storage for millions of small objects?",
@@ -1571,7 +1537,7 @@
       ]
     },
     {
-      "id": "sap-q045",
+      "id": "sap-q044",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to choose storage for millions of small objects?",
@@ -1605,7 +1571,7 @@
       ]
     },
     {
-      "id": "sap-q046",
+      "id": "sap-q045",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "A team must choose storage for millions of small objects. Which option meets the requirement?",
@@ -1639,7 +1605,7 @@
       ]
     },
     {
-      "id": "sap-q047",
+      "id": "sap-q046",
       "domain": "new-solutions",
       "type": "multiple-choice",
       "text": "Which service should you use to design ML platform for many teams?",
@@ -1673,78 +1639,10 @@
       ]
     },
     {
-      "id": "sap-q048",
-      "domain": "new-solutions",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to design ML platform for many teams?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker Studio domains with separate VPC and roles"
-        },
-        {
-          "id": "b",
-          "text": "One shared notebook prod"
-        },
-        {
-          "id": "c",
-          "text": "Root in notebooks"
-        },
-        {
-          "id": "d",
-          "text": "No isolation"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Multi-tenant ML platforms need account/VPC isolation.",
-      "docs": [
-        {
-          "title": "SageMaker Studio",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q049",
-      "domain": "new-solutions",
-      "type": "multiple-choice",
-      "text": "A team must design ML platform for many teams. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker Studio domains with separate VPC and roles"
-        },
-        {
-          "id": "b",
-          "text": "One shared notebook prod"
-        },
-        {
-          "id": "c",
-          "text": "Root in notebooks"
-        },
-        {
-          "id": "d",
-          "text": "No isolation"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Multi-tenant ML platforms need account/VPC isolation.",
-      "docs": [
-        {
-          "title": "SageMaker Studio",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q050",
+      "id": "sap-q047",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to right-size thousands of instances using ML recommendations?",
+      "text": "A hybrid environment must support a goal to right-size thousands of instances using ML recommendations without changing application code. What should you implement? right-size thousands of instances using ML recommendations.",
       "options": [
         {
           "id": "a",
@@ -1775,10 +1673,10 @@
       ]
     },
     {
-      "id": "sap-q051",
+      "id": "sap-q048",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to refactor monolith to microservices incrementally?",
+      "text": "A hybrid environment must support a goal to refactor monolith to microservices incrementally without changing application code. What should you implement? refactor monolith to microservices incrementally.",
       "options": [
         {
           "id": "a",
@@ -1809,10 +1707,10 @@
       ]
     },
     {
-      "id": "sap-q052",
+      "id": "sap-q049",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to reduce NAT Gateway costs for S3 access?",
+      "text": "Operations reports a need to reduce NAT Gateway costs for S3 access. What is the MOST operationally efficient solution? reduce NAT Gateway costs for S3 access.",
       "options": [
         {
           "id": "a",
@@ -1843,10 +1741,10 @@
       ]
     },
     {
-      "id": "sap-q053",
+      "id": "sap-q050",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to modernize Windows .NET apps with containers?",
+      "text": "For cost and security, the team must modernize Windows .NET apps with containers. What is the recommended approach? modernize Windows .NET apps with containers.",
       "options": [
         {
           "id": "a",
@@ -1877,10 +1775,10 @@
       ]
     },
     {
-      "id": "sap-q054",
+      "id": "sap-q051",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to implement FinOps showback with tags and CUR?",
+      "text": "During peak traffic, the platform team must implement FinOps showback with tags and CUR. What should they do FIRST? implement FinOps showback with tags and CUR.",
       "options": [
         {
           "id": "a",
@@ -1911,10 +1809,10 @@
       ]
     },
     {
-      "id": "sap-q055",
+      "id": "sap-q052",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to improve RTO by warming standby in second Region?",
+      "text": "After a design review, leadership requires the team to improve RTO by warming standby in second Region. Which approach is MOST reliable? improve RTO by warming standby in second Region.",
       "options": [
         {
           "id": "a",
@@ -1945,10 +1843,10 @@
       ]
     },
     {
-      "id": "sap-q056",
+      "id": "sap-q053",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to decompose Lambda monolith into Step Functions?",
+      "text": "A hybrid environment must support a goal to decompose Lambda monolith into Step Functions without changing application code. What should you implement? decompose Lambda monolith into Step Functions.",
       "options": [
         {
           "id": "a",
@@ -1979,10 +1877,10 @@
       ]
     },
     {
-      "id": "sap-q057",
+      "id": "sap-q054",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to optimize Aurora I/O with Serverless v2 and readers?",
+      "text": "Operations reports a need to optimize Aurora I/O with Serverless v2 and readers. What is the MOST operationally efficient solution? optimize Aurora I/O with Serverless v2 and readers.",
       "options": [
         {
           "id": "a",
@@ -2013,7 +1911,7 @@
       ]
     },
     {
-      "id": "sap-q058",
+      "id": "sap-q055",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "Which service should you use to right-size thousands of instances using ML recommendations?",
@@ -2047,7 +1945,7 @@
       ]
     },
     {
-      "id": "sap-q059",
+      "id": "sap-q056",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to right-size thousands of instances using ML recommendations?",
@@ -2081,7 +1979,7 @@
       ]
     },
     {
-      "id": "sap-q060",
+      "id": "sap-q057",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "A team must right-size thousands of instances using ML recommendations. Which option meets the requirement?",
@@ -2115,7 +2013,7 @@
       ]
     },
     {
-      "id": "sap-q061",
+      "id": "sap-q058",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "Which service should you use to refactor monolith to microservices incrementally?",
@@ -2149,7 +2047,7 @@
       ]
     },
     {
-      "id": "sap-q062",
+      "id": "sap-q059",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to refactor monolith to microservices incrementally?",
@@ -2183,7 +2081,7 @@
       ]
     },
     {
-      "id": "sap-q063",
+      "id": "sap-q060",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "A team must refactor monolith to microservices incrementally. Which option meets the requirement?",
@@ -2217,7 +2115,7 @@
       ]
     },
     {
-      "id": "sap-q064",
+      "id": "sap-q061",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "Which service should you use to reduce NAT Gateway costs for S3 access?",
@@ -2251,7 +2149,7 @@
       ]
     },
     {
-      "id": "sap-q065",
+      "id": "sap-q062",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to reduce NAT Gateway costs for S3 access?",
@@ -2285,7 +2183,7 @@
       ]
     },
     {
-      "id": "sap-q066",
+      "id": "sap-q063",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "A team must reduce NAT Gateway costs for S3 access. Which option meets the requirement?",
@@ -2319,7 +2217,7 @@
       ]
     },
     {
-      "id": "sap-q067",
+      "id": "sap-q064",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "Which service should you use to modernize Windows .NET apps with containers?",
@@ -2353,7 +2251,7 @@
       ]
     },
     {
-      "id": "sap-q068",
+      "id": "sap-q065",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to modernize Windows .NET apps with containers?",
@@ -2387,7 +2285,7 @@
       ]
     },
     {
-      "id": "sap-q069",
+      "id": "sap-q066",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "A team must modernize Windows .NET apps with containers. Which option meets the requirement?",
@@ -2421,7 +2319,7 @@
       ]
     },
     {
-      "id": "sap-q070",
+      "id": "sap-q067",
       "domain": "continuous-improvement",
       "type": "multiple-choice",
       "text": "Which service should you use to implement FinOps showback with tags and CUR?",
@@ -2455,78 +2353,10 @@
       ]
     },
     {
-      "id": "sap-q071",
-      "domain": "continuous-improvement",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to implement FinOps showback with tags and CUR?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cost allocation tags and Athena on CUR"
-        },
-        {
-          "id": "b",
-          "text": "No tags"
-        },
-        {
-          "id": "c",
-          "text": "One undifferentiated bill"
-        },
-        {
-          "id": "d",
-          "text": "Ignore anomalies"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "CUR plus tags enables chargeback/showback.",
-      "docs": [
-        {
-          "title": "CUR",
-          "url": "https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q072",
-      "domain": "continuous-improvement",
-      "type": "multiple-choice",
-      "text": "A team must implement FinOps showback with tags and CUR. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cost allocation tags and Athena on CUR"
-        },
-        {
-          "id": "b",
-          "text": "No tags"
-        },
-        {
-          "id": "c",
-          "text": "One undifferentiated bill"
-        },
-        {
-          "id": "d",
-          "text": "Ignore anomalies"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "CUR plus tags enables chargeback/showback.",
-      "docs": [
-        {
-          "title": "CUR",
-          "url": "https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q073",
+      "id": "sap-q068",
       "domain": "migration-modernization",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to discover on-premises servers for migration planning?",
+      "text": "For cost and security, the team must discover on-premises servers for migration planning. What is the recommended approach? discover on-premises servers for migration planning.",
       "options": [
         {
           "id": "a",
@@ -2557,10 +2387,10 @@
       ]
     },
     {
-      "id": "sap-q074",
+      "id": "sap-q069",
       "domain": "migration-modernization",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to rehost VMs with minimal changes?",
+      "text": "A regulated workload requires the organization to rehost VMs with minimal changes. Which solution is BEST? rehost VMs with minimal changes.",
       "options": [
         {
           "id": "a",
@@ -2591,10 +2421,10 @@
       ]
     },
     {
-      "id": "sap-q075",
+      "id": "sap-q070",
       "domain": "migration-modernization",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to migrate databases with minimal downtime?",
+      "text": "An audit found gaps: the organization must migrate databases with minimal downtime. Which option addresses this? migrate databases with minimal downtime.",
       "options": [
         {
           "id": "a",
@@ -2625,10 +2455,10 @@
       ]
     },
     {
-      "id": "sap-q076",
+      "id": "sap-q071",
       "domain": "migration-modernization",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to move exabytes with physical appliance?",
+      "text": "A company needs to move exabytes with physical appliance. Which option meets the requirement with the LEAST implementation effort? move exabytes with physical appliance.",
       "options": [
         {
           "id": "a",
@@ -2659,10 +2489,10 @@
       ]
     },
     {
-      "id": "sap-q077",
+      "id": "sap-q072",
       "domain": "migration-modernization",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to modernize VMware workloads?",
+      "text": "A hybrid environment must support a goal to modernize VMware workloads without changing application code. What should you implement? modernize VMware workloads.",
       "options": [
         {
           "id": "a",
@@ -2693,10 +2523,10 @@
       ]
     },
     {
-      "id": "sap-q078",
+      "id": "sap-q073",
       "domain": "migration-modernization",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to transfer SFTP data to S3?",
+      "text": "A hybrid environment must support a goal to transfer SFTP data to S3 without changing application code. What should you implement? transfer SFTP data to S3.",
       "options": [
         {
           "id": "a",
@@ -2727,10 +2557,10 @@
       ]
     },
     {
-      "id": "sap-q079",
+      "id": "sap-q074",
       "domain": "migration-modernization",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to containerize legacy apps during migration?",
+      "text": "The DevOps team is automating releases and must containerize legacy apps during migration. Which design fits best? containerize legacy apps during migration.",
       "options": [
         {
           "id": "a",
@@ -2761,10 +2591,10 @@
       ]
     },
     {
-      "id": "sap-q080",
+      "id": "sap-q075",
       "domain": "migration-modernization",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to track migration portfolio in one place?",
+      "text": "For cost and security, the team must track migration portfolio in one place. What is the recommended approach? track migration portfolio in one place.",
       "options": [
         {
           "id": "a",
@@ -2795,7 +2625,7 @@
       ]
     },
     {
-      "id": "sap-q081",
+      "id": "sap-q076",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "Which service should you use to discover on-premises servers for migration planning?",
@@ -2829,7 +2659,7 @@
       ]
     },
     {
-      "id": "sap-q082",
+      "id": "sap-q077",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to discover on-premises servers for migration planning?",
@@ -2863,7 +2693,7 @@
       ]
     },
     {
-      "id": "sap-q083",
+      "id": "sap-q078",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "A team must discover on-premises servers for migration planning. Which option meets the requirement?",
@@ -2897,7 +2727,7 @@
       ]
     },
     {
-      "id": "sap-q084",
+      "id": "sap-q079",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "Which service should you use to rehost VMs with minimal changes?",
@@ -2931,7 +2761,7 @@
       ]
     },
     {
-      "id": "sap-q085",
+      "id": "sap-q080",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to rehost VMs with minimal changes?",
@@ -2965,7 +2795,7 @@
       ]
     },
     {
-      "id": "sap-q086",
+      "id": "sap-q081",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "A team must rehost VMs with minimal changes. Which option meets the requirement?",
@@ -2999,7 +2829,7 @@
       ]
     },
     {
-      "id": "sap-q087",
+      "id": "sap-q082",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "Which service should you use to migrate databases with minimal downtime?",
@@ -3033,7 +2863,7 @@
       ]
     },
     {
-      "id": "sap-q088",
+      "id": "sap-q083",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to migrate databases with minimal downtime?",
@@ -3067,7 +2897,7 @@
       ]
     },
     {
-      "id": "sap-q089",
+      "id": "sap-q084",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "A team must migrate databases with minimal downtime. Which option meets the requirement?",
@@ -3101,7 +2931,7 @@
       ]
     },
     {
-      "id": "sap-q090",
+      "id": "sap-q085",
       "domain": "migration-modernization",
       "type": "multiple-choice",
       "text": "Which service should you use to move exabytes with physical appliance?",
@@ -3135,75 +2965,7 @@
       ]
     },
     {
-      "id": "sap-q091",
-      "domain": "migration-modernization",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to move exabytes with physical appliance?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS Snowball Edge or Snowmobile"
-        },
-        {
-          "id": "b",
-          "text": "Slow consumer ISP upload only"
-        },
-        {
-          "id": "c",
-          "text": "Email disks"
-        },
-        {
-          "id": "d",
-          "text": "Ignore encryption"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Snow devices transfer huge datasets offline.",
-      "docs": [
-        {
-          "title": "Snowball",
-          "url": "https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q092",
-      "domain": "migration-modernization",
-      "type": "multiple-choice",
-      "text": "A team must move exabytes with physical appliance. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS Snowball Edge or Snowmobile"
-        },
-        {
-          "id": "b",
-          "text": "Slow consumer ISP upload only"
-        },
-        {
-          "id": "c",
-          "text": "Email disks"
-        },
-        {
-          "id": "d",
-          "text": "Ignore encryption"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Snow devices transfer huge datasets offline.",
-      "docs": [
-        {
-          "title": "Snowball",
-          "url": "https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q093",
+      "id": "sap-q086",
       "domain": "organizational-complexity",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3243,7 +3005,7 @@
       ]
     },
     {
-      "id": "sap-q094",
+      "id": "sap-q087",
       "domain": "organizational-complexity",
       "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Professional? (Select TWO.)",
@@ -3282,7 +3044,7 @@
       ]
     },
     {
-      "id": "sap-q095",
+      "id": "sap-q088",
       "domain": "new-solutions",
       "type": "multiple-response",
       "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
@@ -3317,278 +3079,6 @@
         {
           "title": "AWS KMS",
           "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q096",
-      "domain": "organizational-complexity",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'SAP-C02 Exam Guide', what should you do FIRST when addressing Design Solutions for Organizational Complexity objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as SAP-C02 Exam Guide describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "SAP-C02 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
-        }
-      ]
-    },
-    {
-      "id": "sap-q097",
-      "domain": "organizational-complexity",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Organizations', what should you do FIRST when addressing Design Solutions for Organizational Complexity objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Organizations describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Organizations",
-          "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q098",
-      "domain": "new-solutions",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Well-Architected Framework', what should you do FIRST when addressing Design for New Solutions objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Well-Architected Framework describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Well-Architected Framework",
-          "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q099",
-      "domain": "new-solutions",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Service Catalog', what should you do FIRST when addressing Design for New Solutions objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Service Catalog describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Service Catalog",
-          "url": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q100",
-      "domain": "continuous-improvement",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Compute Optimizer', what should you do FIRST when addressing Continuous Improvement for Existing Solutions objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Compute Optimizer describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Compute Optimizer",
-          "url": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q101",
-      "domain": "continuous-improvement",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Migration Evaluator', what should you do FIRST when addressing Continuous Improvement for Existing Solutions objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Migration Evaluator describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Migration Evaluator",
-          "url": "https://aws.amazon.com/migration-evaluator/"
-        }
-      ]
-    },
-    {
-      "id": "sap-q102",
-      "domain": "migration-modernization",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Migration Hub', what should you do FIRST when addressing Accelerate Workload Migration and Modernization objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Migration Hub describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Migration Hub",
-          "url": "https://docs.aws.amazon.com/migrationhub/latest/ug/what-is-migrationhub.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q103",
-      "domain": "migration-modernization",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Application Migration Service', what should you do FIRST when addressing Accelerate Workload Migration and Modernization objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Application Migration Service describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Application Migration Service",
-          "url": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html"
         }
       ]
     }

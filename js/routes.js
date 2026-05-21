@@ -44,12 +44,22 @@ export function questionPageUrl(slug) {
 
 /**
  * @param {import('./cert-loader.js').ExamIndexEntry[]} exams
- * @returns {{ type: 'landing' } | { type: 'browse' } | { type: 'cert', certId: string } | { type: 'acronyms', certId: string }}
+ * @param {string[]} [keytrainIds]
+ * @returns {{ type: string, certId?: string, keytrainId?: string }}
  */
-export function parseRoute(exams) {
+export function parseRoute(exams, keytrainIds = []) {
   const parts = getAppSubpath().split("/").filter(Boolean);
 
   if (parts[0] === "browse") return { type: "browse" };
+
+  if (parts[0] === "keytrain") {
+    if (!parts[1]) return { type: "keytrain-hub" };
+    if (!keytrainIds.includes(parts[1])) return { type: "keytrain-hub" };
+    if (parts[2] === "certificate") {
+      return { type: "keytrain-certificate", keytrainId: parts[1] };
+    }
+    return { type: "keytrain-cert", keytrainId: parts[1] };
+  }
 
   if (parts[0] === "cert" && parts[1]) {
     if (!exams.some((e) => e.id === parts[1])) return { type: "landing" };
@@ -119,6 +129,19 @@ export function navigateHome() {
 
 export function navigateBrowse() {
   history.pushState(null, "", appPathUrl("browse"));
+}
+
+export function navigateKeytrainHub() {
+  history.pushState(null, "", appPathUrl("keytrain"));
+}
+
+/**
+ * @param {string} keytrainId
+ * @param {string} [sub]
+ */
+export function navigateKeytrainCert(keytrainId, sub = "") {
+  const path = sub ? `keytrain/${keytrainId}/${sub}` : `keytrain/${keytrainId}`;
+  history.pushState(null, "", appPathUrl(path));
 }
 
 /**

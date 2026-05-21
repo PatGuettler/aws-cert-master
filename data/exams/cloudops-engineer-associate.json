@@ -93,7 +93,7 @@
       "id": "soa-q001",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to collect metrics and logs from EC2 and AWS services?",
+      "text": "The DevOps team is automating releases and must collect metrics and logs from EC2 and AWS services. Which design fits best? collect metrics and logs from EC2 and AWS services.",
       "options": [
         {
           "id": "a",
@@ -127,7 +127,7 @@
       "id": "soa-q002",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run operational tasks like patching at scale?",
+      "text": "An audit found gaps: the organization must run operational tasks like patching at scale. Which option addresses this? run operational tasks like patching at scale.",
       "options": [
         {
           "id": "a",
@@ -161,7 +161,7 @@
       "id": "soa-q003",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to aggregate logs across accounts?",
+      "text": "A hybrid environment must support a goal to aggregate logs across accounts without changing application code. What should you implement? aggregate logs across accounts.",
       "options": [
         {
           "id": "a",
@@ -195,7 +195,7 @@
       "id": "soa-q004",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to trace API calls for troubleshooting?",
+      "text": "A company needs to trace API calls for troubleshooting. Which option meets the requirement with the LEAST implementation effort? trace API calls for troubleshooting.",
       "options": [
         {
           "id": "a",
@@ -229,7 +229,7 @@
       "id": "soa-q005",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to capture VPC traffic metadata?",
+      "text": "For cost and security, the team must capture VPC traffic metadata. What is the recommended approach? capture VPC traffic metadata.",
       "options": [
         {
           "id": "a",
@@ -263,7 +263,7 @@
       "id": "soa-q006",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to create dashboards for golden signals?",
+      "text": "A regulated workload requires the organization to create dashboards for golden signals. Which solution is BEST? create dashboards for golden signals.",
       "options": [
         {
           "id": "a",
@@ -297,7 +297,7 @@
       "id": "soa-q007",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use synthetic canaries to monitor endpoints?",
+      "text": "After a design review, leadership requires the team to use synthetic canaries to monitor endpoints. Which approach is MOST reliable? use synthetic canaries to monitor endpoints.",
       "options": [
         {
           "id": "a",
@@ -331,7 +331,7 @@
       "id": "soa-q008",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to store configuration compliance history?",
+      "text": "During peak traffic, the platform team must store configuration compliance history. What should they do FIRST? store configuration compliance history.",
       "options": [
         {
           "id": "a",
@@ -703,77 +703,9 @@
     },
     {
       "id": "soa-q019",
-      "domain": "monitoring-logging",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to trace API calls for troubleshooting?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS CloudTrail"
-        },
-        {
-          "id": "b",
-          "text": "Guess only"
-        },
-        {
-          "id": "c",
-          "text": "Disable trail"
-        },
-        {
-          "id": "d",
-          "text": "No S3 bucket policy"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "CloudTrail records API activity.",
-      "docs": [
-        {
-          "title": "CloudTrail",
-          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q020",
-      "domain": "monitoring-logging",
-      "type": "multiple-choice",
-      "text": "A team must trace API calls for troubleshooting. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS CloudTrail"
-        },
-        {
-          "id": "b",
-          "text": "Guess only"
-        },
-        {
-          "id": "c",
-          "text": "Disable trail"
-        },
-        {
-          "id": "d",
-          "text": "No S3 bucket policy"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "CloudTrail records API activity.",
-      "docs": [
-        {
-          "title": "CloudTrail",
-          "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q021",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to automate backups across services?",
+      "text": "A company needs to automate backups across services. Which option meets the requirement with the LEAST implementation effort? automate backups across services.",
       "options": [
         {
           "id": "a",
@@ -804,10 +736,10 @@
       ]
     },
     {
-      "id": "soa-q022",
+      "id": "soa-q020",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to replicate servers to AWS for DR with minimal downtime?",
+      "text": "During peak traffic, the platform team must replicate servers to AWS for DR with minimal downtime. What should they do FIRST? replicate servers to AWS for DR with minimal downtime.",
       "options": [
         {
           "id": "a",
@@ -838,10 +770,10 @@
       ]
     },
     {
-      "id": "soa-q023",
+      "id": "soa-q021",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to maintain RDS backups and point-in-time recovery?",
+      "text": "During peak traffic, the platform team must maintain RDS backups and point-in-time recovery. What should they do FIRST? maintain RDS backups and point-in-time recovery.",
       "options": [
         {
           "id": "a",
@@ -872,10 +804,10 @@
       ]
     },
     {
-      "id": "soa-q024",
+      "id": "soa-q022",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to health check and failover DNS?",
+      "text": "For cost and security, the team must health check and failover DNS. What is the recommended approach? health check and failover DNS.",
       "options": [
         {
           "id": "a",
@@ -906,10 +838,10 @@
       ]
     },
     {
-      "id": "soa-q025",
+      "id": "soa-q023",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to scale EC2 automatically on CPU?",
+      "text": "The DevOps team is automating releases and must scale EC2 automatically on CPU. Which design fits best? scale EC2 automatically on CPU.",
       "options": [
         {
           "id": "a",
@@ -940,10 +872,10 @@
       ]
     },
     {
-      "id": "soa-q026",
+      "id": "soa-q024",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to distribute traffic for HA?",
+      "text": "A regulated workload requires the organization to distribute traffic for HA. Which solution is BEST? distribute traffic for HA.",
       "options": [
         {
           "id": "a",
@@ -974,10 +906,10 @@
       ]
     },
     {
-      "id": "soa-q027",
+      "id": "soa-q025",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to restore objects deleted from S3 accidentally?",
+      "text": "During peak traffic, the platform team must restore objects deleted from S3 accidentally. What should they do FIRST? restore objects deleted from S3 accidentally.",
       "options": [
         {
           "id": "a",
@@ -1008,10 +940,10 @@
       ]
     },
     {
-      "id": "soa-q028",
+      "id": "soa-q026",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to test DR with game days using isolated stacks?",
+      "text": "A regulated workload requires the organization to test DR with game days using isolated stacks. Which solution is BEST? test DR with game days using isolated stacks.",
       "options": [
         {
           "id": "a",
@@ -1042,7 +974,7 @@
       ]
     },
     {
-      "id": "soa-q029",
+      "id": "soa-q027",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "Which service should you use to automate backups across services?",
@@ -1076,7 +1008,7 @@
       ]
     },
     {
-      "id": "soa-q030",
+      "id": "soa-q028",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to automate backups across services?",
@@ -1110,7 +1042,7 @@
       ]
     },
     {
-      "id": "soa-q031",
+      "id": "soa-q029",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "A team must automate backups across services. Which option meets the requirement?",
@@ -1144,7 +1076,7 @@
       ]
     },
     {
-      "id": "soa-q032",
+      "id": "soa-q030",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "Which service should you use to replicate servers to AWS for DR with minimal downtime?",
@@ -1178,7 +1110,7 @@
       ]
     },
     {
-      "id": "soa-q033",
+      "id": "soa-q031",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to replicate servers to AWS for DR with minimal downtime?",
@@ -1212,7 +1144,7 @@
       ]
     },
     {
-      "id": "soa-q034",
+      "id": "soa-q032",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "A team must replicate servers to AWS for DR with minimal downtime. Which option meets the requirement?",
@@ -1246,7 +1178,7 @@
       ]
     },
     {
-      "id": "soa-q035",
+      "id": "soa-q033",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "Which service should you use to maintain RDS backups and point-in-time recovery?",
@@ -1280,7 +1212,7 @@
       ]
     },
     {
-      "id": "soa-q036",
+      "id": "soa-q034",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to maintain RDS backups and point-in-time recovery?",
@@ -1314,7 +1246,7 @@
       ]
     },
     {
-      "id": "soa-q037",
+      "id": "soa-q035",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "A team must maintain RDS backups and point-in-time recovery. Which option meets the requirement?",
@@ -1348,7 +1280,7 @@
       ]
     },
     {
-      "id": "soa-q038",
+      "id": "soa-q036",
       "domain": "reliability-continuity",
       "type": "multiple-choice",
       "text": "Which service should you use to health check and failover DNS?",
@@ -1382,78 +1314,10 @@
       ]
     },
     {
-      "id": "soa-q039",
-      "domain": "reliability-continuity",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to health check and failover DNS?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Route 53 health checks and failover routing"
-        },
-        {
-          "id": "b",
-          "text": "Static DNS never changes"
-        },
-        {
-          "id": "c",
-          "text": "Ignore app health"
-        },
-        {
-          "id": "d",
-          "text": "No secondary Region"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Route 53 routes away from unhealthy endpoints.",
-      "docs": [
-        {
-          "title": "Route 53 health checks",
-          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q040",
-      "domain": "reliability-continuity",
-      "type": "multiple-choice",
-      "text": "A team must health check and failover DNS. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Route 53 health checks and failover routing"
-        },
-        {
-          "id": "b",
-          "text": "Static DNS never changes"
-        },
-        {
-          "id": "c",
-          "text": "Ignore app health"
-        },
-        {
-          "id": "d",
-          "text": "No secondary Region"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Route 53 routes away from unhealthy endpoints.",
-      "docs": [
-        {
-          "title": "Route 53 health checks",
-          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q041",
+      "id": "soa-q037",
       "domain": "deployment-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to provision infrastructure from templates?",
+      "text": "A hybrid environment must support a goal to provision infrastructure from templates without changing application code. What should you implement? provision infrastructure from templates.",
       "options": [
         {
           "id": "a",
@@ -1484,10 +1348,10 @@
       ]
     },
     {
-      "id": "soa-q042",
+      "id": "soa-q038",
       "domain": "deployment-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to patch Windows and Linux fleets on schedule?",
+      "text": "An audit found gaps: the organization must patch Windows and Linux fleets on schedule. Which option addresses this? patch Windows and Linux fleets on schedule.",
       "options": [
         {
           "id": "a",
@@ -1518,10 +1382,10 @@
       ]
     },
     {
-      "id": "soa-q043",
+      "id": "soa-q039",
       "domain": "deployment-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use desired state configuration for instances?",
+      "text": "During peak traffic, the platform team must use desired state configuration for instances. What should they do FIRST? use desired state configuration for instances.",
       "options": [
         {
           "id": "a",
@@ -1552,10 +1416,10 @@
       ]
     },
     {
-      "id": "soa-q044",
+      "id": "soa-q040",
       "domain": "deployment-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to store parameters and secrets for apps?",
+      "text": "For cost and security, the team must store parameters and secrets for apps. What is the recommended approach? store parameters and secrets for apps.",
       "options": [
         {
           "id": "a",
@@ -1586,10 +1450,10 @@
       ]
     },
     {
-      "id": "soa-q045",
+      "id": "soa-q041",
       "domain": "deployment-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run commands on many instances without SSH keys?",
+      "text": "Operations reports a need to run commands on many instances without SSH keys. What is the MOST operationally efficient solution? run commands on many instances without SSH keys.",
       "options": [
         {
           "id": "a",
@@ -1620,10 +1484,10 @@
       ]
     },
     {
-      "id": "soa-q046",
+      "id": "soa-q042",
       "domain": "deployment-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to create golden AMIs with Image Builder?",
+      "text": "While troubleshooting latency, engineers determine they must create golden AMIs with Image Builder. Which action is appropriate? create golden AMIs with Image Builder.",
       "options": [
         {
           "id": "a",
@@ -1654,10 +1518,10 @@
       ]
     },
     {
-      "id": "soa-q047",
+      "id": "soa-q043",
       "domain": "deployment-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deploy application stacks with Elastic Beanstalk?",
+      "text": "The DevOps team is automating releases and must deploy application stacks with Elastic Beanstalk. Which design fits best? deploy application stacks with Elastic Beanstalk.",
       "options": [
         {
           "id": "a",
@@ -1688,10 +1552,10 @@
       ]
     },
     {
-      "id": "soa-q048",
+      "id": "soa-q044",
       "domain": "deployment-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use OpsWorks for Chef/Puppet style config (legacy patterns)?",
+      "text": "A company needs to use OpsWorks for Chef/Puppet style config (legacy patterns). Which option meets the requirement with the LEAST implementation effort? use OpsWorks for Chef/Puppet style config (legacy patterns).",
       "options": [
         {
           "id": "a",
@@ -1722,7 +1586,7 @@
       ]
     },
     {
-      "id": "soa-q049",
+      "id": "soa-q045",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "Which service should you use to provision infrastructure from templates?",
@@ -1756,7 +1620,7 @@
       ]
     },
     {
-      "id": "soa-q050",
+      "id": "soa-q046",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to provision infrastructure from templates?",
@@ -1790,7 +1654,7 @@
       ]
     },
     {
-      "id": "soa-q051",
+      "id": "soa-q047",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "A team must provision infrastructure from templates. Which option meets the requirement?",
@@ -1824,7 +1688,7 @@
       ]
     },
     {
-      "id": "soa-q052",
+      "id": "soa-q048",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "Which service should you use to patch Windows and Linux fleets on schedule?",
@@ -1858,7 +1722,7 @@
       ]
     },
     {
-      "id": "soa-q053",
+      "id": "soa-q049",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to patch Windows and Linux fleets on schedule?",
@@ -1892,7 +1756,7 @@
       ]
     },
     {
-      "id": "soa-q054",
+      "id": "soa-q050",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "A team must patch Windows and Linux fleets on schedule. Which option meets the requirement?",
@@ -1926,7 +1790,7 @@
       ]
     },
     {
-      "id": "soa-q055",
+      "id": "soa-q051",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "Which service should you use to use desired state configuration for instances?",
@@ -1960,7 +1824,7 @@
       ]
     },
     {
-      "id": "soa-q056",
+      "id": "soa-q052",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to use desired state configuration for instances?",
@@ -1994,7 +1858,7 @@
       ]
     },
     {
-      "id": "soa-q057",
+      "id": "soa-q053",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "A team must use desired state configuration for instances. Which option meets the requirement?",
@@ -2028,7 +1892,7 @@
       ]
     },
     {
-      "id": "soa-q058",
+      "id": "soa-q054",
       "domain": "deployment-automation",
       "type": "multiple-choice",
       "text": "Which service should you use to store parameters and secrets for apps?",
@@ -2062,78 +1926,10 @@
       ]
     },
     {
-      "id": "soa-q059",
-      "domain": "deployment-automation",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to store parameters and secrets for apps?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Systems Manager Parameter Store and Secrets Manager"
-        },
-        {
-          "id": "b",
-          "text": "Hard-code in user data public"
-        },
-        {
-          "id": "c",
-          "text": "Git secrets"
-        },
-        {
-          "id": "d",
-          "text": "Email passwords"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Parameter Store provides hierarchical config.",
-      "docs": [
-        {
-          "title": "Parameter Store",
-          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q060",
-      "domain": "deployment-automation",
-      "type": "multiple-choice",
-      "text": "A team must store parameters and secrets for apps. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Systems Manager Parameter Store and Secrets Manager"
-        },
-        {
-          "id": "b",
-          "text": "Hard-code in user data public"
-        },
-        {
-          "id": "c",
-          "text": "Git secrets"
-        },
-        {
-          "id": "d",
-          "text": "Email passwords"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Parameter Store provides hierarchical config.",
-      "docs": [
-        {
-          "title": "Parameter Store",
-          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q061",
+      "id": "soa-q055",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to scan EC2 for vulnerabilities?",
+      "text": "For cost and security, the team must scan EC2 for vulnerabilities. What is the recommended approach? scan EC2 for vulnerabilities.",
       "options": [
         {
           "id": "a",
@@ -2164,10 +1960,10 @@
       ]
     },
     {
-      "id": "soa-q062",
+      "id": "soa-q056",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to enforce CIS benchmarks on instances?",
+      "text": "An audit found gaps: the organization must enforce CIS benchmarks on instances. Which option addresses this? enforce CIS benchmarks on instances.",
       "options": [
         {
           "id": "a",
@@ -2198,10 +1994,10 @@
       ]
     },
     {
-      "id": "soa-q063",
+      "id": "soa-q057",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to rotate database passwords automatically?",
+      "text": "A company needs to rotate database passwords automatically. Which option meets the requirement with the LEAST implementation effort? rotate database passwords automatically.",
       "options": [
         {
           "id": "a",
@@ -2232,10 +2028,10 @@
       ]
     },
     {
-      "id": "soa-q064",
+      "id": "soa-q058",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to apply SCPs to prevent disabling CloudTrail?",
+      "text": "Operations reports a need to apply SCPs to prevent disabling CloudTrail. What is the MOST operationally efficient solution? apply SCPs to prevent disabling CloudTrail.",
       "options": [
         {
           "id": "a",
@@ -2266,10 +2062,10 @@
       ]
     },
     {
-      "id": "soa-q065",
+      "id": "soa-q059",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to enable GuardDuty in all member accounts?",
+      "text": "The DevOps team is automating releases and must enable GuardDuty in all member accounts. Which design fits best? enable GuardDuty in all member accounts.",
       "options": [
         {
           "id": "a",
@@ -2300,10 +2096,10 @@
       ]
     },
     {
-      "id": "soa-q066",
+      "id": "soa-q060",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to encrypt EBS volumes by default?",
+      "text": "A regulated workload requires the organization to encrypt EBS volumes by default. Which solution is BEST? encrypt EBS volumes by default.",
       "options": [
         {
           "id": "a",
@@ -2334,10 +2130,10 @@
       ]
     },
     {
-      "id": "soa-q067",
+      "id": "soa-q061",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use IAM roles instead of access keys on servers?",
+      "text": "A company needs to use IAM roles instead of access keys on servers. Which option meets the requirement with the LEAST implementation effort? use IAM roles instead of access keys on servers.",
       "options": [
         {
           "id": "a",
@@ -2368,10 +2164,10 @@
       ]
     },
     {
-      "id": "soa-q068",
+      "id": "soa-q062",
       "domain": "security-compliance",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to audit S3 bucket policy changes?",
+      "text": "Operations reports a need to audit S3 bucket policy changes. What is the MOST operationally efficient solution? audit S3 bucket policy changes.",
       "options": [
         {
           "id": "a",
@@ -2402,7 +2198,7 @@
       ]
     },
     {
-      "id": "soa-q069",
+      "id": "soa-q063",
       "domain": "security-compliance",
       "type": "multiple-choice",
       "text": "Which service should you use to scan EC2 for vulnerabilities?",
@@ -2436,7 +2232,7 @@
       ]
     },
     {
-      "id": "soa-q070",
+      "id": "soa-q064",
       "domain": "security-compliance",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to scan EC2 for vulnerabilities?",
@@ -2470,7 +2266,7 @@
       ]
     },
     {
-      "id": "soa-q071",
+      "id": "soa-q065",
       "domain": "security-compliance",
       "type": "multiple-choice",
       "text": "A team must scan EC2 for vulnerabilities. Which option meets the requirement?",
@@ -2504,7 +2300,7 @@
       ]
     },
     {
-      "id": "soa-q072",
+      "id": "soa-q066",
       "domain": "security-compliance",
       "type": "multiple-choice",
       "text": "Which service should you use to enforce CIS benchmarks on instances?",
@@ -2538,7 +2334,7 @@
       ]
     },
     {
-      "id": "soa-q073",
+      "id": "soa-q067",
       "domain": "security-compliance",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to enforce CIS benchmarks on instances?",
@@ -2572,7 +2368,7 @@
       ]
     },
     {
-      "id": "soa-q074",
+      "id": "soa-q068",
       "domain": "security-compliance",
       "type": "multiple-choice",
       "text": "A team must enforce CIS benchmarks on instances. Which option meets the requirement?",
@@ -2606,10 +2402,10 @@
       ]
     },
     {
-      "id": "soa-q075",
+      "id": "soa-q069",
       "domain": "networking-content",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to host private subnets for application tiers?",
+      "text": "Operations reports a need to host private subnets for application tiers. What is the MOST operationally efficient solution? host private subnets for application tiers.",
       "options": [
         {
           "id": "a",
@@ -2640,10 +2436,10 @@
       ]
     },
     {
-      "id": "soa-q076",
+      "id": "soa-q070",
       "domain": "networking-content",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to connect on-premises to AWS privately?",
+      "text": "For cost and security, the team must connect on-premises to AWS privately. What is the recommended approach? connect on-premises to AWS privately.",
       "options": [
         {
           "id": "a",
@@ -2674,10 +2470,10 @@
       ]
     },
     {
-      "id": "soa-q077",
+      "id": "soa-q071",
       "domain": "networking-content",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deliver HTTPS globally with low latency?",
+      "text": "The DevOps team is automating releases and must deliver HTTPS globally with low latency. Which design fits best? deliver HTTPS globally with low latency.",
       "options": [
         {
           "id": "a",
@@ -2708,10 +2504,10 @@
       ]
     },
     {
-      "id": "soa-q078",
+      "id": "soa-q072",
       "domain": "networking-content",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to private access to S3 without internet gateway?",
+      "text": "After a design review, leadership requires the team to private access to S3 without internet gateway. Which approach is MOST reliable? private access to S3 without internet gateway.",
       "options": [
         {
           "id": "a",
@@ -2742,10 +2538,10 @@
       ]
     },
     {
-      "id": "soa-q079",
+      "id": "soa-q073",
       "domain": "networking-content",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to balance traffic across instances in multiple AZs?",
+      "text": "A hybrid environment must support a goal to balance traffic across instances in multiple AZs without changing application code. What should you implement? balance traffic across instances in multiple AZs.",
       "options": [
         {
           "id": "a",
@@ -2776,10 +2572,10 @@
       ]
     },
     {
-      "id": "soa-q080",
+      "id": "soa-q074",
       "domain": "networking-content",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to resolve internal service names in VPC?",
+      "text": "A regulated workload requires the organization to resolve internal service names in VPC. Which solution is BEST? resolve internal service names in VPC.",
       "options": [
         {
           "id": "a",
@@ -2810,10 +2606,10 @@
       ]
     },
     {
-      "id": "soa-q081",
+      "id": "soa-q075",
       "domain": "networking-content",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to inspect east-west traffic in VPC?",
+      "text": "Operations reports a need to inspect east-west traffic in VPC. What is the MOST operationally efficient solution? inspect east-west traffic in VPC.",
       "options": [
         {
           "id": "a",
@@ -2844,10 +2640,10 @@
       ]
     },
     {
-      "id": "soa-q082",
+      "id": "soa-q076",
       "domain": "networking-content",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to accelerate SaaS over internet with AWS network?",
+      "text": "After a design review, leadership requires the team to accelerate SaaS over internet with AWS network. Which approach is MOST reliable? accelerate SaaS over internet with AWS network.",
       "options": [
         {
           "id": "a",
@@ -2878,7 +2674,7 @@
       ]
     },
     {
-      "id": "soa-q083",
+      "id": "soa-q077",
       "domain": "networking-content",
       "type": "multiple-choice",
       "text": "Which service should you use to host private subnets for application tiers?",
@@ -2912,7 +2708,7 @@
       ]
     },
     {
-      "id": "soa-q084",
+      "id": "soa-q078",
       "domain": "networking-content",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to host private subnets for application tiers?",
@@ -2946,7 +2742,7 @@
       ]
     },
     {
-      "id": "soa-q085",
+      "id": "soa-q079",
       "domain": "networking-content",
       "type": "multiple-choice",
       "text": "A team must host private subnets for application tiers. Which option meets the requirement?",
@@ -2980,7 +2776,7 @@
       ]
     },
     {
-      "id": "soa-q086",
+      "id": "soa-q080",
       "domain": "networking-content",
       "type": "multiple-choice",
       "text": "Which service should you use to connect on-premises to AWS privately?",
@@ -3014,7 +2810,7 @@
       ]
     },
     {
-      "id": "soa-q087",
+      "id": "soa-q081",
       "domain": "networking-content",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to connect on-premises to AWS privately?",
@@ -3048,7 +2844,7 @@
       ]
     },
     {
-      "id": "soa-q088",
+      "id": "soa-q082",
       "domain": "networking-content",
       "type": "multiple-choice",
       "text": "A team must connect on-premises to AWS privately. Which option meets the requirement?",
@@ -3082,7 +2878,7 @@
       ]
     },
     {
-      "id": "soa-q089",
+      "id": "soa-q083",
       "domain": "networking-content",
       "type": "multiple-choice",
       "text": "Which service should you use to deliver HTTPS globally with low latency?",
@@ -3116,114 +2912,7 @@
       ]
     },
     {
-      "id": "soa-q090",
-      "domain": "networking-content",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to deliver HTTPS globally with low latency?",
-      "options": [
-        {
-          "id": "a",
-          "text": "CloudFront with ACM certificates"
-        },
-        {
-          "id": "b",
-          "text": "Single EC2 in one AZ for world"
-        },
-        {
-          "id": "c",
-          "text": "HTTP only"
-        },
-        {
-          "id": "d",
-          "text": "Self-signed expired"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "CloudFront caches at edge locations.",
-      "docs": [
-        {
-          "title": "CloudFront",
-          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q091",
-      "domain": "networking-content",
-      "type": "multiple-choice",
-      "text": "A team must deliver HTTPS globally with low latency. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "CloudFront with ACM certificates"
-        },
-        {
-          "id": "b",
-          "text": "Single EC2 in one AZ for world"
-        },
-        {
-          "id": "c",
-          "text": "HTTP only"
-        },
-        {
-          "id": "d",
-          "text": "Self-signed expired"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "CloudFront caches at edge locations.",
-      "docs": [
-        {
-          "title": "CloudFront",
-          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q092",
-      "domain": "reliability-continuity",
-      "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS KMS"
-        },
-        {
-          "id": "b",
-          "text": "Amazon Route 53"
-        },
-        {
-          "id": "c",
-          "text": "AWS Secrets Manager"
-        },
-        {
-          "id": "d",
-          "text": "Amazon CloudFront only for DNS"
-        },
-        {
-          "id": "e",
-          "text": "AWS Batch"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
-      "docs": [
-        {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q093",
+      "id": "soa-q084",
       "domain": "monitoring-logging",
       "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified CloudOps Engineer \u2013 Associate? (Select TWO.)",
@@ -3262,7 +2951,7 @@
       ]
     },
     {
-      "id": "soa-q094",
+      "id": "soa-q085",
       "domain": "monitoring-logging",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3302,342 +2991,41 @@
       ]
     },
     {
-      "id": "soa-q095",
-      "domain": "monitoring-logging",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon CloudWatch', what should you do FIRST when addressing Monitoring, Logging, Analysis, Remediation, and Performance Optimization objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon CloudWatch describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon CloudWatch",
-          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q096",
-      "domain": "monitoring-logging",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Systems Manager', what should you do FIRST when addressing Monitoring, Logging, Analysis, Remediation, and Performance Optimization objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Systems Manager describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Systems Manager",
-          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q097",
+      "id": "soa-q086",
       "domain": "reliability-continuity",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Backup', what should you do FIRST when addressing Reliability and Business Continuity objectives?",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+          "text": "AWS KMS"
         },
         {
           "id": "b",
-          "text": "Disable security logging to reduce noise"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "Use root user credentials for daily operations"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "Skip backup and recovery planning"
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
         }
       ],
       "correct": [
-        "a"
+        "a",
+        "c"
       ],
-      "explanation": "Official guides such as AWS Backup describe domain objectives; practice designs should follow AWS documented best practices.",
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
       "docs": [
         {
-          "title": "AWS Backup",
-          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q098",
-      "domain": "reliability-continuity",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Elastic Disaster Recovery', what should you do FIRST when addressing Reliability and Business Continuity objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Elastic Disaster Recovery describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Elastic Disaster Recovery",
-          "url": "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q099",
-      "domain": "deployment-automation",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS CloudFormation', what should you do FIRST when addressing Deployment, Provisioning, and Automation objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS CloudFormation describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS CloudFormation",
-          "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q100",
-      "domain": "deployment-automation",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Systems Manager State Manager', what should you do FIRST when addressing Deployment, Provisioning, and Automation objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Systems Manager State Manager describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Systems Manager State Manager",
-          "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q101",
-      "domain": "security-compliance",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'AWS Config', what should you do FIRST when addressing Security and Compliance objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as AWS Config describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "AWS Config",
-          "url": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q102",
-      "domain": "security-compliance",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon Inspector', what should you do FIRST when addressing Security and Compliance objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon Inspector describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon Inspector",
-          "url": "https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q103",
-      "domain": "networking-content",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon VPC', what should you do FIRST when addressing Networking and Content Delivery objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon VPC describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon VPC",
-          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q104",
-      "domain": "networking-content",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Elastic Load Balancing', what should you do FIRST when addressing Networking and Content Delivery objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Elastic Load Balancing describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Elastic Load Balancing",
-          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html"
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
         }
       ]
     }

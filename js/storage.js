@@ -52,7 +52,8 @@ function migrateLegacyStorage() {
 migrateLegacyStorage();
 
 const EXPORT_VERSION = 1;
-const RESUME_MAX_AGE_MS = 24 * 60 * 60 * 1000;
+/** Paused exams can be resumed within one week. */
+const RESUME_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
 /**
  * @param {string} key

@@ -8,6 +8,7 @@ from typing import Any, Callable
 
 from question_bank.common import RawQuestion, build_questions, dedupe_raw
 from question_bank.official_docs import is_official_url
+from question_bank.scenario_stems import comparison_stem_from_facts, scenario_stem_from_fact
 
 Fact = tuple[str, str, tuple[str, str, str], str, str, str]
 
@@ -138,8 +139,8 @@ def _resource_questions(spec: dict, cfg: VendorBuildConfig) -> list[RawQuestion]
                 (
                     did,
                     "multiple-choice",
-                    f"Per {cfg.official_prep_phrase}, which source should you use when studying "
-                    f"{dname.split(':')[-1].strip()} for {exam_name}?",
+                    f"You are preparing for {exam_name} and reviewing {dname.split(':')[-1].strip()}. "
+                    f"Which source aligns with {cfg.official_prep_phrase}?",
                     [
                         ("a", title),
                         ("b", "Unofficial leaked exam dumps"),
@@ -148,23 +149,6 @@ def _resource_questions(spec: dict, cfg: VendorBuildConfig) -> list[RawQuestion]
                     ],
                     ["a"],
                     f"Use {title} and other official materials listed in the exam guide—not copied exam items.",
-                    [(title, url)],
-                )
-            )
-            raw.append(
-                (
-                    did,
-                    "multiple-choice",
-                    f"According to '{title}', what is a documented best practice for "
-                    f"{dname.split(':')[-1].strip()}?",
-                    [
-                        ("a", "Follow the vendor documentation and exam objective domains"),
-                        ("b", "Disable logging to reduce storage cost"),
-                        ("c", "Share administrative credentials in chat"),
-                        ("d", "Skip change management for speed"),
-                    ],
-                    ["a"],
-                    f"{title} reflects official guidance; designs should align with documented objectives.",
                     [(title, url)],
                 )
             )
@@ -195,8 +179,13 @@ def _pad_domain(
 
     raw: list[RawQuestion] = []
     seen = _seen_stems(raw)
+
     for fact in facts:
-        _append_unique(raw, seen, _fact_mcq(domain_id, fact, cfg))
+        _append_unique(
+            raw,
+            seen,
+            _fact_mcq(domain_id, fact, cfg, scenario_stem_from_fact(fact[0], rng)),
+        )
 
     for fact in facts:
         if len(raw) >= target:
@@ -222,10 +211,7 @@ def _pad_domain(
             idx += 1
             _, c1, w1, e1, t1, u1 = f1
             _, c2, _, e2, t2, u2 = f2
-            stem = (
-                f"Which capability is provided by {c1} rather than {c2} "
-                f"when you need to {f1[0]}?"
-            )
+            stem = comparison_stem_from_facts(f1[0], f2[0])
             _append_unique(
                 raw,
                 seen,

@@ -194,7 +194,12 @@ export function renderBrowse(exams, onSelectCert) {
     );
 
     if (countEl) countEl.textContent = String(filtered.length);
-    section?.classList.toggle("hidden", filtered.length === 0);
+    if (section) {
+      section.classList.toggle("hidden", filtered.length === 0);
+      if (filtered.length > 0 && query) {
+        section.open = true;
+      }
+    }
     if (hintEl && cfg.hint) hintEl.textContent = cfg.hint;
 
     if (filtered.length > 0) anyVisible = true;
@@ -215,4 +220,31 @@ export function bindBrowseSearch(exams, onSelectCert) {
   searchInput.addEventListener("input", () => {
     renderBrowse(exams, onSelectCert);
   });
+}
+
+/** Remember which vendor sections are expanded (browse page). */
+export function bindBrowseCollapse() {
+  const key = "cert-master:browseOpen";
+  for (const vendor of VENDOR_ORDER) {
+    const el = document.getElementById(`browse-${vendor}-section`);
+    if (!el || el.dataset.collapseBound === "1") continue;
+    el.dataset.collapseBound = "1";
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(key) || "{}");
+      if (typeof saved[vendor] === "boolean") {
+        el.open = saved[vendor];
+      }
+    } catch {
+      /* ignore */
+    }
+    el.addEventListener("toggle", () => {
+      try {
+        const saved = JSON.parse(sessionStorage.getItem(key) || "{}");
+        saved[vendor] = el.open;
+        sessionStorage.setItem(key, JSON.stringify(saved));
+      } catch {
+        /* ignore */
+      }
+    });
+  }
 }

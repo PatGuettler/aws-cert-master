@@ -10,6 +10,7 @@ from question_bank.exam_catalog import EXAM_BY_ID
 from question_bank.fact_banks import BANKS, Fact
 from question_bank.fact_banks_more import BANKS_MORE
 from question_bank.fact_banks_pro import BANKS_PRO
+from question_bank.scenario_stems import comparison_stem_from_facts, scenario_stem_from_fact
 
 SCENARIO_PREFIXES = [
     "A solutions architect needs to",
@@ -126,27 +127,42 @@ def _pad_domain(
     rng: random.Random,
 ) -> list[RawQuestion]:
     raw: list[RawQuestion] = []
+    seen: set[str] = set()
+
+    def add(row: RawQuestion) -> None:
+        if row[2] in seen:
+            return
+        seen.add(row[2])
+        raw.append(row)
+
     for fact in facts:
-        raw.append(_fact_to_mcq(domain_id, fact))
+        add(
+            _fact_to_mcq(
+                domain_id,
+                fact,
+                scenario_stem_from_fact(fact[0], rng),
+            )
+        )
     for fact in facts:
         if len(raw) >= target:
             break
         for variant in _variant_facts(fact):
             variant_list = list(variant)
             variant_list[0] = domain_id
-            raw.append(tuple(variant_list))  # type: ignore[arg-type]
-    raw.extend(_scenario_questions(domain_id, facts, max(0, target - len(raw)), rng))
-    # Generic service comparison from facts if still short
+            add(tuple(variant_list))  # type: ignore[arg-type]
+    for fact in facts:
+        if len(raw) >= target:
+            break
+        prefix = rng.choice(SCENARIO_PREFIXES)
+        add(_fact_to_mcq(domain_id, fact, f"{prefix} {fact[0]}."))
     idx = 0
-    while len(raw) < target and facts:
+    while len(raw) < target and len(facts) >= 2:
         f1, f2 = facts[idx % len(facts)], facts[(idx + 1) % len(facts)]
         idx += 1
         _, c1, w1, e1, t1, u1 = f1
         _, c2, _, e2, t2, u2 = f2
-        stem = (
-            f"Which capability is provided by {c1} rather than {c2} for a workload that needs to {f1[0]}?"
-        )
-        raw.append(
+        stem = comparison_stem_from_facts(f1[0], f2[0])
+        add(
             (
                 domain_id,
                 "multiple-choice",
@@ -157,7 +173,7 @@ def _pad_domain(
                 [(t1, u1), (t2, u2)],
             )
         )
-    return raw[: max(target, len(raw))]
+    return raw[:target] if len(raw) >= target else raw
 
 
 def _multi_response_for_exam(exam_id: str, domains: list[dict], rng: random.Random) -> list[RawQuestion]:
@@ -266,27 +282,6 @@ def build_raw_questions(exam_id: str, min_total: int, seed: int = 42) -> list[Ra
         raw.extend(domain_raw)
 
     raw.extend(_multi_response_for_exam(exam_id, domains, rng))
-
-    # Exam-specific conceptual questions from domain resources
-    for domain in domains:
-        for res in domain.get("resources", [])[:2]:
-            raw.append(
-                (
-                    domain["id"],
-                    "multiple-choice",
-                    f"According to AWS best practices documented in '{res['title']}', what should you do FIRST when addressing {domain['name'].split(':')[-1].strip()} objectives?",
-                    [
-                        ("a", "Review the official AWS documentation and align designs to the exam guide domains"),
-                        ("b", "Disable security logging to reduce noise"),
-                        ("c", "Use root user credentials for daily operations"),
-                        ("d", "Skip backup and recovery planning"),
-                    ],
-                    ["a"],
-                    f"Official guides such as {res['title']} describe domain objectives; practice designs should follow AWS documented best practices.",
-                    [(res["title"], res["url"])],
-                )
-            )
-
     raw = dedupe_raw(raw)
 
     # Ensure minimum count with combinatorial scenario wraps

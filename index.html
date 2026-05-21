@@ -109,7 +109,10 @@
           Home
         </button>
         <button type="button" id="drawer-nav-browse" class="drawer-nav-btn">
-          Browse certifications
+          Practice certifications
+        </button>
+        <button type="button" id="drawer-nav-keytrain" class="drawer-nav-btn">
+          KeyTrain Certification
         </button>
         <button type="button" id="drawer-nav-dashboard" class="drawer-nav-btn">
           Your progress
@@ -185,8 +188,13 @@
         <div class="landing-quick-tiles">
           <button type="button" class="landing-tile landing-tile-action" id="landing-tile-browse">
             <span class="landing-tile-icon" aria-hidden="true">📋</span>
-            <span class="landing-tile-label">Browse exams</span>
-            <span class="landing-tile-desc">AWS, Azure, Google, CompTIA</span>
+            <span class="landing-tile-label">Practice certifications</span>
+            <span class="landing-tile-desc">Study mode — AWS, Azure, Google, CompTIA</span>
+          </button>
+          <button type="button" class="landing-tile landing-tile-action landing-tile-keytrain" id="landing-tile-keytrain">
+            <span class="landing-tile-icon" aria-hidden="true">🎓</span>
+            <span class="landing-tile-label">KeyTrain Certification</span>
+            <span class="landing-tile-desc">Pass/fail exam · PDF certificate</span>
           </button>
           <button type="button" class="landing-tile landing-tile-action" id="landing-tile-dashboard">
             <span class="landing-tile-icon" aria-hidden="true">📈</span>
@@ -241,6 +249,138 @@
         </section>
       </section>
 
+      <section id="view-keytrain-hub" class="view hidden">
+        <nav class="cert-breadcrumb">
+          <button type="button" id="btn-keytrain-hub-home" class="btn-text-link">← Home</button>
+        </nav>
+        <div class="keytrain-hub-header">
+          <h2>KeyTrain Certification</h2>
+          <p class="keytrain-hub-lead" id="keytrain-hub-tagline">
+            Formal certification assessments with pass/fail results and downloadable PDF certificates.
+          </p>
+          <p class="keytrain-hub-note">
+            Unlike <strong>Practice certifications</strong>, KeyTrain runs as a single timed attempt with
+            no feedback until you submit. Pass to unlock a personalized PDF certificate.
+          </p>
+        </div>
+        <div id="keytrain-cert-grid" class="landing-cert-grid"></div>
+      </section>
+
+      <section id="view-keytrain-cert" class="view hidden">
+        <nav class="cert-breadcrumb">
+          <button type="button" id="btn-keytrain-back-hub" class="btn-text-link">
+            ← KeyTrain certifications
+          </button>
+        </nav>
+        <div class="hero keytrain-hero">
+          <h2 id="keytrain-cert-title">KeyTrain Certification</h2>
+          <p class="cert-code" id="keytrain-cert-code"></p>
+          <p id="keytrain-cert-description" class="keytrain-cert-description"></p>
+          <div id="keytrain-issued-banner" class="exam-resume-banner hidden" role="status">
+            <p id="keytrain-issued-text" class="exam-resume-summary"></p>
+            <div class="exam-resume-actions">
+              <button type="button" id="btn-keytrain-view-cert" class="btn btn-outline">
+                View / download certificate
+              </button>
+            </div>
+          </div>
+          <div class="exam-meta">
+            <div class="meta-card">
+              <strong id="kt-meta-questions">—</strong>
+              <span>Questions</span>
+            </div>
+            <div class="meta-card">
+              <strong id="kt-meta-time">—</strong>
+              <span>Minutes</span>
+            </div>
+            <div class="meta-card">
+              <strong id="kt-meta-pass">—</strong>
+              <span>Passing score</span>
+            </div>
+            <div class="meta-card">
+              <strong id="kt-meta-max">—</strong>
+              <span>Max score</span>
+            </div>
+          </div>
+          <div class="cert-actions">
+            <button id="btn-keytrain-start" type="button" class="btn btn-primary">
+              Begin KeyTrain exam
+            </button>
+          </div>
+        </div>
+        <section class="keytrain-rules">
+          <h3>Assessment rules</h3>
+          <ul id="keytrain-rules-list" class="keytrain-rules-list"></ul>
+        </section>
+      </section>
+
+      <section id="view-keytrain-results" class="view hidden">
+        <div id="keytrain-results-header" class="results-header">
+          <h2 id="keytrain-results-title">Results</h2>
+          <p class="score-display" id="keytrain-results-score">0 / 1000</p>
+          <p id="keytrain-results-detail"></p>
+        </div>
+        <div id="keytrain-pass-actions" class="results-actions hidden">
+          <button id="btn-keytrain-get-cert" type="button" class="btn btn-primary">
+            Get your certificate
+          </button>
+          <button id="btn-keytrain-retake-pass" type="button" class="btn btn-outline">
+            Retake assessment
+          </button>
+          <button id="btn-keytrain-hub-pass" type="button" class="btn btn-outline">
+            KeyTrain home
+          </button>
+        </div>
+        <div id="keytrain-fail-actions" class="results-actions hidden">
+          <button id="btn-keytrain-retake-fail" type="button" class="btn btn-primary">
+            Retake assessment
+          </button>
+          <button id="btn-keytrain-practice" type="button" class="btn btn-secondary">
+            Practice this exam (study mode)
+          </button>
+          <button id="btn-keytrain-hub-fail" type="button" class="btn btn-outline">
+            KeyTrain home
+          </button>
+        </div>
+        <p class="disclaimer">
+          KeyTrain results are based on this site's practice question bank. They are not official vendor
+          certification exams.
+        </p>
+      </section>
+
+      <section id="view-keytrain-certificate" class="view hidden">
+        <nav class="cert-breadcrumb">
+          <button type="button" id="btn-keytrain-cert-back" class="btn-text-link">
+            ← Back to results
+          </button>
+        </nav>
+        <h2>Your KeyTrain certificate</h2>
+        <p class="keytrain-cert-form-lead">
+          Enter the name exactly as it should appear on your PDF certificate, then download or print.
+        </p>
+        <label class="keytrain-name-label" for="keytrain-recipient-name">
+          Full name on certificate
+          <input
+            type="text"
+            id="keytrain-recipient-name"
+            class="keytrain-name-input"
+            autocomplete="name"
+            maxlength="80"
+            placeholder="e.g. Jordan Lee"
+          />
+        </label>
+        <p id="keytrain-cert-error" class="keytrain-cert-error hidden" role="alert"></p>
+        <div id="keytrain-cert-preview" class="keytrain-cert-preview" aria-hidden="true"></div>
+        <div class="results-actions">
+          <button id="btn-keytrain-download-pdf" type="button" class="btn btn-primary">
+            Download PDF certificate
+          </button>
+          <button id="btn-keytrain-cert-hub" type="button" class="btn btn-outline">
+            KeyTrain home
+          </button>
+        </div>
+      </section>
+
       <section id="view-browse" class="view hidden">
         <nav class="cert-breadcrumb">
           <button type="button" id="btn-browse-home" class="btn-text-link">
@@ -248,7 +388,7 @@
           </button>
         </nav>
         <div class="browse-header">
-          <h2>All certifications</h2>
+          <h2>Practice certifications</h2>
           <p class="browse-lead">
             Search or scroll to pick an exam. Each opens a page with domains,
             practice tests, and progress for that certification.
@@ -268,53 +408,41 @@
         <p id="browse-no-results" class="browse-no-results hidden" role="status">
           No exams match your search. Try a shorter keyword or clear the search box.
         </p>
-        <section
+        <details
           id="browse-aws-section"
-          class="landing-section"
-          aria-labelledby="browse-aws-heading"
+          class="landing-section browse-vendor-collapse"
+          open
         >
-          <h3 id="browse-aws-heading">
-            AWS certifications
+          <summary class="browse-vendor-summary" id="browse-aws-heading">
+            <span class="browse-vendor-title">AWS certifications</span>
             <span class="landing-count">(<span id="browse-aws-count">0</span>)</span>
-          </h3>
+          </summary>
           <div id="browse-cert-grid-aws" class="landing-cert-grid"></div>
-        </section>
-        <section
-          id="browse-azure-section"
-          class="landing-section"
-          aria-labelledby="browse-azure-heading"
-        >
-          <h3 id="browse-azure-heading">
-            Microsoft Azure certifications
+        </details>
+        <details id="browse-azure-section" class="landing-section browse-vendor-collapse">
+          <summary class="browse-vendor-summary" id="browse-azure-heading">
+            <span class="browse-vendor-title">Microsoft Azure certifications</span>
             <span class="landing-count">(<span id="browse-azure-count">0</span>)</span>
-          </h3>
+          </summary>
           <div id="browse-cert-grid-azure" class="landing-cert-grid"></div>
-        </section>
-        <section
-          id="browse-google-section"
-          class="landing-section"
-          aria-labelledby="browse-google-heading"
-        >
-          <h3 id="browse-google-heading">
-            Google Cloud certifications
+        </details>
+        <details id="browse-google-section" class="landing-section browse-vendor-collapse">
+          <summary class="browse-vendor-summary" id="browse-google-heading">
+            <span class="browse-vendor-title">Google Cloud certifications</span>
             <span class="landing-count">(<span id="browse-google-count">0</span>)</span>
-          </h3>
+          </summary>
           <div id="browse-cert-grid-google" class="landing-cert-grid"></div>
-        </section>
-        <section
-          id="browse-comptia-section"
-          class="landing-section"
-          aria-labelledby="browse-comptia-heading"
-        >
-          <h3 id="browse-comptia-heading">
-            CompTIA certifications
+        </details>
+        <details id="browse-comptia-section" class="landing-section browse-vendor-collapse">
+          <summary class="browse-vendor-summary" id="browse-comptia-heading">
+            <span class="browse-vendor-title">CompTIA certifications</span>
             <span class="landing-count">(<span id="browse-comptia-count">0</span>)</span>
-          </h3>
+          </summary>
           <p class="landing-hint">
             Includes <strong>acronym study</strong> on each exam page.
           </p>
           <div id="browse-cert-grid-comptia" class="landing-cert-grid"></div>
-        </section>
+        </details>
       </section>
 
       <section id="view-cert" class="view hidden">
@@ -328,9 +456,20 @@
           <p class="cert-code" id="home-cert-code">CLF-C02</p>
           <p id="home-cert-description">
             Each attempt draws random questions from the bank using official exam
-            domain weights, with shuffled order and answer choices. No account required.
+            domain weights. You can pause and resume within a week. No account required.
           </p>
           <p id="pool-warning" class="hidden" role="status"></p>
+          <div id="exam-resume-banner" class="exam-resume-banner hidden" role="region" aria-label="Paused exam">
+            <p id="exam-resume-summary" class="exam-resume-summary"></p>
+            <div class="exam-resume-actions">
+              <button id="btn-resume-exam" type="button" class="btn btn-primary">
+                Continue exam
+              </button>
+              <button id="btn-discard-resume" type="button" class="btn btn-outline">
+                Start fresh
+              </button>
+            </div>
+          </div>
           <div class="exam-meta">
             <div class="meta-card">
               <strong id="meta-questions">65</strong>
@@ -425,6 +564,9 @@
         <nav class="exam-nav" aria-label="Exam navigation">
           <button id="btn-prev" type="button" class="btn btn-outline" disabled>
             Previous
+          </button>
+          <button id="btn-pause-exam" type="button" class="btn btn-outline btn-pause-exam">
+            Pause &amp; exit
           </button>
           <button id="btn-next" type="button" class="btn btn-secondary">
             Next

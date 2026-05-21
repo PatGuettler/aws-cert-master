@@ -82,7 +82,7 @@
       "id": "mls-q001",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "Per official AWS exam guides and documentation, which source should you use when studying Data Engineering for AWS Certified Machine Learning \u2013 Specialty?",
+      "text": "You are preparing for AWS Certified Machine Learning \u2013 Specialty and reviewing Data Engineering. Which source aligns with official AWS exam guides and documentation?",
       "options": [
         {
           "id": "a",
@@ -114,111 +114,9 @@
     },
     {
       "id": "mls-q002",
-      "domain": "data-engineering",
-      "type": "multiple-choice",
-      "text": "According to 'MLS-C01 Exam Guide', what is a documented best practice for Data Engineering?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "MLS-C01 Exam Guide reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "MLS-C01 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
-        }
-      ]
-    },
-    {
-      "id": "mls-q003",
-      "domain": "data-engineering",
-      "type": "multiple-choice",
-      "text": "According to 'Amazon SageMaker Data Wrangler', what is a documented best practice for Data Engineering?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Amazon SageMaker Data Wrangler reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Amazon SageMaker Data Wrangler",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q004",
-      "domain": "data-engineering",
-      "type": "multiple-choice",
-      "text": "According to 'AWS Glue', what is a documented best practice for Data Engineering?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "AWS Glue reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "AWS Glue",
-          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q005",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "Per official AWS exam guides and documentation, which source should you use when studying Exploratory Data Analysis for AWS Certified Machine Learning \u2013 Specialty?",
+      "text": "You are preparing for AWS Certified Machine Learning \u2013 Specialty and reviewing Exploratory Data Analysis. Which source aligns with official AWS exam guides and documentation?",
       "options": [
         {
           "id": "a",
@@ -249,78 +147,10 @@
       ]
     },
     {
-      "id": "mls-q006",
-      "domain": "eda",
-      "type": "multiple-choice",
-      "text": "According to 'SageMaker Studio', what is a documented best practice for Exploratory Data Analysis?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "SageMaker Studio reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "SageMaker Studio",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q007",
-      "domain": "eda",
-      "type": "multiple-choice",
-      "text": "According to 'Amazon Athena', what is a documented best practice for Exploratory Data Analysis?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Amazon Athena reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Amazon Athena",
-          "url": "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q008",
+      "id": "mls-q003",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "Per official AWS exam guides and documentation, which source should you use when studying Modeling for AWS Certified Machine Learning \u2013 Specialty?",
+      "text": "You are preparing for AWS Certified Machine Learning \u2013 Specialty and reviewing Modeling. Which source aligns with official AWS exam guides and documentation?",
       "options": [
         {
           "id": "a",
@@ -351,78 +181,10 @@
       ]
     },
     {
-      "id": "mls-q009",
-      "domain": "modeling",
-      "type": "multiple-choice",
-      "text": "According to 'SageMaker training', what is a documented best practice for Modeling?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "SageMaker training reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "SageMaker training",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q010",
-      "domain": "modeling",
-      "type": "multiple-choice",
-      "text": "According to 'SageMaker model tuning', what is a documented best practice for Modeling?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "SageMaker model tuning reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "SageMaker model tuning",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q011",
+      "id": "mls-q004",
       "domain": "ml-operations",
       "type": "multiple-choice",
-      "text": "Per official AWS exam guides and documentation, which source should you use when studying Machine Learning Implementation and Operations for AWS Certified Machine Learning \u2013 Specialty?",
+      "text": "You are preparing for AWS Certified Machine Learning \u2013 Specialty and reviewing Machine Learning Implementation and Operations. Which source aligns with official AWS exam guides and documentation?",
       "options": [
         {
           "id": "a",
@@ -453,78 +215,10 @@
       ]
     },
     {
-      "id": "mls-q012",
-      "domain": "ml-operations",
-      "type": "multiple-choice",
-      "text": "According to 'SageMaker endpoints', what is a documented best practice for Machine Learning Implementation and Operations?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "SageMaker endpoints reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "SageMaker endpoints",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q013",
-      "domain": "ml-operations",
-      "type": "multiple-choice",
-      "text": "According to 'SageMaker Model Monitor', what is a documented best practice for Machine Learning Implementation and Operations?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "SageMaker Model Monitor reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "SageMaker Model Monitor",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q014",
+      "id": "mls-q005",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to prepare ML features at scale?",
+      "text": "A company needs to prepare ML features at scale. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -555,10 +249,10 @@
       ]
     },
     {
-      "id": "mls-q015",
+      "id": "mls-q006",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to ETL for ML datasets?",
+      "text": "The DevOps team is automating releases and must ETL for ML datasets. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -589,10 +283,10 @@
       ]
     },
     {
-      "id": "mls-q016",
+      "id": "mls-q007",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to label training data at scale?",
+      "text": "After a design review, leadership requires the team to label training data at scale. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -623,10 +317,10 @@
       ]
     },
     {
-      "id": "mls-q017",
+      "id": "mls-q008",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to store features for reuse?",
+      "text": "A regulated workload requires the organization to store features for reuse. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -657,10 +351,10 @@
       ]
     },
     {
-      "id": "mls-q018",
+      "id": "mls-q009",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to ingest streaming data for ML?",
+      "text": "After a design review, leadership requires the team to ingest streaming data for ML. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -691,7 +385,7 @@
       ]
     },
     {
-      "id": "mls-q019",
+      "id": "mls-q010",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "Which service should you use to prepare ML features at scale?",
@@ -725,7 +419,7 @@
       ]
     },
     {
-      "id": "mls-q020",
+      "id": "mls-q011",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to prepare ML features at scale?",
@@ -759,7 +453,7 @@
       ]
     },
     {
-      "id": "mls-q021",
+      "id": "mls-q012",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "A team must prepare ML features at scale. Which option meets the requirement?",
@@ -793,7 +487,7 @@
       ]
     },
     {
-      "id": "mls-q022",
+      "id": "mls-q013",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "Which service should you use to ETL for ML datasets?",
@@ -827,7 +521,7 @@
       ]
     },
     {
-      "id": "mls-q023",
+      "id": "mls-q014",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to ETL for ML datasets?",
@@ -861,7 +555,7 @@
       ]
     },
     {
-      "id": "mls-q024",
+      "id": "mls-q015",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "A team must ETL for ML datasets. Which option meets the requirement?",
@@ -895,7 +589,7 @@
       ]
     },
     {
-      "id": "mls-q025",
+      "id": "mls-q016",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "Which service should you use to label training data at scale?",
@@ -929,7 +623,7 @@
       ]
     },
     {
-      "id": "mls-q026",
+      "id": "mls-q017",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to label training data at scale?",
@@ -963,7 +657,7 @@
       ]
     },
     {
-      "id": "mls-q027",
+      "id": "mls-q018",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "A team must label training data at scale. Which option meets the requirement?",
@@ -997,7 +691,7 @@
       ]
     },
     {
-      "id": "mls-q028",
+      "id": "mls-q019",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "Which service should you use to store features for reuse?",
@@ -1031,7 +725,7 @@
       ]
     },
     {
-      "id": "mls-q029",
+      "id": "mls-q020",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to store features for reuse?",
@@ -1065,7 +759,7 @@
       ]
     },
     {
-      "id": "mls-q030",
+      "id": "mls-q021",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "A team must store features for reuse. Which option meets the requirement?",
@@ -1099,7 +793,7 @@
       ]
     },
     {
-      "id": "mls-q031",
+      "id": "mls-q022",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "Which service should you use to ingest streaming data for ML?",
@@ -1133,7 +827,7 @@
       ]
     },
     {
-      "id": "mls-q032",
+      "id": "mls-q023",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to ingest streaming data for ML?",
@@ -1167,7 +861,7 @@
       ]
     },
     {
-      "id": "mls-q033",
+      "id": "mls-q024",
       "domain": "data-engineering",
       "type": "multiple-choice",
       "text": "A team must ingest streaming data for ML. Which option meets the requirement?",
@@ -1201,10 +895,10 @@
       ]
     },
     {
-      "id": "mls-q034",
+      "id": "mls-q025",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "A solutions architect needs to prepare ML features at scale.",
+      "text": "For a regulated workload, you should prepare ML features at scale.",
       "options": [
         {
           "id": "a",
@@ -1235,10 +929,10 @@
       ]
     },
     {
-      "id": "mls-q035",
+      "id": "mls-q026",
       "domain": "data-engineering",
       "type": "multiple-choice",
-      "text": "An organization wants to ETL for ML datasets.",
+      "text": "A development team must ETL for ML datasets.",
       "options": [
         {
           "id": "a",
@@ -1269,10 +963,10 @@
       ]
     },
     {
-      "id": "mls-q036",
+      "id": "mls-q027",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to managed Jupyter for exploration?",
+      "text": "During peak traffic, the platform team must managed Jupyter for exploration. What should they do FIRST?",
       "options": [
         {
           "id": "a",
@@ -1303,10 +997,10 @@
       ]
     },
     {
-      "id": "mls-q037",
+      "id": "mls-q028",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to query data lakes for features?",
+      "text": "The DevOps team is automating releases and must query data lakes for features. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -1337,10 +1031,10 @@
       ]
     },
     {
-      "id": "mls-q038",
+      "id": "mls-q029",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to visualize dataset bias?",
+      "text": "A regulated workload requires the organization to visualize dataset bias. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -1371,10 +1065,10 @@
       ]
     },
     {
-      "id": "mls-q039",
+      "id": "mls-q030",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to profile large tabular datasets?",
+      "text": "An audit found gaps: the organization must profile large tabular datasets. Which option addresses this?",
       "options": [
         {
           "id": "a",
@@ -1405,7 +1099,7 @@
       ]
     },
     {
-      "id": "mls-q040",
+      "id": "mls-q031",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "Which service should you use to managed Jupyter for exploration?",
@@ -1439,7 +1133,7 @@
       ]
     },
     {
-      "id": "mls-q041",
+      "id": "mls-q032",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to managed Jupyter for exploration?",
@@ -1473,7 +1167,7 @@
       ]
     },
     {
-      "id": "mls-q042",
+      "id": "mls-q033",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "A team must managed Jupyter for exploration. Which option meets the requirement?",
@@ -1507,7 +1201,7 @@
       ]
     },
     {
-      "id": "mls-q043",
+      "id": "mls-q034",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "Which service should you use to query data lakes for features?",
@@ -1541,7 +1235,7 @@
       ]
     },
     {
-      "id": "mls-q044",
+      "id": "mls-q035",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to query data lakes for features?",
@@ -1575,7 +1269,7 @@
       ]
     },
     {
-      "id": "mls-q045",
+      "id": "mls-q036",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "A team must query data lakes for features. Which option meets the requirement?",
@@ -1609,7 +1303,7 @@
       ]
     },
     {
-      "id": "mls-q046",
+      "id": "mls-q037",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "Which service should you use to visualize dataset bias?",
@@ -1643,7 +1337,7 @@
       ]
     },
     {
-      "id": "mls-q047",
+      "id": "mls-q038",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to visualize dataset bias?",
@@ -1677,7 +1371,7 @@
       ]
     },
     {
-      "id": "mls-q048",
+      "id": "mls-q039",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "A team must visualize dataset bias. Which option meets the requirement?",
@@ -1711,7 +1405,7 @@
       ]
     },
     {
-      "id": "mls-q049",
+      "id": "mls-q040",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "Which service should you use to profile large tabular datasets?",
@@ -1745,7 +1439,7 @@
       ]
     },
     {
-      "id": "mls-q050",
+      "id": "mls-q041",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to profile large tabular datasets?",
@@ -1779,7 +1473,7 @@
       ]
     },
     {
-      "id": "mls-q051",
+      "id": "mls-q042",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "A team must profile large tabular datasets. Which option meets the requirement?",
@@ -1813,10 +1507,10 @@
       ]
     },
     {
-      "id": "mls-q052",
+      "id": "mls-q043",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "An organization wants to managed Jupyter for exploration.",
+      "text": "A development team must managed Jupyter for exploration.",
       "options": [
         {
           "id": "a",
@@ -1847,10 +1541,10 @@
       ]
     },
     {
-      "id": "mls-q053",
+      "id": "mls-q044",
       "domain": "eda",
       "type": "multiple-choice",
-      "text": "A solutions architect needs to query data lakes for features.",
+      "text": "An organization wants to query data lakes for features.",
       "options": [
         {
           "id": "a",
@@ -1881,7 +1575,7 @@
       ]
     },
     {
-      "id": "mls-q054",
+      "id": "mls-q045",
       "domain": "eda",
       "type": "multiple-choice",
       "text": "For a regulated workload, you should visualize dataset bias.",
@@ -1915,10 +1609,10 @@
       ]
     },
     {
-      "id": "mls-q055",
+      "id": "mls-q046",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to train models with built-in algorithms?",
+      "text": "An audit found gaps: the organization must train models with built-in algorithms. Which option addresses this?",
       "options": [
         {
           "id": "a",
@@ -1949,10 +1643,10 @@
       ]
     },
     {
-      "id": "mls-q056",
+      "id": "mls-q047",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to hyperparameter tuning jobs?",
+      "text": "A hybrid environment must support a goal to hyperparameter tuning jobs without changing application code. What should you implement?",
       "options": [
         {
           "id": "a",
@@ -1983,10 +1677,10 @@
       ]
     },
     {
-      "id": "mls-q057",
+      "id": "mls-q048",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to distributed training on GPU clusters?",
+      "text": "For cost and security, the team must distributed training on GPU clusters. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -2017,10 +1711,10 @@
       ]
     },
     {
-      "id": "mls-q058",
+      "id": "mls-q049",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to feature store for training and serving?",
+      "text": "A hybrid environment must support a goal to feature store for training and serving without changing application code. What should you implement?",
       "options": [
         {
           "id": "a",
@@ -2051,10 +1745,10 @@
       ]
     },
     {
-      "id": "mls-q059",
+      "id": "mls-q050",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to batch transform for large inference?",
+      "text": "A company needs to batch transform for large inference. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -2085,7 +1779,7 @@
       ]
     },
     {
-      "id": "mls-q060",
+      "id": "mls-q051",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "Which service should you use to train models with built-in algorithms?",
@@ -2119,7 +1813,7 @@
       ]
     },
     {
-      "id": "mls-q061",
+      "id": "mls-q052",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to train models with built-in algorithms?",
@@ -2153,7 +1847,7 @@
       ]
     },
     {
-      "id": "mls-q062",
+      "id": "mls-q053",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "A team must train models with built-in algorithms. Which option meets the requirement?",
@@ -2187,7 +1881,7 @@
       ]
     },
     {
-      "id": "mls-q063",
+      "id": "mls-q054",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "Which service should you use to hyperparameter tuning jobs?",
@@ -2221,7 +1915,7 @@
       ]
     },
     {
-      "id": "mls-q064",
+      "id": "mls-q055",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to hyperparameter tuning jobs?",
@@ -2255,7 +1949,7 @@
       ]
     },
     {
-      "id": "mls-q065",
+      "id": "mls-q056",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "A team must hyperparameter tuning jobs. Which option meets the requirement?",
@@ -2289,7 +1983,7 @@
       ]
     },
     {
-      "id": "mls-q066",
+      "id": "mls-q057",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "Which service should you use to distributed training on GPU clusters?",
@@ -2323,7 +2017,7 @@
       ]
     },
     {
-      "id": "mls-q067",
+      "id": "mls-q058",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to distributed training on GPU clusters?",
@@ -2357,7 +2051,7 @@
       ]
     },
     {
-      "id": "mls-q068",
+      "id": "mls-q059",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "A team must distributed training on GPU clusters. Which option meets the requirement?",
@@ -2391,7 +2085,7 @@
       ]
     },
     {
-      "id": "mls-q069",
+      "id": "mls-q060",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "Which service should you use to feature store for training and serving?",
@@ -2425,7 +2119,7 @@
       ]
     },
     {
-      "id": "mls-q070",
+      "id": "mls-q061",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to feature store for training and serving?",
@@ -2459,7 +2153,7 @@
       ]
     },
     {
-      "id": "mls-q071",
+      "id": "mls-q062",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "A team must feature store for training and serving. Which option meets the requirement?",
@@ -2493,7 +2187,7 @@
       ]
     },
     {
-      "id": "mls-q072",
+      "id": "mls-q063",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "Which service should you use to batch transform for large inference?",
@@ -2527,7 +2221,7 @@
       ]
     },
     {
-      "id": "mls-q073",
+      "id": "mls-q064",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to batch transform for large inference?",
@@ -2561,7 +2255,7 @@
       ]
     },
     {
-      "id": "mls-q074",
+      "id": "mls-q065",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "A team must batch transform for large inference. Which option meets the requirement?",
@@ -2595,7 +2289,7 @@
       ]
     },
     {
-      "id": "mls-q075",
+      "id": "mls-q066",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "A development team must train models with built-in algorithms.",
@@ -2629,10 +2323,10 @@
       ]
     },
     {
-      "id": "mls-q076",
+      "id": "mls-q067",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "An organization wants to hyperparameter tuning jobs.",
+      "text": "For a regulated workload, you should hyperparameter tuning jobs.",
       "options": [
         {
           "id": "a",
@@ -2663,10 +2357,10 @@
       ]
     },
     {
-      "id": "mls-q077",
+      "id": "mls-q068",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "A solutions architect needs to distributed training on GPU clusters.",
+      "text": "An organization wants to distributed training on GPU clusters.",
       "options": [
         {
           "id": "a",
@@ -2697,10 +2391,10 @@
       ]
     },
     {
-      "id": "mls-q078",
+      "id": "mls-q069",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "For a regulated workload, you should feature store for training and serving.",
+      "text": "A solutions architect needs to feature store for training and serving.",
       "options": [
         {
           "id": "a",
@@ -2731,7 +2425,7 @@
       ]
     },
     {
-      "id": "mls-q079",
+      "id": "mls-q070",
       "domain": "modeling",
       "type": "multiple-choice",
       "text": "A development team must batch transform for large inference.",
@@ -2765,10 +2459,10 @@
       ]
     },
     {
-      "id": "mls-q080",
+      "id": "mls-q071",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "An organization wants to train models with built-in algorithms.",
+      "text": "For a regulated workload, you should train models with built-in algorithms.",
       "options": [
         {
           "id": "a",
@@ -2799,10 +2493,10 @@
       ]
     },
     {
-      "id": "mls-q081",
+      "id": "mls-q072",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "A solutions architect needs to hyperparameter tuning jobs.",
+      "text": "An organization wants to hyperparameter tuning jobs.",
       "options": [
         {
           "id": "a",
@@ -2833,10 +2527,10 @@
       ]
     },
     {
-      "id": "mls-q082",
+      "id": "mls-q073",
       "domain": "modeling",
       "type": "multiple-choice",
-      "text": "For a regulated workload, you should distributed training on GPU clusters.",
+      "text": "A solutions architect needs to distributed training on GPU clusters.",
       "options": [
         {
           "id": "a",
@@ -2867,10 +2561,10 @@
       ]
     },
     {
-      "id": "mls-q083",
+      "id": "mls-q074",
       "domain": "ml-operations",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deploy real-time inference endpoints?",
+      "text": "The DevOps team is automating releases and must deploy real-time inference endpoints. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -2901,10 +2595,10 @@
       ]
     },
     {
-      "id": "mls-q084",
+      "id": "mls-q075",
       "domain": "ml-operations",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to detect model drift?",
+      "text": "For cost and security, the team must detect model drift. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -2935,7 +2629,7 @@
       ]
     },
     {
-      "id": "mls-q085",
+      "id": "mls-q076",
       "domain": "ml-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to deploy real-time inference endpoints?",
@@ -2969,7 +2663,7 @@
       ]
     },
     {
-      "id": "mls-q086",
+      "id": "mls-q077",
       "domain": "ml-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to deploy real-time inference endpoints?",
@@ -3003,7 +2697,7 @@
       ]
     },
     {
-      "id": "mls-q087",
+      "id": "mls-q078",
       "domain": "ml-operations",
       "type": "multiple-choice",
       "text": "A team must deploy real-time inference endpoints. Which option meets the requirement?",
@@ -3037,7 +2731,7 @@
       ]
     },
     {
-      "id": "mls-q088",
+      "id": "mls-q079",
       "domain": "ml-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to detect model drift?",
@@ -3071,7 +2765,7 @@
       ]
     },
     {
-      "id": "mls-q089",
+      "id": "mls-q080",
       "domain": "ml-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to detect model drift?",
@@ -3105,7 +2799,7 @@
       ]
     },
     {
-      "id": "mls-q090",
+      "id": "mls-q081",
       "domain": "ml-operations",
       "type": "multiple-choice",
       "text": "A team must detect model drift. Which option meets the requirement?",
@@ -3139,10 +2833,10 @@
       ]
     },
     {
-      "id": "mls-q091",
+      "id": "mls-q082",
       "domain": "ml-operations",
       "type": "multiple-choice",
-      "text": "For a regulated workload, you should deploy real-time inference endpoints.",
+      "text": "A development team must deploy real-time inference endpoints.",
       "options": [
         {
           "id": "a",
@@ -3173,10 +2867,10 @@
       ]
     },
     {
-      "id": "mls-q092",
+      "id": "mls-q083",
       "domain": "ml-operations",
       "type": "multiple-choice",
-      "text": "A development team must detect model drift.",
+      "text": "A solutions architect needs to detect model drift.",
       "options": [
         {
           "id": "a",
@@ -3207,10 +2901,10 @@
       ]
     },
     {
-      "id": "mls-q093",
+      "id": "mls-q084",
       "domain": "ml-operations",
       "type": "multiple-choice",
-      "text": "A solutions architect needs to deploy real-time inference endpoints.",
+      "text": "An organization wants to deploy real-time inference endpoints.",
       "options": [
         {
           "id": "a",

@@ -78,7 +78,7 @@
       "id": "aip-q001",
       "domain": "foundation-model-integration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to invoke multiple FMs through unified APIs?",
+      "text": "An audit found gaps: the organization must invoke multiple FMs through unified APIs. Which option addresses this? invoke multiple FMs through unified APIs.",
       "options": [
         {
           "id": "a",
@@ -112,7 +112,7 @@
       "id": "aip-q002",
       "domain": "foundation-model-integration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to choose model by latency vs quality tradeoff?",
+      "text": "The DevOps team is automating releases and must choose model by latency vs quality tradeoff. Which design fits best? choose model by latency vs quality tradeoff.",
       "options": [
         {
           "id": "a",
@@ -146,7 +146,7 @@
       "id": "aip-q003",
       "domain": "foundation-model-integration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to implement streaming responses in chat UI?",
+      "text": "During peak traffic, the platform team must implement streaming responses in chat UI. What should they do FIRST? implement streaming responses in chat UI.",
       "options": [
         {
           "id": "a",
@@ -180,7 +180,7 @@
       "id": "aip-q004",
       "domain": "foundation-model-integration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to provision throughput for steady high TPS?",
+      "text": "For cost and security, the team must provision throughput for steady high TPS. What is the recommended approach? provision throughput for steady high TPS.",
       "options": [
         {
           "id": "a",
@@ -214,7 +214,7 @@
       "id": "aip-q005",
       "domain": "foundation-model-integration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to fine-tune models with proprietary data?",
+      "text": "A hybrid environment must support a goal to fine-tune models with proprietary data without changing application code. What should you implement? fine-tune models with proprietary data.",
       "options": [
         {
           "id": "a",
@@ -248,7 +248,7 @@
       "id": "aip-q006",
       "domain": "foundation-model-integration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deploy custom model weights securely?",
+      "text": "The DevOps team is automating releases and must deploy custom model weights securely. Which design fits best? deploy custom model weights securely.",
       "options": [
         {
           "id": "a",
@@ -282,7 +282,7 @@
       "id": "aip-q007",
       "domain": "foundation-model-integration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to abstract model vendor behind application interface?",
+      "text": "Operations reports a need to abstract model vendor behind application interface. What is the MOST operationally efficient solution? abstract model vendor behind application interface.",
       "options": [
         {
           "id": "a",
@@ -316,7 +316,7 @@
       "id": "aip-q008",
       "domain": "foundation-model-integration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to log token usage for cost governance?",
+      "text": "An audit found gaps: the organization must log token usage for cost governance. Which option addresses this? log token usage for cost governance.",
       "options": [
         {
           "id": "a",
@@ -824,43 +824,9 @@
     },
     {
       "id": "aip-q023",
-      "domain": "foundation-model-integration",
-      "type": "multiple-choice",
-      "text": "A team must fine-tune models with proprietary data. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Bedrock model customization"
-        },
-        {
-          "id": "b",
-          "text": "Send secrets in training file public"
-        },
-        {
-          "id": "c",
-          "text": "No holdout set"
-        },
-        {
-          "id": "d",
-          "text": "Ignore license"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Customization adapts FMs to domain tasks.",
-      "docs": [
-        {
-          "title": "Customization",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q024",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to ingest PDFs into a knowledge base?",
+      "text": "While troubleshooting latency, engineers determine they must ingest PDFs into a knowledge base. Which action is appropriate? ingest PDFs into a knowledge base.",
       "options": [
         {
           "id": "a",
@@ -891,10 +857,10 @@
       ]
     },
     {
-      "id": "aip-q025",
+      "id": "aip-q024",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to choose chunking strategy for technical docs?",
+      "text": "For cost and security, the team must choose chunking strategy for technical docs. What is the recommended approach? choose chunking strategy for technical docs.",
       "options": [
         {
           "id": "a",
@@ -925,10 +891,10 @@
       ]
     },
     {
-      "id": "aip-q026",
+      "id": "aip-q025",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to store embeddings in vector database?",
+      "text": "A regulated workload requires the organization to store embeddings in vector database. Which solution is BEST? store embeddings in vector database.",
       "options": [
         {
           "id": "a",
@@ -959,10 +925,10 @@
       ]
     },
     {
-      "id": "aip-q027",
+      "id": "aip-q026",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to filter retrieval by tenant metadata?",
+      "text": "During peak traffic, the platform team must filter retrieval by tenant metadata. What should they do FIRST? filter retrieval by tenant metadata.",
       "options": [
         {
           "id": "a",
@@ -993,10 +959,10 @@
       ]
     },
     {
-      "id": "aip-q028",
+      "id": "aip-q027",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to refresh stale documents in RAG index?",
+      "text": "A company needs to refresh stale documents in RAG index. Which option meets the requirement with the LEAST implementation effort? refresh stale documents in RAG index.",
       "options": [
         {
           "id": "a",
@@ -1027,10 +993,10 @@
       ]
     },
     {
-      "id": "aip-q029",
+      "id": "aip-q028",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to evaluate retrieval precision/recall?",
+      "text": "The DevOps team is automating releases and must evaluate retrieval precision/recall. Which design fits best? evaluate retrieval precision/recall.",
       "options": [
         {
           "id": "a",
@@ -1061,10 +1027,10 @@
       ]
     },
     {
-      "id": "aip-q030",
+      "id": "aip-q029",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to hybrid search keyword plus vector?",
+      "text": "An audit found gaps: the organization must hybrid search keyword plus vector. Which option addresses this? hybrid search keyword plus vector.",
       "options": [
         {
           "id": "a",
@@ -1095,10 +1061,10 @@
       ]
     },
     {
-      "id": "aip-q031",
+      "id": "aip-q030",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to cite sources in answers to users?",
+      "text": "During peak traffic, the platform team must cite sources in answers to users. What should they do FIRST? cite sources in answers to users.",
       "options": [
         {
           "id": "a",
@@ -1129,7 +1095,7 @@
       ]
     },
     {
-      "id": "aip-q032",
+      "id": "aip-q031",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "Which service should you use to ingest PDFs into a knowledge base?",
@@ -1163,7 +1129,7 @@
       ]
     },
     {
-      "id": "aip-q033",
+      "id": "aip-q032",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to ingest PDFs into a knowledge base?",
@@ -1197,7 +1163,7 @@
       ]
     },
     {
-      "id": "aip-q034",
+      "id": "aip-q033",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "A team must ingest PDFs into a knowledge base. Which option meets the requirement?",
@@ -1231,7 +1197,7 @@
       ]
     },
     {
-      "id": "aip-q035",
+      "id": "aip-q034",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "Which service should you use to choose chunking strategy for technical docs?",
@@ -1265,7 +1231,7 @@
       ]
     },
     {
-      "id": "aip-q036",
+      "id": "aip-q035",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to choose chunking strategy for technical docs?",
@@ -1299,7 +1265,7 @@
       ]
     },
     {
-      "id": "aip-q037",
+      "id": "aip-q036",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "A team must choose chunking strategy for technical docs. Which option meets the requirement?",
@@ -1333,7 +1299,7 @@
       ]
     },
     {
-      "id": "aip-q038",
+      "id": "aip-q037",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "Which service should you use to store embeddings in vector database?",
@@ -1367,7 +1333,7 @@
       ]
     },
     {
-      "id": "aip-q039",
+      "id": "aip-q038",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to store embeddings in vector database?",
@@ -1401,7 +1367,7 @@
       ]
     },
     {
-      "id": "aip-q040",
+      "id": "aip-q039",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "A team must store embeddings in vector database. Which option meets the requirement?",
@@ -1435,7 +1401,7 @@
       ]
     },
     {
-      "id": "aip-q041",
+      "id": "aip-q040",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "Which service should you use to filter retrieval by tenant metadata?",
@@ -1469,7 +1435,7 @@
       ]
     },
     {
-      "id": "aip-q042",
+      "id": "aip-q041",
       "domain": "rag-knowledge",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to filter retrieval by tenant metadata?",
@@ -1503,44 +1469,10 @@
       ]
     },
     {
-      "id": "aip-q043",
-      "domain": "rag-knowledge",
-      "type": "multiple-choice",
-      "text": "A team must filter retrieval by tenant metadata. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Metadata filters on KB retrieval"
-        },
-        {
-          "id": "b",
-          "text": "Return all tenants data"
-        },
-        {
-          "id": "c",
-          "text": "No ACL"
-        },
-        {
-          "id": "d",
-          "text": "Shared index no tags"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Metadata filters enforce multi-tenant isolation.",
-      "docs": [
-        {
-          "title": "KB retrieval",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-retrieve.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q044",
+      "id": "aip-q042",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to build tool-using agents that call APIs?",
+      "text": "After a design review, leadership requires the team to build tool-using agents that call APIs. Which approach is MOST reliable? build tool-using agents that call APIs.",
       "options": [
         {
           "id": "a",
@@ -1571,10 +1503,10 @@
       ]
     },
     {
-      "id": "aip-q045",
+      "id": "aip-q043",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to orchestrate multi-step GenAI workflows?",
+      "text": "While troubleshooting latency, engineers determine they must orchestrate multi-step GenAI workflows. Which action is appropriate? orchestrate multi-step GenAI workflows.",
       "options": [
         {
           "id": "a",
@@ -1605,10 +1537,10 @@
       ]
     },
     {
-      "id": "aip-q046",
+      "id": "aip-q044",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to validate tool inputs to prevent injection?",
+      "text": "A regulated workload requires the organization to validate tool inputs to prevent injection. Which solution is BEST? validate tool inputs to prevent injection.",
       "options": [
         {
           "id": "a",
@@ -1639,10 +1571,10 @@
       ]
     },
     {
-      "id": "aip-q047",
+      "id": "aip-q045",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use OpenAPI schemas for agent actions?",
+      "text": "The DevOps team is automating releases and must use OpenAPI schemas for agent actions. Which design fits best? use OpenAPI schemas for agent actions.",
       "options": [
         {
           "id": "a",
@@ -1673,10 +1605,10 @@
       ]
     },
     {
-      "id": "aip-q048",
+      "id": "aip-q046",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to handle long-running agent tasks asynchronously?",
+      "text": "After a design review, leadership requires the team to handle long-running agent tasks asynchronously. Which approach is MOST reliable? handle long-running agent tasks asynchronously.",
       "options": [
         {
           "id": "a",
@@ -1707,10 +1639,10 @@
       ]
     },
     {
-      "id": "aip-q049",
+      "id": "aip-q047",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to combine agents with human approval?",
+      "text": "During peak traffic, the platform team must combine agents with human approval. What should they do FIRST? combine agents with human approval.",
       "options": [
         {
           "id": "a",
@@ -1741,10 +1673,10 @@
       ]
     },
     {
-      "id": "aip-q050",
+      "id": "aip-q048",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to trace agent reasoning for debug?",
+      "text": "Operations reports a need to trace agent reasoning for debug. What is the MOST operationally efficient solution? trace agent reasoning for debug.",
       "options": [
         {
           "id": "a",
@@ -1775,10 +1707,10 @@
       ]
     },
     {
-      "id": "aip-q051",
+      "id": "aip-q049",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to version agent instructions and tools?",
+      "text": "For cost and security, the team must version agent instructions and tools. What is the recommended approach? version agent instructions and tools.",
       "options": [
         {
           "id": "a",
@@ -1809,7 +1741,7 @@
       ]
     },
     {
-      "id": "aip-q052",
+      "id": "aip-q050",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "Which service should you use to build tool-using agents that call APIs?",
@@ -1843,7 +1775,7 @@
       ]
     },
     {
-      "id": "aip-q053",
+      "id": "aip-q051",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to build tool-using agents that call APIs?",
@@ -1877,7 +1809,7 @@
       ]
     },
     {
-      "id": "aip-q054",
+      "id": "aip-q052",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "A team must build tool-using agents that call APIs. Which option meets the requirement?",
@@ -1911,7 +1843,7 @@
       ]
     },
     {
-      "id": "aip-q055",
+      "id": "aip-q053",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "Which service should you use to orchestrate multi-step GenAI workflows?",
@@ -1945,7 +1877,7 @@
       ]
     },
     {
-      "id": "aip-q056",
+      "id": "aip-q054",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to orchestrate multi-step GenAI workflows?",
@@ -1979,7 +1911,7 @@
       ]
     },
     {
-      "id": "aip-q057",
+      "id": "aip-q055",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "A team must orchestrate multi-step GenAI workflows. Which option meets the requirement?",
@@ -2013,7 +1945,7 @@
       ]
     },
     {
-      "id": "aip-q058",
+      "id": "aip-q056",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "Which service should you use to validate tool inputs to prevent injection?",
@@ -2047,7 +1979,7 @@
       ]
     },
     {
-      "id": "aip-q059",
+      "id": "aip-q057",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to validate tool inputs to prevent injection?",
@@ -2081,7 +2013,7 @@
       ]
     },
     {
-      "id": "aip-q060",
+      "id": "aip-q058",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "A team must validate tool inputs to prevent injection. Which option meets the requirement?",
@@ -2115,7 +2047,7 @@
       ]
     },
     {
-      "id": "aip-q061",
+      "id": "aip-q059",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "Which service should you use to use OpenAPI schemas for agent actions?",
@@ -2149,7 +2081,7 @@
       ]
     },
     {
-      "id": "aip-q062",
+      "id": "aip-q060",
       "domain": "agents-orchestration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to use OpenAPI schemas for agent actions?",
@@ -2183,44 +2115,10 @@
       ]
     },
     {
-      "id": "aip-q063",
-      "domain": "agents-orchestration",
-      "type": "multiple-choice",
-      "text": "A team must use OpenAPI schemas for agent actions. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Action groups with OpenAPI"
-        },
-        {
-          "id": "b",
-          "text": "Undocumented REST"
-        },
-        {
-          "id": "c",
-          "text": "Wildcard IAM"
-        },
-        {
-          "id": "d",
-          "text": "HTTP only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "OpenAPI defines agent-callable operations.",
-      "docs": [
-        {
-          "title": "Action groups",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-create.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q064",
+      "id": "aip-q061",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to block harmful prompts and responses?",
+      "text": "A regulated workload requires the organization to block harmful prompts and responses. Which solution is BEST? block harmful prompts and responses.",
       "options": [
         {
           "id": "a",
@@ -2251,10 +2149,10 @@
       ]
     },
     {
-      "id": "aip-q065",
+      "id": "aip-q062",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to red-team GenAI applications?",
+      "text": "Operations reports a need to red-team GenAI applications. What is the MOST operationally efficient solution? red-team GenAI applications.",
       "options": [
         {
           "id": "a",
@@ -2285,10 +2183,10 @@
       ]
     },
     {
-      "id": "aip-q066",
+      "id": "aip-q063",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to apply least privilege to InvokeModel?",
+      "text": "While troubleshooting latency, engineers determine they must apply least privilege to InvokeModel. Which action is appropriate? apply least privilege to InvokeModel.",
       "options": [
         {
           "id": "a",
@@ -2319,10 +2217,10 @@
       ]
     },
     {
-      "id": "aip-q067",
+      "id": "aip-q064",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to encrypt prompts/responses at rest in logs?",
+      "text": "During peak traffic, the platform team must encrypt prompts/responses at rest in logs. What should they do FIRST? encrypt prompts/responses at rest in logs.",
       "options": [
         {
           "id": "a",
@@ -2353,10 +2251,10 @@
       ]
     },
     {
-      "id": "aip-q068",
+      "id": "aip-q065",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to prevent training data leakage in prompts?",
+      "text": "A company needs to prevent training data leakage in prompts. Which option meets the requirement with the LEAST implementation effort? prevent training data leakage in prompts.",
       "options": [
         {
           "id": "a",
@@ -2387,10 +2285,10 @@
       ]
     },
     {
-      "id": "aip-q069",
+      "id": "aip-q066",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to audit model invocations across accounts?",
+      "text": "A company needs to audit model invocations across accounts. Which option meets the requirement with the LEAST implementation effort? audit model invocations across accounts.",
       "options": [
         {
           "id": "a",
@@ -2421,10 +2319,10 @@
       ]
     },
     {
-      "id": "aip-q070",
+      "id": "aip-q067",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to test regression when changing prompts/models?",
+      "text": "An audit found gaps: the organization must test regression when changing prompts/models. Which option addresses this? test regression when changing prompts/models.",
       "options": [
         {
           "id": "a",
@@ -2455,10 +2353,10 @@
       ]
     },
     {
-      "id": "aip-q071",
+      "id": "aip-q068",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to meet residency requirements for inference?",
+      "text": "An audit found gaps: the organization must meet residency requirements for inference. Which option addresses this? meet residency requirements for inference.",
       "options": [
         {
           "id": "a",
@@ -2489,7 +2387,7 @@
       ]
     },
     {
-      "id": "aip-q072",
+      "id": "aip-q069",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "Which service should you use to block harmful prompts and responses?",
@@ -2523,7 +2421,7 @@
       ]
     },
     {
-      "id": "aip-q073",
+      "id": "aip-q070",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to block harmful prompts and responses?",
@@ -2557,7 +2455,7 @@
       ]
     },
     {
-      "id": "aip-q074",
+      "id": "aip-q071",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "A team must block harmful prompts and responses. Which option meets the requirement?",
@@ -2591,7 +2489,7 @@
       ]
     },
     {
-      "id": "aip-q075",
+      "id": "aip-q072",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "Which service should you use to red-team GenAI applications?",
@@ -2625,7 +2523,7 @@
       ]
     },
     {
-      "id": "aip-q076",
+      "id": "aip-q073",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to red-team GenAI applications?",
@@ -2659,7 +2557,7 @@
       ]
     },
     {
-      "id": "aip-q077",
+      "id": "aip-q074",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "A team must red-team GenAI applications. Which option meets the requirement?",
@@ -2693,7 +2591,7 @@
       ]
     },
     {
-      "id": "aip-q078",
+      "id": "aip-q075",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "Which service should you use to apply least privilege to InvokeModel?",
@@ -2727,7 +2625,7 @@
       ]
     },
     {
-      "id": "aip-q079",
+      "id": "aip-q076",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to apply least privilege to InvokeModel?",
@@ -2761,7 +2659,7 @@
       ]
     },
     {
-      "id": "aip-q080",
+      "id": "aip-q077",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "A team must apply least privilege to InvokeModel. Which option meets the requirement?",
@@ -2795,7 +2693,7 @@
       ]
     },
     {
-      "id": "aip-q081",
+      "id": "aip-q078",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "Which service should you use to encrypt prompts/responses at rest in logs?",
@@ -2829,7 +2727,7 @@
       ]
     },
     {
-      "id": "aip-q082",
+      "id": "aip-q079",
       "domain": "security-governance-genai",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to encrypt prompts/responses at rest in logs?",
@@ -2863,41 +2761,7 @@
       ]
     },
     {
-      "id": "aip-q083",
-      "domain": "security-governance-genai",
-      "type": "multiple-choice",
-      "text": "A team must encrypt prompts/responses at rest in logs. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "KMS for CloudWatch Logs and S3"
-        },
-        {
-          "id": "b",
-          "text": "Plaintext sensitive logs"
-        },
-        {
-          "id": "c",
-          "text": "Public log bucket"
-        },
-        {
-          "id": "d",
-          "text": "No retention limits"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Encryption protects logged interactions.",
-      "docs": [
-        {
-          "title": "KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q084",
+      "id": "aip-q080",
       "domain": "rag-knowledge",
       "type": "multiple-response",
       "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
@@ -2936,46 +2800,7 @@
       ]
     },
     {
-      "id": "aip-q085",
-      "domain": "foundation-model-integration",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Generative AI Developer \u2013 Professional? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon Bedrock"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Amazon Bedrock Runtime API"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "Amazon Bedrock",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q086",
+      "id": "aip-q081",
       "domain": "foundation-model-integration",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3015,274 +2840,41 @@
       ]
     },
     {
-      "id": "aip-q087",
+      "id": "aip-q082",
       "domain": "foundation-model-integration",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon Bedrock', what should you do FIRST when addressing Foundation Model Integration and Architecture objectives?",
+      "type": "multiple-response",
+      "text": "Which TWO official AWS resources help you prepare for AWS Certified Generative AI Developer \u2013 Professional? (Select TWO.)",
       "options": [
         {
           "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "Disable security logging to reduce noise"
+          "text": "Unofficial leaked exam dumps"
         },
         {
           "id": "c",
-          "text": "Use root user credentials for daily operations"
+          "text": "Amazon Bedrock Runtime API"
         },
         {
           "id": "d",
-          "text": "Skip backup and recovery planning"
+          "text": "Disable all logging"
+        },
+        {
+          "id": "e",
+          "text": "Share root account keys"
         }
       ],
       "correct": [
-        "a"
+        "a",
+        "c"
       ],
-      "explanation": "Official guides such as Amazon Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
+      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
       "docs": [
         {
           "title": "Amazon Bedrock",
           "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q088",
-      "domain": "foundation-model-integration",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon Bedrock Runtime API', what should you do FIRST when addressing Foundation Model Integration and Architecture objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon Bedrock Runtime API describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon Bedrock Runtime API",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q089",
-      "domain": "rag-knowledge",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Knowledge Bases for Amazon Bedrock', what should you do FIRST when addressing RAG and Knowledge Integration objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Knowledge Bases for Amazon Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Knowledge Bases for Amazon Bedrock",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q090",
-      "domain": "rag-knowledge",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon OpenSearch Serverless', what should you do FIRST when addressing RAG and Knowledge Integration objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon OpenSearch Serverless describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon OpenSearch Serverless",
-          "url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q091",
-      "domain": "agents-orchestration",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon Bedrock Agents', what should you do FIRST when addressing Agents, Tools, and Orchestration objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon Bedrock Agents describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon Bedrock Agents",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q092",
-      "domain": "agents-orchestration",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon Step Functions', what should you do FIRST when addressing Agents, Tools, and Orchestration objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon Step Functions describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon Step Functions",
-          "url": "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q093",
-      "domain": "security-governance-genai",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'Amazon Bedrock Guardrails', what should you do FIRST when addressing Security, Testing, and Governance for GenAI Applications objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as Amazon Bedrock Guardrails describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "Amazon Bedrock Guardrails",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q094",
-      "domain": "security-governance-genai",
-      "type": "multiple-choice",
-      "text": "According to AWS best practices documented in 'IAM for Bedrock', what should you do FIRST when addressing Security, Testing, and Governance for GenAI Applications objectives?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Review the official AWS documentation and align designs to the exam guide domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable security logging to reduce noise"
-        },
-        {
-          "id": "c",
-          "text": "Use root user credentials for daily operations"
-        },
-        {
-          "id": "d",
-          "text": "Skip backup and recovery planning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Official guides such as IAM for Bedrock describe domain objectives; practice designs should follow AWS documented best practices.",
-      "docs": [
-        {
-          "title": "IAM for Bedrock",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
         }
       ]
     }

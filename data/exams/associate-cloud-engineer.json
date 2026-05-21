@@ -89,7 +89,7 @@
       "id": "ace-q001",
       "domain": "planning",
       "type": "multiple-choice",
-      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Setting up a cloud solution environment for Google Associate Cloud Engineer?",
+      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Setting up a cloud solution environment. Which source aligns with official Google Cloud documentation and exam guides?",
       "options": [
         {
           "id": "a",
@@ -121,77 +121,9 @@
     },
     {
       "id": "ace-q002",
-      "domain": "planning",
-      "type": "multiple-choice",
-      "text": "According to 'ACE exam guide', what is a documented best practice for Setting up a cloud solution environment?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "ACE exam guide reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "ACE exam guide",
-          "url": "https://cloud.google.com/learn/certification/guides/cloud-engineer"
-        }
-      ]
-    },
-    {
-      "id": "ace-q003",
-      "domain": "planning",
-      "type": "multiple-choice",
-      "text": "According to 'Resource hierarchy', what is a documented best practice for Setting up a cloud solution environment?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Resource hierarchy reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Resource hierarchy",
-          "url": "https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy"
-        }
-      ]
-    },
-    {
-      "id": "ace-q004",
       "domain": "compute-storage",
       "type": "multiple-choice",
-      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Planning and configuring compute and storage for Google Associate Cloud Engineer?",
+      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Planning and configuring compute and storage. Which source aligns with official Google Cloud documentation and exam guides?",
       "options": [
         {
           "id": "a",
@@ -222,78 +154,10 @@
       ]
     },
     {
-      "id": "ace-q005",
-      "domain": "compute-storage",
-      "type": "multiple-choice",
-      "text": "According to 'Compute Engine', what is a documented best practice for Planning and configuring compute and storage?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Compute Engine reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Compute Engine",
-          "url": "https://cloud.google.com/compute/docs"
-        }
-      ]
-    },
-    {
-      "id": "ace-q006",
-      "domain": "compute-storage",
-      "type": "multiple-choice",
-      "text": "According to 'Cloud Storage', what is a documented best practice for Planning and configuring compute and storage?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Cloud Storage reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Cloud Storage",
-          "url": "https://cloud.google.com/storage/docs/introduction"
-        }
-      ]
-    },
-    {
-      "id": "ace-q007",
+      "id": "ace-q003",
       "domain": "networking",
       "type": "multiple-choice",
-      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Planning and configuring cloud network solutions for Google Associate Cloud Engineer?",
+      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Planning and configuring cloud network solutions. Which source aligns with official Google Cloud documentation and exam guides?",
       "options": [
         {
           "id": "a",
@@ -324,78 +188,10 @@
       ]
     },
     {
-      "id": "ace-q008",
-      "domain": "networking",
-      "type": "multiple-choice",
-      "text": "According to 'VPC networks', what is a documented best practice for Planning and configuring cloud network solutions?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "VPC networks reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "VPC networks",
-          "url": "https://cloud.google.com/vpc/docs/vpc"
-        }
-      ]
-    },
-    {
-      "id": "ace-q009",
-      "domain": "networking",
-      "type": "multiple-choice",
-      "text": "According to 'Cloud Load Balancing', what is a documented best practice for Planning and configuring cloud network solutions?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Cloud Load Balancing reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Cloud Load Balancing",
-          "url": "https://cloud.google.com/load-balancing/docs/load-balancing-overview"
-        }
-      ]
-    },
-    {
-      "id": "ace-q010",
+      "id": "ace-q004",
       "domain": "security-iam",
       "type": "multiple-choice",
-      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Configuring access and security for Google Associate Cloud Engineer?",
+      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Configuring access and security. Which source aligns with official Google Cloud documentation and exam guides?",
       "options": [
         {
           "id": "a",
@@ -426,44 +222,10 @@
       ]
     },
     {
-      "id": "ace-q011",
-      "domain": "security-iam",
-      "type": "multiple-choice",
-      "text": "According to 'IAM overview', what is a documented best practice for Configuring access and security?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "IAM overview reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "IAM overview",
-          "url": "https://cloud.google.com/iam/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "ace-q012",
+      "id": "ace-q005",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Per official Google Cloud documentation and exam guides, which source should you use when studying Deploying and implementing solutions for Google Associate Cloud Engineer?",
+      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Deploying and implementing solutions. Which source aligns with official Google Cloud documentation and exam guides?",
       "options": [
         {
           "id": "a",
@@ -494,78 +256,10 @@
       ]
     },
     {
-      "id": "ace-q013",
-      "domain": "operations",
-      "type": "multiple-choice",
-      "text": "According to 'Cloud Run', what is a documented best practice for Deploying and implementing solutions?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Cloud Run reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Cloud Run",
-          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
-        }
-      ]
-    },
-    {
-      "id": "ace-q014",
-      "domain": "operations",
-      "type": "multiple-choice",
-      "text": "According to 'GKE', what is a documented best practice for Deploying and implementing solutions?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "GKE reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "GKE",
-          "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview"
-        }
-      ]
-    },
-    {
-      "id": "ace-q015",
+      "id": "ace-q006",
       "domain": "planning",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to organize projects and folders?",
+      "text": "During peak traffic, the platform team must organize projects and folders. What should they do FIRST?",
       "options": [
         {
           "id": "a",
@@ -596,10 +290,10 @@
       ]
     },
     {
-      "id": "ace-q016",
+      "id": "ace-q007",
       "domain": "planning",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to organize projects with labels?",
+      "text": "The DevOps team is automating releases and must organize projects with labels. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -630,10 +324,10 @@
       ]
     },
     {
-      "id": "ace-q017",
+      "id": "ace-q008",
       "domain": "planning",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to set org policies on resources?",
+      "text": "A regulated workload requires the organization to set org policies on resources. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -664,7 +358,7 @@
       ]
     },
     {
-      "id": "ace-q018",
+      "id": "ace-q009",
       "domain": "planning",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to organize projects and folders?",
@@ -698,7 +392,7 @@
       ]
     },
     {
-      "id": "ace-q019",
+      "id": "ace-q010",
       "domain": "planning",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to organize projects and folders?",
@@ -732,7 +426,7 @@
       ]
     },
     {
-      "id": "ace-q020",
+      "id": "ace-q011",
       "domain": "planning",
       "type": "multiple-choice",
       "text": "A platform team must organize projects and folders. Which option aligns with Google best practices?",
@@ -766,7 +460,7 @@
       ]
     },
     {
-      "id": "ace-q021",
+      "id": "ace-q012",
       "domain": "planning",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to organize projects with labels?",
@@ -800,7 +494,7 @@
       ]
     },
     {
-      "id": "ace-q022",
+      "id": "ace-q013",
       "domain": "planning",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to organize projects with labels?",
@@ -834,7 +528,7 @@
       ]
     },
     {
-      "id": "ace-q023",
+      "id": "ace-q014",
       "domain": "planning",
       "type": "multiple-choice",
       "text": "A platform team must organize projects with labels. Which option aligns with Google best practices?",
@@ -868,7 +562,7 @@
       ]
     },
     {
-      "id": "ace-q024",
+      "id": "ace-q015",
       "domain": "planning",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to set org policies on resources?",
@@ -902,7 +596,7 @@
       ]
     },
     {
-      "id": "ace-q025",
+      "id": "ace-q016",
       "domain": "planning",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to set org policies on resources?",
@@ -936,10 +630,10 @@
       ]
     },
     {
-      "id": "ace-q026",
+      "id": "ace-q017",
       "domain": "compute-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to object storage for applications?",
+      "text": "An audit found gaps: the organization must object storage for applications. Which option addresses this?",
       "options": [
         {
           "id": "a",
@@ -970,10 +664,10 @@
       ]
     },
     {
-      "id": "ace-q027",
+      "id": "ace-q018",
       "domain": "compute-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to create VMs with startup scripts?",
+      "text": "A regulated workload requires the organization to create VMs with startup scripts. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -1004,10 +698,10 @@
       ]
     },
     {
-      "id": "ace-q028",
+      "id": "ace-q019",
       "domain": "compute-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to attach disks to Compute Engine VMs?",
+      "text": "During peak traffic, the platform team must attach disks to Compute Engine VMs. What should they do FIRST?",
       "options": [
         {
           "id": "a",
@@ -1038,10 +732,10 @@
       ]
     },
     {
-      "id": "ace-q029",
+      "id": "ace-q020",
       "domain": "compute-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to host static assets globally?",
+      "text": "After a design review, leadership requires the team to host static assets globally. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -1072,7 +766,7 @@
       ]
     },
     {
-      "id": "ace-q030",
+      "id": "ace-q021",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to object storage for applications?",
@@ -1106,7 +800,7 @@
       ]
     },
     {
-      "id": "ace-q031",
+      "id": "ace-q022",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to object storage for applications?",
@@ -1140,7 +834,7 @@
       ]
     },
     {
-      "id": "ace-q032",
+      "id": "ace-q023",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "A platform team must object storage for applications. Which option aligns with Google best practices?",
@@ -1174,7 +868,7 @@
       ]
     },
     {
-      "id": "ace-q033",
+      "id": "ace-q024",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to create VMs with startup scripts?",
@@ -1208,7 +902,7 @@
       ]
     },
     {
-      "id": "ace-q034",
+      "id": "ace-q025",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to create VMs with startup scripts?",
@@ -1242,7 +936,7 @@
       ]
     },
     {
-      "id": "ace-q035",
+      "id": "ace-q026",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "A platform team must create VMs with startup scripts. Which option aligns with Google best practices?",
@@ -1276,7 +970,7 @@
       ]
     },
     {
-      "id": "ace-q036",
+      "id": "ace-q027",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to attach disks to Compute Engine VMs?",
@@ -1310,7 +1004,7 @@
       ]
     },
     {
-      "id": "ace-q037",
+      "id": "ace-q028",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to attach disks to Compute Engine VMs?",
@@ -1344,7 +1038,7 @@
       ]
     },
     {
-      "id": "ace-q038",
+      "id": "ace-q029",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "A platform team must attach disks to Compute Engine VMs. Which option aligns with Google best practices?",
@@ -1378,7 +1072,7 @@
       ]
     },
     {
-      "id": "ace-q039",
+      "id": "ace-q030",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to host static assets globally?",
@@ -1412,7 +1106,7 @@
       ]
     },
     {
-      "id": "ace-q040",
+      "id": "ace-q031",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to host static assets globally?",
@@ -1446,7 +1140,7 @@
       ]
     },
     {
-      "id": "ace-q041",
+      "id": "ace-q032",
       "domain": "compute-storage",
       "type": "multiple-choice",
       "text": "A platform team must host static assets globally. Which option aligns with Google best practices?",
@@ -1480,10 +1174,10 @@
       ]
     },
     {
-      "id": "ace-q042",
+      "id": "ace-q033",
       "domain": "compute-storage",
       "type": "multiple-choice",
-      "text": "For cost-aware operations, you should object storage for applications.",
+      "text": "Your startup is building on Google Cloud and needs to object storage for applications.",
       "options": [
         {
           "id": "a",
@@ -1514,10 +1208,10 @@
       ]
     },
     {
-      "id": "ace-q043",
+      "id": "ace-q034",
       "domain": "networking",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to private networking in GCP?",
+      "text": "After a design review, leadership requires the team to private networking in GCP. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -1548,10 +1242,10 @@
       ]
     },
     {
-      "id": "ace-q044",
+      "id": "ace-q035",
       "domain": "networking",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to global HTTP(S) load balancing?",
+      "text": "Operations reports a need to global HTTP(S) load balancing. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -1582,10 +1276,10 @@
       ]
     },
     {
-      "id": "ace-q045",
+      "id": "ace-q036",
       "domain": "networking",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to control egress with firewall rules?",
+      "text": "Operations reports a need to control egress with firewall rules. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -1616,10 +1310,10 @@
       ]
     },
     {
-      "id": "ace-q046",
+      "id": "ace-q037",
       "domain": "networking",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to private Google API access?",
+      "text": "After a design review, leadership requires the team to private Google API access. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -1650,7 +1344,7 @@
       ]
     },
     {
-      "id": "ace-q047",
+      "id": "ace-q038",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to private networking in GCP?",
@@ -1684,7 +1378,7 @@
       ]
     },
     {
-      "id": "ace-q048",
+      "id": "ace-q039",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to private networking in GCP?",
@@ -1718,7 +1412,7 @@
       ]
     },
     {
-      "id": "ace-q049",
+      "id": "ace-q040",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "A platform team must private networking in GCP. Which option aligns with Google best practices?",
@@ -1752,7 +1446,7 @@
       ]
     },
     {
-      "id": "ace-q050",
+      "id": "ace-q041",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to global HTTP(S) load balancing?",
@@ -1786,7 +1480,7 @@
       ]
     },
     {
-      "id": "ace-q051",
+      "id": "ace-q042",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to global HTTP(S) load balancing?",
@@ -1820,7 +1514,7 @@
       ]
     },
     {
-      "id": "ace-q052",
+      "id": "ace-q043",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "A platform team must global HTTP(S) load balancing. Which option aligns with Google best practices?",
@@ -1854,7 +1548,7 @@
       ]
     },
     {
-      "id": "ace-q053",
+      "id": "ace-q044",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to control egress with firewall rules?",
@@ -1888,7 +1582,7 @@
       ]
     },
     {
-      "id": "ace-q054",
+      "id": "ace-q045",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to control egress with firewall rules?",
@@ -1922,7 +1616,7 @@
       ]
     },
     {
-      "id": "ace-q055",
+      "id": "ace-q046",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "A platform team must control egress with firewall rules. Which option aligns with Google best practices?",
@@ -1956,7 +1650,7 @@
       ]
     },
     {
-      "id": "ace-q056",
+      "id": "ace-q047",
       "domain": "networking",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to private Google API access?",
@@ -1990,10 +1684,10 @@
       ]
     },
     {
-      "id": "ace-q057",
+      "id": "ace-q048",
       "domain": "security-iam",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to grant roles to principals?",
+      "text": "A regulated workload requires the organization to grant roles to principals. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -2024,10 +1718,10 @@
       ]
     },
     {
-      "id": "ace-q058",
+      "id": "ace-q049",
       "domain": "security-iam",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to audit IAM changes?",
+      "text": "During peak traffic, the platform team must audit IAM changes. What should they do FIRST?",
       "options": [
         {
           "id": "a",
@@ -2058,10 +1752,10 @@
       ]
     },
     {
-      "id": "ace-q059",
+      "id": "ace-q050",
       "domain": "security-iam",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to use service accounts for workloads?",
+      "text": "For cost and security, the team must use service accounts for workloads. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -2092,7 +1786,7 @@
       ]
     },
     {
-      "id": "ace-q060",
+      "id": "ace-q051",
       "domain": "security-iam",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to grant roles to principals?",
@@ -2126,7 +1820,7 @@
       ]
     },
     {
-      "id": "ace-q061",
+      "id": "ace-q052",
       "domain": "security-iam",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to grant roles to principals?",
@@ -2160,7 +1854,7 @@
       ]
     },
     {
-      "id": "ace-q062",
+      "id": "ace-q053",
       "domain": "security-iam",
       "type": "multiple-choice",
       "text": "A platform team must grant roles to principals. Which option aligns with Google best practices?",
@@ -2194,7 +1888,7 @@
       ]
     },
     {
-      "id": "ace-q063",
+      "id": "ace-q054",
       "domain": "security-iam",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to audit IAM changes?",
@@ -2228,7 +1922,7 @@
       ]
     },
     {
-      "id": "ace-q064",
+      "id": "ace-q055",
       "domain": "security-iam",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to audit IAM changes?",
@@ -2262,7 +1956,7 @@
       ]
     },
     {
-      "id": "ace-q065",
+      "id": "ace-q056",
       "domain": "security-iam",
       "type": "multiple-choice",
       "text": "A platform team must audit IAM changes. Which option aligns with Google best practices?",
@@ -2296,7 +1990,7 @@
       ]
     },
     {
-      "id": "ace-q066",
+      "id": "ace-q057",
       "domain": "security-iam",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to use service accounts for workloads?",
@@ -2330,7 +2024,7 @@
       ]
     },
     {
-      "id": "ace-q067",
+      "id": "ace-q058",
       "domain": "security-iam",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to use service accounts for workloads?",
@@ -2364,7 +2058,7 @@
       ]
     },
     {
-      "id": "ace-q068",
+      "id": "ace-q059",
       "domain": "security-iam",
       "type": "multiple-choice",
       "text": "A platform team must use service accounts for workloads. Which option aligns with Google best practices?",
@@ -2398,10 +2092,10 @@
       ]
     },
     {
-      "id": "ace-q069",
+      "id": "ace-q060",
       "domain": "security-iam",
       "type": "multiple-choice",
-      "text": "A cloud engineer needs to grant roles to principals.",
+      "text": "A data team must grant roles to principals.",
       "options": [
         {
           "id": "a",
@@ -2432,10 +2126,10 @@
       ]
     },
     {
-      "id": "ace-q070",
+      "id": "ace-q061",
       "domain": "security-iam",
       "type": "multiple-choice",
-      "text": "A data team must audit IAM changes.",
+      "text": "Your startup is building on Google Cloud and needs to audit IAM changes.",
       "options": [
         {
           "id": "a",
@@ -2466,10 +2160,10 @@
       ]
     },
     {
-      "id": "ace-q071",
+      "id": "ace-q062",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to run containers without managing nodes?",
+      "text": "For cost and security, the team must run containers without managing nodes. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -2500,10 +2194,10 @@
       ]
     },
     {
-      "id": "ace-q072",
+      "id": "ace-q063",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to managed Kubernetes control plane?",
+      "text": "A company needs to managed Kubernetes control plane. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -2534,10 +2228,10 @@
       ]
     },
     {
-      "id": "ace-q073",
+      "id": "ace-q064",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to deploy VMs from golden images?",
+      "text": "A hybrid environment must support a goal to deploy VMs from golden images without changing application code. What should you implement?",
       "options": [
         {
           "id": "a",
@@ -2568,10 +2262,10 @@
       ]
     },
     {
-      "id": "ace-q074",
+      "id": "ace-q065",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which Google Cloud product or feature is BEST to schedule batch jobs on VMs?",
+      "text": "A regulated workload requires the organization to schedule batch jobs on VMs. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -2602,7 +2296,7 @@
       ]
     },
     {
-      "id": "ace-q075",
+      "id": "ace-q066",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to run containers without managing nodes?",
@@ -2636,7 +2330,7 @@
       ]
     },
     {
-      "id": "ace-q076",
+      "id": "ace-q067",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to run containers without managing nodes?",
@@ -2670,7 +2364,7 @@
       ]
     },
     {
-      "id": "ace-q077",
+      "id": "ace-q068",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "A platform team must run containers without managing nodes. Which option aligns with Google best practices?",
@@ -2704,7 +2398,7 @@
       ]
     },
     {
-      "id": "ace-q078",
+      "id": "ace-q069",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to managed Kubernetes control plane?",
@@ -2738,7 +2432,7 @@
       ]
     },
     {
-      "id": "ace-q079",
+      "id": "ace-q070",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to managed Kubernetes control plane?",
@@ -2772,7 +2466,7 @@
       ]
     },
     {
-      "id": "ace-q080",
+      "id": "ace-q071",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "A platform team must managed Kubernetes control plane. Which option aligns with Google best practices?",
@@ -2806,7 +2500,7 @@
       ]
     },
     {
-      "id": "ace-q081",
+      "id": "ace-q072",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to deploy VMs from golden images?",
@@ -2840,7 +2534,7 @@
       ]
     },
     {
-      "id": "ace-q082",
+      "id": "ace-q073",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "What is the recommended Google Cloud solution to deploy VMs from golden images?",
@@ -2874,7 +2568,7 @@
       ]
     },
     {
-      "id": "ace-q083",
+      "id": "ace-q074",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "A platform team must deploy VMs from golden images. Which option aligns with Google best practices?",
@@ -2908,7 +2602,7 @@
       ]
     },
     {
-      "id": "ace-q084",
+      "id": "ace-q075",
       "domain": "operations",
       "type": "multiple-choice",
       "text": "Which Google Cloud service should you use to schedule batch jobs on VMs?",

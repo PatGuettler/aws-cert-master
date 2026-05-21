@@ -1030,7 +1030,7 @@
       "id": "dop-q027",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to orchestrate CI/CD with manual approvals?",
+      "text": "For cost and security, the team must orchestrate CI/CD with manual approvals. What is the recommended approach? orchestrate CI/CD with manual approvals.",
       "options": [
         {
           "id": "a",
@@ -1064,7 +1064,7 @@
       "id": "dop-q028",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run tests in isolated build environments?",
+      "text": "Operations reports a need to run tests in isolated build environments. What is the MOST operationally efficient solution? run tests in isolated build environments.",
       "options": [
         {
           "id": "a",
@@ -1098,7 +1098,7 @@
       "id": "dop-q029",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to implement GitOps for EKS?",
+      "text": "For cost and security, the team must implement GitOps for EKS. What is the recommended approach? implement GitOps for EKS.",
       "options": [
         {
           "id": "a",
@@ -1132,7 +1132,7 @@
       "id": "dop-q030",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to sign and verify container images?",
+      "text": "A regulated workload requires the organization to sign and verify container images. Which solution is BEST? sign and verify container images.",
       "options": [
         {
           "id": "a",
@@ -1166,7 +1166,7 @@
       "id": "dop-q031",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deploy Lambda with canary traffic shifting?",
+      "text": "An audit found gaps: the organization must deploy Lambda with canary traffic shifting. Which option addresses this? deploy Lambda with canary traffic shifting.",
       "options": [
         {
           "id": "a",
@@ -1200,7 +1200,7 @@
       "id": "dop-q032",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to store pipeline artifacts immutably?",
+      "text": "A company needs to store pipeline artifacts immutably. Which option meets the requirement with the LEAST implementation effort? store pipeline artifacts immutably.",
       "options": [
         {
           "id": "a",
@@ -1234,7 +1234,7 @@
       "id": "dop-q033",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to trigger pipelines from Git webhooks securely?",
+      "text": "The DevOps team is automating releases and must trigger pipelines from Git webhooks securely. Which design fits best? trigger pipelines from Git webhooks securely.",
       "options": [
         {
           "id": "a",
@@ -1268,7 +1268,7 @@
       "id": "dop-q034",
       "domain": "sdlc-automation",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run compliance tests in pipeline?",
+      "text": "While troubleshooting latency, engineers determine they must run compliance tests in pipeline. Which action is appropriate? run compliance tests in pipeline.",
       "options": [
         {
           "id": "a",
@@ -1334,77 +1334,9 @@
     },
     {
       "id": "dop-q036",
-      "domain": "sdlc-automation",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to orchestrate CI/CD with manual approvals?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS CodePipeline with manual approval actions"
-        },
-        {
-          "id": "b",
-          "text": "Direct prod deploy on commit"
-        },
-        {
-          "id": "c",
-          "text": "No tests"
-        },
-        {
-          "id": "d",
-          "text": "Shared prod creds in repo"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Manual approvals gate production.",
-      "docs": [
-        {
-          "title": "CodePipeline approvals",
-          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-approve-or-reject.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q037",
-      "domain": "sdlc-automation",
-      "type": "multiple-choice",
-      "text": "A team must orchestrate CI/CD with manual approvals. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS CodePipeline with manual approval actions"
-        },
-        {
-          "id": "b",
-          "text": "Direct prod deploy on commit"
-        },
-        {
-          "id": "c",
-          "text": "No tests"
-        },
-        {
-          "id": "d",
-          "text": "Shared prod creds in repo"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Manual approvals gate production.",
-      "docs": [
-        {
-          "title": "CodePipeline approvals",
-          "url": "https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-approve-or-reject.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q038",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to define reusable infrastructure modules?",
+      "text": "After a design review, leadership requires the team to define reusable infrastructure modules. Which approach is MOST reliable? define reusable infrastructure modules.",
       "options": [
         {
           "id": "a",
@@ -1435,10 +1367,10 @@
       ]
     },
     {
-      "id": "dop-q039",
+      "id": "dop-q037",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to detect configuration drift on servers?",
+      "text": "A company needs to detect configuration drift on servers. Which option meets the requirement with the LEAST implementation effort? detect configuration drift on servers.",
       "options": [
         {
           "id": "a",
@@ -1469,10 +1401,10 @@
       ]
     },
     {
-      "id": "dop-q040",
+      "id": "dop-q038",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to manage Ansible/Chef at scale?",
+      "text": "A company needs to manage Ansible/Chef at scale. Which option meets the requirement with the LEAST implementation effort? manage Ansible/Chef at scale.",
       "options": [
         {
           "id": "a",
@@ -1503,10 +1435,10 @@
       ]
     },
     {
-      "id": "dop-q041",
+      "id": "dop-q039",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to import existing resources into IaC?",
+      "text": "A regulated workload requires the organization to import existing resources into IaC. Which solution is BEST? import existing resources into IaC.",
       "options": [
         {
           "id": "a",
@@ -1537,10 +1469,10 @@
       ]
     },
     {
-      "id": "dop-q042",
+      "id": "dop-q040",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use stack sets for multi-account rollout?",
+      "text": "While troubleshooting latency, engineers determine they must use stack sets for multi-account rollout. Which action is appropriate? use stack sets for multi-account rollout.",
       "options": [
         {
           "id": "a",
@@ -1571,10 +1503,10 @@
       ]
     },
     {
-      "id": "dop-q043",
+      "id": "dop-q041",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to parameterize environments safely?",
+      "text": "The DevOps team is automating releases and must parameterize environments safely. Which design fits best? parameterize environments safely.",
       "options": [
         {
           "id": "a",
@@ -1605,10 +1537,10 @@
       ]
     },
     {
-      "id": "dop-q044",
+      "id": "dop-q042",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to validate templates before deploy?",
+      "text": "During peak traffic, the platform team must validate templates before deploy. What should they do FIRST? validate templates before deploy.",
       "options": [
         {
           "id": "a",
@@ -1639,10 +1571,10 @@
       ]
     },
     {
-      "id": "dop-q045",
+      "id": "dop-q043",
       "domain": "config-management-iac",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to manage SAM transforms for serverless?",
+      "text": "For cost and security, the team must manage SAM transforms for serverless. What is the recommended approach? manage SAM transforms for serverless.",
       "options": [
         {
           "id": "a",
@@ -1673,7 +1605,7 @@
       ]
     },
     {
-      "id": "dop-q046",
+      "id": "dop-q044",
       "domain": "config-management-iac",
       "type": "multiple-choice",
       "text": "Which service should you use to define reusable infrastructure modules?",
@@ -1707,78 +1639,10 @@
       ]
     },
     {
-      "id": "dop-q047",
-      "domain": "config-management-iac",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to define reusable infrastructure modules?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS CDK constructs or CloudFormation modules"
-        },
-        {
-          "id": "b",
-          "text": "Copy-paste templates"
-        },
-        {
-          "id": "c",
-          "text": "Undocumented params"
-        },
-        {
-          "id": "d",
-          "text": "No versioning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Modules promote reuse and standards.",
-      "docs": [
-        {
-          "title": "CDK",
-          "url": "https://docs.aws.amazon.com/cdk/v2/guide/home.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q048",
-      "domain": "config-management-iac",
-      "type": "multiple-choice",
-      "text": "A team must define reusable infrastructure modules. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS CDK constructs or CloudFormation modules"
-        },
-        {
-          "id": "b",
-          "text": "Copy-paste templates"
-        },
-        {
-          "id": "c",
-          "text": "Undocumented params"
-        },
-        {
-          "id": "d",
-          "text": "No versioning"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Modules promote reuse and standards.",
-      "docs": [
-        {
-          "title": "CDK",
-          "url": "https://docs.aws.amazon.com/cdk/v2/guide/home.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q049",
+      "id": "dop-q045",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to run chaos experiments safely?",
+      "text": "A company needs to run chaos experiments safely. Which option meets the requirement with the LEAST implementation effort? run chaos experiments safely.",
       "options": [
         {
           "id": "a",
@@ -1809,10 +1673,10 @@
       ]
     },
     {
-      "id": "dop-q050",
+      "id": "dop-q046",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to define RTO/RPO in resilience hub?",
+      "text": "A company needs to define RTO/RPO in resilience hub. Which option meets the requirement with the LEAST implementation effort? define RTO/RPO in resilience hub.",
       "options": [
         {
           "id": "a",
@@ -1843,10 +1707,10 @@
       ]
     },
     {
-      "id": "dop-q051",
+      "id": "dop-q047",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to multi-AZ RDS with automatic failover?",
+      "text": "For cost and security, the team must multi-AZ RDS with automatic failover. What is the recommended approach? multi-AZ RDS with automatic failover.",
       "options": [
         {
           "id": "a",
@@ -1877,10 +1741,10 @@
       ]
     },
     {
-      "id": "dop-q052",
+      "id": "dop-q048",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to queue-based load leveling?",
+      "text": "After a design review, leadership requires the team to queue-based load leveling. Which approach is MOST reliable? queue-based load leveling.",
       "options": [
         {
           "id": "a",
@@ -1911,10 +1775,10 @@
       ]
     },
     {
-      "id": "dop-q053",
+      "id": "dop-q049",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to regional failover for stateless tier?",
+      "text": "A regulated workload requires the organization to regional failover for stateless tier. Which solution is BEST? regional failover for stateless tier.",
       "options": [
         {
           "id": "a",
@@ -1945,10 +1809,10 @@
       ]
     },
     {
-      "id": "dop-q054",
+      "id": "dop-q050",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use circuit breaker pattern in microservices?",
+      "text": "After a design review, leadership requires the team to use circuit breaker pattern in microservices. Which approach is MOST reliable? use circuit breaker pattern in microservices.",
       "options": [
         {
           "id": "a",
@@ -1979,10 +1843,10 @@
       ]
     },
     {
-      "id": "dop-q055",
+      "id": "dop-q051",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to deploy ECS services across AZs?",
+      "text": "The DevOps team is automating releases and must deploy ECS services across AZs. Which design fits best? deploy ECS services across AZs.",
       "options": [
         {
           "id": "a",
@@ -2013,10 +1877,10 @@
       ]
     },
     {
-      "id": "dop-q056",
+      "id": "dop-q052",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to immutable infrastructure for EC2?",
+      "text": "Operations reports a need to immutable infrastructure for EC2. What is the MOST operationally efficient solution? immutable infrastructure for EC2.",
       "options": [
         {
           "id": "a",
@@ -2047,7 +1911,7 @@
       ]
     },
     {
-      "id": "dop-q057",
+      "id": "dop-q053",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
       "text": "Which service should you use to run chaos experiments safely?",
@@ -2081,7 +1945,7 @@
       ]
     },
     {
-      "id": "dop-q058",
+      "id": "dop-q054",
       "domain": "resilient-cloud-solutions",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to run chaos experiments safely?",
@@ -2115,44 +1979,10 @@
       ]
     },
     {
-      "id": "dop-q059",
-      "domain": "resilient-cloud-solutions",
-      "type": "multiple-choice",
-      "text": "A team must run chaos experiments safely. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS Fault Injection Simulator"
-        },
-        {
-          "id": "b",
-          "text": "Chaos in prod without guardrails"
-        },
-        {
-          "id": "c",
-          "text": "No rollback"
-        },
-        {
-          "id": "d",
-          "text": "Ignore blast radius"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "FIS injects controlled failures.",
-      "docs": [
-        {
-          "title": "FIS",
-          "url": "https://docs.aws.amazon.com/fis/latest/userguide/fis-intro.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q060",
+      "id": "dop-q055",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to correlate logs metrics and traces?",
+      "text": "An audit found gaps: the organization must correlate logs metrics and traces. Which option addresses this? correlate logs metrics and traces.",
       "options": [
         {
           "id": "a",
@@ -2183,10 +2013,10 @@
       ]
     },
     {
-      "id": "dop-q061",
+      "id": "dop-q056",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to create composite alarms to reduce noise?",
+      "text": "While troubleshooting latency, engineers determine they must create composite alarms to reduce noise. Which action is appropriate? create composite alarms to reduce noise.",
       "options": [
         {
           "id": "a",
@@ -2217,10 +2047,10 @@
       ]
     },
     {
-      "id": "dop-q062",
+      "id": "dop-q057",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to export logs to SIEM?",
+      "text": "An audit found gaps: the organization must export logs to SIEM. Which option addresses this? export logs to SIEM.",
       "options": [
         {
           "id": "a",
@@ -2251,10 +2081,10 @@
       ]
     },
     {
-      "id": "dop-q063",
+      "id": "dop-q058",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to audit privileged actions?",
+      "text": "During peak traffic, the platform team must audit privileged actions. What should they do FIRST? audit privileged actions.",
       "options": [
         {
           "id": "a",
@@ -2285,10 +2115,10 @@
       ]
     },
     {
-      "id": "dop-q064",
+      "id": "dop-q059",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to monitor CI/CD pipeline failures?",
+      "text": "A hybrid environment must support a goal to monitor CI/CD pipeline failures without changing application code. What should you implement? monitor CI/CD pipeline failures.",
       "options": [
         {
           "id": "a",
@@ -2319,10 +2149,10 @@
       ]
     },
     {
-      "id": "dop-q065",
+      "id": "dop-q060",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to track deployment frequency DORA metrics?",
+      "text": "After a design review, leadership requires the team to track deployment frequency DORA metrics. Which approach is MOST reliable? track deployment frequency DORA metrics.",
       "options": [
         {
           "id": "a",
@@ -2353,10 +2183,10 @@
       ]
     },
     {
-      "id": "dop-q066",
+      "id": "dop-q061",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use Synthetics for critical user journeys?",
+      "text": "Operations reports a need to use Synthetics for critical user journeys. What is the MOST operationally efficient solution? use Synthetics for critical user journeys.",
       "options": [
         {
           "id": "a",
@@ -2387,10 +2217,10 @@
       ]
     },
     {
-      "id": "dop-q067",
+      "id": "dop-q062",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to alert on Auto Scaling failures?",
+      "text": "The DevOps team is automating releases and must alert on Auto Scaling failures. Which design fits best? alert on Auto Scaling failures.",
       "options": [
         {
           "id": "a",
@@ -2421,7 +2251,7 @@
       ]
     },
     {
-      "id": "dop-q068",
+      "id": "dop-q063",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
       "text": "Which service should you use to correlate logs metrics and traces?",
@@ -2455,7 +2285,7 @@
       ]
     },
     {
-      "id": "dop-q069",
+      "id": "dop-q064",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to correlate logs metrics and traces?",
@@ -2489,7 +2319,7 @@
       ]
     },
     {
-      "id": "dop-q070",
+      "id": "dop-q065",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
       "text": "A team must correlate logs metrics and traces. Which option meets the requirement?",
@@ -2523,7 +2353,7 @@
       ]
     },
     {
-      "id": "dop-q071",
+      "id": "dop-q066",
       "domain": "monitoring-logging",
       "type": "multiple-choice",
       "text": "Which service should you use to create composite alarms to reduce noise?",
@@ -2557,78 +2387,10 @@
       ]
     },
     {
-      "id": "dop-q072",
-      "domain": "monitoring-logging",
-      "type": "multiple-choice",
-      "text": "What is the MOST appropriate AWS solution to create composite alarms to reduce noise?",
-      "options": [
-        {
-          "id": "a",
-          "text": "CloudWatch composite alarms"
-        },
-        {
-          "id": "b",
-          "text": "Alert on every blip"
-        },
-        {
-          "id": "c",
-          "text": "No runbooks"
-        },
-        {
-          "id": "d",
-          "text": "Pager for dev metrics"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Composite alarms combine child alarms logically.",
-      "docs": [
-        {
-          "title": "Composite alarms",
-          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q073",
-      "domain": "monitoring-logging",
-      "type": "multiple-choice",
-      "text": "A team must create composite alarms to reduce noise. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "CloudWatch composite alarms"
-        },
-        {
-          "id": "b",
-          "text": "Alert on every blip"
-        },
-        {
-          "id": "c",
-          "text": "No runbooks"
-        },
-        {
-          "id": "d",
-          "text": "Pager for dev metrics"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Composite alarms combine child alarms logically.",
-      "docs": [
-        {
-          "title": "Composite alarms",
-          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q074",
+      "id": "dop-q067",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to route operational events to targets?",
+      "text": "While troubleshooting latency, engineers determine they must route operational events to targets. Which action is appropriate? route operational events to targets.",
       "options": [
         {
           "id": "a",
@@ -2659,10 +2421,10 @@
       ]
     },
     {
-      "id": "dop-q075",
+      "id": "dop-q068",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to manage incidents with runbooks?",
+      "text": "After a design review, leadership requires the team to manage incidents with runbooks. Which approach is MOST reliable? manage incidents with runbooks.",
       "options": [
         {
           "id": "a",
@@ -2693,10 +2455,10 @@
       ]
     },
     {
-      "id": "dop-q076",
+      "id": "dop-q069",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to auto-remediate non-compliant resources?",
+      "text": "During peak traffic, the platform team must auto-remediate non-compliant resources. What should they do FIRST? auto-remediate non-compliant resources.",
       "options": [
         {
           "id": "a",
@@ -2727,10 +2489,10 @@
       ]
     },
     {
-      "id": "dop-q077",
+      "id": "dop-q070",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to isolate compromised EC2 quickly?",
+      "text": "A company needs to isolate compromised EC2 quickly. Which option meets the requirement with the LEAST implementation effort? isolate compromised EC2 quickly.",
       "options": [
         {
           "id": "a",
@@ -2761,10 +2523,10 @@
       ]
     },
     {
-      "id": "dop-q078",
+      "id": "dop-q071",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to aggregate security findings for triage?",
+      "text": "While troubleshooting latency, engineers determine they must aggregate security findings for triage. Which action is appropriate? aggregate security findings for triage.",
       "options": [
         {
           "id": "a",
@@ -2795,10 +2557,10 @@
       ]
     },
     {
-      "id": "dop-q079",
+      "id": "dop-q072",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to capture forensics disk/memory?",
+      "text": "For cost and security, the team must capture forensics disk/memory. What is the recommended approach? capture forensics disk/memory.",
       "options": [
         {
           "id": "a",
@@ -2829,10 +2591,10 @@
       ]
     },
     {
-      "id": "dop-q080",
+      "id": "dop-q073",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to notify on-call from alarms?",
+      "text": "For cost and security, the team must notify on-call from alarms. What is the recommended approach? notify on-call from alarms.",
       "options": [
         {
           "id": "a",
@@ -2863,10 +2625,10 @@
       ]
     },
     {
-      "id": "dop-q081",
+      "id": "dop-q074",
       "domain": "incident-event-response",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to document post-incident reviews?",
+      "text": "A hybrid environment must support a goal to document post-incident reviews without changing application code. What should you implement? document post-incident reviews.",
       "options": [
         {
           "id": "a",
@@ -2897,10 +2659,10 @@
       ]
     },
     {
-      "id": "dop-q082",
+      "id": "dop-q075",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to validate recovery procedures regularly?",
+      "text": "The DevOps team is automating releases and must validate recovery procedures regularly. Which design fits best? validate recovery procedures regularly.",
       "options": [
         {
           "id": "a",
@@ -2931,10 +2693,10 @@
       ]
     },
     {
-      "id": "dop-q083",
+      "id": "dop-q076",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use cell-based blast isolation for EKS?",
+      "text": "After a design review, leadership requires the team to use cell-based blast isolation for EKS. Which approach is MOST reliable? use cell-based blast isolation for EKS.",
       "options": [
         {
           "id": "a",
@@ -2965,10 +2727,10 @@
       ]
     },
     {
-      "id": "dop-q084",
+      "id": "dop-q077",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to protect against regional failure?",
+      "text": "A hybrid environment must support a goal to protect against regional failure without changing application code. What should you implement? protect against regional failure.",
       "options": [
         {
           "id": "a",
@@ -2999,10 +2761,10 @@
       ]
     },
     {
-      "id": "dop-q085",
+      "id": "dop-q078",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to ensure idempotent deployments?",
+      "text": "A regulated workload requires the organization to ensure idempotent deployments. Which solution is BEST? ensure idempotent deployments.",
       "options": [
         {
           "id": "a",
@@ -3033,10 +2795,10 @@
       ]
     },
     {
-      "id": "dop-q086",
+      "id": "dop-q079",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to load test before peak events?",
+      "text": "Operations reports a need to load test before peak events. What is the MOST operationally efficient solution? load test before peak events.",
       "options": [
         {
           "id": "a",
@@ -3067,10 +2829,10 @@
       ]
     },
     {
-      "id": "dop-q087",
+      "id": "dop-q080",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to use SQS visibility timeout correctly?",
+      "text": "After a design review, leadership requires the team to use SQS visibility timeout correctly. Which approach is MOST reliable? use SQS visibility timeout correctly.",
       "options": [
         {
           "id": "a",
@@ -3101,10 +2863,10 @@
       ]
     },
     {
-      "id": "dop-q088",
+      "id": "dop-q081",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to design EKS control plane resilience?",
+      "text": "A company needs to design EKS control plane resilience. Which option meets the requirement with the LEAST implementation effort? design EKS control plane resilience.",
       "options": [
         {
           "id": "a",
@@ -3135,10 +2897,10 @@
       ]
     },
     {
-      "id": "dop-q089",
+      "id": "dop-q082",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to backup EKS etcd application state?",
+      "text": "A hybrid environment must support a goal to backup EKS etcd application state without changing application code. What should you implement? backup EKS etcd application state.",
       "options": [
         {
           "id": "a",
@@ -3169,7 +2931,7 @@
       ]
     },
     {
-      "id": "dop-q090",
+      "id": "dop-q083",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
       "text": "Which service should you use to validate recovery procedures regularly?",
@@ -3203,7 +2965,7 @@
       ]
     },
     {
-      "id": "dop-q091",
+      "id": "dop-q084",
       "domain": "reliability-resilience",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to validate recovery procedures regularly?",
@@ -3237,80 +2999,7 @@
       ]
     },
     {
-      "id": "dop-q092",
-      "domain": "reliability-resilience",
-      "type": "multiple-choice",
-      "text": "A team must validate recovery procedures regularly. Which option meets the requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Scheduled DR drills with CloudFormation"
-        },
-        {
-          "id": "b",
-          "text": "Never test restore"
-        },
-        {
-          "id": "c",
-          "text": "Hope"
-        },
-        {
-          "id": "d",
-          "text": "Outdated runbook"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Testing confirms RTO/RPO assumptions.",
-      "docs": [
-        {
-          "title": "DR testing",
-          "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q093",
-      "domain": "config-management-iac",
-      "type": "multiple-response",
-      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS KMS"
-        },
-        {
-          "id": "b",
-          "text": "Amazon Route 53"
-        },
-        {
-          "id": "c",
-          "text": "AWS Secrets Manager"
-        },
-        {
-          "id": "d",
-          "text": "Amazon CloudFront only for DNS"
-        },
-        {
-          "id": "e",
-          "text": "AWS Batch"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
-      "docs": [
-        {
-          "title": "AWS KMS",
-          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "dop-q094",
+      "id": "dop-q085",
       "domain": "sdlc-automation",
       "type": "multiple-response",
       "text": "Which TWO practices align with the AWS Well-Architected Framework? (Select TWO.)",
@@ -3350,7 +3039,7 @@
       ]
     },
     {
-      "id": "dop-q095",
+      "id": "dop-q086",
       "domain": "sdlc-automation",
       "type": "multiple-response",
       "text": "Which TWO official AWS resources help you prepare for AWS Certified DevOps Engineer \u2013 Professional? (Select TWO.)",
@@ -3385,6 +3074,45 @@
         {
           "title": "DOP-C02 Exam Guide",
           "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+        }
+      ]
+    },
+    {
+      "id": "dop-q087",
+      "domain": "config-management-iac",
+      "type": "multiple-response",
+      "text": "Which are AWS services used for encryption or key management? (Select TWO.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "AWS KMS"
+        },
+        {
+          "id": "b",
+          "text": "Amazon Route 53"
+        },
+        {
+          "id": "c",
+          "text": "AWS Secrets Manager"
+        },
+        {
+          "id": "d",
+          "text": "Amazon CloudFront only for DNS"
+        },
+        {
+          "id": "e",
+          "text": "AWS Batch"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "explanation": "KMS manages keys; Secrets Manager stores and rotates secrets.",
+      "docs": [
+        {
+          "title": "AWS KMS",
+          "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
         }
       ]
     }

@@ -25,7 +25,7 @@ import { initAds } from "./ads.js";
 import { initStorageNotice } from "./storage-notice.js";
 import { buildTrendLine } from "./history-ui.js";
 import { renderDashboard, renderProgressTeaser } from "./dashboard-ui.js";
-import { renderBrowse, bindBrowseSearch } from "./browse-ui.js";
+import { renderBrowse, bindBrowseSearch, bindBrowseCollapse } from "./browse-ui.js";
 import { runAcronymQuiz } from "./acronym-engine.js";
 
 import { initDataPanel } from "./data-panel.js";
@@ -37,10 +37,25 @@ import {
   navigateHome,
   navigateBrowse,
   navigateCert,
+  navigateKeytrainHub,
+  navigateKeytrainCert,
   isBrowsePathActive,
   appPathUrl,
 } from "./routes.js";
 import { APP_NAME, APP_SLUG } from "./config.js";
+import { loadKeytrainCatalog, loadKeytrainProgram } from "./keytrain-loader.js";
+import {
+  renderKeytrainHub,
+  renderKeytrainCertPage,
+  renderKeytrainResults,
+  bindKeytrainResultsActions,
+  renderKeytrainCertificateForm,
+} from "./keytrain-ui.js";
+import {
+  getKeytrainIssuance,
+  saveKeytrainIssuance,
+  makeCertificateId,
+} from "./keytrain-storage.js";
 
 const LAST_CERT_KEY = `${APP_SLUG}:lastCert`;
 
@@ -67,8 +82,17 @@ let responses = {};
 let lastResult = null;
 /** @type {{ stopTimer: () => void }|null} */
 let examController = null;
-/** @type {'exam'|'drill'} */
+/** @type {'exam'|'drill'|'keytrain'} */
 let sessionMode = "exam";
+
+/** @type {import('./keytrain-loader.js').KeytrainCertSummary[]} */
+let keytrainCatalog = [];
+/** @type {string} */
+let activeKeytrainId = "";
+/** @type {Awaited<ReturnType<typeof loadKeytrainProgram>>|null} */
+let keytrainProgram = null;
+/** @type {ReturnType<typeof scoreExam>|null} */
+let keytrainResult = null;
 
 const views = {
   error: document.getElementById("view-error"),
@@ -81,6 +105,10 @@ const views = {
   results: document.getElementById("view-results"),
   study: document.getElementById("view-study"),
   review: document.getElementById("view-review"),
+  keytrainHub: document.getElementById("view-keytrain-hub"),
+  keytrainCert: document.getElementById("view-keytrain-cert"),
+  keytrainResults: document.getElementById("view-keytrain-results"),
+  keytrainCertificate: document.getElementById("view-keytrain-certificate"),
 };
 
 /** @type {{ stop: () => void }|null} */
@@ -369,7 +397,156 @@ async function applyRoute(route) {
   if (route.type === "cert") {
     await switchCert(route.certId, { fromRoute: true });
     await tryResumePrompt();
+    return;
   }
+
+  if (route.type === "keytrain-hub") {
+    acronymController?.stop();
+    examController?.stopTimer?.();
+    currentCert = null;
+    keytrainProgram = null;
+    if (!window.location.pathname.includes("/keytrain")) navigateKeytrainHub();
+    showKeytrainHubView();
+    return;
+  }
+
+  if (route.type === "keytrain-cert" && route.keytrainId) {
+    await openKeytrainCert(route.keytrainId, { fromRoute: true });
+    return;
+  }
+
+  if (route.type === "keytrain-certificate" && route.keytrainId) {
+    await showKeytrainCertificateView(route.keytrainId, { fromRoute: true });
+  }
+}
+
+function getKeytrainIds() {
+  return keytrainCatalog.map((c) => c.id);
+}
+
+function showKeytrainHubView() {
+  showView("keytrainHub");
+  setHeaderTitle("KeyTrain Certification");
+  renderKeytrainHub(keytrainCatalog, openKeytrainCert);
+}
+
+function goKeytrain() {
+  if (!appReady) return;
+  applyRoute({ type: "keytrain-hub" });
+}
+
+/**
+ * @param {string} keytrainId
+ * @param {{ fromRoute?: boolean }} [opts]
+ */
+async function openKeytrainCert(keytrainId, opts = {}) {
+  activeKeytrainId = keytrainId;
+  keytrainProgram = await loadKeytrainProgram(keytrainId, examIndexList);
+  currentCert = keytrainProgram.cert;
+  if (!opts.fromRoute) navigateKeytrainCert(keytrainId);
+  showView("keytrainCert");
+  setHeaderTitle("KeyTrain Certification");
+  renderKeytrainCertPage(keytrainProgram, keytrainCatalog.find((c) => c.id === keytrainId));
+}
+
+function startKeytrainExam() {
+  if (!keytrainProgram) return;
+  const cert = keytrainProgram.cert;
+  sessionMode = "keytrain";
+  clearResumeState(cert.id);
+  const questions = selectExamQuestions(cert, { certId: cert.id, weakMap: new Map() });
+  launchExamSession(questions, "keytrain");
+}
+
+function finishKeytrainExam(meta = {}) {
+  if (!keytrainProgram) return;
+  examController?.stopTimer?.();
+  const cert = keytrainProgram.cert;
+  keytrainResult = scoreExam(cert, examQuestions, responses);
+  const passed = keytrainResult.passed;
+
+  if (passed) {
+    const existing = getKeytrainIssuance(activeKeytrainId);
+    saveKeytrainIssuance(activeKeytrainId, {
+      recipientName: existing?.recipientName ?? "",
+      certificateId: existing?.certificateId ?? makeCertificateId(),
+      issuedAt: new Date().toISOString(),
+      scaledScore: keytrainResult.scaledScore,
+      passingScore: cert.exam.passingScore,
+      passed: true,
+      durationSeconds: meta.durationSeconds ?? 0,
+    });
+  }
+
+  appendHistory(cert.id, {
+    date: new Date().toISOString(),
+    scaledScore: keytrainResult.scaledScore,
+    passed,
+    percent: keytrainResult.percent,
+    correctCount: keytrainResult.correctCount,
+    totalScored: keytrainResult.totalScored,
+    domainBreakdown: keytrainResult.domainBreakdown,
+    missedQuestions: keytrainResult.missedQuestions,
+    durationSeconds: meta.durationSeconds ?? 0,
+    type: "keytrain",
+  });
+
+  showKeytrainResultsView();
+}
+
+function showKeytrainResultsView() {
+  if (!keytrainProgram || !keytrainResult) return;
+  showView("keytrainResults");
+  setHeaderTitle("KeyTrain Results");
+  renderKeytrainResults({
+    passed: keytrainResult.passed,
+    scaledScore: keytrainResult.scaledScore,
+    cert: keytrainProgram.cert,
+    keytrain: keytrainProgram.keytrain,
+  });
+  const panel = document.getElementById("view-keytrain-results");
+  if (panel?.dataset.actionsBound !== "1") {
+    panel.dataset.actionsBound = "1";
+    bindKeytrainResultsActions({
+      onCertificate: () => showKeytrainCertificateView(activeKeytrainId),
+      onRetake: startKeytrainExam,
+      onHub: goKeytrain,
+    });
+  }
+}
+
+/**
+ * @param {string} keytrainId
+ * @param {{ fromRoute?: boolean }} [opts]
+ */
+async function showKeytrainCertificateView(keytrainId, opts = {}) {
+  if (!keytrainProgram || keytrainProgram.keytrain.id !== keytrainId) {
+    keytrainProgram = await loadKeytrainProgram(keytrainId, examIndexList);
+  }
+  const issued = getKeytrainIssuance(keytrainId);
+  if (!issued?.passed) {
+    goKeytrain();
+    return;
+  }
+  if (!opts.fromRoute) navigateKeytrainCert(keytrainId, "certificate");
+  showView("keytrainCertificate");
+  setHeaderTitle("Your certificate");
+  const score = keytrainResult?.scaledScore ?? issued.scaledScore;
+  const certForm = document.getElementById("view-keytrain-certificate");
+  if (certForm) certForm.dataset.certFormBound = "";
+  renderKeytrainCertificateForm({
+    keytrain: keytrainProgram.keytrain,
+    cert: keytrainProgram.cert,
+    scaledScore: score,
+    existing: issued,
+    onNameSaved: (name, certificateId) => {
+      saveKeytrainIssuance(keytrainId, {
+        ...issued,
+        recipientName: name,
+        certificateId,
+      });
+    },
+  });
 }
 
 async function init() {
@@ -389,6 +566,13 @@ async function init() {
 
   examIndexList = exams;
 
+  try {
+    keytrainCatalog = await loadKeytrainCatalog(exams);
+  } catch (err) {
+    console.warn("KeyTrain catalog not loaded:", err);
+    keytrainCatalog = [];
+  }
+
   if (exams.length === 0) {
     setHeaderTitle(APP_NAME);
     const main = document.querySelector("main");
@@ -403,6 +587,7 @@ async function init() {
       },
       onNavigateHome: goLanding,
       onNavigateBrowse: () => {},
+      onNavigateKeytrain: goKeytrain,
       onNavigateDashboard: () => {},
     });
     initDataPanel({
@@ -426,24 +611,26 @@ async function init() {
     },
     onNavigateHome: goLanding,
     onNavigateBrowse: goBrowse,
+    onNavigateKeytrain: goKeytrain,
     onNavigateDashboard: showDashboard,
   });
 
   bindBrowseSearch(examIndexList, openCert);
+  bindBrowseCollapse();
 
   window.addEventListener("hashchange", () => {
     if (!appReady) return;
     normalizeLegacyRoutes(examIndexList);
-    applyRoute(parseRoute(examIndexList));
+    applyRoute(parseRoute(examIndexList, getKeytrainIds()));
   });
 
   window.addEventListener("popstate", () => {
     if (!appReady) return;
-    applyRoute(parseRoute(examIndexList));
+    applyRoute(parseRoute(examIndexList, getKeytrainIds()));
   });
 
   appReady = true;
-  await applyRoute(parseRoute(exams));
+  await applyRoute(parseRoute(exams, getKeytrainIds()));
 
   try {
     const autoStart = sessionStorage.getItem(`${APP_SLUG}:autoStart`);
@@ -581,6 +768,7 @@ function populateCert() {
     `Exam domains (${cert.code})`;
 
   renderProgressTeaser(activeCertId, cert);
+  updateResumeBanner();
 
   const isComptia = cert.vendor === "comptia";
   const hasAcronyms = (cert.acronyms?.length ?? 0) > 0;
@@ -650,45 +838,153 @@ async function showDashboard() {
   await renderDashboardForFilter();
 }
 
-function launchExamSession(questions, mode) {
+/**
+ * @param {import('./cert-loader.js').Question[]} questions
+ * @param {'exam'|'drill'|'keytrain'} mode
+ * @param {object} [resume]
+ */
+function launchExamSession(questions, mode, resume) {
   if (!currentCert) return;
 
   sessionMode = mode;
   examQuestions = questions;
-  responses = {};
+  responses = resume?.responses ? { ...resume.responses } : {};
 
   showView("exam");
-  setHeaderTitle(
-    mode === "drill"
-      ? `${currentCert.code} — Drill`
-      : `${currentCert.code} — Practice Exam`
-  );
+  const title =
+    mode === "keytrain"
+      ? `KeyTrain — ${currentCert.code}`
+      : mode === "drill"
+        ? `${currentCert.code} — Drill`
+        : `${currentCert.code} — Practice Exam`;
+  setHeaderTitle(title);
 
   examController?.stopTimer?.();
 
+  const examSettings =
+    mode === "keytrain"
+      ? {
+          timeLimitEnabled: true,
+          immediateFeedback: false,
+          showDocLinks: false,
+        }
+      : mode === "drill"
+        ? { ...settings, timeLimitEnabled: false }
+        : resume?.settings
+          ? { ...settings, ...resume.settings }
+          : settings;
+
+  const certId =
+    mode === "keytrain" && keytrainProgram ? keytrainProgram.cert.id : activeCertId;
+
   examController = runExam({
     cert: currentCert,
-    certId: activeCertId,
+    certId,
     questions: examQuestions,
-    settings:
-      mode === "drill"
-        ? { ...settings, timeLimitEnabled: false }
-        : settings,
+    settings: examSettings,
     responses,
     onResponsesChange: (r) => {
       responses = r;
     },
-    onFinish: finishExam,
+    onFinish: mode === "keytrain" ? finishKeytrainExam : finishExam,
     isDrill: mode === "drill",
+    isKeytrain: mode === "keytrain",
+    resume: resume
+      ? {
+          index: resume.index,
+          remainingSeconds: resume.remainingSeconds,
+          revealed: resume.revealed,
+          startedAt: resume.startedAt,
+        }
+      : undefined,
   });
+}
+
+function formatResumeTime(seconds) {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+function updateResumeBanner() {
+  const banner = document.getElementById("exam-resume-banner");
+  const summary = document.getElementById("exam-resume-summary");
+  const btnStart = document.getElementById("btn-start");
+  if (!banner || !summary) return;
+
+  const state = getResumeState(activeCertId);
+  if (!state?.questions?.length || state.mode === "drill") {
+    banner.classList.add("hidden");
+    if (btnStart) btnStart.textContent = "Start practice exam";
+    return;
+  }
+
+  const idx = (state.index ?? 0) + 1;
+  const total = state.questions.length;
+  const timePart =
+    state.settings?.timeLimitEnabled !== false && state.remainingSeconds != null
+      ? ` · ${formatResumeTime(state.remainingSeconds)} remaining`
+      : "";
+  const saved = state.savedAt
+    ? new Date(state.savedAt).toLocaleString(undefined, {
+        dateStyle: "medium",
+        timeStyle: "short",
+      })
+    : "";
+
+  summary.textContent = `Paused exam — question ${idx} of ${total}${timePart}. Saved ${saved}.`;
+  banner.classList.remove("hidden");
+  if (btnStart) btnStart.textContent = "Start new exam";
+}
+
+function resumeExam() {
+  if (!currentCert) return;
+  const state = getResumeState(activeCertId);
+  if (!state?.questions?.length) return;
+
+  const bankById = new Map(currentCert.questions.map((q) => [q.id, q]));
+  const questions = state.questions
+    .map((q) => bankById.get(q.id))
+    .filter(Boolean);
+
+  if (questions.length !== state.questions.length) {
+    clearResumeState(activeCertId);
+    updateResumeBanner();
+    window.alert(
+      "Your saved session no longer matches this question bank. Start a new exam."
+    );
+    return;
+  }
+
+  launchExamSession(questions, "exam", state);
+}
+
+function pauseAndExitExam() {
+  if (sessionMode !== "exam") return;
+  examController?.pauseAndExit?.();
+  showCertView();
+  setHeaderTitle(currentCert?.name ?? "Cert Master");
+  updateResumeBanner();
 }
 
 function startExam() {
   if (!currentCert) return;
+  if (getResumeState(activeCertId)) {
+    const discard = window.confirm(
+      "Starting a new exam will discard your paused session. Continue?"
+    );
+    if (!discard) return;
+  }
   clearResumeState(activeCertId);
+  updateResumeBanner();
   const weakMap = getWeakQuestions(activeCertId);
   const questions = selectExamQuestions(currentCert, { certId: activeCertId, weakMap });
   launchExamSession(questions, "exam");
+}
+
+function discardResume() {
+  clearResumeState(activeCertId);
+  updateResumeBanner();
 }
 
 function startDrill() {
@@ -711,6 +1007,10 @@ function startDrill() {
  * @param {{ durationSeconds?: number }} [meta]
  */
 function finishExam(meta = {}) {
+  if (sessionMode === "keytrain") {
+    finishKeytrainExam(meta);
+    return;
+  }
   if (!currentCert) return;
   examController?.stopTimer?.();
   clearResumeState(activeCertId);
@@ -890,12 +1190,30 @@ function goLanding() {
 }
 
 document.getElementById("btn-start")?.addEventListener("click", startExam);
+document.getElementById("btn-resume-exam")?.addEventListener("click", resumeExam);
+document.getElementById("btn-discard-resume")?.addEventListener("click", discardResume);
+document.getElementById("btn-pause-exam")?.addEventListener("click", pauseAndExitExam);
 document.getElementById("btn-open-dashboard")?.addEventListener("click", showDashboard);
 document.getElementById("btn-back-browse")?.addEventListener("click", goBrowse);
 document.getElementById("btn-browse-home")?.addEventListener("click", goLanding);
 document.getElementById("btn-dashboard-home")?.addEventListener("click", goLanding);
 document.getElementById("landing-tile-dashboard")?.addEventListener("click", showDashboard);
 document.getElementById("landing-tile-browse")?.addEventListener("click", goBrowse);
+document.getElementById("landing-tile-keytrain")?.addEventListener("click", goKeytrain);
+document.getElementById("btn-keytrain-hub-home")?.addEventListener("click", goLanding);
+document.getElementById("btn-keytrain-back-hub")?.addEventListener("click", goKeytrain);
+document.getElementById("btn-keytrain-start")?.addEventListener("click", startKeytrainExam);
+document.getElementById("btn-keytrain-view-cert")?.addEventListener("click", () => {
+  showKeytrainCertificateView(activeKeytrainId);
+});
+document.getElementById("btn-keytrain-cert-back")?.addEventListener("click", () => {
+  if (keytrainResult) showKeytrainResultsView();
+  else goKeytrain();
+});
+document.getElementById("btn-keytrain-cert-hub")?.addEventListener("click", goKeytrain);
+document.getElementById("btn-keytrain-practice")?.addEventListener("click", () => {
+  if (keytrainProgram) openCert(keytrainProgram.cert.id);
+});
 document.getElementById("landing-tile-clf")?.addEventListener("click", () => {
   openCert("cloud-practitioner");
 });

@@ -82,7 +82,7 @@
       "id": "dbs-q001",
       "domain": "workload-design",
       "type": "multiple-choice",
-      "text": "Per official AWS exam guides and documentation, which source should you use when studying Workload-Specific Database Design for AWS Certified Database \u2013 Specialty?",
+      "text": "You are preparing for AWS Certified Database \u2013 Specialty and reviewing Workload-Specific Database Design. Which source aligns with official AWS exam guides and documentation?",
       "options": [
         {
           "id": "a",
@@ -114,111 +114,9 @@
     },
     {
       "id": "dbs-q002",
-      "domain": "workload-design",
-      "type": "multiple-choice",
-      "text": "According to 'DBS-C01 Exam Guide', what is a documented best practice for Workload-Specific Database Design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "DBS-C01 Exam Guide reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "DBS-C01 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-database-specialty/"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q003",
-      "domain": "workload-design",
-      "type": "multiple-choice",
-      "text": "According to 'Amazon Aurora', what is a documented best practice for Workload-Specific Database Design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Amazon Aurora reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Amazon Aurora",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q004",
-      "domain": "workload-design",
-      "type": "multiple-choice",
-      "text": "According to 'Amazon DynamoDB', what is a documented best practice for Workload-Specific Database Design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Amazon DynamoDB reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Amazon DynamoDB",
-          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q005",
       "domain": "deployment-migration",
       "type": "multiple-choice",
-      "text": "Per official AWS exam guides and documentation, which source should you use when studying Deployment and Migration for AWS Certified Database \u2013 Specialty?",
+      "text": "You are preparing for AWS Certified Database \u2013 Specialty and reviewing Deployment and Migration. Which source aligns with official AWS exam guides and documentation?",
       "options": [
         {
           "id": "a",
@@ -249,78 +147,10 @@
       ]
     },
     {
-      "id": "dbs-q006",
-      "domain": "deployment-migration",
-      "type": "multiple-choice",
-      "text": "According to 'AWS Database Migration Service', what is a documented best practice for Deployment and Migration?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "AWS Database Migration Service reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "AWS Database Migration Service",
-          "url": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q007",
-      "domain": "deployment-migration",
-      "type": "multiple-choice",
-      "text": "According to 'RDS blue/green deployments', what is a documented best practice for Deployment and Migration?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "RDS blue/green deployments reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "RDS blue/green deployments",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q008",
+      "id": "dbs-q003",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "Per official AWS exam guides and documentation, which source should you use when studying Management and Operations for AWS Certified Database \u2013 Specialty?",
+      "text": "You are preparing for AWS Certified Database \u2013 Specialty and reviewing Management and Operations. Which source aligns with official AWS exam guides and documentation?",
       "options": [
         {
           "id": "a",
@@ -351,78 +181,10 @@
       ]
     },
     {
-      "id": "dbs-q009",
-      "domain": "management-operations",
-      "type": "multiple-choice",
-      "text": "According to 'RDS Performance Insights', what is a documented best practice for Management and Operations?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "RDS Performance Insights reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "RDS Performance Insights",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q010",
-      "domain": "management-operations",
-      "type": "multiple-choice",
-      "text": "According to 'Amazon ElastiCache', what is a documented best practice for Management and Operations?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Amazon ElastiCache reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Amazon ElastiCache",
-          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q011",
+      "id": "dbs-q004",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
-      "text": "Per official AWS exam guides and documentation, which source should you use when studying Monitoring and Troubleshooting for AWS Certified Database \u2013 Specialty?",
+      "text": "You are preparing for AWS Certified Database \u2013 Specialty and reviewing Monitoring and Troubleshooting. Which source aligns with official AWS exam guides and documentation?",
       "options": [
         {
           "id": "a",
@@ -453,78 +215,10 @@
       ]
     },
     {
-      "id": "dbs-q012",
-      "domain": "monitoring-troubleshooting",
-      "type": "multiple-choice",
-      "text": "According to 'RDS CloudWatch metrics', what is a documented best practice for Monitoring and Troubleshooting?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "RDS CloudWatch metrics reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "RDS CloudWatch metrics",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q013",
-      "domain": "monitoring-troubleshooting",
-      "type": "multiple-choice",
-      "text": "According to 'Database Insights', what is a documented best practice for Monitoring and Troubleshooting?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Follow the vendor documentation and exam objective domains"
-        },
-        {
-          "id": "b",
-          "text": "Disable logging to reduce storage cost"
-        },
-        {
-          "id": "c",
-          "text": "Share administrative credentials in chat"
-        },
-        {
-          "id": "d",
-          "text": "Skip change management for speed"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Database Insights reflects official guidance; designs should align with documented objectives.",
-      "docs": [
-        {
-          "title": "Database Insights",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q014",
+      "id": "dbs-q005",
       "domain": "workload-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to OLTP with MySQL compatibility on Aurora?",
+      "text": "A regulated workload requires the organization to OLTP with MySQL compatibility on Aurora. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -555,10 +249,10 @@
       ]
     },
     {
-      "id": "dbs-q015",
+      "id": "dbs-q006",
       "domain": "workload-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to key-value single-digit ms latency at scale?",
+      "text": "While troubleshooting latency, engineers determine they must key-value single-digit ms latency at scale. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -589,10 +283,10 @@
       ]
     },
     {
-      "id": "dbs-q016",
+      "id": "dbs-q007",
       "domain": "workload-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to graph relationships at scale?",
+      "text": "For cost and security, the team must graph relationships at scale. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -623,10 +317,10 @@
       ]
     },
     {
-      "id": "dbs-q017",
+      "id": "dbs-q008",
       "domain": "workload-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to cache relational read workloads in memory?",
+      "text": "A company needs to cache relational read workloads in memory. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -657,10 +351,10 @@
       ]
     },
     {
-      "id": "dbs-q018",
+      "id": "dbs-q009",
       "domain": "workload-design",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to time-series IoT telemetry storage?",
+      "text": "After a design review, leadership requires the team to time-series IoT telemetry storage. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -691,7 +385,7 @@
       ]
     },
     {
-      "id": "dbs-q019",
+      "id": "dbs-q010",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "Which service should you use to OLTP with MySQL compatibility on Aurora?",
@@ -725,7 +419,7 @@
       ]
     },
     {
-      "id": "dbs-q020",
+      "id": "dbs-q011",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to OLTP with MySQL compatibility on Aurora?",
@@ -759,7 +453,7 @@
       ]
     },
     {
-      "id": "dbs-q021",
+      "id": "dbs-q012",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "A team must OLTP with MySQL compatibility on Aurora. Which option meets the requirement?",
@@ -793,7 +487,7 @@
       ]
     },
     {
-      "id": "dbs-q022",
+      "id": "dbs-q013",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "Which service should you use to key-value single-digit ms latency at scale?",
@@ -827,7 +521,7 @@
       ]
     },
     {
-      "id": "dbs-q023",
+      "id": "dbs-q014",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to key-value single-digit ms latency at scale?",
@@ -861,7 +555,7 @@
       ]
     },
     {
-      "id": "dbs-q024",
+      "id": "dbs-q015",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "A team must key-value single-digit ms latency at scale. Which option meets the requirement?",
@@ -895,7 +589,7 @@
       ]
     },
     {
-      "id": "dbs-q025",
+      "id": "dbs-q016",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "Which service should you use to graph relationships at scale?",
@@ -929,7 +623,7 @@
       ]
     },
     {
-      "id": "dbs-q026",
+      "id": "dbs-q017",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to graph relationships at scale?",
@@ -963,7 +657,7 @@
       ]
     },
     {
-      "id": "dbs-q027",
+      "id": "dbs-q018",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "A team must graph relationships at scale. Which option meets the requirement?",
@@ -997,7 +691,7 @@
       ]
     },
     {
-      "id": "dbs-q028",
+      "id": "dbs-q019",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "Which service should you use to cache relational read workloads in memory?",
@@ -1031,7 +725,7 @@
       ]
     },
     {
-      "id": "dbs-q029",
+      "id": "dbs-q020",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to cache relational read workloads in memory?",
@@ -1065,7 +759,7 @@
       ]
     },
     {
-      "id": "dbs-q030",
+      "id": "dbs-q021",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "A team must cache relational read workloads in memory. Which option meets the requirement?",
@@ -1099,7 +793,7 @@
       ]
     },
     {
-      "id": "dbs-q031",
+      "id": "dbs-q022",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "Which service should you use to time-series IoT telemetry storage?",
@@ -1133,7 +827,7 @@
       ]
     },
     {
-      "id": "dbs-q032",
+      "id": "dbs-q023",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to time-series IoT telemetry storage?",
@@ -1167,7 +861,7 @@
       ]
     },
     {
-      "id": "dbs-q033",
+      "id": "dbs-q024",
       "domain": "workload-design",
       "type": "multiple-choice",
       "text": "A team must time-series IoT telemetry storage. Which option meets the requirement?",
@@ -1201,10 +895,10 @@
       ]
     },
     {
-      "id": "dbs-q034",
+      "id": "dbs-q025",
       "domain": "workload-design",
       "type": "multiple-choice",
-      "text": "A solutions architect needs to OLTP with MySQL compatibility on Aurora.",
+      "text": "A development team must OLTP with MySQL compatibility on Aurora.",
       "options": [
         {
           "id": "a",
@@ -1235,10 +929,10 @@
       ]
     },
     {
-      "id": "dbs-q035",
+      "id": "dbs-q026",
       "domain": "deployment-migration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to migrate databases with minimal downtime?",
+      "text": "While troubleshooting latency, engineers determine they must migrate databases with minimal downtime. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -1269,10 +963,10 @@
       ]
     },
     {
-      "id": "dbs-q036",
+      "id": "dbs-q027",
       "domain": "deployment-migration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to provision Aurora quickly from templates?",
+      "text": "A hybrid environment must support a goal to provision Aurora quickly from templates without changing application code. What should you implement?",
       "options": [
         {
           "id": "a",
@@ -1303,10 +997,10 @@
       ]
     },
     {
-      "id": "dbs-q037",
+      "id": "dbs-q028",
       "domain": "deployment-migration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to blue/green database upgrades?",
+      "text": "The DevOps team is automating releases and must blue/green database upgrades. Which design fits best?",
       "options": [
         {
           "id": "a",
@@ -1337,10 +1031,10 @@
       ]
     },
     {
-      "id": "dbs-q038",
+      "id": "dbs-q029",
       "domain": "deployment-migration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to schema conversion Oracle to PostgreSQL?",
+      "text": "An audit found gaps: the organization must schema conversion Oracle to PostgreSQL. Which option addresses this?",
       "options": [
         {
           "id": "a",
@@ -1371,10 +1065,10 @@
       ]
     },
     {
-      "id": "dbs-q039",
+      "id": "dbs-q030",
       "domain": "deployment-migration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to ongoing replication for CDC?",
+      "text": "A regulated workload requires the organization to ongoing replication for CDC. Which solution is BEST?",
       "options": [
         {
           "id": "a",
@@ -1405,10 +1099,10 @@
       ]
     },
     {
-      "id": "dbs-q040",
+      "id": "dbs-q031",
       "domain": "deployment-migration",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to export/import large datasets to RDS?",
+      "text": "After a design review, leadership requires the team to export/import large datasets to RDS. Which approach is MOST reliable?",
       "options": [
         {
           "id": "a",
@@ -1439,7 +1133,7 @@
       ]
     },
     {
-      "id": "dbs-q041",
+      "id": "dbs-q032",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "Which service should you use to migrate databases with minimal downtime?",
@@ -1473,7 +1167,7 @@
       ]
     },
     {
-      "id": "dbs-q042",
+      "id": "dbs-q033",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to migrate databases with minimal downtime?",
@@ -1507,7 +1201,7 @@
       ]
     },
     {
-      "id": "dbs-q043",
+      "id": "dbs-q034",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "A team must migrate databases with minimal downtime. Which option meets the requirement?",
@@ -1541,7 +1235,7 @@
       ]
     },
     {
-      "id": "dbs-q044",
+      "id": "dbs-q035",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "Which service should you use to provision Aurora quickly from templates?",
@@ -1575,7 +1269,7 @@
       ]
     },
     {
-      "id": "dbs-q045",
+      "id": "dbs-q036",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to provision Aurora quickly from templates?",
@@ -1609,7 +1303,7 @@
       ]
     },
     {
-      "id": "dbs-q046",
+      "id": "dbs-q037",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "A team must provision Aurora quickly from templates. Which option meets the requirement?",
@@ -1643,7 +1337,7 @@
       ]
     },
     {
-      "id": "dbs-q047",
+      "id": "dbs-q038",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "Which service should you use to blue/green database upgrades?",
@@ -1677,7 +1371,7 @@
       ]
     },
     {
-      "id": "dbs-q048",
+      "id": "dbs-q039",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to blue/green database upgrades?",
@@ -1711,7 +1405,7 @@
       ]
     },
     {
-      "id": "dbs-q049",
+      "id": "dbs-q040",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "A team must blue/green database upgrades. Which option meets the requirement?",
@@ -1745,7 +1439,7 @@
       ]
     },
     {
-      "id": "dbs-q050",
+      "id": "dbs-q041",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "Which service should you use to schema conversion Oracle to PostgreSQL?",
@@ -1779,7 +1473,7 @@
       ]
     },
     {
-      "id": "dbs-q051",
+      "id": "dbs-q042",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to schema conversion Oracle to PostgreSQL?",
@@ -1813,7 +1507,7 @@
       ]
     },
     {
-      "id": "dbs-q052",
+      "id": "dbs-q043",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "A team must schema conversion Oracle to PostgreSQL. Which option meets the requirement?",
@@ -1847,7 +1541,7 @@
       ]
     },
     {
-      "id": "dbs-q053",
+      "id": "dbs-q044",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "Which service should you use to ongoing replication for CDC?",
@@ -1881,7 +1575,7 @@
       ]
     },
     {
-      "id": "dbs-q054",
+      "id": "dbs-q045",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to ongoing replication for CDC?",
@@ -1915,7 +1609,7 @@
       ]
     },
     {
-      "id": "dbs-q055",
+      "id": "dbs-q046",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "A team must ongoing replication for CDC. Which option meets the requirement?",
@@ -1949,7 +1643,7 @@
       ]
     },
     {
-      "id": "dbs-q056",
+      "id": "dbs-q047",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "Which service should you use to export/import large datasets to RDS?",
@@ -1983,7 +1677,7 @@
       ]
     },
     {
-      "id": "dbs-q057",
+      "id": "dbs-q048",
       "domain": "deployment-migration",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to export/import large datasets to RDS?",
@@ -2017,10 +1711,10 @@
       ]
     },
     {
-      "id": "dbs-q058",
+      "id": "dbs-q049",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to automate patching for RDS?",
+      "text": "Operations reports a need to automate patching for RDS. What is the MOST operationally efficient solution?",
       "options": [
         {
           "id": "a",
@@ -2051,10 +1745,10 @@
       ]
     },
     {
-      "id": "dbs-q059",
+      "id": "dbs-q050",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to monitor DB performance insights?",
+      "text": "For cost and security, the team must monitor DB performance insights. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -2085,10 +1779,10 @@
       ]
     },
     {
-      "id": "dbs-q060",
+      "id": "dbs-q051",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to global read scaling for Aurora?",
+      "text": "For cost and security, the team must global read scaling for Aurora. What is the recommended approach?",
       "options": [
         {
           "id": "a",
@@ -2119,10 +1813,10 @@
       ]
     },
     {
-      "id": "dbs-q061",
+      "id": "dbs-q052",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to secrets rotation for database credentials?",
+      "text": "A company needs to secrets rotation for database credentials. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -2153,7 +1847,7 @@
       ]
     },
     {
-      "id": "dbs-q062",
+      "id": "dbs-q053",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to automate patching for RDS?",
@@ -2187,7 +1881,7 @@
       ]
     },
     {
-      "id": "dbs-q063",
+      "id": "dbs-q054",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to automate patching for RDS?",
@@ -2221,7 +1915,7 @@
       ]
     },
     {
-      "id": "dbs-q064",
+      "id": "dbs-q055",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "A team must automate patching for RDS. Which option meets the requirement?",
@@ -2255,7 +1949,7 @@
       ]
     },
     {
-      "id": "dbs-q065",
+      "id": "dbs-q056",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to monitor DB performance insights?",
@@ -2289,7 +1983,7 @@
       ]
     },
     {
-      "id": "dbs-q066",
+      "id": "dbs-q057",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to monitor DB performance insights?",
@@ -2323,7 +2017,7 @@
       ]
     },
     {
-      "id": "dbs-q067",
+      "id": "dbs-q058",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "A team must monitor DB performance insights. Which option meets the requirement?",
@@ -2357,7 +2051,7 @@
       ]
     },
     {
-      "id": "dbs-q068",
+      "id": "dbs-q059",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to global read scaling for Aurora?",
@@ -2391,7 +2085,7 @@
       ]
     },
     {
-      "id": "dbs-q069",
+      "id": "dbs-q060",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to global read scaling for Aurora?",
@@ -2425,7 +2119,7 @@
       ]
     },
     {
-      "id": "dbs-q070",
+      "id": "dbs-q061",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "A team must global read scaling for Aurora. Which option meets the requirement?",
@@ -2459,7 +2153,7 @@
       ]
     },
     {
-      "id": "dbs-q071",
+      "id": "dbs-q062",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "Which service should you use to secrets rotation for database credentials?",
@@ -2493,7 +2187,7 @@
       ]
     },
     {
-      "id": "dbs-q072",
+      "id": "dbs-q063",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to secrets rotation for database credentials?",
@@ -2527,7 +2221,7 @@
       ]
     },
     {
-      "id": "dbs-q073",
+      "id": "dbs-q064",
       "domain": "management-operations",
       "type": "multiple-choice",
       "text": "A team must secrets rotation for database credentials. Which option meets the requirement?",
@@ -2561,10 +2255,10 @@
       ]
     },
     {
-      "id": "dbs-q074",
+      "id": "dbs-q065",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "An organization wants to automate patching for RDS.",
+      "text": "A development team must automate patching for RDS.",
       "options": [
         {
           "id": "a",
@@ -2595,10 +2289,10 @@
       ]
     },
     {
-      "id": "dbs-q075",
+      "id": "dbs-q066",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "A solutions architect needs to monitor DB performance insights.",
+      "text": "For a regulated workload, you should monitor DB performance insights.",
       "options": [
         {
           "id": "a",
@@ -2629,10 +2323,10 @@
       ]
     },
     {
-      "id": "dbs-q076",
+      "id": "dbs-q067",
       "domain": "management-operations",
       "type": "multiple-choice",
-      "text": "For a regulated workload, you should global read scaling for Aurora.",
+      "text": "An organization wants to global read scaling for Aurora.",
       "options": [
         {
           "id": "a",
@@ -2663,10 +2357,10 @@
       ]
     },
     {
-      "id": "dbs-q077",
+      "id": "dbs-q068",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to slow query analysis for Aurora?",
+      "text": "A company needs to slow query analysis for Aurora. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -2697,10 +2391,10 @@
       ]
     },
     {
-      "id": "dbs-q078",
+      "id": "dbs-q069",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to alarms on replica lag?",
+      "text": "A company needs to alarms on replica lag. Which option meets the requirement with the LEAST implementation effort?",
       "options": [
         {
           "id": "a",
@@ -2731,10 +2425,10 @@
       ]
     },
     {
-      "id": "dbs-q079",
+      "id": "dbs-q070",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
-      "text": "Which AWS service or feature is BEST to audit SQL activity on RDS?",
+      "text": "While troubleshooting latency, engineers determine they must audit SQL activity on RDS. Which action is appropriate?",
       "options": [
         {
           "id": "a",
@@ -2765,7 +2459,7 @@
       ]
     },
     {
-      "id": "dbs-q080",
+      "id": "dbs-q071",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "Which service should you use to slow query analysis for Aurora?",
@@ -2799,7 +2493,7 @@
       ]
     },
     {
-      "id": "dbs-q081",
+      "id": "dbs-q072",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to slow query analysis for Aurora?",
@@ -2833,7 +2527,7 @@
       ]
     },
     {
-      "id": "dbs-q082",
+      "id": "dbs-q073",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "A team must slow query analysis for Aurora. Which option meets the requirement?",
@@ -2867,7 +2561,7 @@
       ]
     },
     {
-      "id": "dbs-q083",
+      "id": "dbs-q074",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "Which service should you use to alarms on replica lag?",
@@ -2901,7 +2595,7 @@
       ]
     },
     {
-      "id": "dbs-q084",
+      "id": "dbs-q075",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to alarms on replica lag?",
@@ -2935,7 +2629,7 @@
       ]
     },
     {
-      "id": "dbs-q085",
+      "id": "dbs-q076",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "A team must alarms on replica lag. Which option meets the requirement?",
@@ -2969,7 +2663,7 @@
       ]
     },
     {
-      "id": "dbs-q086",
+      "id": "dbs-q077",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "Which service should you use to audit SQL activity on RDS?",
@@ -3003,7 +2697,7 @@
       ]
     },
     {
-      "id": "dbs-q087",
+      "id": "dbs-q078",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "What is the MOST appropriate AWS solution to audit SQL activity on RDS?",
@@ -3037,7 +2731,7 @@
       ]
     },
     {
-      "id": "dbs-q088",
+      "id": "dbs-q079",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "A team must audit SQL activity on RDS. Which option meets the requirement?",
@@ -3071,109 +2765,7 @@
       ]
     },
     {
-      "id": "dbs-q089",
-      "domain": "monitoring-troubleshooting",
-      "type": "multiple-choice",
-      "text": "For a regulated workload, you should slow query analysis for Aurora.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Database Insights and Performance Insights"
-        },
-        {
-          "id": "b",
-          "text": "No logs"
-        },
-        {
-          "id": "c",
-          "text": "Telnet"
-        },
-        {
-          "id": "d",
-          "text": "FTP"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Insights help find bottlenecks.",
-      "docs": [
-        {
-          "title": "Database Insights",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q090",
-      "domain": "monitoring-troubleshooting",
-      "type": "multiple-choice",
-      "text": "An organization wants to alarms on replica lag.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon CloudWatch metrics for RDS"
-        },
-        {
-          "id": "b",
-          "text": "Ignore lag"
-        },
-        {
-          "id": "c",
-          "text": "Email once a year"
-        },
-        {
-          "id": "d",
-          "text": "Disable replicas"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "CloudWatch metrics trigger remediation.",
-      "docs": [
-        {
-          "title": "RDS CloudWatch",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q091",
-      "domain": "monitoring-troubleshooting",
-      "type": "multiple-choice",
-      "text": "A solutions architect needs to audit SQL activity on RDS.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Database Activity Streams"
-        },
-        {
-          "id": "b",
-          "text": "Disable audit"
-        },
-        {
-          "id": "c",
-          "text": "Public logs"
-        },
-        {
-          "id": "d",
-          "text": "No retention"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Activity Streams capture database audit events.",
-      "docs": [
-        {
-          "title": "Database Activity Streams",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
-        }
-      ]
-    },
-    {
-      "id": "dbs-q092",
+      "id": "dbs-q080",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
       "text": "A development team must slow query analysis for Aurora.",
@@ -3207,10 +2799,112 @@
       ]
     },
     {
-      "id": "dbs-q093",
+      "id": "dbs-q081",
       "domain": "monitoring-troubleshooting",
       "type": "multiple-choice",
-      "text": "For a regulated workload, you should alarms on replica lag.",
+      "text": "An organization wants to alarms on replica lag.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amazon CloudWatch metrics for RDS"
+        },
+        {
+          "id": "b",
+          "text": "Ignore lag"
+        },
+        {
+          "id": "c",
+          "text": "Email once a year"
+        },
+        {
+          "id": "d",
+          "text": "Disable replicas"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "CloudWatch metrics trigger remediation.",
+      "docs": [
+        {
+          "title": "RDS CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q082",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "A solutions architect needs to audit SQL activity on RDS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Activity Streams"
+        },
+        {
+          "id": "b",
+          "text": "Disable audit"
+        },
+        {
+          "id": "c",
+          "text": "Public logs"
+        },
+        {
+          "id": "d",
+          "text": "No retention"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Activity Streams capture database audit events.",
+      "docs": [
+        {
+          "title": "Database Activity Streams",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q083",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "For a regulated workload, you should slow query analysis for Aurora.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Database Insights and Performance Insights"
+        },
+        {
+          "id": "b",
+          "text": "No logs"
+        },
+        {
+          "id": "c",
+          "text": "Telnet"
+        },
+        {
+          "id": "d",
+          "text": "FTP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Insights help find bottlenecks.",
+      "docs": [
+        {
+          "title": "Database Insights",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html"
+        }
+      ]
+    },
+    {
+      "id": "dbs-q084",
+      "domain": "monitoring-troubleshooting",
+      "type": "multiple-choice",
+      "text": "A development team must alarms on replica lag.",
       "options": [
         {
           "id": "a",
