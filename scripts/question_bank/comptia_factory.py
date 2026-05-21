@@ -8,6 +8,7 @@ from question_bank.common import RawQuestion, build_questions, dedupe_raw
 from question_bank.comptia_catalog import COMPTIA_BY_ID
 from question_bank.comptia_fact_banks import FACT_BANKS
 from question_bank.comptia_acronyms import ACRONYMS_BY_EXAM
+from question_bank.open_source_import import merge_for_exam
 
 
 def _mcq(
@@ -74,6 +75,8 @@ def build_comptia_payload(exam_id: str) -> dict[str, Any]:
     spec = COMPTIA_BY_ID[exam_id]
     bank = FACT_BANKS[exam_id]
     raw = dedupe_raw(_expand_bank(exam_id, bank))
+    seen = {r[2] for r in raw}
+    merge_for_exam(exam_id, raw, seen, max_add=60)
     prefix = exam_id.replace("comptia-", "cpt").replace("-", "")[:6]
     questions = build_questions(raw, prefix)
 

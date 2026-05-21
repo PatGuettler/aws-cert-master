@@ -8,7 +8,9 @@ from typing import Any, Callable
 
 from question_bank.common import RawQuestion, build_questions, dedupe_raw
 from question_bank.official_docs import is_official_url
+from question_bank.open_source_import import merge_for_exam
 from question_bank.scenario_stems import comparison_stem_from_facts, scenario_stem_from_fact
+from question_bank.stem_quality import is_scenario_stem
 
 Fact = tuple[str, str, tuple[str, str, str], str, str, str]
 
@@ -107,10 +109,12 @@ def _fact_mcq(
     domain: str,
     fact: Fact,
     cfg: VendorBuildConfig,
-    stem: str | None = None,
+    stem: str,
 ) -> RawQuestion:
     stem_suffix, correct, wrong, explanation, doc_title, doc_url = fact
-    text = stem or cfg.stem_best.format(suffix=stem_suffix)
+    text = stem
+    if not is_scenario_stem(text):
+        text = scenario_stem_from_fact(stem_suffix, random.Random(hash(text) % 2**32))
     return (
         domain,
         "multiple-choice",
@@ -187,23 +191,6 @@ def _pad_domain(
             _fact_mcq(domain_id, fact, cfg, scenario_stem_from_fact(fact[0], rng)),
         )
 
-    for fact in facts:
-        if len(raw) >= target:
-            break
-        for alt in cfg.stem_alt:
-            _append_unique(
-                raw, seen, _fact_mcq(domain_id, fact, cfg, alt.format(suffix=fact[0]))
-            )
-
-    prefix_cycle = list(cfg.scenario_prefixes)
-    rng.shuffle(prefix_cycle)
-    pi = 0
-    while len(raw) < target and pi < len(facts) * max(len(prefix_cycle), 1) * 4:
-        fact = facts[pi % len(facts)]
-        prefix = prefix_cycle[pi % len(prefix_cycle)]
-        _append_unique(raw, seen, _fact_mcq(domain_id, fact, cfg, f"{prefix} {fact[0]}."))
-        pi += 1
-
     if len(facts) >= 2:
         idx = 0
         while len(raw) < target and idx < len(facts) * (len(facts) - 1) * 2:
@@ -226,12 +213,10 @@ def _pad_domain(
                 ),
             )
 
-    # Last resort: rotate alt stems with numeric suffix so stems stay unique.
     attempt = 0
-    while len(raw) < target and attempt < target * 3:
+    while len(raw) < target and attempt < target * 4:
         fact = facts[attempt % len(facts)]
-        alt = cfg.stem_alt[attempt % len(cfg.stem_alt)]
-        stem = alt.format(suffix=f"{fact[0]} (variant {attempt // len(facts) + 1})")
+        stem = scenario_stem_from_fact(fact[0], rng)
         _append_unique(raw, seen, _fact_mcq(domain_id, fact, cfg, stem))
         attempt += 1
 
@@ -249,7 +234,7 @@ def build_raw_questions(
     domains = spec["domains"]
     rng = random.Random(seed + hash(exam_id) % 10000)
     exam_facts = banks.get(exam_id, {})
-    raw: list[RawQuestion] = list(_resource_questions(spec, cfg))
+    raw: list[RawQuestion] = []
     total_weight = sum(d["weight"] for d in domains)
 
     for domain in domains:
@@ -262,15 +247,17 @@ def build_raw_questions(
         raw.extend(_pad_domain(did, facts, target, cfg, rng))
 
     raw = dedupe_raw(raw)
+    seen = {r[2] for r in raw}
+    merge_for_exam(exam_id, raw, seen, max_add=min(50, min_total // 2))
+
     fact_pool = list(itertools.chain.from_iterable(exam_facts.values()))
     attempt = 0
-    seen = {r[2] for r in raw}
-    while len(raw) < min_total and fact_pool and attempt < min_total * 5:
+    while len(raw) < min_total and fact_pool and attempt < min_total * 6:
         fact = fact_pool[attempt % len(fact_pool)]
         domain_id = domains[attempt % len(domains)]["id"]
-        prefix = rng.choice(cfg.scenario_prefixes)
-        candidate = _fact_mcq(domain_id, fact, cfg, f"{prefix} {fact[0]}.")
-        if candidate[2] not in seen:
+        stem = scenario_stem_from_fact(fact[0], rng)
+        candidate = _fact_mcq(domain_id, fact, cfg, stem)
+        if candidate[2] not in seen and is_scenario_stem(candidate[2]):
             raw.append(candidate)
             seen.add(candidate[2])
         attempt += 1

@@ -5,8 +5,23 @@ import {
   removeHistoryEntry,
 } from "./storage.js";
 import { getDomainAccuracySummary } from "./cert-loader.js";
+import { bindAllPageCollapse } from "./collapse-ui.js";
 
 const CHART_LIMIT = 12;
+
+/**
+ * @param {string} id
+ * @param {string} title
+ * @param {string} bodyHtml
+ */
+function dashCollapse(id, title, bodyHtml) {
+  return `<details id="${id}" class="page-collapse dash-section">
+    <summary class="browse-vendor-summary">
+      <span class="browse-vendor-title">${title}</span>
+    </summary>
+    <div class="page-collapse-body">${bodyHtml}</div>
+  </details>`;
+}
 
 /**
  * @param {string} dateIso
@@ -152,24 +167,27 @@ export function renderDashboard(certId, cert, opts = {}) {
   let html = "";
 
   if (exams.length > 0) {
-    html += `<section class="dash-section dash-summary">
-      <p class="dash-trend dash-trend--${trend.className}">${trend.label}</p>
+    html += dashCollapse(
+      "dash-overview",
+      "Overview",
+      `<p class="dash-trend dash-trend--${trend.className}">${trend.label}</p>
       <div class="dash-stat-grid">
         <div class="dash-stat"><span class="dash-stat-value">${exams.length}</span><span class="dash-stat-label">Attempts</span></div>
         <div class="dash-stat"><span class="dash-stat-value">${passed}/${exams.length}</span><span class="dash-stat-label">Passed</span></div>
         <div class="dash-stat"><span class="dash-stat-value">${best}</span><span class="dash-stat-label">Best score</span></div>
         <div class="dash-stat"><span class="dash-stat-value">${latest.scaledScore}</span><span class="dash-stat-label">Latest</span></div>
         ${avgDuration !== null ? `<div class="dash-stat"><span class="dash-stat-value">${formatDuration(avgDuration)}</span><span class="dash-stat-label">Avg time</span></div>` : ""}
-      </div>
-    </section>`;
+      </div>`
+    );
 
     const chartExams = exams.slice(-CHART_LIMIT);
     const maxScore = cert.exam.maxScore;
     const passLine = cert.exam.passingScore;
 
-    html += `<section class="dash-section">
-      <h3>Score over time</h3>
-      <p class="dash-hint">Most recent on the right. Dashed line = passing score (${passLine}).</p>
+    html += dashCollapse(
+      "dash-score-chart",
+      "Score over time",
+      `<p class="dash-hint">Most recent on the right. Dashed line = passing score (${passLine}).</p>
       <div class="dash-chart" role="img" aria-label="Score trend chart">
         ${chartExams
           .map((e) => {
@@ -182,21 +200,19 @@ export function renderDashboard(certId, cert, opts = {}) {
           })
           .join("")}
         <div class="dash-pass-line" style="bottom:${Math.round((passLine / maxScore) * 100)}%" aria-hidden="true"></div>
-      </div>
-    </section>`;
+      </div>`
+    );
 
     const domainTrends = buildDomainTrends(exams, cert);
     if (domainTrends.length > 0) {
-      html += `<section class="dash-section">
-        <h3>Domain trends</h3>
-        <p class="dash-hint">Latest attempt vs your average across all attempts.</p>
-        <ul class="dash-domain-trends">`;
+      let domainTrendHtml =
+        '<p class="dash-hint">Latest attempt vs your average across all attempts.</p><ul class="dash-domain-trends">';
       for (const d of domainTrends) {
         const arrow =
           d.delta > 5 ? "↑" : d.delta < -5 ? "↓" : "→";
         const cls =
           d.delta > 5 ? "up" : d.delta < -5 ? "down" : "flat";
-        html += `<li>
+        domainTrendHtml += `<li>
           <span class="dash-domain-name">${escapeHtml(d.name)}</span>
           <span class="dash-domain-stats">
             <span class="dash-domain-latest">${d.latest}%</span>
@@ -204,7 +220,8 @@ export function renderDashboard(certId, cert, opts = {}) {
           </span>
         </li>`;
       }
-      html += `</ul></section>`;
+      domainTrendHtml += "</ul>";
+      html += dashCollapse("dash-domain-trends", "Domain trends", domainTrendHtml);
     }
   }
 
@@ -212,7 +229,10 @@ export function renderDashboard(certId, cert, opts = {}) {
   const strongDomains = domainAcc.filter((d) => d.accuracy !== null && d.accuracy >= 75);
   const weakDomains = domainAcc.filter((d) => d.accuracy !== null);
 
-  html += `<section class="dash-section dash-two-col">
+  html += dashCollapse(
+    "dash-weak-strong",
+    "Weak areas & strengths",
+    `<div class="dash-two-col">
     <div>
       <h3>Weak areas</h3>
       ${
@@ -248,42 +268,40 @@ export function renderDashboard(certId, cert, opts = {}) {
       }
       <p class="dash-flags"><strong>${bookmarks.size}</strong> question${bookmarks.size !== 1 ? "s" : ""} flagged for review</p>
     </div>
-  </section>`;
+  </div>`
+  );
 
   if (withDuration.length > 0) {
     const timeRows = [...exams]
       .reverse()
       .filter((e) => e.durationSeconds > 0)
       .slice(-CHART_LIMIT);
-    html += `<section class="dash-section">
-      <h3>Time to complete</h3>
-      <p class="dash-hint">How long each full exam took (when tracked).</p>
-      <ul class="dash-time-list">`;
+    let timeHtml = '<p class="dash-hint">How long each full exam took (when tracked).</p><ul class="dash-time-list">';
     const maxDur = Math.max(...timeRows.map((e) => e.durationSeconds));
     for (const e of timeRows) {
       const pct = Math.round((e.durationSeconds / maxDur) * 100);
-      html += `<li>
+      timeHtml += `<li>
         <span>${formatDate(e.date)}</span>
         <span class="dash-time-bar-wrap"><span class="dash-time-bar" style="width:${pct}%"></span></span>
         <strong>${formatDuration(e.durationSeconds)}</strong>
       </li>`;
     }
-    html += `</ul></section>`;
+    timeHtml += "</ul>";
+    html += dashCollapse("dash-time", "Time to complete", timeHtml);
   }
 
   if (drills.length > 0) {
-    html += `<section class="dash-section">
-      <h3>Drill sessions</h3>
-      <p class="dash-hint">${drills.length} drill${drills.length > 1 ? "s" : ""} — focused practice, not included in score trend above.</p>
-    </section>`;
+    html += dashCollapse(
+      "dash-drills",
+      "Drill sessions",
+      `<p class="dash-hint">${drills.length} drill${drills.length > 1 ? "s" : ""} — focused practice, not included in score trend above.</p>`
+    );
   }
 
   const showAll = root.dataset.showAllHistory === "true";
   const tableExams = showAll ? [...allHistory] : allHistory.slice(0, 15);
 
-  html += `<section class="dash-section">
-    <h3>All attempts</h3>
-    <table class="history-table dash-history-table"><thead><tr>
+  let historyHtml = `<table class="history-table dash-history-table"><thead><tr>
       <th>Date</th><th>Type</th><th>Score</th><th>Result</th><th>Time</th><th>Domains</th><th></th>
     </tr></thead><tbody>`;
 
@@ -300,17 +318,18 @@ export function renderDashboard(certId, cert, opts = {}) {
     </tr>`;
   }
 
-  html += `</tbody></table>`;
+  historyHtml += `</tbody></table>`;
 
   if (allHistory.length > 15) {
-    html += `<button type="button" id="dash-history-toggle" class="btn btn-outline btn-sm">
+    historyHtml += `<button type="button" id="dash-history-toggle" class="btn btn-outline btn-sm">
       ${showAll ? "Show less" : `View all (${allHistory.length})`}
     </button>`;
   }
 
-  html += `</section>`;
+  html += dashCollapse("dash-history", "All attempts", historyHtml);
 
   root.innerHTML = html;
+  bindAllPageCollapse(root);
 
   root.querySelectorAll(".history-delete").forEach((btn) => {
     btn.addEventListener("click", () => {

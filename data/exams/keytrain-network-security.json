@@ -5,8 +5,8 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 15,
-    "scoredQuestions": 15,
+    "totalQuestions": 18,
+    "scoredQuestions": 18,
     "timeLimitMinutes": 40,
     "passingScore": 700,
     "maxScore": 1000,
@@ -113,23 +113,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Block all ERP users"
-        },
-        {
-          "id": "b",
-          "text": "Tune or temporarily disable the specific signature with change control and monitor ERP"
-        },
-        {
-          "id": "c",
           "text": "Disable IPS permanently"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Block all ERP users"
+        },
+        {
+          "id": "c",
           "text": "Turn off logging on IPS"
+        },
+        {
+          "id": "d",
+          "text": "Tune or temporarily disable the specific signature with change control and monitor ERP"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Signature tuning balances protection and availability; document changes.",
       "docs": [
@@ -189,11 +189,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Normal backup behavior always"
+          "text": "HIPAA documentation gap"
         },
         {
           "id": "b",
-          "text": "HIPAA documentation gap"
+          "text": "Likely internal reconnaissance or worm propagation worth isolating"
         },
         {
           "id": "c",
@@ -201,89 +201,13 @@
         },
         {
           "id": "d",
-          "text": "Likely internal reconnaissance or worm propagation worth isolating"
+          "text": "Normal backup behavior always"
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
       "explanation": "Internal port sweeps are suspicious and warrant host isolation and investigation.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q004",
-      "domain": "ids-ips",
-      "type": "multiple-choice",
-      "text": "During a tabletop on ids/ips alerts, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "b",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to ids/ips alerts trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Average desk chair height"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective ids/ips alerts programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q005",
-      "domain": "ids-ips",
-      "type": "multiple-choice",
-      "text": "An audit sampling ids/ips alerts controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "b",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "c",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "d",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for ids/ips alerts.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -303,23 +227,23 @@
       "options": [
         {
           "id": "a",
-          "text": "NTP time sync only"
-        },
-        {
-          "id": "b",
           "text": "Standard HTTPS browsing"
         },
         {
+          "id": "b",
+          "text": "LDAP user authentication"
+        },
+        {
           "id": "c",
-          "text": "Metasploit default handler ports and reverse shells\u2014treat as incident"
+          "text": "NTP time sync only"
         },
         {
           "id": "d",
-          "text": "LDAP user authentication"
+          "text": "Metasploit default handler ports and reverse shells\u2014treat as incident"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "Non-standard high ports outbound to rare IPs are classic C2 indicators.",
       "docs": [
@@ -341,23 +265,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Open 3389 to the internet for remote support"
-        },
-        {
-          "id": "b",
-          "text": "Verify authorized change; if none, isolate and hunt for lateral movement"
-        },
-        {
-          "id": "c",
           "text": "Disable database encryption"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "Ignore if CPU is low"
+        },
+        {
+          "id": "c",
+          "text": "Verify authorized change; if none, isolate and hunt for lateral movement"
+        },
+        {
+          "id": "d",
+          "text": "Open 3389 to the internet for remote support"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Unexpected RDP on database tiers suggests compromise or misconfiguration.",
       "docs": [
@@ -383,11 +307,11 @@
         },
         {
           "id": "b",
-          "text": "Possible DNS tunneling exfiltration\u2014inspect query entropy and destinations"
+          "text": "Badge reader maintenance"
         },
         {
           "id": "c",
-          "text": "Badge reader maintenance"
+          "text": "Possible DNS tunneling exfiltration\u2014inspect query entropy and destinations"
         },
         {
           "id": "d",
@@ -395,85 +319,9 @@
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Anomalous DNS volume/entropy can indicate tunneling.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q007",
-      "domain": "port-anomalies",
-      "type": "multiple-choice",
-      "text": "During a tabletop on port anomalies, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "b",
-          "text": "Documented incidents or control failures tied to port anomalies trending down quarter over quarter"
-        },
-        {
-          "id": "c",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Effective port anomalies programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q008",
-      "domain": "port-anomalies",
-      "type": "multiple-choice",
-      "text": "An audit sampling port anomalies controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "b",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "c",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "d",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for port anomalies.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -493,15 +341,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Backup tape rotation"
-        },
-        {
-          "id": "b",
           "text": "C2 beaconing with jittered interval\u2014investigate process and block domain"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Windows Update always"
+        },
+        {
+          "id": "c",
+          "text": "Backup tape rotation"
         },
         {
           "id": "d",
@@ -509,7 +357,7 @@
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Regular small outbound sessions are beacon patterns.",
       "docs": [
@@ -535,19 +383,19 @@
         },
         {
           "id": "b",
-          "text": "Proof HR is phishing"
-        },
-        {
-          "id": "c",
           "text": "Sandbox may be simulating beacon\u2014ensure production hosts are not in same pattern"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "DNSSEC misconfiguration only"
+        },
+        {
+          "id": "d",
+          "text": "Proof HR is phishing"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Distinguish test lab from production beaconing via asset context.",
       "docs": [
@@ -573,11 +421,11 @@
         },
         {
           "id": "b",
-          "text": "Fixed byte counts at steady intervals to rare destinations"
+          "text": "Variable large downloads to CDN during lunch"
         },
         {
           "id": "c",
-          "text": "Variable large downloads to CDN during lunch"
+          "text": "Fixed byte counts at steady intervals to rare destinations"
         },
         {
           "id": "d",
@@ -585,85 +433,9 @@
         }
       ],
       "correct": [
-        "b"
-      ],
-      "explanation": "Beacons are rhythmic and uniform; streaming is bursty to CDNs.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q010",
-      "domain": "beaconing",
-      "type": "multiple-choice",
-      "text": "During a tabletop on beaconing, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "b",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "c",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "d",
-          "text": "Documented incidents or control failures tied to beaconing trending down quarter over quarter"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Effective beaconing programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q011",
-      "domain": "beaconing",
-      "type": "multiple-choice",
-      "text": "An audit sampling beaconing controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "b",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "c",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "d",
-          "text": "Remove all logging to reduce findings"
-        }
-      ],
-      "correct": [
         "c"
       ],
-      "explanation": "Consistency requires written baselines and attestations for beaconing.",
+      "explanation": "Beacons are rhythmic and uniform; streaming is bursty to CDNs.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -683,11 +455,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Backup failure only"
+          "text": "Global DNS root compromise"
         },
         {
           "id": "b",
-          "text": "Global DNS root compromise"
+          "text": "Expired HIPAA training"
         },
         {
           "id": "c",
@@ -695,7 +467,7 @@
         },
         {
           "id": "d",
-          "text": "Expired HIPAA training"
+          "text": "Backup failure only"
         }
       ],
       "correct": [
@@ -721,11 +493,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Dynamic ARP Inspection (DAI) with DHCP snooping"
+          "text": "Remove port security"
         },
         {
           "id": "b",
-          "text": "Remove port security"
+          "text": "Disable STP"
         },
         {
           "id": "c",
@@ -733,11 +505,11 @@
         },
         {
           "id": "d",
-          "text": "Disable STP"
+          "text": "Dynamic ARP Inspection (DAI) with DHCP snooping"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "DAI validates ARP against trusted bindings.",
       "docs": [
@@ -759,101 +531,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Merge guest and corp VLANs"
-        },
-        {
-          "id": "b",
           "text": "Client isolation and separate VLAN without route to corporate resources"
         },
         {
+          "id": "b",
+          "text": "Disable WPA2 on guest"
+        },
+        {
           "id": "c",
-          "text": "Share admin passwords on guest SSID"
+          "text": "Merge guest and corp VLANs"
         },
         {
           "id": "d",
-          "text": "Disable WPA2 on guest"
+          "text": "Share admin passwords on guest SSID"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Guest isolation limits MITM impact on corporate assets.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q013",
-      "domain": "arp-spoofing",
-      "type": "multiple-choice",
-      "text": "During a tabletop on arp spoofing, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "b",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "c",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "d",
-          "text": "Documented incidents or control failures tied to arp spoofing trending down quarter over quarter"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Effective arp spoofing programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q014",
-      "domain": "arp-spoofing",
-      "type": "multiple-choice",
-      "text": "An audit sampling arp spoofing controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "b",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "c",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "d",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for arp spoofing.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -877,11 +573,11 @@
         },
         {
           "id": "b",
-          "text": "Legitimate MX failover"
+          "text": "DNS tunneling data exfiltration or C2"
         },
         {
           "id": "c",
-          "text": "DNS tunneling data exfiltration or C2"
+          "text": "Legitimate MX failover"
         },
         {
           "id": "d",
@@ -889,7 +585,7 @@
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "High-entropy subdomains are a tunneling hallmark.",
       "docs": [
@@ -911,23 +607,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Allow any A record"
+          "text": "Use hosts file only on DC"
         },
         {
           "id": "b",
-          "text": "DNS logging with entropy/threat intel and blocking of uncategorized DGA domains"
-        },
-        {
-          "id": "c",
           "text": "Disable all DNS"
         },
         {
+          "id": "c",
+          "text": "Allow any A record"
+        },
+        {
           "id": "d",
-          "text": "Use hosts file only on DC"
+          "text": "DNS logging with entropy/threat intel and blocking of uncategorized DGA domains"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "DNS analytics and threat feeds catch tunnel domains.",
       "docs": [
@@ -981,82 +677,6 @@
     },
     {
       "id": "ktnet-q016",
-      "domain": "dns-tunneling",
-      "type": "multiple-choice",
-      "text": "During a tabletop on dns tunneling, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "b",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "c",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "d",
-          "text": "Documented incidents or control failures tied to dns tunneling trending down quarter over quarter"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Effective dns tunneling programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q017",
-      "domain": "dns-tunneling",
-      "type": "multiple-choice",
-      "text": "An audit sampling dns tunneling controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "b",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "c",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "d",
-          "text": "Allow each site to opt out silently"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for dns tunneling.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q016",
       "domain": "traffic-inspection",
       "type": "multiple-choice",
       "text": "SOC needs visibility into TLS 1.3 east-west traffic. Practical approach?",
@@ -1067,11 +687,11 @@
         },
         {
           "id": "b",
-          "text": "East-west metadata (SNI, JA3), EDR network events, and segmented mirror taps where allowed"
+          "text": "Stop logging to save disk"
         },
         {
           "id": "c",
-          "text": "Stop logging to save disk"
+          "text": "East-west metadata (SNI, JA3), EDR network events, and segmented mirror taps where allowed"
         },
         {
           "id": "d",
@@ -1079,7 +699,7 @@
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Full decrypt is not always possible; metadata and EDR supplement inspection.",
       "docs": [
@@ -1101,15 +721,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Identify process/user via EDR and verify against backup/job schedules"
+          "text": "Block all cloud globally"
         },
         {
           "id": "b",
-          "text": "Delete netflow to save space"
+          "text": "Identify process/user via EDR and verify against backup/job schedules"
         },
         {
           "id": "c",
-          "text": "Block all cloud globally"
+          "text": "Delete netflow to save space"
         },
         {
           "id": "d",
@@ -1117,7 +737,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Validate against known jobs; anomalies may be exfiltration.",
       "docs": [
@@ -1139,7 +759,7 @@
       "options": [
         {
           "id": "a",
-          "text": "CCTV only"
+          "text": "Patch catalog version"
         },
         {
           "id": "b",
@@ -1147,93 +767,17 @@
         },
         {
           "id": "c",
-          "text": "Invoice approval chain"
+          "text": "CCTV only"
         },
         {
           "id": "d",
-          "text": "Patch catalog version"
+          "text": "Invoice approval chain"
         }
       ],
       "correct": [
         "b"
       ],
       "explanation": "Multi-log correlation links user action to C2 establishment.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q019",
-      "domain": "traffic-inspection",
-      "type": "multiple-choice",
-      "text": "During a tabletop on traffic inspection, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "b",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to traffic inspection trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Average desk chair height"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective traffic inspection programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktnet-q020",
-      "domain": "traffic-inspection",
-      "type": "multiple-choice",
-      "text": "An audit sampling traffic inspection controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "b",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "c",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for traffic inspection.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

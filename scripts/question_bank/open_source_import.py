@@ -109,7 +109,10 @@ def _tinhtq_to_raw(items: list[dict], source_id: str) -> list[RawQuestion]:
         if len(opts_raw) < 4:
             continue
         options = [_normalize_option_letter(o) for o in opts_raw[:4]]
-        correct_idx = int(item.get("correctAnswer", 0))
+        raw_correct = item.get("correctAnswer", 0)
+        if isinstance(raw_correct, list):
+            raw_correct = raw_correct[0] if raw_correct else 0
+        correct_idx = int(raw_correct)
         if correct_idx < 0 or correct_idx >= len(options):
             correct_idx = 0
         correct_id = options[correct_idx][0]
@@ -157,9 +160,45 @@ def _map_aws_domain(exam_id: str, stem: str) -> str:
     return "general"
 
 
-def _anaxkgs_to_raw(items: list[dict], source_id: str) -> list[RawQuestion]:
+def _flatten_anaxkgs(data: list) -> list[dict]:
+    """SY0-601 nested certificate -> topics -> questions."""
+    flat: list[dict] = []
+    for cert_block in data:
+        if not isinstance(cert_block, dict):
+            continue
+        for topic in cert_block.get("topics") or []:
+            topic_name = (topic.get("topicName") or "").strip()
+            for q in topic.get("questions") or []:
+                if isinstance(q, dict):
+                    q = {**q, "_topicName": topic_name}
+                    flat.append(q)
+    return flat
+
+
+def _map_security_topic(topic_name: str, stem: str) -> str:
+    t = topic_name.lower()
+    mapping = [
+        ("threat", "threats"),
+        ("vulnerabilit", "threats"),
+        ("attack", "threats"),
+        ("architecture", "architecture"),
+        ("design", "architecture"),
+        ("operation", "operations"),
+        ("incident", "operations"),
+        ("governance", "program"),
+        ("risk", "program"),
+        ("compliance", "program"),
+        ("program", "program"),
+    ]
+    for key, domain_id in mapping:
+        if key in t:
+            return domain_id
+    return _map_security_domain(stem)
+
+
+def _anaxkgs_to_raw(items: list, source_id: str) -> list[RawQuestion]:
     out: list[RawQuestion] = []
-    for item in items:
+    for item in _flatten_anaxkgs(items if isinstance(items, list) else []):
         stem = (item.get("question") or item.get("text") or "").strip()
         if not is_scenario_stem(stem):
             continue
@@ -171,14 +210,21 @@ def _anaxkgs_to_raw(items: list[dict], source_id: str) -> list[RawQuestion]:
             if isinstance(ans, dict):
                 options.append((chr(ord("a") + i), str(ans.get("text", ans.get("answer", "")))))
             else:
-                options.append(_normalize_option_letter(str(ans)))
-        correct = item.get("correct") or item.get("correctAnswer") or "a"
-        if isinstance(correct, int):
-            correct = chr(ord("a") + correct)
-        correct = str(correct).lower().strip()[:1]
+                text = str(ans).strip()
+                if re.match(r"^[A-D]\.", text, re.I):
+                    options.append(_normalize_option_letter(text))
+                else:
+                    options.append((chr(ord("a") + i), text))
+        raw_correct = item.get("correct") or item.get("correctAnswer") or 0
+        if isinstance(raw_correct, list):
+            raw_correct = raw_correct[0] if raw_correct else 0
+        if isinstance(raw_correct, int):
+            correct = chr(ord("a") + raw_correct)
+        else:
+            correct = str(raw_correct).lower().strip()[:1]
         if correct not in {o[0] for o in options}:
             correct = "a"
-        domain_id = _map_security_domain(stem)
+        domain_id = _map_security_topic(item.get("_topicName", ""), stem)
         explanation = (item.get("explanation") or "Review CompTIA Security+ objectives.").strip()
         explanation += f" (Adapted from {source_id}, MIT License.)"
         doc = ("CompTIA Security+", "https://www.comptia.org/certifications/security")

@@ -5,8 +5,8 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 15,
-    "scoredQuestions": 15,
+    "totalQuestions": 12,
+    "scoredQuestions": 12,
     "timeLimitMinutes": 40,
     "passingScore": 700,
     "maxScore": 1000,
@@ -83,23 +83,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Antivirus update"
-        },
-        {
-          "id": "b",
           "text": "Normal ERP rounding"
         },
         {
+          "id": "b",
+          "text": "Possible vendor fraud or BEC\u2014verify via known contacts"
+        },
+        {
           "id": "c",
-          "text": "Network beaconing"
+          "text": "Antivirus update"
         },
         {
           "id": "d",
-          "text": "Possible vendor fraud or BEC\u2014verify via known contacts"
+          "text": "Network beaconing"
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
       "explanation": "Bank detail changes on invoices are classic fraud indicators.",
       "docs": [
@@ -121,11 +121,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Manager attestation and analytics for outlier patterns"
+          "text": "Disable finance department"
         },
         {
           "id": "b",
-          "text": "Disable finance department"
+          "text": "Manager attestation and analytics for outlier patterns"
         },
         {
           "id": "c",
@@ -137,7 +137,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Gift card fraud is pattern-detectable with analytics.",
       "docs": [
@@ -163,97 +163,21 @@
         },
         {
           "id": "b",
-          "text": "Preserve digital evidence logs and support forensic imaging per legal"
-        },
-        {
-          "id": "c",
           "text": "Disable firewalls"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Post names on intranet"
+        },
+        {
+          "id": "d",
+          "text": "Preserve digital evidence logs and support forensic imaging per legal"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Fraud investigations need preserved logs and coordinated legal hold.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktfin-q004",
-      "domain": "fraud-indicators",
-      "type": "multiple-choice",
-      "text": "During a tabletop on fraud indicators, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "b",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to fraud indicators trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective fraud indicators programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktfin-q005",
-      "domain": "fraud-indicators",
-      "type": "multiple-choice",
-      "text": "An audit sampling fraud indicators controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "b",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "c",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for fraud indicators.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -273,23 +197,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Required for SOC 2 always"
-        },
-        {
-          "id": "b",
           "text": "HIPAA mandate"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Segregation of duties violation enabling financial statement fraud"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Improved efficiency only"
+        },
+        {
+          "id": "d",
+          "text": "Required for SOC 2 always"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "SoD requires separate roles for posting vs approval.",
       "docs": [
@@ -311,23 +235,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Undetected manipulation of financial results"
+          "text": "No risk if CFO approves verbally"
         },
         {
           "id": "b",
-          "text": "Better encryption"
-        },
-        {
-          "id": "c",
           "text": "Faster close process only"
         },
         {
+          "id": "c",
+          "text": "Undetected manipulation of financial results"
+        },
+        {
           "id": "d",
-          "text": "No risk if CFO approves verbally"
+          "text": "Better encryption"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Audit trails and documentation underpin accounting integrity.",
       "docs": [
@@ -349,15 +273,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Email GL to all staff"
-        },
-        {
-          "id": "b",
           "text": "Disable ERP"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Restrict exports and use controlled reporting cubes with logging"
+        },
+        {
+          "id": "c",
+          "text": "Email GL to all staff"
         },
         {
           "id": "d",
@@ -365,85 +289,9 @@
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Uncontrolled exports undermine integrity of source system.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktfin-q007",
-      "domain": "accounting-integrity",
-      "type": "multiple-choice",
-      "text": "During a tabletop on accounting integrity, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "b",
-          "text": "Documented incidents or control failures tied to accounting integrity trending down quarter over quarter"
-        },
-        {
-          "id": "c",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "d",
-          "text": "Total pages printed in color only"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Effective accounting integrity programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktfin-q008",
-      "domain": "accounting-integrity",
-      "type": "multiple-choice",
-      "text": "An audit sampling accounting integrity controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "b",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "c",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for accounting integrity.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -463,23 +311,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Configure system-enforced dual approval workflow matching policy"
-        },
-        {
-          "id": "b",
           "text": "Use personal Venmo"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Lower threshold to $5M"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Remove approvals for speed"
+        },
+        {
+          "id": "d",
+          "text": "Configure system-enforced dual approval workflow matching policy"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Technical enforcement must mirror financial policy.",
       "docs": [
@@ -505,19 +353,19 @@
         },
         {
           "id": "b",
-          "text": "Separate vendor master maintenance from payment initiation roles"
+          "text": "Allow shared clerk login"
         },
         {
           "id": "c",
-          "text": "Disable logging"
+          "text": "Separate vendor master maintenance from payment initiation roles"
         },
         {
           "id": "d",
-          "text": "Allow shared clerk login"
+          "text": "Disable logging"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Creating vendors and paying is high-risk combined role.",
       "docs": [
@@ -539,7 +387,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Run at 3 a.m. without logs"
+          "text": "Disable bank callbacks"
         },
         {
           "id": "b",
@@ -551,7 +399,7 @@
         },
         {
           "id": "d",
-          "text": "Disable bank callbacks"
+          "text": "Run at 3 a.m. without logs"
         }
       ],
       "correct": [
@@ -571,97 +419,21 @@
     },
     {
       "id": "ktfin-q010",
-      "domain": "workflow-protection",
-      "type": "multiple-choice",
-      "text": "During a tabletop on financial workflow protection, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "b",
-          "text": "Documented incidents or control failures tied to financial workflow protection trending down quarter over quarter"
-        },
-        {
-          "id": "c",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "d",
-          "text": "Total pages printed in color only"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Effective financial workflow protection programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktfin-q011",
-      "domain": "workflow-protection",
-      "type": "multiple-choice",
-      "text": "An audit sampling financial workflow protection controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "b",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "c",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for financial workflow protection.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktfin-q010",
       "domain": "invoice-manipulation",
       "type": "multiple-choice",
       "text": "PDF invoice totals do not match ERP line items but bank account matches a new vendor. Suspicion?",
       "options": [
         {
           "id": "a",
-          "text": "DNS tunneling"
-        },
-        {
-          "id": "b",
           "text": "Invoice manipulation fraud\u2014halt payment and verify vendor"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Patch Tuesday"
+        },
+        {
+          "id": "c",
+          "text": "DNS tunneling"
         },
         {
           "id": "d",
@@ -669,7 +441,7 @@
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Mismatch between documents and master data signals fraud.",
       "docs": [
@@ -691,23 +463,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Ignore mailbox rules"
-        },
-        {
-          "id": "b",
-          "text": "Pay faster"
-        },
-        {
-          "id": "c",
           "text": "Disable SPF"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "Hunt for hidden forwarding rules and compare invoice hashes to PO"
+        },
+        {
+          "id": "c",
+          "text": "Ignore mailbox rules"
+        },
+        {
+          "id": "d",
+          "text": "Pay faster"
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
       "explanation": "Mailbox rules are common in invoice fraud; PO matching catches changes.",
       "docs": [
@@ -729,15 +501,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Stop using vendors"
-        },
-        {
-          "id": "b",
           "text": "Publish new password in email"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Disable two-person review"
+        },
+        {
+          "id": "c",
+          "text": "Stop using vendors"
         },
         {
           "id": "d",
@@ -748,82 +520,6 @@
         "d"
       ],
       "explanation": "Portal compromise enables payment redirect fraud.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktfin-q013",
-      "domain": "invoice-manipulation",
-      "type": "multiple-choice",
-      "text": "During a tabletop on invoice and payment manipulation, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "b",
-          "text": "Documented incidents or control failures tied to invoice and payment manipulation trending down quarter over quarter"
-        },
-        {
-          "id": "c",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Effective invoice and payment manipulation programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktfin-q014",
-      "domain": "invoice-manipulation",
-      "type": "multiple-choice",
-      "text": "An audit sampling invoice and payment manipulation controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "b",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "c",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "d",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for invoice and payment manipulation.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

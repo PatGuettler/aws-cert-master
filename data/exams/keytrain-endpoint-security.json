@@ -98,7 +98,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable EDR to stop alerts"
+          "text": "Reimage without any logging"
         },
         {
           "id": "b",
@@ -106,7 +106,7 @@
         },
         {
           "id": "c",
-          "text": "Reimage without any logging"
+          "text": "Disable EDR to stop alerts"
         },
         {
           "id": "d",
@@ -136,23 +136,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Block all internet indefinitely"
-        },
-        {
-          "id": "b",
           "text": "Allow admin rights for all staff"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Application allowlisting and software center for approved tools"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Disable Windows Defender"
+        },
+        {
+          "id": "d",
+          "text": "Block all internet indefinitely"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Allowlisting limits unsigned or unapproved installers common in droppers.",
       "docs": [
@@ -174,101 +174,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Network beaconing only"
+          "text": "Benign marketing material"
         },
         {
           "id": "b",
-          "text": "Physical tailgating"
-        },
-        {
-          "id": "c",
           "text": "Malware delivery attempting staged download"
         },
         {
+          "id": "c",
+          "text": "Physical tailgating"
+        },
+        {
           "id": "d",
-          "text": "Benign marketing material"
+          "text": "Network beaconing only"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Macro-to-external-download is classic malware staging.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q004",
-      "domain": "malware",
-      "type": "multiple-choice",
-      "text": "During a tabletop on malware, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "b",
-          "text": "Documented incidents or control failures tied to malware trending down quarter over quarter"
-        },
-        {
-          "id": "c",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Effective malware programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q005",
-      "domain": "malware",
-      "type": "multiple-choice",
-      "text": "An audit sampling malware controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "b",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "c",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "d",
-          "text": "Remove all logging to reduce findings"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for malware.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -292,19 +216,19 @@
         },
         {
           "id": "b",
-          "text": "Delete backups to free space"
+          "text": "Isolate affected segments and preserve volatile evidence per IR plan"
         },
         {
           "id": "c",
-          "text": "Pay ransom immediately without documentation"
+          "text": "Delete backups to free space"
         },
         {
           "id": "d",
-          "text": "Isolate affected segments and preserve volatile evidence per IR plan"
+          "text": "Pay ransom immediately without documentation"
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
       "explanation": "Containment and evidence preservation precede recovery decisions.",
       "docs": [
@@ -326,11 +250,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Pay anonymously on personal card"
+          "text": "Disable MFA to speed recovery"
         },
         {
           "id": "b",
-          "text": "Disable MFA to speed recovery"
+          "text": "Pay anonymously on personal card"
         },
         {
           "id": "c",
@@ -372,93 +296,17 @@
         },
         {
           "id": "c",
-          "text": "Backups are automatically safe from leak"
+          "text": "They may publish exfiltrated data even if you restore from backups"
         },
         {
           "id": "d",
-          "text": "They may publish exfiltrated data even if you restore from backups"
+          "text": "Backups are automatically safe from leak"
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
       "explanation": "Exfiltration plus encryption means recovery does not eliminate leak risk.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q007",
-      "domain": "ransomware",
-      "type": "multiple-choice",
-      "text": "During a tabletop on ransomware, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Documented incidents or control failures tied to ransomware trending down quarter over quarter"
-        },
-        {
-          "id": "b",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "c",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "d",
-          "text": "Total pages printed in color only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Effective ransomware programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q008",
-      "domain": "ransomware",
-      "type": "multiple-choice",
-      "text": "An audit sampling ransomware controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "b",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "c",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "d",
-          "text": "Allow each site to opt out silently"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for ransomware.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -478,7 +326,7 @@
       "options": [
         {
           "id": "a",
-          "text": "User's last vacation dates"
+          "text": "Printer queue status"
         },
         {
           "id": "b",
@@ -486,11 +334,11 @@
         },
         {
           "id": "c",
-          "text": "Printer queue status"
+          "text": "Only CPU fan speed"
         },
         {
           "id": "d",
-          "text": "Only CPU fan speed"
+          "text": "User's last vacation dates"
         }
       ],
       "correct": [
@@ -516,7 +364,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Process hollowing or rootkit-style hiding\u2014use EDR kernel telemetry"
+          "text": "Normal GPU acceleration"
         },
         {
           "id": "b",
@@ -524,15 +372,15 @@
         },
         {
           "id": "c",
-          "text": "Normal GPU acceleration"
+          "text": "Patch Tuesday side effect only"
         },
         {
           "id": "d",
-          "text": "Patch Tuesday side effect only"
+          "text": "Process hollowing or rootkit-style hiding\u2014use EDR kernel telemetry"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Discrepancies suggest advanced evasion; EDR kernel view is needed.",
       "docs": [
@@ -554,101 +402,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Windows Security Event ID 4698 and Task Scheduler operational log"
-        },
-        {
-          "id": "b",
           "text": "Invoice PDF metadata"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "DHCP lease log only"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "CCTV timestamp"
+        },
+        {
+          "id": "d",
+          "text": "Windows Security Event ID 4698 and Task Scheduler operational log"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Task creation events document persistence mechanisms.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q010",
-      "domain": "process-analysis",
-      "type": "multiple-choice",
-      "text": "During a tabletop on process analysis, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "b",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to process analysis trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective process analysis programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q011",
-      "domain": "process-analysis",
-      "type": "multiple-choice",
-      "text": "An audit sampling process analysis controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "b",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "c",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "d",
-          "text": "Allow each site to opt out silently"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for process analysis.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -676,15 +448,15 @@
         },
         {
           "id": "c",
-          "text": "Remove persistence entries, quarantine binary, and reimage if tampering is widespread"
+          "text": "Disable Run keys globally forever"
         },
         {
           "id": "d",
-          "text": "Disable Run keys globally forever"
+          "text": "Remove persistence entries, quarantine binary, and reimage if tampering is widespread"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "Persistence must be removed with the payload; reimage if integrity is uncertain.",
       "docs": [
@@ -706,11 +478,11 @@
       "options": [
         {
           "id": "a",
-          "text": "WMI only manages printers"
+          "text": "WMI subscriptions can trigger payloads without classic Run key visibility"
         },
         {
           "id": "b",
-          "text": "WMI subscriptions can trigger payloads without classic Run key visibility"
+          "text": "It blocks MFA enrollment"
         },
         {
           "id": "c",
@@ -718,11 +490,11 @@
         },
         {
           "id": "d",
-          "text": "It blocks MFA enrollment"
+          "text": "WMI only manages printers"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "WMI persistence is stealthy; hunters search for suspicious consumers.",
       "docs": [
@@ -744,101 +516,25 @@
       "options": [
         {
           "id": "a",
-          "text": "Shortcuts are always harmless"
+          "text": "Logon triggers load of code from attacker-controlled share"
         },
         {
           "id": "b",
-          "text": "Improves patch compliance"
-        },
-        {
-          "id": "c",
           "text": "Only affects Linux servers"
         },
         {
+          "id": "c",
+          "text": "Improves patch compliance"
+        },
+        {
           "id": "d",
-          "text": "Logon triggers load of code from attacker-controlled share"
+          "text": "Shortcuts are always harmless"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Remote startup items pull code at user logon\u2014common persistence.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q013",
-      "domain": "persistence",
-      "type": "multiple-choice",
-      "text": "During a tabletop on startup persistence, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "b",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to startup persistence trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective startup persistence programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q014",
-      "domain": "persistence",
-      "type": "multiple-choice",
-      "text": "An audit sampling startup persistence controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "b",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "c",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "d",
-          "text": "Allow each site to opt out silently"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for startup persistence.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -896,11 +592,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Exclusions apply only to network traffic"
+          "text": "Malware can reside undetected on excluded volumes"
         },
         {
           "id": "b",
-          "text": "AV scans cause guaranteed data loss"
+          "text": "Exclusions apply only to network traffic"
         },
         {
           "id": "c",
@@ -908,11 +604,11 @@
         },
         {
           "id": "d",
-          "text": "Malware can reside undetected on excluded volumes"
+          "text": "AV scans cause guaranteed data loss"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Broad exclusions create blind spots attackers target.",
       "docs": [
@@ -934,7 +630,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable logging to reduce tickets"
+          "text": "Reconcile GPO and EDR policy so one compliant agent is active and reporting"
         },
         {
           "id": "b",
@@ -942,93 +638,17 @@
         },
         {
           "id": "c",
-          "text": "Reconcile GPO and EDR policy so one compliant agent is active and reporting"
+          "text": "Hide status in the console"
         },
         {
           "id": "d",
-          "text": "Hide status in the console"
+          "text": "Disable logging to reduce tickets"
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
       "explanation": "Conflicting policies cause false confidence; one managed agent should report health.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q016",
-      "domain": "av-status",
-      "type": "multiple-choice",
-      "text": "During a tabletop on antivirus status, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Documented incidents or control failures tied to antivirus status trending down quarter over quarter"
-        },
-        {
-          "id": "b",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "c",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Effective antivirus status programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "kteps-q017",
-      "domain": "av-status",
-      "type": "multiple-choice",
-      "text": "An audit sampling antivirus status controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "b",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "c",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "d",
-          "text": "Allow each site to opt out silently"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for antivirus status.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

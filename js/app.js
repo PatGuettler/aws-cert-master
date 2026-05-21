@@ -27,6 +27,7 @@ import { initStorageNotice } from "./storage-notice.js";
 import { buildTrendLine } from "./history-ui.js";
 import { renderDashboard, renderProgressTeaser } from "./dashboard-ui.js";
 import { renderBrowse, bindBrowseSearch, bindBrowseCollapse } from "./browse-ui.js";
+import { bindAllPageCollapse } from "./collapse-ui.js";
 import { runAcronymQuiz } from "./acronym-engine.js";
 
 import { initDataPanel } from "./data-panel.js";
@@ -689,6 +690,7 @@ async function init() {
 
   bindBrowseSearch(examIndexList, openCert);
   bindBrowseCollapse();
+  bindAllPageCollapse();
 
   window.addEventListener("hashchange", () => {
     if (!appReady) return;
@@ -846,7 +848,7 @@ function populateCert() {
   const hasAcronyms = (cert.acronyms?.length ?? 0) > 0;
   const showAcr = isComptia && hasAcronyms;
 
-  document.getElementById("cert-acronym-callout")?.classList.toggle("hidden", !showAcr);
+  document.getElementById("cert-acronym-collapse")?.classList.toggle("hidden", !showAcr);
   document.getElementById("btn-study-acronyms")?.classList.toggle("hidden", !showAcr);
   document.getElementById("btn-study-acronyms-inline")?.classList.toggle(
     "hidden",

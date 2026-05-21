@@ -1,3 +1,5 @@
+import { bindCollapseGroup, setCollapseOpen } from "./collapse-ui.js";
+
 /** @type {Record<string, { sort: Record<string, number>; level?: Record<string, string>; label: string; metaSuffix: string; hint?: string }>} */
 const VENDOR_BROWSE = {
   aws: {
@@ -225,9 +227,6 @@ export function renderBrowse(exams, onSelectCert) {
     if (countEl) countEl.textContent = String(filtered.length);
     if (section) {
       section.classList.toggle("hidden", filtered.length === 0);
-      if (filtered.length > 0 && query) {
-        section.open = true;
-      }
     }
     if (hintEl && cfg.hint) hintEl.textContent = cfg.hint;
 
@@ -236,6 +235,7 @@ export function renderBrowse(exams, onSelectCert) {
   }
 
   noResults?.classList.toggle("hidden", anyVisible);
+  expandBrowseSectionsForSearch(exams, query);
 }
 
 /**
@@ -251,29 +251,23 @@ export function bindBrowseSearch(exams, onSelectCert) {
   });
 }
 
-/** Remember which vendor sections are expanded (browse page). */
+const BROWSE_SECTION_IDS = VENDOR_ORDER.map((v) => `browse-${v}-section`);
+
+/** Collapsible browse vendor groups (default collapsed). */
 export function bindBrowseCollapse() {
-  const key = "cert-master:browseOpen";
+  bindCollapseGroup("browse", BROWSE_SECTION_IDS);
+}
+
+/** Expand sections that have visible matches while searching. */
+export function expandBrowseSectionsForSearch(exams, query) {
+  if (!query.trim()) return;
+  const toOpen = [];
   for (const vendor of VENDOR_ORDER) {
-    const el = document.getElementById(`browse-${vendor}-section`);
-    if (!el || el.dataset.collapseBound === "1") continue;
-    el.dataset.collapseBound = "1";
-    try {
-      const saved = JSON.parse(sessionStorage.getItem(key) || "{}");
-      if (typeof saved[vendor] === "boolean") {
-        el.open = saved[vendor];
-      }
-    } catch {
-      /* ignore */
-    }
-    el.addEventListener("toggle", () => {
-      try {
-        const saved = JSON.parse(sessionStorage.getItem(key) || "{}");
-        saved[vendor] = el.open;
-        sessionStorage.setItem(key, JSON.stringify(saved));
-      } catch {
-        /* ignore */
-      }
-    });
+    const cfg = VENDOR_BROWSE[vendor];
+    const filtered = filterAndSort(exams, cfg.sort, vendor).filter((e) =>
+      matchesSearch(e, query, cfg)
+    );
+    if (filtered.length > 0) toOpen.push(`browse-${vendor}-section`);
   }
+  setCollapseOpen(toOpen, true);
 }

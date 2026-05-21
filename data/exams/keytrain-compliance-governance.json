@@ -102,7 +102,7 @@
         },
         {
           "id": "b",
-          "text": "SMS is always HIPAA compliant"
+          "text": "Likely PHI disclosure without BA agreement and secure channel"
         },
         {
           "id": "c",
@@ -110,11 +110,11 @@
         },
         {
           "id": "d",
-          "text": "Likely PHI disclosure without BA agreement and secure channel"
+          "text": "SMS is always HIPAA compliant"
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
       "explanation": "PHI needs approved channels and often BAAs with vendors.",
       "docs": [
@@ -144,15 +144,15 @@
         },
         {
           "id": "c",
-          "text": "Access all records for convenience"
+          "text": "Access only PHI needed for billing tasks, not full medical records"
         },
         {
           "id": "d",
-          "text": "Access only PHI needed for billing tasks, not full medical records"
+          "text": "Access all records for convenience"
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
       "explanation": "Minimum necessary limits scope of PHI access by role.",
       "docs": [
@@ -174,15 +174,15 @@
       "options": [
         {
           "id": "a",
-          "text": "BAAs optional for encryption"
-        },
-        {
-          "id": "b",
           "text": "Regulatory liability and unclear breach notification duties"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Only applies to EU GDPR"
+        },
+        {
+          "id": "c",
+          "text": "BAAs optional for encryption"
         },
         {
           "id": "d",
@@ -190,85 +190,9 @@
         }
       ],
       "correct": [
-        "b"
-      ],
-      "explanation": "BAAs define HIPAA obligations for vendors handling ePHI.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q004",
-      "domain": "hipaa",
-      "type": "multiple-choice",
-      "text": "During a tabletop on hipaa, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "b",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to hipaa trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Total pages printed in color only"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective hipaa programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q005",
-      "domain": "hipaa",
-      "type": "multiple-choice",
-      "text": "An audit sampling hipaa controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "b",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "c",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
         "a"
       ],
-      "explanation": "Consistency requires written baselines and attestations for hipaa.",
+      "explanation": "BAAs define HIPAA obligations for vendors handling ePHI.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -292,7 +216,7 @@
         },
         {
           "id": "b",
-          "text": "Policy not enforced technically via branch protection"
+          "text": "Git cannot enforce reviews"
         },
         {
           "id": "c",
@@ -300,11 +224,11 @@
         },
         {
           "id": "d",
-          "text": "Git cannot enforce reviews"
+          "text": "Policy not enforced technically via branch protection"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Technical controls enforce policy; paper alone fails.",
       "docs": [
@@ -326,23 +250,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable all cloud globally including approved"
+          "text": "DLP blocks, training, and approved enterprise sync alternative"
         },
         {
           "id": "b",
-          "text": "Publish AUP once without enforcement"
-        },
-        {
-          "id": "c",
           "text": "Ignore until breach"
         },
         {
+          "id": "c",
+          "text": "Publish AUP once without enforcement"
+        },
+        {
           "id": "d",
-          "text": "DLP blocks, training, and approved enterprise sync alternative"
+          "text": "Disable all cloud globally including approved"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Adherence needs detectable enforcement and viable alternatives.",
       "docs": [
@@ -364,11 +288,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Training completion rate by department with escalation to managers"
+          "text": "DNS TTL"
         },
         {
           "id": "b",
-          "text": "DNS TTL"
+          "text": "Number of coffee cups in break room"
         },
         {
           "id": "c",
@@ -376,89 +300,13 @@
         },
         {
           "id": "d",
-          "text": "Number of coffee cups in break room"
+          "text": "Training completion rate by department with escalation to managers"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Completion metrics drive accountability for policy training.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q007",
-      "domain": "policy-adherence",
-      "type": "multiple-choice",
-      "text": "During a tabletop on policy adherence, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "b",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to policy adherence trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Average desk chair height"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective policy adherence programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q008",
-      "domain": "policy-adherence",
-      "type": "multiple-choice",
-      "text": "An audit sampling policy adherence controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "b",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "c",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "d",
-          "text": "Remove all logging to reduce findings"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for policy adherence.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -482,11 +330,11 @@
         },
         {
           "id": "b",
-          "text": "Forge timestamps"
+          "text": "Disable all admin accounts"
         },
         {
           "id": "c",
-          "text": "Disable all admin accounts"
+          "text": "Forge timestamps"
         },
         {
           "id": "d",
@@ -516,23 +364,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Retention policy misaligned with compliance and investigation needs"
+          "text": "Increase retention to 10 years without review"
         },
         {
           "id": "b",
-          "text": "Stop logging to save costs"
-        },
-        {
-          "id": "c",
           "text": "Logs never matter"
         },
         {
+          "id": "c",
+          "text": "Stop logging to save costs"
+        },
+        {
           "id": "d",
-          "text": "Increase retention to 10 years without review"
+          "text": "Retention policy misaligned with compliance and investigation needs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Retention must meet regulatory and investigative requirements.",
       "docs": [
@@ -554,101 +402,25 @@
       "options": [
         {
           "id": "a",
+          "text": "Post-incident change documentation within 24 hours per policy"
+        },
+        {
+          "id": "b",
           "text": "Never document emergency changes"
         },
         {
-          "id": "b",
+          "id": "c",
           "text": "Share admin passwords in ticket"
         },
         {
-          "id": "c",
-          "text": "Disable firewalls after incidents"
-        },
-        {
           "id": "d",
-          "text": "Post-incident change documentation within 24 hours per policy"
+          "text": "Disable firewalls after incidents"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Emergency changes still require retrospective documentation.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q010",
-      "domain": "audit-readiness",
-      "type": "multiple-choice",
-      "text": "During a tabletop on audit readiness, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "b",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "c",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "d",
-          "text": "Documented incidents or control failures tied to audit readiness trending down quarter over quarter"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Effective audit readiness programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q011",
-      "domain": "audit-readiness",
-      "type": "multiple-choice",
-      "text": "An audit sampling audit readiness controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "b",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "c",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for audit readiness.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -668,11 +440,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Delayed containment because responders lack accurate segmentation view"
+          "text": "Diagrams are decorative only"
         },
         {
           "id": "b",
-          "text": "Diagrams are decorative only"
+          "text": "Delayed containment because responders lack accurate segmentation view"
         },
         {
           "id": "c",
@@ -684,7 +456,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Current diagrams speed IR and audits.",
       "docs": [
@@ -710,11 +482,11 @@
         },
         {
           "id": "b",
-          "text": "Use only social media for IR"
+          "text": "Update RACI and on-call numbers before next tabletop"
         },
         {
           "id": "c",
-          "text": "Update RACI and on-call numbers before next tabletop"
+          "text": "Use only social media for IR"
         },
         {
           "id": "d",
@@ -722,7 +494,7 @@
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Stale contacts waste critical minutes in breaches.",
       "docs": [
@@ -776,93 +548,17 @@
     },
     {
       "id": "ktcg-q013",
-      "domain": "documentation",
-      "type": "multiple-choice",
-      "text": "During a tabletop on documentation, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Documented incidents or control failures tied to documentation trending down quarter over quarter"
-        },
-        {
-          "id": "b",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "c",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Effective documentation programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q014",
-      "domain": "documentation",
-      "type": "multiple-choice",
-      "text": "An audit sampling documentation controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "b",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "c",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for documentation.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q013",
       "domain": "risk-management",
       "type": "multiple-choice",
       "text": "A high-risk finding is accepted without expiration date. Problem?",
       "options": [
         {
           "id": "a",
-          "text": "Risk acceptance becomes permanent bypass of remediation"
+          "text": "Improves security posture"
         },
         {
           "id": "b",
-          "text": "Improves security posture"
+          "text": "Automatically patches systems"
         },
         {
           "id": "c",
@@ -870,11 +566,11 @@
         },
         {
           "id": "d",
-          "text": "Automatically patches systems"
+          "text": "Risk acceptance becomes permanent bypass of remediation"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Time-bound acceptance forces periodic re-evaluation.",
       "docs": [
@@ -896,15 +592,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk management not integrated into procurement lifecycle"
+          "text": "HIPAA bans vendors"
         },
         {
           "id": "b",
-          "text": "Scores replace all technical controls"
+          "text": "Risk management not integrated into procurement lifecycle"
         },
         {
           "id": "c",
-          "text": "HIPAA bans vendors"
+          "text": "Scores replace all technical controls"
         },
         {
           "id": "d",
@@ -912,7 +608,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "TPRM should influence renewals and monitoring.",
       "docs": [
@@ -938,11 +634,11 @@
         },
         {
           "id": "b",
-          "text": "Only track physical risks"
+          "text": "Delete cloud accounts"
         },
         {
           "id": "c",
-          "text": "Delete cloud accounts"
+          "text": "Only track physical risks"
         },
         {
           "id": "d",
@@ -953,82 +649,6 @@
         "a"
       ],
       "explanation": "Risk registers should reflect current attack surfaces including cloud.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q016",
-      "domain": "risk-management",
-      "type": "multiple-choice",
-      "text": "During a tabletop on risk management alignment, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "b",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to risk management alignment trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective risk management alignment programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktcg-q017",
-      "domain": "risk-management",
-      "type": "multiple-choice",
-      "text": "An audit sampling risk management alignment controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "b",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "c",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "d",
-          "text": "Remove all logging to reduce findings"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for risk management alignment.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

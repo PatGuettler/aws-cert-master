@@ -3289,6 +3289,2046 @@
           "url": "https://www.comptia.org/en-us/certifications/security"
         }
       ]
+    },
+    {
+      "id": "cptsec-q095",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Alekos is a sales manager with a major insurance company. He has received an email that is encouraging him to click on a link and fill out a survey. He is suspicious of the email, but it does mention a major insurance association, and that makes him think it might be legitimate. Which of the following best describes this attack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Phishing"
+        },
+        {
+          "id": "b",
+          "text": "Social Engineering"
+        },
+        {
+          "id": "c",
+          "text": "Spear Phishing"
+        },
+        {
+          "id": "d",
+          "text": "Trojan Horse"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "The correct answer is spear phishing. Spear phishing is targeted to a specific group, in this case insurance professionals. Although this is a form of phishing, the more specific answer is the one you will need to choose on questions like this. Phishing uses social engineering techniques to succeed but is once again a broader answer than spear phishing and thus is not the correct choice. Finally, a Trojan horse pretends to be a legitimate or desirable program or file, which this scenario doesn\u2019t describe. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q096",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You are a security administrator for a medium-sized bank. You have discovered a piece of software on your bank's database server that is not supposed to be there. It appears that the software will begin deleting database files if a specific employee is terminated. What best describes this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worm"
+        },
+        {
+          "id": "b",
+          "text": "Logic Bomb"
+        },
+        {
+          "id": "c",
+          "text": "Trojan Horse"
+        },
+        {
+          "id": "d",
+          "text": "Rootkit"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "A logic bomb is malware that performs its malicious activity when some condition is met. A worm is malware that self-propagates. A Trojan horse is malware attached to a legitimate program, and a rootkit is malware that gets root or administrative privileges. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q097",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You are responsible for incident response at Acme Bank. The Acme Bank website has been attacked. The attacker used the login screen, but rather than enter login credentials, they entered some odd text: \n' or '1' = '1 .What is the best description for this attack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cross-site scripting"
+        },
+        {
+          "id": "b",
+          "text": "Cross-site request forgery"
+        },
+        {
+          "id": "c",
+          "text": "SQL injection"
+        },
+        {
+          "id": "d",
+          "text": "ARP poisoning"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "This is a very basic form of SQL injection. Cross-site scripting would have JavaScript in the text field and would be designed to impact other sites from a user\u2019s session. Cross-site request forgery would not involve any text being entered in the web page, and ARP poisoning is altering the ARP table in a switch; it is not related to website hacking. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q098",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Users are complaining that they cannot connect to the wireless network. You discover that the WAPs are being subjected to a wireless attack designed to block their Wi-Fi signals. Which of the following is the best label for this attack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IV attack"
+        },
+        {
+          "id": "b",
+          "text": "Jamming"
+        },
+        {
+          "id": "c",
+          "text": "WPS attack"
+        },
+        {
+          "id": "d",
+          "text": "Botnet"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "This describes a jamming attack, where legitimate traffic is interfered with by another signal. Jamming can be intentional or unintentional and may be intermittent. IV attacks are obscure cryptographic attacks on stream ciphers. Wi-Fi protected setup (WPS) uses a PIN to connect to the wireless access point (WAP). The WPS attack attempts to intercept that PIN in transmission, connect to the WAP, and then steal the WPA2 password. A botnet is a group of machines that are being used, without their consent, as part of an attack. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q099",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You are responsible for network security at Acme Company. Users have been reporting that personal data is being stolen when using the wireless network. They all insist they only connect to the corporate wireless access point (AP). However, logs for the AP show that these users have not connected to it. Which of the following could best explain this situation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Session hijacking"
+        },
+        {
+          "id": "b",
+          "text": "Clickjacking"
+        },
+        {
+          "id": "c",
+          "text": "Rogue access point"
+        },
+        {
+          "id": "d",
+          "text": "Bluejacking"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "If users have been connecting but the AP does not show them connecting, then they have been connecting to a rogue access point. This could be the cause of an architecture and design weakness such as a network without segmentation and control of devices connecting to the network. Session hijacking involves taking over an already authenticated session. Most session hijacking attacks involve impersonation. The attacker attempts to gain access to another user\u2019s session by posing as that user. Clickjacking involves causing visitors to a website to click on the wrong item. Finally, bluejacking is a Bluetooth attack. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q100",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You have been asked to test your company network for security issues. The specific test you are conducting involves primarily using automated and semiautomated tools to look for known vulnerabilities with the various systems on your network. Which of the following best describes this type of test?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vulnerability scan"
+        },
+        {
+          "id": "b",
+          "text": "Penetration test"
+        },
+        {
+          "id": "c",
+          "text": "Security audit"
+        },
+        {
+          "id": "d",
+          "text": "Security test"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Vulnerability scans use automated tools to look for known vulnerabilities in systems and applications and then provide reports to assist in remediation activities. Penetration tests seek to actually exploit the vulnerabilities and break into systems. Security audits usually focus on checking policies, incident reports, and other documents. Security test is a generic term for any sort of test. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q101",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "The organization that Mike works in finds that one of their domains is directing traffic to a competitor's website. When Mike checks, the domain information has been changed, including the contact and other administrative details for the domain. If the domain had not expired, what has most likely occurred?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DNS hijacking"
+        },
+        {
+          "id": "b",
+          "text": "An on-path attack"
+        },
+        {
+          "id": "c",
+          "text": "Domain hijacking"
+        },
+        {
+          "id": "d",
+          "text": "A zero-day attack"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Domain hijacking, or domain theft, occurs when the registration or other information for the domain is changed without the original registrant\u2019s permission. This may occur because of a compromised account or due to a breach of the domain registrar\u2019s security. A common issue is a lapsed domain being purchased by a third party, and this can look like a hijacked domain, but it is a legitimate occurrence if the domain is not renewed! DNS hijacking inserts false information into a DNS server, on-path (man-in-the-middle) attacks capture or modify traffic by causing the traffic to pass through a compromised midpoint, and zero-day attacks are attacks that use an unknown until used vulnerability. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q102",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Fotis is responsible for managing security at a large university. He has just performed a threat analysis for the network, and based on past incidents and studies of similar networks, he has determined that the most prevalent threat to his network is low-skilled attackers who wish to breach the system, simply to prove they can or for some low-level crime, such as changing a grade. Which term best describes this type of attacker?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hacktivist"
+        },
+        {
+          "id": "b",
+          "text": "Amateur"
+        },
+        {
+          "id": "c",
+          "text": "Insider"
+        },
+        {
+          "id": "d",
+          "text": "Script-kiddie"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "The term for low-skilled hackers is script kiddie. Script kiddies typically use prebuilt tools and do not have the expertise to make or modify their own tools. Nothing indicates this is being done for ideological reasons, and thus that a hacktivist is involved. Although \u201cAmateur\u201d may be an appropriate description, the correct term is script kiddie. Finally, nothing in this scenario indicates an insider threat. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q103",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which of the following best describes a collection of computers that have been compromised and are being controlled from one central point?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zombienet"
+        },
+        {
+          "id": "b",
+          "text": "Botnet"
+        },
+        {
+          "id": "c",
+          "text": "Nullnet"
+        },
+        {
+          "id": "d",
+          "text": "Attacknet"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "A collection of computers that are compromised, then centrally controlled to perform actions like denial-of-service attacks, data collection, and other malicious activities is called a botnet. Zombienets, Nullnets, and Attacknets are not commonly used terms to describe botnets. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q104",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Kimon is conducting a penetration test of a client's network. He is currently gathering information from sources such as archive.org, netcraft.com, social media, and information websites. What best describes this stage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Active reconnaissance"
+        },
+        {
+          "id": "b",
+          "text": "Passive reconnaissance"
+        },
+        {
+          "id": "c",
+          "text": "Initial exploitation"
+        },
+        {
+          "id": "d",
+          "text": "Pivot"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Passive reconnaissance is any reconnaissance that is done without actually connecting to the target. In this case, John is conducting a form of OSINT, or open source intelligence, by using commonly available third-party information sources to gather information about his target. Active reconnaissance involves communicating with the target network, such as doing a port scan. The initial exploitation is not information gathering; it is actually breaking into the target network. A pivot is when you have breached one system and use that to move to another system. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q105",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Sakis has been asked to conduct a penetration test of a small bookkeeping firm. For the test, he has only been given the company name, the domain name for their website, and the IP address of their gateway router. What best describes this type of test?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A known environment test"
+        },
+        {
+          "id": "b",
+          "text": "External test"
+        },
+        {
+          "id": "c",
+          "text": "A unknown environment test"
+        },
+        {
+          "id": "d",
+          "text": "Threat test"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "An unknown environment test is also called blackbox or a zero-knowledge test because it does not provide information beyond the basic information needed to identify the target. A known environment, or white-box test, involves very complete information being given to the tester. This scenario is probably done from outside the network, but external test is not the correct terminology. Threat test is not a term used in penetration testing. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q106",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You work for a security company that performs penetration testing for clients. You are conducting a test of an e-commerce company. You discover that after compromising the web server, you can use the web server to launch a second attack into the company's internal network. What best describes this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Internal attack"
+        },
+        {
+          "id": "b",
+          "text": "Known environment testing"
+        },
+        {
+          "id": "c",
+          "text": "Unknown environment testing"
+        },
+        {
+          "id": "d",
+          "text": "A pivot"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "A pivot occurs when you exploit one machine and use that as a basis to attack other systems. Pivoting can be done from internal or external tests. White- and black-box testing describes the amount of information the tester is given in advance, not how the tester performs the test. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q107",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "While investigating a malware outbreak on your company network, you discover something very odd. There is a file that has the same name as a Windows system DLL, and it even has the same API interface, but it handles input very differently, in a manner to help compromise the system, and it appears that applications have been attaching to this file, rather than the real system DLL. What best describes this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shimming"
+        },
+        {
+          "id": "b",
+          "text": "Trojan horse"
+        },
+        {
+          "id": "c",
+          "text": "Backdoor"
+        },
+        {
+          "id": "d",
+          "text": "Refactoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Shimming is when the attacker places some malware between an application and some other file and intercepts the communication to that file (usually to a library or system API). In many cases, this is done with a driver for a hardware component. A Trojan horse might be used to get the shim onto the system, but that is not described in this scenario. A backdoor is a means to circumvent system authorization and get direct access to the system. Refactoring is the process of changing names of variables, functions, and so forth in \na program. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q108",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Sakis is a network administrator for a small college. He discovers that several machines on his network are infected with malware. That malware is sending a flood of packets to a target external to the network. What best describes this attack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SYN flood"
+        },
+        {
+          "id": "b",
+          "text": "DDoS"
+        },
+        {
+          "id": "c",
+          "text": "Botnet"
+        },
+        {
+          "id": "d",
+          "text": "Backdoor"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "His machines are part of a distributed denial-ofservice (DDoS) attack. This scenario describes a generic DDoS, not a specific one like SYN flood, which would involve many SYN packets being sent without a full three-way TCP handshake. These machines could be part of a botnet or they may just have a trigger that causes them to launch the attack at a specific time. The real key in this scenario is the DDoS attack. Finally, a backdoor gives an attacker access to the target system. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q109",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "A sales manager at your company is complaining about slow performance on his computer. When you thoroughly investigate the issue, you find spyware on his computer. He insists that the only thing he has downloaded recently was a freeware stock trading application. What would best explain this situation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Logic bomb"
+        },
+        {
+          "id": "b",
+          "text": "Trojan horse"
+        },
+        {
+          "id": "c",
+          "text": "Rootkit"
+        },
+        {
+          "id": "d",
+          "text": "Macrovirus"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "A Trojan horse attaches a malicious program to a legitimate program. When the user downloads and installs the legitimate program, they get the malware. A logic bomb is malware that does its misdeeds when some condition is met. A rootkit is malware that gets administrative, or root, access. A macro virus is a virus that is embedded in a document as a macro. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q110",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "When phishing attacks are so focused that they target a specific high-ranking or important individual, they are called what?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spear phishing"
+        },
+        {
+          "id": "b",
+          "text": "Targeted phishing"
+        },
+        {
+          "id": "c",
+          "text": "Phishing"
+        },
+        {
+          "id": "d",
+          "text": "Whaling"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Whaling is targeting a specific individual who is important in the organization like the president or chief financial officer (CFO). Spear phishing targets specific individuals or groups, but whaling is more specific in terms of the importance of the individuals involved. Targeted phishing is not a term used in the industry. Phishing is the generic term for a wide range of related attacks, and you should choose the most accurate answer for questions like this. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q111",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "One of your users cannot recall the password for their laptop. You want to recover that password for them. You intend to use a tool/technique that is popular with hackers, and it consists of searching tables of precomputed hashes to recover the password. What best describes this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rainbow table"
+        },
+        {
+          "id": "b",
+          "text": "Backdoor"
+        },
+        {
+          "id": "c",
+          "text": "Social engineering"
+        },
+        {
+          "id": "d",
+          "text": "Dictionary attack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "A rainbow table is a table of precomputed hashes, used to retrieve passwords. A backdoor is used to gain access to a system, not to recover passwords. Social engineering and dictionary attacks can both be used to gain access to passwords, but they are not tables of precomputed hashes. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q112",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You have noticed that when in a crowded area, you sometimes get a stream of unwanted text messages. The messages end when you leave the area. What describes this attack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bluejacking"
+        },
+        {
+          "id": "b",
+          "text": "Bluesnarfing"
+        },
+        {
+          "id": "c",
+          "text": "Evil twin"
+        },
+        {
+          "id": "d",
+          "text": "Rogue access point"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Bluejacking involves sending unsolicited messages to Bluetooth devices when they are in range. Bluesnarfing involves getting data from the Bluetooth device. An evil twin attack uses a rogue access point whose name is similar or identical to that of a legitimate access point. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q113",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Sakis is investigating a malware incident on one of the computers on his network. He has discovered unknown software that seems to be opening a port, allowing someone to remotely connect to the computer. This software seems to have been installed at the same time as a small shareware application. Which of the following best describes this malware?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAT"
+        },
+        {
+          "id": "b",
+          "text": "Worm"
+        },
+        {
+          "id": "c",
+          "text": "Logic bomb"
+        },
+        {
+          "id": "d",
+          "text": "Rootkit"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "This is a remote-access Trojan (RAT), malware that opens access for someone to remotely access the system. A worm would have spread itself via a vulnerability, whereas a logic bomb runs when some logical condition is met. Finally, a rootkit provides root or administrative access to the system. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q114",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Aggela is a network administrator for Acme Company. Some users complain that they keep getting dropped from the network. When Juanita checks the logs for the wireless access point (WAP), she finds that a deauthentication packet has been sent to the WAP from the users' IP addresses. What seems to be happening here?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Problem with users' Wi-Fi configuration"
+        },
+        {
+          "id": "b",
+          "text": "Disassociation attack"
+        },
+        {
+          "id": "c",
+          "text": "Session hijacking"
+        },
+        {
+          "id": "d",
+          "text": "Backdoor attack"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "This an example of a disassociation attack. The deauthentication packet causes Aggela\u2019s system to disassociate, and the attacker can then execute a second attack targeting her authentication credentials or other wireless data using an evil twin attack. Misconfiguration won\u2019t cause authenticated users to deauthenticate. Session hijacking involves taking over an authenticated session. Backdoors are built-in methods to circumvent authentication. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q115",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You are a network security administrator for a bank. You discover that an attacker has exploited a flaw in OpenSSL and forced some connections to move to a weak cipher suite version of TLS, which the attacker could breach. What type of attack was this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disassociation attack"
+        },
+        {
+          "id": "b",
+          "text": "Downgrade attack"
+        },
+        {
+          "id": "c",
+          "text": "Session hijacking"
+        },
+        {
+          "id": "d",
+          "text": "Brute force"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Downgrade attacks seek to make a Transport Layer Security (TLS) connection use a weaker cipher version, thus allowing the attacker to more easily break the encryption and read the protected data. In a disassociation attack, the attacker attempts to force the victim into disassociating from a resource. Session hijacking is when the attacker takes over an authenticated session. Brute-force attempts every possible random combination to get the password or encryption key. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q116",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "When an attacker tries to find an input value that will produce the same hash as password, what type of \nattack is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rainbow table"
+        },
+        {
+          "id": "b",
+          "text": "Brute force"
+        },
+        {
+          "id": "c",
+          "text": "Session hijacking"
+        },
+        {
+          "id": "d",
+          "text": "Collision attack"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "A collision is when two different inputs produce the same hash. A rainbow table is a table of precomputed hashes. Brute force attempts every possible random combination to get the password or encryption key. Session hijacking is when the attacker takes over an authenticated session. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q117",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Fotis is the network security administrator for a company that creates advanced routers and switches. He has discovered that his company's networks have been subjected to a series of advanced attacks over a period of time. What best describes this attack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DDoS"
+        },
+        {
+          "id": "b",
+          "text": "Brute force"
+        },
+        {
+          "id": "c",
+          "text": "APT"
+        },
+        {
+          "id": "d",
+          "text": "Disassociation attack"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "An advanced persistent threat (APT) involves sophisticated (i.e., advanced) attacks over a period of time (i.e., persistent). A distributed denial-of-service (DDoS) could be a part of an APT, but in and of itself is unlikely to be an APT. Brute force attempts every possible random combination to get the password or encryption key. In a disassociation attack, the attacker attempts to force the victim into disassociating from a resource. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q118",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You are performing a penetration test of your company's network. As part of the test, you will be given a login with minimal access and will attempt to gain administrative access with this account. What is this called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Privilege escalation"
+        },
+        {
+          "id": "b",
+          "text": "Session hijacking"
+        },
+        {
+          "id": "c",
+          "text": "Root grabbing"
+        },
+        {
+          "id": "d",
+          "text": "Climbing"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "The term for attempting to gain any privileges beyond what you have is privilege escalation. Session hijacking is taking over an authenticated session. Root grabbing and climbing are not terms used in the industry. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q119",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "An attacker is trying to get access to your network. He is sending users on your network a link to a new game with a hacked license code program. However, the game files also include software that will give the attacker access to any machine that it is installed on. What type of attack is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rootkit"
+        },
+        {
+          "id": "b",
+          "text": "Trojan horse"
+        },
+        {
+          "id": "c",
+          "text": "Spyware"
+        },
+        {
+          "id": "d",
+          "text": "Boot sector virus"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "The malware in this example is a Trojan horse\u2014it pretends to be something desirable, or at least innocuous, and installs malicious software in addition to or instead of the desired software. A rootkit gives root or administrative access, spyware is malware that records user activities, and a boot sector virus is a virus that infects the boot sector of the hard drive. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q120",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "While conducting a penetration test, Mikaela scans for systems on the network she has gained access to. She discovers another system within the same network that has the same accounts and user types as the one she is on. Since she already has a valid user account on the system she has already accessed, she is able to log in to it. What type of technique is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lateral movement"
+        },
+        {
+          "id": "b",
+          "text": "Priviledge escalation"
+        },
+        {
+          "id": "c",
+          "text": "Priviledge retention"
+        },
+        {
+          "id": "d",
+          "text": "Vertical movement"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mikaela has moved laterally. Lateral movement moves to systems at the same trust level. This can provide access to new data or different views of the network depending on how the systems and security are configured. Privilege escalation involves gaining additional privileges, often those of an administrative user. Vertical movement is sometimes referenced when gaining access to systems or accounts with a higher security or trust level. Privilege retention was made up for this question. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q121",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Irene scans a Red Hat Linux server that she believes is fully patched and discovers that the Apache version on the server is reported as vulnerable to an exploit from a few months ago. When she checks to see if she is missing patches, Apache is fully patched. What has occurred?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A false positive"
+        },
+        {
+          "id": "b",
+          "text": "An automatic update failure"
+        },
+        {
+          "id": "c",
+          "text": "A false negative"
+        },
+        {
+          "id": "d",
+          "text": "An Apache version mismatch"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "This is an example of a false positive. A false positive can cause a vulnerability to show that was not actually there. This sometimes happens when a patch or fix is installed but the application does not change in a way that shows the change, and it has been an issue with updates where the version number is the primary check for a vulnerability. When a vulnerability scanner sees a vulnerable version number but a patch has been installed that does not update it, a false positive report can occur. A false negative would report a patch or fix where there was actually a vulnerability. Automatic updates were not mentioned, nor was a specific Apache version. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q122",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "When a program has variables, especially arrays, and does not check the boundary values before inputting data, what attack is the program vulnerable to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "XSS"
+        },
+        {
+          "id": "b",
+          "text": "CSRF"
+        },
+        {
+          "id": "c",
+          "text": "Buffer overflow"
+        },
+        {
+          "id": "d",
+          "text": "Logic bomb"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "A buffer overflow is possible when boundaries are not checked and the attacker tries to put in more data than the variable can hold. Cross-site scripting (XSS) is a web page attack. Cross-site request forgery (CSRF) is a web page attack. A logic bomb is malware that performs its misdeed when some condition is met. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q123",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which of the following best describes malware that will execute some malicious activity when a particular condition is met (i.e., if the condition is met, then executed)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boot sector virus"
+        },
+        {
+          "id": "b",
+          "text": "Logic bomb"
+        },
+        {
+          "id": "c",
+          "text": "Buffer overflow"
+        },
+        {
+          "id": "d",
+          "text": "Sparse infector virus"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "A logic bomb performs malicious actions when a specific condition or conditions are met. A boot sector virus infects the boot sector of the hard drive. A buffer overflow occurs when the attacker attempts to put more data in a variable than it can hold. A sparse infector virus performs its malicious activity intermittently to make it harder to detect. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q124",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Sakis is a network administrator for a small financial services company. Users are reporting odd behavior that appears to be caused by a virus on their machines. After isolating the machines that he believes are infected, Sakis analyzes them. He finds that all the infected machines received an email purporting to be from accounting, with an Excel spreadsheet, and the users opened the spreadsheet. What is the most likely issue on these machines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A macro virus"
+        },
+        {
+          "id": "b",
+          "text": "A boot sector virus"
+        },
+        {
+          "id": "c",
+          "text": "A Trojan horse"
+        },
+        {
+          "id": "d",
+          "text": "A BAT"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "A macro virus is a malicious script (macro) embedded into a file, typically a Microsoft Office file. They are typically written in Visual Basic for Applications (VBA) script. A boot sector virus infects the boot sector of the hard drive. A Trojan horse is malware that is tied to a legitimate program. In this scenario, the malware is actually embedded in an Office document. The two are similar, but not the same. A remote access Trojan (RAT) is a Trojan horse that gives the attacker remote access to the machine. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q125",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Your company has hired an outside security firm to perform various tests of your network. During the vulnerability scan, you will provide that company with logins for various systems (i.e., database server, application server, web server, etc.) to aid in their scan. What best describes this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A known environment test"
+        },
+        {
+          "id": "b",
+          "text": "A gray-box test"
+        },
+        {
+          "id": "c",
+          "text": "A credentialed scan"
+        },
+        {
+          "id": "d",
+          "text": "An intrusive scan"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "By giving the tester logins, you are allowing them to conduct a credentialed scan (i.e., a scan with an account or accounts that allow them access to check settings and configurations). Known environment and partially known environment tests describe the level of knowledge the tester is given of the network. A privilege scan cannot be an unknown environment test, but it could be either known or partially known. An intrusive scan is a term used for scans that attempt to exercise or use the vulnerability they find instead of attempting to avoid harm. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q126",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Sakis is responsible for incident response at a large financial institution. He discovers that the company Wi-Fi has been breached. The attacker used the same login credentials that ship with the wireless access point (WAP). The attacker was able to use those credentials to access the WAP administrative console and make changes. Which of the following best describes what caused this vulnerability to exist?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Improperly configured accounts"
+        },
+        {
+          "id": "b",
+          "text": "Untrained users"
+        },
+        {
+          "id": "c",
+          "text": "Using default settings"
+        },
+        {
+          "id": "d",
+          "text": "Failure to patch systems"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Using default settings is a form of weak configuration. Many vulnerability scanners and attack tools have default settings built-in to test with, and default settings are easily obtained for most devices with a quick search of the Internet. Configuring the accounts is not the issue; changing default passwords and settings is. Although training users is important, that\u2019s not the issue in this scenario. Patching systems is important, but that won\u2019t change default settings. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q127",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Dimitria is investigating a network breach at her company. She discovers a program that was able to execute code within the address space of another process by using the target process to load a specific library. What best describes this attack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Logic bomb"
+        },
+        {
+          "id": "b",
+          "text": "Session hijacking"
+        },
+        {
+          "id": "c",
+          "text": "Buffer overflow"
+        },
+        {
+          "id": "d",
+          "text": "DLL injection"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "In a DLL injection, the malware attempts to inject code into the process of some library. This is a rather advanced attack. A logic bomb executes its misdeed when some condition is met. Session hijacking is taking over an authenticated session. Buffer overflows are done by sending more data to a variable than it can hold. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q128",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Your company outsourced development of an accounting application to a local programming firm. After three months of using the product, one of your administrators discovers that the developers have inserted a way to log in and bypass all security and authentication. What best describes this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Logic bomb"
+        },
+        {
+          "id": "b",
+          "text": "Trojan horse"
+        },
+        {
+          "id": "c",
+          "text": "Backdoor"
+        },
+        {
+          "id": "d",
+          "text": "Rootkit"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "A backdoor is a method for bypassing normal security and directly accessing the system. A logic bomb is malware that performs its misdeeds when some condition is met. A Trojan horse wraps a malicious program to a legitimate program. When the user downloads and installs the legitimate program, they get the malware. A rootkit is malware that gets root or administrative privileges. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q129",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "When investigating breaches and attempting to attribute them to specific threat actors, which of the following is not one of the indicators of an APT?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Long-term access to the target"
+        },
+        {
+          "id": "b",
+          "text": "Sophisticated attacks"
+        },
+        {
+          "id": "c",
+          "text": "The attack comes from a foreign IP address."
+        },
+        {
+          "id": "d",
+          "text": "The attack is sustained over time."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Although you might suppose that a nation-state attacker (the usual attacker behind an advanced persistent threat) would attack from a foreign IP address, they often use a compromised address in the target country as a base for attacks. All other options are incorrect. These are actually signs of an advanced persistent threat. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q130",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You have discovered that there are entries in your network's domain name server that point legitimate domains to unknown and potentially harmful IP addresses. What best describes this type of attack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A backdoor"
+        },
+        {
+          "id": "b",
+          "text": "An APT"
+        },
+        {
+          "id": "c",
+          "text": "DNS poisoning"
+        },
+        {
+          "id": "d",
+          "text": "A Trojan horse"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "DNS poisoning occurs when false DNS information is inserted into legitimate DNS servers, resulting in traffic being redirected to unwanted or malicious sites. A backdoor provides access to the system by circumventing normal authentication. An APT is an advanced persistent threat. A Trojan horse ties a malicious program to a legitimate program. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q131",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "What best describes an attack that attaches some malware to a legitimate program so that when the user installs the legitimate program, they inadvertently install the malware?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Backdoor"
+        },
+        {
+          "id": "b",
+          "text": "Trojan horse"
+        },
+        {
+          "id": "c",
+          "text": "RAT"
+        },
+        {
+          "id": "d",
+          "text": "Polymorphic virus"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "A Trojan horse pretends to be legitimate software, and may even include it, but also includes malicious software as well. Backdoors, RATs, and polymorphic viruses are all attacks, but they do not match what is described in the question scenario. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q132",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Which of the following best describes software that will provide the attacker with remote access to the victim's machine but that is wrapped with a legitimate program in an attempt to trick the victim into installing it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAT"
+        },
+        {
+          "id": "b",
+          "text": "Backdoor"
+        },
+        {
+          "id": "c",
+          "text": "Trojan horse"
+        },
+        {
+          "id": "d",
+          "text": "Macro virus"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "A remote access Trojan (RAT) is malware that gives the attacker remote access to the victim machine. Macro viruses operate inside of Microsoft Office files. Although a backdoor will give access, it is usually something in the system put there by programmers, not introduced by malware. A RAT is a type of Trojan horse, but a Trojan horse is more general than what is described in the scenario. When you encounter questions like this on the exam, you will need to select the best answer, not just one that may answer the question! (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q133",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Fotis is a network administrator with a small financial services company. He has received a pop-up window that states his files are now encrypted and he must pay .5 bitcoins to get them decrypted. He tries to check the files in question, but their extensions have changed, and he cannot open them. What best describes this situation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fotis's machine has a rootkit."
+        },
+        {
+          "id": "b",
+          "text": "Fotis's machine has ransomware."
+        },
+        {
+          "id": "c",
+          "text": "Fotis's machine has logic bomb."
+        },
+        {
+          "id": "d",
+          "text": "Fotis's machine has been the target of whaling."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "This is an example of ransomware, which demands payment to return your data. A rootkit provides access to administrator/root privileges. A logic bomb executes its malicious activity when some condition is met. This scenario does not describe whaling. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q134",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "When a multithreaded application does not properly handle various threads accessing a common value, and one thread can change the data while another thread is relying on it, what flaw is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Memory leak"
+        },
+        {
+          "id": "b",
+          "text": "Buffer overflow"
+        },
+        {
+          "id": "c",
+          "text": "Integer overflow"
+        },
+        {
+          "id": "d",
+          "text": "Time of check/time of use"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "If access is not handled properly, a time of check/time of use condition can exist where the memory is checked, changed, then used. Memory leaks occur when memory is allocated but not deallocated. A buffer overflow is when more data is put into a variable than it can hold. An integer overflow occurs when an attempt is made to put an integer that is too large into a variable, such as trying to put a 64-bit integer into a 32-bit variable. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q135",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "During an incident investigation, Irene notices that a second keyboard was plugged into a system in a public area of her company's building. Shortly after that event, the system was infected with malware, resulting in a data breach. What should Naomi look for in her in-person investigation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Trojan horse download"
+        },
+        {
+          "id": "b",
+          "text": "A malicious USB cable or drive"
+        },
+        {
+          "id": "c",
+          "text": "A worm"
+        },
+        {
+          "id": "d",
+          "text": "None of the above"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Malicious tools like BadUSB can make a USB cable or drive look like a keyboard when they are plugged in. Somewhat strangely, the Security+ exam outline focuses on malicious USB cables, but you should be aware that malicious thumb drives are far more common and have been used by penetration testers simply by dropping them in a parking lot near their intended target. A Trojan or a worm is a possibility, but the clue involving the keyboard would point to a USB device as the first place Irene should look. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q136",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You are responsible for incident response at Acme Corporation. You have discovered that someone has been able to circumvent the Windows authentication process for a specific network application. It appears that the attacker took the stored hash of the password and sent it directly to the backend authentication service, bypassing the application. What type of attack is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hash spoofing"
+        },
+        {
+          "id": "b",
+          "text": "Evil twin"
+        },
+        {
+          "id": "c",
+          "text": "Shimming"
+        },
+        {
+          "id": "d",
+          "text": "Pass the hash"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Using a pass-the-hash attack requires attackers to acquire a legitimate hash, and then present it to a server or service. A real hash was provided; it was not spoofed. An evil twin is a wireless attack. Shimming is inserting malicious code between an application and a library. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q137",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "A user in your company reports that she received a call from someone claiming to be from the company technical support team. The caller stated that there was a virus spreading through the company and they needed immediate access to the employee's computer to stop it from being infected. What social-engineering principles did the caller use to try to trick the employee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Urgency and intimidation"
+        },
+        {
+          "id": "b",
+          "text": "Urgency and authority"
+        },
+        {
+          "id": "c",
+          "text": "Authority and trust"
+        },
+        {
+          "id": "d",
+          "text": "Intimidation and authority"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Claiming to be from tech support is claiming authority, and the story the caller gave indicates urgency. Yes, this caller used urgency (the virus spread) but did not attempt intimidation. Authority and trust are closely related, and in this case urgency was the second major factor. This caller used urgency but not intimidation. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q138",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "After running a vulnerability scan, Eleni discovers that the Windows 10 workstations in her company's warehouse are vulnerable to multiple known Windows exploits. What should she identify as the root cause in her report to management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unsupported operating systems"
+        },
+        {
+          "id": "b",
+          "text": "Improper or weak patch management for the operating systems"
+        },
+        {
+          "id": "c",
+          "text": "Improper or weak patch management for the firmware of the systems"
+        },
+        {
+          "id": "d",
+          "text": "Use of unsecure protocols"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "The questions tells us that these are Windows 10 systems, a current operating system. From there, it is safe to presume that something has gone wrong with the patching process or that there isn\u2019t a patching process. Eleni should investigate both what the process is and if there are specific reasons the systems are not patched. Since we know these systems run a current OS, option A, unsupported operating systems, can be ruled out. The vulnerabilities are specifically noted to be Windows vulnerabilities, ruling out option C, and there is no mention of protocols, eliminating option D as well. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q139",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Your company is instituting a new security awareness program. You are responsible for educating end users on a variety of threats, including social engineering. Which of the following best defines social engineering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Illegal copying of software"
+        },
+        {
+          "id": "b",
+          "text": "Gathering information from discarded manuals and printouts"
+        },
+        {
+          "id": "c",
+          "text": "Using people skills to obtain proprietary information"
+        },
+        {
+          "id": "d",
+          "text": "Phishing emails"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Social engineering is about using people skills to get information you would not otherwise have access to. Illegal copying of software isn\u2019t social engineering, nor is gathering of discarded manuals and printouts, which describes dumpster diving. Phishing emails use some social engineering, but that is one example of social engineering, not a definition. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q140",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You are a security administrator for Acme Corporation. You have discovered malware on some of your company's machines. This malware seems to intercept calls from the web browser to libraries, and then manipulates the browser calls. What type of attack is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Man in the browser"
+        },
+        {
+          "id": "b",
+          "text": "On-path attack"
+        },
+        {
+          "id": "c",
+          "text": "Buffer overflow"
+        },
+        {
+          "id": "d",
+          "text": "Session hijacking"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "In a man-in-the-browser attack, the malware intercepts calls from the browser to the system, such as system libraries. On-path attack involves having some process between the two ends of communication in order to compromise passwords or cryptography keys. In a buffer overflow attack, more data is put into a variable than the variable was intended to hold. Session hijacking involves taking over an authenticated session. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q141",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You are responsible for software testing at Acme Corporation. You want to check all software for bugs that might be used by an attacker to gain entrance into the software or your network. You have discovered a web application that would allow a user to attempt to put a 64-bit value into a 4-byte integer variable. What is this type of flaw?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Memory overflow"
+        },
+        {
+          "id": "b",
+          "text": "Buffer overflow"
+        },
+        {
+          "id": "c",
+          "text": "Variable overflow"
+        },
+        {
+          "id": "d",
+          "text": "Integer overflow"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Placing a larger integer value into a smaller integer variable is an integer overflow. Memory overflow is not a term used, and memory leak is about allocating memory and not deallocating it. Buffer overflows often involve arrays. Variable overflow is not a term used in the industry. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q142",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Kobe has discovered malware on the workstations of several users. This particular malware provides administrative privileges for the workstation to an external hacker. What best describes this malware?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trojan horse"
+        },
+        {
+          "id": "b",
+          "text": "Logic bomb"
+        },
+        {
+          "id": "c",
+          "text": "Multipartite virus"
+        },
+        {
+          "id": "d",
+          "text": "Rootkit"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Rootkits provide administrative access to systems, thus the \u201croot\u201d in rootkit. A Trojan horse combines malware with a legitimate program. A logic bomb performs its malicious activity when some condition is met. A multipartite virus infects the boot sector and a file. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q143",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Users in your company report someone has been calling their extension and claiming to be doing a survey for a large vendor. Based on the questions asked in the survey, you suspect that this is a scam to elicit information from your company's employees. What best describes this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spear phishing"
+        },
+        {
+          "id": "b",
+          "text": "Vishing"
+        },
+        {
+          "id": "c",
+          "text": "War dialing"
+        },
+        {
+          "id": "d",
+          "text": "Robocalling"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "This is vishing, or using voice calls for phishing. Spear phishing is targeting a small, specific group. War dialing is dialing numbers hoping a computer modem answers. Robocalling is used to place unsolicited telemarketing calls. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q144",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Bill is analyzing a recent malware infection on his company network. He discovers malware that can spread rapidly via vulnerable network services and does not require any interaction from the user. What best describes this malware?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worm"
+        },
+        {
+          "id": "b",
+          "text": "Virus"
+        },
+        {
+          "id": "c",
+          "text": "Logic bomb"
+        },
+        {
+          "id": "d",
+          "text": "Trojan horse"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Worms spread themselves via vulnerabilities, making this an example of a worm. A virus is software that self-replicates. A logic bomb executes its malicious activity when some condition is met. A Trojan horse combines malware with a legitimate program. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q145",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Your company has issued some new security directives. One of these new directives is that all documents must be shredded before being thrown out. What type of attack is this trying to prevent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Phishing"
+        },
+        {
+          "id": "b",
+          "text": "Dumpster diving"
+        },
+        {
+          "id": "c",
+          "text": "Shoulder surfing"
+        },
+        {
+          "id": "d",
+          "text": "On-path attack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Dumpster diving is the process of going through the trash to find documents. Shredding documents will help to prevent dumpster diving, but truly dedicated dumpster divers can reassemble even well-shredded documents, leading some organizations to burn their most sensitive documents after they have been shredded. Phishing is often done via email or phone and is an attempt to elicit information or convince a user to click a link or open an attachment. Shoulder surfing is literally looking over someone\u2019s shoulder. In the on-path (man-in-the-middle) attack, the attacker is between the client and the server, and to either end, the attacker appears like the legitimate other end. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q146",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You have discovered that someone has been trying to log on to your web server. The person has tried a wide range of likely passwords. What type of attack is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rainbow table"
+        },
+        {
+          "id": "b",
+          "text": "Birthday attack"
+        },
+        {
+          "id": "c",
+          "text": "Dictionary attack"
+        },
+        {
+          "id": "d",
+          "text": "Spoofing"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "This is an example of an online brute-force dictionary attack. Dictionary attacks use common passwords as well as common substitutions to attempt to break into a system or service. Back-off algorithms that lock out attackers after a small number of incorrect password attempts can help slow or stop dictionary attacks and other brute-force password attacks. Rainbow tables are tables of precomputed hashes. The birthday attack is a method for generating collisions of hashes. Finally, no spoofing is indicated in this scenario. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q147",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "While reviewing web logs for her organization's website Kathleen discovers the entry shown here:\n\nGET http://example.com/viewarticle.php? \nview=../../../config.txt HTTP/1.1\n\nWhat type of attack has she potentially discovered?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A directory traversal attack"
+        },
+        {
+          "id": "b",
+          "text": "A web application buffer overflow"
+        },
+        {
+          "id": "c",
+          "text": "A directory recursion attack"
+        },
+        {
+          "id": "d",
+          "text": "A slashdot attack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Directory traversal attacks attempt to exploit tools that can read directories and files by moving through the directory structure. The example would try to read the config.txt file three layers above the working directory of the web application itself. Adding common directory names or common filenames can allow attackers (or penetration testers) to read other files in accessible directories if they are not properly secured. The remainder of the options were made up for this question, although Slashdot is an actual website. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q148",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "Your company has hired a penetration testing firm to test the network. For the test, you have given the company details on operating systems you use, applications you run, and network devices. What best describes this type of test?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Known environment test"
+        },
+        {
+          "id": "b",
+          "text": "External test"
+        },
+        {
+          "id": "c",
+          "text": "Unknown environment test"
+        },
+        {
+          "id": "d",
+          "text": "Threat test"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "A known environment (white-box) test involves providing extensive information, as described in this scenario. A known environment test could be internal or external. This scenario describes the opposite of an unknown environment (black-box) test, which would involve zero knowledge. Finally, threat test is not a term used in penetration testing. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q149",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "You have noticed that when in a crowded area, data from your cell phone is stolen. Later investigation shows a Bluetooth connection to your phone, one that you cannot explain. What describes this attack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bluejacking"
+        },
+        {
+          "id": "b",
+          "text": "Bluesnarfing"
+        },
+        {
+          "id": "c",
+          "text": "Evil twin"
+        },
+        {
+          "id": "d",
+          "text": "RAT"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Bluesnarfing involves accessing data from a Bluetooth device when it is in range. Bluejacking involves sending unsolicited messages to Bluetooth devices when they are in range. Evil twin attacks use a rogue access point whose name is similar or identical to that of a legitimate access point. A RAT is a remote-access Trojan, and nothing in this scenario points to a RAT being the cause of the stolen data. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q150",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "After running nmap against a system on a network, Sakis sees that TCP port 23 is open and a service is running on it. What issue should he identify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Low ports should not be open to the Internet."
+        },
+        {
+          "id": "b",
+          "text": "Telnet is an insecure protocol."
+        },
+        {
+          "id": "c",
+          "text": "SSH is an insecure protocol."
+        },
+        {
+          "id": "d",
+          "text": "Ports 1-1024 are well-known ports and must be firewalled."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "TCP port 23 is typically associated with Telnet, an unencrypted remote shell protocol. Since Telnet sends its authentication and other traffic in the clear (clear/plain text), it should not be used, and Sakis should identify this as a configuration issue involving an insecure protocol. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q151",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "During a penetration test, Kimon gains physical access to a Windows system and uses a system repair disk to copy cmd.exe to the %systemroot%\\system32 directory while renaming it sethc.exe. When the system boots, he is able to log in as an unprivileged user, hit the Shift key five times, and open a command prompt with system-level access using sticky keys. What type of attack has he conducted?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Trojan attack"
+        },
+        {
+          "id": "b",
+          "text": "A privilege escalation attack"
+        },
+        {
+          "id": "c",
+          "text": "A denial-of-service attack"
+        },
+        {
+          "id": "d",
+          "text": "A swapfile attack"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Privilege escalation attacks focus on gaining additional privileges. In this case, Kimon used physical access to the system to modify it, allowing him to then conduct a privilege escalation \nattack as an unprivileged user. A Trojan would have required a file to act like it was desirable, a denial-of-service attack would have prevented access to a system or service, and swapfiles (or pagefiles) are drive space used to contain the contents of memory when memory runs low. Swapfiles may contain sensitive data, but the term swapfile attack is not commonly used. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q152",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "During a penetration test, Dimitria gathers information, including the organization's domain name, IP addresses, employee information, phone numbers, email addresses, and similar data. What is this process typically called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mapping"
+        },
+        {
+          "id": "b",
+          "text": "Footprinting"
+        },
+        {
+          "id": "c",
+          "text": "Fingerprinting"
+        },
+        {
+          "id": "d",
+          "text": "Aggregation"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Footprinting is the process of gathering information about a computer system or network, and it can involve both active and passive techniques. Mapping, fingerprinting, and aggregation are not the correct or common terms for this practice. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q153",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "During what phase of a penetration test is information like employee names, phone number, and email addresses gathered?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exploitation"
+        },
+        {
+          "id": "b",
+          "text": "Establishing persistence"
+        },
+        {
+          "id": "c",
+          "text": "Reconnaissance"
+        },
+        {
+          "id": "d",
+          "text": "Lateral movement"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "The reconnaissance phase of a penetration test involves gathering information about the target, including domain information, system information, and details about employees like phone numbers, names, and email addresses. (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
+    },
+    {
+      "id": "cptsec-q154",
+      "domain": "threats",
+      "type": "multiple-choice",
+      "text": "During a penetration test, Mikaela obtains the uniform of a well-known package delivery service and wears it into the target office. She claims to have a delivery for a C-level employee she knows is there and insists that the package must be signed for by that person. What social engineering technique has she used?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Impersonation"
+        },
+        {
+          "id": "b",
+          "text": "Whaling"
+        },
+        {
+          "id": "c",
+          "text": "A watering hole attack"
+        },
+        {
+          "id": "d",
+          "text": "Prepending"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mikaela has impersonated an actual employee of the delivery service to gain access to the company. Company uniforms are a very useful element for in-person social engineering. Whaling is a type of phishing attack aimed at leaders in an organization. A watering hole attack deploys malware or other attack tools at a site or sites that a target group frequently uses. Prepending is vaguely defined by the Security+ exam but can mean a number of things. When you see prepending on the exam, it should normally mean \u201cadding something to the front of text.\u201d (Adapted from anaxkgs-security, MIT License.)",
+      "docs": [
+        {
+          "title": "CompTIA Security+",
+          "url": "https://www.comptia.org/certifications/security"
+        }
+      ]
     }
   ],
   "acronyms": [

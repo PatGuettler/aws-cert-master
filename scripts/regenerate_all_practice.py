@@ -10,9 +10,18 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main() -> int:
+    import_script = ROOT / "scripts" / "import_open_source_questions.py"
+    cache_dir = ROOT / "data" / "open-source-cache"
+    if import_script.is_file() and not any(cache_dir.glob("*.json")):
+        print("=== import_open_source_questions (first-time cache) ===")
+        rc = subprocess.call([sys.executable, str(import_script)], cwd=str(ROOT))
+        if rc != 0:
+            print("Warning: open-source import failed; continuing with fact banks only.")
+
     scripts = [
         ROOT / "scripts" / "generate_all_aws_exams.py",
         ROOT / "scripts" / "generate_all_vendors.py",
+        ROOT / "scripts" / "generate_key_training_exams.py",
     ]
     for script in scripts:
         if not script.is_file():

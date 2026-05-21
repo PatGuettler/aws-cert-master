@@ -548,10 +548,25 @@ main {
   font-size: 1.1rem;
 }
 
+.page-collapse,
 .browse-vendor-collapse {
   border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 0.65rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
+.page-collapse > .page-collapse-body {
+  padding: 0 1rem 1rem;
+}
+
+.page-collapse > .browse-vendor-summary {
+  margin: 0;
+  padding: 0.85rem 1rem;
+}
+
+.page-collapse[hidden],
 .browse-vendor-collapse[hidden] {
   display: none;
 }
@@ -580,6 +595,7 @@ main {
   transition: transform 0.15s ease;
 }
 
+.page-collapse[open] > .browse-vendor-summary::before,
 .browse-vendor-collapse[open] > .browse-vendor-summary::before {
   transform: rotate(90deg);
 }
@@ -650,11 +666,11 @@ main {
 }
 
 .keytraining-hub-section {
-  margin-bottom: 2rem;
+  margin-bottom: 0.65rem;
 }
 
-.keytraining-hub-section h3 {
-  margin: 0 0 0.35rem;
+.keytraining-hub-section .landing-hint {
+  margin-top: 0;
 }
 
 .keytraining-hub-more {
@@ -1564,15 +1580,37 @@ body.has-ad-bar {
 
 /* Home progress teaser */
 .progress-teaser {
-  margin-top: 1.5rem;
-  padding: 1.25rem;
-  background: var(--surface);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  margin-top: 0.65rem;
 }
 
-.progress-teaser h3 {
-  margin: 0 0 0.5rem;
+.progress-teaser .page-collapse-body {
+  padding-top: 0;
+}
+
+.domain-overview.page-collapse,
+.cert-acronym-callout.page-collapse {
+  margin-top: 0.65rem;
+}
+
+.keytrain-rules.page-collapse {
+  margin-top: 1rem;
+}
+
+.landing-howto.page-collapse {
+  margin-top: 1.25rem;
+}
+
+.dash-section.page-collapse {
+  margin-bottom: 0.65rem;
+}
+
+.drawer-details.page-collapse summary::before {
+  content: "▸ ";
+  color: var(--aws-orange);
+}
+
+.drawer-details.page-collapse[open] summary::before {
+  content: "▾ ";
 }
 
 .progress-teaser-summary {

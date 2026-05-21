@@ -57,9 +57,15 @@ Python scripts under `scripts/` can rebuild entire banks from fact catalogs. The
 
 Practice exams auto-save progress in the browser (localStorage) every 30 seconds and when you use **Pause & exit**. On the exam page, use **Continue exam** or **Start fresh** within seven days.
 
+## Question style
+
+All items should read like **practice certification exams**: short scenarios (“A company…”, “During an audit…”) with a clear decision—not generic stems such as “Which service is BEST to …” or tabletop KPI fillers.
+
+Regenerators enforce this via `scripts/question_bank/stem_quality.py`. Optional MIT-licensed items are merged from `data/open-source-cache/` after running `scripts/import_open_source_questions.py` (see `docs/OPEN_SOURCE_QUESTIONS.md`).
+
 ## Copyright and originality
 
-Practice questions in this repo are **original** study items. Do **not** copy stems, answer choices, or explanations from AWS Skill Builder, certification exams, brain dumps, or other proprietary training banks. It is fine to cover the same **exam guide objectives** and link to **official AWS documentation**—rewrite scenarios in your own words.
+Practice questions in this repo are **original** study items, optionally supplemented by attributed MIT open-source banks. Do **not** copy stems from proprietary exams, brain dumps, or Skill Builder verbatim. It is fine to cover the same **exam guide objectives** and link to **official documentation**—rewrite scenarios in your own words.
 
 ## SEO pages (automatic on deploy)
 

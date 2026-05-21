@@ -121,8 +121,9 @@
           Your progress
         </button>
       </nav>
-      <section class="drawer-section">
-        <h3>Test options</h3>
+      <details id="drawer-test-options" class="drawer-details page-collapse drawer-section">
+        <summary>Test options</summary>
+        <div class="drawer-details-body">
         <label class="option-row">
           <span>90-minute time limit</span>
           <span class="toggle">
@@ -144,8 +145,9 @@
             <span class="toggle-slider"></span>
           </span>
         </label>
-      </section>
-      <details class="drawer-details drawer-section-data">
+        </div>
+      </details>
+      <details id="drawer-my-data" class="drawer-details drawer-section-data page-collapse">
         <summary>My data</summary>
         <div class="drawer-details-body">
           <p class="drawer-hint">Stored in this browser only.</p>
@@ -221,8 +223,11 @@
           </button>
         </div>
 
-        <section class="landing-section landing-howto" id="how-to">
-          <h3>How to use Cert Master</h3>
+        <details id="landing-howto" class="landing-section page-collapse landing-howto">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title">How to use Cert Master</span>
+          </summary>
+          <div class="page-collapse-body">
           <ol class="landing-steps">
             <li>
               <strong>Pick a certification</strong> from
@@ -254,7 +259,8 @@
             devices. Questions are original practice items aligned to official exam objectives—not
             copied from real certification exams.
           </p>
-        </section>
+          </div>
+        </details>
       </section>
 
       <section id="view-keytrain-hub" class="view hidden">
@@ -271,7 +277,7 @@
             no feedback until you submit. Pass to unlock a personalized PDF certificate.
           </p>
         </div>
-        <details id="keytrain-section-keytraining" class="landing-section browse-vendor-collapse" open>
+        <details id="keytrain-section-keytraining" class="landing-section page-collapse browse-vendor-collapse">
           <summary class="browse-vendor-summary">
             <span class="browse-vendor-title">KeyTrain's Key Training</span>
             <span class="landing-count">(<span id="keytrain-keytraining-count">0</span>)</span>
@@ -281,7 +287,7 @@
           </p>
           <div id="keytrain-cert-grid-keytraining" class="landing-cert-grid"></div>
         </details>
-        <details id="keytrain-section-vendor" class="landing-section browse-vendor-collapse" open>
+        <details id="keytrain-section-vendor" class="landing-section page-collapse browse-vendor-collapse">
           <summary class="browse-vendor-summary">
             <span class="browse-vendor-title">Cloud &amp; vendor certifications</span>
             <span class="landing-count">(<span id="keytrain-vendor-count">0</span>)</span>
@@ -303,28 +309,40 @@
             for formal pass/fail with a PDF certificate.
           </p>
         </div>
-        <section class="keytraining-hub-section">
-          <h3>Practice tests</h3>
-          <p class="landing-hint">Study mode with optional feedback, pause &amp; resume, and progress tracking.</p>
-          <div id="keytraining-practice-grid" class="landing-cert-grid"></div>
-        </section>
-        <section class="keytraining-hub-section">
-          <h3>Workshops</h3>
-          <p class="landing-hint">
-            Short guided sessions—about one scenario per topic—with immediate feedback after each question.
-          </p>
-          <div id="keytraining-workshop-preview-grid" class="landing-cert-grid"></div>
-          <p class="keytraining-hub-more">
-            <button type="button" id="btn-keytraining-all-workshops" class="btn btn-outline">
-              View all workshops
-            </button>
-          </p>
-        </section>
-        <section class="keytraining-hub-section">
-          <h3>KeyTrain certification (formal)</h3>
-          <p class="landing-hint">Timed pass/fail attempt; PDF certificate when you pass.</p>
-          <div id="keytraining-formal-grid" class="landing-cert-grid"></div>
-        </section>
+        <details id="keytraining-section-practice" class="page-collapse keytraining-hub-section">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title">Practice tests</span>
+          </summary>
+          <div class="page-collapse-body">
+            <p class="landing-hint">Study mode with optional feedback, pause &amp; resume, and progress tracking.</p>
+            <div id="keytraining-practice-grid" class="landing-cert-grid"></div>
+          </div>
+        </details>
+        <details id="keytraining-section-workshops" class="page-collapse keytraining-hub-section">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title">Workshops</span>
+          </summary>
+          <div class="page-collapse-body">
+            <p class="landing-hint">
+              Short guided sessions—about one scenario per topic—with immediate feedback after each question.
+            </p>
+            <div id="keytraining-workshop-preview-grid" class="landing-cert-grid"></div>
+            <p class="keytraining-hub-more">
+              <button type="button" id="btn-keytraining-all-workshops" class="btn btn-outline">
+                View all workshops
+              </button>
+            </p>
+          </div>
+        </details>
+        <details id="keytraining-section-formal" class="page-collapse keytraining-hub-section">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title">KeyTrain certification (formal)</span>
+          </summary>
+          <div class="page-collapse-body">
+            <p class="landing-hint">Timed pass/fail attempt; PDF certificate when you pass.</p>
+            <div id="keytraining-formal-grid" class="landing-cert-grid"></div>
+          </div>
+        </details>
       </section>
 
       <section id="view-key-training-workshops" class="view hidden">
@@ -340,7 +358,14 @@
             in that category (authentication, phishing, patching, fraud indicators, and more).
           </p>
         </div>
-        <div id="keytraining-workshop-grid" class="landing-cert-grid"></div>
+        <details id="keytraining-workshops-all" class="page-collapse keytraining-hub-section">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title">All workshop categories</span>
+          </summary>
+          <div class="page-collapse-body">
+            <div id="keytraining-workshop-grid" class="landing-cert-grid"></div>
+          </div>
+        </details>
       </section>
 
       <section id="view-keytrain-cert" class="view hidden">
@@ -385,10 +410,14 @@
             </button>
           </div>
         </div>
-        <section class="keytrain-rules">
-          <h3>Assessment rules</h3>
-          <ul id="keytrain-rules-list" class="keytrain-rules-list"></ul>
-        </section>
+        <details id="keytrain-rules-collapse" class="page-collapse keytrain-rules">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title">Assessment rules</span>
+          </summary>
+          <div class="page-collapse-body">
+            <ul id="keytrain-rules-list" class="keytrain-rules-list"></ul>
+          </div>
+        </details>
       </section>
 
       <section id="view-keytrain-results" class="view hidden">
@@ -487,8 +516,7 @@
         </p>
         <details
           id="browse-keytraining-section"
-          class="landing-section browse-vendor-collapse"
-          open
+          class="landing-section page-collapse browse-vendor-collapse"
         >
           <summary class="browse-vendor-summary" id="browse-keytraining-heading">
             <span class="browse-vendor-title">KeyTrain's Key Training</span>
@@ -502,8 +530,7 @@
         </details>
         <details
           id="browse-aws-section"
-          class="landing-section browse-vendor-collapse"
-          open
+          class="landing-section page-collapse browse-vendor-collapse"
         >
           <summary class="browse-vendor-summary" id="browse-aws-heading">
             <span class="browse-vendor-title">AWS certifications</span>
@@ -511,21 +538,21 @@
           </summary>
           <div id="browse-cert-grid-aws" class="landing-cert-grid"></div>
         </details>
-        <details id="browse-azure-section" class="landing-section browse-vendor-collapse">
+        <details id="browse-azure-section" class="landing-section page-collapse browse-vendor-collapse">
           <summary class="browse-vendor-summary" id="browse-azure-heading">
             <span class="browse-vendor-title">Microsoft Azure certifications</span>
             <span class="landing-count">(<span id="browse-azure-count">0</span>)</span>
           </summary>
           <div id="browse-cert-grid-azure" class="landing-cert-grid"></div>
         </details>
-        <details id="browse-google-section" class="landing-section browse-vendor-collapse">
+        <details id="browse-google-section" class="landing-section page-collapse browse-vendor-collapse">
           <summary class="browse-vendor-summary" id="browse-google-heading">
             <span class="browse-vendor-title">Google Cloud certifications</span>
             <span class="landing-count">(<span id="browse-google-count">0</span>)</span>
           </summary>
           <div id="browse-cert-grid-google" class="landing-cert-grid"></div>
         </details>
-        <details id="browse-comptia-section" class="landing-section browse-vendor-collapse">
+        <details id="browse-comptia-section" class="landing-section page-collapse browse-vendor-collapse">
           <summary class="browse-vendor-summary" id="browse-comptia-heading">
             <span class="browse-vendor-title">CompTIA certifications</span>
             <span class="landing-count">(<span id="browse-comptia-count">0</span>)</span>
@@ -592,29 +619,41 @@
             </button>
           </div>
         </div>
-        <section id="cert-acronym-callout" class="cert-acronym-callout hidden">
-          <h3>CompTIA acronym prep</h3>
-          <p>
-            CompTIA exams use heavy shorthand (ports, protocols, roles, attacks). Our acronym quiz
-            trains both directions—term to meaning and meaning to term—so stems on the real exam feel familiar.
-          </p>
-          <button type="button" id="btn-study-acronyms-inline" class="btn btn-outline">
-            Open acronym study
-          </button>
-        </section>
-        <div class="domain-overview">
-          <h3 id="domain-heading">Exam domains</h3>
-          <ul id="domain-list" class="domain-list"></ul>
-        </div>
-        <section class="progress-teaser" aria-labelledby="progress-teaser-heading">
-          <h3 id="progress-teaser-heading">Your progress</h3>
-          <p id="progress-teaser-summary" class="progress-teaser-summary">
-            Finish a practice exam to see score trends, weak domains, and more.
-          </p>
-          <button type="button" id="btn-open-dashboard" class="btn btn-outline">
-            Open progress dashboard
-          </button>
-        </section>
+        <details id="cert-acronym-collapse" class="page-collapse cert-acronym-callout hidden">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title">CompTIA acronym prep</span>
+          </summary>
+          <div class="page-collapse-body">
+            <p>
+              CompTIA exams use heavy shorthand (ports, protocols, roles, attacks). Our acronym quiz
+              trains both directions—term to meaning and meaning to term—so stems on the real exam feel familiar.
+            </p>
+            <button type="button" id="btn-study-acronyms-inline" class="btn btn-outline">
+              Open acronym study
+            </button>
+          </div>
+        </details>
+        <details id="cert-domains-collapse" class="page-collapse domain-overview">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title" id="domain-heading">Exam domains</span>
+          </summary>
+          <div class="page-collapse-body">
+            <ul id="domain-list" class="domain-list"></ul>
+          </div>
+        </details>
+        <details id="cert-progress-collapse" class="page-collapse progress-teaser" aria-labelledby="progress-teaser-heading">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title" id="progress-teaser-heading">Your progress</span>
+          </summary>
+          <div class="page-collapse-body">
+            <p id="progress-teaser-summary" class="progress-teaser-summary">
+              Finish a practice exam to see score trends, weak domains, and more.
+            </p>
+            <button type="button" id="btn-open-dashboard" class="btn btn-outline">
+              Open progress dashboard
+            </button>
+          </div>
+        </details>
       </section>
 
       <section id="view-acronyms" class="view hidden">
@@ -684,10 +723,14 @@
           <p id="results-detail"></p>
           <p id="results-trend" class="results-trend hidden"></p>
         </div>
-        <div class="domain-results">
-          <h3>Performance by domain</h3>
-          <div id="domain-results-body"></div>
-        </div>
+        <details id="results-domains-collapse" class="page-collapse domain-results">
+          <summary class="browse-vendor-summary">
+            <span class="browse-vendor-title">Performance by domain</span>
+          </summary>
+          <div class="page-collapse-body">
+            <div id="domain-results-body"></div>
+          </div>
+        </details>
         <div class="results-actions">
           <button id="btn-study-plan" type="button" class="btn btn-primary">
             View study plan

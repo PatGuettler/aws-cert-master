@@ -5,8 +5,8 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 15,
-    "scoredQuestions": 15,
+    "totalQuestions": 12,
+    "scoredQuestions": 12,
     "timeLimitMinutes": 40,
     "passingScore": 700,
     "maxScore": 1000,
@@ -83,23 +83,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Reply-all warning employees not to click"
-        },
-        {
-          "id": "b",
           "text": "Forward the email to personal Gmail for storage"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Quarantine similar messages, block the domain at the gateway, and reset credentials if the user submitted data"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Wait for three more reports before acting"
+        },
+        {
+          "id": "d",
+          "text": "Reply-all warning employees not to click"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Containment (quarantine/block) and credential safety come before broad communication.",
       "docs": [
@@ -121,15 +121,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Unsupported OS on printers only"
+          "text": "No risk remains; email is fully secure"
         },
         {
           "id": "b",
-          "text": "ARP cache poisoning on Wi-Fi"
+          "text": "Unsupported OS on printers only"
         },
         {
           "id": "c",
-          "text": "No risk remains; email is fully secure"
+          "text": "ARP cache poisoning on Wi-Fi"
         },
         {
           "id": "d",
@@ -191,105 +191,29 @@
     },
     {
       "id": "ktems-q004",
-      "domain": "phishing",
-      "type": "multiple-choice",
-      "text": "During a tabletop on phishing, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "b",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to phishing trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Average desk chair height"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective phishing programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktems-q005",
-      "domain": "phishing",
-      "type": "multiple-choice",
-      "text": "An audit sampling phishing controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "b",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "c",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for phishing.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktems-q004",
       "domain": "spoofing",
       "type": "multiple-choice",
       "text": "Mail headers show SPF pass, DKIM fail, and DMARC none for a message impersonating the CEO. What improvement is MOST effective?",
       "options": [
         {
           "id": "a",
-          "text": "Allow any sender if subject contains 'urgent'"
-        },
-        {
-          "id": "b",
-          "text": "Enforce DMARC p=reject with aligned DKIM for all executive domains"
-        },
-        {
-          "id": "c",
           "text": "Remove DKIM to simplify troubleshooting"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Allow any sender if subject contains 'urgent'"
+        },
+        {
+          "id": "c",
           "text": "Disable SPF globally"
+        },
+        {
+          "id": "d",
+          "text": "Enforce DMARC p=reject with aligned DKIM for all executive domains"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "DMARC with alignment stops many spoofed From domains even when SPF alone passes via forwarders.",
       "docs": [
@@ -315,7 +239,7 @@
         },
         {
           "id": "b",
-          "text": "Block PDF attachments from HR"
+          "text": "Increase font size in Outlook"
         },
         {
           "id": "c",
@@ -323,7 +247,7 @@
         },
         {
           "id": "d",
-          "text": "Increase font size in Outlook"
+          "text": "Block PDF attachments from HR"
         }
       ],
       "correct": [
@@ -353,15 +277,15 @@
         },
         {
           "id": "b",
-          "text": "Disable MFA for call center staff"
-        },
-        {
-          "id": "c",
           "text": "Publish the main number on Instagram only"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Remove VLANs from the PBX"
+        },
+        {
+          "id": "d",
+          "text": "Disable MFA for call center staff"
         }
       ],
       "correct": [
@@ -381,105 +305,29 @@
     },
     {
       "id": "ktems-q007",
-      "domain": "spoofing",
-      "type": "multiple-choice",
-      "text": "During a tabletop on spoofing, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "b",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "c",
-          "text": "Documented incidents or control failures tied to spoofing trending down quarter over quarter"
-        },
-        {
-          "id": "d",
-          "text": "Average desk chair height"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Effective spoofing programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktems-q008",
-      "domain": "spoofing",
-      "type": "multiple-choice",
-      "text": "An audit sampling spoofing controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "b",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "c",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for spoofing.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktems-q007",
       "domain": "malicious-attachments",
       "type": "multiple-choice",
       "text": "An invoice attachment is a password-protected ZIP containing a .lnk file. What is the SAFEST handling step?",
       "options": [
         {
           "id": "a",
-          "text": "Ask the sender for the password in email reply"
+          "text": "Sandbox detonation in an isolated environment before any user execution"
         },
         {
           "id": "b",
-          "text": "Forward to finance to open on their desktop"
-        },
-        {
-          "id": "c",
           "text": "Rename the .lnk to .txt to neutralize it"
         },
         {
+          "id": "c",
+          "text": "Forward to finance to open on their desktop"
+        },
+        {
           "id": "d",
-          "text": "Sandbox detonation in an isolated environment before any user execution"
+          "text": "Ask the sender for the password in email reply"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Password-protected archives bypass scanners; sandbox analysis avoids user execution risk.",
       "docs": [
@@ -505,7 +353,7 @@
         },
         {
           "id": "b",
-          "text": "Block macros from internet-origin files and use protected view"
+          "text": "Require users to enable editing on all attachments"
         },
         {
           "id": "c",
@@ -513,11 +361,11 @@
         },
         {
           "id": "d",
-          "text": "Require users to enable editing on all attachments"
+          "text": "Block macros from internet-origin files and use protected view"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Office macros remain a common initial access path; blocking internet macros is baseline.",
       "docs": [
@@ -539,101 +387,25 @@
       "options": [
         {
           "id": "a",
-          "text": "PDFs can launch actions or download second-stage payloads when opened in vulnerable readers"
-        },
-        {
-          "id": "b",
           "text": "JavaScript in PDF only affects printers"
         },
         {
+          "id": "b",
+          "text": "Quarantine means the file is guaranteed safe"
+        },
+        {
           "id": "c",
-          "text": "PDFs cannot contain active content"
+          "text": "PDFs can launch actions or download second-stage payloads when opened in vulnerable readers"
         },
         {
           "id": "d",
-          "text": "Quarantine means the file is guaranteed safe"
+          "text": "PDFs cannot contain active content"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Malicious PDF features are a documented attachment risk; quarantine is appropriate.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktems-q010",
-      "domain": "malicious-attachments",
-      "type": "multiple-choice",
-      "text": "During a tabletop on malicious attachments, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "b",
-          "text": "Documented incidents or control failures tied to malicious attachments trending down quarter over quarter"
-        },
-        {
-          "id": "c",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "d",
-          "text": "Average desk chair height"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Effective malicious attachments programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktems-q011",
-      "domain": "malicious-attachments",
-      "type": "multiple-choice",
-      "text": "An audit sampling malicious attachments controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "b",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "c",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "d",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for malicious attachments.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -653,23 +425,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Trust because the subject says 'CONFIDENTIAL'"
+          "text": "Process if the logo matches"
         },
         {
           "id": "b",
-          "text": "Reply to the same thread asking 'Is this real?'"
-        },
-        {
-          "id": "c",
           "text": "Out-of-band callback to a known number on file, not numbers in the email"
         },
         {
+          "id": "c",
+          "text": "Reply to the same thread asking 'Is this real?'"
+        },
+        {
           "id": "d",
-          "text": "Process if the logo matches"
+          "text": "Trust because the subject says 'CONFIDENTIAL'"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "BEC wire fraud relies on urgency; verified voice callback stops many losses.",
       "docs": [
@@ -691,11 +463,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Whitelist all .com domains"
+          "text": "Single approver if under $50k"
         },
         {
           "id": "b",
-          "text": "Single approver if under $50k"
+          "text": "Disable accounts payable entirely"
         },
         {
           "id": "c",
@@ -703,7 +475,7 @@
         },
         {
           "id": "d",
-          "text": "Disable accounts payable entirely"
+          "text": "Whitelist all .com domains"
         }
       ],
       "correct": [
@@ -733,11 +505,11 @@
         },
         {
           "id": "b",
-          "text": "Physical security for CCTV only"
+          "text": "Patch management team for WSUS"
         },
         {
           "id": "c",
-          "text": "Patch management team for WSUS"
+          "text": "Physical security for CCTV only"
         },
         {
           "id": "d",
@@ -748,82 +520,6 @@
         "d"
       ],
       "explanation": "BEC often includes hidden inbox rules; SOC hunts prevent ongoing exfiltration.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktems-q013",
-      "domain": "bec",
-      "type": "multiple-choice",
-      "text": "During a tabletop on business email compromise (bec), leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "b",
-          "text": "Documented incidents or control failures tied to business email compromise (bec) trending down quarter over quarter"
-        },
-        {
-          "id": "c",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "d",
-          "text": "Number of marketing emails sent"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Effective business email compromise (bec) programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktems-q014",
-      "domain": "bec",
-      "type": "multiple-choice",
-      "text": "An audit sampling business email compromise (bec) controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "b",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "c",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "d",
-          "text": "Remove all logging to reduce findings"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for business email compromise (bec).",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

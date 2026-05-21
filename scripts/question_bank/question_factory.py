@@ -70,9 +70,10 @@ def _merged_banks() -> dict[str, dict[str, list[Fact]]]:
 ALL_BANKS = _merged_banks()
 
 
-def _fact_to_mcq(domain: str, fact: Fact, prefix: str | None = None) -> RawQuestion:
+def _fact_to_mcq(domain: str, fact: Fact, stem: str) -> RawQuestion:
     stem_suffix, correct, wrong, explanation, doc_title, doc_url = fact
-    stem = f"{prefix} {stem_suffix}." if prefix else f"Which AWS service or feature is BEST to {stem_suffix}?"
+    if not is_scenario_stem(stem):
+        stem = scenario_stem_from_fact(stem_suffix, random.Random(hash(stem) % 2**32))
     options = [("a", correct), ("b", wrong[0]), ("c", wrong[1]), ("d", wrong[2])]
     return (
         domain,
@@ -83,42 +84,6 @@ def _fact_to_mcq(domain: str, fact: Fact, prefix: str | None = None) -> RawQuest
         explanation,
         [(doc_title, doc_url)],
     )
-
-
-def _variant_facts(fact: Fact) -> list[RawQuestion]:
-    """Generate alternate stems for the same concept."""
-    domain = ""  # filled by caller
-    stem_suffix, correct, wrong, explanation, doc_title, doc_url = fact
-    variants: list[RawQuestion] = []
-    stems = [
-        f"Which service should you use to {stem_suffix}?",
-        f"What is the MOST appropriate AWS solution to {stem_suffix}?",
-        f"A team must {stem_suffix}. Which option meets the requirement?",
-    ]
-    for stem in stems:
-        options = [("a", correct), ("b", wrong[0]), ("c", wrong[1]), ("d", wrong[2])]
-        variants.append(
-            (
-                domain,
-                "multiple-choice",
-                stem,
-                options,
-                ["a"],
-                explanation,
-                [(doc_title, doc_url)],
-            )
-        )
-    return variants
-
-
-def _scenario_questions(domain: str, facts: list[Fact], count: int, rng: random.Random) -> list[RawQuestion]:
-    out: list[RawQuestion] = []
-    for fact in facts:
-        if len(out) >= count:
-            break
-        prefix = rng.choice(SCENARIO_PREFIXES)
-        out.append(_fact_to_mcq(domain, fact, prefix))
-    return out
 
 
 def _pad_domain(
@@ -145,18 +110,6 @@ def _pad_domain(
                 scenario_stem_from_fact(fact[0], rng),
             )
         )
-    for fact in facts:
-        if len(raw) >= target:
-            break
-        for variant in _variant_facts(fact):
-            variant_list = list(variant)
-            variant_list[0] = domain_id
-            add(tuple(variant_list))  # type: ignore[arg-type]
-    for fact in facts:
-        if len(raw) >= target:
-            break
-        prefix = rng.choice(SCENARIO_PREFIXES)
-        add(_fact_to_mcq(domain_id, fact, f"{prefix} {fact[0]}."))
     idx = 0
     while len(raw) < target and len(facts) >= 2:
         f1, f2 = facts[idx % len(facts)], facts[(idx + 1) % len(facts)]
@@ -237,18 +190,18 @@ def _build_devops_raw_questions(min_total: int, seed: int) -> list[RawQuestion]:
         domain_raw = _pad_domain("devops-engineer-professional", did, facts, target - by_domain, rng)
         raw.extend(domain_raw)
 
-    raw.extend(_multi_response_for_exam("devops-engineer-professional", domains, rng))
     raw = dedupe_raw(raw)
+    seen = {r[2] for r in raw}
+    merge_for_exam("devops-engineer-professional", raw, seen, max_add=40)
 
     fact_pool = list(itertools.chain.from_iterable(exam_facts.values()))
     attempt = 0
-    seen = {r[2] for r in raw}
-    while len(raw) < min_total and fact_pool and attempt < min_total * 4:
+    while len(raw) < min_total and fact_pool and attempt < min_total * 6:
         fact = fact_pool[attempt % len(fact_pool)]
         domain_id = domains[attempt % len(domains)]["id"]
-        prefix = rng.choice(SCENARIO_PREFIXES)
-        candidate = _fact_to_mcq(domain_id, fact, prefix)
-        if candidate[2] not in seen:
+        stem = scenario_stem_from_fact(fact[0], rng)
+        candidate = _fact_to_mcq(domain_id, fact, stem)
+        if candidate[2] not in seen and is_scenario_stem(candidate[2]):
             raw.append(candidate)
             seen.add(candidate[2])
         attempt += 1
@@ -283,19 +236,18 @@ def build_raw_questions(exam_id: str, min_total: int, seed: int = 42) -> list[Ra
         domain_raw = _pad_domain(exam_id, did, facts, target, rng)
         raw.extend(domain_raw)
 
-    raw.extend(_multi_response_for_exam(exam_id, domains, rng))
     raw = dedupe_raw(raw)
+    seen = {r[2] for r in raw}
+    merge_for_exam(exam_id, raw, seen, max_add=min(50, min_total // 2))
 
-    # Ensure minimum count with combinatorial scenario wraps
     fact_pool = list(itertools.chain.from_iterable(exam_facts.values()))
     attempt = 0
-    seen = {r[2] for r in raw}
-    while len(raw) < min_total and fact_pool and attempt < min_total * 4:
+    while len(raw) < min_total and fact_pool and attempt < min_total * 6:
         fact = fact_pool[attempt % len(fact_pool)]
         domain_id = domains[attempt % len(domains)]["id"]
-        prefix = rng.choice(SCENARIO_PREFIXES)
-        candidate = _fact_to_mcq(domain_id, fact, prefix)
-        if candidate[2] not in seen:
+        stem = scenario_stem_from_fact(fact[0], rng)
+        candidate = _fact_to_mcq(domain_id, fact, stem)
+        if candidate[2] not in seen and is_scenario_stem(candidate[2]):
             raw.append(candidate)
             seen.add(candidate[2])
         attempt += 1

@@ -106,15 +106,15 @@
         },
         {
           "id": "c",
-          "text": "Internet-facing and vulnerable services before internal file shares"
+          "text": "Patch printers first always"
         },
         {
           "id": "d",
-          "text": "Patch printers first always"
+          "text": "Internet-facing and vulnerable services before internal file shares"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "Risk-based prioritization focuses on exposure and exploitability.",
       "docs": [
@@ -136,23 +136,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Patches break coffee machines only"
-        },
-        {
-          "id": "b",
-          "text": "Attackers pivot from lab to prod via shared credentials and trusts"
-        },
-        {
-          "id": "c",
           "text": "Test networks cannot be reached ever"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Patches break coffee machines only"
+        },
+        {
+          "id": "c",
           "text": "CVEs do not apply to VMs"
+        },
+        {
+          "id": "d",
+          "text": "Attackers pivot from lab to prod via shared credentials and trusts"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Unpatched labs are common pivot points.",
       "docs": [
@@ -174,7 +174,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Compliance is always 100% accurate"
+          "text": "Nessus invents CVEs"
         },
         {
           "id": "b",
@@ -182,93 +182,17 @@
         },
         {
           "id": "c",
+          "text": "Compliance is always 100% accurate"
+        },
+        {
+          "id": "d",
           "text": "Superseded updates not installed or wrong scan credentials / reboot pending"
-        },
-        {
-          "id": "d",
-          "text": "Nessus invents CVEs"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Reconcile WSUS agent state with vuln scanner and pending reboots.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q004",
-      "domain": "patching",
-      "type": "multiple-choice",
-      "text": "During a tabletop on patch management, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Documented incidents or control failures tied to patch management trending down quarter over quarter"
-        },
-        {
-          "id": "b",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "c",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "d",
-          "text": "Total pages printed in color only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Effective patch management programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q005",
-      "domain": "patching",
-      "type": "multiple-choice",
-      "text": "An audit sampling patch management controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "b",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "c",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "d",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "Consistency requires written baselines and attestations for patch management.",
+      "explanation": "Reconcile WSUS agent state with vuln scanner and pending reboots.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -292,11 +216,11 @@
         },
         {
           "id": "b",
-          "text": "Ignore because Java is popular"
+          "text": "Uninstall Java on all machines including servers needed"
         },
         {
           "id": "c",
-          "text": "Uninstall Java on all machines including servers needed"
+          "text": "Ignore because Java is popular"
         },
         {
           "id": "d",
@@ -330,7 +254,7 @@
         },
         {
           "id": "b",
-          "text": "Extensions cannot access tabs"
+          "text": "Abandoned extensions become supply-chain targets"
         },
         {
           "id": "c",
@@ -338,11 +262,11 @@
         },
         {
           "id": "d",
-          "text": "Abandoned extensions become supply-chain targets"
+          "text": "Extensions cannot access tabs"
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
       "explanation": "Stale extensions are a growing endpoint risk.",
       "docs": [
@@ -364,15 +288,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Network segmentation, monitoring, and documented exception with compensating controls"
+          "text": "Install consumer antivirus only and expose RDP"
         },
         {
           "id": "b",
-          "text": "Share one admin password"
+          "text": "Network segmentation, monitoring, and documented exception with compensating controls"
         },
         {
           "id": "c",
-          "text": "Install consumer antivirus only and expose RDP"
+          "text": "Share one admin password"
         },
         {
           "id": "d",
@@ -380,85 +304,9 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Unsupported OS needs isolation and monitoring when upgrade is delayed.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q007",
-      "domain": "outdated-software",
-      "type": "multiple-choice",
-      "text": "During a tabletop on outdated software, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "b",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "c",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "d",
-          "text": "Documented incidents or control failures tied to outdated software trending down quarter over quarter"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Effective outdated software programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q008",
-      "domain": "outdated-software",
-      "type": "multiple-choice",
-      "text": "An audit sampling outdated software controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "b",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "c",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "d",
-          "text": "Remove all logging to reduce findings"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for outdated software.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -478,15 +326,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Improved security posture"
-        },
-        {
-          "id": "b",
           "text": "Configuration drift undermining infrastructure as code guarantees"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Automatic HIPAA compliance"
+        },
+        {
+          "id": "c",
+          "text": "Improved security posture"
         },
         {
           "id": "d",
@@ -494,7 +342,7 @@
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Manual changes bypass review; drift detection and import/remediation needed.",
       "docs": [
@@ -516,23 +364,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Document as acceptable forever"
-        },
-        {
-          "id": "b",
           "text": "Enforce golden image / cloud-init baseline and continuous compliance scanning"
         },
         {
+          "id": "b",
+          "text": "Share root password in chat"
+        },
+        {
           "id": "c",
-          "text": "Disable SSH and use no remote access ever"
+          "text": "Document as acceptable forever"
         },
         {
           "id": "d",
-          "text": "Share root password in chat"
+          "text": "Disable SSH and use no remote access ever"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Baselines and scanning prevent redeploy drift.",
       "docs": [
@@ -554,11 +402,11 @@
       "options": [
         {
           "id": "a",
-          "text": "No security effect"
+          "text": "Automatic patch compliance"
         },
         {
           "id": "b",
-          "text": "Stronger encryption on Wi-Fi"
+          "text": "No security effect"
         },
         {
           "id": "c",
@@ -566,7 +414,7 @@
         },
         {
           "id": "d",
-          "text": "Automatic patch compliance"
+          "text": "Stronger encryption on Wi-Fi"
         }
       ],
       "correct": [
@@ -586,105 +434,29 @@
     },
     {
       "id": "ktsys-q010",
-      "domain": "config-drift",
-      "type": "multiple-choice",
-      "text": "During a tabletop on configuration drift, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "b",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "c",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "d",
-          "text": "Documented incidents or control failures tied to configuration drift trending down quarter over quarter"
-        }
-      ],
-      "correct": [
-        "d"
-      ],
-      "explanation": "Effective configuration drift programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q011",
-      "domain": "config-drift",
-      "type": "multiple-choice",
-      "text": "An audit sampling configuration drift controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "b",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "c",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "d",
-          "text": "Remove all logging to reduce findings"
-        }
-      ],
-      "correct": [
-        "b"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for configuration drift.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q010",
       "domain": "update-compliance",
       "type": "multiple-choice",
       "text": "MDM shows 15% iOS devices below minimum OS. Enforcement action?",
       "options": [
         {
           "id": "a",
-          "text": "Block corporate email and VPN until compliant or quarantined VLAN"
-        },
-        {
-          "id": "b",
-          "text": "Allow indefinitely with warning email"
-        },
-        {
-          "id": "c",
           "text": "Disable MDM to reduce tickets"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "Wipe all devices immediately without notice"
+        },
+        {
+          "id": "c",
+          "text": "Block corporate email and VPN until compliant or quarantined VLAN"
+        },
+        {
+          "id": "d",
+          "text": "Allow indefinitely with warning email"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Conditional access drives mobile compliance.",
       "docs": [
@@ -706,23 +478,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Updates are cosmetic only"
-        },
-        {
-          "id": "b",
           "text": "Freezes guarantee zero incidents"
         },
         {
+          "id": "b",
+          "text": "Updates are cosmetic only"
+        },
+        {
           "id": "c",
-          "text": "Attackers respect change freezes"
+          "text": "Accumulated critical CVE exposure for entire freeze period"
         },
         {
           "id": "d",
-          "text": "Accumulated critical CVE exposure for entire freeze period"
+          "text": "Attackers respect change freezes"
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
       "explanation": "Long freezes need explicit risk sign-off and compensating monitoring.",
       "docs": [
@@ -744,101 +516,25 @@
       "options": [
         {
           "id": "a",
-          "text": "% assets at or above mandated patch/OS baseline within SLA"
-        },
-        {
-          "id": "b",
           "text": "Number of help desk tickets about fonts"
         },
         {
+          "id": "b",
+          "text": "% assets at or above mandated patch/OS baseline within SLA"
+        },
+        {
           "id": "c",
-          "text": "Email volume per user"
+          "text": "CCTV camera count"
         },
         {
           "id": "d",
-          "text": "CCTV camera count"
+          "text": "Email volume per user"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Baseline adherence percentage is a standard compliance KPI.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q013",
-      "domain": "update-compliance",
-      "type": "multiple-choice",
-      "text": "During a tabletop on update compliance, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Documented incidents or control failures tied to update compliance trending down quarter over quarter"
-        },
-        {
-          "id": "b",
-          "text": "Total pages printed in color only"
-        },
-        {
-          "id": "c",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "d",
-          "text": "Average desk chair height"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Effective update compliance programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q014",
-      "domain": "update-compliance",
-      "type": "multiple-choice",
-      "text": "An audit sampling update compliance controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "b",
-          "text": "Disable training to save time"
-        },
-        {
-          "id": "c",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "d",
-          "text": "Allow each site to opt out silently"
-        }
-      ],
-      "correct": [
-        "c"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for update compliance.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -862,7 +558,7 @@
         },
         {
           "id": "b",
-          "text": "Plan upgrade or replacement before EOS\u2014no new CVE patches after"
+          "text": "Expose management UI to internet"
         },
         {
           "id": "c",
@@ -870,11 +566,11 @@
         },
         {
           "id": "d",
-          "text": "Expose management UI to internet"
+          "text": "Plan upgrade or replacement before EOS\u2014no new CVE patches after"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "EOS means unpatched vulnerabilities over time.",
       "docs": [
@@ -900,19 +596,19 @@
         },
         {
           "id": "b",
-          "text": "Isolate segment, deny internet egress, monitor closely, fund migration"
+          "text": "Enable RDP from any IP"
         },
         {
           "id": "c",
-          "text": "Join to domain controllers directly on internet"
+          "text": "Isolate segment, deny internet egress, monitor closely, fund migration"
         },
         {
           "id": "d",
-          "text": "Enable RDP from any IP"
+          "text": "Join to domain controllers directly on internet"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Unsupported servers need network containment and migration plan.",
       "docs": [
@@ -934,7 +630,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable all clinical networking"
+          "text": "Connect devices to guest Wi-Fi for updates"
         },
         {
           "id": "b",
@@ -942,93 +638,17 @@
         },
         {
           "id": "c",
-          "text": "Assume HIPAA exempts all devices"
+          "text": "Disable all clinical networking"
         },
         {
           "id": "d",
-          "text": "Connect devices to guest Wi-Fi for updates"
+          "text": "Assume HIPAA exempts all devices"
         }
       ],
       "correct": [
         "b"
       ],
       "explanation": "Unsupported medical IoT requires documented risk and segmentation.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q016",
-      "domain": "unsupported-os",
-      "type": "multiple-choice",
-      "text": "During a tabletop on unsupported operating systems, leadership asks for a measurable KPI. Which metric fits BEST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Documented incidents or control failures tied to unsupported operating systems trending down quarter over quarter"
-        },
-        {
-          "id": "b",
-          "text": "Number of marketing emails sent"
-        },
-        {
-          "id": "c",
-          "text": "Average desk chair height"
-        },
-        {
-          "id": "d",
-          "text": "Total pages printed in color only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Effective unsupported operating systems programs use measurable outcomes, not vanity metrics.",
-      "docs": [
-        {
-          "title": "NIST Cybersecurity Framework",
-          "url": "https://www.nist.gov/cyberframework"
-        },
-        {
-          "title": "CISA Cybersecurity Guidance",
-          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
-        }
-      ]
-    },
-    {
-      "id": "ktsys-q017",
-      "domain": "unsupported-os",
-      "type": "multiple-choice",
-      "text": "An audit sampling unsupported operating systems controls finds inconsistent enforcement between sites. What should you standardize FIRST?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Baseline configuration and mandatory procedures referenced in policy with periodic attestation"
-        },
-        {
-          "id": "b",
-          "text": "Remove all logging to reduce findings"
-        },
-        {
-          "id": "c",
-          "text": "Allow each site to opt out silently"
-        },
-        {
-          "id": "d",
-          "text": "Disable training to save time"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Consistency requires written baselines and attestations for unsupported operating systems.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
