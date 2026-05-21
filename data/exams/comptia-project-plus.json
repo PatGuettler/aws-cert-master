@@ -1,0 +1,2943 @@
+{
+  "id": "comptia-project-plus",
+  "name": "CompTIA Project+",
+  "code": "PK0-005",
+  "vendor": "comptia",
+  "exam": {
+    "totalQuestions": 85,
+    "scoredQuestions": 75,
+    "timeLimitMinutes": 90,
+    "passingScore": 675,
+    "maxScore": 900,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "concepts",
+      "name": "Domain 1: Project Management Concepts",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Project+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "lifecycle",
+      "name": "Domain 2: Project Life Cycle Phases",
+      "weight": 30,
+      "resources": [
+        {
+          "title": "Project+ lifecycle objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Domain 3: Tools and Documentation",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Project+ tools objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "name": "Domain 4: Basics of IT and Architecture",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Project+ communication objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cptprj-q001",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Project Management Concepts for CompTIA Project+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project+ Exam Objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Project+ Exam Objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Project+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q002",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "According to 'Project+ Exam Objectives', what is a documented best practice for Project Management Concepts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Project+ Exam Objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Project+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q003",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Project Life Cycle Phases for CompTIA Project+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project+ lifecycle objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Project+ lifecycle objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Project+ lifecycle objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q004",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "According to 'Project+ lifecycle objectives', what is a documented best practice for Project Life Cycle Phases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Project+ lifecycle objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Project+ lifecycle objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q005",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Tools and Documentation for CompTIA Project+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project+ tools objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Project+ tools objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Project+ tools objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q006",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "According to 'Project+ tools objectives', what is a documented best practice for Tools and Documentation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Project+ tools objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Project+ tools objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q007",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Basics of IT and Architecture for CompTIA Project+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project+ communication objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Project+ communication objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Project+ communication objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q008",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "According to 'Project+ communication objectives', what is a documented best practice for Basics of IT and Architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Project+ communication objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Project+ communication objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q009",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to balance scope time cost quality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "c",
+          "text": "No stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "Skip planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q010",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to identify stakeholders early?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "b",
+          "text": "Start coding first"
+        },
+        {
+          "id": "c",
+          "text": "No communication"
+        },
+        {
+          "id": "d",
+          "text": "Hide risks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stakeholders influence requirements.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q011",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to balance scope time cost quality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "c",
+          "text": "No stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "Skip planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q012",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to balance scope time cost quality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "c",
+          "text": "No stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "Skip planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q013",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "A technician must balance scope time cost quality. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "c",
+          "text": "No stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "Skip planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q014",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to identify stakeholders early?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "b",
+          "text": "Start coding first"
+        },
+        {
+          "id": "c",
+          "text": "No communication"
+        },
+        {
+          "id": "d",
+          "text": "Hide risks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stakeholders influence requirements.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q015",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to identify stakeholders early?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "b",
+          "text": "Start coding first"
+        },
+        {
+          "id": "c",
+          "text": "No communication"
+        },
+        {
+          "id": "d",
+          "text": "Hide risks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stakeholders influence requirements.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q016",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "A technician must identify stakeholders early. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "b",
+          "text": "Start coding first"
+        },
+        {
+          "id": "c",
+          "text": "No communication"
+        },
+        {
+          "id": "d",
+          "text": "Hide risks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stakeholders influence requirements.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q017",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should balance scope time cost quality.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "c",
+          "text": "No stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "Skip planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q018",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must identify stakeholders early.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "b",
+          "text": "Start coding first"
+        },
+        {
+          "id": "c",
+          "text": "No communication"
+        },
+        {
+          "id": "d",
+          "text": "Hide risks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stakeholders influence requirements.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q019",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "On the job, you need to balance scope time cost quality.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "c",
+          "text": "No stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "Skip planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q020",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must identify stakeholders early.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "b",
+          "text": "Start coding first"
+        },
+        {
+          "id": "c",
+          "text": "No communication"
+        },
+        {
+          "id": "d",
+          "text": "Hide risks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stakeholders influence requirements.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q021",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Project management triangle trade-offs rather than Stakeholder register and analysis when you need to balance scope time cost quality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "c",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "d",
+          "text": "No stakeholders"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions. Compare with Stakeholder register and analysis: Stakeholders influence requirements.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        },
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q022",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Stakeholder register and analysis rather than Project management triangle trade-offs when you need to identify stakeholders early?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "b",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "c",
+          "text": "Start coding first"
+        },
+        {
+          "id": "d",
+          "text": "No communication"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stakeholders influence requirements. Compare with Project management triangle trade-offs: Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        },
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q023",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to balance scope time cost quality (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "c",
+          "text": "No stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "Skip planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q024",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to identify stakeholders early (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "b",
+          "text": "Start coding first"
+        },
+        {
+          "id": "c",
+          "text": "No communication"
+        },
+        {
+          "id": "d",
+          "text": "Hide risks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stakeholders influence requirements.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q025",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "A technician must balance scope time cost quality (variant 2). What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "c",
+          "text": "No stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "Skip planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q026",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to identify stakeholders early (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stakeholder register and analysis"
+        },
+        {
+          "id": "b",
+          "text": "Start coding first"
+        },
+        {
+          "id": "c",
+          "text": "No communication"
+        },
+        {
+          "id": "d",
+          "text": "Hide risks"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Stakeholders influence requirements.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q027",
+      "domain": "concepts",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to balance scope time cost quality (variant 3)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project management triangle trade-offs"
+        },
+        {
+          "id": "b",
+          "text": "Ignore scope"
+        },
+        {
+          "id": "c",
+          "text": "No stakeholders"
+        },
+        {
+          "id": "d",
+          "text": "Skip planning"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Constraints guide decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q028",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to define requirements before build?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved requirements baseline"
+        },
+        {
+          "id": "b",
+          "text": "Build first"
+        },
+        {
+          "id": "c",
+          "text": "Change daily"
+        },
+        {
+          "id": "d",
+          "text": "No sign-off"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Baselines control scope creep.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q029",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to track work with WBS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Work breakdown structure decomposition"
+        },
+        {
+          "id": "b",
+          "text": "Flat todo list only"
+        },
+        {
+          "id": "c",
+          "text": "No estimates"
+        },
+        {
+          "id": "d",
+          "text": "Ignore dependencies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WBS clarifies deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q030",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to manage project risks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk register with owners and responses"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "Hide issues"
+        },
+        {
+          "id": "d",
+          "text": "No mitigation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Risk management reduces surprises.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q031",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to define requirements before build?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved requirements baseline"
+        },
+        {
+          "id": "b",
+          "text": "Build first"
+        },
+        {
+          "id": "c",
+          "text": "Change daily"
+        },
+        {
+          "id": "d",
+          "text": "No sign-off"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Baselines control scope creep.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q032",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to define requirements before build?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved requirements baseline"
+        },
+        {
+          "id": "b",
+          "text": "Build first"
+        },
+        {
+          "id": "c",
+          "text": "Change daily"
+        },
+        {
+          "id": "d",
+          "text": "No sign-off"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Baselines control scope creep.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q033",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "A technician must define requirements before build. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved requirements baseline"
+        },
+        {
+          "id": "b",
+          "text": "Build first"
+        },
+        {
+          "id": "c",
+          "text": "Change daily"
+        },
+        {
+          "id": "d",
+          "text": "No sign-off"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Baselines control scope creep.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q034",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to track work with WBS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Work breakdown structure decomposition"
+        },
+        {
+          "id": "b",
+          "text": "Flat todo list only"
+        },
+        {
+          "id": "c",
+          "text": "No estimates"
+        },
+        {
+          "id": "d",
+          "text": "Ignore dependencies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WBS clarifies deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q035",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to track work with WBS?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Work breakdown structure decomposition"
+        },
+        {
+          "id": "b",
+          "text": "Flat todo list only"
+        },
+        {
+          "id": "c",
+          "text": "No estimates"
+        },
+        {
+          "id": "d",
+          "text": "Ignore dependencies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WBS clarifies deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q036",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "A technician must track work with WBS. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Work breakdown structure decomposition"
+        },
+        {
+          "id": "b",
+          "text": "Flat todo list only"
+        },
+        {
+          "id": "c",
+          "text": "No estimates"
+        },
+        {
+          "id": "d",
+          "text": "Ignore dependencies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WBS clarifies deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q037",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to manage project risks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk register with owners and responses"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "Hide issues"
+        },
+        {
+          "id": "d",
+          "text": "No mitigation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Risk management reduces surprises.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q038",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to manage project risks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk register with owners and responses"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "Hide issues"
+        },
+        {
+          "id": "d",
+          "text": "No mitigation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Risk management reduces surprises.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q039",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "A technician must manage project risks. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk register with owners and responses"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "Hide issues"
+        },
+        {
+          "id": "d",
+          "text": "No mitigation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Risk management reduces surprises.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q040",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should define requirements before build.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved requirements baseline"
+        },
+        {
+          "id": "b",
+          "text": "Build first"
+        },
+        {
+          "id": "c",
+          "text": "Change daily"
+        },
+        {
+          "id": "d",
+          "text": "No sign-off"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Baselines control scope creep.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q041",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must track work with WBS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Work breakdown structure decomposition"
+        },
+        {
+          "id": "b",
+          "text": "Flat todo list only"
+        },
+        {
+          "id": "c",
+          "text": "No estimates"
+        },
+        {
+          "id": "d",
+          "text": "Ignore dependencies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WBS clarifies deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q042",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must manage project risks.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk register with owners and responses"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "Hide issues"
+        },
+        {
+          "id": "d",
+          "text": "No mitigation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Risk management reduces surprises.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q043",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "On the job, you need to define requirements before build.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved requirements baseline"
+        },
+        {
+          "id": "b",
+          "text": "Build first"
+        },
+        {
+          "id": "c",
+          "text": "Change daily"
+        },
+        {
+          "id": "d",
+          "text": "No sign-off"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Baselines control scope creep.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q044",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should track work with WBS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Work breakdown structure decomposition"
+        },
+        {
+          "id": "b",
+          "text": "Flat todo list only"
+        },
+        {
+          "id": "c",
+          "text": "No estimates"
+        },
+        {
+          "id": "d",
+          "text": "Ignore dependencies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WBS clarifies deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q045",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must manage project risks.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk register with owners and responses"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "Hide issues"
+        },
+        {
+          "id": "d",
+          "text": "No mitigation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Risk management reduces surprises.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q046",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must define requirements before build.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved requirements baseline"
+        },
+        {
+          "id": "b",
+          "text": "Build first"
+        },
+        {
+          "id": "c",
+          "text": "Change daily"
+        },
+        {
+          "id": "d",
+          "text": "No sign-off"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Baselines control scope creep.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q047",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "On the job, you need to track work with WBS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Work breakdown structure decomposition"
+        },
+        {
+          "id": "b",
+          "text": "Flat todo list only"
+        },
+        {
+          "id": "c",
+          "text": "No estimates"
+        },
+        {
+          "id": "d",
+          "text": "Ignore dependencies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WBS clarifies deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q048",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should manage project risks.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk register with owners and responses"
+        },
+        {
+          "id": "b",
+          "text": "Hope for best"
+        },
+        {
+          "id": "c",
+          "text": "Hide issues"
+        },
+        {
+          "id": "d",
+          "text": "No mitigation"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Risk management reduces surprises.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q049",
+      "domain": "lifecycle",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must define requirements before build.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approved requirements baseline"
+        },
+        {
+          "id": "b",
+          "text": "Build first"
+        },
+        {
+          "id": "c",
+          "text": "Change daily"
+        },
+        {
+          "id": "d",
+          "text": "No sign-off"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Baselines control scope creep.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q050",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to use Gantt charts for schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Email dates only"
+        },
+        {
+          "id": "c",
+          "text": "No critical path"
+        },
+        {
+          "id": "d",
+          "text": "Ignore slack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q051",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to run retrospectives after phases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "b",
+          "text": "Skip closeout"
+        },
+        {
+          "id": "c",
+          "text": "Blame only"
+        },
+        {
+          "id": "d",
+          "text": "No changes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retrospectives improve future delivery.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q052",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to use Gantt charts for schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Email dates only"
+        },
+        {
+          "id": "c",
+          "text": "No critical path"
+        },
+        {
+          "id": "d",
+          "text": "Ignore slack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q053",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to use Gantt charts for schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Email dates only"
+        },
+        {
+          "id": "c",
+          "text": "No critical path"
+        },
+        {
+          "id": "d",
+          "text": "Ignore slack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q054",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "A technician must use Gantt charts for schedule. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Email dates only"
+        },
+        {
+          "id": "c",
+          "text": "No critical path"
+        },
+        {
+          "id": "d",
+          "text": "Ignore slack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q055",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to run retrospectives after phases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "b",
+          "text": "Skip closeout"
+        },
+        {
+          "id": "c",
+          "text": "Blame only"
+        },
+        {
+          "id": "d",
+          "text": "No changes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retrospectives improve future delivery.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q056",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to run retrospectives after phases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "b",
+          "text": "Skip closeout"
+        },
+        {
+          "id": "c",
+          "text": "Blame only"
+        },
+        {
+          "id": "d",
+          "text": "No changes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retrospectives improve future delivery.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q057",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "A technician must run retrospectives after phases. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "b",
+          "text": "Skip closeout"
+        },
+        {
+          "id": "c",
+          "text": "Blame only"
+        },
+        {
+          "id": "d",
+          "text": "No changes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retrospectives improve future delivery.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q058",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should use Gantt charts for schedule.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Email dates only"
+        },
+        {
+          "id": "c",
+          "text": "No critical path"
+        },
+        {
+          "id": "d",
+          "text": "Ignore slack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q059",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must run retrospectives after phases.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "b",
+          "text": "Skip closeout"
+        },
+        {
+          "id": "c",
+          "text": "Blame only"
+        },
+        {
+          "id": "d",
+          "text": "No changes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retrospectives improve future delivery.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q060",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must use Gantt charts for schedule.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Email dates only"
+        },
+        {
+          "id": "c",
+          "text": "No critical path"
+        },
+        {
+          "id": "d",
+          "text": "Ignore slack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q061",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "On the job, you need to run retrospectives after phases.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "b",
+          "text": "Skip closeout"
+        },
+        {
+          "id": "c",
+          "text": "Blame only"
+        },
+        {
+          "id": "d",
+          "text": "No changes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retrospectives improve future delivery.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q062",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Timeline with dependencies and milestones rather than Lessons learned documentation when you need to use Gantt charts for schedule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "c",
+          "text": "Email dates only"
+        },
+        {
+          "id": "d",
+          "text": "No critical path"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources. Compare with Lessons learned documentation: Retrospectives improve future delivery.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        },
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q063",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Lessons learned documentation rather than Timeline with dependencies and milestones when you need to run retrospectives after phases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "b",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "c",
+          "text": "Skip closeout"
+        },
+        {
+          "id": "d",
+          "text": "Blame only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retrospectives improve future delivery. Compare with Timeline with dependencies and milestones: Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        },
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q064",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to use Gantt charts for schedule (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Email dates only"
+        },
+        {
+          "id": "c",
+          "text": "No critical path"
+        },
+        {
+          "id": "d",
+          "text": "Ignore slack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q065",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to run retrospectives after phases (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "b",
+          "text": "Skip closeout"
+        },
+        {
+          "id": "c",
+          "text": "Blame only"
+        },
+        {
+          "id": "d",
+          "text": "No changes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retrospectives improve future delivery.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q066",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "A technician must use Gantt charts for schedule (variant 2). What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Email dates only"
+        },
+        {
+          "id": "c",
+          "text": "No critical path"
+        },
+        {
+          "id": "d",
+          "text": "Ignore slack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q067",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to run retrospectives after phases (variant 2)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lessons learned documentation"
+        },
+        {
+          "id": "b",
+          "text": "Skip closeout"
+        },
+        {
+          "id": "c",
+          "text": "Blame only"
+        },
+        {
+          "id": "d",
+          "text": "No changes"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retrospectives improve future delivery.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q068",
+      "domain": "tools",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to use Gantt charts for schedule (variant 3)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Timeline with dependencies and milestones"
+        },
+        {
+          "id": "b",
+          "text": "Email dates only"
+        },
+        {
+          "id": "c",
+          "text": "No critical path"
+        },
+        {
+          "id": "d",
+          "text": "Ignore slack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Schedules coordinate resources.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q069",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to escalate blockers with options?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Status report with impact and choices"
+        },
+        {
+          "id": "b",
+          "text": "Surprise at deadline"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "Vague updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Escalation enables decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q070",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to manage vendor contracts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SOW and acceptance criteria"
+        },
+        {
+          "id": "b",
+          "text": "Handshake only"
+        },
+        {
+          "id": "c",
+          "text": "No SLAs"
+        },
+        {
+          "id": "d",
+          "text": "Pay on hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Contracts define deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q071",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to escalate blockers with options?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Status report with impact and choices"
+        },
+        {
+          "id": "b",
+          "text": "Surprise at deadline"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "Vague updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Escalation enables decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q072",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to escalate blockers with options?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Status report with impact and choices"
+        },
+        {
+          "id": "b",
+          "text": "Surprise at deadline"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "Vague updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Escalation enables decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q073",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "A technician must escalate blockers with options. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Status report with impact and choices"
+        },
+        {
+          "id": "b",
+          "text": "Surprise at deadline"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "Vague updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Escalation enables decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q074",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to manage vendor contracts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SOW and acceptance criteria"
+        },
+        {
+          "id": "b",
+          "text": "Handshake only"
+        },
+        {
+          "id": "c",
+          "text": "No SLAs"
+        },
+        {
+          "id": "d",
+          "text": "Pay on hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Contracts define deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q075",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to manage vendor contracts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SOW and acceptance criteria"
+        },
+        {
+          "id": "b",
+          "text": "Handshake only"
+        },
+        {
+          "id": "c",
+          "text": "No SLAs"
+        },
+        {
+          "id": "d",
+          "text": "Pay on hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Contracts define deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q076",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "A technician must manage vendor contracts. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SOW and acceptance criteria"
+        },
+        {
+          "id": "b",
+          "text": "Handshake only"
+        },
+        {
+          "id": "c",
+          "text": "No SLAs"
+        },
+        {
+          "id": "d",
+          "text": "Pay on hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Contracts define deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q077",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must escalate blockers with options.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Status report with impact and choices"
+        },
+        {
+          "id": "b",
+          "text": "Surprise at deadline"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "Vague updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Escalation enables decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q078",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "On the job, you need to manage vendor contracts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "SOW and acceptance criteria"
+        },
+        {
+          "id": "b",
+          "text": "Handshake only"
+        },
+        {
+          "id": "c",
+          "text": "No SLAs"
+        },
+        {
+          "id": "d",
+          "text": "Pay on hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Contracts define deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q079",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should escalate blockers with options.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Status report with impact and choices"
+        },
+        {
+          "id": "b",
+          "text": "Surprise at deadline"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "Vague updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Escalation enables decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q080",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must manage vendor contracts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "SOW and acceptance criteria"
+        },
+        {
+          "id": "b",
+          "text": "Handshake only"
+        },
+        {
+          "id": "c",
+          "text": "No SLAs"
+        },
+        {
+          "id": "d",
+          "text": "Pay on hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Contracts define deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q081",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Status report with impact and choices rather than SOW and acceptance criteria when you need to escalate blockers with options?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Status report with impact and choices"
+        },
+        {
+          "id": "b",
+          "text": "SOW and acceptance criteria"
+        },
+        {
+          "id": "c",
+          "text": "Surprise at deadline"
+        },
+        {
+          "id": "d",
+          "text": "No data"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Escalation enables decisions. Compare with SOW and acceptance criteria: Contracts define deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        },
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q082",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by SOW and acceptance criteria rather than Status report with impact and choices when you need to manage vendor contracts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SOW and acceptance criteria"
+        },
+        {
+          "id": "b",
+          "text": "Status report with impact and choices"
+        },
+        {
+          "id": "c",
+          "text": "Handshake only"
+        },
+        {
+          "id": "d",
+          "text": "No SLAs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Contracts define deliverables. Compare with Status report with impact and choices: Escalation enables decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        },
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q083",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to escalate blockers with options (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Status report with impact and choices"
+        },
+        {
+          "id": "b",
+          "text": "Surprise at deadline"
+        },
+        {
+          "id": "c",
+          "text": "No data"
+        },
+        {
+          "id": "d",
+          "text": "Vague updates"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Escalation enables decisions.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    },
+    {
+      "id": "cptprj-q084",
+      "domain": "communication",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to manage vendor contracts (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SOW and acceptance criteria"
+        },
+        {
+          "id": "b",
+          "text": "Handshake only"
+        },
+        {
+          "id": "c",
+          "text": "No SLAs"
+        },
+        {
+          "id": "d",
+          "text": "Pay on hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Contracts define deliverables.",
+      "docs": [
+        {
+          "title": "Project+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/project"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://www.comptia.org/en-us/certifications/project"
+}

@@ -318,6 +318,8 @@ ID_PREFIX: dict[str, str] = {
     "comptia-cloud-plus": "cptcld",
     "comptia-data-plus": "cptdat",
     "comptia-pentest-plus": "cptpen",
+    "comptia-server-plus": "cptsrv",
+    "comptia-project-plus": "cptprj",
 }
 
 

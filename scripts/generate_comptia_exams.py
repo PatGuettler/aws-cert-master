@@ -28,6 +28,8 @@ COMPTIA_CLOUD_FACTORY_IDS = [
     "comptia-cloud-plus",
     "comptia-data-plus",
     "comptia-pentest-plus",
+    "comptia-server-plus",
+    "comptia-project-plus",
 ]
 COMPTIA_IDS = COMPTIA_LEGACY_IDS + COMPTIA_CLOUD_FACTORY_IDS
 

@@ -406,33 +406,33 @@
       "id": "sc9-q011",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to verify explicitly in Zero Trust?",
+      "text": "Which Azure service or capability is BEST to describe defense in depth?",
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Single firewall only"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Antivirus alone"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Hope"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
+      "explanation": "Layers reduce single points of failure.",
       "docs": [
         {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+          "title": "Defense in depth",
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/defense-in-depth"
         }
       ]
     },
@@ -440,33 +440,33 @@
       "id": "sc9-q012",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to verify explicitly in Zero Trust?",
+      "text": "Which Azure service or capability is BEST to explain least privilege access?",
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Everyone admin"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Shared accounts"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "No reviews"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
+      "explanation": "Least privilege limits abuse impact.",
       "docs": [
         {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+          "title": "Least privilege",
+          "url": "https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access"
         }
       ]
     },
@@ -474,7 +474,7 @@
       "id": "sc9-q013",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "Your team must verify explicitly in Zero Trust. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to verify explicitly in Zero Trust?",
       "options": [
         {
           "id": "a",
@@ -508,7 +508,7 @@
       "id": "sc9-q014",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to verify explicitly in Zero Trust.",
+      "text": "What is the recommended Azure approach to verify explicitly in Zero Trust?",
       "options": [
         {
           "id": "a",
@@ -542,7 +542,7 @@
       "id": "sc9-q015",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "Your organization plans to verify explicitly in Zero Trust.",
+      "text": "Your team must verify explicitly in Zero Trust. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -576,38 +576,208 @@
       "id": "sc9-q016",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should verify explicitly in Zero Trust.",
+      "text": "Which Azure offering should you use to describe defense in depth?",
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Single firewall only"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Antivirus alone"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Hope"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
+      "explanation": "Layers reduce single points of failure.",
       "docs": [
         {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+          "title": "Defense in depth",
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/defense-in-depth"
         }
       ]
     },
     {
       "id": "sc9-q017",
+      "domain": "security-concepts",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to describe defense in depth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Layered controls across identity, network, data"
+        },
+        {
+          "id": "b",
+          "text": "Single firewall only"
+        },
+        {
+          "id": "c",
+          "text": "Antivirus alone"
+        },
+        {
+          "id": "d",
+          "text": "Hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Layers reduce single points of failure.",
+      "docs": [
+        {
+          "title": "Defense in depth",
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/defense-in-depth"
+        }
+      ]
+    },
+    {
+      "id": "sc9-q018",
+      "domain": "security-concepts",
+      "type": "multiple-choice",
+      "text": "Your team must describe defense in depth. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Layered controls across identity, network, data"
+        },
+        {
+          "id": "b",
+          "text": "Single firewall only"
+        },
+        {
+          "id": "c",
+          "text": "Antivirus alone"
+        },
+        {
+          "id": "d",
+          "text": "Hope"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Layers reduce single points of failure.",
+      "docs": [
+        {
+          "title": "Defense in depth",
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/defense-in-depth"
+        }
+      ]
+    },
+    {
+      "id": "sc9-q019",
+      "domain": "security-concepts",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to explain least privilege access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grant minimum permissions required"
+        },
+        {
+          "id": "b",
+          "text": "Everyone admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared accounts"
+        },
+        {
+          "id": "d",
+          "text": "No reviews"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least privilege limits abuse impact.",
+      "docs": [
+        {
+          "title": "Least privilege",
+          "url": "https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access"
+        }
+      ]
+    },
+    {
+      "id": "sc9-q020",
+      "domain": "security-concepts",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to explain least privilege access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grant minimum permissions required"
+        },
+        {
+          "id": "b",
+          "text": "Everyone admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared accounts"
+        },
+        {
+          "id": "d",
+          "text": "No reviews"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least privilege limits abuse impact.",
+      "docs": [
+        {
+          "title": "Least privilege",
+          "url": "https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access"
+        }
+      ]
+    },
+    {
+      "id": "sc9-q021",
+      "domain": "security-concepts",
+      "type": "multiple-choice",
+      "text": "Your team must explain least privilege access. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grant minimum permissions required"
+        },
+        {
+          "id": "b",
+          "text": "Everyone admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared accounts"
+        },
+        {
+          "id": "d",
+          "text": "No reviews"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Least privilege limits abuse impact.",
+      "docs": [
+        {
+          "title": "Least privilege",
+          "url": "https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access"
+        }
+      ]
+    },
+    {
+      "id": "sc9-q022",
       "domain": "security-concepts",
       "type": "multiple-choice",
       "text": "An Azure architect must verify explicitly in Zero Trust.",
@@ -641,206 +811,36 @@
       ]
     },
     {
-      "id": "sc9-q018",
-      "domain": "security-concepts",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to verify explicitly in Zero Trust (variant 1)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Always authenticate and authorize"
-        },
-        {
-          "id": "b",
-          "text": "Trust intranet perimeter only"
-        },
-        {
-          "id": "c",
-          "text": "Shared passwords"
-        },
-        {
-          "id": "d",
-          "text": "Disable logging"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
-      "docs": [
-        {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
-        }
-      ]
-    },
-    {
-      "id": "sc9-q019",
-      "domain": "security-concepts",
-      "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to verify explicitly in Zero Trust (variant 2)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Always authenticate and authorize"
-        },
-        {
-          "id": "b",
-          "text": "Trust intranet perimeter only"
-        },
-        {
-          "id": "c",
-          "text": "Shared passwords"
-        },
-        {
-          "id": "d",
-          "text": "Disable logging"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
-      "docs": [
-        {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
-        }
-      ]
-    },
-    {
-      "id": "sc9-q020",
-      "domain": "security-concepts",
-      "type": "multiple-choice",
-      "text": "Your team must verify explicitly in Zero Trust (variant 3). Which Azure option fits best?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Always authenticate and authorize"
-        },
-        {
-          "id": "b",
-          "text": "Trust intranet perimeter only"
-        },
-        {
-          "id": "c",
-          "text": "Shared passwords"
-        },
-        {
-          "id": "d",
-          "text": "Disable logging"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
-      "docs": [
-        {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
-        }
-      ]
-    },
-    {
-      "id": "sc9-q021",
-      "domain": "security-concepts",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to verify explicitly in Zero Trust (variant 4)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Always authenticate and authorize"
-        },
-        {
-          "id": "b",
-          "text": "Trust intranet perimeter only"
-        },
-        {
-          "id": "c",
-          "text": "Shared passwords"
-        },
-        {
-          "id": "d",
-          "text": "Disable logging"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
-      "docs": [
-        {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
-        }
-      ]
-    },
-    {
-      "id": "sc9-q022",
-      "domain": "security-concepts",
-      "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to verify explicitly in Zero Trust (variant 5)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Always authenticate and authorize"
-        },
-        {
-          "id": "b",
-          "text": "Trust intranet perimeter only"
-        },
-        {
-          "id": "c",
-          "text": "Shared passwords"
-        },
-        {
-          "id": "d",
-          "text": "Disable logging"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
-      "docs": [
-        {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
-        }
-      ]
-    },
-    {
       "id": "sc9-q023",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "Your team must verify explicitly in Zero Trust (variant 6). Which Azure option fits best?",
+      "text": "Your organization plans to describe defense in depth.",
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Single firewall only"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Antivirus alone"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Hope"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
+      "explanation": "Layers reduce single points of failure.",
       "docs": [
         {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+          "title": "Defense in depth",
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/defense-in-depth"
         }
       ]
     },
@@ -848,33 +848,33 @@
       "id": "sc9-q024",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to verify explicitly in Zero Trust (variant 7)?",
+      "text": "For a hybrid workload, you should explain least privilege access.",
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Everyone admin"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Shared accounts"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "No reviews"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
+      "explanation": "Least privilege limits abuse impact.",
       "docs": [
         {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+          "title": "Least privilege",
+          "url": "https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access"
         }
       ]
     },
@@ -882,7 +882,7 @@
       "id": "sc9-q025",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to verify explicitly in Zero Trust (variant 8)?",
+      "text": "A cloud administrator needs to verify explicitly in Zero Trust.",
       "options": [
         {
           "id": "a",
@@ -916,33 +916,33 @@
       "id": "sc9-q026",
       "domain": "security-concepts",
       "type": "multiple-choice",
-      "text": "Your team must verify explicitly in Zero Trust (variant 9). Which Azure option fits best?",
+      "text": "An Azure architect must describe defense in depth.",
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Single firewall only"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Antivirus alone"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Hope"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zero Trust assumes breach and verifies every request.",
+      "explanation": "Layers reduce single points of failure.",
       "docs": [
         {
-          "title": "Zero Trust",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview"
+          "title": "Defense in depth",
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/defense-in-depth"
         }
       ]
     },
@@ -984,33 +984,33 @@
       "id": "sc9-q028",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to single sign-on for cloud apps?",
+      "text": "Which Azure service or capability is BEST to enable self-service password reset?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Email passwords"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Sticky notes"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "No MFA"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "SSPR reduces helpdesk load.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra SSPR",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks"
         }
       ]
     },
@@ -1018,33 +1018,33 @@
       "id": "sc9-q029",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to single sign-on for cloud apps?",
+      "text": "Which Azure service or capability is BEST to guest access for partners?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Share one password"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Disable audit"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Public VPN"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "B2B invites external users safely.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra B2B",
+          "url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b"
         }
       ]
     },
@@ -1052,7 +1052,7 @@
       "id": "sc9-q030",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Your team must single sign-on for cloud apps. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to single sign-on for cloud apps?",
       "options": [
         {
           "id": "a",
@@ -1086,7 +1086,7 @@
       "id": "sc9-q031",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should single sign-on for cloud apps.",
+      "text": "What is the recommended Azure approach to single sign-on for cloud apps?",
       "options": [
         {
           "id": "a",
@@ -1120,7 +1120,7 @@
       "id": "sc9-q032",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to single sign-on for cloud apps.",
+      "text": "Your team must single sign-on for cloud apps. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -1154,33 +1154,33 @@
       "id": "sc9-q033",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Your organization plans to single sign-on for cloud apps.",
+      "text": "Which Azure offering should you use to enable self-service password reset?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Email passwords"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Sticky notes"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "No MFA"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "SSPR reduces helpdesk load.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra SSPR",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks"
         }
       ]
     },
@@ -1188,33 +1188,33 @@
       "id": "sc9-q034",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "An Azure architect must single sign-on for cloud apps.",
+      "text": "What is the recommended Azure approach to enable self-service password reset?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Email passwords"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Sticky notes"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "No MFA"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "SSPR reduces helpdesk load.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra SSPR",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks"
         }
       ]
     },
@@ -1222,33 +1222,33 @@
       "id": "sc9-q035",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to single sign-on for cloud apps (variant 1)?",
+      "text": "Your team must enable self-service password reset. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Email passwords"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Sticky notes"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "No MFA"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "SSPR reduces helpdesk load.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra SSPR",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks"
         }
       ]
     },
@@ -1256,33 +1256,33 @@
       "id": "sc9-q036",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to single sign-on for cloud apps (variant 2)?",
+      "text": "Which Azure offering should you use to guest access for partners?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Share one password"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Disable audit"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Public VPN"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "B2B invites external users safely.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra B2B",
+          "url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b"
         }
       ]
     },
@@ -1290,33 +1290,33 @@
       "id": "sc9-q037",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Your team must single sign-on for cloud apps (variant 3). Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to guest access for partners?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Share one password"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Disable audit"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Public VPN"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "B2B invites external users safely.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra B2B",
+          "url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b"
         }
       ]
     },
@@ -1324,33 +1324,33 @@
       "id": "sc9-q038",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to single sign-on for cloud apps (variant 4)?",
+      "text": "Your team must guest access for partners. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Share one password"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Disable audit"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Public VPN"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "B2B invites external users safely.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra B2B",
+          "url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b"
         }
       ]
     },
@@ -1358,7 +1358,7 @@
       "id": "sc9-q039",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to single sign-on for cloud apps (variant 5)?",
+      "text": "Your organization plans to single sign-on for cloud apps.",
       "options": [
         {
           "id": "a",
@@ -1392,33 +1392,33 @@
       "id": "sc9-q040",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Your team must single sign-on for cloud apps (variant 6). Which Azure option fits best?",
+      "text": "An Azure architect must enable self-service password reset.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Email passwords"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Sticky notes"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "No MFA"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "SSPR reduces helpdesk load.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra SSPR",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks"
         }
       ]
     },
@@ -1426,33 +1426,33 @@
       "id": "sc9-q041",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to single sign-on for cloud apps (variant 7)?",
+      "text": "A cloud administrator needs to guest access for partners.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Share one password"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Disable audit"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Public VPN"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "B2B invites external users safely.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra B2B",
+          "url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b"
         }
       ]
     },
@@ -1460,7 +1460,7 @@
       "id": "sc9-q042",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to single sign-on for cloud apps (variant 8)?",
+      "text": "For a hybrid workload, you should single sign-on for cloud apps.",
       "options": [
         {
           "id": "a",
@@ -1494,33 +1494,33 @@
       "id": "sc9-q043",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Your team must single sign-on for cloud apps (variant 9). Which Azure option fits best?",
+      "text": "Your organization plans to enable self-service password reset.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Email passwords"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Sticky notes"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "No MFA"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "SSPR reduces helpdesk load.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra SSPR",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks"
         }
       ]
     },
@@ -1528,33 +1528,33 @@
       "id": "sc9-q044",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to single sign-on for cloud apps (variant 10)?",
+      "text": "An Azure architect must guest access for partners.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Share one password"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Disable audit"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Public VPN"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "B2B invites external users safely.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra B2B",
+          "url": "https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b"
         }
       ]
     },
@@ -1562,7 +1562,7 @@
       "id": "sc9-q045",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to single sign-on for cloud apps (variant 11)?",
+      "text": "A cloud administrator needs to single sign-on for cloud apps.",
       "options": [
         {
           "id": "a",
@@ -1596,33 +1596,33 @@
       "id": "sc9-q046",
       "domain": "entra",
       "type": "multiple-choice",
-      "text": "Your team must single sign-on for cloud apps (variant 12). Which Azure option fits best?",
+      "text": "For a hybrid workload, you should enable self-service password reset.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Email passwords"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Sticky notes"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "No MFA"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID provides SSO and identity governance.",
+      "explanation": "SSPR reduces helpdesk load.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "Entra SSPR",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks"
         }
       ]
     },
@@ -1664,33 +1664,33 @@
       "id": "sc9-q048",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to unified XDR across endpoints and cloud?",
+      "text": "Which Azure service or capability is BEST to protect endpoints with EDR?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "No sensors"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Ping only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Endpoint",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"
         }
       ]
     },
@@ -1698,33 +1698,33 @@
       "id": "sc9-q049",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to unified XDR across endpoints and cloud?",
+      "text": "Which Azure service or capability is BEST to secure email against phishing?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Allow all attachments"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "No filtering"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Office 365",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
         }
       ]
     },
@@ -1732,7 +1732,7 @@
       "id": "sc9-q050",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Your team must unified XDR across endpoints and cloud. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to unified XDR across endpoints and cloud?",
       "options": [
         {
           "id": "a",
@@ -1766,7 +1766,7 @@
       "id": "sc9-q051",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "An Azure architect must unified XDR across endpoints and cloud.",
+      "text": "What is the recommended Azure approach to unified XDR across endpoints and cloud?",
       "options": [
         {
           "id": "a",
@@ -1800,7 +1800,7 @@
       "id": "sc9-q052",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should unified XDR across endpoints and cloud.",
+      "text": "Your team must unified XDR across endpoints and cloud. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -1834,33 +1834,33 @@
       "id": "sc9-q053",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to unified XDR across endpoints and cloud.",
+      "text": "Which Azure offering should you use to protect endpoints with EDR?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "No sensors"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Ping only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Endpoint",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"
         }
       ]
     },
@@ -1868,33 +1868,33 @@
       "id": "sc9-q054",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Your organization plans to unified XDR across endpoints and cloud.",
+      "text": "What is the recommended Azure approach to protect endpoints with EDR?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "No sensors"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Ping only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Endpoint",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"
         }
       ]
     },
@@ -1902,33 +1902,33 @@
       "id": "sc9-q055",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to unified XDR across endpoints and cloud (variant 1)?",
+      "text": "Your team must protect endpoints with EDR. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "No sensors"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Ping only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Endpoint",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"
         }
       ]
     },
@@ -1936,33 +1936,33 @@
       "id": "sc9-q056",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to unified XDR across endpoints and cloud (variant 2)?",
+      "text": "Which Azure offering should you use to secure email against phishing?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Allow all attachments"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "No filtering"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Office 365",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
         }
       ]
     },
@@ -1970,33 +1970,33 @@
       "id": "sc9-q057",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Your team must unified XDR across endpoints and cloud (variant 3). Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to secure email against phishing?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Allow all attachments"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "No filtering"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Office 365",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
         }
       ]
     },
@@ -2004,33 +2004,33 @@
       "id": "sc9-q058",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to unified XDR across endpoints and cloud (variant 4)?",
+      "text": "Your team must secure email against phishing. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Allow all attachments"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "No filtering"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Office 365",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
         }
       ]
     },
@@ -2038,7 +2038,7 @@
       "id": "sc9-q059",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to unified XDR across endpoints and cloud (variant 5)?",
+      "text": "A cloud administrator needs to unified XDR across endpoints and cloud.",
       "options": [
         {
           "id": "a",
@@ -2072,33 +2072,33 @@
       "id": "sc9-q060",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Your team must unified XDR across endpoints and cloud (variant 6). Which Azure option fits best?",
+      "text": "An Azure architect must protect endpoints with EDR.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "No sensors"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Ping only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Endpoint",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"
         }
       ]
     },
@@ -2106,33 +2106,33 @@
       "id": "sc9-q061",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to unified XDR across endpoints and cloud (variant 7)?",
+      "text": "For a hybrid workload, you should secure email against phishing.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Allow all attachments"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "No filtering"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Office 365",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
         }
       ]
     },
@@ -2140,7 +2140,7 @@
       "id": "sc9-q062",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to unified XDR across endpoints and cloud (variant 8)?",
+      "text": "Your organization plans to unified XDR across endpoints and cloud.",
       "options": [
         {
           "id": "a",
@@ -2174,33 +2174,33 @@
       "id": "sc9-q063",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Your team must unified XDR across endpoints and cloud (variant 9). Which Azure option fits best?",
+      "text": "A cloud administrator needs to protect endpoints with EDR.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "No sensors"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Ping only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Endpoint",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"
         }
       ]
     },
@@ -2208,33 +2208,33 @@
       "id": "sc9-q064",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to unified XDR across endpoints and cloud (variant 10)?",
+      "text": "An Azure architect must secure email against phishing.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Allow all attachments"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "No filtering"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Office 365",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
         }
       ]
     },
@@ -2242,7 +2242,7 @@
       "id": "sc9-q065",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to unified XDR across endpoints and cloud (variant 11)?",
+      "text": "For a hybrid workload, you should unified XDR across endpoints and cloud.",
       "options": [
         {
           "id": "a",
@@ -2276,33 +2276,33 @@
       "id": "sc9-q066",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Your team must unified XDR across endpoints and cloud (variant 12). Which Azure option fits best?",
+      "text": "Your organization plans to protect endpoints with EDR.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "No sensors"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Ping only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Endpoint",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"
         }
       ]
     },
@@ -2310,33 +2310,33 @@
       "id": "sc9-q067",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to unified XDR across endpoints and cloud (variant 13)?",
+      "text": "A cloud administrator needs to secure email against phishing.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Allow all attachments"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "No filtering"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Office 365",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
         }
       ]
     },
@@ -2344,7 +2344,7 @@
       "id": "sc9-q068",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to unified XDR across endpoints and cloud (variant 14)?",
+      "text": "An Azure architect must unified XDR across endpoints and cloud.",
       "options": [
         {
           "id": "a",
@@ -2378,33 +2378,33 @@
       "id": "sc9-q069",
       "domain": "defender",
       "type": "multiple-choice",
-      "text": "Your team must unified XDR across endpoints and cloud (variant 15). Which Azure option fits best?",
+      "text": "For a hybrid workload, you should protect endpoints with EDR.",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "No sensors"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Ping only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender XDR correlates alerts across workloads.",
+      "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
         {
-          "title": "Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
+          "title": "Defender for Endpoint",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"
         }
       ]
     },
@@ -2446,33 +2446,33 @@
       "id": "sc9-q071",
       "domain": "compliance",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to data governance and catalog?",
+      "text": "Which Azure service or capability is BEST to apply retention labels to files?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview"
+          "text": "Microsoft Purview retention policies"
         },
         {
           "id": "b",
-          "text": "Shadow IT spreadsheets"
+          "text": "Delete all mail"
         },
         {
           "id": "c",
-          "text": "Public shares"
+          "text": "No legal hold"
         },
         {
           "id": "d",
-          "text": "No classification"
+          "text": "USB archive"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Purview discovers and governs data estate.",
+      "explanation": "Retention preserves data per policy.",
       "docs": [
         {
-          "title": "Microsoft Purview",
-          "url": "https://learn.microsoft.com/en-us/purview/purview"
+          "title": "Retention",
+          "url": "https://learn.microsoft.com/en-us/purview/retention"
         }
       ]
     },
@@ -2480,7 +2480,7 @@
       "id": "sc9-q072",
       "domain": "compliance",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to data governance and catalog?",
+      "text": "Which Azure offering should you use to data governance and catalog?",
       "options": [
         {
           "id": "a",
@@ -2514,7 +2514,7 @@
       "id": "sc9-q073",
       "domain": "compliance",
       "type": "multiple-choice",
-      "text": "Your team must data governance and catalog. Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to data governance and catalog?",
       "options": [
         {
           "id": "a",
@@ -2548,7 +2548,7 @@
       "id": "sc9-q074",
       "domain": "compliance",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should data governance and catalog.",
+      "text": "Your team must data governance and catalog. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -2582,33 +2582,33 @@
       "id": "sc9-q075",
       "domain": "compliance",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to data governance and catalog.",
+      "text": "Which Azure offering should you use to apply retention labels to files?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview"
+          "text": "Microsoft Purview retention policies"
         },
         {
           "id": "b",
-          "text": "Shadow IT spreadsheets"
+          "text": "Delete all mail"
         },
         {
           "id": "c",
-          "text": "Public shares"
+          "text": "No legal hold"
         },
         {
           "id": "d",
-          "text": "No classification"
+          "text": "USB archive"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Purview discovers and governs data estate.",
+      "explanation": "Retention preserves data per policy.",
       "docs": [
         {
-          "title": "Microsoft Purview",
-          "url": "https://learn.microsoft.com/en-us/purview/purview"
+          "title": "Retention",
+          "url": "https://learn.microsoft.com/en-us/purview/retention"
         }
       ]
     },
@@ -2616,33 +2616,33 @@
       "id": "sc9-q076",
       "domain": "compliance",
       "type": "multiple-choice",
-      "text": "An Azure architect must data governance and catalog.",
+      "text": "What is the recommended Azure approach to apply retention labels to files?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview"
+          "text": "Microsoft Purview retention policies"
         },
         {
           "id": "b",
-          "text": "Shadow IT spreadsheets"
+          "text": "Delete all mail"
         },
         {
           "id": "c",
-          "text": "Public shares"
+          "text": "No legal hold"
         },
         {
           "id": "d",
-          "text": "No classification"
+          "text": "USB archive"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Purview discovers and governs data estate.",
+      "explanation": "Retention preserves data per policy.",
       "docs": [
         {
-          "title": "Microsoft Purview",
-          "url": "https://learn.microsoft.com/en-us/purview/purview"
+          "title": "Retention",
+          "url": "https://learn.microsoft.com/en-us/purview/retention"
         }
       ]
     },
@@ -2650,33 +2650,33 @@
       "id": "sc9-q077",
       "domain": "compliance",
       "type": "multiple-choice",
-      "text": "Your organization plans to data governance and catalog.",
+      "text": "Your team must apply retention labels to files. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview"
+          "text": "Microsoft Purview retention policies"
         },
         {
           "id": "b",
-          "text": "Shadow IT spreadsheets"
+          "text": "Delete all mail"
         },
         {
           "id": "c",
-          "text": "Public shares"
+          "text": "No legal hold"
         },
         {
           "id": "d",
-          "text": "No classification"
+          "text": "USB archive"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Purview discovers and governs data estate.",
+      "explanation": "Retention preserves data per policy.",
       "docs": [
         {
-          "title": "Microsoft Purview",
-          "url": "https://learn.microsoft.com/en-us/purview/purview"
+          "title": "Retention",
+          "url": "https://learn.microsoft.com/en-us/purview/retention"
         }
       ]
     }

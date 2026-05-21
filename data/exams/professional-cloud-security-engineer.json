@@ -482,33 +482,33 @@
       "id": "pcse-q013",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to restrict resource locations?",
+      "text": "Which Google Cloud product or feature is BEST to deny public bucket access org-wide?",
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Open buckets"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "ACL 777"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No audit"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Org policies enforce guardrails.",
+      "explanation": "Org constraints prevent data exposure.",
       "docs": [
         {
-          "title": "Organization policy",
-          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+          "title": "Public access prevention",
+          "url": "https://cloud.google.com/storage/docs/public-access-prevention"
         }
       ]
     },
@@ -516,7 +516,7 @@
       "id": "pcse-q014",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to restrict resource locations?",
+      "text": "Which Google Cloud service should you use to restrict resource locations?",
       "options": [
         {
           "id": "a",
@@ -550,7 +550,7 @@
       "id": "pcse-q015",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "A platform team must restrict resource locations. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to restrict resource locations?",
       "options": [
         {
           "id": "a",
@@ -584,7 +584,7 @@
       "id": "pcse-q016",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to restrict resource locations.",
+      "text": "A platform team must restrict resource locations. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -618,33 +618,33 @@
       "id": "pcse-q017",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "A cloud engineer needs to restrict resource locations.",
+      "text": "Which Google Cloud service should you use to deny public bucket access org-wide?",
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Open buckets"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "ACL 777"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No audit"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Org policies enforce guardrails.",
+      "explanation": "Org constraints prevent data exposure.",
       "docs": [
         {
-          "title": "Organization policy",
-          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+          "title": "Public access prevention",
+          "url": "https://cloud.google.com/storage/docs/public-access-prevention"
         }
       ]
     },
@@ -652,33 +652,33 @@
       "id": "pcse-q018",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "A data team must restrict resource locations.",
+      "text": "What is the recommended Google Cloud solution to deny public bucket access org-wide?",
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Open buckets"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "ACL 777"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No audit"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Org policies enforce guardrails.",
+      "explanation": "Org constraints prevent data exposure.",
       "docs": [
         {
-          "title": "Organization policy",
-          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+          "title": "Public access prevention",
+          "url": "https://cloud.google.com/storage/docs/public-access-prevention"
         }
       ]
     },
@@ -686,33 +686,33 @@
       "id": "pcse-q019",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "For cost-aware operations, you should restrict resource locations.",
+      "text": "A platform team must deny public bucket access org-wide. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Open buckets"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "ACL 777"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No audit"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Org policies enforce guardrails.",
+      "explanation": "Org constraints prevent data exposure.",
       "docs": [
         {
-          "title": "Organization policy",
-          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+          "title": "Public access prevention",
+          "url": "https://cloud.google.com/storage/docs/public-access-prevention"
         }
       ]
     },
@@ -720,7 +720,7 @@
       "id": "pcse-q020",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to restrict resource locations (variant 1)?",
+      "text": "A cloud engineer needs to restrict resource locations.",
       "options": [
         {
           "id": "a",
@@ -754,33 +754,33 @@
       "id": "pcse-q021",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to restrict resource locations (variant 2)?",
+      "text": "For cost-aware operations, you should deny public bucket access org-wide.",
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Open buckets"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "ACL 777"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No audit"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Org policies enforce guardrails.",
+      "explanation": "Org constraints prevent data exposure.",
       "docs": [
         {
-          "title": "Organization policy",
-          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+          "title": "Public access prevention",
+          "url": "https://cloud.google.com/storage/docs/public-access-prevention"
         }
       ]
     },
@@ -788,7 +788,7 @@
       "id": "pcse-q022",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "A platform team must restrict resource locations (variant 3). Which option aligns with Google best practices?",
+      "text": "Your startup is building on Google Cloud and needs to restrict resource locations.",
       "options": [
         {
           "id": "a",
@@ -822,33 +822,33 @@
       "id": "pcse-q023",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to restrict resource locations (variant 4)?",
+      "text": "A data team must deny public bucket access org-wide.",
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Open buckets"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "ACL 777"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No audit"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Org policies enforce guardrails.",
+      "explanation": "Org constraints prevent data exposure.",
       "docs": [
         {
-          "title": "Organization policy",
-          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+          "title": "Public access prevention",
+          "url": "https://cloud.google.com/storage/docs/public-access-prevention"
         }
       ]
     },
@@ -856,7 +856,7 @@
       "id": "pcse-q024",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to restrict resource locations (variant 5)?",
+      "text": "Which capability is provided by Organization policies rather than Organization policy constraints on public access when you need to restrict resource locations?",
       "options": [
         {
           "id": "a",
@@ -864,25 +864,29 @@
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "Allow all regions"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No constraints"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Org policies enforce guardrails.",
+      "explanation": "Org policies enforce guardrails. Compare with Organization policy constraints on public access: Org constraints prevent data exposure.",
       "docs": [
         {
           "title": "Organization policy",
           "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+        },
+        {
+          "title": "Public access prevention",
+          "url": "https://cloud.google.com/storage/docs/public-access-prevention"
         }
       ]
     },
@@ -890,30 +894,34 @@
       "id": "pcse-q025",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "A platform team must restrict resource locations (variant 6). Which option aligns with Google best practices?",
+      "text": "Which capability is provided by Organization policy constraints on public access rather than Organization policies when you need to deny public bucket access org-wide?",
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Organization policies"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "Open buckets"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "ACL 777"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Org policies enforce guardrails.",
+      "explanation": "Org constraints prevent data exposure. Compare with Organization policies: Org policies enforce guardrails.",
       "docs": [
+        {
+          "title": "Public access prevention",
+          "url": "https://cloud.google.com/storage/docs/public-access-prevention"
+        },
         {
           "title": "Organization policy",
           "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
@@ -924,7 +932,7 @@
       "id": "pcse-q026",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to restrict resource locations (variant 7)?",
+      "text": "Which Google Cloud service should you use to restrict resource locations (variant 1)?",
       "options": [
         {
           "id": "a",
@@ -958,33 +966,33 @@
       "id": "pcse-q027",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to restrict resource locations (variant 8)?",
+      "text": "What is the recommended Google Cloud solution to deny public bucket access org-wide (variant 1)?",
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Open buckets"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "ACL 777"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No audit"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Org policies enforce guardrails.",
+      "explanation": "Org constraints prevent data exposure.",
       "docs": [
         {
-          "title": "Organization policy",
-          "url": "https://cloud.google.com/resource-manager/docs/organization-policy/overview"
+          "title": "Public access prevention",
+          "url": "https://cloud.google.com/storage/docs/public-access-prevention"
         }
       ]
     },
@@ -992,7 +1000,7 @@
       "id": "pcse-q028",
       "domain": "org-governance",
       "type": "multiple-choice",
-      "text": "A platform team must restrict resource locations (variant 9). Which option aligns with Google best practices?",
+      "text": "A platform team must restrict resource locations (variant 2). Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -1094,33 +1102,33 @@
       "id": "pcse-q031",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to DDoS protection at edge?",
+      "text": "Which Google Cloud product or feature is BEST to inspect HTTPS with TLS proxy LB?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Armor"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "b",
-          "text": "Open all ports"
+          "text": "HTTP only"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "Weak ciphers"
         },
         {
           "id": "d",
-          "text": "ICMP only"
+          "text": "Self-signed only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cloud Armor filters malicious traffic.",
+      "explanation": "SSL policies enforce cipher standards.",
       "docs": [
         {
-          "title": "Cloud Armor",
-          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+          "title": "SSL policies",
+          "url": "https://cloud.google.com/load-balancing/docs/ssl-policies"
         }
       ]
     },
@@ -1128,7 +1136,7 @@
       "id": "pcse-q032",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to DDoS protection at edge?",
+      "text": "Which Google Cloud service should you use to DDoS protection at edge?",
       "options": [
         {
           "id": "a",
@@ -1162,7 +1170,7 @@
       "id": "pcse-q033",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "A platform team must DDoS protection at edge. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to DDoS protection at edge?",
       "options": [
         {
           "id": "a",
@@ -1196,33 +1204,33 @@
       "id": "pcse-q034",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to service perimeter for data exfiltration?",
+      "text": "A platform team must DDoS protection at edge. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
-          "text": "VPC Service Controls"
+          "text": "Cloud Armor"
         },
         {
           "id": "b",
-          "text": "Public internet egress always"
+          "text": "Open all ports"
         },
         {
           "id": "c",
-          "text": "Shared keys"
+          "text": "Disable TLS"
         },
         {
           "id": "d",
-          "text": "No logs"
+          "text": "ICMP only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "VPC SC limits API-based data movement.",
+      "explanation": "Cloud Armor filters malicious traffic.",
       "docs": [
         {
-          "title": "VPC Service Controls",
-          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+          "title": "Cloud Armor",
+          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
         }
       ]
     },
@@ -1230,7 +1238,7 @@
       "id": "pcse-q035",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to service perimeter for data exfiltration?",
+      "text": "Which Google Cloud service should you use to service perimeter for data exfiltration?",
       "options": [
         {
           "id": "a",
@@ -1264,7 +1272,7 @@
       "id": "pcse-q036",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "A platform team must service perimeter for data exfiltration. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to service perimeter for data exfiltration?",
       "options": [
         {
           "id": "a",
@@ -1298,6 +1306,142 @@
       "id": "pcse-q037",
       "domain": "network-security",
       "type": "multiple-choice",
+      "text": "A platform team must service perimeter for data exfiltration. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "VPC Service Controls"
+        },
+        {
+          "id": "b",
+          "text": "Public internet egress always"
+        },
+        {
+          "id": "c",
+          "text": "Shared keys"
+        },
+        {
+          "id": "d",
+          "text": "No logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "VPC SC limits API-based data movement.",
+      "docs": [
+        {
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q038",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to inspect HTTPS with TLS proxy LB?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSL policies on load balancers"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Weak ciphers"
+        },
+        {
+          "id": "d",
+          "text": "Self-signed only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSL policies enforce cipher standards.",
+      "docs": [
+        {
+          "title": "SSL policies",
+          "url": "https://cloud.google.com/load-balancing/docs/ssl-policies"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q039",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to inspect HTTPS with TLS proxy LB?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSL policies on load balancers"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Weak ciphers"
+        },
+        {
+          "id": "d",
+          "text": "Self-signed only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSL policies enforce cipher standards.",
+      "docs": [
+        {
+          "title": "SSL policies",
+          "url": "https://cloud.google.com/load-balancing/docs/ssl-policies"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q040",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "A platform team must inspect HTTPS with TLS proxy LB. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSL policies on load balancers"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Weak ciphers"
+        },
+        {
+          "id": "d",
+          "text": "Self-signed only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSL policies enforce cipher standards.",
+      "docs": [
+        {
+          "title": "SSL policies",
+          "url": "https://cloud.google.com/load-balancing/docs/ssl-policies"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q041",
+      "domain": "network-security",
+      "type": "multiple-choice",
       "text": "A cloud engineer needs to DDoS protection at edge.",
       "options": [
         {
@@ -1329,7 +1473,7 @@
       ]
     },
     {
-      "id": "pcse-q038",
+      "id": "pcse-q042",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "A data team must service perimeter for data exfiltration.",
@@ -1363,7 +1507,41 @@
       ]
     },
     {
-      "id": "pcse-q039",
+      "id": "pcse-q043",
+      "domain": "network-security",
+      "type": "multiple-choice",
+      "text": "Your startup is building on Google Cloud and needs to inspect HTTPS with TLS proxy LB.",
+      "options": [
+        {
+          "id": "a",
+          "text": "SSL policies on load balancers"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Weak ciphers"
+        },
+        {
+          "id": "d",
+          "text": "Self-signed only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSL policies enforce cipher standards.",
+      "docs": [
+        {
+          "title": "SSL policies",
+          "url": "https://cloud.google.com/load-balancing/docs/ssl-policies"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q044",
       "domain": "network-security",
       "type": "multiple-choice",
       "text": "For cost-aware operations, you should DDoS protection at edge.",
@@ -1397,214 +1575,36 @@
       ]
     },
     {
-      "id": "pcse-q040",
-      "domain": "network-security",
-      "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to service perimeter for data exfiltration.",
-      "options": [
-        {
-          "id": "a",
-          "text": "VPC Service Controls"
-        },
-        {
-          "id": "b",
-          "text": "Public internet egress always"
-        },
-        {
-          "id": "c",
-          "text": "Shared keys"
-        },
-        {
-          "id": "d",
-          "text": "No logs"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "VPC SC limits API-based data movement.",
-      "docs": [
-        {
-          "title": "VPC Service Controls",
-          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "pcse-q041",
-      "domain": "network-security",
-      "type": "multiple-choice",
-      "text": "Which capability is provided by Cloud Armor rather than VPC Service Controls when you need to DDoS protection at edge?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Armor"
-        },
-        {
-          "id": "b",
-          "text": "VPC Service Controls"
-        },
-        {
-          "id": "c",
-          "text": "Open all ports"
-        },
-        {
-          "id": "d",
-          "text": "Disable TLS"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Cloud Armor filters malicious traffic. Compare with VPC Service Controls: VPC SC limits API-based data movement.",
-      "docs": [
-        {
-          "title": "Cloud Armor",
-          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
-        },
-        {
-          "title": "VPC Service Controls",
-          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "pcse-q042",
-      "domain": "network-security",
-      "type": "multiple-choice",
-      "text": "Which capability is provided by VPC Service Controls rather than Cloud Armor when you need to service perimeter for data exfiltration?",
-      "options": [
-        {
-          "id": "a",
-          "text": "VPC Service Controls"
-        },
-        {
-          "id": "b",
-          "text": "Cloud Armor"
-        },
-        {
-          "id": "c",
-          "text": "Public internet egress always"
-        },
-        {
-          "id": "d",
-          "text": "Shared keys"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "VPC SC limits API-based data movement. Compare with Cloud Armor: Cloud Armor filters malicious traffic.",
-      "docs": [
-        {
-          "title": "VPC Service Controls",
-          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
-        },
-        {
-          "title": "Cloud Armor",
-          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
-        }
-      ]
-    },
-    {
-      "id": "pcse-q043",
-      "domain": "network-security",
-      "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to DDoS protection at edge (variant 1)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Armor"
-        },
-        {
-          "id": "b",
-          "text": "Open all ports"
-        },
-        {
-          "id": "c",
-          "text": "Disable TLS"
-        },
-        {
-          "id": "d",
-          "text": "ICMP only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Cloud Armor filters malicious traffic.",
-      "docs": [
-        {
-          "title": "Cloud Armor",
-          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
-        }
-      ]
-    },
-    {
-      "id": "pcse-q044",
-      "domain": "network-security",
-      "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to service perimeter for data exfiltration (variant 1)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "VPC Service Controls"
-        },
-        {
-          "id": "b",
-          "text": "Public internet egress always"
-        },
-        {
-          "id": "c",
-          "text": "Shared keys"
-        },
-        {
-          "id": "d",
-          "text": "No logs"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "VPC SC limits API-based data movement.",
-      "docs": [
-        {
-          "title": "VPC Service Controls",
-          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
-        }
-      ]
-    },
-    {
       "id": "pcse-q045",
       "domain": "network-security",
       "type": "multiple-choice",
-      "text": "A platform team must DDoS protection at edge (variant 2). Which option aligns with Google best practices?",
+      "text": "A cloud engineer needs to service perimeter for data exfiltration.",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Armor"
+          "text": "VPC Service Controls"
         },
         {
           "id": "b",
-          "text": "Open all ports"
+          "text": "Public internet egress always"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "Shared keys"
         },
         {
           "id": "d",
-          "text": "ICMP only"
+          "text": "No logs"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cloud Armor filters malicious traffic.",
+      "explanation": "VPC SC limits API-based data movement.",
       "docs": [
         {
-          "title": "Cloud Armor",
-          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
+          "title": "VPC Service Controls",
+          "url": "https://cloud.google.com/vpc-service-controls/docs/overview"
         }
       ]
     },
@@ -1646,33 +1646,33 @@
       "id": "pcse-q047",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to store API keys securely?",
+      "text": "Which Google Cloud product or feature is BEST to rotate encryption keys automatically?",
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Never rotate"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Keys in git"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Email keys"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Secret Manager versions secrets.",
+      "explanation": "Rotation limits key compromise window.",
       "docs": [
         {
-          "title": "Secret Manager",
-          "url": "https://cloud.google.com/secret-manager/docs/overview"
+          "title": "Key rotation",
+          "url": "https://cloud.google.com/kms/docs/key-rotation"
         }
       ]
     },
@@ -1680,7 +1680,7 @@
       "id": "pcse-q048",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to store API keys securely?",
+      "text": "Which Google Cloud service should you use to store API keys securely?",
       "options": [
         {
           "id": "a",
@@ -1714,7 +1714,7 @@
       "id": "pcse-q049",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "A platform team must store API keys securely. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to store API keys securely?",
       "options": [
         {
           "id": "a",
@@ -1748,7 +1748,7 @@
       "id": "pcse-q050",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to store API keys securely.",
+      "text": "A platform team must store API keys securely. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -1782,38 +1782,106 @@
       "id": "pcse-q051",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "A cloud engineer needs to store API keys securely.",
+      "text": "Which Google Cloud service should you use to rotate encryption keys automatically?",
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Never rotate"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Keys in git"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Email keys"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Secret Manager versions secrets.",
+      "explanation": "Rotation limits key compromise window.",
       "docs": [
         {
-          "title": "Secret Manager",
-          "url": "https://cloud.google.com/secret-manager/docs/overview"
+          "title": "Key rotation",
+          "url": "https://cloud.google.com/kms/docs/key-rotation"
         }
       ]
     },
     {
       "id": "pcse-q052",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to rotate encryption keys automatically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS automatic rotation"
+        },
+        {
+          "id": "b",
+          "text": "Never rotate"
+        },
+        {
+          "id": "c",
+          "text": "Keys in git"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rotation limits key compromise window.",
+      "docs": [
+        {
+          "title": "Key rotation",
+          "url": "https://cloud.google.com/kms/docs/key-rotation"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q053",
+      "domain": "data-protection",
+      "type": "multiple-choice",
+      "text": "A platform team must rotate encryption keys automatically. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud KMS automatic rotation"
+        },
+        {
+          "id": "b",
+          "text": "Never rotate"
+        },
+        {
+          "id": "c",
+          "text": "Keys in git"
+        },
+        {
+          "id": "d",
+          "text": "Email keys"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Rotation limits key compromise window.",
+      "docs": [
+        {
+          "title": "Key rotation",
+          "url": "https://cloud.google.com/kms/docs/key-rotation"
+        }
+      ]
+    },
+    {
+      "id": "pcse-q054",
       "domain": "data-protection",
       "type": "multiple-choice",
       "text": "For cost-aware operations, you should store API keys securely.",
@@ -1847,104 +1915,36 @@
       ]
     },
     {
-      "id": "pcse-q053",
-      "domain": "data-protection",
-      "type": "multiple-choice",
-      "text": "A data team must store API keys securely.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Secret Manager"
-        },
-        {
-          "id": "b",
-          "text": "Git commit secrets"
-        },
-        {
-          "id": "c",
-          "text": "Env in public bucket"
-        },
-        {
-          "id": "d",
-          "text": "Email passwords"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Secret Manager versions secrets.",
-      "docs": [
-        {
-          "title": "Secret Manager",
-          "url": "https://cloud.google.com/secret-manager/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "pcse-q054",
-      "domain": "data-protection",
-      "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to store API keys securely (variant 1)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Secret Manager"
-        },
-        {
-          "id": "b",
-          "text": "Git commit secrets"
-        },
-        {
-          "id": "c",
-          "text": "Env in public bucket"
-        },
-        {
-          "id": "d",
-          "text": "Email passwords"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Secret Manager versions secrets.",
-      "docs": [
-        {
-          "title": "Secret Manager",
-          "url": "https://cloud.google.com/secret-manager/docs/overview"
-        }
-      ]
-    },
-    {
       "id": "pcse-q055",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to store API keys securely (variant 2)?",
+      "text": "A data team must rotate encryption keys automatically.",
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Never rotate"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Keys in git"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Email keys"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Secret Manager versions secrets.",
+      "explanation": "Rotation limits key compromise window.",
       "docs": [
         {
-          "title": "Secret Manager",
-          "url": "https://cloud.google.com/secret-manager/docs/overview"
+          "title": "Key rotation",
+          "url": "https://cloud.google.com/kms/docs/key-rotation"
         }
       ]
     },
@@ -1952,7 +1952,7 @@
       "id": "pcse-q056",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "A platform team must store API keys securely (variant 3). Which option aligns with Google best practices?",
+      "text": "Your startup is building on Google Cloud and needs to store API keys securely.",
       "options": [
         {
           "id": "a",
@@ -1986,33 +1986,33 @@
       "id": "pcse-q057",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to store API keys securely (variant 4)?",
+      "text": "A cloud engineer needs to rotate encryption keys automatically.",
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Never rotate"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Keys in git"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Email keys"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Secret Manager versions secrets.",
+      "explanation": "Rotation limits key compromise window.",
       "docs": [
         {
-          "title": "Secret Manager",
-          "url": "https://cloud.google.com/secret-manager/docs/overview"
+          "title": "Key rotation",
+          "url": "https://cloud.google.com/kms/docs/key-rotation"
         }
       ]
     },
@@ -2020,7 +2020,7 @@
       "id": "pcse-q058",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to store API keys securely (variant 5)?",
+      "text": "Which capability is provided by Secret Manager rather than Cloud KMS automatic rotation when you need to store API keys securely?",
       "options": [
         {
           "id": "a",
@@ -2028,25 +2028,29 @@
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Git commit secrets"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Env in public bucket"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Secret Manager versions secrets.",
+      "explanation": "Secret Manager versions secrets. Compare with Cloud KMS automatic rotation: Rotation limits key compromise window.",
       "docs": [
         {
           "title": "Secret Manager",
           "url": "https://cloud.google.com/secret-manager/docs/overview"
+        },
+        {
+          "title": "Key rotation",
+          "url": "https://cloud.google.com/kms/docs/key-rotation"
         }
       ]
     },
@@ -2054,30 +2058,34 @@
       "id": "pcse-q059",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "A platform team must store API keys securely (variant 6). Which option aligns with Google best practices?",
+      "text": "Which capability is provided by Cloud KMS automatic rotation rather than Secret Manager when you need to rotate encryption keys automatically?",
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Secret Manager"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Never rotate"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Keys in git"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Secret Manager versions secrets.",
+      "explanation": "Rotation limits key compromise window. Compare with Secret Manager: Secret Manager versions secrets.",
       "docs": [
+        {
+          "title": "Key rotation",
+          "url": "https://cloud.google.com/kms/docs/key-rotation"
+        },
         {
           "title": "Secret Manager",
           "url": "https://cloud.google.com/secret-manager/docs/overview"
@@ -2088,7 +2096,7 @@
       "id": "pcse-q060",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to store API keys securely (variant 7)?",
+      "text": "Which Google Cloud service should you use to store API keys securely (variant 1)?",
       "options": [
         {
           "id": "a",
@@ -2122,33 +2130,33 @@
       "id": "pcse-q061",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to store API keys securely (variant 8)?",
+      "text": "What is the recommended Google Cloud solution to rotate encryption keys automatically (variant 1)?",
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Never rotate"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Keys in git"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Email keys"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Secret Manager versions secrets.",
+      "explanation": "Rotation limits key compromise window.",
       "docs": [
         {
-          "title": "Secret Manager",
-          "url": "https://cloud.google.com/secret-manager/docs/overview"
+          "title": "Key rotation",
+          "url": "https://cloud.google.com/kms/docs/key-rotation"
         }
       ]
     },
@@ -2156,7 +2164,7 @@
       "id": "pcse-q062",
       "domain": "data-protection",
       "type": "multiple-choice",
-      "text": "A platform team must store API keys securely (variant 9). Which option aligns with Google best practices?",
+      "text": "A platform team must store API keys securely (variant 2). Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -2224,33 +2232,33 @@
       "id": "pcse-q064",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to centralize security findings?",
+      "text": "Which Google Cloud product or feature is BEST to investigate threats with Chronicle?",
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Notepad logs"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete events"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SCC aggregates risk findings.",
+      "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
         {
-          "title": "Security Command Center",
-          "url": "https://cloud.google.com/security-command-center/docs"
+          "title": "Google Security Operations",
+          "url": "https://cloud.google.com/chronicle/docs"
         }
       ]
     },
@@ -2258,7 +2266,7 @@
       "id": "pcse-q065",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to centralize security findings?",
+      "text": "Which Google Cloud service should you use to centralize security findings?",
       "options": [
         {
           "id": "a",
@@ -2292,7 +2300,7 @@
       "id": "pcse-q066",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "A platform team must centralize security findings. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to centralize security findings?",
       "options": [
         {
           "id": "a",
@@ -2326,7 +2334,7 @@
       "id": "pcse-q067",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "A data team must centralize security findings.",
+      "text": "A platform team must centralize security findings. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -2360,33 +2368,33 @@
       "id": "pcse-q068",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "A cloud engineer needs to centralize security findings.",
+      "text": "Which Google Cloud service should you use to investigate threats with Chronicle?",
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Notepad logs"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete events"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SCC aggregates risk findings.",
+      "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
         {
-          "title": "Security Command Center",
-          "url": "https://cloud.google.com/security-command-center/docs"
+          "title": "Google Security Operations",
+          "url": "https://cloud.google.com/chronicle/docs"
         }
       ]
     },
@@ -2394,33 +2402,33 @@
       "id": "pcse-q069",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to centralize security findings.",
+      "text": "What is the recommended Google Cloud solution to investigate threats with Chronicle?",
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Notepad logs"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete events"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SCC aggregates risk findings.",
+      "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
         {
-          "title": "Security Command Center",
-          "url": "https://cloud.google.com/security-command-center/docs"
+          "title": "Google Security Operations",
+          "url": "https://cloud.google.com/chronicle/docs"
         }
       ]
     },
@@ -2428,33 +2436,33 @@
       "id": "pcse-q070",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "For cost-aware operations, you should centralize security findings.",
+      "text": "A platform team must investigate threats with Chronicle. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Notepad logs"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete events"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SCC aggregates risk findings.",
+      "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
         {
-          "title": "Security Command Center",
-          "url": "https://cloud.google.com/security-command-center/docs"
+          "title": "Google Security Operations",
+          "url": "https://cloud.google.com/chronicle/docs"
         }
       ]
     },
@@ -2462,7 +2470,7 @@
       "id": "pcse-q071",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to centralize security findings (variant 1)?",
+      "text": "A cloud engineer needs to centralize security findings.",
       "options": [
         {
           "id": "a",
@@ -2496,33 +2504,33 @@
       "id": "pcse-q072",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to centralize security findings (variant 2)?",
+      "text": "For cost-aware operations, you should investigate threats with Chronicle.",
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Notepad logs"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete events"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SCC aggregates risk findings.",
+      "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
         {
-          "title": "Security Command Center",
-          "url": "https://cloud.google.com/security-command-center/docs"
+          "title": "Google Security Operations",
+          "url": "https://cloud.google.com/chronicle/docs"
         }
       ]
     },
@@ -2530,7 +2538,7 @@
       "id": "pcse-q073",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "A platform team must centralize security findings (variant 3). Which option aligns with Google best practices?",
+      "text": "A data team must centralize security findings.",
       "options": [
         {
           "id": "a",
@@ -2564,33 +2572,33 @@
       "id": "pcse-q074",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to centralize security findings (variant 4)?",
+      "text": "Your startup is building on Google Cloud and needs to investigate threats with Chronicle.",
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Notepad logs"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete events"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SCC aggregates risk findings.",
+      "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
         {
-          "title": "Security Command Center",
-          "url": "https://cloud.google.com/security-command-center/docs"
+          "title": "Google Security Operations",
+          "url": "https://cloud.google.com/chronicle/docs"
         }
       ]
     },
@@ -2598,7 +2606,7 @@
       "id": "pcse-q075",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to centralize security findings (variant 5)?",
+      "text": "Which capability is provided by Security Command Center rather than Google Security Operations (Chronicle) when you need to centralize security findings?",
       "options": [
         {
           "id": "a",
@@ -2606,25 +2614,29 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Ignore CVEs"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "Spreadsheet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SCC aggregates risk findings.",
+      "explanation": "SCC aggregates risk findings. Compare with Google Security Operations (Chronicle): Chronicle analyzes security telemetry.",
       "docs": [
         {
           "title": "Security Command Center",
           "url": "https://cloud.google.com/security-command-center/docs"
+        },
+        {
+          "title": "Google Security Operations",
+          "url": "https://cloud.google.com/chronicle/docs"
         }
       ]
     },
@@ -2632,30 +2644,34 @@
       "id": "pcse-q076",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "A platform team must centralize security findings (variant 6). Which option aligns with Google best practices?",
+      "text": "Which capability is provided by Google Security Operations (Chronicle) rather than Security Command Center when you need to investigate threats with Chronicle?",
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Security Command Center"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Notepad logs"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "Delete events"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SCC aggregates risk findings.",
+      "explanation": "Chronicle analyzes security telemetry. Compare with Security Command Center: SCC aggregates risk findings.",
       "docs": [
+        {
+          "title": "Google Security Operations",
+          "url": "https://cloud.google.com/chronicle/docs"
+        },
         {
           "title": "Security Command Center",
           "url": "https://cloud.google.com/security-command-center/docs"
@@ -2666,7 +2682,7 @@
       "id": "pcse-q077",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to centralize security findings (variant 7)?",
+      "text": "Which Google Cloud service should you use to centralize security findings (variant 1)?",
       "options": [
         {
           "id": "a",
@@ -2700,33 +2716,33 @@
       "id": "pcse-q078",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to centralize security findings (variant 8)?",
+      "text": "What is the recommended Google Cloud solution to investigate threats with Chronicle (variant 1)?",
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Notepad logs"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete events"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "SCC aggregates risk findings.",
+      "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
         {
-          "title": "Security Command Center",
-          "url": "https://cloud.google.com/security-command-center/docs"
+          "title": "Google Security Operations",
+          "url": "https://cloud.google.com/chronicle/docs"
         }
       ]
     },
@@ -2734,7 +2750,7 @@
       "id": "pcse-q079",
       "domain": "operations",
       "type": "multiple-choice",
-      "text": "A platform team must centralize security findings (variant 9). Which option aligns with Google best practices?",
+      "text": "A platform team must centralize security findings (variant 2). Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",

@@ -485,33 +485,33 @@
       "id": "az400-q013",
       "domain": "devops-process",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to manage boards repos pipelines?",
+      "text": "Which Azure service or capability is BEST to track work with boards and backlogs?",
       "options": [
         {
           "id": "a",
-          "text": "Azure DevOps organization"
+          "text": "Azure Boards"
         },
         {
           "id": "b",
-          "text": "Email zip deployments"
+          "text": "Sticky notes only"
         },
         {
           "id": "c",
-          "text": "Shared prod password"
+          "text": "Email tasks"
         },
         {
           "id": "d",
-          "text": "No CI"
+          "text": "No traceability"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure DevOps covers plan/build/release.",
+      "explanation": "Boards connect work to code and builds.",
       "docs": [
         {
-          "title": "Azure DevOps",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+          "title": "Azure Boards",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards"
         }
       ]
     },
@@ -519,33 +519,33 @@
       "id": "az400-q014",
       "domain": "devops-process",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to manage boards repos pipelines?",
+      "text": "Which Azure service or capability is BEST to define infrastructure environments?",
       "options": [
         {
           "id": "a",
-          "text": "Azure DevOps organization"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "b",
-          "text": "Email zip deployments"
+          "text": "ClickOps only"
         },
         {
           "id": "c",
-          "text": "Shared prod password"
+          "text": "USB scripts"
         },
         {
           "id": "d",
-          "text": "No CI"
+          "text": "No review"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure DevOps covers plan/build/release.",
+      "explanation": "Modules standardize environment definitions.",
       "docs": [
         {
-          "title": "Azure DevOps",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+          "title": "Bicep",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
         }
       ]
     },
@@ -553,7 +553,7 @@
       "id": "az400-q015",
       "domain": "devops-process",
       "type": "multiple-choice",
-      "text": "Your team must manage boards repos pipelines. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to manage boards repos pipelines?",
       "options": [
         {
           "id": "a",
@@ -587,7 +587,7 @@
       "id": "az400-q016",
       "domain": "devops-process",
       "type": "multiple-choice",
-      "text": "An Azure architect must manage boards repos pipelines.",
+      "text": "What is the recommended Azure approach to manage boards repos pipelines?",
       "options": [
         {
           "id": "a",
@@ -621,7 +621,7 @@
       "id": "az400-q017",
       "domain": "devops-process",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should manage boards repos pipelines.",
+      "text": "Your team must manage boards repos pipelines. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -655,38 +655,208 @@
       "id": "az400-q018",
       "domain": "devops-process",
       "type": "multiple-choice",
-      "text": "Your organization plans to manage boards repos pipelines.",
+      "text": "Which Azure offering should you use to track work with boards and backlogs?",
       "options": [
         {
           "id": "a",
-          "text": "Azure DevOps organization"
+          "text": "Azure Boards"
         },
         {
           "id": "b",
-          "text": "Email zip deployments"
+          "text": "Sticky notes only"
         },
         {
           "id": "c",
-          "text": "Shared prod password"
+          "text": "Email tasks"
         },
         {
           "id": "d",
-          "text": "No CI"
+          "text": "No traceability"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure DevOps covers plan/build/release.",
+      "explanation": "Boards connect work to code and builds.",
       "docs": [
         {
-          "title": "Azure DevOps",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+          "title": "Azure Boards",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards"
         }
       ]
     },
     {
       "id": "az400-q019",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to track work with boards and backlogs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Boards"
+        },
+        {
+          "id": "b",
+          "text": "Sticky notes only"
+        },
+        {
+          "id": "c",
+          "text": "Email tasks"
+        },
+        {
+          "id": "d",
+          "text": "No traceability"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boards connect work to code and builds.",
+      "docs": [
+        {
+          "title": "Azure Boards",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards"
+        }
+      ]
+    },
+    {
+      "id": "az400-q020",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Your team must track work with boards and backlogs. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Boards"
+        },
+        {
+          "id": "b",
+          "text": "Sticky notes only"
+        },
+        {
+          "id": "c",
+          "text": "Email tasks"
+        },
+        {
+          "id": "d",
+          "text": "No traceability"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boards connect work to code and builds.",
+      "docs": [
+        {
+          "title": "Azure Boards",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards"
+        }
+      ]
+    },
+    {
+      "id": "az400-q021",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to define infrastructure environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bicep or Terraform modules"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "USB scripts"
+        },
+        {
+          "id": "d",
+          "text": "No review"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Modules standardize environment definitions.",
+      "docs": [
+        {
+          "title": "Bicep",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+        }
+      ]
+    },
+    {
+      "id": "az400-q022",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to define infrastructure environments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bicep or Terraform modules"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "USB scripts"
+        },
+        {
+          "id": "d",
+          "text": "No review"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Modules standardize environment definitions.",
+      "docs": [
+        {
+          "title": "Bicep",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+        }
+      ]
+    },
+    {
+      "id": "az400-q023",
+      "domain": "devops-process",
+      "type": "multiple-choice",
+      "text": "Your team must define infrastructure environments. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bicep or Terraform modules"
+        },
+        {
+          "id": "b",
+          "text": "ClickOps only"
+        },
+        {
+          "id": "c",
+          "text": "USB scripts"
+        },
+        {
+          "id": "d",
+          "text": "No review"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Modules standardize environment definitions.",
+      "docs": [
+        {
+          "title": "Bicep",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+        }
+      ]
+    },
+    {
+      "id": "az400-q024",
       "domain": "devops-process",
       "type": "multiple-choice",
       "text": "A cloud administrator needs to manage boards repos pipelines.",
@@ -720,206 +890,36 @@
       ]
     },
     {
-      "id": "az400-q020",
-      "domain": "devops-process",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to manage boards repos pipelines (variant 1)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure DevOps organization"
-        },
-        {
-          "id": "b",
-          "text": "Email zip deployments"
-        },
-        {
-          "id": "c",
-          "text": "Shared prod password"
-        },
-        {
-          "id": "d",
-          "text": "No CI"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Azure DevOps covers plan/build/release.",
-      "docs": [
-        {
-          "title": "Azure DevOps",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
-        }
-      ]
-    },
-    {
-      "id": "az400-q021",
-      "domain": "devops-process",
-      "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to manage boards repos pipelines (variant 2)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure DevOps organization"
-        },
-        {
-          "id": "b",
-          "text": "Email zip deployments"
-        },
-        {
-          "id": "c",
-          "text": "Shared prod password"
-        },
-        {
-          "id": "d",
-          "text": "No CI"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Azure DevOps covers plan/build/release.",
-      "docs": [
-        {
-          "title": "Azure DevOps",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
-        }
-      ]
-    },
-    {
-      "id": "az400-q022",
-      "domain": "devops-process",
-      "type": "multiple-choice",
-      "text": "Your team must manage boards repos pipelines (variant 3). Which Azure option fits best?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure DevOps organization"
-        },
-        {
-          "id": "b",
-          "text": "Email zip deployments"
-        },
-        {
-          "id": "c",
-          "text": "Shared prod password"
-        },
-        {
-          "id": "d",
-          "text": "No CI"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Azure DevOps covers plan/build/release.",
-      "docs": [
-        {
-          "title": "Azure DevOps",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
-        }
-      ]
-    },
-    {
-      "id": "az400-q023",
-      "domain": "devops-process",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to manage boards repos pipelines (variant 4)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure DevOps organization"
-        },
-        {
-          "id": "b",
-          "text": "Email zip deployments"
-        },
-        {
-          "id": "c",
-          "text": "Shared prod password"
-        },
-        {
-          "id": "d",
-          "text": "No CI"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Azure DevOps covers plan/build/release.",
-      "docs": [
-        {
-          "title": "Azure DevOps",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
-        }
-      ]
-    },
-    {
-      "id": "az400-q024",
-      "domain": "devops-process",
-      "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to manage boards repos pipelines (variant 5)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure DevOps organization"
-        },
-        {
-          "id": "b",
-          "text": "Email zip deployments"
-        },
-        {
-          "id": "c",
-          "text": "Shared prod password"
-        },
-        {
-          "id": "d",
-          "text": "No CI"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Azure DevOps covers plan/build/release.",
-      "docs": [
-        {
-          "title": "Azure DevOps",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
-        }
-      ]
-    },
-    {
       "id": "az400-q025",
       "domain": "devops-process",
       "type": "multiple-choice",
-      "text": "Your team must manage boards repos pipelines (variant 6). Which Azure option fits best?",
+      "text": "Your organization plans to track work with boards and backlogs.",
       "options": [
         {
           "id": "a",
-          "text": "Azure DevOps organization"
+          "text": "Azure Boards"
         },
         {
           "id": "b",
-          "text": "Email zip deployments"
+          "text": "Sticky notes only"
         },
         {
           "id": "c",
-          "text": "Shared prod password"
+          "text": "Email tasks"
         },
         {
           "id": "d",
-          "text": "No CI"
+          "text": "No traceability"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure DevOps covers plan/build/release.",
+      "explanation": "Boards connect work to code and builds.",
       "docs": [
         {
-          "title": "Azure DevOps",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+          "title": "Azure Boards",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards"
         }
       ]
     },
@@ -961,15 +961,15 @@
       "id": "az400-q027",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to branch policies for quality gates?",
+      "text": "Which Azure service or capability is BEST to protect main branch from force push?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "Branch policies with permissions"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Everyone force pushes"
         },
         {
           "id": "c",
@@ -983,7 +983,7 @@
       "correct": [
         "a"
       ],
-      "explanation": "Branch policies enforce reviews and builds.",
+      "explanation": "Policies enforce quality gates.",
       "docs": [
         {
           "title": "Branch policies",
@@ -995,33 +995,33 @@
       "id": "az400-q028",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to branch policies for quality gates?",
+      "text": "Which Azure service or capability is BEST to scan repositories for secrets?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Commit passwords"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Ignore alerts"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "Public keys"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Branch policies enforce reviews and builds.",
+      "explanation": "Secret scanning prevents credential leaks.",
       "docs": [
         {
-          "title": "Branch policies",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+          "title": "Secret scanning",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scanning"
         }
       ]
     },
@@ -1029,7 +1029,7 @@
       "id": "az400-q029",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "Your team must branch policies for quality gates. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to branch policies for quality gates?",
       "options": [
         {
           "id": "a",
@@ -1063,7 +1063,7 @@
       "id": "az400-q030",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to branch policies for quality gates.",
+      "text": "What is the recommended Azure approach to branch policies for quality gates?",
       "options": [
         {
           "id": "a",
@@ -1097,7 +1097,7 @@
       "id": "az400-q031",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "Your organization plans to branch policies for quality gates.",
+      "text": "Your team must branch policies for quality gates. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -1131,15 +1131,15 @@
       "id": "az400-q032",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should branch policies for quality gates.",
+      "text": "Which Azure offering should you use to protect main branch from force push?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "Branch policies with permissions"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Everyone force pushes"
         },
         {
           "id": "c",
@@ -1153,7 +1153,7 @@
       "correct": [
         "a"
       ],
-      "explanation": "Branch policies enforce reviews and builds.",
+      "explanation": "Policies enforce quality gates.",
       "docs": [
         {
           "title": "Branch policies",
@@ -1165,15 +1165,15 @@
       "id": "az400-q033",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "An Azure architect must branch policies for quality gates.",
+      "text": "What is the recommended Azure approach to protect main branch from force push?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "Branch policies with permissions"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Everyone force pushes"
         },
         {
           "id": "c",
@@ -1187,7 +1187,7 @@
       "correct": [
         "a"
       ],
-      "explanation": "Branch policies enforce reviews and builds.",
+      "explanation": "Policies enforce quality gates.",
       "docs": [
         {
           "title": "Branch policies",
@@ -1199,15 +1199,15 @@
       "id": "az400-q034",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to branch policies for quality gates (variant 1)?",
+      "text": "Your team must protect main branch from force push. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "Branch policies with permissions"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Everyone force pushes"
         },
         {
           "id": "c",
@@ -1221,7 +1221,7 @@
       "correct": [
         "a"
       ],
-      "explanation": "Branch policies enforce reviews and builds.",
+      "explanation": "Policies enforce quality gates.",
       "docs": [
         {
           "title": "Branch policies",
@@ -1233,33 +1233,33 @@
       "id": "az400-q035",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to branch policies for quality gates (variant 2)?",
+      "text": "Which Azure offering should you use to scan repositories for secrets?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Commit passwords"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Ignore alerts"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "Public keys"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Branch policies enforce reviews and builds.",
+      "explanation": "Secret scanning prevents credential leaks.",
       "docs": [
         {
-          "title": "Branch policies",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+          "title": "Secret scanning",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scanning"
         }
       ]
     },
@@ -1267,33 +1267,33 @@
       "id": "az400-q036",
       "domain": "source-control",
       "type": "multiple-choice",
-      "text": "Your team must branch policies for quality gates (variant 3). Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to scan repositories for secrets?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Commit passwords"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Ignore alerts"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "Public keys"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Branch policies enforce reviews and builds.",
+      "explanation": "Secret scanning prevents credential leaks.",
       "docs": [
         {
-          "title": "Branch policies",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies"
+          "title": "Secret scanning",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scanning"
         }
       ]
     },
@@ -1335,33 +1335,33 @@
       "id": "az400-q038",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to build and release pipelines as code?",
+      "text": "Which Azure service or capability is BEST to cache dependencies in pipelines?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Download every run"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No cache"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "FTP deps"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Caching speeds up builds.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
         }
       ]
     },
@@ -1369,33 +1369,33 @@
       "id": "az400-q039",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to build and release pipelines as code?",
+      "text": "Which Azure service or capability is BEST to deploy to multiple stages with gates?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Deploy straight to prod"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Shared password"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Environments add deployment controls.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Deployment environments",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments"
         }
       ]
     },
@@ -1403,7 +1403,7 @@
       "id": "az400-q040",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Your team must build and release pipelines as code. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to build and release pipelines as code?",
       "options": [
         {
           "id": "a",
@@ -1437,7 +1437,7 @@
       "id": "az400-q041",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "An Azure architect must build and release pipelines as code.",
+      "text": "What is the recommended Azure approach to build and release pipelines as code?",
       "options": [
         {
           "id": "a",
@@ -1471,7 +1471,7 @@
       "id": "az400-q042",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to build and release pipelines as code.",
+      "text": "Your team must build and release pipelines as code. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -1505,33 +1505,33 @@
       "id": "az400-q043",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Your organization plans to build and release pipelines as code.",
+      "text": "Which Azure offering should you use to cache dependencies in pipelines?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Download every run"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No cache"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "FTP deps"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Caching speeds up builds.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
         }
       ]
     },
@@ -1539,33 +1539,33 @@
       "id": "az400-q044",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should build and release pipelines as code.",
+      "text": "What is the recommended Azure approach to cache dependencies in pipelines?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Download every run"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No cache"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "FTP deps"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Caching speeds up builds.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
         }
       ]
     },
@@ -1573,33 +1573,33 @@
       "id": "az400-q045",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to build and release pipelines as code (variant 1)?",
+      "text": "Your team must cache dependencies in pipelines. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Download every run"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No cache"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "FTP deps"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Caching speeds up builds.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
         }
       ]
     },
@@ -1607,33 +1607,33 @@
       "id": "az400-q046",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 2)?",
+      "text": "Which Azure offering should you use to deploy to multiple stages with gates?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Deploy straight to prod"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Shared password"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Environments add deployment controls.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Deployment environments",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments"
         }
       ]
     },
@@ -1641,33 +1641,33 @@
       "id": "az400-q047",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Your team must build and release pipelines as code (variant 3). Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to deploy to multiple stages with gates?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Deploy straight to prod"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Shared password"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Environments add deployment controls.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Deployment environments",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments"
         }
       ]
     },
@@ -1675,33 +1675,33 @@
       "id": "az400-q048",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to build and release pipelines as code (variant 4)?",
+      "text": "Your team must deploy to multiple stages with gates. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Deploy straight to prod"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Shared password"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Environments add deployment controls.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Deployment environments",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments"
         }
       ]
     },
@@ -1709,7 +1709,7 @@
       "id": "az400-q049",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 5)?",
+      "text": "An Azure architect must build and release pipelines as code.",
       "options": [
         {
           "id": "a",
@@ -1743,33 +1743,33 @@
       "id": "az400-q050",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Your team must build and release pipelines as code (variant 6). Which Azure option fits best?",
+      "text": "For a hybrid workload, you should cache dependencies in pipelines.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Download every run"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No cache"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "FTP deps"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Caching speeds up builds.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
         }
       ]
     },
@@ -1777,33 +1777,33 @@
       "id": "az400-q051",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to build and release pipelines as code (variant 7)?",
+      "text": "Your organization plans to deploy to multiple stages with gates.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Deploy straight to prod"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Shared password"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Environments add deployment controls.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Deployment environments",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments"
         }
       ]
     },
@@ -1811,7 +1811,7 @@
       "id": "az400-q052",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 8)?",
+      "text": "A cloud administrator needs to build and release pipelines as code.",
       "options": [
         {
           "id": "a",
@@ -1845,33 +1845,33 @@
       "id": "az400-q053",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Your team must build and release pipelines as code (variant 9). Which Azure option fits best?",
+      "text": "An Azure architect must cache dependencies in pipelines.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Download every run"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No cache"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "FTP deps"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Caching speeds up builds.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
         }
       ]
     },
@@ -1879,33 +1879,33 @@
       "id": "az400-q054",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to build and release pipelines as code (variant 10)?",
+      "text": "For a hybrid workload, you should deploy to multiple stages with gates.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Deploy straight to prod"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Shared password"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Environments add deployment controls.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Deployment environments",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments"
         }
       ]
     },
@@ -1913,7 +1913,7 @@
       "id": "az400-q055",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 11)?",
+      "text": "Your organization plans to build and release pipelines as code.",
       "options": [
         {
           "id": "a",
@@ -1947,33 +1947,33 @@
       "id": "az400-q056",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Your team must build and release pipelines as code (variant 12). Which Azure option fits best?",
+      "text": "A cloud administrator needs to cache dependencies in pipelines.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Download every run"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No cache"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "FTP deps"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Caching speeds up builds.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
         }
       ]
     },
@@ -1981,33 +1981,33 @@
       "id": "az400-q057",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to build and release pipelines as code (variant 13)?",
+      "text": "An Azure architect must deploy to multiple stages with gates.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Deploy straight to prod"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Shared password"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Environments add deployment controls.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Deployment environments",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments"
         }
       ]
     },
@@ -2015,7 +2015,7 @@
       "id": "az400-q058",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 14)?",
+      "text": "For a hybrid workload, you should build and release pipelines as code.",
       "options": [
         {
           "id": "a",
@@ -2049,33 +2049,33 @@
       "id": "az400-q059",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Your team must build and release pipelines as code (variant 15). Which Azure option fits best?",
+      "text": "Your organization plans to cache dependencies in pipelines.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Download every run"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No cache"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "FTP deps"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Caching speeds up builds.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
         }
       ]
     },
@@ -2083,33 +2083,33 @@
       "id": "az400-q060",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to build and release pipelines as code (variant 16)?",
+      "text": "A cloud administrator needs to deploy to multiple stages with gates.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Deploy straight to prod"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "No tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Shared password"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Environments add deployment controls.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Deployment environments",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments"
         }
       ]
     },
@@ -2117,7 +2117,7 @@
       "id": "az400-q061",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to build and release pipelines as code (variant 17)?",
+      "text": "Which capability is provided by Azure Pipelines YAML rather than Pipeline caching tasks when you need to build and release pipelines as code?",
       "options": [
         {
           "id": "a",
@@ -2125,25 +2125,29 @@
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "Manual FTP"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Copy binaries email"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "YAML pipelines version CI/CD definitions. Compare with Pipeline caching tasks: Caching speeds up builds.",
       "docs": [
         {
           "title": "Azure Pipelines",
           "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+        },
+        {
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
         }
       ]
     },
@@ -2151,33 +2155,37 @@
       "id": "az400-q062",
       "domain": "ci-cd",
       "type": "multiple-choice",
-      "text": "Your team must build and release pipelines as code (variant 18). Which Azure option fits best?",
+      "text": "Which capability is provided by Pipeline caching tasks rather than YAML environments and approvals when you need to cache dependencies in pipelines?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "Download every run"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "No cache"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "YAML pipelines version CI/CD definitions.",
+      "explanation": "Caching speeds up builds. Compare with YAML environments and approvals: Environments add deployment controls.",
       "docs": [
         {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
+          "title": "Pipeline caching",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching"
+        },
+        {
+          "title": "Deployment environments",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/environments"
         }
       ]
     },
@@ -2219,11 +2227,11 @@
       "id": "az400-q064",
       "domain": "dependency-security",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to secure cloud posture continuously?",
+      "text": "Which Azure service or capability is BEST to scan container images in CI?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud"
+          "text": "Defender for Cloud container scanning"
         },
         {
           "id": "b",
@@ -2231,21 +2239,21 @@
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Latest tag only"
         },
         {
           "id": "d",
-          "text": "Public storage keys"
+          "text": "No base updates"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender for Cloud assesses workload security.",
+      "explanation": "Image scanning finds known vulnerabilities.",
       "docs": [
         {
-          "title": "Defender for Cloud",
-          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+          "title": "Container scanning",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-introduction"
         }
       ]
     },
@@ -2253,7 +2261,7 @@
       "id": "az400-q065",
       "domain": "dependency-security",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to secure cloud posture continuously?",
+      "text": "Which Azure offering should you use to secure cloud posture continuously?",
       "options": [
         {
           "id": "a",
@@ -2287,7 +2295,7 @@
       "id": "az400-q066",
       "domain": "dependency-security",
       "type": "multiple-choice",
-      "text": "Your team must secure cloud posture continuously. Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to secure cloud posture continuously?",
       "options": [
         {
           "id": "a",
@@ -2321,7 +2329,7 @@
       "id": "az400-q067",
       "domain": "dependency-security",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should secure cloud posture continuously.",
+      "text": "Your team must secure cloud posture continuously. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -2355,11 +2363,11 @@
       "id": "az400-q068",
       "domain": "dependency-security",
       "type": "multiple-choice",
-      "text": "An Azure architect must secure cloud posture continuously.",
+      "text": "Which Azure offering should you use to scan container images in CI?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud"
+          "text": "Defender for Cloud container scanning"
         },
         {
           "id": "b",
@@ -2367,21 +2375,21 @@
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Latest tag only"
         },
         {
           "id": "d",
-          "text": "Public storage keys"
+          "text": "No base updates"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender for Cloud assesses workload security.",
+      "explanation": "Image scanning finds known vulnerabilities.",
       "docs": [
         {
-          "title": "Defender for Cloud",
-          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+          "title": "Container scanning",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-introduction"
         }
       ]
     },
@@ -2389,11 +2397,11 @@
       "id": "az400-q069",
       "domain": "dependency-security",
       "type": "multiple-choice",
-      "text": "Your organization plans to secure cloud posture continuously.",
+      "text": "What is the recommended Azure approach to scan container images in CI?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud"
+          "text": "Defender for Cloud container scanning"
         },
         {
           "id": "b",
@@ -2401,21 +2409,21 @@
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Latest tag only"
         },
         {
           "id": "d",
-          "text": "Public storage keys"
+          "text": "No base updates"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender for Cloud assesses workload security.",
+      "explanation": "Image scanning finds known vulnerabilities.",
       "docs": [
         {
-          "title": "Defender for Cloud",
-          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+          "title": "Container scanning",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-introduction"
         }
       ]
     },
@@ -2423,11 +2431,11 @@
       "id": "az400-q070",
       "domain": "dependency-security",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to secure cloud posture continuously.",
+      "text": "Your team must scan container images in CI. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud"
+          "text": "Defender for Cloud container scanning"
         },
         {
           "id": "b",
@@ -2435,21 +2443,21 @@
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Latest tag only"
         },
         {
           "id": "d",
-          "text": "Public storage keys"
+          "text": "No base updates"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Defender for Cloud assesses workload security.",
+      "explanation": "Image scanning finds known vulnerabilities.",
       "docs": [
         {
-          "title": "Defender for Cloud",
-          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+          "title": "Container scanning",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-introduction"
         }
       ]
     },
@@ -2491,33 +2499,33 @@
       "id": "az400-q072",
       "domain": "instrumentation",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to monitor pipeline runs?",
+      "text": "Which Azure service or capability is BEST to collect pipeline logs centrally?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Local text files"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete logs"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "No retention"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Monitor links pipeline failures to alerts.",
+      "explanation": "Central logs support RCA.",
       "docs": [
         {
-          "title": "Pipeline monitoring",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+          "title": "Log Analytics",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview"
         }
       ]
     },
@@ -2525,7 +2533,7 @@
       "id": "az400-q073",
       "domain": "instrumentation",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to monitor pipeline runs?",
+      "text": "Which Azure offering should you use to monitor pipeline runs?",
       "options": [
         {
           "id": "a",
@@ -2559,7 +2567,7 @@
       "id": "az400-q074",
       "domain": "instrumentation",
       "type": "multiple-choice",
-      "text": "Your team must monitor pipeline runs. Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to monitor pipeline runs?",
       "options": [
         {
           "id": "a",
@@ -2593,7 +2601,7 @@
       "id": "az400-q075",
       "domain": "instrumentation",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to monitor pipeline runs.",
+      "text": "Your team must monitor pipeline runs. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -2627,33 +2635,33 @@
       "id": "az400-q076",
       "domain": "instrumentation",
       "type": "multiple-choice",
-      "text": "An Azure architect must monitor pipeline runs.",
+      "text": "Which Azure offering should you use to collect pipeline logs centrally?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Local text files"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete logs"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "No retention"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Monitor links pipeline failures to alerts.",
+      "explanation": "Central logs support RCA.",
       "docs": [
         {
-          "title": "Pipeline monitoring",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+          "title": "Log Analytics",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview"
         }
       ]
     },
@@ -2661,38 +2669,72 @@
       "id": "az400-q077",
       "domain": "instrumentation",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should monitor pipeline runs.",
+      "text": "What is the recommended Azure approach to collect pipeline logs centrally?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Local text files"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete logs"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "No retention"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Monitor links pipeline failures to alerts.",
+      "explanation": "Central logs support RCA.",
       "docs": [
         {
-          "title": "Pipeline monitoring",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+          "title": "Log Analytics",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview"
         }
       ]
     },
     {
       "id": "az400-q078",
+      "domain": "instrumentation",
+      "type": "multiple-choice",
+      "text": "Your team must collect pipeline logs centrally. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Log Analytics workspace integration"
+        },
+        {
+          "id": "b",
+          "text": "Local text files"
+        },
+        {
+          "id": "c",
+          "text": "Delete logs"
+        },
+        {
+          "id": "d",
+          "text": "No retention"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Central logs support RCA.",
+      "docs": [
+        {
+          "title": "Log Analytics",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview"
+        }
+      ]
+    },
+    {
+      "id": "az400-q079",
       "domain": "instrumentation",
       "type": "multiple-choice",
       "text": "Your organization plans to monitor pipeline runs.",
@@ -2726,70 +2768,36 @@
       ]
     },
     {
-      "id": "az400-q079",
-      "domain": "instrumentation",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to monitor pipeline runs (variant 1)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
-        },
-        {
-          "id": "b",
-          "text": "No logs"
-        },
-        {
-          "id": "c",
-          "text": "Spreadsheet"
-        },
-        {
-          "id": "d",
-          "text": "Ping only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Monitor links pipeline failures to alerts.",
-      "docs": [
-        {
-          "title": "Pipeline monitoring",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
-        }
-      ]
-    },
-    {
       "id": "az400-q080",
       "domain": "instrumentation",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to monitor pipeline runs (variant 2)?",
+      "text": "For a hybrid workload, you should collect pipeline logs centrally.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Local text files"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Delete logs"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "No retention"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Monitor links pipeline failures to alerts.",
+      "explanation": "Central logs support RCA.",
       "docs": [
         {
-          "title": "Pipeline monitoring",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
+          "title": "Log Analytics",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview"
         }
       ]
     },
@@ -2797,7 +2805,7 @@
       "id": "az400-q081",
       "domain": "instrumentation",
       "type": "multiple-choice",
-      "text": "Your team must monitor pipeline runs (variant 3). Which Azure option fits best?",
+      "text": "An Azure architect must monitor pipeline runs.",
       "options": [
         {
           "id": "a",

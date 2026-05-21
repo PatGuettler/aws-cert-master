@@ -471,33 +471,33 @@
       "id": "az9-q013",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to describe consumption-based pricing?",
+      "text": "Which Azure service or capability is BEST to define elasticity in cloud?",
       "options": [
         {
           "id": "a",
-          "text": "Pay-as-you-go model"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Fixed perpetual license only"
+          "text": "Fixed capacity only"
         },
         {
           "id": "c",
-          "text": "CapEx data center only"
+          "text": "Manual hardware orders"
         },
         {
           "id": "d",
-          "text": "No metering"
+          "text": "No automation"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "explanation": "Elasticity matches workload changes.",
       "docs": [
         {
-          "title": "Azure pricing",
-          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+          "title": "Cloud benefits",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/selecting-compute-service"
         }
       ]
     },
@@ -505,33 +505,33 @@
       "id": "az9-q014",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to describe consumption-based pricing?",
+      "text": "Which Azure service or capability is BEST to explain shared responsibility?",
       "options": [
         {
           "id": "a",
-          "text": "Pay-as-you-go model"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "b",
-          "text": "Fixed perpetual license only"
+          "text": "Microsoft patches all apps"
         },
         {
           "id": "c",
-          "text": "CapEx data center only"
+          "text": "No customer duties"
         },
         {
           "id": "d",
-          "text": "No metering"
+          "text": "Disable updates"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "explanation": "Shared responsibility splits security tasks.",
       "docs": [
         {
-          "title": "Azure pricing",
-          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+          "title": "Shared responsibility",
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
         }
       ]
     },
@@ -539,7 +539,7 @@
       "id": "az9-q015",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "Your team must describe consumption-based pricing. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to describe consumption-based pricing?",
       "options": [
         {
           "id": "a",
@@ -573,33 +573,33 @@
       "id": "az9-q016",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to compare public vs private cloud?",
+      "text": "What is the recommended Azure approach to describe consumption-based pricing?",
       "options": [
         {
           "id": "a",
-          "text": "Public cloud shared tenancy with isolation controls"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "b",
-          "text": "Private cloud is always on laptops only"
+          "text": "Fixed perpetual license only"
         },
         {
           "id": "c",
-          "text": "Hybrid removes all networking"
+          "text": "CapEx data center only"
         },
         {
           "id": "d",
-          "text": "Edge replaces cloud"
+          "text": "No metering"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "explanation": "Cloud shifts spend to operational usage-based billing.",
       "docs": [
         {
-          "title": "Cloud models",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+          "title": "Azure pricing",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
         }
       ]
     },
@@ -607,33 +607,33 @@
       "id": "az9-q017",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to compare public vs private cloud?",
+      "text": "Your team must describe consumption-based pricing. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Public cloud shared tenancy with isolation controls"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "b",
-          "text": "Private cloud is always on laptops only"
+          "text": "Fixed perpetual license only"
         },
         {
           "id": "c",
-          "text": "Hybrid removes all networking"
+          "text": "CapEx data center only"
         },
         {
           "id": "d",
-          "text": "Edge replaces cloud"
+          "text": "No metering"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "explanation": "Cloud shifts spend to operational usage-based billing.",
       "docs": [
         {
-          "title": "Cloud models",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+          "title": "Azure pricing",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
         }
       ]
     },
@@ -641,7 +641,7 @@
       "id": "az9-q018",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "Your team must compare public vs private cloud. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to compare public vs private cloud?",
       "options": [
         {
           "id": "a",
@@ -675,33 +675,33 @@
       "id": "az9-q019",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to explain high availability concepts?",
+      "text": "What is the recommended Azure approach to compare public vs private cloud?",
       "options": [
         {
           "id": "a",
-          "text": "Availability sets and zones"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "b",
-          "text": "Single VM always sufficient"
+          "text": "Private cloud is always on laptops only"
         },
         {
           "id": "c",
-          "text": "Disable redundancy"
+          "text": "Hybrid removes all networking"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Edge replaces cloud"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zones isolate failure domains within a region.",
+      "explanation": "Public cloud offers elastic shared infrastructure.",
       "docs": [
         {
-          "title": "Availability zones",
-          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+          "title": "Cloud models",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
         }
       ]
     },
@@ -709,33 +709,33 @@
       "id": "az9-q020",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to explain high availability concepts?",
+      "text": "Your team must compare public vs private cloud. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Availability sets and zones"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "b",
-          "text": "Single VM always sufficient"
+          "text": "Private cloud is always on laptops only"
         },
         {
           "id": "c",
-          "text": "Disable redundancy"
+          "text": "Hybrid removes all networking"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Edge replaces cloud"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zones isolate failure domains within a region.",
+      "explanation": "Public cloud offers elastic shared infrastructure.",
       "docs": [
         {
-          "title": "Availability zones",
-          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+          "title": "Cloud models",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
         }
       ]
     },
@@ -743,7 +743,7 @@
       "id": "az9-q021",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "Your team must explain high availability concepts. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to explain high availability concepts?",
       "options": [
         {
           "id": "a",
@@ -777,33 +777,33 @@
       "id": "az9-q022",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to describe consumption-based pricing.",
+      "text": "What is the recommended Azure approach to explain high availability concepts?",
       "options": [
         {
           "id": "a",
-          "text": "Pay-as-you-go model"
+          "text": "Availability sets and zones"
         },
         {
           "id": "b",
-          "text": "Fixed perpetual license only"
+          "text": "Single VM always sufficient"
         },
         {
           "id": "c",
-          "text": "CapEx data center only"
+          "text": "Disable redundancy"
         },
         {
           "id": "d",
-          "text": "No metering"
+          "text": "Ignore SLAs"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "explanation": "Zones isolate failure domains within a region.",
       "docs": [
         {
-          "title": "Azure pricing",
-          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+          "title": "Availability zones",
+          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
         }
       ]
     },
@@ -811,33 +811,33 @@
       "id": "az9-q023",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "An Azure architect must compare public vs private cloud.",
+      "text": "Your team must explain high availability concepts. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Public cloud shared tenancy with isolation controls"
+          "text": "Availability sets and zones"
         },
         {
           "id": "b",
-          "text": "Private cloud is always on laptops only"
+          "text": "Single VM always sufficient"
         },
         {
           "id": "c",
-          "text": "Hybrid removes all networking"
+          "text": "Disable redundancy"
         },
         {
           "id": "d",
-          "text": "Edge replaces cloud"
+          "text": "Ignore SLAs"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "explanation": "Zones isolate failure domains within a region.",
       "docs": [
         {
-          "title": "Cloud models",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+          "title": "Availability zones",
+          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
         }
       ]
     },
@@ -845,33 +845,33 @@
       "id": "az9-q024",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "Your organization plans to explain high availability concepts.",
+      "text": "Which Azure offering should you use to define elasticity in cloud?",
       "options": [
         {
           "id": "a",
-          "text": "Availability sets and zones"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Single VM always sufficient"
+          "text": "Fixed capacity only"
         },
         {
           "id": "c",
-          "text": "Disable redundancy"
+          "text": "Manual hardware orders"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "No automation"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zones isolate failure domains within a region.",
+      "explanation": "Elasticity matches workload changes.",
       "docs": [
         {
-          "title": "Availability zones",
-          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+          "title": "Cloud benefits",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/selecting-compute-service"
         }
       ]
     },
@@ -879,33 +879,33 @@
       "id": "az9-q025",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should describe consumption-based pricing.",
+      "text": "What is the recommended Azure approach to define elasticity in cloud?",
       "options": [
         {
           "id": "a",
-          "text": "Pay-as-you-go model"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Fixed perpetual license only"
+          "text": "Fixed capacity only"
         },
         {
           "id": "c",
-          "text": "CapEx data center only"
+          "text": "Manual hardware orders"
         },
         {
           "id": "d",
-          "text": "No metering"
+          "text": "No automation"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "explanation": "Elasticity matches workload changes.",
       "docs": [
         {
-          "title": "Azure pricing",
-          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+          "title": "Cloud benefits",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/selecting-compute-service"
         }
       ]
     },
@@ -913,33 +913,33 @@
       "id": "az9-q026",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to compare public vs private cloud.",
+      "text": "Your team must define elasticity in cloud. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Public cloud shared tenancy with isolation controls"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Private cloud is always on laptops only"
+          "text": "Fixed capacity only"
         },
         {
           "id": "c",
-          "text": "Hybrid removes all networking"
+          "text": "Manual hardware orders"
         },
         {
           "id": "d",
-          "text": "Edge replaces cloud"
+          "text": "No automation"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Public cloud offers elastic shared infrastructure.",
+      "explanation": "Elasticity matches workload changes.",
       "docs": [
         {
-          "title": "Cloud models",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+          "title": "Cloud benefits",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/selecting-compute-service"
         }
       ]
     },
@@ -947,33 +947,33 @@
       "id": "az9-q027",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "An Azure architect must explain high availability concepts.",
+      "text": "Which Azure offering should you use to explain shared responsibility?",
       "options": [
         {
           "id": "a",
-          "text": "Availability sets and zones"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "b",
-          "text": "Single VM always sufficient"
+          "text": "Microsoft patches all apps"
         },
         {
           "id": "c",
-          "text": "Disable redundancy"
+          "text": "No customer duties"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Disable updates"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Zones isolate failure domains within a region.",
+      "explanation": "Shared responsibility splits security tasks.",
       "docs": [
         {
-          "title": "Availability zones",
-          "url": "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+          "title": "Shared responsibility",
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
         }
       ]
     },
@@ -981,33 +981,33 @@
       "id": "az9-q028",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
-      "text": "Your organization plans to describe consumption-based pricing.",
+      "text": "What is the recommended Azure approach to explain shared responsibility?",
       "options": [
         {
           "id": "a",
-          "text": "Pay-as-you-go model"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "b",
-          "text": "Fixed perpetual license only"
+          "text": "Microsoft patches all apps"
         },
         {
           "id": "c",
-          "text": "CapEx data center only"
+          "text": "No customer duties"
         },
         {
           "id": "d",
-          "text": "No metering"
+          "text": "Disable updates"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cloud shifts spend to operational usage-based billing.",
+      "explanation": "Shared responsibility splits security tasks.",
       "docs": [
         {
-          "title": "Azure pricing",
-          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+          "title": "Shared responsibility",
+          "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
         }
       ]
     },
@@ -1729,7 +1729,7 @@
       "id": "az9-q050",
       "domain": "azure-architecture",
       "type": "multiple-choice",
-      "text": "Your organization plans to run Linux VMs in Azure.",
+      "text": "An Azure architect must run Linux VMs in Azure.",
       "options": [
         {
           "id": "a",
@@ -1763,7 +1763,7 @@
       "id": "az9-q051",
       "domain": "azure-architecture",
       "type": "multiple-choice",
-      "text": "An Azure architect must serverless HTTP APIs.",
+      "text": "Your organization plans to serverless HTTP APIs.",
       "options": [
         {
           "id": "a",
@@ -1967,33 +1967,33 @@
       "id": "az9-q057",
       "domain": "azure-management",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to deploy resources as a unit?",
+      "text": "Which Azure service or capability is BEST to tag resources for cost allocation?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Resource Manager templates"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "b",
-          "text": "Manual portal clicks only policy"
+          "text": "Hide all costs"
         },
         {
           "id": "c",
-          "text": "Local AD only"
+          "text": "One tag for tenant"
         },
         {
           "id": "d",
-          "text": "FTP deploy"
+          "text": "No reporting"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "ARM provides declarative infrastructure deployment.",
+      "explanation": "Tags enable chargeback and FinOps.",
       "docs": [
         {
-          "title": "ARM templates",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+          "title": "Resource tagging",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
         }
       ]
     },
@@ -2001,33 +2001,33 @@
       "id": "az9-q058",
       "domain": "azure-management",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to deploy resources as a unit?",
+      "text": "Which Azure service or capability is BEST to view consolidated cloud spend?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Resource Manager templates"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "b",
-          "text": "Manual portal clicks only policy"
+          "text": "Spreadsheet guesses"
         },
         {
           "id": "c",
-          "text": "Local AD only"
+          "text": "Ignore invoices"
         },
         {
           "id": "d",
-          "text": "FTP deploy"
+          "text": "Email CSV only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "ARM provides declarative infrastructure deployment.",
+      "explanation": "Cost Management analyzes Azure usage.",
       "docs": [
         {
-          "title": "ARM templates",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+          "title": "Cost Management",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
         }
       ]
     },
@@ -2035,7 +2035,7 @@
       "id": "az9-q059",
       "domain": "azure-management",
       "type": "multiple-choice",
-      "text": "Your team must deploy resources as a unit. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to deploy resources as a unit?",
       "options": [
         {
           "id": "a",
@@ -2069,33 +2069,33 @@
       "id": "az9-q060",
       "domain": "azure-management",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to centralize identity for Azure resources?",
+      "text": "What is the recommended Azure approach to deploy resources as a unit?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "b",
-          "text": "Blob lease only"
+          "text": "Manual portal clicks only policy"
         },
         {
           "id": "c",
-          "text": "NIC teaming"
+          "text": "Local AD only"
         },
         {
           "id": "d",
-          "text": "VPN SKU only"
+          "text": "FTP deploy"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID is the identity platform for Azure.",
+      "explanation": "ARM provides declarative infrastructure deployment.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
         }
       ]
     },
@@ -2103,33 +2103,33 @@
       "id": "az9-q061",
       "domain": "azure-management",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to centralize identity for Azure resources?",
+      "text": "Your team must deploy resources as a unit. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "b",
-          "text": "Blob lease only"
+          "text": "Manual portal clicks only policy"
         },
         {
           "id": "c",
-          "text": "NIC teaming"
+          "text": "Local AD only"
         },
         {
           "id": "d",
-          "text": "VPN SKU only"
+          "text": "FTP deploy"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Entra ID is the identity platform for Azure.",
+      "explanation": "ARM provides declarative infrastructure deployment.",
       "docs": [
         {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
+          "title": "ARM templates",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
         }
       ]
     },
@@ -2137,7 +2137,7 @@
       "id": "az9-q062",
       "domain": "azure-management",
       "type": "multiple-choice",
-      "text": "Your team must centralize identity for Azure resources. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to centralize identity for Azure resources?",
       "options": [
         {
           "id": "a",
@@ -2171,33 +2171,33 @@
       "id": "az9-q063",
       "domain": "azure-management",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to organize subscriptions and management groups?",
+      "text": "What is the recommended Azure approach to centralize identity for Azure resources?",
       "options": [
         {
           "id": "a",
-          "text": "Azure hierarchy with management groups"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Flat tenant with no RBAC"
+          "text": "Blob lease only"
         },
         {
           "id": "c",
-          "text": "Single shared root password"
+          "text": "NIC teaming"
         },
         {
           "id": "d",
-          "text": "No policies"
+          "text": "VPN SKU only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Management groups scale governance across subscriptions.",
+      "explanation": "Entra ID is the identity platform for Azure.",
       "docs": [
         {
-          "title": "Management groups",
-          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
         }
       ]
     },
@@ -2205,33 +2205,33 @@
       "id": "az9-q064",
       "domain": "azure-management",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to organize subscriptions and management groups?",
+      "text": "Your team must centralize identity for Azure resources. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure hierarchy with management groups"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Flat tenant with no RBAC"
+          "text": "Blob lease only"
         },
         {
           "id": "c",
-          "text": "Single shared root password"
+          "text": "NIC teaming"
         },
         {
           "id": "d",
-          "text": "No policies"
+          "text": "VPN SKU only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Management groups scale governance across subscriptions.",
+      "explanation": "Entra ID is the identity platform for Azure.",
       "docs": [
         {
-          "title": "Management groups",
-          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+          "title": "Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
         }
       ]
     },
@@ -2239,7 +2239,7 @@
       "id": "az9-q065",
       "domain": "azure-management",
       "type": "multiple-choice",
-      "text": "Your team must organize subscriptions and management groups. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to organize subscriptions and management groups?",
       "options": [
         {
           "id": "a",
@@ -2273,6 +2273,278 @@
       "id": "az9-q066",
       "domain": "azure-management",
       "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to organize subscriptions and management groups?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat tenant with no RBAC"
+        },
+        {
+          "id": "c",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "d",
+          "text": "No policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management groups scale governance across subscriptions.",
+      "docs": [
+        {
+          "title": "Management groups",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q067",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Your team must organize subscriptions and management groups. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
+          "id": "b",
+          "text": "Flat tenant with no RBAC"
+        },
+        {
+          "id": "c",
+          "text": "Single shared root password"
+        },
+        {
+          "id": "d",
+          "text": "No policies"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Management groups scale governance across subscriptions.",
+      "docs": [
+        {
+          "title": "Management groups",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q068",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to tag resources for cost allocation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure resource tags on subscriptions and resources"
+        },
+        {
+          "id": "b",
+          "text": "Hide all costs"
+        },
+        {
+          "id": "c",
+          "text": "One tag for tenant"
+        },
+        {
+          "id": "d",
+          "text": "No reporting"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tags enable chargeback and FinOps.",
+      "docs": [
+        {
+          "title": "Resource tagging",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+        }
+      ]
+    },
+    {
+      "id": "az9-q069",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to tag resources for cost allocation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure resource tags on subscriptions and resources"
+        },
+        {
+          "id": "b",
+          "text": "Hide all costs"
+        },
+        {
+          "id": "c",
+          "text": "One tag for tenant"
+        },
+        {
+          "id": "d",
+          "text": "No reporting"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tags enable chargeback and FinOps.",
+      "docs": [
+        {
+          "title": "Resource tagging",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+        }
+      ]
+    },
+    {
+      "id": "az9-q070",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Your team must tag resources for cost allocation. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure resource tags on subscriptions and resources"
+        },
+        {
+          "id": "b",
+          "text": "Hide all costs"
+        },
+        {
+          "id": "c",
+          "text": "One tag for tenant"
+        },
+        {
+          "id": "d",
+          "text": "No reporting"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Tags enable chargeback and FinOps.",
+      "docs": [
+        {
+          "title": "Resource tagging",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"
+        }
+      ]
+    },
+    {
+      "id": "az9-q071",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to view consolidated cloud spend?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Cost Management"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet guesses"
+        },
+        {
+          "id": "c",
+          "text": "Ignore invoices"
+        },
+        {
+          "id": "d",
+          "text": "Email CSV only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cost Management analyzes Azure usage.",
+      "docs": [
+        {
+          "title": "Cost Management",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q072",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to view consolidated cloud spend?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Cost Management"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet guesses"
+        },
+        {
+          "id": "c",
+          "text": "Ignore invoices"
+        },
+        {
+          "id": "d",
+          "text": "Email CSV only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cost Management analyzes Azure usage.",
+      "docs": [
+        {
+          "title": "Cost Management",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q073",
+      "domain": "azure-management",
+      "type": "multiple-choice",
+      "text": "Your team must view consolidated cloud spend. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Cost Management"
+        },
+        {
+          "id": "b",
+          "text": "Spreadsheet guesses"
+        },
+        {
+          "id": "c",
+          "text": "Ignore invoices"
+        },
+        {
+          "id": "d",
+          "text": "Email CSV only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Cost Management analyzes Azure usage.",
+      "docs": [
+        {
+          "title": "Cost Management",
+          "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs-billing-overview"
+        }
+      ]
+    },
+    {
+      "id": "az9-q074",
+      "domain": "azure-management",
+      "type": "multiple-choice",
       "text": "A cloud administrator needs to deploy resources as a unit.",
       "options": [
         {
@@ -2304,7 +2576,7 @@
       ]
     },
     {
-      "id": "az9-q067",
+      "id": "az9-q075",
       "domain": "azure-management",
       "type": "multiple-choice",
       "text": "Your organization plans to centralize identity for Azure resources.",
@@ -2334,278 +2606,6 @@
         {
           "title": "Microsoft Entra ID",
           "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
-        }
-      ]
-    },
-    {
-      "id": "az9-q068",
-      "domain": "azure-management",
-      "type": "multiple-choice",
-      "text": "An Azure architect must organize subscriptions and management groups.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure hierarchy with management groups"
-        },
-        {
-          "id": "b",
-          "text": "Flat tenant with no RBAC"
-        },
-        {
-          "id": "c",
-          "text": "Single shared root password"
-        },
-        {
-          "id": "d",
-          "text": "No policies"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Management groups scale governance across subscriptions.",
-      "docs": [
-        {
-          "title": "Management groups",
-          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
-        }
-      ]
-    },
-    {
-      "id": "az9-q069",
-      "domain": "azure-management",
-      "type": "multiple-choice",
-      "text": "For a hybrid workload, you should deploy resources as a unit.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Resource Manager templates"
-        },
-        {
-          "id": "b",
-          "text": "Manual portal clicks only policy"
-        },
-        {
-          "id": "c",
-          "text": "Local AD only"
-        },
-        {
-          "id": "d",
-          "text": "FTP deploy"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "ARM provides declarative infrastructure deployment.",
-      "docs": [
-        {
-          "title": "ARM templates",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
-        }
-      ]
-    },
-    {
-      "id": "az9-q070",
-      "domain": "azure-management",
-      "type": "multiple-choice",
-      "text": "A cloud administrator needs to centralize identity for Azure resources.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Microsoft Entra ID"
-        },
-        {
-          "id": "b",
-          "text": "Blob lease only"
-        },
-        {
-          "id": "c",
-          "text": "NIC teaming"
-        },
-        {
-          "id": "d",
-          "text": "VPN SKU only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Entra ID is the identity platform for Azure.",
-      "docs": [
-        {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
-        }
-      ]
-    },
-    {
-      "id": "az9-q071",
-      "domain": "azure-management",
-      "type": "multiple-choice",
-      "text": "Your organization plans to organize subscriptions and management groups.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure hierarchy with management groups"
-        },
-        {
-          "id": "b",
-          "text": "Flat tenant with no RBAC"
-        },
-        {
-          "id": "c",
-          "text": "Single shared root password"
-        },
-        {
-          "id": "d",
-          "text": "No policies"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Management groups scale governance across subscriptions.",
-      "docs": [
-        {
-          "title": "Management groups",
-          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
-        }
-      ]
-    },
-    {
-      "id": "az9-q072",
-      "domain": "azure-management",
-      "type": "multiple-choice",
-      "text": "An Azure architect must deploy resources as a unit.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Resource Manager templates"
-        },
-        {
-          "id": "b",
-          "text": "Manual portal clicks only policy"
-        },
-        {
-          "id": "c",
-          "text": "Local AD only"
-        },
-        {
-          "id": "d",
-          "text": "FTP deploy"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "ARM provides declarative infrastructure deployment.",
-      "docs": [
-        {
-          "title": "ARM templates",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
-        }
-      ]
-    },
-    {
-      "id": "az9-q073",
-      "domain": "azure-management",
-      "type": "multiple-choice",
-      "text": "For a hybrid workload, you should centralize identity for Azure resources.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Microsoft Entra ID"
-        },
-        {
-          "id": "b",
-          "text": "Blob lease only"
-        },
-        {
-          "id": "c",
-          "text": "NIC teaming"
-        },
-        {
-          "id": "d",
-          "text": "VPN SKU only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Entra ID is the identity platform for Azure.",
-      "docs": [
-        {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
-        }
-      ]
-    },
-    {
-      "id": "az9-q074",
-      "domain": "azure-management",
-      "type": "multiple-choice",
-      "text": "A cloud administrator needs to organize subscriptions and management groups.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure hierarchy with management groups"
-        },
-        {
-          "id": "b",
-          "text": "Flat tenant with no RBAC"
-        },
-        {
-          "id": "c",
-          "text": "Single shared root password"
-        },
-        {
-          "id": "d",
-          "text": "No policies"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Management groups scale governance across subscriptions.",
-      "docs": [
-        {
-          "title": "Management groups",
-          "url": "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview"
-        }
-      ]
-    },
-    {
-      "id": "az9-q075",
-      "domain": "azure-management",
-      "type": "multiple-choice",
-      "text": "Your organization plans to deploy resources as a unit.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Resource Manager templates"
-        },
-        {
-          "id": "b",
-          "text": "Manual portal clicks only policy"
-        },
-        {
-          "id": "c",
-          "text": "Local AD only"
-        },
-        {
-          "id": "d",
-          "text": "FTP deploy"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "ARM provides declarative infrastructure deployment.",
-      "docs": [
-        {
-          "title": "ARM templates",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
         }
       ]
     }

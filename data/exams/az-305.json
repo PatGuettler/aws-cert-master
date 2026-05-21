@@ -516,33 +516,33 @@
       "id": "az305-q014",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to design multi-subscription governance?",
+      "text": "Which Azure service or capability is BEST to enforce guardrails on new subscriptions?",
       "options": [
         {
           "id": "a",
-          "text": "Azure landing zones"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "Manual audits only"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "Ignore compliance"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "No definitions"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Landing zones standardize platform foundations.",
+      "explanation": "Initiatives group related policies.",
       "docs": [
         {
-          "title": "Landing zones",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
         }
       ]
     },
@@ -550,33 +550,33 @@
       "id": "az305-q015",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to design multi-subscription governance?",
+      "text": "Which Azure service or capability is BEST to design directory groups for RBAC?",
       "options": [
         {
           "id": "a",
-          "text": "Azure landing zones"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "User-by-user only"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "Shared admin"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "No PIM"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Landing zones standardize platform foundations.",
+      "explanation": "Groups simplify access management.",
       "docs": [
         {
-          "title": "Landing zones",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+          "title": "Entra groups",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/how-to-create-delete-users-groups"
         }
       ]
     },
@@ -584,7 +584,7 @@
       "id": "az305-q016",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "Your team must design multi-subscription governance. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to design multi-subscription governance?",
       "options": [
         {
           "id": "a",
@@ -618,33 +618,33 @@
       "id": "az305-q017",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to globally distributed NoSQL?",
+      "text": "What is the recommended Azure approach to design multi-subscription governance?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "Azure landing zones"
         },
         {
           "id": "b",
-          "text": "Single-server SQLite at scale"
+          "text": "Ad-hoc subscriptions"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "No logging"
         },
         {
           "id": "d",
-          "text": "Cool tier only"
+          "text": "Single admin account"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "explanation": "Landing zones standardize platform foundations.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
         }
       ]
     },
@@ -652,33 +652,33 @@
       "id": "az305-q018",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to globally distributed NoSQL?",
+      "text": "Your team must design multi-subscription governance. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "Azure landing zones"
         },
         {
           "id": "b",
-          "text": "Single-server SQLite at scale"
+          "text": "Ad-hoc subscriptions"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "No logging"
         },
         {
           "id": "d",
-          "text": "Cool tier only"
+          "text": "Single admin account"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "explanation": "Landing zones standardize platform foundations.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Landing zones",
+          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
         }
       ]
     },
@@ -686,7 +686,7 @@
       "id": "az305-q019",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "Your team must globally distributed NoSQL. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to globally distributed NoSQL?",
       "options": [
         {
           "id": "a",
@@ -720,33 +720,33 @@
       "id": "az305-q020",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should design multi-subscription governance.",
+      "text": "What is the recommended Azure approach to globally distributed NoSQL?",
       "options": [
         {
           "id": "a",
-          "text": "Azure landing zones"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "Single-server SQLite at scale"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "FTP share"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "Cool tier only"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Landing zones standardize platform foundations.",
+      "explanation": "Cosmos DB offers global distribution and SLAs.",
       "docs": [
         {
-          "title": "Landing zones",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+          "title": "Cosmos DB",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
         }
       ]
     },
@@ -754,7 +754,7 @@
       "id": "az305-q021",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "Your organization plans to globally distributed NoSQL.",
+      "text": "Your team must globally distributed NoSQL. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -788,33 +788,33 @@
       "id": "az305-q022",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to design multi-subscription governance.",
+      "text": "Which Azure offering should you use to enforce guardrails on new subscriptions?",
       "options": [
         {
           "id": "a",
-          "text": "Azure landing zones"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "Manual audits only"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "Ignore compliance"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "No definitions"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Landing zones standardize platform foundations.",
+      "explanation": "Initiatives group related policies.",
       "docs": [
         {
-          "title": "Landing zones",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
         }
       ]
     },
@@ -822,33 +822,33 @@
       "id": "az305-q023",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "An Azure architect must globally distributed NoSQL.",
+      "text": "What is the recommended Azure approach to enforce guardrails on new subscriptions?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "b",
-          "text": "Single-server SQLite at scale"
+          "text": "Manual audits only"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Ignore compliance"
         },
         {
           "id": "d",
-          "text": "Cool tier only"
+          "text": "No definitions"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "explanation": "Initiatives group related policies.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
         }
       ]
     },
@@ -856,37 +856,33 @@
       "id": "az305-q024",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Azure landing zones rather than Azure Cosmos DB when you need to design multi-subscription governance?",
+      "text": "Your team must enforce guardrails on new subscriptions. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure landing zones"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "b",
-          "text": "Azure Cosmos DB"
+          "text": "Manual audits only"
         },
         {
           "id": "c",
-          "text": "Ad-hoc subscriptions"
+          "text": "Ignore compliance"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "No definitions"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Landing zones standardize platform foundations. Compare with Azure Cosmos DB: Cosmos DB offers global distribution and SLAs.",
+      "explanation": "Initiatives group related policies.",
       "docs": [
         {
-          "title": "Landing zones",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
-        },
-        {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Azure Policy",
+          "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview"
         }
       ]
     },
@@ -894,37 +890,33 @@
       "id": "az305-q025",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "Which capability is provided by Azure Cosmos DB rather than Azure landing zones when you need to globally distributed NoSQL?",
+      "text": "Which Azure offering should you use to design directory groups for RBAC?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "b",
-          "text": "Azure landing zones"
+          "text": "User-by-user only"
         },
         {
           "id": "c",
-          "text": "Single-server SQLite at scale"
+          "text": "Shared admin"
         },
         {
           "id": "d",
-          "text": "FTP share"
+          "text": "No PIM"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos DB offers global distribution and SLAs. Compare with Azure landing zones: Landing zones standardize platform foundations.",
+      "explanation": "Groups simplify access management.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
-        },
-        {
-          "title": "Landing zones",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+          "title": "Entra groups",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/how-to-create-delete-users-groups"
         }
       ]
     },
@@ -932,33 +924,33 @@
       "id": "az305-q026",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to design multi-subscription governance (variant 1)?",
+      "text": "What is the recommended Azure approach to design directory groups for RBAC?",
       "options": [
         {
           "id": "a",
-          "text": "Azure landing zones"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "User-by-user only"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "Shared admin"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "No PIM"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Landing zones standardize platform foundations.",
+      "explanation": "Groups simplify access management.",
       "docs": [
         {
-          "title": "Landing zones",
-          "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+          "title": "Entra groups",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/how-to-create-delete-users-groups"
         }
       ]
     },
@@ -966,33 +958,33 @@
       "id": "az305-q027",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to globally distributed NoSQL (variant 1)?",
+      "text": "Your team must design directory groups for RBAC. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "b",
-          "text": "Single-server SQLite at scale"
+          "text": "User-by-user only"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Shared admin"
         },
         {
           "id": "d",
-          "text": "Cool tier only"
+          "text": "No PIM"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos DB offers global distribution and SLAs.",
+      "explanation": "Groups simplify access management.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Entra groups",
+          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/how-to-create-delete-users-groups"
         }
       ]
     },
@@ -1000,7 +992,7 @@
       "id": "az305-q028",
       "domain": "identity-data",
       "type": "multiple-choice",
-      "text": "Your team must design multi-subscription governance (variant 2). Which Azure option fits best?",
+      "text": "For a hybrid workload, you should design multi-subscription governance.",
       "options": [
         {
           "id": "a",
@@ -1068,19 +1060,19 @@
       "id": "az305-q030",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to managed relational PaaS database?",
+      "text": "Which Azure service or capability is BEST to cache read-heavy relational workloads?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "Local notepad"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "FTP cache"
         },
         {
           "id": "d",
@@ -1090,11 +1082,11 @@
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "Redis reduces database read load.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Cache for Redis",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview"
         }
       ]
     },
@@ -1102,33 +1094,33 @@
       "id": "az305-q031",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to managed relational PaaS database?",
+      "text": "Which Azure service or capability is BEST to ingest telemetry at scale?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "CSV email"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Excel only"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "ADX analyzes high-volume logs and metrics.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Data Explorer",
+          "url": "https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
         }
       ]
     },
@@ -1136,7 +1128,7 @@
       "id": "az305-q032",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "Your team must managed relational PaaS database. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to managed relational PaaS database?",
       "options": [
         {
           "id": "a",
@@ -1170,7 +1162,7 @@
       "id": "az305-q033",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "Your organization plans to managed relational PaaS database.",
+      "text": "What is the recommended Azure approach to managed relational PaaS database?",
       "options": [
         {
           "id": "a",
@@ -1204,7 +1196,7 @@
       "id": "az305-q034",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should managed relational PaaS database.",
+      "text": "Your team must managed relational PaaS database. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -1238,19 +1230,19 @@
       "id": "az305-q035",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to managed relational PaaS database.",
+      "text": "Which Azure offering should you use to cache read-heavy relational workloads?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "Local notepad"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "FTP cache"
         },
         {
           "id": "d",
@@ -1260,11 +1252,11 @@
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "Redis reduces database read load.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Cache for Redis",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview"
         }
       ]
     },
@@ -1272,19 +1264,19 @@
       "id": "az305-q036",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "An Azure architect must managed relational PaaS database.",
+      "text": "What is the recommended Azure approach to cache read-heavy relational workloads?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "Local notepad"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "FTP cache"
         },
         {
           "id": "d",
@@ -1294,11 +1286,11 @@
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "Redis reduces database read load.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Cache for Redis",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview"
         }
       ]
     },
@@ -1306,19 +1298,19 @@
       "id": "az305-q037",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to managed relational PaaS database (variant 1)?",
+      "text": "Your team must cache read-heavy relational workloads. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "Local notepad"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "FTP cache"
         },
         {
           "id": "d",
@@ -1328,11 +1320,11 @@
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "Redis reduces database read load.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Cache for Redis",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview"
         }
       ]
     },
@@ -1340,33 +1332,33 @@
       "id": "az305-q038",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to managed relational PaaS database (variant 2)?",
+      "text": "Which Azure offering should you use to ingest telemetry at scale?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "CSV email"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Excel only"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "ADX analyzes high-volume logs and metrics.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Data Explorer",
+          "url": "https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
         }
       ]
     },
@@ -1374,33 +1366,33 @@
       "id": "az305-q039",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "Your team must managed relational PaaS database (variant 3). Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to ingest telemetry at scale?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "CSV email"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Excel only"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "ADX analyzes high-volume logs and metrics.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Data Explorer",
+          "url": "https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
         }
       ]
     },
@@ -1408,33 +1400,33 @@
       "id": "az305-q040",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to managed relational PaaS database (variant 4)?",
+      "text": "Your team must ingest telemetry at scale. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "CSV email"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Excel only"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "ADX analyzes high-volume logs and metrics.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Data Explorer",
+          "url": "https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
         }
       ]
     },
@@ -1442,7 +1434,7 @@
       "id": "az305-q041",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to managed relational PaaS database (variant 5)?",
+      "text": "Your organization plans to managed relational PaaS database.",
       "options": [
         {
           "id": "a",
@@ -1476,19 +1468,19 @@
       "id": "az305-q042",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "Your team must managed relational PaaS database (variant 6). Which Azure option fits best?",
+      "text": "For a hybrid workload, you should cache read-heavy relational workloads.",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "Local notepad"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "FTP cache"
         },
         {
           "id": "d",
@@ -1498,11 +1490,11 @@
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "Redis reduces database read load.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Cache for Redis",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview"
         }
       ]
     },
@@ -1510,33 +1502,33 @@
       "id": "az305-q043",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to managed relational PaaS database (variant 7)?",
+      "text": "An Azure architect must ingest telemetry at scale.",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "CSV email"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Excel only"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "ADX analyzes high-volume logs and metrics.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Data Explorer",
+          "url": "https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
         }
       ]
     },
@@ -1544,7 +1536,7 @@
       "id": "az305-q044",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to managed relational PaaS database (variant 8)?",
+      "text": "A cloud administrator needs to managed relational PaaS database.",
       "options": [
         {
           "id": "a",
@@ -1578,19 +1570,19 @@
       "id": "az305-q045",
       "domain": "data-solutions",
       "type": "multiple-choice",
-      "text": "Your team must managed relational PaaS database (variant 9). Which Azure option fits best?",
+      "text": "Your organization plans to cache read-heavy relational workloads.",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "Local notepad"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "FTP cache"
         },
         {
           "id": "d",
@@ -1600,11 +1592,11 @@
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL is managed SQL Server in Azure.",
+      "explanation": "Redis reduces database read load.",
       "docs": [
         {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Azure Cache for Redis",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview"
         }
       ]
     },
@@ -1646,33 +1638,33 @@
       "id": "az305-q047",
       "domain": "business-continuity",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to replicate VMs for disaster recovery?",
+      "text": "Which Azure service or capability is BEST to backup Azure VMs to vault?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Site Recovery"
+          "text": "Azure Backup recovery services vault"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "USB only"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "No retention"
         },
         {
           "id": "d",
-          "text": "Manual USB only"
+          "text": "Disable backup"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "ASR orchestrates failover and failback.",
+      "explanation": "Recovery Services vault stores backup data.",
       "docs": [
         {
-          "title": "Site Recovery",
-          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+          "title": "Recovery Services vault",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm"
         }
       ]
     },
@@ -1680,33 +1672,33 @@
       "id": "az305-q048",
       "domain": "business-continuity",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to replicate VMs for disaster recovery?",
+      "text": "Which Azure service or capability is BEST to test failover for SQL databases?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Site Recovery"
+          "text": "Azure SQL failover groups"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Single region only"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "Hope for best"
         },
         {
           "id": "d",
-          "text": "Manual USB only"
+          "text": "Manual USB"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "ASR orchestrates failover and failback.",
+      "explanation": "Failover groups provide DR for SQL.",
       "docs": [
         {
-          "title": "Site Recovery",
-          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+          "title": "Failover groups",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db"
         }
       ]
     },
@@ -1714,7 +1706,7 @@
       "id": "az305-q049",
       "domain": "business-continuity",
       "type": "multiple-choice",
-      "text": "Your team must replicate VMs for disaster recovery. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to replicate VMs for disaster recovery?",
       "options": [
         {
           "id": "a",
@@ -1748,7 +1740,7 @@
       "id": "az305-q050",
       "domain": "business-continuity",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should replicate VMs for disaster recovery.",
+      "text": "What is the recommended Azure approach to replicate VMs for disaster recovery?",
       "options": [
         {
           "id": "a",
@@ -1782,7 +1774,7 @@
       "id": "az305-q051",
       "domain": "business-continuity",
       "type": "multiple-choice",
-      "text": "An Azure architect must replicate VMs for disaster recovery.",
+      "text": "Your team must replicate VMs for disaster recovery. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -1816,33 +1808,33 @@
       "id": "az305-q052",
       "domain": "business-continuity",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to replicate VMs for disaster recovery.",
+      "text": "Which Azure offering should you use to backup Azure VMs to vault?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Site Recovery"
+          "text": "Azure Backup recovery services vault"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "USB only"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "No retention"
         },
         {
           "id": "d",
-          "text": "Manual USB only"
+          "text": "Disable backup"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "ASR orchestrates failover and failback.",
+      "explanation": "Recovery Services vault stores backup data.",
       "docs": [
         {
-          "title": "Site Recovery",
-          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+          "title": "Recovery Services vault",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm"
         }
       ]
     },
@@ -1850,33 +1842,33 @@
       "id": "az305-q053",
       "domain": "business-continuity",
       "type": "multiple-choice",
-      "text": "Your organization plans to replicate VMs for disaster recovery.",
+      "text": "What is the recommended Azure approach to backup Azure VMs to vault?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Site Recovery"
+          "text": "Azure Backup recovery services vault"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "USB only"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "No retention"
         },
         {
           "id": "d",
-          "text": "Manual USB only"
+          "text": "Disable backup"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "ASR orchestrates failover and failback.",
+      "explanation": "Recovery Services vault stores backup data.",
       "docs": [
         {
-          "title": "Site Recovery",
-          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+          "title": "Recovery Services vault",
+          "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm"
         }
       ]
     },
@@ -1918,33 +1910,33 @@
       "id": "az305-q055",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps?",
+      "text": "Which Azure service or capability is BEST to ingress TLS with Web Application Firewall?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "HTTP only"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Self-signed everywhere"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Disable WAF"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "WAF protects web apps at edge.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
         }
       ]
     },
@@ -1952,33 +1944,33 @@
       "id": "az305-q056",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps?",
+      "text": "Which Azure service or capability is BEST to private cluster API for Kubernetes?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Public API server"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Open dashboard"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Shared kubeconfig"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "Private clusters limit API exposure.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "Private AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/private-clusters"
         }
       ]
     },
@@ -1986,7 +1978,7 @@
       "id": "az305-q057",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Your team must Layer 7 load balancing for web apps. Which Azure option fits best?",
+      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps?",
       "options": [
         {
           "id": "a",
@@ -2020,7 +2012,7 @@
       "id": "az305-q058",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should Layer 7 load balancing for web apps.",
+      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps?",
       "options": [
         {
           "id": "a",
@@ -2054,7 +2046,7 @@
       "id": "az305-q059",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Your organization plans to Layer 7 load balancing for web apps.",
+      "text": "Your team must Layer 7 load balancing for web apps. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -2088,38 +2080,208 @@
       "id": "az305-q060",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to Layer 7 load balancing for web apps.",
+      "text": "Which Azure offering should you use to ingress TLS with Web Application Firewall?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "HTTP only"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Self-signed everywhere"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Disable WAF"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "WAF protects web apps at edge.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
         }
       ]
     },
     {
       "id": "az305-q061",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to ingress TLS with Web Application Firewall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Gateway WAF"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed everywhere"
+        },
+        {
+          "id": "d",
+          "text": "Disable WAF"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF protects web apps at edge.",
+      "docs": [
+        {
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q062",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your team must ingress TLS with Web Application Firewall. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Application Gateway WAF"
+        },
+        {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
+          "id": "c",
+          "text": "Self-signed everywhere"
+        },
+        {
+          "id": "d",
+          "text": "Disable WAF"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "WAF protects web apps at edge.",
+      "docs": [
+        {
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
+        }
+      ]
+    },
+    {
+      "id": "az305-q063",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Which Azure offering should you use to private cluster API for Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Private AKS clusters"
+        },
+        {
+          "id": "b",
+          "text": "Public API server"
+        },
+        {
+          "id": "c",
+          "text": "Open dashboard"
+        },
+        {
+          "id": "d",
+          "text": "Shared kubeconfig"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Private clusters limit API exposure.",
+      "docs": [
+        {
+          "title": "Private AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/private-clusters"
+        }
+      ]
+    },
+    {
+      "id": "az305-q064",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to private cluster API for Kubernetes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Private AKS clusters"
+        },
+        {
+          "id": "b",
+          "text": "Public API server"
+        },
+        {
+          "id": "c",
+          "text": "Open dashboard"
+        },
+        {
+          "id": "d",
+          "text": "Shared kubeconfig"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Private clusters limit API exposure.",
+      "docs": [
+        {
+          "title": "Private AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/private-clusters"
+        }
+      ]
+    },
+    {
+      "id": "az305-q065",
+      "domain": "infrastructure",
+      "type": "multiple-choice",
+      "text": "Your team must private cluster API for Kubernetes. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Private AKS clusters"
+        },
+        {
+          "id": "b",
+          "text": "Public API server"
+        },
+        {
+          "id": "c",
+          "text": "Open dashboard"
+        },
+        {
+          "id": "d",
+          "text": "Shared kubeconfig"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Private clusters limit API exposure.",
+      "docs": [
+        {
+          "title": "Private AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/private-clusters"
+        }
+      ]
+    },
+    {
+      "id": "az305-q066",
       "domain": "infrastructure",
       "type": "multiple-choice",
       "text": "An Azure architect must Layer 7 load balancing for web apps.",
@@ -2153,206 +2315,36 @@
       ]
     },
     {
-      "id": "az305-q062",
-      "domain": "infrastructure",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 1)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Application Gateway"
-        },
-        {
-          "id": "b",
-          "text": "DNS CNAME only always"
-        },
-        {
-          "id": "c",
-          "text": "Single NIC"
-        },
-        {
-          "id": "d",
-          "text": "Archive tier"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "App Gateway provides WAF and routing.",
-      "docs": [
-        {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
-        }
-      ]
-    },
-    {
-      "id": "az305-q063",
-      "domain": "infrastructure",
-      "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 2)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Application Gateway"
-        },
-        {
-          "id": "b",
-          "text": "DNS CNAME only always"
-        },
-        {
-          "id": "c",
-          "text": "Single NIC"
-        },
-        {
-          "id": "d",
-          "text": "Archive tier"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "App Gateway provides WAF and routing.",
-      "docs": [
-        {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
-        }
-      ]
-    },
-    {
-      "id": "az305-q064",
-      "domain": "infrastructure",
-      "type": "multiple-choice",
-      "text": "Your team must Layer 7 load balancing for web apps (variant 3). Which Azure option fits best?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Application Gateway"
-        },
-        {
-          "id": "b",
-          "text": "DNS CNAME only always"
-        },
-        {
-          "id": "c",
-          "text": "Single NIC"
-        },
-        {
-          "id": "d",
-          "text": "Archive tier"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "App Gateway provides WAF and routing.",
-      "docs": [
-        {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
-        }
-      ]
-    },
-    {
-      "id": "az305-q065",
-      "domain": "infrastructure",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 4)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Application Gateway"
-        },
-        {
-          "id": "b",
-          "text": "DNS CNAME only always"
-        },
-        {
-          "id": "c",
-          "text": "Single NIC"
-        },
-        {
-          "id": "d",
-          "text": "Archive tier"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "App Gateway provides WAF and routing.",
-      "docs": [
-        {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
-        }
-      ]
-    },
-    {
-      "id": "az305-q066",
-      "domain": "infrastructure",
-      "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 5)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Application Gateway"
-        },
-        {
-          "id": "b",
-          "text": "DNS CNAME only always"
-        },
-        {
-          "id": "c",
-          "text": "Single NIC"
-        },
-        {
-          "id": "d",
-          "text": "Archive tier"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "App Gateway provides WAF and routing.",
-      "docs": [
-        {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
-        }
-      ]
-    },
-    {
       "id": "az305-q067",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Your team must Layer 7 load balancing for web apps (variant 6). Which Azure option fits best?",
+      "text": "A cloud administrator needs to ingress TLS with Web Application Firewall.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "HTTP only"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Self-signed everywhere"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Disable WAF"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "WAF protects web apps at edge.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
         }
       ]
     },
@@ -2360,33 +2352,33 @@
       "id": "az305-q068",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 7)?",
+      "text": "Your organization plans to private cluster API for Kubernetes.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Public API server"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Open dashboard"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Shared kubeconfig"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "Private clusters limit API exposure.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "Private AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/private-clusters"
         }
       ]
     },
@@ -2394,7 +2386,7 @@
       "id": "az305-q069",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 8)?",
+      "text": "For a hybrid workload, you should Layer 7 load balancing for web apps.",
       "options": [
         {
           "id": "a",
@@ -2428,33 +2420,33 @@
       "id": "az305-q070",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Your team must Layer 7 load balancing for web apps (variant 9). Which Azure option fits best?",
+      "text": "An Azure architect must ingress TLS with Web Application Firewall.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "HTTP only"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Self-signed everywhere"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Disable WAF"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "WAF protects web apps at edge.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
         }
       ]
     },
@@ -2462,33 +2454,33 @@
       "id": "az305-q071",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 10)?",
+      "text": "A cloud administrator needs to private cluster API for Kubernetes.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Public API server"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Open dashboard"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Shared kubeconfig"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "Private clusters limit API exposure.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "Private AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/private-clusters"
         }
       ]
     },
@@ -2496,7 +2488,7 @@
       "id": "az305-q072",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 11)?",
+      "text": "Your organization plans to Layer 7 load balancing for web apps.",
       "options": [
         {
           "id": "a",
@@ -2530,33 +2522,33 @@
       "id": "az305-q073",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Your team must Layer 7 load balancing for web apps (variant 12). Which Azure option fits best?",
+      "text": "For a hybrid workload, you should ingress TLS with Web Application Firewall.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "HTTP only"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Self-signed everywhere"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Disable WAF"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "WAF protects web apps at edge.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
         }
       ]
     },
@@ -2564,33 +2556,33 @@
       "id": "az305-q074",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 13)?",
+      "text": "An Azure architect must private cluster API for Kubernetes.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Public API server"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Open dashboard"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Shared kubeconfig"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "Private clusters limit API exposure.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "Private AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/private-clusters"
         }
       ]
     },
@@ -2598,7 +2590,7 @@
       "id": "az305-q075",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 14)?",
+      "text": "A cloud administrator needs to Layer 7 load balancing for web apps.",
       "options": [
         {
           "id": "a",
@@ -2632,33 +2624,33 @@
       "id": "az305-q076",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Your team must Layer 7 load balancing for web apps (variant 15). Which Azure option fits best?",
+      "text": "Your organization plans to ingress TLS with Web Application Firewall.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "HTTP only"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Self-signed everywhere"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Disable WAF"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "WAF protects web apps at edge.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
         }
       ]
     },
@@ -2666,33 +2658,33 @@
       "id": "az305-q077",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to Layer 7 load balancing for web apps (variant 16)?",
+      "text": "For a hybrid workload, you should private cluster API for Kubernetes.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Public API server"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Open dashboard"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Shared kubeconfig"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "Private clusters limit API exposure.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "Private AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/private-clusters"
         }
       ]
     },
@@ -2700,7 +2692,7 @@
       "id": "az305-q078",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to Layer 7 load balancing for web apps (variant 17)?",
+      "text": "Which capability is provided by Azure Application Gateway rather than Application Gateway WAF when you need to Layer 7 load balancing for web apps?",
       "options": [
         {
           "id": "a",
@@ -2708,25 +2700,29 @@
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "DNS CNAME only always"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Single NIC"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "App Gateway provides WAF and routing. Compare with Application Gateway WAF: WAF protects web apps at edge.",
       "docs": [
         {
           "title": "Application Gateway",
           "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+        },
+        {
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
         }
       ]
     },
@@ -2734,33 +2730,37 @@
       "id": "az305-q079",
       "domain": "infrastructure",
       "type": "multiple-choice",
-      "text": "Your team must Layer 7 load balancing for web apps (variant 18). Which Azure option fits best?",
+      "text": "Which capability is provided by Application Gateway WAF rather than Private AKS clusters when you need to ingress TLS with Web Application Firewall?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Private AKS clusters"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "HTTP only"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Self-signed everywhere"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "App Gateway provides WAF and routing.",
+      "explanation": "WAF protects web apps at edge. Compare with Private AKS clusters: Private clusters limit API exposure.",
       "docs": [
         {
-          "title": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+          "title": "WAF on App Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview"
+        },
+        {
+          "title": "Private AKS",
+          "url": "https://learn.microsoft.com/en-us/azure/aks/private-clusters"
         }
       ]
     }

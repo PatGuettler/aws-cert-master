@@ -38,7 +38,14 @@ Open the exam file (e.g. `cloud-practitioner.json`), find the question in the `q
 
 ## Vendors
 
-Use `"vendor": "aws"`, `"azure"`, `"google"`, or `"comptia"`. Documentation URLs must point at official vendor hosts (see `scripts/question_bank/official_docs.py` if you use the generators).
+Use `"vendor": "aws"`, `"azure"`, `"google"`, or `"comptia"`. Every question should include `docs[]` with URLs only from official providers:
+
+- AWS → `docs.aws.amazon.com`, `aws.amazon.com`, Skill Builder
+- Azure → `learn.microsoft.com`, `microsoft.com`
+- Google Cloud → `cloud.google.com`
+- CompTIA → `comptia.org`
+
+See `scripts/question_bank/official_docs.py` if you use the optional generators.
 
 ## Bulk regeneration (optional)
 

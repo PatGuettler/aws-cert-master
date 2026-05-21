@@ -94,6 +94,8 @@ const VENDOR_BROWSE = {
       "comptia-cysa-plus": 40,
       "comptia-data-plus": 45,
       "comptia-pentest-plus": 50,
+      "comptia-server-plus": 55,
+      "comptia-project-plus": 58,
       "comptia-linux-plus": 60,
     },
   },

@@ -406,33 +406,33 @@
       "id": "dp9-q011",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to structured vs semi-structured data?",
+      "text": "Which Azure service or capability is BEST to describe batch vs streaming data?",
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Only USB"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DNS"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data models drive store selection.",
+      "explanation": "Latency requirements drive pattern choice.",
       "docs": [
         {
-          "title": "Core data concepts",
-          "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/"
+          "title": "Batch and streaming",
+          "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-services/"
         }
       ]
     },
@@ -440,7 +440,7 @@
       "id": "dp9-q012",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to structured vs semi-structured data?",
+      "text": "Which Azure offering should you use to structured vs semi-structured data?",
       "options": [
         {
           "id": "a",
@@ -474,7 +474,7 @@
       "id": "dp9-q013",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Your team must structured vs semi-structured data. Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to structured vs semi-structured data?",
       "options": [
         {
           "id": "a",
@@ -508,7 +508,7 @@
       "id": "dp9-q014",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Your organization plans to structured vs semi-structured data.",
+      "text": "Your team must structured vs semi-structured data. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -542,33 +542,33 @@
       "id": "dp9-q015",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to structured vs semi-structured data.",
+      "text": "Which Azure offering should you use to describe batch vs streaming data?",
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Only USB"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DNS"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data models drive store selection.",
+      "explanation": "Latency requirements drive pattern choice.",
       "docs": [
         {
-          "title": "Core data concepts",
-          "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/"
+          "title": "Batch and streaming",
+          "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-services/"
         }
       ]
     },
@@ -576,38 +576,72 @@
       "id": "dp9-q016",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should structured vs semi-structured data.",
+      "text": "What is the recommended Azure approach to describe batch vs streaming data?",
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Only USB"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DNS"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data models drive store selection.",
+      "explanation": "Latency requirements drive pattern choice.",
       "docs": [
         {
-          "title": "Core data concepts",
-          "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/"
+          "title": "Batch and streaming",
+          "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-services/"
         }
       ]
     },
     {
       "id": "dp9-q017",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Your team must describe batch vs streaming data. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Batch processes windows; streaming near real-time"
+        },
+        {
+          "id": "b",
+          "text": "Only USB"
+        },
+        {
+          "id": "c",
+          "text": "ICMP"
+        },
+        {
+          "id": "d",
+          "text": "DNS"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Latency requirements drive pattern choice.",
+      "docs": [
+        {
+          "title": "Batch and streaming",
+          "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-services/"
+        }
+      ]
+    },
+    {
+      "id": "dp9-q018",
       "domain": "data-concepts",
       "type": "multiple-choice",
       "text": "An Azure architect must structured vs semi-structured data.",
@@ -641,70 +675,36 @@
       ]
     },
     {
-      "id": "dp9-q018",
-      "domain": "data-concepts",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to structured vs semi-structured data (variant 1)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Relational tables vs JSON documents"
-        },
-        {
-          "id": "b",
-          "text": "Only binary EXE"
-        },
-        {
-          "id": "c",
-          "text": "ICMP packets"
-        },
-        {
-          "id": "d",
-          "text": "DNS labels only"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Data models drive store selection.",
-      "docs": [
-        {
-          "title": "Core data concepts",
-          "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/"
-        }
-      ]
-    },
-    {
       "id": "dp9-q019",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to structured vs semi-structured data (variant 2)?",
+      "text": "A cloud administrator needs to describe batch vs streaming data.",
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Only USB"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DNS"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data models drive store selection.",
+      "explanation": "Latency requirements drive pattern choice.",
       "docs": [
         {
-          "title": "Core data concepts",
-          "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/"
+          "title": "Batch and streaming",
+          "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-services/"
         }
       ]
     },
@@ -712,7 +712,7 @@
       "id": "dp9-q020",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Your team must structured vs semi-structured data (variant 3). Which Azure option fits best?",
+      "text": "Your organization plans to structured vs semi-structured data.",
       "options": [
         {
           "id": "a",
@@ -746,33 +746,33 @@
       "id": "dp9-q021",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to structured vs semi-structured data (variant 4)?",
+      "text": "For a hybrid workload, you should describe batch vs streaming data.",
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Only USB"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DNS"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data models drive store selection.",
+      "explanation": "Latency requirements drive pattern choice.",
       "docs": [
         {
-          "title": "Core data concepts",
-          "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/"
+          "title": "Batch and streaming",
+          "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-services/"
         }
       ]
     },
@@ -780,7 +780,7 @@
       "id": "dp9-q022",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to structured vs semi-structured data (variant 5)?",
+      "text": "Which capability is provided by Relational tables vs JSON documents rather than Batch processes windows; streaming near real-time when you need to structured vs semi-structured data?",
       "options": [
         {
           "id": "a",
@@ -788,25 +788,29 @@
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "Only binary EXE"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "ICMP packets"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data models drive store selection.",
+      "explanation": "Data models drive store selection. Compare with Batch processes windows; streaming near real-time: Latency requirements drive pattern choice.",
       "docs": [
         {
           "title": "Core data concepts",
           "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/"
+        },
+        {
+          "title": "Batch and streaming",
+          "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-services/"
         }
       ]
     },
@@ -814,30 +818,34 @@
       "id": "dp9-q023",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Your team must structured vs semi-structured data (variant 6). Which Azure option fits best?",
+      "text": "Which capability is provided by Batch processes windows; streaming near real-time rather than Relational tables vs JSON documents when you need to describe batch vs streaming data?",
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "Only USB"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data models drive store selection.",
+      "explanation": "Latency requirements drive pattern choice. Compare with Relational tables vs JSON documents: Data models drive store selection.",
       "docs": [
+        {
+          "title": "Batch and streaming",
+          "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-services/"
+        },
         {
           "title": "Core data concepts",
           "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/"
@@ -848,7 +856,7 @@
       "id": "dp9-q024",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to structured vs semi-structured data (variant 7)?",
+      "text": "Which Azure offering should you use to structured vs semi-structured data (variant 1)?",
       "options": [
         {
           "id": "a",
@@ -882,33 +890,33 @@
       "id": "dp9-q025",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to structured vs semi-structured data (variant 8)?",
+      "text": "What is the recommended Azure approach to describe batch vs streaming data (variant 1)?",
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Only USB"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DNS"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data models drive store selection.",
+      "explanation": "Latency requirements drive pattern choice.",
       "docs": [
         {
-          "title": "Core data concepts",
-          "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/"
+          "title": "Batch and streaming",
+          "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-data-services/"
         }
       ]
     },
@@ -916,7 +924,7 @@
       "id": "dp9-q026",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Your team must structured vs semi-structured data (variant 9). Which Azure option fits best?",
+      "text": "Your team must structured vs semi-structured data (variant 2). Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -984,33 +992,33 @@
       "id": "dp9-q028",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to managed SQL in cloud?",
+      "text": "Which Azure service or capability is BEST to scale reads with readable replicas?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Single core only"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "No replicas"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL offers managed relational service.",
+      "explanation": "Replicas offload read queries.",
       "docs": [
         {
-          "title": "Azure SQL",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Read scale-out",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out"
         }
       ]
     },
@@ -1018,7 +1026,7 @@
       "id": "dp9-q029",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to managed SQL in cloud?",
+      "text": "Which Azure offering should you use to managed SQL in cloud?",
       "options": [
         {
           "id": "a",
@@ -1052,7 +1060,7 @@
       "id": "dp9-q030",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "Your team must managed SQL in cloud. Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to managed SQL in cloud?",
       "options": [
         {
           "id": "a",
@@ -1086,7 +1094,7 @@
       "id": "dp9-q031",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "An Azure architect must managed SQL in cloud.",
+      "text": "Your team must managed SQL in cloud. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -1120,33 +1128,33 @@
       "id": "dp9-q032",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to managed SQL in cloud.",
+      "text": "Which Azure offering should you use to scale reads with readable replicas?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Single core only"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "No replicas"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL offers managed relational service.",
+      "explanation": "Replicas offload read queries.",
       "docs": [
         {
-          "title": "Azure SQL",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Read scale-out",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out"
         }
       ]
     },
@@ -1154,33 +1162,33 @@
       "id": "dp9-q033",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "Your organization plans to managed SQL in cloud.",
+      "text": "What is the recommended Azure approach to scale reads with readable replicas?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Single core only"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "No replicas"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL offers managed relational service.",
+      "explanation": "Replicas offload read queries.",
       "docs": [
         {
-          "title": "Azure SQL",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Read scale-out",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out"
         }
       ]
     },
@@ -1188,33 +1196,33 @@
       "id": "dp9-q034",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should managed SQL in cloud.",
+      "text": "Your team must scale reads with readable replicas. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Single core only"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "No replicas"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL offers managed relational service.",
+      "explanation": "Replicas offload read queries.",
       "docs": [
         {
-          "title": "Azure SQL",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Read scale-out",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out"
         }
       ]
     },
@@ -1222,7 +1230,7 @@
       "id": "dp9-q035",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to managed SQL in cloud (variant 1)?",
+      "text": "An Azure architect must managed SQL in cloud.",
       "options": [
         {
           "id": "a",
@@ -1256,33 +1264,33 @@
       "id": "dp9-q036",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to managed SQL in cloud (variant 2)?",
+      "text": "A cloud administrator needs to scale reads with readable replicas.",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Single core only"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "No replicas"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL offers managed relational service.",
+      "explanation": "Replicas offload read queries.",
       "docs": [
         {
-          "title": "Azure SQL",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Read scale-out",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out"
         }
       ]
     },
@@ -1290,7 +1298,7 @@
       "id": "dp9-q037",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "Your team must managed SQL in cloud (variant 3). Which Azure option fits best?",
+      "text": "For a hybrid workload, you should managed SQL in cloud.",
       "options": [
         {
           "id": "a",
@@ -1324,33 +1332,33 @@
       "id": "dp9-q038",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to managed SQL in cloud (variant 4)?",
+      "text": "Your organization plans to scale reads with readable replicas.",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Single core only"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "No replicas"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL offers managed relational service.",
+      "explanation": "Replicas offload read queries.",
       "docs": [
         {
-          "title": "Azure SQL",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Read scale-out",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out"
         }
       ]
     },
@@ -1358,7 +1366,7 @@
       "id": "dp9-q039",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to managed SQL in cloud (variant 5)?",
+      "text": "Which capability is provided by Azure SQL Database rather than Azure SQL read scale-out when you need to managed SQL in cloud?",
       "options": [
         {
           "id": "a",
@@ -1366,25 +1374,29 @@
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Notepad CSV only"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL offers managed relational service.",
+      "explanation": "Azure SQL offers managed relational service. Compare with Azure SQL read scale-out: Replicas offload read queries.",
       "docs": [
         {
           "title": "Azure SQL",
           "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+        },
+        {
+          "title": "Read scale-out",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out"
         }
       ]
     },
@@ -1392,30 +1404,34 @@
       "id": "dp9-q040",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "Your team must managed SQL in cloud (variant 6). Which Azure option fits best?",
+      "text": "Which capability is provided by Azure SQL read scale-out rather than Azure SQL Database when you need to scale reads with readable replicas?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Single core only"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "No replicas"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL offers managed relational service.",
+      "explanation": "Replicas offload read queries. Compare with Azure SQL Database: Azure SQL offers managed relational service.",
       "docs": [
+        {
+          "title": "Read scale-out",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out"
+        },
         {
           "title": "Azure SQL",
           "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
@@ -1426,7 +1442,7 @@
       "id": "dp9-q041",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to managed SQL in cloud (variant 7)?",
+      "text": "Which Azure offering should you use to managed SQL in cloud (variant 1)?",
       "options": [
         {
           "id": "a",
@@ -1460,33 +1476,33 @@
       "id": "dp9-q042",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to managed SQL in cloud (variant 8)?",
+      "text": "What is the recommended Azure approach to scale reads with readable replicas (variant 1)?",
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Single core only"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "No replicas"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Azure SQL offers managed relational service.",
+      "explanation": "Replicas offload read queries.",
       "docs": [
         {
-          "title": "Azure SQL",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+          "title": "Read scale-out",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/read-scale-out"
         }
       ]
     },
@@ -1494,7 +1510,7 @@
       "id": "dp9-q043",
       "domain": "relational",
       "type": "multiple-choice",
-      "text": "Your team must managed SQL in cloud (variant 9). Which Azure option fits best?",
+      "text": "Your team must managed SQL in cloud (variant 2). Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -1562,33 +1578,33 @@
       "id": "dp9-q045",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to globally distributed document DB?",
+      "text": "Which Azure service or capability is BEST to choose Cosmos DB API for MongoDB?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "Excel tables"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "Telnet"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos supports multiple APIs and consistency levels.",
+      "explanation": "API compatibility eases migration.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Cosmos DB APIs",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction"
         }
       ]
     },
@@ -1596,7 +1612,7 @@
       "id": "dp9-q046",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to globally distributed document DB?",
+      "text": "Which Azure offering should you use to globally distributed document DB?",
       "options": [
         {
           "id": "a",
@@ -1630,7 +1646,7 @@
       "id": "dp9-q047",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "Your team must globally distributed document DB. Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to globally distributed document DB?",
       "options": [
         {
           "id": "a",
@@ -1664,7 +1680,7 @@
       "id": "dp9-q048",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to globally distributed document DB.",
+      "text": "Your team must globally distributed document DB. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -1698,33 +1714,33 @@
       "id": "dp9-q049",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "An Azure architect must globally distributed document DB.",
+      "text": "Which Azure offering should you use to choose Cosmos DB API for MongoDB?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "Excel tables"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "Telnet"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos supports multiple APIs and consistency levels.",
+      "explanation": "API compatibility eases migration.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Cosmos DB APIs",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction"
         }
       ]
     },
@@ -1732,33 +1748,33 @@
       "id": "dp9-q050",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "Your organization plans to globally distributed document DB.",
+      "text": "What is the recommended Azure approach to choose Cosmos DB API for MongoDB?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "Excel tables"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "Telnet"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos supports multiple APIs and consistency levels.",
+      "explanation": "API compatibility eases migration.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Cosmos DB APIs",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction"
         }
       ]
     },
@@ -1766,33 +1782,33 @@
       "id": "dp9-q051",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "For a hybrid workload, you should globally distributed document DB.",
+      "text": "Your team must choose Cosmos DB API for MongoDB. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "Excel tables"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "Telnet"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos supports multiple APIs and consistency levels.",
+      "explanation": "API compatibility eases migration.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Cosmos DB APIs",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction"
         }
       ]
     },
@@ -1800,7 +1816,7 @@
       "id": "dp9-q052",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to globally distributed document DB (variant 1)?",
+      "text": "An Azure architect must globally distributed document DB.",
       "options": [
         {
           "id": "a",
@@ -1834,33 +1850,33 @@
       "id": "dp9-q053",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to globally distributed document DB (variant 2)?",
+      "text": "Your organization plans to choose Cosmos DB API for MongoDB.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "Excel tables"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "Telnet"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos supports multiple APIs and consistency levels.",
+      "explanation": "API compatibility eases migration.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Cosmos DB APIs",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction"
         }
       ]
     },
@@ -1868,7 +1884,7 @@
       "id": "dp9-q054",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "Your team must globally distributed document DB (variant 3). Which Azure option fits best?",
+      "text": "For a hybrid workload, you should globally distributed document DB.",
       "options": [
         {
           "id": "a",
@@ -1902,33 +1918,33 @@
       "id": "dp9-q055",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to globally distributed document DB (variant 4)?",
+      "text": "A cloud administrator needs to choose Cosmos DB API for MongoDB.",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "Excel tables"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "Telnet"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos supports multiple APIs and consistency levels.",
+      "explanation": "API compatibility eases migration.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Cosmos DB APIs",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction"
         }
       ]
     },
@@ -1936,7 +1952,7 @@
       "id": "dp9-q056",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to globally distributed document DB (variant 5)?",
+      "text": "Which capability is provided by Azure Cosmos DB rather than MongoDB-compatible API on Cosmos DB when you need to globally distributed document DB?",
       "options": [
         {
           "id": "a",
@@ -1944,25 +1960,29 @@
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "Single file share only"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "Local USB"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos supports multiple APIs and consistency levels.",
+      "explanation": "Cosmos supports multiple APIs and consistency levels. Compare with MongoDB-compatible API on Cosmos DB: API compatibility eases migration.",
       "docs": [
         {
           "title": "Cosmos DB",
           "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+        },
+        {
+          "title": "Cosmos DB APIs",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction"
         }
       ]
     },
@@ -1970,30 +1990,34 @@
       "id": "dp9-q057",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "Your team must globally distributed document DB (variant 6). Which Azure option fits best?",
+      "text": "Which capability is provided by MongoDB-compatible API on Cosmos DB rather than Azure Cosmos DB when you need to choose Cosmos DB API for MongoDB?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "Excel tables"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos supports multiple APIs and consistency levels.",
+      "explanation": "API compatibility eases migration. Compare with Azure Cosmos DB: Cosmos supports multiple APIs and consistency levels.",
       "docs": [
+        {
+          "title": "Cosmos DB APIs",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction"
+        },
         {
           "title": "Cosmos DB",
           "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
@@ -2004,7 +2028,7 @@
       "id": "dp9-q058",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to globally distributed document DB (variant 7)?",
+      "text": "Which Azure offering should you use to globally distributed document DB (variant 1)?",
       "options": [
         {
           "id": "a",
@@ -2038,33 +2062,33 @@
       "id": "dp9-q059",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to globally distributed document DB (variant 8)?",
+      "text": "What is the recommended Azure approach to choose Cosmos DB API for MongoDB (variant 1)?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "Excel tables"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "Telnet"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Cosmos supports multiple APIs and consistency levels.",
+      "explanation": "API compatibility eases migration.",
       "docs": [
         {
-          "title": "Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+          "title": "Cosmos DB APIs",
+          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction"
         }
       ]
     },
@@ -2072,7 +2096,7 @@
       "id": "dp9-q060",
       "domain": "nonrelational",
       "type": "multiple-choice",
-      "text": "Your team must globally distributed document DB (variant 9). Which Azure option fits best?",
+      "text": "Your team must globally distributed document DB (variant 2). Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -2140,33 +2164,33 @@
       "id": "dp9-q062",
       "domain": "analytics",
       "type": "multiple-choice",
-      "text": "Which Azure offering should you use to enterprise analytics at scale?",
+      "text": "Which Azure service or capability is BEST to lakehouse analytics on OneLake?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
+          "text": "CSV on desktop"
         },
         {
           "id": "c",
-          "text": "Email reports only"
+          "text": "Email reports"
         },
         {
           "id": "d",
-          "text": "No lake"
+          "text": "No catalog"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Synapse unifies warehousing and Spark.",
+      "explanation": "Fabric unifies analytics workloads.",
       "docs": [
         {
-          "title": "Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+          "title": "Microsoft Fabric",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/"
         }
       ]
     },
@@ -2174,7 +2198,7 @@
       "id": "dp9-q063",
       "domain": "analytics",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to enterprise analytics at scale?",
+      "text": "Which Azure offering should you use to enterprise analytics at scale?",
       "options": [
         {
           "id": "a",
@@ -2208,7 +2232,7 @@
       "id": "dp9-q064",
       "domain": "analytics",
       "type": "multiple-choice",
-      "text": "Your team must enterprise analytics at scale. Which Azure option fits best?",
+      "text": "What is the recommended Azure approach to enterprise analytics at scale?",
       "options": [
         {
           "id": "a",
@@ -2242,7 +2266,7 @@
       "id": "dp9-q065",
       "domain": "analytics",
       "type": "multiple-choice",
-      "text": "Your organization plans to enterprise analytics at scale.",
+      "text": "Your team must enterprise analytics at scale. Which Azure option fits best?",
       "options": [
         {
           "id": "a",
@@ -2276,38 +2300,106 @@
       "id": "dp9-q066",
       "domain": "analytics",
       "type": "multiple-choice",
-      "text": "A cloud administrator needs to enterprise analytics at scale.",
+      "text": "Which Azure offering should you use to lakehouse analytics on OneLake?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
+          "text": "CSV on desktop"
         },
         {
           "id": "c",
-          "text": "Email reports only"
+          "text": "Email reports"
         },
         {
           "id": "d",
-          "text": "No lake"
+          "text": "No catalog"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Synapse unifies warehousing and Spark.",
+      "explanation": "Fabric unifies analytics workloads.",
       "docs": [
         {
-          "title": "Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+          "title": "Microsoft Fabric",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/"
         }
       ]
     },
     {
       "id": "dp9-q067",
+      "domain": "analytics",
+      "type": "multiple-choice",
+      "text": "What is the recommended Azure approach to lakehouse analytics on OneLake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Fabric lakehouse"
+        },
+        {
+          "id": "b",
+          "text": "CSV on desktop"
+        },
+        {
+          "id": "c",
+          "text": "Email reports"
+        },
+        {
+          "id": "d",
+          "text": "No catalog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fabric unifies analytics workloads.",
+      "docs": [
+        {
+          "title": "Microsoft Fabric",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/"
+        }
+      ]
+    },
+    {
+      "id": "dp9-q068",
+      "domain": "analytics",
+      "type": "multiple-choice",
+      "text": "Your team must lakehouse analytics on OneLake. Which Azure option fits best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Fabric lakehouse"
+        },
+        {
+          "id": "b",
+          "text": "CSV on desktop"
+        },
+        {
+          "id": "c",
+          "text": "Email reports"
+        },
+        {
+          "id": "d",
+          "text": "No catalog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fabric unifies analytics workloads.",
+      "docs": [
+        {
+          "title": "Microsoft Fabric",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/"
+        }
+      ]
+    },
+    {
+      "id": "dp9-q069",
       "domain": "analytics",
       "type": "multiple-choice",
       "text": "For a hybrid workload, you should enterprise analytics at scale.",
@@ -2341,7 +2433,41 @@
       ]
     },
     {
-      "id": "dp9-q068",
+      "id": "dp9-q070",
+      "domain": "analytics",
+      "type": "multiple-choice",
+      "text": "Your organization plans to lakehouse analytics on OneLake.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Fabric lakehouse"
+        },
+        {
+          "id": "b",
+          "text": "CSV on desktop"
+        },
+        {
+          "id": "c",
+          "text": "Email reports"
+        },
+        {
+          "id": "d",
+          "text": "No catalog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fabric unifies analytics workloads.",
+      "docs": [
+        {
+          "title": "Microsoft Fabric",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/"
+        }
+      ]
+    },
+    {
+      "id": "dp9-q071",
       "domain": "analytics",
       "type": "multiple-choice",
       "text": "An Azure architect must enterprise analytics at scale.",
@@ -2375,7 +2501,117 @@
       ]
     },
     {
-      "id": "dp9-q069",
+      "id": "dp9-q072",
+      "domain": "analytics",
+      "type": "multiple-choice",
+      "text": "A cloud administrator needs to lakehouse analytics on OneLake.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Fabric lakehouse"
+        },
+        {
+          "id": "b",
+          "text": "CSV on desktop"
+        },
+        {
+          "id": "c",
+          "text": "Email reports"
+        },
+        {
+          "id": "d",
+          "text": "No catalog"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fabric unifies analytics workloads.",
+      "docs": [
+        {
+          "title": "Microsoft Fabric",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/"
+        }
+      ]
+    },
+    {
+      "id": "dp9-q073",
+      "domain": "analytics",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Azure Synapse Analytics rather than Microsoft Fabric lakehouse when you need to enterprise analytics at scale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azure Synapse Analytics"
+        },
+        {
+          "id": "b",
+          "text": "Microsoft Fabric lakehouse"
+        },
+        {
+          "id": "c",
+          "text": "Desktop calc only"
+        },
+        {
+          "id": "d",
+          "text": "Email reports only"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Synapse unifies warehousing and Spark. Compare with Microsoft Fabric lakehouse: Fabric unifies analytics workloads.",
+      "docs": [
+        {
+          "title": "Synapse Analytics",
+          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+        },
+        {
+          "title": "Microsoft Fabric",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/"
+        }
+      ]
+    },
+    {
+      "id": "dp9-q074",
+      "domain": "analytics",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Microsoft Fabric lakehouse rather than Azure Synapse Analytics when you need to lakehouse analytics on OneLake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microsoft Fabric lakehouse"
+        },
+        {
+          "id": "b",
+          "text": "Azure Synapse Analytics"
+        },
+        {
+          "id": "c",
+          "text": "CSV on desktop"
+        },
+        {
+          "id": "d",
+          "text": "Email reports"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Fabric unifies analytics workloads. Compare with Azure Synapse Analytics: Synapse unifies warehousing and Spark.",
+      "docs": [
+        {
+          "title": "Microsoft Fabric",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/"
+        },
+        {
+          "title": "Synapse Analytics",
+          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+        }
+      ]
+    },
+    {
+      "id": "dp9-q075",
       "domain": "analytics",
       "type": "multiple-choice",
       "text": "Which Azure offering should you use to enterprise analytics at scale (variant 1)?",
@@ -2409,240 +2645,36 @@
       ]
     },
     {
-      "id": "dp9-q070",
-      "domain": "analytics",
-      "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to enterprise analytics at scale (variant 2)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Synapse Analytics"
-        },
-        {
-          "id": "b",
-          "text": "Desktop calc only"
-        },
-        {
-          "id": "c",
-          "text": "Email reports only"
-        },
-        {
-          "id": "d",
-          "text": "No lake"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Synapse unifies warehousing and Spark.",
-      "docs": [
-        {
-          "title": "Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
-        }
-      ]
-    },
-    {
-      "id": "dp9-q071",
-      "domain": "analytics",
-      "type": "multiple-choice",
-      "text": "Your team must enterprise analytics at scale (variant 3). Which Azure option fits best?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Synapse Analytics"
-        },
-        {
-          "id": "b",
-          "text": "Desktop calc only"
-        },
-        {
-          "id": "c",
-          "text": "Email reports only"
-        },
-        {
-          "id": "d",
-          "text": "No lake"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Synapse unifies warehousing and Spark.",
-      "docs": [
-        {
-          "title": "Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
-        }
-      ]
-    },
-    {
-      "id": "dp9-q072",
-      "domain": "analytics",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to enterprise analytics at scale (variant 4)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Synapse Analytics"
-        },
-        {
-          "id": "b",
-          "text": "Desktop calc only"
-        },
-        {
-          "id": "c",
-          "text": "Email reports only"
-        },
-        {
-          "id": "d",
-          "text": "No lake"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Synapse unifies warehousing and Spark.",
-      "docs": [
-        {
-          "title": "Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
-        }
-      ]
-    },
-    {
-      "id": "dp9-q073",
-      "domain": "analytics",
-      "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to enterprise analytics at scale (variant 5)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Synapse Analytics"
-        },
-        {
-          "id": "b",
-          "text": "Desktop calc only"
-        },
-        {
-          "id": "c",
-          "text": "Email reports only"
-        },
-        {
-          "id": "d",
-          "text": "No lake"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Synapse unifies warehousing and Spark.",
-      "docs": [
-        {
-          "title": "Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
-        }
-      ]
-    },
-    {
-      "id": "dp9-q074",
-      "domain": "analytics",
-      "type": "multiple-choice",
-      "text": "Your team must enterprise analytics at scale (variant 6). Which Azure option fits best?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Synapse Analytics"
-        },
-        {
-          "id": "b",
-          "text": "Desktop calc only"
-        },
-        {
-          "id": "c",
-          "text": "Email reports only"
-        },
-        {
-          "id": "d",
-          "text": "No lake"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Synapse unifies warehousing and Spark.",
-      "docs": [
-        {
-          "title": "Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
-        }
-      ]
-    },
-    {
-      "id": "dp9-q075",
-      "domain": "analytics",
-      "type": "multiple-choice",
-      "text": "Which Azure offering should you use to enterprise analytics at scale (variant 7)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Synapse Analytics"
-        },
-        {
-          "id": "b",
-          "text": "Desktop calc only"
-        },
-        {
-          "id": "c",
-          "text": "Email reports only"
-        },
-        {
-          "id": "d",
-          "text": "No lake"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Synapse unifies warehousing and Spark.",
-      "docs": [
-        {
-          "title": "Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
-        }
-      ]
-    },
-    {
       "id": "dp9-q076",
       "domain": "analytics",
       "type": "multiple-choice",
-      "text": "What is the recommended Azure approach to enterprise analytics at scale (variant 8)?",
+      "text": "What is the recommended Azure approach to lakehouse analytics on OneLake (variant 1)?",
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
+          "text": "CSV on desktop"
         },
         {
           "id": "c",
-          "text": "Email reports only"
+          "text": "Email reports"
         },
         {
           "id": "d",
-          "text": "No lake"
+          "text": "No catalog"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Synapse unifies warehousing and Spark.",
+      "explanation": "Fabric unifies analytics workloads.",
       "docs": [
         {
-          "title": "Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+          "title": "Microsoft Fabric",
+          "url": "https://learn.microsoft.com/en-us/fabric/get-started/"
         }
       ]
     },
@@ -2650,7 +2682,7 @@
       "id": "dp9-q077",
       "domain": "analytics",
       "type": "multiple-choice",
-      "text": "Your team must enterprise analytics at scale (variant 9). Which Azure option fits best?",
+      "text": "Your team must enterprise analytics at scale (variant 2). Which Azure option fits best?",
       "options": [
         {
           "id": "a",

@@ -444,33 +444,33 @@
       "id": "pde-q012",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam?",
+      "text": "Which Google Cloud product or feature is BEST to orchestrate batch pipelines?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cron USB"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Manual FTP"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Composer schedules complex workflows.",
       "docs": [
         {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
         }
       ]
     },
@@ -478,7 +478,7 @@
       "id": "pde-q013",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam?",
+      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam?",
       "options": [
         {
           "id": "a",
@@ -512,7 +512,7 @@
       "id": "pde-q014",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "A platform team must batch and stream with Apache Beam. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam?",
       "options": [
         {
           "id": "a",
@@ -546,7 +546,7 @@
       "id": "pde-q015",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to batch and stream with Apache Beam.",
+      "text": "A platform team must batch and stream with Apache Beam. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -580,33 +580,33 @@
       "id": "pde-q016",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "A cloud engineer needs to batch and stream with Apache Beam.",
+      "text": "Which Google Cloud service should you use to orchestrate batch pipelines?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cron USB"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Manual FTP"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Composer schedules complex workflows.",
       "docs": [
         {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
         }
       ]
     },
@@ -614,38 +614,72 @@
       "id": "pde-q017",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "A data team must batch and stream with Apache Beam.",
+      "text": "What is the recommended Google Cloud solution to orchestrate batch pipelines?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cron USB"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Manual FTP"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Composer schedules complex workflows.",
       "docs": [
         {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
         }
       ]
     },
     {
       "id": "pde-q018",
+      "domain": "data-lifecycle",
+      "type": "multiple-choice",
+      "text": "A platform team must orchestrate batch pipelines. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloud Composer (managed Airflow)"
+        },
+        {
+          "id": "b",
+          "text": "Cron USB"
+        },
+        {
+          "id": "c",
+          "text": "Manual FTP"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Composer schedules complex workflows.",
+      "docs": [
+        {
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
+        }
+      ]
+    },
+    {
+      "id": "pde-q019",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
       "text": "For cost-aware operations, you should batch and stream with Apache Beam.",
@@ -679,70 +713,36 @@
       ]
     },
     {
-      "id": "pde-q019",
-      "domain": "data-lifecycle",
-      "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 1)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Dataflow"
-        },
-        {
-          "id": "b",
-          "text": "Cron on laptop only"
-        },
-        {
-          "id": "c",
-          "text": "Email CSV"
-        },
-        {
-          "id": "d",
-          "text": "FTP"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
-      "docs": [
-        {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
-        }
-      ]
-    },
-    {
       "id": "pde-q020",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 2)?",
+      "text": "A cloud engineer needs to orchestrate batch pipelines.",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cron USB"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Manual FTP"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Composer schedules complex workflows.",
       "docs": [
         {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
         }
       ]
     },
@@ -750,7 +750,7 @@
       "id": "pde-q021",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "A platform team must batch and stream with Apache Beam (variant 3). Which option aligns with Google best practices?",
+      "text": "A data team must batch and stream with Apache Beam.",
       "options": [
         {
           "id": "a",
@@ -784,33 +784,33 @@
       "id": "pde-q022",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 4)?",
+      "text": "Your startup is building on Google Cloud and needs to orchestrate batch pipelines.",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cron USB"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Manual FTP"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Composer schedules complex workflows.",
       "docs": [
         {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
         }
       ]
     },
@@ -818,7 +818,7 @@
       "id": "pde-q023",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 5)?",
+      "text": "Which capability is provided by Cloud Dataflow rather than Cloud Composer (managed Airflow) when you need to batch and stream with Apache Beam?",
       "options": [
         {
           "id": "a",
@@ -826,25 +826,29 @@
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Cron on laptop only"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Email CSV"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Dataflow runs Beam pipelines serverlessly. Compare with Cloud Composer (managed Airflow): Composer schedules complex workflows.",
       "docs": [
         {
           "title": "Dataflow",
           "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+        },
+        {
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
         }
       ]
     },
@@ -852,30 +856,34 @@
       "id": "pde-q024",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "A platform team must batch and stream with Apache Beam (variant 6). Which option aligns with Google best practices?",
+      "text": "Which capability is provided by Cloud Composer (managed Airflow) rather than Cloud Dataflow when you need to orchestrate batch pipelines?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Cron USB"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Manual FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Composer schedules complex workflows. Compare with Cloud Dataflow: Dataflow runs Beam pipelines serverlessly.",
       "docs": [
+        {
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
+        },
         {
           "title": "Dataflow",
           "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
@@ -886,7 +894,7 @@
       "id": "pde-q025",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 7)?",
+      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 1)?",
       "options": [
         {
           "id": "a",
@@ -920,33 +928,33 @@
       "id": "pde-q026",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 8)?",
+      "text": "What is the recommended Google Cloud solution to orchestrate batch pipelines (variant 1)?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cron USB"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Manual FTP"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Composer schedules complex workflows.",
       "docs": [
         {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
         }
       ]
     },
@@ -954,7 +962,7 @@
       "id": "pde-q027",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "A platform team must batch and stream with Apache Beam (variant 9). Which option aligns with Google best practices?",
+      "text": "A platform team must batch and stream with Apache Beam (variant 2). Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -988,33 +996,33 @@
       "id": "pde-q028",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to batch and stream with Apache Beam (variant 10)?",
+      "text": "Which Google Cloud service should you use to orchestrate batch pipelines (variant 2)?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cron USB"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Manual FTP"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Composer schedules complex workflows.",
       "docs": [
         {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
         }
       ]
     },
@@ -1022,7 +1030,7 @@
       "id": "pde-q029",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 11)?",
+      "text": "What is the recommended Google Cloud solution to batch and stream with Apache Beam (variant 3)?",
       "options": [
         {
           "id": "a",
@@ -1056,33 +1064,33 @@
       "id": "pde-q030",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
-      "text": "A platform team must batch and stream with Apache Beam (variant 12). Which option aligns with Google best practices?",
+      "text": "A platform team must orchestrate batch pipelines (variant 3). Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cron USB"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Manual FTP"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataflow runs Beam pipelines serverlessly.",
+      "explanation": "Composer schedules complex workflows.",
       "docs": [
         {
-          "title": "Dataflow",
-          "url": "https://cloud.google.com/dataflow/docs/concepts/beam-programming-model"
+          "title": "Cloud Composer",
+          "url": "https://cloud.google.com/composer/docs"
         }
       ]
     },
@@ -1158,33 +1166,33 @@
       "id": "pde-q033",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to real-time messaging?",
+      "text": "Which Google Cloud product or feature is BEST to stream into BigQuery?",
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "b",
-          "text": "Polling FTP"
+          "text": "Daily CSV email"
         },
         {
           "id": "c",
-          "text": "Daily USB"
+          "text": "USB"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "ICMP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Pub/Sub decouples producers and consumers.",
+      "explanation": "Streaming enables near-real-time analytics.",
       "docs": [
         {
-          "title": "Pub/Sub",
-          "url": "https://cloud.google.com/pubsub/docs/overview"
+          "title": "BigQuery streaming",
+          "url": "https://cloud.google.com/bigquery/docs/streaming-data-into-bigquery"
         }
       ]
     },
@@ -1192,7 +1200,7 @@
       "id": "pde-q034",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to real-time messaging?",
+      "text": "Which Google Cloud service should you use to real-time messaging?",
       "options": [
         {
           "id": "a",
@@ -1226,7 +1234,7 @@
       "id": "pde-q035",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "A platform team must real-time messaging. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to real-time messaging?",
       "options": [
         {
           "id": "a",
@@ -1260,33 +1268,33 @@
       "id": "pde-q036",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to warehouse analytics?",
+      "text": "A platform team must real-time messaging. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
-          "text": "BigQuery"
+          "text": "Pub/Sub"
         },
         {
           "id": "b",
-          "text": "Local SQLite warehouse"
+          "text": "Polling FTP"
         },
         {
           "id": "c",
-          "text": "Paper reports"
+          "text": "Daily USB"
         },
         {
           "id": "d",
-          "text": "No schema"
+          "text": "Telnet"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "BigQuery scales analytics.",
+      "explanation": "Pub/Sub decouples producers and consumers.",
       "docs": [
         {
-          "title": "BigQuery",
-          "url": "https://cloud.google.com/bigquery/docs/introduction"
+          "title": "Pub/Sub",
+          "url": "https://cloud.google.com/pubsub/docs/overview"
         }
       ]
     },
@@ -1294,7 +1302,7 @@
       "id": "pde-q037",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to warehouse analytics?",
+      "text": "Which Google Cloud service should you use to warehouse analytics?",
       "options": [
         {
           "id": "a",
@@ -1328,7 +1336,7 @@
       "id": "pde-q038",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "A platform team must warehouse analytics. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to warehouse analytics?",
       "options": [
         {
           "id": "a",
@@ -1362,6 +1370,142 @@
       "id": "pde-q039",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
+      "text": "A platform team must warehouse analytics. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery"
+        },
+        {
+          "id": "b",
+          "text": "Local SQLite warehouse"
+        },
+        {
+          "id": "c",
+          "text": "Paper reports"
+        },
+        {
+          "id": "d",
+          "text": "No schema"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BigQuery scales analytics.",
+      "docs": [
+        {
+          "title": "BigQuery",
+          "url": "https://cloud.google.com/bigquery/docs/introduction"
+        }
+      ]
+    },
+    {
+      "id": "pde-q040",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "Which Google Cloud service should you use to stream into BigQuery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery streaming insert or Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Daily CSV email"
+        },
+        {
+          "id": "c",
+          "text": "USB"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables near-real-time analytics.",
+      "docs": [
+        {
+          "title": "BigQuery streaming",
+          "url": "https://cloud.google.com/bigquery/docs/streaming-data-into-bigquery"
+        }
+      ]
+    },
+    {
+      "id": "pde-q041",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "What is the recommended Google Cloud solution to stream into BigQuery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery streaming insert or Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Daily CSV email"
+        },
+        {
+          "id": "c",
+          "text": "USB"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables near-real-time analytics.",
+      "docs": [
+        {
+          "title": "BigQuery streaming",
+          "url": "https://cloud.google.com/bigquery/docs/streaming-data-into-bigquery"
+        }
+      ]
+    },
+    {
+      "id": "pde-q042",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "A platform team must stream into BigQuery. Which option aligns with Google best practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery streaming insert or Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Daily CSV email"
+        },
+        {
+          "id": "c",
+          "text": "USB"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables near-real-time analytics.",
+      "docs": [
+        {
+          "title": "BigQuery streaming",
+          "url": "https://cloud.google.com/bigquery/docs/streaming-data-into-bigquery"
+        }
+      ]
+    },
+    {
+      "id": "pde-q043",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
       "text": "A data team must real-time messaging.",
       "options": [
         {
@@ -1393,150 +1537,10 @@
       ]
     },
     {
-      "id": "pde-q040",
-      "domain": "ingestion-storage",
-      "type": "multiple-choice",
-      "text": "For cost-aware operations, you should warehouse analytics.",
-      "options": [
-        {
-          "id": "a",
-          "text": "BigQuery"
-        },
-        {
-          "id": "b",
-          "text": "Local SQLite warehouse"
-        },
-        {
-          "id": "c",
-          "text": "Paper reports"
-        },
-        {
-          "id": "d",
-          "text": "No schema"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "BigQuery scales analytics.",
-      "docs": [
-        {
-          "title": "BigQuery",
-          "url": "https://cloud.google.com/bigquery/docs/introduction"
-        }
-      ]
-    },
-    {
-      "id": "pde-q041",
-      "domain": "ingestion-storage",
-      "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to real-time messaging.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Pub/Sub"
-        },
-        {
-          "id": "b",
-          "text": "Polling FTP"
-        },
-        {
-          "id": "c",
-          "text": "Daily USB"
-        },
-        {
-          "id": "d",
-          "text": "Telnet"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Pub/Sub decouples producers and consumers.",
-      "docs": [
-        {
-          "title": "Pub/Sub",
-          "url": "https://cloud.google.com/pubsub/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "pde-q042",
-      "domain": "ingestion-storage",
-      "type": "multiple-choice",
-      "text": "A cloud engineer needs to warehouse analytics.",
-      "options": [
-        {
-          "id": "a",
-          "text": "BigQuery"
-        },
-        {
-          "id": "b",
-          "text": "Local SQLite warehouse"
-        },
-        {
-          "id": "c",
-          "text": "Paper reports"
-        },
-        {
-          "id": "d",
-          "text": "No schema"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "BigQuery scales analytics.",
-      "docs": [
-        {
-          "title": "BigQuery",
-          "url": "https://cloud.google.com/bigquery/docs/introduction"
-        }
-      ]
-    },
-    {
-      "id": "pde-q043",
-      "domain": "ingestion-storage",
-      "type": "multiple-choice",
-      "text": "Which capability is provided by Pub/Sub rather than BigQuery when you need to real-time messaging?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Pub/Sub"
-        },
-        {
-          "id": "b",
-          "text": "BigQuery"
-        },
-        {
-          "id": "c",
-          "text": "Polling FTP"
-        },
-        {
-          "id": "d",
-          "text": "Daily USB"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Pub/Sub decouples producers and consumers. Compare with BigQuery: BigQuery scales analytics.",
-      "docs": [
-        {
-          "title": "Pub/Sub",
-          "url": "https://cloud.google.com/pubsub/docs/overview"
-        },
-        {
-          "title": "BigQuery",
-          "url": "https://cloud.google.com/bigquery/docs/introduction"
-        }
-      ]
-    },
-    {
       "id": "pde-q044",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "Which capability is provided by BigQuery rather than Pub/Sub when you need to warehouse analytics?",
+      "text": "Your startup is building on Google Cloud and needs to warehouse analytics.",
       "options": [
         {
           "id": "a",
@@ -1544,29 +1548,25 @@
         },
         {
           "id": "b",
-          "text": "Pub/Sub"
-        },
-        {
-          "id": "c",
           "text": "Local SQLite warehouse"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Paper reports"
+        },
+        {
+          "id": "d",
+          "text": "No schema"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "BigQuery scales analytics. Compare with Pub/Sub: Pub/Sub decouples producers and consumers.",
+      "explanation": "BigQuery scales analytics.",
       "docs": [
         {
           "title": "BigQuery",
           "url": "https://cloud.google.com/bigquery/docs/introduction"
-        },
-        {
-          "title": "Pub/Sub",
-          "url": "https://cloud.google.com/pubsub/docs/overview"
         }
       ]
     },
@@ -1574,7 +1574,41 @@
       "id": "pde-q045",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to real-time messaging (variant 1)?",
+      "text": "For cost-aware operations, you should stream into BigQuery.",
+      "options": [
+        {
+          "id": "a",
+          "text": "BigQuery streaming insert or Dataflow"
+        },
+        {
+          "id": "b",
+          "text": "Daily CSV email"
+        },
+        {
+          "id": "c",
+          "text": "USB"
+        },
+        {
+          "id": "d",
+          "text": "ICMP"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Streaming enables near-real-time analytics.",
+      "docs": [
+        {
+          "title": "BigQuery streaming",
+          "url": "https://cloud.google.com/bigquery/docs/streaming-data-into-bigquery"
+        }
+      ]
+    },
+    {
+      "id": "pde-q046",
+      "domain": "ingestion-storage",
+      "type": "multiple-choice",
+      "text": "A cloud engineer needs to real-time messaging.",
       "options": [
         {
           "id": "a",
@@ -1605,10 +1639,10 @@
       ]
     },
     {
-      "id": "pde-q046",
+      "id": "pde-q047",
       "domain": "ingestion-storage",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to warehouse analytics (variant 1)?",
+      "text": "A data team must warehouse analytics.",
       "options": [
         {
           "id": "a",
@@ -1635,40 +1669,6 @@
         {
           "title": "BigQuery",
           "url": "https://cloud.google.com/bigquery/docs/introduction"
-        }
-      ]
-    },
-    {
-      "id": "pde-q047",
-      "domain": "ingestion-storage",
-      "type": "multiple-choice",
-      "text": "A platform team must real-time messaging (variant 2). Which option aligns with Google best practices?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Pub/Sub"
-        },
-        {
-          "id": "b",
-          "text": "Polling FTP"
-        },
-        {
-          "id": "c",
-          "text": "Daily USB"
-        },
-        {
-          "id": "d",
-          "text": "Telnet"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Pub/Sub decouples producers and consumers.",
-      "docs": [
-        {
-          "title": "Pub/Sub",
-          "url": "https://cloud.google.com/pubsub/docs/overview"
         }
       ]
     },
@@ -1710,15 +1710,15 @@
       "id": "pde-q049",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to wide-column low-latency store?",
+      "text": "Which Google Cloud product or feature is BEST to train models on structured data?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Excel regression"
         },
         {
           "id": "c",
@@ -1726,17 +1726,17 @@
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "explanation": "BQML runs models where data lives.",
       "docs": [
         {
-          "title": "Bigtable",
-          "url": "https://cloud.google.com/bigtable/docs/overview"
+          "title": "BigQuery ML",
+          "url": "https://cloud.google.com/bigquery/docs/bqml-introduction"
         }
       ]
     },
@@ -1744,7 +1744,7 @@
       "id": "pde-q050",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to wide-column low-latency store?",
+      "text": "Which Google Cloud service should you use to wide-column low-latency store?",
       "options": [
         {
           "id": "a",
@@ -1778,7 +1778,7 @@
       "id": "pde-q051",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "A platform team must wide-column low-latency store. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to wide-column low-latency store?",
       "options": [
         {
           "id": "a",
@@ -1812,7 +1812,7 @@
       "id": "pde-q052",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "A cloud engineer needs to wide-column low-latency store.",
+      "text": "A platform team must wide-column low-latency store. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -1846,15 +1846,15 @@
       "id": "pde-q053",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "A data team must wide-column low-latency store.",
+      "text": "Which Google Cloud service should you use to train models on structured data?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Excel regression"
         },
         {
           "id": "c",
@@ -1862,17 +1862,17 @@
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "explanation": "BQML runs models where data lives.",
       "docs": [
         {
-          "title": "Bigtable",
-          "url": "https://cloud.google.com/bigtable/docs/overview"
+          "title": "BigQuery ML",
+          "url": "https://cloud.google.com/bigquery/docs/bqml-introduction"
         }
       ]
     },
@@ -1880,15 +1880,15 @@
       "id": "pde-q054",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to wide-column low-latency store.",
+      "text": "What is the recommended Google Cloud solution to train models on structured data?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Excel regression"
         },
         {
           "id": "c",
@@ -1896,17 +1896,17 @@
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "explanation": "BQML runs models where data lives.",
       "docs": [
         {
-          "title": "Bigtable",
-          "url": "https://cloud.google.com/bigtable/docs/overview"
+          "title": "BigQuery ML",
+          "url": "https://cloud.google.com/bigquery/docs/bqml-introduction"
         }
       ]
     },
@@ -1914,15 +1914,15 @@
       "id": "pde-q055",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "For cost-aware operations, you should wide-column low-latency store.",
+      "text": "A platform team must train models on structured data. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Excel regression"
         },
         {
           "id": "c",
@@ -1930,17 +1930,17 @@
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "explanation": "BQML runs models where data lives.",
       "docs": [
         {
-          "title": "Bigtable",
-          "url": "https://cloud.google.com/bigtable/docs/overview"
+          "title": "BigQuery ML",
+          "url": "https://cloud.google.com/bigquery/docs/bqml-introduction"
         }
       ]
     },
@@ -1948,7 +1948,7 @@
       "id": "pde-q056",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to wide-column low-latency store (variant 1)?",
+      "text": "A cloud engineer needs to wide-column low-latency store.",
       "options": [
         {
           "id": "a",
@@ -1982,15 +1982,15 @@
       "id": "pde-q057",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to wide-column low-latency store (variant 2)?",
+      "text": "Your startup is building on Google Cloud and needs to train models on structured data.",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Excel regression"
         },
         {
           "id": "c",
@@ -1998,17 +1998,17 @@
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "explanation": "BQML runs models where data lives.",
       "docs": [
         {
-          "title": "Bigtable",
-          "url": "https://cloud.google.com/bigtable/docs/overview"
+          "title": "BigQuery ML",
+          "url": "https://cloud.google.com/bigquery/docs/bqml-introduction"
         }
       ]
     },
@@ -2016,7 +2016,7 @@
       "id": "pde-q058",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "A platform team must wide-column low-latency store (variant 3). Which option aligns with Google best practices?",
+      "text": "A data team must wide-column low-latency store.",
       "options": [
         {
           "id": "a",
@@ -2050,15 +2050,15 @@
       "id": "pde-q059",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to wide-column low-latency store (variant 4)?",
+      "text": "For cost-aware operations, you should train models on structured data.",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Excel regression"
         },
         {
           "id": "c",
@@ -2066,17 +2066,17 @@
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "explanation": "BQML runs models where data lives.",
       "docs": [
         {
-          "title": "Bigtable",
-          "url": "https://cloud.google.com/bigtable/docs/overview"
+          "title": "BigQuery ML",
+          "url": "https://cloud.google.com/bigquery/docs/bqml-introduction"
         }
       ]
     },
@@ -2084,7 +2084,7 @@
       "id": "pde-q060",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to wide-column low-latency store (variant 5)?",
+      "text": "Which capability is provided by Cloud Bigtable rather than BigQuery ML when you need to wide-column low-latency store?",
       "options": [
         {
           "id": "a",
@@ -2092,25 +2092,29 @@
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "BigQuery ML"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "Relational only always"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Notepad"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "explanation": "Bigtable suits high-throughput NoSQL. Compare with BigQuery ML: BQML runs models where data lives.",
       "docs": [
         {
           "title": "Bigtable",
           "url": "https://cloud.google.com/bigtable/docs/overview"
+        },
+        {
+          "title": "BigQuery ML",
+          "url": "https://cloud.google.com/bigquery/docs/bqml-introduction"
         }
       ]
     },
@@ -2118,30 +2122,34 @@
       "id": "pde-q061",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "A platform team must wide-column low-latency store (variant 6). Which option aligns with Google best practices?",
+      "text": "Which capability is provided by BigQuery ML rather than Cloud Bigtable when you need to train models on structured data?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Cloud Bigtable"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "Excel regression"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Notepad"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "explanation": "BQML runs models where data lives. Compare with Cloud Bigtable: Bigtable suits high-throughput NoSQL.",
       "docs": [
+        {
+          "title": "BigQuery ML",
+          "url": "https://cloud.google.com/bigquery/docs/bqml-introduction"
+        },
         {
           "title": "Bigtable",
           "url": "https://cloud.google.com/bigtable/docs/overview"
@@ -2152,7 +2160,7 @@
       "id": "pde-q062",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to wide-column low-latency store (variant 7)?",
+      "text": "Which Google Cloud service should you use to wide-column low-latency store (variant 1)?",
       "options": [
         {
           "id": "a",
@@ -2186,15 +2194,15 @@
       "id": "pde-q063",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to wide-column low-latency store (variant 8)?",
+      "text": "What is the recommended Google Cloud solution to train models on structured data (variant 1)?",
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Excel regression"
         },
         {
           "id": "c",
@@ -2202,17 +2210,17 @@
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "FTP"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Bigtable suits high-throughput NoSQL.",
+      "explanation": "BQML runs models where data lives.",
       "docs": [
         {
-          "title": "Bigtable",
-          "url": "https://cloud.google.com/bigtable/docs/overview"
+          "title": "BigQuery ML",
+          "url": "https://cloud.google.com/bigquery/docs/bqml-introduction"
         }
       ]
     },
@@ -2220,7 +2228,7 @@
       "id": "pde-q064",
       "domain": "analysis-modeling",
       "type": "multiple-choice",
-      "text": "A platform team must wide-column low-latency store (variant 9). Which option aligns with Google best practices?",
+      "text": "A platform team must wide-column low-latency store (variant 2). Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -2288,33 +2296,33 @@
       "id": "pde-q066",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to govern data lakes?",
+      "text": "Which Google Cloud product or feature is BEST to monitor pipeline SLAs?",
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "No metrics"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "Annual check"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Disable paging"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataplex manages metadata and quality.",
+      "explanation": "Monitoring validates pipeline health.",
       "docs": [
         {
-          "title": "Dataplex",
-          "url": "https://cloud.google.com/dataplex/docs"
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
         }
       ]
     },
@@ -2322,7 +2330,7 @@
       "id": "pde-q067",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to govern data lakes?",
+      "text": "Which Google Cloud service should you use to govern data lakes?",
       "options": [
         {
           "id": "a",
@@ -2356,7 +2364,7 @@
       "id": "pde-q068",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "A platform team must govern data lakes. Which option aligns with Google best practices?",
+      "text": "What is the recommended Google Cloud solution to govern data lakes?",
       "options": [
         {
           "id": "a",
@@ -2390,7 +2398,7 @@
       "id": "pde-q069",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "For cost-aware operations, you should govern data lakes.",
+      "text": "A platform team must govern data lakes. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
@@ -2424,33 +2432,33 @@
       "id": "pde-q070",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "A data team must govern data lakes.",
+      "text": "Which Google Cloud service should you use to monitor pipeline SLAs?",
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "No metrics"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "Annual check"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Disable paging"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataplex manages metadata and quality.",
+      "explanation": "Monitoring validates pipeline health.",
       "docs": [
         {
-          "title": "Dataplex",
-          "url": "https://cloud.google.com/dataplex/docs"
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
         }
       ]
     },
@@ -2458,33 +2466,33 @@
       "id": "pde-q071",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "Your startup is building on Google Cloud and needs to govern data lakes.",
+      "text": "What is the recommended Google Cloud solution to monitor pipeline SLAs?",
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "No metrics"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "Annual check"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Disable paging"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataplex manages metadata and quality.",
+      "explanation": "Monitoring validates pipeline health.",
       "docs": [
         {
-          "title": "Dataplex",
-          "url": "https://cloud.google.com/dataplex/docs"
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
         }
       ]
     },
@@ -2492,33 +2500,33 @@
       "id": "pde-q072",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "A cloud engineer needs to govern data lakes.",
+      "text": "A platform team must monitor pipeline SLAs. Which option aligns with Google best practices?",
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "No metrics"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "Annual check"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Disable paging"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataplex manages metadata and quality.",
+      "explanation": "Monitoring validates pipeline health.",
       "docs": [
         {
-          "title": "Dataplex",
-          "url": "https://cloud.google.com/dataplex/docs"
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
         }
       ]
     },
@@ -2526,7 +2534,7 @@
       "id": "pde-q073",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to govern data lakes (variant 1)?",
+      "text": "For cost-aware operations, you should govern data lakes.",
       "options": [
         {
           "id": "a",
@@ -2560,33 +2568,33 @@
       "id": "pde-q074",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to govern data lakes (variant 2)?",
+      "text": "Your startup is building on Google Cloud and needs to monitor pipeline SLAs.",
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "No metrics"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "Annual check"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Disable paging"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataplex manages metadata and quality.",
+      "explanation": "Monitoring validates pipeline health.",
       "docs": [
         {
-          "title": "Dataplex",
-          "url": "https://cloud.google.com/dataplex/docs"
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
         }
       ]
     },
@@ -2594,7 +2602,7 @@
       "id": "pde-q075",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "A platform team must govern data lakes (variant 3). Which option aligns with Google best practices?",
+      "text": "A cloud engineer needs to govern data lakes.",
       "options": [
         {
           "id": "a",
@@ -2628,33 +2636,33 @@
       "id": "pde-q076",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "Which Google Cloud service should you use to govern data lakes (variant 4)?",
+      "text": "A data team must monitor pipeline SLAs.",
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "No metrics"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "Annual check"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Disable paging"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataplex manages metadata and quality.",
+      "explanation": "Monitoring validates pipeline health.",
       "docs": [
         {
-          "title": "Dataplex",
-          "url": "https://cloud.google.com/dataplex/docs"
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
         }
       ]
     },
@@ -2662,7 +2670,7 @@
       "id": "pde-q077",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "What is the recommended Google Cloud solution to govern data lakes (variant 5)?",
+      "text": "Which capability is provided by Dataplex rather than Cloud Monitoring dashboards and alerts when you need to govern data lakes?",
       "options": [
         {
           "id": "a",
@@ -2670,25 +2678,29 @@
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "Shadow catalogs"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "No lineage"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataplex manages metadata and quality.",
+      "explanation": "Dataplex manages metadata and quality. Compare with Cloud Monitoring dashboards and alerts: Monitoring validates pipeline health.",
       "docs": [
         {
           "title": "Dataplex",
           "url": "https://cloud.google.com/dataplex/docs"
+        },
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
         }
       ]
     },
@@ -2696,30 +2708,34 @@
       "id": "pde-q078",
       "domain": "reliability-ops",
       "type": "multiple-choice",
-      "text": "A platform team must govern data lakes (variant 6). Which option aligns with Google best practices?",
+      "text": "Which capability is provided by Cloud Monitoring dashboards and alerts rather than Dataplex when you need to monitor pipeline SLAs?",
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "Dataplex"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "No metrics"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Annual check"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Dataplex manages metadata and quality.",
+      "explanation": "Monitoring validates pipeline health. Compare with Dataplex: Dataplex manages metadata and quality.",
       "docs": [
+        {
+          "title": "Cloud Monitoring",
+          "url": "https://cloud.google.com/monitoring/docs"
+        },
         {
           "title": "Dataplex",
           "url": "https://cloud.google.com/dataplex/docs"

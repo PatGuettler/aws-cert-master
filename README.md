@@ -31,14 +31,14 @@ The app brand is **Cert Master**. On GitHub, rename the repository to `cert-mast
 
 See **[data/exams/README.md](data/exams/README.md)** for the JSON schema.
 
-## Exams (37)
+## Exams (39)
 
 The menu loads **`data/exams-index.json`**. Current vendors:
 
 - **AWS** — 14 exams (Cloud Practitioner through Security / ML / Database specialty)
 - **Microsoft Azure** — 9 exams (AZ-900, AZ-104, AZ-204, AZ-305, AZ-400, AZ-500, SC-900, DP-900, AI-900)
 - **Google Cloud** — 6 exams (Digital Leader, ACE, PCA, PDE, PCSE, PCDO)
-- **CompTIA** — 8 exams (A+, Network+, Security+, CySA+, Linux+, Cloud+, Data+, PenTest+)
+- **CompTIA** — 10 exams (A+, Network+, Security+, CySA+, Linux+, Cloud+, Data+, PenTest+, Server+, Project+)
 
 Each file holds **70–150+** practice questions aligned to official exam domains, with links to **official vendor documentation**. These are **not** real exam items.
 

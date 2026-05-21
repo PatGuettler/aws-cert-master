@@ -405,4 +405,15 @@ COMPTIA_EXTRA_BANKS: dict[str, dict[str, list[Fact]]] = {
         ],
     },
 }
+
+from question_bank.vendor_fact_expansions import (  # noqa: E402
+    AZURE_FACT_EXPANSIONS,
+    COMPTIA_FACT_EXPANSIONS,
+    GCP_FACT_EXPANSIONS,
+    merge_fact_banks,
+)
+
+AZURE_BANKS = merge_fact_banks(AZURE_BANKS, AZURE_FACT_EXPANSIONS)
+GCP_BANKS = merge_fact_banks(GCP_BANKS, GCP_FACT_EXPANSIONS)
+COMPTIA_EXTRA_BANKS = merge_fact_banks(COMPTIA_EXTRA_BANKS, COMPTIA_FACT_EXPANSIONS)
 # fmt: on

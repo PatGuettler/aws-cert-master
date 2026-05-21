@@ -259,6 +259,55 @@ COMPTIA_EXAMS: list[dict[str, Any]] = [
             ]),
         ],
     },
+    {
+        "id": "comptia-server-plus",
+        "name": "CompTIA Server+",
+        "code": "SK0-005",
+        "vendor": COMPTIA_VENDOR,
+        "min_questions": 65,
+        "exam": NETWORK_PLUS_EXAM,
+        "guide_url": "https://www.comptia.org/en-us/certifications/server",
+        "domains": [
+            domain("architecture", "Domain 1: Server Hardware and Virtualization", 20, [
+                ("Server+ Exam Objectives", "https://www.comptia.org/en-us/certifications/server"),
+            ]),
+            domain("administration", "Domain 2: Server Administration", 25, [
+                ("Server+ administration objectives", "https://www.comptia.org/en-us/certifications/server"),
+            ]),
+            domain("security", "Domain 3: Security and Disaster Recovery", 20, [
+                ("Server+ security objectives", "https://www.comptia.org/en-us/certifications/server"),
+            ]),
+            domain("storage", "Domain 4: Storage", 15, [
+                ("Server+ storage objectives", "https://www.comptia.org/en-us/certifications/server"),
+            ]),
+            domain("troubleshooting", "Domain 5: Troubleshooting", 20, [
+                ("Server+ troubleshooting objectives", "https://www.comptia.org/en-us/certifications/server"),
+            ]),
+        ],
+    },
+    {
+        "id": "comptia-project-plus",
+        "name": "CompTIA Project+",
+        "code": "PK0-005",
+        "vendor": COMPTIA_VENDOR,
+        "min_questions": 65,
+        "exam": A_PLUS_EXAM,
+        "guide_url": "https://www.comptia.org/en-us/certifications/project",
+        "domains": [
+            domain("concepts", "Domain 1: Project Management Concepts", 25, [
+                ("Project+ Exam Objectives", "https://www.comptia.org/en-us/certifications/project"),
+            ]),
+            domain("lifecycle", "Domain 2: Project Life Cycle Phases", 30, [
+                ("Project+ lifecycle objectives", "https://www.comptia.org/en-us/certifications/project"),
+            ]),
+            domain("tools", "Domain 3: Tools and Documentation", 25, [
+                ("Project+ tools objectives", "https://www.comptia.org/en-us/certifications/project"),
+            ]),
+            domain("communication", "Domain 4: Basics of IT and Architecture", 20, [
+                ("Project+ communication objectives", "https://www.comptia.org/en-us/certifications/project"),
+            ]),
+        ],
+    },
 ]
 
 COMPTIA_BY_ID = {e["id"]: e for e in COMPTIA_EXAMS}

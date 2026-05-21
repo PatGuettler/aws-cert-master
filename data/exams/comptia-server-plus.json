@@ -1,0 +1,3116 @@
+{
+  "id": "comptia-server-plus",
+  "name": "CompTIA Server+",
+  "code": "SK0-005",
+  "vendor": "comptia",
+  "exam": {
+    "totalQuestions": 90,
+    "scoredQuestions": 80,
+    "timeLimitMinutes": 90,
+    "passingScore": 720,
+    "maxScore": 900,
+    "selectionMode": "weighted-random"
+  },
+  "domains": [
+    {
+      "id": "architecture",
+      "name": "Domain 1: Server Hardware and Virtualization",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Server+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "administration",
+      "name": "Domain 2: Server Administration",
+      "weight": 25,
+      "resources": [
+        {
+          "title": "Server+ administration objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Domain 3: Security and Disaster Recovery",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Server+ security objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "storage",
+      "name": "Domain 4: Storage",
+      "weight": 15,
+      "resources": [
+        {
+          "title": "Server+ storage objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "name": "Domain 5: Troubleshooting",
+      "weight": 20,
+      "resources": [
+        {
+          "title": "Server+ troubleshooting objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cptsrv-q001",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Server Hardware and Virtualization for CompTIA Server+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Server+ Exam Objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Server+ Exam Objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Server+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q002",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "According to 'Server+ Exam Objectives', what is a documented best practice for Server Hardware and Virtualization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Server+ Exam Objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Server+ Exam Objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q003",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Server Administration for CompTIA Server+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Server+ administration objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Server+ administration objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Server+ administration objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q004",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "According to 'Server+ administration objectives', what is a documented best practice for Server Administration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Server+ administration objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Server+ administration objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q005",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Security and Disaster Recovery for CompTIA Server+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Server+ security objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Server+ security objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Server+ security objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q006",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "According to 'Server+ security objectives', what is a documented best practice for Security and Disaster Recovery?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Server+ security objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Server+ security objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q007",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Storage for CompTIA Server+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Server+ storage objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Server+ storage objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Server+ storage objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q008",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "According to 'Server+ storage objectives', what is a documented best practice for Storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Server+ storage objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Server+ storage objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q009",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Per official CompTIA exam objectives and study resources, which source should you use when studying Troubleshooting for CompTIA Server+?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Server+ troubleshooting objectives"
+        },
+        {
+          "id": "b",
+          "text": "Unofficial leaked exam dumps"
+        },
+        {
+          "id": "c",
+          "text": "Anonymous forum answer keys only"
+        },
+        {
+          "id": "d",
+          "text": "Random blogs without vendor citations"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Use Server+ troubleshooting objectives and other official materials listed in the exam guide\u2014not copied exam items.",
+      "docs": [
+        {
+          "title": "Server+ troubleshooting objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q010",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "According to 'Server+ troubleshooting objectives', what is a documented best practice for Troubleshooting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Follow the vendor documentation and exam objective domains"
+        },
+        {
+          "id": "b",
+          "text": "Disable logging to reduce storage cost"
+        },
+        {
+          "id": "c",
+          "text": "Share administrative credentials in chat"
+        },
+        {
+          "id": "d",
+          "text": "Skip change management for speed"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Server+ troubleshooting objectives reflects official guidance; designs should align with documented objectives.",
+      "docs": [
+        {
+          "title": "Server+ troubleshooting objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q011",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to choose RAID level for performance and redundancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAID 10 or RAID 5 based on workload"
+        },
+        {
+          "id": "b",
+          "text": "RAID 0 for prod databases"
+        },
+        {
+          "id": "c",
+          "text": "No RAID"
+        },
+        {
+          "id": "d",
+          "text": "USB mirror"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAID trade-offs affect availability.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q012",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to plan rack power and cooling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redundant PSUs and adequate BTU capacity"
+        },
+        {
+          "id": "b",
+          "text": "Single outlet"
+        },
+        {
+          "id": "c",
+          "text": "Ignore thermal"
+        },
+        {
+          "id": "d",
+          "text": "Open rack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Power planning prevents outages.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q013",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to virtualize physical servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypervisor with resource reservations"
+        },
+        {
+          "id": "b",
+          "text": "Overcommit RAM always"
+        },
+        {
+          "id": "c",
+          "text": "No isolation"
+        },
+        {
+          "id": "d",
+          "text": "Disable patches"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Virtualization consolidates workloads.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q014",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to choose RAID level for performance and redundancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAID 10 or RAID 5 based on workload"
+        },
+        {
+          "id": "b",
+          "text": "RAID 0 for prod databases"
+        },
+        {
+          "id": "c",
+          "text": "No RAID"
+        },
+        {
+          "id": "d",
+          "text": "USB mirror"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAID trade-offs affect availability.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q015",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to choose RAID level for performance and redundancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAID 10 or RAID 5 based on workload"
+        },
+        {
+          "id": "b",
+          "text": "RAID 0 for prod databases"
+        },
+        {
+          "id": "c",
+          "text": "No RAID"
+        },
+        {
+          "id": "d",
+          "text": "USB mirror"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAID trade-offs affect availability.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q016",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "A technician must choose RAID level for performance and redundancy. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAID 10 or RAID 5 based on workload"
+        },
+        {
+          "id": "b",
+          "text": "RAID 0 for prod databases"
+        },
+        {
+          "id": "c",
+          "text": "No RAID"
+        },
+        {
+          "id": "d",
+          "text": "USB mirror"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAID trade-offs affect availability.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q017",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to plan rack power and cooling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redundant PSUs and adequate BTU capacity"
+        },
+        {
+          "id": "b",
+          "text": "Single outlet"
+        },
+        {
+          "id": "c",
+          "text": "Ignore thermal"
+        },
+        {
+          "id": "d",
+          "text": "Open rack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Power planning prevents outages.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q018",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to plan rack power and cooling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redundant PSUs and adequate BTU capacity"
+        },
+        {
+          "id": "b",
+          "text": "Single outlet"
+        },
+        {
+          "id": "c",
+          "text": "Ignore thermal"
+        },
+        {
+          "id": "d",
+          "text": "Open rack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Power planning prevents outages.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q019",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "A technician must plan rack power and cooling. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redundant PSUs and adequate BTU capacity"
+        },
+        {
+          "id": "b",
+          "text": "Single outlet"
+        },
+        {
+          "id": "c",
+          "text": "Ignore thermal"
+        },
+        {
+          "id": "d",
+          "text": "Open rack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Power planning prevents outages.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q020",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to virtualize physical servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypervisor with resource reservations"
+        },
+        {
+          "id": "b",
+          "text": "Overcommit RAM always"
+        },
+        {
+          "id": "c",
+          "text": "No isolation"
+        },
+        {
+          "id": "d",
+          "text": "Disable patches"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Virtualization consolidates workloads.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q021",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to virtualize physical servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypervisor with resource reservations"
+        },
+        {
+          "id": "b",
+          "text": "Overcommit RAM always"
+        },
+        {
+          "id": "c",
+          "text": "No isolation"
+        },
+        {
+          "id": "d",
+          "text": "Disable patches"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Virtualization consolidates workloads.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q022",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "A technician must virtualize physical servers. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypervisor with resource reservations"
+        },
+        {
+          "id": "b",
+          "text": "Overcommit RAM always"
+        },
+        {
+          "id": "c",
+          "text": "No isolation"
+        },
+        {
+          "id": "d",
+          "text": "Disable patches"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Virtualization consolidates workloads.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q023",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should choose RAID level for performance and redundancy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAID 10 or RAID 5 based on workload"
+        },
+        {
+          "id": "b",
+          "text": "RAID 0 for prod databases"
+        },
+        {
+          "id": "c",
+          "text": "No RAID"
+        },
+        {
+          "id": "d",
+          "text": "USB mirror"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAID trade-offs affect availability.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q024",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must plan rack power and cooling.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redundant PSUs and adequate BTU capacity"
+        },
+        {
+          "id": "b",
+          "text": "Single outlet"
+        },
+        {
+          "id": "c",
+          "text": "Ignore thermal"
+        },
+        {
+          "id": "d",
+          "text": "Open rack"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Power planning prevents outages.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q025",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "On the job, you need to virtualize physical servers.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypervisor with resource reservations"
+        },
+        {
+          "id": "b",
+          "text": "Overcommit RAM always"
+        },
+        {
+          "id": "c",
+          "text": "No isolation"
+        },
+        {
+          "id": "d",
+          "text": "Disable patches"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Virtualization consolidates workloads.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q026",
+      "domain": "architecture",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must choose RAID level for performance and redundancy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "RAID 10 or RAID 5 based on workload"
+        },
+        {
+          "id": "b",
+          "text": "RAID 0 for prod databases"
+        },
+        {
+          "id": "c",
+          "text": "No RAID"
+        },
+        {
+          "id": "d",
+          "text": "USB mirror"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "RAID trade-offs affect availability.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q027",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to remotely manage Windows servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDP with NLA and restricted groups"
+        },
+        {
+          "id": "b",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared Administrator"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secure remote admin reduces exposure.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q028",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to automate Linux package updates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled maintenance with change control"
+        },
+        {
+          "id": "b",
+          "text": "Disable updates"
+        },
+        {
+          "id": "c",
+          "text": "Prod first no test"
+        },
+        {
+          "id": "d",
+          "text": "curl | bash"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patching reduces known vulnerabilities.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q029",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to monitor server health?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SNMP or agent-based monitoring with alerts"
+        },
+        {
+          "id": "b",
+          "text": "Check yearly"
+        },
+        {
+          "id": "c",
+          "text": "Email ping"
+        },
+        {
+          "id": "d",
+          "text": "No baselines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring enables proactive fixes.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q030",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to remotely manage Windows servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDP with NLA and restricted groups"
+        },
+        {
+          "id": "b",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared Administrator"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secure remote admin reduces exposure.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q031",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to remotely manage Windows servers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDP with NLA and restricted groups"
+        },
+        {
+          "id": "b",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared Administrator"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secure remote admin reduces exposure.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q032",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "A technician must remotely manage Windows servers. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDP with NLA and restricted groups"
+        },
+        {
+          "id": "b",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared Administrator"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secure remote admin reduces exposure.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q033",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to automate Linux package updates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled maintenance with change control"
+        },
+        {
+          "id": "b",
+          "text": "Disable updates"
+        },
+        {
+          "id": "c",
+          "text": "Prod first no test"
+        },
+        {
+          "id": "d",
+          "text": "curl | bash"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patching reduces known vulnerabilities.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q034",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to automate Linux package updates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled maintenance with change control"
+        },
+        {
+          "id": "b",
+          "text": "Disable updates"
+        },
+        {
+          "id": "c",
+          "text": "Prod first no test"
+        },
+        {
+          "id": "d",
+          "text": "curl | bash"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patching reduces known vulnerabilities.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q035",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "A technician must automate Linux package updates. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled maintenance with change control"
+        },
+        {
+          "id": "b",
+          "text": "Disable updates"
+        },
+        {
+          "id": "c",
+          "text": "Prod first no test"
+        },
+        {
+          "id": "d",
+          "text": "curl | bash"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patching reduces known vulnerabilities.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q036",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to monitor server health?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SNMP or agent-based monitoring with alerts"
+        },
+        {
+          "id": "b",
+          "text": "Check yearly"
+        },
+        {
+          "id": "c",
+          "text": "Email ping"
+        },
+        {
+          "id": "d",
+          "text": "No baselines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring enables proactive fixes.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q037",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to monitor server health?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SNMP or agent-based monitoring with alerts"
+        },
+        {
+          "id": "b",
+          "text": "Check yearly"
+        },
+        {
+          "id": "c",
+          "text": "Email ping"
+        },
+        {
+          "id": "d",
+          "text": "No baselines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring enables proactive fixes.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q038",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "A technician must monitor server health. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SNMP or agent-based monitoring with alerts"
+        },
+        {
+          "id": "b",
+          "text": "Check yearly"
+        },
+        {
+          "id": "c",
+          "text": "Email ping"
+        },
+        {
+          "id": "d",
+          "text": "No baselines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring enables proactive fixes.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q039",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must remotely manage Windows servers.",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDP with NLA and restricted groups"
+        },
+        {
+          "id": "b",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared Administrator"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secure remote admin reduces exposure.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q040",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must automate Linux package updates.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled maintenance with change control"
+        },
+        {
+          "id": "b",
+          "text": "Disable updates"
+        },
+        {
+          "id": "c",
+          "text": "Prod first no test"
+        },
+        {
+          "id": "d",
+          "text": "curl | bash"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patching reduces known vulnerabilities.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q041",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should monitor server health.",
+      "options": [
+        {
+          "id": "a",
+          "text": "SNMP or agent-based monitoring with alerts"
+        },
+        {
+          "id": "b",
+          "text": "Check yearly"
+        },
+        {
+          "id": "c",
+          "text": "Email ping"
+        },
+        {
+          "id": "d",
+          "text": "No baselines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring enables proactive fixes.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q042",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "On the job, you need to remotely manage Windows servers.",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDP with NLA and restricted groups"
+        },
+        {
+          "id": "b",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared Administrator"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secure remote admin reduces exposure.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q043",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must automate Linux package updates.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scheduled maintenance with change control"
+        },
+        {
+          "id": "b",
+          "text": "Disable updates"
+        },
+        {
+          "id": "c",
+          "text": "Prod first no test"
+        },
+        {
+          "id": "d",
+          "text": "curl | bash"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Patching reduces known vulnerabilities.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q044",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must monitor server health.",
+      "options": [
+        {
+          "id": "a",
+          "text": "SNMP or agent-based monitoring with alerts"
+        },
+        {
+          "id": "b",
+          "text": "Check yearly"
+        },
+        {
+          "id": "c",
+          "text": "Email ping"
+        },
+        {
+          "id": "d",
+          "text": "No baselines"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Monitoring enables proactive fixes.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q045",
+      "domain": "administration",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should remotely manage Windows servers.",
+      "options": [
+        {
+          "id": "a",
+          "text": "RDP with NLA and restricted groups"
+        },
+        {
+          "id": "b",
+          "text": "Telnet admin"
+        },
+        {
+          "id": "c",
+          "text": "Shared Administrator"
+        },
+        {
+          "id": "d",
+          "text": "No logging"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Secure remote admin reduces exposure.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q046",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to harden default services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unused roles and close ports"
+        },
+        {
+          "id": "b",
+          "text": "Enable FTP"
+        },
+        {
+          "id": "c",
+          "text": "Open RDP world"
+        },
+        {
+          "id": "d",
+          "text": "Guest admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hardening shrinks attack surface.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q047",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to apply firmware updates safely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendor advisories and staged rollout"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Flash prod first"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firmware fixes hardware-level issues.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q048",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to harden default services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unused roles and close ports"
+        },
+        {
+          "id": "b",
+          "text": "Enable FTP"
+        },
+        {
+          "id": "c",
+          "text": "Open RDP world"
+        },
+        {
+          "id": "d",
+          "text": "Guest admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hardening shrinks attack surface.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q049",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to harden default services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unused roles and close ports"
+        },
+        {
+          "id": "b",
+          "text": "Enable FTP"
+        },
+        {
+          "id": "c",
+          "text": "Open RDP world"
+        },
+        {
+          "id": "d",
+          "text": "Guest admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hardening shrinks attack surface.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q050",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "A technician must harden default services. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unused roles and close ports"
+        },
+        {
+          "id": "b",
+          "text": "Enable FTP"
+        },
+        {
+          "id": "c",
+          "text": "Open RDP world"
+        },
+        {
+          "id": "d",
+          "text": "Guest admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hardening shrinks attack surface.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q051",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to apply firmware updates safely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendor advisories and staged rollout"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Flash prod first"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firmware fixes hardware-level issues.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q052",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to apply firmware updates safely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendor advisories and staged rollout"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Flash prod first"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firmware fixes hardware-level issues.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q053",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "A technician must apply firmware updates safely. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendor advisories and staged rollout"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Flash prod first"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firmware fixes hardware-level issues.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q054",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "On the job, you need to harden default services.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unused roles and close ports"
+        },
+        {
+          "id": "b",
+          "text": "Enable FTP"
+        },
+        {
+          "id": "c",
+          "text": "Open RDP world"
+        },
+        {
+          "id": "d",
+          "text": "Guest admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hardening shrinks attack surface.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q055",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must apply firmware updates safely.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendor advisories and staged rollout"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Flash prod first"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firmware fixes hardware-level issues.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q056",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should harden default services.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unused roles and close ports"
+        },
+        {
+          "id": "b",
+          "text": "Enable FTP"
+        },
+        {
+          "id": "c",
+          "text": "Open RDP world"
+        },
+        {
+          "id": "d",
+          "text": "Guest admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hardening shrinks attack surface.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q057",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must apply firmware updates safely.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendor advisories and staged rollout"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Flash prod first"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firmware fixes hardware-level issues.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q058",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Disable unused roles and close ports rather than Vendor advisories and staged rollout when you need to harden default services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unused roles and close ports"
+        },
+        {
+          "id": "b",
+          "text": "Vendor advisories and staged rollout"
+        },
+        {
+          "id": "c",
+          "text": "Enable FTP"
+        },
+        {
+          "id": "d",
+          "text": "Open RDP world"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hardening shrinks attack surface. Compare with Vendor advisories and staged rollout: Firmware fixes hardware-level issues.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        },
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q059",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Vendor advisories and staged rollout rather than Disable unused roles and close ports when you need to apply firmware updates safely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendor advisories and staged rollout"
+        },
+        {
+          "id": "b",
+          "text": "Disable unused roles and close ports"
+        },
+        {
+          "id": "c",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "d",
+          "text": "Flash prod first"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firmware fixes hardware-level issues. Compare with Disable unused roles and close ports: Hardening shrinks attack surface.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        },
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q060",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to harden default services (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable unused roles and close ports"
+        },
+        {
+          "id": "b",
+          "text": "Enable FTP"
+        },
+        {
+          "id": "c",
+          "text": "Open RDP world"
+        },
+        {
+          "id": "d",
+          "text": "Guest admin"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Hardening shrinks attack surface.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q061",
+      "domain": "security",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to apply firmware updates safely (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendor advisories and staged rollout"
+        },
+        {
+          "id": "b",
+          "text": "Ignore CVEs"
+        },
+        {
+          "id": "c",
+          "text": "Flash prod first"
+        },
+        {
+          "id": "d",
+          "text": "No rollback"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Firmware fixes hardware-level issues.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q062",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to expand volumes online?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LVM or Windows dynamic disks with planning"
+        },
+        {
+          "id": "b",
+          "text": "Delete data"
+        },
+        {
+          "id": "c",
+          "text": "Offline only always"
+        },
+        {
+          "id": "d",
+          "text": "No backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Capacity planning avoids downtime.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q063",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to connect SAN storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fibre Channel or iSCSI with multipathing"
+        },
+        {
+          "id": "b",
+          "text": "Single path"
+        },
+        {
+          "id": "c",
+          "text": "USB SAN"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multipathing improves storage resilience.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q064",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to expand volumes online?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LVM or Windows dynamic disks with planning"
+        },
+        {
+          "id": "b",
+          "text": "Delete data"
+        },
+        {
+          "id": "c",
+          "text": "Offline only always"
+        },
+        {
+          "id": "d",
+          "text": "No backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Capacity planning avoids downtime.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q065",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to expand volumes online?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LVM or Windows dynamic disks with planning"
+        },
+        {
+          "id": "b",
+          "text": "Delete data"
+        },
+        {
+          "id": "c",
+          "text": "Offline only always"
+        },
+        {
+          "id": "d",
+          "text": "No backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Capacity planning avoids downtime.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q066",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "A technician must expand volumes online. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LVM or Windows dynamic disks with planning"
+        },
+        {
+          "id": "b",
+          "text": "Delete data"
+        },
+        {
+          "id": "c",
+          "text": "Offline only always"
+        },
+        {
+          "id": "d",
+          "text": "No backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Capacity planning avoids downtime.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q067",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to connect SAN storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fibre Channel or iSCSI with multipathing"
+        },
+        {
+          "id": "b",
+          "text": "Single path"
+        },
+        {
+          "id": "c",
+          "text": "USB SAN"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multipathing improves storage resilience.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q068",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to connect SAN storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fibre Channel or iSCSI with multipathing"
+        },
+        {
+          "id": "b",
+          "text": "Single path"
+        },
+        {
+          "id": "c",
+          "text": "USB SAN"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multipathing improves storage resilience.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q069",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "A technician must connect SAN storage. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fibre Channel or iSCSI with multipathing"
+        },
+        {
+          "id": "b",
+          "text": "Single path"
+        },
+        {
+          "id": "c",
+          "text": "USB SAN"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multipathing improves storage resilience.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q070",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should expand volumes online.",
+      "options": [
+        {
+          "id": "a",
+          "text": "LVM or Windows dynamic disks with planning"
+        },
+        {
+          "id": "b",
+          "text": "Delete data"
+        },
+        {
+          "id": "c",
+          "text": "Offline only always"
+        },
+        {
+          "id": "d",
+          "text": "No backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Capacity planning avoids downtime.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q071",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "On the job, you need to connect SAN storage.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fibre Channel or iSCSI with multipathing"
+        },
+        {
+          "id": "b",
+          "text": "Single path"
+        },
+        {
+          "id": "c",
+          "text": "USB SAN"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multipathing improves storage resilience.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q072",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must expand volumes online.",
+      "options": [
+        {
+          "id": "a",
+          "text": "LVM or Windows dynamic disks with planning"
+        },
+        {
+          "id": "b",
+          "text": "Delete data"
+        },
+        {
+          "id": "c",
+          "text": "Offline only always"
+        },
+        {
+          "id": "d",
+          "text": "No backup"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Capacity planning avoids downtime.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q073",
+      "domain": "storage",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must connect SAN storage.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fibre Channel or iSCSI with multipathing"
+        },
+        {
+          "id": "b",
+          "text": "Single path"
+        },
+        {
+          "id": "c",
+          "text": "USB SAN"
+        },
+        {
+          "id": "d",
+          "text": "Telnet"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Multipathing improves storage resilience.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q074",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to diagnose boot failures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review POST codes and boot logs"
+        },
+        {
+          "id": "b",
+          "text": "Reinstall immediately"
+        },
+        {
+          "id": "c",
+          "text": "Ignore logs"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boot diagnostics isolate hardware vs OS.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q075",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which approach BEST supports the objective to resolve high CPU on database server?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiler and query plans before scaling up"
+        },
+        {
+          "id": "b",
+          "text": "Reboot only"
+        },
+        {
+          "id": "c",
+          "text": "Disable monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Add RAM blindly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Root cause fixes performance sustainably.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q076",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to diagnose boot failures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review POST codes and boot logs"
+        },
+        {
+          "id": "b",
+          "text": "Reinstall immediately"
+        },
+        {
+          "id": "c",
+          "text": "Ignore logs"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boot diagnostics isolate hardware vs OS.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q077",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to diagnose boot failures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review POST codes and boot logs"
+        },
+        {
+          "id": "b",
+          "text": "Reinstall immediately"
+        },
+        {
+          "id": "c",
+          "text": "Ignore logs"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boot diagnostics isolate hardware vs OS.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q078",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "A technician must diagnose boot failures. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review POST codes and boot logs"
+        },
+        {
+          "id": "b",
+          "text": "Reinstall immediately"
+        },
+        {
+          "id": "c",
+          "text": "Ignore logs"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boot diagnostics isolate hardware vs OS.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q079",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to resolve high CPU on database server?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiler and query plans before scaling up"
+        },
+        {
+          "id": "b",
+          "text": "Reboot only"
+        },
+        {
+          "id": "c",
+          "text": "Disable monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Add RAM blindly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Root cause fixes performance sustainably.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q080",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to resolve high CPU on database server?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiler and query plans before scaling up"
+        },
+        {
+          "id": "b",
+          "text": "Reboot only"
+        },
+        {
+          "id": "c",
+          "text": "Disable monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Add RAM blindly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Root cause fixes performance sustainably.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q081",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "A technician must resolve high CPU on database server. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiler and query plans before scaling up"
+        },
+        {
+          "id": "b",
+          "text": "Reboot only"
+        },
+        {
+          "id": "c",
+          "text": "Disable monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Add RAM blindly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Root cause fixes performance sustainably.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q082",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Per CompTIA best practices, you should diagnose boot failures.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review POST codes and boot logs"
+        },
+        {
+          "id": "b",
+          "text": "Reinstall immediately"
+        },
+        {
+          "id": "c",
+          "text": "Ignore logs"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boot diagnostics isolate hardware vs OS.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q083",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "During troubleshooting, you must resolve high CPU on database server.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiler and query plans before scaling up"
+        },
+        {
+          "id": "b",
+          "text": "Reboot only"
+        },
+        {
+          "id": "c",
+          "text": "Disable monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Add RAM blindly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Root cause fixes performance sustainably.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q084",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "For compliance, the team must diagnose boot failures.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review POST codes and boot logs"
+        },
+        {
+          "id": "b",
+          "text": "Reinstall immediately"
+        },
+        {
+          "id": "c",
+          "text": "Ignore logs"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boot diagnostics isolate hardware vs OS.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q085",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "On the job, you need to resolve high CPU on database server.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiler and query plans before scaling up"
+        },
+        {
+          "id": "b",
+          "text": "Reboot only"
+        },
+        {
+          "id": "c",
+          "text": "Disable monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Add RAM blindly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Root cause fixes performance sustainably.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q086",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Review POST codes and boot logs rather than Profiler and query plans before scaling up when you need to diagnose boot failures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review POST codes and boot logs"
+        },
+        {
+          "id": "b",
+          "text": "Profiler and query plans before scaling up"
+        },
+        {
+          "id": "c",
+          "text": "Reinstall immediately"
+        },
+        {
+          "id": "d",
+          "text": "Ignore logs"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boot diagnostics isolate hardware vs OS. Compare with Profiler and query plans before scaling up: Root cause fixes performance sustainably.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        },
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q087",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which capability is provided by Profiler and query plans before scaling up rather than Review POST codes and boot logs when you need to resolve high CPU on database server?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiler and query plans before scaling up"
+        },
+        {
+          "id": "b",
+          "text": "Review POST codes and boot logs"
+        },
+        {
+          "id": "c",
+          "text": "Reboot only"
+        },
+        {
+          "id": "d",
+          "text": "Disable monitoring"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Root cause fixes performance sustainably. Compare with Review POST codes and boot logs: Boot diagnostics isolate hardware vs OS.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        },
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q088",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "What should you do FIRST to diagnose boot failures (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review POST codes and boot logs"
+        },
+        {
+          "id": "b",
+          "text": "Reinstall immediately"
+        },
+        {
+          "id": "c",
+          "text": "Ignore logs"
+        },
+        {
+          "id": "d",
+          "text": "Random USB"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Boot diagnostics isolate hardware vs OS.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    },
+    {
+      "id": "cptsrv-q089",
+      "domain": "troubleshooting",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to resolve high CPU on database server (variant 1)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Profiler and query plans before scaling up"
+        },
+        {
+          "id": "b",
+          "text": "Reboot only"
+        },
+        {
+          "id": "c",
+          "text": "Disable monitoring"
+        },
+        {
+          "id": "d",
+          "text": "Add RAM blindly"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Root cause fixes performance sustainably.",
+      "docs": [
+        {
+          "title": "Server+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/server"
+        }
+      ]
+    }
+  ],
+  "guideUrl": "https://www.comptia.org/en-us/certifications/server"
+}

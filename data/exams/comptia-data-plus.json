@@ -471,29 +471,29 @@
       "id": "cptdat-q013",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to distinguish structured and unstructured data?",
+      "text": "Which approach BEST supports the objective to define primary keys in datasets?",
       "options": [
         {
           "id": "a",
-          "text": "Tables vs documents/media"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "b",
-          "text": "Only ICMP"
+          "text": "Duplicate keys OK"
         },
         {
           "id": "c",
-          "text": "DNS only"
+          "text": "Random UUID reuse"
         },
         {
           "id": "d",
-          "text": "Cable types"
+          "text": "No constraints"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data type drives tooling.",
+      "explanation": "Keys enforce relational integrity.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -505,7 +505,7 @@
       "id": "cptdat-q014",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to distinguish structured and unstructured data?",
+      "text": "What should you do FIRST to distinguish structured and unstructured data?",
       "options": [
         {
           "id": "a",
@@ -539,7 +539,7 @@
       "id": "cptdat-q015",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "A technician must distinguish structured and unstructured data. What is the best choice?",
+      "text": "Which option is MOST appropriate to distinguish structured and unstructured data?",
       "options": [
         {
           "id": "a",
@@ -573,29 +573,29 @@
       "id": "cptdat-q016",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to describe data life cycle stages?",
+      "text": "A technician must distinguish structured and unstructured data. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Collection, processing, analysis, storage, sharing"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "b",
-          "text": "Only delete"
+          "text": "Only ICMP"
         },
         {
           "id": "c",
-          "text": "No catalog"
+          "text": "DNS only"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Cable types"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Life cycle informs controls.",
+      "explanation": "Data type drives tooling.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -607,7 +607,7 @@
       "id": "cptdat-q017",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to describe data life cycle stages?",
+      "text": "What should you do FIRST to describe data life cycle stages?",
       "options": [
         {
           "id": "a",
@@ -641,7 +641,7 @@
       "id": "cptdat-q018",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "A technician must describe data life cycle stages. What is the best choice?",
+      "text": "Which option is MOST appropriate to describe data life cycle stages?",
       "options": [
         {
           "id": "a",
@@ -675,29 +675,29 @@
       "id": "cptdat-q019",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to compare relational and dimensional models?",
+      "text": "A technician must describe data life cycle stages. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Star/snowflake schemas for analytics"
+          "text": "Collection, processing, analysis, storage, sharing"
         },
         {
           "id": "b",
-          "text": "Only flat files"
+          "text": "Only delete"
         },
         {
           "id": "c",
-          "text": "No keys"
+          "text": "No catalog"
         },
         {
           "id": "d",
-          "text": "Random CSV"
+          "text": "Random USB"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Models affect query performance.",
+      "explanation": "Life cycle informs controls.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -709,7 +709,7 @@
       "id": "cptdat-q020",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to compare relational and dimensional models?",
+      "text": "What should you do FIRST to compare relational and dimensional models?",
       "options": [
         {
           "id": "a",
@@ -743,7 +743,7 @@
       "id": "cptdat-q021",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "A technician must compare relational and dimensional models. What is the best choice?",
+      "text": "Which option is MOST appropriate to compare relational and dimensional models?",
       "options": [
         {
           "id": "a",
@@ -777,75 +777,7 @@
       "id": "cptdat-q022",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "During troubleshooting, you must distinguish structured and unstructured data.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Tables vs documents/media"
-        },
-        {
-          "id": "b",
-          "text": "Only ICMP"
-        },
-        {
-          "id": "c",
-          "text": "DNS only"
-        },
-        {
-          "id": "d",
-          "text": "Cable types"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Data type drives tooling.",
-      "docs": [
-        {
-          "title": "Data+ objectives",
-          "url": "https://www.comptia.org/en-us/certifications/data"
-        }
-      ]
-    },
-    {
-      "id": "cptdat-q023",
-      "domain": "data-concepts",
-      "type": "multiple-choice",
-      "text": "On the job, you need to describe data life cycle stages.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Collection, processing, analysis, storage, sharing"
-        },
-        {
-          "id": "b",
-          "text": "Only delete"
-        },
-        {
-          "id": "c",
-          "text": "No catalog"
-        },
-        {
-          "id": "d",
-          "text": "Random USB"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Life cycle informs controls.",
-      "docs": [
-        {
-          "title": "Data+ objectives",
-          "url": "https://www.comptia.org/en-us/certifications/data"
-        }
-      ]
-    },
-    {
-      "id": "cptdat-q024",
-      "domain": "data-concepts",
-      "type": "multiple-choice",
-      "text": "For compliance, the team must compare relational and dimensional models.",
+      "text": "A technician must compare relational and dimensional models. What is the best choice?",
       "options": [
         {
           "id": "a",
@@ -876,32 +808,100 @@
       ]
     },
     {
-      "id": "cptdat-q025",
+      "id": "cptdat-q023",
       "domain": "data-concepts",
       "type": "multiple-choice",
-      "text": "Per CompTIA best practices, you should distinguish structured and unstructured data.",
+      "text": "What should you do FIRST to define primary keys in datasets?",
       "options": [
         {
           "id": "a",
-          "text": "Tables vs documents/media"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "b",
-          "text": "Only ICMP"
+          "text": "Duplicate keys OK"
         },
         {
           "id": "c",
-          "text": "DNS only"
+          "text": "Random UUID reuse"
         },
         {
           "id": "d",
-          "text": "Cable types"
+          "text": "No constraints"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data type drives tooling.",
+      "explanation": "Keys enforce relational integrity.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q024",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "Which option is MOST appropriate to define primary keys in datasets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unique identifiers per entity grain"
+        },
+        {
+          "id": "b",
+          "text": "Duplicate keys OK"
+        },
+        {
+          "id": "c",
+          "text": "Random UUID reuse"
+        },
+        {
+          "id": "d",
+          "text": "No constraints"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Keys enforce relational integrity.",
+      "docs": [
+        {
+          "title": "Data+ objectives",
+          "url": "https://www.comptia.org/en-us/certifications/data"
+        }
+      ]
+    },
+    {
+      "id": "cptdat-q025",
+      "domain": "data-concepts",
+      "type": "multiple-choice",
+      "text": "A technician must define primary keys in datasets. What is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unique identifiers per entity grain"
+        },
+        {
+          "id": "b",
+          "text": "Duplicate keys OK"
+        },
+        {
+          "id": "c",
+          "text": "Random UUID reuse"
+        },
+        {
+          "id": "d",
+          "text": "No constraints"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Keys enforce relational integrity.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -1151,29 +1151,29 @@
       "id": "cptdat-q033",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to visualize trends for stakeholders?",
+      "text": "Which approach BEST supports the objective to detect outliers before modeling?",
       "options": [
         {
           "id": "a",
-          "text": "Dashboards with clear metrics"
+          "text": "Box plots and IQR rules"
         },
         {
           "id": "b",
-          "text": "Raw tables only"
+          "text": "Delete outliers always"
         },
         {
           "id": "c",
-          "text": "Hide outliers always"
+          "text": "Ignore extremes"
         },
         {
           "id": "d",
-          "text": "No labels"
+          "text": "No review"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Visualization communicates insights.",
+      "explanation": "Outliers may be errors or signal.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -1185,7 +1185,7 @@
       "id": "cptdat-q034",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to visualize trends for stakeholders?",
+      "text": "What should you do FIRST to visualize trends for stakeholders?",
       "options": [
         {
           "id": "a",
@@ -1219,7 +1219,7 @@
       "id": "cptdat-q035",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "A technician must visualize trends for stakeholders. What is the best choice?",
+      "text": "Which option is MOST appropriate to visualize trends for stakeholders?",
       "options": [
         {
           "id": "a",
@@ -1253,29 +1253,29 @@
       "id": "cptdat-q036",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to apply basic statistics to samples?",
+      "text": "A technician must visualize trends for stakeholders. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Mean, median, variance with context"
+          "text": "Dashboards with clear metrics"
         },
         {
           "id": "b",
-          "text": "Cherry-pick only"
+          "text": "Raw tables only"
         },
         {
           "id": "c",
-          "text": "Ignore sample size"
+          "text": "Hide outliers always"
         },
         {
           "id": "d",
-          "text": "No units"
+          "text": "No labels"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Statistics support decisions.",
+      "explanation": "Visualization communicates insights.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -1287,7 +1287,7 @@
       "id": "cptdat-q037",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to apply basic statistics to samples?",
+      "text": "What should you do FIRST to apply basic statistics to samples?",
       "options": [
         {
           "id": "a",
@@ -1321,7 +1321,7 @@
       "id": "cptdat-q038",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "A technician must apply basic statistics to samples. What is the best choice?",
+      "text": "Which option is MOST appropriate to apply basic statistics to samples?",
       "options": [
         {
           "id": "a",
@@ -1355,29 +1355,29 @@
       "id": "cptdat-q039",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to handle missing and dirty data?",
+      "text": "A technician must apply basic statistics to samples. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Profiling, imputation, and validation rules"
+          "text": "Mean, median, variance with context"
         },
         {
           "id": "b",
-          "text": "Ignore nulls"
+          "text": "Cherry-pick only"
         },
         {
           "id": "c",
-          "text": "Drop all rows"
+          "text": "Ignore sample size"
         },
         {
           "id": "d",
-          "text": "No documentation"
+          "text": "No units"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Data quality affects analysis.",
+      "explanation": "Statistics support decisions.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -1389,7 +1389,7 @@
       "id": "cptdat-q040",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to handle missing and dirty data?",
+      "text": "What should you do FIRST to handle missing and dirty data?",
       "options": [
         {
           "id": "a",
@@ -1423,7 +1423,7 @@
       "id": "cptdat-q041",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "A technician must handle missing and dirty data. What is the best choice?",
+      "text": "Which option is MOST appropriate to handle missing and dirty data?",
       "options": [
         {
           "id": "a",
@@ -1457,29 +1457,29 @@
       "id": "cptdat-q042",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to find correlations between metrics?",
+      "text": "A technician must handle missing and dirty data. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Scatter plots and coefficient review"
+          "text": "Profiling, imputation, and validation rules"
         },
         {
           "id": "b",
-          "text": "Guess causation"
+          "text": "Ignore nulls"
         },
         {
           "id": "c",
-          "text": "Single metric only"
+          "text": "Drop all rows"
         },
         {
           "id": "d",
-          "text": "No baseline"
+          "text": "No documentation"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Correlation guides hypotheses.",
+      "explanation": "Data quality affects analysis.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -1491,7 +1491,7 @@
       "id": "cptdat-q043",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to find correlations between metrics?",
+      "text": "What should you do FIRST to find correlations between metrics?",
       "options": [
         {
           "id": "a",
@@ -1525,7 +1525,7 @@
       "id": "cptdat-q044",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "A technician must find correlations between metrics. What is the best choice?",
+      "text": "Which option is MOST appropriate to find correlations between metrics?",
       "options": [
         {
           "id": "a",
@@ -1559,29 +1559,29 @@
       "id": "cptdat-q045",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to summarize datasets with aggregates?",
+      "text": "A technician must find correlations between metrics. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "GROUP BY with clear grain definitions"
+          "text": "Scatter plots and coefficient review"
         },
         {
           "id": "b",
-          "text": "Mix grains randomly"
+          "text": "Guess causation"
         },
         {
           "id": "c",
-          "text": "Duplicate rows"
+          "text": "Single metric only"
         },
         {
           "id": "d",
-          "text": "No keys"
+          "text": "No baseline"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Aggregates must match business grain.",
+      "explanation": "Correlation guides hypotheses.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -1593,7 +1593,7 @@
       "id": "cptdat-q046",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to summarize datasets with aggregates?",
+      "text": "What should you do FIRST to summarize datasets with aggregates?",
       "options": [
         {
           "id": "a",
@@ -1627,7 +1627,7 @@
       "id": "cptdat-q047",
       "domain": "mining-analytics",
       "type": "multiple-choice",
-      "text": "A technician must summarize datasets with aggregates. What is the best choice?",
+      "text": "Which option is MOST appropriate to summarize datasets with aggregates?",
       "options": [
         {
           "id": "a",
@@ -1899,29 +1899,29 @@
       "id": "cptdat-q055",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to protect sensitive columns?",
+      "text": "Which approach BEST supports the objective to apply GDPR-style erasure requests?",
       "options": [
         {
           "id": "a",
-          "text": "Masking and access controls"
+          "text": "Documented deletion workflows"
         },
         {
           "id": "b",
-          "text": "Email CSV of PII"
+          "text": "Keep forever"
         },
         {
           "id": "c",
-          "text": "Public share"
+          "text": "Ignore legal"
         },
         {
           "id": "d",
-          "text": "No retention policy"
+          "text": "Public backup"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Governance reduces data risk.",
+      "explanation": "Privacy regulations require erasure support.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -1933,7 +1933,7 @@
       "id": "cptdat-q056",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to protect sensitive columns?",
+      "text": "What should you do FIRST to protect sensitive columns?",
       "options": [
         {
           "id": "a",
@@ -1967,7 +1967,7 @@
       "id": "cptdat-q057",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "A technician must protect sensitive columns. What is the best choice?",
+      "text": "Which option is MOST appropriate to protect sensitive columns?",
       "options": [
         {
           "id": "a",
@@ -2001,29 +2001,29 @@
       "id": "cptdat-q058",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to document data lineage?",
+      "text": "A technician must protect sensitive columns. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Catalog showing sources and transforms"
+          "text": "Masking and access controls"
         },
         {
           "id": "b",
-          "text": "Shadow spreadsheets"
+          "text": "Email CSV of PII"
         },
         {
           "id": "c",
-          "text": "No owners"
+          "text": "Public share"
         },
         {
           "id": "d",
-          "text": "Delete metadata"
+          "text": "No retention policy"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Lineage supports audits.",
+      "explanation": "Governance reduces data risk.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -2035,7 +2035,7 @@
       "id": "cptdat-q059",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to document data lineage?",
+      "text": "What should you do FIRST to document data lineage?",
       "options": [
         {
           "id": "a",
@@ -2069,7 +2069,7 @@
       "id": "cptdat-q060",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "A technician must document data lineage. What is the best choice?",
+      "text": "Which option is MOST appropriate to document data lineage?",
       "options": [
         {
           "id": "a",
@@ -2103,29 +2103,29 @@
       "id": "cptdat-q061",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to define data retention schedules?",
+      "text": "A technician must document data lineage. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Policy-based retention and deletion"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "b",
-          "text": "Keep forever"
+          "text": "Shadow spreadsheets"
         },
         {
           "id": "c",
-          "text": "No legal review"
+          "text": "No owners"
         },
         {
           "id": "d",
-          "text": "Public archives"
+          "text": "Delete metadata"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Retention limits risk and cost.",
+      "explanation": "Lineage supports audits.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -2137,7 +2137,7 @@
       "id": "cptdat-q062",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to define data retention schedules?",
+      "text": "What should you do FIRST to define data retention schedules?",
       "options": [
         {
           "id": "a",
@@ -2171,7 +2171,7 @@
       "id": "cptdat-q063",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "A technician must define data retention schedules. What is the best choice?",
+      "text": "Which option is MOST appropriate to define data retention schedules?",
       "options": [
         {
           "id": "a",
@@ -2205,29 +2205,29 @@
       "id": "cptdat-q064",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to assign data stewards?",
+      "text": "A technician must define data retention schedules. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Named owners per dataset"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "b",
-          "text": "Everyone owns nothing"
+          "text": "Keep forever"
         },
         {
           "id": "c",
-          "text": "No RACI"
+          "text": "No legal review"
         },
         {
           "id": "d",
-          "text": "Ignore quality"
+          "text": "Public archives"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Stewards accountability improves quality.",
+      "explanation": "Retention limits risk and cost.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -2239,7 +2239,7 @@
       "id": "cptdat-q065",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to assign data stewards?",
+      "text": "What should you do FIRST to assign data stewards?",
       "options": [
         {
           "id": "a",
@@ -2273,7 +2273,7 @@
       "id": "cptdat-q066",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "A technician must assign data stewards. What is the best choice?",
+      "text": "Which option is MOST appropriate to assign data stewards?",
       "options": [
         {
           "id": "a",
@@ -2307,29 +2307,29 @@
       "id": "cptdat-q067",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to measure data quality dimensions?",
+      "text": "A technician must assign data stewards. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Accuracy, completeness, timeliness metrics"
+          "text": "Named owners per dataset"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Everyone owns nothing"
         },
         {
           "id": "c",
-          "text": "Guess quality"
+          "text": "No RACI"
         },
         {
           "id": "d",
-          "text": "Ignore duplicates"
+          "text": "Ignore quality"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Quality metrics guide remediation.",
+      "explanation": "Stewards accountability improves quality.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -2341,7 +2341,7 @@
       "id": "cptdat-q068",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to measure data quality dimensions?",
+      "text": "What should you do FIRST to measure data quality dimensions?",
       "options": [
         {
           "id": "a",
@@ -2375,7 +2375,7 @@
       "id": "cptdat-q069",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "A technician must measure data quality dimensions. What is the best choice?",
+      "text": "Which option is MOST appropriate to measure data quality dimensions?",
       "options": [
         {
           "id": "a",
@@ -2409,29 +2409,29 @@
       "id": "cptdat-q070",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "What should you do FIRST to classify data by sensitivity?",
+      "text": "A technician must measure data quality dimensions. What is the best choice?",
       "options": [
         {
           "id": "a",
-          "text": "Labels such as public, internal, confidential"
+          "text": "Accuracy, completeness, timeliness metrics"
         },
         {
           "id": "b",
-          "text": "One label for all"
+          "text": "No metrics"
         },
         {
           "id": "c",
-          "text": "No training"
+          "text": "Guess quality"
         },
         {
           "id": "d",
-          "text": "Share externally"
+          "text": "Ignore duplicates"
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Classification drives controls.",
+      "explanation": "Quality metrics guide remediation.",
       "docs": [
         {
           "title": "Data+ objectives",
@@ -2443,7 +2443,7 @@
       "id": "cptdat-q071",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "Which option is MOST appropriate to classify data by sensitivity?",
+      "text": "What should you do FIRST to classify data by sensitivity?",
       "options": [
         {
           "id": "a",
@@ -2477,7 +2477,7 @@
       "id": "cptdat-q072",
       "domain": "governance",
       "type": "multiple-choice",
-      "text": "A technician must classify data by sensitivity. What is the best choice?",
+      "text": "Which option is MOST appropriate to classify data by sensitivity?",
       "options": [
         {
           "id": "a",
