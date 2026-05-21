@@ -10,7 +10,9 @@ from question_bank.exam_catalog import EXAM_BY_ID
 from question_bank.fact_banks import BANKS, Fact
 from question_bank.fact_banks_more import BANKS_MORE
 from question_bank.fact_banks_pro import BANKS_PRO
+from question_bank.open_source_import import merge_for_exam
 from question_bank.scenario_stems import comparison_stem_from_facts, scenario_stem_from_fact
+from question_bank.stem_quality import is_scenario_stem
 
 SCENARIO_PREFIXES = [
     "A solutions architect needs to",
