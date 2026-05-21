@@ -8,39 +8,43 @@
       name="description"
       content="Free AWS, Azure, Google Cloud, and CompTIA practice exams — original questions with official documentation links. No login required."
     />
-    <title>AWS Cert Master — Multi-Cloud Practice Tests</title>
+    <title>Cert Master — Multi-Cloud Practice Tests</title>
     <link rel="sitemap" type="application/xml" href="sitemap.xml" />
     <script>
       (function () {
+        var PROJECT_ROOTS = { "aws-cert-master": 1, "cert-master": 1 };
+        var host = location.hostname.toLowerCase();
+        var isGhPages =
+          host === "github.io" || host.slice(-10) === ".github.io";
+        var deployBase = "/";
+        if (isGhPages) {
+          var first = (location.pathname.split("/").filter(Boolean)[0] || "");
+          if (PROJECT_ROOTS[first]) deployBase = "/" + first + "/";
+        }
+        window.__DEPLOY_BASE__ = deployBase;
+
         var params = new URLSearchParams(location.search);
         var p = params.get("p");
         if (p) {
           var decoded = p.replace(/~and~/g, "&");
-          if (!decoded.startsWith("/")) decoded = "/" + decoded;
-          history.replaceState(
-            null,
-            "",
-            location.pathname.replace(/\/?$/, "/") + decoded + location.hash
-          );
+          try {
+            var target = new URL(decoded, location.origin);
+            history.replaceState(
+              null,
+              "",
+              target.pathname + target.search + target.hash
+            );
+          } catch (err) {
+            /* ignore malformed ?p= */
+          }
         }
         var start = params.get("start");
         if (start) {
           try {
-            sessionStorage.setItem("aws-cert-master:autoStart", start);
+            sessionStorage.setItem("cert-master:autoStart", start);
           } catch (e) {}
         }
-      })();
-    </script>
-    <script>
-      (function () {
-        var path = location.pathname;
-        var first = path.split("/").filter(Boolean)[0] || "";
-        var appRoutes = { cert: 1, browse: 1, questions: 1 };
-        var deployBase = "/";
-        if (first && !appRoutes[first] && path.indexOf("/" + first) === 0) {
-          deployBase = "/" + first + "/";
-        }
-        window.__DEPLOY_BASE__ = deployBase;
+
         var b = document.createElement("base");
         b.href = deployBase;
         document.head.appendChild(b);
@@ -65,7 +69,7 @@
         <span></span>
         <span></span>
       </button>
-      <h1 id="header-title" class="site-title">AWS Cert Master</h1>
+      <h1 id="header-title" class="site-title">Cert Master</h1>
       <div id="exam-timer" class="timer hidden" aria-live="polite">90:00</div>
     </header>
 
@@ -102,7 +106,7 @@
           </span>
         </label>
         <label class="option-row">
-          <span>Show AWS doc links in feedback</span>
+          <span>Show official doc links in feedback</span>
           <span class="toggle">
             <input id="opt-doc-links" type="checkbox" checked />
             <span class="toggle-slider"></span>
@@ -143,7 +147,7 @@
         <div class="landing-hero">
           <h2>Certification practice — free, in your browser</h2>
           <p class="landing-lead">
-            AWS Cert Master is an unofficial study tool for <strong>AWS</strong>,
+            Cert Master is an unofficial study tool for <strong>AWS</strong>,
             <strong>Microsoft Azure</strong>, <strong>Google Cloud</strong>, and
             <strong>CompTIA</strong> certifications: original practice questions aligned to
             official exam guides, each with links to vendor documentation. Includes
@@ -176,7 +180,7 @@
         </div>
 
         <section class="landing-section landing-howto" id="how-to">
-          <h3>How to use AWS Cert Master</h3>
+          <h3>How to use Cert Master</h3>
           <ol class="landing-steps">
             <li>
               <strong>Pick a certification</strong> from
@@ -507,7 +511,7 @@
     <footer class="site-footer">
       <p>
         Unofficial practice tool. Not affiliated with AWS, Microsoft, Google, or CompTIA.
-        Questions are original practice items in JSON—edit generators and push to update this site.
+        Questions are original practice items in JSON—edit exam files and push to update this site.
       </p>
     </footer>
 

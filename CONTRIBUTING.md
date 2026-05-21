@@ -1,4 +1,4 @@
-# Contributing to AWS Cert Master
+# Contributing to Cert Master
 
 Thank you for helping improve this free practice exam tool. The fastest way to add value is **new or better questions** in the JSON exam files.
 

@@ -1,10 +1,12 @@
-# PracticeCert (AWS Cert Master)
+# Cert Master
 
 Unofficial **static** practice exams for **AWS**, **Microsoft Azure**, **Google Cloud**, and **CompTIA**. No login, no backend — content is plain **JSON** in `data/exams/`.
 
 ## Live site
 
 **[https://practicecert.com/](https://practicecert.com/)** (GitHub Pages + `CNAME`)
+
+The app brand is **Cert Master**. On GitHub, rename the repository to `cert-master` under **Settings → General** so project-pages URLs use `https://<user>.github.io/cert-master/`. The site auto-detects that path prefix; the custom domain serves from `/`.
 
 ## Open-source content model
 
@@ -81,7 +83,7 @@ Under `scripts/` — run **locally** only when bulk-regenerating from fact banks
 ## Local preview
 
 ```bash
-cd aws-cert-master
+cd cert-master
 python3 -m http.server 8080
 ```
 

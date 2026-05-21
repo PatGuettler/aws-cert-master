@@ -97,7 +97,7 @@ def render_question_page(
 ) -> str:
     meta = registry["bySlug"][slug]
     title_text = truncate(q.get("text", ""), 70)
-    page_title = f"{meta['examCode']} Practice: {title_text} | AWS Cert Master"
+    page_title = f"{meta['examCode']} Practice: {title_text} | Cert Master"
     description = (
         f"Free {meta['examName']} ({meta['examCode']}) practice question with "
         f"answer explanation, domain context, and official AWS/CompTIA doc links. "
@@ -154,7 +154,7 @@ def render_question_page(
   </head>
   <body class="seo-question-body">
     <header class="site-header seo-question-header">
-      <a href="{escape(home_url)}" class="seo-brand-link">AWS Cert Master</a>
+      <a href="{escape(home_url)}" class="seo-brand-link">Cert Master</a>
     </header>
     <main class="seo-question-main">
       <nav class="seo-breadcrumb" aria-label="Breadcrumb">
@@ -209,7 +209,7 @@ def render_question_page(
     <footer class="site-footer">
       <p>
         Unofficial practice tool — not affiliated with AWS or CompTIA.
-        <a href="{escape(home_url)}">Back to AWS Cert Master</a>
+        <a href="{escape(home_url)}">Back to Cert Master</a>
       </p>
     </footer>
   </body>
@@ -245,12 +245,12 @@ def render_questions_hub(registry: dict, exams_by_id: dict) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Browse free AWS and CompTIA certification practice questions — each with its own page, explanation, and study links." />
     <link rel="canonical" href="{escape(site_url('/questions/'))}" />
-    <title>Practice question library | AWS Cert Master</title>
+    <title>Practice question library | Cert Master</title>
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body class="seo-question-body">
     <header class="site-header seo-question-header">
-      <a href="{escape(home)}" class="seo-brand-link">AWS Cert Master</a>
+      <a href="{escape(home)}" class="seo-brand-link">Cert Master</a>
     </header>
     <main class="seo-question-main seo-hub-main">
       <h1>Practice question library</h1>

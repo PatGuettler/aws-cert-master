@@ -41,7 +41,7 @@ export function initDataPanel({
     );
     const a = document.createElement("a");
     a.href = url;
-    a.download = `aws-cert-master-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `cert-master-backup-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
   });

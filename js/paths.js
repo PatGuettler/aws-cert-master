@@ -1,30 +1,51 @@
 /**
  * Resolve static asset URLs for the deployed site root.
- * Supports custom domain at / (practicecert.com) and legacy GitHub project pages (/repo-name/).
+ * Custom domains (e.g. practicecert.com) always use "/".
+ * GitHub project pages use "/cert-master/" or "/aws-cert-master/" only.
  */
 const APP_ROUTE_SEGMENTS = new Set(["cert", "browse", "questions"]);
+const PROJECT_ROOT_SEGMENTS = new Set(["aws-cert-master", "cert-master"]);
 
 /**
- * Deployment root path: "/" for custom domain, "/aws-cert-master/" for project pages.
- * Set early by inline script in index.html as window.__DEPLOY_BASE__.
+ * @returns {boolean}
+ */
+function isGitHubPagesHost() {
+  const host = window.location.hostname.toLowerCase();
+  return host === "github.io" || host.endsWith(".github.io");
+}
+
+/**
+ * Detect deploy root from the current URL (runs once at page load in index.html).
+ * @returns {string} Path ending with "/", e.g. "/" or "/cert-master/"
+ */
+export function detectDeployBasePath() {
+  if (!isGitHubPagesHost()) {
+    return "/";
+  }
+
+  const first = window.location.pathname.split("/").filter(Boolean)[0] ?? "";
+  if (PROJECT_ROOT_SEGMENTS.has(first)) {
+    return `/${first}/`;
+  }
+  return "/";
+}
+
+/**
+ * Deployment root path. Set window.__DEPLOY_BASE__ in index.html before modules load.
+ * @returns {string}
  */
 export function getDeployBasePath() {
   if (typeof window.__DEPLOY_BASE__ === "string" && window.__DEPLOY_BASE__) {
     const b = window.__DEPLOY_BASE__;
     return b.endsWith("/") ? b : `${b}/`;
   }
-
-  const path = window.location.pathname;
-  const first = path.split("/").filter(Boolean)[0] ?? "";
-  if (first && !APP_ROUTE_SEGMENTS.has(first) && path.startsWith(`/${first}`)) {
-    return `/${first}/`;
-  }
-  return "/";
+  return detectDeployBasePath();
 }
 
 export function getSiteRoot() {
   const { origin } = window.location;
-  return `${origin}${getDeployBasePath()}`;
+  const base = getDeployBasePath();
+  return new URL(base, origin).href;
 }
 
 /**

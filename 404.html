@@ -13,7 +13,12 @@
         }
         var rest = path.replace(/^\//, "").replace(/&/g, "~and~");
         var q = l.search ? "&q=" + l.search.slice(1).replace(/&/g, "~and~") : "";
-        l.replace(l.origin + "/?p=/" + rest + q + l.hash);
+        var target = "/?p=/" + rest + q + l.hash;
+        try {
+          l.replace(new URL(target, l.origin).href);
+        } catch (e) {
+          l.replace(l.origin + target);
+        }
       })();
     </script>
   </head>

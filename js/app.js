@@ -41,8 +41,9 @@ import {
   appPathUrl,
 } from "./routes.js";
 import { loadQuestionSlugRegistry } from "./question-slugs.js";
+import { APP_NAME, APP_SLUG } from "./config.js";
 
-const LAST_CERT_KEY = "aws-cert-master:lastCert";
+const LAST_CERT_KEY = `${APP_SLUG}:lastCert`;
 
 let activeCertId = "";
 let appReady = false;
@@ -137,7 +138,7 @@ function setBrowseHash() {
 
 function showLanding() {
   showView("landing");
-  setHeaderTitle("AWS Cert Master");
+  setHeaderTitle(APP_NAME);
 }
 
 /**
@@ -338,7 +339,7 @@ function showBootstrapError(err) {
         <button type="button" class="btn btn-primary" onclick="location.reload()">Retry</button>
       </div>`;
   }
-  setHeaderTitle("AWS Cert Master");
+  setHeaderTitle(APP_NAME);
 }
 
 /**
@@ -393,7 +394,7 @@ async function init() {
   examIndexList = exams;
 
   if (exams.length === 0) {
-    setHeaderTitle("AWS Cert Master");
+    setHeaderTitle(APP_NAME);
     const main = document.querySelector("main");
     if (main) {
       main.innerHTML = `<p role="alert">No exams found. Add a JSON file under <code>data/exams/</code> and run <code>python3 scripts/build-exams-index.py</code>.</p>`;
@@ -450,9 +451,9 @@ async function init() {
   await applyRoute(parseRoute(exams));
 
   try {
-    const autoStart = sessionStorage.getItem("aws-cert-master:autoStart");
+    const autoStart = sessionStorage.getItem(`${APP_SLUG}:autoStart`);
     if (autoStart && exams.some((e) => e.id === autoStart)) {
-      sessionStorage.removeItem("aws-cert-master:autoStart");
+      sessionStorage.removeItem(`${APP_SLUG}:autoStart`);
       await switchCert(autoStart, { fromRoute: true });
       navigateCert(autoStart);
       startExam();

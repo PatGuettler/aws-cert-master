@@ -1,6 +1,6 @@
 # Ad bar setup guide
 
-AWS Cert Master includes a **small, optional ad slot** that:
+Cert Master includes a **small, optional ad slot** that:
 
 - Shows on **home**, **results**, and **study plan** views
 - **Hides completely** while a practice **exam is in progress** (no overlap with questions)

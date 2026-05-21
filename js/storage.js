@@ -1,10 +1,55 @@
-import { DEFAULT_SETTINGS, SETTINGS_KEY } from "./config.js";
+import {
+  APP_SLUG,
+  DEFAULT_SETTINGS,
+  LEGACY_APP_SLUG,
+  SETTINGS_KEY,
+} from "./config.js";
 
-export const HISTORY_KEY = "aws-cert-master:history";
-export const WEAK_KEY = "aws-cert-master:weakQuestions";
-export const BOOKMARKS_KEY = "aws-cert-master:bookmarks";
-export const RESUME_KEY = "aws-cert-master:resumeState";
-export const NOTICE_DISMISSED_KEY = "aws-cert-master:noticeDismissed";
+export const HISTORY_KEY = `${APP_SLUG}:history`;
+export const WEAK_KEY = `${APP_SLUG}:weakQuestions`;
+export const BOOKMARKS_KEY = `${APP_SLUG}:bookmarks`;
+export const RESUME_KEY = `${APP_SLUG}:resumeState`;
+export const NOTICE_DISMISSED_KEY = `${APP_SLUG}:noticeDismissed`;
+
+/** One-time copy from pre-rename localStorage / sessionStorage keys. */
+function migrateLegacyStorage() {
+  if (typeof localStorage === "undefined") return;
+  try {
+    const legacyKeys = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (
+        key &&
+        (key.startsWith(`${LEGACY_APP_SLUG}:`) ||
+          key === `${LEGACY_APP_SLUG}-settings`)
+      ) {
+        legacyKeys.push(key);
+      }
+    }
+    for (const oldKey of legacyKeys) {
+      const newKey = oldKey.startsWith(`${LEGACY_APP_SLUG}:`)
+        ? `${APP_SLUG}:${oldKey.slice(LEGACY_APP_SLUG.length + 1)}`
+        : SETTINGS_KEY;
+      if (localStorage.getItem(newKey) == null) {
+        localStorage.setItem(newKey, localStorage.getItem(oldKey));
+      }
+    }
+    if (typeof sessionStorage !== "undefined") {
+      const auto = sessionStorage.getItem(`${LEGACY_APP_SLUG}:autoStart`);
+      if (auto && !sessionStorage.getItem(`${APP_SLUG}:autoStart`)) {
+        sessionStorage.setItem(`${APP_SLUG}:autoStart`, auto);
+      }
+      const lastCert = localStorage.getItem(`${LEGACY_APP_SLUG}:lastCert`);
+      if (lastCert && !localStorage.getItem(`${APP_SLUG}:lastCert`)) {
+        localStorage.setItem(`${APP_SLUG}:lastCert`, lastCert);
+      }
+    }
+  } catch {
+    /* private mode / blocked storage */
+  }
+}
+
+migrateLegacyStorage();
 
 const EXPORT_VERSION = 1;
 const RESUME_MAX_AGE_MS = 24 * 60 * 60 * 1000;
@@ -303,7 +348,7 @@ export function exportAllData(certIds = []) {
   return {
     exportVersion: EXPORT_VERSION,
     exportedAt: new Date().toISOString(),
-    appVersion: "aws-cert-master",
+    appVersion: APP_SLUG,
     data: {
       history,
       weakQuestions,

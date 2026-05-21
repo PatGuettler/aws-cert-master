@@ -5,7 +5,7 @@
 import { getSiteRoot } from "./paths.js";
 
 /**
- * @returns {string} Pathname prefix for the app, e.g. /aws-cert-master/
+ * @returns {string} Pathname prefix for the app, e.g. /cert-master/
  */
 export function getAppBasePath() {
   return new URL(getSiteRoot()).pathname;

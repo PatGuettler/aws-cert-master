@@ -17,7 +17,7 @@ import sys
 sys.path.insert(0, str(ROOT / "scripts"))
 from doc_url_fixes import URL_REPLACEMENTS  # noqa: E402
 
-USER_AGENT = "AWS-Cert-Master-LinkChecker/1.0"
+USER_AGENT = "Cert-Master-LinkChecker/1.0"
 TIMEOUT = 20
 
 
