@@ -169,9 +169,7 @@ export function runWorkshop({
   /** @param {WorkshopStep} s */
   function quizBlocksNavigation(s) {
     if (!isQuizStep(s)) return false;
-    const selected = quizAnswers[s.id] ?? [];
-    if (!revealedQuizzes.has(s.id)) return true;
-    return !quizCorrect(s, selected);
+    return !revealedQuizzes.has(s.id);
   }
 
   /**
@@ -287,7 +285,7 @@ export function runWorkshop({
     }
     html += "</fieldset>";
 
-    if (!submitted || !correct) {
+    if (!submitted) {
       html += `<p class="workshop-hint">${multi ? "Select all that apply, then check your answer." : "Pick one answer, then check it."} Use <strong>Get more information</strong> below if you want hints before guessing.</p>`;
       html += `<button type="button" class="btn btn-secondary workshop-check-btn" id="workshop-check-answer">Check answer</button>`;
     }
@@ -298,7 +296,7 @@ export function runWorkshop({
         if (s.warningFlags?.length) {
           html += renderWarningFlagsSection(s.warningFlags);
         }
-        html += `<p>The correct answer is highlighted in green above; your choice stays expanded so you can compare. Pick the best response and check again — <strong>Next</strong> stays disabled until you get it right.</p>`;
+        html += `<p>The correct answer is highlighted in green above; your choice stays expanded so you can compare. Press <strong>Next</strong> when you are ready — this knowledge check will not count toward your workshop score.</p>`;
         html += `<p class="workshop-hint workshop-hint-secondary">Want every option explained? Open <strong>Get more information on this</strong> below.</p>`;
       } else if (missedFirstTry) {
         html += `<p>You can continue to the next step. This knowledge check will not count toward your workshop score because the first attempt was incorrect.</p>`;
@@ -600,7 +598,7 @@ export function runWorkshop({
     const blocked = stepBlocksNavigation(s);
     let navHint = "";
     if (quizBlocksNavigation(s)) {
-      navHint = "Answer this question correctly to continue";
+      navHint = "Check your answer to continue";
     } else if (checklistBlocksNavigation(s)) {
       const total = s.items?.length ?? 0;
       const done = checklistReviewedCount(s);
