@@ -3,7 +3,10 @@
  * Legacy hash routes (#cert/..., #browse) are normalized to paths on load.
  */
 import { getSiteRoot } from "./paths.js";
-import { KEYTRAIN_WORKSHOP_IDS } from "./workshops/keytrain-workshop-content.js";
+import {
+  KEYTRAIN_WORKSHOP_IDS,
+  isValidTrainingLevel,
+} from "./workshops/keytrain-workshop-content.js";
 
 /**
  * @returns {string} Pathname prefix for the app, e.g. /cert-master/
@@ -58,7 +61,8 @@ export function parseRoute(exams, keytrainIds = []) {
     if (parts[1] === "workshops") return { type: "keytrain-workshops" };
     if (parts[1] === "workshop" && parts[2]) {
       if (!KEYTRAIN_WORKSHOP_IDS.includes(parts[2])) return { type: "keytrain-hub" };
-      return { type: "keytrain-workshop", certId: parts[2] };
+      const level = parts[3] && isValidTrainingLevel(parts[3]) ? parts[3] : "medium";
+      return { type: "keytrain-workshop", certId: parts[2], workshopLevel: level };
     }
     if (!keytrainIds.includes(parts[1])) return { type: "keytrain-hub" };
     if (parts[2] === "certificate") {
@@ -72,7 +76,8 @@ export function parseRoute(exams, keytrainIds = []) {
     if (parts[1] === "workshops") return { type: "keytrain-workshops" };
     if (parts[1] === "workshop" && parts[2]) {
       if (!KEYTRAIN_WORKSHOP_IDS.includes(parts[2])) return { type: "keytrain-hub" };
-      return { type: "keytrain-workshop", certId: parts[2] };
+      const level = parts[3] && isValidTrainingLevel(parts[3]) ? parts[3] : "medium";
+      return { type: "keytrain-workshop", certId: parts[2], workshopLevel: level };
     }
     return { type: "keytrain-hub" };
   }
@@ -162,10 +167,12 @@ export function navigateKeytrainWorkshops() {
 }
 
 /**
- * @param {string} certId
+ * @param {string} categoryId
+ * @param {string} [level]
  */
-export function navigateKeytrainWorkshop(certId) {
-  history.pushState(null, "", appPathUrl(`keytrain/workshop/${certId}`));
+export function navigateKeytrainWorkshop(categoryId, level = "medium") {
+  const lv = isValidTrainingLevel(level) ? level : "medium";
+  history.pushState(null, "", appPathUrl(`keytrain/workshop/${categoryId}/${lv}`));
 }
 
 /**

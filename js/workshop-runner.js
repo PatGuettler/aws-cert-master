@@ -30,6 +30,8 @@
 /**
  * @typedef {Object} KeytrainWorkshop
  * @property {string} id
+ * @property {string} [categoryId]
+ * @property {'easy'|'medium'|'hard'} [level]
  * @property {string} title
  * @property {string} code
  * @property {string} tagline
@@ -54,9 +56,21 @@ export function runWorkshop({ workshop, container, onExit, onComplete }) {
   /** @type {Set<string>} */
   const revealedQuizzes = new Set();
 
+  const levelClass = workshop.level ? ` workshop-level-${workshop.level}` : "";
+  const levelBadge = workshop.level
+    ? `<span class="workshop-level-badge workshop-level-badge-${workshop.level}">${escapeHtml(
+        workshop.level.charAt(0).toUpperCase() + workshop.level.slice(1)
+      )}</span>`
+    : "";
+
   const shell = document.createElement("div");
-  shell.className = "workshop-shell";
+  shell.className = `workshop-shell${levelClass}`;
   shell.innerHTML = `
+    <header class="workshop-header">
+      <p class="workshop-header-code">${escapeHtml(workshop.code)} ${levelBadge}</p>
+      <h2 class="workshop-header-title">${escapeHtml(workshop.title)}</h2>
+      <p class="workshop-header-tagline">${escapeHtml(workshop.tagline)}</p>
+    </header>
     <div class="workshop-progress-wrap">
       <span class="workshop-progress-label" id="workshop-progress-label"></span>
       <div class="progress-bar" aria-hidden="true">

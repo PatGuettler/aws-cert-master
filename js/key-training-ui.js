@@ -4,7 +4,8 @@
 
 /** @typedef {import('./cert-loader.js').ExamIndexEntry} ExamIndexEntry */
 
-import { listKeytrainWorkshops } from "./workshops/keytrain-workshop-content.js";
+import { KEYTRAIN_CATEGORIES, TRAINING_LEVELS, LEVEL_HINTS } from "./workshops/keytrain-catalog.js";
+import { getKeytrainWorkshop, getLevelLabel } from "./workshops/keytrain-workshop-content.js";
 
 const KEY_TRAINING_VENDOR = "keytraining";
 
@@ -57,36 +58,64 @@ function renderExamGrid(grid, items, onSelect, metaSuffix = " in bank") {
 
 /**
  * @param {HTMLElement|null} grid
- * @param {(workshopId: string) => void} onStart
+ * @param {(categoryId: string, level: string) => void} onStart
  */
-function renderWorkshopGrid(grid, onStart) {
+function renderLeveledWorkshopGrid(grid, onStart) {
   if (!grid) return;
   grid.innerHTML = "";
-  for (const w of listKeytrainWorkshops()) {
-    const tile = document.createElement("button");
-    tile.type = "button";
-    tile.className = "landing-cert-tile keytraining-tile workshop-tile";
-    tile.dataset.workshopId = w.id;
 
-    const level = document.createElement("span");
-    level.className = "landing-cert-tile-level";
-    level.textContent = "Interactive workshop";
+  for (const cat of KEYTRAIN_CATEGORIES) {
+    const card = document.createElement("article");
+    card.className = "keytrain-category-card";
 
-    const title = document.createElement("span");
-    title.className = "landing-cert-tile-title";
-    title.textContent = w.title;
+    const head = document.createElement("header");
+    head.className = "keytrain-category-card-head";
 
     const code = document.createElement("span");
-    code.className = "landing-cert-tile-code";
-    code.textContent = w.code;
+    code.className = "keytrain-category-code";
+    code.textContent = cat.code;
 
-    const meta = document.createElement("span");
-    meta.className = "landing-cert-tile-meta";
-    meta.textContent = `${w.steps.length} steps · ~${w.estimatedMinutes} min`;
+    const title = document.createElement("h3");
+    title.className = "keytrain-category-title";
+    title.textContent = cat.name;
 
-    tile.append(level, title, code, meta);
-    tile.addEventListener("click", () => onStart(w.id));
-    grid.appendChild(tile);
+    const tag = document.createElement("p");
+    tag.className = "keytrain-category-tagline";
+    tag.textContent = cat.tagline;
+
+    head.append(code, title, tag);
+
+    const levels = document.createElement("div");
+    levels.className = "keytrain-level-row";
+    levels.setAttribute("role", "group");
+    levels.setAttribute("aria-label", `${cat.name} difficulty levels`);
+
+    for (const lv of TRAINING_LEVELS) {
+      const w = getKeytrainWorkshop(cat.id, lv);
+      if (!w) continue;
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = `btn btn-outline keytrain-level-btn keytrain-level-btn-${lv}`;
+      btn.dataset.categoryId = cat.id;
+      btn.dataset.level = lv;
+
+      const label = document.createElement("span");
+      label.className = "keytrain-level-btn-label";
+      label.textContent = lv.charAt(0).toUpperCase() + lv.slice(1);
+
+      const meta = document.createElement("span");
+      meta.className = "keytrain-level-btn-meta";
+      meta.textContent = `~${w.estimatedMinutes} min · ${w.steps.length} steps`;
+
+      btn.title = LEVEL_HINTS[lv] ?? getLevelLabel(lv);
+      btn.append(label, meta);
+      btn.addEventListener("click", () => onStart(cat.id, lv));
+      levels.appendChild(btn);
+    }
+
+    card.append(head, levels);
+    grid.appendChild(card);
   }
 }
 
@@ -128,7 +157,7 @@ function renderKeytrainCertTiles(items, grid, onSelect) {
 /**
  * @param {ExamIndexEntry[]} exams
  * @param {(certId: string) => void} onPractice
- * @param {(workshopId: string) => void} onWorkshop
+ * @param {(categoryId: string, level: string) => void} onWorkshop
  * @param {(keytrainId: string) => void} onKeytrainCert
  * @param {import('./keytrain-loader.js').KeytrainCertSummary[]} keytrainCatalog
  */
@@ -148,7 +177,10 @@ export function renderKeytrainHub(
     " · study mode"
   );
 
-  renderWorkshopGrid(document.getElementById("keytrain-workshop-preview-grid"), onWorkshop);
+  renderLeveledWorkshopGrid(
+    document.getElementById("keytrain-workshop-preview-grid"),
+    onWorkshop
+  );
 
   const cyber = keytrainCatalog.filter((c) => c.group === "key-training");
   const vendor = keytrainCatalog.filter((c) => c.group !== "key-training");
@@ -168,10 +200,10 @@ export function renderKeytrainHub(
 }
 
 /**
- * @param {(workshopId: string) => void} onStartWorkshop
+ * @param {(categoryId: string, level: string) => void} onStartWorkshop
  */
 export function renderKeytrainWorkshops(onStartWorkshop) {
-  renderWorkshopGrid(document.getElementById("keytrain-workshop-grid"), onStartWorkshop);
+  renderLeveledWorkshopGrid(document.getElementById("keytrain-workshop-grid"), onStartWorkshop);
 }
 
 /** @deprecated */

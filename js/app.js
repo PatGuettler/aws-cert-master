@@ -442,7 +442,7 @@ async function applyRoute(route) {
   if (route.type === "keytrain-workshop" && route.certId) {
     acronymController?.stop();
     examController?.stopTimer?.();
-    startWorkshop(route.certId, { fromRoute: true });
+    startWorkshop(route.certId, route.workshopLevel ?? "medium", { fromRoute: true });
     return;
   }
 
@@ -1059,25 +1059,33 @@ function discardResume() {
 }
 
 /**
- * @param {string} [workshopId]
+ * @param {string} [categoryId]
+ * @param {string} [level]
  * @param {{ fromRoute?: boolean }} [opts]
  */
-function startWorkshop(workshopId, opts = {}) {
-  if (typeof workshopId === "object" && workshopId !== null) {
-    opts = /** @type {{ fromRoute?: boolean }} */ (workshopId);
-    workshopId = activeCertId;
+function startWorkshop(categoryId, level = "medium", opts = {}) {
+  if (typeof level === "object" && level !== null) {
+    opts = /** @type {{ fromRoute?: boolean }} */ (level);
+    level = "medium";
   }
-  const id = String(workshopId || "");
-  const workshop = getKeytrainWorkshop(id);
+  if (typeof categoryId === "object" && categoryId !== null) {
+    opts = /** @type {{ fromRoute?: boolean }} */ (categoryId);
+    categoryId = activeCertId;
+    level = "medium";
+  }
+  const id = String(categoryId || "");
+  const lv = String(level || "medium");
+  const workshop = getKeytrainWorkshop(id, lv);
   if (!workshop) {
-    window.alert("Workshop not found for this category.");
+    window.alert("Workshop not found for this category and level.");
     return;
   }
-  if (!opts.fromRoute) navigateKeytrainWorkshop(id);
+  if (!opts.fromRoute) navigateKeytrainWorkshop(id, lv);
   examController?.stopTimer?.();
   workshopController?.stop();
   showView("keytrainWorkshop");
-  setHeaderTitle(`${workshop.code} — Workshop`);
+  const levelName = lv.charAt(0).toUpperCase() + lv.slice(1);
+  setHeaderTitle(`${workshop.code} — ${levelName} workshop`);
   const root = document.getElementById("workshop-root");
   if (!root) return;
   workshopController = runWorkshop({
