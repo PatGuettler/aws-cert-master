@@ -80,7 +80,7 @@ export const LEVEL_LABELS = {
 
 /** @type {Record<string, string>} */
 export const LEVEL_HINTS = {
-  easy: "Plain language for beginners, kids, and anyone new to security.",
+  easy: "Beginner-friendly and thorough—core concepts explained step by step in plain language.",
   medium: "Workplace scenarios with standard security terms.",
   hard: "Technical detail and tricky decisions for experienced learners.",
 };
