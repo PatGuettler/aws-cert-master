@@ -2,10 +2,40 @@
  * Medium-level KeyTrain workshops — workplace scenarios and standard terms.
  */
 import { workshop } from "./keytrain-workshop-factory.js";
+import { prepareWorkshopQuiz } from "./prepare-workshop-quiz.js";
+
+/**
+ * @param {import('../workshop-runner.js').KeytrainWorkshop} w
+ */
+function withQuizOverrides(w) {
+  return workshop({
+    ...w,
+    steps: w.steps.map((step) => {
+      if (step.type !== "quiz") return step;
+      const q = prepareWorkshopQuiz(
+        {
+          prompt: step.prompt,
+          options: step.options,
+          correct: step.correct,
+          explanation: step.explanation,
+          multi: step.quizType === "multiple-response",
+        },
+        w.id,
+        step.id
+      );
+      return {
+        ...step,
+        prompt: q.prompt,
+        options: q.options,
+        correct: q.correct,
+      };
+    }),
+  });
+}
 
 /** @type {Record<string, import('../workshop-runner.js').KeytrainWorkshop>} */
 export const MEDIUM_WORKSHOPS = {
-  "keytrain-identity-access": workshop({
+  "keytrain-identity-access": withQuizOverrides(workshop({
     id: "keytrain-identity-access",
     categoryId: "keytrain-identity-access",
     level: "medium",
@@ -123,9 +153,9 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 
-  "keytrain-email-security": workshop({
+  "keytrain-email-security": withQuizOverrides(workshop({
     id: "keytrain-email-security",
     categoryId: "keytrain-email-security",
     level: "medium",
@@ -239,9 +269,9 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 
-  "keytrain-data-protection": workshop({
+  "keytrain-data-protection": withQuizOverrides(workshop({
     id: "keytrain-data-protection",
     categoryId: "keytrain-data-protection",
     level: "medium",
@@ -352,9 +382,9 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 
-  "keytrain-endpoint-security": workshop({
+  "keytrain-endpoint-security": withQuizOverrides(workshop({
     id: "keytrain-endpoint-security",
     categoryId: "keytrain-endpoint-security",
     level: "medium",
@@ -460,9 +490,9 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 
-  "keytrain-network-security": workshop({
+  "keytrain-network-security": withQuizOverrides(workshop({
     id: "keytrain-network-security",
     categoryId: "keytrain-network-security",
     level: "medium",
@@ -568,9 +598,9 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 
-  "keytrain-system-hygiene": workshop({
+  "keytrain-system-hygiene": withQuizOverrides(workshop({
     id: "keytrain-system-hygiene",
     categoryId: "keytrain-system-hygiene",
     level: "medium",
@@ -676,9 +706,9 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 
-  "keytrain-application-security": workshop({
+  "keytrain-application-security": withQuizOverrides(workshop({
     id: "keytrain-application-security",
     categoryId: "keytrain-application-security",
     level: "medium",
@@ -785,9 +815,9 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 
-  "keytrain-financial-security": workshop({
+  "keytrain-financial-security": withQuizOverrides(workshop({
     id: "keytrain-financial-security",
     categoryId: "keytrain-financial-security",
     level: "medium",
@@ -892,9 +922,9 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 
-  "keytrain-physical-security": workshop({
+  "keytrain-physical-security": withQuizOverrides(workshop({
     id: "keytrain-physical-security",
     categoryId: "keytrain-physical-security",
     level: "medium",
@@ -1000,9 +1030,9 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 
-  "keytrain-compliance-governance": workshop({
+  "keytrain-compliance-governance": withQuizOverrides(workshop({
     id: "keytrain-compliance-governance",
     categoryId: "keytrain-compliance-governance",
     level: "medium",
@@ -1109,5 +1139,5 @@ export const MEDIUM_WORKSHOPS = {
         ],
       },
     ],
-  }),
+  })),
 };

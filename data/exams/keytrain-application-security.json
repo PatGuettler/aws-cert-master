@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 12,
-    "scoredQuestions": 12,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 16,
+    "scoredQuestions": 16,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -83,7 +83,7 @@
       "options": [
         {
           "id": "a",
-          "text": "SQLi is only a network issue"
+          "text": "Disable WAF to reduce latency, without security or identity team coordination per policy."
         },
         {
           "id": "b",
@@ -91,17 +91,18 @@
         },
         {
           "id": "c",
-          "text": "Disable WAF to reduce latency"
+          "text": "SQLi is only a network issue, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "WAF replaces secure coding"
+          "text": "WAF replaces secure coding, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
       "explanation": "Relying solely on WAF leaves gaps when rules fail or traffic is internal.",
+      "concept": "Fix flaws at the source; WAF and perimeter controls are compensating, not sufficient.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -121,25 +122,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Delete microservices"
+          "text": "Identify versions in prod, upgrade or mitigate per vendor guidance, emergency change"
         },
         {
           "id": "b",
-          "text": "Hide scan results"
+          "text": "Delete microservices, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "Wait for annual pen test"
+          "text": "Hide scan results, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Identify versions in prod, upgrade or mitigate per vendor guidance, emergency change"
+          "text": "Wait for annual pen test, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Known exploited vulns need rapid inventory and patching.",
+      "concept": "Fix flaws at the source; WAF and perimeter controls are compensating, not sufficient.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -159,25 +161,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Merge with Active Directory admin tier"
+          "text": "Expose database port 3306 publicly, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Expose database port 3306 publicly"
-        },
-        {
-          "id": "c",
           "text": "Reverse proxy with modern TLS, WAF, and strict network ACL to app tier"
         },
         {
+          "id": "c",
+          "text": "Turn off authentication for speed, without security or identity team coordination per policy."
+        },
+        {
           "id": "d",
-          "text": "Turn off authentication for speed"
+          "text": "Merge with Active Directory admin tier, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Compensating perimeter controls while planning retirement.",
+      "concept": "Fix flaws at the source; WAF and perimeter controls are compensating, not sufficient.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -191,31 +194,32 @@
     },
     {
       "id": "ktapp-q004",
-      "domain": "insecure-coding",
+      "domain": "vulnerable-apps",
       "type": "multiple-choice",
-      "text": "Code review finds user input concatenated into OS commands. Fix?",
+      "text": "Bug bounty reports IDOR on an API returning other users' orders by changing ?userId=. Fix?",
       "options": [
         {
           "id": "a",
-          "text": "Use parameterized APIs or strict allowlists; never shell out with raw input"
+          "text": "Hide the parameter in client-side JavaScript so users cannot easily edit it"
         },
         {
           "id": "b",
-          "text": "Add a comment 'sanitize later'"
+          "text": "Close the report because the app uses HTTPS which encrypts parameter tampering"
         },
         {
           "id": "c",
-          "text": "Trust internal users only"
+          "text": "Enforce server-side authorization checks on every object reference, then regression test"
         },
         {
           "id": "d",
-          "text": "Escape only single quotes"
+          "text": "Rate-limit the API to one request per day without fixing authorization logic"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
-      "explanation": "Command injection is prevented by avoiding shell concatenation.",
+      "explanation": "IDOR is an authorization flaw; TLS does not substitute for access control.",
+      "concept": "Fix flaws at the source; WAF and perimeter controls are compensating, not sufficient.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -231,29 +235,30 @@
       "id": "ktapp-q005",
       "domain": "insecure-coding",
       "type": "multiple-choice",
-      "text": "JWTs are accepted with alg=none in a mobile API. Severity?",
+      "text": "Code review finds user input concatenated into OS commands. Fix?",
       "options": [
         {
           "id": "a",
-          "text": "Critical authentication bypass\u2014enforce algorithm allowlist server-side"
+          "text": "Add a comment 'sanitize later', without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Not relevant to APIs"
+          "text": "Escape only single quotes, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Fixed by longer passwords only"
+          "text": "Use parameterized APIs or strict allowlists; never shell out with raw input"
         },
         {
           "id": "d",
-          "text": "Low because mobile is encrypted"
+          "text": "Trust internal users only, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
-      "explanation": "JWT alg none is a known auth bypass pattern.",
+      "explanation": "Command injection is prevented by avoiding shell concatenation.",
+      "concept": "Prevent injection and auth bypass with secure APIs, validation, and secret hygiene.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -269,29 +274,30 @@
       "id": "ktapp-q006",
       "domain": "insecure-coding",
       "type": "multiple-choice",
-      "text": "Secrets are hard-coded in a mobile app binary. BEST remediation?",
+      "text": "JWTs are accepted with alg=none in a mobile API. Severity?",
       "options": [
         {
           "id": "a",
-          "text": "Use longer secret strings"
+          "text": "Fixed by longer passwords only, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Remove secrets from client; use backend broker with short-lived tokens"
+          "text": "Not relevant to APIs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Obfuscate variable names"
+          "text": "Critical authentication bypass\u2014enforce algorithm allowlist server-side"
         },
         {
           "id": "d",
-          "text": "Publish app only on Fridays"
+          "text": "Low because mobile is encrypted, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
-      "explanation": "Client binaries are extractable; secrets belong server-side.",
+      "explanation": "JWT alg none is a known auth bypass pattern.",
+      "concept": "Prevent injection and auth bypass with secure APIs, validation, and secret hygiene.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -305,31 +311,32 @@
     },
     {
       "id": "ktapp-q007",
-      "domain": "exploits",
+      "domain": "insecure-coding",
       "type": "multiple-choice",
-      "text": "Threat intel lists active exploitation of a VPN appliance CVE. Action?",
+      "text": "Secrets are hard-coded in a mobile app binary. BEST remediation?",
       "options": [
         {
           "id": "a",
-          "text": "Disable VPN and use telnet"
+          "text": "Publish app only on Fridays, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Post CVE on social media only"
+          "text": "Remove secrets from client; use backend broker with short-lived tokens"
         },
         {
           "id": "c",
-          "text": "Wait for quarterly patch cycle"
+          "text": "Obfuscate variable names, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Emergency patch or disconnect appliance per vendor advisory and IR plan"
+          "text": "Use longer secret strings, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
-      "explanation": "Known exploited vulns need immediate vendor-guided response.",
+      "explanation": "Client binaries are extractable; secrets belong server-side.",
+      "concept": "Prevent injection and auth bypass with secure APIs, validation, and secret hygiene.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -343,31 +350,32 @@
     },
     {
       "id": "ktapp-q008",
-      "domain": "exploits",
+      "domain": "insecure-coding",
       "type": "multiple-choice",
-      "text": "Pen test achieves domain admin via PrintNightmare-style vuln. Lesson?",
+      "text": "A Node service builds SQL with template literals including user search terms. Risk?",
       "options": [
         {
           "id": "a",
-          "text": "Disable printing forever"
+          "text": "Fixed by minifying the source code before deploying to production containers, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Add users to Domain Admins for support"
+          "text": "Low risk if the database is hosted inside the same VPC as the application"
         },
         {
           "id": "c",
-          "text": "Ignore if printers work"
+          "text": "SQL injection allowing data theft or authentication bypass against the database"
         },
         {
           "id": "d",
-          "text": "Patch print spooler services and restrict driver installation privileges"
+          "text": "No risk because Node is JavaScript and therefore memory-safe against injection, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
-      "explanation": "Print subsystem bugs have been critical; privilege reduction matters.",
+      "explanation": "Dynamic SQL concatenation is unsafe; use parameterized queries or ORM bindings.",
+      "concept": "Prevent injection and auth bypass with secure APIs, validation, and secret hygiene.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -383,29 +391,30 @@
       "id": "ktapp-q009",
       "domain": "exploits",
       "type": "multiple-choice",
-      "text": "Browser zero-day is announced; no patch for 48 hours. Mitigation?",
+      "text": "Threat intel lists active exploitation of a VPN appliance CVE. Action?",
       "options": [
         {
           "id": "a",
-          "text": "Allow only IE6"
+          "text": "Emergency patch or disconnect appliance per vendor advisory and IR plan"
         },
         {
           "id": "b",
-          "text": "Uninstall all browsers"
+          "text": "Disable VPN and use telnet, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Enable enhanced protective mode, restrict browsing on sensitive assets, monitor IOCs"
+          "text": "Wait for quarterly patch cycle, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Disable EDR"
+          "text": "Post CVE on social media only, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
-      "explanation": "Temporary hardening and monitoring bridge zero-day windows.",
+      "explanation": "Known exploited vulns need immediate vendor-guided response.",
+      "concept": "Act on CISA KEV and vendor advisories for actively exploited vulnerabilities immediately.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -419,31 +428,32 @@
     },
     {
       "id": "ktapp-q010",
-      "domain": "sast",
+      "domain": "exploits",
       "type": "multiple-choice",
-      "text": "SAST pipeline fails build on hard-coded AWS keys in a feature branch. Correct outcome?",
+      "text": "Pen test achieves domain admin via PrintNightmare-style vuln. Lesson?",
       "options": [
         {
           "id": "a",
-          "text": "Disable SAST permanently"
+          "text": "Add users to Domain Admins for support, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Override because deadline is today"
+          "text": "Ignore if printers work, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Move keys to comments"
+          "text": "Disable printing forever, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Block merge until secrets removed and rotated if ever committed to default branch"
+          "text": "Patch print spooler services and restrict driver installation privileges"
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "SAST gating prevents secret leakage into production lineage.",
+      "explanation": "Print subsystem bugs have been critical; privilege reduction matters.",
+      "concept": "Act on CISA KEV and vendor advisories for actively exploited vulnerabilities immediately.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -457,31 +467,32 @@
     },
     {
       "id": "ktapp-q011",
-      "domain": "sast",
+      "domain": "exploits",
       "type": "multiple-choice",
-      "text": "Developers complain SAST has 10,000 findings. Prioritization approach?",
+      "text": "Browser zero-day is announced; no patch for 48 hours. Mitigation?",
       "options": [
         {
           "id": "a",
-          "text": "Run SAST only yearly"
+          "text": "Enable enhanced protective mode, restrict browsing on sensitive assets, monitor IOCs"
         },
         {
           "id": "b",
-          "text": "Ignore all findings"
+          "text": "Uninstall all browsers, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Focus on critical severity in attack surface paths; tune false positive rules"
+          "text": "Disable EDR, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Delete the codebase"
+          "text": "Allow only IE6, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
-      "explanation": "Risk-based triage makes SAST sustainable.",
+      "explanation": "Temporary hardening and monitoring bridge zero-day windows.",
+      "concept": "Act on CISA KEV and vendor advisories for actively exploited vulnerabilities immediately.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -495,31 +506,188 @@
     },
     {
       "id": "ktapp-q012",
+      "domain": "exploits",
+      "type": "multiple-choice",
+      "text": "Threat actors weaponize a Citrix ADC flaw within 24 hours of disclosure. Your edge uses ADC. Step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable all VPN until the next major version upgrade in six months, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Schedule remediation at the next monthly maintenance window without monitoring, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Rely on users to report slowness as the primary exploitation detection method, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Apply vendor hotfix or WAF virtual patch immediately and hunt for IOCs on appliances"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Edge appliances with active exploitation need emergency patching and threat hunting.",
+      "concept": "Act on CISA KEV and vendor advisories for actively exploited vulnerabilities immediately.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q013",
+      "domain": "sast",
+      "type": "multiple-choice",
+      "text": "SAST pipeline fails build on hard-coded AWS keys in a feature branch. Correct outcome?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Block merge until secrets removed and rotated if ever committed to default branch"
+        },
+        {
+          "id": "b",
+          "text": "Move keys to comments, using shared credentials instead of individual accountability."
+        },
+        {
+          "id": "c",
+          "text": "Disable SAST permanently, using shared credentials instead of individual accountability."
+        },
+        {
+          "id": "d",
+          "text": "Override because deadline is today, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SAST gating prevents secret leakage into production lineage.",
+      "concept": "Shift-left scanning blocks secrets and critical flaws before production lineage.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q014",
+      "domain": "sast",
+      "type": "multiple-choice",
+      "text": "Developers complain SAST has 10,000 findings. Prioritization approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delete the codebase, using shared credentials instead of individual accountability."
+        },
+        {
+          "id": "b",
+          "text": "Ignore all findings, using shared credentials instead of individual accountability."
+        },
+        {
+          "id": "c",
+          "text": "Run SAST only yearly, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Focus on critical severity in attack surface paths; tune false positive rules"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Risk-based triage makes SAST sustainable.",
+      "concept": "Shift-left scanning blocks secrets and critical flaws before production lineage.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q015",
       "domain": "sast",
       "type": "multiple-choice",
       "text": "SAST flags SSRF in a webhook feature. Why is this high risk?",
       "options": [
         {
           "id": "a",
-          "text": "SSRF only affects CSS colors"
-        },
-        {
-          "id": "b",
           "text": "Server may fetch internal metadata URLs exposing cloud credentials"
         },
         {
+          "id": "b",
+          "text": "SSRF only affects CSS colors, without security or identity team coordination per policy."
+        },
+        {
           "id": "c",
-          "text": "SAST never finds real bugs"
+          "text": "SAST never finds real bugs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Webhooks cannot call URLs"
+          "text": "Webhooks cannot call URLs, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "SSRF to cloud metadata is a common critical finding.",
+      "concept": "Shift-left scanning blocks secrets and critical flaws before production lineage.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktapp-q016",
+      "domain": "sast",
+      "type": "multiple-choice",
+      "text": "SAST flags deserialization of untrusted data in a Java admin servlet. Why critical?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deserialization only affects JSON field names in mobile clients, not servers"
+        },
+        {
+          "id": "b",
+          "text": "Remote attackers may execute arbitrary code via gadget chains during deserialization"
+        },
+        {
+          "id": "c",
+          "text": "Finding is informational because the servlet requires HTTPS in production, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "SAST cannot detect real issues; developers should ignore Java findings, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "SSRF to cloud metadata is a common critical finding.",
+      "explanation": "Unsafe deserialization is a frequent RCE path in enterprise Java apps.",
+      "concept": "Shift-left scanning blocks secrets and critical flaws before production lineage.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

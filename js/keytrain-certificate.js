@@ -1,11 +1,38 @@
 /**
  * Client-side PDF certificate generation (jsPDF loaded on demand).
+ * CDN 2.5.2 on cdnjs returns 404; use jsDelivr + self-hosted vendor fallback.
  */
 
-const JSPDF_URL =
-  "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js";
+import { resolveAssetPath } from "./paths.js";
+
+const JSPDF_CDN =
+  "https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js";
+const JSPDF_LOCAL = "vendor/jspdf.umd.min.js";
 
 let jsPdfPromise = null;
+
+/**
+ * @param {string} src
+ * @returns {Promise<typeof import('jspdf').jsPDF>}
+ */
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    if (window.jspdf?.jsPDF) {
+      resolve(window.jspdf.jsPDF);
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    script.onload = () => {
+      if (window.jspdf?.jsPDF) resolve(window.jspdf.jsPDF);
+      else reject(new Error("jsPDF loaded but global was not found"));
+    };
+    script.onerror = () =>
+      reject(new Error(`Could not load PDF library from ${src}`));
+    document.head.appendChild(script);
+  });
+}
 
 function loadJsPdf() {
   if (jsPdfPromise) return jsPdfPromise;
@@ -13,18 +40,16 @@ function loadJsPdf() {
     jsPdfPromise = Promise.resolve(window.jspdf.jsPDF);
     return jsPdfPromise;
   }
-  jsPdfPromise = new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = JSPDF_URL;
-    script.async = true;
-    script.onload = () => {
-      if (window.jspdf?.jsPDF) resolve(window.jspdf.jsPDF);
-      else reject(new Error("jsPDF failed to load"));
-    };
-    script.onerror = () => reject(new Error("Could not load PDF library"));
-    document.head.appendChild(script);
-  });
+  const localUrl = resolveAssetPath(JSPDF_LOCAL);
+  jsPdfPromise = loadScript(localUrl).catch(() => loadScript(JSPDF_CDN));
   return jsPdfPromise;
+}
+
+/** Preload jsPDF when opening the certificate form (reduces wait on download). */
+export function preloadKeytrainCertificatePdf() {
+  loadJsPdf().catch(() => {
+    /* surfaced on download click */
+  });
 }
 
 /**
@@ -38,7 +63,19 @@ function loadJsPdf() {
  * @param {string} opts.examCode
  */
 export async function downloadKeytrainCertificatePdf(opts) {
-  const jsPDF = await loadJsPdf();
+  let jsPDF;
+  try {
+    jsPDF = await loadJsPdf();
+  } catch (e) {
+    const hint =
+      e instanceof Error && e.message.includes("Could not load")
+        ? " Check your network or try again. If you opened the site from disk (file://), use a local web server instead."
+        : "";
+    throw new Error(
+      `Could not load PDF library.${hint}`,
+      e instanceof Error ? { cause: e } : undefined
+    );
+  }
   const doc = new jsPDF({ orientation: "landscape", unit: "pt", format: "letter" });
   const w = doc.internal.pageSize.getWidth();
   const h = doc.internal.pageSize.getHeight();
@@ -105,7 +142,8 @@ export async function downloadKeytrainCertificatePdf(opts) {
     "KeyTrain certification is issued by Cert Master for study purposes. Not affiliated with AWS, Microsoft, Google, or CompTIA.",
     w / 2,
     h - margin - 18,
-    { align: "center", maxWidth: w - margin * 2 - 40 }
+    { align: "center",
+      maxWidth: w - margin * 2 - 40 }
   );
 
   const safeName = name.replace(/[^\w\s-]/g, "").replace(/\s+/g, "-").slice(0, 40);

@@ -78,24 +78,39 @@ Under `scripts/` — run **locally** only when bulk-regenerating from fact banks
 | `build-exams-index.py` | Rescan `data/exams/*.json` → refresh `exams-index.json` |
 | `build-questions-slugs.py` | Rebuild `data/questions-slugs.json` after exam changes |
 | `generate_all_vendors.py` | Regenerate all vendor banks from Python catalogs |
-| `build-question-pages.py` | Generate static HTML under `questions/` (SEO; optional) |
+| `build-question-pages.py` | Generate SEO HTML (`questions/`, `cert/`, `browse/`), trust pages (`about/`, `contact/`, `privacy/`), and `sitemap.xml` |
 
-## Local preview
+## Local preview (optional — does not affect GitHub Pages)
+
+The live site is still plain static files (`index.html`, `js/`, `data/`, `css/`). **GitHub Actions does not run `npm install` or `npm run dev`.** The optional `package.json` is only for serving the repo on your machine.
+
+ES modules and workshop PDFs need HTTP locally (not `file://`).
+
+**Option A — npm (local convenience):**
 
 ```bash
-cd cert-master
+npm install          # creates node_modules/ (gitignored — never deployed)
+npm run dev          # http://localhost:8080
+```
+
+**Option B — Python (no Node at all):**
+
+```bash
 python3 -m http.server 8080
 ```
 
-Open `http://localhost:8080/`. ES modules need HTTP (not `file://`).
+You can delete `package.json` and `node_modules/` anytime; production hosting is unchanged.
 
 ## Deploy
 
-Push to `main`. **`.github/workflows/pages.yml`** deploys the repository root with no build step.
+Push to `main`. **`.github/workflows/pages.yml`** uploads the repo root as static files. The only CI step besides deploy is `python3 scripts/build-question-pages.py` for SEO HTML (`questions/`, `cert/`, `browse/`, trust pages, `sitemap.xml`). No Node build.
 
-## Ads
+## Ads & AdSense readiness
 
-See **[docs/ADS_SETUP.md](docs/ADS_SETUP.md)** for AdSense, `ads.txt`, and `data/ads-config.json`.
+See **[docs/ADS_SETUP.md](docs/ADS_SETUP.md)** for AdSense, `ads.txt`, and `data/ads-config.json`.  
+See **[docs/ADSENSE_READINESS.md](docs/ADSENSE_READINESS.md)** for About/Contact/Privacy, policy alignment, and pre-submission checklist.
+
+Committed trust pages: `about/`, `contact/`, `privacy/` (regenerated on deploy; safe to preview locally).
 
 ## Disclaimer
 

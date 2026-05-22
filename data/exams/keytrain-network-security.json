@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 18,
-    "scoredQuestions": 18,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 20,
+    "scoredQuestions": 20,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -113,15 +113,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable IPS permanently"
+          "text": "Disable IPS permanently, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Block all ERP users"
+          "text": "Turn off logging on IPS, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Turn off logging on IPS"
+          "text": "Block all ERP users, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
@@ -132,6 +132,7 @@
         "d"
       ],
       "explanation": "Signature tuning balances protection and availability; document changes.",
+      "concept": "Tune alerts to context; correlate IDS events with endpoints and identity logs.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -151,15 +152,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Ignore because TLS cannot be inspected"
+          "text": "Decrypt all employee HTTPS at home, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Shut down the internet border"
+          "text": "Ignore because TLS cannot be inspected, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Decrypt all employee HTTPS at home"
+          "text": "Shut down the internet border, without security or identity team coordination per policy."
         },
         {
           "id": "d",
@@ -170,6 +171,7 @@
         "d"
       ],
       "explanation": "Encrypted traffic needs multi-source correlation to avoid false positives.",
+      "concept": "Tune alerts to context; correlate IDS events with endpoints and identity logs.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -189,25 +191,26 @@
       "options": [
         {
           "id": "a",
-          "text": "HIPAA documentation gap"
-        },
-        {
-          "id": "b",
           "text": "Likely internal reconnaissance or worm propagation worth isolating"
         },
         {
+          "id": "b",
+          "text": "Printer firmware update, without security or identity team coordination per policy."
+        },
+        {
           "id": "c",
-          "text": "Printer firmware update"
+          "text": "Normal backup behavior always, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Normal backup behavior always"
+          "text": "HIPAA documentation gap, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Internal port sweeps are suspicious and warrant host isolation and investigation.",
+      "concept": "Tune alerts to context; correlate IDS events with endpoints and identity logs.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -221,31 +224,32 @@
     },
     {
       "id": "ktnet-q004",
-      "domain": "port-anomalies",
+      "domain": "ids-ips",
       "type": "multiple-choice",
-      "text": "Firewall logs show outbound TCP 4444 from a workstation to an unknown IP. What is this commonly associated with?",
+      "text": "IPS blocks a SQL injection attempt against a legacy app, but app logs show no WAF upstream. Concern?",
       "options": [
         {
           "id": "a",
-          "text": "Standard HTTPS browsing"
+          "text": "Disable IPS because blocking attacks might upset legitimate penetration testers, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "LDAP user authentication"
+          "text": "IPS may be blind to internal or TLS-east traffic; fix the application and add WAF in depth"
         },
         {
           "id": "c",
-          "text": "NTP time sync only"
+          "text": "Move the database to the DMZ to reduce latency for external customers, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Metasploit default handler ports and reverse shells\u2014treat as incident"
+          "text": "IPS blocks mean the application source code is now fully patched automatically, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
-      "explanation": "Non-standard high ports outbound to rare IPs are classic C2 indicators.",
+      "explanation": "IPS is compensating control; vulnerable apps still need code-level fixes.",
+      "concept": "Tune alerts to context; correlate IDS events with endpoints and identity logs.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -261,29 +265,30 @@
       "id": "ktnet-q005",
       "domain": "port-anomalies",
       "type": "multiple-choice",
-      "text": "A database server suddenly listens on port 3389 internally. BEST response?",
+      "text": "Firewall logs show outbound TCP 4444 from a workstation to an unknown IP. What is this commonly associated with?",
       "options": [
         {
           "id": "a",
-          "text": "Disable database encryption"
+          "text": "LDAP user authentication, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Ignore if CPU is low"
+          "text": "Metasploit default handler ports and reverse shells\u2014treat as incident"
         },
         {
           "id": "c",
-          "text": "Verify authorized change; if none, isolate and hunt for lateral movement"
+          "text": "NTP time sync only, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Open 3389 to the internet for remote support"
+          "text": "Standard HTTPS browsing, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
-      "explanation": "Unexpected RDP on database tiers suggests compromise or misconfiguration.",
+      "explanation": "Non-standard high ports outbound to rare IPs are classic C2 indicators.",
+      "concept": "Unexpected listening ports and outbound connections may indicate C2 or lateral movement.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -299,29 +304,30 @@
       "id": "ktnet-q006",
       "domain": "port-anomalies",
       "type": "multiple-choice",
-      "text": "Netflow shows micro-bursts on port 53 to many external IPs. Consider?",
+      "text": "A database server suddenly listens on port 3389 internally. BEST response?",
       "options": [
         {
           "id": "a",
-          "text": "Normal email delivery"
+          "text": "Verify authorized change; if none, isolate and hunt for lateral movement"
         },
         {
           "id": "b",
-          "text": "Badge reader maintenance"
+          "text": "Ignore if CPU is low, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Possible DNS tunneling exfiltration\u2014inspect query entropy and destinations"
+          "text": "Open 3389 to the internet for remote support, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Patch Tuesday only"
+          "text": "Disable database encryption, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
-      "explanation": "Anomalous DNS volume/entropy can indicate tunneling.",
+      "explanation": "Unexpected RDP on database tiers suggests compromise or misconfiguration.",
+      "concept": "Unexpected listening ports and outbound connections may indicate C2 or lateral movement.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -335,31 +341,32 @@
     },
     {
       "id": "ktnet-q007",
-      "domain": "beaconing",
+      "domain": "port-anomalies",
       "type": "multiple-choice",
-      "text": "A host contacts one IP every 60 seconds with 200-byte HTTPS posts. Likely behavior?",
+      "text": "Netflow shows micro-bursts on port 53 to many external IPs. Consider?",
       "options": [
         {
           "id": "a",
-          "text": "C2 beaconing with jittered interval\u2014investigate process and block domain"
+          "text": "Possible DNS tunneling exfiltration\u2014inspect query entropy and destinations"
         },
         {
           "id": "b",
-          "text": "Windows Update always"
+          "text": "Badge reader maintenance, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Backup tape rotation"
+          "text": "Normal email delivery, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "User reading news"
+          "text": "Patch Tuesday only, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Regular small outbound sessions are beacon patterns.",
+      "explanation": "Anomalous DNS volume/entropy can indicate tunneling.",
+      "concept": "Unexpected listening ports and outbound connections may indicate C2 or lateral movement.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -373,31 +380,32 @@
     },
     {
       "id": "ktnet-q008",
-      "domain": "beaconing",
+      "domain": "port-anomalies",
       "type": "multiple-choice",
-      "text": "Proxy logs show failed CONNECT attempts every minute from malware sandbox? ",
+      "text": "NetFlow shows workstations initiating SMB(445) to hundreds of internal hosts at night. Likely?",
       "options": [
         {
           "id": "a",
-          "text": "CCTV offline"
+          "text": "Evidence that DNS filtering is misconfigured on guest Wi-Fi only, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Sandbox may be simulating beacon\u2014ensure production hosts are not in same pattern"
+          "text": "Proof that users need local admin to fix printer drivers faster"
         },
         {
           "id": "c",
-          "text": "DNSSEC misconfiguration only"
+          "text": "Lateral movement or worm-like propagation requiring isolation and EDR hunt"
         },
         {
           "id": "d",
-          "text": "Proof HR is phishing"
+          "text": "Normal Windows Update behavior that security should ignore completely, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
-      "explanation": "Distinguish test lab from production beaconing via asset context.",
+      "explanation": "Mass internal SMB from workstations is abnormal and often post-compromise.",
+      "concept": "Unexpected listening ports and outbound connections may indicate C2 or lateral movement.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -413,29 +421,30 @@
       "id": "ktnet-q009",
       "domain": "beaconing",
       "type": "multiple-choice",
-      "text": "Which dataset BEST confirms beaconing vs user streaming video?",
+      "text": "A host contacts one IP every 60 seconds with 200-byte HTTPS posts. Likely behavior?",
       "options": [
         {
           "id": "a",
-          "text": "Multicast discovery on LAN"
+          "text": "Backup tape rotation, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Variable large downloads to CDN during lunch"
+          "text": "User reading news, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Fixed byte counts at steady intervals to rare destinations"
+          "text": "C2 beaconing with jittered interval\u2014investigate process and block domain"
         },
         {
           "id": "d",
-          "text": "Broadcast ARP requests"
+          "text": "Windows Update always, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Beacons are rhythmic and uniform; streaming is bursty to CDNs.",
+      "explanation": "Regular small outbound sessions are beacon patterns.",
+      "concept": "Regular low-volume callbacks suggest command-and-control\u2014hunt with DNS/proxy telemetry.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -449,31 +458,32 @@
     },
     {
       "id": "ktnet-q010",
-      "domain": "arp-spoofing",
+      "domain": "beaconing",
       "type": "multiple-choice",
-      "text": "Users report SSL warnings only on Wi-Fi in one office. Wireshark on a laptop shows duplicate MAC for the gateway. Diagnosis?",
+      "text": "Proxy logs show failed CONNECT attempts every minute from malware sandbox? ",
       "options": [
         {
           "id": "a",
-          "text": "Global DNS root compromise"
+          "text": "Proof HR is phishing, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Expired HIPAA training"
+          "text": "CCTV offline, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "ARP spoofing / MITM on local segment"
+          "text": "Sandbox may be simulating beacon\u2014ensure production hosts are not in same pattern"
         },
         {
           "id": "d",
-          "text": "Backup failure only"
+          "text": "DNSSEC misconfiguration only, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Duplicate gateway MAC suggests LAN MITM, often via ARP poisoning.",
+      "explanation": "Distinguish test lab from production beaconing via asset context.",
+      "concept": "Regular low-volume callbacks suggest command-and-control\u2014hunt with DNS/proxy telemetry.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -487,31 +497,32 @@
     },
     {
       "id": "ktnet-q011",
-      "domain": "arp-spoofing",
+      "domain": "beaconing",
       "type": "multiple-choice",
-      "text": "Which switch feature mitigates ARP spoofing on access ports?",
+      "text": "Which dataset BEST confirms beaconing vs user streaming video?",
       "options": [
         {
           "id": "a",
-          "text": "Remove port security"
+          "text": "Variable large downloads to CDN during lunch, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Disable STP"
+          "text": "Fixed byte counts at steady intervals to rare destinations"
         },
         {
           "id": "c",
-          "text": "Open all VLANs to default"
+          "text": "Multicast discovery on LAN, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Dynamic ARP Inspection (DAI) with DHCP snooping"
+          "text": "Broadcast ARP requests, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
-      "explanation": "DAI validates ARP against trusted bindings.",
+      "explanation": "Beacons are rhythmic and uniform; streaming is bursty to CDNs.",
+      "concept": "Regular low-volume callbacks suggest command-and-control\u2014hunt with DNS/proxy telemetry.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -525,31 +536,32 @@
     },
     {
       "id": "ktnet-q012",
-      "domain": "arp-spoofing",
+      "domain": "beaconing",
       "type": "multiple-choice",
-      "text": "An attacker on guest Wi-Fi intercepts traffic. BEST network segmentation fix?",
+      "text": "Proxy logs show 64-byte HTTPS posts every 60 seconds to a rare domain for one host. Interpretation?",
       "options": [
         {
           "id": "a",
-          "text": "Client isolation and separate VLAN without route to corporate resources"
+          "text": "Typical video streaming adaptive bitrate behavior from a browser tab, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Disable WPA2 on guest"
+          "text": "Benign telemetry unless more than ten thousand hosts show the pattern"
         },
         {
           "id": "c",
-          "text": "Merge guest and corp VLANs"
+          "text": "Sign that patch management failed on printers in the finance VLAN"
         },
         {
           "id": "d",
-          "text": "Share admin passwords on guest SSID"
+          "text": "Possible command-and-control beacon deserving host isolation and PCAP capture"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
-      "explanation": "Guest isolation limits MITM impact on corporate assets.",
+      "explanation": "Regular small periodic callbacks are classic beaconing indicators.",
+      "concept": "Regular low-volume callbacks suggest command-and-control\u2014hunt with DNS/proxy telemetry.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -563,31 +575,32 @@
     },
     {
       "id": "ktnet-q013",
-      "domain": "dns-tunneling",
+      "domain": "arp-spoofing",
       "type": "multiple-choice",
-      "text": "Long random subdomains query an unknown domain thousands of times per hour. Suspicion?",
+      "text": "Users report SSL warnings only on Wi-Fi in one office. Wireshark on a laptop shows duplicate MAC for the gateway. Diagnosis?",
       "options": [
         {
           "id": "a",
-          "text": "Normal CDN caching"
+          "text": "Backup failure only, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "DNS tunneling data exfiltration or C2"
+          "text": "Expired HIPAA training, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Legitimate MX failover"
+          "text": "ARP spoofing / MITM on local segment"
         },
         {
           "id": "d",
-          "text": "Printer driver update"
+          "text": "Global DNS root compromise, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
-      "explanation": "High-entropy subdomains are a tunneling hallmark.",
+      "explanation": "Duplicate gateway MAC suggests LAN MITM, often via ARP poisoning.",
+      "concept": "On-path attacks on flat LANs need segmentation, DHCP snooping, or 802.1X.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -601,31 +614,32 @@
     },
     {
       "id": "ktnet-q014",
-      "domain": "dns-tunneling",
+      "domain": "arp-spoofing",
       "type": "multiple-choice",
-      "text": "Which control detects DNS tunneling without full TLS break?",
+      "text": "Which switch feature mitigates ARP spoofing on access ports?",
       "options": [
         {
           "id": "a",
-          "text": "Use hosts file only on DC"
+          "text": "Open all VLANs to default, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Disable all DNS"
+          "text": "Dynamic ARP Inspection (DAI) with DHCP snooping"
         },
         {
           "id": "c",
-          "text": "Allow any A record"
+          "text": "Remove port security, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "DNS logging with entropy/threat intel and blocking of uncategorized DGA domains"
+          "text": "Disable STP, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
-      "explanation": "DNS analytics and threat feeds catch tunnel domains.",
+      "explanation": "DAI validates ARP against trusted bindings.",
+      "concept": "On-path attacks on flat LANs need segmentation, DHCP snooping, or 802.1X.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -639,31 +653,32 @@
     },
     {
       "id": "ktnet-q015",
-      "domain": "dns-tunneling",
+      "domain": "arp-spoofing",
       "type": "multiple-choice",
-      "text": "Exfil over DNS encodes data in TXT queries. BEST mitigation layer?",
+      "text": "An attacker on guest Wi-Fi intercepts traffic. BEST network segmentation fix?",
       "options": [
         {
           "id": "a",
-          "text": "Block TCP 443 instead only"
+          "text": "Disable WPA2 on guest, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Email logs to personal accounts"
+          "text": "Client isolation and separate VLAN without route to corporate resources"
         },
         {
           "id": "c",
-          "text": "Recursive resolver policies and egress filtering to approved resolvers only"
+          "text": "Share admin passwords on guest SSID, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Remove all firewalls"
+          "text": "Merge guest and corp VLANs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
-      "explanation": "Forcing resolvers and monitoring TXT queries limits tunnel egress.",
+      "explanation": "Guest isolation limits MITM impact on corporate assets.",
+      "concept": "On-path attacks on flat LANs need segmentation, DHCP snooping, or 802.1X.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -677,31 +692,32 @@
     },
     {
       "id": "ktnet-q016",
-      "domain": "traffic-inspection",
+      "domain": "arp-spoofing",
       "type": "multiple-choice",
-      "text": "SOC needs visibility into TLS 1.3 east-west traffic. Practical approach?",
+      "text": "Users report SSL warnings only on the office Wi-Fi, not VPN. Suspected cause?",
       "options": [
         {
           "id": "a",
-          "text": "Trust all self-signed certs users install"
+          "text": "Routine Windows patch Tuesday reboot affecting laptops temporarily, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Stop logging to save disk"
+          "text": "Misconfigured SPF records for the company's marketing email domain, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "East-west metadata (SNI, JA3), EDR network events, and segmented mirror taps where allowed"
+          "text": "Expired corporate code-signing certificate on the domain controllers only, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Disable TLS 1.3 globally"
+          "text": "On-path attacker performing ARP spoofing or rogue AP with malicious certificate"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
-      "explanation": "Full decrypt is not always possible; metadata and EDR supplement inspection.",
+      "explanation": "Wi-Fi-only cert warnings may indicate MITM on local LAN.",
+      "concept": "On-path attacks on flat LANs need segmentation, DHCP snooping, or 802.1X.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -715,31 +731,32 @@
     },
     {
       "id": "ktnet-q017",
-      "domain": "traffic-inspection",
+      "domain": "dns-tunneling",
       "type": "multiple-choice",
-      "text": "Netflow shows large outbound transfers at 3 a.m. to a cloud storage API. Next step?",
+      "text": "Long random subdomains query an unknown domain thousands of times per hour. Suspicion?",
       "options": [
         {
           "id": "a",
-          "text": "Block all cloud globally"
+          "text": "Printer driver update, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Identify process/user via EDR and verify against backup/job schedules"
+          "text": "Normal CDN caching, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Delete netflow to save space"
+          "text": "DNS tunneling data exfiltration or C2"
         },
         {
           "id": "d",
-          "text": "Assume backup and ignore"
+          "text": "Legitimate MX failover, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
-      "explanation": "Validate against known jobs; anomalies may be exfiltration.",
+      "explanation": "High-entropy subdomains are a tunneling hallmark.",
+      "concept": "Abnormal query volume/entropy can exfiltrate data inside DNS\u2014inspect resolvers and firewalls.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -753,31 +770,266 @@
     },
     {
       "id": "ktnet-q018",
+      "domain": "dns-tunneling",
+      "type": "multiple-choice",
+      "text": "Which control detects DNS tunneling without full TLS break?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DNS logging with entropy/threat intel and blocking of uncategorized DGA domains"
+        },
+        {
+          "id": "b",
+          "text": "Use hosts file only on DC, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Allow any A record, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Disable all DNS, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "DNS analytics and threat feeds catch tunnel domains.",
+      "concept": "Abnormal query volume/entropy can exfiltrate data inside DNS\u2014inspect resolvers and firewalls.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktnet-q019",
+      "domain": "dns-tunneling",
+      "type": "multiple-choice",
+      "text": "Exfil over DNS encodes data in TXT queries. BEST mitigation layer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recursive resolver policies and egress filtering to approved resolvers only"
+        },
+        {
+          "id": "b",
+          "text": "Email logs to personal accounts, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Remove all firewalls, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Block TCP 443 instead only, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Forcing resolvers and monitoring TXT queries limits tunnel egress.",
+      "concept": "Abnormal query volume/entropy can exfiltrate data inside DNS\u2014inspect resolvers and firewalls.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktnet-q020",
+      "domain": "dns-tunneling",
+      "type": "multiple-choice",
+      "text": "DNS analytics show long random subdomains to a newly registered domain from one server. Action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow the traffic because DNS is encrypted with DNSSEC by default, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Block the domain, isolate the server, and inspect processes making DNS queries"
+        },
+        {
+          "id": "c",
+          "text": "Increase DNS TTL globally to reduce query volume on resolvers, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Disable DNS logging to improve resolver performance during business hours, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "High-entropy subdomains may encode exfiltrated data via DNS tunneling.",
+      "concept": "Abnormal query volume/entropy can exfiltrate data inside DNS\u2014inspect resolvers and firewalls.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktnet-q021",
+      "domain": "traffic-inspection",
+      "type": "multiple-choice",
+      "text": "SOC needs visibility into TLS 1.3 east-west traffic. Practical approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trust all self-signed certs users install, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Stop logging to save disk, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS 1.3 globally, using shared credentials instead of individual accountability."
+        },
+        {
+          "id": "d",
+          "text": "East-west metadata (SNI, JA3), EDR network events, and segmented mirror taps where allowed"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Full decrypt is not always possible; metadata and EDR supplement inspection.",
+      "concept": "TLS inspection and NetFlow help detect exfil and C2 inside encrypted traffic.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktnet-q022",
+      "domain": "traffic-inspection",
+      "type": "multiple-choice",
+      "text": "Netflow shows large outbound transfers at 3 a.m. to a cloud storage API. Next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume backup and ignore, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Delete netflow to save space, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Block all cloud globally, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Identify process/user via EDR and verify against backup/job schedules"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Validate against known jobs; anomalies may be exfiltration.",
+      "concept": "TLS inspection and NetFlow help detect exfil and C2 inside encrypted traffic.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktnet-q023",
       "domain": "traffic-inspection",
       "type": "multiple-choice",
       "text": "Encrypted traffic to a newly registered domain spikes after a phishing click. BEST correlation?",
       "options": [
         {
           "id": "a",
-          "text": "Patch catalog version"
+          "text": "Patch catalog version, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Proxy, DNS, and EDR timelines within the same hour"
+          "text": "CCTV only, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "CCTV only"
+          "text": "Proxy, DNS, and EDR timelines within the same hour"
         },
         {
           "id": "d",
-          "text": "Invoice approval chain"
+          "text": "Invoice approval chain, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Multi-log correlation links user action to C2 establishment.",
+      "concept": "TLS inspection and NetFlow help detect exfil and C2 inside encrypted traffic.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktnet-q024",
+      "domain": "traffic-inspection",
+      "type": "multiple-choice",
+      "text": "Security proposes TLS decryption for egress web traffic on corporate proxies. Main benefit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guarantee end users cannot visit phishing sites without any false positives, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Eliminate the need for endpoint antivirus on all managed laptops, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Replace the need for patch management on internet-facing servers, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Detect malware C2 and data exfil hidden inside HTTPS that firewalls otherwise cannot see"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Inspection reveals threats inside encrypted traffic with appropriate privacy safeguards.",
+      "concept": "TLS inspection and NetFlow help detect exfil and C2 inside encrypted traffic.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

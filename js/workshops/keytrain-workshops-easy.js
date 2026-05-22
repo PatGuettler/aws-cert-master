@@ -2,6 +2,9 @@
  * Easy-level KeyTrain workshops — detailed core-concept teaching in plain language.
  */
 import { workshop } from "./keytrain-workshop-factory.js";
+import { interleaveConceptVisuals } from "./workshop-visual-catalog.js";
+import { getEasyQuizTeaching } from "./easy-quiz-teaching.js";
+import { prepareWorkshopQuiz } from "./prepare-workshop-quiz.js";
 
 /**
  * @typedef {Object} EasyConcept
@@ -22,6 +25,9 @@ import { workshop } from "./keytrain-workshop-factory.js";
  * @param {object} c
  */
 function easy(c) {
+  const q1 = prepareWorkshopQuiz(c.q1, c.id, "q1");
+  const q2 = prepareWorkshopQuiz(c.q2, c.id, "q2");
+  const q3 = prepareWorkshopQuiz(c.q3, c.id, "q3");
   /** @type {import('../workshop-runner.js').WorkshopStep[]} */
   const steps = [
     {
@@ -49,27 +55,31 @@ function easy(c) {
       id: "check-1",
       type: "quiz",
       title: "Check your understanding (1)",
-      prompt: c.q1.prompt,
-      options: c.q1.options,
-      correct: c.q1.correct,
-      explanation: c.q1.explanation,
+      prompt: q1.prompt,
+      options: q1.options,
+      correct: q1.correct,
+      explanation: q1.explanation,
+      ...getEasyQuizTeaching(c.id, "q1", q1),
     },
     {
       id: "check-2",
       type: "quiz",
       title: "Check your understanding (2)",
-      prompt: c.q2.prompt,
-      options: c.q2.options,
-      correct: c.q2.correct,
-      explanation: c.q2.explanation,
+      prompt: q2.prompt,
+      options: q2.options,
+      correct: q2.correct,
+      explanation: q2.explanation,
+      ...getEasyQuizTeaching(c.id, "q2", q2),
     },
     {
       id: "habits",
       type: "checklist",
       title: "Habits that protect you every day",
       paragraphs: [
-        "Good security is mostly steady habits—not one big heroic moment. Tap each item when you understand why it matters.",
+        "Good security is mostly steady habits—not one big heroic moment. Tap each item to see whether it is recommended and why—then continue when you have reviewed all of them.",
       ],
+      checklistCompleteMessage:
+        "Every habit listed here is recommended. None are tricks—your job is to understand why each one protects you.",
       items: c.habits.map((h, i) => ({
         id: `h${i}`,
         label: h.label,
@@ -80,10 +90,11 @@ function easy(c) {
       id: "check-3",
       type: "quiz",
       title: "What would you do?",
-      prompt: c.q3.prompt,
-      options: c.q3.options,
-      correct: c.q3.correct,
-      explanation: c.q3.explanation,
+      prompt: q3.prompt,
+      options: q3.options,
+      correct: q3.correct,
+      explanation: q3.explanation,
+      ...getEasyQuizTeaching(c.id, "q3", q3),
     },
     {
       id: "done",
@@ -102,9 +113,9 @@ function easy(c) {
     level: "easy",
     title: c.title,
     code: c.code,
-    tagline: "Easy — clear language with full explanations of the core concepts.",
+    tagline: "Easy — interactive diagrams plus clear explanations of how and why.",
     topics: c.topics,
-    steps,
+    steps: interleaveConceptVisuals(c.id, steps),
   });
 }
 

@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 15,
-    "scoredQuestions": 15,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 20,
+    "scoredQuestions": 20,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -98,25 +98,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Wait for annual maintenance window only"
+          "text": "Disable patching to avoid reboots, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Disable patching to avoid reboots"
+          "text": "Patch printers first always, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Patch printers first always"
+          "text": "Internet-facing and vulnerable services before internal file shares"
         },
         {
           "id": "d",
-          "text": "Internet-facing and vulnerable services before internal file shares"
+          "text": "Wait for annual maintenance window only, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
       "explanation": "Risk-based prioritization focuses on exposure and exploitability.",
+      "concept": "Prioritize known-exploited vulns; emergency change beats waiting for quarterly cycles.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -136,25 +137,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Test networks cannot be reached ever"
+          "text": "Test networks cannot be reached ever, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Patches break coffee machines only"
+          "text": "Attackers pivot from lab to prod via shared credentials and trusts"
         },
         {
           "id": "c",
-          "text": "CVEs do not apply to VMs"
+          "text": "Patches break coffee machines only, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Attackers pivot from lab to prod via shared credentials and trusts"
+          "text": "CVEs do not apply to VMs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
       "explanation": "Unpatched labs are common pivot points.",
+      "concept": "Prioritize known-exploited vulns; emergency change beats waiting for quarterly cycles.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -174,25 +176,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Nessus invents CVEs"
+          "text": "Nessus invents CVEs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Patches remove antivirus"
+          "text": "Superseded updates not installed or wrong scan credentials / reboot pending"
         },
         {
           "id": "c",
-          "text": "Compliance is always 100% accurate"
+          "text": "Compliance is always 100% accurate, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Superseded updates not installed or wrong scan credentials / reboot pending"
+          "text": "Patches remove antivirus, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
       "explanation": "Reconcile WSUS agent state with vuln scanner and pending reboots.",
+      "concept": "Prioritize known-exploited vulns; emergency change beats waiting for quarterly cycles.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -206,31 +209,32 @@
     },
     {
       "id": "ktsys-q004",
-      "domain": "outdated-software",
+      "domain": "patching",
       "type": "multiple-choice",
-      "text": "Inventory finds Java 8 on 400 endpoints for one legacy app. BEST approach?",
+      "text": "CISA adds a VPN vendor CVE to KEV; your appliance is two versions behind. Priority?",
       "options": [
         {
           "id": "a",
-          "text": "Isolate app in controlled network segment and plan upgrade or virtualization wrapper"
+          "text": "Disable automatic updates on the VPN to prevent unexpected reboots during holidays, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Uninstall Java on all machines including servers needed"
+          "text": "Emergency patch or isolate VPN per vendor advisory within hours, not next quarter"
         },
         {
           "id": "c",
-          "text": "Ignore because Java is popular"
+          "text": "Publish the CVE internally but defer patching until budget approval next year, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Disable Windows Update instead"
+          "text": "Wait for the next penetration test to validate exploitability in your environment, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
-      "explanation": "Compensating controls plus migration beat ignoring EOL runtimes.",
+      "explanation": "Known exploited vulnerabilities on edge VPNs are top patching priority.",
+      "concept": "Prioritize known-exploited vulns; emergency change beats waiting for quarterly cycles.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -246,29 +250,30 @@
       "id": "ktsys-q005",
       "domain": "outdated-software",
       "type": "multiple-choice",
-      "text": "Browser extensions with broad permissions haven't updated in two years. Risk?",
+      "text": "Inventory finds Java 8 on 400 endpoints for one legacy app. BEST approach?",
       "options": [
         {
           "id": "a",
-          "text": "Only mobile apps matter"
+          "text": "Ignore because Java is popular, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Abandoned extensions become supply-chain targets"
+          "text": "Disable Windows Update instead, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "HIPAA bans browsers"
+          "text": "Uninstall Java on all machines including servers needed, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Extensions cannot access tabs"
+          "text": "Isolate app in controlled network segment and plan upgrade or virtualization wrapper"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
-      "explanation": "Stale extensions are a growing endpoint risk.",
+      "explanation": "Compensating controls plus migration beat ignoring EOL runtimes.",
+      "concept": "EOL software lacks patches\u2014segment, compensate, or retire with documented risk.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -284,29 +289,30 @@
       "id": "ktsys-q006",
       "domain": "outdated-software",
       "type": "multiple-choice",
-      "text": "SCADA systems run Windows 7 embedded. Security recommendation?",
+      "text": "Browser extensions with broad permissions haven't updated in two years. Risk?",
       "options": [
         {
           "id": "a",
-          "text": "Install consumer antivirus only and expose RDP"
+          "text": "HIPAA bans browsers, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Network segmentation, monitoring, and documented exception with compensating controls"
+          "text": "Abandoned extensions become supply-chain targets"
         },
         {
           "id": "c",
-          "text": "Share one admin password"
+          "text": "Extensions cannot access tabs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Connect SCADA to guest Wi-Fi"
+          "text": "Only mobile apps matter, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "Unsupported OS needs isolation and monitoring when upgrade is delayed.",
+      "explanation": "Stale extensions are a growing endpoint risk.",
+      "concept": "EOL software lacks patches\u2014segment, compensate, or retire with documented risk.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -320,31 +326,32 @@
     },
     {
       "id": "ktsys-q007",
-      "domain": "config-drift",
+      "domain": "outdated-software",
       "type": "multiple-choice",
-      "text": "Terraform plan shows manual firewall holes on prod not in code. What does this indicate?",
+      "text": "SCADA systems run Windows 7 embedded. Security recommendation?",
       "options": [
         {
           "id": "a",
-          "text": "Configuration drift undermining infrastructure as code guarantees"
+          "text": "Share one admin password, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Automatic HIPAA compliance"
+          "text": "Connect SCADA to guest Wi-Fi, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Improved security posture"
+          "text": "Network segmentation, monitoring, and documented exception with compensating controls"
         },
         {
           "id": "d",
-          "text": "Faster MFA enrollment"
+          "text": "Install consumer antivirus only and expose RDP, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
-      "explanation": "Manual changes bypass review; drift detection and import/remediation needed.",
+      "explanation": "Unsupported OS needs isolation and monitoring when upgrade is delayed.",
+      "concept": "EOL software lacks patches\u2014segment, compensate, or retire with documented risk.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -358,31 +365,32 @@
     },
     {
       "id": "ktsys-q008",
-      "domain": "config-drift",
+      "domain": "outdated-software",
       "type": "multiple-choice",
-      "text": "CIS benchmark scan: SSH PermitRootLogin yes on new cloud VMs. Fix?",
+      "text": "A critical app requires Java 8 with no vendor roadmap; server sits in the DMZ. Mitigation?",
       "options": [
         {
           "id": "a",
-          "text": "Enforce golden image / cloud-init baseline and continuous compliance scanning"
+          "text": "Install additional antivirus products until three vendors report clean scans, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Share root password in chat"
+          "text": "Segment heavily, monitor closely, and fund migration with documented risk acceptance"
         },
         {
           "id": "c",
-          "text": "Document as acceptable forever"
+          "text": "Move the server to the internal LAN without segmentation to reduce latency"
         },
         {
           "id": "d",
-          "text": "Disable SSH and use no remote access ever"
+          "text": "Disable TLS on the app to improve performance for external customers, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
-      "explanation": "Baselines and scanning prevent redeploy drift.",
+      "explanation": "Unsupported runtimes need network isolation and a retirement plan.",
+      "concept": "EOL software lacks patches\u2014segment, compensate, or retire with documented risk.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -398,29 +406,30 @@
       "id": "ktsys-q009",
       "domain": "config-drift",
       "type": "multiple-choice",
-      "text": "AD GPO reports different password policy on one OU. Likely impact?",
+      "text": "Terraform plan shows manual firewall holes on prod not in code. What does this indicate?",
       "options": [
         {
           "id": "a",
-          "text": "Automatic patch compliance"
+          "text": "Faster MFA enrollment, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "No security effect"
+          "text": "Improved security posture, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Weaker credentials on accounts in that OU attract spray attacks"
+          "text": "Automatic HIPAA compliance, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Stronger encryption on Wi-Fi"
+          "text": "Configuration drift undermining infrastructure as code guarantees"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
-      "explanation": "Policy inconsistency creates weak pockets attackers target.",
+      "explanation": "Manual changes bypass review; drift detection and import/remediation needed.",
+      "concept": "Baseline configuration and IaC prevent silent weakening of security controls.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -434,31 +443,32 @@
     },
     {
       "id": "ktsys-q010",
-      "domain": "update-compliance",
+      "domain": "config-drift",
       "type": "multiple-choice",
-      "text": "MDM shows 15% iOS devices below minimum OS. Enforcement action?",
+      "text": "CIS benchmark scan: SSH PermitRootLogin yes on new cloud VMs. Fix?",
       "options": [
         {
           "id": "a",
-          "text": "Disable MDM to reduce tickets"
+          "text": "Document as acceptable forever, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Wipe all devices immediately without notice"
+          "text": "Share root password in chat, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Block corporate email and VPN until compliant or quarantined VLAN"
+          "text": "Enforce golden image / cloud-init baseline and continuous compliance scanning"
         },
         {
           "id": "d",
-          "text": "Allow indefinitely with warning email"
+          "text": "Disable SSH and use no remote access ever, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Conditional access drives mobile compliance.",
+      "explanation": "Baselines and scanning prevent redeploy drift.",
+      "concept": "Baseline configuration and IaC prevent silent weakening of security controls.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -472,31 +482,32 @@
     },
     {
       "id": "ktsys-q011",
-      "domain": "update-compliance",
+      "domain": "config-drift",
       "type": "multiple-choice",
-      "text": "Servers miss updates because change freeze lasts six months. Risk acceptance should note?",
+      "text": "AD GPO reports different password policy on one OU. Likely impact?",
       "options": [
         {
           "id": "a",
-          "text": "Freezes guarantee zero incidents"
+          "text": "No security effect, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Updates are cosmetic only"
+          "text": "Stronger encryption on Wi-Fi, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Accumulated critical CVE exposure for entire freeze period"
+          "text": "Weaker credentials on accounts in that OU attract spray attacks"
         },
         {
           "id": "d",
-          "text": "Attackers respect change freezes"
+          "text": "Automatic patch compliance, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Long freezes need explicit risk sign-off and compensating monitoring.",
+      "explanation": "Policy inconsistency creates weak pockets attackers target.",
+      "concept": "Baseline configuration and IaC prevent silent weakening of security controls.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -510,31 +521,32 @@
     },
     {
       "id": "ktsys-q012",
-      "domain": "update-compliance",
+      "domain": "config-drift",
       "type": "multiple-choice",
-      "text": "Which metric BEST measures update compliance?",
+      "text": "CSPM reports public SSH open on a prod instance that Terraform should manage privately. Fix?",
       "options": [
         {
           "id": "a",
-          "text": "Number of help desk tickets about fonts"
+          "text": "Revert drift via IaC pipeline, investigate manual change, and enforce policy-as-code guardrails"
         },
         {
           "id": "b",
-          "text": "% assets at or above mandated patch/OS baseline within SLA"
+          "text": "Add the security group rule to the template so drift becomes permanent, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "CCTV camera count"
+          "text": "Disable CSPM because Terraform already ran successfully last year, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Email volume per user"
+          "text": "Snapshot the instance and advertise SSH in the security newsletter as a feature"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
-      "explanation": "Baseline adherence percentage is a standard compliance KPI.",
+      "explanation": "Drift from IaC baselines should be corrected and prevented with guardrails.",
+      "concept": "Baseline configuration and IaC prevent silent weakening of security controls.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -548,31 +560,32 @@
     },
     {
       "id": "ktsys-q013",
-      "domain": "unsupported-os",
+      "domain": "update-compliance",
       "type": "multiple-choice",
-      "text": "Vendor ends support for your firewall OS next month. Priority?",
+      "text": "MDM shows 15% iOS devices below minimum OS. Enforcement action?",
       "options": [
         {
           "id": "a",
-          "text": "Buy extended support from eBay"
+          "text": "Allow indefinitely with warning email, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Expose management UI to internet"
+          "text": "Block corporate email and VPN until compliant or quarantined VLAN"
         },
         {
           "id": "c",
-          "text": "Disable logging to hide issues"
+          "text": "Wipe all devices immediately without notice, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Plan upgrade or replacement before EOS\u2014no new CVE patches after"
+          "text": "Disable MDM to reduce tickets, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
-      "explanation": "EOS means unpatched vulnerabilities over time.",
+      "explanation": "Conditional access drives mobile compliance.",
+      "concept": "Measure patch SLA adherence; exceptions need risk acceptance and expiry.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -586,31 +599,32 @@
     },
     {
       "id": "ktsys-q014",
-      "domain": "unsupported-os",
+      "domain": "update-compliance",
       "type": "multiple-choice",
-      "text": "Windows Server 2012 R2 remains for one app. Compensating control?",
+      "text": "Servers miss updates because change freeze lasts six months. Risk acceptance should note?",
       "options": [
         {
           "id": "a",
-          "text": "Stop backups to save money"
+          "text": "Freezes guarantee zero incidents, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Enable RDP from any IP"
+          "text": "Attackers respect change freezes, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Isolate segment, deny internet egress, monitor closely, fund migration"
+          "text": "Updates are cosmetic only, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Join to domain controllers directly on internet"
+          "text": "Accumulated critical CVE exposure for entire freeze period"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
-      "explanation": "Unsupported servers need network containment and migration plan.",
+      "explanation": "Long freezes need explicit risk sign-off and compensating monitoring.",
+      "concept": "Measure patch SLA adherence; exceptions need risk acceptance and expiry.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -624,31 +638,227 @@
     },
     {
       "id": "ktsys-q015",
+      "domain": "update-compliance",
+      "type": "multiple-choice",
+      "text": "Which metric BEST measures update compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CCTV camera count, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Email volume per user, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Number of help desk tickets about fonts, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "% assets at or above mandated patch/OS baseline within SLA"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Baseline adherence percentage is a standard compliance KPI.",
+      "concept": "Measure patch SLA adherence; exceptions need risk acceptance and expiry.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktsys-q016",
+      "domain": "update-compliance",
+      "type": "multiple-choice",
+      "text": "Only 62% of laptops meet the 14-day critical patch SLA. Best program improvement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Extend SLA to one year for all devices to achieve one hundred percent compliance"
+        },
+        {
+          "id": "b",
+          "text": "Stop measuring compliance because users dislike reboot notifications, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Report by business unit, enforce maintenance windows, and escalate chronic noncompliance"
+        },
+        {
+          "id": "d",
+          "text": "Allow users to opt out of updates if they sign a paper waiver, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Metrics and accountability drive patch compliance, not indefinite SLAs.",
+      "concept": "Measure patch SLA adherence; exceptions need risk acceptance and expiry.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktsys-q017",
+      "domain": "unsupported-os",
+      "type": "multiple-choice",
+      "text": "Vendor ends support for your firewall OS next month. Priority?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expose management UI to internet, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Plan upgrade or replacement before EOS\u2014no new CVE patches after"
+        },
+        {
+          "id": "c",
+          "text": "Buy extended support from eBay, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Disable logging to hide issues, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "EOS means unpatched vulnerabilities over time.",
+      "concept": "Unsupported OS on critical networks requires segmentation and explicit risk acceptance.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktsys-q018",
+      "domain": "unsupported-os",
+      "type": "multiple-choice",
+      "text": "Windows Server 2012 R2 remains for one app. Compensating control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Join to domain controllers directly on internet, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Stop backups to save money, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Isolate segment, deny internet egress, monitor closely, fund migration"
+        },
+        {
+          "id": "d",
+          "text": "Enable RDP from any IP, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Unsupported servers need network containment and migration plan.",
+      "concept": "Unsupported OS on critical networks requires segmentation and explicit risk acceptance.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktsys-q019",
       "domain": "unsupported-os",
       "type": "multiple-choice",
       "text": "Medical devices run embedded OS with no vendor patches. BEST documentation?",
       "options": [
         {
           "id": "a",
-          "text": "Connect devices to guest Wi-Fi for updates"
+          "text": "Disable all clinical networking, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Risk register entry with network controls and vendor letter on support status"
+          "text": "Connect devices to guest Wi-Fi for updates, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Disable all clinical networking"
+          "text": "Assume HIPAA exempts all devices, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Assume HIPAA exempts all devices"
+          "text": "Risk register entry with network controls and vendor letter on support status"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Unsupported medical IoT requires documented risk and segmentation.",
+      "concept": "Unsupported OS on critical networks requires segmentation and explicit risk acceptance.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktsys-q020",
+      "domain": "unsupported-os",
+      "type": "multiple-choice",
+      "text": "Medical devices run Windows 7 embedded with no vendor patch path. Control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable encryption on device traffic to simplify legacy protocol troubleshooting, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Upgrade to Windows 7 SP1 because service packs extend official support forever"
+        },
+        {
+          "id": "c",
+          "text": "Network isolate devices, monitor east-west traffic, and document compensating controls"
+        },
+        {
+          "id": "d",
+          "text": "Connect devices directly to the internet for vendor remote support convenience, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Unsupported OS on IoMT needs segmentation and explicit risk acceptance.",
+      "concept": "Unsupported OS on critical networks requires segmentation and explicit risk acceptance.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

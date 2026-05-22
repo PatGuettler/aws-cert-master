@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 15,
-    "scoredQuestions": 15,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 20,
+    "scoredQuestions": 20,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -98,15 +98,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Ignore lockouts if the user confirms they remember their password"
+          "text": "Ignore lockouts if the user confirms they remember their password, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Disable the account permanently without investigation"
+          "text": "Disable the account permanently without investigation, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Share the user's password hash with the manager to verify identity"
+          "text": "Share the user's password hash with the manager to verify identity, without security or identity team coordination per policy."
         },
         {
           "id": "d",
@@ -117,6 +117,7 @@
         "d"
       ],
       "explanation": "Impossible-travel patterns suggest stolen credentials; reset and session revocation limit abuse while MFA reduces replay risk.",
+      "concept": "Verify identity with strong, phishing-resistant methods and respond to impossible-travel and lockout patterns.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -136,11 +137,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Shared contractor kiosk accounts"
+          "text": "Shared contractor kiosk accounts, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Annual security awareness posters"
+          "text": "Annual security awareness posters, without security or identity team coordination per policy."
         },
         {
           "id": "c",
@@ -148,13 +149,14 @@
         },
         {
           "id": "d",
-          "text": "Longer password complexity rules only"
+          "text": "Longer password complexity rules only, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "c"
       ],
       "explanation": "Passwordless FIDO2 resists credential phishing; complexity alone does not stop real-time proxy attacks.",
+      "concept": "Verify identity with strong, phishing-resistant methods and respond to impossible-travel and lockout patterns.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -174,15 +176,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Whether users cleared browser cache"
+          "text": "Whether users cleared browser cache, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "DNS TTL for the marketing site"
+          "text": "DNS TTL for the marketing site, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "If the app supports biometric unlock on mobile"
+          "text": "If the app supports biometric unlock on mobile, without security or identity team coordination per policy."
         },
         {
           "id": "d",
@@ -193,6 +195,7 @@
         "d"
       ],
       "explanation": "SAML trust breaks when SP metadata is stale; certificate mismatch is the typical root cause after IdP rotation.",
+      "concept": "Verify identity with strong, phishing-resistant methods and respond to impossible-travel and lockout patterns.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -206,31 +209,32 @@
     },
     {
       "id": "ktias-q004",
-      "domain": "mfa",
+      "domain": "authentication",
       "type": "multiple-choice",
-      "text": "An executive refuses hardware tokens but approves SMS codes for banking-style apps. Which risk should you document in the exception?",
+      "text": "IdP logs show successful logins for a disabled contractor account. What is the BEST remediation?",
       "options": [
         {
           "id": "a",
-          "text": "SMS messages are always encrypted end-to-end"
+          "text": "Re-enable the account so the contractor can finish work without delay, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Hardware tokens cannot be used on laptops"
+          "text": "Reset only the contractor password while leaving all active sessions valid, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "SIM-swap and SS7 attacks can bypass SMS OTP without attacking the application directly"
+          "text": "Disable federation to the account, revoke refresh tokens, and audit provisioning sync jobs"
         },
         {
           "id": "d",
-          "text": "MFA fatigue only affects push notifications"
+          "text": "Publish the contractor credentials in the ticket for faster troubleshooting, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "SMS OTP is better than nothing but is not phishing-resistant; SIM swap is a known bypass path.",
+      "explanation": "Disabled accounts should not authenticate; broken deprovisioning or stale federation mappings need fixing.",
+      "concept": "Verify identity with strong, phishing-resistant methods and respond to impossible-travel and lockout patterns.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -246,29 +250,30 @@
       "id": "ktias-q005",
       "domain": "mfa",
       "type": "multiple-choice",
-      "text": "Users report MFA push approval prompts they did not initiate. What is the BEST immediate mitigation?",
+      "text": "An executive refuses hardware tokens but approves SMS codes for banking-style apps. Which risk should you document in the exception?",
       "options": [
         {
           "id": "a",
-          "text": "Disable MFA globally for 24 hours"
+          "text": "SMS messages are always encrypted end-to-end, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Increase session timeout to 30 days"
+          "text": "Hardware tokens cannot be used on laptops, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Allow users to approve pushes from unknown locations"
+          "text": "MFA fatigue only affects push notifications, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Enforce number matching or phishing-resistant MFA and investigate for password spray preceding pushes"
+          "text": "SIM-swap and SS7 attacks can bypass SMS OTP without attacking the application directly"
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "Unsolicited pushes indicate MFA fatigue attacks; number matching and investigating spray reduce success rates.",
+      "explanation": "SMS OTP is better than nothing but is not phishing-resistant; SIM swap is a known bypass path.",
+      "concept": "Multi-factor authentication must resist bypass (SIM swap, MFA fatigue) and protect privileged access.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -284,29 +289,30 @@
       "id": "ktias-q006",
       "domain": "mfa",
       "type": "multiple-choice",
-      "text": "During a tabletop, the team must choose MFA for privileged break-glass accounts. What is the MOST appropriate design?",
+      "text": "Users report MFA push approval prompts they did not initiate. What is the BEST immediate mitigation?",
       "options": [
         {
           "id": "a",
-          "text": "Same SMS OTP as standard users for simplicity"
+          "text": "Disable MFA globally for 24 hours, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "No MFA on break-glass to speed recovery"
+          "text": "Allow users to approve pushes from unknown locations, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Shared TOTP seed in a wiki page"
+          "text": "Increase session timeout to 30 days, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Hardware tokens stored in a physical safe with dual control and separate from daily user MFA"
+          "text": "Enforce number matching or phishing-resistant MFA and investigate for password spray preceding pushes"
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "Break-glass accounts need strongest factors and procedural controls; shared seeds defeat MFA purpose.",
+      "explanation": "Unsolicited pushes indicate MFA fatigue attacks; number matching and investigating spray reduce success rates.",
+      "concept": "Multi-factor authentication must resist bypass (SIM swap, MFA fatigue) and protect privileged access.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -320,31 +326,32 @@
     },
     {
       "id": "ktias-q007",
-      "domain": "privilege-escalation",
+      "domain": "mfa",
       "type": "multiple-choice",
-      "text": "A junior analyst discovers they can add themselves to a cloud admin group via a misconfigured automation role. What is the BEST remediation sequence?",
+      "text": "During a tabletop, the team must choose MFA for privileged break-glass accounts. What is the MOST appropriate design?",
       "options": [
         {
           "id": "a",
-          "text": "Delete all automation in the environment"
+          "text": "Shared TOTP seed in a wiki page, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Promote the analyst to admin so they can monitor themselves"
+          "text": "Same SMS OTP as standard users for simplicity, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Remove excessive permissions from the role, audit CloudTrail for prior abuse, and enforce least privilege on CI pipelines"
+          "text": "Hardware tokens stored in a physical safe with dual control and separate from daily user MFA"
         },
         {
           "id": "d",
-          "text": "Publish the role ARN in the team chat for transparency"
+          "text": "No MFA on break-glass to speed recovery, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Fix the permission path, then determine if the flaw was exploited; CI roles are a common escalation vector.",
+      "explanation": "Break-glass accounts need strongest factors and procedural controls; shared seeds defeat MFA purpose.",
+      "concept": "Multi-factor authentication must resist bypass (SIM swap, MFA fatigue) and protect privileged access.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -358,31 +365,32 @@
     },
     {
       "id": "ktias-q008",
-      "domain": "privilege-escalation",
+      "domain": "mfa",
       "type": "multiple-choice",
-      "text": "Endpoint EDR flags PowerShell downloading a script that modifies local admin group membership. Which indicator BEST supports privilege escalation?",
+      "text": "Security wants MFA for all VPN users; help desk reports 40% lockouts after rollout. Best NEXT step?",
       "options": [
         {
           "id": "a",
-          "text": "User opened a PDF brochure"
+          "text": "Remove MFA from VPN entirely to restore previous login success rates quickly"
         },
         {
           "id": "b",
-          "text": "Antivirus definition update"
+          "text": "Allow SMS-only MFA permanently because it has the lowest support burden, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Use of a living-off-the-land binary to run unsigned code that adds a new local administrator"
+          "text": "Analyze failure reasons, offer phishing-resistant options, and targeted training for edge cases"
         },
         {
           "id": "d",
-          "text": "Scheduled Windows Update reboot"
+          "text": "Set MFA remember-me to ninety days on all devices without reviewing risk"
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Adding local admins via LOLBins is classic escalation after initial access.",
+      "explanation": "MFA rollouts need tuning and user support; abandoning MFA removes a critical control.",
+      "concept": "Multi-factor authentication must resist bypass (SIM swap, MFA fatigue) and protect privileged access.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -398,29 +406,30 @@
       "id": "ktias-q009",
       "domain": "privilege-escalation",
       "type": "multiple-choice",
-      "text": "A service account in Active Directory has unconstrained delegation. Why is this a critical escalation risk?",
+      "text": "A junior analyst discovers they can add themselves to a cloud admin group via a misconfigured automation role. What is the BEST remediation sequence?",
       "options": [
         {
           "id": "a",
-          "text": "Compromise of the service account can yield Kerberos TGTs usable against other hosts"
+          "text": "Remove excessive permissions from the role, audit CloudTrail for prior abuse, and enforce least privilege on CI pipelines"
         },
         {
           "id": "b",
-          "text": "It disables NTLM company-wide"
+          "text": "Delete all automation in the environment, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "It only affects password expiration policy"
+          "text": "Promote the analyst to admin so they can monitor themselves, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "It encrypts all file shares automatically"
+          "text": "Publish the role ARN in the team chat for transparency, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Unconstrained delegation allows TGT theft and lateral movement\u2014high severity misconfiguration.",
+      "explanation": "Fix the permission path, then determine if the flaw was exploited; CI roles are a common escalation vector.",
+      "concept": "Limit paths to higher privileges in OS, cloud IAM, and Kerberos/AD misconfigurations.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -434,31 +443,32 @@
     },
     {
       "id": "ktias-q010",
-      "domain": "account-misuse",
+      "domain": "privilege-escalation",
       "type": "multiple-choice",
-      "text": "HR terminates an employee, but their SaaS account stays active two weeks because provisioning is manual. Which control gap does this illustrate?",
+      "text": "Endpoint EDR flags PowerShell downloading a script that modifies local admin group membership. Which indicator BEST supports privilege escalation?",
       "options": [
         {
           "id": "a",
-          "text": "Missing patch Tuesday calendar"
+          "text": "Scheduled Windows Update reboot, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Overly strict DLP on USB drives"
+          "text": "Antivirus definition update, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "Joiner-mover-leaver process failure and lack of automated deprovisioning tied to HRIS"
+          "text": "Use of a living-off-the-land binary to run unsigned code that adds a new local administrator"
         },
         {
           "id": "d",
-          "text": "Insufficient MFA on printers"
+          "text": "User opened a PDF brochure, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Stale accounts are a top misuse vector; HR-driven deprovisioning closes the window.",
+      "explanation": "Adding local admins via LOLBins is classic escalation after initial access.",
+      "concept": "Limit paths to higher privileges in OS, cloud IAM, and Kerberos/AD misconfigurations.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -472,31 +482,32 @@
     },
     {
       "id": "ktias-q011",
-      "domain": "account-misuse",
+      "domain": "privilege-escalation",
       "type": "multiple-choice",
-      "text": "Shared credentials for a production monitoring dashboard are posted in a team channel. What is the BEST replacement?",
+      "text": "A service account in Active Directory has unconstrained delegation. Why is this a critical escalation risk?",
       "options": [
         {
           "id": "a",
-          "text": "Add the password to the email signature for visibility"
+          "text": "It disables NTLM company-wide, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Rotate the shared password monthly without changing practice"
+          "text": "It only affects password expiration policy, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Disable logging to reduce evidence"
+          "text": "It encrypts all file shares automatically, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Individual accounts with RBAC, optional break-glass procedure, and secrets removed from chat history"
+          "text": "Compromise of the service account can yield Kerberos TGTs usable against other hosts"
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "Shared accounts prevent attribution; RBAC and individual identity restore accountability.",
+      "explanation": "Unconstrained delegation allows TGT theft and lateral movement\u2014high severity misconfiguration.",
+      "concept": "Limit paths to higher privileges in OS, cloud IAM, and Kerberos/AD misconfigurations.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -510,31 +521,32 @@
     },
     {
       "id": "ktias-q012",
-      "domain": "account-misuse",
+      "domain": "privilege-escalation",
       "type": "multiple-choice",
-      "text": "Audit finds contractors using former employees' accounts. What policy enforcement MOST directly stops this?",
+      "text": "Cloud audit shows a Lambda role with iam:PassRole and sts:AssumeRole on admin roles. Risk?",
       "options": [
         {
           "id": "a",
-          "text": "Increasing CCTV retention"
+          "text": "Removing MFA from the function owner prevents lockouts during deployments, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Blocking USB ports on laptops"
+          "text": "AssumeRole is safe when the function code is stored in a private repository"
         },
         {
           "id": "c",
-          "text": "Longer minimum password length only"
+          "text": "PassRole only affects billing reports and cannot change infrastructure permissions, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Periodic access reviews and automated disablement when employment status changes"
+          "text": "Attackers who compromise the function can chain roles to obtain administrative cloud access"
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "Access reviews and lifecycle automation address account sharing and ex-employee reuse.",
+      "explanation": "Overly broad execution roles are a common cloud privilege-escalation path.",
+      "concept": "Limit paths to higher privileges in OS, cloud IAM, and Kerberos/AD misconfigurations.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -548,31 +560,32 @@
     },
     {
       "id": "ktias-q013",
-      "domain": "credential-abuse",
+      "domain": "account-misuse",
       "type": "multiple-choice",
-      "text": "Dark web monitoring shows corporate emails in a breach dump. What is the FIRST technical action aligned to credential abuse defense?",
+      "text": "HR terminates an employee, but their SaaS account stays active two weeks because provisioning is manual. Which control gap does this illustrate?",
       "options": [
         {
           "id": "a",
-          "text": "Publish the dump internally for awareness"
+          "text": "Overly strict DLP on USB drives, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Block all outbound email for a week"
+          "text": "Insufficient MFA on printers, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Force password reset and invalidate refresh tokens for affected identities"
+          "text": "Joiner-mover-leaver process failure and lack of automated deprovisioning tied to HRIS"
         },
         {
           "id": "d",
-          "text": "Disable TLS on the mail gateway"
+          "text": "Missing patch Tuesday calendar, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Reset and token revocation contain reuse of stolen passwords and session artifacts.",
+      "explanation": "Stale accounts are a top misuse vector; HR-driven deprovisioning closes the window.",
+      "concept": "Joiner-mover-leaver and access reviews prevent stale, shared, and orphaned accounts.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -586,31 +599,32 @@
     },
     {
       "id": "ktias-q014",
-      "domain": "credential-abuse",
+      "domain": "account-misuse",
       "type": "multiple-choice",
-      "text": "Authentication logs show 40,000 failed logins against one legacy IMAP service from one ASN. Which attack type is MOST likely?",
+      "text": "Shared credentials for a production monitoring dashboard are posted in a team channel. What is the BEST replacement?",
       "options": [
         {
           "id": "a",
-          "text": "Physical tailgating at the front desk"
+          "text": "Add the password to the email signature for visibility, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "SAST false positive on a web app"
+          "text": "Disable logging to reduce evidence, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "ARP spoofing on the data center VLAN"
+          "text": "Rotate the shared password monthly without changing practice, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Password spraying against a single protocol before attempting valid pairs elsewhere"
+          "text": "Individual accounts with RBAC, optional break-glass procedure, and secrets removed from chat history"
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "High-volume failures on one service suggest spray, often preceding targeted login attempts.",
+      "explanation": "Shared accounts prevent attribution; RBAC and individual identity restore accountability.",
+      "concept": "Joiner-mover-leaver and access reviews prevent stale, shared, and orphaned accounts.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -624,31 +638,227 @@
     },
     {
       "id": "ktias-q015",
+      "domain": "account-misuse",
+      "type": "multiple-choice",
+      "text": "Audit finds contractors using former employees' accounts. What policy enforcement MOST directly stops this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Periodic access reviews and automated disablement when employment status changes"
+        },
+        {
+          "id": "b",
+          "text": "Longer minimum password length only, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Increasing CCTV retention, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Blocking USB ports on laptops, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Access reviews and lifecycle automation address account sharing and ex-employee reuse.",
+      "concept": "Joiner-mover-leaver and access reviews prevent stale, shared, and orphaned accounts.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q016",
+      "domain": "account-misuse",
+      "type": "multiple-choice",
+      "text": "Service desk creates generic 'team-admin' accounts shared by three shifts. Primary concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shift-based sharing is acceptable if the password is rotated every five years"
+        },
+        {
+          "id": "b",
+          "text": "Shared privileged accounts prevent attribution and violate individual accountability controls"
+        },
+        {
+          "id": "c",
+          "text": "Generic names make SIEM correlation easier than per-user accounts would, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Shared accounts improve password memorization and reduce forgotten-password tickets, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Accountability requires per-person identities, especially for administrative access.",
+      "concept": "Joiner-mover-leaver and access reviews prevent stale, shared, and orphaned accounts.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q017",
+      "domain": "credential-abuse",
+      "type": "multiple-choice",
+      "text": "Dark web monitoring shows corporate emails in a breach dump. What is the FIRST technical action aligned to credential abuse defense?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Block all outbound email for a week, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Publish the dump internally for awareness, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Disable TLS on the mail gateway, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Force password reset and invalidate refresh tokens for affected identities"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Reset and token revocation contain reuse of stolen passwords and session artifacts.",
+      "concept": "Assume breached passwords: reset, revoke sessions, scan repos, and detect password spray.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q018",
+      "domain": "credential-abuse",
+      "type": "multiple-choice",
+      "text": "Authentication logs show 40,000 failed logins against one legacy IMAP service from one ASN. Which attack type is MOST likely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ARP spoofing on the data center VLAN, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "SAST false positive on a web app, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Password spraying against a single protocol before attempting valid pairs elsewhere"
+        },
+        {
+          "id": "d",
+          "text": "Physical tailgating at the front desk, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "High-volume failures on one service suggest spray, often preceding targeted login attempts.",
+      "concept": "Assume breached passwords: reset, revoke sessions, scan repos, and detect password spray.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q019",
       "domain": "credential-abuse",
       "type": "multiple-choice",
       "text": "Developers store API keys in public GitHub repos. Which practice BEST reduces credential abuse long term?",
       "options": [
         {
           "id": "a",
-          "text": "Secret scanning in CI/CD, pre-commit hooks, and short-lived scoped tokens"
+          "text": "Disable Git entirely, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Rename repos to private after launch only"
+          "text": "Use one global API key for all microservices, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Disable Git entirely"
+          "text": "Rename repos to private after launch only, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Use one global API key for all microservices"
+          "text": "Secret scanning in CI/CD, pre-commit hooks, and short-lived scoped tokens"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Prevention and rotation limit blast radius when keys leak; scanning catches commits early.",
+      "concept": "Assume breached passwords: reset, revoke sessions, scan repos, and detect password spray.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktias-q020",
+      "domain": "credential-abuse",
+      "type": "multiple-choice",
+      "text": "Okta ThreatInsight flags cred-stuffing against your customer portal. FIRST technical response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enable breached-credential detection, step-up MFA, and temporary IP rate limits on auth endpoints"
+        },
+        {
+          "id": "b",
+          "text": "Disable customer logins globally until marketing approves a customer communication, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Lower password length to six characters to reduce typing errors during attacks, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Publish successful login counts on the status page to prove transparency, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Prevention and rotation limit blast radius when keys leak; scanning catches commits early.",
+      "explanation": "Credential stuffing needs rate limits, MFA, and detection\u2014not global lockout without analysis.",
+      "concept": "Assume breached passwords: reset, revoke sessions, scan repos, and detect password spray.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

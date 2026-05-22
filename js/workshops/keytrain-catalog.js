@@ -80,9 +80,9 @@ export const LEVEL_LABELS = {
 
 /** @type {Record<string, string>} */
 export const LEVEL_HINTS = {
-  easy: "Beginner-friendly and thorough—core concepts explained step by step in plain language.",
-  medium: "Workplace scenarios with standard security terms.",
-  hard: "Technical detail and tricky decisions for experienced learners.",
+  easy: "Interactive diagrams (flows, hotspots, compare panels) plus plain-language how and why.",
+  medium: "Scenario lessons with interactive visuals and workplace terminology.",
+  hard: "Advanced decisions with technical diagrams and ordering drills.",
 };
 
 /** @type {string[]} */

@@ -1,5 +1,9 @@
 import { getKeytrainIssuance } from "./keytrain-storage.js";
-import { downloadKeytrainCertificatePdf } from "./keytrain-certificate.js";
+import {
+  downloadKeytrainCertificatePdf,
+  preloadKeytrainCertificatePdf,
+} from "./keytrain-certificate.js";
+import { isQuestionCorrect } from "./scoring.js";
 
 /**
  * @param {import('./keytrain-loader.js').KeytrainCertSummary[]} catalog
@@ -65,8 +69,10 @@ export function renderKeytrainCertPage(program, summary) {
   const desc = document.getElementById("keytrain-cert-description");
   if (desc) {
     desc.textContent =
-      `${tagline} This is a formal timed assessment: no feedback until you submit, ` +
-      `then a clear pass or fail. If you pass, you can enter your name and download a PDF certificate.`;
+      `${tagline} This is a formal timed assessment (${cert.exam.totalQuestions} scenario questions, ` +
+      `${cert.exam.timeLimitMinutes} minutes, passing ${cert.exam.passingScore}/${cert.exam.maxScore}). ` +
+      `Answer choices are balanced in length—you must read scenarios, not guess by wording. ` +
+      `After submit you get full review with core concepts. Pass to download your PDF certificate.`;
   }
 
   document.getElementById("kt-meta-questions")?.replaceChildren(
@@ -98,7 +104,9 @@ export function renderKeytrainCertPage(program, summary) {
       `Timed exam (${cert.exam.timeLimitMinutes} minutes)`,
       `${cert.exam.totalQuestions} scored questions drawn from the official-weighted bank`,
       `Passing score: ${cert.exam.passingScore} of ${cert.exam.maxScore}`,
+      "All options are similar length—use judgment from the scenario, not answer size",
       "No answer feedback until you submit the full exam",
+      "After submit: review every question with explanations and core concepts",
       "Pause & exit is disabled during KeyTrain assessments",
       "Certificate PDF available only after a passing score",
     ];
@@ -145,6 +153,98 @@ export function renderKeytrainResults(opts) {
 
   passActions?.classList.toggle("hidden", !opts.passed);
   failActions?.classList.toggle("hidden", opts.passed);
+}
+
+/**
+ * Full exam review with explanations and per-domain core concepts (post-submit learning).
+ * @param {import('./cert-loader.js').Question[]} questions
+ * @param {Record<string, string[]>} responses
+ * @param {import('./cert-loader.js').CertData} cert
+ */
+export function renderKeytrainExamReview(questions, responses, cert) {
+  const container = document.getElementById("keytrain-review-content");
+  const section = document.getElementById("keytrain-review-section");
+  if (!container) return;
+  container.innerHTML = "";
+
+  const domainNames = Object.fromEntries(cert.domains.map((d) => [d.id, d.name]));
+  let incorrect = 0;
+
+  for (const q of questions) {
+    const selected = responses[q.id] ?? [];
+    const correct = isQuestionCorrect(q, selected);
+    if (!correct) incorrect++;
+
+    const card = document.createElement("article");
+    card.className = "question-card review-question";
+
+    const badge = document.createElement("p");
+    badge.className = `review-badge ${correct ? "correct-fb" : "incorrect-fb"}`;
+    badge.textContent = correct ? "Correct" : "Incorrect";
+    card.appendChild(badge);
+
+    const domain = document.createElement("p");
+    domain.className = "keytrain-review-domain";
+    domain.textContent = domainNames[q.domain] ?? q.domain;
+    card.appendChild(domain);
+
+    const text = document.createElement("p");
+    text.className = "question-text";
+    text.textContent = q.text;
+    card.appendChild(text);
+
+    const ul = document.createElement("ul");
+    ul.className = "options";
+    for (const opt of q.options) {
+      const li = document.createElement("li");
+      const label = document.createElement("label");
+      label.className = "option-label";
+      if (q.correct.includes(opt.id)) label.classList.add("correct");
+      else if (selected.includes(opt.id)) label.classList.add("incorrect");
+      if (selected.includes(opt.id)) label.classList.add("selected");
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.checked = selected.includes(opt.id);
+      input.disabled = true;
+
+      const span = document.createElement("span");
+      span.textContent = opt.text;
+      label.append(input, span);
+      li.appendChild(label);
+      ul.appendChild(li);
+    }
+    card.appendChild(ul);
+
+    if (q.concept) {
+      const concept = document.createElement("p");
+      concept.className = "keytrain-concept";
+      const label = document.createElement("strong");
+      label.textContent = "Core concept: ";
+      concept.append(label, document.createTextNode(q.concept));
+      card.appendChild(concept);
+    }
+
+    if (q.explanation) {
+      const p = document.createElement("p");
+      p.className = "feedback-panel";
+      p.textContent = q.explanation;
+      card.appendChild(p);
+    }
+
+    container.appendChild(card);
+  }
+
+  if (section) {
+    const summary = section.querySelector("summary");
+    if (summary) {
+      summary.textContent =
+        incorrect > 0
+          ? `Review answers and core concepts (${incorrect} to study)`
+          : "Review answers and core concepts";
+    }
+    section.open = incorrect > 0;
+  }
 }
 
 /**
@@ -198,6 +298,7 @@ export function renderKeytrainCertificateForm(opts) {
 
   updatePreview();
   nameInput?.addEventListener("input", updatePreview);
+  preloadKeytrainCertificatePdf();
 
   const downloadBtn = document.getElementById("btn-keytrain-download-pdf");
   const formRoot = document.getElementById("view-keytrain-certificate");

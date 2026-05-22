@@ -24,6 +24,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Static app: no npm install, no bundler. Optional package.json is local-dev only.
+
       - name: Build SEO pages (questions, cert landings, sitemap)
         run: python3 scripts/build-question-pages.py
         env:

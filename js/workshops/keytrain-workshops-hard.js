@@ -2,11 +2,14 @@
  * Hard-level KeyTrain workshops — advanced scenarios and technical depth.
  */
 import { workshop } from "./keytrain-workshop-factory.js";
+import { prepareWorkshopQuiz } from "./prepare-workshop-quiz.js";
 
 /**
  * @param {object} c
  */
 function hard(c) {
+  const q1 = prepareWorkshopQuiz(c.q1, c.id, "hard_q1");
+  const q2 = prepareWorkshopQuiz(c.q2, c.id, "hard_q2");
   return workshop({
     id: c.id,
     categoryId: c.id,
@@ -34,11 +37,11 @@ function hard(c) {
         id: "quiz-1",
         type: "quiz",
         title: "Decision drill",
-        prompt: c.q1.prompt,
-        options: c.q1.options,
-        correct: c.q1.correct,
-        explanation: c.q1.explanation,
-        quizType: c.q1.multi ? "multiple-response" : "multiple-choice",
+        prompt: q1.prompt,
+        options: q1.options,
+        correct: q1.correct,
+        explanation: q1.explanation,
+        quizType: q1.multi ? "multiple-response" : "multiple-choice",
       },
       {
         id: "checklist",
@@ -51,11 +54,11 @@ function hard(c) {
         id: "quiz-2",
         type: "quiz",
         title: "Multi-factor scenario",
-        prompt: c.q2.prompt,
-        options: c.q2.options,
-        correct: c.q2.correct,
-        explanation: c.q2.explanation,
-        quizType: c.q2.multi ? "multiple-response" : "multiple-choice",
+        prompt: q2.prompt,
+        options: q2.options,
+        correct: q2.correct,
+        explanation: q2.explanation,
+        quizType: q2.multi ? "multiple-response" : "multiple-choice",
       },
       {
         id: "wrap",

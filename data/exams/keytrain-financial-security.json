@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 12,
-    "scoredQuestions": 12,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 16,
+    "scoredQuestions": 16,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -83,7 +83,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Normal ERP rounding"
+          "text": "Normal ERP rounding, without security or identity team coordination per policy."
         },
         {
           "id": "b",
@@ -91,17 +91,18 @@
         },
         {
           "id": "c",
-          "text": "Antivirus update"
+          "text": "Network beaconing, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Network beaconing"
+          "text": "Antivirus update, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
       "explanation": "Bank detail changes on invoices are classic fraud indicators.",
+      "concept": "Pattern analytics and verification stop gift-card, invoice, and vendor fraud schemes.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -121,25 +122,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable finance department"
+          "text": "Publish all card numbers, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Manager attestation and analytics for outlier patterns"
+          "text": "Auto-approve all under $1M, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Publish all card numbers"
+          "text": "Manager attestation and analytics for outlier patterns"
         },
         {
           "id": "d",
-          "text": "Auto-approve all under $1M"
+          "text": "Disable finance department, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Gift card fraud is pattern-detectable with analytics.",
+      "concept": "Pattern analytics and verification stop gift-card, invoice, and vendor fraud schemes.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -159,15 +161,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Delete emails to reduce clutter"
+          "text": "Delete emails to reduce clutter, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Disable firewalls"
+          "text": "Disable firewalls, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Post names on intranet"
+          "text": "Post names on intranet, without security or identity team coordination per policy."
         },
         {
           "id": "d",
@@ -178,6 +180,7 @@
         "d"
       ],
       "explanation": "Fraud investigations need preserved logs and coordinated legal hold.",
+      "concept": "Pattern analytics and verification stop gift-card, invoice, and vendor fraud schemes.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -191,31 +194,32 @@
     },
     {
       "id": "ktfin-q004",
-      "domain": "accounting-integrity",
+      "domain": "fraud-indicators",
       "type": "multiple-choice",
-      "text": "An admin can post and approve journal entries alone. Issue?",
+      "text": "Payroll adds a new bank account for an employee who did not request a change. Indicator?",
       "options": [
         {
           "id": "a",
-          "text": "HIPAA mandate"
+          "text": "Normal behavior when employees travel internationally for conferences, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Segregation of duties violation enabling financial statement fraud"
+          "text": "Possible payroll diversion fraud requiring HR verification before payment"
         },
         {
           "id": "c",
-          "text": "Improved efficiency only"
+          "text": "Routine HR system bug that should be ignored if pay amount is unchanged"
         },
         {
           "id": "d",
-          "text": "Required for SOC 2 always"
+          "text": "Evidence that multifactor authentication on email is unnecessary for finance, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "SoD requires separate roles for posting vs approval.",
+      "explanation": "Unrequested payroll account changes are a classic fraud indicator.",
+      "concept": "Pattern analytics and verification stop gift-card, invoice, and vendor fraud schemes.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -231,29 +235,30 @@
       "id": "ktfin-q005",
       "domain": "accounting-integrity",
       "type": "multiple-choice",
-      "text": "Month-end adjustments lack supporting documentation in the share. Risk?",
+      "text": "An admin can post and approve journal entries alone. Issue?",
       "options": [
         {
           "id": "a",
-          "text": "No risk if CFO approves verbally"
+          "text": "Segregation of duties violation enabling financial statement fraud"
         },
         {
           "id": "b",
-          "text": "Faster close process only"
+          "text": "Improved efficiency only, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Undetected manipulation of financial results"
+          "text": "HIPAA mandate, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Better encryption"
+          "text": "Required for SOC 2 always, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
-      "explanation": "Audit trails and documentation underpin accounting integrity.",
+      "explanation": "SoD requires separate roles for posting vs approval.",
+      "concept": "Segregation of duties and documented journal entries deter financial manipulation.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -269,29 +274,30 @@
       "id": "ktfin-q006",
       "domain": "accounting-integrity",
       "type": "multiple-choice",
-      "text": "GL export to Excel for 'analysis' bypasses ERP controls. Mitigation?",
+      "text": "Month-end adjustments lack supporting documentation in the share. Risk?",
       "options": [
         {
           "id": "a",
-          "text": "Disable ERP"
+          "text": "No risk if CFO approves verbally"
         },
         {
           "id": "b",
-          "text": "Restrict exports and use controlled reporting cubes with logging"
+          "text": "Faster close process only, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Email GL to all staff"
+          "text": "Better encryption, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Share one password for finance"
+          "text": "Undetected manipulation of financial results"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
-      "explanation": "Uncontrolled exports undermine integrity of source system.",
+      "explanation": "Audit trails and documentation underpin accounting integrity.",
+      "concept": "Segregation of duties and documented journal entries deter financial manipulation.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -305,31 +311,32 @@
     },
     {
       "id": "ktfin-q007",
-      "domain": "workflow-protection",
+      "domain": "accounting-integrity",
       "type": "multiple-choice",
-      "text": "Wire transfers over $50k require two approvals in policy but ERP allows one. Fix?",
+      "text": "GL export to Excel for 'analysis' bypasses ERP controls. Mitigation?",
       "options": [
         {
           "id": "a",
-          "text": "Use personal Venmo"
+          "text": "Restrict exports and use controlled reporting cubes with logging"
         },
         {
           "id": "b",
-          "text": "Lower threshold to $5M"
+          "text": "Email GL to all staff, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Remove approvals for speed"
+          "text": "Share one password for finance, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Configure system-enforced dual approval workflow matching policy"
+          "text": "Disable ERP, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
-      "explanation": "Technical enforcement must mirror financial policy.",
+      "explanation": "Uncontrolled exports undermine integrity of source system.",
+      "concept": "Segregation of duties and documented journal entries deter financial manipulation.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -343,31 +350,32 @@
     },
     {
       "id": "ktfin-q008",
-      "domain": "workflow-protection",
+      "domain": "accounting-integrity",
       "type": "multiple-choice",
-      "text": "AP clerks can create vendors and pay them. BEST SoD change?",
+      "text": "Auditors find journal entries posted after close without approval workflow. Issue?",
       "options": [
         {
           "id": "a",
-          "text": "Give everyone Domain Admin"
+          "text": "Breaks segregation of duties and enables post-close financial manipulation"
         },
         {
           "id": "b",
-          "text": "Allow shared clerk login"
+          "text": "Only a problem if the company is publicly traded on major exchanges"
         },
         {
           "id": "c",
-          "text": "Separate vendor master maintenance from payment initiation roles"
+          "text": "Improves agility because accountants can fix numbers faster without delays, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Required for real-time dashboards and therefore always acceptable, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
-      "explanation": "Creating vendors and paying is high-risk combined role.",
+      "explanation": "Post-close entries need the same approval and audit trail as regular entries.",
+      "concept": "Segregation of duties and documented journal entries deter financial manipulation.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -383,29 +391,30 @@
       "id": "ktfin-q009",
       "domain": "workflow-protection",
       "type": "multiple-choice",
-      "text": "Automated ACH file generation has no integrity check before upload. Add?",
+      "text": "Wire transfers over $50k require two approvals in policy but ERP allows one. Fix?",
       "options": [
         {
           "id": "a",
-          "text": "Disable bank callbacks"
+          "text": "Remove approvals for speed, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Email ACH files to personal accounts"
+          "text": "Use personal Venmo, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Cryptographic signing or hash verification with dual review of file totals"
+          "text": "Configure system-enforced dual approval workflow matching policy"
         },
         {
           "id": "d",
-          "text": "Run at 3 a.m. without logs"
+          "text": "Lower threshold to $5M, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Integrity controls prevent tampered payment files.",
+      "explanation": "Technical enforcement must mirror financial policy.",
+      "concept": "Dual approval on banking and master-data changes blocks process abuse.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -419,31 +428,32 @@
     },
     {
       "id": "ktfin-q010",
-      "domain": "invoice-manipulation",
+      "domain": "workflow-protection",
       "type": "multiple-choice",
-      "text": "PDF invoice totals do not match ERP line items but bank account matches a new vendor. Suspicion?",
+      "text": "AP clerks can create vendors and pay them. BEST SoD change?",
       "options": [
         {
           "id": "a",
-          "text": "Invoice manipulation fraud\u2014halt payment and verify vendor"
+          "text": "Give everyone Domain Admin, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Patch Tuesday"
+          "text": "Separate vendor master maintenance from payment initiation roles"
         },
         {
           "id": "c",
-          "text": "DNS tunneling"
+          "text": "Disable logging, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Normal OCR error only"
+          "text": "Allow shared clerk login, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
-      "explanation": "Mismatch between documents and master data signals fraud.",
+      "explanation": "Creating vendors and paying is high-risk combined role.",
+      "concept": "Dual approval on banking and master-data changes blocks process abuse.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -457,31 +467,32 @@
     },
     {
       "id": "ktfin-q011",
-      "domain": "invoice-manipulation",
+      "domain": "workflow-protection",
       "type": "multiple-choice",
-      "text": "Attacker inserts a fake line item via compromised AP mailbox rules. Detection?",
+      "text": "Automated ACH file generation has no integrity check before upload. Add?",
       "options": [
         {
           "id": "a",
-          "text": "Disable SPF"
+          "text": "Disable bank callbacks, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Hunt for hidden forwarding rules and compare invoice hashes to PO"
+          "text": "Cryptographic signing or hash verification with dual review of file totals"
         },
         {
           "id": "c",
-          "text": "Ignore mailbox rules"
+          "text": "Email ACH files to personal accounts, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Pay faster"
+          "text": "Run at 3 a.m. without logs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "Mailbox rules are common in invoice fraud; PO matching catches changes.",
+      "explanation": "Integrity controls prevent tampered payment files.",
+      "concept": "Dual approval on banking and master-data changes blocks process abuse.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -495,31 +506,188 @@
     },
     {
       "id": "ktfin-q012",
+      "domain": "workflow-protection",
+      "type": "multiple-choice",
+      "text": "Wire transfers under $25k auto-approve if initiated by finance managers. Risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Required by PCI-DSS for all card-not-present transactions globally, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Fraudsters can split large thefts into smaller wires bypassing dual control thresholds"
+        },
+        {
+          "id": "c",
+          "text": "Improves security because smaller amounts are never targeted by criminals, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Eliminates the need for out-of-band verification on any payment change, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Threshold-based auto-approval enables structuring; use consistent dual control.",
+      "concept": "Dual approval on banking and master-data changes blocks process abuse.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktfin-q013",
+      "domain": "invoice-manipulation",
+      "type": "multiple-choice",
+      "text": "PDF invoice totals do not match ERP line items but bank account matches a new vendor. Suspicion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invoice manipulation fraud\u2014halt payment and verify vendor"
+        },
+        {
+          "id": "b",
+          "text": "Normal OCR error only, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "DNS tunneling, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Patch Tuesday, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mismatch between documents and master data signals fraud.",
+      "concept": "Look-alike domains and changed remittance details need vendor verification.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktfin-q014",
+      "domain": "invoice-manipulation",
+      "type": "multiple-choice",
+      "text": "Attacker inserts a fake line item via compromised AP mailbox rules. Detection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hunt for hidden forwarding rules and compare invoice hashes to PO"
+        },
+        {
+          "id": "b",
+          "text": "Ignore mailbox rules, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Disable SPF, using shared credentials instead of individual accountability."
+        },
+        {
+          "id": "d",
+          "text": "Pay faster, using shared credentials instead of individual accountability."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Mailbox rules are common in invoice fraud; PO matching catches changes.",
+      "concept": "Look-alike domains and changed remittance details need vendor verification.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktfin-q015",
       "domain": "invoice-manipulation",
       "type": "multiple-choice",
       "text": "Vendor portal credentials leaked. Financial control to activate?",
       "options": [
         {
           "id": "a",
-          "text": "Publish new password in email"
+          "text": "Force portal password reset and callback verification for any bank changes"
         },
         {
           "id": "b",
-          "text": "Disable two-person review"
+          "text": "Stop using vendors, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Stop using vendors"
+          "text": "Disable two-person review, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Force portal password reset and callback verification for any bank changes"
+          "text": "Publish new password in email, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Portal compromise enables payment redirect fraud.",
+      "concept": "Look-alike domains and changed remittance details need vendor verification.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktfin-q016",
+      "domain": "invoice-manipulation",
+      "type": "multiple-choice",
+      "text": "PDF invoice metadata shows different authoring software than prior invoices from the vendor. Action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Post the PDF on the intranet so AP can crowdsource authenticity checks, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Hold payment and verify with vendor through established contacts; hunt for BEC"
+        },
+        {
+          "id": "c",
+          "text": "Trust the invoice if the total matches the purchase order within ten percent"
+        },
+        {
+          "id": "d",
+          "text": "Pay immediately because PDF files cannot be altered once exported, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Metadata anomalies may signal forged invoices in BEC campaigns.",
+      "concept": "Look-alike domains and changed remittance details need vendor verification.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

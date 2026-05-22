@@ -1,0 +1,12 @@
+{
+  "name": "cert-master",
+  "private": true,
+  "description": "LOCAL DEV ONLY. Production is static files on GitHub Pages; CI does not run npm or bundle the app.",
+  "scripts": {
+    "dev": "serve -l 8080",
+    "serve:py": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

@@ -15,6 +15,14 @@ const adContainer = document.getElementById("ad-container");
 
 import { resolveAssetPath } from "./paths.js";
 
+/** True when AdSense is unlikely to work (local preview, file://, etc.). */
+function isAdSenseSkippedHost() {
+  const h = location.hostname;
+  if (!h || h === "localhost" || h === "127.0.0.1" || h === "[::1]") return true;
+  if (location.protocol === "file:") return true;
+  return false;
+}
+
 /**
  * @returns {Promise<object|null>}
  */
@@ -110,6 +118,22 @@ async function renderAdSense(cfg) {
   }
 }
 
+/**
+ * @param {object} cfg
+ * @param {string} reason
+ */
+function tryCustomFallback(cfg, reason) {
+  if (!cfg.custom?.href || !cfg.custom?.text) return;
+  if (isAdSenseSkippedHost()) {
+    console.info(
+      "AdSense skipped on local/dev host; showing custom link if configured.",
+    );
+  } else {
+    console.info(`AdSense unavailable (${reason}); using custom fallback.`);
+  }
+  renderCustomAd(cfg);
+}
+
 export async function initAds() {
   const cfg = await loadAdsConfig();
   if (!cfg?.enabled) return;
@@ -119,10 +143,18 @@ export async function initAds() {
   if (cfg.provider === "custom") {
     renderCustomAd(cfg);
   } else if (cfg.provider === "adsense") {
-    try {
-      await renderAdSense(cfg);
-    } catch (err) {
-      console.warn("Ads not loaded:", err);
+    if (isAdSenseSkippedHost()) {
+      tryCustomFallback(cfg, "local development");
+    } else {
+      try {
+        await renderAdSense(cfg);
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        tryCustomFallback(
+          cfg,
+          msg.includes("failed to load") ? "script blocked or unreachable" : msg,
+        );
+      }
     }
   }
 

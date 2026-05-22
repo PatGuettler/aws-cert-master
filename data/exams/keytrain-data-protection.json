@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 15,
-    "scoredQuestions": 15,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 20,
+    "scoredQuestions": 20,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -98,25 +98,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Rename the bucket and keep it public"
+          "text": "Rename the bucket and keep it public, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Post an apology tweet before containment"
-        },
-        {
-          "id": "c",
           "text": "Block public access, preserve logs, and initiate breach assessment per policy"
         },
         {
+          "id": "c",
+          "text": "Delete logs to save storage costs, without security or identity team coordination per policy."
+        },
+        {
           "id": "d",
-          "text": "Delete logs to save storage costs"
+          "text": "Post an apology tweet before containment, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Exposure of health data triggers containment and regulated breach workflows.",
+      "concept": "Classify data, block public exposure, and trigger breach workflows for regulated data.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -136,25 +137,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Publish the file on the intranet"
-        },
-        {
-          "id": "b",
-          "text": "Fire the user automatically"
-        },
-        {
-          "id": "c",
           "text": "Confirm classification, block transmission if policy requires, and interview user with HR guidance"
         },
         {
+          "id": "b",
+          "text": "Disable DLP to reduce noise, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Fire the user automatically, using shared credentials instead of individual accountability."
+        },
+        {
           "id": "d",
-          "text": "Disable DLP to reduce noise"
+          "text": "Publish the file on the intranet, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
       "explanation": "Validate sensitivity and policy, then respond proportionally with HR/legal as needed.",
+      "concept": "Classify data, block public exposure, and trigger breach workflows for regulated data.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -174,25 +176,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Rotate keys, purge secrets from history, and enable secret scanning on all repos"
+          "text": "Make the repo private without rotation, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Make the repo private without rotation"
+          "text": "Rotate keys, purge secrets from history, and enable secret scanning on all repos"
         },
         {
           "id": "c",
-          "text": "Add a README saying 'do not use keys'"
+          "text": "Ignore because the project is old, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Ignore because the project is old"
+          "text": "Add a README saying 'do not use keys', without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secrets in VCS remain reachable until rotated and removed; scanning prevents recurrence.",
+      "concept": "Classify data, block public exposure, and trigger breach workflows for regulated data.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -206,31 +209,32 @@
     },
     {
       "id": "ktdp-q004",
-      "domain": "encryption",
+      "domain": "sensitive-exposure",
       "type": "multiple-choice",
-      "text": "Laptops are stolen from a locked office; drives use BitLocker with TPM+PIN. Which data state is MOST protected?",
+      "text": "A researcher finds patient MRNs in a public analytics dashboard screenshot on LinkedIn. FIRST step?",
       "options": [
         {
           "id": "a",
-          "text": "Data in transit inside the LAN only"
+          "text": "Ignore because social media posts are outside the organization's control boundary, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Data at rest on disk while powered off"
+          "text": "Ask the researcher to delete their post before IT investigates the dashboard"
         },
         {
           "id": "c",
-          "text": "Printed documents in recycling"
+          "text": "Change dashboard colors so MRNs are harder to read in future screenshots"
         },
         {
           "id": "d",
-          "text": "Data in use while logged in and unlocked"
+          "text": "Take the dashboard offline, preserve access logs, and start incident/breach assessment"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
-      "explanation": "Full-disk encryption protects at rest when off; logged-in sessions remain exposed.",
+      "explanation": "Confirmed PHI exposure requires immediate containment and regulated breach evaluation.",
+      "concept": "Classify data, block public exposure, and trigger breach workflows for regulated data.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -246,29 +250,30 @@
       "id": "ktdp-q005",
       "domain": "encryption",
       "type": "multiple-choice",
-      "text": "A team proposes TLS 1.0 for legacy clients on an internet-facing API. What is the BEST security stance?",
+      "text": "Laptops are stolen from a locked office; drives use BitLocker with TPM+PIN. Which data state is MOST protected?",
       "options": [
         {
           "id": "a",
-          "text": "Deprecate TLS 1.0/1.1 and document exceptions with compensating controls and timelines"
+          "text": "Printed documents in recycling, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Use self-signed certs without rotation"
+          "text": "Data in use while logged in and unlocked"
         },
         {
           "id": "c",
-          "text": "Terminate TLS at the user's browser only"
+          "text": "Data at rest on disk while powered off"
         },
         {
           "id": "d",
-          "text": "Enable SSLv3 for compatibility"
+          "text": "Data in transit inside the LAN only, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
-      "explanation": "Legacy TLS is broken; phased migration beats indefinite weak protocols on public APIs.",
+      "explanation": "Full-disk encryption protects at rest when off; logged-in sessions remain exposed.",
+      "concept": "Protect data at rest and in transit; weak TLS and unencrypted backups expand blast radius.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -284,29 +289,30 @@
       "id": "ktdp-q006",
       "domain": "encryption",
       "type": "multiple-choice",
-      "text": "Database backups are copied to tape unencrypted for 'speed.' What risk should leadership accept if continuing?",
+      "text": "A team proposes TLS 1.0 for legacy clients on an internet-facing API. What is the BEST security stance?",
       "options": [
         {
           "id": "a",
-          "text": "Physical loss of tapes exposes all backup contents without key compromise"
+          "text": "Terminate TLS at the user's browser only, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "No risk if tapes stay in the server room"
+          "text": "Enable SSLv3 for compatibility, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Encryption slows restores so it is never needed"
+          "text": "Deprecate TLS 1.0/1.1 and document exceptions with compensating controls and timelines"
         },
         {
           "id": "d",
-          "text": "Cloud backups are automatically encrypted at rest always"
+          "text": "Use self-signed certs without rotation, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
-      "explanation": "Offline media theft bypasses network controls; encryption at rest for backups is standard.",
+      "explanation": "Legacy TLS is broken; phased migration beats indefinite weak protocols on public APIs.",
+      "concept": "Protect data at rest and in transit; weak TLS and unencrypted backups expand blast radius.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -320,31 +326,32 @@
     },
     {
       "id": "ktdp-q007",
-      "domain": "dlp",
+      "domain": "encryption",
       "type": "multiple-choice",
-      "text": "DLP blocks a nurse emailing treatment notes to a personal account for 'convenience.' Which outcome is correct?",
+      "text": "Database backups are copied to tape unencrypted for 'speed.' What risk should leadership accept if continuing?",
       "options": [
         {
           "id": "a",
-          "text": "Disable DLP for clinical staff"
+          "text": "Cloud backups are automatically encrypted at rest always, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Forward blocked content to IT via CC"
+          "text": "No risk if tapes stay in the server room, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Block stands; offer approved secure transfer methods"
+          "text": "Encryption slows restores so it is never needed, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Allow if the user is senior"
+          "text": "Physical loss of tapes exposes all backup contents without key compromise"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
-      "explanation": "HIPAA-aligned environments require controlling PHI egress; approved tools replace personal email.",
+      "explanation": "Offline media theft bypasses network controls; encryption at rest for backups is standard.",
+      "concept": "Protect data at rest and in transit; weak TLS and unencrypted backups expand blast radius.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -358,31 +365,32 @@
     },
     {
       "id": "ktdp-q008",
-      "domain": "dlp",
+      "domain": "encryption",
       "type": "multiple-choice",
-      "text": "Endpoint DLP generates many false positives on source code zips. What tuning is BEST?",
+      "text": "Developers store TLS private keys in the application Git repo for 'deployment speed.' Fix?",
       "options": [
         {
           "id": "a",
-          "text": "Turn off endpoint DLP entirely"
+          "text": "Share the repo with all contractors to improve on-call coverage, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Alert on every file save"
+          "text": "Move keys to a managed secrets store with rotation and remove keys from Git history"
         },
         {
           "id": "c",
-          "text": "Scope policies to labeled repositories and exfil channels, not all zip creation"
+          "text": "Use longer RSA keys in Git without changing storage or access controls, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Whitelist all developers permanently"
+          "text": "Encrypt the Git repo password while keeping keys in the same repository tree, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
-      "explanation": "Effective DLP targets high-risk egress with context to limit alert fatigue.",
+      "explanation": "Private keys in VCS are exposed to anyone with repo access; use HSM/KMS-backed secrets.",
+      "concept": "Protect data at rest and in transit; weak TLS and unencrypted backups expand blast radius.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -398,29 +406,30 @@
       "id": "ktdp-q009",
       "domain": "dlp",
       "type": "multiple-choice",
-      "text": "A contractor pastes customer PII into a public ChatGPT session. Which combined control helps MOST?",
+      "text": "DLP blocks a nurse emailing treatment notes to a personal account for 'convenience.' Which outcome is correct?",
       "options": [
         {
           "id": "a",
-          "text": "Block all HTTPS"
+          "text": "Disable DLP for clinical staff, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Remove contractor laptops"
+          "text": "Block stands; offer approved secure transfer methods"
         },
         {
           "id": "c",
-          "text": "Disable spelling checker"
+          "text": "Forward blocked content to IT via CC"
         },
         {
           "id": "d",
-          "text": "Browser DLP, acceptable-use policy, and enterprise AI gateway with logging"
+          "text": "Allow if the user is senior, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
-      "explanation": "GenAI paste is a new exfil path; technical and contractual controls together reduce risk.",
+      "explanation": "HIPAA-aligned environments require controlling PHI egress; approved tools replace personal email.",
+      "concept": "Control exfil channels (email, USB, GenAI paste) with tuned policies and approved tools.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -434,31 +443,32 @@
     },
     {
       "id": "ktdp-q010",
-      "domain": "removable-media",
+      "domain": "dlp",
       "type": "multiple-choice",
-      "text": "USB storage is disabled, but staff use phone charging cables that mount as MTP devices. What should you add?",
+      "text": "Endpoint DLP generates many false positives on source code zips. What tuning is BEST?",
       "options": [
         {
           "id": "a",
-          "text": "Allow all USB if labeled with asset tags"
+          "text": "Alert on every file save, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Device control policies blocking unauthorized portable storage classes"
+          "text": "Scope policies to labeled repositories and exfil channels, not all zip creation"
         },
         {
           "id": "c",
-          "text": "Disable only Wi-Fi instead"
+          "text": "Whitelist all developers permanently, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Remove antivirus to improve speed"
+          "text": "Turn off endpoint DLP entirely, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "Charging-only vs data-capable USB requires device control, not just drive letters.",
+      "explanation": "Effective DLP targets high-risk egress with context to limit alert fatigue.",
+      "concept": "Control exfil channels (email, USB, GenAI paste) with tuned policies and approved tools.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -472,31 +482,32 @@
     },
     {
       "id": "ktdp-q011",
-      "domain": "removable-media",
+      "domain": "dlp",
       "type": "multiple-choice",
-      "text": "A found USB drive is plugged into a SOC analyst machine 'to see who lost it.' What is the SAFE procedure?",
+      "text": "A contractor pastes customer PII into a public ChatGPT session. Which combined control helps MOST?",
       "options": [
         {
           "id": "a",
-          "text": "Analyze only in a dedicated malware sandbox VM disconnected from production"
+          "text": "Disable spelling checker, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Email the files to the whole team"
+          "text": "Block all HTTPS, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Open on the analyst daily workstation"
+          "text": "Remove contractor laptops, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Insert into the domain controller to scan faster"
+          "text": "Browser DLP, acceptable-use policy, and enterprise AI gateway with logging"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
-      "explanation": "Unknown USBs are bait; sandbox isolation prevents accidental infection.",
+      "explanation": "GenAI paste is a new exfil path; technical and contractual controls together reduce risk.",
+      "concept": "Control exfil channels (email, USB, GenAI paste) with tuned policies and approved tools.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -510,31 +521,32 @@
     },
     {
       "id": "ktdp-q012",
-      "domain": "removable-media",
+      "domain": "dlp",
       "type": "multiple-choice",
-      "text": "Marketing requests USB giveaways with preloaded brochures. Security concern to raise?",
+      "text": "Engineers paste production database connection strings into a public Slack channel. Response?",
       "options": [
         {
           "id": "a",
-          "text": "USBs are always read-only"
+          "text": "Delete the Slack workspace and recreate it weekly to limit historical exposure, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Supply-chain integrity\u2014USBs could be tampered before distribution"
+          "text": "Trust that Slack encryption makes public channel secrets safe from attackers, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "HIPAA requires USB giveaways"
+          "text": "Rotate credentials, purge channel history per policy, and enable DLP for chat exfil patterns"
         },
         {
           "id": "d",
-          "text": "Brochures cannot contain malware"
+          "text": "Ask engineers to use code comments instead of chat for sharing secrets, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
-      "explanation": "Preloaded media is a supply-chain risk; sourced devices and hashing matter.",
+      "explanation": "Secrets in chat are credential exposure; rotate and add preventive DLP controls.",
+      "concept": "Control exfil channels (email, USB, GenAI paste) with tuned policies and approved tools.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -548,31 +560,32 @@
     },
     {
       "id": "ktdp-q013",
-      "domain": "backups",
+      "domain": "removable-media",
       "type": "multiple-choice",
-      "text": "Ransomware encrypts production; backups exist but are on the same VLAN as servers. Likely failure mode?",
+      "text": "USB storage is disabled, but staff use phone charging cables that mount as MTP devices. What should you add?",
       "options": [
         {
           "id": "a",
-          "text": "Snapshots cannot be targeted"
+          "text": "Remove antivirus to improve speed, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Backups automatically decrypt files"
+          "text": "Device control policies blocking unauthorized portable storage classes"
         },
         {
           "id": "c",
-          "text": "Tape libraries on VLAN are immune without testing"
+          "text": "Allow all USB if labeled with asset tags"
         },
         {
           "id": "d",
-          "text": "Ransomware deletes or encrypts online-connected backup shares"
+          "text": "Disable only Wi-Fi instead, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
-      "explanation": "Immutable or offline backups are required; network-local copies often die with production.",
+      "explanation": "Charging-only vs data-capable USB requires device control, not just drive letters.",
+      "concept": "Unknown USB and MTP devices are untrusted; analyze only in isolated sandboxes.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -586,31 +599,32 @@
     },
     {
       "id": "ktdp-q014",
-      "domain": "backups",
+      "domain": "removable-media",
       "type": "multiple-choice",
-      "text": "Restore test last ran three years ago. Which risk is MOST acute?",
+      "text": "A found USB drive is plugged into a SOC analyst machine 'to see who lost it.' What is the SAFE procedure?",
       "options": [
         {
           "id": "a",
-          "text": "Encryption is impossible on tape"
+          "text": "Open on the analyst daily workstation, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Backups run too frequently"
+          "text": "Email the files to the whole team, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Backups may be corrupt or procedures untested when needed"
+          "text": "Insert into the domain controller to scan faster, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "RPO is automatically zero"
+          "text": "Analyze only in a dedicated malware sandbox VM disconnected from production"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
-      "explanation": "Untested backups are a common disaster recovery gap.",
+      "explanation": "Unknown USBs are bait; sandbox isolation prevents accidental infection.",
+      "concept": "Unknown USB and MTP devices are untrusted; analyze only in isolated sandboxes.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -624,31 +638,227 @@
     },
     {
       "id": "ktdp-q015",
+      "domain": "removable-media",
+      "type": "multiple-choice",
+      "text": "Marketing requests USB giveaways with preloaded brochures. Security concern to raise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HIPAA requires USB giveaways, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "USBs are always read-only, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Brochures cannot contain malware, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Supply-chain integrity\u2014USBs could be tampered before distribution"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Preloaded media is a supply-chain risk; sourced devices and hashing matter.",
+      "concept": "Unknown USB and MTP devices are untrusted; analyze only in isolated sandboxes.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q016",
+      "domain": "removable-media",
+      "type": "multiple-choice",
+      "text": "A conference hands out branded USB drives at your booth. Security recommendation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Autorun the drive on a reception PC to display the marketing PDF quickly, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Store drives in the server room safe as backup media for nightly jobs, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Distribute drives to executives first because they have the latest patches, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Do not insert into corporate systems; destroy or scan only in an isolated lab machine"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Untrusted USB media is a common initial-access vector; never trust giveaway drives.",
+      "concept": "Unknown USB and MTP devices are untrusted; analyze only in isolated sandboxes.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q017",
+      "domain": "backups",
+      "type": "multiple-choice",
+      "text": "Ransomware encrypts production; backups exist but are on the same VLAN as servers. Likely failure mode?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ransomware deletes or encrypts online-connected backup shares"
+        },
+        {
+          "id": "b",
+          "text": "Snapshots cannot be targeted, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Tape libraries on VLAN are immune without testing"
+        },
+        {
+          "id": "d",
+          "text": "Backups automatically decrypt files, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Immutable or offline backups are required; network-local copies often die with production.",
+      "concept": "Immutable, offline, and tested backups survive ransomware; co-located copies often fail.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q018",
+      "domain": "backups",
+      "type": "multiple-choice",
+      "text": "Restore test last ran three years ago. Which risk is MOST acute?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Backups may be corrupt or procedures untested when needed"
+        },
+        {
+          "id": "b",
+          "text": "RPO is automatically zero, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Encryption is impossible on tape, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Backups run too frequently, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Untested backups are a common disaster recovery gap.",
+      "concept": "Immutable, offline, and tested backups survive ransomware; co-located copies often fail.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q019",
       "domain": "backups",
       "type": "multiple-choice",
       "text": "A cloud admin can delete production and backup vaults with one role. Best fix?",
       "options": [
         {
           "id": "a",
-          "text": "Disable logging on backup API"
+          "text": "Store backups only on the admin laptop, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "One super-admin for speed"
-        },
-        {
-          "id": "c",
           "text": "Separate backup admin role with MFA, immutability, and break-glass monitoring"
         },
         {
+          "id": "c",
+          "text": "Disable logging on backup API, without security or identity team coordination per policy."
+        },
+        {
           "id": "d",
-          "text": "Store backups only on the admin laptop"
+          "text": "One super-admin for speed, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Backup integrity requires separation of duties and immutability features.",
+      "concept": "Immutable, offline, and tested backups survive ransomware; co-located copies often fail.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktdp-q020",
+      "domain": "backups",
+      "type": "multiple-choice",
+      "text": "Immutable backups are enabled, but backup admin can delete vault locks. Best improvement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separate backup admin with MFA, dual control on lock changes, and alert on deletion APIs"
+        },
+        {
+          "id": "b",
+          "text": "Store backup credentials in the same wiki page as production admin passwords, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Use one cloud root account for production and backups to simplify billing, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Disable immutability during incidents so ransomware can be deleted faster, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Backup protection fails if the same identity can delete production and backups.",
+      "concept": "Immutable, offline, and tested backups survive ransomware; co-located copies often fail.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

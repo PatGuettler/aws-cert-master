@@ -52,6 +52,7 @@ import { loadKeytrainCatalog, loadKeytrainProgram } from "./keytrain-loader.js";
 import {
   renderKeytrainCertPage,
   renderKeytrainResults,
+  renderKeytrainExamReview,
   bindKeytrainResultsActions,
   renderKeytrainCertificateForm,
 } from "./keytrain-ui.js";
@@ -62,6 +63,7 @@ import {
 } from "./keytrain-storage.js";
 import { renderKeytrainHub, renderKeytrainWorkshops } from "./key-training-ui.js";
 import { getKeytrainWorkshop } from "./workshops/keytrain-workshop-content.js";
+import { resolveWorkshopFollowUp } from "./workshops/workshop-followup.js";
 import { runWorkshop } from "./workshop-runner.js";
 import { recordWorkshopCompletion } from "./keytrain-progress-storage.js";
 import { renderKeytrainProgressDashboard } from "./keytrain-progress-ui.js";
@@ -602,7 +604,8 @@ function startKeytrainExam() {
   const cert = keytrainProgram.cert;
   sessionMode = "keytrain";
   clearResumeState(cert.id);
-  const questions = selectExamQuestions(cert, { certId: cert.id, weakMap: new Map() });
+  const weakMap = getWeakQuestions(cert.id);
+  const questions = selectExamQuestions(cert, { certId: cert.id, weakMap });
   launchExamSession(questions, "keytrain");
 }
 
@@ -639,6 +642,12 @@ function finishKeytrainExam(meta = {}) {
     type: "keytrain",
   });
 
+  updateWeakQuestions(
+    cert.id,
+    keytrainResult.missedQuestions,
+    examQuestions.map((q) => q.id)
+  );
+
   showKeytrainResultsView();
 }
 
@@ -652,6 +661,7 @@ function showKeytrainResultsView() {
     cert: keytrainProgram.cert,
     keytrain: keytrainProgram.keytrain,
   });
+  renderKeytrainExamReview(examQuestions, responses, keytrainProgram.cert);
   const panel = document.getElementById("view-keytrain-results");
   if (panel?.dataset.actionsBound !== "1") {
     panel.dataset.actionsBound = "1";
@@ -1182,9 +1192,17 @@ function startWorkshop(categoryId, level = "medium", opts = {}) {
   setHeaderTitle(`${workshop.code} — ${levelName} workshop`);
   const root = document.getElementById("workshop-root");
   if (!root) return;
+  const followUpCategoryId = workshop.categoryId || id;
+  const followUp = resolveWorkshopFollowUp(
+    followUpCategoryId,
+    examIndexList,
+    keytrainCatalog
+  );
+
   workshopController = runWorkshop({
     workshop,
     container: root,
+    followUp,
     onExit: () => {
       workshopController = null;
       goKeytrain();
@@ -1192,6 +1210,18 @@ function startWorkshop(categoryId, level = "medium", opts = {}) {
     onComplete: (stats) => {
       recordWorkshopCompletion(id, lv, stats);
       refreshDataViews();
+    },
+    onOpenPractice: () => {
+      if (!followUp.practiceExamId) return;
+      workshopController?.stop();
+      workshopController = null;
+      void openCert(followUp.practiceExamId);
+    },
+    onOpenCertification: () => {
+      if (!followUp.certProgramId) return;
+      workshopController?.stop();
+      workshopController = null;
+      void openKeytrainCert(followUp.certProgramId);
     },
   });
 }

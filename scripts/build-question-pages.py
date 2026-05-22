@@ -21,7 +21,12 @@ ROOT = Path(__file__).resolve().parents[1]
 QUESTIONS_DIR = ROOT / "questions"
 CERT_DIR = ROOT / "cert"
 BROWSE_DIR = ROOT / "browse"
+ABOUT_DIR = ROOT / "about"
+CONTACT_DIR = ROOT / "contact"
+PRIVACY_DIR = ROOT / "privacy"
 DATA_DIR = ROOT / "data"
+
+CONTACT_EMAIL = "patguettlerpages@gmail.com"
 
 VENDOR_LABELS = {
     "aws": "AWS",
@@ -83,6 +88,314 @@ def render_ad_unit() -> str:
 def seo_body_class(extra: str = "") -> str:
     base = "seo-question-body has-ad-bar"
     return f"{base} {extra}".strip() if extra else base
+
+
+def render_seo_footer(*, include_disclaimer: bool = True) -> str:
+    home = site_url("/")
+    browse = site_url("/browse/")
+    questions = site_url("/questions/")
+    about = site_url("/about/")
+    contact = site_url("/contact/")
+    privacy = site_url("/privacy/")
+    links = (
+        f'<nav class="site-footer-nav" aria-label="Site">'
+        f'<a href="{escape(home)}">Home</a>'
+        f'<a href="{escape(browse)}">Browse exams</a>'
+        f'<a href="{escape(questions)}">Question library</a>'
+        f'<a href="{escape(about)}">About</a>'
+        f'<a href="{escape(contact)}">Contact</a>'
+        f'<a href="{escape(privacy)}">Privacy</a>'
+        f"</nav>"
+    )
+    disclaimer = ""
+    if include_disclaimer:
+        disclaimer = (
+            '<p class="site-footer-disclaimer">'
+            "Unofficial practice tool — not affiliated with AWS, Microsoft, Google, or CompTIA."
+            "</p>"
+        )
+    return f'<footer class="site-footer site-footer--expanded">{links}{disclaimer}</footer>'
+
+
+def render_trust_shell(
+    *,
+    title: str,
+    description: str,
+    canonical: str,
+    breadcrumb_label: str,
+    main_html: str,
+    json_ld: dict | None = None,
+) -> str:
+    home = site_url("/")
+    head = render_seo_head(
+        title=title,
+        description=description,
+        canonical=canonical,
+        css_href="../css/styles.css",
+        json_ld=json_ld,
+    )
+    return f"""<!DOCTYPE html>
+<html lang="en">
+  <head>
+{head}
+  </head>
+  <body class="{seo_body_class("seo-trust-body")}">
+    <header class="site-header seo-question-header">
+      <a href="{escape(home)}" class="seo-brand-link">Cert Master</a>
+    </header>
+    <main class="seo-question-main seo-trust-main">
+      <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+        <a href="{escape(home)}">Home</a> / {escape(breadcrumb_label)}
+      </nav>
+      {main_html}
+    </main>
+    {render_ad_unit()}
+    {render_seo_footer()}
+  </body>
+</html>
+"""
+
+
+def render_about_page() -> str:
+    title = "About Cert Master | Free certification practice"
+    description = (
+        "Cert Master offers original AWS, Azure, Google Cloud, and CompTIA practice exams "
+        "plus KeyTrain cybersecurity workshops. Learn who we are and how we create study content."
+    )
+    canonical = site_url("/about/")
+    body = f"""
+      <article class="seo-trust-article">
+        <h1>About Cert Master</h1>
+        <p class="seo-hub-lead">
+          Cert Master (<a href="{escape(site_url('/'))}">practicecert.com</a>) is a free study site for
+          cloud and IT certification candidates. We publish <strong>original practice questions</strong>,
+          timed exams, and interactive KeyTrain workshops — all designed to help you learn exam objectives,
+          not to replace official training or vendor materials.
+        </p>
+
+        <section class="seo-trust-section">
+          <h2>What we offer</h2>
+          <ul>
+            <li><strong>Practice exams</strong> — domain-weighted quizzes for AWS, Microsoft Azure, Google Cloud, and CompTIA certifications.</li>
+            <li><strong>Question library</strong> — each question has its own page with explanations and links to official documentation.</li>
+            <li><strong>KeyTrain</strong> — cybersecurity training paths with workshops, concept visuals, and certification-style exams.</li>
+          </ul>
+        </section>
+
+        <section class="seo-trust-section">
+          <h2>Original, people-first content</h2>
+          <p>
+            Questions and teaching notes are written for clarity and learning value. We do not scrape exam dumps,
+            copy third-party banks, or publish restricted content (adult material, violence, hate speech, or other
+            policy-violating topics). When you spot an error or outdated objective, please
+            <a href="{escape(site_url('/contact/'))}">contact us</a> so we can correct it.
+          </p>
+        </section>
+
+        <section class="seo-trust-section">
+          <h2>Independence &amp; disclaimers</h2>
+          <p>
+            Cert Master is <strong>not affiliated with, endorsed by, or sponsored by</strong> Amazon Web Services (AWS),
+            Microsoft, Google, CompTIA, or any certification vendor. Exam names and codes are used for identification only.
+            Your results on this site do not guarantee success on an official exam.
+          </p>
+        </section>
+
+        <section class="seo-trust-section">
+          <h2>How we keep the site fresh</h2>
+          <p>
+            We expand question banks, refine distractors, and update workshops as exam guides change.
+            New questions and workshop steps are added on an ongoing basis so returning learners see
+            varied, up-to-date practice material.
+          </p>
+        </section>
+
+        <p class="seo-cta-actions">
+          <a class="btn btn-primary" href="{escape(site_url('/browse/'))}">Browse practice exams</a>
+          <a class="btn btn-outline" href="{escape(site_url('/contact/'))}">Contact us</a>
+        </p>
+      </article>
+    """
+    json_ld = {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": title,
+        "description": description,
+        "url": canonical,
+        "isPartOf": {"@type": "WebSite", "name": "Cert Master", "url": site_url("/")},
+    }
+    return render_trust_shell(
+        title=title,
+        description=description,
+        canonical=canonical,
+        breadcrumb_label="About",
+        main_html=body,
+        json_ld=json_ld,
+    )
+
+
+def render_contact_page() -> str:
+    title = "Contact Cert Master"
+    description = (
+        "Get in touch with Cert Master for feedback, content corrections, and privacy questions. "
+        "We respond to legitimate inquiries promptly."
+    )
+    canonical = site_url("/contact/")
+    mail = escape(CONTACT_EMAIL)
+    body = f"""
+      <article class="seo-trust-article">
+        <h1>Contact us</h1>
+        <p class="seo-hub-lead">
+          We read every message. Use the email below for study feedback, broken links, privacy requests,
+          or privacy questions.
+        </p>
+
+        <section class="seo-trust-section">
+          <h2>Email</h2>
+          <p>
+            <a href="mailto:{mail}">{mail}</a>
+          </p>
+          <p>
+            Please include the page URL and, for question issues, the exam code and question text.
+            We typically reply within a few business days.
+          </p>
+        </section>
+
+        <section class="seo-trust-section">
+          <h2>What we can help with</h2>
+          <ul>
+            <li>Reporting inaccurate or outdated practice questions</li>
+            <li>Suggesting new certifications or workshop topics</li>
+            <li>Privacy, cookies, and advertising on this site (see our <a href="{escape(site_url('/privacy/'))}">Privacy policy</a>)</li>
+          </ul>
+        </section>
+
+        <p><a href="{escape(site_url('/about/'))}">About Cert Master</a> ·
+        <a href="{escape(site_url('/privacy/'))}">Privacy policy</a></p>
+      </article>
+    """
+    json_ld = {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": title,
+        "description": description,
+        "url": canonical,
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": CONTACT_EMAIL,
+            "url": canonical,
+        },
+    }
+    return render_trust_shell(
+        title=title,
+        description=description,
+        canonical=canonical,
+        breadcrumb_label="Contact",
+        main_html=body,
+        json_ld=json_ld,
+    )
+
+
+def render_privacy_page() -> str:
+    title = "Privacy policy | Cert Master"
+    description = (
+        "How Cert Master handles browser storage, cookies, Google AdSense, and third-party services. "
+        "No account required; progress stays on your device unless you clear it."
+    )
+    canonical = site_url("/privacy/")
+    mail = escape(CONTACT_EMAIL)
+    body = f"""
+      <article class="seo-trust-article">
+        <h1>Privacy policy</h1>
+        <p class="seo-hub-lead">
+          <em>Last updated: {datetime.now(timezone.utc).strftime("%B %d, %Y")} (UTC)</em>
+        </p>
+        <p>
+          Cert Master respects your privacy. This policy explains what data we collect, how ads work,
+          and how to reach us. By using practicecert.com you agree to this policy.
+        </p>
+
+        <section class="seo-trust-section">
+          <h2>Information we collect</h2>
+          <p>
+            <strong>No account or login is required.</strong> Exam progress, settings, and KeyTrain state are stored
+            in your browser&apos;s <code>localStorage</code> on your device. We do not operate a user database or
+            sell personal information.
+          </p>
+          <p>
+            Standard web server logs (IP address, browser type, pages requested) may be recorded by our hosting
+            provider for security and operations. We do not use those logs to build marketing profiles.
+          </p>
+        </section>
+
+        <section class="seo-trust-section">
+          <h2>Cookies and advertising</h2>
+          <p>
+            We may display Google AdSense ads. Google and its partners may use cookies or similar technologies
+            to serve and measure ads, including personalized advertising where permitted by law. You can learn more
+            in <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">How Google uses data when you use our partners&apos; sites or apps</a>
+            and manage ad personalization at
+            <a href="https://adssettings.google.com" rel="noopener noreferrer">Google Ads Settings</a>.
+          </p>
+          <p>
+            We do not place ads in pop-ups, emails, or software downloads. Ads are not styled to look like navigation
+            or download buttons. Please report deceptive ad placement to
+            <a href="mailto:{mail}">{mail}</a>.
+          </p>
+        </section>
+
+        <section class="seo-trust-section">
+          <h2>Children</h2>
+          <p>
+            Cert Master is intended for certification candidates and adult learners. We do not knowingly collect
+            personal information from children under 13. Contact us if you believe a child has submitted personal data.
+          </p>
+        </section>
+
+        <section class="seo-trust-section">
+          <h2>Your choices</h2>
+          <ul>
+            <li>Clear site data anytime via the menu &ldquo;Clear data&rdquo; options or your browser settings.</li>
+            <li>Block cookies in your browser (some features or ads may not work as expected).</li>
+            <li>Email <a href="mailto:{mail}">{mail}</a> for privacy questions or deletion requests related to correspondence you sent us.</li>
+          </ul>
+        </section>
+
+        <section class="seo-trust-section">
+          <h2>Changes</h2>
+          <p>
+            We may update this policy when our practices or legal requirements change. The &ldquo;Last updated&rdquo;
+            date at the top will reflect the revision. Continued use of the site after changes constitutes acceptance.
+          </p>
+        </section>
+
+        <p>Questions? <a href="mailto:{mail}">{mail}</a> or our <a href="{escape(site_url('/contact/'))}">Contact page</a>.</p>
+      </article>
+    """
+    return render_trust_shell(
+        title=title,
+        description=description,
+        canonical=canonical,
+        breadcrumb_label="Privacy",
+        main_html=body,
+        json_ld={
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": title,
+            "description": description,
+            "url": canonical,
+        },
+    )
+
+
+def write_trust_pages() -> None:
+    ABOUT_DIR.mkdir(parents=True, exist_ok=True)
+    CONTACT_DIR.mkdir(parents=True, exist_ok=True)
+    PRIVACY_DIR.mkdir(parents=True, exist_ok=True)
+    (ABOUT_DIR / "index.html").write_text(render_about_page(), encoding="utf-8")
+    (CONTACT_DIR / "index.html").write_text(render_contact_page(), encoding="utf-8")
+    (PRIVACY_DIR / "index.html").write_text(render_privacy_page(), encoding="utf-8")
 
 
 def render_seo_head(
@@ -282,13 +595,7 @@ def render_question_page(
 
     </main>
     {render_ad_unit()}
-    <footer class="site-footer">
-      <p>
-        Unofficial practice tool — not affiliated with AWS, Microsoft, Google, or CompTIA.
-        <a href="{escape(home_url)}">Back to Cert Master</a>
-        · <a href="{escape(site_url('/questions/'))}">Question library</a>
-      </p>
-    </footer>
+    {render_seo_footer()}
   </body>
 </html>
 """
@@ -370,7 +677,7 @@ def render_questions_hub(registry: dict, exams_by_id: dict) -> str:
       {''.join(sections)}
     </main>
     {render_ad_unit()}
-    <footer class="site-footer"><p><a href="{escape(home)}">Home</a> · <a href="{escape(browse)}">Browse exams</a></p></footer>
+    {render_seo_footer()}
   </body>
 </html>
 """
@@ -504,10 +811,7 @@ def render_cert_page(
       </article>
     </main>
     {render_ad_unit()}
-    <footer class="site-footer">
-      <p>Unofficial practice — not affiliated with {escape(vendor_label)}.
-      <a href="{escape(home)}">Cert Master home</a></p>
-    </footer>
+    {render_seo_footer()}
   </body>
 </html>
 """
@@ -576,7 +880,7 @@ def render_browse_page(index: dict) -> str:
       <p><a href="{escape(site_url('/questions/'))}">Practice question library</a> — every question has its own SEO page.</p>
     </main>
     {render_ad_unit()}
-    <footer class="site-footer"><p><a href="{escape(home)}">Home</a></p></footer>
+    {render_seo_footer()}
   </body>
 </html>
 """
@@ -588,6 +892,9 @@ def write_sitemap(slugs: list[str], cert_ids: list[str]) -> None:
         (site_url("/"), "daily", "1.0"),
         (site_url("/browse/"), "weekly", "0.9"),
         (site_url("/questions/"), "weekly", "0.85"),
+        (site_url("/about/"), "monthly", "0.7"),
+        (site_url("/contact/"), "monthly", "0.65"),
+        (site_url("/privacy/"), "yearly", "0.6"),
     ]
     for cid in cert_ids:
         priority_urls.append((site_url(f"/cert/{cid}/"), "weekly", "0.8"))
@@ -688,14 +995,16 @@ def main() -> int:
         encoding="utf-8",
     )
 
+    write_trust_pages()
     write_sitemap(slugs, sorted(cert_ids))
     write_robots()
 
+    print(f"Wrote about/, contact/, privacy/")
     print(f"Wrote {count} question pages under questions/")
     print(f"Wrote {len(cert_ids)} cert landing pages under cert/")
     print(f"Wrote browse/index.html")
     print(f"Slug index: {index_path} ({len(slugs)} slugs)")
-    print(f"Sitemap: {ROOT / 'sitemap.xml'} ({len(slugs) + len(cert_ids) + 3} URLs)")
+    print(f"Sitemap: {ROOT / 'sitemap.xml'} ({len(slugs) + len(cert_ids) + 6} URLs)")
     return 0
 
 

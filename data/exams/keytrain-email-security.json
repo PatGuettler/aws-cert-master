@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 12,
-    "scoredQuestions": 12,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 16,
+    "scoredQuestions": 16,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -83,25 +83,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Forward the email to personal Gmail for storage"
-        },
-        {
-          "id": "b",
           "text": "Quarantine similar messages, block the domain at the gateway, and reset credentials if the user submitted data"
         },
         {
+          "id": "b",
+          "text": "Wait for three more reports before acting, using shared credentials instead of individual accountability."
+        },
+        {
           "id": "c",
-          "text": "Wait for three more reports before acting"
+          "text": "Forward the email to personal Gmail for storage, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Reply-all warning employees not to click"
+          "text": "Reply-all warning employees not to click, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Containment (quarantine/block) and credential safety come before broad communication.",
+      "concept": "Contain look-alike domains and user-reported phish; layer beyond link blocking (vishing, quishing).",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -121,25 +122,26 @@
       "options": [
         {
           "id": "a",
-          "text": "No risk remains; email is fully secure"
+          "text": "Voice phishing (vishing) and attachment-based malware bypass link filtering"
         },
         {
           "id": "b",
-          "text": "Unsupported OS on printers only"
+          "text": "Unsupported OS on printers only, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "ARP cache poisoning on Wi-Fi"
+          "text": "ARP cache poisoning on Wi-Fi, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Voice phishing (vishing) and attachment-based malware bypass link filtering"
+          "text": "No risk remains; email is fully secure, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Link blocking does not stop vishing or weaponized attachments\u2014defense must be layered.",
+      "concept": "Contain look-alike domains and user-reported phish; layer beyond link blocking (vishing, quishing).",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -159,25 +161,26 @@
       "options": [
         {
           "id": "a",
-          "text": "DNS tunneling exfiltration"
+          "text": "DNS tunneling exfiltration, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "SAST finding in CI"
+          "text": "SAST finding in CI, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Quishing (QR phishing) leading to credential harvesting"
+          "text": "Patch management failure, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Patch management failure"
+          "text": "Quishing (QR phishing) leading to credential harvesting"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "Malicious QR codes are a growing phishing channel outside email filters.",
+      "concept": "Contain look-alike domains and user-reported phish; layer beyond link blocking (vishing, quishing).",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -191,31 +194,32 @@
     },
     {
       "id": "ktems-q004",
-      "domain": "spoofing",
+      "domain": "phishing",
       "type": "multiple-choice",
-      "text": "Mail headers show SPF pass, DKIM fail, and DMARC none for a message impersonating the CEO. What improvement is MOST effective?",
+      "text": "Users report a Teams message with a QR code linking to a fake O365 login. Best containment?",
       "options": [
         {
           "id": "a",
-          "text": "Remove DKIM to simplify troubleshooting"
+          "text": "Disable Teams chat for all users until the next quarterly security training, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Allow any sender if subject contains 'urgent'"
+          "text": "Forward the QR image to external researchers before taking internal action, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Disable SPF globally"
+          "text": "Remove messages org-wide, block the URL at proxy, and force password reset for submitters"
         },
         {
           "id": "d",
-          "text": "Enforce DMARC p=reject with aligned DKIM for all executive domains"
+          "text": "Ask users to scan the QR with personal phones to verify if it is malicious"
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
-      "explanation": "DMARC with alignment stops many spoofed From domains even when SPF alone passes via forwarders.",
+      "explanation": "Quishing bypasses email filters; rapid takedown and credential resets limit harm.",
+      "concept": "Contain look-alike domains and user-reported phish; layer beyond link blocking (vishing, quishing).",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -231,29 +235,30 @@
       "id": "ktems-q005",
       "domain": "spoofing",
       "type": "multiple-choice",
-      "text": "Users see internal display names matching a VP but the SMTP address is external. Which user-facing control helps?",
+      "text": "Mail headers show SPF pass, DKIM fail, and DMARC none for a message impersonating the CEO. What improvement is MOST effective?",
       "options": [
         {
           "id": "a",
-          "text": "External sender banners and training to verify the actual email address"
+          "text": "Allow any sender if subject contains 'urgent', without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Increase font size in Outlook"
+          "text": "Enforce DMARC p=reject with aligned DKIM for all executive domains"
         },
         {
           "id": "c",
-          "text": "Disable all calendar invites"
+          "text": "Disable SPF globally, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Block PDF attachments from HR"
+          "text": "Remove DKIM to simplify troubleshooting, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
-      "explanation": "Display-name spoofing is common; banners and address verification reduce mistaken trust.",
+      "explanation": "DMARC with alignment stops many spoofed From domains even when SPF alone passes via forwarders.",
+      "concept": "Email authenticity uses SPF/DKIM/DMARC alignment; display-name spoofing needs banners and verification.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -269,29 +274,30 @@
       "id": "ktems-q006",
       "domain": "spoofing",
       "type": "multiple-choice",
-      "text": "A VoIP caller ID shows your company's main number. What technical control reduces this spoofing vector?",
+      "text": "Users see internal display names matching a VP but the SMTP address is external. Which user-facing control helps?",
       "options": [
         {
           "id": "a",
-          "text": "STIR/SHAKEN attestation on carrier trunks where supported"
+          "text": "Increase font size in Outlook, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Publish the main number on Instagram only"
+          "text": "Block PDF attachments from HR, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Remove VLANs from the PBX"
+          "text": "External sender banners and training to verify the actual email address"
         },
         {
           "id": "d",
-          "text": "Disable MFA for call center staff"
+          "text": "Disable all calendar invites, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
-      "explanation": "STIR/SHAKEN improves caller ID integrity for voice spoofing on supported carriers.",
+      "explanation": "Display-name spoofing is common; banners and address verification reduce mistaken trust.",
+      "concept": "Email authenticity uses SPF/DKIM/DMARC alignment; display-name spoofing needs banners and verification.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -305,31 +311,32 @@
     },
     {
       "id": "ktems-q007",
-      "domain": "malicious-attachments",
+      "domain": "spoofing",
       "type": "multiple-choice",
-      "text": "An invoice attachment is a password-protected ZIP containing a .lnk file. What is the SAFEST handling step?",
+      "text": "A VoIP caller ID shows your company's main number. What technical control reduces this spoofing vector?",
       "options": [
         {
           "id": "a",
-          "text": "Sandbox detonation in an isolated environment before any user execution"
+          "text": "Remove VLANs from the PBX, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Rename the .lnk to .txt to neutralize it"
+          "text": "Publish the main number on Instagram only"
         },
         {
           "id": "c",
-          "text": "Forward to finance to open on their desktop"
+          "text": "Disable MFA for call center staff, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Ask the sender for the password in email reply"
+          "text": "STIR/SHAKEN attestation on carrier trunks where supported"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
-      "explanation": "Password-protected archives bypass scanners; sandbox analysis avoids user execution risk.",
+      "explanation": "STIR/SHAKEN improves caller ID integrity for voice spoofing on supported carriers.",
+      "concept": "Email authenticity uses SPF/DKIM/DMARC alignment; display-name spoofing needs banners and verification.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -343,31 +350,32 @@
     },
     {
       "id": "ktems-q008",
-      "domain": "malicious-attachments",
+      "domain": "spoofing",
       "type": "multiple-choice",
-      "text": "Macro-enabled Excel arrives from an unknown vendor address. Which policy is BEST?",
+      "text": "DMARC aggregate reports show 12% of mail using your domain fails alignment from unknown IPs. Action?",
       "options": [
         {
           "id": "a",
-          "text": "Allow macros if the spreadsheet has a logo"
+          "text": "Set DMARC to none permanently because reports are sufficient protection, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Require users to enable editing on all attachments"
+          "text": "Allow all IPs to send as your domain to simplify vendor onboarding"
         },
         {
           "id": "c",
-          "text": "Disable antivirus to speed opening"
+          "text": "Move DMARC policy toward quarantine/reject after fixing authorized senders and DKIM signing"
         },
         {
           "id": "d",
-          "text": "Block macros from internet-origin files and use protected view"
+          "text": "Disable SPF because it conflicts with mailing lists and marketing tools, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
-      "explanation": "Office macros remain a common initial access path; blocking internet macros is baseline.",
+      "explanation": "DMARC enforcement stops many spoofed messages once legitimate sources are aligned.",
+      "concept": "Email authenticity uses SPF/DKIM/DMARC alignment; display-name spoofing needs banners and verification.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -383,29 +391,30 @@
       "id": "ktems-q009",
       "domain": "malicious-attachments",
       "type": "multiple-choice",
-      "text": "Email filter quarantined a PDF with embedded JavaScript. Why is this noteworthy?",
+      "text": "An invoice attachment is a password-protected ZIP containing a .lnk file. What is the SAFEST handling step?",
       "options": [
         {
           "id": "a",
-          "text": "JavaScript in PDF only affects printers"
+          "text": "Rename the .lnk to .txt to neutralize it, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Quarantine means the file is guaranteed safe"
+          "text": "Ask the sender for the password in email reply, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "PDFs can launch actions or download second-stage payloads when opened in vulnerable readers"
+          "text": "Sandbox detonation in an isolated environment before any user execution"
         },
         {
           "id": "d",
-          "text": "PDFs cannot contain active content"
+          "text": "Forward to finance to open on their desktop, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Malicious PDF features are a documented attachment risk; quarantine is appropriate.",
+      "explanation": "Password-protected archives bypass scanners; sandbox analysis avoids user execution risk.",
+      "concept": "Treat weaponized Office/PDF/archive attachments with sandboxing, not user execution.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -419,31 +428,32 @@
     },
     {
       "id": "ktems-q010",
-      "domain": "bec",
+      "domain": "malicious-attachments",
       "type": "multiple-choice",
-      "text": "Finance receives wire instructions changing bank details via email right before quarter close. What verification is REQUIRED?",
+      "text": "Macro-enabled Excel arrives from an unknown vendor address. Which policy is BEST?",
       "options": [
         {
           "id": "a",
-          "text": "Process if the logo matches"
+          "text": "Block macros from internet-origin files and use protected view"
         },
         {
           "id": "b",
-          "text": "Out-of-band callback to a known number on file, not numbers in the email"
+          "text": "Allow macros if the spreadsheet has a logo, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Reply to the same thread asking 'Is this real?'"
+          "text": "Disable antivirus to speed opening, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Trust because the subject says 'CONFIDENTIAL'"
+          "text": "Require users to enable editing on all attachments, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
-      "explanation": "BEC wire fraud relies on urgency; verified voice callback stops many losses.",
+      "explanation": "Office macros remain a common initial access path; blocking internet macros is baseline.",
+      "concept": "Treat weaponized Office/PDF/archive attachments with sandboxing, not user execution.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -457,31 +467,32 @@
     },
     {
       "id": "ktems-q011",
-      "domain": "bec",
+      "domain": "malicious-attachments",
       "type": "multiple-choice",
-      "text": "An attacker registers a domain one character off from your vendor. Which control reduces payment fraud?",
+      "text": "Email filter quarantined a PDF with embedded JavaScript. Why is this noteworthy?",
       "options": [
         {
           "id": "a",
-          "text": "Single approver if under $50k"
+          "text": "JavaScript in PDF only affects printers, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Disable accounts payable entirely"
+          "text": "PDFs can launch actions or download second-stage payloads when opened in vulnerable readers"
         },
         {
           "id": "c",
-          "text": "Vendor master data with approved domains and dual approval on banking changes"
+          "text": "Quarantine means the file is guaranteed safe, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Whitelist all .com domains"
+          "text": "PDFs cannot contain active content, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
-      "explanation": "Look-alike domains are classic BEC; vendor controls and dual approval are key.",
+      "explanation": "Malicious PDF features are a documented attachment risk; quarantine is appropriate.",
+      "concept": "Treat weaponized Office/PDF/archive attachments with sandboxing, not user execution.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -495,31 +506,188 @@
     },
     {
       "id": "ktems-q012",
+      "domain": "malicious-attachments",
+      "type": "multiple-choice",
+      "text": "An attachment is a .html file claiming to be an invoice preview. Safest handling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quarantine and detonate in sandbox; block HTML attachments at gateway if not business-required"
+        },
+        {
+          "id": "b",
+          "text": "Ask the sender to resend as a password-protected executable for integrity, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Rename to .txt so the mail client will not flag it as dangerous content"
+        },
+        {
+          "id": "d",
+          "text": "Open in the default browser on a finance workstation to verify the vendor name"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "HTML attachments can phish or download payloads; sandbox before any user interaction.",
+      "concept": "Treat weaponized Office/PDF/archive attachments with sandboxing, not user execution.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktems-q013",
+      "domain": "bec",
+      "type": "multiple-choice",
+      "text": "Finance receives wire instructions changing bank details via email right before quarter close. What verification is REQUIRED?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Out-of-band callback to a known number on file, not numbers in the email"
+        },
+        {
+          "id": "b",
+          "text": "Reply to the same thread asking 'Is this real?', without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Process if the logo matches, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Trust because the subject says 'CONFIDENTIAL', without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "BEC wire fraud relies on urgency; verified voice callback stops many losses.",
+      "concept": "Wire and payment changes require out-of-band verification and vendor domain controls.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktems-q014",
+      "domain": "bec",
+      "type": "multiple-choice",
+      "text": "An attacker registers a domain one character off from your vendor. Which control reduces payment fraud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Single approver if under $50k, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Disable accounts payable entirely, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Vendor master data with approved domains and dual approval on banking changes"
+        },
+        {
+          "id": "d",
+          "text": "Whitelist all .com domains, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Look-alike domains are classic BEC; vendor controls and dual approval are key.",
+      "concept": "Wire and payment changes require out-of-band verification and vendor domain controls.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktems-q015",
       "domain": "bec",
       "type": "multiple-choice",
       "text": "Legal notices a forged CEO email approving acquisition NDA sharing. Besides legal, who must be engaged FIRST?",
       "options": [
         {
           "id": "a",
-          "text": "Facilities for parking passes"
+          "text": "Physical security for CCTV only, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Patch management team for WSUS"
+          "text": "Patch management team for WSUS, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Physical security for CCTV only"
+          "text": "Security operations to hunt for mailbox rules forwarding and similar threads"
         },
         {
           "id": "d",
-          "text": "Security operations to hunt for mailbox rules forwarding and similar threads"
+          "text": "Facilities for parking passes, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "BEC often includes hidden inbox rules; SOC hunts prevent ongoing exfiltration.",
+      "concept": "Wire and payment changes require out-of-band verification and vendor domain controls.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktems-q016",
+      "domain": "bec",
+      "type": "multiple-choice",
+      "text": "AP receives email changing ACH details for a top vendor; phone number in signature is new. Step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Process the change if the email uses the vendor logo and familiar font styling, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Reply in-thread to confirm because the sender domain looks similar to the real one, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Forward the request to the CEO for one-click approval to meet quarter-end deadlines, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Call the vendor using the phone number in the ERP vendor master, not the email"
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "BEC often includes hidden inbox rules; SOC hunts prevent ongoing exfiltration.",
+      "explanation": "BEC payment changes must be verified out-of-band with trusted contact data.",
+      "concept": "Wire and payment changes require out-of-band verification and vendor domain controls.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

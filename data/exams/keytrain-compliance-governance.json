@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 15,
-    "scoredQuestions": 15,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 20,
+    "scoredQuestions": 20,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -98,25 +98,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Encryption not required for health"
-        },
-        {
-          "id": "b",
           "text": "Likely PHI disclosure without BA agreement and secure channel"
         },
         {
+          "id": "b",
+          "text": "HIPAA only applies to banks, without security or identity team coordination per policy."
+        },
+        {
           "id": "c",
-          "text": "HIPAA only applies to banks"
+          "text": "Encryption not required for health, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "SMS is always HIPAA compliant"
+          "text": "SMS is always HIPAA compliant, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "PHI needs approved channels and often BAAs with vendors.",
+      "concept": "PHI minimum necessary, BAAs, and breach notification are foundational HIPAA obligations.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -136,25 +137,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable audit logs"
-        },
-        {
-          "id": "b",
-          "text": "Share charts on social media"
-        },
-        {
-          "id": "c",
           "text": "Access only PHI needed for billing tasks, not full medical records"
         },
         {
+          "id": "b",
+          "text": "Share charts on social media, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Disable audit logs, without security or identity team coordination per policy."
+        },
+        {
           "id": "d",
-          "text": "Access all records for convenience"
+          "text": "Access all records for convenience, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
       "explanation": "Minimum necessary limits scope of PHI access by role.",
+      "concept": "PHI minimum necessary, BAAs, and breach notification are foundational HIPAA obligations.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -174,25 +176,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Regulatory liability and unclear breach notification duties"
+          "text": "Required only for fax, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Only applies to EU GDPR"
+          "text": "BAAs optional for encryption, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "BAAs optional for encryption"
+          "text": "Only applies to EU GDPR, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Required only for fax"
+          "text": "Regulatory liability and unclear breach notification duties"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "BAAs define HIPAA obligations for vendors handling ePHI.",
+      "concept": "PHI minimum necessary, BAAs, and breach notification are foundational HIPAA obligations.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -206,31 +209,32 @@
     },
     {
       "id": "ktcg-q004",
-      "domain": "policy-adherence",
+      "domain": "hipaa",
       "type": "multiple-choice",
-      "text": "Audit finds developers pushing code without peer review despite policy. Gap?",
+      "text": "A vendor offers free analytics on ePHI if they sign a BAA. What must you verify?",
       "options": [
         {
           "id": "a",
-          "text": "HIPAA bans Git"
+          "text": "BAA terms, minimum necessary data shared, subprocessors, and breach notification duties"
         },
         {
           "id": "b",
-          "text": "Git cannot enforce reviews"
+          "text": "Free services are exempt from business associate requirements automatically, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Policy too strict\u2014delete it"
+          "text": "Encryption at rest removes the need for any vendor contract review, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Policy not enforced technically via branch protection"
+          "text": "HIPAA does not apply if the vendor stores data in the United States only"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
-      "explanation": "Technical controls enforce policy; paper alone fails.",
+      "explanation": "Business associates need BAAs with explicit permitted uses and safeguards.",
+      "concept": "PHI minimum necessary, BAAs, and breach notification are foundational HIPAA obligations.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -246,29 +250,30 @@
       "id": "ktcg-q005",
       "domain": "policy-adherence",
       "type": "multiple-choice",
-      "text": "Employees use personal cloud storage for work files against AUP. Response?",
+      "text": "Audit finds developers pushing code without peer review despite policy. Gap?",
       "options": [
         {
           "id": "a",
-          "text": "DLP blocks, training, and approved enterprise sync alternative"
+          "text": "Policy too strict\u2014delete it, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Ignore until breach"
+          "text": "Policy not enforced technically via branch protection"
         },
         {
           "id": "c",
-          "text": "Publish AUP once without enforcement"
+          "text": "HIPAA bans Git, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Disable all cloud globally including approved"
+          "text": "Git cannot enforce reviews, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
-      "explanation": "Adherence needs detectable enforcement and viable alternatives.",
+      "explanation": "Technical controls enforce policy; paper alone fails.",
+      "concept": "Policies must be measurable, enforced technically where possible, and audited.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -284,29 +289,30 @@
       "id": "ktcg-q006",
       "domain": "policy-adherence",
       "type": "multiple-choice",
-      "text": "Policy requires annual security training; 40% overdue. Metric to report?",
+      "text": "Employees use personal cloud storage for work files against AUP. Response?",
       "options": [
         {
           "id": "a",
-          "text": "DNS TTL"
+          "text": "Disable all cloud globally including approved, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Number of coffee cups in break room"
+          "text": "Publish AUP once without enforcement, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Printer toner level"
+          "text": "DLP blocks, training, and approved enterprise sync alternative"
         },
         {
           "id": "d",
-          "text": "Training completion rate by department with escalation to managers"
+          "text": "Ignore until breach, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
-      "explanation": "Completion metrics drive accountability for policy training.",
+      "explanation": "Adherence needs detectable enforcement and viable alternatives.",
+      "concept": "Policies must be measurable, enforced technically where possible, and audited.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -320,31 +326,32 @@
     },
     {
       "id": "ktcg-q007",
-      "domain": "audit-readiness",
+      "domain": "policy-adherence",
       "type": "multiple-choice",
-      "text": "Auditors request sample of privileged access reviews; team has ad hoc emails only. Improvement?",
+      "text": "Policy requires annual security training; 40% overdue. Metric to report?",
       "options": [
         {
           "id": "a",
-          "text": "Central ticketing with evidence attachments and scheduled quarterly reviews"
+          "text": "Number of coffee cups in break room, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Disable all admin accounts"
+          "text": "Training completion rate by department with escalation to managers"
         },
         {
           "id": "c",
-          "text": "Forge timestamps"
+          "text": "DNS TTL, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Delete emails before audit"
+          "text": "Printer toner level, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
-      "explanation": "Repeatable evidence beats informal communication.",
+      "explanation": "Completion metrics drive accountability for policy training.",
+      "concept": "Policies must be measurable, enforced technically where possible, and audited.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -358,31 +365,32 @@
     },
     {
       "id": "ktcg-q008",
-      "domain": "audit-readiness",
+      "domain": "policy-adherence",
       "type": "multiple-choice",
-      "text": "Log retention is 30 days but audit needs 90. Finding?",
+      "text": "Developers bypass code review using emergency break-glass accounts weekly. Issue?",
       "options": [
         {
           "id": "a",
-          "text": "Increase retention to 10 years without review"
+          "text": "Proves MFA is unnecessary for engineers who understand security, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Logs never matter"
+          "text": "Required for SOC 2 Type I reports only, not operational security"
         },
         {
           "id": "c",
-          "text": "Stop logging to save costs"
+          "text": "Break-glass is being normalized; tighten approvals, logging, and time limits"
         },
         {
           "id": "d",
-          "text": "Retention policy misaligned with compliance and investigation needs"
+          "text": "Shows healthy agility; break-glass should replace standard change management, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
-      "explanation": "Retention must meet regulatory and investigative requirements.",
+      "explanation": "Emergency access must be rare, logged, and reviewed\u2014not a daily workflow.",
+      "concept": "Policies must be measurable, enforced technically where possible, and audited.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -398,29 +406,30 @@
       "id": "ktcg-q009",
       "domain": "audit-readiness",
       "type": "multiple-choice",
-      "text": "Change records missing for emergency firewall rule during incident. Fix for next time?",
+      "text": "Auditors request sample of privileged access reviews; team has ad hoc emails only. Improvement?",
       "options": [
         {
           "id": "a",
-          "text": "Post-incident change documentation within 24 hours per policy"
+          "text": "Central ticketing with evidence attachments and scheduled quarterly reviews"
         },
         {
           "id": "b",
-          "text": "Never document emergency changes"
+          "text": "Forge timestamps, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Share admin passwords in ticket"
+          "text": "Delete emails before audit, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Disable firewalls after incidents"
+          "text": "Disable all admin accounts, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "a"
       ],
-      "explanation": "Emergency changes still require retrospective documentation.",
+      "explanation": "Repeatable evidence beats informal communication.",
+      "concept": "Evidence collection and control testing should be continuous, not cram-before-audit.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -434,31 +443,32 @@
     },
     {
       "id": "ktcg-q010",
-      "domain": "documentation",
+      "domain": "audit-readiness",
       "type": "multiple-choice",
-      "text": "Network diagram last updated five years ago. Risk during incident?",
+      "text": "Log retention is 30 days but audit needs 90. Finding?",
       "options": [
         {
           "id": "a",
-          "text": "Diagrams are decorative only"
+          "text": "Logs never matter, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Delayed containment because responders lack accurate segmentation view"
+          "text": "Increase retention to 10 years without review, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Improves antivirus"
+          "text": "Retention policy misaligned with compliance and investigation needs"
         },
         {
           "id": "d",
-          "text": "Required for MFA only"
+          "text": "Stop logging to save costs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
-      "explanation": "Current diagrams speed IR and audits.",
+      "explanation": "Retention must meet regulatory and investigative requirements.",
+      "concept": "Evidence collection and control testing should be continuous, not cram-before-audit.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -472,31 +482,32 @@
     },
     {
       "id": "ktcg-q011",
-      "domain": "documentation",
+      "domain": "audit-readiness",
       "type": "multiple-choice",
-      "text": "IR playbooks exist but contacts are outdated after reorg. Priority?",
+      "text": "Change records missing for emergency firewall rule during incident. Fix for next time?",
       "options": [
         {
           "id": "a",
-          "text": "Delete playbooks"
+          "text": "Disable firewalls after incidents, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Update RACI and on-call numbers before next tabletop"
+          "text": "Post-incident change documentation within 24 hours per policy"
         },
         {
           "id": "c",
-          "text": "Use only social media for IR"
+          "text": "Never document emergency changes, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Wait for real incident"
+          "text": "Share admin passwords in ticket, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "Stale contacts waste critical minutes in breaches.",
+      "explanation": "Emergency changes still require retrospective documentation.",
+      "concept": "Evidence collection and control testing should be continuous, not cram-before-audit.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -510,31 +521,32 @@
     },
     {
       "id": "ktcg-q012",
-      "domain": "documentation",
+      "domain": "audit-readiness",
       "type": "multiple-choice",
-      "text": "Data flow diagrams for PHI are missing for a new SaaS tool. Why needed?",
+      "text": "Auditors request proof of privileged access reviews; team has screenshots but no tickets. Gap?",
       "options": [
         {
           "id": "a",
-          "text": "Diagrams replace encryption"
+          "text": "Audits should not cover identity governance in technology companies, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Only lawyers need diagrams"
+          "text": "Lack of traceable workflow and evidence tying reviews to remediation actions"
         },
         {
           "id": "c",
-          "text": "Shows where PHI transits for HIPAA risk analysis and BAAs"
+          "text": "Screenshots are always sufficient if stored on a shared drive, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "SaaS has no data flows"
+          "text": "Privileged access reviews are optional under all frameworks, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
-      "explanation": "DFDs support risk assessments and vendor due diligence.",
+      "explanation": "Audit evidence needs systems of record, not informal images alone.",
+      "concept": "Evidence collection and control testing should be continuous, not cram-before-audit.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -548,31 +560,32 @@
     },
     {
       "id": "ktcg-q013",
-      "domain": "risk-management",
+      "domain": "documentation",
       "type": "multiple-choice",
-      "text": "A high-risk finding is accepted without expiration date. Problem?",
+      "text": "Network diagram last updated five years ago. Risk during incident?",
       "options": [
         {
           "id": "a",
-          "text": "Improves security posture"
+          "text": "Delayed containment because responders lack accurate segmentation view"
         },
         {
           "id": "b",
-          "text": "Automatically patches systems"
+          "text": "Required for MFA only, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Required for all low findings"
+          "text": "Diagrams are decorative only, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Risk acceptance becomes permanent bypass of remediation"
+          "text": "Improves antivirus, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
-      "explanation": "Time-bound acceptance forces periodic re-evaluation.",
+      "explanation": "Current diagrams speed IR and audits.",
+      "concept": "Runbooks, data flows, and asset inventories enable faster incident response.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -586,31 +599,32 @@
     },
     {
       "id": "ktcg-q014",
-      "domain": "risk-management",
+      "domain": "documentation",
       "type": "multiple-choice",
-      "text": "Third-party risk scores are collected but not tied to contract renewals. Gap?",
+      "text": "IR playbooks exist but contacts are outdated after reorg. Priority?",
       "options": [
         {
           "id": "a",
-          "text": "HIPAA bans vendors"
+          "text": "Delete playbooks, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Risk management not integrated into procurement lifecycle"
+          "text": "Update RACI and on-call numbers before next tabletop"
         },
         {
           "id": "c",
-          "text": "Scores replace all technical controls"
+          "text": "Use only social media for IR, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Vendors never pose risk"
+          "text": "Wait for real incident, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "TPRM should influence renewals and monitoring.",
+      "explanation": "Stale contacts waste critical minutes in breaches.",
+      "concept": "Runbooks, data flows, and asset inventories enable faster incident response.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -624,31 +638,227 @@
     },
     {
       "id": "ktcg-q015",
+      "domain": "documentation",
+      "type": "multiple-choice",
+      "text": "Data flow diagrams for PHI are missing for a new SaaS tool. Why needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SaaS has no data flows, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Only lawyers need diagrams, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Shows where PHI transits for HIPAA risk analysis and BAAs"
+        },
+        {
+          "id": "d",
+          "text": "Diagrams replace encryption, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "DFDs support risk assessments and vendor due diligence.",
+      "concept": "Runbooks, data flows, and asset inventories enable faster incident response.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktcg-q016",
+      "domain": "documentation",
+      "type": "multiple-choice",
+      "text": "Incident response fails because network diagrams are six years out of date. Improvement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Outsource documentation only after major incidents occur, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Maintain living diagrams tied to CMDB changes with quarterly validation owners"
+        },
+        {
+          "id": "c",
+          "text": "Delete diagrams to force engineers to memorize the network instead, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Use oral tradition during onboarding instead of written runbooks, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Accurate documentation speeds containment and communication during incidents.",
+      "concept": "Runbooks, data flows, and asset inventories enable faster incident response.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktcg-q017",
+      "domain": "risk-management",
+      "type": "multiple-choice",
+      "text": "A high-risk finding is accepted without expiration date. Problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk acceptance becomes permanent bypass of remediation"
+        },
+        {
+          "id": "b",
+          "text": "Required for all low findings, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Improves security posture, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Automatically patches systems, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Time-bound acceptance forces periodic re-evaluation.",
+      "concept": "Risk registers and third-party scores must drive remediation and contract decisions.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktcg-q018",
+      "domain": "risk-management",
+      "type": "multiple-choice",
+      "text": "Third-party risk scores are collected but not tied to contract renewals. Gap?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendors never pose risk, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Risk management not integrated into procurement lifecycle"
+        },
+        {
+          "id": "c",
+          "text": "HIPAA bans vendors, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Scores replace all technical controls, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "TPRM should influence renewals and monitoring.",
+      "concept": "Risk registers and third-party scores must drive remediation and contract decisions.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktcg-q019",
       "domain": "risk-management",
       "type": "multiple-choice",
       "text": "Annual risk register omits cloud misconfiguration threats. Update?",
       "options": [
         {
           "id": "a",
-          "text": "Add CSPM findings and top cloud ATT&CK techniques to enterprise risk register"
+          "text": "Ignore cloud because it is virtual, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Delete cloud accounts"
+          "text": "Only track physical risks, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Only track physical risks"
+          "text": "Delete cloud accounts, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Ignore cloud because it is virtual"
+          "text": "Add CSPM findings and top cloud ATT&CK techniques to enterprise risk register"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Risk registers should reflect current attack surfaces including cloud.",
+      "concept": "Risk registers and third-party scores must drive remediation and contract decisions.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktcg-q020",
+      "domain": "risk-management",
+      "type": "multiple-choice",
+      "text": "Leadership accepts ransomware risk without backup testing or IR exercises. Problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exercises are optional if endpoint antivirus is installed, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Acceptance automatically transfers liability to the cyber insurance carrier, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Risk register entries never need review once leadership signs them, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Risk acceptance lacks controls and testing; likely ineffective during real events"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Accepted risks still need compensating controls and validation.",
+      "concept": "Risk registers and third-party scores must drive remediation and contract decisions.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

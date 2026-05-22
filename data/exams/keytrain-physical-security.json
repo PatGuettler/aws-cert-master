@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 12,
-    "scoredQuestions": 12,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 16,
+    "scoredQuestions": 16,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -83,25 +83,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Share badge with security guard"
+          "text": "Deactivate badge, review CCTV, and audit access logs for tailgating partners"
         },
         {
           "id": "b",
-          "text": "Disable fire alarms"
+          "text": "Ignore if door locked, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Ignore if door locked"
+          "text": "Disable fire alarms, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Deactivate badge, review CCTV, and audit access logs for tailgating partners"
+          "text": "Share badge with security guard, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Physical access logs must tie to active authorization.",
+      "concept": "Tailgating and propped doors defeat physical controls\u2014train and monitor.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -121,25 +122,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Improves cooling only"
+          "text": "Required for HIPAA Wi-Fi, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Required for HIPAA Wi-Fi"
+          "text": "Improves cooling only, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Unauthorized entry and fire code violation"
+          "text": "Stops phishing, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Stops phishing"
+          "text": "Unauthorized entry and fire code violation"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "Prop alarms exist to prevent uncontrolled entry.",
+      "concept": "Tailgating and propped doors defeat physical controls\u2014train and monitor.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -159,25 +161,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Over-patching servers"
+          "text": "Over-patching servers, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Lack of visitor management and escort policy enforcement"
+          "text": "Excess MFA, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Too many CCTV cameras"
+          "text": "Lack of visitor management and escort policy enforcement"
         },
         {
           "id": "d",
-          "text": "Excess MFA"
+          "text": "Too many CCTV cameras, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Visitor procedures document who entered sensitive areas.",
+      "concept": "Tailgating and propped doors defeat physical controls\u2014train and monitor.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -191,31 +194,32 @@
     },
     {
       "id": "ktphy-q004",
-      "domain": "device-theft",
+      "domain": "unauthorized-access",
       "type": "multiple-choice",
-      "text": "Laptop stolen from a car; drive encrypted, device not managed. Concern?",
+      "text": "Tailgating incidents rise after badge readers fail open during a fire drill. Mitigation?",
       "options": [
         {
           "id": "a",
-          "text": "Encryption useless"
+          "text": "Remove badges and use honor-system sign-in sheets at the front desk, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "HIPAA bans laptops"
+          "text": "Prop doors during business hours to reduce reader wear and tear, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "If logged in recently, data in use may be accessible; no remote wipe"
+          "text": "Disable fire alarms to prevent future fail-open events on the access system"
         },
         {
           "id": "d",
-          "text": "Theft impossible on Mac"
+          "text": "Repair readers, reinforce training, and add reception or camera verification during peaks"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
-      "explanation": "MDM enables wipe and attestation; encryption helps at rest only.",
+      "explanation": "Fail-open events increase tailgating; combine physical controls with awareness.",
+      "concept": "Tailgating and propped doors defeat physical controls\u2014train and monitor.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -231,29 +235,30 @@
       "id": "ktphy-q005",
       "domain": "device-theft",
       "type": "multiple-choice",
-      "text": "Spare phones disappear from a stock room without inventory updates. Process fix?",
+      "text": "Laptop stolen from a car; drive encrypted, device not managed. Concern?",
       "options": [
         {
           "id": "a",
-          "text": "Publish IMEI list publicly"
+          "text": "Encryption useless, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Disable all mobile MDM"
+          "text": "If logged in recently, data in use may be accessible; no remote wipe"
         },
         {
           "id": "c",
-          "text": "Leave room unlocked for convenience"
+          "text": "Theft impossible on Mac, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Asset tracking with check-in/out and alarm on high-value storage"
+          "text": "HIPAA bans laptops, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
-      "explanation": "Inventory controls deter insider theft and aid recovery.",
+      "explanation": "MDM enables wipe and attestation; encryption helps at rest only.",
+      "concept": "Encryption and remote wipe reduce impact of lost laptops and mobile devices.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -269,29 +274,30 @@
       "id": "ktphy-q006",
       "domain": "device-theft",
       "type": "multiple-choice",
-      "text": "Stolen tablet had clinical app logged in. Immediate steps?",
+      "text": "Spare phones disappear from a stock room without inventory updates. Process fix?",
       "options": [
         {
           "id": "a",
-          "text": "Disable encryption"
+          "text": "Disable all mobile MDM, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Post patient list online"
+          "text": "Asset tracking with check-in/out and alarm on high-value storage"
         },
         {
           "id": "c",
-          "text": "Remote wipe via MDM, force session logout, breach assessment per HIPAA"
+          "text": "Leave room unlocked for convenience, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Wait for user to buy replacement"
+          "text": "Publish IMEI list publicly, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
-      "explanation": "Mobile clinical theft requires wipe and PHI breach evaluation.",
+      "explanation": "Inventory controls deter insider theft and aid recovery.",
+      "concept": "Encryption and remote wipe reduce impact of lost laptops and mobile devices.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -305,31 +311,32 @@
     },
     {
       "id": "ktphy-q007",
-      "domain": "badge-access",
+      "domain": "device-theft",
       "type": "multiple-choice",
-      "text": "Employees lend badges to coworkers. Policy fix?",
+      "text": "Stolen tablet had clinical app logged in. Immediate steps?",
       "options": [
         {
           "id": "a",
-          "text": "Disable access logs"
+          "text": "Remote wipe via MDM, force session logout, breach assessment per HIPAA"
         },
         {
           "id": "b",
-          "text": "Anti-passback and disciplinary enforcement with role-based access reviews"
+          "text": "Post patient list online, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Remove cameras"
+          "text": "Wait for user to buy replacement, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Issue one badge per team"
+          "text": "Disable encryption, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
-      "explanation": "Badge sharing breaks non-repudiation; technical anti-passback helps.",
+      "explanation": "Mobile clinical theft requires wipe and PHI breach evaluation.",
+      "concept": "Encryption and remote wipe reduce impact of lost laptops and mobile devices.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -343,31 +350,32 @@
     },
     {
       "id": "ktphy-q008",
-      "domain": "badge-access",
+      "domain": "device-theft",
       "type": "multiple-choice",
-      "text": "Access control system uses default vendor password on the controller. Risk?",
+      "text": "An employee's encrypted laptop is stolen from a car; BitLocker was on but the session unlocked. Risk?",
       "options": [
         {
           "id": "a",
-          "text": "Remote unlock of doors and badge cloning via admin interface"
+          "text": "Fixed automatically when the user changes their desktop wallpaper, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Required for PCI only"
+          "text": "Risk only if the laptop was not registered in the asset inventory spreadsheet, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Improves MFA"
+          "text": "Data at rest is protected; data in use may be accessible until credentials are rotated"
         },
         {
           "id": "d",
-          "text": "Only affects lighting"
+          "text": "No risk because theft of encrypted devices never leads to data disclosure, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
-      "explanation": "Physical access controllers are critical infrastructure\u2014change defaults.",
+      "explanation": "Encryption helps at rest; unlocked sessions may still expose data and tokens.",
+      "concept": "Encryption and remote wipe reduce impact of lost laptops and mobile devices.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -383,29 +391,30 @@
       "id": "ktphy-q009",
       "domain": "badge-access",
       "type": "multiple-choice",
-      "text": "Tailgating incidents rise at the main entrance. Mitigation?",
+      "text": "Employees lend badges to coworkers. Policy fix?",
       "options": [
         {
           "id": "a",
-          "text": "Remove all doors"
+          "text": "Disable access logs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Mantraps or staffed reception with challenge of unbadged followers"
+          "text": "Remove cameras, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Disable badges"
+          "text": "Issue one badge per team, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Open turnstiles 24/7"
+          "text": "Anti-passback and disciplinary enforcement with role-based access reviews"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
-      "explanation": "Layered physical entry controls reduce tailgating.",
+      "explanation": "Badge sharing breaks non-repudiation; technical anti-passback helps.",
+      "concept": "Badge systems need provisioning tied to HR and anti-passback where appropriate.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -419,31 +428,32 @@
     },
     {
       "id": "ktphy-q010",
-      "domain": "cctv",
+      "domain": "badge-access",
       "type": "multiple-choice",
-      "text": "CCTV retention is 7 days but incident discovered on day 10. Impact?",
+      "text": "Access control system uses default vendor password on the controller. Risk?",
       "options": [
         {
           "id": "a",
-          "text": "Longer retention always illegal"
+          "text": "Remote unlock of doors and badge cloning via admin interface"
         },
         {
           "id": "b",
-          "text": "HIPAA bans cameras"
+          "text": "Required for PCI only, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Evidence may be lost\u2014align retention to investigation and policy needs"
+          "text": "Improves MFA, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "CCTV replaces SIEM"
+          "text": "Only affects lighting, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
-      "explanation": "Retention must meet investigative timelines.",
+      "explanation": "Physical access controllers are critical infrastructure\u2014change defaults.",
+      "concept": "Badge systems need provisioning tied to HR and anti-passback where appropriate.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -457,31 +467,32 @@
     },
     {
       "id": "ktphy-q011",
-      "domain": "cctv",
+      "domain": "badge-access",
       "type": "multiple-choice",
-      "text": "Camera covers ATM area but blinds spot hides safe access. Issue?",
+      "text": "Tailgating incidents rise at the main entrance. Mitigation?",
       "options": [
         {
           "id": "a",
-          "text": "Required by encryption standards"
+          "text": "Remove all doors, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Improves privacy for attackers"
+          "text": "Open turnstiles 24/7, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Gap in coverage allows undetected physical theft"
+          "text": "Disable badges, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Fixes patch management"
+          "text": "Mantraps or staffed reception with challenge of unbadged followers"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
-      "explanation": "Camera placement should eliminate blind spots on high-value assets.",
+      "explanation": "Layered physical entry controls reduce tailgating.",
+      "concept": "Badge systems need provisioning tied to HR and anti-passback where appropriate.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -495,17 +506,134 @@
     },
     {
       "id": "ktphy-q012",
+      "domain": "badge-access",
+      "type": "multiple-choice",
+      "text": "Terminated employee's badge still opens the lab overnight. Root cause to fix FIRST?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CCTV retention too short to identify who entered the lab, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Need for longer passwords on employee email accounts, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Employee remembered the door code written on a sticky note near the reader"
+        },
+        {
+          "id": "d",
+          "text": "Physical access system not integrated with HR termination feed or guard tour process"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Badge deprovisioning must be tied to HR status in real time.",
+      "concept": "Badge systems need provisioning tied to HR and anti-passback where appropriate.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q013",
+      "domain": "cctv",
+      "type": "multiple-choice",
+      "text": "CCTV retention is 7 days but incident discovered on day 10. Impact?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Evidence may be lost\u2014align retention to investigation and policy needs"
+        },
+        {
+          "id": "b",
+          "text": "Longer retention always illegal, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "CCTV replaces SIEM, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "HIPAA bans cameras, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Retention must meet investigative timelines.",
+      "concept": "Retention, placement, and privacy policies balance deterrence with legal requirements.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q014",
+      "domain": "cctv",
+      "type": "multiple-choice",
+      "text": "Camera covers ATM area but blinds spot hides safe access. Issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gap in coverage allows undetected physical theft"
+        },
+        {
+          "id": "b",
+          "text": "Improves privacy for attackers, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Required by encryption standards, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Fixes patch management, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "explanation": "Camera placement should eliminate blind spots on high-value assets.",
+      "concept": "Retention, placement, and privacy policies balance deterrence with legal requirements.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q015",
       "domain": "cctv",
       "type": "multiple-choice",
       "text": "NVR firmware is three years old on the security VLAN. Recommendation?",
       "options": [
         {
           "id": "a",
-          "text": "Share admin password with vendors via email"
+          "text": "Share admin password with vendors via email, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Disable authentication"
+          "text": "Expose NVR to internet for remote viewing, without security or identity team coordination per policy."
         },
         {
           "id": "c",
@@ -513,13 +641,53 @@
         },
         {
           "id": "d",
-          "text": "Expose NVR to internet for remote viewing"
+          "text": "Disable authentication, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
         "c"
       ],
       "explanation": "NVRs are targets; patching and segmentation reduce compromise risk.",
+      "concept": "Retention, placement, and privacy policies balance deterrence with legal requirements.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "ktphy-q016",
+      "domain": "cctv",
+      "type": "multiple-choice",
+      "text": "Legal asks whether lobby cameras can use facial recognition for 'security.' Concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HIPAA requires facial recognition in all healthcare lobbies by default, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Privacy impact, consent, retention limits, and bias risks require legal/privacy review"
+        },
+        {
+          "id": "c",
+          "text": "Facial recognition has no compliance implications if video stays on-prem, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "CCTV cannot be used for security purposes in commercial buildings, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Biometric surveillance needs DPIA and policy alignment before deployment.",
+      "concept": "Retention, placement, and privacy policies balance deterrence with legal requirements.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

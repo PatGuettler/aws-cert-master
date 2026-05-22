@@ -102,25 +102,27 @@
       <div class="drawer-header">
         <h2>Menu</h2>
       </div>
-      <nav class="drawer-nav" aria-label="Main navigation">
-        <button type="button" id="drawer-nav-home" class="drawer-nav-btn">
-          Home
-        </button>
-        <button type="button" id="drawer-nav-browse" class="drawer-nav-btn">
-          Practice certifications
-        </button>
-        <button
-          type="button"
-          id="drawer-nav-keytrain"
-          class="drawer-nav-btn"
-          aria-label="KeyTrain — training, workshops, and certification"
-        >
-          KeyTrain
-        </button>
-        <button type="button" id="drawer-nav-dashboard" class="drawer-nav-btn">
-          Your progress
-        </button>
-      </nav>
+      <div class="drawer-main">
+        <nav class="drawer-nav" aria-label="Main navigation">
+          <button type="button" id="drawer-nav-home" class="drawer-nav-btn">
+            Home
+          </button>
+          <button type="button" id="drawer-nav-browse" class="drawer-nav-btn">
+            Practice certifications
+          </button>
+          <button
+            type="button"
+            id="drawer-nav-keytrain"
+            class="drawer-nav-btn"
+            aria-label="KeyTrain — training, workshops, and certification"
+          >
+            KeyTrain
+          </button>
+          <button type="button" id="drawer-nav-dashboard" class="drawer-nav-btn">
+            Your progress
+          </button>
+        </nav>
+        <div class="drawer-scroll">
       <details id="drawer-test-options" class="drawer-details page-collapse drawer-section">
         <summary>Test options</summary>
         <div class="drawer-details-body">
@@ -172,6 +174,15 @@
           <button type="button" id="btn-clear-all" class="btn-text btn-text-danger">Clear everything</button>
         </div>
       </details>
+        </div>
+        <footer class="drawer-footer">
+          <nav class="drawer-footer-links" aria-label="Site information">
+            <a href="about/">About</a>
+            <a href="contact/">Contact</a>
+            <a href="privacy/">Privacy</a>
+          </nav>
+        </footer>
+      </div>
     </aside>
 
     <div class="page-shell" id="page-shell">
@@ -330,8 +341,10 @@
         <div class="keytraining-hub-header">
           <h2>Workshops</h2>
           <p class="keytraining-hub-lead">
-            Each category offers three levels: <strong>Easy</strong> for first-time learners,
-            <strong>Medium</strong> for standard workplace practice, and <strong>Hard</strong> for advanced scenarios.
+            Each category offers three levels with <strong>interactive diagrams</strong>—step-through flows,
+            compare panels, clickable hotspots, and ordering drills that teach the <strong>how</strong> and
+            <strong>why</strong>, not just text. <strong>Easy</strong> for first-time learners,
+            <strong>Medium</strong> for workplace practice, <strong>Hard</strong> for advanced scenarios.
           </p>
         </div>
         <details id="keytrain-workshops-all" class="page-collapse keytraining-hub-section">
@@ -431,6 +444,15 @@
             KeyTrain home
           </button>
         </div>
+        <details id="keytrain-review-section" class="page-collapse keytrain-review-section">
+          <summary>Review answers and core concepts</summary>
+          <div class="page-collapse-body">
+            <p class="keytrain-review-lead">
+              Learn from each item: correct answers, explanations, and the core idea for that topic area.
+            </p>
+            <div id="keytrain-review-content"></div>
+          </div>
+        </details>
         <p class="disclaimer">
           KeyTrain results are based on this site's practice question bank. They are not official vendor
           certification exams.
@@ -791,12 +813,27 @@
       <div id="ad-container" class="ad-container"></div>
     </aside>
 
-    <footer class="site-footer">
+    <section class="trust-strip" aria-labelledby="trust-strip-heading">
+      <h2 id="trust-strip-heading" class="seo-sr-only">Site information</h2>
       <p>
-        Unofficial practice tool. Not affiliated with AWS, Microsoft, Google, or CompTIA.
-        <a href="questions/">Question library</a> ·
-        <a href="browse/">Browse exams</a> ·
+        Original practice questions and cybersecurity workshops — free, no login.
+        <a href="about/">About us</a> ·
+        <a href="contact/">Contact</a> ·
+        <a href="privacy/">Privacy</a>
+      </p>
+    </section>
+
+    <footer class="site-footer site-footer--expanded">
+      <nav class="site-footer-nav" aria-label="Site">
+        <a href="browse/">Browse exams</a>
+        <a href="questions/">Question library</a>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+        <a href="privacy/">Privacy</a>
         <a href="sitemap.xml">Sitemap</a>
+      </nav>
+      <p class="site-footer-disclaimer">
+        Unofficial practice tool. Not affiliated with AWS, Microsoft, Google, or CompTIA.
       </p>
     </footer>
 

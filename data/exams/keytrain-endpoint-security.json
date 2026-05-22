@@ -5,10 +5,10 @@
   "vendor": "keytraining",
   "program": "key-training",
   "exam": {
-    "totalQuestions": 15,
-    "scoredQuestions": 15,
-    "timeLimitMinutes": 40,
-    "passingScore": 700,
+    "totalQuestions": 20,
+    "scoredQuestions": 20,
+    "timeLimitMinutes": 45,
+    "passingScore": 750,
     "maxScore": 1000,
     "selectionMode": "weighted-random"
   },
@@ -98,25 +98,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Reimage without any logging"
+          "text": "Isolate host, collect timeline, and check for lateral movement indicators"
         },
         {
           "id": "b",
-          "text": "Restore driver because it is signed"
+          "text": "Restore driver because it is signed, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Disable EDR to stop alerts"
+          "text": "Disable EDR to stop alerts, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Isolate host, collect timeline, and check for lateral movement indicators"
+          "text": "Reimage without any logging, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Signed but anomalous drivers can be malicious; investigate before release.",
+      "concept": "Investigate signed-but-anomalous binaries and restrict unapproved software installation.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -136,25 +137,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Allow admin rights for all staff"
+          "text": "Block all internet indefinitely, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Application allowlisting and software center for approved tools"
+          "text": "Disable Windows Defender, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Disable Windows Defender"
+          "text": "Allow admin rights for all staff, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Block all internet indefinitely"
+          "text": "Application allowlisting and software center for approved tools"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Allowlisting limits unsigned or unapproved installers common in droppers.",
+      "concept": "Investigate signed-but-anomalous binaries and restrict unapproved software installation.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -174,25 +176,26 @@
       "options": [
         {
           "id": "a",
-          "text": "Benign marketing material"
+          "text": "Network beaconing only, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Malware delivery attempting staged download"
+          "text": "Physical tailgating, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Physical tailgating"
+          "text": "Benign marketing material, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Network beaconing only"
+          "text": "Malware delivery attempting staged download"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Macro-to-external-download is classic malware staging.",
+      "concept": "Investigate signed-but-anomalous binaries and restrict unapproved software installation.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -206,31 +209,32 @@
     },
     {
       "id": "kteps-q004",
-      "domain": "ransomware",
+      "domain": "malware",
       "type": "multiple-choice",
-      "text": "File servers show mass .encrypted extensions and a ransom note. FIRST action?",
+      "text": "EDR detects a living-off-the-land script spawning rundll32 from WinWord. Next step?",
       "options": [
         {
           "id": "a",
-          "text": "Reboot all domain controllers first"
+          "text": "Reboot once and close the ticket if the user can open documents again, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Isolate affected segments and preserve volatile evidence per IR plan"
+          "text": "Isolate the host, collect triage package, and hunt for lateral movement from that user"
         },
         {
           "id": "c",
-          "text": "Delete backups to free space"
+          "text": "Whitelist rundll32 because it is a signed Microsoft binary on all systems, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Pay ransom immediately without documentation"
+          "text": "Add a firewall rule blocking Word globally without examining the endpoint, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "b"
       ],
-      "explanation": "Containment and evidence preservation precede recovery decisions.",
+      "explanation": "Office spawning rundll32 is suspicious; isolate and investigate before declaring clean.",
+      "concept": "Investigate signed-but-anomalous binaries and restrict unapproved software installation.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -246,29 +250,30 @@
       "id": "kteps-q005",
       "domain": "ransomware",
       "type": "multiple-choice",
-      "text": "Backups are immutable; leadership asks about paying ransom. Security recommendation?",
+      "text": "File servers show mass .encrypted extensions and a ransom note. FIRST action?",
       "options": [
         {
           "id": "a",
-          "text": "Disable MFA to speed recovery"
+          "text": "Pay ransom immediately without documentation, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Pay anonymously on personal card"
+          "text": "Reboot all domain controllers first, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Publish decryption keys online"
+          "text": "Delete backups to free space, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Restore from immutable backups and involve legal/law enforcement; payment does not guarantee decryption"
+          "text": "Isolate affected segments and preserve volatile evidence per IR plan"
         }
       ],
       "correct": [
         "d"
       ],
-      "explanation": "Immutable backups are primary recovery; payment is uncertain and may fund crime.",
+      "explanation": "Containment and evidence preservation precede recovery decisions.",
+      "concept": "Isolate, preserve evidence, and restore from clean backups before negotiating payment.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -284,29 +289,30 @@
       "id": "kteps-q006",
       "domain": "ransomware",
       "type": "multiple-choice",
-      "text": "Ransomware group threatens leak of stolen data. What does 'double extortion' imply?",
+      "text": "Backups are immutable; leadership asks about paying ransom. Security recommendation?",
       "options": [
         {
           "id": "a",
-          "text": "They encrypt twice with different algorithms only"
+          "text": "Disable MFA to speed recovery, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "They only attack printers"
+          "text": "Publish decryption keys online, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "They may publish exfiltrated data even if you restore from backups"
+          "text": "Restore from immutable backups and involve legal/law enforcement; payment does not guarantee decryption"
         },
         {
           "id": "d",
-          "text": "Backups are automatically safe from leak"
+          "text": "Pay anonymously on personal card, without security or identity team coordination per policy."
         }
       ],
       "correct": [
         "c"
       ],
-      "explanation": "Exfiltration plus encryption means recovery does not eliminate leak risk.",
+      "explanation": "Immutable backups are primary recovery; payment is uncertain and may fund crime.",
+      "concept": "Isolate, preserve evidence, and restore from clean backups before negotiating payment.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -320,31 +326,32 @@
     },
     {
       "id": "kteps-q007",
-      "domain": "process-analysis",
+      "domain": "ransomware",
       "type": "multiple-choice",
-      "text": "An analyst sees powershell.exe spawning rundll32 with no window. What should they collect FIRST?",
+      "text": "Ransomware group threatens leak of stolen data. What does 'double extortion' imply?",
       "options": [
         {
           "id": "a",
-          "text": "Printer queue status"
+          "text": "They encrypt twice with different algorithms only, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Parent/child process tree, command line, and hash of loaded DLL"
+          "text": "Backups are automatically safe from leak, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Only CPU fan speed"
+          "text": "They may publish exfiltrated data even if you restore from backups"
         },
         {
           "id": "d",
-          "text": "User's last vacation dates"
+          "text": "They only attack printers, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
-      "explanation": "Process lineage and command lines are core to endpoint investigation.",
+      "explanation": "Exfiltration plus encryption means recovery does not eliminate leak risk.",
+      "concept": "Isolate, preserve evidence, and restore from clean backups before negotiating payment.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -358,31 +365,32 @@
     },
     {
       "id": "kteps-q008",
-      "domain": "process-analysis",
+      "domain": "ransomware",
       "type": "multiple-choice",
-      "text": "Task Manager shows a browser consuming CPU but Process Explorer shows no matching process. Likely explanation?",
+      "text": "A subsidiary reports encrypted file shares but still has network connectivity. IMMEDIATE action?",
       "options": [
         {
           "id": "a",
-          "text": "Normal GPU acceleration"
+          "text": "Segment affected VLANs and disable compromised service accounts per runbook"
         },
         {
           "id": "b",
-          "text": "User imagination"
+          "text": "Pay a small ransom immediately to test whether attackers provide working keys"
         },
         {
           "id": "c",
-          "text": "Patch Tuesday side effect only"
+          "text": "Announce full recovery on social media to reassure customers during investigation, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Process hollowing or rootkit-style hiding\u2014use EDR kernel telemetry"
+          "text": "Restore from the newest online snapshot without verifying backup integrity first, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
-      "explanation": "Discrepancies suggest advanced evasion; EDR kernel view is needed.",
+      "explanation": "Segmentation limits spread; preserve evidence before mass restore attempts.",
+      "concept": "Isolate, preserve evidence, and restore from clean backups before negotiating payment.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -398,29 +406,30 @@
       "id": "kteps-q009",
       "domain": "process-analysis",
       "type": "multiple-choice",
-      "text": "Which artifact BEST helps determine persistence via scheduled task creation?",
+      "text": "An analyst sees powershell.exe spawning rundll32 with no window. What should they collect FIRST?",
       "options": [
         {
           "id": "a",
-          "text": "Invoice PDF metadata"
+          "text": "Printer queue status, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "DHCP lease log only"
+          "text": "Parent/child process tree, command line, and hash of loaded DLL"
         },
         {
           "id": "c",
-          "text": "CCTV timestamp"
+          "text": "User's last vacation dates, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Windows Security Event ID 4698 and Task Scheduler operational log"
+          "text": "Only CPU fan speed, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
-      "explanation": "Task creation events document persistence mechanisms.",
+      "explanation": "Process lineage and command lines are core to endpoint investigation.",
+      "concept": "Parent/child process chains reveal LOLBins, injection, and suspicious network children.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -434,31 +443,32 @@
     },
     {
       "id": "kteps-q010",
-      "domain": "persistence",
+      "domain": "process-analysis",
       "type": "multiple-choice",
-      "text": "Registry Run keys point to a random AppData executable after an email attachment. BEST remediation?",
+      "text": "Task Manager shows a browser consuming CPU but Process Explorer shows no matching process. Likely explanation?",
       "options": [
         {
           "id": "a",
-          "text": "Delete only the email"
+          "text": "User imagination, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Ignore if antivirus is green"
+          "text": "Normal GPU acceleration, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Disable Run keys globally forever"
+          "text": "Process hollowing or rootkit-style hiding\u2014use EDR kernel telemetry"
         },
         {
           "id": "d",
-          "text": "Remove persistence entries, quarantine binary, and reimage if tampering is widespread"
+          "text": "Patch Tuesday side effect only, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
-      "explanation": "Persistence must be removed with the payload; reimage if integrity is uncertain.",
+      "explanation": "Discrepancies suggest advanced evasion; EDR kernel view is needed.",
+      "concept": "Parent/child process chains reveal LOLBins, injection, and suspicious network children.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -472,31 +482,32 @@
     },
     {
       "id": "kteps-q011",
-      "domain": "persistence",
+      "domain": "process-analysis",
       "type": "multiple-choice",
-      "text": "A WMI event subscription recreates malware after reboot. Why is this effective persistence?",
+      "text": "Which artifact BEST helps determine persistence via scheduled task creation?",
       "options": [
         {
           "id": "a",
-          "text": "WMI subscriptions can trigger payloads without classic Run key visibility"
+          "text": "DHCP lease log only, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "It blocks MFA enrollment"
+          "text": "CCTV timestamp, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "It encrypts backups automatically"
+          "text": "Windows Security Event ID 4698 and Task Scheduler operational log"
         },
         {
           "id": "d",
-          "text": "WMI only manages printers"
+          "text": "Invoice PDF metadata, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
-      "explanation": "WMI persistence is stealthy; hunters search for suspicious consumers.",
+      "explanation": "Task creation events document persistence mechanisms.",
+      "concept": "Parent/child process chains reveal LOLBins, injection, and suspicious network children.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -510,31 +521,32 @@
     },
     {
       "id": "kteps-q012",
-      "domain": "persistence",
+      "domain": "process-analysis",
       "type": "multiple-choice",
-      "text": "Startup folder contains a shortcut to a remote SMB path. Risk?",
+      "text": "Sysmon shows powershell.exe -enc launching from excel.exe with outbound 443. Meaning?",
       "options": [
         {
           "id": "a",
-          "text": "Logon triggers load of code from attacker-controlled share"
+          "text": "Proof that TLS inspection is misconfigured on the perimeter firewall only"
         },
         {
           "id": "b",
-          "text": "Only affects Linux servers"
+          "text": "Normal Excel behavior when opening any spreadsheet from email attachments, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Improves patch compliance"
+          "text": "Indicates a printer driver update scheduled by Windows Update automatically, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Shortcuts are always harmless"
+          "text": "Likely macro-driven execution downloading or executing a second-stage payload"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
-      "explanation": "Remote startup items pull code at user logon\u2014common persistence.",
+      "explanation": "Encoded PowerShell from Office is a classic malware staging pattern.",
+      "concept": "Parent/child process chains reveal LOLBins, injection, and suspicious network children.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -548,31 +560,32 @@
     },
     {
       "id": "kteps-q013",
-      "domain": "av-status",
+      "domain": "persistence",
       "type": "multiple-choice",
-      "text": "20% of endpoints report outdated definitions for 14 days. BEST prioritized action?",
+      "text": "Registry Run keys point to a random AppData executable after an email attachment. BEST remediation?",
       "options": [
         {
           "id": "a",
-          "text": "Exclude all servers from scanning"
+          "text": "Remove persistence entries, quarantine binary, and reimage if tampering is widespread"
         },
         {
           "id": "b",
-          "text": "Identify update failures (proxy, service stopped) and enforce compliance via MDM"
+          "text": "Ignore if antivirus is green, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Disable updates during business hours permanently"
+          "text": "Delete only the email, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Uninstall antivirus to improve performance"
+          "text": "Disable Run keys globally forever, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
-      "explanation": "Stale defs reduce detection; fix root cause of update failures.",
+      "explanation": "Persistence must be removed with the payload; reimage if integrity is uncertain.",
+      "concept": "Startup items, scheduled tasks, and services maintain access after reboot.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -586,31 +599,32 @@
     },
     {
       "id": "kteps-q014",
-      "domain": "av-status",
+      "domain": "persistence",
       "type": "multiple-choice",
-      "text": "A server excludes the entire C: drive from scanning for 'performance.' What risk acceptance is this?",
+      "text": "A WMI event subscription recreates malware after reboot. Why is this effective persistence?",
       "options": [
         {
           "id": "a",
-          "text": "Malware can reside undetected on excluded volumes"
+          "text": "WMI only manages printers, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Exclusions apply only to network traffic"
+          "text": "WMI subscriptions can trigger payloads without classic Run key visibility"
         },
         {
           "id": "c",
-          "text": "Exclusions improve encryption strength"
+          "text": "It encrypts backups automatically, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "AV scans cause guaranteed data loss"
+          "text": "It blocks MFA enrollment, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
-      "explanation": "Broad exclusions create blind spots attackers target.",
+      "explanation": "WMI persistence is stealthy; hunters search for suspicious consumers.",
+      "concept": "Startup items, scheduled tasks, and services maintain access after reboot.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",
@@ -624,31 +638,227 @@
     },
     {
       "id": "kteps-q015",
+      "domain": "persistence",
+      "type": "multiple-choice",
+      "text": "Startup folder contains a shortcut to a remote SMB path. Risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only affects Linux servers, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Shortcuts are always harmless, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Improves patch compliance, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Logon triggers load of code from attacker-controlled share"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Remote startup items pull code at user logon\u2014common persistence.",
+      "concept": "Startup items, scheduled tasks, and services maintain access after reboot.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "kteps-q016",
+      "domain": "persistence",
+      "type": "multiple-choice",
+      "text": "Autoruns shows an unknown scheduled task calling a binary in %ProgramData%. Action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delete only the task file so the binary remains for future malware research, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Reboot the PC once without collecting logs to clear persistence automatically, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Disable the task, quarantine the binary, and search for other hosts with same hash"
+        },
+        {
+          "id": "d",
+          "text": "Ignore if the binary is larger than one megabyte because large files are safe"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Unknown scheduled tasks with unusual paths warrant hunt and remediation.",
+      "concept": "Startup items, scheduled tasks, and services maintain access after reboot.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "kteps-q017",
+      "domain": "av-status",
+      "type": "multiple-choice",
+      "text": "20% of endpoints report outdated definitions for 14 days. BEST prioritized action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disable updates during business hours permanently, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Exclude all servers from scanning, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Identify update failures (proxy, service stopped) and enforce compliance via MDM"
+        },
+        {
+          "id": "d",
+          "text": "Uninstall antivirus to improve performance, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "explanation": "Stale defs reduce detection; fix root cause of update failures.",
+      "concept": "AV/EDR must stay enabled, updated, and centrally monitored\u2014not disabled for convenience.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "kteps-q018",
+      "domain": "av-status",
+      "type": "multiple-choice",
+      "text": "A server excludes the entire C: drive from scanning for 'performance.' What risk acceptance is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AV scans cause guaranteed data loss, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Malware can reside undetected on excluded volumes"
+        },
+        {
+          "id": "c",
+          "text": "Exclusions apply only to network traffic, without security or identity team coordination per policy."
+        },
+        {
+          "id": "d",
+          "text": "Exclusions improve encryption strength, without security or identity team coordination per policy."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "explanation": "Broad exclusions create blind spots attackers target.",
+      "concept": "AV/EDR must stay enabled, updated, and centrally monitored\u2014not disabled for convenience.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "kteps-q019",
       "domain": "av-status",
       "type": "multiple-choice",
       "text": "EDR shows 'protected' but Windows Defender is disabled via GPO conflict. What should you do?",
       "options": [
         {
           "id": "a",
-          "text": "Reconcile GPO and EDR policy so one compliant agent is active and reporting"
+          "text": "Disable logging to reduce tickets, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Leave both disabled if users complain"
+          "text": "Reconcile GPO and EDR policy so one compliant agent is active and reporting"
         },
         {
           "id": "c",
-          "text": "Hide status in the console"
+          "text": "Leave both disabled if users complain, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Disable logging to reduce tickets"
+          "text": "Hide status in the console, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Conflicting policies cause false confidence; one managed agent should report health.",
+      "concept": "AV/EDR must stay enabled, updated, and centrally monitored\u2014not disabled for convenience.",
+      "docs": [
+        {
+          "title": "NIST Cybersecurity Framework",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "title": "CISA Cybersecurity Guidance",
+          "url": "https://www.cisa.gov/topics/cybersecurity-best-practices"
+        }
+      ]
+    },
+    {
+      "id": "kteps-q020",
+      "domain": "av-status",
+      "type": "multiple-choice",
+      "text": "GPO audit shows 18% of laptops with Defender disabled by local admin tools. Fix?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow users to disable AV during presentations without logging events, without security or identity team coordination per policy."
+        },
+        {
+          "id": "b",
+          "text": "Whitelist all unsigned drivers to prevent future Defender alerts, without security or identity team coordination per policy."
+        },
+        {
+          "id": "c",
+          "text": "Remove AV entirely on those laptops to improve boot time for sales staff"
+        },
+        {
+          "id": "d",
+          "text": "Enforce tamper protection via policy and investigate who disabled protection"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "explanation": "Disabled endpoint protection is a critical finding; restore centrally managed AV/EDR.",
+      "concept": "AV/EDR must stay enabled, updated, and centrally monitored\u2014not disabled for convenience.",
       "docs": [
         {
           "title": "NIST Cybersecurity Framework",

@@ -4,6 +4,7 @@
 import { EASY_WORKSHOPS } from "./keytrain-workshops-easy.js";
 import { MEDIUM_WORKSHOPS } from "./keytrain-workshops-medium.js";
 import { HARD_WORKSHOPS } from "./keytrain-workshops-hard.js";
+import { enrichStepsWithVisuals } from "./workshop-visual-catalog.js";
 import {
   KEYTRAIN_CATEGORY_IDS,
   TRAINING_LEVELS,
@@ -21,13 +22,32 @@ export const KEYTRAIN_WORKSHOP_IDS = KEYTRAIN_CATEGORY_IDS;
  * @param {TrainingLevel} [level]
  * @returns {KeytrainWorkshop|null}
  */
+/**
+ * @param {KeytrainWorkshop|null} w
+ * @param {{ maxVisuals?: number }} [opts]
+ * @returns {KeytrainWorkshop|null}
+ */
+function withVisuals(w, opts = {}) {
+  if (!w) return null;
+  const cid = w.categoryId ?? w.id;
+  const level = w.level ?? "medium";
+  const maxVisuals = opts.maxVisuals ?? (level === "hard" ? 3 : level === "medium" ? 3 : 4);
+  return {
+    ...w,
+    steps: enrichStepsWithVisuals(cid, w.steps, { level, maxVisuals }),
+  };
+}
+
 export function getKeytrainWorkshop(categoryId, level = "medium") {
   const lv = TRAINING_LEVELS.includes(/** @type {TrainingLevel} */ (level))
     ? /** @type {TrainingLevel} */ (level)
     : "medium";
-  if (lv === "easy") return EASY_WORKSHOPS[categoryId] ?? null;
-  if (lv === "hard") return HARD_WORKSHOPS[categoryId] ?? null;
-  return MEDIUM_WORKSHOPS[categoryId] ?? null;
+  if (lv === "easy") {
+    const w = EASY_WORKSHOPS[categoryId] ?? null;
+    return w;
+  }
+  if (lv === "hard") return withVisuals(HARD_WORKSHOPS[categoryId] ?? null, { maxVisuals: 3 });
+  return withVisuals(MEDIUM_WORKSHOPS[categoryId] ?? null, { maxVisuals: 3 });
 }
 
 /** @returns {KeytrainWorkshop[]} */
