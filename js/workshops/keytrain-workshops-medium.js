@@ -1111,19 +1111,3 @@ export const MEDIUM_WORKSHOPS = {
     ],
   }),
 };
-
-/** @type {string[]} */
-export const KEYTRAIN_WORKSHOP_IDS = Object.keys(KEYTRAIN_WORKSHOPS);
-
-/** @returns {KeytrainWorkshop[]} */
-export function listKeytrainWorkshops() {
-  return Object.values(KEYTRAIN_WORKSHOPS).sort((a, b) => a.title.localeCompare(b.title));
-}
-
-/**
- * @param {string} id
- * @returns {KeytrainWorkshop|null}
- */
-export function getKeytrainWorkshop(id) {
-  return KEYTRAIN_WORKSHOPS[id] ?? null;
-}
