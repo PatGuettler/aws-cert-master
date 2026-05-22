@@ -35,7 +35,7 @@ VENDOR_LABELS = {
     "comptia": "CompTIA",
 }
 
-ADS_CLIENT = "ca-pub-3981092943886508"
+ADS_CLIENT = "ca-pub-2846735043546429"
 ADS_SLOT = ""
 
 SITE_ORIGIN = os.environ.get("SITE_ORIGIN", DEFAULT_SITE_ORIGIN).rstrip("/")
