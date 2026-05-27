@@ -70,23 +70,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multi-region deployment with load balancing"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "c",
-          "text": "No backups"
+          "text": "Multi-region deployment with load balancing"
         },
         {
           "id": "d",
-          "text": "Disable monitoring"
+          "text": "Disable monitoring (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "HA spans failure domains.",
       "docs": [
@@ -108,15 +108,15 @@
         },
         {
           "id": "b",
-          "text": "IaaS is only email"
+          "text": "VPN or dedicated interconnect to cloud"
         },
         {
           "id": "c",
-          "text": "SaaS is cabling"
+          "text": "Multi-region deployment with load balancing"
         },
         {
           "id": "d",
-          "text": "PaaS is DNS only"
+          "text": "Availability zones and anti-affinity"
         }
       ],
       "correct": [
@@ -138,23 +138,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPN or dedicated interconnect to cloud"
+          "text": "Multi-region deployment with load balancing"
         },
         {
           "id": "b",
-          "text": "Expose DB to internet"
+          "text": "VPN or dedicated interconnect to cloud"
         },
         {
           "id": "c",
-          "text": "Telnet admin"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "d",
-          "text": "No encryption"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Hybrid links on-prem to cloud.",
       "docs": [
@@ -172,23 +172,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Availability zones and anti-affinity"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "No health checks (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "One subnet"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "VPN or dedicated interconnect to cloud"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Isolation limits blast radius.",
       "docs": [
@@ -206,7 +206,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Multi-region deployment with load balancing"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "b",
@@ -214,15 +214,15 @@
         },
         {
           "id": "c",
-          "text": "Single server"
+          "text": "Multi-region deployment with load balancing"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "No backups (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "HA spans failure domains. Compare with IaaS provides VMs; PaaS managed runtime; SaaS applications: Models define management responsibility.",
       "docs": [
@@ -244,23 +244,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
-        },
-        {
-          "id": "b",
           "text": "VPN or dedicated interconnect to cloud"
         },
         {
+          "id": "b",
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+        },
+        {
           "id": "c",
-          "text": "IaaS is only email"
+          "text": "VPN or dedicated interconnect to cloud (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "SaaS is cabling"
+          "text": "Multi-region deployment with load balancing"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Models define management responsibility. Compare with VPN or dedicated interconnect to cloud: Hybrid links on-prem to cloud.",
       "docs": [
@@ -282,7 +282,7 @@
       "options": [
         {
           "id": "a",
-          "text": "VPN or dedicated interconnect to cloud"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "b",
@@ -290,15 +290,15 @@
         },
         {
           "id": "c",
-          "text": "Expose DB to internet"
+          "text": "VPN or dedicated interconnect to cloud"
         },
         {
           "id": "d",
-          "text": "Telnet admin"
+          "text": "Multi-region deployment with load balancing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hybrid links on-prem to cloud. Compare with Availability zones and anti-affinity: Isolation limits blast radius.",
       "docs": [
@@ -320,23 +320,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Availability zones and anti-affinity"
-        },
-        {
-          "id": "b",
           "text": "Multi-region deployment with load balancing"
         },
         {
+          "id": "b",
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+        },
+        {
           "id": "c",
-          "text": "Single VM"
+          "text": "VPN or dedicated interconnect to cloud"
         },
         {
           "id": "d",
-          "text": "One subnet"
+          "text": "Availability zones and anti-affinity"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Isolation limits blast radius. Compare with Multi-region deployment with load balancing: HA spans failure domains.",
       "docs": [
@@ -358,23 +358,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multi-region deployment with load balancing"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "Disable monitoring (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No backups"
+          "text": "Multi-region deployment with load balancing"
         },
         {
           "id": "d",
-          "text": "Disable monitoring"
+          "text": "Availability zones and anti-affinity"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "HA spans failure domains.",
       "docs": [
@@ -392,23 +392,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+          "text": "Multi-region deployment with load balancing"
         },
         {
           "id": "b",
-          "text": "IaaS is only email"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "c",
-          "text": "SaaS is cabling"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "d",
-          "text": "PaaS is DNS only"
+          "text": "VPN or dedicated interconnect to cloud"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Models define management responsibility.",
       "docs": [
@@ -426,23 +426,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Availability zones and anti-affinity"
+          "text": "VPN or dedicated interconnect to cloud"
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "No health checks (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "One subnet"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "Availability zones and anti-affinity"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Isolation limits blast radius.",
       "docs": [
@@ -460,23 +460,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+          "text": "VPN or dedicated interconnect to cloud"
         },
         {
           "id": "b",
-          "text": "IaaS is only email"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "c",
-          "text": "SaaS is cabling"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "d",
-          "text": "PaaS is DNS only"
+          "text": "Multi-region deployment with load balancing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Models define management responsibility.",
       "docs": [
@@ -494,23 +494,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPN or dedicated interconnect to cloud"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "b",
-          "text": "Expose DB to internet"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "c",
-          "text": "Telnet admin"
+          "text": "Multi-region deployment with load balancing"
         },
         {
           "id": "d",
-          "text": "No encryption"
+          "text": "VPN or dedicated interconnect to cloud"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Hybrid links on-prem to cloud.",
       "docs": [
@@ -528,23 +528,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Availability zones and anti-affinity"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "VPN or dedicated interconnect to cloud"
         },
         {
           "id": "c",
-          "text": "One subnet"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "Multi-region deployment with load balancing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Isolation limits blast radius.",
       "docs": [
@@ -566,15 +566,15 @@
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "c",
-          "text": "No backups"
+          "text": "VPN or dedicated interconnect to cloud"
         },
         {
           "id": "d",
-          "text": "Disable monitoring"
+          "text": "Availability zones and anti-affinity"
         }
       ],
       "correct": [
@@ -600,15 +600,15 @@
         },
         {
           "id": "b",
-          "text": "IaaS is only email"
+          "text": "VPN or dedicated interconnect to cloud"
         },
         {
           "id": "c",
-          "text": "SaaS is cabling"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "d",
-          "text": "PaaS is DNS only"
+          "text": "Multi-region deployment with load balancing"
         }
       ],
       "correct": [
@@ -634,15 +634,15 @@
         },
         {
           "id": "b",
-          "text": "Expose DB to internet"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "c",
-          "text": "Telnet admin"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "d",
-          "text": "No encryption"
+          "text": "Multi-region deployment with load balancing"
         }
       ],
       "correct": [
@@ -664,23 +664,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Availability zones and anti-affinity"
+          "text": "Multi-region deployment with load balancing"
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "c",
-          "text": "One subnet"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "VPN or dedicated interconnect to cloud"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Isolation limits blast radius.",
       "docs": [
@@ -698,23 +698,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
+          "text": "PaaS is DNS only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "IaaS is only email"
+          "text": "IaaS provides VMs; PaaS managed runtime; SaaS applications"
         },
         {
           "id": "c",
-          "text": "SaaS is cabling"
+          "text": "Availability zones and anti-affinity"
         },
         {
           "id": "d",
-          "text": "PaaS is DNS only"
+          "text": "VPN or dedicated interconnect to cloud"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Models define management responsibility.",
       "docs": [
@@ -732,23 +732,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Role-based access with regular reviews"
+          "text": "VPC/VNet subnets and security groups"
         },
         {
           "id": "b",
-          "text": "Shared admin"
+          "text": "Pipeline scanning before deploy"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "Provider-managed encryption and customer keys"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "Role-based access with regular reviews"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Least privilege limits blast radius.",
       "docs": [
@@ -770,15 +770,15 @@
         },
         {
           "id": "b",
-          "text": "Plaintext only"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Email secrets (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Email secrets"
+          "text": "Secrets vault with rotation"
         }
       ],
       "correct": [
@@ -804,15 +804,15 @@
         },
         {
           "id": "b",
-          "text": "Flat network"
-        },
-        {
-          "id": "c",
           "text": "0.0.0.0/0 admin"
         },
         {
+          "id": "c",
+          "text": "Pipeline scanning before deploy"
+        },
+        {
           "id": "d",
-          "text": "Telnet"
+          "text": "Role-based access with regular reviews"
         }
       ],
       "correct": [
@@ -834,23 +834,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline scanning before deploy"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "b",
-          "text": "Deploy :latest only"
+          "text": "Secrets vault with rotation"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "VPC/VNet subnets and security groups"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Pipeline scanning before deploy"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Image scanning catches known issues.",
       "docs": [
@@ -868,23 +868,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secrets vault with rotation"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "b",
-          "text": "Commit keys to git"
+          "text": "VPC/VNet subnets and security groups"
         },
         {
           "id": "c",
-          "text": "Email keys"
+          "text": "Secrets vault with rotation"
         },
         {
           "id": "d",
-          "text": "Paste in chat"
+          "text": "Pipeline scanning before deploy"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Secrets management reduces exposure.",
       "docs": [
@@ -906,15 +906,15 @@
         },
         {
           "id": "b",
-          "text": "Provider-managed encryption and customer keys"
+          "text": "Pipeline scanning before deploy"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "VPC/VNet subnets and security groups"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Provider-managed encryption and customer keys"
         }
       ],
       "correct": [
@@ -940,23 +940,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Provider-managed encryption and customer keys"
-        },
-        {
-          "id": "b",
           "text": "VPC/VNet subnets and security groups"
         },
         {
+          "id": "b",
+          "text": "Pipeline scanning before deploy"
+        },
+        {
           "id": "c",
-          "text": "Plaintext only"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "d",
-          "text": "HTTP only"
+          "text": "Provider-managed encryption and customer keys"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Encryption protects stored data. Compare with VPC/VNet subnets and security groups: Segmentation limits lateral movement.",
       "docs": [
@@ -982,15 +982,15 @@
         },
         {
           "id": "b",
-          "text": "Pipeline scanning before deploy"
+          "text": "0.0.0.0/0 admin"
         },
         {
           "id": "c",
-          "text": "Flat network"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "d",
-          "text": "0.0.0.0/0 admin"
+          "text": "Pipeline scanning before deploy"
         }
       ],
       "correct": [
@@ -1016,23 +1016,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline scanning before deploy"
+          "text": "VPC/VNet subnets and security groups"
         },
         {
           "id": "b",
-          "text": "Secrets vault with rotation"
+          "text": "Pipeline scanning before deploy"
         },
         {
           "id": "c",
-          "text": "Deploy :latest only"
+          "text": "Provider-managed encryption and customer keys"
         },
         {
           "id": "d",
-          "text": "Ignore CVEs"
+          "text": "Secrets vault with rotation"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Image scanning catches known issues. Compare with Secrets vault with rotation: Secrets management reduces exposure.",
       "docs": [
@@ -1054,23 +1054,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secrets vault with rotation"
+          "text": "Provider-managed encryption and customer keys"
         },
         {
           "id": "b",
-          "text": "Role-based access with regular reviews"
+          "text": "Secrets vault with rotation"
         },
         {
           "id": "c",
-          "text": "Commit keys to git"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Pipeline scanning before deploy"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secrets management reduces exposure. Compare with Role-based access with regular reviews: Least privilege limits blast radius.",
       "docs": [
@@ -1092,23 +1092,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Role-based access with regular reviews"
+          "text": "Secrets vault with rotation"
         },
         {
           "id": "b",
-          "text": "Shared admin"
+          "text": "Pipeline scanning before deploy"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "Provider-managed encryption and customer keys"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Least privilege limits blast radius.",
       "docs": [
@@ -1130,15 +1130,15 @@
         },
         {
           "id": "b",
-          "text": "Plaintext only"
+          "text": "Secrets vault with rotation"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Pipeline scanning before deploy"
         },
         {
           "id": "d",
-          "text": "Email secrets"
+          "text": "VPC/VNet subnets and security groups"
         }
       ],
       "correct": [
@@ -1160,23 +1160,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC/VNet subnets and security groups"
-        },
-        {
-          "id": "b",
-          "text": "Flat network"
-        },
-        {
-          "id": "c",
           "text": "0.0.0.0/0 admin"
         },
         {
+          "id": "b",
+          "text": "VPC/VNet subnets and security groups"
+        },
+        {
+          "id": "c",
+          "text": "Provider-managed encryption and customer keys"
+        },
+        {
           "id": "d",
-          "text": "Telnet"
+          "text": "Role-based access with regular reviews"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Segmentation limits lateral movement.",
       "docs": [
@@ -1198,15 +1198,15 @@
         },
         {
           "id": "b",
-          "text": "Deploy :latest only"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "VPC/VNet subnets and security groups"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Provider-managed encryption and customer keys"
         }
       ],
       "correct": [
@@ -1228,23 +1228,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secrets vault with rotation"
+          "text": "Pipeline scanning before deploy"
         },
         {
           "id": "b",
-          "text": "Commit keys to git"
+          "text": "Secrets vault with rotation"
         },
         {
           "id": "c",
-          "text": "Email keys"
+          "text": "VPC/VNet subnets and security groups"
         },
         {
           "id": "d",
-          "text": "Paste in chat"
+          "text": "Provider-managed encryption and customer keys"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secrets management reduces exposure.",
       "docs": [
@@ -1262,23 +1262,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Role-based access with regular reviews"
+          "text": "Secrets vault with rotation"
         },
         {
           "id": "b",
-          "text": "Shared admin"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "Pipeline scanning before deploy"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "VPC/VNet subnets and security groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Least privilege limits blast radius.",
       "docs": [
@@ -1296,23 +1296,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Provider-managed encryption and customer keys"
+          "text": "Pipeline scanning before deploy"
         },
         {
           "id": "b",
-          "text": "Plaintext only"
+          "text": "Secrets vault with rotation"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "VPC/VNet subnets and security groups"
         },
         {
           "id": "d",
-          "text": "Email secrets"
+          "text": "Provider-managed encryption and customer keys"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Encryption protects stored data.",
       "docs": [
@@ -1334,15 +1334,15 @@
         },
         {
           "id": "b",
-          "text": "Flat network"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "c",
-          "text": "0.0.0.0/0 admin"
+          "text": "Secrets vault with rotation"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "0.0.0.0/0 admin"
         }
       ],
       "correct": [
@@ -1364,23 +1364,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline scanning before deploy"
+          "text": "Role-based access with regular reviews"
         },
         {
           "id": "b",
-          "text": "Deploy :latest only"
+          "text": "VPC/VNet subnets and security groups"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "Pipeline scanning before deploy"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Secrets vault with rotation"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Image scanning catches known issues.",
       "docs": [
@@ -1398,23 +1398,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Infrastructure as code templates"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "b",
-          "text": "Manual clicks only"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "c",
-          "text": "USB scripts"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "d",
-          "text": "No versioning"
+          "text": "Pipeline with tests and approvals"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IaC enables repeatable environments.",
       "docs": [
@@ -1432,23 +1432,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline with tests and approvals"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "b",
-          "text": "FTP to prod"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "c",
-          "text": "Skip QA"
+          "text": "Policy checks in CI"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "Pipeline with tests and approvals"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CI/CD reduces deployment risk.",
       "docs": [
@@ -1466,23 +1466,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Replace servers instead of patching in place"
+          "text": "Policy checks in CI"
         },
         {
           "id": "b",
-          "text": "Manual SSH drift"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "c",
-          "text": "Snowflake servers"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "Gradual traffic shift"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Immutable infra improves consistency.",
       "docs": [
@@ -1500,23 +1500,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Policy checks in CI"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "b",
-          "text": "Apply prod first"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "c",
-          "text": "No lint"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "d",
-          "text": "Skip peer review"
+          "text": "Policy checks in CI"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Policy gates catch misconfigurations.",
       "docs": [
@@ -1538,15 +1538,15 @@
         },
         {
           "id": "b",
-          "text": "Big bang only"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "c",
-          "text": "No monitoring"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "d",
-          "text": "Ignore errors"
+          "text": "Pipeline with tests and approvals"
         }
       ],
       "correct": [
@@ -1568,23 +1568,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Infrastructure as code templates"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "b",
-          "text": "Pipeline with tests and approvals"
+          "text": "Policy checks in CI"
         },
         {
           "id": "c",
-          "text": "Manual clicks only"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "Pipeline with tests and approvals"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IaC enables repeatable environments. Compare with Pipeline with tests and approvals: CI/CD reduces deployment risk.",
       "docs": [
@@ -1606,23 +1606,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline with tests and approvals"
-        },
-        {
-          "id": "b",
           "text": "Replace servers instead of patching in place"
         },
         {
+          "id": "b",
+          "text": "Pipeline with tests and approvals"
+        },
+        {
           "id": "c",
-          "text": "FTP to prod"
+          "text": "Policy checks in CI"
         },
         {
           "id": "d",
-          "text": "Skip QA"
+          "text": "Infrastructure as code templates"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CI/CD reduces deployment risk. Compare with Replace servers instead of patching in place: Immutable infra improves consistency.",
       "docs": [
@@ -1648,15 +1648,15 @@
         },
         {
           "id": "b",
-          "text": "Policy checks in CI"
+          "text": "Pipeline with tests and approvals"
         },
         {
           "id": "c",
-          "text": "Manual SSH drift"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "d",
-          "text": "Snowflake servers"
+          "text": "Infrastructure as code templates"
         }
       ],
       "correct": [
@@ -1682,23 +1682,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Policy checks in CI"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "b",
-          "text": "Gradual traffic shift"
+          "text": "Policy checks in CI"
         },
         {
           "id": "c",
-          "text": "Apply prod first"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "d",
-          "text": "No lint"
+          "text": "Pipeline with tests and approvals"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Policy gates catch misconfigurations. Compare with Gradual traffic shift: Progressive delivery limits blast radius.",
       "docs": [
@@ -1724,15 +1724,15 @@
         },
         {
           "id": "b",
-          "text": "Infrastructure as code templates"
+          "text": "Policy checks in CI"
         },
         {
           "id": "c",
-          "text": "Big bang only"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "d",
-          "text": "No monitoring"
+          "text": "Infrastructure as code templates"
         }
       ],
       "correct": [
@@ -1758,23 +1758,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Infrastructure as code templates"
+          "text": "Policy checks in CI"
         },
         {
           "id": "b",
-          "text": "Manual clicks only"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "c",
-          "text": "USB scripts"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "d",
-          "text": "No versioning"
+          "text": "Pipeline with tests and approvals"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IaC enables repeatable environments.",
       "docs": [
@@ -1796,15 +1796,15 @@
         },
         {
           "id": "b",
-          "text": "Manual SSH drift"
+          "text": "Policy checks in CI"
         },
         {
           "id": "c",
-          "text": "Snowflake servers"
+          "text": "Pipeline with tests and approvals"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "Infrastructure as code templates"
         }
       ],
       "correct": [
@@ -1830,15 +1830,15 @@
         },
         {
           "id": "b",
-          "text": "Apply prod first"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "c",
-          "text": "No lint"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "d",
-          "text": "Skip peer review"
+          "text": "Gradual traffic shift"
         }
       ],
       "correct": [
@@ -1864,15 +1864,15 @@
         },
         {
           "id": "b",
-          "text": "Big bang only"
+          "text": "Ignore errors"
         },
         {
           "id": "c",
-          "text": "No monitoring"
+          "text": "Pipeline with tests and approvals"
         },
         {
           "id": "d",
-          "text": "Ignore errors"
+          "text": "Infrastructure as code templates"
         }
       ],
       "correct": [
@@ -1894,23 +1894,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Infrastructure as code templates"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "b",
-          "text": "Manual clicks only"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "c",
-          "text": "USB scripts"
+          "text": "Pipeline with tests and approvals"
         },
         {
           "id": "d",
-          "text": "No versioning"
+          "text": "Gradual traffic shift"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IaC enables repeatable environments.",
       "docs": [
@@ -1928,23 +1928,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline with tests and approvals"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "b",
-          "text": "FTP to prod"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "c",
-          "text": "Skip QA"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "Pipeline with tests and approvals"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CI/CD reduces deployment risk.",
       "docs": [
@@ -1962,23 +1962,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Replace servers instead of patching in place"
+          "text": "Pipeline with tests and approvals"
         },
         {
           "id": "b",
-          "text": "Manual SSH drift"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "c",
-          "text": "Snowflake servers"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "Replace servers instead of patching in place"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Immutable infra improves consistency.",
       "docs": [
@@ -1996,23 +1996,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Policy checks in CI"
+          "text": "Infrastructure as code templates"
         },
         {
           "id": "b",
-          "text": "Apply prod first"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "c",
-          "text": "No lint"
+          "text": "Policy checks in CI"
         },
         {
           "id": "d",
-          "text": "Skip peer review"
+          "text": "Pipeline with tests and approvals"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Policy gates catch misconfigurations.",
       "docs": [
@@ -2030,23 +2030,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Infrastructure as code templates"
+          "text": "Gradual traffic shift"
         },
         {
           "id": "b",
-          "text": "Manual clicks only"
+          "text": "Replace servers instead of patching in place"
         },
         {
           "id": "c",
-          "text": "USB scripts"
+          "text": "Pipeline with tests and approvals"
         },
         {
           "id": "d",
-          "text": "No versioning"
+          "text": "Infrastructure as code templates"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "IaC enables repeatable environments.",
       "docs": [
@@ -2064,23 +2064,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monitoring utilization and scaling policies"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "b",
-          "text": "Always max SKU"
+          "text": "Dashboards with alerting on error budgets"
         },
         {
           "id": "c",
-          "text": "Ignore metrics"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Runbooks and tested backups"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "FinOps uses data to optimize spend.",
       "docs": [
@@ -2102,15 +2102,15 @@
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Dashboards with alerting on error budgets"
         },
         {
           "id": "c",
-          "text": "No RTO"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "d",
-          "text": "Ignore paging"
+          "text": "Monitoring utilization and scaling policies"
         }
       ],
       "correct": [
@@ -2132,23 +2132,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dashboards with alerting on error budgets"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "c",
-          "text": "Annual manual check"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "d",
-          "text": "Disable paging"
+          "text": "Dashboards with alerting on error budgets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SLOs guide operational focus.",
       "docs": [
@@ -2166,23 +2166,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Trend metrics before peak seasons"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "b",
-          "text": "Buy max SKU"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "c",
-          "text": "Ignore growth"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "d",
-          "text": "No forecasts"
+          "text": "Dashboards with alerting on error budgets"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Capacity planning avoids outages.",
       "docs": [
@@ -2200,23 +2200,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monitoring utilization and scaling policies"
-        },
-        {
-          "id": "b",
           "text": "Runbooks and tested backups"
         },
         {
+          "id": "b",
+          "text": "Dashboards with alerting on error budgets"
+        },
+        {
           "id": "c",
-          "text": "Always max SKU"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "d",
-          "text": "Ignore metrics"
+          "text": "Trend metrics before peak seasons"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "FinOps uses data to optimize spend. Compare with Runbooks and tested backups: Operations includes recovery procedures.",
       "docs": [
@@ -2238,23 +2238,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Runbooks and tested backups"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "b",
-          "text": "Dashboards with alerting on error budgets"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "c",
-          "text": "Hope for best"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "d",
-          "text": "No RTO"
+          "text": "Dashboards with alerting on error budgets"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operations includes recovery procedures. Compare with Dashboards with alerting on error budgets: SLOs guide operational focus.",
       "docs": [
@@ -2280,15 +2280,15 @@
         },
         {
           "id": "b",
-          "text": "Trend metrics before peak seasons"
+          "text": "Annual manual check (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "d",
-          "text": "Annual manual check"
+          "text": "Trend metrics before peak seasons"
         }
       ],
       "correct": [
@@ -2314,23 +2314,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Trend metrics before peak seasons"
-        },
-        {
-          "id": "b",
           "text": "Monitoring utilization and scaling policies"
         },
         {
+          "id": "b",
+          "text": "Dashboards with alerting on error budgets"
+        },
+        {
           "id": "c",
-          "text": "Buy max SKU"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "d",
-          "text": "Ignore growth"
+          "text": "Runbooks and tested backups"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Capacity planning avoids outages. Compare with Monitoring utilization and scaling policies: FinOps uses data to optimize spend.",
       "docs": [
@@ -2356,15 +2356,15 @@
         },
         {
           "id": "b",
-          "text": "Always max SKU"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "c",
-          "text": "Ignore metrics"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Dashboards with alerting on error budgets"
         }
       ],
       "correct": [
@@ -2386,23 +2386,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Runbooks and tested backups"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "c",
-          "text": "No RTO"
+          "text": "Dashboards with alerting on error budgets"
         },
         {
           "id": "d",
-          "text": "Ignore paging"
+          "text": "Monitoring utilization and scaling policies"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operations includes recovery procedures.",
       "docs": [
@@ -2420,23 +2420,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dashboards with alerting on error budgets"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "c",
-          "text": "Annual manual check"
+          "text": "Dashboards with alerting on error budgets"
         },
         {
           "id": "d",
-          "text": "Disable paging"
+          "text": "Trend metrics before peak seasons"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SLOs guide operational focus.",
       "docs": [
@@ -2454,23 +2454,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Trend metrics before peak seasons"
+          "text": "Dashboards with alerting on error budgets"
         },
         {
           "id": "b",
-          "text": "Buy max SKU"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "c",
-          "text": "Ignore growth"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "d",
-          "text": "No forecasts"
+          "text": "Trend metrics before peak seasons"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Capacity planning avoids outages.",
       "docs": [
@@ -2488,23 +2488,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monitoring utilization and scaling policies"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "b",
-          "text": "Always max SKU"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "c",
-          "text": "Ignore metrics"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Dashboards with alerting on error budgets"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "FinOps uses data to optimize spend.",
       "docs": [
@@ -2522,23 +2522,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Runbooks and tested backups"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "c",
-          "text": "No RTO"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "d",
-          "text": "Ignore paging"
+          "text": "Ignore paging (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operations includes recovery procedures.",
       "docs": [
@@ -2560,15 +2560,15 @@
         },
         {
           "id": "b",
-          "text": "Buy max SKU"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "c",
-          "text": "Ignore growth"
+          "text": "Dashboards with alerting on error budgets"
         },
         {
           "id": "d",
-          "text": "No forecasts"
+          "text": "No forecasts (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2590,23 +2590,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monitoring utilization and scaling policies"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "b",
-          "text": "Always max SKU"
+          "text": "Dashboards with alerting on error budgets"
         },
         {
           "id": "c",
-          "text": "Ignore metrics"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Monitoring utilization and scaling policies"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "FinOps uses data to optimize spend.",
       "docs": [
@@ -2624,23 +2624,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dashboards with alerting on error budgets"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "c",
-          "text": "Annual manual check"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "d",
-          "text": "Disable paging"
+          "text": "Dashboards with alerting on error budgets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SLOs guide operational focus.",
       "docs": [
@@ -2658,23 +2658,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Trend metrics before peak seasons"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "b",
-          "text": "Buy max SKU"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "c",
-          "text": "Ignore growth"
+          "text": "Runbooks and tested backups"
         },
         {
           "id": "d",
-          "text": "No forecasts"
+          "text": "Dashboards with alerting on error budgets"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Capacity planning avoids outages.",
       "docs": [
@@ -2692,23 +2692,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Runbooks and tested backups"
+          "text": "Dashboards with alerting on error budgets"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Monitoring utilization and scaling policies"
         },
         {
           "id": "c",
-          "text": "No RTO"
+          "text": "Trend metrics before peak seasons"
         },
         {
           "id": "d",
-          "text": "Ignore paging"
+          "text": "Runbooks and tested backups"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operations includes recovery procedures.",
       "docs": [

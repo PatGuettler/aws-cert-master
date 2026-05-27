@@ -67,142 +67,6 @@
   ],
   "questions": [
     {
-      "id": "pcdo-q001",
-      "domain": "cicd",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud DevOps Engineer and reviewing Bootstrapping a Google Cloud organization for DevOps. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "PCDO exam guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use PCDO exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "PCDO exam guide",
-          "url": "https://cloud.google.com/learn/certification/guides/cloud-devops-engineer"
-        }
-      ]
-    },
-    {
-      "id": "pcdo-q002",
-      "domain": "sre",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud DevOps Engineer and reviewing Building and implementing CI/CD pipelines. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Artifact Registry"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Artifact Registry and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Artifact Registry",
-          "url": "https://cloud.google.com/artifact-registry/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "pcdo-q003",
-      "domain": "monitoring",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud DevOps Engineer and reviewing Implementing service monitoring strategies. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Monitoring"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Cloud Monitoring and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Cloud Monitoring",
-          "url": "https://cloud.google.com/monitoring/docs"
-        }
-      ]
-    },
-    {
-      "id": "pcdo-q004",
-      "domain": "optimization",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud DevOps Engineer and reviewing Optimizing service performance and cost. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cost optimization"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Cost optimization and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Cost optimization",
-          "url": "https://cloud.google.com/architecture/framework/cost-optimization"
-        }
-      ]
-    },
-    {
       "id": "pcdo-q005",
       "domain": "cicd",
       "type": "multiple-choice",
@@ -214,15 +78,15 @@
         },
         {
           "id": "b",
-          "text": "Manual docker load"
+          "text": "No tests"
         },
         {
           "id": "c",
-          "text": "FTP artifacts"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "d",
-          "text": "No tests"
+          "text": "FTP artifacts"
         }
       ],
       "correct": [
@@ -244,23 +108,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Binary Authorization or vulnerability scanning"
+          "text": "PCDO exam guide"
         },
         {
           "id": "b",
-          "text": "Deploy any image"
+          "text": "Latest only (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "d",
-          "text": "Latest only"
+          "text": "Cloud Build"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Scanning gates risky deployments.",
       "docs": [
@@ -278,23 +142,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Build"
+          "text": "PCDO exam guide"
         },
         {
           "id": "b",
-          "text": "Manual docker load"
+          "text": "No tests"
         },
         {
           "id": "c",
-          "text": "FTP artifacts"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "d",
-          "text": "No tests"
+          "text": "Cloud Build"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Build executes build steps.",
       "docs": [
@@ -312,23 +176,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Build"
+          "text": "PCDO exam guide"
         },
         {
           "id": "b",
-          "text": "Manual docker load"
+          "text": "No tests"
         },
         {
           "id": "c",
-          "text": "FTP artifacts"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "d",
-          "text": "No tests"
+          "text": "Cloud Build"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Build executes build steps.",
       "docs": [
@@ -346,23 +210,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Build"
+          "text": "No tests"
         },
         {
           "id": "b",
-          "text": "Manual docker load"
-        },
-        {
-          "id": "c",
           "text": "FTP artifacts"
         },
         {
+          "id": "c",
+          "text": "Cloud Build"
+        },
+        {
           "id": "d",
-          "text": "No tests"
+          "text": "Binary Authorization or vulnerability scanning"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cloud Build executes build steps.",
       "docs": [
@@ -380,23 +244,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Binary Authorization or vulnerability scanning"
+          "text": "Latest only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Deploy any image"
+          "text": "Cloud Build"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "d",
-          "text": "Latest only"
+          "text": "Ignore CVEs (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Scanning gates risky deployments.",
       "docs": [
@@ -414,23 +278,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Binary Authorization or vulnerability scanning"
+          "text": "Latest only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Deploy any image"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "Cloud Build"
         },
         {
           "id": "d",
-          "text": "Latest only"
+          "text": "PCDO exam guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Scanning gates risky deployments.",
       "docs": [
@@ -452,15 +316,15 @@
         },
         {
           "id": "b",
-          "text": "Deploy any image"
+          "text": "Latest only (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "Cloud Build"
         },
         {
           "id": "d",
-          "text": "Latest only"
+          "text": "PCDO exam guide"
         }
       ],
       "correct": [
@@ -482,23 +346,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Build"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "b",
-          "text": "Manual docker load"
+          "text": "No tests"
         },
         {
           "id": "c",
-          "text": "FTP artifacts"
+          "text": "PCDO exam guide"
         },
         {
           "id": "d",
-          "text": "No tests"
+          "text": "Cloud Build"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Build executes build steps.",
       "docs": [
@@ -516,23 +380,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Binary Authorization or vulnerability scanning"
+          "text": "Ignore CVEs (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Deploy any image"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "Cloud Build"
         },
         {
           "id": "d",
-          "text": "Latest only"
+          "text": "Latest only (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Scanning gates risky deployments.",
       "docs": [
@@ -554,11 +418,11 @@
         },
         {
           "id": "b",
-          "text": "Manual docker load"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "c",
-          "text": "FTP artifacts"
+          "text": "PCDO exam guide"
         },
         {
           "id": "d",
@@ -584,23 +448,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Binary Authorization or vulnerability scanning"
+          "text": "Cloud Build"
         },
         {
           "id": "b",
-          "text": "Deploy any image"
+          "text": "Latest only (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "PCDO exam guide"
         },
         {
           "id": "d",
-          "text": "Latest only"
+          "text": "Binary Authorization or vulnerability scanning"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Scanning gates risky deployments.",
       "docs": [
@@ -622,15 +486,15 @@
         },
         {
           "id": "b",
-          "text": "Binary Authorization or vulnerability scanning"
+          "text": "FTP artifacts"
         },
         {
           "id": "c",
-          "text": "Manual docker load"
+          "text": "PCDO exam guide"
         },
         {
           "id": "d",
-          "text": "FTP artifacts"
+          "text": "Binary Authorization or vulnerability scanning"
         }
       ],
       "correct": [
@@ -656,23 +520,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Binary Authorization or vulnerability scanning"
+          "text": "Ignore CVEs (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Cloud Build"
+          "text": "Deploy any image (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Deploy any image"
+          "text": "Binary Authorization or vulnerability scanning"
         },
         {
           "id": "d",
-          "text": "Ignore CVEs"
+          "text": "Cloud Build"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Scanning gates risky deployments. Compare with Cloud Build: Cloud Build executes build steps.",
       "docs": [
@@ -694,23 +558,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "Artifact Registry"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "USB"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Artifact Registry with IAM"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Artifact Registry hosts images and packages.",
       "docs": [
@@ -728,23 +592,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Progressive delivery pipelines"
+          "text": "Artifact Registry"
         },
         {
           "id": "b",
-          "text": "FTP prod"
+          "text": "Big bang"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "d",
-          "text": "Big bang"
+          "text": "Artifact Registry with IAM"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cloud Deploy manages release promotion.",
       "docs": [
@@ -762,23 +626,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry with IAM"
+          "text": "Artifact Registry"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "USB (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Email zip (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Artifact Registry hosts container images.",
       "docs": [
@@ -796,23 +660,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "USB"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Artifact Registry"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Progressive delivery pipelines"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Artifact Registry hosts images and packages.",
       "docs": [
@@ -830,23 +694,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "USB"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Artifact Registry"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Artifact Registry with IAM"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Artifact Registry hosts images and packages.",
       "docs": [
@@ -864,23 +728,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry"
+          "text": "USB"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "Artifact Registry"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Artifact Registry with IAM"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Artifact Registry hosts images and packages.",
       "docs": [
@@ -898,23 +762,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Progressive delivery pipelines"
+          "text": "Artifact Registry"
         },
         {
           "id": "b",
-          "text": "FTP prod"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Big bang"
         },
         {
           "id": "d",
-          "text": "Big bang"
+          "text": "Progressive delivery pipelines"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Deploy manages release promotion.",
       "docs": [
@@ -932,23 +796,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Progressive delivery pipelines"
+          "text": "Big bang"
         },
         {
           "id": "b",
-          "text": "FTP prod"
+          "text": "Artifact Registry"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "d",
-          "text": "Big bang"
+          "text": "Progressive delivery pipelines"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Deploy manages release promotion.",
       "docs": [
@@ -970,15 +834,15 @@
         },
         {
           "id": "b",
-          "text": "FTP prod"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Big bang"
         },
         {
           "id": "d",
-          "text": "Big bang"
+          "text": "Artifact Registry"
         }
       ],
       "correct": [
@@ -1000,23 +864,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry with IAM"
+          "text": "Artifact Registry"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "USB (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Artifact Registry with IAM"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Artifact Registry hosts container images.",
       "docs": [
@@ -1034,23 +898,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry with IAM"
+          "text": "USB (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "Artifact Registry"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Progressive delivery pipelines"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Artifact Registry hosts container images.",
       "docs": [
@@ -1072,15 +936,15 @@
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Artifact Registry"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "USB (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1106,15 +970,15 @@
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "USB"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Progressive delivery pipelines"
         }
       ],
       "correct": [
@@ -1136,15 +1000,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Progressive delivery pipelines"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "b",
-          "text": "FTP prod"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Artifact Registry"
         },
         {
           "id": "d",
@@ -1152,7 +1016,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud Deploy manages release promotion.",
       "docs": [
@@ -1170,23 +1034,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry with IAM"
+          "text": "USB (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Artifact Registry"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Artifact Registry hosts container images.",
       "docs": [
@@ -1204,23 +1068,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry"
+          "text": "USB"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Artifact Registry"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Artifact Registry hosts images and packages.",
       "docs": [
@@ -1242,15 +1106,15 @@
         },
         {
           "id": "b",
-          "text": "FTP prod"
+          "text": "Artifact Registry"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Big bang"
         },
         {
           "id": "d",
-          "text": "Big bang"
+          "text": "Artifact Registry with IAM"
         }
       ],
       "correct": [
@@ -1272,23 +1136,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry with IAM"
+          "text": "Progressive delivery pipelines"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "USB (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Artifact Registry"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Artifact Registry with IAM"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Artifact Registry hosts container images.",
       "docs": [
@@ -1306,23 +1170,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Artifact Registry"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "b",
-          "text": "Public FTP"
+          "text": "Artifact Registry"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "USB"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Progressive delivery pipelines"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Artifact Registry hosts images and packages.",
       "docs": [
@@ -1344,15 +1208,15 @@
         },
         {
           "id": "b",
-          "text": "FTP prod"
+          "text": "Big bang"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Artifact Registry with IAM"
         },
         {
           "id": "d",
-          "text": "Big bang"
+          "text": "Artifact Registry"
         }
       ],
       "correct": [
@@ -1378,15 +1242,15 @@
         },
         {
           "id": "b",
-          "text": "Hope users call"
+          "text": "Ping script (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "Service-level objectives and burn alerts"
         }
       ],
       "correct": [
@@ -1408,23 +1272,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Service-level objectives and burn alerts"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "b",
-          "text": "No SLOs"
+          "text": "Cloud Monitoring alerting policies"
         },
         {
           "id": "c",
-          "text": "Hope users call"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Service-level objectives and burn alerts"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SLOs align ops with reliability targets.",
       "docs": [
@@ -1442,23 +1306,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring alerting policies"
+          "text": "Ping script (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hope users call"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Cloud Monitoring alerting policies"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "Cloud Monitoring"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Monitoring integrates metrics and SLOs.",
       "docs": [
@@ -1476,23 +1340,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring alerting policies"
+          "text": "No metrics (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hope users call"
+          "text": "Ping script (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Cloud Monitoring alerting policies"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "Service-level objectives and burn alerts"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Monitoring integrates metrics and SLOs.",
       "docs": [
@@ -1514,15 +1378,15 @@
         },
         {
           "id": "b",
-          "text": "Hope users call"
+          "text": "Ping script (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "Cloud Monitoring"
         }
       ],
       "correct": [
@@ -1544,23 +1408,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Service-level objectives and burn alerts"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No SLOs"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "c",
-          "text": "Hope users call"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Cloud Monitoring alerting policies"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SLOs align ops with reliability targets.",
       "docs": [
@@ -1578,23 +1442,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Service-level objectives and burn alerts"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "b",
-          "text": "No SLOs"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "c",
-          "text": "Hope users call"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Cloud Monitoring alerting policies"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SLOs align ops with reliability targets.",
       "docs": [
@@ -1612,23 +1476,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Service-level objectives and burn alerts"
+          "text": "Hope users call (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No SLOs"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "c",
-          "text": "Hope users call"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Cloud Monitoring alerting policies"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SLOs align ops with reliability targets.",
       "docs": [
@@ -1646,23 +1510,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring alerting policies"
+          "text": "Ping script (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hope users call"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Cloud Monitoring alerting policies"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "No metrics (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Monitoring integrates metrics and SLOs.",
       "docs": [
@@ -1680,23 +1544,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Service-level objectives and burn alerts"
+          "text": "Cloud Monitoring alerting policies"
         },
         {
           "id": "b",
-          "text": "No SLOs"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "c",
-          "text": "Hope users call"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Ping only (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SLOs align ops with reliability targets.",
       "docs": [
@@ -1718,15 +1582,15 @@
         },
         {
           "id": "b",
-          "text": "Hope users call"
+          "text": "Ping script (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "Cloud Monitoring"
         }
       ],
       "correct": [
@@ -1752,15 +1616,15 @@
         },
         {
           "id": "b",
-          "text": "No SLOs"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "c",
-          "text": "Hope users call"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Cloud Monitoring alerting policies"
         }
       ],
       "correct": [
@@ -1782,23 +1646,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring alerting policies"
+          "text": "No metrics (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Service-level objectives and burn alerts"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "c",
-          "text": "Hope users call"
+          "text": "Cloud Monitoring alerting policies"
         },
         {
           "id": "d",
-          "text": "No metrics"
+          "text": "Service-level objectives and burn alerts"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Monitoring integrates metrics and SLOs. Compare with Service-level objectives and burn alerts: SLOs align ops with reliability targets.",
       "docs": [
@@ -1820,7 +1684,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Service-level objectives and burn alerts"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "b",
@@ -1828,15 +1692,15 @@
         },
         {
           "id": "c",
-          "text": "No SLOs"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "d",
-          "text": "Hope users call"
+          "text": "Hope users call (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SLOs align ops with reliability targets. Compare with Cloud Monitoring alerting policies: Monitoring integrates metrics and SLOs.",
       "docs": [
@@ -1858,23 +1722,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring alerting policies"
+          "text": "No metrics (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hope users call"
+          "text": "Cloud Monitoring alerting policies"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Service-level objectives and burn alerts"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "Ping script (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Monitoring integrates metrics and SLOs.",
       "docs": [
@@ -1896,15 +1760,15 @@
         },
         {
           "id": "b",
-          "text": "No SLOs"
+          "text": "Cloud Monitoring alerting policies"
         },
         {
           "id": "c",
-          "text": "Hope users call"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Ping only (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1926,23 +1790,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring alerting policies"
+          "text": "Ping script (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hope users call"
+          "text": "No metrics (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Cloud Monitoring alerting policies"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "Service-level objectives and burn alerts"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Monitoring integrates metrics and SLOs.",
       "docs": [
@@ -1960,23 +1824,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring SLOs and error budgets"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "b",
-          "text": "100% uptime heroics"
+          "text": "No postmortems (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual only ops"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "d",
-          "text": "No postmortems"
+          "text": "Cloud Monitoring SLOs and error budgets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SLOs balance reliability and release velocity.",
       "docs": [
@@ -1994,23 +1858,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cost optimization in the Architecture Framework"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "b",
-          "text": "Ignore billing"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "c",
-          "text": "Single SKU forever"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "d",
-          "text": "No labels"
+          "text": "Cost optimization"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Framework guidance helps right-size workloads.",
       "docs": [
@@ -2028,23 +1892,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monitoring rightsizing recommendations"
+          "text": "Cost optimization"
         },
         {
           "id": "b",
-          "text": "Max SKU always"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "c",
-          "text": "Ignore metrics"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "d",
-          "text": "Delete dashboards"
+          "text": "Cost optimization in the Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Rightsizing reduces waste.",
       "docs": [
@@ -2062,23 +1926,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring SLOs and error budgets"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "b",
-          "text": "100% uptime heroics"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "c",
-          "text": "Manual only ops"
+          "text": "No postmortems (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No postmortems"
+          "text": "Cloud Monitoring SLOs and error budgets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SLOs balance reliability and release velocity.",
       "docs": [
@@ -2096,23 +1960,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring SLOs and error budgets"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "b",
-          "text": "100% uptime heroics"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "c",
-          "text": "Manual only ops"
+          "text": "No postmortems (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No postmortems"
+          "text": "Cloud Monitoring SLOs and error budgets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SLOs balance reliability and release velocity.",
       "docs": [
@@ -2130,23 +1994,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring SLOs and error budgets"
+          "text": "Cost optimization"
         },
         {
           "id": "b",
-          "text": "100% uptime heroics"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "c",
-          "text": "Manual only ops"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "d",
-          "text": "No postmortems"
+          "text": "Monitoring rightsizing recommendations"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SLOs balance reliability and release velocity.",
       "docs": [
@@ -2164,23 +2028,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cost optimization in the Architecture Framework"
+          "text": "Cost optimization"
         },
         {
           "id": "b",
-          "text": "Ignore billing"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "c",
-          "text": "Single SKU forever"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "d",
-          "text": "No labels"
+          "text": "Monitoring rightsizing recommendations"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Framework guidance helps right-size workloads.",
       "docs": [
@@ -2198,23 +2062,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cost optimization in the Architecture Framework"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "b",
-          "text": "Ignore billing"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "c",
-          "text": "Single SKU forever"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "d",
-          "text": "No labels"
+          "text": "No labels (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Framework guidance helps right-size workloads.",
       "docs": [
@@ -2232,23 +2096,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cost optimization in the Architecture Framework"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "b",
-          "text": "Ignore billing"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "c",
-          "text": "Single SKU forever"
+          "text": "Cost optimization"
         },
         {
           "id": "d",
-          "text": "No labels"
+          "text": "Cost optimization in the Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Framework guidance helps right-size workloads.",
       "docs": [
@@ -2266,23 +2130,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monitoring rightsizing recommendations"
+          "text": "Cost optimization"
         },
         {
           "id": "b",
-          "text": "Max SKU always"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "c",
-          "text": "Ignore metrics"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "d",
-          "text": "Delete dashboards"
+          "text": "Cloud Monitoring SLOs and error budgets"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Rightsizing reduces waste.",
       "docs": [
@@ -2300,23 +2164,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monitoring rightsizing recommendations"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "b",
-          "text": "Max SKU always"
+          "text": "Delete dashboards"
         },
         {
           "id": "c",
-          "text": "Ignore metrics"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "d",
-          "text": "Delete dashboards"
+          "text": "Monitoring rightsizing recommendations"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Rightsizing reduces waste.",
       "docs": [
@@ -2334,23 +2198,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monitoring rightsizing recommendations"
+          "text": "Cost optimization"
         },
         {
           "id": "b",
-          "text": "Max SKU always"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "c",
-          "text": "Ignore metrics"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "d",
-          "text": "Delete dashboards"
+          "text": "Monitoring rightsizing recommendations"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Rightsizing reduces waste.",
       "docs": [
@@ -2368,23 +2232,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring SLOs and error budgets"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "b",
-          "text": "100% uptime heroics"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "c",
-          "text": "Manual only ops"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "d",
-          "text": "No postmortems"
+          "text": "Cost optimization"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SLOs balance reliability and release velocity.",
       "docs": [
@@ -2402,23 +2266,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cost optimization in the Architecture Framework"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "b",
-          "text": "Ignore billing"
+          "text": "No labels (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Single SKU forever"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "d",
-          "text": "No labels"
+          "text": "Cost optimization in the Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Framework guidance helps right-size workloads.",
       "docs": [
@@ -2440,15 +2304,15 @@
         },
         {
           "id": "b",
-          "text": "Max SKU always"
+          "text": "Cost optimization"
         },
         {
           "id": "c",
-          "text": "Ignore metrics"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "d",
-          "text": "Delete dashboards"
+          "text": "Cloud Monitoring SLOs and error budgets"
         }
       ],
       "correct": [
@@ -2470,23 +2334,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring SLOs and error budgets"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "b",
-          "text": "100% uptime heroics"
+          "text": "No postmortems (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual only ops"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "d",
-          "text": "No postmortems"
+          "text": "Cost optimization in the Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SLOs balance reliability and release velocity.",
       "docs": [
@@ -2504,23 +2368,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cost optimization in the Architecture Framework"
+          "text": "Monitoring rightsizing recommendations"
         },
         {
           "id": "b",
-          "text": "Ignore billing"
+          "text": "Cloud Monitoring SLOs and error budgets"
         },
         {
           "id": "c",
-          "text": "Single SKU forever"
+          "text": "Cost optimization in the Architecture Framework"
         },
         {
           "id": "d",
-          "text": "No labels"
+          "text": "No labels (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Framework guidance helps right-size workloads.",
       "docs": [

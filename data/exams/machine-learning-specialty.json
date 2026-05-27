@@ -79,142 +79,6 @@
   ],
   "questions": [
     {
-      "id": "mls-q001",
-      "domain": "data-engineering",
-      "type": "multiple-choice",
-      "text": "You are preparing for AWS Certified Machine Learning \u2013 Specialty and reviewing Data Engineering. Which source aligns with official AWS exam guides and documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "MLS-C01 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use MLS-C01 Exam Guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "MLS-C01 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/"
-        }
-      ]
-    },
-    {
-      "id": "mls-q002",
-      "domain": "eda",
-      "type": "multiple-choice",
-      "text": "You are preparing for AWS Certified Machine Learning \u2013 Specialty and reviewing Exploratory Data Analysis. Which source aligns with official AWS exam guides and documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker Studio"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use SageMaker Studio and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "SageMaker Studio",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q003",
-      "domain": "modeling",
-      "type": "multiple-choice",
-      "text": "You are preparing for AWS Certified Machine Learning \u2013 Specialty and reviewing Modeling. Which source aligns with official AWS exam guides and documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker training"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use SageMaker training and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "SageMaker training",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
-        }
-      ]
-    },
-    {
-      "id": "mls-q004",
-      "domain": "ml-operations",
-      "type": "multiple-choice",
-      "text": "You are preparing for AWS Certified Machine Learning \u2013 Specialty and reviewing Machine Learning Implementation and Operations. Which source aligns with official AWS exam guides and documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SageMaker endpoints"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use SageMaker endpoints and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "SageMaker endpoints",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html"
-        }
-      ]
-    },
-    {
       "id": "mls-q005",
       "domain": "data-engineering",
       "type": "multiple-choice",
@@ -222,23 +86,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Excel only forever"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "c",
-          "text": "Manual copy USB"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Amazon SageMaker Data Wrangler"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data Wrangler accelerates feature engineering.",
       "docs": [
@@ -256,23 +120,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "AWS Glue"
         },
         {
           "id": "d",
-          "text": "Public FTP"
+          "text": "Amazon SageMaker Ground Truth"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Glue provides serverless Spark ETL.",
       "docs": [
@@ -290,23 +154,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Ground Truth"
+          "text": "Public bucket (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Manual sticky notes"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "c",
-          "text": "No QA"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "d",
-          "text": "Public bucket"
+          "text": "Amazon Kinesis Data Firehose to S3"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Ground Truth manages labeling workflows.",
       "docs": [
@@ -324,23 +188,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Feature Store"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "b",
-          "text": "CSV email"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "No schema"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "d",
-          "text": "Delete versions"
+          "text": "MLS-C01 Exam Guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Feature Store shares consistent features.",
       "docs": [
@@ -358,23 +222,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Kinesis Data Firehose to S3"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "b",
-          "text": "FTP batch only"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Firehose loads streams for training pipelines.",
       "docs": [
@@ -392,23 +256,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Excel only forever"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "Manual copy USB"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Amazon Kinesis Data Firehose to S3"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Data Wrangler accelerates feature engineering.",
       "docs": [
@@ -426,23 +290,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Excel only forever"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "c",
-          "text": "Manual copy USB"
+          "text": "MLS-C01 Exam Guide"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Amazon Kinesis Data Firehose to S3"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data Wrangler accelerates feature engineering.",
       "docs": [
@@ -460,23 +324,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "b",
-          "text": "Excel only forever"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "c",
-          "text": "Manual copy USB"
+          "text": "AWS Glue"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Amazon SageMaker Feature Store"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data Wrangler accelerates feature engineering.",
       "docs": [
@@ -494,23 +358,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "d",
-          "text": "Public FTP"
+          "text": "Amazon SageMaker Feature Store"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Glue provides serverless Spark ETL.",
       "docs": [
@@ -528,23 +392,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "d",
-          "text": "Public FTP"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Glue provides serverless Spark ETL.",
       "docs": [
@@ -562,23 +426,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "d",
-          "text": "Public FTP"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Glue provides serverless Spark ETL.",
       "docs": [
@@ -600,15 +464,15 @@
         },
         {
           "id": "b",
-          "text": "Manual sticky notes"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "c",
-          "text": "No QA"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "d",
-          "text": "Public bucket"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
@@ -634,15 +498,15 @@
         },
         {
           "id": "b",
-          "text": "Manual sticky notes"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "No QA"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "d",
-          "text": "Public bucket"
+          "text": "Amazon Kinesis Data Firehose to S3"
         }
       ],
       "correct": [
@@ -668,15 +532,15 @@
         },
         {
           "id": "b",
-          "text": "Manual sticky notes"
+          "text": "MLS-C01 Exam Guide"
         },
         {
           "id": "c",
-          "text": "No QA"
+          "text": "AWS Glue"
         },
         {
           "id": "d",
-          "text": "Public bucket"
+          "text": "Amazon SageMaker Data Wrangler"
         }
       ],
       "correct": [
@@ -702,15 +566,15 @@
         },
         {
           "id": "b",
-          "text": "CSV email"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "c",
-          "text": "No schema"
+          "text": "Delete versions (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Delete versions"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
@@ -732,23 +596,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Feature Store"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "b",
-          "text": "CSV email"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "No schema"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "d",
-          "text": "Delete versions"
+          "text": "Amazon SageMaker Feature Store"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Feature Store shares consistent features.",
       "docs": [
@@ -766,23 +630,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Feature Store"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "b",
-          "text": "CSV email"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "No schema"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "d",
-          "text": "Delete versions"
+          "text": "Amazon SageMaker Ground Truth"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Feature Store shares consistent features.",
       "docs": [
@@ -800,23 +664,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Kinesis Data Firehose to S3"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "b",
-          "text": "FTP batch only"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "AWS Glue"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Amazon Kinesis Data Firehose to S3"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Firehose loads streams for training pipelines.",
       "docs": [
@@ -834,23 +698,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Kinesis Data Firehose to S3"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "FTP batch only"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Firehose loads streams for training pipelines.",
       "docs": [
@@ -868,23 +732,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Kinesis Data Firehose to S3"
+          "text": "AWS Glue"
         },
         {
           "id": "b",
-          "text": "FTP batch only"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Amazon SageMaker Ground Truth"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Firehose loads streams for training pipelines.",
       "docs": [
@@ -902,23 +766,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "AWS Glue"
         },
         {
           "id": "b",
-          "text": "Excel only forever"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "Manual copy USB"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Amazon SageMaker Data Wrangler"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data Wrangler accelerates feature engineering.",
       "docs": [
@@ -936,23 +800,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Amazon Kinesis Data Firehose to S3"
         },
         {
           "id": "d",
-          "text": "Public FTP"
+          "text": "Amazon SageMaker Feature Store"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Glue provides serverless Spark ETL.",
       "docs": [
@@ -970,23 +834,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Studio notebooks"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "b",
-          "text": "Notepad only"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Amazon Athena"
         },
         {
           "id": "d",
-          "text": "Shared prod creds"
+          "text": "SageMaker Data Wrangler insights"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Studio provides collaborative ML IDE.",
       "docs": [
@@ -1004,23 +868,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Athena"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "b",
-          "text": "Manual USB"
+          "text": "SageMaker Studio"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Amazon Athena"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Athena SQL explores S3 data.",
       "docs": [
@@ -1038,23 +902,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Clarify"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "b",
-          "text": "Ignore segments"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Amazon Athena"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Clarify analyzes bias during EDA.",
       "docs": [
@@ -1072,23 +936,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Data Wrangler insights"
+          "text": "SageMaker Studio"
         },
         {
           "id": "b",
-          "text": "Eyeball only"
+          "text": "Amazon Athena"
         },
         {
           "id": "c",
-          "text": "Sample one row"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "d",
-          "text": "No stats"
+          "text": "Amazon SageMaker Studio notebooks"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Profiling guides cleaning steps.",
       "docs": [
@@ -1110,15 +974,15 @@
         },
         {
           "id": "b",
-          "text": "Notepad only"
+          "text": "SageMaker Studio"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Amazon Athena"
         },
         {
           "id": "d",
-          "text": "Shared prod creds"
+          "text": "Amazon SageMaker Clarify"
         }
       ],
       "correct": [
@@ -1140,23 +1004,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Studio notebooks"
+          "text": "SageMaker Studio"
         },
         {
           "id": "b",
-          "text": "Notepad only"
+          "text": "Amazon Athena"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "d",
-          "text": "Shared prod creds"
+          "text": "Amazon SageMaker Studio notebooks"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Studio provides collaborative ML IDE.",
       "docs": [
@@ -1174,15 +1038,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Studio notebooks"
+          "text": "Amazon Athena"
         },
         {
           "id": "b",
-          "text": "Notepad only"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "d",
@@ -1190,7 +1054,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Studio provides collaborative ML IDE.",
       "docs": [
@@ -1208,23 +1072,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Athena"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "b",
-          "text": "Manual USB"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Amazon Athena"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Amazon SageMaker Clarify"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Athena SQL explores S3 data.",
       "docs": [
@@ -1246,15 +1110,15 @@
         },
         {
           "id": "b",
-          "text": "Manual USB"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Amazon SageMaker Clarify"
         }
       ],
       "correct": [
@@ -1276,23 +1140,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Athena"
+          "text": "SageMaker Studio"
         },
         {
           "id": "b",
-          "text": "Manual USB"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Amazon Athena"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Athena SQL explores S3 data.",
       "docs": [
@@ -1314,15 +1178,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore segments"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Amazon Athena"
         }
       ],
       "correct": [
@@ -1348,15 +1212,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore segments"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Amazon Athena"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Amazon SageMaker Studio notebooks"
         }
       ],
       "correct": [
@@ -1378,23 +1242,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Clarify"
+          "text": "SageMaker Studio"
         },
         {
           "id": "b",
-          "text": "Ignore segments"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Amazon SageMaker Clarify"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Clarify analyzes bias during EDA.",
       "docs": [
@@ -1412,23 +1276,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Data Wrangler insights"
+          "text": "Amazon Athena"
         },
         {
           "id": "b",
-          "text": "Eyeball only"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "c",
-          "text": "Sample one row"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "d",
-          "text": "No stats"
+          "text": "No stats (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Profiling guides cleaning steps.",
       "docs": [
@@ -1446,23 +1310,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Data Wrangler insights"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "b",
-          "text": "Eyeball only"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "c",
-          "text": "Sample one row"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "d",
-          "text": "No stats"
+          "text": "SageMaker Studio"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Profiling guides cleaning steps.",
       "docs": [
@@ -1480,23 +1344,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Data Wrangler insights"
+          "text": "Amazon Athena"
         },
         {
           "id": "b",
-          "text": "Eyeball only"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "c",
-          "text": "Sample one row"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "d",
-          "text": "No stats"
+          "text": "SageMaker Data Wrangler insights"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Profiling guides cleaning steps.",
       "docs": [
@@ -1514,23 +1378,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Studio notebooks"
+          "text": "SageMaker Studio"
         },
         {
           "id": "b",
-          "text": "Notepad only"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "d",
-          "text": "Shared prod creds"
+          "text": "SageMaker Data Wrangler insights"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Studio provides collaborative ML IDE.",
       "docs": [
@@ -1548,23 +1412,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Athena"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "b",
-          "text": "Manual USB"
+          "text": "Amazon SageMaker Studio notebooks"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Amazon Athena"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "SageMaker Data Wrangler insights"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Athena SQL explores S3 data.",
       "docs": [
@@ -1582,23 +1446,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Clarify"
+          "text": "Amazon Athena"
         },
         {
           "id": "b",
-          "text": "Ignore segments"
+          "text": "Delete logs"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "SageMaker Data Wrangler insights"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Amazon SageMaker Clarify"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Clarify analyzes bias during EDA.",
       "docs": [
@@ -1616,23 +1480,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker built-in algorithms"
+          "text": "SageMaker training"
         },
         {
           "id": "b",
-          "text": "Manual C only"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "c",
-          "text": "No evaluation"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "d",
-          "text": "Leak test labels"
+          "text": "Amazon SageMaker automatic model tuning"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Built-ins cover common ML tasks.",
       "docs": [
@@ -1654,15 +1518,15 @@
         },
         {
           "id": "b",
-          "text": "Guess parameters"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "One manual run"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "d",
-          "text": "Disable validation"
+          "text": "SageMaker distributed training"
         }
       ],
       "correct": [
@@ -1684,23 +1548,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker distributed training"
+          "text": "SageMaker training"
         },
         {
           "id": "b",
-          "text": "Single thread only"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "c",
-          "text": "No GPU"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "d",
-          "text": "FTP data"
+          "text": "Amazon SageMaker automatic model tuning"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Distributed jobs scale training.",
       "docs": [
@@ -1718,23 +1582,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Feature Store"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "b",
-          "text": "CSV in email"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "d",
-          "text": "Shared prod keys"
+          "text": "SageMaker distributed training"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Feature Store shares features across teams.",
       "docs": [
@@ -1752,23 +1616,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker batch transform"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "b",
-          "text": "Real-time only always"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "c",
-          "text": "Manual loop"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "d",
-          "text": "No S3"
+          "text": "Amazon SageMaker Feature Store"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Batch transform scores large datasets.",
       "docs": [
@@ -1786,23 +1650,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker built-in algorithms"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "b",
-          "text": "Manual C only"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "c",
-          "text": "No evaluation"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "d",
-          "text": "Leak test labels"
+          "text": "SageMaker distributed training"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Built-ins cover common ML tasks.",
       "docs": [
@@ -1820,23 +1684,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker built-in algorithms"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Manual C only"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "c",
-          "text": "No evaluation"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "d",
-          "text": "Leak test labels"
+          "text": "Amazon SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Built-ins cover common ML tasks.",
       "docs": [
@@ -1854,23 +1718,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker built-in algorithms"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "b",
-          "text": "Manual C only"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "No evaluation"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "d",
-          "text": "Leak test labels"
+          "text": "Amazon SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Built-ins cover common ML tasks.",
       "docs": [
@@ -1888,23 +1752,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker automatic model tuning"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Guess parameters"
+          "text": "Disable validation (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "One manual run"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "d",
-          "text": "Disable validation"
+          "text": "Amazon SageMaker automatic model tuning"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Tuning searches hyperparameter space.",
       "docs": [
@@ -1922,23 +1786,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker automatic model tuning"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "b",
-          "text": "Guess parameters"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "One manual run"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "d",
-          "text": "Disable validation"
+          "text": "Amazon SageMaker automatic model tuning"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Tuning searches hyperparameter space.",
       "docs": [
@@ -1956,23 +1820,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker automatic model tuning"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "b",
-          "text": "Guess parameters"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "c",
-          "text": "One manual run"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "d",
-          "text": "Disable validation"
+          "text": "Disable validation (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Tuning searches hyperparameter space.",
       "docs": [
@@ -1994,11 +1858,11 @@
         },
         {
           "id": "b",
-          "text": "Single thread only"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "No GPU"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "d",
@@ -2024,23 +1888,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker distributed training"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Single thread only"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "c",
-          "text": "No GPU"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "d",
-          "text": "FTP data"
+          "text": "Amazon SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Distributed jobs scale training.",
       "docs": [
@@ -2058,23 +1922,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker distributed training"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "b",
-          "text": "Single thread only"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "c",
-          "text": "No GPU"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "d",
-          "text": "FTP data"
+          "text": "SageMaker distributed training"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Distributed jobs scale training.",
       "docs": [
@@ -2092,23 +1956,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Feature Store"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "b",
-          "text": "CSV in email"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "d",
-          "text": "Shared prod keys"
+          "text": "Amazon SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Feature Store shares features across teams.",
       "docs": [
@@ -2126,23 +1990,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Feature Store"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "b",
-          "text": "CSV in email"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "d",
-          "text": "Shared prod keys"
+          "text": "SageMaker batch transform"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Feature Store shares features across teams.",
       "docs": [
@@ -2160,23 +2024,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Feature Store"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "b",
-          "text": "CSV in email"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "d",
-          "text": "Shared prod keys"
+          "text": "Amazon SageMaker Feature Store"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Feature Store shares features across teams.",
       "docs": [
@@ -2194,23 +2058,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker batch transform"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "b",
-          "text": "Real-time only always"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "c",
-          "text": "Manual loop"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "d",
-          "text": "No S3"
+          "text": "SageMaker distributed training"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Batch transform scores large datasets.",
       "docs": [
@@ -2228,23 +2092,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker batch transform"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "b",
-          "text": "Real-time only always"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "c",
-          "text": "Manual loop"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "d",
-          "text": "No S3"
+          "text": "SageMaker training"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Batch transform scores large datasets.",
       "docs": [
@@ -2262,23 +2126,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker batch transform"
+          "text": "No S3"
         },
         {
           "id": "b",
-          "text": "Real-time only always"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "c",
-          "text": "Manual loop"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "d",
-          "text": "No S3"
+          "text": "Amazon SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Batch transform scores large datasets.",
       "docs": [
@@ -2296,23 +2160,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker built-in algorithms"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "b",
-          "text": "Manual C only"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "c",
-          "text": "No evaluation"
+          "text": "SageMaker training"
         },
         {
           "id": "d",
-          "text": "Leak test labels"
+          "text": "SageMaker batch transform"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Built-ins cover common ML tasks.",
       "docs": [
@@ -2334,15 +2198,15 @@
         },
         {
           "id": "b",
-          "text": "Guess parameters"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "c",
-          "text": "One manual run"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "d",
-          "text": "Disable validation"
+          "text": "SageMaker distributed training"
         }
       ],
       "correct": [
@@ -2364,23 +2228,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker distributed training"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "b",
-          "text": "Single thread only"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "c",
-          "text": "No GPU"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "d",
-          "text": "FTP data"
+          "text": "Amazon SageMaker Feature Store"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Distributed jobs scale training.",
       "docs": [
@@ -2398,23 +2262,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Feature Store"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "b",
-          "text": "CSV in email"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "d",
-          "text": "Shared prod keys"
+          "text": "Amazon SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Feature Store shares features across teams.",
       "docs": [
@@ -2432,23 +2296,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker batch transform"
+          "text": "Amazon SageMaker built-in algorithms"
         },
         {
           "id": "b",
-          "text": "Real-time only always"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "c",
-          "text": "Manual loop"
+          "text": "SageMaker batch transform"
         },
         {
           "id": "d",
-          "text": "No S3"
+          "text": "Amazon SageMaker automatic model tuning"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Batch transform scores large datasets.",
       "docs": [
@@ -2466,23 +2330,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker built-in algorithms"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Manual C only"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "c",
-          "text": "No evaluation"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "d",
-          "text": "Leak test labels"
+          "text": "Amazon SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Built-ins cover common ML tasks.",
       "docs": [
@@ -2500,23 +2364,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker automatic model tuning"
+          "text": "SageMaker training"
         },
         {
           "id": "b",
-          "text": "Guess parameters"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "c",
-          "text": "One manual run"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "d",
-          "text": "Disable validation"
+          "text": "Amazon SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Tuning searches hyperparameter space.",
       "docs": [
@@ -2534,23 +2398,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker distributed training"
+          "text": "Amazon SageMaker automatic model tuning"
         },
         {
           "id": "b",
-          "text": "Single thread only"
+          "text": "FTP data"
         },
         {
           "id": "c",
-          "text": "No GPU"
+          "text": "SageMaker distributed training"
         },
         {
           "id": "d",
-          "text": "FTP data"
+          "text": "No GPU"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Distributed jobs scale training.",
       "docs": [
@@ -2572,11 +2436,11 @@
         },
         {
           "id": "b",
-          "text": "Batch only always"
+          "text": "SageMaker endpoints"
         },
         {
           "id": "c",
-          "text": "FTP model"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "d",
@@ -2602,23 +2466,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Model Monitor"
+          "text": "Delete logs (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore drift"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "No baselines"
+          "text": "Amazon SageMaker endpoints"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "SageMaker endpoints"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Model Monitor tracks data and quality drift.",
       "docs": [
@@ -2636,23 +2500,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker endpoints"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "b",
-          "text": "Batch only always"
+          "text": "Amazon SageMaker endpoints"
         },
         {
           "id": "c",
-          "text": "FTP model"
+          "text": "Email weights"
         },
         {
           "id": "d",
-          "text": "Email weights"
+          "text": "SageMaker endpoints"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Endpoints host models for low-latency inference.",
       "docs": [
@@ -2670,23 +2534,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker endpoints"
+          "text": "SageMaker endpoints"
         },
         {
           "id": "b",
-          "text": "Batch only always"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "FTP model"
+          "text": "Email weights"
         },
         {
           "id": "d",
-          "text": "Email weights"
+          "text": "Amazon SageMaker endpoints"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Endpoints host models for low-latency inference.",
       "docs": [
@@ -2704,23 +2568,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker endpoints"
+          "text": "Email weights"
         },
         {
           "id": "b",
-          "text": "Batch only always"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "FTP model"
+          "text": "Amazon SageMaker endpoints"
         },
         {
           "id": "d",
-          "text": "Email weights"
+          "text": "FTP model"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Endpoints host models for low-latency inference.",
       "docs": [
@@ -2738,23 +2602,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Model Monitor"
+          "text": "SageMaker endpoints"
         },
         {
           "id": "b",
-          "text": "Ignore drift"
+          "text": "Amazon SageMaker endpoints"
         },
         {
           "id": "c",
-          "text": "No baselines"
+          "text": "Delete logs (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Amazon SageMaker Model Monitor"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Model Monitor tracks data and quality drift.",
       "docs": [
@@ -2772,23 +2636,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Model Monitor"
+          "text": "SageMaker endpoints"
         },
         {
           "id": "b",
-          "text": "Ignore drift"
+          "text": "Delete logs (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No baselines"
+          "text": "Amazon SageMaker endpoints"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Amazon SageMaker Model Monitor"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Model Monitor tracks data and quality drift.",
       "docs": [
@@ -2810,15 +2674,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore drift"
+          "text": "SageMaker endpoints"
         },
         {
           "id": "c",
-          "text": "No baselines"
+          "text": "Amazon SageMaker endpoints"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Delete logs (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2844,11 +2708,11 @@
         },
         {
           "id": "b",
-          "text": "Batch only always"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "FTP model"
+          "text": "SageMaker endpoints"
         },
         {
           "id": "d",
@@ -2878,15 +2742,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore drift"
+          "text": "Amazon SageMaker endpoints"
         },
         {
           "id": "c",
-          "text": "No baselines"
+          "text": "Delete logs (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "SageMaker endpoints"
         }
       ],
       "correct": [
@@ -2908,23 +2772,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker endpoints"
+          "text": "Email weights"
         },
         {
           "id": "b",
-          "text": "Batch only always"
+          "text": "Amazon SageMaker endpoints"
         },
         {
           "id": "c",
-          "text": "FTP model"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "d",
-          "text": "Email weights"
+          "text": "FTP model"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Endpoints host models for low-latency inference.",
       "docs": [

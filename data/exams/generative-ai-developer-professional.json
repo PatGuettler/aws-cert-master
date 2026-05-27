@@ -82,7 +82,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock"
+          "text": "Public API keys in repo"
         },
         {
           "id": "b",
@@ -90,15 +90,15 @@
         },
         {
           "id": "c",
-          "text": "FTP prompts"
+          "text": "Bedrock ConverseStream API"
         },
         {
           "id": "d",
-          "text": "Public API keys in repo"
+          "text": "Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Bedrock abstracts model providers.",
       "docs": [
@@ -116,23 +116,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bedrock model IDs and inference profiles"
+          "text": "Imported models in Bedrock or SageMaker endpoints"
         },
         {
           "id": "b",
-          "text": "Always largest model"
+          "text": "Adapter layer with model routing"
         },
         {
           "id": "c",
-          "text": "Ignore cost"
+          "text": "Bedrock ConverseStream API"
         },
         {
           "id": "d",
-          "text": "No evaluation"
+          "text": "Bedrock model IDs and inference profiles"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Different models optimize for speed, cost, or capability.",
       "docs": [
@@ -150,23 +150,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bedrock ConverseStream API"
+          "text": "Imported models in Bedrock or SageMaker endpoints"
         },
         {
           "id": "b",
-          "text": "Poll S3 for full response only"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Block UI until done"
+          "text": "Provisioned Throughput on Bedrock"
         },
         {
           "id": "d",
-          "text": "Disable TLS"
+          "text": "Bedrock ConverseStream API"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Streaming improves perceived latency.",
       "docs": [
@@ -184,23 +184,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Provisioned Throughput on Bedrock"
+          "text": "Bedrock model IDs and inference profiles"
         },
         {
           "id": "b",
-          "text": "On-demand only for constant flood"
+          "text": "Bedrock model customization"
         },
         {
           "id": "c",
-          "text": "Ignore quotas"
+          "text": "Provisioned Throughput on Bedrock"
         },
         {
           "id": "d",
-          "text": "No monitoring"
+          "text": "Adapter layer with model routing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Provisioned throughput reserves model capacity.",
       "docs": [
@@ -222,15 +222,15 @@
         },
         {
           "id": "b",
-          "text": "Send secrets in training file public"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "No holdout set"
+          "text": "Send secrets in training file public"
         },
         {
           "id": "d",
-          "text": "Ignore license"
+          "text": "Provisioned Throughput on Bedrock"
         }
       ],
       "correct": [
@@ -252,23 +252,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Imported models in Bedrock or SageMaker endpoints"
+          "text": "CloudWatch metrics and cost allocation tags"
         },
         {
           "id": "b",
-          "text": "Public S3 model bucket"
+          "text": "Imported models in Bedrock or SageMaker endpoints"
         },
         {
           "id": "c",
-          "text": "No encryption"
+          "text": "Bedrock model customization"
         },
         {
           "id": "d",
-          "text": "Shared admin key"
+          "text": "Bedrock ConverseStream API"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Protect weights as intellectual property.",
       "docs": [
@@ -286,7 +286,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Adapter layer with model routing"
+          "text": "Bedrock model customization"
         },
         {
           "id": "b",
@@ -294,15 +294,15 @@
         },
         {
           "id": "c",
-          "text": "No fallback"
+          "text": "Adapter layer with model routing"
         },
         {
           "id": "d",
-          "text": "Ignore timeouts"
+          "text": "Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Abstraction enables swapping models.",
       "docs": [
@@ -320,23 +320,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch metrics and cost allocation tags"
+          "text": "Provisioned Throughput on Bedrock"
         },
         {
           "id": "b",
-          "text": "No metering"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Ignore budgets"
+          "text": "CloudWatch metrics and cost allocation tags"
         },
         {
           "id": "d",
-          "text": "Unlimited prod tests"
+          "text": "Bedrock model customization"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Token usage drives GenAI cost.",
       "docs": [
@@ -358,11 +358,11 @@
         },
         {
           "id": "b",
-          "text": "Self-host all models on laptop"
+          "text": "Bedrock ConverseStream API"
         },
         {
           "id": "c",
-          "text": "FTP prompts"
+          "text": "Self-host all models on laptop"
         },
         {
           "id": "d",
@@ -388,23 +388,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock"
-        },
-        {
-          "id": "b",
           "text": "Self-host all models on laptop"
         },
         {
+          "id": "b",
+          "text": "Amazon Bedrock"
+        },
+        {
           "id": "c",
-          "text": "FTP prompts"
+          "text": "Public API keys in repo"
         },
         {
           "id": "d",
-          "text": "Public API keys in repo"
+          "text": "Bedrock model IDs and inference profiles"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Bedrock abstracts model providers.",
       "docs": [
@@ -422,23 +422,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock"
-        },
-        {
-          "id": "b",
           "text": "Self-host all models on laptop"
         },
         {
+          "id": "b",
+          "text": "Amazon Bedrock"
+        },
+        {
           "id": "c",
-          "text": "FTP prompts"
+          "text": "Public API keys in repo"
         },
         {
           "id": "d",
-          "text": "Public API keys in repo"
+          "text": "Provisioned Throughput on Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Bedrock abstracts model providers.",
       "docs": [
@@ -456,23 +456,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bedrock model IDs and inference profiles"
+          "text": "Bedrock ConverseStream API"
         },
         {
           "id": "b",
-          "text": "Always largest model"
+          "text": "CloudWatch metrics and cost allocation tags"
         },
         {
           "id": "c",
-          "text": "Ignore cost"
+          "text": "Bedrock model IDs and inference profiles"
         },
         {
           "id": "d",
-          "text": "No evaluation"
+          "text": "Provisioned Throughput on Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Different models optimize for speed, cost, or capability.",
       "docs": [
@@ -490,23 +490,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bedrock model IDs and inference profiles"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "Always largest model"
+          "text": "Bedrock model customization"
         },
         {
           "id": "c",
-          "text": "Ignore cost"
+          "text": "CloudWatch metrics and cost allocation tags"
         },
         {
           "id": "d",
-          "text": "No evaluation"
+          "text": "Bedrock model IDs and inference profiles"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Different models optimize for speed, cost, or capability.",
       "docs": [
@@ -528,15 +528,15 @@
         },
         {
           "id": "b",
-          "text": "Always largest model"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Ignore cost"
+          "text": "Bedrock ConverseStream API"
         },
         {
           "id": "d",
-          "text": "No evaluation"
+          "text": "Bedrock model customization"
         }
       ],
       "correct": [
@@ -562,15 +562,15 @@
         },
         {
           "id": "b",
-          "text": "Poll S3 for full response only"
+          "text": "Bedrock model IDs and inference profiles"
         },
         {
           "id": "c",
-          "text": "Block UI until done"
+          "text": "Bedrock model customization"
         },
         {
           "id": "d",
-          "text": "Disable TLS"
+          "text": "Amazon Bedrock"
         }
       ],
       "correct": [
@@ -592,23 +592,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bedrock ConverseStream API"
+          "text": "Bedrock model customization"
         },
         {
           "id": "b",
-          "text": "Poll S3 for full response only"
+          "text": "Bedrock ConverseStream API"
         },
         {
           "id": "c",
-          "text": "Block UI until done"
+          "text": "Provisioned Throughput on Bedrock"
         },
         {
           "id": "d",
-          "text": "Disable TLS"
+          "text": "Bedrock model IDs and inference profiles"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Streaming improves perceived latency.",
       "docs": [
@@ -626,23 +626,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bedrock ConverseStream API"
+          "text": "Provisioned Throughput on Bedrock"
         },
         {
           "id": "b",
-          "text": "Poll S3 for full response only"
+          "text": "Bedrock model IDs and inference profiles"
         },
         {
           "id": "c",
-          "text": "Block UI until done"
+          "text": "Bedrock ConverseStream API"
         },
         {
           "id": "d",
-          "text": "Disable TLS"
+          "text": "Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Streaming improves perceived latency.",
       "docs": [
@@ -660,23 +660,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Provisioned Throughput on Bedrock"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "On-demand only for constant flood"
+          "text": "Provisioned Throughput on Bedrock"
         },
         {
           "id": "c",
-          "text": "Ignore quotas"
+          "text": "Bedrock model IDs and inference profiles"
         },
         {
           "id": "d",
-          "text": "No monitoring"
+          "text": "Bedrock ConverseStream API"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Provisioned throughput reserves model capacity.",
       "docs": [
@@ -694,23 +694,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Provisioned Throughput on Bedrock"
+          "text": "Adapter layer with model routing"
         },
         {
           "id": "b",
-          "text": "On-demand only for constant flood"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Ignore quotas"
+          "text": "Provisioned Throughput on Bedrock"
         },
         {
           "id": "d",
-          "text": "No monitoring"
+          "text": "Bedrock model IDs and inference profiles"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Provisioned throughput reserves model capacity.",
       "docs": [
@@ -728,23 +728,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Provisioned Throughput on Bedrock"
+          "text": "Bedrock ConverseStream API"
         },
         {
           "id": "b",
-          "text": "On-demand only for constant flood"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Ignore quotas"
+          "text": "Bedrock model customization"
         },
         {
           "id": "d",
-          "text": "No monitoring"
+          "text": "Provisioned Throughput on Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Provisioned throughput reserves model capacity.",
       "docs": [
@@ -762,7 +762,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Bedrock model customization"
+          "text": "CloudWatch metrics and cost allocation tags"
         },
         {
           "id": "b",
@@ -770,15 +770,15 @@
         },
         {
           "id": "c",
-          "text": "No holdout set"
+          "text": "Bedrock model customization"
         },
         {
           "id": "d",
-          "text": "Ignore license"
+          "text": "Bedrock model IDs and inference profiles"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Customization adapts FMs to domain tasks.",
       "docs": [
@@ -796,23 +796,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bedrock model customization"
-        },
-        {
-          "id": "b",
           "text": "Send secrets in training file public"
         },
         {
+          "id": "b",
+          "text": "Bedrock model customization"
+        },
+        {
           "id": "c",
-          "text": "No holdout set"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "Ignore license"
+          "text": "Provisioned Throughput on Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Customization adapts FMs to domain tasks.",
       "docs": [
@@ -830,23 +830,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Knowledge Bases for Amazon Bedrock"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "b",
-          "text": "Paste into prompt only"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "c",
-          "text": "Public index"
+          "text": "Retrieval citations from KB responses"
         },
         {
           "id": "d",
-          "text": "No chunking"
+          "text": "Knowledge Bases for Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Knowledge bases handle ingestion and chunking.",
       "docs": [
@@ -864,23 +864,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Fixed-size vs hierarchical chunking in KB"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "One giant chunk"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "c",
-          "text": "No overlap"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "d",
-          "text": "Ignore metadata"
+          "text": "Retrieval citations from KB responses"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Chunk size affects retrieval precision.",
       "docs": [
@@ -902,15 +902,15 @@
         },
         {
           "id": "b",
-          "text": "grep S3 for semantics"
+          "text": "OpenSearch hybrid query with KB"
         },
         {
           "id": "c",
-          "text": "CSV vectors in email"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "d",
-          "text": "No index"
+          "text": "Retrieval citations from KB responses"
         }
       ],
       "correct": [
@@ -932,23 +932,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Metadata filters on KB retrieval"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "Return all tenants data"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "c",
-          "text": "No ACL"
+          "text": "Metadata filters on KB retrieval"
         },
         {
           "id": "d",
-          "text": "Shared index no tags"
+          "text": "OpenSearch hybrid query with KB"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Metadata filters enforce multi-tenant isolation.",
       "docs": [
@@ -970,15 +970,15 @@
         },
         {
           "id": "b",
-          "text": "Never update index"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "c",
-          "text": "Manual reupload chaos"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "d",
-          "text": "Ignore versioning"
+          "text": "Metadata filters on KB retrieval"
         }
       ],
       "correct": [
@@ -1000,23 +1000,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RAG evaluation metrics and human review"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "Assume perfect retrieval"
+          "text": "Metadata filters on KB retrieval"
         },
         {
           "id": "c",
-          "text": "No test set"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "d",
-          "text": "Only demo prompts"
+          "text": "RAG evaluation metrics and human review"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Evaluation prevents garbage-in for generation.",
       "docs": [
@@ -1038,15 +1038,15 @@
         },
         {
           "id": "b",
-          "text": "Vector only for SKU codes"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "c",
-          "text": "Keyword only for concepts"
+          "text": "Metadata filters on KB retrieval"
         },
         {
           "id": "d",
-          "text": "No tuning"
+          "text": "Retrieval citations from KB responses"
         }
       ],
       "correct": [
@@ -1068,23 +1068,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Retrieval citations from KB responses"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "b",
-          "text": "Hallucinate sources"
+          "text": "OpenSearch hybrid query with KB"
         },
         {
           "id": "c",
-          "text": "Hide docs"
+          "text": "Metadata filters on KB retrieval"
         },
         {
           "id": "d",
-          "text": "No attribution"
+          "text": "Retrieval citations from KB responses"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Citations improve trust and auditability.",
       "docs": [
@@ -1102,23 +1102,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Knowledge Bases for Amazon Bedrock"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "b",
-          "text": "Paste into prompt only"
+          "text": "OpenSearch hybrid query with KB"
         },
         {
           "id": "c",
-          "text": "Public index"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "No chunking"
+          "text": "Sync jobs and S3 event-driven ingestion"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Knowledge bases handle ingestion and chunking.",
       "docs": [
@@ -1136,23 +1136,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Knowledge Bases for Amazon Bedrock"
+          "text": "Retrieval citations from KB responses"
         },
         {
           "id": "b",
-          "text": "Paste into prompt only"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Public index"
+          "text": "Metadata filters on KB retrieval"
         },
         {
           "id": "d",
-          "text": "No chunking"
+          "text": "RAG evaluation metrics and human review"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Knowledge bases handle ingestion and chunking.",
       "docs": [
@@ -1170,23 +1170,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Knowledge Bases for Amazon Bedrock"
+          "text": "OpenSearch hybrid query with KB"
         },
         {
           "id": "b",
-          "text": "Paste into prompt only"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Public index"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "d",
-          "text": "No chunking"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Knowledge bases handle ingestion and chunking.",
       "docs": [
@@ -1204,23 +1204,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Fixed-size vs hierarchical chunking in KB"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "One giant chunk"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "c",
-          "text": "No overlap"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "d",
-          "text": "Ignore metadata"
+          "text": "Sync jobs and S3 event-driven ingestion"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Chunk size affects retrieval precision.",
       "docs": [
@@ -1238,23 +1238,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Fixed-size vs hierarchical chunking in KB"
+          "text": "Sync jobs and S3 event-driven ingestion"
         },
         {
           "id": "b",
-          "text": "One giant chunk"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "c",
-          "text": "No overlap"
+          "text": "Retrieval citations from KB responses"
         },
         {
           "id": "d",
-          "text": "Ignore metadata"
+          "text": "Knowledge Bases for Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Chunk size affects retrieval precision.",
       "docs": [
@@ -1272,23 +1272,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Fixed-size vs hierarchical chunking in KB"
+          "text": "RAG evaluation metrics and human review"
         },
         {
           "id": "b",
-          "text": "One giant chunk"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "No overlap"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "d",
-          "text": "Ignore metadata"
+          "text": "Sync jobs and S3 event-driven ingestion"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Chunk size affects retrieval precision.",
       "docs": [
@@ -1306,23 +1306,23 @@
       "options": [
         {
           "id": "a",
-          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "b",
-          "text": "grep S3 for semantics"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "CSV vectors in email"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "d",
-          "text": "No index"
+          "text": "Retrieval citations from KB responses"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Vector DBs enable similarity search.",
       "docs": [
@@ -1340,23 +1340,23 @@
       "options": [
         {
           "id": "a",
-          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "grep S3 for semantics"
+          "text": "OpenSearch hybrid query with KB"
         },
         {
           "id": "c",
-          "text": "CSV vectors in email"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "d",
-          "text": "No index"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Vector DBs enable similarity search.",
       "docs": [
@@ -1374,23 +1374,23 @@
       "options": [
         {
           "id": "a",
-          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
+          "text": "Sync jobs and S3 event-driven ingestion"
         },
         {
           "id": "b",
-          "text": "grep S3 for semantics"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "c",
-          "text": "CSV vectors in email"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         },
         {
           "id": "d",
-          "text": "No index"
+          "text": "RAG evaluation metrics and human review"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Vector DBs enable similarity search.",
       "docs": [
@@ -1408,23 +1408,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Metadata filters on KB retrieval"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         },
         {
           "id": "b",
-          "text": "Return all tenants data"
+          "text": "RAG evaluation metrics and human review"
         },
         {
           "id": "c",
-          "text": "No ACL"
+          "text": "Metadata filters on KB retrieval"
         },
         {
           "id": "d",
-          "text": "Shared index no tags"
+          "text": "Fixed-size vs hierarchical chunking in KB"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Metadata filters enforce multi-tenant isolation.",
       "docs": [
@@ -1442,23 +1442,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Metadata filters on KB retrieval"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "Return all tenants data"
+          "text": "Metadata filters on KB retrieval"
         },
         {
           "id": "c",
-          "text": "No ACL"
+          "text": "Retrieval citations from KB responses"
         },
         {
           "id": "d",
-          "text": "Shared index no tags"
+          "text": "OpenSearch Serverless vector engine or Aurora pgvector"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Metadata filters enforce multi-tenant isolation.",
       "docs": [
@@ -1476,23 +1476,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Agents with action groups"
-        },
-        {
-          "id": "b",
-          "text": "Prompt-only no tools"
-        },
-        {
-          "id": "c",
           "text": "Hard-code API keys client"
         },
         {
+          "id": "b",
+          "text": "Step Functions calling Bedrock and Lambda"
+        },
+        {
+          "id": "c",
+          "text": "Amazon Bedrock Agents with action groups"
+        },
+        {
           "id": "d",
-          "text": "Ignore auth"
+          "text": "Input schemas and guardrails"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Agents plan and invoke tools.",
       "docs": [
@@ -1510,23 +1510,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Step Functions calling Bedrock and Lambda"
+          "text": "Amazon Bedrock Agents with action groups"
         },
         {
           "id": "b",
-          "text": "One Lambda 15 min max chain"
+          "text": "Step Functions calling Bedrock and Lambda"
         },
         {
           "id": "c",
-          "text": "No error handling"
+          "text": "Action groups with OpenAPI"
         },
         {
           "id": "d",
-          "text": "Ignore idempotency"
+          "text": "One Lambda 15 min max chain"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Step Functions manage long workflows.",
       "docs": [
@@ -1544,23 +1544,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Input schemas and guardrails"
-        },
-        {
-          "id": "b",
           "text": "Pass raw user SQL to DB"
         },
         {
+          "id": "b",
+          "text": "Input schemas and guardrails"
+        },
+        {
           "id": "c",
-          "text": "No validation"
+          "text": "Step Functions calling Bedrock and Lambda"
         },
         {
           "id": "d",
-          "text": "Disable auth"
+          "text": "Action groups with OpenAPI"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Validate and sanitize tool parameters.",
       "docs": [
@@ -1582,15 +1582,15 @@
         },
         {
           "id": "b",
-          "text": "Undocumented REST"
+          "text": "Input schemas and guardrails"
         },
         {
           "id": "c",
-          "text": "Wildcard IAM"
+          "text": "Step Functions calling Bedrock and Lambda"
         },
         {
           "id": "d",
-          "text": "HTTP only"
+          "text": "Amazon Bedrock Agents with action groups"
         }
       ],
       "correct": [
@@ -1612,23 +1612,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SQS + Lambda workers with status API"
-        },
-        {
-          "id": "b",
           "text": "Sync API 15 min block"
         },
         {
+          "id": "b",
+          "text": "Input schemas and guardrails"
+        },
+        {
           "id": "c",
-          "text": "No timeout"
+          "text": "Step Functions calling Bedrock and Lambda"
         },
         {
           "id": "d",
-          "text": "Lose state on crash"
+          "text": "SQS + Lambda workers with status API"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Async patterns improve reliability.",
       "docs": [
@@ -1650,15 +1650,15 @@
         },
         {
           "id": "b",
-          "text": "Auto-execute financial trades"
+          "text": "Step Functions calling Bedrock and Lambda"
         },
         {
           "id": "c",
-          "text": "No approval"
+          "text": "Bedrock trace and CloudWatch logs"
         },
         {
           "id": "d",
-          "text": "Ignore SOX"
+          "text": "Amazon Bedrock Agents with action groups"
         }
       ],
       "correct": [
@@ -1684,15 +1684,15 @@
         },
         {
           "id": "b",
-          "text": "Black box only"
+          "text": "Action groups with OpenAPI"
         },
         {
           "id": "c",
-          "text": "Log secrets"
+          "text": "Amazon Bedrock Agents with action groups"
         },
         {
           "id": "d",
-          "text": "Disable tracing"
+          "text": "Agent aliases and versions"
         }
       ],
       "correct": [
@@ -1714,23 +1714,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Agent aliases and versions"
+          "text": "Input schemas and guardrails"
         },
         {
           "id": "b",
-          "text": "Edit prod agent live only"
+          "text": "Amazon Bedrock Agents with action groups"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Agent aliases and versions"
         },
         {
           "id": "d",
-          "text": "Shared draft prod"
+          "text": "Step Functions calling Bedrock and Lambda"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Versioning supports safe releases.",
       "docs": [
@@ -1752,7 +1752,7 @@
         },
         {
           "id": "b",
-          "text": "Prompt-only no tools"
+          "text": "Step Functions .waitForTaskToken"
         },
         {
           "id": "c",
@@ -1760,7 +1760,7 @@
         },
         {
           "id": "d",
-          "text": "Ignore auth"
+          "text": "Action groups with OpenAPI"
         }
       ],
       "correct": [
@@ -1782,23 +1782,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Agents with action groups"
-        },
-        {
-          "id": "b",
-          "text": "Prompt-only no tools"
-        },
-        {
-          "id": "c",
           "text": "Hard-code API keys client"
         },
         {
+          "id": "b",
+          "text": "Amazon Bedrock Agents with action groups"
+        },
+        {
+          "id": "c",
+          "text": "Step Functions calling Bedrock and Lambda"
+        },
+        {
           "id": "d",
-          "text": "Ignore auth"
+          "text": "Input schemas and guardrails"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Agents plan and invoke tools.",
       "docs": [
@@ -1816,11 +1816,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Agents with action groups"
+          "text": "Input schemas and guardrails"
         },
         {
           "id": "b",
-          "text": "Prompt-only no tools"
+          "text": "Amazon Bedrock Agents with action groups"
         },
         {
           "id": "c",
@@ -1828,11 +1828,11 @@
         },
         {
           "id": "d",
-          "text": "Ignore auth"
+          "text": "Agent aliases and versions"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Agents plan and invoke tools.",
       "docs": [
@@ -1850,23 +1850,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Step Functions calling Bedrock and Lambda"
+          "text": "Bedrock trace and CloudWatch logs"
         },
         {
           "id": "b",
-          "text": "One Lambda 15 min max chain"
+          "text": "Input schemas and guardrails"
         },
         {
           "id": "c",
-          "text": "No error handling"
+          "text": "Step Functions calling Bedrock and Lambda"
         },
         {
           "id": "d",
-          "text": "Ignore idempotency"
+          "text": "One Lambda 15 min max chain"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Step Functions manage long workflows.",
       "docs": [
@@ -1888,15 +1888,15 @@
         },
         {
           "id": "b",
-          "text": "One Lambda 15 min max chain"
+          "text": "Amazon Bedrock Agents with action groups"
         },
         {
           "id": "c",
-          "text": "No error handling"
+          "text": "Input schemas and guardrails"
         },
         {
           "id": "d",
-          "text": "Ignore idempotency"
+          "text": "One Lambda 15 min max chain"
         }
       ],
       "correct": [
@@ -1918,23 +1918,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Step Functions calling Bedrock and Lambda"
-        },
-        {
-          "id": "b",
           "text": "One Lambda 15 min max chain"
         },
         {
+          "id": "b",
+          "text": "Agent aliases and versions"
+        },
+        {
           "id": "c",
-          "text": "No error handling"
+          "text": "Action groups with OpenAPI"
         },
         {
           "id": "d",
-          "text": "Ignore idempotency"
+          "text": "Step Functions calling Bedrock and Lambda"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Step Functions manage long workflows.",
       "docs": [
@@ -1956,15 +1956,15 @@
         },
         {
           "id": "b",
-          "text": "Pass raw user SQL to DB"
+          "text": "Amazon Bedrock Agents with action groups"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "Pass raw user SQL to DB"
         },
         {
           "id": "d",
-          "text": "Disable auth"
+          "text": "Step Functions .waitForTaskToken"
         }
       ],
       "correct": [
@@ -1986,7 +1986,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Input schemas and guardrails"
+          "text": "Amazon Bedrock Agents with action groups"
         },
         {
           "id": "b",
@@ -1994,15 +1994,15 @@
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "Step Functions .waitForTaskToken"
         },
         {
           "id": "d",
-          "text": "Disable auth"
+          "text": "Input schemas and guardrails"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Validate and sanitize tool parameters.",
       "docs": [
@@ -2020,23 +2020,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Input schemas and guardrails"
-        },
-        {
-          "id": "b",
           "text": "Pass raw user SQL to DB"
         },
         {
+          "id": "b",
+          "text": "Amazon Bedrock Agents with action groups"
+        },
+        {
           "id": "c",
-          "text": "No validation"
+          "text": "Step Functions calling Bedrock and Lambda"
         },
         {
           "id": "d",
-          "text": "Disable auth"
+          "text": "Input schemas and guardrails"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Validate and sanitize tool parameters.",
       "docs": [
@@ -2054,23 +2054,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Action groups with OpenAPI"
+          "text": "Step Functions .waitForTaskToken"
         },
         {
           "id": "b",
-          "text": "Undocumented REST"
+          "text": "Action groups with OpenAPI"
         },
         {
           "id": "c",
-          "text": "Wildcard IAM"
+          "text": "Amazon Bedrock Agents with action groups"
         },
         {
           "id": "d",
-          "text": "HTTP only"
+          "text": "Step Functions calling Bedrock and Lambda"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "OpenAPI defines agent-callable operations.",
       "docs": [
@@ -2088,23 +2088,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Action groups with OpenAPI"
+          "text": "Input schemas and guardrails"
         },
         {
           "id": "b",
-          "text": "Undocumented REST"
+          "text": "Action groups with OpenAPI"
         },
         {
           "id": "c",
-          "text": "Wildcard IAM"
+          "text": "Bedrock trace and CloudWatch logs"
         },
         {
           "id": "d",
-          "text": "HTTP only"
+          "text": "Step Functions calling Bedrock and Lambda"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "OpenAPI defines agent-callable operations.",
       "docs": [
@@ -2122,23 +2122,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Guardrails"
+          "text": "Structured adversarial testing"
         },
         {
           "id": "b",
-          "text": "Allow any content"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "c",
-          "text": "Log PII publicly"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "d",
-          "text": "Disable filters"
+          "text": "Bedrock Regions and VPC endpoints"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Guardrails enforce content policies.",
       "docs": [
@@ -2160,15 +2160,15 @@
         },
         {
           "id": "b",
-          "text": "Ship without security review"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "c",
-          "text": "Ignore OWASP LLM Top 10"
+          "text": "Prod data in prompts logged"
         },
         {
           "id": "d",
-          "text": "Prod data in prompts logged"
+          "text": "KMS for CloudWatch Logs and S3"
         }
       ],
       "correct": [
@@ -2190,23 +2190,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM policies scoped to model ARNs"
+          "text": "Structured adversarial testing"
         },
         {
           "id": "b",
-          "text": "bedrock:* for all users"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "c",
-          "text": "Anonymous invoke"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "d",
-          "text": "Root daily"
+          "text": "KMS for CloudWatch Logs and S3"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Scope permissions to required models only.",
       "docs": [
@@ -2224,23 +2224,23 @@
       "options": [
         {
           "id": "a",
-          "text": "KMS for CloudWatch Logs and S3"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "b",
-          "text": "Plaintext sensitive logs"
+          "text": "Structured adversarial testing"
         },
         {
           "id": "c",
-          "text": "Public log bucket"
+          "text": "Data masking and policy on PII"
         },
         {
           "id": "d",
-          "text": "No retention limits"
+          "text": "KMS for CloudWatch Logs and S3"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Encryption protects logged interactions.",
       "docs": [
@@ -2266,11 +2266,11 @@
         },
         {
           "id": "c",
-          "text": "Share logs externally"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "d",
-          "text": "No DLP"
+          "text": "Amazon Bedrock Guardrails"
         }
       ],
       "correct": [
@@ -2292,23 +2292,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudTrail data events for Bedrock"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "b",
-          "text": "No trail"
+          "text": "Bedrock Regions and VPC endpoints"
         },
         {
           "id": "c",
-          "text": "Disable logging"
+          "text": "CloudTrail data events for Bedrock"
         },
         {
           "id": "d",
-          "text": "Shared keys"
+          "text": "Amazon Bedrock Guardrails"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CloudTrail supports governance.",
       "docs": [
@@ -2326,23 +2326,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Automated evaluation datasets in pipeline"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "b",
-          "text": "Change prod prompt Friday"
+          "text": "CloudTrail data events for Bedrock"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "Automated evaluation datasets in pipeline"
         },
         {
           "id": "d",
-          "text": "Ignore quality drop"
+          "text": "Structured adversarial testing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CI evaluation catches regressions.",
       "docs": [
@@ -2360,23 +2360,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bedrock Regions and VPC endpoints"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "b",
-          "text": "Cross-Region invoke violating policy"
+          "text": "Bedrock Regions and VPC endpoints"
         },
         {
           "id": "c",
-          "text": "Public internet only"
+          "text": "CloudTrail data events for Bedrock"
         },
         {
           "id": "d",
-          "text": "Ignore data map"
+          "text": "Cross-Region invoke violating policy"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Choose Regions and endpoints per compliance.",
       "docs": [
@@ -2398,15 +2398,15 @@
         },
         {
           "id": "b",
-          "text": "Allow any content"
+          "text": "Bedrock Regions and VPC endpoints"
         },
         {
           "id": "c",
-          "text": "Log PII publicly"
+          "text": "Data masking and policy on PII"
         },
         {
           "id": "d",
-          "text": "Disable filters"
+          "text": "KMS for CloudWatch Logs and S3"
         }
       ],
       "correct": [
@@ -2428,23 +2428,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Guardrails"
+          "text": "KMS for CloudWatch Logs and S3"
         },
         {
           "id": "b",
-          "text": "Allow any content"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "c",
-          "text": "Log PII publicly"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "d",
-          "text": "Disable filters"
+          "text": "Data masking and policy on PII"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Guardrails enforce content policies.",
       "docs": [
@@ -2466,15 +2466,15 @@
         },
         {
           "id": "b",
-          "text": "Allow any content"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "c",
-          "text": "Log PII publicly"
+          "text": "Data masking and policy on PII"
         },
         {
           "id": "d",
-          "text": "Disable filters"
+          "text": "Structured adversarial testing"
         }
       ],
       "correct": [
@@ -2496,23 +2496,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Structured adversarial testing"
+          "text": "Prod data in prompts logged"
         },
         {
           "id": "b",
-          "text": "Ship without security review"
+          "text": "KMS for CloudWatch Logs and S3"
         },
         {
           "id": "c",
-          "text": "Ignore OWASP LLM Top 10"
+          "text": "Bedrock Regions and VPC endpoints"
         },
         {
           "id": "d",
-          "text": "Prod data in prompts logged"
+          "text": "Structured adversarial testing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Red teaming finds jailbreaks and leaks.",
       "docs": [
@@ -2534,11 +2534,11 @@
         },
         {
           "id": "b",
-          "text": "Ship without security review"
+          "text": "KMS for CloudWatch Logs and S3"
         },
         {
           "id": "c",
-          "text": "Ignore OWASP LLM Top 10"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "d",
@@ -2564,23 +2564,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Structured adversarial testing"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "b",
-          "text": "Ship without security review"
+          "text": "Structured adversarial testing"
         },
         {
           "id": "c",
-          "text": "Ignore OWASP LLM Top 10"
+          "text": "Prod data in prompts logged"
         },
         {
           "id": "d",
-          "text": "Prod data in prompts logged"
+          "text": "KMS for CloudWatch Logs and S3"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Red teaming finds jailbreaks and leaks.",
       "docs": [
@@ -2598,23 +2598,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM policies scoped to model ARNs"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "b",
-          "text": "bedrock:* for all users"
+          "text": "KMS for CloudWatch Logs and S3"
         },
         {
           "id": "c",
-          "text": "Anonymous invoke"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "d",
-          "text": "Root daily"
+          "text": "Automated evaluation datasets in pipeline"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Scope permissions to required models only.",
       "docs": [
@@ -2632,23 +2632,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM policies scoped to model ARNs"
+          "text": "Structured adversarial testing"
         },
         {
           "id": "b",
-          "text": "bedrock:* for all users"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "c",
-          "text": "Anonymous invoke"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "d",
-          "text": "Root daily"
+          "text": "Bedrock Regions and VPC endpoints"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Scope permissions to required models only.",
       "docs": [
@@ -2666,23 +2666,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM policies scoped to model ARNs"
+          "text": "Structured adversarial testing"
         },
         {
           "id": "b",
-          "text": "bedrock:* for all users"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "c",
-          "text": "Anonymous invoke"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "d",
-          "text": "Root daily"
+          "text": "KMS for CloudWatch Logs and S3"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Scope permissions to required models only.",
       "docs": [
@@ -2704,15 +2704,15 @@
         },
         {
           "id": "b",
-          "text": "Plaintext sensitive logs"
+          "text": "Bedrock Regions and VPC endpoints"
         },
         {
           "id": "c",
-          "text": "Public log bucket"
+          "text": "Automated evaluation datasets in pipeline"
         },
         {
           "id": "d",
-          "text": "No retention limits"
+          "text": "Amazon Bedrock Guardrails"
         }
       ],
       "correct": [
@@ -2734,23 +2734,23 @@
       "options": [
         {
           "id": "a",
-          "text": "KMS for CloudWatch Logs and S3"
+          "text": "IAM policies scoped to model ARNs"
         },
         {
           "id": "b",
-          "text": "Plaintext sensitive logs"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "c",
-          "text": "Public log bucket"
+          "text": "KMS for CloudWatch Logs and S3"
         },
         {
           "id": "d",
-          "text": "No retention limits"
+          "text": "Automated evaluation datasets in pipeline"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Encryption protects logged interactions.",
       "docs": [
@@ -2836,45 +2836,6 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "aip-q082",
-      "domain": "foundation-model-integration",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Generative AI Developer \u2013 Professional? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon Bedrock"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Amazon Bedrock Runtime API"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "Amazon Bedrock",
-          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html"
         }
       ]
     }

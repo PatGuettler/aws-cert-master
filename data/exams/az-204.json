@@ -82,176 +82,6 @@
   ],
   "questions": [
     {
-      "id": "az204-q001",
-      "domain": "compute-solutions",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Developer Associate and reviewing Develop Azure compute solutions. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AZ-204 study guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use AZ-204 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "AZ-204 study guide",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-204"
-        }
-      ]
-    },
-    {
-      "id": "az204-q002",
-      "domain": "storage-solutions",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Developer Associate and reviewing Develop for Azure storage. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Blob storage SDK"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Blob storage SDK and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Blob storage SDK",
-          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python"
-        }
-      ]
-    },
-    {
-      "id": "az204-q003",
-      "domain": "security",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Developer Associate and reviewing Implement Azure security. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Microsoft Graph"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Microsoft Graph and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Microsoft Graph",
-          "url": "https://learn.microsoft.com/en-us/graph/overview"
-        }
-      ]
-    },
-    {
-      "id": "az204-q004",
-      "domain": "monitor-optimize",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Developer Associate and reviewing Monitor, troubleshoot, and optimize. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Application Insights"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Application Insights and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Application Insights",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
-        }
-      ]
-    },
-    {
-      "id": "az204-q005",
-      "domain": "connect-consume",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Developer Associate and reviewing Connect to and consume Azure services. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Service Bus"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Service Bus and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Service Bus",
-          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
-        }
-      ]
-    },
-    {
       "id": "az204-q006",
       "domain": "compute-solutions",
       "type": "multiple-choice",
@@ -263,15 +93,15 @@
         },
         {
           "id": "b",
-          "text": "Static blob only"
+          "text": "AZ-204 study guide"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "Azure App Service for Linux containers"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure Durable Functions"
         }
       ],
       "correct": [
@@ -297,15 +127,15 @@
         },
         {
           "id": "b",
-          "text": "Single process on laptop only"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "c",
-          "text": "FTP site"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "d",
-          "text": "Cool tier"
+          "text": "Azure App Service for Linux containers"
         }
       ],
       "correct": [
@@ -331,15 +161,15 @@
         },
         {
           "id": "b",
-          "text": "FTP only"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Kubernetes Service"
         }
       ],
       "correct": [
@@ -365,15 +195,15 @@
         },
         {
           "id": "b",
-          "text": "Busy-wait loops"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "c",
-          "text": "Global variables"
+          "text": "Azure App Service for Linux containers"
         },
         {
           "id": "d",
-          "text": "No retry"
+          "text": "AZ-204 study guide"
         }
       ],
       "correct": [
@@ -395,23 +225,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Functions with HTTP trigger"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "b",
-          "text": "Static blob only"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure App Service for Linux containers"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Functions scale per invocation.",
       "docs": [
@@ -429,23 +259,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Functions with HTTP trigger"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "b",
-          "text": "Static blob only"
+          "text": "Azure App Service for Linux containers"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "AZ-204 study guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Functions scale per invocation.",
       "docs": [
@@ -463,23 +293,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Functions with HTTP trigger"
+          "text": "Azure App Service for Linux containers"
         },
         {
           "id": "b",
-          "text": "Static blob only"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "AZ-204 study guide"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure Functions with HTTP trigger"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Functions scale per invocation.",
       "docs": [
@@ -501,15 +331,15 @@
         },
         {
           "id": "b",
-          "text": "Single process on laptop only"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "c",
-          "text": "FTP site"
+          "text": "Azure App Service for Linux containers"
         },
         {
           "id": "d",
-          "text": "Cool tier"
+          "text": "Azure Durable Functions"
         }
       ],
       "correct": [
@@ -531,23 +361,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Kubernetes Service"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "b",
-          "text": "Single process on laptop only"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "c",
-          "text": "FTP site"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "d",
-          "text": "Cool tier"
+          "text": "Azure App Service for Linux containers"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AKS runs containerized services.",
       "docs": [
@@ -569,15 +399,15 @@
         },
         {
           "id": "b",
-          "text": "Single process on laptop only"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "c",
-          "text": "FTP site"
+          "text": "Azure App Service for Linux containers"
         },
         {
           "id": "d",
-          "text": "Cool tier"
+          "text": "AZ-204 study guide"
         }
       ],
       "correct": [
@@ -603,15 +433,15 @@
         },
         {
           "id": "b",
-          "text": "FTP only"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Functions with HTTP trigger"
         }
       ],
       "correct": [
@@ -637,15 +467,15 @@
         },
         {
           "id": "b",
-          "text": "FTP only"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Kubernetes Service"
         }
       ],
       "correct": [
@@ -671,15 +501,15 @@
         },
         {
           "id": "b",
-          "text": "FTP only"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Kubernetes Service"
         }
       ],
       "correct": [
@@ -705,15 +535,15 @@
         },
         {
           "id": "b",
-          "text": "Busy-wait loops"
+          "text": "No retry"
         },
         {
           "id": "c",
-          "text": "Global variables"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "d",
-          "text": "No retry"
+          "text": "Azure Functions with HTTP trigger"
         }
       ],
       "correct": [
@@ -735,23 +565,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Durable Functions"
+          "text": "Azure App Service for Linux containers"
         },
         {
           "id": "b",
-          "text": "Busy-wait loops"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "c",
-          "text": "Global variables"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "d",
-          "text": "No retry"
+          "text": "Azure Functions with HTTP trigger"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Durable Functions manage stateful workflows.",
       "docs": [
@@ -769,23 +599,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Durable Functions"
+          "text": "Azure App Service for Linux containers"
         },
         {
           "id": "b",
-          "text": "Busy-wait loops"
+          "text": "Azure Functions with HTTP trigger"
         },
         {
           "id": "c",
-          "text": "Global variables"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "d",
-          "text": "No retry"
+          "text": "Azure Kubernetes Service"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Durable Functions manage stateful workflows.",
       "docs": [
@@ -807,15 +637,15 @@
         },
         {
           "id": "b",
-          "text": "Static blob only"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "Azure Durable Functions"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure App Service for Linux containers"
         }
       ],
       "correct": [
@@ -837,23 +667,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Storage Blob SDK"
+          "text": "Shared access signatures"
         },
         {
           "id": "b",
-          "text": "Route 53"
+          "text": "Azure Blob Storage containers"
         },
         {
           "id": "c",
-          "text": "Entra B2C only"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "d",
-          "text": "VPN SKU"
+          "text": "VPN SKU (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SDKs interact with Blob REST APIs.",
       "docs": [
@@ -871,23 +701,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Shared access signatures"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "b",
-          "text": "Public container always"
+          "text": "Shared access signatures"
         },
         {
           "id": "c",
-          "text": "Embed account keys"
+          "text": "Blob storage SDK"
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Azure Blob Storage containers"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SAS provides scoped delegated access.",
       "docs": [
@@ -905,23 +735,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Blob Storage containers"
+          "text": "Shared access signatures"
         },
         {
           "id": "b",
-          "text": "Local USB"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "c",
-          "text": "SMTP relay"
+          "text": "DNS only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Azure Blob Storage containers"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Blobs store objects via REST.",
       "docs": [
@@ -939,23 +769,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Storage Blob SDK"
+          "text": "Shared access signatures"
         },
         {
           "id": "b",
-          "text": "Route 53"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "c",
-          "text": "Entra B2C only"
+          "text": "Blob storage SDK"
         },
         {
           "id": "d",
-          "text": "VPN SKU"
+          "text": "Azure Blob Storage containers"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SDKs interact with Blob REST APIs.",
       "docs": [
@@ -973,23 +803,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Storage Blob SDK"
+          "text": "Blob storage SDK"
         },
         {
           "id": "b",
-          "text": "Route 53"
+          "text": "Shared access signatures"
         },
         {
           "id": "c",
-          "text": "Entra B2C only"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "d",
-          "text": "VPN SKU"
+          "text": "Azure Blob Storage containers"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SDKs interact with Blob REST APIs.",
       "docs": [
@@ -1007,23 +837,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Storage Blob SDK"
+          "text": "Azure Blob Storage containers"
         },
         {
           "id": "b",
-          "text": "Route 53"
+          "text": "Shared access signatures"
         },
         {
           "id": "c",
-          "text": "Entra B2C only"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "d",
-          "text": "VPN SKU"
+          "text": "Blob storage SDK"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SDKs interact with Blob REST APIs.",
       "docs": [
@@ -1041,23 +871,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Shared access signatures"
+          "text": "Azure Blob Storage containers"
         },
         {
           "id": "b",
-          "text": "Public container always"
+          "text": "Blob storage SDK"
         },
         {
           "id": "c",
-          "text": "Embed account keys"
+          "text": "Shared access signatures"
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Azure Storage Blob SDK"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SAS provides scoped delegated access.",
       "docs": [
@@ -1075,23 +905,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Shared access signatures"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "b",
-          "text": "Public container always"
+          "text": "Email keys"
         },
         {
           "id": "c",
-          "text": "Embed account keys"
+          "text": "Shared access signatures"
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Azure Blob Storage containers"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SAS provides scoped delegated access.",
       "docs": [
@@ -1109,23 +939,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Shared access signatures"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "b",
-          "text": "Public container always"
+          "text": "Shared access signatures"
         },
         {
           "id": "c",
-          "text": "Embed account keys"
+          "text": "Azure Blob Storage containers"
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Blob storage SDK"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SAS provides scoped delegated access.",
       "docs": [
@@ -1143,23 +973,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Blob Storage containers"
+          "text": "Shared access signatures"
         },
         {
           "id": "b",
-          "text": "Local USB"
+          "text": "DNS only (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "SMTP relay"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Azure Blob Storage containers"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Blobs store objects via REST.",
       "docs": [
@@ -1181,15 +1011,15 @@
         },
         {
           "id": "b",
-          "text": "Local USB"
+          "text": "Shared access signatures"
         },
         {
           "id": "c",
-          "text": "SMTP relay"
+          "text": "Azure Storage Blob SDK"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Blob storage SDK"
         }
       ],
       "correct": [
@@ -1211,23 +1041,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Graph API"
+          "text": "Microsoft identity platform"
         },
         {
           "id": "b",
-          "text": "SNMP traps"
+          "text": "Managed identities"
         },
         {
           "id": "c",
-          "text": "ICMP only"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure Key Vault references"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Graph is the unified API for Microsoft cloud data.",
       "docs": [
@@ -1245,23 +1075,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Managed identities"
+          "text": "Azure Key Vault references"
         },
         {
           "id": "b",
-          "text": "Embed passwords in repo"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "c",
-          "text": "Shared keys in JS"
+          "text": "Managed identities"
         },
         {
           "id": "d",
-          "text": "Anonymous admin"
+          "text": "Microsoft Graph"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Managed identities use Entra tokens automatically.",
       "docs": [
@@ -1279,23 +1109,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Key Vault references"
+          "text": "Managed identities"
         },
         {
           "id": "b",
-          "text": "Secrets in git"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "c",
-          "text": "Env in public repo"
+          "text": "Microsoft identity platform"
         },
         {
           "id": "d",
-          "text": "Chat keys"
+          "text": "Azure Key Vault references"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Key Vault references keep secrets out of code.",
       "docs": [
@@ -1313,23 +1143,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft identity platform"
+          "text": "Azure Key Vault references"
         },
         {
           "id": "b",
-          "text": "Custom crypto only"
+          "text": "Managed identities"
         },
         {
           "id": "c",
-          "text": "Disable validation"
+          "text": "Microsoft identity platform"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "Microsoft Graph API"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Identity platform issues OAuth2 tokens.",
       "docs": [
@@ -1347,23 +1177,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Graph API"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "SNMP traps"
+          "text": "Microsoft identity platform"
         },
         {
           "id": "c",
-          "text": "ICMP only"
+          "text": "Azure Key Vault references"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Microsoft Graph API"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Graph is the unified API for Microsoft cloud data.",
       "docs": [
@@ -1381,23 +1211,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Graph API"
+          "text": "Azure Key Vault references"
         },
         {
           "id": "b",
-          "text": "SNMP traps"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "c",
-          "text": "ICMP only"
+          "text": "Microsoft Graph"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Managed identities"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Graph is the unified API for Microsoft cloud data.",
       "docs": [
@@ -1419,15 +1249,15 @@
         },
         {
           "id": "b",
-          "text": "SNMP traps"
+          "text": "Microsoft identity platform"
         },
         {
           "id": "c",
-          "text": "ICMP only"
+          "text": "Managed identities"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure Key Vault references"
         }
       ],
       "correct": [
@@ -1453,15 +1283,15 @@
         },
         {
           "id": "b",
-          "text": "Embed passwords in repo"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "c",
-          "text": "Shared keys in JS"
+          "text": "Microsoft identity platform"
         },
         {
           "id": "d",
-          "text": "Anonymous admin"
+          "text": "Azure Key Vault references"
         }
       ],
       "correct": [
@@ -1483,23 +1313,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Managed identities"
+          "text": "Microsoft identity platform"
         },
         {
           "id": "b",
-          "text": "Embed passwords in repo"
+          "text": "Managed identities"
         },
         {
           "id": "c",
-          "text": "Shared keys in JS"
+          "text": "Microsoft Graph"
         },
         {
           "id": "d",
-          "text": "Anonymous admin"
+          "text": "Microsoft Graph API"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Managed identities use Entra tokens automatically.",
       "docs": [
@@ -1517,23 +1347,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Managed identities"
+          "text": "Azure Key Vault references"
         },
         {
           "id": "b",
-          "text": "Embed passwords in repo"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "c",
-          "text": "Shared keys in JS"
+          "text": "Microsoft Graph"
         },
         {
           "id": "d",
-          "text": "Anonymous admin"
+          "text": "Managed identities"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Managed identities use Entra tokens automatically.",
       "docs": [
@@ -1551,23 +1381,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Key Vault references"
+          "text": "Microsoft Graph"
         },
         {
           "id": "b",
-          "text": "Secrets in git"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "c",
-          "text": "Env in public repo"
+          "text": "Managed identities"
         },
         {
           "id": "d",
-          "text": "Chat keys"
+          "text": "Azure Key Vault references"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Key Vault references keep secrets out of code.",
       "docs": [
@@ -1589,15 +1419,15 @@
         },
         {
           "id": "b",
-          "text": "Secrets in git"
+          "text": "Managed identities"
         },
         {
           "id": "c",
-          "text": "Env in public repo"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "d",
-          "text": "Chat keys"
+          "text": "Microsoft identity platform"
         }
       ],
       "correct": [
@@ -1619,23 +1449,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Key Vault references"
+          "text": "Managed identities"
         },
         {
           "id": "b",
-          "text": "Secrets in git"
+          "text": "Chat keys (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Env in public repo"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "d",
-          "text": "Chat keys"
+          "text": "Azure Key Vault references"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Key Vault references keep secrets out of code.",
       "docs": [
@@ -1653,23 +1483,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft identity platform"
+          "text": "Azure Key Vault references"
         },
         {
           "id": "b",
-          "text": "Custom crypto only"
+          "text": "Microsoft Graph API"
         },
         {
           "id": "c",
-          "text": "Disable validation"
+          "text": "Microsoft identity platform"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "Microsoft Graph"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Identity platform issues OAuth2 tokens.",
       "docs": [
@@ -1691,15 +1521,15 @@
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "Paper logs"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Application Insights custom metrics"
         },
         {
           "id": "d",
-          "text": "Paper logs"
+          "text": "Application Insights Profiler"
         }
       ],
       "correct": [
@@ -1721,15 +1551,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Insights Profiler"
+          "text": "Application Insights custom metrics"
         },
         {
           "id": "b",
-          "text": "Guess hotspots"
+          "text": "Application Insights"
         },
         {
           "id": "c",
-          "text": "Disable telemetry"
+          "text": "Application Insights Profiler"
         },
         {
           "id": "d",
@@ -1737,7 +1567,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Profiler captures traces in production.",
       "docs": [
@@ -1755,23 +1585,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Insights custom metrics"
+          "text": "Application Insights Profiler"
         },
         {
           "id": "b",
-          "text": "Spreadsheet only"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No SDK"
+          "text": "Application Insights"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Application Insights custom metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Custom metrics extend observability.",
       "docs": [
@@ -1789,15 +1619,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Insights"
+          "text": "Application Insights custom metrics"
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "Application Insights Profiler"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Application Insights"
         },
         {
           "id": "d",
@@ -1805,7 +1635,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "App Insights provides APM for Azure apps.",
       "docs": [
@@ -1823,23 +1653,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Insights"
+          "text": "Paper logs"
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "Application Insights Profiler"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Application Insights"
         },
         {
           "id": "d",
-          "text": "Paper logs"
+          "text": "Application Insights custom metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "App Insights provides APM for Azure apps.",
       "docs": [
@@ -1857,15 +1687,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Insights"
+          "text": "Application Insights Profiler"
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "Application Insights"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Application Insights custom metrics"
         },
         {
           "id": "d",
@@ -1873,7 +1703,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "App Insights provides APM for Azure apps.",
       "docs": [
@@ -1891,23 +1721,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Insights Profiler"
+          "text": "Application Insights"
         },
         {
           "id": "b",
-          "text": "Guess hotspots"
+          "text": "Application Insights custom metrics"
         },
         {
           "id": "c",
-          "text": "Disable telemetry"
+          "text": "Ping only"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Application Insights Profiler"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Profiler captures traces in production.",
       "docs": [
@@ -1929,15 +1759,15 @@
         },
         {
           "id": "b",
-          "text": "Guess hotspots"
+          "text": "Application Insights"
         },
         {
           "id": "c",
-          "text": "Disable telemetry"
+          "text": "Ping only"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Application Insights custom metrics"
         }
       ],
       "correct": [
@@ -1959,23 +1789,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Insights Profiler"
+          "text": "Ping only"
         },
         {
           "id": "b",
-          "text": "Guess hotspots"
+          "text": "Application Insights Profiler"
         },
         {
           "id": "c",
-          "text": "Disable telemetry"
+          "text": "Application Insights custom metrics"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Application Insights"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Profiler captures traces in production.",
       "docs": [
@@ -1993,23 +1823,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Insights custom metrics"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Spreadsheet only"
+          "text": "Application Insights Profiler"
         },
         {
           "id": "c",
-          "text": "No SDK"
+          "text": "Application Insights custom metrics"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Application Insights"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Custom metrics extend observability.",
       "docs": [
@@ -2031,15 +1861,15 @@
         },
         {
           "id": "b",
-          "text": "Spreadsheet only"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No SDK"
+          "text": "Application Insights"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Application Insights Profiler"
         }
       ],
       "correct": [
@@ -2065,11 +1895,11 @@
         },
         {
           "id": "b",
-          "text": "Tight coupling only"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "c",
-          "text": "Shared DB table lock"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "d",
@@ -2095,15 +1925,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Event Hubs"
+          "text": "Azure Service Bus"
         },
         {
           "id": "b",
-          "text": "Email batch"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "c",
-          "text": "Daily CSV"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "d",
@@ -2111,7 +1941,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Event Hubs ingests millions of events per second.",
       "docs": [
@@ -2129,23 +1959,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Event Grid blob events to Functions"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "b",
-          "text": "Poll FTP hourly"
+          "text": "Azure Service Bus"
         },
         {
           "id": "c",
-          "text": "Manual copy"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Event Grid blob events to Functions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Event Grid delivers push notifications.",
       "docs": [
@@ -2167,15 +1997,15 @@
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "c",
-          "text": "Email tasks"
+          "text": "Azure Service Bus"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "Azure Event Hubs"
         }
       ],
       "correct": [
@@ -2197,23 +2027,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Service Bus"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "b",
-          "text": "Tight coupling only"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "c",
-          "text": "Shared DB table lock"
+          "text": "Azure Service Bus"
         },
         {
           "id": "d",
-          "text": "FTP polling"
+          "text": "Azure Logic Apps"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Service Bus provides reliable messaging.",
       "docs": [
@@ -2231,23 +2061,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Service Bus"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "b",
-          "text": "Tight coupling only"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "c",
-          "text": "Shared DB table lock"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "d",
-          "text": "FTP polling"
+          "text": "Azure Service Bus"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Service Bus provides reliable messaging.",
       "docs": [
@@ -2265,23 +2095,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Service Bus"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "b",
-          "text": "Tight coupling only"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "c",
-          "text": "Shared DB table lock"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "d",
-          "text": "FTP polling"
+          "text": "Azure Service Bus"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Service Bus provides reliable messaging.",
       "docs": [
@@ -2303,15 +2133,15 @@
         },
         {
           "id": "b",
-          "text": "Email batch"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "c",
-          "text": "Daily CSV"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "d",
-          "text": "SNMP only"
+          "text": "Azure Service Bus"
         }
       ],
       "correct": [
@@ -2333,23 +2163,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Event Hubs"
+          "text": "Azure Service Bus"
         },
         {
           "id": "b",
-          "text": "Email batch"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "c",
-          "text": "Daily CSV"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "d",
-          "text": "SNMP only"
+          "text": "Event Grid blob events to Functions"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Event Hubs ingests millions of events per second.",
       "docs": [
@@ -2367,23 +2197,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Event Hubs"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "b",
-          "text": "Email batch"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "c",
-          "text": "Daily CSV"
+          "text": "Azure Service Bus"
         },
         {
           "id": "d",
-          "text": "SNMP only"
+          "text": "Azure Event Hubs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Event Hubs ingests millions of events per second.",
       "docs": [
@@ -2401,23 +2231,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Event Grid blob events to Functions"
+          "text": "Azure Service Bus"
         },
         {
           "id": "b",
-          "text": "Poll FTP hourly"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "c",
-          "text": "Manual copy"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Event Grid blob events to Functions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Event Grid delivers push notifications.",
       "docs": [
@@ -2439,15 +2269,15 @@
         },
         {
           "id": "b",
-          "text": "Poll FTP hourly"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "c",
-          "text": "Manual copy"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Service Bus"
         }
       ],
       "correct": [
@@ -2469,23 +2299,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Event Grid blob events to Functions"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Poll FTP hourly"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "c",
-          "text": "Manual copy"
+          "text": "Azure Service Bus"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Logic Apps"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Event Grid delivers push notifications.",
       "docs": [
@@ -2503,23 +2333,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Logic Apps"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "c",
-          "text": "Email tasks"
+          "text": "USB scripts"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "Azure Service Bus"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Logic Apps automate workflows.",
       "docs": [
@@ -2537,23 +2367,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Logic Apps"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "c",
-          "text": "Email tasks"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "Azure Service Bus"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Logic Apps automate workflows.",
       "docs": [
@@ -2571,23 +2401,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Logic Apps"
+          "text": "Azure Service Bus"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "c",
-          "text": "Email tasks"
+          "text": "Azure Event Hubs"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "Azure Logic Apps"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Logic Apps automate workflows.",
       "docs": [
@@ -2605,23 +2435,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Service Bus"
+          "text": "FTP polling"
         },
         {
           "id": "b",
-          "text": "Tight coupling only"
+          "text": "Azure Logic Apps"
         },
         {
           "id": "c",
-          "text": "Shared DB table lock"
+          "text": "Event Grid blob events to Functions"
         },
         {
           "id": "d",
-          "text": "FTP polling"
+          "text": "Azure Service Bus"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Service Bus provides reliable messaging.",
       "docs": [

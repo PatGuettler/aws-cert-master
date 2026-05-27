@@ -82,23 +82,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Amazon Macie only"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "Route 53"
+          "text": "SageMaker Processing or sklearn split with stratification"
         },
         {
           "id": "d",
-          "text": "AWS Budgets"
+          "text": "Amazon SageMaker Data Wrangler"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data Wrangler imports, transforms, and exports ML data.",
       "docs": [
@@ -116,23 +116,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "AWS Artifact"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "Amazon WorkMail"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "AWS Glue Data Catalog and crawlers"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Glue provides serverless Spark ETL.",
       "docs": [
@@ -154,15 +154,15 @@
         },
         {
           "id": "b",
-          "text": "Manual sticky notes"
-        },
-        {
-          "id": "c",
           "text": "Public labels in prod bucket"
         },
         {
+          "id": "c",
+          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
+        },
+        {
           "id": "d",
-          "text": "No QA"
+          "text": "Amazon SageMaker Feature Store"
         }
       ],
       "correct": [
@@ -184,23 +184,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue Data Catalog and crawlers"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "b",
-          "text": "Hard-coded CSV only forever"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "c",
-          "text": "No catalog"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "d",
-          "text": "Delete metadata"
+          "text": "Amazon Macie + transformation jobs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "The Data Catalog stores table metadata.",
       "docs": [
@@ -218,23 +218,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
+          "text": "AWS Glue"
         },
         {
           "id": "b",
-          "text": "Ignore minority class"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "c",
-          "text": "Leak test labels"
+          "text": "Amazon Macie + transformation jobs"
         },
         {
           "id": "d",
-          "text": "Single class only"
+          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Imbalanced data requires sampling or weighted loss.",
       "docs": [
@@ -252,23 +252,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Processing or sklearn split with stratification"
+          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
         },
         {
           "id": "b",
-          "text": "Shuffle test into train"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "c",
-          "text": "Use future data"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "d",
-          "text": "One row datasets"
+          "text": "SageMaker Processing or sklearn split with stratification"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Proper splits prevent optimistic metrics.",
       "docs": [
@@ -290,15 +290,15 @@
         },
         {
           "id": "b",
-          "text": "Local CSV on laptop only"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "Unversioned text files"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "d",
-          "text": "Email features"
+          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
         }
       ],
       "correct": [
@@ -320,23 +320,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Macie + transformation jobs"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "b",
-          "text": "Train on raw SSNs"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "c",
-          "text": "Public datasets with secrets"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "d",
-          "text": "No encryption"
+          "text": "Amazon Macie + transformation jobs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Remove or tokenize sensitive attributes early.",
       "docs": [
@@ -354,23 +354,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "Amazon Macie + transformation jobs"
         },
         {
           "id": "b",
-          "text": "Amazon Macie only"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "c",
-          "text": "Route 53"
+          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
         },
         {
           "id": "d",
-          "text": "AWS Budgets"
+          "text": "SageMaker Ground Truth"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data Wrangler imports, transforms, and exports ML data.",
       "docs": [
@@ -388,23 +388,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "AWS Glue"
         },
         {
           "id": "b",
-          "text": "Amazon Macie only"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "c",
-          "text": "Route 53"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "d",
-          "text": "AWS Budgets"
+          "text": "SageMaker Ground Truth"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Data Wrangler imports, transforms, and exports ML data.",
       "docs": [
@@ -422,23 +422,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "b",
-          "text": "Amazon Macie only"
+          "text": "SageMaker Processing or sklearn split with stratification"
         },
         {
           "id": "c",
-          "text": "Route 53"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "d",
-          "text": "AWS Budgets"
+          "text": "Amazon SageMaker Data Wrangler"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data Wrangler imports, transforms, and exports ML data.",
       "docs": [
@@ -456,23 +456,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "SageMaker Processing or sklearn split with stratification"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
         },
         {
           "id": "c",
-          "text": "Amazon WorkMail"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Glue provides serverless Spark ETL.",
       "docs": [
@@ -490,23 +490,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "c",
-          "text": "Amazon WorkMail"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Glue provides serverless Spark ETL.",
       "docs": [
@@ -524,23 +524,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "Amazon WorkMail"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "Amazon SageMaker Data Wrangler"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Glue provides serverless Spark ETL.",
       "docs": [
@@ -558,23 +558,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Ground Truth"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Manual sticky notes"
+          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
         },
         {
           "id": "c",
-          "text": "Public labels in prod bucket"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "d",
-          "text": "No QA"
+          "text": "Public labels in prod bucket"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Ground Truth manages human labeling workflows.",
       "docs": [
@@ -592,11 +592,11 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Ground Truth"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "b",
-          "text": "Manual sticky notes"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
@@ -604,11 +604,11 @@
         },
         {
           "id": "d",
-          "text": "No QA"
+          "text": "SageMaker Ground Truth"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Ground Truth manages human labeling workflows.",
       "docs": [
@@ -626,23 +626,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Ground Truth"
+          "text": "Amazon Macie + transformation jobs"
         },
         {
           "id": "b",
-          "text": "Manual sticky notes"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "c",
-          "text": "Public labels in prod bucket"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "d",
-          "text": "No QA"
+          "text": "Public labels in prod bucket"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Ground Truth manages human labeling workflows.",
       "docs": [
@@ -660,23 +660,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue Data Catalog and crawlers"
+          "text": "Amazon Macie + transformation jobs"
         },
         {
           "id": "b",
-          "text": "Hard-coded CSV only forever"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "c",
-          "text": "No catalog"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "d",
-          "text": "Delete metadata"
+          "text": "Amazon SageMaker Data Wrangler"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "The Data Catalog stores table metadata.",
       "docs": [
@@ -694,23 +694,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue Data Catalog and crawlers"
+          "text": "Amazon SageMaker Feature Store"
         },
         {
           "id": "b",
-          "text": "Hard-coded CSV only forever"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "c",
-          "text": "No catalog"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "d",
-          "text": "Delete metadata"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "The Data Catalog stores table metadata.",
       "docs": [
@@ -728,23 +728,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue Data Catalog and crawlers"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "b",
-          "text": "Hard-coded CSV only forever"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "c",
-          "text": "No catalog"
+          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
         },
         {
           "id": "d",
-          "text": "Delete metadata"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "The Data Catalog stores table metadata.",
       "docs": [
@@ -766,15 +766,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore minority class"
+          "text": "SageMaker Ground Truth"
         },
         {
           "id": "c",
-          "text": "Leak test labels"
+          "text": "AWS Glue"
         },
         {
           "id": "d",
-          "text": "Single class only"
+          "text": "AWS Glue Data Catalog and crawlers"
         }
       ],
       "correct": [
@@ -796,23 +796,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
+          "text": "Amazon SageMaker Data Wrangler"
         },
         {
           "id": "b",
-          "text": "Ignore minority class"
+          "text": "Oversampling, weights, or SMOTE techniques in SageMaker"
         },
         {
           "id": "c",
-          "text": "Leak test labels"
+          "text": "AWS Glue Data Catalog and crawlers"
         },
         {
           "id": "d",
-          "text": "Single class only"
+          "text": "Amazon Macie + transformation jobs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Imbalanced data requires sampling or weighted loss.",
       "docs": [
@@ -830,23 +830,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker training jobs"
+          "text": "SageMaker distributed training libraries"
         },
         {
           "id": "b",
-          "text": "Manual laptops only"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "c",
-          "text": "No checkpoints"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "d",
-          "text": "Prod data in notebooks"
+          "text": "SageMaker Automatic Model Tuning"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Training jobs scale on ML instances with spot support.",
       "docs": [
@@ -868,15 +868,15 @@
         },
         {
           "id": "b",
-          "text": "Grid search on laptop only"
+          "text": "SageMaker built-in algorithms"
         },
         {
           "id": "c",
-          "text": "No validation set"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "Amazon SageMaker training jobs"
         }
       ],
       "correct": [
@@ -898,23 +898,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Experiments or MLflow"
+          "text": "SageMaker built-in algorithms"
         },
         {
           "id": "b",
-          "text": "No logging"
+          "text": "SageMaker Model Registry with dataset snapshots in S3"
         },
         {
           "id": "c",
-          "text": "Overwrite models silently"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "d",
-          "text": "Shared root account"
+          "text": "SageMaker Automatic Model Tuning"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Experiment tracking compares runs reproducibly.",
       "docs": [
@@ -932,23 +932,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker built-in algorithms"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "b",
-          "text": "Rewrite SGD from scratch only"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "c",
-          "text": "Ignore docs"
+          "text": "SageMaker built-in algorithms"
         },
         {
           "id": "d",
-          "text": "No validation"
+          "text": "SageMaker distributed training libraries"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Built-ins include XGBoost, Linear Learner, and more.",
       "docs": [
@@ -966,23 +966,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker custom training images"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "b",
-          "text": "Arbitrary root on public hub only"
+          "text": "SageMaker custom training images"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "SageMaker built-in algorithms"
         },
         {
           "id": "d",
-          "text": "Secrets in image layers"
+          "text": "SageMaker distributed training libraries"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Custom containers package proprietary dependencies.",
       "docs": [
@@ -1000,23 +1000,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker distributed training libraries"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "b",
-          "text": "Single core only"
+          "text": "SageMaker built-in algorithms"
         },
         {
           "id": "c",
-          "text": "No communication"
+          "text": "SageMaker distributed training libraries"
         },
         {
           "id": "d",
-          "text": "Oversized one GPU always"
+          "text": "Amazon SageMaker training jobs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Distributed libraries scale deep learning jobs.",
       "docs": [
@@ -1034,23 +1034,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Model Registry with dataset snapshots in S3"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "b",
-          "text": "Unversioned overwrites"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "c",
-          "text": "No tags"
+          "text": "SageMaker Model Registry with dataset snapshots in S3"
         },
         {
           "id": "d",
-          "text": "Prod edits train data"
+          "text": "Amazon SageMaker Experiments or MLflow"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Versioning supports rollback and audit.",
       "docs": [
@@ -1068,23 +1068,23 @@
       "options": [
         {
           "id": "a",
-          "text": "TensorBoard or SageMaker Debugger"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "b",
-          "text": "Wait until failure only"
+          "text": "SageMaker custom training images"
         },
         {
           "id": "c",
-          "text": "Disable metrics"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "d",
-          "text": "No alarms"
+          "text": "TensorBoard or SageMaker Debugger"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Debugger detects issues like vanishing gradients.",
       "docs": [
@@ -1102,23 +1102,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker training jobs"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "b",
-          "text": "Manual laptops only"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "c",
-          "text": "No checkpoints"
+          "text": "SageMaker distributed training libraries"
         },
         {
           "id": "d",
-          "text": "Prod data in notebooks"
+          "text": "Amazon SageMaker training jobs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Training jobs scale on ML instances with spot support.",
       "docs": [
@@ -1136,23 +1136,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker training jobs"
+          "text": "TensorBoard or SageMaker Debugger"
         },
         {
           "id": "b",
-          "text": "Manual laptops only"
+          "text": "SageMaker Model Registry with dataset snapshots in S3"
         },
         {
           "id": "c",
-          "text": "No checkpoints"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "d",
-          "text": "Prod data in notebooks"
+          "text": "SageMaker Automatic Model Tuning"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Training jobs scale on ML instances with spot support.",
       "docs": [
@@ -1174,15 +1174,15 @@
         },
         {
           "id": "b",
-          "text": "Manual laptops only"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "c",
-          "text": "No checkpoints"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "d",
-          "text": "Prod data in notebooks"
+          "text": "SageMaker distributed training libraries"
         }
       ],
       "correct": [
@@ -1204,23 +1204,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Automatic Model Tuning"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "b",
-          "text": "Grid search on laptop only"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "c",
-          "text": "No validation set"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "SageMaker Model Registry with dataset snapshots in S3"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Automatic Model Tuning searches hyperparameter space.",
       "docs": [
@@ -1238,23 +1238,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Automatic Model Tuning"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "b",
-          "text": "Grid search on laptop only"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "c",
-          "text": "No validation set"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Automatic Model Tuning searches hyperparameter space.",
       "docs": [
@@ -1272,23 +1272,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Automatic Model Tuning"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "b",
-          "text": "Grid search on laptop only"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "c",
-          "text": "No validation set"
+          "text": "TensorBoard or SageMaker Debugger"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "SageMaker custom training images"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Automatic Model Tuning searches hyperparameter space.",
       "docs": [
@@ -1306,23 +1306,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Experiments or MLflow"
+          "text": "TensorBoard or SageMaker Debugger"
         },
         {
           "id": "b",
-          "text": "No logging"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "c",
-          "text": "Overwrite models silently"
+          "text": "SageMaker custom training images"
         },
         {
           "id": "d",
-          "text": "Shared root account"
+          "text": "Amazon SageMaker Experiments or MLflow"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Experiment tracking compares runs reproducibly.",
       "docs": [
@@ -1340,23 +1340,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Experiments or MLflow"
+          "text": "SageMaker custom training images"
         },
         {
           "id": "b",
-          "text": "No logging"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "c",
-          "text": "Overwrite models silently"
+          "text": "SageMaker built-in algorithms"
         },
         {
           "id": "d",
-          "text": "Shared root account"
+          "text": "TensorBoard or SageMaker Debugger"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Experiment tracking compares runs reproducibly.",
       "docs": [
@@ -1378,15 +1378,15 @@
         },
         {
           "id": "b",
-          "text": "No logging"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "c",
-          "text": "Overwrite models silently"
+          "text": "SageMaker distributed training libraries"
         },
         {
           "id": "d",
-          "text": "Shared root account"
+          "text": "SageMaker Automatic Model Tuning"
         }
       ],
       "correct": [
@@ -1412,15 +1412,15 @@
         },
         {
           "id": "b",
-          "text": "Rewrite SGD from scratch only"
+          "text": "SageMaker Automatic Model Tuning"
         },
         {
           "id": "c",
-          "text": "Ignore docs"
+          "text": "SageMaker custom training images"
         },
         {
           "id": "d",
-          "text": "No validation"
+          "text": "Amazon SageMaker training jobs"
         }
       ],
       "correct": [
@@ -1442,23 +1442,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker built-in algorithms"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "b",
-          "text": "Rewrite SGD from scratch only"
+          "text": "SageMaker Model Registry with dataset snapshots in S3"
         },
         {
           "id": "c",
-          "text": "Ignore docs"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "d",
-          "text": "No validation"
+          "text": "SageMaker built-in algorithms"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Built-ins include XGBoost, Linear Learner, and more.",
       "docs": [
@@ -1476,23 +1476,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker built-in algorithms"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "b",
-          "text": "Rewrite SGD from scratch only"
+          "text": "SageMaker built-in algorithms"
         },
         {
           "id": "c",
-          "text": "Ignore docs"
+          "text": "Amazon SageMaker training jobs"
         },
         {
           "id": "d",
-          "text": "No validation"
+          "text": "TensorBoard or SageMaker Debugger"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Built-ins include XGBoost, Linear Learner, and more.",
       "docs": [
@@ -1514,15 +1514,15 @@
         },
         {
           "id": "b",
-          "text": "Arbitrary root on public hub only"
+          "text": "Amazon SageMaker Experiments or MLflow"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "SageMaker built-in algorithms"
         },
         {
           "id": "d",
-          "text": "Secrets in image layers"
+          "text": "Amazon SageMaker training jobs"
         }
       ],
       "correct": [
@@ -1544,23 +1544,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker real-time endpoints"
+          "text": "SageMaker Pipelines with CodePipeline"
         },
         {
           "id": "b",
-          "text": "Batch only for online chat"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "c",
-          "text": "SSH to laptop"
+          "text": "SageMaker real-time endpoints"
         },
         {
           "id": "d",
-          "text": "No autoscaling"
+          "text": "SageMaker production variants with traffic weights"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Endpoints serve low-latency predictions.",
       "docs": [
@@ -1578,23 +1578,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Asynchronous Inference"
-        },
-        {
-          "id": "b",
           "text": "Sync endpoint for 1 GB payloads"
         },
         {
+          "id": "b",
+          "text": "SageMaker real-time endpoints"
+        },
+        {
           "id": "c",
-          "text": "Email results"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "SageMaker Batch Transform or scheduled pipelines"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Async inference queues requests and returns results later.",
       "docs": [
@@ -1612,23 +1612,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker multi-model endpoints"
+          "text": "SageMaker real-time endpoints"
         },
         {
           "id": "b",
-          "text": "One endpoint per tiny model always costly"
+          "text": "SageMaker Batch Transform or scheduled pipelines"
         },
         {
           "id": "c",
-          "text": "No routing"
+          "text": "SageMaker Pipelines with CodePipeline"
         },
         {
           "id": "d",
-          "text": "Manual swap"
+          "text": "SageMaker multi-model endpoints"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Multi-model endpoints share infrastructure.",
       "docs": [
@@ -1650,15 +1650,15 @@
         },
         {
           "id": "b",
-          "text": "Manual clicks only"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "Deploy to prod without approval"
         },
         {
           "id": "d",
-          "text": "Deploy to prod without approval"
+          "text": "SageMaker Inference Recommender or EKS hosting"
         }
       ],
       "correct": [
@@ -1680,23 +1680,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudFormation or CDK for SageMaker"
+          "text": "SageMaker Inference Recommender or EKS hosting"
         },
         {
           "id": "b",
-          "text": "Undocumented console only"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "c",
-          "text": "Shared dev/prod account"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "d",
-          "text": "Disable rollback"
+          "text": "CloudFormation or CDK for SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "IaC codifies ML infrastructure.",
       "docs": [
@@ -1714,23 +1714,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker production variants with traffic weights"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "b",
-          "text": "100% to bad model always"
+          "text": "SageMaker real-time endpoints"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "d",
-          "text": "Ignore latency"
+          "text": "SageMaker production variants with traffic weights"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Traffic splitting compares model performance safely.",
       "docs": [
@@ -1748,23 +1748,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Inference Recommender or EKS hosting"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "b",
-          "text": "Bare metal random scripts"
+          "text": "SageMaker Inference Recommender or EKS hosting"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "SageMaker Batch Transform or scheduled pipelines"
         },
         {
           "id": "d",
-          "text": "Public inference no auth"
+          "text": "SageMaker multi-model endpoints"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "EKS can host containers built for SageMaker.",
       "docs": [
@@ -1782,23 +1782,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Batch Transform or scheduled pipelines"
+          "text": "SageMaker real-time endpoints"
         },
         {
           "id": "b",
-          "text": "Real-time endpoint for huge batch"
+          "text": "SageMaker Batch Transform or scheduled pipelines"
         },
         {
           "id": "c",
-          "text": "No monitoring"
+          "text": "CloudFormation or CDK for SageMaker"
         },
         {
           "id": "d",
-          "text": "Duplicate scoring"
+          "text": "Real-time endpoint for huge batch"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Batch Transform efficiently scores large datasets.",
       "docs": [
@@ -1820,15 +1820,15 @@
         },
         {
           "id": "b",
-          "text": "Batch only for online chat"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "c",
-          "text": "SSH to laptop"
+          "text": "SageMaker Pipelines with CodePipeline"
         },
         {
           "id": "d",
-          "text": "No autoscaling"
+          "text": "SageMaker Asynchronous Inference"
         }
       ],
       "correct": [
@@ -1854,15 +1854,15 @@
         },
         {
           "id": "b",
-          "text": "Batch only for online chat"
+          "text": "SageMaker Inference Recommender or EKS hosting"
         },
         {
           "id": "c",
-          "text": "SSH to laptop"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "d",
-          "text": "No autoscaling"
+          "text": "CloudFormation or CDK for SageMaker"
         }
       ],
       "correct": [
@@ -1884,23 +1884,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker real-time endpoints"
+          "text": "SageMaker Pipelines with CodePipeline"
         },
         {
           "id": "b",
-          "text": "Batch only for online chat"
+          "text": "SageMaker real-time endpoints"
         },
         {
           "id": "c",
-          "text": "SSH to laptop"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "d",
-          "text": "No autoscaling"
+          "text": "SageMaker Batch Transform or scheduled pipelines"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Endpoints serve low-latency predictions.",
       "docs": [
@@ -1918,23 +1918,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Asynchronous Inference"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "b",
-          "text": "Sync endpoint for 1 GB payloads"
+          "text": "SageMaker production variants with traffic weights"
         },
         {
           "id": "c",
-          "text": "Email results"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Sync endpoint for 1 GB payloads"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Async inference queues requests and returns results later.",
       "docs": [
@@ -1952,23 +1952,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Asynchronous Inference"
-        },
-        {
-          "id": "b",
           "text": "Sync endpoint for 1 GB payloads"
         },
         {
+          "id": "b",
+          "text": "SageMaker Asynchronous Inference"
+        },
+        {
           "id": "c",
-          "text": "Email results"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "SageMaker Pipelines with CodePipeline"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Async inference queues requests and returns results later.",
       "docs": [
@@ -1986,7 +1986,7 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Asynchronous Inference"
+          "text": "SageMaker Pipelines with CodePipeline"
         },
         {
           "id": "b",
@@ -1994,15 +1994,15 @@
         },
         {
           "id": "c",
-          "text": "Email results"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "SageMaker multi-model endpoints"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Async inference queues requests and returns results later.",
       "docs": [
@@ -2020,23 +2020,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker multi-model endpoints"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "b",
-          "text": "One endpoint per tiny model always costly"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "c",
-          "text": "No routing"
+          "text": "SageMaker Pipelines with CodePipeline"
         },
         {
           "id": "d",
-          "text": "Manual swap"
+          "text": "SageMaker real-time endpoints"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multi-model endpoints share infrastructure.",
       "docs": [
@@ -2054,23 +2054,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker multi-model endpoints"
+          "text": "SageMaker Pipelines with CodePipeline"
         },
         {
           "id": "b",
-          "text": "One endpoint per tiny model always costly"
+          "text": "SageMaker production variants with traffic weights"
         },
         {
           "id": "c",
-          "text": "No routing"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "d",
-          "text": "Manual swap"
+          "text": "SageMaker Asynchronous Inference"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Multi-model endpoints share infrastructure.",
       "docs": [
@@ -2088,23 +2088,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker multi-model endpoints"
+          "text": "SageMaker Pipelines with CodePipeline"
         },
         {
           "id": "b",
-          "text": "One endpoint per tiny model always costly"
+          "text": "SageMaker multi-model endpoints"
         },
         {
           "id": "c",
-          "text": "No routing"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "d",
-          "text": "Manual swap"
+          "text": "SageMaker Inference Recommender or EKS hosting"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multi-model endpoints share infrastructure.",
       "docs": [
@@ -2126,15 +2126,15 @@
         },
         {
           "id": "b",
-          "text": "Manual clicks only"
+          "text": "Deploy to prod without approval"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "SageMaker Asynchronous Inference"
         },
         {
           "id": "d",
-          "text": "Deploy to prod without approval"
+          "text": "SageMaker Inference Recommender or EKS hosting"
         }
       ],
       "correct": [
@@ -2156,23 +2156,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Pipelines with CodePipeline"
+          "text": "SageMaker real-time endpoints"
         },
         {
           "id": "b",
-          "text": "Manual clicks only"
+          "text": "Deploy to prod without approval"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "SageMaker Pipelines with CodePipeline"
         },
         {
           "id": "d",
-          "text": "Deploy to prod without approval"
+          "text": "SageMaker Asynchronous Inference"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Pipelines define reproducible ML workflows.",
       "docs": [
@@ -2194,15 +2194,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore drift"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         },
         {
           "id": "c",
-          "text": "No baselines"
+          "text": "CloudTrail and VPC Flow Logs"
         },
         {
           "id": "d",
-          "text": "Delete prod logs"
+          "text": "SageMaker Model Monitor data capture"
         }
       ],
       "correct": [
@@ -2228,15 +2228,15 @@
         },
         {
           "id": "b",
-          "text": "Black box only"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         },
         {
           "id": "c",
-          "text": "No documentation"
+          "text": "SageMaker Studio in VPC-only mode"
         },
         {
           "id": "d",
-          "text": "Hide limitations"
+          "text": "CloudTrail and VPC Flow Logs"
         }
       ],
       "correct": [
@@ -2258,23 +2258,23 @@
       "options": [
         {
           "id": "a",
-          "text": "KMS encryption on EBS and S3 for SageMaker"
+          "text": "SageMaker Model Monitor"
         },
         {
           "id": "b",
-          "text": "Plaintext models public"
+          "text": "SageMaker Studio in VPC-only mode"
         },
         {
           "id": "c",
-          "text": "Shared keys in email"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         },
         {
           "id": "d",
-          "text": "Disable encryption"
+          "text": "CloudTrail and VPC Flow Logs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Encryption protects ML intellectual property.",
       "docs": [
@@ -2292,23 +2292,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Studio in VPC-only mode"
+          "text": "SageMaker Clarify online explainability"
         },
         {
           "id": "b",
-          "text": "Open ingress 0.0.0.0/0"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         },
         {
           "id": "c",
-          "text": "Download arbitrary binaries unvetted"
+          "text": "Open ingress 0.0.0.0/0"
         },
         {
           "id": "d",
-          "text": "Root in notebook"
+          "text": "SageMaker Studio in VPC-only mode"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VPC-only Studio limits data exfiltration.",
       "docs": [
@@ -2330,15 +2330,15 @@
         },
         {
           "id": "b",
-          "text": "Log PII to public bucket"
+          "text": "SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "No retention policy"
+          "text": "SageMaker Studio in VPC-only mode"
         },
         {
           "id": "d",
-          "text": "Disable GDPR review"
+          "text": "Log PII to public bucket"
         }
       ],
       "correct": [
@@ -2360,23 +2360,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch alarms + CodeDeploy or pipeline approvals"
+          "text": "SageMaker Model Monitor"
         },
         {
           "id": "b",
-          "text": "Always auto-promote"
+          "text": "CloudWatch alarms + CodeDeploy or pipeline approvals"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         },
         {
           "id": "d",
-          "text": "Ignore error rate"
+          "text": "SageMaker Studio in VPC-only mode"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Automated rollback limits incident blast radius.",
       "docs": [
@@ -2394,23 +2394,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Inspector for ECR images"
+          "text": "CloudTrail and VPC Flow Logs"
         },
         {
           "id": "b",
-          "text": "Never patch"
+          "text": "Amazon Inspector for ECR images"
         },
         {
           "id": "c",
-          "text": "Latest :latest untrusted"
+          "text": "SageMaker Studio in VPC-only mode"
         },
         {
           "id": "d",
-          "text": "Ignore CVE critical"
+          "text": "SageMaker Model Monitor"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Inspector scans images in ECR.",
       "docs": [
@@ -2428,23 +2428,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudTrail and VPC Flow Logs"
+          "text": "SageMaker Model Monitor data capture"
         },
         {
           "id": "b",
-          "text": "Anonymous invoke"
+          "text": "CloudTrail and VPC Flow Logs"
         },
         {
           "id": "c",
-          "text": "Shared credentials"
+          "text": "SageMaker Clarify online explainability"
         },
         {
           "id": "d",
-          "text": "No logs"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Logging supports security investigations.",
       "docs": [
@@ -2462,23 +2462,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Model Monitor"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         },
         {
           "id": "b",
-          "text": "Ignore drift"
+          "text": "SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "No baselines"
+          "text": "SageMaker Studio in VPC-only mode"
         },
         {
           "id": "d",
-          "text": "Delete prod logs"
+          "text": "SageMaker Clarify online explainability"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Model Monitor compares live data to baselines.",
       "docs": [
@@ -2496,23 +2496,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Model Monitor"
+          "text": "CloudTrail and VPC Flow Logs"
         },
         {
           "id": "b",
-          "text": "Ignore drift"
+          "text": "SageMaker Clarify online explainability"
         },
         {
           "id": "c",
-          "text": "No baselines"
+          "text": "Amazon Inspector for ECR images"
         },
         {
           "id": "d",
-          "text": "Delete prod logs"
+          "text": "SageMaker Model Monitor"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Model Monitor compares live data to baselines.",
       "docs": [
@@ -2530,23 +2530,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Model Monitor"
+          "text": "SageMaker Clarify online explainability"
         },
         {
           "id": "b",
-          "text": "Ignore drift"
+          "text": "CloudWatch alarms + CodeDeploy or pipeline approvals"
         },
         {
           "id": "c",
-          "text": "No baselines"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         },
         {
           "id": "d",
-          "text": "Delete prod logs"
+          "text": "SageMaker Model Monitor"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Model Monitor compares live data to baselines.",
       "docs": [
@@ -2564,23 +2564,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Clarify online explainability"
+          "text": "Amazon Inspector for ECR images"
         },
         {
           "id": "b",
-          "text": "Black box only"
+          "text": "SageMaker Studio in VPC-only mode"
         },
         {
           "id": "c",
-          "text": "No documentation"
+          "text": "SageMaker Clarify online explainability"
         },
         {
           "id": "d",
-          "text": "Hide limitations"
+          "text": "SageMaker Model Monitor"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Clarify provides SHAP and other explainability.",
       "docs": [
@@ -2602,15 +2602,15 @@
         },
         {
           "id": "b",
-          "text": "Black box only"
+          "text": "SageMaker Studio in VPC-only mode"
         },
         {
           "id": "c",
-          "text": "No documentation"
+          "text": "CloudWatch alarms + CodeDeploy or pipeline approvals"
         },
         {
           "id": "d",
-          "text": "Hide limitations"
+          "text": "SageMaker Model Monitor data capture"
         }
       ],
       "correct": [
@@ -2632,23 +2632,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Clarify online explainability"
+          "text": "CloudWatch alarms + CodeDeploy or pipeline approvals"
         },
         {
           "id": "b",
-          "text": "Black box only"
+          "text": "SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "No documentation"
+          "text": "SageMaker Clarify online explainability"
         },
         {
           "id": "d",
-          "text": "Hide limitations"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Clarify provides SHAP and other explainability.",
       "docs": [
@@ -2666,23 +2666,23 @@
       "options": [
         {
           "id": "a",
-          "text": "KMS encryption on EBS and S3 for SageMaker"
+          "text": "SageMaker Model Monitor"
         },
         {
           "id": "b",
-          "text": "Plaintext models public"
+          "text": "Amazon Inspector for ECR images"
         },
         {
           "id": "c",
-          "text": "Shared keys in email"
+          "text": "KMS encryption on EBS and S3 for SageMaker"
         },
         {
           "id": "d",
-          "text": "Disable encryption"
+          "text": "CloudTrail and VPC Flow Logs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Encryption protects ML intellectual property.",
       "docs": [
@@ -2704,15 +2704,15 @@
         },
         {
           "id": "b",
-          "text": "Plaintext models public"
+          "text": "SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "Shared keys in email"
+          "text": "CloudWatch alarms + CodeDeploy or pipeline approvals"
         },
         {
           "id": "d",
-          "text": "Disable encryption"
+          "text": "Amazon Inspector for ECR images"
         }
       ],
       "correct": [
@@ -2738,15 +2738,15 @@
         },
         {
           "id": "b",
-          "text": "Plaintext models public"
+          "text": "SageMaker Clarify online explainability"
         },
         {
           "id": "c",
-          "text": "Shared keys in email"
+          "text": "SageMaker Model Monitor"
         },
         {
           "id": "d",
-          "text": "Disable encryption"
+          "text": "Amazon Inspector for ECR images"
         }
       ],
       "correct": [
@@ -2768,68 +2768,29 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Studio in VPC-only mode"
+          "text": "CloudWatch alarms + CodeDeploy or pipeline approvals"
         },
         {
           "id": "b",
-          "text": "Open ingress 0.0.0.0/0"
+          "text": "SageMaker Studio in VPC-only mode"
         },
         {
           "id": "c",
-          "text": "Download arbitrary binaries unvetted"
+          "text": "SageMaker Model Monitor"
         },
         {
           "id": "d",
-          "text": "Root in notebook"
+          "text": "Open ingress 0.0.0.0/0"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "VPC-only Studio limits data exfiltration.",
       "docs": [
         {
           "title": "Studio VPC",
           "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-and-internet-access.html"
-        }
-      ]
-    },
-    {
-      "id": "mla-q081",
-      "domain": "data-preparation",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Machine Learning Engineer \u2013 Associate? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon SageMaker Data Wrangler"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "AWS Glue"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "Amazon SageMaker Data Wrangler",
-          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html"
         }
       ]
     },

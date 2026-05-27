@@ -112,23 +112,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon GuardDuty"
+          "text": "GuardDuty Malware Protection"
         },
         {
           "id": "b",
-          "text": "No logging"
+          "text": "AWS Security Hub"
         },
         {
           "id": "c",
-          "text": "Ignore findings"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "d",
-          "text": "Disable org admin"
+          "text": "CloudTrail data events and Macie"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GuardDuty analyzes CloudTrail, DNS, and flow logs.",
       "docs": [
@@ -150,15 +150,15 @@
         },
         {
           "id": "b",
-          "text": "Shared root creds"
+          "text": "Credential reports and Access Analyzer"
         },
         {
           "id": "c",
-          "text": "No MFA"
+          "text": "GuardDuty EKS Protection"
         },
         {
           "id": "d",
-          "text": "Ignore Access Analyzer"
+          "text": "Amazon GuardDuty"
         }
       ],
       "correct": [
@@ -184,11 +184,11 @@
         },
         {
           "id": "b",
-          "text": "Siloed spreadsheets"
+          "text": "GuardDuty IAM anomaly findings"
         },
         {
           "id": "c",
-          "text": "No severity"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "d",
@@ -214,23 +214,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GuardDuty Malware Protection"
+          "text": "GuardDuty IAM anomaly findings"
         },
         {
           "id": "b",
-          "text": "Assume clean"
+          "text": "CloudTrail data events and Macie"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "d",
-          "text": "Ignore EBS snapshots"
+          "text": "GuardDuty Malware Protection"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Malware Protection scans EBS volumes.",
       "docs": [
@@ -248,23 +248,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudTrail data events and Macie"
+          "text": "AWS Security Hub"
         },
         {
           "id": "b",
-          "text": "No data events"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "c",
-          "text": "Public bucket"
+          "text": "GuardDuty IAM anomaly findings"
         },
         {
           "id": "d",
-          "text": "Ignore anomalies"
+          "text": "CloudTrail data events and Macie"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data events log object-level API activity.",
       "docs": [
@@ -282,23 +282,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GuardDuty EKS Protection"
+          "text": "GuardDuty IAM anomaly findings"
         },
         {
           "id": "b",
-          "text": "Disable audit logs"
+          "text": "CloudTrail data events and Macie"
         },
         {
           "id": "c",
-          "text": "Public API endpoint open"
+          "text": "GuardDuty Malware Protection"
         },
         {
           "id": "d",
-          "text": "Cluster-admin for all"
+          "text": "GuardDuty EKS Protection"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "EKS Protection analyzes audit logs.",
       "docs": [
@@ -320,15 +320,15 @@
         },
         {
           "id": "b",
-          "text": "Never rotate keys"
+          "text": "GuardDuty EKS Protection"
         },
         {
           "id": "c",
-          "text": "Keys in Git"
+          "text": "AWS Security Hub"
         },
         {
           "id": "d",
-          "text": "No SCP"
+          "text": "GuardDuty Malware Protection"
         }
       ],
       "correct": [
@@ -354,15 +354,15 @@
         },
         {
           "id": "b",
-          "text": "Manual grep only"
+          "text": "GuardDuty EKS Protection"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "AWS Security Hub"
         },
         {
           "id": "d",
-          "text": "No correlation"
+          "text": "GuardDuty IAM anomaly findings"
         }
       ],
       "correct": [
@@ -384,23 +384,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon GuardDuty"
+          "text": "Amazon Detective"
         },
         {
           "id": "b",
-          "text": "No logging"
+          "text": "AWS Security Hub"
         },
         {
           "id": "c",
-          "text": "Ignore findings"
+          "text": "GuardDuty IAM anomaly findings"
         },
         {
           "id": "d",
-          "text": "Disable org admin"
+          "text": "Amazon GuardDuty"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "GuardDuty analyzes CloudTrail, DNS, and flow logs.",
       "docs": [
@@ -418,23 +418,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon GuardDuty"
+          "text": "GuardDuty IAM anomaly findings"
         },
         {
           "id": "b",
-          "text": "No logging"
+          "text": "GuardDuty Malware Protection"
         },
         {
           "id": "c",
-          "text": "Ignore findings"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "d",
-          "text": "Disable org admin"
+          "text": "AWS Security Hub"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GuardDuty analyzes CloudTrail, DNS, and flow logs.",
       "docs": [
@@ -452,23 +452,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon GuardDuty"
+          "text": "AWS Security Hub"
         },
         {
           "id": "b",
-          "text": "No logging"
+          "text": "CloudTrail data events and Macie"
         },
         {
           "id": "c",
-          "text": "Ignore findings"
+          "text": "GuardDuty IAM anomaly findings"
         },
         {
           "id": "d",
-          "text": "Disable org admin"
+          "text": "Amazon GuardDuty"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "GuardDuty analyzes CloudTrail, DNS, and flow logs.",
       "docs": [
@@ -486,23 +486,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GuardDuty IAM anomaly findings"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "b",
-          "text": "Shared root creds"
+          "text": "Amazon Detective"
         },
         {
           "id": "c",
-          "text": "No MFA"
+          "text": "GuardDuty IAM anomaly findings"
         },
         {
           "id": "d",
-          "text": "Ignore Access Analyzer"
+          "text": "Credential reports and Access Analyzer"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GuardDuty monitors credential exfiltration patterns.",
       "docs": [
@@ -524,15 +524,15 @@
         },
         {
           "id": "b",
-          "text": "Shared root creds"
+          "text": "GuardDuty EKS Protection"
         },
         {
           "id": "c",
-          "text": "No MFA"
+          "text": "GuardDuty Malware Protection"
         },
         {
           "id": "d",
-          "text": "Ignore Access Analyzer"
+          "text": "AWS Security Hub"
         }
       ],
       "correct": [
@@ -558,15 +558,15 @@
         },
         {
           "id": "b",
-          "text": "Shared root creds"
+          "text": "Credential reports and Access Analyzer"
         },
         {
           "id": "c",
-          "text": "No MFA"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "d",
-          "text": "Ignore Access Analyzer"
+          "text": "AWS Security Hub"
         }
       ],
       "correct": [
@@ -588,23 +588,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Security Hub"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "b",
-          "text": "Siloed spreadsheets"
+          "text": "AWS Security Hub"
         },
         {
           "id": "c",
-          "text": "No severity"
+          "text": "GuardDuty IAM anomaly findings"
         },
         {
           "id": "d",
-          "text": "Ignore CIS"
+          "text": "CloudTrail data events and Macie"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Security Hub normalizes findings.",
       "docs": [
@@ -622,23 +622,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSM Automation and Security Hub custom actions"
+          "text": "Isolate instance and snapshot volumes"
         },
         {
           "id": "b",
-          "text": "Manual slow response"
+          "text": "Pre-defined communications plan"
         },
         {
           "id": "c",
-          "text": "No runbooks"
+          "text": "GuardDuty delegated admin and Organizations"
         },
         {
           "id": "d",
-          "text": "Ignore severity"
+          "text": "SSM Automation and Security Hub custom actions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Automation speeds containment.",
       "docs": [
@@ -660,15 +660,15 @@
         },
         {
           "id": "b",
-          "text": "Terminate immediately"
+          "text": "EventBridge to Jira/ServiceNow via Lambda"
         },
         {
           "id": "c",
-          "text": "Overwrite disk"
+          "text": "GuardDuty delegated admin and Organizations"
         },
         {
           "id": "d",
-          "text": "Delete CloudTrail"
+          "text": "SSM Automation and Security Hub custom actions"
         }
       ],
       "correct": [
@@ -690,23 +690,23 @@
       "options": [
         {
           "id": "a",
-          "text": "EventBridge to Jira/ServiceNow via Lambda"
+          "text": "Lost context (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Email only"
+          "text": "SSM Automation and Security Hub custom actions"
         },
         {
           "id": "c",
-          "text": "No tracking"
+          "text": "Isolate instance and snapshot volumes"
         },
         {
           "id": "d",
-          "text": "Lost context"
+          "text": "EventBridge to Jira/ServiceNow via Lambda"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Integrations maintain incident records.",
       "docs": [
@@ -724,23 +724,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Hub severity and workflow status"
+          "text": "Game days and FIS experiments"
         },
         {
           "id": "b",
-          "text": "Treat all LOW as ignore prod"
+          "text": "SSM Automation and Security Hub custom actions"
         },
         {
           "id": "c",
-          "text": "No SLA"
+          "text": "GuardDuty delegated admin and Organizations"
         },
         {
           "id": "d",
-          "text": "Duplicate work"
+          "text": "Security Hub severity and workflow status"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Prioritization focuses limited resources.",
       "docs": [
@@ -758,23 +758,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GuardDuty delegated admin and Organizations"
+          "text": "SSM Automation and Security Hub custom actions"
         },
         {
           "id": "b",
-          "text": "Account silos"
+          "text": "GuardDuty threat lists and partner integrations"
         },
         {
           "id": "c",
-          "text": "Inconsistent response"
+          "text": "GuardDuty delegated admin and Organizations"
         },
         {
           "id": "d",
-          "text": "No central view"
+          "text": "EventBridge to Jira/ServiceNow via Lambda"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Delegated admin centralizes security services.",
       "docs": [
@@ -792,23 +792,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Game days and FIS experiments"
+          "text": "Isolate instance and snapshot volumes"
         },
         {
           "id": "b",
-          "text": "Untested plan"
-        },
-        {
-          "id": "c",
           "text": "First real attack is test"
         },
         {
+          "id": "c",
+          "text": "Game days and FIS experiments"
+        },
+        {
           "id": "d",
-          "text": "No metrics"
+          "text": "GuardDuty delegated admin and Organizations"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Exercises validate runbooks.",
       "docs": [
@@ -826,23 +826,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pre-defined communications plan"
+          "text": "Game days and FIS experiments"
         },
         {
           "id": "b",
-          "text": "Ad hoc tweets"
+          "text": "Pre-defined communications plan"
         },
         {
           "id": "c",
-          "text": "Hide legal"
+          "text": "Isolate instance and snapshot volumes"
         },
         {
           "id": "d",
-          "text": "No roles"
+          "text": "EventBridge to Jira/ServiceNow via Lambda"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Communications plans meet regulatory needs.",
       "docs": [
@@ -860,23 +860,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GuardDuty threat lists and partner integrations"
+          "text": "Isolate instance and snapshot volumes"
         },
         {
           "id": "b",
-          "text": "Ignore intel"
+          "text": "Game days and FIS experiments"
         },
         {
           "id": "c",
-          "text": "Block nothing"
+          "text": "GuardDuty threat lists and partner integrations"
         },
         {
           "id": "d",
-          "text": "Allow known bad IPs"
+          "text": "SSM Automation and Security Hub custom actions"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Threat intel improves detection.",
       "docs": [
@@ -894,23 +894,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSM Automation and Security Hub custom actions"
+          "text": "Isolate instance and snapshot volumes"
         },
         {
           "id": "b",
-          "text": "Manual slow response"
+          "text": "SSM Automation and Security Hub custom actions"
         },
         {
           "id": "c",
-          "text": "No runbooks"
+          "text": "Pre-defined communications plan"
         },
         {
           "id": "d",
-          "text": "Ignore severity"
+          "text": "GuardDuty delegated admin and Organizations"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Automation speeds containment.",
       "docs": [
@@ -932,15 +932,15 @@
         },
         {
           "id": "b",
-          "text": "Manual slow response"
+          "text": "Isolate instance and snapshot volumes"
         },
         {
           "id": "c",
-          "text": "No runbooks"
+          "text": "EventBridge to Jira/ServiceNow via Lambda"
         },
         {
           "id": "d",
-          "text": "Ignore severity"
+          "text": "Pre-defined communications plan"
         }
       ],
       "correct": [
@@ -962,23 +962,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSM Automation and Security Hub custom actions"
+          "text": "Security Hub severity and workflow status"
         },
         {
           "id": "b",
-          "text": "Manual slow response"
+          "text": "SSM Automation and Security Hub custom actions"
         },
         {
           "id": "c",
-          "text": "No runbooks"
+          "text": "GuardDuty threat lists and partner integrations"
         },
         {
           "id": "d",
-          "text": "Ignore severity"
+          "text": "Game days and FIS experiments"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Automation speeds containment.",
       "docs": [
@@ -996,23 +996,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Isolate instance and snapshot volumes"
+          "text": "GuardDuty delegated admin and Organizations"
         },
         {
           "id": "b",
-          "text": "Terminate immediately"
+          "text": "Game days and FIS experiments"
         },
         {
           "id": "c",
-          "text": "Overwrite disk"
+          "text": "Isolate instance and snapshot volumes"
         },
         {
           "id": "d",
-          "text": "Delete CloudTrail"
+          "text": "EventBridge to Jira/ServiceNow via Lambda"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Preserve before remediation when possible.",
       "docs": [
@@ -1034,15 +1034,15 @@
         },
         {
           "id": "b",
-          "text": "Password only"
+          "text": "Access Analyzer"
         },
         {
           "id": "c",
-          "text": "SMS only weak policy"
+          "text": "CloudTrail AssumeRole events"
         },
         {
           "id": "d",
-          "text": "Shared users"
+          "text": "aws:SourceIp condition keys"
         }
       ],
       "correct": [
@@ -1064,23 +1064,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM permission boundaries"
+          "text": "IAM MFA policies"
         },
         {
           "id": "b",
-          "text": "Unbounded AdminAccess delegates"
+          "text": "aws:SourceIp condition keys"
         },
         {
           "id": "c",
-          "text": "No SCP"
+          "text": "IAM permission boundaries"
         },
         {
           "id": "d",
-          "text": "Ignore least privilege"
+          "text": "IAM Identity Center with external IdP"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Boundaries cap maximum permissions.",
       "docs": [
@@ -1098,7 +1098,7 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM Identity Center with external IdP"
+          "text": "IAM permission boundaries"
         },
         {
           "id": "b",
@@ -1106,15 +1106,15 @@
         },
         {
           "id": "c",
-          "text": "Password email"
+          "text": "IAM MFA policies"
         },
         {
           "id": "d",
-          "text": "No SSO"
+          "text": "IAM Identity Center with external IdP"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Identity Center centralizes workforce access.",
       "docs": [
@@ -1136,15 +1136,15 @@
         },
         {
           "id": "b",
-          "text": "Static roles per combo explosion"
+          "text": "IAM Identity Center with external IdP"
         },
         {
           "id": "c",
-          "text": "No tags"
+          "text": "IAM MFA policies"
         },
         {
           "id": "d",
-          "text": "Ignore scoping"
+          "text": "Static roles per combo explosion"
         }
       ],
       "correct": [
@@ -1166,23 +1166,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lambda rotation or eliminate keys with roles"
+          "text": "IAM MFA policies"
         },
         {
           "id": "b",
-          "text": "Keys never rotated 5 years"
+          "text": "IAM Identity Center with external IdP"
         },
         {
           "id": "c",
-          "text": "Keys in code"
+          "text": "Lambda rotation or eliminate keys with roles"
         },
         {
           "id": "d",
-          "text": "Shared key"
+          "text": "IAM permission boundaries"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Prefer roles; rotate keys if required.",
       "docs": [
@@ -1204,15 +1204,15 @@
         },
         {
           "id": "b",
-          "text": "No trail"
+          "text": "IAM Identity Center with external IdP"
         },
         {
           "id": "c",
-          "text": "ExternalId not used"
+          "text": "IAM permission boundaries"
         },
         {
           "id": "d",
-          "text": "Wildcard trust"
+          "text": "Lambda rotation or eliminate keys with roles"
         }
       ],
       "correct": [
@@ -1234,23 +1234,23 @@
       "options": [
         {
           "id": "a",
-          "text": "aws:SourceIp condition keys"
+          "text": "IAM MFA policies"
         },
         {
           "id": "b",
-          "text": "Allow * no conditions"
+          "text": "aws:SourceIp condition keys"
         },
         {
           "id": "c",
-          "text": "Ignore VPN"
+          "text": "IAM permission boundaries"
         },
         {
           "id": "d",
-          "text": "Bypass with compromised role only\u2014still log"
+          "text": "Lambda rotation or eliminate keys with roles"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Condition keys enforce network context.",
       "docs": [
@@ -1268,23 +1268,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Access Analyzer"
+          "text": "IAM permission boundaries"
         },
         {
           "id": "b",
-          "text": "Manual bucket checks only"
+          "text": "Access Analyzer"
         },
         {
           "id": "c",
-          "text": "Public ACLs"
+          "text": "IAM MFA policies"
         },
         {
           "id": "d",
-          "text": "Ignore findings"
+          "text": "IAM Identity Center with external IdP"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Access Analyzer finds unintended public/cross-account access.",
       "docs": [
@@ -1306,15 +1306,15 @@
         },
         {
           "id": "b",
-          "text": "Password only"
+          "text": "Lambda rotation or eliminate keys with roles"
         },
         {
           "id": "c",
-          "text": "SMS only weak policy"
+          "text": "Access Analyzer"
         },
         {
           "id": "d",
-          "text": "Shared users"
+          "text": "IAM Identity Center with external IdP"
         }
       ],
       "correct": [
@@ -1336,23 +1336,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM MFA policies"
+          "text": "IAM permission boundaries"
         },
         {
           "id": "b",
-          "text": "Password only"
+          "text": "IAM policies conditioned on aws:PrincipalTag"
         },
         {
           "id": "c",
-          "text": "SMS only weak policy"
+          "text": "IAM MFA policies"
         },
         {
           "id": "d",
-          "text": "Shared users"
+          "text": "Access Analyzer"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "MFA reduces account takeover risk.",
       "docs": [
@@ -1370,23 +1370,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM MFA policies"
+          "text": "aws:SourceIp condition keys"
         },
         {
           "id": "b",
-          "text": "Password only"
+          "text": "IAM Identity Center with external IdP"
         },
         {
           "id": "c",
-          "text": "SMS only weak policy"
+          "text": "CloudTrail AssumeRole events"
         },
         {
           "id": "d",
-          "text": "Shared users"
+          "text": "IAM MFA policies"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "MFA reduces account takeover risk.",
       "docs": [
@@ -1404,23 +1404,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM permission boundaries"
+          "text": "Access Analyzer"
         },
         {
           "id": "b",
-          "text": "Unbounded AdminAccess delegates"
+          "text": "IAM MFA policies"
         },
         {
           "id": "c",
-          "text": "No SCP"
+          "text": "IAM permission boundaries"
         },
         {
           "id": "d",
-          "text": "Ignore least privilege"
+          "text": "IAM Identity Center with external IdP"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Boundaries cap maximum permissions.",
       "docs": [
@@ -1442,15 +1442,15 @@
         },
         {
           "id": "b",
-          "text": "Unbounded AdminAccess delegates"
+          "text": "IAM MFA policies"
         },
         {
           "id": "c",
-          "text": "No SCP"
+          "text": "IAM Identity Center with external IdP"
         },
         {
           "id": "d",
-          "text": "Ignore least privilege"
+          "text": "Access Analyzer"
         }
       ],
       "correct": [
@@ -1476,15 +1476,15 @@
         },
         {
           "id": "b",
-          "text": "Unbounded AdminAccess delegates"
+          "text": "IAM Identity Center with external IdP"
         },
         {
           "id": "c",
-          "text": "No SCP"
+          "text": "IAM MFA policies"
         },
         {
           "id": "d",
-          "text": "Ignore least privilege"
+          "text": "Access Analyzer"
         }
       ],
       "correct": [
@@ -1506,23 +1506,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM Identity Center with external IdP"
+          "text": "IAM permission boundaries"
         },
         {
           "id": "b",
-          "text": "Long-term IAM users for all staff"
+          "text": "IAM MFA policies"
         },
         {
           "id": "c",
-          "text": "Password email"
+          "text": "IAM Identity Center with external IdP"
         },
         {
           "id": "d",
-          "text": "No SSO"
+          "text": "Long-term IAM users for all staff"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Identity Center centralizes workforce access.",
       "docs": [
@@ -1540,7 +1540,7 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM Identity Center with external IdP"
+          "text": "IAM MFA policies"
         },
         {
           "id": "b",
@@ -1548,15 +1548,15 @@
         },
         {
           "id": "c",
-          "text": "Password email"
+          "text": "IAM Identity Center with external IdP"
         },
         {
           "id": "d",
-          "text": "No SSO"
+          "text": "IAM permission boundaries"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Identity Center centralizes workforce access.",
       "docs": [
@@ -1574,23 +1574,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM Identity Center with external IdP"
+          "text": "IAM permission boundaries"
         },
         {
           "id": "b",
-          "text": "Long-term IAM users for all staff"
+          "text": "IAM Identity Center with external IdP"
         },
         {
           "id": "c",
-          "text": "Password email"
+          "text": "Long-term IAM users for all staff"
         },
         {
           "id": "d",
-          "text": "No SSO"
+          "text": "CloudTrail AssumeRole events"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Identity Center centralizes workforce access.",
       "docs": [
@@ -1608,23 +1608,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF managed rule groups"
+          "text": "S3 Block Public Access at account level"
         },
         {
           "id": "b",
-          "text": "No WAF"
+          "text": "SSM State Manager for host firewall rules"
         },
         {
           "id": "c",
-          "text": "Security group as WAF"
+          "text": "AWS WAF managed rule groups"
         },
         {
           "id": "d",
-          "text": "Ignore SQLi"
+          "text": "SSM Session Manager"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Managed rules address common attacks.",
       "docs": [
@@ -1642,23 +1642,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Shield and Route 53 routing policies"
+          "text": "AWS WAF managed rule groups"
         },
         {
           "id": "b",
-          "text": "Single small instance"
+          "text": "AWS Shield and Route 53 routing policies"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "EC2 Image Builder CIS benchmarks"
         },
         {
           "id": "d",
-          "text": "Ignore attack"
+          "text": "S3 Block Public Access at account level"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Shield Standard is automatic; Advanced adds RTM.",
       "docs": [
@@ -1680,15 +1680,15 @@
         },
         {
           "id": "b",
-          "text": "Default AMI public"
+          "text": "AWS WAF managed rule groups"
         },
         {
           "id": "c",
-          "text": "No patching"
+          "text": "S3 Block Public Access at account level"
         },
         {
           "id": "d",
-          "text": "Open ports"
+          "text": "AWS Network Firewall"
         }
       ],
       "correct": [
@@ -1714,15 +1714,15 @@
         },
         {
           "id": "b",
-          "text": "ACL public-read"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "c",
-          "text": "Ignore Macie"
+          "text": "AWS WAF managed rule groups"
         },
         {
           "id": "d",
-          "text": "No Config rule"
+          "text": "AWS Shield and Route 53 routing policies"
         }
       ],
       "correct": [
@@ -1744,23 +1744,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Private endpoint and restricted public access CIDRs"
-        },
-        {
-          "id": "b",
           "text": "0.0.0.0/0 public API"
         },
         {
+          "id": "b",
+          "text": "AWS WAF managed rule groups"
+        },
+        {
           "id": "c",
-          "text": "No RBAC"
+          "text": "Private endpoint and restricted public access CIDRs"
         },
         {
           "id": "d",
-          "text": "Anonymous auth"
+          "text": "SSM State Manager for host firewall rules"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Restrict Kubernetes API exposure.",
       "docs": [
@@ -1782,15 +1782,15 @@
         },
         {
           "id": "b",
-          "text": "Disable host firewall"
+          "text": "AWS WAF managed rule groups"
         },
         {
           "id": "c",
-          "text": "Ad hoc iptables"
+          "text": "EC2 Image Builder CIS benchmarks"
         },
         {
           "id": "d",
-          "text": "No compliance"
+          "text": "AWS Shield and Route 53 routing policies"
         }
       ],
       "correct": [
@@ -1812,23 +1812,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Network Firewall"
+          "text": "SSM Session Manager"
         },
         {
           "id": "b",
-          "text": "Any outbound allowed"
+          "text": "AWS WAF managed rule groups"
         },
         {
           "id": "c",
-          "text": "No domain filter"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "d",
-          "text": "Ignore malware C2"
+          "text": "AWS Shield and Route 53 routing policies"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Egress filtering limits data exfiltration.",
       "docs": [
@@ -1846,23 +1846,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSM Session Manager"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "b",
-          "text": "Public SSH 22"
+          "text": "AWS Shield and Route 53 routing policies"
         },
         {
           "id": "c",
-          "text": "Shared PEM on wiki"
+          "text": "SSM State Manager for host firewall rules"
         },
         {
           "id": "d",
-          "text": "Password SSH"
+          "text": "SSM Session Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Session Manager provides audited shell access.",
       "docs": [
@@ -1880,23 +1880,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF managed rule groups"
+          "text": "EC2 Image Builder CIS benchmarks"
         },
         {
           "id": "b",
-          "text": "No WAF"
+          "text": "AWS WAF managed rule groups"
         },
         {
           "id": "c",
-          "text": "Security group as WAF"
+          "text": "AWS Shield and Route 53 routing policies"
         },
         {
           "id": "d",
-          "text": "Ignore SQLi"
+          "text": "Private endpoint and restricted public access CIDRs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Managed rules address common attacks.",
       "docs": [
@@ -1914,23 +1914,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF managed rule groups"
+          "text": "SSM State Manager for host firewall rules"
         },
         {
           "id": "b",
-          "text": "No WAF"
+          "text": "AWS Shield and Route 53 routing policies"
         },
         {
           "id": "c",
-          "text": "Security group as WAF"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "d",
-          "text": "Ignore SQLi"
+          "text": "AWS WAF managed rule groups"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Managed rules address common attacks.",
       "docs": [
@@ -1948,23 +1948,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF managed rule groups"
+          "text": "EC2 Image Builder CIS benchmarks"
         },
         {
           "id": "b",
-          "text": "No WAF"
+          "text": "AWS WAF managed rule groups"
         },
         {
           "id": "c",
-          "text": "Security group as WAF"
+          "text": "S3 Block Public Access at account level"
         },
         {
           "id": "d",
-          "text": "Ignore SQLi"
+          "text": "AWS Shield and Route 53 routing policies"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Managed rules address common attacks.",
       "docs": [
@@ -1982,23 +1982,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Shield and Route 53 routing policies"
+          "text": "Ignore attack (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single small instance"
+          "text": "AWS Shield and Route 53 routing policies"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "AWS WAF managed rule groups"
         },
         {
           "id": "d",
-          "text": "Ignore attack"
+          "text": "EC2 Image Builder CIS benchmarks"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Shield Standard is automatic; Advanced adds RTM.",
       "docs": [
@@ -2016,23 +2016,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Shield and Route 53 routing policies"
+          "text": "S3 Block Public Access at account level"
         },
         {
           "id": "b",
-          "text": "Single small instance"
+          "text": "AWS Shield and Route 53 routing policies"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "d",
-          "text": "Ignore attack"
+          "text": "SSM Session Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Shield Standard is automatic; Advanced adds RTM.",
       "docs": [
@@ -2050,23 +2050,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Shield and Route 53 routing policies"
+          "text": "EC2 Image Builder CIS benchmarks"
         },
         {
           "id": "b",
-          "text": "Single small instance"
+          "text": "Private endpoint and restricted public access CIDRs"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "AWS Shield and Route 53 routing policies"
         },
         {
           "id": "d",
-          "text": "Ignore attack"
+          "text": "AWS WAF managed rule groups"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Shield Standard is automatic; Advanced adds RTM.",
       "docs": [
@@ -2084,23 +2084,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS"
+          "text": "Automatic annual rotation in KMS"
         },
         {
           "id": "b",
-          "text": "SSE-S3 only when CMK required"
+          "text": "Amazon Macie"
         },
         {
           "id": "c",
-          "text": "No encryption"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         },
         {
           "id": "d",
-          "text": "Public bucket"
+          "text": "SSE-KMS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CMKs give customer control and audit via KMS.",
       "docs": [
@@ -2122,15 +2122,15 @@
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Amazon Macie"
         },
         {
           "id": "c",
-          "text": "Self-signed expired"
+          "text": "PCI patterns with encryption and minimal storage"
         },
         {
           "id": "d",
-          "text": "Ignore cert pinning needs"
+          "text": "SSE-KMS"
         }
       ],
       "correct": [
@@ -2152,23 +2152,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Macie"
+          "text": "SSE-KMS"
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "S3 Object Lock governance/compliance modes"
         },
         {
           "id": "c",
-          "text": "Train ML on prod PII raw"
+          "text": "Amazon Macie"
         },
         {
           "id": "d",
-          "text": "Public datasets"
+          "text": "Train ML on prod PII raw"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Macie discovers sensitive data.",
       "docs": [
@@ -2190,15 +2190,15 @@
         },
         {
           "id": "b",
-          "text": "Static key material forever"
+          "text": "S3 Object Lock governance/compliance modes"
         },
         {
           "id": "c",
-          "text": "Disable CloudTrail KMS"
+          "text": "SSE-KMS"
         },
         {
           "id": "d",
-          "text": "Shared admin"
+          "text": "RDS encryption and SSL connections"
         }
       ],
       "correct": [
@@ -2220,23 +2220,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudHSM or KMS custom key store"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         },
         {
           "id": "b",
-          "text": "Export plaintext key"
+          "text": "CloudHSM or KMS custom key store"
         },
         {
           "id": "c",
-          "text": "Store key in code"
+          "text": "RDS encryption and SSL connections"
         },
         {
           "id": "d",
-          "text": "Email key"
+          "text": "Amazon Macie"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CloudHSM provides single-tenant HSMs.",
       "docs": [
@@ -2254,23 +2254,23 @@
       "options": [
         {
           "id": "a",
-          "text": "PCI patterns with encryption and minimal storage"
+          "text": "Amazon Macie"
         },
         {
           "id": "b",
-          "text": "Store CVV"
+          "text": "SSE-KMS"
         },
         {
           "id": "c",
-          "text": "Log full card numbers"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         },
         {
           "id": "d",
-          "text": "Public S3 PAN"
+          "text": "PCI patterns with encryption and minimal storage"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Follow PCI DSS for cardholder data.",
       "docs": [
@@ -2288,23 +2288,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RDS encryption and SSL connections"
+          "text": "SSE-KMS"
         },
         {
           "id": "b",
-          "text": "Unencrypted snapshots public"
+          "text": "CloudHSM or KMS custom key store"
         },
         {
           "id": "c",
-          "text": "No SSL"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         },
         {
           "id": "d",
-          "text": "Default weak password"
+          "text": "RDS encryption and SSL connections"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "RDS supports encryption and SSL/TLS.",
       "docs": [
@@ -2322,23 +2322,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 Object Lock governance/compliance modes"
+          "text": "SSE-KMS"
         },
         {
           "id": "b",
-          "text": "Delete regulated records"
+          "text": "S3 Object Lock governance/compliance modes"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Amazon Macie"
         },
         {
           "id": "d",
-          "text": "Ignore legal hold"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Object Lock prevents deletion during retention.",
       "docs": [
@@ -2356,23 +2356,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS"
+          "text": "RDS encryption and SSL connections"
         },
         {
           "id": "b",
-          "text": "SSE-S3 only when CMK required"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         },
         {
           "id": "c",
-          "text": "No encryption"
+          "text": "SSE-KMS"
         },
         {
           "id": "d",
-          "text": "Public bucket"
+          "text": "Amazon Macie"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CMKs give customer control and audit via KMS.",
       "docs": [
@@ -2390,23 +2390,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS"
+          "text": "CloudHSM or KMS custom key store"
         },
         {
           "id": "b",
-          "text": "SSE-S3 only when CMK required"
+          "text": "Automatic annual rotation in KMS"
         },
         {
           "id": "c",
-          "text": "No encryption"
+          "text": "SSE-KMS"
         },
         {
           "id": "d",
-          "text": "Public bucket"
+          "text": "RDS encryption and SSL connections"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CMKs give customer control and audit via KMS.",
       "docs": [
@@ -2424,23 +2424,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS"
+          "text": "S3 Object Lock governance/compliance modes"
         },
         {
           "id": "b",
-          "text": "SSE-S3 only when CMK required"
+          "text": "PCI patterns with encryption and minimal storage"
         },
         {
           "id": "c",
-          "text": "No encryption"
+          "text": "SSE-KMS"
         },
         {
           "id": "d",
-          "text": "Public bucket"
+          "text": "Amazon Macie"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CMKs give customer control and audit via KMS.",
       "docs": [
@@ -2458,23 +2458,23 @@
       "options": [
         {
           "id": "a",
-          "text": "TLS 1.2+ on ALB/API and s3:// policies"
+          "text": "RDS encryption and SSL connections"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "PCI patterns with encryption and minimal storage"
         },
         {
           "id": "c",
-          "text": "Self-signed expired"
+          "text": "Amazon Macie"
         },
         {
           "id": "d",
-          "text": "Ignore cert pinning needs"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "TLS protects data in motion.",
       "docs": [
@@ -2492,23 +2492,23 @@
       "options": [
         {
           "id": "a",
-          "text": "TLS 1.2+ on ALB/API and s3:// policies"
+          "text": "SSE-KMS"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         },
         {
           "id": "c",
-          "text": "Self-signed expired"
+          "text": "S3 Object Lock governance/compliance modes"
         },
         {
           "id": "d",
-          "text": "Ignore cert pinning needs"
+          "text": "Automatic annual rotation in KMS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "TLS protects data in motion.",
       "docs": [
@@ -2526,23 +2526,23 @@
       "options": [
         {
           "id": "a",
-          "text": "TLS 1.2+ on ALB/API and s3:// policies"
+          "text": "PCI patterns with encryption and minimal storage"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "CloudHSM or KMS custom key store"
         },
         {
           "id": "c",
-          "text": "Self-signed expired"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         },
         {
           "id": "d",
-          "text": "Ignore cert pinning needs"
+          "text": "SSE-KMS"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "TLS protects data in motion.",
       "docs": [
@@ -2564,15 +2564,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "SSE-KMS"
         },
         {
           "id": "c",
-          "text": "Train ML on prod PII raw"
+          "text": "TLS 1.2+ on ALB/API and s3:// policies"
         },
         {
           "id": "d",
-          "text": "Public datasets"
+          "text": "Train ML on prod PII raw"
         }
       ],
       "correct": [
@@ -2594,23 +2594,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Macie"
+          "text": "PCI patterns with encryption and minimal storage"
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "SSE-KMS"
         },
         {
           "id": "c",
-          "text": "Train ML on prod PII raw"
+          "text": "Amazon Macie"
         },
         {
           "id": "d",
-          "text": "Public datasets"
+          "text": "Train ML on prod PII raw"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Macie discovers sensitive data.",
       "docs": [
@@ -2628,11 +2628,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Macie"
+          "text": "SSE-KMS"
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "Amazon Macie"
         },
         {
           "id": "c",
@@ -2640,11 +2640,11 @@
         },
         {
           "id": "d",
-          "text": "Public datasets"
+          "text": "PCI patterns with encryption and minimal storage"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Macie discovers sensitive data.",
       "docs": [
@@ -2662,23 +2662,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Audit Manager"
+          "text": "Organizations SCP denying cloudtrail:StopLogging"
         },
         {
           "id": "b",
-          "text": "Annual manual only"
+          "text": "AWS Well-Architected Security reviews"
         },
         {
           "id": "c",
-          "text": "No evidence"
+          "text": "AWS Audit Manager"
         },
         {
           "id": "d",
-          "text": "Ignore controls"
+          "text": "Approved exception workflow in GRC tool"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Audit Manager collects evidence for frameworks.",
       "docs": [
@@ -2696,23 +2696,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Config conformance packs"
+          "text": "Organizations SCP denying cloudtrail:StopLogging"
         },
         {
           "id": "b",
-          "text": "No recording"
+          "text": "AWS Well-Architected Security reviews"
         },
         {
           "id": "c",
-          "text": "Manual checks"
+          "text": "AWS Config conformance packs"
         },
         {
           "id": "d",
-          "text": "Ignore drift"
+          "text": "Customer manages data in SaaS; AWS manages cloud"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Config rules detect noncompliance.",
       "docs": [
@@ -2730,23 +2730,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organizations SCP denying cloudtrail:StopLogging"
+          "text": "AWS Config conformance packs"
         },
         {
           "id": "b",
-          "text": "Allow stop logging all"
+          "text": "AWS Audit Manager"
         },
         {
           "id": "c",
-          "text": "No org"
+          "text": "Organizations SCP denying cloudtrail:StopLogging"
         },
         {
           "id": "d",
-          "text": "Root daily"
+          "text": "Security Hub CIS benchmark"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SCPs apply guardrails across accounts.",
       "docs": [
@@ -2768,15 +2768,15 @@
         },
         {
           "id": "b",
-          "text": "Mutable log bucket attacker deletes"
+          "text": "Security Hub CIS benchmark"
         },
         {
           "id": "c",
-          "text": "No MFA delete"
+          "text": "AWS Well-Architected Security reviews"
         },
         {
           "id": "d",
-          "text": "Short retention only"
+          "text": "Mutable log bucket attacker deletes"
         }
       ],
       "correct": [
@@ -2798,23 +2798,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Well-Architected Security reviews"
+          "text": "Customer manages data in SaaS; AWS manages cloud"
         },
         {
           "id": "b",
-          "text": "Ship without review"
+          "text": "AWS Well-Architected Security reviews"
         },
         {
           "id": "c",
-          "text": "Ignore data classification"
+          "text": "AWS Audit Manager"
         },
         {
           "id": "d",
-          "text": "No threat model"
+          "text": "AWS Config conformance packs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Well-Architected reviews improve security posture.",
       "docs": [
@@ -2832,23 +2832,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Approved exception workflow in GRC tool"
-        },
-        {
-          "id": "b",
           "text": "Permanent 0.0.0.0/0"
         },
         {
+          "id": "b",
+          "text": "Security Hub CIS benchmark"
+        },
+        {
           "id": "c",
-          "text": "Ignore expiry"
+          "text": "Approved exception workflow in GRC tool"
         },
         {
           "id": "d",
-          "text": "No approval"
+          "text": "AWS Config conformance packs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Time-bound exceptions reduce lingering risk.",
       "docs": [
@@ -2866,23 +2866,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Hub CIS benchmark"
+          "text": "AWS Audit Manager"
         },
         {
           "id": "b",
-          "text": "Ignore standard"
+          "text": "S3 Object Lock for log bucket"
         },
         {
           "id": "c",
-          "text": "No remediation"
+          "text": "Security Hub CIS benchmark"
         },
         {
           "id": "d",
-          "text": "Disable standard"
+          "text": "AWS Config conformance packs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Security Hub runs automated compliance checks.",
       "docs": [
@@ -2900,23 +2900,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Customer manages data in SaaS; AWS manages cloud"
+          "text": "AWS configures SGs customer ignores (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Customer patches hypervisor"
+          "text": "S3 Object Lock for log bucket"
         },
         {
           "id": "c",
-          "text": "AWS configures SGs customer ignores"
+          "text": "AWS Audit Manager"
         },
         {
           "id": "d",
-          "text": "Blame only vendor"
+          "text": "Customer manages data in SaaS; AWS manages cloud"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Understand responsibility splits per service model.",
       "docs": [
@@ -2934,23 +2934,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Audit Manager"
+          "text": "Security Hub CIS benchmark"
         },
         {
           "id": "b",
-          "text": "Annual manual only"
+          "text": "AWS Audit Manager"
         },
         {
           "id": "c",
-          "text": "No evidence"
+          "text": "S3 Object Lock for log bucket"
         },
         {
           "id": "d",
-          "text": "Ignore controls"
+          "text": "AWS Config conformance packs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Audit Manager collects evidence for frameworks.",
       "docs": [
@@ -2972,15 +2972,15 @@
         },
         {
           "id": "b",
-          "text": "Annual manual only"
+          "text": "Approved exception workflow in GRC tool"
         },
         {
           "id": "c",
-          "text": "No evidence"
+          "text": "Customer manages data in SaaS; AWS manages cloud"
         },
         {
           "id": "d",
-          "text": "Ignore controls"
+          "text": "Security Hub CIS benchmark"
         }
       ],
       "correct": [
@@ -3030,45 +3030,6 @@
         {
           "title": "AWS KMS",
           "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
-        }
-      ]
-    },
-    {
-      "id": "scs-q087",
-      "domain": "detection",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Security \u2013 Specialty? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "SCS-C02 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Amazon GuardDuty"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "SCS-C02 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-security-specialty/"
         }
       ]
     },

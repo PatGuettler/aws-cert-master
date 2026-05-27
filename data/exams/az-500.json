@@ -67,142 +67,6 @@
   ],
   "questions": [
     {
-      "id": "az500-q001",
-      "domain": "identity-access",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Security Engineer Associate and reviewing Secure identity and access. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AZ-500 study guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use AZ-500 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "AZ-500 study guide",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500"
-        }
-      ]
-    },
-    {
-      "id": "az500-q002",
-      "domain": "platform-security",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Security Engineer Associate and reviewing Secure networking, compute, and storage. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Firewall"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Firewall and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Firewall",
-          "url": "https://learn.microsoft.com/en-us/azure/firewall/overview"
-        }
-      ]
-    },
-    {
-      "id": "az500-q003",
-      "domain": "security-operations",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Security Engineer Associate and reviewing Secure operations. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Microsoft Sentinel"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Microsoft Sentinel and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Microsoft Sentinel",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
-        }
-      ]
-    },
-    {
-      "id": "az500-q004",
-      "domain": "security-posture",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Security Engineer Associate and reviewing Secure data and applications. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Defender for Cloud recommendations"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Defender for Cloud recommendations and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Defender for Cloud recommendations",
-          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/implement-security-recommendations"
-        }
-      ]
-    },
-    {
       "id": "az500-q005",
       "domain": "identity-access",
       "type": "multiple-choice",
@@ -210,23 +74,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra Conditional Access"
+          "text": "Anonymous blob write"
         },
         {
           "id": "b",
-          "text": "Password only forever"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "c",
-          "text": "Shared break-glass daily"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "d",
-          "text": "Anonymous blob write"
+          "text": "Conditional Access blocking legacy auth"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Conditional Access enforces adaptive policies.",
       "docs": [
@@ -244,23 +108,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Conditional Access blocking legacy auth"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "b",
-          "text": "Allow basic auth"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "c",
-          "text": "Shared password"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "AZ-500 study guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Legacy protocols bypass modern controls.",
       "docs": [
@@ -282,15 +146,15 @@
         },
         {
           "id": "b",
-          "text": "Standing Global Admin"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "d",
-          "text": "Email approvals"
+          "text": "AZ-500 study guide"
         }
       ],
       "correct": [
@@ -316,11 +180,11 @@
         },
         {
           "id": "b",
-          "text": "Password only forever"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "c",
-          "text": "Shared break-glass daily"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "d",
@@ -346,23 +210,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra Conditional Access"
+          "text": "Anonymous blob write"
         },
         {
           "id": "b",
-          "text": "Password only forever"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "c",
-          "text": "Shared break-glass daily"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "d",
-          "text": "Anonymous blob write"
+          "text": "Entra Privileged Identity Management"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Conditional Access enforces adaptive policies.",
       "docs": [
@@ -384,11 +248,11 @@
         },
         {
           "id": "b",
-          "text": "Password only forever"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "c",
-          "text": "Shared break-glass daily"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "d",
@@ -414,23 +278,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Conditional Access blocking legacy auth"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "b",
-          "text": "Allow basic auth"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "c",
-          "text": "Shared password"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "AZ-500 study guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Legacy protocols bypass modern controls.",
       "docs": [
@@ -448,23 +312,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Conditional Access blocking legacy auth"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "b",
-          "text": "Allow basic auth"
+          "text": "AZ-500 study guide"
         },
         {
           "id": "c",
-          "text": "Shared password"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "Conditional Access blocking legacy auth"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Legacy protocols bypass modern controls.",
       "docs": [
@@ -482,23 +346,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Conditional Access blocking legacy auth"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "b",
-          "text": "Allow basic auth"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "c",
-          "text": "Shared password"
+          "text": "No MFA (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "Entra Privileged Identity Management"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Legacy protocols bypass modern controls.",
       "docs": [
@@ -516,23 +380,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra Privileged Identity Management"
+          "text": "AZ-500 study guide"
         },
         {
           "id": "b",
-          "text": "Standing Global Admin"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "d",
-          "text": "Email approvals"
+          "text": "Entra Conditional Access"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "PIM reduces standing privilege.",
       "docs": [
@@ -550,23 +414,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra Privileged Identity Management"
+          "text": "Email approvals (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Standing Global Admin"
+          "text": "AZ-500 study guide"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "d",
-          "text": "Email approvals"
+          "text": "Conditional Access blocking legacy auth"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "PIM reduces standing privilege.",
       "docs": [
@@ -584,23 +448,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra Privileged Identity Management"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "b",
-          "text": "Standing Global Admin"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Email approvals (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Email approvals"
+          "text": "Entra Conditional Access"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "PIM reduces standing privilege.",
       "docs": [
@@ -618,23 +482,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra Conditional Access"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "b",
-          "text": "Password only forever"
+          "text": "AZ-500 study guide"
         },
         {
           "id": "c",
-          "text": "Shared break-glass daily"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "d",
-          "text": "Anonymous blob write"
+          "text": "Entra Conditional Access"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Conditional Access enforces adaptive policies.",
       "docs": [
@@ -652,23 +516,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Conditional Access blocking legacy auth"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "b",
-          "text": "Allow basic auth"
+          "text": "AZ-500 study guide"
         },
         {
           "id": "c",
-          "text": "Shared password"
+          "text": "No MFA (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "Conditional Access blocking legacy auth"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Legacy protocols bypass modern controls.",
       "docs": [
@@ -686,23 +550,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra Privileged Identity Management"
+          "text": "Email approvals (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Standing Global Admin"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "d",
-          "text": "Email approvals"
+          "text": "Entra Conditional Access"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "PIM reduces standing privilege.",
       "docs": [
@@ -720,23 +584,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra Conditional Access"
+          "text": "Conditional Access blocking legacy auth"
         },
         {
           "id": "b",
-          "text": "Password only forever"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "c",
-          "text": "Shared break-glass daily"
+          "text": "Entra Privileged Identity Management"
         },
         {
           "id": "d",
-          "text": "Anonymous blob write"
+          "text": "AZ-500 study guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Conditional Access enforces adaptive policies.",
       "docs": [
@@ -758,15 +622,15 @@
         },
         {
           "id": "b",
-          "text": "Allow basic auth"
+          "text": "Entra Conditional Access"
         },
         {
           "id": "c",
-          "text": "Shared password"
+          "text": "No MFA (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "Entra Privileged Identity Management"
         }
       ],
       "correct": [
@@ -788,11 +652,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Key Vault"
+          "text": "Application security groups with NSGs"
         },
         {
           "id": "b",
-          "text": "Secrets in git"
+          "text": "Azure Key Vault"
         },
         {
           "id": "c",
@@ -800,11 +664,11 @@
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Key Vault certificates"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Key Vault protects keys, secrets, certificates.",
       "docs": [
@@ -826,11 +690,11 @@
         },
         {
           "id": "b",
-          "text": "Open 0.0.0.0/0 always"
+          "text": "Azure Key Vault"
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Key Vault certificates"
         },
         {
           "id": "d",
@@ -856,7 +720,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Application security groups with NSGs"
+          "text": "Key Vault certificates"
         },
         {
           "id": "b",
@@ -864,15 +728,15 @@
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Azure Key Vault"
         },
         {
           "id": "d",
-          "text": "Telnet admin"
+          "text": "Application security groups with NSGs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "ASGs group VMs for rule targets.",
       "docs": [
@@ -890,23 +754,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Key Vault certificates"
+          "text": "Application security groups with NSGs"
         },
         {
           "id": "b",
-          "text": "Self-signed in repo"
+          "text": "Key Vault certificates"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Azure Key Vault"
         },
         {
           "id": "d",
-          "text": "Email pfx"
+          "text": "Azure Firewall"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Key Vault integrates with App Service TLS.",
       "docs": [
@@ -928,7 +792,7 @@
         },
         {
           "id": "b",
-          "text": "Secrets in git"
+          "text": "Application security groups with NSGs"
         },
         {
           "id": "c",
@@ -936,7 +800,7 @@
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Azure Firewall"
         }
       ],
       "correct": [
@@ -962,15 +826,15 @@
         },
         {
           "id": "b",
-          "text": "Secrets in git"
-        },
-        {
-          "id": "c",
           "text": "Env files in blob public"
         },
         {
+          "id": "c",
+          "text": "Key Vault certificates"
+        },
+        {
           "id": "d",
-          "text": "Email keys"
+          "text": "Application security groups with NSGs"
         }
       ],
       "correct": [
@@ -992,23 +856,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Key Vault"
+          "text": "Azure Firewall"
         },
         {
           "id": "b",
-          "text": "Secrets in git"
-        },
-        {
-          "id": "c",
           "text": "Env files in blob public"
         },
         {
+          "id": "c",
+          "text": "Azure Key Vault"
+        },
+        {
           "id": "d",
-          "text": "Email keys"
+          "text": "Application security groups with NSGs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Key Vault protects keys, secrets, certificates.",
       "docs": [
@@ -1026,15 +890,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Firewall"
+          "text": "Key Vault certificates"
         },
         {
           "id": "b",
-          "text": "Open 0.0.0.0/0 always"
+          "text": "Azure Key Vault"
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Azure Firewall"
         },
         {
           "id": "d",
@@ -1042,7 +906,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure Firewall is managed cloud firewall.",
       "docs": [
@@ -1060,23 +924,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Firewall"
+          "text": "Key Vault certificates"
         },
         {
           "id": "b",
-          "text": "Open 0.0.0.0/0 always"
+          "text": "Application security groups with NSGs"
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Azure Key Vault"
         },
         {
           "id": "d",
-          "text": "FTP admin"
+          "text": "Azure Firewall"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure Firewall is managed cloud firewall.",
       "docs": [
@@ -1094,23 +958,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Firewall"
+          "text": "Azure Key Vault"
         },
         {
           "id": "b",
-          "text": "Open 0.0.0.0/0 always"
+          "text": "Key Vault certificates"
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Azure Firewall"
         },
         {
           "id": "d",
-          "text": "FTP admin"
+          "text": "Application security groups with NSGs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure Firewall is managed cloud firewall.",
       "docs": [
@@ -1128,23 +992,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application security groups with NSGs"
-        },
-        {
-          "id": "b",
           "text": "Flat 0.0.0.0/0"
         },
         {
+          "id": "b",
+          "text": "Application security groups with NSGs"
+        },
+        {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Azure Firewall"
         },
         {
           "id": "d",
-          "text": "Telnet admin"
+          "text": "Key Vault certificates"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ASGs group VMs for rule targets.",
       "docs": [
@@ -1170,11 +1034,11 @@
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Azure Firewall"
         },
         {
           "id": "d",
-          "text": "Telnet admin"
+          "text": "Azure Key Vault"
         }
       ],
       "correct": [
@@ -1196,7 +1060,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Application security groups with NSGs"
+          "text": "Key Vault certificates"
         },
         {
           "id": "b",
@@ -1204,15 +1068,15 @@
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Application security groups with NSGs"
         },
         {
           "id": "d",
-          "text": "Telnet admin"
+          "text": "Azure Firewall"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "ASGs group VMs for rule targets.",
       "docs": [
@@ -1230,23 +1094,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Key Vault certificates"
+          "text": "Azure Key Vault"
         },
         {
           "id": "b",
-          "text": "Self-signed in repo"
+          "text": "Application security groups with NSGs"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Key Vault certificates"
         },
         {
           "id": "d",
-          "text": "Email pfx"
+          "text": "Azure Firewall"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Key Vault integrates with App Service TLS.",
       "docs": [
@@ -1264,23 +1128,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Key Vault certificates"
+          "text": "Azure Key Vault"
         },
         {
           "id": "b",
-          "text": "Self-signed in repo"
+          "text": "Application security groups with NSGs"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Email pfx"
         },
         {
           "id": "d",
-          "text": "Email pfx"
+          "text": "Key Vault certificates"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Key Vault integrates with App Service TLS.",
       "docs": [
@@ -1298,23 +1162,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Key Vault certificates"
+          "text": "Azure Firewall"
         },
         {
           "id": "b",
-          "text": "Self-signed in repo"
+          "text": "Azure Key Vault"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Key Vault certificates"
         },
         {
           "id": "d",
-          "text": "Email pfx"
+          "text": "Application security groups with NSGs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Key Vault integrates with App Service TLS.",
       "docs": [
@@ -1336,7 +1200,7 @@
         },
         {
           "id": "b",
-          "text": "Secrets in git"
+          "text": "Key Vault certificates"
         },
         {
           "id": "c",
@@ -1344,7 +1208,7 @@
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Azure Firewall"
         }
       ],
       "correct": [
@@ -1366,23 +1230,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Firewall"
+          "text": "Azure Key Vault"
         },
         {
           "id": "b",
-          "text": "Open 0.0.0.0/0 always"
+          "text": "Key Vault certificates"
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Application security groups with NSGs"
         },
         {
           "id": "d",
-          "text": "FTP admin"
+          "text": "Azure Firewall"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure Firewall is managed cloud firewall.",
       "docs": [
@@ -1400,23 +1264,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application security groups with NSGs"
-        },
-        {
-          "id": "b",
           "text": "Flat 0.0.0.0/0"
         },
         {
+          "id": "b",
+          "text": "Azure Firewall"
+        },
+        {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Key Vault certificates"
         },
         {
           "id": "d",
-          "text": "Telnet admin"
+          "text": "Application security groups with NSGs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "ASGs group VMs for rule targets.",
       "docs": [
@@ -1434,23 +1298,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Key Vault certificates"
+          "text": "Application security groups with NSGs"
         },
         {
           "id": "b",
-          "text": "Self-signed in repo"
+          "text": "Azure Firewall"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Azure Key Vault"
         },
         {
           "id": "d",
-          "text": "Email pfx"
+          "text": "Key Vault certificates"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Key Vault integrates with App Service TLS.",
       "docs": [
@@ -1468,15 +1332,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Sentinel"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "c",
-          "text": "Ignore incidents"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "d",
@@ -1484,7 +1348,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Sentinel collects and correlates security events.",
       "docs": [
@@ -1506,11 +1370,11 @@
         },
         {
           "id": "b",
-          "text": "Manual triage only"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "c",
-          "text": "Ignore alerts"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "d",
@@ -1536,23 +1400,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sentinel advanced hunting"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Spreadsheet pivots"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "c",
-          "text": "No logs"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Microsoft Sentinel"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hunting queries search across data.",
       "docs": [
@@ -1570,23 +1434,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Sentinel"
+          "text": "Disable audit"
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "c",
-          "text": "Ignore incidents"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "d",
-          "text": "Disable audit"
+          "text": "Microsoft Sentinel"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Sentinel collects and correlates security events.",
       "docs": [
@@ -1608,15 +1472,15 @@
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Disable audit"
         },
         {
           "id": "c",
-          "text": "Ignore incidents"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "d",
-          "text": "Disable audit"
+          "text": "Sentinel automation rules"
         }
       ],
       "correct": [
@@ -1638,15 +1502,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Sentinel"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "c",
-          "text": "Ignore incidents"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "d",
@@ -1654,7 +1518,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Sentinel collects and correlates security events.",
       "docs": [
@@ -1672,23 +1536,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sentinel automation rules"
+          "text": "Delete incidents"
         },
         {
           "id": "b",
-          "text": "Manual triage only"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "c",
-          "text": "Ignore alerts"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "d",
-          "text": "Delete incidents"
+          "text": "Sentinel advanced hunting"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Automation reduces mean time to respond.",
       "docs": [
@@ -1706,23 +1570,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sentinel automation rules"
+          "text": "Delete incidents"
         },
         {
           "id": "b",
-          "text": "Manual triage only"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "c",
-          "text": "Ignore alerts"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "d",
-          "text": "Delete incidents"
+          "text": "Microsoft Sentinel"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Automation reduces mean time to respond.",
       "docs": [
@@ -1744,15 +1608,15 @@
         },
         {
           "id": "b",
-          "text": "Manual triage only"
+          "text": "Delete incidents"
         },
         {
           "id": "c",
-          "text": "Ignore alerts"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "d",
-          "text": "Delete incidents"
+          "text": "Sentinel advanced hunting"
         }
       ],
       "correct": [
@@ -1774,23 +1638,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sentinel advanced hunting"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "b",
-          "text": "Spreadsheet pivots"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No logs"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Sentinel advanced hunting"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Hunting queries search across data.",
       "docs": [
@@ -1808,23 +1672,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sentinel advanced hunting"
-        },
-        {
-          "id": "b",
-          "text": "Spreadsheet pivots"
-        },
-        {
-          "id": "c",
           "text": "No logs"
         },
         {
+          "id": "b",
+          "text": "ICMP (not recommended for production workloads)"
+        },
+        {
+          "id": "c",
+          "text": "Microsoft Sentinel"
+        },
+        {
           "id": "d",
-          "text": "ICMP"
+          "text": "Sentinel advanced hunting"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Hunting queries search across data.",
       "docs": [
@@ -1842,23 +1706,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sentinel advanced hunting"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "b",
-          "text": "Spreadsheet pivots"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "c",
-          "text": "No logs"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "ICMP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Hunting queries search across data.",
       "docs": [
@@ -1880,15 +1744,15 @@
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Disable audit"
         },
         {
           "id": "c",
-          "text": "Ignore incidents"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "d",
-          "text": "Disable audit"
+          "text": "Sentinel advanced hunting"
         }
       ],
       "correct": [
@@ -1910,15 +1774,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Sentinel automation rules"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "b",
-          "text": "Manual triage only"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "c",
-          "text": "Ignore alerts"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "d",
@@ -1926,7 +1790,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Automation reduces mean time to respond.",
       "docs": [
@@ -1944,23 +1808,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sentinel advanced hunting"
+          "text": "Sentinel automation rules"
         },
         {
           "id": "b",
-          "text": "Spreadsheet pivots"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No logs"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Microsoft Sentinel"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hunting queries search across data.",
       "docs": [
@@ -1978,23 +1842,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Sentinel"
+          "text": "Disable audit"
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "c",
-          "text": "Ignore incidents"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "d",
-          "text": "Disable audit"
+          "text": "Sentinel automation rules"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Sentinel collects and correlates security events.",
       "docs": [
@@ -2016,11 +1880,11 @@
         },
         {
           "id": "b",
-          "text": "Manual triage only"
+          "text": "Sentinel advanced hunting"
         },
         {
           "id": "c",
-          "text": "Ignore alerts"
+          "text": "Microsoft Sentinel"
         },
         {
           "id": "d",
@@ -2050,15 +1914,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "Public RDP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Disable scanning (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Public RDP"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         }
       ],
       "correct": [
@@ -2080,23 +1944,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud regulatory compliance"
+          "text": "No scans (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore frameworks"
+          "text": "Manual checklist (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No scans"
+          "text": "Defender for Cloud recommendations"
         },
         {
           "id": "d",
-          "text": "Manual checklist"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Regulatory dashboard maps controls.",
       "docs": [
@@ -2118,15 +1982,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "Public RDP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         },
         {
           "id": "d",
-          "text": "Public RDP"
+          "text": "Disable scanning (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2148,23 +2012,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Defender for Cloud recommendations"
+          "text": "Disable scanning (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "Public RDP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         },
         {
           "id": "d",
-          "text": "Public RDP"
+          "text": "Defender for Cloud recommendations"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Recommendations map to MITRE and best practices.",
       "docs": [
@@ -2182,23 +2046,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Defender for Cloud recommendations"
+          "text": "Public RDP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Disable scanning (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Public RDP"
+          "text": "Defender for Cloud recommendations"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Recommendations map to MITRE and best practices.",
       "docs": [
@@ -2220,15 +2084,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore frameworks"
+          "text": "Defender for Cloud recommendations"
         },
         {
           "id": "c",
-          "text": "No scans"
+          "text": "No scans (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Manual checklist"
+          "text": "Manual checklist (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2250,23 +2114,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud regulatory compliance"
+          "text": "Manual checklist (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore frameworks"
+          "text": "Defender for Cloud recommendations"
         },
         {
           "id": "c",
-          "text": "No scans"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         },
         {
           "id": "d",
-          "text": "Manual checklist"
+          "text": "No scans (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Regulatory dashboard maps controls.",
       "docs": [
@@ -2284,23 +2148,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud regulatory compliance"
+          "text": "No scans (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore frameworks"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         },
         {
           "id": "c",
-          "text": "No scans"
+          "text": "Manual checklist (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Manual checklist"
+          "text": "Defender for Cloud recommendations"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Regulatory dashboard maps controls.",
       "docs": [
@@ -2322,15 +2186,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "Public RDP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Disable scanning (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Public RDP"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         }
       ],
       "correct": [
@@ -2352,23 +2216,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud regulatory compliance"
+          "text": "Manual checklist (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore frameworks"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         },
         {
           "id": "c",
-          "text": "No scans"
+          "text": "No scans (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Manual checklist"
+          "text": "Defender for Cloud recommendations"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Regulatory dashboard maps controls.",
       "docs": [
@@ -2390,15 +2254,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "Disable scanning (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Public RDP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Public RDP"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         }
       ],
       "correct": [
@@ -2420,23 +2284,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud regulatory compliance"
+          "text": "Defender for Cloud recommendations"
         },
         {
           "id": "b",
-          "text": "Ignore frameworks"
+          "text": "Manual checklist (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No scans"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         },
         {
           "id": "d",
-          "text": "Manual checklist"
+          "text": "No scans (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Regulatory dashboard maps controls.",
       "docs": [
@@ -2454,7 +2318,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Defender for Cloud recommendations"
+          "text": "Disable scanning (not recommended for production workloads)"
         },
         {
           "id": "b",
@@ -2462,15 +2326,15 @@
         },
         {
           "id": "c",
-          "text": "Ignore findings"
+          "text": "Ignore findings (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Disable scanning"
+          "text": "Defender for Cloud recommendations"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Recommendations map to MITRE and best practices. Compare with Microsoft Defender for Cloud regulatory compliance: Regulatory dashboard maps controls.",
       "docs": [
@@ -2492,23 +2356,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud regulatory compliance"
+          "text": "Ignore frameworks (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Defender for Cloud recommendations"
+          "text": "No scans (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore frameworks"
+          "text": "Microsoft Defender for Cloud regulatory compliance"
         },
         {
           "id": "d",
-          "text": "No scans"
+          "text": "Defender for Cloud recommendations"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Regulatory dashboard maps controls. Compare with Defender for Cloud recommendations: Recommendations map to MITRE and best practices.",
       "docs": [

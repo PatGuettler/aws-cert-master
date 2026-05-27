@@ -13,6 +13,11 @@ from question_bank.fact_banks_pro import BANKS_PRO
 from question_bank.open_source_import import merge_for_exam
 from question_bank.scenario_stems import comparison_stem_from_facts, scenario_stem_from_fact
 from question_bank.stem_quality import is_scenario_stem
+from question_bank.vendor_mcq_hardening import (
+    finalize_vendor_raw_pool,
+    harden_exam_payload,
+    peer_map_from_facts,
+)
 
 SCENARIO_PREFIXES = [
     "A solutions architect needs to",
@@ -139,28 +144,6 @@ def _multi_response_for_exam(exam_id: str, domains: list[dict], rng: random.Rand
         text, _tag, opts, correct, explanation, docs = template
         domain = domain_ids[i % len(domain_ids)]
         out.append((domain, "multiple-response", text, opts, correct, explanation, docs))
-    # Domain-specific multi-response from first domain resources
-    if domains:
-        d0 = domains[0]
-        res = d0.get("resources", [])
-        if len(res) >= 2:
-            out.append(
-                (
-                    d0["id"],
-                    "multiple-response",
-                    f"Which TWO official AWS resources help you prepare for {EXAM_BY_ID[exam_id]['name']}? (Select TWO.)",
-                    [
-                        ("a", res[0]["title"]),
-                        ("b", "Unofficial leaked exam dumps"),
-                        ("c", res[1]["title"] if len(res) > 1 else "Random blogs only"),
-                        ("d", "Disable all logging"),
-                        ("e", "Share root account keys"),
-                    ],
-                    ["a", "c"],
-                    "Use official AWS exam guides, Skill Builder, and AWS documentation—not real exam content.",
-                    [(res[0]["title"], res[0]["url"])],
-                )
-            )
     rng.shuffle(out)
     return out
 
@@ -210,6 +193,15 @@ def _build_devops_raw_questions(min_total: int, seed: int) -> list[RawQuestion]:
         raise SystemExit(
             f"devops-engineer-professional: generated {len(raw)} unique questions, need {min_total}."
         )
+
+    peer_by_domain = peer_map_from_facts(exam_facts)
+    for row in raw:
+        if row[1] != "multiple-choice":
+            continue
+        opts = {oid: text for oid, text in row[3]}
+        for cid in row[4]:
+            peer_by_domain.setdefault(row[0], []).append(opts.get(cid, ""))
+    raw = finalize_vendor_raw_pool(raw, peer_by_domain, "aws", seed)
     return raw
 
 
@@ -267,6 +259,10 @@ def build_exam_payload(exam_id: str) -> dict[str, Any]:
     if len(raw) < min_q:
         raise SystemExit(f"{exam_id}: only generated {len(raw)} questions, need {min_q}")
 
+    seed = 42 + hash(exam_id) % 10000
+    peer_map = peer_map_from_facts(ALL_BANKS.get(exam_id, {}))
+    raw = finalize_vendor_raw_pool(raw, peer_map, "aws", seed)
+
     prefix = exam_id.replace("-", "")[:6]
     if exam_id == "ai-practitioner":
         prefix = "aif"
@@ -294,7 +290,7 @@ def build_exam_payload(exam_id: str) -> dict[str, Any]:
     from question_bank.common import build_questions
 
     questions = build_questions(raw, prefix)
-    return {
+    payload = {
         "id": spec["id"],
         "name": spec["name"],
         "code": spec["code"],
@@ -303,3 +299,4 @@ def build_exam_payload(exam_id: str) -> dict[str, Any]:
         "domains": spec["domains"],
         "questions": questions,
     }
+    return harden_exam_payload(payload, seed=seed)

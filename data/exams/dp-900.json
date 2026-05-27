@@ -63,142 +63,6 @@
   ],
   "questions": [
     {
-      "id": "dp9-q001",
-      "domain": "data-concepts",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Data Fundamentals and reviewing Describe core data concepts. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "DP-900 study guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use DP-900 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "DP-900 study guide",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900"
-        }
-      ]
-    },
-    {
-      "id": "dp9-q002",
-      "domain": "relational",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Data Fundamentals and reviewing Describe relational data workloads. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure SQL"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure SQL and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure SQL",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
-        }
-      ]
-    },
-    {
-      "id": "dp9-q003",
-      "domain": "nonrelational",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Data Fundamentals and reviewing Describe non-relational data workloads. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Cosmos DB"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Cosmos DB and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Cosmos DB",
-          "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
-        }
-      ]
-    },
-    {
-      "id": "dp9-q004",
-      "domain": "analytics",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Data Fundamentals and reviewing Describe analytics workloads. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Synapse Analytics"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Synapse Analytics and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Synapse Analytics",
-          "url": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
-        }
-      ]
-    },
-    {
       "id": "dp9-q005",
       "domain": "data-concepts",
       "type": "multiple-choice",
@@ -206,23 +70,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "DNS labels only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "ICMP packets (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data models drive store selection.",
       "docs": [
@@ -244,15 +108,15 @@
         },
         {
           "id": "b",
-          "text": "Only USB"
+          "text": "DP-900 study guide"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "DNS (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS"
+          "text": "Relational tables vs JSON documents"
         }
       ],
       "correct": [
@@ -278,15 +142,15 @@
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "DNS labels only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DP-900 study guide"
         }
       ],
       "correct": [
@@ -308,23 +172,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "DP-900 study guide"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DNS labels only (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data models drive store selection.",
       "docs": [
@@ -342,23 +206,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "DNS labels only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "ICMP packets (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "Batch processes windows; streaming near real-time"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data models drive store selection.",
       "docs": [
@@ -376,23 +240,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Batch processes windows; streaming near real-time"
+          "text": "DNS (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Only USB"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "d",
-          "text": "DNS"
+          "text": "DP-900 study guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Latency requirements drive pattern choice.",
       "docs": [
@@ -410,23 +274,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Batch processes windows; streaming near real-time"
+          "text": "DNS (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Only USB"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "d",
-          "text": "DNS"
+          "text": "Batch processes windows; streaming near real-time"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Latency requirements drive pattern choice.",
       "docs": [
@@ -448,15 +312,15 @@
         },
         {
           "id": "b",
-          "text": "Only USB"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "DNS (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS"
+          "text": "DP-900 study guide"
         }
       ],
       "correct": [
@@ -478,23 +342,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "DNS labels only (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "ICMP packets (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Data models drive store selection.",
       "docs": [
@@ -512,23 +376,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Batch processes windows; streaming near real-time"
+          "text": "DP-900 study guide"
         },
         {
           "id": "b",
-          "text": "Only USB"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "DNS (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS"
+          "text": "Relational tables vs JSON documents"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Latency requirements drive pattern choice.",
       "docs": [
@@ -546,23 +410,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "DNS labels only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "DP-900 study guide"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "Batch processes windows; streaming near real-time"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data models drive store selection.",
       "docs": [
@@ -584,15 +448,15 @@
         },
         {
           "id": "b",
-          "text": "Only USB"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "DNS (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS"
+          "text": "ICMP (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -614,23 +478,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
-        },
-        {
-          "id": "b",
           "text": "Batch processes windows; streaming near real-time"
         },
         {
+          "id": "b",
+          "text": "ICMP packets (not recommended for production workloads)"
+        },
+        {
           "id": "c",
-          "text": "Only binary EXE"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "d",
-          "text": "ICMP packets"
+          "text": "Only binary EXE (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Data models drive store selection. Compare with Batch processes windows; streaming near real-time: Latency requirements drive pattern choice.",
       "docs": [
@@ -652,7 +516,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Batch processes windows; streaming near real-time"
+          "text": "Relational tables vs JSON documents (not recommended for production workloads)"
         },
         {
           "id": "b",
@@ -660,15 +524,15 @@
         },
         {
           "id": "c",
-          "text": "Only USB"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "DP-900 study guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Latency requirements drive pattern choice. Compare with Relational tables vs JSON documents: Data models drive store selection.",
       "docs": [
@@ -690,23 +554,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Relational tables vs JSON documents"
+          "text": "ICMP packets (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DNS labels only (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Data models drive store selection.",
       "docs": [
@@ -724,23 +588,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Batch processes windows; streaming near real-time"
+          "text": "Relational tables vs JSON documents"
         },
         {
           "id": "b",
-          "text": "Only USB"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "ICMP"
+          "text": "DNS (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS"
+          "text": "Batch processes windows; streaming near real-time"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Latency requirements drive pattern choice.",
       "docs": [
@@ -762,15 +626,15 @@
         },
         {
           "id": "b",
-          "text": "Only binary EXE"
+          "text": "DP-900 study guide"
         },
         {
           "id": "c",
-          "text": "ICMP packets"
+          "text": "Batch processes windows; streaming near real-time"
         },
         {
           "id": "d",
-          "text": "DNS labels only"
+          "text": "DNS labels only (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -792,23 +656,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Ping (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure SQL offers managed relational service.",
       "docs": [
@@ -830,15 +694,15 @@
         },
         {
           "id": "b",
-          "text": "Single core only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "c",
-          "text": "No replicas"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure SQL"
         }
       ],
       "correct": [
@@ -864,15 +728,15 @@
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Ping (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Azure SQL"
         }
       ],
       "correct": [
@@ -898,15 +762,15 @@
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Ping (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Azure SQL"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Azure SQL read scale-out"
         }
       ],
       "correct": [
@@ -932,15 +796,15 @@
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Ping (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -962,23 +826,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL read scale-out"
+          "text": "No replicas (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single core only"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "c",
-          "text": "No replicas"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Replicas offload read queries.",
       "docs": [
@@ -1000,15 +864,15 @@
         },
         {
           "id": "b",
-          "text": "Single core only"
+          "text": "No replicas (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No replicas"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
@@ -1030,23 +894,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL read scale-out"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single core only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "c",
-          "text": "No replicas"
+          "text": "Azure SQL"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure SQL read scale-out"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Replicas offload read queries.",
       "docs": [
@@ -1064,23 +928,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Ping (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure SQL offers managed relational service.",
       "docs": [
@@ -1098,23 +962,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL read scale-out"
+          "text": "No replicas (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single core only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "c",
-          "text": "No replicas"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure SQL read scale-out"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Replicas offload read queries.",
       "docs": [
@@ -1132,23 +996,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Ping (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "FTP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure SQL offers managed relational service.",
       "docs": [
@@ -1170,15 +1034,15 @@
         },
         {
           "id": "b",
-          "text": "Single core only"
+          "text": "No replicas (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No replicas"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
@@ -1200,23 +1064,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
-        },
-        {
-          "id": "b",
-          "text": "Azure SQL read scale-out"
-        },
-        {
-          "id": "c",
           "text": "Notepad CSV only"
         },
         {
+          "id": "b",
+          "text": "Azure SQL Database"
+        },
+        {
+          "id": "c",
+          "text": "Azure SQL read scale-out"
+        },
+        {
           "id": "d",
-          "text": "FTP"
+          "text": "FTP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure SQL offers managed relational service. Compare with Azure SQL read scale-out: Replicas offload read queries.",
       "docs": [
@@ -1246,11 +1110,11 @@
         },
         {
           "id": "c",
-          "text": "Single core only"
+          "text": "Single core only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No replicas"
+          "text": "No replicas (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1276,23 +1140,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Ping (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "Azure SQL"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure SQL offers managed relational service.",
       "docs": [
@@ -1310,23 +1174,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL read scale-out"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single core only"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "c",
-          "text": "No replicas"
+          "text": "No replicas (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Replicas offload read queries.",
       "docs": [
@@ -1344,23 +1208,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Ping (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Notepad CSV only"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Azure SQL read scale-out"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure SQL offers managed relational service.",
       "docs": [
@@ -1382,15 +1246,15 @@
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Local USB"
+          "text": "SMTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "Local USB"
         }
       ],
       "correct": [
@@ -1412,23 +1276,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MongoDB-compatible API on Cosmos DB"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Excel tables"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "ICMP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "API compatibility eases migration.",
       "docs": [
@@ -1446,11 +1310,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "SMTP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "c",
@@ -1458,11 +1322,11 @@
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "MongoDB-compatible API on Cosmos DB"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cosmos supports multiple APIs and consistency levels.",
       "docs": [
@@ -1484,7 +1348,7 @@
         },
         {
           "id": "b",
-          "text": "Single file share only"
+          "text": "SMTP (not recommended for production workloads)"
         },
         {
           "id": "c",
@@ -1492,7 +1356,7 @@
         },
         {
           "id": "d",
-          "text": "SMTP"
+          "text": "MongoDB-compatible API on Cosmos DB"
         }
       ],
       "correct": [
@@ -1514,23 +1378,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
-        },
-        {
-          "id": "c",
           "text": "Local USB"
         },
         {
+          "id": "c",
+          "text": "Azure Cosmos DB"
+        },
+        {
           "id": "d",
-          "text": "SMTP"
+          "text": "SMTP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cosmos supports multiple APIs and consistency levels.",
       "docs": [
@@ -1552,15 +1416,15 @@
         },
         {
           "id": "b",
-          "text": "Excel tables"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure Cosmos DB"
         }
       ],
       "correct": [
@@ -1582,23 +1446,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MongoDB-compatible API on Cosmos DB"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Excel tables"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "MongoDB-compatible API on Cosmos DB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "API compatibility eases migration.",
       "docs": [
@@ -1616,23 +1480,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MongoDB-compatible API on Cosmos DB"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Excel tables"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "MongoDB-compatible API on Cosmos DB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "API compatibility eases migration.",
       "docs": [
@@ -1654,15 +1518,15 @@
         },
         {
           "id": "b",
-          "text": "Single file share only"
-        },
-        {
-          "id": "c",
           "text": "Local USB"
         },
         {
+          "id": "c",
+          "text": "SMTP (not recommended for production workloads)"
+        },
+        {
           "id": "d",
-          "text": "SMTP"
+          "text": "MongoDB-compatible API on Cosmos DB"
         }
       ],
       "correct": [
@@ -1684,23 +1548,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MongoDB-compatible API on Cosmos DB"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Excel tables"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "API compatibility eases migration.",
       "docs": [
@@ -1718,23 +1582,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Single file share only"
-        },
-        {
-          "id": "c",
           "text": "Local USB"
         },
         {
+          "id": "c",
+          "text": "SMTP (not recommended for production workloads)"
+        },
+        {
           "id": "d",
-          "text": "SMTP"
+          "text": "Azure Cosmos DB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cosmos supports multiple APIs and consistency levels.",
       "docs": [
@@ -1752,23 +1616,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MongoDB-compatible API on Cosmos DB"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Excel tables"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "API compatibility eases migration.",
       "docs": [
@@ -1786,23 +1650,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
-        },
-        {
-          "id": "b",
           "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Single file share only"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Local USB"
+        },
+        {
+          "id": "d",
+          "text": "Azure Cosmos DB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cosmos supports multiple APIs and consistency levels. Compare with MongoDB-compatible API on Cosmos DB: API compatibility eases migration.",
       "docs": [
@@ -1824,23 +1688,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MongoDB-compatible API on Cosmos DB"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Azure Cosmos DB"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Excel tables"
+          "text": "Excel tables (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Cosmos DB"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "API compatibility eases migration. Compare with Azure Cosmos DB: Cosmos supports multiple APIs and consistency levels.",
       "docs": [
@@ -1862,23 +1726,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
-        },
-        {
-          "id": "b",
-          "text": "Single file share only"
-        },
-        {
-          "id": "c",
           "text": "Local USB"
         },
         {
+          "id": "b",
+          "text": "Azure Cosmos DB"
+        },
+        {
+          "id": "c",
+          "text": "SMTP (not recommended for production workloads)"
+        },
+        {
           "id": "d",
-          "text": "SMTP"
+          "text": "MongoDB-compatible API on Cosmos DB"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cosmos supports multiple APIs and consistency levels.",
       "docs": [
@@ -1896,23 +1760,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MongoDB-compatible API on Cosmos DB"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Excel tables"
+          "text": "MongoDB-compatible API on Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "API compatibility eases migration.",
       "docs": [
@@ -1930,23 +1794,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "SMTP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single file share only"
-        },
-        {
-          "id": "c",
           "text": "Local USB"
         },
         {
+          "id": "c",
+          "text": "MongoDB-compatible API on Cosmos DB"
+        },
+        {
           "id": "d",
-          "text": "SMTP"
+          "text": "Azure Cosmos DB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cosmos supports multiple APIs and consistency levels.",
       "docs": [
@@ -1964,23 +1828,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
-        },
-        {
-          "id": "b",
-          "text": "Desktop calc only"
-        },
-        {
-          "id": "c",
           "text": "Email reports only"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "No lake"
+        },
+        {
+          "id": "c",
+          "text": "Azure Synapse Analytics"
+        },
+        {
+          "id": "d",
+          "text": "Microsoft Fabric lakehouse"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Synapse unifies warehousing and Spark.",
       "docs": [
@@ -1998,11 +1862,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Fabric lakehouse"
+          "text": "No catalog"
         },
         {
           "id": "b",
-          "text": "CSV on desktop"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "c",
@@ -2010,11 +1874,11 @@
         },
         {
           "id": "d",
-          "text": "No catalog"
+          "text": "Azure Synapse Analytics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Fabric unifies analytics workloads.",
       "docs": [
@@ -2032,23 +1896,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
+          "text": "No lake"
         },
         {
           "id": "c",
-          "text": "Email reports only"
+          "text": "Azure Synapse Analytics"
         },
         {
           "id": "d",
-          "text": "No lake"
+          "text": "Email reports only"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Synapse unifies warehousing and Spark.",
       "docs": [
@@ -2066,23 +1930,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
+          "text": "No lake"
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
+          "text": "Azure Synapse Analytics"
         },
         {
           "id": "c",
-          "text": "Email reports only"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "d",
-          "text": "No lake"
+          "text": "Email reports only"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Synapse unifies warehousing and Spark.",
       "docs": [
@@ -2100,11 +1964,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
+          "text": "No lake"
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "c",
@@ -2112,11 +1976,11 @@
         },
         {
           "id": "d",
-          "text": "No lake"
+          "text": "Azure Synapse Analytics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Synapse unifies warehousing and Spark.",
       "docs": [
@@ -2134,23 +1998,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Fabric lakehouse"
-        },
-        {
-          "id": "b",
-          "text": "CSV on desktop"
-        },
-        {
-          "id": "c",
           "text": "Email reports"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Azure Synapse Analytics"
+        },
+        {
+          "id": "c",
           "text": "No catalog"
+        },
+        {
+          "id": "d",
+          "text": "Microsoft Fabric lakehouse"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Fabric unifies analytics workloads.",
       "docs": [
@@ -2168,23 +2032,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Fabric lakehouse"
-        },
-        {
-          "id": "b",
-          "text": "CSV on desktop"
-        },
-        {
-          "id": "c",
           "text": "Email reports"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Microsoft Fabric lakehouse"
+        },
+        {
+          "id": "c",
           "text": "No catalog"
+        },
+        {
+          "id": "d",
+          "text": "Azure Synapse Analytics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Fabric unifies analytics workloads.",
       "docs": [
@@ -2202,23 +2066,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Fabric lakehouse"
+          "text": "No catalog"
         },
         {
           "id": "b",
-          "text": "CSV on desktop"
-        },
-        {
-          "id": "c",
           "text": "Email reports"
         },
         {
+          "id": "c",
+          "text": "Azure Synapse Analytics"
+        },
+        {
           "id": "d",
-          "text": "No catalog"
+          "text": "Microsoft Fabric lakehouse"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Fabric unifies analytics workloads.",
       "docs": [
@@ -2236,23 +2100,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
+          "text": "No lake"
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
-        },
-        {
-          "id": "c",
           "text": "Email reports only"
         },
         {
+          "id": "c",
+          "text": "Azure Synapse Analytics"
+        },
+        {
           "id": "d",
-          "text": "No lake"
+          "text": "Microsoft Fabric lakehouse"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Synapse unifies warehousing and Spark.",
       "docs": [
@@ -2270,15 +2134,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Fabric lakehouse"
+          "text": "Azure Synapse Analytics"
         },
         {
           "id": "b",
-          "text": "CSV on desktop"
+          "text": "Email reports"
         },
         {
           "id": "c",
-          "text": "Email reports"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "d",
@@ -2286,7 +2150,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Fabric unifies analytics workloads.",
       "docs": [
@@ -2304,23 +2168,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
+          "text": "No lake"
         },
         {
           "id": "c",
-          "text": "Email reports only"
+          "text": "Azure Synapse Analytics"
         },
         {
           "id": "d",
-          "text": "No lake"
+          "text": "Email reports only"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Synapse unifies warehousing and Spark.",
       "docs": [
@@ -2338,11 +2202,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Fabric lakehouse"
+          "text": "Azure Synapse Analytics"
         },
         {
           "id": "b",
-          "text": "CSV on desktop"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "c",
@@ -2354,7 +2218,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Fabric unifies analytics workloads.",
       "docs": [
@@ -2380,11 +2244,11 @@
         },
         {
           "id": "c",
-          "text": "Desktop calc only"
+          "text": "Email reports only"
         },
         {
           "id": "d",
-          "text": "Email reports only"
+          "text": "Desktop calc only"
         }
       ],
       "correct": [
@@ -2410,23 +2274,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Fabric lakehouse"
+          "text": "Email reports"
         },
         {
           "id": "b",
-          "text": "Azure Synapse Analytics"
-        },
-        {
-          "id": "c",
           "text": "CSV on desktop"
         },
         {
+          "id": "c",
+          "text": "Microsoft Fabric lakehouse"
+        },
+        {
           "id": "d",
-          "text": "Email reports"
+          "text": "Azure Synapse Analytics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Fabric unifies analytics workloads. Compare with Azure Synapse Analytics: Synapse unifies warehousing and Spark.",
       "docs": [
@@ -2452,7 +2316,7 @@
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "c",
@@ -2482,23 +2346,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Fabric lakehouse"
+          "text": "No catalog"
         },
         {
           "id": "b",
-          "text": "CSV on desktop"
-        },
-        {
-          "id": "c",
           "text": "Email reports"
         },
         {
+          "id": "c",
+          "text": "Azure Synapse Analytics"
+        },
+        {
           "id": "d",
-          "text": "No catalog"
+          "text": "Microsoft Fabric lakehouse"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Fabric unifies analytics workloads.",
       "docs": [
@@ -2516,15 +2380,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Synapse Analytics"
+          "text": "Email reports only"
         },
         {
           "id": "b",
-          "text": "Desktop calc only"
+          "text": "Microsoft Fabric lakehouse"
         },
         {
           "id": "c",
-          "text": "Email reports only"
+          "text": "Azure Synapse Analytics"
         },
         {
           "id": "d",
@@ -2532,7 +2396,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Synapse unifies warehousing and Spark.",
       "docs": [

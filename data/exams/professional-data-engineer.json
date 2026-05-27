@@ -67,142 +67,6 @@
   ],
   "questions": [
     {
-      "id": "pde-q001",
-      "domain": "data-lifecycle",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Data Engineer and reviewing Designing data processing systems. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "PDE exam guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use PDE exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "PDE exam guide",
-          "url": "https://cloud.google.com/learn/certification/guides/data-engineer"
-        }
-      ]
-    },
-    {
-      "id": "pde-q002",
-      "domain": "ingestion-storage",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Data Engineer and reviewing Ingesting and processing data. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Pub/Sub"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Pub/Sub and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Pub/Sub",
-          "url": "https://cloud.google.com/pubsub/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "pde-q003",
-      "domain": "analysis-modeling",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Data Engineer and reviewing Storing and analyzing data. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Bigtable"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Bigtable and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Bigtable",
-          "url": "https://cloud.google.com/bigtable/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "pde-q004",
-      "domain": "reliability-ops",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Data Engineer and reviewing Reliability, policies, and processes. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Dataplex"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Dataplex and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Dataplex",
-          "url": "https://cloud.google.com/dataplex/docs"
-        }
-      ]
-    },
-    {
       "id": "pde-q005",
       "domain": "data-lifecycle",
       "type": "multiple-choice",
@@ -214,7 +78,7 @@
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "c",
@@ -244,23 +108,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Composer (managed Airflow)"
+          "text": "PDE exam guide"
         },
         {
           "id": "b",
-          "text": "Cron USB"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Composer schedules complex workflows.",
       "docs": [
@@ -278,23 +142,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "FTP"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Email CSV"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Dataflow runs Beam pipelines serverlessly.",
       "docs": [
@@ -316,7 +180,7 @@
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "FTP"
         },
         {
           "id": "c",
@@ -324,7 +188,7 @@
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Cloud Composer (managed Airflow)"
         }
       ],
       "correct": [
@@ -350,7 +214,7 @@
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "c",
@@ -384,15 +248,15 @@
         },
         {
           "id": "b",
-          "text": "Cron USB"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Manual FTP (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -414,23 +278,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Composer (managed Airflow)"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Cron USB"
+          "text": "Manual FTP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Cloud Composer (managed Airflow)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Composer schedules complex workflows.",
       "docs": [
@@ -452,15 +316,15 @@
         },
         {
           "id": "b",
-          "text": "Cron USB"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "PDE exam guide"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Cloud Dataflow"
         }
       ],
       "correct": [
@@ -482,11 +346,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "FTP"
         },
         {
           "id": "c",
@@ -494,11 +358,11 @@
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Cloud Dataflow"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Dataflow runs Beam pipelines serverlessly.",
       "docs": [
@@ -516,23 +380,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Composer (managed Airflow)"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Cron USB"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "Manual FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Cloud Dataflow"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Composer schedules complex workflows.",
       "docs": [
@@ -550,23 +414,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "PDE exam guide"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "FTP"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Cloud Dataflow"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Dataflow runs Beam pipelines serverlessly.",
       "docs": [
@@ -588,15 +452,15 @@
         },
         {
           "id": "b",
-          "text": "Cron USB"
+          "text": "Manual FTP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -618,11 +482,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cloud Composer (managed Airflow)"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "c",
@@ -634,7 +498,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Dataflow runs Beam pipelines serverlessly. Compare with Cloud Composer (managed Airflow): Composer schedules complex workflows.",
       "docs": [
@@ -656,7 +520,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Composer (managed Airflow)"
+          "text": "Manual FTP (not recommended for production workloads)"
         },
         {
           "id": "b",
@@ -664,15 +528,15 @@
         },
         {
           "id": "c",
-          "text": "Cron USB"
+          "text": "PDE exam guide"
         },
         {
           "id": "d",
-          "text": "Manual FTP"
+          "text": "Cloud Composer (managed Airflow)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Composer schedules complex workflows. Compare with Cloud Dataflow: Dataflow runs Beam pipelines serverlessly.",
       "docs": [
@@ -694,23 +558,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
-        },
-        {
-          "id": "c",
           "text": "Email CSV"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Cloud Dataflow"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Dataflow runs Beam pipelines serverlessly.",
       "docs": [
@@ -728,23 +592,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Composer (managed Airflow)"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "b",
-          "text": "Cron USB"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "Manual FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Cloud Composer (managed Airflow)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Composer schedules complex workflows.",
       "docs": [
@@ -762,23 +626,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "FTP"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "PDE exam guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Dataflow runs Beam pipelines serverlessly.",
       "docs": [
@@ -796,23 +660,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Composer (managed Airflow)"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Cron USB"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "PDE exam guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Composer schedules complex workflows.",
       "docs": [
@@ -830,11 +694,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Dataflow"
+          "text": "FTP"
         },
         {
           "id": "b",
-          "text": "Cron on laptop only"
+          "text": "Cloud Dataflow"
         },
         {
           "id": "c",
@@ -842,11 +706,11 @@
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Cloud Composer (managed Airflow)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Dataflow runs Beam pipelines serverlessly.",
       "docs": [
@@ -864,23 +728,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Composer (managed Airflow)"
+          "text": "PDE exam guide"
         },
         {
           "id": "b",
-          "text": "Cron USB"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "Cloud Composer (managed Airflow)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Cloud Dataflow"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Composer schedules complex workflows.",
       "docs": [
@@ -898,23 +762,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub"
+          "text": "Telnet"
         },
         {
           "id": "b",
-          "text": "Polling FTP"
+          "text": "BigQuery"
         },
         {
           "id": "c",
-          "text": "Daily USB"
+          "text": "Pub/Sub"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "BigQuery streaming insert or Dataflow"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Pub/Sub decouples producers and consumers.",
       "docs": [
@@ -936,15 +800,15 @@
         },
         {
           "id": "b",
-          "text": "Local SQLite warehouse"
+          "text": "No schema"
         },
         {
           "id": "c",
-          "text": "Paper reports"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "d",
-          "text": "No schema"
+          "text": "Pub/Sub"
         }
       ],
       "correct": [
@@ -966,23 +830,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery streaming insert or Dataflow"
+          "text": "Pub/Sub"
         },
         {
           "id": "b",
-          "text": "Daily CSV email"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "USB"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "BigQuery"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Streaming enables near-real-time analytics.",
       "docs": [
@@ -1000,15 +864,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "b",
-          "text": "Polling FTP"
+          "text": "BigQuery"
         },
         {
           "id": "c",
-          "text": "Daily USB"
+          "text": "Pub/Sub"
         },
         {
           "id": "d",
@@ -1016,7 +880,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Pub/Sub decouples producers and consumers.",
       "docs": [
@@ -1034,23 +898,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub"
+          "text": "Telnet"
         },
         {
           "id": "b",
-          "text": "Polling FTP"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "c",
-          "text": "Daily USB"
+          "text": "BigQuery"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Pub/Sub"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Pub/Sub decouples producers and consumers.",
       "docs": [
@@ -1068,15 +932,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub"
+          "text": "BigQuery"
         },
         {
           "id": "b",
-          "text": "Polling FTP"
+          "text": "Pub/Sub"
         },
         {
           "id": "c",
-          "text": "Daily USB"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "d",
@@ -1084,7 +948,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Pub/Sub decouples producers and consumers.",
       "docs": [
@@ -1102,15 +966,15 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "b",
-          "text": "Local SQLite warehouse"
+          "text": "Pub/Sub"
         },
         {
           "id": "c",
-          "text": "Paper reports"
+          "text": "BigQuery"
         },
         {
           "id": "d",
@@ -1118,7 +982,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "BigQuery scales analytics.",
       "docs": [
@@ -1136,15 +1000,15 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "b",
-          "text": "Local SQLite warehouse"
+          "text": "BigQuery"
         },
         {
           "id": "c",
-          "text": "Paper reports"
+          "text": "Pub/Sub"
         },
         {
           "id": "d",
@@ -1152,7 +1016,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "BigQuery scales analytics.",
       "docs": [
@@ -1170,23 +1034,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery"
+          "text": "Pub/Sub"
         },
         {
           "id": "b",
-          "text": "Local SQLite warehouse"
+          "text": "No schema"
         },
         {
           "id": "c",
-          "text": "Paper reports"
+          "text": "BigQuery"
         },
         {
           "id": "d",
-          "text": "No schema"
+          "text": "BigQuery streaming insert or Dataflow"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "BigQuery scales analytics.",
       "docs": [
@@ -1204,23 +1068,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery streaming insert or Dataflow"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Daily CSV email"
+          "text": "BigQuery"
         },
         {
           "id": "c",
-          "text": "USB"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Pub/Sub"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Streaming enables near-real-time analytics.",
       "docs": [
@@ -1238,23 +1102,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery streaming insert or Dataflow"
+          "text": "Pub/Sub"
         },
         {
           "id": "b",
-          "text": "Daily CSV email"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "c",
-          "text": "USB"
+          "text": "BigQuery"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "ICMP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Streaming enables near-real-time analytics.",
       "docs": [
@@ -1272,23 +1136,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery streaming insert or Dataflow"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Daily CSV email"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "c",
-          "text": "USB"
+          "text": "Pub/Sub"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "BigQuery"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Streaming enables near-real-time analytics.",
       "docs": [
@@ -1306,15 +1170,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub"
+          "text": "BigQuery"
         },
         {
           "id": "b",
-          "text": "Polling FTP"
+          "text": "Pub/Sub"
         },
         {
           "id": "c",
-          "text": "Daily USB"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "d",
@@ -1322,7 +1186,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Pub/Sub decouples producers and consumers.",
       "docs": [
@@ -1340,15 +1204,15 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "b",
-          "text": "Local SQLite warehouse"
+          "text": "BigQuery"
         },
         {
           "id": "c",
-          "text": "Paper reports"
+          "text": "Pub/Sub"
         },
         {
           "id": "d",
@@ -1356,7 +1220,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "BigQuery scales analytics.",
       "docs": [
@@ -1374,23 +1238,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery streaming insert or Dataflow"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Daily CSV email"
+          "text": "BigQuery"
         },
         {
           "id": "c",
-          "text": "USB"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Pub/Sub"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Streaming enables near-real-time analytics.",
       "docs": [
@@ -1412,11 +1276,11 @@
         },
         {
           "id": "b",
-          "text": "Polling FTP"
+          "text": "BigQuery"
         },
         {
           "id": "c",
-          "text": "Daily USB"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "d",
@@ -1442,23 +1306,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery"
+          "text": "BigQuery streaming insert or Dataflow"
         },
         {
           "id": "b",
-          "text": "Local SQLite warehouse"
+          "text": "No schema"
         },
         {
           "id": "c",
-          "text": "Paper reports"
+          "text": "BigQuery"
         },
         {
           "id": "d",
-          "text": "No schema"
+          "text": "Pub/Sub"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "BigQuery scales analytics.",
       "docs": [
@@ -1476,15 +1340,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Cloud Bigtable"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "Bigtable"
         },
         {
           "id": "d",
@@ -1492,7 +1356,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Bigtable suits high-throughput NoSQL.",
       "docs": [
@@ -1510,15 +1374,15 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery ML"
+          "text": "Cloud Bigtable"
         },
         {
           "id": "b",
-          "text": "Excel regression"
+          "text": "BigQuery ML"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "Bigtable"
         },
         {
           "id": "d",
@@ -1526,7 +1390,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "BQML runs models where data lives.",
       "docs": [
@@ -1544,23 +1408,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "ICMP"
         },
         {
           "id": "b",
-          "text": "Relational only always"
-        },
-        {
-          "id": "c",
           "text": "Notepad"
         },
         {
+          "id": "c",
+          "text": "Cloud Bigtable"
+        },
+        {
           "id": "d",
-          "text": "ICMP"
+          "text": "BigQuery ML"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Bigtable suits high-throughput NoSQL.",
       "docs": [
@@ -1578,23 +1442,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "Bigtable"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Cloud Bigtable"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "BigQuery ML"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Bigtable suits high-throughput NoSQL.",
       "docs": [
@@ -1616,15 +1480,15 @@
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "BigQuery ML"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Bigtable"
         }
       ],
       "correct": [
@@ -1646,23 +1510,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery ML"
+          "text": "Bigtable"
         },
         {
           "id": "b",
-          "text": "Excel regression"
+          "text": "FTP"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "Cloud Bigtable"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "BigQuery ML"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "BQML runs models where data lives.",
       "docs": [
@@ -1680,23 +1544,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery ML"
-        },
-        {
-          "id": "b",
-          "text": "Excel regression"
-        },
-        {
-          "id": "c",
           "text": "Notepad"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "BigQuery ML"
+        },
+        {
+          "id": "c",
           "text": "FTP"
+        },
+        {
+          "id": "d",
+          "text": "Cloud Bigtable"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "BQML runs models where data lives.",
       "docs": [
@@ -1714,23 +1578,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery ML"
+          "text": "Cloud Bigtable"
         },
         {
           "id": "b",
-          "text": "Excel regression"
+          "text": "FTP"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "BigQuery ML"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Notepad"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "BQML runs models where data lives.",
       "docs": [
@@ -1748,23 +1612,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "BigQuery ML"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "ICMP"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "Cloud Bigtable"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Notepad"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Bigtable suits high-throughput NoSQL.",
       "docs": [
@@ -1782,15 +1646,15 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery ML"
+          "text": "Cloud Bigtable"
         },
         {
           "id": "b",
-          "text": "Excel regression"
+          "text": "BigQuery ML"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "Bigtable"
         },
         {
           "id": "d",
@@ -1798,7 +1662,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "BQML runs models where data lives.",
       "docs": [
@@ -1816,23 +1680,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "Bigtable"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "BigQuery ML"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Cloud Bigtable"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Bigtable suits high-throughput NoSQL.",
       "docs": [
@@ -1854,11 +1718,11 @@
         },
         {
           "id": "b",
-          "text": "Excel regression"
+          "text": "Notepad"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "Cloud Bigtable"
         },
         {
           "id": "d",
@@ -1892,11 +1756,11 @@
         },
         {
           "id": "c",
-          "text": "Relational only always"
+          "text": "Notepad"
         },
         {
           "id": "d",
-          "text": "Notepad"
+          "text": "Bigtable"
         }
       ],
       "correct": [
@@ -1922,7 +1786,7 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery ML"
+          "text": "Notepad"
         },
         {
           "id": "b",
@@ -1930,15 +1794,15 @@
         },
         {
           "id": "c",
-          "text": "Excel regression"
+          "text": "BigQuery ML"
         },
         {
           "id": "d",
-          "text": "Notepad"
+          "text": "Excel regression"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "BQML runs models where data lives. Compare with Cloud Bigtable: Bigtable suits high-throughput NoSQL.",
       "docs": [
@@ -1960,23 +1824,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Bigtable"
+          "text": "ICMP"
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "BigQuery ML"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "Bigtable"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Cloud Bigtable"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Bigtable suits high-throughput NoSQL.",
       "docs": [
@@ -1994,23 +1858,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery ML"
+          "text": "Bigtable"
         },
         {
           "id": "b",
-          "text": "Excel regression"
+          "text": "FTP"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "BigQuery ML"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Cloud Bigtable"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "BQML runs models where data lives.",
       "docs": [
@@ -2032,11 +1896,11 @@
         },
         {
           "id": "b",
-          "text": "Relational only always"
+          "text": "Notepad"
         },
         {
           "id": "c",
-          "text": "Notepad"
+          "text": "BigQuery ML"
         },
         {
           "id": "d",
@@ -2062,23 +1926,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
+          "text": "Public buckets"
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "Dataplex"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "No lineage"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Dataplex manages metadata and quality.",
       "docs": [
@@ -2100,15 +1964,15 @@
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Dataplex"
         },
         {
           "id": "c",
-          "text": "Annual check"
+          "text": "Disable paging (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Disable paging"
+          "text": "Annual check (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2130,11 +1994,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "Dataplex"
         },
         {
           "id": "c",
@@ -2146,7 +2010,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Dataplex manages metadata and quality.",
       "docs": [
@@ -2168,15 +2032,15 @@
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
-        },
-        {
-          "id": "c",
           "text": "No lineage"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "Cloud Monitoring dashboards and alerts"
         }
       ],
       "correct": [
@@ -2198,23 +2062,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
-        },
-        {
-          "id": "b",
-          "text": "Shadow catalogs"
-        },
-        {
-          "id": "c",
           "text": "No lineage"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Cloud Monitoring dashboards and alerts"
+        },
+        {
+          "id": "c",
           "text": "Public buckets"
+        },
+        {
+          "id": "d",
+          "text": "Dataplex"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Dataplex manages metadata and quality.",
       "docs": [
@@ -2232,23 +2096,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring dashboards and alerts"
+          "text": "Disable paging (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "c",
-          "text": "Annual check"
+          "text": "Annual check (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Disable paging"
+          "text": "Dataplex"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Monitoring validates pipeline health.",
       "docs": [
@@ -2270,15 +2134,15 @@
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Annual check (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Annual check"
+          "text": "Disable paging (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Disable paging"
+          "text": "Dataplex"
         }
       ],
       "correct": [
@@ -2300,23 +2164,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring dashboards and alerts"
+          "text": "Annual check (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Dataplex"
         },
         {
           "id": "c",
-          "text": "Annual check"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "d",
-          "text": "Disable paging"
+          "text": "Disable paging (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Monitoring validates pipeline health.",
       "docs": [
@@ -2338,15 +2202,15 @@
         },
         {
           "id": "b",
-          "text": "Shadow catalogs"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "c",
-          "text": "No lineage"
+          "text": "Public buckets"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "No lineage"
         }
       ],
       "correct": [
@@ -2368,23 +2232,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring dashboards and alerts"
+          "text": "Annual check (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Dataplex"
         },
         {
           "id": "c",
-          "text": "Annual check"
+          "text": "Disable paging (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Disable paging"
+          "text": "Cloud Monitoring dashboards and alerts"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Monitoring validates pipeline health.",
       "docs": [
@@ -2402,23 +2266,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
-        },
-        {
-          "id": "b",
-          "text": "Shadow catalogs"
-        },
-        {
-          "id": "c",
           "text": "No lineage"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "Public buckets"
+        },
+        {
+          "id": "c",
+          "text": "Dataplex"
+        },
+        {
+          "id": "d",
+          "text": "Cloud Monitoring dashboards and alerts"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Dataplex manages metadata and quality.",
       "docs": [
@@ -2436,23 +2300,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring dashboards and alerts"
+          "text": "Dataplex"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Annual check (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Annual check"
+          "text": "Disable paging (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Disable paging"
+          "text": "Cloud Monitoring dashboards and alerts"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Monitoring validates pipeline health.",
       "docs": [
@@ -2470,23 +2334,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dataplex"
-        },
-        {
-          "id": "b",
           "text": "Cloud Monitoring dashboards and alerts"
         },
         {
+          "id": "b",
+          "text": "Dataplex"
+        },
+        {
           "id": "c",
-          "text": "Shadow catalogs"
+          "text": "No lineage"
         },
         {
           "id": "d",
-          "text": "No lineage"
+          "text": "Shadow catalogs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Dataplex manages metadata and quality. Compare with Cloud Monitoring dashboards and alerts: Monitoring validates pipeline health.",
       "docs": [
@@ -2508,23 +2372,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring dashboards and alerts"
+          "text": "Annual check (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Dataplex"
+          "text": "Cloud Monitoring dashboards and alerts"
         },
         {
           "id": "c",
-          "text": "No metrics"
+          "text": "No metrics (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Annual check"
+          "text": "Dataplex"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Monitoring validates pipeline health. Compare with Dataplex: Dataplex manages metadata and quality.",
       "docs": [

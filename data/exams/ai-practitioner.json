@@ -105,15 +105,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Rekognition"
+          "text": "Amazon Translate"
         },
         {
           "id": "c",
-          "text": "Amazon Polly"
+          "text": "Amazon SageMaker Pipelines"
         },
         {
           "id": "d",
-          "text": "AWS Batch"
+          "text": "Amazon Polly"
         }
       ],
       "correct": [
@@ -135,23 +135,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Ground Truth"
+          "text": "Amazon SageMaker"
         },
         {
           "id": "b",
-          "text": "Amazon Macie"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Amazon SageMaker Batch Transform"
         },
         {
           "id": "d",
-          "text": "Amazon Connect"
+          "text": "Amazon Rekognition"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Ground Truth helps create labeled datasets using human and automated labeling.",
       "docs": [
@@ -169,23 +169,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Batch Transform"
+          "text": "Amazon Polly"
         },
         {
           "id": "b",
-          "text": "Amazon EC2 Auto Scaling only"
+          "text": "Amazon SageMaker Pipelines"
         },
         {
           "id": "c",
-          "text": "AWS Snowball"
+          "text": "Amazon SageMaker Canvas or Autopilot"
         },
         {
           "id": "d",
-          "text": "Amazon Route 53"
+          "text": "Amazon SageMaker Batch Transform"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Batch Transform runs predictions on large datasets asynchronously.",
       "docs": [
@@ -203,23 +203,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Model Registry"
+          "text": "Amazon Polly"
         },
         {
           "id": "b",
-          "text": "Amazon S3 Glacier only"
+          "text": "Amazon SageMaker"
         },
         {
           "id": "c",
-          "text": "AWS Secrets Manager"
+          "text": "Amazon SageMaker Model Registry"
         },
         {
           "id": "d",
-          "text": "Amazon MQ"
+          "text": "Amazon SageMaker Ground Truth"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Model Registry catalogs models for approval and deployment workflows.",
       "docs": [
@@ -237,23 +237,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Canvas or Autopilot"
+          "text": "Amazon SageMaker Model Registry"
         },
         {
           "id": "b",
-          "text": "Amazon Kinesis Video Streams"
+          "text": "Amazon SageMaker Canvas or Autopilot"
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Amazon Translate"
         },
         {
           "id": "d",
-          "text": "Amazon SES"
+          "text": "Amazon SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SageMaker Autopilot and Canvas support low-code ML including forecasting use cases.",
       "docs": [
@@ -275,15 +275,15 @@
         },
         {
           "id": "b",
-          "text": "AWS Glue"
+          "text": "Amazon OpenSearch Service or Aurora pgvector"
         },
         {
           "id": "c",
-          "text": "Amazon Redshift"
+          "text": "Amazon SageMaker Canvas or Autopilot"
         },
         {
           "id": "d",
-          "text": "AWS CloudTrail"
+          "text": "Amazon SageMaker Batch Transform"
         }
       ],
       "correct": [
@@ -305,23 +305,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Polly"
+          "text": "Amazon SageMaker Pipelines"
         },
         {
           "id": "b",
-          "text": "Amazon Textract"
+          "text": "Amazon Polly"
         },
         {
           "id": "c",
-          "text": "Amazon Comprehend"
+          "text": "Amazon SageMaker"
         },
         {
           "id": "d",
-          "text": "AWS Lambda only"
+          "text": "Amazon Comprehend"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Polly is a text-to-speech service.",
       "docs": [
@@ -339,23 +339,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Textract"
+          "text": "Amazon SageMaker"
         },
         {
           "id": "b",
-          "text": "Amazon Polly"
+          "text": "Amazon SageMaker Batch Transform"
         },
         {
           "id": "c",
-          "text": "Amazon MQ"
+          "text": "Amazon Textract"
         },
         {
           "id": "d",
-          "text": "AWS Direct Connect"
+          "text": "Amazon Translate"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Textract uses ML to read forms and tables from documents.",
       "docs": [
@@ -373,23 +373,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Comprehend"
+          "text": "Amazon SageMaker"
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon SageMaker Model Registry"
         },
         {
           "id": "c",
-          "text": "AWS Shield"
+          "text": "Amazon Rekognition"
         },
         {
           "id": "d",
-          "text": "Amazon VPC"
+          "text": "Amazon Comprehend"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Comprehend is a natural language processing (NLP) service.",
       "docs": [
@@ -411,15 +411,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Route 53"
+          "text": "Amazon SageMaker Model Registry"
         },
         {
           "id": "c",
-          "text": "AWS Config"
+          "text": "Amazon SageMaker Canvas or Autopilot"
         },
         {
           "id": "d",
-          "text": "Amazon Inspector"
+          "text": "Amazon Rekognition"
         }
       ],
       "correct": [
@@ -441,23 +441,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon OpenSearch Service or Aurora pgvector"
+          "text": "Amazon Rekognition"
         },
         {
           "id": "b",
-          "text": "Amazon S3 Glacier Deep Archive only"
+          "text": "Amazon Textract"
         },
         {
           "id": "c",
-          "text": "AWS Budgets"
+          "text": "Amazon SageMaker"
         },
         {
           "id": "d",
-          "text": "Amazon WorkSpaces"
+          "text": "Amazon OpenSearch Service or Aurora pgvector"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Vector search supports similarity queries for embeddings in search engines or databases.",
       "docs": [
@@ -475,23 +475,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Pipelines"
+          "text": "Amazon SageMaker"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "Amazon SageMaker Pipelines"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Amazon SageMaker Model Registry"
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail"
+          "text": "Amazon Translate"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SageMaker Pipelines automates end-to-end ML workflows.",
       "docs": [
@@ -509,23 +509,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker"
+          "text": "Amazon SageMaker Batch Transform"
         },
         {
           "id": "b",
-          "text": "Amazon Rekognition"
-        },
-        {
-          "id": "c",
           "text": "Amazon Polly"
         },
         {
+          "id": "c",
+          "text": "Amazon SageMaker Pipelines"
+        },
+        {
           "id": "d",
-          "text": "AWS Batch"
+          "text": "Amazon SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SageMaker provides end-to-end ML building, training, and deployment.",
       "docs": [
@@ -543,23 +543,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker"
+          "text": "Amazon SageMaker Canvas or Autopilot"
         },
         {
           "id": "b",
-          "text": "Amazon Rekognition"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "c",
-          "text": "Amazon Polly"
+          "text": "Amazon SageMaker"
         },
         {
           "id": "d",
-          "text": "AWS Batch"
+          "text": "Amazon Textract"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SageMaker provides end-to-end ML building, training, and deployment.",
       "docs": [
@@ -581,15 +581,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Rekognition"
+          "text": "Amazon SageMaker Canvas or Autopilot"
         },
         {
           "id": "c",
-          "text": "Amazon Polly"
+          "text": "Amazon Rekognition"
         },
         {
           "id": "d",
-          "text": "AWS Batch"
+          "text": "Amazon SageMaker Pipelines"
         }
       ],
       "correct": [
@@ -611,23 +611,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Ground Truth"
+          "text": "Amazon SageMaker Canvas or Autopilot"
         },
         {
           "id": "b",
-          "text": "Amazon Macie"
+          "text": "Amazon Rekognition"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Amazon SageMaker"
         },
         {
           "id": "d",
-          "text": "Amazon Connect"
+          "text": "Amazon SageMaker Ground Truth"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Ground Truth helps create labeled datasets using human and automated labeling.",
       "docs": [
@@ -645,23 +645,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Ground Truth"
+          "text": "Amazon Translate"
         },
         {
           "id": "b",
-          "text": "Amazon Macie"
+          "text": "Amazon Polly"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Amazon SageMaker Ground Truth"
         },
         {
           "id": "d",
-          "text": "Amazon Connect"
+          "text": "Amazon SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Ground Truth helps create labeled datasets using human and automated labeling.",
       "docs": [
@@ -679,23 +679,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock"
+          "text": "Amazon Titan Embeddings or Cohere Embed on Bedrock"
         },
         {
           "id": "b",
-          "text": "Amazon EC2 only"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "c",
-          "text": "AWS Snowcone"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon RDS"
+          "text": "Token-based pricing on Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Bedrock offers FMs from Amazon and partners via a unified API.",
       "docs": [
@@ -717,15 +717,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Retrieval Augmented Generation (RAG)"
         },
         {
           "id": "c",
-          "text": "AWS CloudFormation"
+          "text": "Token-based pricing on Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon EFS"
+          "text": "Amazon Bedrock console playgrounds"
         }
       ],
       "correct": [
@@ -751,15 +751,15 @@
         },
         {
           "id": "b",
-          "text": "AWS KMS only"
+          "text": "Amazon Titan Embeddings or Cohere Embed on Bedrock"
         },
         {
           "id": "c",
-          "text": "Amazon CloudWatch Logs only"
+          "text": "Amazon Bedrock console playgrounds"
         },
         {
           "id": "d",
-          "text": "VPC Flow Logs"
+          "text": "Amazon Bedrock"
         }
       ],
       "correct": [
@@ -785,15 +785,15 @@
         },
         {
           "id": "b",
-          "text": "AWS Cost Explorer only"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Amazon Inspector"
+          "text": "Amazon Bedrock Prompt Management or similar versioning patterns"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "Model evaluation in Amazon Bedrock or SageMaker"
         }
       ],
       "correct": [
@@ -815,23 +815,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Titan Image Generator or Stability AI models in Bedrock"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "b",
-          "text": "Amazon Glacier"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "AWS DataSync only"
+          "text": "Amazon Titan Image Generator or Stability AI models in Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon MQ"
+          "text": "Amazon Bedrock Prompt Management or similar versioning patterns"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Bedrock supports image generation models for creative workloads.",
       "docs": [
@@ -849,23 +849,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Token-based pricing on Amazon Bedrock"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "b",
-          "text": "EBS volume IOPS"
+          "text": "Amazon Bedrock Prompt Management or similar versioning patterns"
         },
         {
           "id": "c",
-          "text": "Data transfer in only"
+          "text": "Amazon Bedrock console playgrounds"
         },
         {
           "id": "d",
-          "text": "IAM policy size"
+          "text": "Token-based pricing on Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Generative models often bill per input/output tokens.",
       "docs": [
@@ -883,23 +883,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Retrieval Augmented Generation (RAG)"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "Spot Instances"
+          "text": "Retrieval Augmented Generation (RAG)"
         },
         {
           "id": "c",
-          "text": "S3 Transfer Acceleration only"
+          "text": "Amazon Bedrock console playgrounds"
         },
         {
           "id": "d",
-          "text": "Reserved Instances"
+          "text": "Amazon Titan Image Generator or Stability AI models in Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "RAG retrieves relevant documents before the model generates an answer.",
       "docs": [
@@ -921,15 +921,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon S3 lifecycle only"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "c",
-          "text": "Route 53"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "AWS Snowmobile"
+          "text": "Token-based pricing on Amazon Bedrock"
         }
       ],
       "correct": [
@@ -951,23 +951,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Model evaluation in Amazon Bedrock or SageMaker"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "AWS Budgets"
+          "text": "VPC peering (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Amazon Cognito only"
+          "text": "Model evaluation in Amazon Bedrock or SageMaker"
         },
         {
           "id": "d",
-          "text": "VPC peering"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Systematic evaluation compares models and prompts against benchmarks.",
       "docs": [
@@ -985,23 +985,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Titan Embeddings or Cohere Embed on Bedrock"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "b",
-          "text": "Amazon EBS snapshots"
+          "text": "Amazon Titan Embeddings or Cohere Embed on Bedrock"
         },
         {
           "id": "c",
-          "text": "AWS Shield Standard only"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon WorkMail"
+          "text": "Amazon Titan Image Generator or Stability AI models in Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Embeddings convert text to vectors for similarity search.",
       "docs": [
@@ -1019,23 +1019,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "b",
-          "text": "Amazon EC2 only"
+          "text": "Retrieval Augmented Generation (RAG)"
         },
         {
           "id": "c",
-          "text": "AWS Snowcone"
+          "text": "Amazon Bedrock console playgrounds"
         },
         {
           "id": "d",
-          "text": "Amazon RDS"
+          "text": "Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Bedrock offers FMs from Amazon and partners via a unified API.",
       "docs": [
@@ -1053,23 +1053,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock"
+          "text": "Amazon Bedrock Prompt Management or similar versioning patterns"
         },
         {
           "id": "b",
-          "text": "Amazon EC2 only"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "c",
-          "text": "AWS Snowcone"
+          "text": "Amazon Bedrock console playgrounds"
         },
         {
           "id": "d",
-          "text": "Amazon RDS"
+          "text": "Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Bedrock offers FMs from Amazon and partners via a unified API.",
       "docs": [
@@ -1087,23 +1087,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock"
+          "text": "Retrieval Augmented Generation (RAG)"
         },
         {
           "id": "b",
-          "text": "Amazon EC2 only"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "c",
-          "text": "AWS Snowcone"
+          "text": "Amazon Titan Embeddings or Cohere Embed on Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon RDS"
+          "text": "Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Bedrock offers FMs from Amazon and partners via a unified API.",
       "docs": [
@@ -1125,15 +1125,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "c",
-          "text": "AWS CloudFormation"
+          "text": "Model evaluation in Amazon Bedrock or SageMaker"
         },
         {
           "id": "d",
-          "text": "Amazon EFS"
+          "text": "Retrieval Augmented Generation (RAG)"
         }
       ],
       "correct": [
@@ -1159,15 +1159,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Retrieval Augmented Generation (RAG)"
         },
         {
           "id": "c",
-          "text": "AWS CloudFormation"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         },
         {
           "id": "d",
-          "text": "Amazon EFS"
+          "text": "Amazon Bedrock console playgrounds"
         }
       ],
       "correct": [
@@ -1189,23 +1189,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock"
+          "text": "Amazon Bedrock Prompt Management or similar versioning patterns"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Token-based pricing on Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "AWS CloudFormation"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon EFS"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Bedrock supports on-demand and provisioned throughput for inference.",
       "docs": [
@@ -1223,23 +1223,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock model customization (fine-tuning)"
+          "text": "Amazon Titan Embeddings or Cohere Embed on Bedrock"
         },
         {
           "id": "b",
-          "text": "AWS KMS only"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Amazon CloudWatch Logs only"
+          "text": "Amazon Titan Image Generator or Stability AI models in Bedrock"
         },
         {
           "id": "d",
-          "text": "VPC Flow Logs"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Fine-tuning adapts FMs using your domain-specific data.",
       "docs": [
@@ -1257,23 +1257,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock model customization (fine-tuning)"
+          "text": "Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "AWS KMS only"
+          "text": "Amazon Titan Image Generator or Stability AI models in Bedrock"
         },
         {
           "id": "c",
-          "text": "Amazon CloudWatch Logs only"
+          "text": "Retrieval Augmented Generation (RAG)"
         },
         {
           "id": "d",
-          "text": "VPC Flow Logs"
+          "text": "Amazon Bedrock model customization (fine-tuning)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Fine-tuning adapts FMs using your domain-specific data.",
       "docs": [
@@ -1295,15 +1295,15 @@
         },
         {
           "id": "b",
-          "text": "AWS KMS only"
+          "text": "Token-based pricing on Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "Amazon CloudWatch Logs only"
+          "text": "Amazon Titan Image Generator or Stability AI models in Bedrock"
         },
         {
           "id": "d",
-          "text": "VPC Flow Logs"
+          "text": "Amazon Bedrock"
         }
       ],
       "correct": [
@@ -1325,23 +1325,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Agents"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         },
         {
           "id": "b",
-          "text": "Amazon S3 Intelligent-Tiering only"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "c",
-          "text": "AWS Snowball Edge"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon RDS Proxy only"
+          "text": "Amazon CloudWatch Logs and model invocation logging"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Agents orchestrate FM reasoning with tools and knowledge bases.",
       "docs": [
@@ -1359,23 +1359,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Knowledge Bases for Amazon Bedrock"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         },
         {
           "id": "b",
-          "text": "Amazon Glacier"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail"
+          "text": "AWS IoT Greengrass with optimized models or edge devices"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Knowledge bases ingest, chunk, embed, and retrieve documents for RAG.",
       "docs": [
@@ -1397,15 +1397,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon SNS FIFO only"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "d",
-          "text": "Amazon Macie only for blocking"
+          "text": "Knowledge Bases for Amazon Bedrock"
         }
       ],
       "correct": [
@@ -1431,15 +1431,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "c",
-          "text": "AWS Direct Connect only"
+          "text": "Amazon CloudWatch Logs and model invocation logging"
         },
         {
           "id": "d",
-          "text": "Amazon Inspector"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         }
       ],
       "correct": [
@@ -1461,23 +1461,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon ElastiCache or API-level caching"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         },
         {
           "id": "b",
-          "text": "AWS Snowmobile"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "c",
-          "text": "Amazon WorkSpaces"
+          "text": "Amazon CloudWatch Logs and model invocation logging"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "Amazon ElastiCache or API-level caching"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Caching repeated prompts lowers inference spend and improves UX.",
       "docs": [
@@ -1495,23 +1495,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock VPC endpoints"
-        },
-        {
-          "id": "b",
-          "text": "Public S3 buckets"
-        },
-        {
-          "id": "c",
           "text": "Root access keys in code"
         },
         {
+          "id": "b",
+          "text": "Amazon Bedrock VPC endpoints"
+        },
+        {
+          "id": "c",
+          "text": "Knowledge Bases for Amazon Bedrock"
+        },
+        {
           "id": "d",
-          "text": "Unencrypted EBS only"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "VPC endpoints keep Bedrock traffic on the AWS network.",
       "docs": [
@@ -1533,15 +1533,15 @@
         },
         {
           "id": "b",
-          "text": "Batch Transform only"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         },
         {
           "id": "c",
-          "text": "S3 Glacier"
+          "text": "Amazon Bedrock VPC endpoints"
         },
         {
           "id": "d",
-          "text": "AWS Organizations SCPs only"
+          "text": "Knowledge Bases for Amazon Bedrock"
         }
       ],
       "correct": [
@@ -1563,23 +1563,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Guardrails"
+          "text": "Snowball (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Amazon Route 53 health checks only"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "AWS CUR"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "d",
-          "text": "Snowball"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Guardrails filter topics, PII, and harmful content.",
       "docs": [
@@ -1597,23 +1597,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon CloudWatch Logs and model invocation logging"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "b",
-          "text": "Amazon Polly only"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         },
         {
           "id": "c",
-          "text": "AWS Budgets"
+          "text": "Amazon CloudWatch Logs and model invocation logging"
         },
         {
           "id": "d",
-          "text": "Amazon MQ"
+          "text": "Knowledge Bases for Amazon Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Invocation logging supports compliance and troubleshooting.",
       "docs": [
@@ -1635,15 +1635,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Redshift"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "c",
-          "text": "AWS Glue DataBrew only"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "d",
-          "text": "Amazon Connect"
+          "text": "Knowledge Bases for Amazon Bedrock"
         }
       ],
       "correct": [
@@ -1665,23 +1665,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Agents"
+          "text": "AWS IoT Greengrass with optimized models or edge devices"
         },
         {
           "id": "b",
-          "text": "Amazon S3 Intelligent-Tiering only"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "c",
-          "text": "AWS Snowball Edge"
+          "text": "Amazon Bedrock Converse API with streaming"
         },
         {
           "id": "d",
-          "text": "Amazon RDS Proxy only"
+          "text": "Amazon Bedrock Agents"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Agents orchestrate FM reasoning with tools and knowledge bases.",
       "docs": [
@@ -1699,23 +1699,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Agents"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         },
         {
           "id": "b",
-          "text": "Amazon S3 Intelligent-Tiering only"
+          "text": "Amazon Bedrock VPC endpoints"
         },
         {
           "id": "c",
-          "text": "AWS Snowball Edge"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "d",
-          "text": "Amazon RDS Proxy only"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Agents orchestrate FM reasoning with tools and knowledge bases.",
       "docs": [
@@ -1733,23 +1733,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Bedrock Agents"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "Amazon S3 Intelligent-Tiering only"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "c",
-          "text": "AWS Snowball Edge"
+          "text": "Amazon Bedrock Converse API with streaming"
         },
         {
           "id": "d",
-          "text": "Amazon RDS Proxy only"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Agents orchestrate FM reasoning with tools and knowledge bases.",
       "docs": [
@@ -1767,23 +1767,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Knowledge Bases for Amazon Bedrock"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "b",
-          "text": "Amazon Glacier"
+          "text": "Amazon ElastiCache or API-level caching"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail"
+          "text": "AWS IoT Greengrass with optimized models or edge devices"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Knowledge bases ingest, chunk, embed, and retrieve documents for RAG.",
       "docs": [
@@ -1801,23 +1801,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Knowledge Bases for Amazon Bedrock"
+          "text": "Amazon ElastiCache or API-level caching"
         },
         {
           "id": "b",
-          "text": "Amazon Glacier"
+          "text": "Amazon Bedrock VPC endpoints"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Knowledge bases ingest, chunk, embed, and retrieve documents for RAG.",
       "docs": [
@@ -1835,23 +1835,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Knowledge Bases for Amazon Bedrock"
+          "text": "Amazon Bedrock Converse API with streaming"
         },
         {
           "id": "b",
-          "text": "Amazon Glacier"
+          "text": "Amazon API Gateway with AWS Lambda and Bedrock"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail"
+          "text": "Amazon Bedrock Agents"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Knowledge bases ingest, chunk, embed, and retrieve documents for RAG.",
       "docs": [
@@ -1869,23 +1869,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "b",
-          "text": "Amazon SNS FIFO only"
+          "text": "Amazon ElastiCache or API-level caching"
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon Macie only for blocking"
+          "text": "Amazon Bedrock Guardrails"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Vector stores hold embeddings for semantic retrieval in RAG pipelines.",
       "docs": [
@@ -1903,23 +1903,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
+          "text": "Amazon Bedrock Guardrails"
         },
         {
           "id": "b",
-          "text": "Amazon SNS FIFO only"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "d",
-          "text": "Amazon Macie only for blocking"
+          "text": "Amazon ElastiCache or API-level caching"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Vector stores hold embeddings for semantic retrieval in RAG pipelines.",
       "docs": [
@@ -1937,23 +1937,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
+          "text": "Knowledge Bases for Amazon Bedrock"
         },
         {
           "id": "b",
-          "text": "Amazon SNS FIFO only"
+          "text": "Amazon Bedrock VPC endpoints"
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Amazon ElastiCache or API-level caching"
         },
         {
           "id": "d",
-          "text": "Amazon Macie only for blocking"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Vector stores hold embeddings for semantic retrieval in RAG pipelines.",
       "docs": [
@@ -1975,15 +1975,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon Bedrock Agents"
         },
         {
           "id": "c",
-          "text": "AWS Direct Connect only"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon Inspector"
+          "text": "Amazon Bedrock Guardrails"
         }
       ],
       "correct": [
@@ -2009,15 +2009,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "AWS IoT Greengrass with optimized models or edge devices"
         },
         {
           "id": "c",
-          "text": "AWS Direct Connect only"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         },
         {
           "id": "d",
-          "text": "Amazon Inspector"
+          "text": "Knowledge Bases for Amazon Bedrock"
         }
       ],
       "correct": [
@@ -2043,15 +2043,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon Bedrock Converse API with streaming"
         },
         {
           "id": "c",
-          "text": "AWS Direct Connect only"
+          "text": "Amazon CloudWatch Logs and model invocation logging"
         },
         {
           "id": "d",
-          "text": "Amazon Inspector"
+          "text": "Amazon OpenSearch Serverless or Amazon Aurora vector store with Bedrock"
         }
       ],
       "correct": [
@@ -2077,15 +2077,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Responsible AI governance processes on AWS"
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Data minimization and anonymization"
         },
         {
           "id": "d",
-          "text": "Amazon API Gateway"
+          "text": "Transparency and disclosure best practices"
         }
       ],
       "correct": [
@@ -2107,23 +2107,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Responsible AI governance processes on AWS"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "b",
-          "text": "Disabling CloudTrail"
+          "text": "Data minimization and anonymization"
         },
         {
           "id": "c",
-          "text": "Sharing root keys"
+          "text": "Responsible AI governance processes on AWS"
         },
         {
           "id": "d",
-          "text": "Public AMIs by default"
+          "text": "Red teaming and guardrails for GenAI"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Governance includes documentation, human oversight, and risk assessment.",
       "docs": [
@@ -2141,23 +2141,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Inclusive dataset design and Clarify bias metrics"
+          "text": "Amazon SageMaker Lineage or MLflow on SageMaker"
         },
         {
           "id": "b",
-          "text": "Using only synthetic test users"
+          "text": "Responsible AI governance processes on AWS"
         },
         {
           "id": "c",
-          "text": "Ignoring class imbalance"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "d",
-          "text": "Removing all labels"
+          "text": "Inclusive dataset design and Clarify bias metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Representative data reduces unfair outcomes across groups.",
       "docs": [
@@ -2175,23 +2175,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency and disclosure best practices"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "b",
-          "text": "Hiding model limitations"
+          "text": "Amazon SageMaker Lineage or MLflow on SageMaker"
         },
         {
           "id": "c",
-          "text": "Publishing root credentials"
+          "text": "Transparency and disclosure best practices"
         },
         {
           "id": "d",
-          "text": "Disabling encryption"
+          "text": "Data minimization and anonymization"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Transparency builds trust and meets emerging AI regulations.",
       "docs": [
@@ -2209,23 +2209,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Data minimization and anonymization"
-        },
-        {
-          "id": "b",
           "text": "Storing all PII in prompts"
         },
         {
+          "id": "b",
+          "text": "Inclusive dataset design and Clarify bias metrics"
+        },
+        {
           "id": "c",
-          "text": "Public datasets with secrets"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "d",
-          "text": "No access controls"
+          "text": "Data minimization and anonymization"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Collect only necessary data and remove identifiers where possible.",
       "docs": [
@@ -2243,23 +2243,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon A2I or review workflows in SageMaker"
+          "text": "Responsible AI governance processes on AWS"
         },
         {
           "id": "b",
-          "text": "Fully automated approvals with no audit"
+          "text": "Data minimization and anonymization"
         },
         {
           "id": "c",
-          "text": "Deleting all logs"
+          "text": "Fully automated approvals with no audit"
         },
         {
           "id": "d",
-          "text": "Single-AZ only"
+          "text": "Amazon A2I or review workflows in SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Human review reduces risk for high-impact predictions.",
       "docs": [
@@ -2277,11 +2277,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Red teaming and guardrails for GenAI"
+          "text": "Inclusive dataset design and Clarify bias metrics"
         },
         {
           "id": "b",
-          "text": "Disabling authentication"
+          "text": "Data minimization and anonymization"
         },
         {
           "id": "c",
@@ -2289,11 +2289,11 @@
         },
         {
           "id": "d",
-          "text": "Ignoring OWASP LLM risks"
+          "text": "Red teaming and guardrails for GenAI"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Adversarial prompt testing improves GenAI application security.",
       "docs": [
@@ -2311,23 +2311,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Lineage or MLflow on SageMaker"
+          "text": "Responsible AI governance processes on AWS"
         },
         {
           "id": "b",
-          "text": "Unversioned S3 overwrites only"
+          "text": "Amazon SageMaker Lineage or MLflow on SageMaker"
         },
         {
           "id": "c",
-          "text": "No tags"
+          "text": "Red teaming and guardrails for GenAI"
         },
         {
           "id": "d",
-          "text": "Shared IAM users"
+          "text": "Amazon SageMaker Clarify"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Lineage supports reproducibility and audit.",
       "docs": [
@@ -2345,23 +2345,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Clarify"
+          "text": "Transparency and disclosure best practices"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Red teaming and guardrails for GenAI"
         },
         {
           "id": "d",
-          "text": "Amazon API Gateway"
+          "text": "Amazon A2I or review workflows in SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Clarify provides fairness and explainability tools for ML.",
       "docs": [
@@ -2379,23 +2379,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Clarify"
+          "text": "Red teaming and guardrails for GenAI"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Inclusive dataset design and Clarify bias metrics"
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Transparency and disclosure best practices"
         },
         {
           "id": "d",
-          "text": "Amazon API Gateway"
+          "text": "Amazon SageMaker Clarify"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Clarify provides fairness and explainability tools for ML.",
       "docs": [
@@ -2413,23 +2413,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Clarify"
+          "text": "Transparency and disclosure best practices"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Inclusive dataset design and Clarify bias metrics"
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "d",
-          "text": "Amazon API Gateway"
+          "text": "Data minimization and anonymization"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Clarify provides fairness and explainability tools for ML.",
       "docs": [
@@ -2451,15 +2451,15 @@
         },
         {
           "id": "b",
-          "text": "Disabling CloudTrail"
+          "text": "Amazon SageMaker Lineage or MLflow on SageMaker"
         },
         {
           "id": "c",
-          "text": "Sharing root keys"
+          "text": "Amazon SageMaker Clarify"
         },
         {
           "id": "d",
-          "text": "Public AMIs by default"
+          "text": "Data minimization and anonymization"
         }
       ],
       "correct": [
@@ -2481,23 +2481,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS KMS with Amazon S3 and SageMaker"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "IAM policies for bedrock:InvokeModel"
         },
         {
           "id": "d",
-          "text": "Plaintext secrets in code"
+          "text": "AWS KMS with Amazon S3 and SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS manages keys for encryption across AI data stores.",
       "docs": [
@@ -2519,15 +2519,15 @@
         },
         {
           "id": "b",
-          "text": "Anonymous access"
+          "text": "AWS KMS with Amazon S3 and SageMaker"
         },
         {
           "id": "c",
-          "text": "Root user daily use"
+          "text": "Wildcard * on all actions for everyone"
         },
         {
           "id": "d",
-          "text": "Wildcard * on all actions for everyone"
+          "text": "AWS CloudTrail"
         }
       ],
       "correct": [
@@ -2553,15 +2553,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Polly"
+          "text": "AWS KMS with Amazon S3 and SageMaker"
         },
         {
           "id": "c",
-          "text": "AWS Snowball only"
+          "text": "Amazon SageMaker in VPC mode"
         },
         {
           "id": "d",
-          "text": "Route 53"
+          "text": "Amazon SageMaker Model Monitor"
         }
       ],
       "correct": [
@@ -2587,15 +2587,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Rekognition only for DNS"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "S3 lifecycle"
+          "text": "IAM policies for bedrock:InvokeModel"
         },
         {
           "id": "d",
-          "text": "EBS encryption by default only"
+          "text": "AWS KMS with Amazon S3 and SageMaker"
         }
       ],
       "correct": [
@@ -2621,15 +2621,15 @@
         },
         {
           "id": "b",
-          "text": "Internet-facing databases with no auth"
-        },
-        {
-          "id": "c",
           "text": "0.0.0.0/0 on all ports"
         },
         {
+          "id": "c",
+          "text": "AWS Organizations SCPs"
+        },
+        {
           "id": "d",
-          "text": "Public subnets only for data"
+          "text": "Internet-facing databases with no auth"
         }
       ],
       "correct": [
@@ -2659,11 +2659,11 @@
         },
         {
           "id": "c",
-          "text": "Emailing passwords"
+          "text": "IAM policies for bedrock:InvokeModel"
         },
         {
           "id": "d",
-          "text": "S3 public ACLs"
+          "text": "AWS CloudTrail"
         }
       ],
       "correct": [
@@ -2685,23 +2685,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Organizations SCPs"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "b",
-          "text": "Single shared root password"
+          "text": "IAM policies for bedrock:InvokeModel"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "AWS Organizations SCPs"
         },
         {
           "id": "d",
-          "text": "Disable MFA"
+          "text": "Amazon Macie"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SCPs set guardrails for services including Bedrock and SageMaker.",
       "docs": [
@@ -2719,23 +2719,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SageMaker Model Monitor"
+          "text": "Amazon SageMaker in VPC mode"
         },
         {
           "id": "b",
-          "text": "Amazon SES"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "c",
-          "text": "AWS Artifact only"
+          "text": "AWS KMS with Amazon S3 and SageMaker"
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail"
+          "text": "AWS Organizations SCPs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Model Monitor detects data and quality drift in production.",
       "docs": [
@@ -2753,23 +2753,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS KMS with Amazon S3 and SageMaker"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Amazon SageMaker in VPC mode"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "AWS KMS with Amazon S3 and SageMaker"
         },
         {
           "id": "d",
-          "text": "Plaintext secrets in code"
+          "text": "IAM policies for bedrock:InvokeModel"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "KMS manages keys for encryption across AI data stores.",
       "docs": [
@@ -2791,15 +2791,15 @@
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "Amazon Macie"
         },
         {
           "id": "d",
-          "text": "Plaintext secrets in code"
+          "text": "AWS Organizations SCPs"
         }
       ],
       "correct": [
@@ -2821,23 +2821,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS KMS with Amazon S3 and SageMaker"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Amazon Macie"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "Amazon SageMaker Model Monitor"
         },
         {
           "id": "d",
-          "text": "Plaintext secrets in code"
+          "text": "AWS KMS with Amazon S3 and SageMaker"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS manages keys for encryption across AI data stores.",
       "docs": [
@@ -2859,11 +2859,11 @@
         },
         {
           "id": "b",
-          "text": "Anonymous access"
+          "text": "AWS KMS with Amazon S3 and SageMaker"
         },
         {
           "id": "c",
-          "text": "Root user daily use"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
@@ -2878,45 +2878,6 @@
         {
           "title": "Bedrock IAM",
           "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
-        }
-      ]
-    },
-    {
-      "id": "aif-q083",
-      "domain": "ai-ml-fundamentals",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified AI Practitioner? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AIF-C01 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Amazon SageMaker"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "AIF-C01 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-ai-practitioner/"
         }
       ]
     },

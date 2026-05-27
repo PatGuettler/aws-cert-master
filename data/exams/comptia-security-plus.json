@@ -77,23 +77,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Least privilege"
+          "text": "Mandatory Access Control (MAC)"
         },
         {
           "id": "b",
-          "text": "Defense in depth only name"
+          "text": "AUP (Acceptable Use Policy)"
         },
         {
           "id": "c",
-          "text": "Security through obscurity"
+          "text": "Least privilege"
         },
         {
           "id": "d",
-          "text": "Implicit allow all"
+          "text": "GDPR"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Least privilege limits access to the minimum required.",
       "docs": [
@@ -115,15 +115,15 @@
         },
         {
           "id": "b",
-          "text": "Defense in depth only name"
+          "text": "Authentication"
         },
         {
           "id": "c",
-          "text": "Security through obscurity"
+          "text": "AUP (Acceptable Use Policy)"
         },
         {
           "id": "d",
-          "text": "Implicit allow all"
+          "text": "Discussion-based simulation"
         }
       ],
       "correct": [
@@ -149,15 +149,15 @@
         },
         {
           "id": "b",
-          "text": "Managerial policy only"
+          "text": "Gap analysis"
         },
         {
           "id": "c",
-          "text": "Physical badge reader class"
+          "text": "GDPR"
         },
         {
           "id": "d",
-          "text": "Detective audit log review only"
+          "text": "Least privilege"
         }
       ],
       "correct": [
@@ -179,23 +179,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MD5"
+          "text": "GCM"
         },
         {
           "id": "b",
-          "text": "SHA-256"
+          "text": "Least privilege"
         },
         {
           "id": "c",
-          "text": "SHA-3"
+          "text": "Gap analysis"
         },
         {
           "id": "d",
-          "text": "bcrypt for passwords"
+          "text": "MD5"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "MD5 has known collision weaknesses.",
       "docs": [
@@ -213,23 +213,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Symmetric"
+          "text": "Least privilege"
         },
         {
           "id": "b",
-          "text": "Asymmetric key pair"
+          "text": "Symmetric"
         },
         {
           "id": "c",
-          "text": "Quantum one-time pad only consumer"
+          "text": "Authentication"
         },
         {
           "id": "d",
-          "text": "Hashing reversible"
+          "text": "Data remanence"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "AES is symmetric encryption.",
       "docs": [
@@ -247,23 +247,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AUP (Acceptable Use Policy)"
+          "text": "Least privilege"
         },
         {
           "id": "b",
-          "text": "MOU for partnerships"
+          "text": "GDPR"
         },
         {
           "id": "c",
-          "text": "SLA uptime"
+          "text": "Deprovisioning / access revocation"
         },
         {
           "id": "d",
-          "text": "BPA bulk purchase"
+          "text": "AUP (Acceptable Use Policy)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "AUP sets user behavior expectations.",
       "docs": [
@@ -281,23 +281,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Biometric fingerprint"
+          "text": "Gap analysis"
         },
         {
           "id": "b",
-          "text": "Smart card possession"
+          "text": "AUP (Acceptable Use Policy)"
         },
         {
           "id": "c",
-          "text": "Password knowledge"
+          "text": "Data remanence"
         },
         {
           "id": "d",
-          "text": "OTP token possession"
+          "text": "Biometric fingerprint"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Biometrics are inherence factors.",
       "docs": [
@@ -315,23 +315,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Gap analysis"
+          "text": "Symmetric"
         },
         {
           "id": "b",
-          "text": "Pen test only"
+          "text": "Discussion-based simulation"
         },
         {
           "id": "c",
-          "text": "Phishing simulation only"
+          "text": "Gap analysis"
         },
         {
           "id": "d",
-          "text": "Disk defrag"
+          "text": "MD5"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Gap analysis compares current state to required controls.",
       "docs": [
@@ -349,23 +349,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GCM"
+          "text": "Asymmetric cryptography"
         },
         {
           "id": "b",
-          "text": "ECB alone"
+          "text": "Technical"
         },
         {
           "id": "c",
-          "text": "ROT13"
+          "text": "GCM"
         },
         {
           "id": "d",
-          "text": "Base64"
+          "text": "AUP (Acceptable Use Policy)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GCM is an AEAD mode for AES.",
       "docs": [
@@ -383,23 +383,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Data remanence"
+          "text": "Least privilege"
         },
         {
           "id": "b",
-          "text": "Tokenization mapping"
+          "text": "Asymmetric cryptography"
         },
         {
           "id": "c",
-          "text": "Salting passwords"
+          "text": "Data remanence"
         },
         {
           "id": "d",
-          "text": "DNS cache"
+          "text": "MD5"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Remanence requires secure wiping or destruction.",
       "docs": [
@@ -417,23 +417,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MOU/MOA"
+          "text": "Technical"
         },
         {
           "id": "b",
-          "text": "NDA only secrecy"
+          "text": "Discussion-based simulation"
         },
         {
           "id": "c",
-          "text": "AUP user rules"
+          "text": "MOU/MOA"
         },
         {
           "id": "d",
-          "text": "EULA consumer software"
+          "text": "Authentication"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "MOUs define cooperative responsibilities.",
       "docs": [
@@ -451,23 +451,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Authentication"
+          "text": "Asymmetric cryptography"
         },
         {
           "id": "b",
-          "text": "Authorization grants rights after"
+          "text": "Least privilege"
         },
         {
           "id": "c",
-          "text": "Accounting logs only"
+          "text": "Authentication"
         },
         {
           "id": "d",
-          "text": "Availability uptime"
+          "text": "Mandatory Access Control (MAC)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Authentication verifies identity.",
       "docs": [
@@ -485,23 +485,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Asymmetric cryptography"
+          "text": "Gap analysis"
         },
         {
           "id": "b",
-          "text": "Symmetric AES only one key"
+          "text": "Asymmetric cryptography"
         },
         {
           "id": "c",
-          "text": "Hashing one-way"
+          "text": "MOU/MOA"
         },
         {
           "id": "d",
-          "text": "Encoding not encryption"
+          "text": "Authentication"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "RSA/ECC use key pairs.",
       "docs": [
@@ -519,23 +519,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Mandatory Access Control (MAC)"
+          "text": "Least privilege"
         },
         {
           "id": "b",
-          "text": "Discretionary DAC owner choice only"
+          "text": "Gap analysis"
         },
         {
           "id": "c",
-          "text": "Role RBAC only always MAC"
+          "text": "Mandatory Access Control (MAC)"
         },
         {
           "id": "d",
-          "text": "Open access"
+          "text": "MD5"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "MAC uses classification labels.",
       "docs": [
@@ -553,23 +553,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Deprovisioning / access revocation"
+          "text": "GCM"
         },
         {
           "id": "b",
-          "text": "Onboarding adds access"
+          "text": "Symmetric"
         },
         {
           "id": "c",
-          "text": "Patch Tuesday"
+          "text": "Deprovisioning / access revocation"
         },
         {
           "id": "d",
-          "text": "Capacity planning"
+          "text": "Biometric fingerprint"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Offboarding must revoke credentials promptly.",
       "docs": [
@@ -591,15 +591,15 @@
         },
         {
           "id": "b",
-          "text": "Full red team live attack only"
+          "text": "Mandatory Access Control (MAC)"
         },
         {
           "id": "c",
-          "text": "Vulnerability scan automated only"
+          "text": "MOU/MOA"
         },
         {
           "id": "d",
-          "text": "Hardware inventory"
+          "text": "Technical"
         }
       ],
       "correct": [
@@ -625,15 +625,15 @@
         },
         {
           "id": "b",
-          "text": "HIPAA US health only"
+          "text": "Discussion-based simulation"
         },
         {
           "id": "c",
-          "text": "PCI DSS cards only"
+          "text": "MOU/MOA"
         },
         {
           "id": "d",
-          "text": "FERPA education US"
+          "text": "GCM"
         }
       ],
       "correct": [
@@ -694,23 +694,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Phishing"
+          "text": "Domain hijacking"
         },
         {
           "id": "b",
-          "text": "SQL injection database"
+          "text": "Phishing"
         },
         {
           "id": "c",
-          "text": "ARP storm L2"
+          "text": "Telnet is an insecure protocol."
         },
         {
           "id": "d",
-          "text": "Bad capacitor hardware"
+          "text": "DNS poisoning"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Phishing uses social engineering via email/sites.",
       "docs": [
@@ -728,23 +728,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Worm"
+          "text": "A privilege escalation attack"
         },
         {
           "id": "b",
-          "text": "Trojan needs disguise"
+          "text": "Shimming"
         },
         {
           "id": "c",
-          "text": "Adware only ads"
+          "text": "Worm"
         },
         {
           "id": "d",
-          "text": "Rootkit hides only"
+          "text": "Fotis's machine has ransomware."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Worms spread automatically without user action.",
       "docs": [
@@ -762,23 +762,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SQL injection"
+          "text": "Worm"
         },
         {
           "id": "b",
-          "text": "XSS client browser"
+          "text": "SQL injection"
         },
         {
           "id": "c",
-          "text": "CSRF forged request"
+          "text": "Memory leak"
         },
         {
           "id": "d",
-          "text": "Race condition timing"
+          "text": "Logic Bomb"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Unsanitized input can alter database queries.",
       "docs": [
@@ -796,23 +796,23 @@
       "options": [
         {
           "id": "a",
-          "text": "WPA2 handshake capture"
+          "text": "Trojan horse"
         },
         {
           "id": "b",
-          "text": "Evil twin only captive"
+          "text": "Worm"
         },
         {
           "id": "c",
-          "text": "Bluejacking contact card"
+          "text": "RAT"
         },
         {
           "id": "d",
-          "text": "RFID skimming"
+          "text": "WPA2 handshake capture"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Captured handshakes enable offline password attacks.",
       "docs": [
@@ -830,23 +830,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organized crime"
+          "text": "Logic bomb"
         },
         {
           "id": "b",
-          "text": "Hacktivist ideology"
+          "text": "Organized crime"
         },
         {
           "id": "c",
-          "text": "Insider accidental only always"
+          "text": "Man in the browser"
         },
         {
           "id": "d",
-          "text": "Nation-state espionage only"
+          "text": "Vulnerability scan"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Financially motivated actors seek profit.",
       "docs": [
@@ -864,15 +864,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Content Security Policy (CSP)"
+          "text": "Spear Phishing"
         },
         {
           "id": "b",
-          "text": "Disable HTTPS"
+          "text": "DLL injection"
         },
         {
           "id": "c",
-          "text": "Use HTTP only"
+          "text": "Content Security Policy (CSP)"
         },
         {
           "id": "d",
@@ -880,7 +880,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CSP restricts script sources.",
       "docs": [
@@ -906,11 +906,11 @@
         },
         {
           "id": "c",
-          "text": "Pass-the-hash"
+          "text": "Rootkit"
         },
         {
           "id": "d",
-          "text": "LDAP injection"
+          "text": "Organized crime"
         }
       ],
       "correct": [
@@ -932,23 +932,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Living-off-the-land / in-memory PowerShell"
+          "text": "Footprinting"
         },
         {
           "id": "b",
-          "text": "Stored on USB only always"
+          "text": "Improper or weak patch management for the operating systems"
         },
         {
           "id": "c",
-          "text": "Printed hardcopy"
+          "text": "Living-off-the-land / in-memory PowerShell"
         },
         {
           "id": "d",
-          "text": "Tape backup"
+          "text": "Trojan horse"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Fileless malware avoids disk artifacts.",
       "docs": [
@@ -966,23 +966,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vishing"
+          "text": "Jamming"
         },
         {
           "id": "b",
-          "text": "Smishing SMS"
+          "text": "Vishing"
         },
         {
           "id": "c",
-          "text": "Phishing email"
+          "text": "Botnet"
         },
         {
           "id": "d",
-          "text": "Whaling CEO email only"
+          "text": "Living-off-the-land / in-memory PowerShell"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Vishing is voice phishing.",
       "docs": [
@@ -1000,23 +1000,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A01 Broken Access Control"
+          "text": "DNS poisoning"
         },
         {
           "id": "b",
-          "text": "A03 Injection only"
+          "text": "Telnet is an insecure protocol."
         },
         {
           "id": "c",
-          "text": "A10 SSRF only always first"
+          "text": "A01 Broken Access Control"
         },
         {
           "id": "d",
-          "text": "None"
+          "text": "Improper or weak patch management for the operating systems"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Access control failures allow unauthorized actions.",
       "docs": [
@@ -1034,23 +1034,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DNS tunneling/C2"
+          "text": "A macro virus"
         },
         {
           "id": "b",
-          "text": "ICMP only always"
+          "text": "Footprinting"
         },
         {
           "id": "c",
-          "text": "Physical courier"
+          "text": "DNS tunneling/C2"
         },
         {
           "id": "d",
-          "text": "Fax"
+          "text": "A credentialed scan"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Attackers hide C2 in DNS queries.",
       "docs": [
@@ -1068,23 +1068,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compromised dependency update"
+          "text": "Rainbow table"
         },
         {
           "id": "b",
-          "text": "Local keyboard failure"
+          "text": "Compromised dependency update"
         },
         {
           "id": "c",
-          "text": "Monitor burn-in"
+          "text": "Backdoor"
         },
         {
           "id": "d",
-          "text": "Low toner"
+          "text": "Rootkit"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Tampered libraries inject backdoors.",
       "docs": [
@@ -1102,23 +1102,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Tailgating"
+          "text": "A malicious USB cable or drive"
         },
         {
           "id": "b",
-          "text": "Shoulder surfing screen"
+          "text": "Compromised device recruitment to botnets"
         },
         {
           "id": "c",
-          "text": "Dumpster diving docs"
+          "text": "A pivot"
         },
         {
           "id": "d",
-          "text": "War driving Wi-Fi"
+          "text": "Tailgating"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Tailgating bypasses physical controls.",
       "docs": [
@@ -1140,15 +1140,15 @@
         },
         {
           "id": "b",
-          "text": "Single online NAS only"
+          "text": "SQL injection"
         },
         {
           "id": "c",
-          "text": "Disable AV for speed"
+          "text": "Jamming"
         },
         {
           "id": "d",
-          "text": "Shared admin password"
+          "text": "Whaling"
         }
       ],
       "correct": [
@@ -1174,15 +1174,15 @@
         },
         {
           "id": "b",
-          "text": "Lower latency"
+          "text": "Disassociation attack"
         },
         {
           "id": "c",
-          "text": "Better encryption default"
+          "text": "Trojan horse"
         },
         {
           "id": "d",
-          "text": "Automatic patching always"
+          "text": "Logic Bomb"
         }
       ],
       "correct": [
@@ -1204,23 +1204,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pass-the-hash"
+          "text": "Rogue access point"
         },
         {
           "id": "b",
-          "text": "SQLi web"
+          "text": "Vulnerability scan"
         },
         {
           "id": "c",
-          "text": "DNS poisoning"
+          "text": "Pass-the-hash"
         },
         {
           "id": "d",
-          "text": "Cable crosstalk"
+          "text": "Rainbow table"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "PtH reuses NTLM hashes without cracking.",
       "docs": [
@@ -1277,23 +1277,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Passive reconnaissance"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "RAT"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Whaling"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -1311,23 +1311,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Worm"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Offline immutable backups"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Logic bomb"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -1345,23 +1345,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Perimeter segmentation with DMZ"
-        },
-        {
-          "id": "b",
-          "text": "Flat network"
-        },
-        {
-          "id": "c",
           "text": "Single firewall port open all"
         },
         {
+          "id": "b",
+          "text": "Key generation and storage in hardware"
+        },
+        {
+          "id": "c",
+          "text": "Tokenization replacing sensitive value"
+        },
+        {
           "id": "d",
-          "text": "No segmentation"
+          "text": "Perimeter segmentation with DMZ"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "DMZ hosts public services separately.",
       "docs": [
@@ -1379,23 +1379,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IaaS"
+          "text": "Perimeter segmentation with DMZ"
         },
         {
           "id": "b",
-          "text": "SaaS apps"
+          "text": "TLS 1.2/1.3"
         },
         {
           "id": "c",
-          "text": "FaaS only code"
+          "text": "IaaS"
         },
         {
           "id": "d",
-          "text": "On-prem mainframe only"
+          "text": "Service mesh / micro-segmentation"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IaaS provides compute/network you patch.",
       "docs": [
@@ -1413,23 +1413,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Service mesh / micro-segmentation"
+          "text": "Hot site"
         },
         {
           "id": "b",
-          "text": "Hub repeater"
+          "text": "Service mesh / micro-segmentation"
         },
         {
           "id": "c",
-          "text": "Analog modem"
+          "text": "WPA3-Enterprise with RADIUS"
         },
         {
           "id": "d",
-          "text": "KVM switch"
+          "text": "Perimeter segmentation with DMZ"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Mesh enforces east-west traffic rules.",
       "docs": [
@@ -1447,23 +1447,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Key generation and storage in hardware"
+          "text": "Never trust, always verify"
         },
         {
           "id": "b",
-          "text": "Email marketing"
+          "text": "Perimeter segmentation with DMZ"
         },
         {
           "id": "c",
-          "text": "DNS caching"
+          "text": "Key generation and storage in hardware"
         },
         {
           "id": "d",
-          "text": "Printer spooling"
+          "text": "Tokenization replacing sensitive value"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "HSMs protect keys from OS extraction.",
       "docs": [
@@ -1485,15 +1485,15 @@
         },
         {
           "id": "b",
-          "text": "Trust LAN users implicitly"
+          "text": "SSL forward proxy / inspection"
         },
         {
           "id": "c",
-          "text": "VPN means full trust"
+          "text": "Service mesh / micro-segmentation"
         },
         {
           "id": "d",
-          "text": "SSID hidden equals secure"
+          "text": "Full-disk encryption (BitLocker/LUKS class)"
         }
       ],
       "correct": [
@@ -1515,23 +1515,23 @@
       "options": [
         {
           "id": "a",
-          "text": "TLS 1.2/1.3"
+          "text": "Never trust, always verify"
         },
         {
           "id": "b",
-          "text": "HTTP cleartext"
+          "text": "Split DNS (internal vs external views)"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "TLS 1.2/1.3"
         },
         {
           "id": "d",
-          "text": "FTP active cleartext"
+          "text": "Perimeter segmentation with DMZ"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "TLS encrypts HTTP and other apps.",
       "docs": [
@@ -1553,15 +1553,15 @@
         },
         {
           "id": "b",
-          "text": "Single open resolver to world"
+          "text": "TOTP/MFA app"
         },
         {
           "id": "c",
-          "text": "Hosts file only enterprise"
+          "text": "Single open resolver to world"
         },
         {
           "id": "d",
-          "text": "WINS only"
+          "text": "Service mesh / micro-segmentation"
         }
       ],
       "correct": [
@@ -1583,23 +1583,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Container breakout to host"
+          "text": "WPA3-Enterprise with RADIUS"
         },
         {
           "id": "b",
-          "text": "GPU driver marketing"
+          "text": "Never trust, always verify"
         },
         {
           "id": "c",
-          "text": "LCD dead pixel"
+          "text": "Container breakout to host"
         },
         {
           "id": "d",
-          "text": "Keyboard layout"
+          "text": "Perimeter segmentation with DMZ"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Kernel bugs can break isolation.",
       "docs": [
@@ -1617,23 +1617,23 @@
       "options": [
         {
           "id": "a",
-          "text": "TOTP/MFA app"
+          "text": "Full-disk encryption (BitLocker/LUKS class)"
         },
         {
           "id": "b",
-          "text": "Single password only"
+          "text": "SSL forward proxy / inspection"
         },
         {
           "id": "c",
-          "text": "Shared kiosk login"
+          "text": "TOTP/MFA app"
         },
         {
           "id": "d",
-          "text": "MAC filtering Wi-Fi only"
+          "text": "Key generation and storage in hardware"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "TOTP is a second factor.",
       "docs": [
@@ -1651,23 +1651,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSL forward proxy / inspection"
+          "text": "Tokenization replacing sensitive value"
         },
         {
           "id": "b",
-          "text": "Unmanaged hub"
+          "text": "Never trust, always verify"
         },
         {
           "id": "c",
-          "text": "Analog phone"
+          "text": "Container breakout to host"
         },
         {
           "id": "d",
-          "text": "Label printer"
+          "text": "SSL forward proxy / inspection"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Corporate CA enables authorized inspection.",
       "docs": [
@@ -1685,23 +1685,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bastion host in management zone"
+          "text": "Never trust, always verify"
         },
         {
           "id": "b",
-          "text": "RDP open to internet"
+          "text": "Service mesh / micro-segmentation"
         },
         {
           "id": "c",
-          "text": "Telnet from anywhere"
+          "text": "Bastion host in management zone"
         },
         {
           "id": "d",
-          "text": "Admin on user VLAN"
+          "text": "Split DNS (internal vs external views)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Bastions consolidate privileged access.",
       "docs": [
@@ -1723,15 +1723,15 @@
         },
         {
           "id": "b",
-          "text": "Disposal only"
+          "text": "Bastion host in management zone"
         },
         {
           "id": "c",
-          "text": "Marketing launch"
+          "text": "WPA3-Enterprise with RADIUS"
         },
         {
           "id": "d",
-          "text": "Toner replacement"
+          "text": "Split DNS (internal vs external views)"
         }
       ],
       "correct": [
@@ -1753,23 +1753,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Tokenization replacing sensitive value"
+          "text": "WPA3-Enterprise with RADIUS"
         },
         {
           "id": "b",
-          "text": "MD5 password storage"
+          "text": "Tokenization replacing sensitive value"
         },
         {
           "id": "c",
-          "text": "Base64 encoding"
+          "text": "IaaS"
         },
         {
           "id": "d",
-          "text": "Compression zip"
+          "text": "TLS 1.2/1.3"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Tokens are non-sensitive substitutes.",
       "docs": [
@@ -1787,23 +1787,23 @@
       "options": [
         {
           "id": "a",
-          "text": "WPA3-Enterprise with RADIUS"
+          "text": "Full-disk encryption (BitLocker/LUKS class)"
         },
         {
           "id": "b",
-          "text": "WEP shared key"
+          "text": "WPA3-Enterprise with RADIUS"
         },
         {
           "id": "c",
-          "text": "Open guest for all corp"
+          "text": "Tokenization replacing sensitive value"
         },
         {
           "id": "d",
-          "text": "MAC hide SSID only"
+          "text": "Open guest for all corp"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Enterprise Wi-Fi uses 802.1X authentication.",
       "docs": [
@@ -1821,23 +1821,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hot site"
+          "text": "Tokenization replacing sensitive value"
         },
         {
           "id": "b",
-          "text": "Cold site empty shell"
+          "text": "TOTP/MFA app"
         },
         {
           "id": "c",
-          "text": "Warm partial"
+          "text": "SSL forward proxy / inspection"
         },
         {
           "id": "d",
-          "text": "Tape only offsite"
+          "text": "Hot site"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Hot sites enable fast failover.",
       "docs": [
@@ -1855,23 +1855,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Full-disk encryption (BitLocker/LUKS class)"
+          "text": "SSL forward proxy / inspection"
         },
         {
           "id": "b",
-          "text": "TLS in transit only"
+          "text": "IaaS"
         },
         {
           "id": "c",
-          "text": "Screen filter privacy"
+          "text": "Service mesh / micro-segmentation"
         },
         {
           "id": "d",
-          "text": "Cable shielding"
+          "text": "Full-disk encryption (BitLocker/LUKS class)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "FDE protects stored data if drive stolen.",
       "docs": [
@@ -1932,15 +1932,15 @@
         },
         {
           "id": "b",
-          "text": "Application only crashes"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Setup only"
+          "text": "AIDE/Tripwire class HIDS"
         },
         {
           "id": "d",
-          "text": "Forwarded DNS only"
+          "text": "CloudTrail / Azure Activity Log class"
         }
       ],
       "correct": [
@@ -1966,15 +1966,15 @@
         },
         {
           "id": "b",
-          "text": "Cable tester"
+          "text": "ss -tuln or netstat"
         },
         {
           "id": "c",
-          "text": "Multimeter"
+          "text": "secpol.msc / LGPO"
         },
         {
           "id": "d",
-          "text": "Label maker"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
@@ -1996,23 +1996,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Containment, eradication, recovery sequence"
+          "text": "DMARC with SPF/DKIM"
         },
         {
           "id": "b",
-          "text": "Budget planning"
+          "text": "CloudTrail / Azure Activity Log class"
         },
         {
           "id": "c",
-          "text": "Marketing"
+          "text": "Chain of custody documentation"
         },
         {
           "id": "d",
-          "text": "Cable labeling only"
+          "text": "Containment, eradication, recovery sequence"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "IR lifecycle includes eradication of threat.",
       "docs": [
@@ -2030,23 +2030,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Unauthenticated vulnerability scan"
+          "text": "Automated remediation / isolation"
         },
         {
           "id": "b",
-          "text": "Full memory dump"
+          "text": "Unauthenticated vulnerability scan"
         },
         {
           "id": "c",
-          "text": "HR interview"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Badge print"
+          "text": "Critical/High/Medium/Low ranking"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "External scans find exposed services.",
       "docs": [
@@ -2064,23 +2064,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Chain of custody documentation"
+          "text": "Power off all without photos"
         },
         {
           "id": "b",
-          "text": "Delete logs quickly"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Reimage before snapshot"
+          "text": "Full packet capture on span port"
         },
         {
           "id": "d",
-          "text": "Power off all without photos"
+          "text": "Chain of custody documentation"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Chain of custody maintains admissibility.",
       "docs": [
@@ -2098,23 +2098,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Automated remediation / isolation"
+          "text": "AIDE/Tripwire class HIDS"
         },
         {
           "id": "b",
-          "text": "Spreadsheet inventory"
+          "text": "Automated remediation / isolation"
         },
         {
           "id": "c",
-          "text": "DNS MX change"
+          "text": "ss -tuln or netstat"
         },
         {
           "id": "d",
-          "text": "Printer driver"
+          "text": "Chain of custody documentation"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "EDR can isolate hosts and remove payloads.",
       "docs": [
@@ -2132,23 +2132,23 @@
       "options": [
         {
           "id": "a",
-          "text": "ss -tuln or netstat"
+          "text": "Critical/High/Medium/Low ranking"
         },
         {
           "id": "b",
-          "text": "ls -la"
+          "text": "Automated remediation / isolation"
         },
         {
           "id": "c",
-          "text": "chmod"
+          "text": "Unauthenticated vulnerability scan"
         },
         {
           "id": "d",
-          "text": "mount"
+          "text": "ss -tuln or netstat"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "ss lists open sockets and ports.",
       "docs": [
@@ -2166,23 +2166,23 @@
       "options": [
         {
           "id": "a",
-          "text": "secpol.msc / LGPO"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "Paint"
+          "text": "secpol.msc / LGPO"
         },
         {
           "id": "c",
-          "text": "Notepad only"
+          "text": "Periodic recertification"
         },
         {
           "id": "d",
-          "text": "Calculator"
+          "text": "Critical/High/Medium/Low ranking"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Local policy tools manage security settings.",
       "docs": [
@@ -2204,15 +2204,15 @@
         },
         {
           "id": "b",
-          "text": "MTBF between failures"
+          "text": "ss -tuln or netstat"
         },
         {
           "id": "c",
-          "text": "RPO data loss window"
+          "text": "Automated remediation / isolation"
         },
         {
           "id": "d",
-          "text": "MFA adoption rate"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
@@ -2234,23 +2234,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DMARC with SPF/DKIM"
+          "text": "Full packet capture on span port"
         },
         {
           "id": "b",
-          "text": "Open relay SMTP"
+          "text": "MTTR"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "DMARC with SPF/DKIM"
         },
         {
           "id": "d",
-          "text": "Telnet banner"
+          "text": "Critical/High/Medium/Low ranking"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Email authentication reduces spoofed mail.",
       "docs": [
@@ -2268,23 +2268,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Periodic recertification"
+          "text": "Chain of custody documentation"
         },
         {
           "id": "b",
-          "text": "Never review"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Only at hire"
+          "text": "Security event log"
         },
         {
           "id": "d",
-          "text": "After breach only"
+          "text": "Periodic recertification"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Recertification removes stale permissions.",
       "docs": [
@@ -2302,23 +2302,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AIDE/Tripwire class HIDS"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "cron only"
+          "text": "Automated remediation / isolation"
         },
         {
           "id": "c",
-          "text": "cups"
+          "text": "AIDE/Tripwire class HIDS"
         },
         {
           "id": "d",
-          "text": "whoami"
+          "text": "Unauthenticated vulnerability scan"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "FIM detects unauthorized file changes.",
       "docs": [
@@ -2340,15 +2340,15 @@
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "Automated remediation / isolation"
         },
         {
           "id": "c",
-          "text": "DNS A record edit"
+          "text": "DMARC with SPF/DKIM"
         },
         {
           "id": "d",
-          "text": "LDAP join"
+          "text": "Security event log"
         }
       ],
       "correct": [
@@ -2370,23 +2370,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Critical/High/Medium/Low ranking"
+          "text": "CloudTrail / Azure Activity Log class"
         },
         {
           "id": "b",
-          "text": "T-shirt size only"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Random number"
+          "text": "Critical/High/Medium/Low ranking"
         },
         {
           "id": "d",
-          "text": "Ping time"
+          "text": "Security event log"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CVSS standardizes severity scoring.",
       "docs": [
@@ -2404,7 +2404,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Emergency change with retrospective review"
+          "text": "DMARC with SPF/DKIM"
         },
         {
           "id": "b",
@@ -2412,15 +2412,15 @@
         },
         {
           "id": "c",
-          "text": "Skip testing always"
+          "text": "Emergency change with retrospective review"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Emergency changes still need audit trail.",
       "docs": [
@@ -2442,15 +2442,15 @@
         },
         {
           "id": "b",
-          "text": "S3 object only silent"
+          "text": "Automated remediation / isolation"
         },
         {
           "id": "c",
-          "text": "GPU metrics only"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Printer log"
+          "text": "MTTR"
         }
       ],
       "correct": [
@@ -2511,23 +2511,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Chain of custody documentation"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Security event log"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "SIEM"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -2545,23 +2545,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Chain of custody documentation"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Periodic recertification"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "ss -tuln or netstat"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -2579,23 +2579,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Unauthenticated vulnerability scan"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Emergency change with retrospective review"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "ss -tuln or netstat"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -2613,23 +2613,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "ss -tuln or netstat"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Critical/High/Medium/Low ranking"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Full packet capture on span port"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -2647,23 +2647,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Emergency change with retrospective review"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "secpol.msc / LGPO"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "ss -tuln or netstat"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -2685,15 +2685,15 @@
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Full packet capture on span port"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "AIDE/Tripwire class HIDS"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "secpol.msc / LGPO"
         }
       ],
       "correct": [
@@ -2715,23 +2715,23 @@
       "options": [
         {
           "id": "a",
-          "text": "NIST Cybersecurity Framework"
+          "text": "Data minimization"
         },
         {
           "id": "b",
-          "text": "ITIL only service desk"
+          "text": "Litigation hold on relevant data"
         },
         {
           "id": "c",
-          "text": "Agile sprint"
+          "text": "Risk owner / management"
         },
         {
           "id": "d",
-          "text": "Six Sigma DMAIC only"
+          "text": "NIST Cybersecurity Framework"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CSF core functions organize security program.",
       "docs": [
@@ -2749,23 +2749,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Third-party audit"
+          "text": "PCI DSS"
         },
         {
           "id": "b",
-          "text": "Self-assessment only"
+          "text": "Rules of engagement (RoE)"
         },
         {
           "id": "c",
-          "text": "Daily standup"
+          "text": "NIST Cybersecurity Framework"
         },
         {
           "id": "d",
-          "text": "Helpdesk ticket"
+          "text": "Third-party audit"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "External audits provide independent assurance.",
       "docs": [
@@ -2783,23 +2783,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Mobile device / incident reporting policy"
+          "text": "Rules of engagement (RoE)"
         },
         {
           "id": "b",
-          "text": "Vacation policy"
+          "text": "Third-party audit"
         },
         {
           "id": "c",
-          "text": "Dress code"
+          "text": "Mobile device / incident reporting policy"
         },
         {
           "id": "d",
-          "text": "Catering policy"
+          "text": "Runbooks and playbooks"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Lost devices must be reported quickly.",
       "docs": [
@@ -2817,23 +2817,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Failure rate / susceptibility"
+          "text": "Confidential / internal label"
         },
         {
           "id": "b",
-          "text": "MTBF hardware"
+          "text": "Failure rate / susceptibility"
         },
         {
           "id": "c",
-          "text": "Disk RPM"
+          "text": "PCI DSS"
         },
         {
           "id": "d",
-          "text": "Monitor nits"
+          "text": "Security awareness program"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Click rates gauge awareness effectiveness.",
       "docs": [
@@ -2855,15 +2855,15 @@
         },
         {
           "id": "b",
-          "text": "Intern"
+          "text": "Third-party risk management"
         },
         {
           "id": "c",
-          "text": "Any user"
+          "text": "Third-party audit"
         },
         {
           "id": "d",
-          "text": "Vendor only always"
+          "text": "NIST Cybersecurity Framework"
         }
       ],
       "correct": [
@@ -2885,23 +2885,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Rules of engagement (RoE)"
+          "text": "Risk owner / management"
         },
         {
           "id": "b",
-          "text": "Employee handbook hobbies"
+          "text": "Third-party risk management"
         },
         {
           "id": "c",
-          "text": "Menu cafeteria"
+          "text": "Rules of engagement (RoE)"
         },
         {
           "id": "d",
-          "text": "Logo guidelines"
+          "text": "Patch SLA adherence"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RoE defines targets and limits for testing.",
       "docs": [
@@ -2923,15 +2923,15 @@
         },
         {
           "id": "b",
-          "text": "HIPAA PHI"
+          "text": "Data minimization"
         },
         {
           "id": "c",
-          "text": "FERPA students"
+          "text": "Confidential / internal label"
         },
         {
           "id": "d",
-          "text": "COPPA children web only always"
+          "text": "Third-party audit"
         }
       ],
       "correct": [
@@ -2953,23 +2953,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Business impact analysis"
+          "text": "Failure rate / susceptibility"
         },
         {
           "id": "b",
-          "text": "Pen test report only"
+          "text": "Rules of engagement (RoE)"
         },
         {
           "id": "c",
-          "text": "Org chart only"
+          "text": "Third-party audit"
         },
         {
           "id": "d",
-          "text": "Cable map only"
+          "text": "Business impact analysis"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "BIA drives recovery objectives.",
       "docs": [
@@ -2987,23 +2987,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security awareness program"
+          "text": "Rules of engagement (RoE)"
         },
         {
           "id": "b",
-          "text": "Only annual hardware training"
+          "text": "Security awareness program"
         },
         {
           "id": "c",
-          "text": "None ever"
+          "text": "Patch SLA adherence"
         },
         {
           "id": "d",
-          "text": "Only developers"
+          "text": "Data minimization"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Awareness teaches spotting scams.",
       "docs": [
@@ -3025,15 +3025,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore vendor security"
+          "text": "Business impact analysis"
         },
         {
           "id": "c",
-          "text": "Purchase cheapest only"
+          "text": "Third-party audit"
         },
         {
           "id": "d",
-          "text": "Skip contracts"
+          "text": "PCI DSS"
         }
       ],
       "correct": [
@@ -3055,23 +3055,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Confidential / internal label"
+          "text": "Runbooks and playbooks"
         },
         {
           "id": "b",
-          "text": "Public marketing"
+          "text": "Mobile device / incident reporting policy"
         },
         {
           "id": "c",
-          "text": "Unlabeled default external"
+          "text": "Confidential / internal label"
         },
         {
           "id": "d",
-          "text": "Open source"
+          "text": "Third-party audit"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Classification drives handling rules.",
       "docs": [
@@ -3089,23 +3089,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Steering committee / CAB"
+          "text": "NIST Cybersecurity Framework"
         },
         {
           "id": "b",
-          "text": "Random users"
+          "text": "Security awareness program"
         },
         {
           "id": "c",
-          "text": "Printer vendor"
+          "text": "Mobile device / incident reporting policy"
         },
         {
           "id": "d",
-          "text": "Cafeteria staff"
+          "text": "Steering committee / CAB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Governance allocates resources to risks.",
       "docs": [
@@ -3127,15 +3127,15 @@
         },
         {
           "id": "b",
-          "text": "Coffee consumption"
+          "text": "Failure rate / susceptibility"
         },
         {
           "id": "c",
-          "text": "Desk plant count"
+          "text": "Third-party audit"
         },
         {
           "id": "d",
-          "text": "Font choice"
+          "text": "Security awareness program"
         }
       ],
       "correct": [
@@ -3161,15 +3161,15 @@
         },
         {
           "id": "b",
-          "text": "Auto-delete all mail"
+          "text": "PCI DSS"
         },
         {
           "id": "c",
-          "text": "Wipe laptops immediately"
+          "text": "Failure rate / susceptibility"
         },
         {
           "id": "d",
-          "text": "Disable backups"
+          "text": "Third-party risk management"
         }
       ],
       "correct": [
@@ -3191,23 +3191,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Runbooks and playbooks"
+          "text": "Failure rate / susceptibility"
         },
         {
           "id": "b",
-          "text": "Ad hoc only always"
+          "text": "Runbooks and playbooks"
         },
         {
           "id": "c",
-          "text": "Verbal only"
+          "text": "Data minimization"
         },
         {
           "id": "d",
-          "text": "Sticky notes"
+          "text": "Patch SLA adherence"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Runbooks ensure consistent response.",
       "docs": [
@@ -3233,11 +3233,11 @@
         },
         {
           "id": "c",
-          "text": "Never delete"
+          "text": "Security awareness program"
         },
         {
           "id": "d",
-          "text": "Share freely"
+          "text": "NIST Cybersecurity Framework"
         }
       ],
       "correct": [
@@ -3298,23 +3298,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Phishing"
-        },
-        {
-          "id": "b",
-          "text": "Social Engineering"
-        },
-        {
-          "id": "c",
           "text": "Spear Phishing"
         },
         {
+          "id": "b",
+          "text": "Domain hijacking"
+        },
+        {
+          "id": "c",
+          "text": "DNS poisoning"
+        },
+        {
           "id": "d",
-          "text": "Trojan Horse"
+          "text": "Shimming"
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
       "explanation": "The correct answer is spear phishing. Spear phishing is targeted to a specific group, in this case insurance professionals. Although this is a form of phishing, the more specific answer is the one you will need to choose on questions like this. Phishing uses social engineering techniques to succeed but is once again a broader answer than spear phishing and thus is not the correct choice. Finally, a Trojan horse pretends to be a legitimate or desirable program or file, which this scenario doesn\u2019t describe. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3332,23 +3332,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Worm"
+          "text": "Passive reconnaissance"
         },
         {
           "id": "b",
-          "text": "Logic Bomb"
+          "text": "Collision attack"
         },
         {
           "id": "c",
-          "text": "Trojan Horse"
+          "text": "Logic Bomb"
         },
         {
           "id": "d",
-          "text": "Rootkit"
+          "text": "Disassociation attack"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "A logic bomb is malware that performs its malicious activity when some condition is met. A worm is malware that self-propagates. A Trojan horse is malware attached to a legitimate program, and a rootkit is malware that gets root or administrative privileges. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3366,23 +3366,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cross-site scripting"
+          "text": "Offline immutable backups"
         },
         {
           "id": "b",
-          "text": "Cross-site request forgery"
+          "text": "Bluesnarfing"
         },
         {
           "id": "c",
-          "text": "SQL injection"
+          "text": "Compromised device recruitment to botnets"
         },
         {
           "id": "d",
-          "text": "ARP poisoning"
+          "text": "SQL injection"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "This is a very basic form of SQL injection. Cross-site scripting would have JavaScript in the text field and would be designed to impact other sites from a user\u2019s session. Cross-site request forgery would not involve any text being entered in the web page, and ARP poisoning is altering the ARP table in a switch; it is not related to website hacking. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3400,23 +3400,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IV attack"
+          "text": "Spear Phishing"
         },
         {
           "id": "b",
-          "text": "Jamming"
+          "text": "Urgency and authority"
         },
         {
           "id": "c",
-          "text": "WPS attack"
+          "text": "Jamming"
         },
         {
           "id": "d",
-          "text": "Botnet"
+          "text": "Improper or weak patch management for the operating systems"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "This describes a jamming attack, where legitimate traffic is interfered with by another signal. Jamming can be intentional or unintentional and may be intermittent. IV attacks are obscure cryptographic attacks on stream ciphers. Wi-Fi protected setup (WPS) uses a PIN to connect to the wireless access point (WAP). The WPS attack attempts to intercept that PIN in transmission, connect to the WAP, and then steal the WPA2 password. A botnet is a group of machines that are being used, without their consent, as part of an attack. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3434,23 +3434,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Session hijacking"
+          "text": "DLL injection"
         },
         {
           "id": "b",
-          "text": "Clickjacking"
-        },
-        {
-          "id": "c",
           "text": "Rogue access point"
         },
         {
+          "id": "c",
+          "text": "Bluesnarfing"
+        },
+        {
           "id": "d",
-          "text": "Bluejacking"
+          "text": "Memory leak"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "If users have been connecting but the AP does not show them connecting, then they have been connecting to a rogue access point. This could be the cause of an architecture and design weakness such as a network without segmentation and control of devices connecting to the network. Session hijacking involves taking over an already authenticated session. Most session hijacking attacks involve impersonation. The attacker attempts to gain access to another user\u2019s session by posing as that user. Clickjacking involves causing visitors to a website to click on the wrong item. Finally, bluejacking is a Bluetooth attack. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3468,23 +3468,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vulnerability scan"
+          "text": "Rogue access point"
         },
         {
           "id": "b",
-          "text": "Penetration test"
+          "text": "A privilege escalation attack"
         },
         {
           "id": "c",
-          "text": "Security audit"
+          "text": "Vulnerability scan"
         },
         {
           "id": "d",
-          "text": "Security test"
+          "text": "Memory leak"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Vulnerability scans use automated tools to look for known vulnerabilities in systems and applications and then provide reports to assist in remediation activities. Penetration tests seek to actually exploit the vulnerabilities and break into systems. Security audits usually focus on checking policies, incident reports, and other documents. Security test is a generic term for any sort of test. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3502,11 +3502,11 @@
       "options": [
         {
           "id": "a",
-          "text": "DNS hijacking"
+          "text": "Urgency and authority"
         },
         {
           "id": "b",
-          "text": "An on-path attack"
+          "text": "Reconnaissance"
         },
         {
           "id": "c",
@@ -3514,7 +3514,7 @@
         },
         {
           "id": "d",
-          "text": "A zero-day attack"
+          "text": "Whaling"
         }
       ],
       "correct": [
@@ -3536,23 +3536,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hacktivist"
+          "text": "Spear Phishing"
         },
         {
           "id": "b",
-          "text": "Amateur"
+          "text": "Script-kiddie"
         },
         {
           "id": "c",
-          "text": "Insider"
+          "text": "Reconnaissance"
         },
         {
           "id": "d",
-          "text": "Script-kiddie"
+          "text": "Rootkit"
         }
       ],
       "correct": [
-        "d"
+        "b"
       ],
       "explanation": "The term for low-skilled hackers is script kiddie. Script kiddies typically use prebuilt tools and do not have the expertise to make or modify their own tools. Nothing indicates this is being done for ideological reasons, and thus that a hacktivist is involved. Although \u201cAmateur\u201d may be an appropriate description, the correct term is script kiddie. Finally, nothing in this scenario indicates an insider threat. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3570,23 +3570,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Zombienet"
+          "text": "Logic Bomb"
         },
         {
           "id": "b",
-          "text": "Botnet"
+          "text": "Downgrade attack"
         },
         {
           "id": "c",
-          "text": "Nullnet"
+          "text": "Botnet"
         },
         {
           "id": "d",
-          "text": "Attacknet"
+          "text": "APT"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "A collection of computers that are compromised, then centrally controlled to perform actions like denial-of-service attacks, data collection, and other malicious activities is called a botnet. Zombienets, Nullnets, and Attacknets are not commonly used terms to describe botnets. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3604,7 +3604,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Active reconnaissance"
+          "text": "Organized crime"
         },
         {
           "id": "b",
@@ -3612,11 +3612,11 @@
         },
         {
           "id": "c",
-          "text": "Initial exploitation"
+          "text": "Vishing"
         },
         {
           "id": "d",
-          "text": "Pivot"
+          "text": "Downgrade attack"
         }
       ],
       "correct": [
@@ -3638,23 +3638,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A known environment test"
+          "text": "Rainbow table"
         },
         {
           "id": "b",
-          "text": "External test"
-        },
-        {
-          "id": "c",
           "text": "A unknown environment test"
         },
         {
+          "id": "c",
+          "text": "Content Security Policy (CSP)"
+        },
+        {
           "id": "d",
-          "text": "Threat test"
+          "text": "Organized crime"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "An unknown environment test is also called blackbox or a zero-knowledge test because it does not provide information beyond the basic information needed to identify the target. A known environment, or white-box test, involves very complete information being given to the tester. This scenario is probably done from outside the network, but external test is not the correct terminology. Threat test is not a term used in penetration testing. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3672,15 +3672,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Internal attack"
+          "text": "SYN flood DoS"
         },
         {
           "id": "b",
-          "text": "Known environment testing"
+          "text": "Telnet is an insecure protocol."
         },
         {
           "id": "c",
-          "text": "Unknown environment testing"
+          "text": "Known environment test"
         },
         {
           "id": "d",
@@ -3706,23 +3706,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Shimming"
+          "text": "DNS poisoning"
         },
         {
           "id": "b",
-          "text": "Trojan horse"
+          "text": "Lateral movement"
         },
         {
           "id": "c",
-          "text": "Backdoor"
+          "text": "Offline immutable backups"
         },
         {
           "id": "d",
-          "text": "Refactoring"
+          "text": "Shimming"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Shimming is when the attacker places some malware between an application and some other file and intercepts the communication to that file (usually to a library or system API). In many cases, this is done with a driver for a hardware component. A Trojan horse might be used to get the shim onto the system, but that is not described in this scenario. A backdoor is a means to circumvent system authorization and get direct access to the system. Refactoring is the process of changing names of variables, functions, and so forth in \na program. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3740,23 +3740,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SYN flood"
+          "text": "SQL injection"
         },
         {
           "id": "b",
-          "text": "DDoS"
+          "text": "Using people skills to obtain proprietary information"
         },
         {
           "id": "c",
-          "text": "Botnet"
+          "text": "A macro virus"
         },
         {
           "id": "d",
-          "text": "Backdoor"
+          "text": "DDoS"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "His machines are part of a distributed denial-ofservice (DDoS) attack. This scenario describes a generic DDoS, not a specific one like SYN flood, which would involve many SYN packets being sent without a full three-way TCP handshake. These machines could be part of a botnet or they may just have a trigger that causes them to launch the attack at a specific time. The real key in this scenario is the DDoS attack. Finally, a backdoor gives an attacker access to the target system. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3774,23 +3774,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Logic bomb"
+          "text": "Telnet is an insecure protocol."
         },
         {
           "id": "b",
-          "text": "Trojan horse"
+          "text": "A malicious USB cable or drive"
         },
         {
           "id": "c",
-          "text": "Rootkit"
+          "text": "Trojan horse"
         },
         {
           "id": "d",
-          "text": "Macrovirus"
+          "text": "DDoS"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "A Trojan horse attaches a malicious program to a legitimate program. When the user downloads and installs the legitimate program, they get the malware. A logic bomb is malware that does its misdeeds when some condition is met. A rootkit is malware that gets administrative, or root, access. A macro virus is a virus that is embedded in a document as a macro. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3808,23 +3808,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Spear phishing"
+          "text": "Organized crime"
         },
         {
           "id": "b",
-          "text": "Targeted phishing"
+          "text": "A pivot"
         },
         {
           "id": "c",
-          "text": "Phishing"
+          "text": "Whaling"
         },
         {
           "id": "d",
-          "text": "Whaling"
+          "text": "Logic bomb"
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
       "explanation": "Whaling is targeting a specific individual who is important in the organization like the president or chief financial officer (CFO). Spear phishing targets specific individuals or groups, but whaling is more specific in terms of the importance of the individuals involved. Targeted phishing is not a term used in the industry. Phishing is the generic term for a wide range of related attacks, and you should choose the most accurate answer for questions like this. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3842,23 +3842,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Rainbow table"
+          "text": "Offline immutable backups"
         },
         {
           "id": "b",
-          "text": "Backdoor"
+          "text": "Collision attack"
         },
         {
           "id": "c",
-          "text": "Social engineering"
+          "text": "A pivot"
         },
         {
           "id": "d",
-          "text": "Dictionary attack"
+          "text": "Rainbow table"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "A rainbow table is a table of precomputed hashes, used to retrieve passwords. A backdoor is used to gain access to a system, not to recover passwords. Social engineering and dictionary attacks can both be used to gain access to passwords, but they are not tables of precomputed hashes. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3876,23 +3876,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bluejacking"
+          "text": "Disassociation attack"
         },
         {
           "id": "b",
-          "text": "Bluesnarfing"
+          "text": "Backdoor"
         },
         {
           "id": "c",
-          "text": "Evil twin"
+          "text": "Trojan horse"
         },
         {
           "id": "d",
-          "text": "Rogue access point"
+          "text": "Bluesnarfing"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Bluejacking involves sending unsolicited messages to Bluetooth devices when they are in range. Bluesnarfing involves getting data from the Bluetooth device. An evil twin attack uses a rogue access point whose name is similar or identical to that of a legitimate access point. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3914,15 +3914,15 @@
         },
         {
           "id": "b",
-          "text": "Worm"
+          "text": "Tailgating"
         },
         {
           "id": "c",
-          "text": "Logic bomb"
+          "text": "DNS tunneling/C2"
         },
         {
           "id": "d",
-          "text": "Rootkit"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
@@ -3948,19 +3948,19 @@
         },
         {
           "id": "b",
-          "text": "Disassociation attack"
+          "text": "DDoS"
         },
         {
           "id": "c",
-          "text": "Session hijacking"
+          "text": "DNS poisoning"
         },
         {
           "id": "d",
-          "text": "Backdoor attack"
+          "text": "Disassociation attack"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "This an example of a disassociation attack. The deauthentication packet causes Aggela\u2019s system to disassociate, and the attacker can then execute a second attack targeting her authentication credentials or other wireless data using an evil twin attack. Misconfiguration won\u2019t cause authenticated users to deauthenticate. Session hijacking involves taking over an authenticated session. Backdoors are built-in methods to circumvent authentication. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -3978,23 +3978,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disassociation attack"
+          "text": "Buffer overflow"
         },
         {
           "id": "b",
-          "text": "Downgrade attack"
+          "text": "Rogue access point"
         },
         {
           "id": "c",
-          "text": "Session hijacking"
+          "text": "Downgrade attack"
         },
         {
           "id": "d",
-          "text": "Brute force"
+          "text": "APT"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Downgrade attacks seek to make a Transport Layer Security (TLS) connection use a weaker cipher version, thus allowing the attacker to more easily break the encryption and read the protected data. In a disassociation attack, the attacker attempts to force the victim into disassociating from a resource. Session hijacking is when the attacker takes over an authenticated session. Brute-force attempts every possible random combination to get the password or encryption key. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4012,15 +4012,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Rainbow table"
+          "text": "WPA2 handshake capture"
         },
         {
           "id": "b",
-          "text": "Brute force"
+          "text": "SYN flood DoS"
         },
         {
           "id": "c",
-          "text": "Session hijacking"
+          "text": "Dictionary attack"
         },
         {
           "id": "d",
@@ -4046,23 +4046,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DDoS"
-        },
-        {
-          "id": "b",
-          "text": "Brute force"
-        },
-        {
-          "id": "c",
           "text": "APT"
         },
         {
+          "id": "b",
+          "text": "Rainbow table"
+        },
+        {
+          "id": "c",
+          "text": "Tailgating"
+        },
+        {
           "id": "d",
-          "text": "Disassociation attack"
+          "text": "Compromised dependency update"
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
       "explanation": "An advanced persistent threat (APT) involves sophisticated (i.e., advanced) attacks over a period of time (i.e., persistent). A distributed denial-of-service (DDoS) could be a part of an APT, but in and of itself is unlikely to be an APT. Brute force attempts every possible random combination to get the password or encryption key. In a disassociation attack, the attacker attempts to force the victim into disassociating from a resource. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4084,15 +4084,15 @@
         },
         {
           "id": "b",
-          "text": "Session hijacking"
+          "text": "Spear Phishing"
         },
         {
           "id": "c",
-          "text": "Root grabbing"
+          "text": "Improper or weak patch management for the operating systems"
         },
         {
           "id": "d",
-          "text": "Climbing"
+          "text": "Jamming"
         }
       ],
       "correct": [
@@ -4114,23 +4114,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Rootkit"
+          "text": "RAT"
         },
         {
           "id": "b",
-          "text": "Trojan horse"
+          "text": "The attack comes from a foreign IP address."
         },
         {
           "id": "c",
-          "text": "Spyware"
+          "text": "Trojan horse"
         },
         {
           "id": "d",
-          "text": "Boot sector virus"
+          "text": "Impersonation"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "The malware in this example is a Trojan horse\u2014it pretends to be something desirable, or at least innocuous, and installs malicious software in addition to or instead of the desired software. A rootkit gives root or administrative access, spyware is malware that records user activities, and a boot sector virus is a virus that infects the boot sector of the hard drive. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4148,23 +4148,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lateral movement"
+          "text": "DLL injection"
         },
         {
           "id": "b",
-          "text": "Priviledge escalation"
+          "text": "Using people skills to obtain proprietary information"
         },
         {
           "id": "c",
-          "text": "Priviledge retention"
+          "text": "Lateral movement"
         },
         {
           "id": "d",
-          "text": "Vertical movement"
+          "text": "Disassociation attack"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Mikaela has moved laterally. Lateral movement moves to systems at the same trust level. This can provide access to new data or different views of the network depending on how the systems and security are configured. Privilege escalation involves gaining additional privileges, often those of an administrative user. Vertical movement is sometimes referenced when gaining access to systems or accounts with a higher security or trust level. Privilege retention was made up for this question. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4182,23 +4182,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A false positive"
+          "text": "A macro virus"
         },
         {
           "id": "b",
-          "text": "An automatic update failure"
+          "text": "Logic Bomb"
         },
         {
           "id": "c",
-          "text": "A false negative"
+          "text": "A false positive"
         },
         {
           "id": "d",
-          "text": "An Apache version mismatch"
+          "text": "Shimming"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "This is an example of a false positive. A false positive can cause a vulnerability to show that was not actually there. This sometimes happens when a patch or fix is installed but the application does not change in a way that shows the change, and it has been an issue with updates where the version number is the primary check for a vulnerability. When a vulnerability scanner sees a vulnerable version number but a patch has been installed that does not update it, a false positive report can occur. A false negative would report a patch or fix where there was actually a vulnerability. Automatic updates were not mentioned, nor was a specific Apache version. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4216,23 +4216,23 @@
       "options": [
         {
           "id": "a",
-          "text": "XSS"
+          "text": "Script-kiddie"
         },
         {
           "id": "b",
-          "text": "CSRF"
+          "text": "Vishing"
         },
         {
           "id": "c",
-          "text": "Buffer overflow"
+          "text": "Whaling"
         },
         {
           "id": "d",
-          "text": "Logic bomb"
+          "text": "Buffer overflow"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "A buffer overflow is possible when boundaries are not checked and the attacker tries to put in more data than the variable can hold. Cross-site scripting (XSS) is a web page attack. Cross-site request forgery (CSRF) is a web page attack. A logic bomb is malware that performs its misdeed when some condition is met. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4250,23 +4250,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Boot sector virus"
-        },
-        {
-          "id": "b",
           "text": "Logic bomb"
         },
         {
+          "id": "b",
+          "text": "Vishing"
+        },
+        {
           "id": "c",
-          "text": "Buffer overflow"
+          "text": "Rogue access point"
         },
         {
           "id": "d",
-          "text": "Sparse infector virus"
+          "text": "RAT"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "A logic bomb performs malicious actions when a specific condition or conditions are met. A boot sector virus infects the boot sector of the hard drive. A buffer overflow occurs when the attacker attempts to put more data in a variable than it can hold. A sparse infector virus performs its malicious activity intermittently to make it harder to detect. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4284,23 +4284,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A macro virus"
+          "text": "A unknown environment test"
         },
         {
           "id": "b",
-          "text": "A boot sector virus"
+          "text": "A false positive"
         },
         {
           "id": "c",
-          "text": "A Trojan horse"
+          "text": "A macro virus"
         },
         {
           "id": "d",
-          "text": "A BAT"
+          "text": "Logic Bomb"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "A macro virus is a malicious script (macro) embedded into a file, typically a Microsoft Office file. They are typically written in Visual Basic for Applications (VBA) script. A boot sector virus infects the boot sector of the hard drive. A Trojan horse is malware that is tied to a legitimate program. In this scenario, the malware is actually embedded in an Office document. The two are similar, but not the same. A remote access Trojan (RAT) is a Trojan horse that gives the attacker remote access to the machine. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4318,23 +4318,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A known environment test"
+          "text": "Using people skills to obtain proprietary information"
         },
         {
           "id": "b",
-          "text": "A gray-box test"
-        },
-        {
-          "id": "c",
           "text": "A credentialed scan"
         },
         {
+          "id": "c",
+          "text": "Telnet is an insecure protocol."
+        },
+        {
           "id": "d",
-          "text": "An intrusive scan"
+          "text": "Rogue access point"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "By giving the tester logins, you are allowing them to conduct a credentialed scan (i.e., a scan with an account or accounts that allow them access to check settings and configurations). Known environment and partially known environment tests describe the level of knowledge the tester is given of the network. A privilege scan cannot be an unknown environment test, but it could be either known or partially known. An intrusive scan is a term used for scans that attempt to exercise or use the vulnerability they find instead of attempting to avoid harm. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4352,23 +4352,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Improperly configured accounts"
+          "text": "Passive reconnaissance"
         },
         {
           "id": "b",
-          "text": "Untrained users"
+          "text": "Whaling"
         },
         {
           "id": "c",
-          "text": "Using default settings"
+          "text": "A directory traversal attack"
         },
         {
           "id": "d",
-          "text": "Failure to patch systems"
+          "text": "Using default settings"
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "Using default settings is a form of weak configuration. Many vulnerability scanners and attack tools have default settings built-in to test with, and default settings are easily obtained for most devices with a quick search of the Internet. Configuring the accounts is not the issue; changing default passwords and settings is. Although training users is important, that\u2019s not the issue in this scenario. Patching systems is important, but that won\u2019t change default settings. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4386,23 +4386,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Logic bomb"
+          "text": "DLL injection"
         },
         {
           "id": "b",
-          "text": "Session hijacking"
+          "text": "Dictionary attack"
         },
         {
           "id": "c",
-          "text": "Buffer overflow"
+          "text": "Compromised device recruitment to botnets"
         },
         {
           "id": "d",
-          "text": "DLL injection"
+          "text": "Bluesnarfing"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "In a DLL injection, the malware attempts to inject code into the process of some library. This is a rather advanced attack. A logic bomb executes its misdeed when some condition is met. Session hijacking is taking over an authenticated session. Buffer overflows are done by sending more data to a variable than it can hold. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4420,23 +4420,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Logic bomb"
+          "text": "Integer overflow"
         },
         {
           "id": "b",
-          "text": "Trojan horse"
-        },
-        {
-          "id": "c",
           "text": "Backdoor"
         },
         {
+          "id": "c",
+          "text": "SYN flood DoS"
+        },
+        {
           "id": "d",
-          "text": "Rootkit"
+          "text": "SQL injection"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "A backdoor is a method for bypassing normal security and directly accessing the system. A logic bomb is malware that performs its misdeeds when some condition is met. A Trojan horse wraps a malicious program to a legitimate program. When the user downloads and installs the legitimate program, they get the malware. A rootkit is malware that gets root or administrative privileges. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4454,23 +4454,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Long-term access to the target"
+          "text": "Long-term access to the target (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Sophisticated attacks"
+          "text": "Phishing"
         },
         {
           "id": "c",
-          "text": "The attack comes from a foreign IP address."
+          "text": "The attack is sustained over time. (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "The attack is sustained over time."
+          "text": "The attack comes from a foreign IP address."
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "Although you might suppose that a nation-state attacker (the usual attacker behind an advanced persistent threat) would attack from a foreign IP address, they often use a compromised address in the target country as a base for attacks. All other options are incorrect. These are actually signs of an advanced persistent threat. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4488,23 +4488,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A backdoor"
+          "text": "A01 Broken Access Control"
         },
         {
           "id": "b",
-          "text": "An APT"
-        },
-        {
-          "id": "c",
           "text": "DNS poisoning"
         },
         {
+          "id": "c",
+          "text": "SQL injection"
+        },
+        {
           "id": "d",
-          "text": "A Trojan horse"
+          "text": "Reconnaissance"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "DNS poisoning occurs when false DNS information is inserted into legitimate DNS servers, resulting in traffic being redirected to unwanted or malicious sites. A backdoor provides access to the system by circumventing normal authentication. An APT is an advanced persistent threat. A Trojan horse ties a malicious program to a legitimate program. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4522,23 +4522,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Backdoor"
-        },
-        {
-          "id": "b",
           "text": "Trojan horse"
         },
         {
+          "id": "b",
+          "text": "Disassociation attack"
+        },
+        {
           "id": "c",
-          "text": "RAT"
+          "text": "Worm"
         },
         {
           "id": "d",
-          "text": "Polymorphic virus"
+          "text": "A privilege escalation attack"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "A Trojan horse pretends to be legitimate software, and may even include it, but also includes malicious software as well. Backdoors, RATs, and polymorphic viruses are all attacks, but they do not match what is described in the question scenario. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4556,23 +4556,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RAT"
-        },
-        {
-          "id": "b",
-          "text": "Backdoor"
-        },
-        {
-          "id": "c",
           "text": "Trojan horse"
         },
         {
+          "id": "b",
+          "text": "Memory leak"
+        },
+        {
+          "id": "c",
+          "text": "Content Security Policy (CSP)"
+        },
+        {
           "id": "d",
-          "text": "Macro virus"
+          "text": "RAT"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "A remote access Trojan (RAT) is malware that gives the attacker remote access to the victim machine. Macro viruses operate inside of Microsoft Office files. Although a backdoor will give access, it is usually something in the system put there by programmers, not introduced by malware. A RAT is a type of Trojan horse, but a Trojan horse is more general than what is described in the scenario. When you encounter questions like this on the exam, you will need to select the best answer, not just one that may answer the question! (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4594,19 +4594,19 @@
         },
         {
           "id": "b",
-          "text": "Fotis's machine has ransomware."
-        },
-        {
-          "id": "c",
           "text": "Fotis's machine has logic bomb."
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Fotis's machine has been the target of whaling."
+        },
+        {
+          "id": "d",
+          "text": "Fotis's machine has ransomware."
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "This is an example of ransomware, which demands payment to return your data. A rootkit provides access to administrator/root privileges. A logic bomb executes its malicious activity when some condition is met. This scenario does not describe whaling. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4624,23 +4624,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Memory leak"
+          "text": "Time of check/time of use"
         },
         {
           "id": "b",
-          "text": "Buffer overflow"
+          "text": "Memory leak"
         },
         {
           "id": "c",
-          "text": "Integer overflow"
+          "text": "Using default settings"
         },
         {
           "id": "d",
-          "text": "Time of check/time of use"
+          "text": "Content Security Policy (CSP)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "If access is not handled properly, a time of check/time of use condition can exist where the memory is checked, changed, then used. Memory leaks occur when memory is allocated but not deallocated. A buffer overflow is when more data is put into a variable than it can hold. An integer overflow occurs when an attempt is made to put an integer that is too large into a variable, such as trying to put a 64-bit integer into a 32-bit variable. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4658,23 +4658,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A Trojan horse download"
-        },
-        {
-          "id": "b",
           "text": "A malicious USB cable or drive"
         },
         {
+          "id": "b",
+          "text": "Vulnerability scan"
+        },
+        {
           "id": "c",
-          "text": "A worm"
+          "text": "The attack comes from a foreign IP address."
         },
         {
           "id": "d",
-          "text": "None of the above"
+          "text": "Whaling"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Malicious tools like BadUSB can make a USB cable or drive look like a keyboard when they are plugged in. Somewhat strangely, the Security+ exam outline focuses on malicious USB cables, but you should be aware that malicious thumb drives are far more common and have been used by penetration testers simply by dropping them in a parking lot near their intended target. A Trojan or a worm is a possibility, but the clue involving the keyboard would point to a USB device as the first place Irene should look. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4692,23 +4692,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hash spoofing"
+          "text": "Pass the hash"
         },
         {
           "id": "b",
-          "text": "Evil twin"
+          "text": "A malicious USB cable or drive"
         },
         {
           "id": "c",
-          "text": "Shimming"
+          "text": "Impersonation"
         },
         {
           "id": "d",
-          "text": "Pass the hash"
+          "text": "Bluesnarfing"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Using a pass-the-hash attack requires attackers to acquire a legitimate hash, and then present it to a server or service. A real hash was provided; it was not spoofed. An evil twin is a wireless attack. Shimming is inserting malicious code between an application and a library. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4726,7 +4726,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Urgency and intimidation"
+          "text": "RAT"
         },
         {
           "id": "b",
@@ -4734,11 +4734,11 @@
         },
         {
           "id": "c",
-          "text": "Authority and trust"
+          "text": "Worm"
         },
         {
           "id": "d",
-          "text": "Intimidation and authority"
+          "text": "Impersonation"
         }
       ],
       "correct": [
@@ -4760,23 +4760,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Unsupported operating systems"
+          "text": "Privilege escalation"
         },
         {
           "id": "b",
-          "text": "Improper or weak patch management for the operating systems"
-        },
-        {
-          "id": "c",
           "text": "Improper or weak patch management for the firmware of the systems"
         },
         {
+          "id": "c",
+          "text": "Using people skills to obtain proprietary information"
+        },
+        {
           "id": "d",
-          "text": "Use of unsecure protocols"
+          "text": "Improper or weak patch management for the operating systems"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "The questions tells us that these are Windows 10 systems, a current operating system. From there, it is safe to presume that something has gone wrong with the patching process or that there isn\u2019t a patching process. Eleni should investigate both what the process is and if there are specific reasons the systems are not patched. Since we know these systems run a current OS, option A, unsupported operating systems, can be ruled out. The vulnerabilities are specifically noted to be Windows vulnerabilities, ruling out option C, and there is no mention of protocols, eliminating option D as well. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4794,7 +4794,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Illegal copying of software"
+          "text": "Compromised dependency update"
         },
         {
           "id": "b",
@@ -4806,7 +4806,7 @@
         },
         {
           "id": "d",
-          "text": "Phishing emails"
+          "text": "Privilege escalation"
         }
       ],
       "correct": [
@@ -4832,15 +4832,15 @@
         },
         {
           "id": "b",
-          "text": "On-path attack"
+          "text": "Whaling"
         },
         {
           "id": "c",
-          "text": "Buffer overflow"
+          "text": "Impersonation"
         },
         {
           "id": "d",
-          "text": "Session hijacking"
+          "text": "Memory leak"
         }
       ],
       "correct": [
@@ -4862,23 +4862,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Memory overflow"
+          "text": "Integer overflow"
         },
         {
           "id": "b",
-          "text": "Buffer overflow"
+          "text": "Pass the hash"
         },
         {
           "id": "c",
-          "text": "Variable overflow"
+          "text": "Impersonation"
         },
         {
           "id": "d",
-          "text": "Integer overflow"
+          "text": "Footprinting"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Placing a larger integer value into a smaller integer variable is an integer overflow. Memory overflow is not a term used, and memory leak is about allocating memory and not deallocating it. Buffer overflows often involve arrays. Variable overflow is not a term used in the industry. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4896,23 +4896,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Trojan horse"
+          "text": "Rootkit"
         },
         {
           "id": "b",
-          "text": "Logic bomb"
+          "text": "Offline immutable backups"
         },
         {
           "id": "c",
-          "text": "Multipartite virus"
+          "text": "Impersonation"
         },
         {
           "id": "d",
-          "text": "Rootkit"
+          "text": "Bluesnarfing"
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Rootkits provide administrative access to systems, thus the \u201croot\u201d in rootkit. A Trojan horse combines malware with a legitimate program. A logic bomb performs its malicious activity when some condition is met. A multipartite virus infects the boot sector and a file. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4930,23 +4930,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Spear phishing"
-        },
-        {
-          "id": "b",
           "text": "Vishing"
         },
         {
+          "id": "b",
+          "text": "Rootkit"
+        },
+        {
           "id": "c",
-          "text": "War dialing"
+          "text": "Man in the browser"
         },
         {
           "id": "d",
-          "text": "Robocalling"
+          "text": "DNS tunneling/C2"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "This is vishing, or using voice calls for phishing. Spear phishing is targeting a small, specific group. War dialing is dialing numbers hoping a computer modem answers. Robocalling is used to place unsolicited telemarketing calls. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4964,23 +4964,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Worm"
+          "text": "Trojan horse"
         },
         {
           "id": "b",
-          "text": "Virus"
+          "text": "A directory traversal attack"
         },
         {
           "id": "c",
-          "text": "Logic bomb"
+          "text": "Passive reconnaissance"
         },
         {
           "id": "d",
-          "text": "Trojan horse"
+          "text": "Worm"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Worms spread themselves via vulnerabilities, making this an example of a worm. A virus is software that self-replicates. A logic bomb executes its malicious activity when some condition is met. A Trojan horse combines malware with a legitimate program. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -4998,23 +4998,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Phishing"
+          "text": "WPA2 handshake capture"
         },
         {
           "id": "b",
-          "text": "Dumpster diving"
+          "text": "Script-kiddie"
         },
         {
           "id": "c",
-          "text": "Shoulder surfing"
+          "text": "Phishing"
         },
         {
           "id": "d",
-          "text": "On-path attack"
+          "text": "Worm"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Dumpster diving is the process of going through the trash to find documents. Shredding documents will help to prevent dumpster diving, but truly dedicated dumpster divers can reassemble even well-shredded documents, leading some organizations to burn their most sensitive documents after they have been shredded. Phishing is often done via email or phone and is an attempt to elicit information or convince a user to click a link or open an attachment. Shoulder surfing is literally looking over someone\u2019s shoulder. In the on-path (man-in-the-middle) attack, the attacker is between the client and the server, and to either end, the attacker appears like the legitimate other end. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -5032,23 +5032,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Rainbow table"
+          "text": "A01 Broken Access Control"
         },
         {
           "id": "b",
-          "text": "Birthday attack"
-        },
-        {
-          "id": "c",
           "text": "Dictionary attack"
         },
         {
+          "id": "c",
+          "text": "Spear Phishing"
+        },
+        {
           "id": "d",
-          "text": "Spoofing"
+          "text": "Worm"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "This is an example of an online brute-force dictionary attack. Dictionary attacks use common passwords as well as common substitutions to attempt to break into a system or service. Back-off algorithms that lock out attackers after a small number of incorrect password attempts can help slow or stop dictionary attacks and other brute-force password attacks. Rainbow tables are tables of precomputed hashes. The birthday attack is a method for generating collisions of hashes. Finally, no spoofing is indicated in this scenario. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -5070,15 +5070,15 @@
         },
         {
           "id": "b",
-          "text": "A web application buffer overflow"
+          "text": "A unknown environment test"
         },
         {
           "id": "c",
-          "text": "A directory recursion attack"
+          "text": "Privilege escalation"
         },
         {
           "id": "d",
-          "text": "A slashdot attack"
+          "text": "A web application buffer overflow"
         }
       ],
       "correct": [
@@ -5100,23 +5100,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Known environment test"
+          "text": "Vulnerability scan"
         },
         {
           "id": "b",
-          "text": "External test"
+          "text": "Known environment test"
         },
         {
           "id": "c",
-          "text": "Unknown environment test"
+          "text": "Fotis's machine has ransomware."
         },
         {
           "id": "d",
-          "text": "Threat test"
+          "text": "RAT"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "A known environment (white-box) test involves providing extensive information, as described in this scenario. A known environment test could be internal or external. This scenario describes the opposite of an unknown environment (black-box) test, which would involve zero knowledge. Finally, threat test is not a term used in penetration testing. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -5134,23 +5134,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bluejacking"
+          "text": "Passive reconnaissance"
         },
         {
           "id": "b",
-          "text": "Bluesnarfing"
+          "text": "A directory traversal attack"
         },
         {
           "id": "c",
-          "text": "Evil twin"
+          "text": "Using people skills to obtain proprietary information"
         },
         {
           "id": "d",
-          "text": "RAT"
+          "text": "Bluesnarfing"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Bluesnarfing involves accessing data from a Bluetooth device when it is in range. Bluejacking involves sending unsolicited messages to Bluetooth devices when they are in range. Evil twin attacks use a rogue access point whose name is similar or identical to that of a legitimate access point. A RAT is a remote-access Trojan, and nothing in this scenario points to a RAT being the cause of the stolen data. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -5168,11 +5168,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Low ports should not be open to the Internet."
+          "text": "Telnet is an insecure protocol."
         },
         {
           "id": "b",
-          "text": "Telnet is an insecure protocol."
+          "text": "Low ports should not be open to the Internet."
         },
         {
           "id": "c",
@@ -5184,7 +5184,7 @@
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "TCP port 23 is typically associated with Telnet, an unencrypted remote shell protocol. Since Telnet sends its authentication and other traffic in the clear (clear/plain text), it should not be used, and Sakis should identify this as a configuration issue involving an insecure protocol. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -5202,23 +5202,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A Trojan attack"
+          "text": "Domain hijacking"
         },
         {
           "id": "b",
-          "text": "A privilege escalation attack"
-        },
-        {
-          "id": "c",
           "text": "A denial-of-service attack"
         },
         {
+          "id": "c",
+          "text": "A privilege escalation attack"
+        },
+        {
           "id": "d",
-          "text": "A swapfile attack"
+          "text": "Script-kiddie"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Privilege escalation attacks focus on gaining additional privileges. In this case, Kimon used physical access to the system to modify it, allowing him to then conduct a privilege escalation \nattack as an unprivileged user. A Trojan would have required a file to act like it was desirable, a denial-of-service attack would have prevented access to a system or service, and swapfiles (or pagefiles) are drive space used to contain the contents of memory when memory runs low. Swapfiles may contain sensitive data, but the term swapfile attack is not commonly used. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -5236,7 +5236,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Mapping"
+          "text": "Worm"
         },
         {
           "id": "b",
@@ -5244,11 +5244,11 @@
         },
         {
           "id": "c",
-          "text": "Fingerprinting"
+          "text": "Pass the hash"
         },
         {
           "id": "d",
-          "text": "Aggregation"
+          "text": "Trojan horse"
         }
       ],
       "correct": [
@@ -5270,23 +5270,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Exploitation"
-        },
-        {
-          "id": "b",
-          "text": "Establishing persistence"
-        },
-        {
-          "id": "c",
           "text": "Reconnaissance"
         },
         {
+          "id": "b",
+          "text": "Tailgating"
+        },
+        {
+          "id": "c",
+          "text": "Dictionary attack"
+        },
+        {
           "id": "d",
-          "text": "Lateral movement"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
       "explanation": "The reconnaissance phase of a penetration test involves gathering information about the target, including domain information, system information, and details about employees like phone numbers, names, and email addresses. (Adapted from anaxkgs-security, MIT License.)",
       "docs": [
@@ -5304,23 +5304,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Impersonation"
+          "text": "Improper or weak patch management for the operating systems"
         },
         {
           "id": "b",
-          "text": "Whaling"
+          "text": "Telnet is an insecure protocol."
         },
         {
           "id": "c",
-          "text": "A watering hole attack"
+          "text": "Impersonation"
         },
         {
           "id": "d",
-          "text": "Prepending"
+          "text": "SQL injection"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Mikaela has impersonated an actual employee of the delivery service to gain access to the company. Company uniforms are a very useful element for in-person social engineering. Whaling is a type of phishing attack aimed at leaders in an organization. A watering hole attack deploys malware or other attack tools at a site or sites that a target group frequently uses. Prepending is vaguely defined by the Security+ exam but can mean a number of things. When you see prepending on the exam, it should normally mean \u201cadding something to the front of text.\u201d (Adapted from anaxkgs-security, MIT License.)",
       "docs": [

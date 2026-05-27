@@ -63,142 +63,6 @@
   ],
   "questions": [
     {
-      "id": "sc9-q001",
-      "domain": "security-concepts",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Security, Compliance, and Identity Fundamentals and reviewing Describe security, compliance concepts. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "SC-900 study guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use SC-900 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "SC-900 study guide",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900"
-        }
-      ]
-    },
-    {
-      "id": "sc9-q002",
-      "domain": "entra",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Security, Compliance, and Identity Fundamentals and reviewing Describe Microsoft Entra capabilities. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Microsoft Entra ID"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Microsoft Entra ID and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
-        }
-      ]
-    },
-    {
-      "id": "sc9-q003",
-      "domain": "defender",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Security, Compliance, and Identity Fundamentals and reviewing Describe Microsoft security solutions. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Microsoft Defender XDR"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Microsoft Defender XDR and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Microsoft Defender XDR",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender"
-        }
-      ]
-    },
-    {
-      "id": "sc9-q004",
-      "domain": "compliance",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Security, Compliance, and Identity Fundamentals and reviewing Describe compliance capabilities. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Microsoft Purview"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Microsoft Purview and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Microsoft Purview",
-          "url": "https://learn.microsoft.com/en-us/purview/purview"
-        }
-      ]
-    },
-    {
       "id": "sc9-q005",
       "domain": "security-concepts",
       "type": "multiple-choice",
@@ -206,23 +70,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Disable logging (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Grant minimum permissions required"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Zero Trust assumes breach and verifies every request.",
       "docs": [
@@ -240,23 +104,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Layered controls across identity, network, data"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "b",
-          "text": "Single firewall only"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "c",
-          "text": "Antivirus alone"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "SC-900 study guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Layers reduce single points of failure.",
       "docs": [
@@ -274,23 +138,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Grant minimum permissions required"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "b",
-          "text": "Everyone admin"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "c",
-          "text": "Shared accounts"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "d",
-          "text": "No reviews"
+          "text": "SC-900 study guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Least privilege limits abuse impact.",
       "docs": [
@@ -312,15 +176,15 @@
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Disable logging (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Grant minimum permissions required"
         }
       ],
       "correct": [
@@ -342,23 +206,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Disable logging (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Zero Trust assumes breach and verifies every request.",
       "docs": [
@@ -376,23 +240,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "SC-900 study guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Zero Trust assumes breach and verifies every request.",
       "docs": [
@@ -410,23 +274,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Layered controls across identity, network, data"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "b",
-          "text": "Single firewall only"
+          "text": "Hope (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Antivirus alone"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Layered controls across identity, network, data"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Layers reduce single points of failure.",
       "docs": [
@@ -444,23 +308,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Layered controls across identity, network, data"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "b",
-          "text": "Single firewall only"
+          "text": "Hope (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Antivirus alone"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Layered controls across identity, network, data"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Layers reduce single points of failure.",
       "docs": [
@@ -478,23 +342,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Layered controls across identity, network, data"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "b",
-          "text": "Single firewall only"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "c",
-          "text": "Antivirus alone"
+          "text": "SC-900 study guide"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Layered controls across identity, network, data"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Layers reduce single points of failure.",
       "docs": [
@@ -512,23 +376,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Grant minimum permissions required"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Everyone admin"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "c",
-          "text": "Shared accounts"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "d",
-          "text": "No reviews"
+          "text": "SC-900 study guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Least privilege limits abuse impact.",
       "docs": [
@@ -546,23 +410,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Grant minimum permissions required"
+          "text": "SC-900 study guide"
         },
         {
           "id": "b",
-          "text": "Everyone admin"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "c",
-          "text": "Shared accounts"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "d",
-          "text": "No reviews"
+          "text": "Always authenticate and authorize"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Least privilege limits abuse impact.",
       "docs": [
@@ -580,23 +444,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Grant minimum permissions required"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Everyone admin"
+          "text": "SC-900 study guide"
         },
         {
           "id": "c",
-          "text": "Shared accounts"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "d",
-          "text": "No reviews"
+          "text": "Always authenticate and authorize"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Least privilege limits abuse impact.",
       "docs": [
@@ -614,23 +478,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Disable logging (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Always authenticate and authorize"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Zero Trust assumes breach and verifies every request.",
       "docs": [
@@ -648,23 +512,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Layered controls across identity, network, data"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "b",
-          "text": "Single firewall only"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "c",
-          "text": "Antivirus alone"
+          "text": "Hope (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Layered controls across identity, network, data"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Layers reduce single points of failure.",
       "docs": [
@@ -686,15 +550,15 @@
         },
         {
           "id": "b",
-          "text": "Everyone admin"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "c",
-          "text": "Shared accounts"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "d",
-          "text": "No reviews"
+          "text": "SC-900 study guide"
         }
       ],
       "correct": [
@@ -716,23 +580,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Always authenticate and authorize"
+          "text": "Layered controls across identity, network, data"
         },
         {
           "id": "b",
-          "text": "Trust intranet perimeter only"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "c",
-          "text": "Shared passwords"
+          "text": "Grant minimum permissions required"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "SC-900 study guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Zero Trust assumes breach and verifies every request.",
       "docs": [
@@ -754,15 +618,15 @@
         },
         {
           "id": "b",
-          "text": "Single firewall only"
+          "text": "Always authenticate and authorize"
         },
         {
           "id": "c",
-          "text": "Antivirus alone"
+          "text": "Hope (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Grant minimum permissions required"
         }
       ],
       "correct": [
@@ -784,23 +648,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "SNMP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Entra ID provides SSO and identity governance.",
       "docs": [
@@ -818,23 +682,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra SSPR policies"
+          "text": "No MFA"
         },
         {
           "id": "b",
-          "text": "Email passwords"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "Sticky notes"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "Entra B2B collaboration"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SSPR reduces helpdesk load.",
       "docs": [
@@ -852,15 +716,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra B2B collaboration"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Share one password"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "c",
-          "text": "Disable audit"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "d",
@@ -868,7 +732,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "B2B invites external users safely.",
       "docs": [
@@ -886,23 +750,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Entra B2B collaboration"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Entra ID provides SSO and identity governance.",
       "docs": [
@@ -920,23 +784,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Entra SSPR policies"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Entra ID provides SSO and identity governance.",
       "docs": [
@@ -954,23 +818,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Microsoft Entra ID"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Entra ID provides SSO and identity governance.",
       "docs": [
@@ -988,15 +852,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra SSPR policies"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Email passwords"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "c",
-          "text": "Sticky notes"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "d",
@@ -1004,7 +868,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SSPR reduces helpdesk load.",
       "docs": [
@@ -1026,11 +890,11 @@
         },
         {
           "id": "b",
-          "text": "Email passwords"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "Sticky notes"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "d",
@@ -1056,15 +920,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra SSPR policies"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Email passwords"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "Sticky notes"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "d",
@@ -1072,7 +936,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SSPR reduces helpdesk load.",
       "docs": [
@@ -1090,23 +954,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra B2B collaboration"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Share one password"
+          "text": "Public VPN"
         },
         {
           "id": "c",
-          "text": "Disable audit"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "d",
-          "text": "Public VPN"
+          "text": "Entra B2B collaboration"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "B2B invites external users safely.",
       "docs": [
@@ -1124,23 +988,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra B2B collaboration"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Share one password"
+          "text": "Public VPN"
         },
         {
           "id": "c",
-          "text": "Disable audit"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "d",
-          "text": "Public VPN"
+          "text": "Entra SSPR policies"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "B2B invites external users safely.",
       "docs": [
@@ -1158,23 +1022,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra B2B collaboration"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Share one password"
+          "text": "Public VPN"
         },
         {
           "id": "c",
-          "text": "Disable audit"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "d",
-          "text": "Public VPN"
+          "text": "Entra B2B collaboration"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "B2B invites external users safely.",
       "docs": [
@@ -1192,23 +1056,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Entra B2B collaboration"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Entra ID provides SSO and identity governance.",
       "docs": [
@@ -1230,11 +1094,11 @@
         },
         {
           "id": "b",
-          "text": "Email passwords"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "c",
-          "text": "Sticky notes"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "d",
@@ -1260,23 +1124,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra B2B collaboration"
+          "text": "Public VPN"
         },
         {
           "id": "b",
-          "text": "Share one password"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "Disable audit"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "d",
-          "text": "Public VPN"
+          "text": "Entra B2B collaboration"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "B2B invites external users safely.",
       "docs": [
@@ -1294,23 +1158,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Entra SSPR policies"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Entra ID provides SSO and identity governance.",
       "docs": [
@@ -1332,15 +1196,15 @@
         },
         {
           "id": "b",
-          "text": "Email passwords"
+          "text": "No MFA"
         },
         {
           "id": "c",
-          "text": "Sticky notes"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "Microsoft Entra ID"
         }
       ],
       "correct": [
@@ -1362,23 +1226,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Entra B2B collaboration"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "b",
-          "text": "Share one password"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "c",
-          "text": "Disable audit"
+          "text": "Public VPN"
         },
         {
           "id": "d",
-          "text": "Public VPN"
+          "text": "Microsoft Entra ID"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "B2B invites external users safely.",
       "docs": [
@@ -1396,23 +1260,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Local SAM only"
+          "text": "Entra SSPR policies"
         },
         {
           "id": "c",
-          "text": "FTP auth"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "d",
-          "text": "SNMP"
+          "text": "Entra B2B collaboration"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Entra ID provides SSO and identity governance.",
       "docs": [
@@ -1434,15 +1298,15 @@
         },
         {
           "id": "b",
-          "text": "Email passwords"
+          "text": "No MFA"
         },
         {
           "id": "c",
-          "text": "Sticky notes"
+          "text": "Entra B2B collaboration"
         },
         {
           "id": "d",
-          "text": "No MFA"
+          "text": "Microsoft Entra ID"
         }
       ],
       "correct": [
@@ -1468,15 +1332,15 @@
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Microsoft Defender for Office 365"
         }
       ],
       "correct": [
@@ -1502,15 +1366,15 @@
         },
         {
           "id": "b",
-          "text": "No sensors"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Ping only (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1536,15 +1400,15 @@
         },
         {
           "id": "b",
-          "text": "Allow all attachments"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "c",
-          "text": "No filtering"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1566,23 +1430,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Disable updates"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Microsoft Defender XDR"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Defender XDR correlates alerts across workloads.",
       "docs": [
@@ -1600,15 +1464,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "d",
@@ -1616,7 +1480,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Defender XDR correlates alerts across workloads.",
       "docs": [
@@ -1634,23 +1498,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Microsoft Defender XDR"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Defender XDR correlates alerts across workloads.",
       "docs": [
@@ -1668,23 +1532,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Endpoint"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No sensors"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Microsoft Defender for Endpoint"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
@@ -1706,15 +1570,15 @@
         },
         {
           "id": "b",
-          "text": "No sensors"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Ping only (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1736,23 +1600,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Endpoint"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No sensors"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Microsoft Defender for Endpoint"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
@@ -1770,23 +1634,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Office 365"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Allow all attachments"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "c",
-          "text": "No filtering"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Microsoft Defender for Office 365"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
@@ -1804,23 +1668,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Office 365"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Allow all attachments"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No filtering"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Microsoft Defender for Office 365"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
@@ -1842,15 +1706,15 @@
         },
         {
           "id": "b",
-          "text": "Allow all attachments"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "c",
-          "text": "No filtering"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1872,23 +1736,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Disable updates"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Microsoft Defender for Office 365"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Defender XDR correlates alerts across workloads.",
       "docs": [
@@ -1910,15 +1774,15 @@
         },
         {
           "id": "b",
-          "text": "No sensors"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Microsoft Defender XDR"
         }
       ],
       "correct": [
@@ -1944,15 +1808,15 @@
         },
         {
           "id": "b",
-          "text": "Allow all attachments"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No filtering"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Microsoft Defender XDR"
         }
       ],
       "correct": [
@@ -1978,11 +1842,11 @@
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "d",
@@ -2008,23 +1872,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Endpoint"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No sensors"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Microsoft Defender for Endpoint"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
@@ -2042,23 +1906,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Office 365"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "b",
-          "text": "Allow all attachments"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "c",
-          "text": "No filtering"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Microsoft Defender for Endpoint"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
@@ -2076,23 +1940,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender XDR"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Disable updates"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Microsoft Defender for Endpoint"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Defender XDR correlates alerts across workloads.",
       "docs": [
@@ -2110,23 +1974,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Endpoint"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No sensors"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Microsoft Defender for Endpoint"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Defender for Endpoint detects threats on devices.",
       "docs": [
@@ -2144,23 +2008,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Office 365"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Allow all attachments"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "c",
-          "text": "No filtering"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Microsoft Defender for Office 365"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Defender for Office 365 filters mail threats.",
       "docs": [
@@ -2182,11 +2046,11 @@
         },
         {
           "id": "b",
-          "text": "Antivirus only 1990s"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "Microsoft Defender for Endpoint"
         },
         {
           "id": "d",
@@ -2216,15 +2080,15 @@
         },
         {
           "id": "b",
-          "text": "No sensors"
+          "text": "Microsoft Defender for Office 365"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Microsoft Defender XDR"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Ping only (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2246,23 +2110,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview"
-        },
-        {
-          "id": "b",
-          "text": "Shadow IT spreadsheets"
-        },
-        {
-          "id": "c",
           "text": "Public shares"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Microsoft Purview"
+        },
+        {
+          "id": "c",
           "text": "No classification"
+        },
+        {
+          "id": "d",
+          "text": "Microsoft Purview retention policies"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Purview discovers and governs data estate.",
       "docs": [
@@ -2280,23 +2144,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview retention policies"
-        },
-        {
-          "id": "b",
-          "text": "Delete all mail"
-        },
-        {
-          "id": "c",
           "text": "No legal hold"
         },
         {
+          "id": "b",
+          "text": "USB archive (not recommended for production workloads)"
+        },
+        {
+          "id": "c",
+          "text": "Microsoft Purview"
+        },
+        {
           "id": "d",
-          "text": "USB archive"
+          "text": "Microsoft Purview retention policies"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Retention preserves data per policy.",
       "docs": [
@@ -2314,15 +2178,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview"
+          "text": "Public shares"
         },
         {
           "id": "b",
-          "text": "Shadow IT spreadsheets"
+          "text": "Microsoft Purview retention policies"
         },
         {
           "id": "c",
-          "text": "Public shares"
+          "text": "Microsoft Purview"
         },
         {
           "id": "d",
@@ -2330,7 +2194,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Purview discovers and governs data estate.",
       "docs": [
@@ -2352,11 +2216,11 @@
         },
         {
           "id": "b",
-          "text": "Shadow IT spreadsheets"
+          "text": "Public shares"
         },
         {
           "id": "c",
-          "text": "Public shares"
+          "text": "Microsoft Purview retention policies"
         },
         {
           "id": "d",
@@ -2382,23 +2246,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview"
+          "text": "Microsoft Purview retention policies"
         },
         {
           "id": "b",
-          "text": "Shadow IT spreadsheets"
+          "text": "No classification"
         },
         {
           "id": "c",
-          "text": "Public shares"
+          "text": "Microsoft Purview"
         },
         {
           "id": "d",
-          "text": "No classification"
+          "text": "Public shares"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Purview discovers and governs data estate.",
       "docs": [
@@ -2416,23 +2280,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview retention policies"
+          "text": "Microsoft Purview"
         },
         {
           "id": "b",
-          "text": "Delete all mail"
-        },
-        {
-          "id": "c",
           "text": "No legal hold"
         },
         {
+          "id": "c",
+          "text": "USB archive (not recommended for production workloads)"
+        },
+        {
           "id": "d",
-          "text": "USB archive"
+          "text": "Microsoft Purview retention policies"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Retention preserves data per policy.",
       "docs": [
@@ -2450,11 +2314,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview retention policies"
+          "text": "Microsoft Purview"
         },
         {
           "id": "b",
-          "text": "Delete all mail"
+          "text": "USB archive (not recommended for production workloads)"
         },
         {
           "id": "c",
@@ -2462,11 +2326,11 @@
         },
         {
           "id": "d",
-          "text": "USB archive"
+          "text": "Microsoft Purview retention policies"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Retention preserves data per policy.",
       "docs": [
@@ -2484,23 +2348,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Purview retention policies"
+          "text": "Microsoft Purview"
         },
         {
           "id": "b",
-          "text": "Delete all mail"
+          "text": "USB archive (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No legal hold"
+          "text": "Microsoft Purview retention policies"
         },
         {
           "id": "d",
-          "text": "USB archive"
+          "text": "No legal hold"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Retention preserves data per policy.",
       "docs": [

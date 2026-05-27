@@ -63,142 +63,6 @@
   ],
   "questions": [
     {
-      "id": "cdl-q001",
-      "domain": "digital-transformation",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Cloud Digital Leader and reviewing Digital transformation with Google Cloud. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Digital Leader guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Cloud Digital Leader guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Cloud Digital Leader guide",
-          "url": "https://cloud.google.com/learn/certification/guides/cloud-digital-leader"
-        }
-      ]
-    },
-    {
-      "id": "cdl-q002",
-      "domain": "innovating",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Cloud Digital Leader and reviewing Innovating with data and Google Cloud. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "BigQuery overview"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use BigQuery overview and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "BigQuery overview",
-          "url": "https://cloud.google.com/bigquery/docs/introduction"
-        }
-      ]
-    },
-    {
-      "id": "cdl-q003",
-      "domain": "infrastructure",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Cloud Digital Leader and reviewing Infrastructure and application modernization. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Compute Engine"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Compute Engine and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Compute Engine",
-          "url": "https://cloud.google.com/compute/docs"
-        }
-      ]
-    },
-    {
-      "id": "cdl-q004",
-      "domain": "security-ops",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Cloud Digital Leader and reviewing Understanding Google Cloud security and operations. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Security overview"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Security overview and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Security overview",
-          "url": "https://cloud.google.com/security"
-        }
-      ]
-    },
-    {
       "id": "cdl-q005",
       "domain": "digital-transformation",
       "type": "multiple-choice",
@@ -206,23 +70,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Elastic scale and innovation velocity"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "b",
-          "text": "Fixed mainframe only forever"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "c",
-          "text": "No internet"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Operational expenditure with usage-based billing"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud enables faster experimentation.",
       "docs": [
@@ -240,23 +104,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Geographically isolated regions with zones"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "b",
-          "text": "Single laptop datacenter"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "c",
-          "text": "FTP only"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "d",
-          "text": "SNMP hub"
+          "text": "SNMP hub (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Regions provide disaster isolation.",
       "docs": [
@@ -274,23 +138,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Operational expenditure with usage-based billing"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "b",
-          "text": "Only CapEx"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "c",
-          "text": "No invoices"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "d",
-          "text": "Free always"
+          "text": "Elastic scale and innovation velocity"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud shifts spending models.",
       "docs": [
@@ -312,15 +176,15 @@
         },
         {
           "id": "b",
-          "text": "Keep legacy only"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "c",
-          "text": "No strategy"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "d",
-          "text": "Ignore users"
+          "text": "Elastic scale and innovation velocity"
         }
       ],
       "correct": [
@@ -342,23 +206,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Elastic scale and innovation velocity"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "b",
-          "text": "Fixed mainframe only forever"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "c",
-          "text": "No internet"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Geographically isolated regions with zones"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud enables faster experimentation.",
       "docs": [
@@ -376,23 +240,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Elastic scale and innovation velocity"
+          "text": "Cloud Digital Leader guide"
         },
         {
           "id": "b",
-          "text": "Fixed mainframe only forever"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "c",
-          "text": "No internet"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Geographically isolated regions with zones"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cloud enables faster experimentation.",
       "docs": [
@@ -410,23 +274,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Elastic scale and innovation velocity"
+          "text": "Ignore SLAs (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Fixed mainframe only forever"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "c",
-          "text": "No internet"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Elastic scale and innovation velocity"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud enables faster experimentation.",
       "docs": [
@@ -448,15 +312,15 @@
         },
         {
           "id": "b",
-          "text": "Single laptop datacenter"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "c",
-          "text": "FTP only"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "d",
-          "text": "SNMP hub"
+          "text": "Modernize apps and data on cloud foundations"
         }
       ],
       "correct": [
@@ -478,23 +342,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Geographically isolated regions with zones"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "b",
-          "text": "Single laptop datacenter"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "c",
-          "text": "FTP only"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "d",
-          "text": "SNMP hub"
+          "text": "Operational expenditure with usage-based billing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Regions provide disaster isolation.",
       "docs": [
@@ -516,15 +380,15 @@
         },
         {
           "id": "b",
-          "text": "Single laptop datacenter"
+          "text": "SNMP hub (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP only"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "d",
-          "text": "SNMP hub"
+          "text": "Operational expenditure with usage-based billing"
         }
       ],
       "correct": [
@@ -546,23 +410,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Operational expenditure with usage-based billing"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "b",
-          "text": "Only CapEx"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "c",
-          "text": "No invoices"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "d",
-          "text": "Free always"
+          "text": "Cloud Digital Leader guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud shifts spending models.",
       "docs": [
@@ -580,23 +444,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Operational expenditure with usage-based billing"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "b",
-          "text": "Only CapEx"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "c",
-          "text": "No invoices"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "d",
-          "text": "Free always"
+          "text": "Modernize apps and data on cloud foundations"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud shifts spending models.",
       "docs": [
@@ -614,23 +478,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Operational expenditure with usage-based billing"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "b",
-          "text": "Only CapEx"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "c",
-          "text": "No invoices"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "d",
-          "text": "Free always"
+          "text": "Elastic scale and innovation velocity"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud shifts spending models.",
       "docs": [
@@ -648,23 +512,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Modernize apps and data on cloud foundations"
+          "text": "Cloud Digital Leader guide"
         },
         {
           "id": "b",
-          "text": "Keep legacy only"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "c",
-          "text": "No strategy"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "d",
-          "text": "Ignore users"
+          "text": "Geographically isolated regions with zones"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Transformation uses cloud as enabler.",
       "docs": [
@@ -686,15 +550,15 @@
         },
         {
           "id": "b",
-          "text": "Keep legacy only"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "c",
-          "text": "No strategy"
+          "text": "Ignore users (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore users"
+          "text": "Geographically isolated regions with zones"
         }
       ],
       "correct": [
@@ -716,23 +580,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Modernize apps and data on cloud foundations"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "b",
-          "text": "Keep legacy only"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "c",
-          "text": "No strategy"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "d",
-          "text": "Ignore users"
+          "text": "Modernize apps and data on cloud foundations"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Transformation uses cloud as enabler.",
       "docs": [
@@ -754,15 +618,15 @@
         },
         {
           "id": "b",
-          "text": "Fixed mainframe only forever"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "c",
-          "text": "No internet"
+          "text": "Ignore SLAs (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Geographically isolated regions with zones"
         }
       ],
       "correct": [
@@ -788,15 +652,15 @@
         },
         {
           "id": "b",
-          "text": "Single laptop datacenter"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "c",
-          "text": "FTP only"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "d",
-          "text": "SNMP hub"
+          "text": "Operational expenditure with usage-based billing"
         }
       ],
       "correct": [
@@ -818,23 +682,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Operational expenditure with usage-based billing"
+          "text": "Geographically isolated regions with zones"
         },
         {
           "id": "b",
-          "text": "Only CapEx"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "c",
-          "text": "No invoices"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "d",
-          "text": "Free always"
+          "text": "Operational expenditure with usage-based billing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud shifts spending models.",
       "docs": [
@@ -852,23 +716,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Modernize apps and data on cloud foundations"
+          "text": "Operational expenditure with usage-based billing"
         },
         {
           "id": "b",
-          "text": "Keep legacy only"
+          "text": "Elastic scale and innovation velocity"
         },
         {
           "id": "c",
-          "text": "No strategy"
+          "text": "Modernize apps and data on cloud foundations"
         },
         {
           "id": "d",
-          "text": "Ignore users"
+          "text": "Geographically isolated regions with zones"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Transformation uses cloud as enabler.",
       "docs": [
@@ -886,23 +750,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery serverless warehouse"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "b",
-          "text": "Desktop Excel cluster"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "c",
-          "text": "Email CSV only"
+          "text": "Local USB"
         },
         {
           "id": "d",
-          "text": "Local USB"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "BigQuery separates storage and compute.",
       "docs": [
@@ -920,23 +784,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vertex AI"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "b",
-          "text": "Notepad regression"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "BigQuery overview"
         },
         {
           "id": "d",
-          "text": "FTP weights"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Vertex AI unifies ML workflows.",
       "docs": [
@@ -954,23 +818,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub with Dataflow"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "b",
-          "text": "Batch USB weekly"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Streaming enables timely insights.",
       "docs": [
@@ -988,23 +852,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery serverless warehouse"
+          "text": "Local USB"
         },
         {
           "id": "b",
-          "text": "Desktop Excel cluster"
+          "text": "Vertex AI"
         },
         {
           "id": "c",
-          "text": "Email CSV only"
+          "text": "BigQuery overview"
         },
         {
           "id": "d",
-          "text": "Local USB"
+          "text": "BigQuery serverless warehouse"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "BigQuery separates storage and compute.",
       "docs": [
@@ -1022,23 +886,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery serverless warehouse"
+          "text": "Local USB"
         },
         {
           "id": "b",
-          "text": "Desktop Excel cluster"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "c",
-          "text": "Email CSV only"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "d",
-          "text": "Local USB"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "BigQuery separates storage and compute.",
       "docs": [
@@ -1056,23 +920,23 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery serverless warehouse"
+          "text": "Local USB"
         },
         {
           "id": "b",
-          "text": "Desktop Excel cluster"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "c",
-          "text": "Email CSV only"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "d",
-          "text": "Local USB"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "BigQuery separates storage and compute.",
       "docs": [
@@ -1090,23 +954,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vertex AI"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "b",
-          "text": "Notepad regression"
+          "text": "FTP weights"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "Vertex AI"
         },
         {
           "id": "d",
-          "text": "FTP weights"
+          "text": "BigQuery serverless warehouse"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Vertex AI unifies ML workflows.",
       "docs": [
@@ -1124,23 +988,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vertex AI"
+          "text": "FTP weights"
         },
         {
           "id": "b",
-          "text": "Notepad regression"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "Vertex AI"
         },
         {
           "id": "d",
-          "text": "FTP weights"
+          "text": "BigQuery serverless warehouse"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Vertex AI unifies ML workflows.",
       "docs": [
@@ -1158,23 +1022,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vertex AI"
+          "text": "BigQuery overview"
         },
         {
           "id": "b",
-          "text": "Notepad regression"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "d",
-          "text": "FTP weights"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Vertex AI unifies ML workflows.",
       "docs": [
@@ -1192,23 +1056,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub with Dataflow"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "b",
-          "text": "Batch USB weekly"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Vertex AI"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Streaming enables timely insights.",
       "docs": [
@@ -1226,23 +1090,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub with Dataflow"
+          "text": "BigQuery overview"
         },
         {
           "id": "b",
-          "text": "Batch USB weekly"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Streaming enables timely insights.",
       "docs": [
@@ -1264,15 +1128,15 @@
         },
         {
           "id": "b",
-          "text": "Batch USB weekly"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "BigQuery overview"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
@@ -1294,15 +1158,15 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery serverless warehouse"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "b",
-          "text": "Desktop Excel cluster"
+          "text": "Vertex AI"
         },
         {
           "id": "c",
-          "text": "Email CSV only"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "d",
@@ -1310,7 +1174,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "BigQuery separates storage and compute.",
       "docs": [
@@ -1332,15 +1196,15 @@
         },
         {
           "id": "b",
-          "text": "Notepad regression"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "FTP weights"
         },
         {
           "id": "d",
-          "text": "FTP weights"
+          "text": "Pub/Sub with Dataflow"
         }
       ],
       "correct": [
@@ -1366,15 +1230,15 @@
         },
         {
           "id": "b",
-          "text": "Batch USB weekly"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Vertex AI"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1400,15 +1264,15 @@
         },
         {
           "id": "b",
-          "text": "Desktop Excel cluster"
+          "text": "BigQuery overview"
         },
         {
           "id": "c",
-          "text": "Email CSV only"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "d",
-          "text": "Local USB"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
@@ -1430,15 +1294,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Vertex AI"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "b",
-          "text": "Notepad regression"
+          "text": "Vertex AI"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "d",
@@ -1446,7 +1310,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Vertex AI unifies ML workflows.",
       "docs": [
@@ -1464,23 +1328,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/Sub with Dataflow"
+          "text": "Vertex AI"
         },
         {
           "id": "b",
-          "text": "Batch USB weekly"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Streaming enables timely insights.",
       "docs": [
@@ -1498,15 +1362,15 @@
       "options": [
         {
           "id": "a",
-          "text": "BigQuery serverless warehouse"
+          "text": "Pub/Sub with Dataflow"
         },
         {
           "id": "b",
-          "text": "Desktop Excel cluster"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "c",
-          "text": "Email CSV only"
+          "text": "Vertex AI"
         },
         {
           "id": "d",
@@ -1514,7 +1378,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "BigQuery separates storage and compute.",
       "docs": [
@@ -1532,23 +1396,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vertex AI"
+          "text": "BigQuery overview"
         },
         {
           "id": "b",
-          "text": "Notepad regression"
+          "text": "BigQuery serverless warehouse"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "FTP weights"
         },
         {
           "id": "d",
-          "text": "FTP weights"
+          "text": "Vertex AI"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Vertex AI unifies ML workflows.",
       "docs": [
@@ -1566,23 +1430,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute Engine"
+          "text": "ICMP only"
         },
         {
           "id": "b",
-          "text": "Tape backup only"
+          "text": "Compute Engine"
         },
         {
           "id": "c",
-          "text": "Dial-up"
+          "text": "Cloud Run"
         },
         {
           "id": "d",
-          "text": "ICMP only"
+          "text": "Google Kubernetes Engine"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "GCE provides IaaS VMs.",
       "docs": [
@@ -1600,23 +1464,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Kubernetes Engine"
+          "text": "Manual SSH"
         },
         {
           "id": "b",
-          "text": "Single VM forever"
+          "text": "Compute Engine"
         },
         {
           "id": "c",
-          "text": "No orchestration"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "d",
-          "text": "Manual SSH"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GKE manages Kubernetes.",
       "docs": [
@@ -1638,15 +1502,15 @@
         },
         {
           "id": "b",
-          "text": "Always-on VM"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Ping"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Compute Engine"
         }
       ],
       "correct": [
@@ -1668,15 +1532,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute Engine"
+          "text": "Cloud Run"
         },
         {
           "id": "b",
-          "text": "Tape backup only"
+          "text": "Compute Engine"
         },
         {
           "id": "c",
-          "text": "Dial-up"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "d",
@@ -1684,7 +1548,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "GCE provides IaaS VMs.",
       "docs": [
@@ -1702,15 +1566,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute Engine"
+          "text": "Cloud Run"
         },
         {
           "id": "b",
-          "text": "Tape backup only"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "c",
-          "text": "Dial-up"
+          "text": "Compute Engine"
         },
         {
           "id": "d",
@@ -1718,7 +1582,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GCE provides IaaS VMs.",
       "docs": [
@@ -1736,23 +1600,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute Engine"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "b",
-          "text": "Tape backup only"
+          "text": "Cloud Run"
         },
         {
           "id": "c",
-          "text": "Dial-up"
+          "text": "ICMP only"
         },
         {
           "id": "d",
-          "text": "ICMP only"
+          "text": "Compute Engine"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "GCE provides IaaS VMs.",
       "docs": [
@@ -1770,23 +1634,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Kubernetes Engine"
+          "text": "Manual SSH"
         },
         {
           "id": "b",
-          "text": "Single VM forever"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "c",
-          "text": "No orchestration"
+          "text": "Compute Engine"
         },
         {
           "id": "d",
-          "text": "Manual SSH"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "GKE manages Kubernetes.",
       "docs": [
@@ -1804,23 +1668,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Kubernetes Engine"
+          "text": "Manual SSH"
         },
         {
           "id": "b",
-          "text": "Single VM forever"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "c",
-          "text": "No orchestration"
+          "text": "Cloud Run"
         },
         {
           "id": "d",
-          "text": "Manual SSH"
+          "text": "Compute Engine"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "GKE manages Kubernetes.",
       "docs": [
@@ -1842,11 +1706,11 @@
         },
         {
           "id": "b",
-          "text": "Single VM forever"
+          "text": "Compute Engine"
         },
         {
           "id": "c",
-          "text": "No orchestration"
+          "text": "Cloud Run"
         },
         {
           "id": "d",
@@ -1872,23 +1736,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Run"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "b",
-          "text": "Always-on VM"
+          "text": "Compute Engine"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Ping"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Run runs containers on demand.",
       "docs": [
@@ -1910,15 +1774,15 @@
         },
         {
           "id": "b",
-          "text": "Always-on VM"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Ping"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Compute Engine"
         }
       ],
       "correct": [
@@ -1940,23 +1804,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Run"
+          "text": "Ping"
         },
         {
           "id": "b",
-          "text": "Always-on VM"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Compute Engine"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Run runs containers on demand.",
       "docs": [
@@ -1974,15 +1838,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute Engine"
+          "text": "Cloud Run"
         },
         {
           "id": "b",
-          "text": "Tape backup only"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "c",
-          "text": "Dial-up"
+          "text": "Compute Engine"
         },
         {
           "id": "d",
@@ -1990,7 +1854,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GCE provides IaaS VMs.",
       "docs": [
@@ -2008,23 +1872,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Kubernetes Engine"
+          "text": "Compute Engine"
         },
         {
           "id": "b",
-          "text": "Single VM forever"
+          "text": "Manual SSH"
         },
         {
           "id": "c",
-          "text": "No orchestration"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "d",
-          "text": "Manual SSH"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GKE manages Kubernetes.",
       "docs": [
@@ -2042,23 +1906,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Run"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "b",
-          "text": "Always-on VM"
+          "text": "Ping"
         },
         {
           "id": "c",
-          "text": "FTP"
+          "text": "Cloud Run"
         },
         {
           "id": "d",
-          "text": "Ping"
+          "text": "Compute Engine"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cloud Run runs containers on demand.",
       "docs": [
@@ -2080,15 +1944,15 @@
         },
         {
           "id": "b",
-          "text": "Tape backup only"
+          "text": "ICMP only"
         },
         {
           "id": "c",
-          "text": "Dial-up"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "d",
-          "text": "ICMP only"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
@@ -2114,15 +1978,15 @@
         },
         {
           "id": "b",
-          "text": "Single VM forever"
+          "text": "Compute Engine"
         },
         {
           "id": "c",
-          "text": "No orchestration"
+          "text": "Manual SSH"
         },
         {
           "id": "d",
-          "text": "Manual SSH"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
@@ -2144,23 +2008,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google secures infrastructure; customers secure workloads"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "b",
-          "text": "Google patches guest OS always"
+          "text": "Google secures infrastructure; customers secure workloads"
         },
         {
           "id": "c",
-          "text": "No customer IAM"
+          "text": "Cloud KMS"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Cloud IAM"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Customers configure identity, data, apps.",
       "docs": [
@@ -2178,23 +2042,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud IAM"
+          "text": "Google secures infrastructure; customers secure workloads"
         },
         {
           "id": "b",
-          "text": "Shared root password"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "c",
-          "text": "Public admin"
+          "text": "Cloud IAM"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IAM controls who can do what.",
       "docs": [
@@ -2212,23 +2076,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring"
+          "text": "Security overview"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Cloud IAM"
         },
         {
           "id": "c",
-          "text": "Annual check"
+          "text": "Google secures infrastructure; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "Ignore alerts"
+          "text": "Cloud Monitoring"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Monitoring supports operations.",
       "docs": [
@@ -2246,23 +2110,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS"
+          "text": "Security overview"
         },
         {
           "id": "b",
-          "text": "Plaintext buckets"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "c",
-          "text": "Email keys"
+          "text": "Cloud KMS"
         },
         {
           "id": "d",
-          "text": "HTTP only"
+          "text": "Cloud IAM"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "KMS manages encryption keys.",
       "docs": [
@@ -2280,23 +2144,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google secures infrastructure; customers secure workloads"
+          "text": "Cloud IAM"
         },
         {
           "id": "b",
-          "text": "Google patches guest OS always"
+          "text": "Google secures infrastructure; customers secure workloads"
         },
         {
           "id": "c",
-          "text": "No customer IAM"
+          "text": "Security overview"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Customers configure identity, data, apps.",
       "docs": [
@@ -2318,15 +2182,15 @@
         },
         {
           "id": "b",
-          "text": "Google patches guest OS always"
+          "text": "Cloud IAM"
         },
         {
           "id": "c",
-          "text": "No customer IAM"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
@@ -2348,23 +2212,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google secures infrastructure; customers secure workloads"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "b",
-          "text": "Google patches guest OS always"
+          "text": "Cloud KMS"
         },
         {
           "id": "c",
-          "text": "No customer IAM"
+          "text": "Google secures infrastructure; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Cloud IAM"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Customers configure identity, data, apps.",
       "docs": [
@@ -2382,23 +2246,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud IAM"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "b",
-          "text": "Shared root password"
+          "text": "Cloud IAM"
         },
         {
           "id": "c",
-          "text": "Public admin"
+          "text": "Google secures infrastructure; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "Security overview"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IAM controls who can do what.",
       "docs": [
@@ -2416,23 +2280,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud IAM"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "b",
-          "text": "Shared root password"
+          "text": "Cloud KMS"
         },
         {
           "id": "c",
-          "text": "Public admin"
+          "text": "Cloud IAM"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "Google secures infrastructure; customers secure workloads"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IAM controls who can do what.",
       "docs": [
@@ -2450,23 +2314,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud IAM"
+          "text": "Security overview"
         },
         {
           "id": "b",
-          "text": "Shared root password"
+          "text": "Cloud Monitoring"
         },
         {
           "id": "c",
-          "text": "Public admin"
+          "text": "Google secures infrastructure; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "Cloud IAM"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "IAM controls who can do what.",
       "docs": [
@@ -2484,23 +2348,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Monitoring"
+          "text": "Cloud KMS"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Google secures infrastructure; customers secure workloads"
         },
         {
           "id": "c",
-          "text": "Annual check"
+          "text": "Cloud IAM"
         },
         {
           "id": "d",
-          "text": "Ignore alerts"
+          "text": "Cloud Monitoring"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Monitoring supports operations.",
       "docs": [

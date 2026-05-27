@@ -13,7 +13,8 @@ GENERIC_STEM_PATTERNS: tuple[re.Pattern[str], ...] = tuple(
         r"^A team must .+ Which option meets the requirement\?\s*$",
         r"^You are preparing for\b",
         r"^Which (TWO|THREE) official\b",
-        r"^Which source aligns with\b",
+        r"Which source aligns with\b",
+        r"Which TWO official .+ resources help you prepare\b",
         r"^During a tabletop on .+ measurable KPI\b",
         r"^An audit sampling .+ controls finds inconsistent enforcement between sites\b",
         r"\(variant \d+\)\s*\.",
@@ -91,3 +92,16 @@ def is_scenario_stem(stem: str) -> bool:
     if not any(m in text for m in narrative_markers):
         return False
     return True
+
+
+_META_PREP = re.compile(
+    r"Which source aligns with\b|"
+    r"Which TWO official .+ resources help you prepare\b|"
+    r"^You are preparing for .+ and reviewing\b",
+    re.I,
+)
+
+
+def is_meta_prep_stem(stem: str) -> bool:
+    """Trivial prep-source MCQs (obvious dump/blog distractors) — exclude from pools."""
+    return bool(_META_PREP.search((stem or "").strip()))

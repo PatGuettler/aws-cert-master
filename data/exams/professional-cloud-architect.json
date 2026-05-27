@@ -74,176 +74,6 @@
   ],
   "questions": [
     {
-      "id": "pca-q001",
-      "domain": "design-plan",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud Architect and reviewing Designing and planning a cloud solution architecture. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "PCA exam guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use PCA exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "PCA exam guide",
-          "url": "https://cloud.google.com/learn/certification/guides/cloud-architect"
-        }
-      ]
-    },
-    {
-      "id": "pca-q002",
-      "domain": "manage-provision",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud Architect and reviewing Managing and provisioning a solution infrastructure. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Terraform on Google Cloud"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Terraform on Google Cloud and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Terraform on Google Cloud",
-          "url": "https://cloud.google.com/docs/terraform"
-        }
-      ]
-    },
-    {
-      "id": "pca-q003",
-      "domain": "security-compliance",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud Architect and reviewing Designing for security and compliance. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Security foundations"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Security foundations and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Security foundations",
-          "url": "https://cloud.google.com/architecture/framework/security"
-        }
-      ]
-    },
-    {
-      "id": "pca-q004",
-      "domain": "reliability",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud Architect and reviewing Analyzing and optimizing technology and business processes. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Reliability pillar"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Reliability pillar and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Reliability pillar",
-          "url": "https://cloud.google.com/architecture/framework/reliability"
-        }
-      ]
-    },
-    {
-      "id": "pca-q005",
-      "domain": "implementation",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud Architect and reviewing Managing implementation. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Deployment Manager"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Deployment Manager and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Deployment Manager",
-          "url": "https://cloud.google.com/deployment-manager/docs"
-        }
-      ]
-    },
-    {
       "id": "pca-q006",
       "domain": "design-plan",
       "type": "multiple-choice",
@@ -251,23 +81,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow Google Cloud Architecture Framework"
+          "text": "No backups (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Skip monitoring"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "c",
-          "text": "Single zone only"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "Regional services and data locality"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Framework guides design decisions.",
       "docs": [
@@ -285,23 +115,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Regional services and data locality"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "b",
-          "text": "Random region"
+          "text": "Regional services and data locality"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "d",
-          "text": "Single laptop"
+          "text": "Single laptop (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Regions address sovereignty requirements.",
       "docs": [
@@ -323,15 +153,15 @@
         },
         {
           "id": "b",
-          "text": "Expose DB publicly"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "c",
-          "text": "RDP internet"
+          "text": "PCA exam guide"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Regional services and data locality"
         }
       ],
       "correct": [
@@ -357,15 +187,15 @@
         },
         {
           "id": "b",
-          "text": "Skip monitoring"
+          "text": "Regional services and data locality"
         },
         {
           "id": "c",
-          "text": "Single zone only"
+          "text": "PCA exam guide"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "Cloud VPN or Cloud Interconnect"
         }
       ],
       "correct": [
@@ -387,23 +217,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow Google Cloud Architecture Framework"
+          "text": "Regional services and data locality"
         },
         {
           "id": "b",
-          "text": "Skip monitoring"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "c",
-          "text": "Single zone only"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "No backups (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Framework guides design decisions.",
       "docs": [
@@ -421,23 +251,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow Google Cloud Architecture Framework"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "b",
-          "text": "Skip monitoring"
+          "text": "No backups (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Single zone only"
+          "text": "Regional services and data locality"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "Follow Google Cloud Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Framework guides design decisions.",
       "docs": [
@@ -455,23 +285,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Regional services and data locality"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "b",
-          "text": "Random region"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "PCA exam guide"
         },
         {
           "id": "d",
-          "text": "Single laptop"
+          "text": "Regional services and data locality"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Regions address sovereignty requirements.",
       "docs": [
@@ -489,23 +319,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Regional services and data locality"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "b",
-          "text": "Random region"
+          "text": "Single laptop (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Regional services and data locality"
         },
         {
           "id": "d",
-          "text": "Single laptop"
+          "text": "Follow Google Cloud Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Regions address sovereignty requirements.",
       "docs": [
@@ -523,23 +353,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Regional services and data locality"
+          "text": "Single laptop (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Random region"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Regional services and data locality"
         },
         {
           "id": "d",
-          "text": "Single laptop"
+          "text": "Follow Google Cloud Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Regions address sovereignty requirements.",
       "docs": [
@@ -557,23 +387,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud VPN or Cloud Interconnect"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "b",
-          "text": "Expose DB publicly"
+          "text": "Regional services and data locality"
         },
         {
           "id": "c",
-          "text": "RDP internet"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "PCA exam guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hybrid links connect on-prem to GCP.",
       "docs": [
@@ -595,15 +425,15 @@
         },
         {
           "id": "b",
-          "text": "Expose DB publicly"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "RDP internet"
+          "text": "Regional services and data locality"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "PCA exam guide"
         }
       ],
       "correct": [
@@ -625,23 +455,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud VPN or Cloud Interconnect"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "b",
-          "text": "Expose DB publicly"
+          "text": "Regional services and data locality"
         },
         {
           "id": "c",
-          "text": "RDP internet"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "FTP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hybrid links connect on-prem to GCP.",
       "docs": [
@@ -659,23 +489,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow Google Cloud Architecture Framework"
+          "text": "No backups (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Skip monitoring"
+          "text": "Regional services and data locality"
         },
         {
           "id": "c",
-          "text": "Single zone only"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "Cloud VPN or Cloud Interconnect"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Framework guides design decisions.",
       "docs": [
@@ -697,15 +527,15 @@
         },
         {
           "id": "b",
-          "text": "Random region"
+          "text": "Single laptop (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "d",
-          "text": "Single laptop"
+          "text": "Follow Google Cloud Architecture Framework"
         }
       ],
       "correct": [
@@ -727,23 +557,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud VPN or Cloud Interconnect"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Expose DB publicly"
+          "text": "Regional services and data locality"
         },
         {
           "id": "c",
-          "text": "RDP internet"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Follow Google Cloud Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hybrid links connect on-prem to GCP.",
       "docs": [
@@ -761,23 +591,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow Google Cloud Architecture Framework"
+          "text": "No backups (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Skip monitoring"
+          "text": "Regional services and data locality"
         },
         {
           "id": "c",
-          "text": "Single zone only"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "Follow Google Cloud Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Framework guides design decisions.",
       "docs": [
@@ -799,15 +629,15 @@
         },
         {
           "id": "b",
-          "text": "Random region"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "d",
-          "text": "Single laptop"
+          "text": "PCA exam guide"
         }
       ],
       "correct": [
@@ -833,15 +663,15 @@
         },
         {
           "id": "b",
-          "text": "Expose DB publicly"
+          "text": "Regional services and data locality"
         },
         {
           "id": "c",
-          "text": "RDP internet"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "PCA exam guide"
         }
       ],
       "correct": [
@@ -863,23 +693,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow Google Cloud Architecture Framework"
+          "text": "Regional services and data locality"
         },
         {
           "id": "b",
-          "text": "Skip monitoring"
+          "text": "No backups (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Single zone only"
+          "text": "Cloud VPN or Cloud Interconnect"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "Follow Google Cloud Architecture Framework"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Framework guides design decisions.",
       "docs": [
@@ -897,23 +727,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Regional services and data locality"
+          "text": "Follow Google Cloud Architecture Framework"
         },
         {
           "id": "b",
-          "text": "Random region"
+          "text": "Single laptop (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Regional services and data locality"
         },
         {
           "id": "d",
-          "text": "Single laptop"
+          "text": "Cloud VPN or Cloud Interconnect"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Regions address sovereignty requirements.",
       "docs": [
@@ -931,23 +761,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform or Deployment Manager"
+          "text": "USB scripts (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "Terraform or Deployment Manager"
         },
         {
           "id": "c",
-          "text": "Email configs"
+          "text": "Email configs (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "Terraform plan or Deployment Manager previews"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IaC enables repeatable environments.",
       "docs": [
@@ -969,15 +799,15 @@
         },
         {
           "id": "b",
-          "text": "Apply prod first"
+          "text": "USB apply (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No review"
+          "text": "Terraform or Deployment Manager"
         },
         {
           "id": "d",
-          "text": "USB apply"
+          "text": "No review (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1003,15 +833,15 @@
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "Email configs (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Email configs"
+          "text": "USB scripts (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "Terraform plan or Deployment Manager previews"
         }
       ],
       "correct": [
@@ -1033,23 +863,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform or Deployment Manager"
+          "text": "Email configs (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "Terraform plan or Deployment Manager previews"
         },
         {
           "id": "c",
-          "text": "Email configs"
+          "text": "Terraform or Deployment Manager"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "USB scripts (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IaC enables repeatable environments.",
       "docs": [
@@ -1067,23 +897,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform or Deployment Manager"
+          "text": "Terraform on Google Cloud"
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "Terraform or Deployment Manager"
         },
         {
           "id": "c",
-          "text": "Email configs"
+          "text": "Terraform plan or Deployment Manager previews"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "USB scripts (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IaC enables repeatable environments.",
       "docs": [
@@ -1101,23 +931,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform plan or Deployment Manager previews"
+          "text": "USB apply (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Apply prod first"
+          "text": "No review (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No review"
+          "text": "Terraform plan or Deployment Manager previews"
         },
         {
           "id": "d",
-          "text": "USB apply"
+          "text": "Terraform or Deployment Manager"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Previews reduce deployment surprises.",
       "docs": [
@@ -1135,23 +965,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform plan or Deployment Manager previews"
+          "text": "USB apply (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Apply prod first"
+          "text": "Terraform on Google Cloud"
         },
         {
           "id": "c",
-          "text": "No review"
+          "text": "Terraform plan or Deployment Manager previews"
         },
         {
           "id": "d",
-          "text": "USB apply"
+          "text": "Terraform or Deployment Manager"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Previews reduce deployment surprises.",
       "docs": [
@@ -1169,23 +999,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform plan or Deployment Manager previews"
+          "text": "USB apply (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Apply prod first"
+          "text": "Terraform plan or Deployment Manager previews"
         },
         {
           "id": "c",
-          "text": "No review"
+          "text": "No review (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "USB apply"
+          "text": "Terraform or Deployment Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Previews reduce deployment surprises.",
       "docs": [
@@ -1203,23 +1033,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform or Deployment Manager"
+          "text": "Terraform on Google Cloud"
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "Terraform plan or Deployment Manager previews"
         },
         {
           "id": "c",
-          "text": "Email configs"
+          "text": "USB scripts (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "Terraform or Deployment Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "IaC enables repeatable environments.",
       "docs": [
@@ -1241,15 +1071,15 @@
         },
         {
           "id": "b",
-          "text": "Apply prod first"
+          "text": "USB apply (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No review"
+          "text": "Terraform on Google Cloud"
         },
         {
           "id": "d",
-          "text": "USB apply"
+          "text": "Terraform or Deployment Manager"
         }
       ],
       "correct": [
@@ -1271,23 +1101,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform or Deployment Manager"
+          "text": "Terraform on Google Cloud"
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "Terraform plan or Deployment Manager previews"
         },
         {
           "id": "c",
-          "text": "Email configs"
+          "text": "Terraform or Deployment Manager"
         },
         {
           "id": "d",
-          "text": "USB scripts"
+          "text": "USB scripts (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IaC enables repeatable environments.",
       "docs": [
@@ -1309,15 +1139,15 @@
         },
         {
           "id": "b",
-          "text": "Apply prod first"
+          "text": "Terraform or Deployment Manager"
         },
         {
           "id": "c",
-          "text": "No review"
+          "text": "USB apply (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "USB apply"
+          "text": "No review (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1339,23 +1169,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform or Deployment Manager"
-        },
-        {
-          "id": "b",
           "text": "Terraform plan or Deployment Manager previews"
         },
         {
+          "id": "b",
+          "text": "Email configs (not recommended for production workloads)"
+        },
+        {
           "id": "c",
-          "text": "ClickOps only"
+          "text": "ClickOps only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Email configs"
+          "text": "Terraform or Deployment Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "IaC enables repeatable environments. Compare with Terraform plan or Deployment Manager previews: Previews reduce deployment surprises.",
       "docs": [
@@ -1377,23 +1207,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Terraform plan or Deployment Manager previews"
-        },
-        {
-          "id": "b",
           "text": "Terraform or Deployment Manager"
         },
         {
+          "id": "b",
+          "text": "No review (not recommended for production workloads)"
+        },
+        {
           "id": "c",
-          "text": "Apply prod first"
+          "text": "Terraform plan or Deployment Manager previews"
         },
         {
           "id": "d",
-          "text": "No review"
+          "text": "Apply prod first (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Previews reduce deployment surprises. Compare with Terraform or Deployment Manager: IaC enables repeatable environments.",
       "docs": [
@@ -1415,23 +1245,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS"
+          "text": "Security Command Center"
         },
         {
           "id": "b",
-          "text": "Plaintext secrets in git"
-        },
-        {
-          "id": "c",
           "text": "HTTP only"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Shared keys email"
+        },
+        {
+          "id": "d",
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS manages encryption keys.",
       "docs": [
@@ -1449,11 +1279,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Cloud KMS"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Security Command Center"
         },
         {
           "id": "c",
@@ -1461,11 +1291,11 @@
         },
         {
           "id": "d",
-          "text": "Spreadsheet"
+          "text": "Spreadsheet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SCC aggregates risk across projects.",
       "docs": [
@@ -1483,15 +1313,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS"
+          "text": "Security Command Center"
         },
         {
           "id": "b",
-          "text": "Plaintext secrets in git"
+          "text": "HTTP only"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Cloud KMS"
         },
         {
           "id": "d",
@@ -1499,7 +1329,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "KMS manages encryption keys.",
       "docs": [
@@ -1517,23 +1347,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS"
+          "text": "Shared keys email"
         },
         {
           "id": "b",
-          "text": "Plaintext secrets in git"
+          "text": "Security foundations"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Security Command Center"
         },
         {
           "id": "d",
-          "text": "Shared keys email"
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS manages encryption keys.",
       "docs": [
@@ -1555,11 +1385,11 @@
         },
         {
           "id": "b",
-          "text": "Plaintext secrets in git"
+          "text": "HTTP only"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Security Command Center"
         },
         {
           "id": "d",
@@ -1585,23 +1415,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Cloud KMS"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
-        },
-        {
-          "id": "c",
           "text": "No scanning"
         },
         {
+          "id": "c",
+          "text": "Security Command Center"
+        },
+        {
           "id": "d",
-          "text": "Spreadsheet"
+          "text": "Spreadsheet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SCC aggregates risk across projects.",
       "docs": [
@@ -1619,11 +1449,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Cloud KMS"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Security Command Center"
         },
         {
           "id": "c",
@@ -1631,11 +1461,11 @@
         },
         {
           "id": "d",
-          "text": "Spreadsheet"
+          "text": "Spreadsheet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SCC aggregates risk across projects.",
       "docs": [
@@ -1653,23 +1483,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Security foundations"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Cloud KMS"
         },
         {
           "id": "c",
-          "text": "No scanning"
+          "text": "Spreadsheet (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Spreadsheet"
+          "text": "Security Command Center"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SCC aggregates risk across projects.",
       "docs": [
@@ -1687,23 +1517,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS"
+          "text": "Security Command Center"
         },
         {
           "id": "b",
-          "text": "Plaintext secrets in git"
-        },
-        {
-          "id": "c",
           "text": "HTTP only"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Shared keys email"
+        },
+        {
+          "id": "d",
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS manages encryption keys.",
       "docs": [
@@ -1721,23 +1551,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Security foundations"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Spreadsheet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No scanning"
+          "text": "Security Command Center"
         },
         {
           "id": "d",
-          "text": "Spreadsheet"
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SCC aggregates risk across projects.",
       "docs": [
@@ -1755,15 +1585,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS"
+          "text": "Security Command Center"
         },
         {
           "id": "b",
-          "text": "Plaintext secrets in git"
+          "text": "Security foundations"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Cloud KMS"
         },
         {
           "id": "d",
@@ -1771,7 +1601,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "KMS manages encryption keys.",
       "docs": [
@@ -1793,15 +1623,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Cloud KMS"
         },
         {
           "id": "c",
-          "text": "No scanning"
+          "text": "Security foundations"
         },
         {
           "id": "d",
-          "text": "Spreadsheet"
+          "text": "Spreadsheet (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1823,23 +1653,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS"
-        },
-        {
-          "id": "b",
           "text": "Security Command Center"
         },
         {
+          "id": "b",
+          "text": "HTTP only"
+        },
+        {
           "id": "c",
-          "text": "Plaintext secrets in git"
+          "text": "Cloud KMS"
         },
         {
           "id": "d",
-          "text": "HTTP only"
+          "text": "Security foundations"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "KMS manages encryption keys. Compare with Security Command Center: SCC aggregates risk across projects.",
       "docs": [
@@ -1861,23 +1691,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
-        },
-        {
-          "id": "b",
-          "text": "Cloud KMS"
-        },
-        {
-          "id": "c",
           "text": "Ignore CVEs"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Security Command Center"
+        },
+        {
+          "id": "c",
           "text": "No scanning"
+        },
+        {
+          "id": "d",
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SCC aggregates risk across projects. Compare with Cloud KMS: KMS manages encryption keys.",
       "docs": [
@@ -1899,23 +1729,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multi-zone and multi-region patterns"
+          "text": "Ignore RTO (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "Reliability pillar"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Multi-zone and multi-region patterns"
         },
         {
           "id": "d",
-          "text": "Ignore RTO"
+          "text": "Load balancing across regions"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Reliability pillar defines failure handling.",
       "docs": [
@@ -1933,23 +1763,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Load balancing across regions"
+          "text": "Hope (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single zone"
+          "text": "Multi-zone and multi-region patterns"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Load balancing across regions"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Reliability pillar"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Multi-region designs improve availability.",
       "docs": [
@@ -1967,23 +1797,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multi-zone and multi-region patterns"
+          "text": "No health checks (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "Multi-zone and multi-region patterns"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Ignore RTO (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore RTO"
+          "text": "Load balancing across regions"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Reliability pillar defines failure handling.",
       "docs": [
@@ -2001,23 +1831,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multi-zone and multi-region patterns"
+          "text": "Load balancing across regions"
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "Ignore RTO (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "No health checks (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore RTO"
+          "text": "Multi-zone and multi-region patterns"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Reliability pillar defines failure handling.",
       "docs": [
@@ -2035,23 +1865,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multi-zone and multi-region patterns"
+          "text": "Ignore RTO (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "Multi-zone and multi-region patterns"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Load balancing across regions"
         },
         {
           "id": "d",
-          "text": "Ignore RTO"
+          "text": "No health checks (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Reliability pillar defines failure handling.",
       "docs": [
@@ -2073,15 +1903,15 @@
         },
         {
           "id": "b",
-          "text": "Single zone"
+          "text": "Multi-zone and multi-region patterns"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Hope (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Reliability pillar"
         }
       ],
       "correct": [
@@ -2103,11 +1933,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Load balancing across regions"
+          "text": "Multi-zone and multi-region patterns"
         },
         {
           "id": "b",
-          "text": "Single zone"
+          "text": "Hope (not recommended for production workloads)"
         },
         {
           "id": "c",
@@ -2115,11 +1945,11 @@
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Load balancing across regions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Multi-region designs improve availability.",
       "docs": [
@@ -2137,23 +1967,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Load balancing across regions"
-        },
-        {
-          "id": "b",
-          "text": "Single zone"
-        },
-        {
-          "id": "c",
           "text": "No health checks"
         },
         {
+          "id": "b",
+          "text": "Hope (not recommended for production workloads)"
+        },
+        {
+          "id": "c",
+          "text": "Load balancing across regions"
+        },
+        {
           "id": "d",
-          "text": "Hope"
+          "text": "Multi-zone and multi-region patterns"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Multi-region designs improve availability.",
       "docs": [
@@ -2175,15 +2005,15 @@
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "Load balancing across regions"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Ignore RTO (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore RTO"
+          "text": "No health checks (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2205,23 +2035,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Load balancing across regions"
+          "text": "Multi-zone and multi-region patterns"
         },
         {
           "id": "b",
-          "text": "Single zone"
+          "text": "Load balancing across regions"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Reliability pillar"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Hope (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multi-region designs improve availability.",
       "docs": [
@@ -2239,23 +2069,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multi-zone and multi-region patterns"
+          "text": "Ignore RTO (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single VM"
+          "text": "Multi-zone and multi-region patterns"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Load balancing across regions"
         },
         {
           "id": "d",
-          "text": "Ignore RTO"
+          "text": "No health checks (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Reliability pillar defines failure handling.",
       "docs": [
@@ -2273,23 +2103,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Deployment Manager or Terraform"
+          "text": "CI/CD pipelines for infrastructure"
         },
         {
           "id": "b",
-          "text": "Manual only"
+          "text": "Disable rollback (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Cloud Deployment Manager or Terraform"
         },
         {
           "id": "d",
-          "text": "Disable rollback"
+          "text": "Deployment Manager"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Templates version infrastructure.",
       "docs": [
@@ -2307,23 +2137,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CI/CD pipelines for infrastructure"
+          "text": "Deployment Manager"
         },
         {
           "id": "b",
-          "text": "Manual console"
+          "text": "Cloud Deployment Manager or Terraform"
         },
         {
           "id": "c",
-          "text": "Email YAML"
+          "text": "CI/CD pipelines for infrastructure"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cloud Build automates delivery.",
       "docs": [
@@ -2345,15 +2175,15 @@
         },
         {
           "id": "b",
-          "text": "Manual only"
+          "text": "Disable rollback (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "CI/CD pipelines for infrastructure"
         },
         {
           "id": "d",
-          "text": "Disable rollback"
+          "text": "Deployment Manager"
         }
       ],
       "correct": [
@@ -2379,15 +2209,15 @@
         },
         {
           "id": "b",
-          "text": "Manual only"
+          "text": "Disable rollback (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "CI/CD pipelines for infrastructure"
         },
         {
           "id": "d",
-          "text": "Disable rollback"
+          "text": "Deployment Manager"
         }
       ],
       "correct": [
@@ -2409,23 +2239,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Deployment Manager or Terraform"
+          "text": "Deployment Manager"
         },
         {
           "id": "b",
-          "text": "Manual only"
+          "text": "Disable rollback (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Cloud Deployment Manager or Terraform"
         },
         {
           "id": "d",
-          "text": "Disable rollback"
+          "text": "CI/CD pipelines for infrastructure"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Templates version infrastructure.",
       "docs": [
@@ -2443,23 +2273,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CI/CD pipelines for infrastructure"
+          "text": "Deployment Manager"
         },
         {
           "id": "b",
-          "text": "Manual console"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Email YAML"
+          "text": "Cloud Deployment Manager or Terraform"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "CI/CD pipelines for infrastructure"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Build automates delivery.",
       "docs": [
@@ -2477,23 +2307,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CI/CD pipelines for infrastructure"
+          "text": "Cloud Deployment Manager or Terraform"
         },
         {
           "id": "b",
-          "text": "Manual console"
+          "text": "Deployment Manager"
         },
         {
           "id": "c",
-          "text": "Email YAML"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "CI/CD pipelines for infrastructure"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Build automates delivery.",
       "docs": [
@@ -2515,15 +2345,15 @@
         },
         {
           "id": "b",
-          "text": "Manual console"
+          "text": "Cloud Deployment Manager or Terraform"
         },
         {
           "id": "c",
-          "text": "Email YAML"
+          "text": "Email YAML (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2545,23 +2375,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Deployment Manager or Terraform"
+          "text": "CI/CD pipelines for infrastructure"
         },
         {
           "id": "b",
-          "text": "Manual only"
+          "text": "Cloud Deployment Manager or Terraform"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Disable rollback (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Disable rollback"
+          "text": "Deployment Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Templates version infrastructure.",
       "docs": [
@@ -2579,23 +2409,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CI/CD pipelines for infrastructure"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Manual console"
+          "text": "Email YAML (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Email YAML"
+          "text": "Cloud Deployment Manager or Terraform"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "CI/CD pipelines for infrastructure"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Build automates delivery.",
       "docs": [
@@ -2613,23 +2443,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Deployment Manager or Terraform"
+          "text": "No versioning (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Manual only"
+          "text": "Cloud Deployment Manager or Terraform"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "CI/CD pipelines for infrastructure"
         },
         {
           "id": "d",
-          "text": "Disable rollback"
+          "text": "Disable rollback (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Templates version infrastructure.",
       "docs": [

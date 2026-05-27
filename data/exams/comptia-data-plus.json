@@ -71,15 +71,15 @@
         },
         {
           "id": "b",
-          "text": "Only ICMP"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "c",
-          "text": "DNS only"
+          "text": "Cable types (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Cable types"
+          "text": "Collection, processing, analysis, storage, sharing"
         }
       ],
       "correct": [
@@ -101,23 +101,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Collection, processing, analysis, storage, sharing"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "b",
-          "text": "Only delete"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "c",
-          "text": "No catalog"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Collection, processing, analysis, storage, sharing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Life cycle informs controls.",
       "docs": [
@@ -135,23 +135,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Star/snowflake schemas for analytics"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "b",
-          "text": "Only flat files"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "c",
-          "text": "No keys"
+          "text": "Random CSV (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Random CSV"
+          "text": "Collection, processing, analysis, storage, sharing"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Models affect query performance.",
       "docs": [
@@ -169,23 +169,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Unique identifiers per entity grain"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "b",
-          "text": "Duplicate keys OK"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "c",
-          "text": "Random UUID reuse"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "d",
-          "text": "No constraints"
+          "text": "Collection, processing, analysis, storage, sharing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Keys enforce relational integrity.",
       "docs": [
@@ -203,23 +203,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Tables vs documents/media"
-        },
-        {
-          "id": "b",
           "text": "Collection, processing, analysis, storage, sharing"
         },
         {
+          "id": "b",
+          "text": "Unique identifiers per entity grain"
+        },
+        {
           "id": "c",
-          "text": "Only ICMP"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Tables vs documents/media"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data type drives tooling. Compare with Collection, processing, analysis, storage, sharing: Life cycle informs controls.",
       "docs": [
@@ -245,15 +245,15 @@
         },
         {
           "id": "b",
-          "text": "Star/snowflake schemas for analytics"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "c",
-          "text": "Only delete"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "d",
-          "text": "No catalog"
+          "text": "Unique identifiers per entity grain"
         }
       ],
       "correct": [
@@ -283,15 +283,15 @@
         },
         {
           "id": "b",
-          "text": "Unique identifiers per entity grain"
+          "text": "Collection, processing, analysis, storage, sharing"
         },
         {
           "id": "c",
-          "text": "Only flat files"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "d",
-          "text": "No keys"
+          "text": "Unique identifiers per entity grain"
         }
       ],
       "correct": [
@@ -321,15 +321,15 @@
         },
         {
           "id": "b",
-          "text": "Tables vs documents/media"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "c",
-          "text": "Duplicate keys OK"
+          "text": "Collection, processing, analysis, storage, sharing"
         },
         {
           "id": "d",
-          "text": "Random UUID reuse"
+          "text": "Tables vs documents/media"
         }
       ],
       "correct": [
@@ -355,23 +355,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Tables vs documents/media"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "b",
-          "text": "Only ICMP"
+          "text": "Collection, processing, analysis, storage, sharing"
         },
         {
           "id": "c",
-          "text": "DNS only"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "d",
-          "text": "Cable types"
+          "text": "Tables vs documents/media"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data type drives tooling.",
       "docs": [
@@ -389,23 +389,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Collection, processing, analysis, storage, sharing"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "b",
-          "text": "Only delete"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "c",
-          "text": "No catalog"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Collection, processing, analysis, storage, sharing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Life cycle informs controls.",
       "docs": [
@@ -423,23 +423,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Star/snowflake schemas for analytics"
+          "text": "Collection, processing, analysis, storage, sharing"
         },
         {
           "id": "b",
-          "text": "Only flat files"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "c",
-          "text": "No keys"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "d",
-          "text": "Random CSV"
+          "text": "Unique identifiers per entity grain"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Models affect query performance.",
       "docs": [
@@ -457,23 +457,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Tables vs documents/media"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "b",
-          "text": "Only ICMP"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "c",
-          "text": "DNS only"
+          "text": "Cable types (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Cable types"
+          "text": "Star/snowflake schemas for analytics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data type drives tooling.",
       "docs": [
@@ -491,23 +491,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Collection, processing, analysis, storage, sharing"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "b",
-          "text": "Only delete"
+          "text": "Collection, processing, analysis, storage, sharing"
         },
         {
           "id": "c",
-          "text": "No catalog"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Star/snowflake schemas for analytics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Life cycle informs controls.",
       "docs": [
@@ -525,23 +525,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Unique identifiers per entity grain"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "b",
-          "text": "Duplicate keys OK"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "c",
-          "text": "Random UUID reuse"
+          "text": "Star/snowflake schemas for analytics"
         },
         {
           "id": "d",
-          "text": "No constraints"
+          "text": "Collection, processing, analysis, storage, sharing"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Keys enforce relational integrity.",
       "docs": [
@@ -559,23 +559,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Collection, processing, analysis, storage, sharing"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "b",
-          "text": "Only delete"
+          "text": "Collection, processing, analysis, storage, sharing"
         },
         {
           "id": "c",
-          "text": "No catalog"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Star/snowflake schemas for analytics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Life cycle informs controls.",
       "docs": [
@@ -593,23 +593,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Unique identifiers per entity grain"
+          "text": "Collection, processing, analysis, storage, sharing"
         },
         {
           "id": "b",
-          "text": "Duplicate keys OK"
+          "text": "Tables vs documents/media"
         },
         {
           "id": "c",
-          "text": "Random UUID reuse"
+          "text": "Unique identifiers per entity grain"
         },
         {
           "id": "d",
-          "text": "No constraints"
+          "text": "Star/snowflake schemas for analytics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Keys enforce relational integrity.",
       "docs": [
@@ -631,15 +631,15 @@
         },
         {
           "id": "b",
-          "text": "Raw tables only"
+          "text": "Document assumptions and sample bias"
         },
         {
           "id": "c",
-          "text": "Hide outliers always"
+          "text": "GROUP BY with clear grain definitions"
         },
         {
           "id": "d",
-          "text": "No labels"
+          "text": "Bar vs line vs histogram by data type"
         }
       ],
       "correct": [
@@ -661,23 +661,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Mean, median, variance with context"
+          "text": "Bar vs line vs histogram by data type"
         },
         {
           "id": "b",
-          "text": "Cherry-pick only"
+          "text": "Scatter plots and coefficient review"
         },
         {
           "id": "c",
-          "text": "Ignore sample size"
+          "text": "Profiling, imputation, and validation rules"
         },
         {
           "id": "d",
-          "text": "No units"
+          "text": "Mean, median, variance with context"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Statistics support decisions.",
       "docs": [
@@ -699,15 +699,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore nulls"
+          "text": "Dashboards with clear metrics"
         },
         {
           "id": "c",
-          "text": "Drop all rows"
+          "text": "Scatter plots and coefficient review"
         },
         {
           "id": "d",
-          "text": "No documentation"
+          "text": "Mean, median, variance with context"
         }
       ],
       "correct": [
@@ -729,23 +729,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scatter plots and coefficient review"
+          "text": "Box plots and IQR rules"
         },
         {
           "id": "b",
-          "text": "Guess causation"
+          "text": "Scatter plots and coefficient review"
         },
         {
           "id": "c",
-          "text": "Single metric only"
+          "text": "Mean, median, variance with context"
         },
         {
           "id": "d",
-          "text": "No baseline"
+          "text": "Document assumptions and sample bias"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Correlation guides hypotheses.",
       "docs": [
@@ -767,15 +767,15 @@
         },
         {
           "id": "b",
-          "text": "Mix grains randomly"
+          "text": "Dashboards with clear metrics"
         },
         {
           "id": "c",
-          "text": "Duplicate rows"
+          "text": "Scatter plots and coefficient review"
         },
         {
           "id": "d",
-          "text": "No keys"
+          "text": "Mean, median, variance with context"
         }
       ],
       "correct": [
@@ -797,23 +797,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Document assumptions and sample bias"
+          "text": "Dashboards with clear metrics"
         },
         {
           "id": "b",
-          "text": "Hide caveats"
+          "text": "Bar vs line vs histogram by data type"
         },
         {
           "id": "c",
-          "text": "Overclaim accuracy"
+          "text": "Profiling, imputation, and validation rules"
         },
         {
           "id": "d",
-          "text": "No peer review"
+          "text": "Document assumptions and sample bias"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -831,23 +831,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bar vs line vs histogram by data type"
+          "text": "GROUP BY with clear grain definitions"
         },
         {
           "id": "b",
-          "text": "Pie chart for everything"
+          "text": "Scatter plots and coefficient review"
         },
         {
           "id": "c",
-          "text": "3D clutter"
+          "text": "Bar vs line vs histogram by data type"
         },
         {
           "id": "d",
-          "text": "No axis labels"
+          "text": "Mean, median, variance with context"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Chart choice affects interpretation.",
       "docs": [
@@ -869,15 +869,15 @@
         },
         {
           "id": "b",
-          "text": "Delete outliers always"
+          "text": "Scatter plots and coefficient review"
         },
         {
           "id": "c",
-          "text": "Ignore extremes"
+          "text": "Profiling, imputation, and validation rules"
         },
         {
           "id": "d",
-          "text": "No review"
+          "text": "Bar vs line vs histogram by data type"
         }
       ],
       "correct": [
@@ -907,11 +907,11 @@
         },
         {
           "id": "c",
-          "text": "Raw tables only"
+          "text": "Profiling, imputation, and validation rules"
         },
         {
           "id": "d",
-          "text": "Hide outliers always"
+          "text": "Scatter plots and coefficient review"
         }
       ],
       "correct": [
@@ -945,11 +945,11 @@
         },
         {
           "id": "c",
-          "text": "Cherry-pick only"
+          "text": "GROUP BY with clear grain definitions"
         },
         {
           "id": "d",
-          "text": "Ignore sample size"
+          "text": "Bar vs line vs histogram by data type"
         }
       ],
       "correct": [
@@ -975,23 +975,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Profiling, imputation, and validation rules"
+          "text": "Mean, median, variance with context"
         },
         {
           "id": "b",
-          "text": "Scatter plots and coefficient review"
+          "text": "Profiling, imputation, and validation rules"
         },
         {
           "id": "c",
-          "text": "Ignore nulls"
+          "text": "Document assumptions and sample bias"
         },
         {
           "id": "d",
-          "text": "Drop all rows"
+          "text": "Scatter plots and coefficient review"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data quality affects analysis. Compare with Scatter plots and coefficient review: Correlation guides hypotheses.",
       "docs": [
@@ -1021,11 +1021,11 @@
         },
         {
           "id": "c",
-          "text": "Guess causation"
+          "text": "Dashboards with clear metrics"
         },
         {
           "id": "d",
-          "text": "Single metric only"
+          "text": "Profiling, imputation, and validation rules"
         }
       ],
       "correct": [
@@ -1051,7 +1051,7 @@
       "options": [
         {
           "id": "a",
-          "text": "GROUP BY with clear grain definitions"
+          "text": "Bar vs line vs histogram by data type"
         },
         {
           "id": "b",
@@ -1059,15 +1059,15 @@
         },
         {
           "id": "c",
-          "text": "Mix grains randomly"
+          "text": "Dashboards with clear metrics"
         },
         {
           "id": "d",
-          "text": "Duplicate rows"
+          "text": "GROUP BY with clear grain definitions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Aggregates must match business grain. Compare with Document assumptions and sample bias: Transparency builds trust.",
       "docs": [
@@ -1089,23 +1089,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Document assumptions and sample bias"
-        },
-        {
-          "id": "b",
           "text": "Bar vs line vs histogram by data type"
         },
         {
+          "id": "b",
+          "text": "Mean, median, variance with context"
+        },
+        {
           "id": "c",
-          "text": "Hide caveats"
+          "text": "Dashboards with clear metrics"
         },
         {
           "id": "d",
-          "text": "Overclaim accuracy"
+          "text": "Document assumptions and sample bias"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Transparency builds trust. Compare with Bar vs line vs histogram by data type: Chart choice affects interpretation.",
       "docs": [
@@ -1127,23 +1127,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bar vs line vs histogram by data type"
+          "text": "Mean, median, variance with context"
         },
         {
           "id": "b",
-          "text": "Box plots and IQR rules"
+          "text": "Bar vs line vs histogram by data type"
         },
         {
           "id": "c",
-          "text": "Pie chart for everything"
+          "text": "Box plots and IQR rules (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "3D clutter"
+          "text": "Scatter plots and coefficient review"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Chart choice affects interpretation. Compare with Box plots and IQR rules: Outliers may be errors or signal.",
       "docs": [
@@ -1165,23 +1165,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Box plots and IQR rules"
+          "text": "Mean, median, variance with context"
         },
         {
           "id": "b",
-          "text": "Dashboards with clear metrics"
+          "text": "Box plots and IQR rules"
         },
         {
           "id": "c",
-          "text": "Delete outliers always"
+          "text": "Profiling, imputation, and validation rules"
         },
         {
           "id": "d",
-          "text": "Ignore extremes"
+          "text": "Scatter plots and coefficient review"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Outliers may be errors or signal. Compare with Dashboards with clear metrics: Visualization communicates insights.",
       "docs": [
@@ -1207,15 +1207,15 @@
         },
         {
           "id": "b",
-          "text": "Raw tables only"
+          "text": "Profiling, imputation, and validation rules"
         },
         {
           "id": "c",
-          "text": "Hide outliers always"
+          "text": "Mean, median, variance with context"
         },
         {
           "id": "d",
-          "text": "No labels"
+          "text": "GROUP BY with clear grain definitions"
         }
       ],
       "correct": [
@@ -1237,23 +1237,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Mean, median, variance with context"
+          "text": "Scatter plots and coefficient review"
         },
         {
           "id": "b",
-          "text": "Cherry-pick only"
+          "text": "Document assumptions and sample bias"
         },
         {
           "id": "c",
-          "text": "Ignore sample size"
+          "text": "Mean, median, variance with context"
         },
         {
           "id": "d",
-          "text": "No units"
+          "text": "Bar vs line vs histogram by data type"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Statistics support decisions.",
       "docs": [
@@ -1271,23 +1271,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Profiling, imputation, and validation rules"
+          "text": "Scatter plots and coefficient review"
         },
         {
           "id": "b",
-          "text": "Ignore nulls"
+          "text": "Mean, median, variance with context"
         },
         {
           "id": "c",
-          "text": "Drop all rows"
+          "text": "GROUP BY with clear grain definitions"
         },
         {
           "id": "d",
-          "text": "No documentation"
+          "text": "Profiling, imputation, and validation rules"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data quality affects analysis.",
       "docs": [
@@ -1309,15 +1309,15 @@
         },
         {
           "id": "b",
-          "text": "Guess causation"
+          "text": "Document assumptions and sample bias"
         },
         {
           "id": "c",
-          "text": "Single metric only"
+          "text": "Box plots and IQR rules"
         },
         {
           "id": "d",
-          "text": "No baseline"
+          "text": "Dashboards with clear metrics"
         }
       ],
       "correct": [
@@ -1343,15 +1343,15 @@
         },
         {
           "id": "b",
-          "text": "Mix grains randomly"
+          "text": "Box plots and IQR rules"
         },
         {
           "id": "c",
-          "text": "Duplicate rows"
+          "text": "Profiling, imputation, and validation rules"
         },
         {
           "id": "d",
-          "text": "No keys"
+          "text": "Document assumptions and sample bias"
         }
       ],
       "correct": [
@@ -1373,23 +1373,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Document assumptions and sample bias"
+          "text": "GROUP BY with clear grain definitions"
         },
         {
           "id": "b",
-          "text": "Hide caveats"
+          "text": "Document assumptions and sample bias"
         },
         {
           "id": "c",
-          "text": "Overclaim accuracy"
+          "text": "Mean, median, variance with context"
         },
         {
           "id": "d",
-          "text": "No peer review"
+          "text": "Dashboards with clear metrics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -1407,23 +1407,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Masking and access controls"
+          "text": "Documented deletion workflows"
         },
         {
           "id": "b",
-          "text": "Email CSV of PII"
+          "text": "Masking and access controls"
         },
         {
           "id": "c",
-          "text": "Public share"
+          "text": "Least privilege for analysts and engineers"
         },
         {
           "id": "d",
-          "text": "No retention policy"
+          "text": "Policy-based retention and deletion"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Governance reduces data risk.",
       "docs": [
@@ -1441,23 +1441,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Catalog showing sources and transforms"
+          "text": "Accuracy, completeness, timeliness metrics"
         },
         {
           "id": "b",
-          "text": "Shadow spreadsheets"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "c",
-          "text": "No owners"
+          "text": "Named owners per dataset"
         },
         {
           "id": "d",
-          "text": "Delete metadata"
+          "text": "Catalog showing sources and transforms"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Lineage supports audits.",
       "docs": [
@@ -1479,15 +1479,15 @@
         },
         {
           "id": "b",
-          "text": "Keep forever"
+          "text": "Labels such as public, internal, confidential"
         },
         {
           "id": "c",
-          "text": "No legal review"
+          "text": "Named owners per dataset"
         },
         {
           "id": "d",
-          "text": "Public archives"
+          "text": "Catalog showing sources and transforms"
         }
       ],
       "correct": [
@@ -1509,23 +1509,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Named owners per dataset"
+          "text": "Accuracy, completeness, timeliness metrics"
         },
         {
           "id": "b",
-          "text": "Everyone owns nothing"
+          "text": "Named owners per dataset"
         },
         {
           "id": "c",
-          "text": "No RACI"
+          "text": "Masking and access controls"
         },
         {
           "id": "d",
-          "text": "Ignore quality"
+          "text": "Least privilege for analysts and engineers"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Stewards accountability improves quality.",
       "docs": [
@@ -1543,23 +1543,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Accuracy, completeness, timeliness metrics"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Accuracy, completeness, timeliness metrics"
         },
         {
           "id": "c",
-          "text": "Guess quality"
+          "text": "Named owners per dataset"
         },
         {
           "id": "d",
-          "text": "Ignore duplicates"
+          "text": "Least privilege for analysts and engineers"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Quality metrics guide remediation.",
       "docs": [
@@ -1577,23 +1577,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Labels such as public, internal, confidential"
+          "text": "Accuracy, completeness, timeliness metrics"
         },
         {
           "id": "b",
-          "text": "One label for all"
+          "text": "Labels such as public, internal, confidential"
         },
         {
           "id": "c",
-          "text": "No training"
+          "text": "Named owners per dataset"
         },
         {
           "id": "d",
-          "text": "Share externally"
+          "text": "Catalog showing sources and transforms"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Classification drives controls.",
       "docs": [
@@ -1611,23 +1611,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Least privilege for analysts and engineers"
+          "text": "Masking and access controls"
         },
         {
           "id": "b",
-          "text": "Shared admin"
+          "text": "Least privilege for analysts and engineers"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "Labels such as public, internal, confidential"
         },
         {
           "id": "d",
-          "text": "No reviews"
+          "text": "Catalog showing sources and transforms"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "RBAC limits exposure.",
       "docs": [
@@ -1645,23 +1645,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Documented deletion workflows"
+          "text": "Masking and access controls"
         },
         {
           "id": "b",
-          "text": "Keep forever"
+          "text": "Labels such as public, internal, confidential"
         },
         {
           "id": "c",
-          "text": "Ignore legal"
+          "text": "Documented deletion workflows"
         },
         {
           "id": "d",
-          "text": "Public backup"
+          "text": "Least privilege for analysts and engineers"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Privacy regulations require erasure support.",
       "docs": [
@@ -1679,23 +1679,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Masking and access controls"
+          "text": "Least privilege for analysts and engineers"
         },
         {
           "id": "b",
-          "text": "Catalog showing sources and transforms"
+          "text": "Masking and access controls"
         },
         {
           "id": "c",
-          "text": "Email CSV of PII"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "d",
-          "text": "Public share"
+          "text": "Policy-based retention and deletion"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Governance reduces data risk. Compare with Catalog showing sources and transforms: Lineage supports audits.",
       "docs": [
@@ -1717,23 +1717,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Catalog showing sources and transforms"
+          "text": "Masking and access controls"
         },
         {
           "id": "b",
-          "text": "Policy-based retention and deletion"
+          "text": "Accuracy, completeness, timeliness metrics"
         },
         {
           "id": "c",
-          "text": "Shadow spreadsheets"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "d",
-          "text": "No owners"
+          "text": "Policy-based retention and deletion"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Lineage supports audits. Compare with Policy-based retention and deletion: Retention limits risk and cost.",
       "docs": [
@@ -1755,23 +1755,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Policy-based retention and deletion"
+          "text": "Masking and access controls"
         },
         {
           "id": "b",
-          "text": "Named owners per dataset"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "c",
-          "text": "Keep forever"
+          "text": "Documented deletion workflows"
         },
         {
           "id": "d",
-          "text": "No legal review"
+          "text": "Accuracy, completeness, timeliness metrics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Retention limits risk and cost. Compare with Named owners per dataset: Stewards accountability improves quality.",
       "docs": [
@@ -1793,23 +1793,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Named owners per dataset"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "b",
-          "text": "Accuracy, completeness, timeliness metrics"
+          "text": "Named owners per dataset"
         },
         {
           "id": "c",
-          "text": "Everyone owns nothing"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "d",
-          "text": "No RACI"
+          "text": "Accuracy, completeness, timeliness metrics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Stewards accountability improves quality. Compare with Accuracy, completeness, timeliness metrics: Quality metrics guide remediation.",
       "docs": [
@@ -1831,23 +1831,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Accuracy, completeness, timeliness metrics"
-        },
-        {
-          "id": "b",
           "text": "Labels such as public, internal, confidential"
         },
         {
+          "id": "b",
+          "text": "Masking and access controls"
+        },
+        {
           "id": "c",
-          "text": "No metrics"
+          "text": "Accuracy, completeness, timeliness metrics"
         },
         {
           "id": "d",
-          "text": "Guess quality"
+          "text": "Documented deletion workflows"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Quality metrics guide remediation. Compare with Labels such as public, internal, confidential: Classification drives controls.",
       "docs": [
@@ -1869,7 +1869,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Labels such as public, internal, confidential"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "b",
@@ -1877,15 +1877,15 @@
         },
         {
           "id": "c",
-          "text": "One label for all"
+          "text": "Named owners per dataset"
         },
         {
           "id": "d",
-          "text": "No training"
+          "text": "Labels such as public, internal, confidential"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Classification drives controls. Compare with Least privilege for analysts and engineers: RBAC limits exposure.",
       "docs": [
@@ -1911,15 +1911,15 @@
         },
         {
           "id": "b",
-          "text": "Documented deletion workflows"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Accuracy, completeness, timeliness metrics"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Policy-based retention and deletion"
         }
       ],
       "correct": [
@@ -1945,23 +1945,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Documented deletion workflows"
-        },
-        {
-          "id": "b",
           "text": "Masking and access controls"
         },
         {
+          "id": "b",
+          "text": "Named owners per dataset"
+        },
+        {
           "id": "c",
-          "text": "Keep forever"
+          "text": "Documented deletion workflows"
         },
         {
           "id": "d",
-          "text": "Ignore legal"
+          "text": "Least privilege for analysts and engineers"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Privacy regulations require erasure support. Compare with Masking and access controls: Governance reduces data risk.",
       "docs": [
@@ -1983,23 +1983,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Masking and access controls"
+          "text": "Documented deletion workflows"
         },
         {
           "id": "b",
-          "text": "Email CSV of PII"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "c",
-          "text": "Public share"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "d",
-          "text": "No retention policy"
+          "text": "Masking and access controls"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Governance reduces data risk.",
       "docs": [
@@ -2021,15 +2021,15 @@
         },
         {
           "id": "b",
-          "text": "Shadow spreadsheets"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "c",
-          "text": "No owners"
+          "text": "Labels such as public, internal, confidential"
         },
         {
           "id": "d",
-          "text": "Delete metadata"
+          "text": "Named owners per dataset"
         }
       ],
       "correct": [
@@ -2055,15 +2055,15 @@
         },
         {
           "id": "b",
-          "text": "Keep forever"
+          "text": "Masking and access controls"
         },
         {
           "id": "c",
-          "text": "No legal review"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "d",
-          "text": "Public archives"
+          "text": "Least privilege for analysts and engineers"
         }
       ],
       "correct": [
@@ -2089,15 +2089,15 @@
         },
         {
           "id": "b",
-          "text": "Everyone owns nothing"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "c",
-          "text": "No RACI"
+          "text": "Least privilege for analysts and engineers"
         },
         {
           "id": "d",
-          "text": "Ignore quality"
+          "text": "Masking and access controls"
         }
       ],
       "correct": [
@@ -2123,15 +2123,15 @@
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "Documented deletion workflows"
         },
         {
           "id": "c",
-          "text": "Guess quality"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "d",
-          "text": "Ignore duplicates"
+          "text": "Policy-based retention and deletion"
         }
       ],
       "correct": [
@@ -2153,23 +2153,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Labels such as public, internal, confidential"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "b",
-          "text": "One label for all"
+          "text": "Labels such as public, internal, confidential"
         },
         {
           "id": "c",
-          "text": "No training"
+          "text": "Masking and access controls"
         },
         {
           "id": "d",
-          "text": "Share externally"
+          "text": "Least privilege for analysts and engineers"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Classification drives controls.",
       "docs": [
@@ -2187,23 +2187,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Least privilege for analysts and engineers"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "b",
-          "text": "Shared admin"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "Least privilege for analysts and engineers"
         },
         {
           "id": "d",
-          "text": "No reviews"
+          "text": "Labels such as public, internal, confidential"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RBAC limits exposure.",
       "docs": [
@@ -2221,23 +2221,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Documented deletion workflows"
+          "text": "Masking and access controls"
         },
         {
           "id": "b",
-          "text": "Keep forever"
+          "text": "Least privilege for analysts and engineers"
         },
         {
           "id": "c",
-          "text": "Ignore legal"
+          "text": "Documented deletion workflows"
         },
         {
           "id": "d",
-          "text": "Public backup"
+          "text": "Named owners per dataset"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Privacy regulations require erasure support.",
       "docs": [
@@ -2255,23 +2255,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Masking and access controls"
+          "text": "Policy-based retention and deletion"
         },
         {
           "id": "b",
-          "text": "Email CSV of PII"
+          "text": "Catalog showing sources and transforms"
         },
         {
           "id": "c",
-          "text": "Public share"
+          "text": "Masking and access controls"
         },
         {
           "id": "d",
-          "text": "No retention policy"
+          "text": "Documented deletion workflows"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Governance reduces data risk.",
       "docs": [

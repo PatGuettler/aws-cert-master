@@ -11,6 +11,11 @@ from question_bank.official_docs import is_official_url
 from question_bank.open_source_import import merge_for_exam
 from question_bank.scenario_stems import comparison_stem_from_facts, scenario_stem_from_fact
 from question_bank.stem_quality import is_scenario_stem
+from question_bank.vendor_mcq_hardening import (
+    finalize_vendor_raw_pool,
+    harden_exam_payload,
+    peer_map_from_facts,
+)
 
 Fact = tuple[str, str, tuple[str, str, str], str, str, str]
 
@@ -306,6 +311,9 @@ def build_vendor_payload(
     cfg = cfg or CONFIG_BY_VENDOR.get(spec.get("vendor", "aws"), AWS_CONFIG)
     min_q = spec.get("min_questions", 70)
     raw = build_raw_questions(exam_id, spec, banks, cfg, min_q)
+    seed = 42 + hash(exam_id) % 10000
+    peer_map = peer_map_from_facts(banks.get(exam_id, {}))
+    raw = finalize_vendor_raw_pool(raw, peer_map, cfg.vendor, seed)
     prefix = ID_PREFIX.get(exam_id, exam_id.replace("-", "")[:6])
     questions = build_questions(raw, prefix)
     payload = {
@@ -321,4 +329,4 @@ def build_vendor_payload(
         payload["guideUrl"] = spec["guide_url"]
     if spec.get("acronyms"):
         payload["acronyms"] = spec["acronyms"]
-    return payload
+    return harden_exam_payload(payload, seed=seed)

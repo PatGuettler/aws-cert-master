@@ -81,15 +81,15 @@
         },
         {
           "id": "b",
-          "text": "RAID 0 for prod databases"
+          "text": "RAID 0 for prod databases (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No RAID"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "d",
-          "text": "USB mirror"
+          "text": "Hypervisor with resource reservations"
         }
       ],
       "correct": [
@@ -111,23 +111,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Redundant PSUs and adequate BTU capacity"
+          "text": "Open rack (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single outlet"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "c",
-          "text": "Ignore thermal"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "d",
-          "text": "Open rack"
+          "text": "Hypervisor with resource reservations"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Power planning prevents outages.",
       "docs": [
@@ -145,23 +145,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hypervisor with resource reservations"
+          "text": "Disable patches (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Overcommit RAM always"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "c",
-          "text": "No isolation"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "d",
-          "text": "Disable patches"
+          "text": "Hypervisor with resource reservations"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Virtualization consolidates workloads.",
       "docs": [
@@ -179,23 +179,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RAID 10 or RAID 5 based on workload"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "b",
-          "text": "Redundant PSUs and adequate BTU capacity"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "c",
-          "text": "RAID 0 for prod databases"
+          "text": "Redundant PSUs and adequate BTU capacity (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No RAID"
+          "text": "RAID 0 for prod databases (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "RAID trade-offs affect availability. Compare with Redundant PSUs and adequate BTU capacity: Power planning prevents outages.",
       "docs": [
@@ -217,23 +217,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Redundant PSUs and adequate BTU capacity"
+          "text": "Ignore thermal (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hypervisor with resource reservations"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "c",
-          "text": "Single outlet"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "d",
-          "text": "Ignore thermal"
+          "text": "Redundant PSUs and adequate BTU capacity"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Power planning prevents outages. Compare with Hypervisor with resource reservations: Virtualization consolidates workloads.",
       "docs": [
@@ -255,23 +255,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hypervisor with resource reservations"
+          "text": "No isolation (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "RAID 10 or RAID 5 based on workload"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "c",
-          "text": "Overcommit RAM always"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "d",
-          "text": "No isolation"
+          "text": "RAID 10 or RAID 5 based on workload"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Virtualization consolidates workloads. Compare with RAID 10 or RAID 5 based on workload: RAID trade-offs affect availability.",
       "docs": [
@@ -293,23 +293,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RAID 10 or RAID 5 based on workload"
+          "text": "RAID 0 for prod databases (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "RAID 0 for prod databases"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "c",
-          "text": "No RAID"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "d",
-          "text": "USB mirror"
+          "text": "RAID 10 or RAID 5 based on workload"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "RAID trade-offs affect availability.",
       "docs": [
@@ -331,15 +331,15 @@
         },
         {
           "id": "b",
-          "text": "Overcommit RAM always"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "c",
-          "text": "No isolation"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "d",
-          "text": "Disable patches"
+          "text": "Disable patches (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -361,23 +361,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RAID 10 or RAID 5 based on workload"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "b",
-          "text": "RAID 0 for prod databases"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "c",
-          "text": "No RAID"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "d",
-          "text": "USB mirror"
+          "text": "RAID 0 for prod databases (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RAID trade-offs affect availability.",
       "docs": [
@@ -399,15 +399,15 @@
         },
         {
           "id": "b",
-          "text": "Single outlet"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "c",
-          "text": "Ignore thermal"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "d",
-          "text": "Open rack"
+          "text": "Open rack (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -429,23 +429,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hypervisor with resource reservations"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "b",
-          "text": "Overcommit RAM always"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "c",
-          "text": "No isolation"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "d",
-          "text": "Disable patches"
+          "text": "Disable patches (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Virtualization consolidates workloads.",
       "docs": [
@@ -463,23 +463,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RAID 10 or RAID 5 based on workload"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "b",
-          "text": "RAID 0 for prod databases"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "c",
-          "text": "No RAID"
+          "text": "RAID 0 for prod databases (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "USB mirror"
+          "text": "RAID 10 or RAID 5 based on workload"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "RAID trade-offs affect availability.",
       "docs": [
@@ -501,15 +501,15 @@
         },
         {
           "id": "b",
-          "text": "Single outlet"
+          "text": "Open rack (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore thermal"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "d",
-          "text": "Open rack"
+          "text": "Hypervisor with resource reservations"
         }
       ],
       "correct": [
@@ -531,23 +531,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hypervisor with resource reservations"
+          "text": "Redundant PSUs and adequate BTU capacity"
         },
         {
           "id": "b",
-          "text": "Overcommit RAM always"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "c",
-          "text": "No isolation"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "d",
-          "text": "Disable patches"
+          "text": "Disable patches (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Virtualization consolidates workloads.",
       "docs": [
@@ -565,23 +565,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RAID 10 or RAID 5 based on workload"
+          "text": "RAID 0 for prod databases (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "RAID 0 for prod databases"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "c",
-          "text": "No RAID"
+          "text": "RAID 10 or RAID 5 based on workload"
         },
         {
           "id": "d",
-          "text": "USB mirror"
+          "text": "Redundant PSUs and adequate BTU capacity"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RAID trade-offs affect availability.",
       "docs": [
@@ -603,15 +603,15 @@
         },
         {
           "id": "b",
-          "text": "Single outlet"
+          "text": "Open rack (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore thermal"
+          "text": "Hypervisor with resource reservations"
         },
         {
           "id": "d",
-          "text": "Open rack"
+          "text": "RAID 10 or RAID 5 based on workload"
         }
       ],
       "correct": [
@@ -633,23 +633,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RDP with NLA and restricted groups"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "b",
-          "text": "Telnet admin"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "c",
-          "text": "Shared Administrator"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "No logging (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Secure remote admin reduces exposure.",
       "docs": [
@@ -667,23 +667,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scheduled maintenance with change control"
+          "text": "curl | bash (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Disable updates"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "c",
-          "text": "Prod first no test"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "d",
-          "text": "curl | bash"
+          "text": "Scheduled maintenance with change control"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Patching reduces known vulnerabilities.",
       "docs": [
@@ -701,23 +701,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SNMP or agent-based monitoring with alerts"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "b",
-          "text": "Check yearly"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "c",
-          "text": "Email ping"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "d",
-          "text": "No baselines"
+          "text": "No baselines (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Monitoring enables proactive fixes.",
       "docs": [
@@ -735,23 +735,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RDP with NLA and restricted groups"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "b",
-          "text": "Scheduled maintenance with change control"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "c",
-          "text": "Telnet admin"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "d",
-          "text": "Shared Administrator"
+          "text": "Shared Administrator (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secure remote admin reduces exposure. Compare with Scheduled maintenance with change control: Patching reduces known vulnerabilities.",
       "docs": [
@@ -773,23 +773,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scheduled maintenance with change control"
+          "text": "Prod first no test"
         },
         {
           "id": "b",
-          "text": "SNMP or agent-based monitoring with alerts"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "d",
-          "text": "Prod first no test"
+          "text": "RDP with NLA and restricted groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Patching reduces known vulnerabilities. Compare with SNMP or agent-based monitoring with alerts: Monitoring enables proactive fixes.",
       "docs": [
@@ -811,23 +811,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SNMP or agent-based monitoring with alerts"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "b",
-          "text": "RDP with NLA and restricted groups"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "c",
-          "text": "Check yearly"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "d",
-          "text": "Email ping"
+          "text": "Email ping (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Monitoring enables proactive fixes. Compare with RDP with NLA and restricted groups: Secure remote admin reduces exposure.",
       "docs": [
@@ -849,23 +849,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RDP with NLA and restricted groups"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "b",
-          "text": "Telnet admin"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "c",
-          "text": "Shared Administrator"
+          "text": "No logging (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "Scheduled maintenance with change control"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secure remote admin reduces exposure.",
       "docs": [
@@ -883,23 +883,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scheduled maintenance with change control"
+          "text": "curl | bash (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Disable updates"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "c",
-          "text": "Prod first no test"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "d",
-          "text": "curl | bash"
+          "text": "RDP with NLA and restricted groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Patching reduces known vulnerabilities.",
       "docs": [
@@ -921,15 +921,15 @@
         },
         {
           "id": "b",
-          "text": "Check yearly"
+          "text": "No baselines (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Email ping"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "d",
-          "text": "No baselines"
+          "text": "RDP with NLA and restricted groups"
         }
       ],
       "correct": [
@@ -951,23 +951,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RDP with NLA and restricted groups"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "b",
-          "text": "Telnet admin"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "c",
-          "text": "Shared Administrator"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "No logging (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secure remote admin reduces exposure.",
       "docs": [
@@ -989,7 +989,7 @@
         },
         {
           "id": "b",
-          "text": "Disable updates"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "c",
@@ -997,7 +997,7 @@
         },
         {
           "id": "d",
-          "text": "curl | bash"
+          "text": "curl | bash (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1019,23 +1019,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SNMP or agent-based monitoring with alerts"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "b",
-          "text": "Check yearly"
+          "text": "No baselines (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Email ping"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "d",
-          "text": "No baselines"
+          "text": "SNMP or agent-based monitoring with alerts"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Monitoring enables proactive fixes.",
       "docs": [
@@ -1057,15 +1057,15 @@
         },
         {
           "id": "b",
-          "text": "Telnet admin"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "c",
-          "text": "Shared Administrator"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "No logging (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1091,15 +1091,15 @@
         },
         {
           "id": "b",
-          "text": "Disable updates"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "c",
-          "text": "Prod first no test"
+          "text": "curl | bash (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "curl | bash"
+          "text": "RDP with NLA and restricted groups"
         }
       ],
       "correct": [
@@ -1121,23 +1121,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scheduled maintenance with change control"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "b",
-          "text": "Disable updates"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "c",
-          "text": "Prod first no test"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "d",
-          "text": "curl | bash"
+          "text": "curl | bash (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Patching reduces known vulnerabilities.",
       "docs": [
@@ -1159,15 +1159,15 @@
         },
         {
           "id": "b",
-          "text": "Check yearly"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "c",
-          "text": "Email ping"
+          "text": "No baselines (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No baselines"
+          "text": "RDP with NLA and restricted groups"
         }
       ],
       "correct": [
@@ -1193,15 +1193,15 @@
         },
         {
           "id": "b",
-          "text": "Telnet admin"
+          "text": "No logging (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Shared Administrator"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "Scheduled maintenance with change control"
         }
       ],
       "correct": [
@@ -1227,15 +1227,15 @@
         },
         {
           "id": "b",
-          "text": "Check yearly"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "c",
-          "text": "Email ping"
+          "text": "RDP with NLA and restricted groups"
         },
         {
           "id": "d",
-          "text": "No baselines"
+          "text": "No baselines (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1261,15 +1261,15 @@
         },
         {
           "id": "b",
-          "text": "Telnet admin"
+          "text": "Scheduled maintenance with change control"
         },
         {
           "id": "c",
-          "text": "Shared Administrator"
+          "text": "SNMP or agent-based monitoring with alerts"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "No logging (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1291,23 +1291,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable unused roles and close ports"
+          "text": "Open RDP world (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Enable FTP"
+          "text": "Guest admin (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Open RDP world"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "d",
-          "text": "Guest admin"
+          "text": "Vendor advisories and staged rollout"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hardening shrinks attack surface.",
       "docs": [
@@ -1325,23 +1325,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vendor advisories and staged rollout"
+          "text": "Flash prod first (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "c",
-          "text": "Flash prod first"
+          "text": "No rollback (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "Vendor advisories and staged rollout"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Firmware fixes hardware-level issues.",
       "docs": [
@@ -1367,11 +1367,11 @@
         },
         {
           "id": "c",
-          "text": "Enable FTP"
+          "text": "Enable FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Open RDP world"
+          "text": "Open RDP world (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1397,23 +1397,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vendor advisories and staged rollout"
+          "text": "Flash prod first (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Disable unused roles and close ports"
+          "text": "Vendor advisories and staged rollout"
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "Ignore CVEs (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Flash prod first"
+          "text": "Disable unused roles and close ports"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Firmware fixes hardware-level issues. Compare with Disable unused roles and close ports: Hardening shrinks attack surface.",
       "docs": [
@@ -1435,23 +1435,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vendor advisories and staged rollout"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Flash prod first (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Flash prod first"
+          "text": "No rollback (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "Vendor advisories and staged rollout"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Firmware fixes hardware-level issues.",
       "docs": [
@@ -1469,23 +1469,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable unused roles and close ports"
+          "text": "Open RDP world (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Enable FTP"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "c",
-          "text": "Open RDP world"
+          "text": "Vendor advisories and staged rollout"
         },
         {
           "id": "d",
-          "text": "Guest admin"
+          "text": "Guest admin (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Hardening shrinks attack surface.",
       "docs": [
@@ -1503,23 +1503,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vendor advisories and staged rollout"
+          "text": "Flash prod first (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Vendor advisories and staged rollout"
         },
         {
           "id": "c",
-          "text": "Flash prod first"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "No rollback (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Firmware fixes hardware-level issues.",
       "docs": [
@@ -1537,23 +1537,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable unused roles and close ports"
+          "text": "Open RDP world (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Enable FTP"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "c",
-          "text": "Open RDP world"
+          "text": "Vendor advisories and staged rollout"
         },
         {
           "id": "d",
-          "text": "Guest admin"
+          "text": "Guest admin (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Hardening shrinks attack surface.",
       "docs": [
@@ -1571,23 +1571,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vendor advisories and staged rollout"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Vendor advisories and staged rollout"
         },
         {
           "id": "c",
-          "text": "Flash prod first"
+          "text": "Flash prod first (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "No rollback (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Firmware fixes hardware-level issues.",
       "docs": [
@@ -1605,23 +1605,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable unused roles and close ports"
+          "text": "Open RDP world (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Enable FTP"
+          "text": "Vendor advisories and staged rollout"
         },
         {
           "id": "c",
-          "text": "Open RDP world"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "d",
-          "text": "Guest admin"
+          "text": "Guest admin (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hardening shrinks attack surface.",
       "docs": [
@@ -1643,15 +1643,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "No rollback (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Flash prod first"
+          "text": "Flash prod first (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "Disable unused roles and close ports"
         }
       ],
       "correct": [
@@ -1673,23 +1673,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable unused roles and close ports"
+          "text": "Guest admin (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Enable FTP"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "c",
-          "text": "Open RDP world"
+          "text": "Vendor advisories and staged rollout"
         },
         {
           "id": "d",
-          "text": "Guest admin"
+          "text": "Open RDP world (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Hardening shrinks attack surface.",
       "docs": [
@@ -1707,23 +1707,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vendor advisories and staged rollout"
+          "text": "Flash prod first (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "c",
-          "text": "Flash prod first"
+          "text": "Vendor advisories and staged rollout"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "No rollback (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Firmware fixes hardware-level issues.",
       "docs": [
@@ -1741,23 +1741,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable unused roles and close ports"
+          "text": "Open RDP world (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Enable FTP"
+          "text": "Guest admin (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Open RDP world"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "d",
-          "text": "Guest admin"
+          "text": "Vendor advisories and staged rollout"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hardening shrinks attack surface.",
       "docs": [
@@ -1779,15 +1779,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Flash prod first (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Flash prod first"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "No rollback (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1809,23 +1809,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disable unused roles and close ports"
+          "text": "Open RDP world (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Enable FTP"
+          "text": "Disable unused roles and close ports"
         },
         {
           "id": "c",
-          "text": "Open RDP world"
+          "text": "Guest admin (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Guest admin"
+          "text": "Vendor advisories and staged rollout"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Hardening shrinks attack surface.",
       "docs": [
@@ -1843,23 +1843,23 @@
       "options": [
         {
           "id": "a",
-          "text": "LVM or Windows dynamic disks with planning"
+          "text": "Offline only always (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Delete data"
+          "text": "LVM or Windows dynamic disks with planning"
         },
         {
           "id": "c",
-          "text": "Offline only always"
+          "text": "Fibre Channel or iSCSI with multipathing"
         },
         {
           "id": "d",
-          "text": "No backup"
+          "text": "No backup (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Capacity planning avoids downtime.",
       "docs": [
@@ -1877,23 +1877,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Fibre Channel or iSCSI with multipathing"
+          "text": "USB SAN (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single path"
+          "text": "LVM or Windows dynamic disks with planning"
         },
         {
           "id": "c",
-          "text": "USB SAN"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Fibre Channel or iSCSI with multipathing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Multipathing improves storage resilience.",
       "docs": [
@@ -1911,23 +1911,23 @@
       "options": [
         {
           "id": "a",
-          "text": "LVM or Windows dynamic disks with planning"
-        },
-        {
-          "id": "b",
           "text": "Fibre Channel or iSCSI with multipathing"
         },
         {
+          "id": "b",
+          "text": "Delete data (not recommended for production workloads)"
+        },
+        {
           "id": "c",
-          "text": "Delete data"
+          "text": "Offline only always (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Offline only always"
+          "text": "LVM or Windows dynamic disks with planning"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Capacity planning avoids downtime. Compare with Fibre Channel or iSCSI with multipathing: Multipathing improves storage resilience.",
       "docs": [
@@ -1957,11 +1957,11 @@
         },
         {
           "id": "c",
-          "text": "Single path"
+          "text": "USB SAN (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "USB SAN"
+          "text": "Single path (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1987,23 +1987,23 @@
       "options": [
         {
           "id": "a",
-          "text": "LVM or Windows dynamic disks with planning"
+          "text": "Offline only always (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Delete data"
+          "text": "No backup (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Offline only always"
+          "text": "Fibre Channel or iSCSI with multipathing"
         },
         {
           "id": "d",
-          "text": "No backup"
+          "text": "LVM or Windows dynamic disks with planning"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Capacity planning avoids downtime.",
       "docs": [
@@ -2021,23 +2021,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Fibre Channel or iSCSI with multipathing"
+          "text": "USB SAN (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single path"
+          "text": "Fibre Channel or iSCSI with multipathing"
         },
         {
           "id": "c",
-          "text": "USB SAN"
+          "text": "LVM or Windows dynamic disks with planning"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multipathing improves storage resilience.",
       "docs": [
@@ -2055,23 +2055,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Fibre Channel or iSCSI with multipathing"
+          "text": "USB SAN (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single path"
+          "text": "Fibre Channel or iSCSI with multipathing"
         },
         {
           "id": "c",
-          "text": "USB SAN"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "LVM or Windows dynamic disks with planning"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multipathing improves storage resilience.",
       "docs": [
@@ -2089,23 +2089,23 @@
       "options": [
         {
           "id": "a",
-          "text": "LVM or Windows dynamic disks with planning"
+          "text": "Fibre Channel or iSCSI with multipathing"
         },
         {
           "id": "b",
-          "text": "Delete data"
+          "text": "Offline only always (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Offline only always"
+          "text": "No backup (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No backup"
+          "text": "LVM or Windows dynamic disks with planning"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Capacity planning avoids downtime.",
       "docs": [
@@ -2123,23 +2123,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Fibre Channel or iSCSI with multipathing"
+          "text": "LVM or Windows dynamic disks with planning"
         },
         {
           "id": "b",
-          "text": "Single path"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "USB SAN"
+          "text": "USB SAN (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Fibre Channel or iSCSI with multipathing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Multipathing improves storage resilience.",
       "docs": [
@@ -2157,23 +2157,23 @@
       "options": [
         {
           "id": "a",
-          "text": "LVM or Windows dynamic disks with planning"
+          "text": "Fibre Channel or iSCSI with multipathing"
         },
         {
           "id": "b",
-          "text": "Delete data"
+          "text": "No backup (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Offline only always"
+          "text": "Offline only always (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No backup"
+          "text": "LVM or Windows dynamic disks with planning"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Capacity planning avoids downtime.",
       "docs": [
@@ -2195,15 +2195,15 @@
         },
         {
           "id": "b",
-          "text": "Delete data"
+          "text": "Offline only always (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Offline only always"
+          "text": "No backup (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No backup"
+          "text": "Fibre Channel or iSCSI with multipathing"
         }
       ],
       "correct": [
@@ -2225,23 +2225,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Fibre Channel or iSCSI with multipathing"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single path"
+          "text": "LVM or Windows dynamic disks with planning"
         },
         {
           "id": "c",
-          "text": "USB SAN"
+          "text": "Fibre Channel or iSCSI with multipathing"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "USB SAN (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Multipathing improves storage resilience.",
       "docs": [
@@ -2263,15 +2263,15 @@
         },
         {
           "id": "b",
-          "text": "Reinstall immediately"
+          "text": "Ignore logs (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore logs"
+          "text": "Random USB (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Profiler and query plans before scaling up"
         }
       ],
       "correct": [
@@ -2297,15 +2297,15 @@
         },
         {
           "id": "b",
-          "text": "Reboot only"
+          "text": "Add RAM blindly (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Disable monitoring"
+          "text": "Disable monitoring (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Add RAM blindly"
+          "text": "Review POST codes and boot logs"
         }
       ],
       "correct": [
@@ -2327,7 +2327,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Review POST codes and boot logs"
+          "text": "Ignore logs (not recommended for production workloads)"
         },
         {
           "id": "b",
@@ -2335,15 +2335,15 @@
         },
         {
           "id": "c",
-          "text": "Reinstall immediately"
+          "text": "Reinstall immediately (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore logs"
+          "text": "Review POST codes and boot logs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Boot diagnostics isolate hardware vs OS. Compare with Profiler and query plans before scaling up: Root cause fixes performance sustainably.",
       "docs": [
@@ -2365,23 +2365,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Profiler and query plans before scaling up"
+          "text": "Reboot only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Review POST codes and boot logs"
+          "text": "Disable monitoring (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Reboot only"
+          "text": "Review POST codes and boot logs"
         },
         {
           "id": "d",
-          "text": "Disable monitoring"
+          "text": "Profiler and query plans before scaling up"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Root cause fixes performance sustainably. Compare with Review POST codes and boot logs: Boot diagnostics isolate hardware vs OS.",
       "docs": [
@@ -2407,15 +2407,15 @@
         },
         {
           "id": "b",
-          "text": "Reinstall immediately"
+          "text": "Ignore logs (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore logs"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Random USB (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2437,23 +2437,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Profiler and query plans before scaling up"
+          "text": "Review POST codes and boot logs"
         },
         {
           "id": "b",
-          "text": "Reboot only"
+          "text": "Add RAM blindly (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Disable monitoring"
+          "text": "Disable monitoring (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Add RAM blindly"
+          "text": "Profiler and query plans before scaling up"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Root cause fixes performance sustainably.",
       "docs": [
@@ -2471,23 +2471,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Review POST codes and boot logs"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "b",
-          "text": "Reinstall immediately"
+          "text": "Review POST codes and boot logs"
         },
         {
           "id": "c",
-          "text": "Ignore logs"
+          "text": "Ignore logs (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Random USB (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Boot diagnostics isolate hardware vs OS.",
       "docs": [
@@ -2505,23 +2505,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Profiler and query plans before scaling up"
+          "text": "Review POST codes and boot logs"
         },
         {
           "id": "b",
-          "text": "Reboot only"
+          "text": "Add RAM blindly (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Disable monitoring"
+          "text": "Disable monitoring (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Add RAM blindly"
+          "text": "Profiler and query plans before scaling up"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Root cause fixes performance sustainably.",
       "docs": [
@@ -2539,23 +2539,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Review POST codes and boot logs"
+          "text": "Ignore logs (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Reinstall immediately"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "c",
-          "text": "Ignore logs"
+          "text": "Random USB (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Review POST codes and boot logs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Boot diagnostics isolate hardware vs OS.",
       "docs": [
@@ -2573,23 +2573,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Profiler and query plans before scaling up"
+          "text": "Disable monitoring (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Reboot only"
+          "text": "Add RAM blindly (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Disable monitoring"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "d",
-          "text": "Add RAM blindly"
+          "text": "Review POST codes and boot logs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Root cause fixes performance sustainably.",
       "docs": [
@@ -2607,23 +2607,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Review POST codes and boot logs"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "b",
-          "text": "Reinstall immediately"
+          "text": "Ignore logs (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore logs"
+          "text": "Review POST codes and boot logs"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Random USB (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Boot diagnostics isolate hardware vs OS.",
       "docs": [
@@ -2641,23 +2641,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Review POST codes and boot logs"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "b",
-          "text": "Reinstall immediately"
+          "text": "Ignore logs (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Ignore logs"
+          "text": "Review POST codes and boot logs"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Random USB (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Boot diagnostics isolate hardware vs OS.",
       "docs": [
@@ -2675,23 +2675,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Review POST codes and boot logs"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "b",
-          "text": "Reinstall immediately"
+          "text": "Review POST codes and boot logs"
         },
         {
           "id": "c",
-          "text": "Ignore logs"
+          "text": "Random USB (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Random USB"
+          "text": "Ignore logs (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Boot diagnostics isolate hardware vs OS.",
       "docs": [
@@ -2709,23 +2709,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Profiler and query plans before scaling up"
+          "text": "Add RAM blindly (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Reboot only"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "c",
-          "text": "Disable monitoring"
+          "text": "Disable monitoring (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Add RAM blindly"
+          "text": "Review POST codes and boot logs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Root cause fixes performance sustainably.",
       "docs": [
@@ -2743,23 +2743,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Profiler and query plans before scaling up"
+          "text": "Add RAM blindly (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Reboot only"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "c",
-          "text": "Disable monitoring"
+          "text": "Review POST codes and boot logs"
         },
         {
           "id": "d",
-          "text": "Add RAM blindly"
+          "text": "Disable monitoring (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Root cause fixes performance sustainably.",
       "docs": [
@@ -2777,23 +2777,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Profiler and query plans before scaling up"
+          "text": "Disable monitoring (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Reboot only"
+          "text": "Profiler and query plans before scaling up"
         },
         {
           "id": "c",
-          "text": "Disable monitoring"
+          "text": "Review POST codes and boot logs"
         },
         {
           "id": "d",
-          "text": "Add RAM blindly"
+          "text": "Add RAM blindly (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Root cause fixes performance sustainably.",
       "docs": [

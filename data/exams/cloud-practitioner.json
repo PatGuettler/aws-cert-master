@@ -114,23 +114,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Elasticity"
-        },
-        {
-          "id": "b",
           "text": "Agility"
         },
         {
+          "id": "b",
+          "text": "Rely on Agility alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
+        },
+        {
           "id": "c",
-          "text": "Durability"
+          "text": "Use Agility for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "d",
-          "text": "Availability"
+          "text": "Security"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Agility is the ability to provision and release resources quickly to experiment and respond to change.",
       "docs": [
@@ -148,7 +148,7 @@
       "options": [
         {
           "id": "a",
-          "text": "CapEx model"
+          "text": "Use Pay-as-you-go pricing for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
@@ -156,11 +156,11 @@
         },
         {
           "id": "c",
-          "text": "Reserved licensing"
+          "text": "Performance Efficiency"
         },
         {
           "id": "d",
-          "text": "Dedicated hosting"
+          "text": "Rely on Pay-as-you-go pricing alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -182,23 +182,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Operational Excellence"
+          "text": "Rely on Security alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Security"
+          "text": "Place compute closer to end users in metro areas"
         },
         {
           "id": "c",
-          "text": "Performance Efficiency"
+          "text": "Security"
         },
         {
           "id": "d",
-          "text": "Cost Optimization"
+          "text": "Security and compliance are shared between AWS and the customer, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "The Security pillar covers confidentiality, integrity, and availability of data and systems.",
       "docs": [
@@ -216,23 +216,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A geographic area with multiple isolated locations"
+          "text": "A virtual private network endpoint, using password reset alone and deferring session revocation until the next business day, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "One or more discrete data centers with redundant power and networking"
+          "text": "A content delivery edge location, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "A content delivery edge location"
+          "text": "One or more discrete data centers with redundant power and networking"
         },
         {
           "id": "d",
-          "text": "A virtual private network endpoint"
+          "text": "A geographic area with multiple isolated locations, while leaving refresh tokens and OAuth consent grants active pending user callback"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "An AZ is one or more data centers in a Region, designed for isolation from failures in other AZs.",
       "docs": [
@@ -250,11 +250,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Public cloud"
+          "text": "Rely on Private cloud on AWS alone while omitting the cross-service integration the workload needs"
         },
         {
           "id": "b",
-          "text": "Hybrid cloud"
+          "text": "Combining on-premises infrastructure with AWS Cloud, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
@@ -262,7 +262,7 @@
         },
         {
           "id": "d",
-          "text": "Multi-tenant SaaS only"
+          "text": "Structured cloud transformation across business capabilities, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
@@ -328,15 +328,15 @@
         },
         {
           "id": "b",
-          "text": "AWS Control Tower"
+          "text": "Rely on AWS Organizations alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "AWS Management Console"
+          "text": "Private cloud on AWS (e.g., Outposts)"
         },
         {
           "id": "d",
-          "text": "AWS Budgets"
+          "text": "Use AWS Organizations for a related capability, but without meeting the requirement described in the scenario"
         }
       ],
       "correct": [
@@ -358,23 +358,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hardware repair procedures"
+          "text": "Designing across multiple Availability Zones, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Structured cloud transformation across business capabilities"
+          "text": "Private cloud on AWS (e.g., Outposts), using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "Subnet sizing only"
+          "text": "Rely on Structured cloud transformation across business capabilities alone while omitting the cross-service integration the workload needs"
         },
         {
           "id": "d",
-          "text": "Certificate pinning"
+          "text": "Structured cloud transformation across business capabilities"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "CAF provides guidance across perspectives such as business, people, governance, platform, security, and operations.",
       "docs": [
@@ -392,23 +392,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Resources are fixed at purchase time"
-        },
-        {
-          "id": "b",
           "text": "Resources scale up or down to match demand"
         },
         {
+          "id": "b",
+          "text": "Resources are fixed at purchase time, using shared credentials instead of individual accountability."
+        },
+        {
           "id": "c",
-          "text": "Data is encrypted at rest only"
+          "text": "AWS aggregates usage to pass savings to customers, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Users must manage physical servers"
+          "text": "Users must manage physical servers, using password reset alone and deferring session revocation until the next business day"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Elasticity is the ability to acquire resources as needed and release them when no longer needed.",
       "docs": [
@@ -426,23 +426,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Route 53"
+          "text": "Combining on-premises infrastructure with AWS Cloud, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Amazon CloudFront"
+          "text": "Rely on Amazon CloudFront alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "AWS Direct Connect"
+          "text": "AWS Lambda or managed containers"
         },
         {
           "id": "d",
-          "text": "Amazon VPC"
+          "text": "Amazon CloudFront"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Amazon CloudFront is a content delivery network (CDN) that uses edge locations.",
       "docs": [
@@ -460,23 +460,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Reliability"
+          "text": "Use Operational Excellence for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "Operational Excellence"
+          "text": "AWS Control Tower"
         },
         {
           "id": "c",
-          "text": "Sustainability"
+          "text": "Operational Excellence"
         },
         {
           "id": "d",
-          "text": "Performance Efficiency"
+          "text": "Rely on Operational Excellence alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Operational Excellence covers operations in production and improvement of procedures.",
       "docs": [
@@ -494,7 +494,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EC2 only"
+          "text": "Rely on AWS Lambda or managed containers alone while omitting the cross-service integration the workload needs"
         },
         {
           "id": "b",
@@ -502,11 +502,11 @@
         },
         {
           "id": "c",
-          "text": "On-premises mainframe"
+          "text": "Use managed and serverless services, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Bare metal racks"
+          "text": "Resources scale up or down to match demand, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -528,23 +528,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Control Tower"
+          "text": "Rely on AWS Control Tower alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "AWS Control Tower"
         },
         {
           "id": "c",
-          "text": "Amazon RDS"
+          "text": "Use AWS Control Tower for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "d",
-          "text": "AWS Snowball"
+          "text": "AWS Organizations"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Control Tower automates setup of a multi-account environment with best-practice blueprints.",
       "docs": [
@@ -562,23 +562,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Deploying in a single Availability Zone"
+          "text": "Deploying in a single Availability Zone, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Designing across multiple Availability Zones"
+          "text": "Using one large instance, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Using one large instance"
+          "text": "Designing for component failure without service interruption"
         },
         {
           "id": "d",
-          "text": "Disabling auto scaling"
+          "text": "Designing across multiple Availability Zones"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Multi-AZ designs protect against data center-level failures within a Region.",
       "docs": [
@@ -596,23 +596,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Personal Health Dashboard"
+          "text": "Use AWS Personal Health Dashboard for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "AWS Artifact"
+          "text": "AWS Personal Health Dashboard"
         },
         {
           "id": "c",
-          "text": "AWS Trusted Advisor"
+          "text": "AWS Control Tower"
         },
         {
           "id": "d",
-          "text": "AWS Config"
+          "text": "Rely on AWS Personal Health Dashboard alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Personal Health Dashboard alerts you to events that may affect your resources.",
       "docs": [
@@ -630,23 +630,23 @@
       "options": [
         {
           "id": "a",
-          "text": "How to size EC2 instances"
+          "text": "Multiple Regions and backup services"
         },
         {
           "id": "b",
-          "text": "Prohibited uses of AWS services"
+          "text": "Use managed and serverless services"
         },
         {
           "id": "c",
-          "text": "S3 storage classes"
+          "text": "Prohibited uses of AWS services"
         },
         {
           "id": "d",
-          "text": "VPC CIDR blocks"
+          "text": "How to size EC2 instances"
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Acceptable Use Policy defines restrictions on use of AWS services.",
       "docs": [
@@ -664,7 +664,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Patching the hypervisor"
+          "text": "Threat detection based on logs and activity"
         },
         {
           "id": "b",
@@ -672,11 +672,11 @@
         },
         {
           "id": "c",
-          "text": "Physical data center security"
+          "text": "Hardware security modules you control, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Managing hardware firmware"
+          "text": "Physical data center security, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -698,23 +698,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM Access Analyzer"
+          "text": "AWS Security Hub, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "b",
-          "text": "AWS STS (Security Token Service)"
+          "text": "Security group, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "c",
-          "text": "AWS KMS"
+          "text": "AWS STS (Security Token Service)"
         },
         {
           "id": "d",
-          "text": "Amazon GuardDuty"
+          "text": "Security in the cloud (customer responsibility), using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "STS issues temporary credentials used by roles, federation, and MFA sessions.",
       "docs": [
@@ -732,23 +732,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Grant administrators all permissions by default"
+          "text": "A document defining permissions, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "b",
-          "text": "Grant only permissions required to perform a task"
+          "text": "AWS IAM Identity Center (SSO)"
         },
         {
           "id": "c",
-          "text": "Share root account keys across teams"
+          "text": "Grant administrators all permissions by default, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Grant only permissions required to perform a task"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Least privilege limits access to the minimum needed, reducing blast radius.",
       "docs": [
@@ -766,23 +766,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Artifact"
+          "text": "Hardware security modules you control"
         },
         {
           "id": "b",
-          "text": "Amazon Inspector"
+          "text": "AWS Artifact"
         },
         {
           "id": "c",
-          "text": "AWS Shield"
+          "text": "Use AWS Artifact for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "Rely on AWS Artifact alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "AWS Artifact provides on-demand access to AWS compliance reports.",
       "docs": [
@@ -800,23 +800,23 @@
       "options": [
         {
           "id": "a",
-          "text": "It reduces S3 storage cost"
-        },
-        {
-          "id": "b",
           "text": "It adds a layer of protection for the most privileged account"
         },
         {
+          "id": "b",
+          "text": "It reduces S3 storage cost, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
+        },
+        {
           "id": "c",
-          "text": "It replaces the need for IAM"
+          "text": "It encrypts EBS volumes automatically, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "d",
-          "text": "It encrypts EBS volumes automatically"
+          "text": "It replaces the need for IAM, without preserving cloud audit logs or hunting mailbox rules and delegate permissions"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Root user has full account access; MFA helps protect against credential compromise.",
       "docs": [
@@ -873,23 +873,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Creating and managing encryption keys"
+          "text": "Assess, audit, and evaluate configurations of AWS resources"
         },
         {
           "id": "b",
-          "text": "DNS routing"
+          "text": "Creating and managing encryption keys"
         },
         {
           "id": "c",
-          "text": "Load balancing"
+          "text": "Rotate, manage, and retrieve secrets, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Log shipping only"
+          "text": "AWS compliance programs and attestations, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "AWS Key Management Service manages cryptographic keys for AWS and your applications.",
       "docs": [
@@ -907,23 +907,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network ACL"
-        },
-        {
-          "id": "b",
           "text": "Security group"
         },
         {
+          "id": "b",
+          "text": "AWS STS (Security Token Service), without security or identity team coordination per policy."
+        },
+        {
           "id": "c",
-          "text": "Route table"
+          "text": "Security in the cloud (customer responsibility)"
         },
         {
           "id": "d",
-          "text": "Internet gateway"
+          "text": "AWS Security Hub, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Security groups are stateful firewalls for EC2 instances and ENIs.",
       "docs": [
@@ -941,7 +941,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Store static website assets"
+          "text": "Threat detection based on logs and activity, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
@@ -949,11 +949,11 @@
         },
         {
           "id": "c",
-          "text": "Run containers"
+          "text": "Centrally configure WAF rules across accounts, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Create AMIs"
+          "text": "Store static website assets, while leaving refresh tokens and OAuth consent grants active pending user callback"
         }
       ],
       "correct": [
@@ -975,7 +975,7 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Security Hub"
+          "text": "Rely on Amazon Detective alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
@@ -983,11 +983,11 @@
         },
         {
           "id": "c",
-          "text": "AWS WAF"
+          "text": "Sensitive data in Amazon S3, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Amazon Connect"
+          "text": "S3 server-side encryption with KMS or S3-managed keys"
         }
       ],
       "correct": [
@@ -1009,23 +1009,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 server-side encryption with KMS or S3-managed keys"
+          "text": "Route 53 health checks, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Route 53 health checks"
+          "text": "S3 server-side encryption with KMS or S3-managed keys"
         },
         {
           "id": "c",
-          "text": "Elastic IPs"
+          "text": "Resources shared with external entities, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Placement groups"
+          "text": "Creating and managing encryption keys, using password reset alone and deferring session revocation until the next business day"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "S3 supports SSE-S3, SSE-KMS, and client-side encryption options.",
       "docs": [
@@ -1043,23 +1043,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A document defining permissions"
+          "text": "Only for tasks that require root credentials"
         },
         {
           "id": "b",
-          "text": "A physical security badge"
+          "text": "A physical security badge, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "A type of EC2 instance"
+          "text": "A type of EC2 instance, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "A billing invoice"
+          "text": "A document defining permissions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Policies are JSON documents that define what actions are allowed or denied.",
       "docs": [
@@ -1077,23 +1077,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DDoS protection for all AWS customers at no additional charge"
+          "text": "It adds a layer of protection for the most privileged account, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Only S3 lifecycle management"
+          "text": "Managed network firewall for VPCs"
         },
         {
           "id": "c",
-          "text": "VPN tunnels"
+          "text": "DDoS protection for all AWS customers at no additional charge"
         },
         {
           "id": "d",
-          "text": "Database backups"
+          "text": "Rely on DDoS protection for all AWS customers at no additional charge alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Shield Standard automatically protects against common network and transport layer DDoS.",
       "docs": [
@@ -1111,7 +1111,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Customer patch management"
+          "text": "Rotate, manage, and retrieve secrets, without security or identity team coordination per policy."
         },
         {
           "id": "b",
@@ -1119,11 +1119,11 @@
         },
         {
           "id": "c",
-          "text": "EC2 Auto Scaling"
+          "text": "Threat detection based on logs and activity, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "S3 Transfer Acceleration"
+          "text": "Assess, audit, and evaluate configurations of AWS resources"
         }
       ],
       "correct": [
@@ -1145,23 +1145,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS IAM Identity Center (SSO)"
+          "text": "Use AWS IAM Identity Center for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "Amazon EBS snapshots only"
+          "text": "Rely on AWS IAM Identity Center alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Snowmobile"
+          "text": "AWS IAM Identity Center (SSO)"
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail databases only"
+          "text": "A document defining permissions"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IAM Identity Center enables SSO and federation with external identity sources.",
       "docs": [
@@ -1179,23 +1179,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Stateless filters at the subnet level"
+          "text": "Rely on Stateless filters at the subnet level alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Stateful instance firewalls"
+          "text": "Security in the cloud (customer responsibility), using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "DNS resolvers"
+          "text": "Stateless filters at the subnet level"
         },
         {
           "id": "d",
-          "text": "S3 policies"
+          "text": "A document defining permissions"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "NACLs provide optional stateless allow/deny rules for subnets.",
       "docs": [
@@ -1213,23 +1213,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF and AWS Shield"
+          "text": "Creating and managing encryption keys, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Amazon RDS"
+          "text": "Rotate, manage, and retrieve secrets, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "AWS Glue"
+          "text": "AWS WAF and AWS Shield"
         },
         {
           "id": "d",
-          "text": "Amazon EFS"
+          "text": "AWS Shield Standard, using password reset alone and deferring session revocation until the next business day"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AWS WAF filters HTTP/S requests; Shield provides DDoS mitigation.",
       "docs": [
@@ -1251,15 +1251,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Deploy and scale web applications with minimal infrastructure decisions"
         },
         {
           "id": "c",
-          "text": "Amazon Route 53"
+          "text": "Natural language processing (NLP) service"
         },
         {
           "id": "d",
-          "text": "AWS CloudFormation"
+          "text": "Migrate databases to AWS with minimal downtime"
         }
       ],
       "correct": [
@@ -1281,23 +1281,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Object storage"
+          "text": "Scalable NFS file storage for EC2, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Block storage for EC2 only"
+          "text": "Object storage"
         },
         {
           "id": "c",
-          "text": "Relational database"
+          "text": "Connected devices to interact with cloud applications"
         },
         {
           "id": "d",
-          "text": "Message queue"
+          "text": "Rely on Object storage alone while omitting the cross-service integration the workload needs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "S3 stores objects in buckets with high durability and scalability.",
       "docs": [
@@ -1315,7 +1315,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon DynamoDB"
+          "text": "Amazon EBS, without security or identity team coordination per policy."
         },
         {
           "id": "b",
@@ -1323,15 +1323,15 @@
         },
         {
           "id": "c",
-          "text": "Tape backup"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "d",
-          "text": "FTP server"
+          "text": "Amazon EKS, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "DynamoDB is a managed NoSQL database with serverless capacity modes.",
       "docs": [
@@ -1349,23 +1349,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Managed relational databases"
+          "text": "Migrate databases to AWS with minimal downtime"
         },
         {
           "id": "b",
-          "text": "Object archival only"
+          "text": "Managed relational databases"
         },
         {
           "id": "c",
-          "text": "CDN caching"
+          "text": "A MySQL and PostgreSQL-compatible relational database, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "DNS registration"
+          "text": "Managed desktop virtualization (DaaS), without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "RDS manages databases such as MySQL, PostgreSQL, and SQL Server.",
       "docs": [
@@ -1387,15 +1387,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Model and provision infrastructure as code"
         },
         {
           "id": "c",
-          "text": "AWS Snowcone"
+          "text": "Connected devices to interact with cloud applications"
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail snapshots"
+          "text": "Containerized web applications at scale"
         }
       ],
       "correct": [
@@ -1417,23 +1417,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Without provisioning servers, in response to events"
+          "text": "Without managing servers, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "b",
-          "text": "Only on physical mainframes"
+          "text": "Without provisioning servers, in response to events"
         },
         {
           "id": "c",
-          "text": "Only inside VPC by default with no config"
+          "text": "Migrate databases to AWS with minimal downtime, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Only for DNS"
+          "text": "Provision an isolated network in AWS, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Lambda is serverless compute that executes code on demand.",
       "docs": [
@@ -1451,23 +1451,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Provision an isolated network in AWS"
+          "text": "Without provisioning servers, in response to events, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Ship hardware to AWS"
+          "text": "Ship hardware to AWS, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "c",
-          "text": "Replace IAM"
+          "text": "Provision an isolated network in AWS"
         },
         {
           "id": "d",
-          "text": "Manage domain registration only"
+          "text": "Query data in S3 using standard SQL, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VPC lets you define private subnets, routing, and connectivity.",
       "docs": [
@@ -1489,15 +1489,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "Natural language processing (NLP) service"
         },
         {
           "id": "c",
-          "text": "AWS Step Functions"
+          "text": "Without provisioning servers, in response to events"
         },
         {
           "id": "d",
-          "text": "Amazon Cognito"
+          "text": "Create, publish, and manage APIs"
         }
       ],
       "correct": [
@@ -1519,23 +1519,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monitoring metrics and logs"
+          "text": "Search, log analytics, and visualization"
         },
         {
           "id": "b",
-          "text": "Domain registration"
+          "text": "Pub/sub notifications and messaging, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Data warehouse ETL only"
+          "text": "Monitoring metrics and logs"
         },
         {
           "id": "d",
-          "text": "Hardware procurement"
+          "text": "Create, publish, and manage APIs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CloudWatch collects metrics, logs, and alarms for AWS resources.",
       "docs": [
@@ -1553,23 +1553,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EBS"
+          "text": "Amazon DynamoDB, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Amazon SQS, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Amazon Glacier Instant Retrieval only as block"
+          "text": "A MySQL and PostgreSQL-compatible relational database"
         },
         {
           "id": "d",
-          "text": "AWS DataSync"
+          "text": "Amazon EBS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Amazon Elastic Block Store attaches persistent block storage to EC2.",
       "docs": [
@@ -1626,23 +1626,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DNS and domain registration services"
+          "text": "Pub/sub notifications and messaging, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "GPU clusters only"
+          "text": "Create, publish, and manage APIs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Tape libraries"
+          "text": "DNS and domain registration services"
         },
         {
           "id": "d",
-          "text": "Email marketing"
+          "text": "S3, ALB, EC2, and custom origins"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Route 53 is a scalable DNS web service.",
       "docs": [
@@ -1660,23 +1660,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Model and provision infrastructure as code"
+          "text": "Replace all security controls, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "b",
-          "text": "Replace all security controls"
+          "text": "Model and provision infrastructure as code"
         },
         {
           "id": "c",
-          "text": "Ship Snowball devices only"
+          "text": "Pub/sub notifications and messaging, without preserving cloud audit logs or hunting mailbox rules and delegate permissions"
         },
         {
           "id": "d",
-          "text": "Manage payroll"
+          "text": "Deploy and scale web applications with minimal infrastructure decisions, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CloudFormation templates describe AWS resources for repeatable deployments.",
       "docs": [
@@ -1694,23 +1694,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Create, publish, and manage APIs"
+          "text": "Pub/sub notifications and messaging, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Store Glacier archives only"
+          "text": "Create, publish, and manage APIs"
         },
         {
           "id": "c",
-          "text": "Run Hadoop exclusively"
+          "text": "S3, ALB, EC2, and custom origins"
         },
         {
           "id": "d",
-          "text": "Replace VPC"
+          "text": "DNS and domain registration services, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "API Gateway handles API traffic for REST, HTTP, and WebSocket APIs.",
       "docs": [
@@ -1728,23 +1728,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EventBridge"
+          "text": "Amazon EC2, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Amazon S3 Glacier Deep Archive only"
+          "text": "Amazon EKS, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "AWS Snowmobile"
+          "text": "Serverless data integration and ETL service"
         },
         {
           "id": "d",
-          "text": "Amazon WorkSpaces"
+          "text": "Amazon EventBridge"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "EventBridge is a serverless event bus for connecting application components.",
       "docs": [
@@ -1766,15 +1766,15 @@
         },
         {
           "id": "b",
-          "text": "An object CDN"
+          "text": "Serverless data integration and ETL service, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "A VPN appliance"
+          "text": "Managed relational databases, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "A compliance report"
+          "text": "Managed document database, using password reset alone and deferring session revocation until the next business day"
         }
       ],
       "correct": [
@@ -1796,23 +1796,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Deploy and scale web applications with minimal infrastructure decisions"
+          "text": "Model and provision infrastructure as code, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "b",
-          "text": "Replace S3"
+          "text": "Deploy and scale web applications with minimal infrastructure decisions"
         },
         {
           "id": "c",
-          "text": "Audit IAM only"
+          "text": "Migrate databases to AWS with minimal downtime, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Manage domain WHOIS"
+          "text": "Manage and operate EC2 and hybrid nodes at scale, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Elastic Beanstalk handles capacity provisioning, load balancing, and scaling for apps.",
       "docs": [
@@ -1830,23 +1830,23 @@
       "options": [
         {
           "id": "a",
-          "text": "On-Demand"
+          "text": "Rely on Reserved Instances / Savings Plans alone while omitting the cross-service integration the workload needs"
         },
         {
           "id": "b",
-          "text": "Reserved Instances / Savings Plans"
+          "text": "Spot Instances, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Spot Instances without interruption tolerance"
+          "text": "Reserved Instances / Savings Plans"
         },
         {
           "id": "d",
-          "text": "Data transfer out only"
+          "text": "Spot Instances without interruption tolerance, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "b"
+        "c"
       ],
       "explanation": "Reserved capacity and Savings Plans reduce cost for predictable usage.",
       "docs": [
@@ -1864,23 +1864,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Visualize and analyze AWS spending over time"
+          "text": "Find, buy, and deploy third-party software on AWS"
         },
         {
           "id": "b",
-          "text": "Patch Linux kernels"
+          "text": "Set custom cost and usage thresholds with alerts"
         },
         {
           "id": "c",
-          "text": "Create VPC peering"
+          "text": "Workloads can tolerate interruption and want lowest price"
         },
         {
           "id": "d",
-          "text": "Register domains"
+          "text": "Visualize and analyze AWS spending over time"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cost Explorer provides charts and forecasts for cost and usage.",
       "docs": [
@@ -1928,23 +1928,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Offers limited free usage for new and eligible services under stated terms"
+          "text": "Combines usage across accounts for volume pricing benefits, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "b",
-          "text": "Makes all AWS usage free forever"
+          "text": "Offers limited free usage for new and eligible services under stated terms"
         },
         {
           "id": "c",
-          "text": "Applies only to Enterprise support"
+          "text": "Makes all AWS usage free forever, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Replaces billing accounts"
+          "text": "Set custom cost and usage thresholds with alerts, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Free Tier has time and usage limits; always check current terms per service.",
       "docs": [
@@ -1962,23 +1962,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Combines usage across accounts for volume pricing benefits"
+          "text": "Eliminates the need for IAM, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "b",
-          "text": "Eliminates the need for IAM"
+          "text": "Removes all data transfer charges, without preserving cloud audit logs or hunting mailbox rules and delegate permissions"
         },
         {
           "id": "c",
-          "text": "Removes all data transfer charges"
+          "text": "Combines usage across accounts for volume pricing benefits"
         },
         {
           "id": "d",
-          "text": "Is only for GovCloud"
+          "text": "Can apply across accounts in the same organization, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Consolidated billing aggregates charges and can share Reserved Instance benefits.",
       "docs": [
@@ -1996,23 +1996,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Set custom cost and usage thresholds with alerts"
+          "text": "Workloads can tolerate interruption and want lowest price, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Automatically delete all S3 buckets"
+          "text": "Visualize and analyze AWS spending over time, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "Replace CloudTrail"
+          "text": "Set custom cost and usage thresholds with alerts"
         },
         {
           "id": "d",
-          "text": "Provision Outposts"
+          "text": "Automatically delete all S3 buckets, while leaving refresh tokens and OAuth consent grants active pending user callback"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Budgets helps track spend against plans you define.",
       "docs": [
@@ -2030,23 +2030,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Workloads can tolerate interruption and want lowest price"
+          "text": "You cannot checkpoint work, without preserving cloud audit logs or hunting mailbox rules and delegate permissions"
         },
         {
           "id": "b",
-          "text": "You need guaranteed capacity for 3 years"
+          "text": "Workloads can tolerate interruption and want lowest price"
         },
         {
           "id": "c",
-          "text": "You cannot checkpoint work"
+          "text": "Find, buy, and deploy third-party software on AWS, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "You require dedicated hosts only"
+          "text": "You need guaranteed capacity for 3 years, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Spot uses spare capacity at a discount; instances can be reclaimed with notice.",
       "docs": [
@@ -2064,23 +2064,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Pricing Calculator"
+          "text": "Best-practice recommendations across cost, performance, security, and fault tolerance"
         },
         {
           "id": "b",
-          "text": "IAM policy simulator only"
+          "text": "Use AWS Pricing Calculator for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "c",
-          "text": "VPC Flow Logs"
+          "text": "Rely on AWS Pricing Calculator alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "AWS Artifact compliance PDFs only"
+          "text": "AWS Pricing Calculator"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "AWS Pricing Calculator (formerly Simple Monthly Calculator) estimates costs.",
       "docs": [
@@ -2098,23 +2098,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Best-practice recommendations across cost, performance, security, and fault tolerance"
+          "text": "Set custom cost and usage thresholds with alerts, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Physical data center tours"
+          "text": "Physical data center tours, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "c",
-          "text": "Unlimited free Enterprise support"
+          "text": "Best-practice recommendations across cost, performance, security, and fault tolerance"
         },
         {
           "id": "d",
-          "text": "Domain WHOIS privacy"
+          "text": "Unlimited free Enterprise support, without preserving cloud audit logs or hunting mailbox rules and delegate permissions"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Trusted Advisor inspects your environment and suggests improvements.",
       "docs": [
@@ -2132,23 +2132,23 @@
       "options": [
         {
           "id": "a",
-          "text": "It is included for all AWS customers at no additional charge"
+          "text": "It includes AWS Managed Services, using password reset alone and deferring session revocation until the next business day, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "It includes 15-minute response for production down"
+          "text": "It is included for all AWS customers at no additional charge"
         },
         {
           "id": "c",
-          "text": "It includes TAM assignment"
+          "text": "It includes TAM assignment, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "It includes AWS Managed Services"
+          "text": "It includes 15-minute response for production down, while leaving refresh tokens and OAuth consent grants active pending user callback"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Basic support is free and includes customer service and documentation access.",
       "docs": [
@@ -2166,23 +2166,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Detailed line-item billing data to an S3 bucket you own"
+          "text": "Concierge support team and a Technical Account Manager (TAM) option"
         },
         {
           "id": "b",
-          "text": "EC2 AMI catalogs"
+          "text": "Detailed line-item billing data to an S3 bucket you own"
         },
         {
           "id": "c",
-          "text": "Route 53 health checks only"
+          "text": "Use Detailed line-item billing data to an S3 bucket you own for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "d",
-          "text": "IAM user passwords"
+          "text": "Rely on Detailed line-item billing data to an S3 bucket you own alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CUR provides comprehensive billing data for analysis and allocation.",
       "docs": [
@@ -2200,23 +2200,23 @@
       "options": [
         {
           "id": "a",
-          "text": "May incur data transfer out charges"
+          "text": "Costs more than data transfer in, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Is always free unlimited"
+          "text": "Use May incur data transfer out charges for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "c",
-          "text": "Costs more than data transfer in"
+          "text": "May incur data transfer out charges"
         },
         {
           "id": "d",
-          "text": "Is charged per IAM user"
+          "text": "Is charged per IAM user, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Data transfer pricing varies by service and direction; outbound to internet is often charged.",
       "docs": [
@@ -2234,23 +2234,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pub/sub notifications and messaging"
+          "text": "S3, ALB, EC2, and custom origins"
         },
         {
           "id": "b",
-          "text": "Block storage"
+          "text": "Pub/sub notifications and messaging"
         },
         {
           "id": "c",
-          "text": "VPN only"
+          "text": "Serverless data integration and ETL service"
         },
         {
           "id": "d",
-          "text": "Code repositories"
+          "text": "Search, log analytics, and visualization, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Simple Notification Service publishes messages to subscribers and other services.",
       "docs": [
@@ -2268,23 +2268,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Assess, audit, and evaluate configurations of AWS resources"
+          "text": "Rotate, manage, and retrieve secrets, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "b",
-          "text": "Register domains"
+          "text": "AWS compliance programs and attestations, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Run SQL queries on S3 only"
+          "text": "Assess, audit, and evaluate configurations of AWS resources"
         },
         {
           "id": "d",
-          "text": "Replace CloudFront"
+          "text": "Creating and managing encryption keys, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AWS Config tracks resource configuration changes over time.",
       "docs": [
@@ -2302,23 +2302,23 @@
       "options": [
         {
           "id": "a",
-          "text": "A separate geographic area containing multiple Availability Zones"
+          "text": "An IAM user group, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "A single rack in one building only"
+          "text": "Designing across multiple Availability Zones, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "An IAM user group"
+          "text": "A separate geographic area containing multiple Availability Zones"
         },
         {
           "id": "d",
-          "text": "A billing report"
+          "text": "Rely on A separate geographic area containing multiple Availability Zones alone while omitting the cross-service integration the workload needs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Regions are independent geographic areas for deployment and compliance.",
       "docs": [
@@ -2336,23 +2336,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Query data in S3 using standard SQL"
+          "text": "S3, ALB, EC2, and custom origins, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Manage EC2 Auto Scaling only"
+          "text": "Query data in S3 using standard SQL"
         },
         {
           "id": "c",
-          "text": "Create IAM roles"
+          "text": "Transfer large amounts of data into and out of AWS"
         },
         {
           "id": "d",
-          "text": "Ship Snowball Edge"
+          "text": "Without provisioning servers, in response to events, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Athena is serverless interactive query service for S3 data.",
       "docs": [
@@ -2370,23 +2370,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute usage in exchange for a commitment to a consistent amount ($/hour)"
+          "text": "Business hours email access to Cloud Support for technical issues, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Only S3 Glacier"
+          "text": "Compute usage in exchange for a commitment to a consistent amount ($/hour)"
         },
         {
           "id": "c",
-          "text": "Only Route 53 domains"
+          "text": "Combines usage across accounts for volume pricing benefits, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "d",
-          "text": "Support plan fees only"
+          "text": "Offers limited free usage for new and eligible services under stated terms, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Savings Plans offer lower prices on compute in return for a one- or three-year commitment.",
       "docs": [
@@ -2408,15 +2408,15 @@
         },
         {
           "id": "b",
-          "text": "Security"
+          "text": "Rely on Sustainability alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Reliability"
+          "text": "Use Sustainability for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "d",
-          "text": "Performance Efficiency"
+          "text": "AWS Lambda or managed containers"
         }
       ],
       "correct": [
@@ -2438,23 +2438,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Single-AZ deployment"
-        },
-        {
-          "id": "b",
           "text": "Designing for component failure without service interruption"
         },
         {
+          "id": "b",
+          "text": "Using one large instance, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
+        },
+        {
           "id": "c",
-          "text": "Using one large instance"
+          "text": "Rely on Designing for component failure without service interruption alone while omitting the cross-service integration the workload needs"
         },
         {
           "id": "d",
-          "text": "Disabling backups"
+          "text": "Designing across multiple Availability Zones, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "Fault-tolerant designs continue operating when components fail, often using redundancy across AZs.",
       "docs": [
@@ -2512,23 +2512,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Create and manage approved catalogs of IT services for users"
+          "text": "Monitor physical data centers, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Replace IAM policies"
+          "text": "Prohibited uses of AWS services, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "c",
-          "text": "Monitor physical data centers"
+          "text": "Use managed and serverless services, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Ship Snowball devices"
+          "text": "Create and manage approved catalogs of IT services for users"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Service Catalog helps govern which products users can deploy from approved templates.",
       "docs": [
@@ -2546,23 +2546,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS is responsible for everything"
+          "text": "Customers manage physical hardware, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Security and compliance are shared between AWS and the customer"
+          "text": "AWS manages guest operating systems on EC2, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "c",
-          "text": "Customers manage physical hardware"
+          "text": "AWS is responsible for everything, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "AWS manages guest operating systems on EC2"
+          "text": "Security and compliance are shared between AWS and the customer"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "AWS secures the cloud; customers secure what they run in the cloud.",
       "docs": [
@@ -2580,23 +2580,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Buy data center hardware in advance"
+          "text": "Multiple Regions and backup services, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Use managed and serverless services"
+          "text": "Buy data center hardware in advance"
         },
         {
           "id": "c",
-          "text": "Avoid monitoring"
+          "text": "Single server in one AZ, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Single server in one AZ"
+          "text": "Use managed and serverless services"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Managed/serverless services reduce undifferentiated heavy lifting and scale with demand.",
       "docs": [
@@ -2614,23 +2614,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM Identity Center"
+          "text": "Use IAM Identity Center for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "Amazon Macie"
+          "text": "Rely on IAM Identity Center alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "AWS Batch"
+          "text": "A separate geographic area containing multiple Availability Zones"
         },
         {
           "id": "d",
-          "text": "Amazon EBS"
+          "text": "IAM Identity Center"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "IAM Identity Center (AWS SSO) centralizes access to accounts and SAML applications.",
       "docs": [
@@ -2648,23 +2648,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multiple Regions and backup services"
+          "text": "Use managed and serverless services, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "A single laptop"
+          "text": "Multiple Regions and backup services"
         },
         {
           "id": "c",
-          "text": "Disabling snapshots"
+          "text": "Prohibited uses of AWS services, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Removing IAM roles"
+          "text": "Create and manage approved catalogs of IT services for users"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cross-Region replication and backups support RTO/RPO goals for DR.",
       "docs": [
@@ -2682,23 +2682,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Variable expense instead of capital expense"
+          "text": "No need for architecture, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Unlimited free usage"
+          "text": "Variable expense instead of capital expense"
         },
         {
           "id": "c",
-          "text": "No need for architecture"
+          "text": "Elimination of all security, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "d",
-          "text": "Elimination of all security"
+          "text": "Prohibited uses of AWS services, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud converts CapEx to OpEx with consumption-based pricing.",
       "docs": [
@@ -2716,23 +2716,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Review workloads against best practices"
+          "text": "A separate geographic area containing multiple Availability Zones"
         },
         {
           "id": "b",
-          "text": "Replace CloudTrail"
+          "text": "Rely on Review workloads against best practices alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Register domains"
+          "text": "Use Review workloads against best practices for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "d",
-          "text": "Create EC2 AMIs only"
+          "text": "Review workloads against best practices"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "The tool helps document and improve architectures using the Well-Architected Framework.",
       "docs": [
@@ -2754,15 +2754,15 @@
         },
         {
           "id": "b",
-          "text": "Upgrading to a larger instance size only"
+          "text": "Use Adding more EC2 instances behind a load balancer for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "c",
-          "text": "Using a single bigger disk"
+          "text": "Using a single bigger disk, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Disabling Auto Scaling"
+          "text": "Rely on Adding more EC2 instances behind a load balancer alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -2784,23 +2784,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Place compute closer to end users in metro areas"
+          "text": "Rely on Place compute closer to end users in metro areas alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Replace all Regions"
+          "text": "Use Place compute closer to end users in metro areas for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "c",
-          "text": "Store IAM policies"
+          "text": "Place compute closer to end users in metro areas"
         },
         {
           "id": "d",
-          "text": "Provide email hosting"
+          "text": "Prohibited uses of AWS services"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Local Zones extend AWS infrastructure closer to populations for low-latency workloads.",
       "docs": [
@@ -2818,23 +2818,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Performance Efficiency"
+          "text": "Use Performance Efficiency for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "Cost Optimization only"
+          "text": "Use managed and serverless services"
         },
         {
           "id": "c",
-          "text": "Sustainability only"
+          "text": "Performance Efficiency"
         },
         {
           "id": "d",
-          "text": "None of the above"
+          "text": "None of the above, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Performance Efficiency focuses on efficient use of IT and computing resources.",
       "docs": [
@@ -2852,23 +2852,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Combining on-premises infrastructure with AWS Cloud"
+          "text": "Private cloud on AWS (e.g., Outposts), using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Using only one Availability Zone"
+          "text": "Combining on-premises infrastructure with AWS Cloud"
         },
         {
           "id": "c",
-          "text": "No VPN connectivity"
+          "text": "Amazon CloudFront, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Only SaaS products"
+          "text": "Rely on Combining on-premises infrastructure with AWS Cloud alone while omitting the cross-service integration the workload needs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Hybrid connects existing data centers to AWS via VPN, Direct Connect, or Outposts.",
       "docs": [
@@ -2886,23 +2886,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Partner Network (APN)"
+          "text": "Use AWS Partner Network for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "AWS Budgets"
+          "text": "Rely on AWS Partner Network alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Amazon S3 Glacier"
+          "text": "Combining on-premises infrastructure with AWS Cloud"
         },
         {
           "id": "d",
-          "text": "VPC Flow Logs"
+          "text": "AWS Partner Network (APN)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "APN includes consulting and technology partners that build on AWS.",
       "docs": [
@@ -2920,23 +2920,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secure enterprise communication"
+          "text": "Rely on Secure enterprise communication alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Object storage"
+          "text": "Use Secure enterprise communication for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "c",
-          "text": "Data warehouse"
+          "text": "AWS Lambda or managed containers"
         },
         {
           "id": "d",
-          "text": "DNS"
+          "text": "Secure enterprise communication"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Wickr provides encrypted messaging for enterprises (communications/collaboration category).",
       "docs": [
@@ -2954,23 +2954,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS aggregates usage to pass savings to customers"
+          "text": "Each customer builds their own data centers, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Each customer builds their own data centers"
+          "text": "AWS aggregates usage to pass savings to customers"
         },
         {
           "id": "c",
-          "text": "Pricing never changes"
+          "text": "Resources scale up or down to match demand, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Only Enterprise accounts benefit"
+          "text": "Rely on AWS aggregates usage to pass savings to customers alone while omitting the cross-service integration the workload needs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Large-scale infrastructure allows AWS to offer competitive pay-as-you-go pricing.",
       "docs": [
@@ -3028,23 +3028,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scan workloads for software vulnerabilities"
+          "text": "Sensitive data in Amazon S3"
         },
         {
           "id": "b",
-          "text": "Register domain names"
+          "text": "SSL/TLS certificates for AWS services, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Create S3 buckets"
+          "text": "Scan workloads for software vulnerabilities"
         },
         {
           "id": "d",
-          "text": "Manage payroll"
+          "text": "Managed network firewall for VPCs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Inspector assesses EC2 and container workloads for vulnerabilities.",
       "docs": [
@@ -3062,23 +3062,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sensitive data in Amazon S3"
+          "text": "Amazon Detective, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "b",
-          "text": "EC2 instance types"
+          "text": "S3 server-side encryption with KMS or S3-managed keys, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Route tables"
+          "text": "Sensitive data in Amazon S3"
         },
         {
           "id": "d",
-          "text": "IAM user names only"
+          "text": "Security in the cloud (customer responsibility), using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Macie uses machine learning to find sensitive data such as PII in S3.",
       "docs": [
@@ -3096,23 +3096,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Rotate, manage, and retrieve secrets"
+          "text": "AWS WAF and AWS Shield, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Replace VPC"
+          "text": "Rotate, manage, and retrieve secrets"
         },
         {
           "id": "c",
-          "text": "Host static websites"
+          "text": "Assess, audit, and evaluate configurations of AWS resources"
         },
         {
           "id": "d",
-          "text": "Provide GPS tracking"
+          "text": "Creating and managing encryption keys, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secrets Manager stores credentials and can automate rotation.",
       "docs": [
@@ -3130,23 +3130,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM role"
+          "text": "Public access keys in code repos, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Root user for daily tasks"
+          "text": "Rely on IAM role alone while omitting the cross-service integration the workload needs"
         },
         {
           "id": "c",
-          "text": "Public access keys in code repos"
+          "text": "Root user for daily tasks, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Billing contact"
+          "text": "IAM role"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Roles provide temporary credentials without embedding long-term keys.",
       "docs": [
@@ -3164,23 +3164,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSL/TLS certificates for AWS services"
+          "text": "AWS WAF and AWS Shield"
         },
         {
           "id": "b",
-          "text": "Physical security badges"
+          "text": "SSL/TLS certificates for AWS services"
         },
         {
           "id": "c",
-          "text": "EC2 instance families"
+          "text": "Managed network firewall for VPCs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "S3 lifecycle rules"
+          "text": "Allowed for a defined list of services under AWS policy"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ACM provisions and manages public and private SSL/TLS certificates.",
       "docs": [
@@ -3202,15 +3202,15 @@
         },
         {
           "id": "b",
-          "text": "Never allowed"
+          "text": "SSL/TLS certificates for AWS services, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Only for GovCloud"
+          "text": "It adds a layer of protection for the most privileged account, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Managed by S3 only"
+          "text": "Rely on Allowed for a defined list of services under AWS policy alone while omitting the cross-service integration the workload needs"
         }
       ],
       "correct": [
@@ -3271,23 +3271,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Continuously audit AWS usage against controls"
+          "text": "Rely on Continuously audit AWS usage against controls alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Replace CloudWatch"
+          "text": "Assess, audit, and evaluate configurations of AWS resources, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "Ship Snowball"
+          "text": "Continuously audit AWS usage against controls"
         },
         {
           "id": "d",
-          "text": "Create CloudFront distributions"
+          "text": "Grant only permissions required to perform a task"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Audit Manager automates evidence collection for audits and compliance frameworks.",
       "docs": [
@@ -3305,23 +3305,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Resources shared with external entities"
+          "text": "S3 server-side encryption with KMS or S3-managed keys, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Lowest EC2 price"
+          "text": "Assess, audit, and evaluate configurations of AWS resources"
         },
         {
           "id": "c",
-          "text": "S3 object size"
+          "text": "Resources shared with external entities"
         },
         {
           "id": "d",
-          "text": "Domain expiration"
+          "text": "Rely on Resources shared with external entities alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Access Analyzer finds unintended access from outside your account or organization.",
       "docs": [
@@ -3339,23 +3339,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Security Hub"
+          "text": "Security in the cloud (customer responsibility), without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Amazon Polly"
+          "text": "AWS Security Hub"
         },
         {
           "id": "c",
-          "text": "AWS Amplify"
+          "text": "AWS STS (Security Token Service), using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Amazon Rekognition"
+          "text": "Security group, while leaving refresh tokens and OAuth consent grants active pending user callback"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Security Hub collects findings from GuardDuty, Inspector, Macie, and partner tools.",
       "docs": [
@@ -3377,15 +3377,15 @@
         },
         {
           "id": "b",
-          "text": "FTP without encryption"
+          "text": "Use HTTPS for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "c",
-          "text": "Plain HTTP only"
+          "text": "Rely on HTTPS alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "IAM role"
         }
       ],
       "correct": [
@@ -3407,23 +3407,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Only for tasks that require root credentials"
+          "text": "Managed network firewall for VPCs, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "b",
-          "text": "For daily development"
+          "text": "Shared across the team, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Shared across the team"
+          "text": "Only for tasks that require root credentials"
         },
         {
           "id": "d",
-          "text": "Embedded in application code"
+          "text": "Embedded in application code, using password reset alone and deferring session revocation until the next business day"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Create IAM users/roles for daily work; secure root with MFA and minimal use.",
       "docs": [
@@ -3441,23 +3441,23 @@
       "options": [
         {
           "id": "a",
-          "text": "User sign-up, sign-in, and access control for web and mobile apps"
+          "text": "Rely on User sign-up, sign-in, and access control for web and mobile apps alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Block storage"
+          "text": "User sign-up, sign-in, and access control for web and mobile apps"
         },
         {
           "id": "c",
-          "text": "Data warehouse ETL"
+          "text": "Use User sign-up, sign-in, and access control for web and mobile apps for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "d",
-          "text": "Hardware VPN appliances"
+          "text": "Grant only permissions required to perform a task"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cognito handles user directories, federation, and OAuth/OIDC flows for apps.",
       "docs": [
@@ -3475,23 +3475,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Centrally configure WAF rules across accounts"
+          "text": "Log API activity across your AWS account, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "Replace IAM"
+          "text": "Rely on Centrally configure WAF rules across accounts alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Monitor billing only"
+          "text": "Centrally configure WAF rules across accounts"
         },
         {
           "id": "d",
-          "text": "Create RDS snapshots"
+          "text": "Security group"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Firewall Manager applies AWS WAF and VPC security policies across an organization.",
       "docs": [
@@ -3509,23 +3509,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Shield Standard"
+          "text": "Rely on AWS Shield Standard alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "AWS Shield Advanced only"
+          "text": "Configuring security groups on EC2"
         },
         {
           "id": "c",
-          "text": "Amazon S3"
+          "text": "AWS Shield Standard"
         },
         {
           "id": "d",
-          "text": "AWS Glue"
+          "text": "AWS WAF and AWS Shield, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Shield Standard is automatically included for all customers.",
       "docs": [
@@ -3547,15 +3547,15 @@
         },
         {
           "id": "b",
-          "text": "Free public Wi-Fi"
+          "text": "Rely on Hardware security modules you control alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "DNS caching"
+          "text": "Configuring security groups on EC2, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Email filtering"
+          "text": "AWS compliance programs and attestations"
         }
       ],
       "correct": [
@@ -3577,23 +3577,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Artifact"
+          "text": "Use AWS Artifact for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "HTTPS (TLS)"
         },
         {
           "id": "c",
-          "text": "AWS Batch"
+          "text": "Rely on AWS Artifact alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail"
+          "text": "AWS Artifact"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Artifact provides compliance documentation customers need for audits.",
       "docs": [
@@ -3611,23 +3611,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security in the cloud (customer responsibility)"
+          "text": "Hypervisor patching by AWS, without preserving cloud audit logs or hunting mailbox rules and delegate permissions"
         },
         {
           "id": "b",
-          "text": "Physical security of AWS"
+          "text": "Physical security of AWS, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "c",
-          "text": "Hypervisor patching by AWS"
+          "text": "Sensitive data in Amazon S3, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Global edge caching"
+          "text": "Security in the cloud (customer responsibility)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Customers configure security groups and NACLs for their VPC resources.",
       "docs": [
@@ -3645,23 +3645,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Explicit deny overrides allow"
+          "text": "Allowed for a defined list of services under AWS policy"
         },
         {
           "id": "b",
-          "text": "Deny is ignored"
+          "text": "Use Explicit deny overrides allow for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "c",
-          "text": "Root is denied always"
+          "text": "Explicit deny overrides allow"
         },
         {
           "id": "d",
-          "text": "S3 has no policies"
+          "text": "S3 has no policies, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "By default requests are denied; explicit allow grants access unless explicit deny exists.",
       "docs": [
@@ -3718,23 +3718,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Managed network firewall for VPCs"
+          "text": "Scan workloads for software vulnerabilities, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "S3 storage class"
+          "text": "Resources shared with external entities"
         },
         {
           "id": "c",
-          "text": "Database engine"
+          "text": "SSL/TLS certificates for AWS services, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Email service"
+          "text": "Managed network firewall for VPCs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Network Firewall provides stateful inspection for VPC traffic.",
       "docs": [
@@ -3756,15 +3756,15 @@
         },
         {
           "id": "b",
-          "text": "Physical access cards"
+          "text": "Configuring security groups on EC2, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Domain registration"
+          "text": "Assess, audit, and evaluate configurations of AWS resources, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "S3 static hosting"
+          "text": "Creating and managing encryption keys, using password reset alone and deferring session revocation until the next business day"
         }
       ],
       "correct": [
@@ -3786,23 +3786,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scalable NFS file storage for EC2"
+          "text": "S3, ALB, EC2, and custom origins, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Object storage"
+          "text": "Manage and operate EC2 and hybrid nodes at scale"
         },
         {
           "id": "c",
-          "text": "DNS routing"
+          "text": "Scalable NFS file storage for EC2"
         },
         {
           "id": "d",
-          "text": "Relational OLTP only"
+          "text": "Application deployments to EC2, Lambda, and on-premises, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "EFS is managed NFS for Linux workloads across AZs.",
       "docs": [
@@ -3820,23 +3820,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transfer large amounts of data into and out of AWS"
+          "text": "Application deployments to EC2, Lambda, and on-premises, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "b",
-          "text": "Run Lambda functions"
+          "text": "Real-time streaming data ingestion and processing, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Manage IAM users"
+          "text": "Pub/sub notifications and messaging, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Host WordPress only"
+          "text": "Transfer large amounts of data into and out of AWS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Snowball devices provide petabyte-scale offline data migration.",
       "docs": [
@@ -3858,15 +3858,15 @@
         },
         {
           "id": "b",
-          "text": "Mobile push service"
+          "text": "Rely on Data warehouse service alone while omitting the cross-service integration the workload needs"
         },
         {
           "id": "c",
-          "text": "VPN client"
+          "text": "Serverless data integration and ETL service, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Certificate authority"
+          "text": "Natural language processing (NLP) service, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
@@ -3888,23 +3888,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Serverless data integration and ETL service"
+          "text": "Real-time streaming data ingestion and processing, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "CDN"
+          "text": "Serverless data integration and ETL service"
         },
         {
           "id": "c",
-          "text": "Firewall appliance"
+          "text": "Transfer large amounts of data into and out of AWS"
         },
         {
           "id": "d",
-          "text": "Email archive"
+          "text": "Search, log analytics, and visualization, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Glue discovers, prepares, and integrates data for analytics.",
       "docs": [
@@ -3922,23 +3922,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Real-time streaming data ingestion and processing"
+          "text": "Transfer large amounts of data into and out of AWS"
         },
         {
           "id": "b",
-          "text": "Static website hosting only"
+          "text": "Query data in S3 using standard SQL, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "IAM federation"
+          "text": "Big data processing with Apache Spark and Hadoop, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Reserved Instance purchases"
+          "text": "Real-time streaming data ingestion and processing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Kinesis collects, processes, and analyzes streaming data.",
       "docs": [
@@ -3956,23 +3956,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Distributed workflows across AWS services"
+          "text": "DNS and domain registration services, using shared credentials instead of individual accountability."
         },
         {
           "id": "b",
-          "text": "S3 bucket naming"
+          "text": "Distributed workflows across AWS services"
         },
         {
           "id": "c",
-          "text": "Physical shipping"
+          "text": "Data warehouse service"
         },
         {
           "id": "d",
-          "text": "Domain transfers"
+          "text": "Rely on Distributed workflows across AWS services alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Step Functions coordinates Lambda, ECS, and other services in visual workflows.",
       "docs": [
@@ -3990,23 +3990,23 @@
       "options": [
         {
           "id": "a",
-          "text": "In-memory caching (Redis/Memcached)"
+          "text": "Use In-memory caching for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "Long-term archival"
+          "text": "Rely on In-memory caching alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "DNS failover"
+          "text": "Model and provision infrastructure as code"
         },
         {
           "id": "d",
-          "text": "Compliance PDFs"
+          "text": "In-memory caching (Redis/Memcached)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "ElastiCache improves application performance with microsecond latency caching.",
       "docs": [
@@ -4028,15 +4028,15 @@
         },
         {
           "id": "b",
-          "text": "On-premises routers"
+          "text": "Batch computing jobs at any scale, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "IAM policies"
+          "text": "Deploy and scale web applications with minimal infrastructure decisions"
         },
         {
           "id": "d",
-          "text": "Snowmobile trucks"
+          "text": "Connected devices to interact with cloud applications, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -4058,23 +4058,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Simple applications, websites, and dev environments at a fixed price"
+          "text": "Deploy and scale web applications with minimal infrastructure decisions, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Exabyte-scale data lakes only"
+          "text": "VPCs and on-premises networks through a central hub, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Mainframe migration only"
+          "text": "Simple applications, websites, and dev environments at a fixed price"
         },
         {
           "id": "d",
-          "text": "IAM organization SCPs"
+          "text": "Manage and operate EC2 and hybrid nodes at scale, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Lightsail bundles compute, storage, and networking for easy projects.",
       "docs": [
@@ -4092,23 +4092,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Manage and operate EC2 and hybrid nodes at scale"
+          "text": "S3, ALB, EC2, and custom origins, without preserving cloud audit logs or hunting mailbox rules and delegate permissions"
         },
         {
           "id": "b",
-          "text": "Replace Route 53"
+          "text": "Batch computing jobs at any scale, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "c",
-          "text": "Buy reserved capacity only"
+          "text": "Containerized web applications at scale, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "d",
-          "text": "Register trademarks"
+          "text": "Manage and operate EC2 and hybrid nodes at scale"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Systems Manager provides patch, run command, parameter store, and inventory features.",
       "docs": [
@@ -4130,15 +4130,15 @@
         },
         {
           "id": "b",
-          "text": "Email delivery"
+          "text": "Real-time streaming data ingestion and processing, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "SSL certificates"
+          "text": "Transfer large amounts of data into and out of AWS"
         },
         {
           "id": "d",
-          "text": "VPC peering only"
+          "text": "Deploy and scale web applications with minimal infrastructure decisions, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -4164,15 +4164,15 @@
         },
         {
           "id": "b",
-          "text": "Only on-premises"
+          "text": "Rely on Without managing servers alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Without networking"
+          "text": "Build and deploy full-stack web and mobile apps"
         },
         {
           "id": "d",
-          "text": "Only on Windows 95"
+          "text": "Without provisioning servers, in response to events, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -4198,15 +4198,15 @@
         },
         {
           "id": "b",
-          "text": "Object storage"
+          "text": "Rely on Managed desktop virtualization alone while omitting the cross-service integration the workload needs"
         },
         {
           "id": "c",
-          "text": "IoT device firmware"
+          "text": "Managed relational databases, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Snowball ordering"
+          "text": "Managed document database, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
@@ -4228,23 +4228,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Migrate databases to AWS with minimal downtime"
+          "text": "Scan malware on laptops, without preserving cloud audit logs or hunting mailbox rules and delegate permissions"
         },
         {
           "id": "b",
-          "text": "Replace CloudFront"
+          "text": "Migrate databases to AWS with minimal downtime"
         },
         {
           "id": "c",
-          "text": "Scan malware on laptops"
+          "text": "Application deployments to EC2, Lambda, and on-premises, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Manage payroll"
+          "text": "Connected devices to interact with cloud applications, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "DMS supports homogeneous and heterogeneous database migrations.",
       "docs": [
@@ -4266,15 +4266,15 @@
         },
         {
           "id": "b",
-          "text": "S3 lifecycle"
+          "text": "Search, log analytics, and visualization, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "EC2 reservations"
+          "text": "S3, ALB, EC2, and custom origins"
         },
         {
           "id": "d",
-          "text": "IAM MFA"
+          "text": "DNS and domain registration services, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -4300,15 +4300,15 @@
         },
         {
           "id": "b",
-          "text": "Operate physical data centers"
+          "text": "Operate physical data centers, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "c",
-          "text": "Replace AWS Organizations"
+          "text": "Transfer large amounts of data into and out of AWS, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Audit PCI only"
+          "text": "Application deployments to EC2, Lambda, and on-premises, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
@@ -4334,15 +4334,15 @@
         },
         {
           "id": "b",
-          "text": "DNS routing"
+          "text": "Serverless data integration and ETL service, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "S3 replication only"
+          "text": "Big data processing with Apache Spark and Hadoop, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Snowball repair"
+          "text": "Transfer large amounts of data into and out of AWS"
         }
       ],
       "correct": [
@@ -4364,23 +4364,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPCs and on-premises networks through a central hub"
+          "text": "IAM users to payroll, without preserving cloud audit logs or hunting mailbox rules and delegate permissions"
         },
         {
           "id": "b",
-          "text": "Only two S3 buckets"
+          "text": "VPCs and on-premises networks through a central hub"
         },
         {
           "id": "c",
-          "text": "IAM users to payroll"
+          "text": "Simple applications, websites, and dev environments at a fixed price, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Edge locations to laptops only"
+          "text": "Dedicated private connectivity from on-premises to AWS, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Transit Gateway simplifies network architecture at scale.",
       "docs": [
@@ -4402,15 +4402,15 @@
         },
         {
           "id": "b",
-          "text": "CDN"
+          "text": "Managed relational databases, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Firewall"
+          "text": "A MySQL and PostgreSQL-compatible relational database"
         },
         {
           "id": "d",
-          "text": "Data transfer report"
+          "text": "Managed desktop virtualization (DaaS), without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -4471,23 +4471,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dedicated private connectivity from on-premises to AWS"
+          "text": "S3 object encryption keys, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Free public internet for all"
+          "text": "Dedicated private connectivity from on-premises to AWS"
         },
         {
           "id": "c",
-          "text": "S3 object encryption keys"
+          "text": "Free public internet for all, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "d",
-          "text": "Lambda runtime only"
+          "text": "Without provisioning servers, in response to events, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Direct Connect establishes private network links to AWS.",
       "docs": [
@@ -4505,23 +4505,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3, ALB, EC2, and custom origins"
+          "text": "Manage and operate EC2 and hybrid nodes at scale"
         },
         {
           "id": "b",
-          "text": "Only paper archives"
+          "text": "S3, ALB, EC2, and custom origins"
         },
         {
           "id": "c",
-          "text": "IAM policies"
+          "text": "Application deployments to EC2, Lambda, and on-premises, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Cost Explorer"
+          "text": "DNS and domain registration services, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CloudFront caches content from many AWS and custom HTTP origins.",
       "docs": [
@@ -4539,23 +4539,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Batch computing jobs at any scale"
+          "text": "Manage and operate EC2 and hybrid nodes at scale, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Real-time chat only"
+          "text": "Batch computing jobs at any scale"
         },
         {
           "id": "c",
-          "text": "Domain WHOIS"
+          "text": "Containerized web applications at scale, using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "MFA devices"
+          "text": "Rely on Batch computing jobs at any scale alone while omitting the cross-service integration the workload needs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Batch dynamically provisions compute for batch workloads.",
       "docs": [
@@ -4577,15 +4577,15 @@
         },
         {
           "id": "b",
-          "text": "GPU training only"
+          "text": "Monitoring metrics and logs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Snowball ordering"
+          "text": "Serverless data integration and ETL service"
         },
         {
           "id": "d",
-          "text": "IAM SSO"
+          "text": "DNS and domain registration services, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -4611,15 +4611,15 @@
         },
         {
           "id": "b",
-          "text": "Only email hosting"
+          "text": "Migrate databases to AWS with minimal downtime, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "Reserved Instance sharing"
+          "text": "Containerized web applications at scale, while leaving refresh tokens and OAuth consent grants active pending user callback"
         },
         {
           "id": "d",
-          "text": "Artifact downloads"
+          "text": "Dedicated private connectivity from on-premises to AWS, using shared credentials instead of individual accountability."
         }
       ],
       "correct": [
@@ -4641,23 +4641,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Managed third-party file systems (Windows, Lustre, NetApp, OpenZFS)"
+          "text": "Managed relational databases"
         },
         {
           "id": "b",
-          "text": "DNS only"
+          "text": "Use Managed third-party file systems for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "c",
-          "text": "IAM keys"
+          "text": "Rely on Managed third-party file systems alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Support cases"
+          "text": "Managed third-party file systems (Windows, Lustre, NetApp, OpenZFS)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "FSx offers fully managed Windows File Server, Lustre, ONTAP, and more.",
       "docs": [
@@ -4675,23 +4675,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application deployments to EC2, Lambda, and on-premises"
+          "text": "Big data processing with Apache Spark and Hadoop, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "S3 bucket creation only"
+          "text": "S3, ALB, EC2, and custom origins, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Root password resets"
+          "text": "Application deployments to EC2, Lambda, and on-premises"
         },
         {
           "id": "d",
-          "text": "Snowmobile driving"
+          "text": "Manage and operate EC2 and hybrid nodes at scale"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CodeDeploy rolls out application revisions with minimal downtime.",
       "docs": [
@@ -4709,23 +4709,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Image and video analysis using machine learning"
+          "text": "Create, publish, and manage APIs, using password reset alone and deferring session revocation until the next business day"
         },
         {
           "id": "b",
-          "text": "Block storage"
+          "text": "Image and video analysis using machine learning"
         },
         {
           "id": "c",
-          "text": "VPC peering"
+          "text": "Apache ActiveMQ and RabbitMQ brokers, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Billing consolidation"
+          "text": "Monitoring metrics and logs, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Rekognition detects objects, faces, text, and inappropriate content in media.",
       "docs": [
@@ -4743,23 +4743,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Your data center to a VPC over an encrypted tunnel"
+          "text": "Use Your data center to a VPC over an encrypted tunnel for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "Two S3 buckets only"
+          "text": "Rely on Your data center to a VPC over an encrypted tunnel alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Users to Twitter"
+          "text": "S3, ALB, EC2, and custom origins"
         },
         {
           "id": "d",
-          "text": "Artifact to Macie"
+          "text": "Your data center to a VPC over an encrypted tunnel"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Site-to-Site VPN creates IPsec tunnels between your network and AWS.",
       "docs": [
@@ -4777,23 +4777,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Natural language processing (NLP) service"
+          "text": "Serverless data integration and ETL service, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Hardware load balancer"
+          "text": "Real-time streaming data ingestion and processing, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "S3 storage tier"
+          "text": "Natural language processing (NLP) service"
         },
         {
           "id": "d",
-          "text": "Support plan"
+          "text": "Big data processing with Apache Spark and Hadoop"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Comprehend finds insights and relationships in text using ML.",
       "docs": [
@@ -4811,23 +4811,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Estimate monthly AWS costs before deployment"
+          "text": "Use Estimate monthly AWS costs before deployment for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "b",
-          "text": "Patch Windows servers"
+          "text": "It is included for all AWS customers at no additional charge"
         },
         {
           "id": "c",
-          "text": "Create IAM groups"
+          "text": "Estimate monthly AWS costs before deployment"
         },
         {
           "id": "d",
-          "text": "Enable GuardDuty"
+          "text": "Rely on Estimate monthly AWS costs before deployment alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Build estimates for services and configurations at calculator.aws.",
       "docs": [
@@ -4845,23 +4845,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Spot Instances"
+          "text": "Reserved Instances / Savings Plans, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Dedicated Hosts only"
+          "text": "On-Demand with no interruption, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "On-Demand with no interruption"
+          "text": "Spot Instances"
         },
         {
           "id": "d",
-          "text": "Enterprise support fee"
+          "text": "Rely on Spot Instances alone while omitting the cross-service integration the workload needs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Spot Instances use unused capacity at steep discounts.",
       "docs": [
@@ -4879,23 +4879,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Business hours email access to Cloud Support for technical issues"
+          "text": "24/7 phone for all accounts, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "24/7 phone for all accounts"
+          "text": "Business hours email access to Cloud Support for technical issues"
         },
         {
           "id": "c",
-          "text": "Dedicated TAM"
+          "text": "Compute usage in exchange for a commitment to a consistent amount ($/hour), using shared credentials instead of individual accountability."
         },
         {
           "id": "d",
-          "text": "Unlimited free usage"
+          "text": "Rely on Business hours email access to Cloud Support for technical issues alone while omitting the cross-service integration the workload needs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Developer adds technical support during business hours via email.",
       "docs": [
@@ -4913,23 +4913,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Budgets"
+          "text": "Estimate monthly AWS costs before deployment"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Use AWS Budgets for a related capability, but without meeting the requirement described in the scenario"
         },
         {
           "id": "c",
-          "text": "VPC Flow Logs"
+          "text": "Rely on AWS Budgets alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Amazon EKS"
+          "text": "AWS Budgets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Budgets sends alerts when cost or usage exceeds thresholds you define.",
       "docs": [
@@ -4951,15 +4951,15 @@
         },
         {
           "id": "b",
-          "text": "Never apply across accounts"
+          "text": "Combines usage across accounts for volume pricing benefits, using shared credentials instead of individual accountability."
         },
         {
           "id": "c",
-          "text": "Only for S3"
+          "text": "Offers limited free usage for new and eligible services under stated terms"
         },
         {
           "id": "d",
-          "text": "Only in GovCloud"
+          "text": "Rely on Can apply across accounts in the same organization alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -4981,29 +4981,29 @@
       "options": [
         {
           "id": "a",
-          "text": "Concierge support team and a Technical Account Manager (TAM) option"
+          "text": "Can apply across accounts in the same organization"
         },
         {
           "id": "b",
-          "text": "No technical support"
+          "text": "Concierge support team and a Technical Account Manager (TAM) option"
         },
         {
           "id": "c",
-          "text": "Only documentation"
+          "text": "Rely on Concierge support team and a Technical Account Manager alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "Free Snowmobile"
+          "text": "Use Concierge support team and a Technical Account Manager for a related capability, but without meeting the requirement described in the scenario"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Enterprise provides highest level of proactive and reactive support.",
       "docs": [
         {
           "title": "Enterprise Support",
-          "url": "https://aws.amazon.com/premiumsupport/plans/enterprise/"
+          "url": "https://aws.amazon.com/premiumsupport/enterprise/"
         }
       ]
     },
@@ -5015,23 +5015,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Trusted Advisor"
+          "text": "Business hours email access to Cloud Support for technical issues"
         },
         {
           "id": "b",
-          "text": "AWS Artifact only"
+          "text": "AWS Trusted Advisor"
         },
         {
           "id": "c",
-          "text": "Amazon Polly"
+          "text": "Rely on AWS Trusted Advisor alone while omitting the cross-service integration the workload needs, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "AWS Snowball"
+          "text": "Use AWS Trusted Advisor for a related capability, but without meeting the requirement described in the scenario"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Trusted Advisor checks cost optimization, performance, security, and fault tolerance.",
       "docs": [
@@ -5049,23 +5049,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Free for many services"
+          "text": "Charged per IAM user, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "More expensive than transfer out"
+          "text": "More expensive than transfer out, without security or identity team coordination per policy."
         },
         {
           "id": "c",
-          "text": "Charged per IAM user"
+          "text": "Free for many services"
         },
         {
           "id": "d",
-          "text": "Not measurable"
+          "text": "Offers limited free usage for new and eligible services under stated terms"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Inbound data transfer is often free; outbound charges commonly apply (verify per service).",
       "docs": [
@@ -5126,15 +5126,15 @@
         },
         {
           "id": "b",
-          "text": "You require 3-year commitment"
+          "text": "Rely on You need short-term, flexible compute without upfront payment alone while omitting the cross-service integration the workload needs"
         },
         {
           "id": "c",
-          "text": "You cannot tolerate stopping"
+          "text": "You require 3-year commitment, while leaving refresh tokens and OAuth consent grants active pending user callback, without security or identity team coordination per policy."
         },
         {
           "id": "d",
-          "text": "You only use Spot"
+          "text": "You cannot tolerate stopping, without preserving cloud audit logs or hunting mailbox rules and delegate permissions, without security or identity team coordination per policy."
         }
       ],
       "correct": [
@@ -5156,23 +5156,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Find, buy, and deploy third-party software on AWS"
+          "text": "Visualize and analyze AWS spending over time, without security or identity team coordination per policy."
         },
         {
           "id": "b",
-          "text": "Replace AWS Support"
+          "text": "Workloads can tolerate interruption and want lowest price"
         },
         {
           "id": "c",
-          "text": "Avoid all charges"
+          "text": "Set custom cost and usage thresholds with alerts"
         },
         {
           "id": "d",
-          "text": "Manage physical cables"
+          "text": "Find, buy, and deploy third-party software on AWS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Marketplace offers SaaS, AMIs, and data products from independent vendors.",
       "docs": [

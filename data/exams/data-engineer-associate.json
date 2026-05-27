@@ -82,23 +82,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "AWS DMS"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "c",
-          "text": "Amazon WorkSpaces"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Glue runs Spark-based ETL jobs.",
       "docs": [
@@ -120,15 +120,15 @@
         },
         {
           "id": "b",
-          "text": "Batch FTP nightly only"
+          "text": "AWS DMS"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "d",
-          "text": "Glacier for hot path"
+          "text": "AWS Glue DataBrew"
         }
       ],
       "correct": [
@@ -154,15 +154,15 @@
         },
         {
           "id": "b",
-          "text": "Manual Excel only"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "c",
-          "text": "No recipes"
+          "text": "AWS DMS"
         },
         {
           "id": "d",
-          "text": "Prod edits without version"
+          "text": "Amazon Athena or Spark on Glue"
         }
       ],
       "correct": [
@@ -188,15 +188,15 @@
         },
         {
           "id": "b",
-          "text": "USB stick only"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "c",
-          "text": "Screenshots of tables"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "d",
-          "text": "Ignore CDC"
+          "text": "Amazon Athena or Spark on Glue"
         }
       ],
       "correct": [
@@ -218,23 +218,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "b",
-          "text": "Cron on one server"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "c",
-          "text": "Manual rerun chains"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         },
         {
           "id": "d",
-          "text": "No retries"
+          "text": "AWS DMS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Orchestrators manage task DAGs.",
       "docs": [
@@ -252,23 +252,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Athena or Spark on Glue"
+          "text": "Amazon AppFlow"
         },
         {
           "id": "b",
-          "text": "grep S3 objects only"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "c",
-          "text": "No partitioning"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "d",
-          "text": "Scan all data always"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Athena queries S3 with Presto/Trino SQL.",
       "docs": [
@@ -286,23 +286,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Apache Iceberg/Hudi/Delta on Glue or EMR"
+          "text": "Overwrite full table hourly expensive (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Overwrite full table hourly expensive"
+          "text": "Apache Iceberg/Hudi/Delta on Glue or EMR"
         },
         {
           "id": "c",
-          "text": "No ACID"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "d",
-          "text": "Duplicate rows always"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Table formats support upserts and time travel.",
       "docs": [
@@ -320,23 +320,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon AppFlow"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         },
         {
           "id": "b",
-          "text": "Manual CSV export only"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "c",
-          "text": "Scrape HTML"
+          "text": "AWS DMS"
         },
         {
           "id": "d",
-          "text": "Email attachments"
+          "text": "Amazon AppFlow"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "AppFlow integrates Salesforce, SAP, and others.",
       "docs": [
@@ -358,15 +358,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "c",
-          "text": "Amazon WorkSpaces"
+          "text": "Amazon AppFlow"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "AWS DMS"
         }
       ],
       "correct": [
@@ -388,23 +388,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "AWS DMS"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "Amazon WorkSpaces"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Glue runs Spark-based ETL jobs.",
       "docs": [
@@ -422,23 +422,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "c",
-          "text": "Amazon WorkSpaces"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Glue runs Spark-based ETL jobs.",
       "docs": [
@@ -456,23 +456,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Kinesis Data Streams or Firehose"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "b",
-          "text": "Batch FTP nightly only"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         },
         {
           "id": "d",
-          "text": "Glacier for hot path"
+          "text": "AWS DMS"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Kinesis handles high-throughput streams.",
       "docs": [
@@ -494,15 +494,15 @@
         },
         {
           "id": "b",
-          "text": "Batch FTP nightly only"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "AWS Glue"
         },
         {
           "id": "d",
-          "text": "Glacier for hot path"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         }
       ],
       "correct": [
@@ -528,15 +528,15 @@
         },
         {
           "id": "b",
-          "text": "Batch FTP nightly only"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "c",
-          "text": "Email CSV"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "d",
-          "text": "Glacier for hot path"
+          "text": "AWS DMS"
         }
       ],
       "correct": [
@@ -558,23 +558,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue DataBrew"
+          "text": "AWS DMS"
         },
         {
           "id": "b",
-          "text": "Manual Excel only"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "c",
-          "text": "No recipes"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         },
         {
           "id": "d",
-          "text": "Prod edits without version"
+          "text": "Amazon Athena or Spark on Glue"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "DataBrew cleans and normalizes data without code.",
       "docs": [
@@ -592,23 +592,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue DataBrew"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "b",
-          "text": "Manual Excel only"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         },
         {
           "id": "c",
-          "text": "No recipes"
+          "text": "AWS DMS"
         },
         {
           "id": "d",
-          "text": "Prod edits without version"
+          "text": "AWS Glue DataBrew"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "DataBrew cleans and normalizes data without code.",
       "docs": [
@@ -626,23 +626,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue DataBrew"
+          "text": "AWS DMS"
         },
         {
           "id": "b",
-          "text": "Manual Excel only"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "c",
-          "text": "No recipes"
+          "text": "AWS Glue"
         },
         {
           "id": "d",
-          "text": "Prod edits without version"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "DataBrew cleans and normalizes data without code.",
       "docs": [
@@ -660,23 +660,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS DMS"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "b",
-          "text": "USB stick only"
+          "text": "AWS DMS"
         },
         {
           "id": "c",
-          "text": "Screenshots of tables"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "d",
-          "text": "Ignore CDC"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Database Migration Service supports homogeneous and heterogeneous migrations.",
       "docs": [
@@ -694,23 +694,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS DMS"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         },
         {
           "id": "b",
-          "text": "USB stick only"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "c",
-          "text": "Screenshots of tables"
+          "text": "AWS DMS"
         },
         {
           "id": "d",
-          "text": "Ignore CDC"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Database Migration Service supports homogeneous and heterogeneous migrations.",
       "docs": [
@@ -728,23 +728,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS DMS"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "b",
-          "text": "USB stick only"
+          "text": "AWS Glue"
         },
         {
           "id": "c",
-          "text": "Screenshots of tables"
+          "text": "AWS DMS"
         },
         {
           "id": "d",
-          "text": "Ignore CDC"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Database Migration Service supports homogeneous and heterogeneous migrations.",
       "docs": [
@@ -762,23 +762,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "b",
-          "text": "Cron on one server"
+          "text": "Apache Iceberg/Hudi/Delta on Glue or EMR"
         },
         {
           "id": "c",
-          "text": "Manual rerun chains"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "d",
-          "text": "No retries"
+          "text": "AWS Glue"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Orchestrators manage task DAGs.",
       "docs": [
@@ -796,23 +796,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
+          "text": "Amazon AppFlow"
         },
         {
           "id": "b",
-          "text": "Cron on one server"
+          "text": "AWS DMS"
         },
         {
           "id": "c",
-          "text": "Manual rerun chains"
+          "text": "Amazon Athena or Spark on Glue"
         },
         {
           "id": "d",
-          "text": "No retries"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Orchestrators manage task DAGs.",
       "docs": [
@@ -830,23 +830,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "b",
-          "text": "Cron on one server"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "c",
-          "text": "Manual rerun chains"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         },
         {
           "id": "d",
-          "text": "No retries"
+          "text": "Amazon Athena or Spark on Glue"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Orchestrators manage task DAGs.",
       "docs": [
@@ -864,23 +864,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Athena or Spark on Glue"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         },
         {
           "id": "b",
-          "text": "grep S3 objects only"
+          "text": "Apache Iceberg/Hudi/Delta on Glue or EMR"
         },
         {
           "id": "c",
-          "text": "No partitioning"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "d",
-          "text": "Scan all data always"
+          "text": "Amazon Athena or Spark on Glue"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Athena queries S3 with Presto/Trino SQL.",
       "docs": [
@@ -902,15 +902,15 @@
         },
         {
           "id": "b",
-          "text": "grep S3 objects only"
+          "text": "AWS Step Functions or Managed Workflows for Apache Airflow (MWAA)"
         },
         {
           "id": "c",
-          "text": "No partitioning"
+          "text": "AWS Glue"
         },
         {
           "id": "d",
-          "text": "Scan all data always"
+          "text": "Amazon Kinesis Data Streams or Firehose"
         }
       ],
       "correct": [
@@ -932,23 +932,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Athena or Spark on Glue"
+          "text": "AWS Glue DataBrew"
         },
         {
           "id": "b",
-          "text": "grep S3 objects only"
+          "text": "Scan all data always (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No partitioning"
+          "text": "AWS DMS"
         },
         {
           "id": "d",
-          "text": "Scan all data always"
+          "text": "Amazon Athena or Spark on Glue"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Athena queries S3 with Presto/Trino SQL.",
       "docs": [
@@ -970,15 +970,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "c",
-          "text": "Amazon MQ"
+          "text": "Amazon OpenSearch Service"
         },
         {
           "id": "d",
-          "text": "Route 53"
+          "text": "Amazon DynamoDB"
         }
       ],
       "correct": [
@@ -1000,23 +1000,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Apache Iceberg tables on S3 with Athena or EMR"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "b",
-          "text": "Random JSON only no schema"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "c",
-          "text": "Public write bucket"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "d",
-          "text": "No compaction"
+          "text": "Amazon Redshift"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Iceberg adds transactions to data lakes.",
       "docs": [
@@ -1034,23 +1034,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon DynamoDB"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "b",
-          "text": "Flat file on NFS"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "AWS DMS with S3 target or zero-ETL integrations"
         },
         {
           "id": "d",
-          "text": "Unsharded MySQL on laptop"
+          "text": "Amazon DynamoDB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "DynamoDB scales operational metadata stores.",
       "docs": [
@@ -1068,7 +1068,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 Glacier storage classes"
+          "text": "Amazon OpenSearch Service"
         },
         {
           "id": "b",
@@ -1076,15 +1076,15 @@
         },
         {
           "id": "c",
-          "text": "Delete archives needed"
+          "text": "Amazon Redshift"
         },
         {
           "id": "d",
-          "text": "No lifecycle"
+          "text": "Amazon S3 Glacier storage classes"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Glacier tiers reduce long-term storage cost.",
       "docs": [
@@ -1102,23 +1102,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon OpenSearch Service"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "b",
-          "text": "grep across all S3 forever"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "c",
-          "text": "No indexes"
+          "text": "Amazon OpenSearch Service"
         },
         {
           "id": "d",
-          "text": "Single shard only"
+          "text": "grep across all S3 forever"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "OpenSearch indexes logs and text.",
       "docs": [
@@ -1136,23 +1136,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Lake Formation"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "b",
-          "text": "S3 ACLs only for everything"
+          "text": "AWS Lake Formation"
         },
         {
           "id": "c",
-          "text": "Public lake"
+          "text": "Amazon OpenSearch Service"
         },
         {
           "id": "d",
-          "text": "No column-level security"
+          "text": "Amazon Redshift"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Lake Formation centralizes fine-grained access.",
       "docs": [
@@ -1170,7 +1170,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EMR"
+          "text": "Amazon OpenSearch Service"
         },
         {
           "id": "b",
@@ -1178,15 +1178,15 @@
         },
         {
           "id": "c",
-          "text": "No autoscaling"
+          "text": "Amazon EMR"
         },
         {
           "id": "d",
-          "text": "Ignore spot"
+          "text": "AWS DMS with S3 target or zero-ETL integrations"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "EMR runs Hadoop, Spark, Presto, and more.",
       "docs": [
@@ -1208,15 +1208,15 @@
         },
         {
           "id": "b",
-          "text": "Nightly full dump only for huge DB"
+          "text": "Amazon OpenSearch Service"
         },
         {
           "id": "c",
-          "text": "Drop WAL"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "d",
-          "text": "No CDC"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         }
       ],
       "correct": [
@@ -1242,15 +1242,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "c",
-          "text": "Amazon MQ"
+          "text": "Amazon EMR"
         },
         {
           "id": "d",
-          "text": "Route 53"
+          "text": "Amazon S3 Glacier storage classes"
         }
       ],
       "correct": [
@@ -1272,23 +1272,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Redshift"
+          "text": "Amazon OpenSearch Service"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "AWS DMS with S3 target or zero-ETL integrations"
         },
         {
           "id": "c",
-          "text": "Amazon MQ"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "d",
-          "text": "Route 53"
+          "text": "Amazon Redshift"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Redshift analyzes structured data at scale.",
       "docs": [
@@ -1306,23 +1306,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Redshift"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "Amazon OpenSearch Service"
         },
         {
           "id": "c",
-          "text": "Amazon MQ"
+          "text": "Amazon Redshift"
         },
         {
           "id": "d",
-          "text": "Route 53"
+          "text": "Amazon EMR"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Redshift analyzes structured data at scale.",
       "docs": [
@@ -1340,23 +1340,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Apache Iceberg tables on S3 with Athena or EMR"
+          "text": "Amazon Redshift"
         },
         {
           "id": "b",
-          "text": "Random JSON only no schema"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "c",
-          "text": "Public write bucket"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "d",
-          "text": "No compaction"
+          "text": "Amazon OpenSearch Service"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Iceberg adds transactions to data lakes.",
       "docs": [
@@ -1374,23 +1374,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Apache Iceberg tables on S3 with Athena or EMR"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "b",
-          "text": "Random JSON only no schema"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "c",
-          "text": "Public write bucket"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "d",
-          "text": "No compaction"
+          "text": "Amazon Redshift"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Iceberg adds transactions to data lakes.",
       "docs": [
@@ -1408,23 +1408,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Apache Iceberg tables on S3 with Athena or EMR"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "b",
-          "text": "Random JSON only no schema"
+          "text": "Amazon Redshift"
         },
         {
           "id": "c",
-          "text": "Public write bucket"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "d",
-          "text": "No compaction"
+          "text": "AWS DMS with S3 target or zero-ETL integrations"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Iceberg adds transactions to data lakes.",
       "docs": [
@@ -1442,23 +1442,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon DynamoDB"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "b",
-          "text": "Flat file on NFS"
+          "text": "Amazon Redshift"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "d",
-          "text": "Unsharded MySQL on laptop"
+          "text": "Amazon OpenSearch Service"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "DynamoDB scales operational metadata stores.",
       "docs": [
@@ -1476,23 +1476,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon DynamoDB"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "b",
-          "text": "Flat file on NFS"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "d",
-          "text": "Unsharded MySQL on laptop"
+          "text": "Amazon Redshift"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "DynamoDB scales operational metadata stores.",
       "docs": [
@@ -1510,23 +1510,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon DynamoDB"
+          "text": "Amazon OpenSearch Service"
         },
         {
           "id": "b",
-          "text": "Flat file on NFS"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "d",
-          "text": "Unsharded MySQL on laptop"
+          "text": "Amazon S3 Glacier storage classes"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "DynamoDB scales operational metadata stores.",
       "docs": [
@@ -1544,23 +1544,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 Glacier storage classes"
-        },
-        {
-          "id": "b",
           "text": "Standard for all cold data"
         },
         {
+          "id": "b",
+          "text": "Amazon DynamoDB"
+        },
+        {
           "id": "c",
-          "text": "Delete archives needed"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "d",
-          "text": "No lifecycle"
+          "text": "Amazon OpenSearch Service"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Glacier tiers reduce long-term storage cost.",
       "docs": [
@@ -1578,7 +1578,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 Glacier storage classes"
+          "text": "Amazon Redshift"
         },
         {
           "id": "b",
@@ -1586,15 +1586,15 @@
         },
         {
           "id": "c",
-          "text": "Delete archives needed"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "d",
-          "text": "No lifecycle"
+          "text": "AWS DMS with S3 target or zero-ETL integrations"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Glacier tiers reduce long-term storage cost.",
       "docs": [
@@ -1612,23 +1612,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 Glacier storage classes"
-        },
-        {
-          "id": "b",
           "text": "Standard for all cold data"
         },
         {
+          "id": "b",
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
+        },
+        {
           "id": "c",
-          "text": "Delete archives needed"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "d",
-          "text": "No lifecycle"
+          "text": "Amazon S3 Glacier storage classes"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Glacier tiers reduce long-term storage cost.",
       "docs": [
@@ -1646,23 +1646,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon OpenSearch Service"
+          "text": "Apache Iceberg tables on S3 with Athena or EMR"
         },
         {
           "id": "b",
-          "text": "grep across all S3 forever"
+          "text": "Amazon S3 Glacier storage classes"
         },
         {
           "id": "c",
-          "text": "No indexes"
+          "text": "grep across all S3 forever"
         },
         {
           "id": "d",
-          "text": "Single shard only"
+          "text": "Amazon OpenSearch Service"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "OpenSearch indexes logs and text.",
       "docs": [
@@ -1684,15 +1684,15 @@
         },
         {
           "id": "b",
-          "text": "Silent failures"
+          "text": "Glue workflows with job bookmarks"
         },
         {
           "id": "c",
-          "text": "No DLQ"
+          "text": "Glue Schema Registry for Kafka/Kinesis"
         },
         {
           "id": "d",
-          "text": "Ignore SLA"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         }
       ],
       "correct": [
@@ -1714,23 +1714,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sort keys, distribution keys, and RA3 sizing"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         },
         {
           "id": "b",
-          "text": "Scan all tables full"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "c",
-          "text": "No vacuum"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "d",
-          "text": "Tiny node for PB"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Physical design affects warehouse performance.",
       "docs": [
@@ -1748,23 +1748,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hive-style partitions (year/month/day)"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "b",
-          "text": "Single folder all data"
+          "text": "Glue workflows with job bookmarks"
         },
         {
           "id": "c",
-          "text": "Tiny files problem ignored"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "d",
-          "text": "CSV only huge"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Partition pruning reduces data scanned.",
       "docs": [
@@ -1782,23 +1782,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue Data Catalog lineage or third-party"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "b",
-          "text": "Unknown sources"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "c",
-          "text": "No ownership"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "d",
-          "text": "Delete catalog"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Lineage supports impact analysis.",
       "docs": [
@@ -1816,23 +1816,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Glue workflows with job bookmarks"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "b",
-          "text": "Duplicate rows uncontrolled"
+          "text": "Glue Data Quality rules"
         },
         {
           "id": "c",
-          "text": "Manual reruns chaos"
+          "text": "Glue workflows with job bookmarks"
         },
         {
           "id": "d",
-          "text": "No idempotency keys"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Bookmarks prevent reprocessing unchanged data.",
       "docs": [
@@ -1850,23 +1850,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Glue Schema Registry for Kafka/Kinesis"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "b",
-          "text": "Free-text payloads forever"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         },
         {
           "id": "c",
-          "text": "Break consumers silently"
+          "text": "Glue Schema Registry for Kafka/Kinesis"
         },
         {
           "id": "d",
-          "text": "No compatibility mode"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Schema Registry enforces Avro/JSON schemas.",
       "docs": [
@@ -1888,15 +1888,15 @@
         },
         {
           "id": "b",
-          "text": "Assume perfect data"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "c",
-          "text": "No alerts"
+          "text": "Prod only discovery"
         },
         {
           "id": "d",
-          "text": "Prod only discovery"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         }
       ],
       "correct": [
@@ -1918,23 +1918,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lake Formation resource links and RAM"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         },
         {
           "id": "b",
-          "text": "Public buckets"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "c",
-          "text": "Hard-coded keys"
+          "text": "Lake Formation resource links and RAM"
         },
         {
           "id": "d",
-          "text": "Email CSV cross account"
+          "text": "Hive-style partitions (year/month/day)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RAM shares subnets and LF shares data catalog.",
       "docs": [
@@ -1952,23 +1952,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "b",
-          "text": "Silent failures"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "c",
-          "text": "No DLQ"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "d",
-          "text": "Ignore SLA"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational monitoring ensures pipeline reliability.",
       "docs": [
@@ -1986,23 +1986,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "b",
-          "text": "Silent failures"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "c",
-          "text": "No DLQ"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "d",
-          "text": "Ignore SLA"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational monitoring ensures pipeline reliability.",
       "docs": [
@@ -2020,23 +2020,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         },
         {
           "id": "b",
-          "text": "Silent failures"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "c",
-          "text": "No DLQ"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "d",
-          "text": "Ignore SLA"
+          "text": "Hive-style partitions (year/month/day)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operational monitoring ensures pipeline reliability.",
       "docs": [
@@ -2058,15 +2058,15 @@
         },
         {
           "id": "b",
-          "text": "Scan all tables full"
+          "text": "Glue Schema Registry for Kafka/Kinesis"
         },
         {
           "id": "c",
-          "text": "No vacuum"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "d",
-          "text": "Tiny node for PB"
+          "text": "Hive-style partitions (year/month/day)"
         }
       ],
       "correct": [
@@ -2088,23 +2088,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sort keys, distribution keys, and RA3 sizing"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "b",
-          "text": "Scan all tables full"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "c",
-          "text": "No vacuum"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "d",
-          "text": "Tiny node for PB"
+          "text": "Lake Formation resource links and RAM"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Physical design affects warehouse performance.",
       "docs": [
@@ -2122,23 +2122,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sort keys, distribution keys, and RA3 sizing"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "b",
-          "text": "Scan all tables full"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "c",
-          "text": "No vacuum"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "d",
-          "text": "Tiny node for PB"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Physical design affects warehouse performance.",
       "docs": [
@@ -2160,15 +2160,15 @@
         },
         {
           "id": "b",
-          "text": "Single folder all data"
+          "text": "Lake Formation resource links and RAM"
         },
         {
           "id": "c",
-          "text": "Tiny files problem ignored"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "d",
-          "text": "CSV only huge"
+          "text": "Glue workflows with job bookmarks"
         }
       ],
       "correct": [
@@ -2190,23 +2190,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hive-style partitions (year/month/day)"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "b",
-          "text": "Single folder all data"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "c",
-          "text": "Tiny files problem ignored"
+          "text": "Hive-style partitions (year/month/day)"
         },
         {
           "id": "d",
-          "text": "CSV only huge"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Partition pruning reduces data scanned.",
       "docs": [
@@ -2228,15 +2228,15 @@
         },
         {
           "id": "b",
-          "text": "Single folder all data"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "c",
-          "text": "Tiny files problem ignored"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         },
         {
           "id": "d",
-          "text": "CSV only huge"
+          "text": "Glue Schema Registry for Kafka/Kinesis"
         }
       ],
       "correct": [
@@ -2258,23 +2258,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Glue Data Catalog lineage or third-party"
+          "text": "Glue Schema Registry for Kafka/Kinesis"
         },
         {
           "id": "b",
-          "text": "Unknown sources"
+          "text": "Glue job bookmarks, CloudWatch alarms, and Step Functions"
         },
         {
           "id": "c",
-          "text": "No ownership"
+          "text": "AWS Glue Data Catalog lineage or third-party"
         },
         {
           "id": "d",
-          "text": "Delete catalog"
+          "text": "Sort keys, distribution keys, and RA3 sizing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Lineage supports impact analysis.",
       "docs": [
@@ -2292,23 +2292,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lake Formation column/row filters"
+          "text": "Amazon Macie"
         },
         {
           "id": "b",
-          "text": "All users SELECT *"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "c",
-          "text": "Public ACL"
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
         },
         {
           "id": "d",
-          "text": "Root for analysts"
+          "text": "SSE-KMS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "LF fine-grained permissions mask columns.",
       "docs": [
@@ -2326,23 +2326,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS"
+          "text": "S3 Object Lock and lifecycle policies"
         },
         {
           "id": "b",
-          "text": "HTTP only buckets"
+          "text": "Cost allocation tags on S3 buckets and jobs"
         },
         {
           "id": "c",
-          "text": "Disable encryption"
+          "text": "CloudTrail for Lake Formation and S3 data events"
         },
         {
           "id": "d",
-          "text": "Shared plaintext keys"
+          "text": "SSE-KMS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS provides auditable encryption keys.",
       "docs": [
@@ -2364,15 +2364,15 @@
         },
         {
           "id": "b",
-          "text": "Expose SSN in views"
+          "text": "SSE-KMS"
         },
         {
           "id": "c",
-          "text": "Copy prod to dev raw"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "d",
-          "text": "Email exports"
+          "text": "Glue connections with Secrets Manager"
         }
       ],
       "correct": [
@@ -2394,23 +2394,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudTrail for Lake Formation and S3 data events"
+          "text": "Glue connections with Secrets Manager"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "SSE-KMS"
         },
         {
           "id": "c",
-          "text": "Anonymous access"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "d",
-          "text": "Delete audit bucket"
+          "text": "CloudTrail for Lake Formation and S3 data events"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data events log object-level S3 access.",
       "docs": [
@@ -2432,15 +2432,15 @@
         },
         {
           "id": "b",
-          "text": "Manual grep once"
+          "text": "SSE-KMS"
         },
         {
           "id": "c",
-          "text": "Ignore findings"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "d",
-          "text": "Public bucket"
+          "text": "S3 Object Lock and lifecycle policies"
         }
       ],
       "correct": [
@@ -2462,23 +2462,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 Object Lock and lifecycle policies"
+          "text": "SSE-KMS"
         },
         {
           "id": "b",
-          "text": "Delete regulated data early"
+          "text": "S3 Object Lock and lifecycle policies"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
         },
         {
           "id": "d",
-          "text": "Ignore compliance"
+          "text": "Glue connections with Secrets Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Object Lock supports WORM retention.",
       "docs": [
@@ -2500,15 +2500,15 @@
         },
         {
           "id": "b",
-          "text": "Password in job script"
+          "text": "SSE-KMS"
         },
         {
           "id": "c",
-          "text": "Git commit creds"
+          "text": "Amazon Macie"
         },
         {
           "id": "d",
-          "text": "Shared admin password"
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
         }
       ],
       "correct": [
@@ -2534,15 +2534,15 @@
         },
         {
           "id": "b",
-          "text": "No tags"
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
         },
         {
           "id": "c",
-          "text": "One account no allocation"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "d",
-          "text": "Ignore CUR"
+          "text": "SSE-KMS"
         }
       ],
       "correct": [
@@ -2568,15 +2568,15 @@
         },
         {
           "id": "b",
-          "text": "All users SELECT *"
+          "text": "Glue connections with Secrets Manager"
         },
         {
           "id": "c",
-          "text": "Public ACL"
+          "text": "SSE-KMS"
         },
         {
           "id": "d",
-          "text": "Root for analysts"
+          "text": "Cost allocation tags on S3 buckets and jobs"
         }
       ],
       "correct": [
@@ -2598,23 +2598,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lake Formation column/row filters"
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
         },
         {
           "id": "b",
-          "text": "All users SELECT *"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "c",
-          "text": "Public ACL"
+          "text": "CloudTrail for Lake Formation and S3 data events"
         },
         {
           "id": "d",
-          "text": "Root for analysts"
+          "text": "Cost allocation tags on S3 buckets and jobs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "LF fine-grained permissions mask columns.",
       "docs": [
@@ -2632,23 +2632,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lake Formation column/row filters"
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
         },
         {
           "id": "b",
-          "text": "All users SELECT *"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "c",
-          "text": "Public ACL"
+          "text": "CloudTrail for Lake Formation and S3 data events"
         },
         {
           "id": "d",
-          "text": "Root for analysts"
+          "text": "Amazon Macie"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "LF fine-grained permissions mask columns.",
       "docs": [
@@ -2666,23 +2666,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS"
+          "text": "S3 Object Lock and lifecycle policies"
         },
         {
           "id": "b",
-          "text": "HTTP only buckets"
+          "text": "Glue connections with Secrets Manager"
         },
         {
           "id": "c",
-          "text": "Disable encryption"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "d",
-          "text": "Shared plaintext keys"
+          "text": "SSE-KMS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS provides auditable encryption keys.",
       "docs": [
@@ -2700,23 +2700,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS"
+          "text": "Cost allocation tags on S3 buckets and jobs"
         },
         {
           "id": "b",
-          "text": "HTTP only buckets"
+          "text": "Amazon Macie"
         },
         {
           "id": "c",
-          "text": "Disable encryption"
+          "text": "S3 Object Lock and lifecycle policies"
         },
         {
           "id": "d",
-          "text": "Shared plaintext keys"
+          "text": "SSE-KMS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS provides auditable encryption keys.",
       "docs": [
@@ -2734,23 +2734,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS"
+          "text": "Cost allocation tags on S3 buckets and jobs"
         },
         {
           "id": "b",
-          "text": "HTTP only buckets"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "c",
-          "text": "Disable encryption"
+          "text": "SSE-KMS"
         },
         {
           "id": "d",
-          "text": "Shared plaintext keys"
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "KMS provides auditable encryption keys.",
       "docs": [
@@ -2768,23 +2768,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dynamic data masking in Redshift or Athena LF tags"
+          "text": "SSE-KMS"
         },
         {
           "id": "b",
-          "text": "Expose SSN in views"
+          "text": "Lake Formation column/row filters"
         },
         {
           "id": "c",
-          "text": "Copy prod to dev raw"
+          "text": "CloudTrail for Lake Formation and S3 data events"
         },
         {
           "id": "d",
-          "text": "Email exports"
+          "text": "Dynamic data masking in Redshift or Athena LF tags"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Masking limits exposure of sensitive fields.",
       "docs": [
@@ -2870,45 +2870,6 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "dea-q083",
-      "domain": "ingestion-transformation",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Data Engineer \u2013 Associate? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "AWS Glue"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Amazon Kinesis Data Streams"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "AWS Glue",
-          "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html"
         }
       ]
     }

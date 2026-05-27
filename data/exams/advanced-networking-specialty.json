@@ -90,15 +90,15 @@
         },
         {
           "id": "b",
-          "text": "n^2 peering"
+          "text": "Shared services VPC via RAM and TGW"
         },
         {
           "id": "c",
-          "text": "Single flat network"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "d",
-          "text": "Internet routing only"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         }
       ],
       "correct": [
@@ -120,23 +120,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transit Gateway Connect or VPN/DX attachments"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "b",
-          "text": "Static public IPs only"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         },
         {
           "id": "c",
-          "text": "No BGP"
+          "text": "Keep chatty tiers in same AZ when possible and use AZ-aware endpoints"
         },
         {
           "id": "d",
-          "text": "Ignore ASN"
+          "text": "IPAM in VPC IP Address Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Connect integrates SD-WAN/third-party appliances.",
       "docs": [
@@ -154,23 +154,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IPv6 CIDR blocks and egress-only IGW"
+          "text": "AWS PrivateLink interface endpoints"
         },
         {
           "id": "b",
-          "text": "Disable IPv6 always"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         },
         {
           "id": "c",
-          "text": "NAT64 confusion unplanned"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "d",
-          "text": "Ignore DNS AAAA"
+          "text": "Shared services VPC via RAM and TGW"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AWS supports dual-stack and IPv6-only subnets.",
       "docs": [
@@ -188,15 +188,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Gateway Load Balancer with firewall appliances"
-        },
-        {
-          "id": "b",
           "text": "Hairpin all via NAT uninspected"
         },
         {
+          "id": "b",
+          "text": "Gateway Load Balancer with firewall appliances"
+        },
+        {
           "id": "c",
-          "text": "No mirroring"
+          "text": "AWS PrivateLink interface endpoints"
         },
         {
           "id": "d",
@@ -204,7 +204,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "GWLB inserts transparent appliances in path.",
       "docs": [
@@ -222,23 +222,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IPAM in VPC IP Address Manager"
+          "text": "AWS PrivateLink interface endpoints"
         },
         {
           "id": "b",
-          "text": "Spreadsheet IP tracking"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "c",
-          "text": "Overlapping CIDRs"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         },
         {
           "id": "d",
-          "text": "Manual errors"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IPAM plans and monitors IP usage.",
       "docs": [
@@ -256,23 +256,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS PrivateLink interface endpoints"
+          "text": "Gateway Load Balancer with firewall appliances"
         },
         {
           "id": "b",
-          "text": "Public internet SaaS DB"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "c",
-          "text": "Open security group"
+          "text": "AWS PrivateLink interface endpoints"
         },
         {
           "id": "d",
-          "text": "Ignore endpoint policies"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "PrivateLink keeps traffic on AWS network.",
       "docs": [
@@ -290,23 +290,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Shared services VPC via RAM and TGW"
+          "text": "Duplicate NAT per account unoptimized (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Duplicate NAT per account unoptimized"
+          "text": "AWS PrivateLink interface endpoints"
         },
         {
           "id": "c",
-          "text": "No segmentation"
+          "text": "Shared services VPC via RAM and TGW"
         },
         {
           "id": "d",
-          "text": "Flat IAM"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hub-spoke is common for enterprise networks.",
       "docs": [
@@ -328,15 +328,15 @@
         },
         {
           "id": "b",
-          "text": "Cross-AZ for every packet unnecessarily"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "c",
-          "text": "Ignore architecture"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         },
         {
           "id": "d",
-          "text": "Single NAT for all AZ imbalanced"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
@@ -362,15 +362,15 @@
         },
         {
           "id": "b",
-          "text": "n^2 peering"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "c",
-          "text": "Single flat network"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "d",
-          "text": "Internet routing only"
+          "text": "Keep chatty tiers in same AZ when possible and use AZ-aware endpoints"
         }
       ],
       "correct": [
@@ -392,23 +392,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Transit Gateway"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "b",
-          "text": "n^2 peering"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "c",
-          "text": "Single flat network"
+          "text": "Gateway Load Balancer with firewall appliances"
         },
         {
           "id": "d",
-          "text": "Internet routing only"
+          "text": "Keep chatty tiers in same AZ when possible and use AZ-aware endpoints"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Transit Gateway is a regional network hub.",
       "docs": [
@@ -430,15 +430,15 @@
         },
         {
           "id": "b",
-          "text": "n^2 peering"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "c",
-          "text": "Single flat network"
+          "text": "Shared services VPC via RAM and TGW"
         },
         {
           "id": "d",
-          "text": "Internet routing only"
+          "text": "Gateway Load Balancer with firewall appliances"
         }
       ],
       "correct": [
@@ -464,15 +464,15 @@
         },
         {
           "id": "b",
-          "text": "Static public IPs only"
+          "text": "AWS PrivateLink interface endpoints"
         },
         {
           "id": "c",
-          "text": "No BGP"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "d",
-          "text": "Ignore ASN"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         }
       ],
       "correct": [
@@ -494,23 +494,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transit Gateway Connect or VPN/DX attachments"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "b",
-          "text": "Static public IPs only"
+          "text": "Gateway Load Balancer with firewall appliances"
         },
         {
           "id": "c",
-          "text": "No BGP"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         },
         {
           "id": "d",
-          "text": "Ignore ASN"
+          "text": "IPAM in VPC IP Address Manager"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Connect integrates SD-WAN/third-party appliances.",
       "docs": [
@@ -528,23 +528,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transit Gateway Connect or VPN/DX attachments"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "b",
-          "text": "Static public IPs only"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         },
         {
           "id": "c",
-          "text": "No BGP"
+          "text": "Gateway Load Balancer with firewall appliances"
         },
         {
           "id": "d",
-          "text": "Ignore ASN"
+          "text": "IPAM in VPC IP Address Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Connect integrates SD-WAN/third-party appliances.",
       "docs": [
@@ -562,23 +562,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IPv6 CIDR blocks and egress-only IGW"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         },
         {
           "id": "b",
-          "text": "Disable IPv6 always"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "c",
-          "text": "NAT64 confusion unplanned"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "d",
-          "text": "Ignore DNS AAAA"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AWS supports dual-stack and IPv6-only subnets.",
       "docs": [
@@ -596,23 +596,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IPv6 CIDR blocks and egress-only IGW"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "b",
-          "text": "Disable IPv6 always"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "c",
-          "text": "NAT64 confusion unplanned"
+          "text": "AWS PrivateLink interface endpoints"
         },
         {
           "id": "d",
-          "text": "Ignore DNS AAAA"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "AWS supports dual-stack and IPv6-only subnets.",
       "docs": [
@@ -630,23 +630,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IPv6 CIDR blocks and egress-only IGW"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "b",
-          "text": "Disable IPv6 always"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "c",
-          "text": "NAT64 confusion unplanned"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         },
         {
           "id": "d",
-          "text": "Ignore DNS AAAA"
+          "text": "AWS PrivateLink interface endpoints"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "AWS supports dual-stack and IPv6-only subnets.",
       "docs": [
@@ -668,11 +668,11 @@
         },
         {
           "id": "b",
-          "text": "Hairpin all via NAT uninspected"
+          "text": "AWS PrivateLink interface endpoints"
         },
         {
           "id": "c",
-          "text": "No mirroring"
+          "text": "Hairpin all via NAT uninspected"
         },
         {
           "id": "d",
@@ -702,15 +702,15 @@
         },
         {
           "id": "b",
-          "text": "Hairpin all via NAT uninspected"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "c",
-          "text": "No mirroring"
+          "text": "0.0.0.0/0 DB"
         },
         {
           "id": "d",
-          "text": "0.0.0.0/0 DB"
+          "text": "Hairpin all via NAT uninspected"
         }
       ],
       "correct": [
@@ -740,7 +740,7 @@
         },
         {
           "id": "c",
-          "text": "No mirroring"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "d",
@@ -766,23 +766,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IPAM in VPC IP Address Manager"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "b",
-          "text": "Spreadsheet IP tracking"
+          "text": "AWS PrivateLink interface endpoints"
         },
         {
           "id": "c",
-          "text": "Overlapping CIDRs"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "d",
-          "text": "Manual errors"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IPAM plans and monitors IP usage.",
       "docs": [
@@ -800,23 +800,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IPAM in VPC IP Address Manager"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "b",
-          "text": "Spreadsheet IP tracking"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "c",
-          "text": "Overlapping CIDRs"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "d",
-          "text": "Manual errors"
+          "text": "Gateway Load Balancer with firewall appliances"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IPAM plans and monitors IP usage.",
       "docs": [
@@ -834,23 +834,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IPAM in VPC IP Address Manager"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "b",
-          "text": "Spreadsheet IP tracking"
+          "text": "Gateway Load Balancer with firewall appliances"
         },
         {
           "id": "c",
-          "text": "Overlapping CIDRs"
+          "text": "Transit Gateway Connect or VPN/DX attachments"
         },
         {
           "id": "d",
-          "text": "Manual errors"
+          "text": "IPAM in VPC IP Address Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "IPAM plans and monitors IP usage.",
       "docs": [
@@ -868,23 +868,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS PrivateLink interface endpoints"
+          "text": "Gateway Load Balancer with firewall appliances"
         },
         {
           "id": "b",
-          "text": "Public internet SaaS DB"
+          "text": "IPv6 CIDR blocks and egress-only IGW"
         },
         {
           "id": "c",
-          "text": "Open security group"
+          "text": "IPAM in VPC IP Address Manager"
         },
         {
           "id": "d",
-          "text": "Ignore endpoint policies"
+          "text": "AWS PrivateLink interface endpoints"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "PrivateLink keeps traffic on AWS network.",
       "docs": [
@@ -902,23 +902,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Direct Connect"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "b",
-          "text": "VPN only for 10G steady"
+          "text": "AWS Direct Connect"
         },
         {
           "id": "c",
-          "text": "Consumer ISP"
+          "text": "AWS Cloud WAN core network policies"
         },
         {
           "id": "d",
-          "text": "No redundancy"
+          "text": "Site-to-Site VPN with IKEv2"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Direct Connect provides private high-bandwidth links.",
       "docs": [
@@ -936,23 +936,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Site-to-Site VPN with IKEv2"
+          "text": "Transit Gateway Connect partners"
         },
         {
           "id": "b",
-          "text": "Telnet"
+          "text": "Route filtering with BGP communities"
         },
         {
           "id": "c",
-          "text": "HTTP API keys"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "d",
-          "text": "No PFS"
+          "text": "AWS Global Accelerator"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VPN uses IPsec tunnels.",
       "docs": [
@@ -970,23 +970,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Global Accelerator"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "b",
-          "text": "Single Region latency"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "c",
-          "text": "Ignore health checks"
+          "text": "AWS Cloud WAN core network policies"
         },
         {
           "id": "d",
-          "text": "Anycast DIY"
+          "text": "AWS Direct Connect"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Global Accelerator uses AWS edge network.",
       "docs": [
@@ -1004,23 +1004,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transit Gateway Connect partners"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "b",
-          "text": "Manual static routes only"
+          "text": "AWS Direct Connect"
         },
         {
           "id": "c",
-          "text": "No monitoring"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "d",
-          "text": "Ignore BGP"
+          "text": "Transit Gateway Connect partners"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Connect supports SD-WAN appliances.",
       "docs": [
@@ -1038,23 +1038,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dual DX locations or DX + VPN backup"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "b",
-          "text": "Single DX router"
+          "text": "Route filtering with BGP communities"
         },
         {
           "id": "c",
-          "text": "No failover"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "d",
-          "text": "Ignore BFD"
+          "text": "Dual DX locations or DX + VPN backup"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Resilient hybrid uses redundant paths.",
       "docs": [
@@ -1072,23 +1072,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Route filtering with BGP communities"
+          "text": "AWS Network Firewall endpoints per AZ"
         },
         {
           "id": "b",
-          "text": "Accept all routes blindly"
+          "text": "Route filtering with BGP communities"
         },
         {
           "id": "c",
-          "text": "Leak default to customer"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "d",
-          "text": "No max-prefix"
+          "text": "AWS Global Accelerator"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "BGP policies control route advertisement.",
       "docs": [
@@ -1106,23 +1106,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Network Firewall endpoints per AZ"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "b",
-          "text": "Single AZ firewall"
+          "text": "Dual DX locations or DX + VPN backup"
         },
         {
           "id": "c",
-          "text": "No autoscaling endpoints"
+          "text": "Transit Gateway Connect partners"
         },
         {
           "id": "d",
-          "text": "Bypass inspection"
+          "text": "AWS Network Firewall endpoints per AZ"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Network Firewall is managed stateful inspection.",
       "docs": [
@@ -1140,23 +1140,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Cloud WAN core network policies"
+          "text": "Transit Gateway Connect partners"
         },
         {
           "id": "b",
-          "text": "Manual VPN mesh worldwide"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "c",
-          "text": "Ignore segmentation"
+          "text": "AWS Cloud WAN core network policies"
         },
         {
           "id": "d",
-          "text": "No policy"
+          "text": "AWS Direct Connect"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cloud WAN builds global networks with policies.",
       "docs": [
@@ -1174,23 +1174,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Direct Connect"
+          "text": "Transit Gateway Connect partners"
         },
         {
           "id": "b",
-          "text": "VPN only for 10G steady"
+          "text": "AWS Direct Connect"
         },
         {
           "id": "c",
-          "text": "Consumer ISP"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "d",
-          "text": "No redundancy"
+          "text": "Dual DX locations or DX + VPN backup"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Direct Connect provides private high-bandwidth links.",
       "docs": [
@@ -1208,23 +1208,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Direct Connect"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "b",
-          "text": "VPN only for 10G steady"
+          "text": "AWS Network Firewall endpoints per AZ"
         },
         {
           "id": "c",
-          "text": "Consumer ISP"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "d",
-          "text": "No redundancy"
+          "text": "AWS Direct Connect"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Direct Connect provides private high-bandwidth links.",
       "docs": [
@@ -1246,15 +1246,15 @@
         },
         {
           "id": "b",
-          "text": "VPN only for 10G steady"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "c",
-          "text": "Consumer ISP"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "d",
-          "text": "No redundancy"
+          "text": "Dual DX locations or DX + VPN backup"
         }
       ],
       "correct": [
@@ -1276,23 +1276,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Site-to-Site VPN with IKEv2"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "b",
-          "text": "Telnet"
+          "text": "Dual DX locations or DX + VPN backup"
         },
         {
           "id": "c",
-          "text": "HTTP API keys"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "d",
-          "text": "No PFS"
+          "text": "Transit Gateway Connect partners"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VPN uses IPsec tunnels.",
       "docs": [
@@ -1310,23 +1310,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Site-to-Site VPN with IKEv2"
+          "text": "AWS Network Firewall endpoints per AZ"
         },
         {
           "id": "b",
-          "text": "Telnet"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "c",
-          "text": "HTTP API keys"
+          "text": "Route filtering with BGP communities"
         },
         {
           "id": "d",
-          "text": "No PFS"
+          "text": "Site-to-Site VPN with IKEv2"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VPN uses IPsec tunnels.",
       "docs": [
@@ -1348,15 +1348,15 @@
         },
         {
           "id": "b",
-          "text": "Telnet"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "c",
-          "text": "HTTP API keys"
+          "text": "Transit Gateway Connect partners"
         },
         {
           "id": "d",
-          "text": "No PFS"
+          "text": "AWS Direct Connect"
         }
       ],
       "correct": [
@@ -1378,23 +1378,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Global Accelerator"
+          "text": "Dual DX locations or DX + VPN backup"
         },
         {
           "id": "b",
-          "text": "Single Region latency"
+          "text": "AWS Network Firewall endpoints per AZ"
         },
         {
           "id": "c",
-          "text": "Ignore health checks"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "d",
-          "text": "Anycast DIY"
+          "text": "Route filtering with BGP communities"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Global Accelerator uses AWS edge network.",
       "docs": [
@@ -1412,23 +1412,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Global Accelerator"
+          "text": "AWS Network Firewall endpoints per AZ"
         },
         {
           "id": "b",
-          "text": "Single Region latency"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "c",
-          "text": "Ignore health checks"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "d",
-          "text": "Anycast DIY"
+          "text": "Route filtering with BGP communities"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Global Accelerator uses AWS edge network.",
       "docs": [
@@ -1450,15 +1450,15 @@
         },
         {
           "id": "b",
-          "text": "Single Region latency"
+          "text": "Dual DX locations or DX + VPN backup"
         },
         {
           "id": "c",
-          "text": "Ignore health checks"
+          "text": "AWS Direct Connect"
         },
         {
           "id": "d",
-          "text": "Anycast DIY"
+          "text": "Route filtering with BGP communities"
         }
       ],
       "correct": [
@@ -1480,23 +1480,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transit Gateway Connect partners"
+          "text": "Site-to-Site VPN with IKEv2"
         },
         {
           "id": "b",
-          "text": "Manual static routes only"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "c",
-          "text": "No monitoring"
+          "text": "AWS Direct Connect"
         },
         {
           "id": "d",
-          "text": "Ignore BGP"
+          "text": "Transit Gateway Connect partners"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Connect supports SD-WAN appliances.",
       "docs": [
@@ -1514,23 +1514,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transit Gateway Connect partners"
+          "text": "Route filtering with BGP communities"
         },
         {
           "id": "b",
-          "text": "Manual static routes only"
+          "text": "AWS Direct Connect"
         },
         {
           "id": "c",
-          "text": "No monitoring"
+          "text": "Transit Gateway Connect partners"
         },
         {
           "id": "d",
-          "text": "Ignore BGP"
+          "text": "AWS Global Accelerator"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Connect supports SD-WAN appliances.",
       "docs": [
@@ -1548,23 +1548,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transit Gateway Connect partners"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "b",
-          "text": "Manual static routes only"
+          "text": "Transit Gateway Connect partners"
         },
         {
           "id": "c",
-          "text": "No monitoring"
+          "text": "AWS Cloud WAN core network policies"
         },
         {
           "id": "d",
-          "text": "Ignore BGP"
+          "text": "AWS Direct Connect"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Connect supports SD-WAN appliances.",
       "docs": [
@@ -1586,15 +1586,15 @@
         },
         {
           "id": "b",
-          "text": "Single DX router"
+          "text": "AWS Cloud WAN core network policies"
         },
         {
           "id": "c",
-          "text": "No failover"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "d",
-          "text": "Ignore BFD"
+          "text": "AWS Direct Connect"
         }
       ],
       "correct": [
@@ -1616,23 +1616,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Network Manager topology"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "b",
-          "text": "Ping map on whiteboard"
+          "text": "Network Access Analyzer"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "AWS Network Manager topology"
         },
         {
           "id": "d",
-          "text": "Ignore TGW"
+          "text": "Config rules + Lambda remediation"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Network Manager shows TGW/Cloud WAN topology.",
       "docs": [
@@ -1650,23 +1650,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Flow Logs to S3 or CloudWatch"
+          "text": "Config rules + Lambda remediation"
         },
         {
           "id": "b",
-          "text": "Full packet capture always unscoped"
+          "text": "AWS Network Manager topology"
         },
         {
           "id": "c",
-          "text": "No logs"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "d",
-          "text": "Ignore rejected traffic"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Flow Logs capture ACCEPT/REJECT metadata.",
       "docs": [
@@ -1684,23 +1684,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Reachability Analyzer"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         },
         {
           "id": "b",
-          "text": "Guess routes"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "c",
-          "text": "Telnet random ports"
+          "text": "CloudWatch metrics for Transit Gateway"
         },
         {
           "id": "d",
-          "text": "Disable routes"
+          "text": "AWS Network Manager topology"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Reachability Analyzer tests path existence.",
       "docs": [
@@ -1718,23 +1718,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch metrics for Transit Gateway"
+          "text": "Config rules + Lambda remediation"
         },
         {
           "id": "b",
-          "text": "No alarms"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "c",
-          "text": "Ignore blackholes"
+          "text": "Traffic mirroring to security appliance"
         },
         {
           "id": "d",
-          "text": "Static routes only"
+          "text": "CloudWatch metrics for Transit Gateway"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "TGW publishes bytes and packet metrics.",
       "docs": [
@@ -1756,15 +1756,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore findings"
+          "text": "Network Access Analyzer"
         },
         {
           "id": "c",
-          "text": "Disable GuardDuty"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         },
         {
           "id": "d",
-          "text": "No remediation"
+          "text": "AWS Network Manager topology"
         }
       ],
       "correct": [
@@ -1790,7 +1790,7 @@
         },
         {
           "id": "b",
-          "text": "Manual audit yearly"
+          "text": "GuardDuty with DNS/VPC findings"
         },
         {
           "id": "c",
@@ -1798,7 +1798,7 @@
         },
         {
           "id": "d",
-          "text": "No SNS"
+          "text": "VPC Reachability Analyzer"
         }
       ],
       "correct": [
@@ -1820,23 +1820,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network Access Analyzer"
+          "text": "Traffic mirroring to security appliance"
         },
         {
           "id": "b",
-          "text": "Assume SG correct"
+          "text": "Network Access Analyzer"
         },
         {
           "id": "c",
-          "text": "No analysis"
+          "text": "AWS Network Manager topology"
         },
         {
           "id": "d",
-          "text": "Public RDS"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "NAA finds paths that allow unintended access.",
       "docs": [
@@ -1858,15 +1858,15 @@
         },
         {
           "id": "b",
-          "text": "Mirror all prod always unscoped"
+          "text": "Ignore privacy (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No filter"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "d",
-          "text": "Ignore privacy"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         }
       ],
       "correct": [
@@ -1892,15 +1892,15 @@
         },
         {
           "id": "b",
-          "text": "Ping map on whiteboard"
+          "text": "Config rules + Lambda remediation"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "d",
-          "text": "Ignore TGW"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         }
       ],
       "correct": [
@@ -1922,23 +1922,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Network Manager topology"
+          "text": "Config rules + Lambda remediation"
         },
         {
           "id": "b",
-          "text": "Ping map on whiteboard"
+          "text": "AWS Network Manager topology"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "d",
-          "text": "Ignore TGW"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Network Manager shows TGW/Cloud WAN topology.",
       "docs": [
@@ -1960,15 +1960,15 @@
         },
         {
           "id": "b",
-          "text": "Ping map on whiteboard"
+          "text": "CloudWatch metrics for Transit Gateway"
         },
         {
           "id": "c",
-          "text": "No telemetry"
+          "text": "GuardDuty with DNS/VPC findings"
         },
         {
           "id": "d",
-          "text": "Ignore TGW"
+          "text": "Traffic mirroring to security appliance"
         }
       ],
       "correct": [
@@ -1994,15 +1994,15 @@
         },
         {
           "id": "b",
-          "text": "Full packet capture always unscoped"
+          "text": "Config rules + Lambda remediation"
         },
         {
           "id": "c",
-          "text": "No logs"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "d",
-          "text": "Ignore rejected traffic"
+          "text": "Traffic mirroring to security appliance"
         }
       ],
       "correct": [
@@ -2028,15 +2028,15 @@
         },
         {
           "id": "b",
-          "text": "Full packet capture always unscoped"
+          "text": "AWS Network Manager topology"
         },
         {
           "id": "c",
-          "text": "No logs"
+          "text": "Traffic mirroring to security appliance"
         },
         {
           "id": "d",
-          "text": "Ignore rejected traffic"
+          "text": "GuardDuty with DNS/VPC findings"
         }
       ],
       "correct": [
@@ -2058,23 +2058,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Flow Logs to S3 or CloudWatch"
+          "text": "AWS Network Manager topology"
         },
         {
           "id": "b",
-          "text": "Full packet capture always unscoped"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "c",
-          "text": "No logs"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         },
         {
           "id": "d",
-          "text": "Ignore rejected traffic"
+          "text": "GuardDuty with DNS/VPC findings"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Flow Logs capture ACCEPT/REJECT metadata.",
       "docs": [
@@ -2092,23 +2092,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Reachability Analyzer"
+          "text": "Network Access Analyzer"
         },
         {
           "id": "b",
-          "text": "Guess routes"
+          "text": "AWS Network Manager topology"
         },
         {
           "id": "c",
-          "text": "Telnet random ports"
+          "text": "VPC Reachability Analyzer"
         },
         {
           "id": "d",
-          "text": "Disable routes"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Reachability Analyzer tests path existence.",
       "docs": [
@@ -2126,23 +2126,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Reachability Analyzer"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         },
         {
           "id": "b",
-          "text": "Guess routes"
+          "text": "AWS Network Manager topology"
         },
         {
           "id": "c",
-          "text": "Telnet random ports"
+          "text": "Disable routes"
         },
         {
           "id": "d",
-          "text": "Disable routes"
+          "text": "VPC Reachability Analyzer"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Reachability Analyzer tests path existence.",
       "docs": [
@@ -2164,15 +2164,15 @@
         },
         {
           "id": "b",
-          "text": "Guess routes"
+          "text": "AWS Network Manager topology"
         },
         {
           "id": "c",
-          "text": "Telnet random ports"
+          "text": "Traffic mirroring to security appliance"
         },
         {
           "id": "d",
-          "text": "Disable routes"
+          "text": "VPC Flow Logs to S3 or CloudWatch"
         }
       ],
       "correct": [
@@ -2194,23 +2194,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Network Firewall"
+          "text": "SSM Session Manager instead of bastion SSH"
         },
         {
           "id": "b",
-          "text": "NACL only for app logic"
+          "text": "AWS WAF with Bot Control"
         },
         {
           "id": "c",
-          "text": "Ignore egress"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "d",
-          "text": "Open RDP"
+          "text": "Network Firewall domain list rules"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Network Firewall filters L3-L4 and domain lists.",
       "docs": [
@@ -2228,23 +2228,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network Firewall domain list rules"
+          "text": "Shield Advanced with WAF and RTM"
         },
         {
           "id": "b",
-          "text": "Allow all domains"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         },
         {
           "id": "c",
-          "text": "No TLS inspection policy"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "d",
-          "text": "Ignore egress"
+          "text": "Network Firewall domain list rules"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Domain rules restrict where instances can connect.",
       "docs": [
@@ -2262,23 +2262,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF with Bot Control"
+          "text": "SSM Session Manager instead of bastion SSH"
         },
         {
           "id": "b",
-          "text": "Security group only"
+          "text": "API Gateway private REST APIs with VPC endpoint"
         },
         {
           "id": "c",
-          "text": "No rate limit"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         },
         {
           "id": "d",
-          "text": "Ignore OWASP"
+          "text": "AWS WAF with Bot Control"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WAF mitigates application attacks.",
       "docs": [
@@ -2300,15 +2300,15 @@
         },
         {
           "id": "b",
-          "text": "HTTP only internal"
+          "text": "AWS WAF with Bot Control"
         },
         {
           "id": "c",
-          "text": "Self-signed no rotation"
+          "text": "TGW route tables to firewall VPC"
         },
         {
           "id": "d",
-          "text": "Shared cert everywhere"
+          "text": "AWS Network Firewall"
         }
       ],
       "correct": [
@@ -2330,23 +2330,23 @@
       "options": [
         {
           "id": "a",
-          "text": "API Gateway private REST APIs with VPC endpoint"
+          "text": "Network Firewall domain list rules"
         },
         {
           "id": "b",
-          "text": "Public API keys in mobile"
+          "text": "Public API keys in mobile (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "0.0.0.0/0 invoke"
+          "text": "API Gateway private REST APIs with VPC endpoint"
         },
         {
           "id": "d",
-          "text": "No resource policy"
+          "text": "0.0.0.0/0 invoke (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Private APIs restrict access via VPCe.",
       "docs": [
@@ -2364,23 +2364,23 @@
       "options": [
         {
           "id": "a",
-          "text": "TGW route tables to firewall VPC"
-        },
-        {
-          "id": "b",
           "text": "Direct internet egress every VPC"
         },
         {
+          "id": "b",
+          "text": "TGW route tables to firewall VPC"
+        },
+        {
           "id": "c",
-          "text": "No logging"
+          "text": "API Gateway private REST APIs with VPC endpoint"
         },
         {
           "id": "d",
-          "text": "Split tunnel mistakes"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Centralized egress simplifies policy enforcement.",
       "docs": [
@@ -2402,15 +2402,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore volumetric attack"
+          "text": "AWS WAF with Bot Control"
         },
         {
           "id": "c",
-          "text": "No runbook"
+          "text": "Network Firewall domain list rules"
         },
         {
           "id": "d",
-          "text": "Single small instance"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         }
       ],
       "correct": [
@@ -2436,15 +2436,15 @@
         },
         {
           "id": "b",
-          "text": "Public bastion 22 open"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         },
         {
           "id": "c",
-          "text": "Shared SSH key"
+          "text": "API Gateway private REST APIs with VPC endpoint"
         },
         {
           "id": "d",
-          "text": "Password auth"
+          "text": "AWS Network Firewall"
         }
       ],
       "correct": [
@@ -2466,23 +2466,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Network Firewall"
+          "text": "AWS WAF with Bot Control"
         },
         {
           "id": "b",
-          "text": "NACL only for app logic"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "c",
-          "text": "Ignore egress"
+          "text": "TGW route tables to firewall VPC"
         },
         {
           "id": "d",
-          "text": "Open RDP"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Network Firewall filters L3-L4 and domain lists.",
       "docs": [
@@ -2504,15 +2504,15 @@
         },
         {
           "id": "b",
-          "text": "NACL only for app logic"
+          "text": "TGW route tables to firewall VPC"
         },
         {
           "id": "c",
-          "text": "Ignore egress"
+          "text": "AWS WAF with Bot Control"
         },
         {
           "id": "d",
-          "text": "Open RDP"
+          "text": "SSM Session Manager instead of bastion SSH"
         }
       ],
       "correct": [
@@ -2534,23 +2534,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Network Firewall"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         },
         {
           "id": "b",
-          "text": "NACL only for app logic"
+          "text": "AWS WAF with Bot Control"
         },
         {
           "id": "c",
-          "text": "Ignore egress"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "d",
-          "text": "Open RDP"
+          "text": "Network Firewall domain list rules"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Network Firewall filters L3-L4 and domain lists.",
       "docs": [
@@ -2572,15 +2572,15 @@
         },
         {
           "id": "b",
-          "text": "Allow all domains"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         },
         {
           "id": "c",
-          "text": "No TLS inspection policy"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "d",
-          "text": "Ignore egress"
+          "text": "AWS WAF with Bot Control"
         }
       ],
       "correct": [
@@ -2602,23 +2602,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network Firewall domain list rules"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "b",
-          "text": "Allow all domains"
+          "text": "AWS WAF with Bot Control"
         },
         {
           "id": "c",
-          "text": "No TLS inspection policy"
+          "text": "API Gateway private REST APIs with VPC endpoint"
         },
         {
           "id": "d",
-          "text": "Ignore egress"
+          "text": "Network Firewall domain list rules"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Domain rules restrict where instances can connect.",
       "docs": [
@@ -2636,23 +2636,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network Firewall domain list rules"
+          "text": "AWS WAF with Bot Control"
         },
         {
           "id": "b",
-          "text": "Allow all domains"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "c",
-          "text": "No TLS inspection policy"
+          "text": "Network Firewall domain list rules"
         },
         {
           "id": "d",
-          "text": "Ignore egress"
+          "text": "Shield Advanced with WAF and RTM"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Domain rules restrict where instances can connect.",
       "docs": [
@@ -2670,23 +2670,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF with Bot Control"
+          "text": "SSM Session Manager instead of bastion SSH"
         },
         {
           "id": "b",
-          "text": "Security group only"
+          "text": "Network Firewall domain list rules"
         },
         {
           "id": "c",
-          "text": "No rate limit"
+          "text": "TGW route tables to firewall VPC"
         },
         {
           "id": "d",
-          "text": "Ignore OWASP"
+          "text": "AWS WAF with Bot Control"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WAF mitigates application attacks.",
       "docs": [
@@ -2704,23 +2704,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF with Bot Control"
+          "text": "API Gateway private REST APIs with VPC endpoint"
         },
         {
           "id": "b",
-          "text": "Security group only"
+          "text": "SSM Session Manager instead of bastion SSH"
         },
         {
           "id": "c",
-          "text": "No rate limit"
+          "text": "Network Firewall domain list rules"
         },
         {
           "id": "d",
-          "text": "Ignore OWASP"
+          "text": "AWS WAF with Bot Control"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WAF mitigates application attacks.",
       "docs": [
@@ -2738,23 +2738,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF with Bot Control"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "b",
-          "text": "Security group only"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         },
         {
           "id": "c",
-          "text": "No rate limit"
+          "text": "AWS WAF with Bot Control"
         },
         {
           "id": "d",
-          "text": "Ignore OWASP"
+          "text": "Network Firewall domain list rules"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "WAF mitigates application attacks.",
       "docs": [
@@ -2772,23 +2772,23 @@
       "options": [
         {
           "id": "a",
-          "text": "API Gateway mutual TLS or ALB trust stores"
+          "text": "Network Firewall domain list rules"
         },
         {
           "id": "b",
-          "text": "HTTP only internal"
+          "text": "Shield Advanced with WAF and RTM"
         },
         {
           "id": "c",
-          "text": "Self-signed no rotation"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "d",
-          "text": "Shared cert everywhere"
+          "text": "API Gateway mutual TLS or ALB trust stores"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "mTLS authenticates client certificates.",
       "docs": [
@@ -2810,15 +2810,15 @@
         },
         {
           "id": "b",
-          "text": "HTTP only internal"
+          "text": "AWS Network Firewall"
         },
         {
           "id": "c",
-          "text": "Self-signed no rotation"
+          "text": "Network Firewall domain list rules"
         },
         {
           "id": "d",
-          "text": "Shared cert everywhere"
+          "text": "AWS WAF with Bot Control"
         }
       ],
       "correct": [
@@ -2829,45 +2829,6 @@
         {
           "title": "API Gateway mTLS",
           "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mutual-auth.html"
-        }
-      ]
-    },
-    {
-      "id": "ans-q082",
-      "domain": "network-design",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Advanced Networking \u2013 Specialty? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "ANS-C01 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Amazon VPC"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "ANS-C01 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
         }
       ]
     },

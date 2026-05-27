@@ -86,176 +86,6 @@
   ],
   "questions": [
     {
-      "id": "ace-q001",
-      "domain": "planning",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Setting up a cloud solution environment. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "ACE exam guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use ACE exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "ACE exam guide",
-          "url": "https://cloud.google.com/learn/certification/guides/cloud-engineer"
-        }
-      ]
-    },
-    {
-      "id": "ace-q002",
-      "domain": "compute-storage",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Planning and configuring compute and storage. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Compute Engine"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Compute Engine and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Compute Engine",
-          "url": "https://cloud.google.com/compute/docs"
-        }
-      ]
-    },
-    {
-      "id": "ace-q003",
-      "domain": "networking",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Planning and configuring cloud network solutions. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "VPC networks"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use VPC networks and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "VPC networks",
-          "url": "https://cloud.google.com/vpc/docs/vpc"
-        }
-      ]
-    },
-    {
-      "id": "ace-q004",
-      "domain": "security-iam",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Configuring access and security. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "IAM overview"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use IAM overview and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "IAM overview",
-          "url": "https://cloud.google.com/iam/docs/overview"
-        }
-      ]
-    },
-    {
-      "id": "ace-q005",
-      "domain": "operations",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Associate Cloud Engineer and reviewing Deploying and implementing solutions. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Run"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Cloud Run and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Cloud Run",
-          "url": "https://cloud.google.com/run/docs/overview/what-is-cloud-run"
-        }
-      ]
-    },
-    {
       "id": "ace-q006",
       "domain": "planning",
       "type": "multiple-choice",
@@ -267,15 +97,15 @@
         },
         {
           "id": "b",
-          "text": "Flat list no IAM"
+          "text": "Resource labels for cost and ownership"
         },
         {
           "id": "c",
-          "text": "Shared root password"
+          "text": "Organization policy constraints"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "ACE exam guide"
         }
       ],
       "correct": [
@@ -297,23 +127,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Resource labels for cost and ownership"
+          "text": "Organization policy constraints"
         },
         {
           "id": "b",
-          "text": "No labels"
+          "text": "Resource labels for cost and ownership"
         },
         {
           "id": "c",
-          "text": "One project forever"
+          "text": "Resource hierarchy"
         },
         {
           "id": "d",
-          "text": "Ignore billing"
+          "text": "ACE exam guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Labels support governance at scale.",
       "docs": [
@@ -331,23 +161,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policy constraints"
+          "text": "Resource hierarchy"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Organization policy constraints"
         },
         {
           "id": "c",
-          "text": "Public admin"
+          "text": "Resource labels for cost and ownership"
         },
         {
           "id": "d",
-          "text": "No guardrails"
+          "text": "ACE exam guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Org policies enforce constraints.",
       "docs": [
@@ -365,23 +195,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Resource hierarchy"
+          "text": "Organization policy constraints"
         },
         {
           "id": "b",
-          "text": "Flat list no IAM"
+          "text": "ACE exam guide"
         },
         {
           "id": "c",
-          "text": "Shared root password"
+          "text": "Resource hierarchy"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Resource labels for cost and ownership"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hierarchy enables policy inheritance.",
       "docs": [
@@ -399,23 +229,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Resource hierarchy"
+          "text": "Resource labels for cost and ownership"
         },
         {
           "id": "b",
-          "text": "Flat list no IAM"
+          "text": "ACE exam guide"
         },
         {
           "id": "c",
-          "text": "Shared root password"
+          "text": "Resource hierarchy"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Organization policy constraints"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hierarchy enables policy inheritance.",
       "docs": [
@@ -433,23 +263,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Resource hierarchy"
+          "text": "Resource labels for cost and ownership"
         },
         {
           "id": "b",
-          "text": "Flat list no IAM"
+          "text": "Organization policy constraints"
         },
         {
           "id": "c",
-          "text": "Shared root password"
+          "text": "ACE exam guide"
         },
         {
           "id": "d",
-          "text": "Public buckets"
+          "text": "Resource hierarchy"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Hierarchy enables policy inheritance.",
       "docs": [
@@ -467,23 +297,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Resource labels for cost and ownership"
+          "text": "Organization policy constraints"
         },
         {
           "id": "b",
-          "text": "No labels"
+          "text": "Resource hierarchy"
         },
         {
           "id": "c",
-          "text": "One project forever"
+          "text": "ACE exam guide"
         },
         {
           "id": "d",
-          "text": "Ignore billing"
+          "text": "Resource labels for cost and ownership"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Labels support governance at scale.",
       "docs": [
@@ -501,23 +331,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Resource labels for cost and ownership"
+          "text": "Organization policy constraints"
         },
         {
           "id": "b",
-          "text": "No labels"
+          "text": "Resource labels for cost and ownership"
         },
         {
           "id": "c",
-          "text": "One project forever"
+          "text": "ACE exam guide"
         },
         {
           "id": "d",
-          "text": "Ignore billing"
+          "text": "Resource hierarchy"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Labels support governance at scale.",
       "docs": [
@@ -535,23 +365,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Resource labels for cost and ownership"
+          "text": "ACE exam guide"
         },
         {
           "id": "b",
-          "text": "No labels"
+          "text": "Organization policy constraints"
         },
         {
           "id": "c",
-          "text": "One project forever"
+          "text": "Resource hierarchy"
         },
         {
           "id": "d",
-          "text": "Ignore billing"
+          "text": "Resource labels for cost and ownership"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Labels support governance at scale.",
       "docs": [
@@ -569,23 +399,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policy constraints"
+          "text": "ACE exam guide"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Resource hierarchy"
         },
         {
           "id": "c",
-          "text": "Public admin"
+          "text": "Resource labels for cost and ownership"
         },
         {
           "id": "d",
-          "text": "No guardrails"
+          "text": "Organization policy constraints"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Org policies enforce constraints.",
       "docs": [
@@ -603,23 +433,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policy constraints"
+          "text": "ACE exam guide"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Resource hierarchy"
         },
         {
           "id": "c",
-          "text": "Public admin"
+          "text": "Resource labels for cost and ownership"
         },
         {
           "id": "d",
-          "text": "No guardrails"
+          "text": "Organization policy constraints"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Org policies enforce constraints.",
       "docs": [
@@ -637,23 +467,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Storage buckets"
+          "text": "Compute Engine metadata and scripts"
         },
         {
           "id": "b",
-          "text": "Block device on laptop"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "c",
-          "text": "SMTP relay"
+          "text": "Persistent disks"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Cloud Storage with CDN"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "GCS stores objects with storage classes.",
       "docs": [
@@ -675,15 +505,15 @@
         },
         {
           "id": "b",
-          "text": "Manual GUI only policy"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "c",
-          "text": "No automation"
+          "text": "Persistent disks"
         },
         {
           "id": "d",
-          "text": "Telnet deploy"
+          "text": "Cloud Storage buckets"
         }
       ],
       "correct": [
@@ -705,23 +535,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Persistent disks"
+          "text": "Compute Engine metadata and scripts"
         },
         {
           "id": "b",
-          "text": "USB only"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "c",
-          "text": "FTP disk"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Persistent disks"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Persistent disks provide block storage.",
       "docs": [
@@ -739,23 +569,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Storage with CDN"
+          "text": "Persistent disks"
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "Compute Engine metadata and scripts"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Cloud Storage buckets"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GCS plus Cloud CDN accelerates delivery.",
       "docs": [
@@ -773,23 +603,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Storage buckets"
+          "text": "Compute Engine metadata and scripts"
         },
         {
           "id": "b",
-          "text": "Block device on laptop"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "c",
-          "text": "SMTP relay"
+          "text": "Compute Engine"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Persistent disks"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "GCS stores objects with storage classes.",
       "docs": [
@@ -811,15 +641,15 @@
         },
         {
           "id": "b",
-          "text": "Block device on laptop"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "c",
-          "text": "SMTP relay"
+          "text": "Compute Engine metadata and scripts"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Persistent disks"
         }
       ],
       "correct": [
@@ -841,23 +671,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Storage buckets"
+          "text": "DNS only"
         },
         {
           "id": "b",
-          "text": "Block device on laptop"
+          "text": "Compute Engine metadata and scripts"
         },
         {
           "id": "c",
-          "text": "SMTP relay"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Persistent disks"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GCS stores objects with storage classes.",
       "docs": [
@@ -875,23 +705,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute Engine metadata and scripts"
+          "text": "Persistent disks"
         },
         {
           "id": "b",
-          "text": "Manual GUI only policy"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "c",
-          "text": "No automation"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "d",
-          "text": "Telnet deploy"
+          "text": "Compute Engine metadata and scripts"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Startup scripts bootstrap instances.",
       "docs": [
@@ -913,15 +743,15 @@
         },
         {
           "id": "b",
-          "text": "Manual GUI only policy"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "c",
-          "text": "No automation"
+          "text": "Compute Engine"
         },
         {
           "id": "d",
-          "text": "Telnet deploy"
+          "text": "Persistent disks"
         }
       ],
       "correct": [
@@ -943,23 +773,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute Engine metadata and scripts"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "b",
-          "text": "Manual GUI only policy"
+          "text": "Persistent disks"
         },
         {
           "id": "c",
-          "text": "No automation"
+          "text": "Compute Engine"
         },
         {
           "id": "d",
-          "text": "Telnet deploy"
+          "text": "Compute Engine metadata and scripts"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Startup scripts bootstrap instances.",
       "docs": [
@@ -977,15 +807,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Persistent disks"
+          "text": "Compute Engine metadata and scripts"
         },
         {
           "id": "b",
-          "text": "USB only"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "c",
-          "text": "FTP disk"
+          "text": "Persistent disks"
         },
         {
           "id": "d",
@@ -993,7 +823,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Persistent disks provide block storage.",
       "docs": [
@@ -1011,23 +841,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Persistent disks"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "b",
-          "text": "USB only"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "c",
-          "text": "FTP disk"
+          "text": "Persistent disks"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Compute Engine metadata and scripts"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Persistent disks provide block storage.",
       "docs": [
@@ -1045,23 +875,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Persistent disks"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "b",
-          "text": "USB only"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "c",
-          "text": "FTP disk"
+          "text": "ICMP"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Persistent disks"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Persistent disks provide block storage.",
       "docs": [
@@ -1083,15 +913,15 @@
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "Compute Engine"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Compute Engine metadata and scripts"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Persistent disks"
         }
       ],
       "correct": [
@@ -1113,23 +943,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Storage with CDN"
+          "text": "Persistent disks"
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Compute Engine metadata and scripts"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GCS plus Cloud CDN accelerates delivery.",
       "docs": [
@@ -1151,15 +981,15 @@
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "Cloud Storage buckets"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "Persistent disks"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Compute Engine metadata and scripts"
         }
       ],
       "correct": [
@@ -1185,15 +1015,15 @@
         },
         {
           "id": "b",
-          "text": "Block device on laptop"
+          "text": "Cloud Storage with CDN"
         },
         {
           "id": "c",
-          "text": "SMTP relay"
+          "text": "DNS only"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Persistent disks"
         }
       ],
       "correct": [
@@ -1215,23 +1045,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC networks and subnets"
+          "text": "Private Google Access"
         },
         {
           "id": "b",
-          "text": "Public IP only design"
+          "text": "VPC firewall rules"
         },
         {
           "id": "c",
-          "text": "FTP VPN"
+          "text": "Cloud Load Balancing"
         },
         {
           "id": "d",
-          "text": "ICMP mesh"
+          "text": "VPC networks and subnets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VPCs isolate workloads.",
       "docs": [
@@ -1249,23 +1079,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Load Balancing"
+          "text": "VPC firewall rules"
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "Private Google Access"
         },
         {
           "id": "c",
-          "text": "Round robin DNS only"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "Cloud Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Google LB distributes traffic globally.",
       "docs": [
@@ -1283,7 +1113,7 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC firewall rules"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "b",
@@ -1291,15 +1121,15 @@
         },
         {
           "id": "c",
-          "text": "Disable rules"
+          "text": "VPC firewall rules"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Private Google Access"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Firewall rules filter VM traffic.",
       "docs": [
@@ -1317,23 +1147,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Private Google Access"
+          "text": "VPC firewall rules"
         },
         {
           "id": "b",
-          "text": "Force public internet"
+          "text": "Private Google Access"
         },
         {
           "id": "c",
-          "text": "No routing"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Cloud Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Private Google Access keeps API traffic private.",
       "docs": [
@@ -1351,23 +1181,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC networks and subnets"
+          "text": "VPC firewall rules"
         },
         {
           "id": "b",
-          "text": "Public IP only design"
+          "text": "VPC networks"
         },
         {
           "id": "c",
-          "text": "FTP VPN"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "d",
-          "text": "ICMP mesh"
+          "text": "Private Google Access"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VPCs isolate workloads.",
       "docs": [
@@ -1385,23 +1215,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC networks and subnets"
+          "text": "VPC firewall rules"
         },
         {
           "id": "b",
-          "text": "Public IP only design"
+          "text": "ICMP mesh (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP VPN"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "d",
-          "text": "ICMP mesh"
+          "text": "Cloud Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VPCs isolate workloads.",
       "docs": [
@@ -1419,23 +1249,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC networks and subnets"
+          "text": "Cloud Load Balancing"
         },
         {
           "id": "b",
-          "text": "Public IP only design"
+          "text": "VPC firewall rules"
         },
         {
           "id": "c",
-          "text": "FTP VPN"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "d",
-          "text": "ICMP mesh"
+          "text": "Private Google Access"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VPCs isolate workloads.",
       "docs": [
@@ -1457,15 +1287,15 @@
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "VPC networks"
         },
         {
           "id": "c",
-          "text": "Round robin DNS only"
+          "text": "Private Google Access"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "VPC networks and subnets"
         }
       ],
       "correct": [
@@ -1487,23 +1317,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Load Balancing"
+          "text": "VPC firewall rules"
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "c",
-          "text": "Round robin DNS only"
+          "text": "Private Google Access"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "Cloud Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Google LB distributes traffic globally.",
       "docs": [
@@ -1525,15 +1355,15 @@
         },
         {
           "id": "b",
-          "text": "Single server"
+          "text": "No health checks"
         },
         {
           "id": "c",
-          "text": "Round robin DNS only"
+          "text": "VPC firewall rules"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "VPC networks and subnets"
         }
       ],
       "correct": [
@@ -1559,15 +1389,15 @@
         },
         {
           "id": "b",
-          "text": "0.0.0.0/0 admin"
+          "text": "Private Google Access"
         },
         {
           "id": "c",
-          "text": "Disable rules"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "0.0.0.0/0 admin"
         }
       ],
       "correct": [
@@ -1589,23 +1419,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC firewall rules"
+          "text": "Cloud Load Balancing"
         },
         {
           "id": "b",
-          "text": "0.0.0.0/0 admin"
+          "text": "Private Google Access"
         },
         {
           "id": "c",
-          "text": "Disable rules"
+          "text": "0.0.0.0/0 admin"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "VPC firewall rules"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Firewall rules filter VM traffic.",
       "docs": [
@@ -1623,23 +1453,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC firewall rules"
+          "text": "Private Google Access"
         },
         {
           "id": "b",
-          "text": "0.0.0.0/0 admin"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "c",
-          "text": "Disable rules"
+          "text": "VPC firewall rules"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "0.0.0.0/0 admin"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Firewall rules filter VM traffic.",
       "docs": [
@@ -1657,23 +1487,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Private Google Access"
+          "text": "VPC networks and subnets"
         },
         {
           "id": "b",
-          "text": "Force public internet"
+          "text": "VPC firewall rules"
         },
         {
           "id": "c",
-          "text": "No routing"
+          "text": "Private Google Access"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Cloud Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Private Google Access keeps API traffic private.",
       "docs": [
@@ -1691,23 +1521,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud IAM bindings"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "b",
-          "text": "ACL 777 on buckets"
+          "text": "IAM overview"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "Cloud Audit Logs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IAM follows least privilege on resources.",
       "docs": [
@@ -1725,23 +1555,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Audit Logs"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "b",
-          "text": "Delete logs"
+          "text": "Cloud Audit Logs"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "IAM overview"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Audit logs record admin activity.",
       "docs": [
@@ -1759,23 +1589,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dedicated service accounts with minimal roles"
+          "text": "Cloud Audit Logs"
         },
         {
           "id": "b",
-          "text": "User credentials in VM"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "d",
-          "text": "No rotation"
+          "text": "No rotation (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Service accounts identify workloads.",
       "docs": [
@@ -1793,23 +1623,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud IAM bindings"
+          "text": "No audit"
         },
         {
           "id": "b",
-          "text": "ACL 777 on buckets"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "Cloud Audit Logs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IAM follows least privilege on resources.",
       "docs": [
@@ -1827,23 +1657,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud IAM bindings"
+          "text": "No audit"
         },
         {
           "id": "b",
-          "text": "ACL 777 on buckets"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "Cloud Audit Logs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IAM follows least privilege on resources.",
       "docs": [
@@ -1865,11 +1695,11 @@
         },
         {
           "id": "b",
-          "text": "ACL 777 on buckets"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Cloud Audit Logs"
         },
         {
           "id": "d",
@@ -1895,23 +1725,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Audit Logs"
+          "text": "No retention"
         },
         {
           "id": "b",
-          "text": "Delete logs"
+          "text": "Cloud Audit Logs"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "Cloud IAM bindings"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Audit logs record admin activity.",
       "docs": [
@@ -1933,11 +1763,11 @@
         },
         {
           "id": "b",
-          "text": "Delete logs"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "d",
@@ -1963,23 +1793,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Audit Logs"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "b",
-          "text": "Delete logs"
+          "text": "Cloud Audit Logs"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "IAM overview"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "Dedicated service accounts with minimal roles"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Audit logs record admin activity.",
       "docs": [
@@ -1997,23 +1827,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dedicated service accounts with minimal roles"
+          "text": "Cloud Audit Logs"
         },
         {
           "id": "b",
-          "text": "User credentials in VM"
+          "text": "IAM overview"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "d",
-          "text": "No rotation"
+          "text": "Dedicated service accounts with minimal roles"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Service accounts identify workloads.",
       "docs": [
@@ -2031,23 +1861,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dedicated service accounts with minimal roles"
+          "text": "No rotation (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "User credentials in VM"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "d",
-          "text": "No rotation"
+          "text": "Cloud Audit Logs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Service accounts identify workloads.",
       "docs": [
@@ -2065,23 +1895,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dedicated service accounts with minimal roles"
+          "text": "IAM overview"
         },
         {
           "id": "b",
-          "text": "User credentials in VM"
+          "text": "Cloud IAM bindings"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Cloud Audit Logs"
         },
         {
           "id": "d",
-          "text": "No rotation"
+          "text": "Dedicated service accounts with minimal roles"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Service accounts identify workloads.",
       "docs": [
@@ -2103,15 +1933,15 @@
         },
         {
           "id": "b",
-          "text": "ACL 777 on buckets"
+          "text": "Cloud Audit Logs"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "IAM overview"
         }
       ],
       "correct": [
@@ -2137,15 +1967,15 @@
         },
         {
           "id": "b",
-          "text": "Delete logs"
+          "text": "No retention"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "Dedicated service accounts with minimal roles"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "Cloud IAM bindings"
         }
       ],
       "correct": [
@@ -2171,15 +2001,15 @@
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "On-prem only"
         },
         {
           "id": "c",
-          "text": "FTP deploy"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "d",
-          "text": "On-prem only"
+          "text": "Google Kubernetes Engine"
         }
       ],
       "correct": [
@@ -2201,23 +2031,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Kubernetes Engine"
+          "text": "Cloud Run"
         },
         {
           "id": "b",
-          "text": "Manual k8s on laptop only"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "c",
-          "text": "No upgrades"
+          "text": "Disable RBAC"
         },
         {
           "id": "d",
-          "text": "Disable RBAC"
+          "text": "Google Kubernetes Engine"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "GKE manages the control plane.",
       "docs": [
@@ -2235,23 +2065,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Custom images or instance templates"
+          "text": "Cloud Run"
         },
         {
           "id": "b",
-          "text": "Manual install each"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "c",
-          "text": "Snowflake servers"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "USB (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Images standardize VM provisioning.",
       "docs": [
@@ -2269,23 +2099,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute Engine + Cloud Scheduler"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "Compute Engine + Cloud Scheduler"
         },
         {
           "id": "c",
-          "text": "Email scripts"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Scheduler triggers automated jobs.",
       "docs": [
@@ -2303,15 +2133,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Run"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Cloud Run"
         },
         {
           "id": "c",
-          "text": "FTP deploy"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "d",
@@ -2319,7 +2149,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud Run is serverless containers.",
       "docs": [
@@ -2337,23 +2167,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Run"
+          "text": "Compute Engine + Cloud Scheduler"
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Cloud Run"
         },
         {
           "id": "c",
-          "text": "FTP deploy"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "d",
-          "text": "On-prem only"
+          "text": "Custom images or instance templates"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud Run is serverless containers.",
       "docs": [
@@ -2371,23 +2201,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Run"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "c",
-          "text": "FTP deploy"
+          "text": "Compute Engine + Cloud Scheduler"
         },
         {
           "id": "d",
-          "text": "On-prem only"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Run is serverless containers.",
       "docs": [
@@ -2405,23 +2235,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Kubernetes Engine"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "b",
-          "text": "Manual k8s on laptop only"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "c",
-          "text": "No upgrades"
+          "text": "Cloud Run"
         },
         {
           "id": "d",
-          "text": "Disable RBAC"
+          "text": "Compute Engine + Cloud Scheduler"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "GKE manages the control plane.",
       "docs": [
@@ -2443,15 +2273,15 @@
         },
         {
           "id": "b",
-          "text": "Manual k8s on laptop only"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "c",
-          "text": "No upgrades"
+          "text": "Compute Engine + Cloud Scheduler"
         },
         {
           "id": "d",
-          "text": "Disable RBAC"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
@@ -2477,11 +2307,11 @@
         },
         {
           "id": "b",
-          "text": "Manual k8s on laptop only"
+          "text": "Cloud Run"
         },
         {
           "id": "c",
-          "text": "No upgrades"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "d",
@@ -2511,15 +2341,15 @@
         },
         {
           "id": "b",
-          "text": "Manual install each"
+          "text": "Compute Engine + Cloud Scheduler"
         },
         {
           "id": "c",
-          "text": "Snowflake servers"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
@@ -2541,23 +2371,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Custom images or instance templates"
+          "text": "Cloud Run"
         },
         {
           "id": "b",
-          "text": "Manual install each"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "c",
-          "text": "Snowflake servers"
+          "text": "Compute Engine + Cloud Scheduler"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "Custom images or instance templates"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Images standardize VM provisioning.",
       "docs": [
@@ -2575,23 +2405,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Custom images or instance templates"
+          "text": "Compute Engine + Cloud Scheduler"
         },
         {
           "id": "b",
-          "text": "Manual install each"
+          "text": "Cloud Run"
         },
         {
           "id": "c",
-          "text": "Snowflake servers"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "d",
-          "text": "USB"
+          "text": "USB (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Images standardize VM provisioning.",
       "docs": [
@@ -2609,23 +2439,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compute Engine + Cloud Scheduler"
+          "text": "Custom images or instance templates"
         },
         {
           "id": "b",
-          "text": "Cron on laptop"
+          "text": "Compute Engine + Cloud Scheduler"
         },
         {
           "id": "c",
-          "text": "Email scripts"
+          "text": "Google Kubernetes Engine"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Cloud Run"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Scheduler triggers automated jobs.",
       "docs": [

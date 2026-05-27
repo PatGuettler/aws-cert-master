@@ -71,142 +71,6 @@
   ],
   "questions": [
     {
-      "id": "az305-q001",
-      "domain": "identity-data",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Solutions Architect Expert and reviewing Design identity, governance, and monitoring. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AZ-305 study guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use AZ-305 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "AZ-305 study guide",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305"
-        }
-      ]
-    },
-    {
-      "id": "az305-q002",
-      "domain": "data-solutions",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Solutions Architect Expert and reviewing Design data solutions. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure SQL Database"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure SQL Database and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure SQL Database",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
-        }
-      ]
-    },
-    {
-      "id": "az305-q003",
-      "domain": "business-continuity",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Solutions Architect Expert and reviewing Design business continuity solutions. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Site Recovery"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Site Recovery and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Site Recovery",
-          "url": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
-        }
-      ]
-    },
-    {
-      "id": "az305-q004",
-      "domain": "infrastructure",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Solutions Architect Expert and reviewing Design infrastructure solutions. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Kubernetes Service"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Kubernetes Service and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Kubernetes Service",
-          "url": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
-        }
-      ]
-    },
-    {
       "id": "az305-q005",
       "domain": "identity-data",
       "type": "multiple-choice",
@@ -214,23 +78,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure landing zones"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "Azure landing zones"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "Azure Policy initiatives"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Landing zones standardize platform foundations.",
       "docs": [
@@ -248,23 +112,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "b",
-          "text": "Single-server SQLite at scale"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "d",
-          "text": "Cool tier only"
+          "text": "Single-server SQLite at scale"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cosmos DB offers global distribution and SLAs.",
       "docs": [
@@ -282,23 +146,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Policy initiatives"
+          "text": "Azure landing zones"
         },
         {
           "id": "b",
-          "text": "Manual audits only"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "d",
-          "text": "No definitions"
+          "text": "Azure Policy initiatives"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Initiatives group related policies.",
       "docs": [
@@ -320,15 +184,15 @@
         },
         {
           "id": "b",
-          "text": "User-by-user only"
+          "text": "Azure landing zones"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "d",
-          "text": "No PIM"
+          "text": "Azure Policy initiatives"
         }
       ],
       "correct": [
@@ -354,15 +218,15 @@
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "Microsoft Entra groups with role assignments"
         }
       ],
       "correct": [
@@ -388,15 +252,15 @@
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "Azure Cosmos DB"
         }
       ],
       "correct": [
@@ -418,23 +282,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure landing zones"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "Azure landing zones"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "Microsoft Entra groups with role assignments"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Landing zones standardize platform foundations.",
       "docs": [
@@ -452,23 +316,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
-        },
-        {
-          "id": "b",
           "text": "Single-server SQLite at scale"
         },
         {
+          "id": "b",
+          "text": "Azure landing zones"
+        },
+        {
           "id": "c",
-          "text": "FTP share"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "d",
-          "text": "Cool tier only"
+          "text": "Azure Cosmos DB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cosmos DB offers global distribution and SLAs.",
       "docs": [
@@ -486,7 +350,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cosmos DB"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "b",
@@ -494,15 +358,15 @@
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "d",
-          "text": "Cool tier only"
+          "text": "Azure Policy initiatives"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cosmos DB offers global distribution and SLAs.",
       "docs": [
@@ -524,15 +388,15 @@
         },
         {
           "id": "b",
-          "text": "Single-server SQLite at scale"
+          "text": "Azure landing zones"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Single-server SQLite at scale"
         },
         {
           "id": "d",
-          "text": "Cool tier only"
+          "text": "Azure Policy initiatives"
         }
       ],
       "correct": [
@@ -554,23 +418,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Policy initiatives"
+          "text": "Azure landing zones"
         },
         {
           "id": "b",
-          "text": "Manual audits only"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "d",
-          "text": "No definitions"
+          "text": "Microsoft Entra groups with role assignments"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Initiatives group related policies.",
       "docs": [
@@ -588,23 +452,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Policy initiatives"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "b",
-          "text": "Manual audits only"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "d",
-          "text": "No definitions"
+          "text": "Azure landing zones"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Initiatives group related policies.",
       "docs": [
@@ -622,23 +486,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Policy initiatives"
+          "text": "No definitions"
         },
         {
           "id": "b",
-          "text": "Manual audits only"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "d",
-          "text": "No definitions"
+          "text": "Azure landing zones"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Initiatives group related policies.",
       "docs": [
@@ -656,23 +520,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra groups with role assignments"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "b",
-          "text": "User-by-user only"
+          "text": "Azure landing zones"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "d",
-          "text": "No PIM"
+          "text": "Azure Policy initiatives"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Groups simplify access management.",
       "docs": [
@@ -694,15 +558,15 @@
         },
         {
           "id": "b",
-          "text": "User-by-user only"
+          "text": "No PIM (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "d",
-          "text": "No PIM"
+          "text": "Azure Cosmos DB"
         }
       ],
       "correct": [
@@ -728,15 +592,15 @@
         },
         {
           "id": "b",
-          "text": "User-by-user only"
+          "text": "Azure landing zones"
         },
         {
           "id": "c",
-          "text": "Shared admin"
+          "text": "Azure Policy initiatives"
         },
         {
           "id": "d",
-          "text": "No PIM"
+          "text": "Azure Cosmos DB"
         }
       ],
       "correct": [
@@ -758,23 +622,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure landing zones"
+          "text": "Microsoft Entra groups with role assignments"
         },
         {
           "id": "b",
-          "text": "Ad-hoc subscriptions"
+          "text": "Azure landing zones"
         },
         {
           "id": "c",
-          "text": "No logging"
+          "text": "Azure Cosmos DB"
         },
         {
           "id": "d",
-          "text": "Single admin account"
+          "text": "Azure Policy initiatives"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Landing zones standardize platform foundations.",
       "docs": [
@@ -792,23 +656,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "ICMP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure SQL is managed SQL Server in Azure.",
       "docs": [
@@ -830,15 +694,15 @@
         },
         {
           "id": "b",
-          "text": "Local notepad"
+          "text": "Azure SQL Database"
         },
         {
           "id": "c",
-          "text": "FTP cache"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "ICMP (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -860,23 +724,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Data Explorer"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "b",
-          "text": "CSV email"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "c",
-          "text": "Excel only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Telnet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ADX analyzes high-volume logs and metrics.",
       "docs": [
@@ -898,15 +762,15 @@
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure Data Explorer"
         }
       ],
       "correct": [
@@ -932,15 +796,15 @@
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure Data Explorer"
         }
       ],
       "correct": [
@@ -962,23 +826,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure SQL is managed SQL Server in Azure.",
       "docs": [
@@ -1000,15 +864,15 @@
         },
         {
           "id": "b",
-          "text": "Local notepad"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "c",
-          "text": "FTP cache"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "ICMP (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1030,23 +894,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cache for Redis"
+          "text": "Azure SQL Database"
         },
         {
           "id": "b",
-          "text": "Local notepad"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP cache"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure Cache for Redis"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Redis reduces database read load.",
       "docs": [
@@ -1064,23 +928,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cache for Redis"
+          "text": "Azure SQL Database"
         },
         {
           "id": "b",
-          "text": "Local notepad"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP cache"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure Data Explorer"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Redis reduces database read load.",
       "docs": [
@@ -1102,15 +966,15 @@
         },
         {
           "id": "b",
-          "text": "CSV email"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "c",
-          "text": "Excel only"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
@@ -1132,23 +996,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Data Explorer"
+          "text": "Azure SQL Database"
         },
         {
           "id": "b",
-          "text": "CSV email"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "c",
-          "text": "Excel only"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Data Explorer"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "ADX analyzes high-volume logs and metrics.",
       "docs": [
@@ -1166,23 +1030,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Data Explorer"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "b",
-          "text": "CSV email"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Excel only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Data Explorer"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "ADX analyzes high-volume logs and metrics.",
       "docs": [
@@ -1200,23 +1064,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure Data Explorer"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure SQL is managed SQL Server in Azure.",
       "docs": [
@@ -1234,23 +1098,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cache for Redis"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "b",
-          "text": "Local notepad"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "FTP cache"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Redis reduces database read load.",
       "docs": [
@@ -1268,11 +1132,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Data Explorer"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "CSV email"
+          "text": "Azure SQL Database"
         },
         {
           "id": "c",
@@ -1280,11 +1144,11 @@
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Data Explorer"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "ADX analyzes high-volume logs and metrics.",
       "docs": [
@@ -1302,23 +1166,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Excel on desktop only"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "c",
-          "text": "Local tape"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure Cache for Redis"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure SQL is managed SQL Server in Azure.",
       "docs": [
@@ -1336,23 +1200,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Cache for Redis"
+          "text": "Azure Data Explorer"
         },
         {
           "id": "b",
-          "text": "Local notepad"
+          "text": "Azure Cache for Redis"
         },
         {
           "id": "c",
-          "text": "FTP cache"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Redis reduces database read load.",
       "docs": [
@@ -1374,15 +1238,15 @@
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Manual USB only"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "Azure Backup recovery services vault"
         },
         {
           "id": "d",
-          "text": "Manual USB only"
+          "text": "Azure SQL failover groups"
         }
       ],
       "correct": [
@@ -1404,23 +1268,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Backup recovery services vault"
+          "text": "Azure Site Recovery"
         },
         {
           "id": "b",
-          "text": "USB only"
+          "text": "Disable backup (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Azure Backup recovery services vault"
         },
         {
           "id": "d",
-          "text": "Disable backup"
+          "text": "Azure SQL failover groups"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Recovery Services vault stores backup data.",
       "docs": [
@@ -1438,23 +1302,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL failover groups"
+          "text": "Azure Site Recovery"
         },
         {
           "id": "b",
-          "text": "Single region only"
+          "text": "Azure SQL failover groups"
         },
         {
           "id": "c",
-          "text": "Hope for best"
+          "text": "Manual USB (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Manual USB"
+          "text": "Azure Backup recovery services vault"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Failover groups provide DR for SQL.",
       "docs": [
@@ -1472,23 +1336,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Site Recovery"
+          "text": "Manual USB only"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Azure Site Recovery"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "Azure Backup recovery services vault"
         },
         {
           "id": "d",
-          "text": "Manual USB only"
+          "text": "Azure SQL failover groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ASR orchestrates failover and failback.",
       "docs": [
@@ -1506,15 +1370,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Site Recovery"
+          "text": "Azure Backup recovery services vault"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Azure SQL failover groups"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "Azure Site Recovery"
         },
         {
           "id": "d",
@@ -1522,7 +1386,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "ASR orchestrates failover and failback.",
       "docs": [
@@ -1544,15 +1408,15 @@
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Azure SQL failover groups"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "Manual USB only"
         },
         {
           "id": "d",
-          "text": "Manual USB only"
+          "text": "Azure Backup recovery services vault"
         }
       ],
       "correct": [
@@ -1574,23 +1438,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Backup recovery services vault"
+          "text": "Azure Site Recovery"
         },
         {
           "id": "b",
-          "text": "USB only"
+          "text": "Azure Backup recovery services vault"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Disable backup (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Disable backup"
+          "text": "Azure SQL failover groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Recovery Services vault stores backup data.",
       "docs": [
@@ -1608,23 +1472,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Backup recovery services vault"
+          "text": "Azure SQL failover groups"
         },
         {
           "id": "b",
-          "text": "USB only"
+          "text": "Azure Backup recovery services vault"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Azure Site Recovery"
         },
         {
           "id": "d",
-          "text": "Disable backup"
+          "text": "Disable backup (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Recovery Services vault stores backup data.",
       "docs": [
@@ -1646,15 +1510,15 @@
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Archive tier"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Private AKS clusters"
         }
       ],
       "correct": [
@@ -1676,23 +1540,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Gateway WAF"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Disable WAF"
         },
         {
           "id": "c",
-          "text": "Self-signed everywhere"
+          "text": "Private AKS clusters"
         },
         {
           "id": "d",
-          "text": "Disable WAF"
+          "text": "Application Gateway WAF"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WAF protects web apps at edge.",
       "docs": [
@@ -1710,23 +1574,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Private AKS clusters"
+          "text": "Shared kubeconfig"
         },
         {
           "id": "b",
-          "text": "Public API server"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Open dashboard"
+          "text": "Private AKS clusters"
         },
         {
           "id": "d",
-          "text": "Shared kubeconfig"
+          "text": "Application Gateway WAF"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Private clusters limit API exposure.",
       "docs": [
@@ -1748,11 +1612,11 @@
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Private AKS clusters"
         },
         {
           "id": "d",
@@ -1782,15 +1646,15 @@
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Private AKS clusters"
         }
       ],
       "correct": [
@@ -1812,23 +1676,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Archive tier"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Private AKS clusters"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "App Gateway provides WAF and routing.",
       "docs": [
@@ -1846,23 +1710,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Gateway WAF"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Self-signed everywhere"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "d",
-          "text": "Disable WAF"
+          "text": "Azure Kubernetes Service"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "WAF protects web apps at edge.",
       "docs": [
@@ -1884,15 +1748,15 @@
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Self-signed everywhere"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "d",
-          "text": "Disable WAF"
+          "text": "Private AKS clusters"
         }
       ],
       "correct": [
@@ -1914,23 +1778,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Gateway WAF"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Self-signed everywhere"
+          "text": "Disable WAF"
         },
         {
           "id": "d",
-          "text": "Disable WAF"
+          "text": "Application Gateway WAF"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WAF protects web apps at edge.",
       "docs": [
@@ -1952,15 +1816,15 @@
         },
         {
           "id": "b",
-          "text": "Public API server"
+          "text": "Shared kubeconfig"
         },
         {
           "id": "c",
-          "text": "Open dashboard"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "d",
-          "text": "Shared kubeconfig"
+          "text": "Azure Application Gateway"
         }
       ],
       "correct": [
@@ -1982,23 +1846,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Private AKS clusters"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "Public API server"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "c",
-          "text": "Open dashboard"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "d",
-          "text": "Shared kubeconfig"
+          "text": "Private AKS clusters"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Private clusters limit API exposure.",
       "docs": [
@@ -2020,15 +1884,15 @@
         },
         {
           "id": "b",
-          "text": "Public API server"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Open dashboard"
+          "text": "Shared kubeconfig"
         },
         {
           "id": "d",
-          "text": "Shared kubeconfig"
+          "text": "Application Gateway WAF"
         }
       ],
       "correct": [
@@ -2050,23 +1914,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Private AKS clusters"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Archive tier"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure Application Gateway"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "App Gateway provides WAF and routing.",
       "docs": [
@@ -2084,23 +1948,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Gateway WAF"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "c",
-          "text": "Self-signed everywhere"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "d",
-          "text": "Disable WAF"
+          "text": "Private AKS clusters"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "WAF protects web apps at edge.",
       "docs": [
@@ -2118,23 +1982,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Private AKS clusters"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "Public API server"
+          "text": "Private AKS clusters"
         },
         {
           "id": "c",
-          "text": "Open dashboard"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "d",
-          "text": "Shared kubeconfig"
+          "text": "Azure Kubernetes Service"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Private clusters limit API exposure.",
       "docs": [
@@ -2152,15 +2016,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "d",
@@ -2168,7 +2032,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "App Gateway provides WAF and routing.",
       "docs": [
@@ -2186,23 +2050,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Gateway WAF"
+          "text": "Disable WAF"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Private AKS clusters"
         },
         {
           "id": "c",
-          "text": "Self-signed everywhere"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "d",
-          "text": "Disable WAF"
+          "text": "Application Gateway WAF"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WAF protects web apps at edge.",
       "docs": [
@@ -2220,23 +2084,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Private AKS clusters"
+          "text": "Shared kubeconfig"
         },
         {
           "id": "b",
-          "text": "Public API server"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Open dashboard"
+          "text": "Private AKS clusters"
         },
         {
           "id": "d",
-          "text": "Shared kubeconfig"
+          "text": "Application Gateway WAF"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Private clusters limit API exposure.",
       "docs": [
@@ -2258,15 +2122,15 @@
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Private AKS clusters"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure Kubernetes Service"
         }
       ],
       "correct": [
@@ -2292,15 +2156,15 @@
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Private AKS clusters"
         },
         {
           "id": "c",
-          "text": "Self-signed everywhere"
+          "text": "Disable WAF"
         },
         {
           "id": "d",
-          "text": "Disable WAF"
+          "text": "Azure Application Gateway"
         }
       ],
       "correct": [
@@ -2322,15 +2186,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Private AKS clusters"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "b",
-          "text": "Public API server"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Open dashboard"
+          "text": "Private AKS clusters"
         },
         {
           "id": "d",
@@ -2338,7 +2202,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Private clusters limit API exposure.",
       "docs": [
@@ -2356,15 +2220,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
-          "text": "DNS CNAME only always"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Single NIC"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "d",
@@ -2372,7 +2236,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "App Gateway provides WAF and routing.",
       "docs": [
@@ -2394,15 +2258,15 @@
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "c",
-          "text": "Self-signed everywhere"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "d",
-          "text": "Disable WAF"
+          "text": "Private AKS clusters"
         }
       ],
       "correct": [
@@ -2428,11 +2292,11 @@
         },
         {
           "id": "b",
-          "text": "Public API server"
+          "text": "Application Gateway WAF"
         },
         {
           "id": "c",
-          "text": "Open dashboard"
+          "text": "Azure Application Gateway"
         },
         {
           "id": "d",
@@ -2458,7 +2322,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Application Gateway"
+          "text": "Private AKS clusters"
         },
         {
           "id": "b",
@@ -2466,15 +2330,15 @@
         },
         {
           "id": "c",
-          "text": "DNS CNAME only always"
+          "text": "Single NIC"
         },
         {
           "id": "d",
-          "text": "Single NIC"
+          "text": "Azure Application Gateway"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "App Gateway provides WAF and routing. Compare with Application Gateway WAF: WAF protects web apps at edge.",
       "docs": [
@@ -2500,15 +2364,15 @@
         },
         {
           "id": "b",
-          "text": "Private AKS clusters"
+          "text": "Azure Kubernetes Service"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Private AKS clusters"
         },
         {
           "id": "d",
-          "text": "Self-signed everywhere"
+          "text": "Azure Application Gateway"
         }
       ],
       "correct": [

@@ -81,15 +81,15 @@
         },
         {
           "id": "b",
-          "text": "TCP/IP 4-layer only name"
+          "text": "Bus (legacy Ethernet coax)"
         },
         {
           "id": "c",
-          "text": "DoD 2-layer"
+          "text": "Data, Segment, Packet, Frame, Bits"
         },
         {
           "id": "d",
-          "text": "ISO 9001"
+          "text": "255.255.255.255"
         }
       ],
       "correct": [
@@ -111,23 +111,23 @@
       "options": [
         {
           "id": "a",
-          "text": "OSI model"
+          "text": "Echo Request/Echo Reply"
         },
         {
           "id": "b",
-          "text": "TCP/IP 4-layer only name"
+          "text": "::1/128"
         },
         {
           "id": "c",
-          "text": "DoD 2-layer"
+          "text": "Data, Segment, Packet, Frame, Bits"
         },
         {
           "id": "d",
-          "text": "ISO 9001"
+          "text": "OSI model"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "The OSI reference model defines seven layers.",
       "docs": [
@@ -145,23 +145,23 @@
       "options": [
         {
           "id": "a",
-          "text": "UDP"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "TCP"
+          "text": "UDP"
         },
         {
           "id": "c",
-          "text": "SCTP always ordered"
+          "text": "OSI model"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Large address space"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "UDP has no handshake or guaranteed delivery.",
       "docs": [
@@ -183,15 +183,15 @@
         },
         {
           "id": "b",
-          "text": "127.0.0.1"
+          "text": "/26"
         },
         {
           "id": "c",
-          "text": "0.0.0.0"
+          "text": "DSCP"
         },
         {
           "id": "d",
-          "text": "255.255.255.255"
+          "text": "OSI model"
         }
       ],
       "correct": [
@@ -213,23 +213,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/26"
+          "text": "Well-known ports in TCP/UDP (e.g., 80 HTTP)"
         },
         {
           "id": "b",
-          "text": "/25"
+          "text": "/26"
         },
         {
           "id": "c",
-          "text": "/30"
+          "text": "Data, Segment, Packet, Frame, Bits"
         },
         {
           "id": "d",
-          "text": "/32"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "/26 yields four subnets with 62 usable hosts each in a classful-style split.",
       "docs": [
@@ -247,23 +247,23 @@
       "options": [
         {
           "id": "a",
-          "text": "53"
+          "text": "802.11ax era security updates include WPA3"
         },
         {
           "id": "b",
-          "text": "443"
+          "text": "MAN"
         },
         {
           "id": "c",
-          "text": "22"
+          "text": "53"
         },
         {
           "id": "d",
-          "text": "3389"
+          "text": "UDP"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "DNS typically uses UDP/TCP port 53.",
       "docs": [
@@ -281,23 +281,23 @@
       "options": [
         {
           "id": "a",
-          "text": "802.11ax era security updates include WPA3"
+          "text": "Data, Segment, Packet, Frame, Bits"
         },
         {
           "id": "b",
-          "text": "802.11b WEP only"
+          "text": "OSI model"
         },
         {
           "id": "c",
-          "text": "802.3 Ethernet"
+          "text": "802.11ax era security updates include WPA3"
         },
         {
           "id": "d",
-          "text": "Bluetooth Classic"
+          "text": "Echo Request/Echo Reply"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "WPA3 strengthens Wi-Fi authentication and encryption.",
       "docs": [
@@ -315,23 +315,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Router"
+          "text": "OSI model"
         },
         {
           "id": "b",
-          "text": "Unmanaged switch"
+          "text": "Well-known ports in TCP/UDP (e.g., 80 HTTP)"
         },
         {
           "id": "c",
-          "text": "Hub"
+          "text": "Router"
         },
         {
           "id": "d",
-          "text": "Patch panel"
+          "text": "::1/128"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Routers forward based on IP routing tables.",
       "docs": [
@@ -349,23 +349,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Single-mode fiber"
+          "text": "53"
         },
         {
           "id": "b",
-          "text": "Cat 3 UTP"
+          "text": "Single-mode fiber"
         },
         {
           "id": "c",
-          "text": "Coax RG-59 only"
+          "text": "OSI model"
         },
         {
           "id": "d",
-          "text": "Flat telephone wire"
+          "text": "Echo Request/Echo Reply"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Fiber uses light, avoiding electrical interference.",
       "docs": [
@@ -383,23 +383,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DSCP"
+          "text": "Bus (legacy Ethernet coax)"
         },
         {
           "id": "b",
-          "text": "ARP"
+          "text": "Well-known ports in TCP/UDP (e.g., 80 HTTP)"
         },
         {
           "id": "c",
-          "text": "SMTP"
+          "text": "DSCP"
         },
         {
           "id": "d",
-          "text": "POP3"
+          "text": "802.11ax era security updates include WPA3"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Differentiated Services Code Point marks traffic classes.",
       "docs": [
@@ -417,23 +417,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bus (legacy Ethernet coax)"
-        },
-        {
-          "id": "b",
-          "text": "Full mesh modern default"
-        },
-        {
-          "id": "c",
           "text": "Star over switch is not bus"
         },
         {
+          "id": "b",
+          "text": "Bus (legacy Ethernet coax)"
+        },
+        {
+          "id": "c",
+          "text": "Router"
+        },
+        {
           "id": "d",
-          "text": "Ring Token Ring class"
+          "text": "OSI model"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Classic bus topology uses coax with end terminators.",
       "docs": [
@@ -451,23 +451,23 @@
       "options": [
         {
           "id": "a",
-          "text": "255.255.255.255"
+          "text": "MAN"
         },
         {
           "id": "b",
-          "text": "127.0.0.1"
+          "text": "/26"
         },
         {
           "id": "c",
-          "text": "0.0.0.0"
+          "text": "255.255.255.255"
         },
         {
           "id": "d",
-          "text": "224.0.0.1"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "255.255.255.255 is local broadcast.",
       "docs": [
@@ -485,23 +485,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Well-known ports in TCP/UDP (e.g., 80 HTTP)"
+          "text": "Data, Segment, Packet, Frame, Bits"
         },
         {
           "id": "b",
-          "text": "DNS only MX"
+          "text": "255.255.255.255"
         },
         {
           "id": "c",
-          "text": "ICMP type 0 only"
+          "text": "Well-known ports in TCP/UDP (e.g., 80 HTTP)"
         },
         {
           "id": "d",
-          "text": "LDAP schema"
+          "text": "Bus (legacy Ethernet coax)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IANA assigns well-known ports for services.",
       "docs": [
@@ -519,23 +519,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Data, Segment, Packet, Frame, Bits"
+          "text": "DSCP"
         },
         {
           "id": "b",
-          "text": "Bits first at application"
+          "text": "53"
         },
         {
           "id": "c",
-          "text": "Frame before packet always wrong"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Segment at layer 2"
+          "text": "Data, Segment, Packet, Frame, Bits"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "PDU names change per layer down the stack.",
       "docs": [
@@ -557,15 +557,15 @@
         },
         {
           "id": "b",
-          "text": "WEP"
+          "text": "OSI model"
         },
         {
           "id": "c",
-          "text": "SSID hiding"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "MAC filtering only"
+          "text": "Data, Segment, Packet, Frame, Bits"
         }
       ],
       "correct": [
@@ -587,23 +587,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MAN"
+          "text": "SAN storage network not geographic MAN"
         },
         {
           "id": "b",
-          "text": "PAN"
+          "text": "MAN"
         },
         {
           "id": "c",
-          "text": "LAN only single floor"
+          "text": "Large address space"
         },
         {
           "id": "d",
-          "text": "SAN storage network not geographic MAN"
+          "text": "802.11ax era security updates include WPA3"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Metropolitan Area Networks cover cities.",
       "docs": [
@@ -625,15 +625,15 @@
         },
         {
           "id": "b",
-          "text": "SYN-ACK"
+          "text": "802.11ax era security updates include WPA3"
         },
         {
           "id": "c",
-          "text": "DHCP OFFER"
+          "text": "::1/128"
         },
         {
           "id": "d",
-          "text": "ARP Reply"
+          "text": "Data, Segment, Packet, Frame, Bits"
         }
       ],
       "correct": [
@@ -655,23 +655,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "53"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "OSI model"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Single-mode fiber"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -689,23 +689,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Large address space"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "OSI model"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "::1/128"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -762,23 +762,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RIP"
+          "text": "VPN concentrator or firewall with VPN"
         },
         {
           "id": "b",
-          "text": "OSPF link-state"
+          "text": "RIP"
         },
         {
           "id": "c",
-          "text": "BGP path vector external"
+          "text": "Spanning Tree Protocol (STP/RSTP)"
         },
         {
           "id": "d",
-          "text": "IS-IS only datacenter"
+          "text": "802.1X with EAP"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "RIP selects paths by hop count with limits.",
       "docs": [
@@ -796,23 +796,23 @@
       "options": [
         {
           "id": "a",
-          "text": "4095 or implementation-specific reserved; VLAN 1 default"
+          "text": "Wire map shows pins crossed between pairs"
         },
         {
           "id": "b",
-          "text": "VLAN 0 data"
+          "text": "4095 or implementation-specific reserved; VLAN 1 default"
         },
         {
           "id": "c",
-          "text": "VLAN 9999 always routing"
+          "text": "Spanning Tree Protocol (STP/RSTP)"
         },
         {
           "id": "d",
-          "text": "VLAN -1"
+          "text": "Source IP affinity / persistence"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "VLAN 1 is default; vendors reserve certain IDs.",
       "docs": [
@@ -830,7 +830,7 @@
       "options": [
         {
           "id": "a",
-          "text": "PoE+"
+          "text": "4095 or implementation-specific reserved; VLAN 1 default"
         },
         {
           "id": "b",
@@ -838,15 +838,15 @@
         },
         {
           "id": "c",
-          "text": "Passive 24V always"
+          "text": "VPN concentrator or firewall with VPN"
         },
         {
           "id": "d",
-          "text": "USB-A power"
+          "text": "PoE+"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "802.3at (PoE+) delivers higher wattage.",
       "docs": [
@@ -868,15 +868,15 @@
         },
         {
           "id": "b",
-          "text": "Root hint only client"
+          "text": "Source IP affinity / persistence"
         },
         {
           "id": "c",
-          "text": "DHCP server"
+          "text": "Frame Relay (legacy) / MPLS VPN concept"
         },
         {
           "id": "d",
-          "text": "NTP stratum 0"
+          "text": "RIP"
         }
       ],
       "correct": [
@@ -898,23 +898,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Frame Relay (legacy) / MPLS VPN concept"
+          "text": "Wire map shows pins crossed between pairs"
         },
         {
           "id": "b",
-          "text": "Dial-up modem only"
+          "text": "Implicit deny inbound after explicit permits"
         },
         {
           "id": "c",
-          "text": "Parallel printer cable"
+          "text": "Frame Relay (legacy) / MPLS VPN concept"
         },
         {
           "id": "d",
-          "text": "HDMI"
+          "text": "Channel bonding / 40/80/160 MHz widths"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Many WANs use label-switched or VC technologies.",
       "docs": [
@@ -936,15 +936,15 @@
         },
         {
           "id": "b",
-          "text": "Allow all then log"
+          "text": "Channel bonding / 40/80/160 MHz widths"
         },
         {
           "id": "c",
-          "text": "Deny outbound only"
+          "text": "Wire map shows pins crossed between pairs"
         },
         {
           "id": "d",
-          "text": "Permit any any first"
+          "text": "SLAAC with RA"
         }
       ],
       "correct": [
@@ -966,23 +966,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Channel bonding / 40/80/160 MHz widths"
+          "text": "SFP/SFP+"
         },
         {
           "id": "b",
-          "text": "WEP shared key"
+          "text": "Channel bonding / 40/80/160 MHz widths"
         },
         {
           "id": "c",
-          "text": "Half duplex fiber"
+          "text": "SLAAC with RA"
         },
         {
           "id": "d",
-          "text": "CSMA/CD on switch"
+          "text": "PoE+"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Wider channels increase Wi-Fi data rates.",
       "docs": [
@@ -1000,23 +1000,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPN concentrator or firewall with VPN"
+          "text": "SLAAC with RA"
         },
         {
           "id": "b",
-          "text": "Unmanaged hub"
+          "text": "VPN concentrator or firewall with VPN"
         },
         {
           "id": "c",
-          "text": "Analog modem bank only"
+          "text": "4095 or implementation-specific reserved; VLAN 1 default"
         },
         {
           "id": "d",
-          "text": "KVM"
+          "text": "/28"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "VPN gateways handle encrypted remote access.",
       "docs": [
@@ -1034,23 +1034,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SLAAC with RA"
+          "text": "PoE+"
         },
         {
           "id": "b",
-          "text": "ARP only"
+          "text": "RIP"
         },
         {
           "id": "c",
-          "text": "WINS"
+          "text": "Source IP affinity / persistence"
         },
         {
           "id": "d",
-          "text": "NetBIOS"
+          "text": "SLAAC with RA"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Router Advertisements enable SLAAC addressing.",
       "docs": [
@@ -1068,23 +1068,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Wire map shows pins crossed between pairs"
+          "text": "4095 or implementation-specific reserved; VLAN 1 default"
         },
         {
           "id": "b",
-          "text": "Link light green only"
+          "text": "Wire map shows pins crossed between pairs"
         },
         {
           "id": "c",
-          "text": "Ping success"
+          "text": "VPN concentrator or firewall with VPN"
         },
         {
           "id": "d",
-          "text": "DNS OK"
+          "text": "SFP/SFP+"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Split pairs cause crosstalk and errors.",
       "docs": [
@@ -1102,23 +1102,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dynamic path selection by application/policy"
+          "text": "/28"
         },
         {
           "id": "b",
-          "text": "Static route only one link"
+          "text": "4095 or implementation-specific reserved; VLAN 1 default"
         },
         {
           "id": "c",
-          "text": "Disable encryption"
+          "text": "Wire map shows pins crossed between pairs"
         },
         {
           "id": "d",
-          "text": "Remove QoS"
+          "text": "Dynamic path selection by application/policy"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SD-WAN steers traffic across MPLS/broadband/LTE.",
       "docs": [
@@ -1136,23 +1136,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Spanning Tree Protocol (STP/RSTP)"
+          "text": "Dynamic path selection by application/policy"
         },
         {
           "id": "b",
-          "text": "Port mirroring"
+          "text": "802.1X with EAP"
         },
         {
           "id": "c",
-          "text": "PoE"
+          "text": "Spanning Tree Protocol (STP/RSTP)"
         },
         {
           "id": "d",
-          "text": "VLAN tagging only"
+          "text": "Primary authoritative server"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "STP blocks redundant paths to avoid loops.",
       "docs": [
@@ -1170,23 +1170,23 @@
       "options": [
         {
           "id": "a",
-          "text": "802.1X with EAP"
+          "text": "4095 or implementation-specific reserved; VLAN 1 default"
         },
         {
           "id": "b",
-          "text": "WEP key index"
+          "text": "Primary authoritative server"
         },
         {
           "id": "c",
-          "text": "MAC clone only"
+          "text": "Wire map shows pins crossed between pairs"
         },
         {
           "id": "d",
-          "text": "SSID broadcast off"
+          "text": "802.1X with EAP"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "802.1X controls port access before Wi-Fi data.",
       "docs": [
@@ -1208,15 +1208,15 @@
         },
         {
           "id": "b",
-          "text": "/24"
+          "text": "Dynamic path selection by application/policy"
         },
         {
           "id": "c",
-          "text": "/16"
+          "text": "Channel bonding / 40/80/160 MHz widths"
         },
         {
           "id": "d",
-          "text": "/8"
+          "text": "Implicit deny inbound after explicit permits"
         }
       ],
       "correct": [
@@ -1238,23 +1238,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Source IP affinity / persistence"
+          "text": "Spanning Tree Protocol (STP/RSTP)"
         },
         {
           "id": "b",
-          "text": "Round robin DNS only always layer 7"
+          "text": "/28"
         },
         {
           "id": "c",
-          "text": "Broadcast storm"
+          "text": "PoE+"
         },
         {
           "id": "d",
-          "text": "ARP proxy only"
+          "text": "Source IP affinity / persistence"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Persistence sticks sessions to the same backend.",
       "docs": [
@@ -1272,23 +1272,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SFP/SFP+"
+          "text": "SLAAC with RA"
         },
         {
           "id": "b",
-          "text": "RJ-11"
+          "text": "SFP/SFP+"
         },
         {
           "id": "c",
-          "text": "DE-9 serial"
+          "text": "Primary authoritative server"
         },
         {
           "id": "d",
-          "text": "Molex"
+          "text": "Spanning Tree Protocol (STP/RSTP)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SFP modules plug into switch slots for fiber/copper.",
       "docs": [
@@ -1346,23 +1346,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network diagram / ladder diagram"
+          "text": "/var/log/auth.log or secure"
         },
         {
           "id": "b",
-          "text": "Privacy policy"
+          "text": "Maintenance window with notifications"
         },
         {
           "id": "c",
-          "text": "Employee handbook"
+          "text": "Network diagram / ladder diagram"
         },
         {
           "id": "d",
-          "text": "Toner inventory"
+          "text": "Vertical/horizontal managers and dress paths"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Diagrams map topology for operations.",
       "docs": [
@@ -1384,15 +1384,15 @@
         },
         {
           "id": "b",
-          "text": "SNMPv1 community public only"
+          "text": "Availability percentage (e.g., 99.9%)"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "Wireshark/tcpdump"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Network diagram / ladder diagram"
         }
       ],
       "correct": [
@@ -1418,15 +1418,15 @@
         },
         {
           "id": "b",
-          "text": "Full every time only"
+          "text": "Backout plan documented before change"
         },
         {
           "id": "c",
-          "text": "Mirror snap always full copy"
+          "text": "Maintenance window with notifications"
         },
         {
           "id": "d",
-          "text": "Archive tape label"
+          "text": "Synthetic queries and DNSSEC validation where used"
         }
       ],
       "correct": [
@@ -1452,15 +1452,15 @@
         },
         {
           "id": "b",
-          "text": "MTTR repair time"
+          "text": "Git-backed repo or NCM tool"
         },
         {
           "id": "c",
-          "text": "RPO"
+          "text": "Availability percentage (e.g., 99.9%)"
         },
         {
           "id": "d",
-          "text": "RTO"
+          "text": "SNMPv3"
         }
       ],
       "correct": [
@@ -1482,23 +1482,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Backout plan documented before change"
+          "text": "Vertical/horizontal managers and dress paths"
         },
         {
           "id": "b",
-          "text": "Skip CAB"
+          "text": "Backout plan documented before change"
         },
         {
           "id": "c",
-          "text": "Deploy Friday 5 PM always"
+          "text": "Centralized WLAN management"
         },
         {
           "id": "d",
-          "text": "No testing"
+          "text": "Sev 1 / P1 critical"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Rollback plans reduce outage risk.",
       "docs": [
@@ -1516,23 +1516,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/var/log/auth.log or secure"
+          "text": "Synthetic queries and DNSSEC validation where used"
         },
         {
           "id": "b",
-          "text": "access.log web only"
+          "text": "/var/log/auth.log or secure"
         },
         {
           "id": "c",
-          "text": "spooler"
+          "text": "SNMPv3"
         },
         {
           "id": "d",
-          "text": "CUPS error"
+          "text": "Maintenance window with notifications"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Auth logs capture SSH and sudo events.",
       "docs": [
@@ -1550,23 +1550,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sustained high utilization/errors on SNMP ifInOctets"
+          "text": "MTBF"
         },
         {
           "id": "b",
-          "text": "User birthday"
+          "text": "Network diagram / ladder diagram"
         },
         {
           "id": "c",
-          "text": "Printer low ink once"
+          "text": "Sustained high utilization/errors on SNMP ifInOctets"
         },
         {
           "id": "d",
-          "text": "Desktop wallpaper change"
+          "text": "Sev 1 / P1 critical"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Interface counters reveal congestion and errors.",
       "docs": [
@@ -1588,15 +1588,15 @@
         },
         {
           "id": "b",
-          "text": "Cable toner"
+          "text": "Sev 1 / P1 critical"
         },
         {
           "id": "c",
-          "text": "Multimeter"
+          "text": "MTBF"
         },
         {
           "id": "d",
-          "text": "Torque driver"
+          "text": "Backout plan documented before change"
         }
       ],
       "correct": [
@@ -1618,23 +1618,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Availability percentage (e.g., 99.9%)"
+          "text": "MTBF"
         },
         {
           "id": "b",
-          "text": "MTBF only"
+          "text": "Site survey software with AP on a map"
         },
         {
           "id": "c",
-          "text": "Password length"
+          "text": "Availability percentage (e.g., 99.9%)"
         },
         {
           "id": "d",
-          "text": "SSID name"
+          "text": "Sev 1 / P1 critical"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Availability SLAs express uptime targets.",
       "docs": [
@@ -1652,23 +1652,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Git-backed repo or NCM tool"
+          "text": "Incremental"
         },
         {
           "id": "b",
-          "text": "Sticky notes"
+          "text": "Availability percentage (e.g., 99.9%)"
         },
         {
           "id": "c",
-          "text": "Local only on each device unversioned"
+          "text": "Git-backed repo or NCM tool"
         },
         {
           "id": "d",
-          "text": "Spreadsheet on USB"
+          "text": "Sustained high utilization/errors on SNMP ifInOctets"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Versioned configs enable audit and rollback.",
       "docs": [
@@ -1686,23 +1686,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Maintenance window with notifications"
+          "text": "Sev 1 / P1 critical"
         },
         {
           "id": "b",
-          "text": "Silent prod patch noon"
+          "text": "Sustained high utilization/errors on SNMP ifInOctets"
         },
         {
           "id": "c",
-          "text": "Never patch"
+          "text": "Synthetic queries and DNSSEC validation where used"
         },
         {
           "id": "d",
-          "text": "Disable AV first always"
+          "text": "Maintenance window with notifications"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Scheduled windows coordinate downtime.",
       "docs": [
@@ -1720,23 +1720,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Synthetic queries and DNSSEC validation where used"
+          "text": "Availability percentage (e.g., 99.9%)"
         },
         {
           "id": "b",
-          "text": "Ping only one host"
+          "text": "Synthetic queries and DNSSEC validation where used"
         },
         {
           "id": "c",
-          "text": "Ignore TTL"
+          "text": "Sev 1 / P1 critical"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Wireshark/tcpdump"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Proactive DNS checks catch poisoned or stale answers.",
       "docs": [
@@ -1754,23 +1754,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Vertical/horizontal managers and dress paths"
-        },
-        {
-          "id": "b",
-          "text": "Cable spaghetti blocking vents"
-        },
-        {
-          "id": "c",
           "text": "Zip ties over-tightened crushing pairs"
         },
         {
+          "id": "b",
+          "text": "Vertical/horizontal managers and dress paths"
+        },
+        {
+          "id": "c",
+          "text": "Sev 1 / P1 critical"
+        },
+        {
           "id": "d",
-          "text": "Loose coils on floor"
+          "text": "Site survey software with AP on a map"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Proper dressing improves cooling and troubleshooting.",
       "docs": [
@@ -1788,23 +1788,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Centralized WLAN management"
+          "text": "Sev 1 / P1 critical"
         },
         {
           "id": "b",
-          "text": "Per-AP manual only always"
+          "text": "Centralized WLAN management"
         },
         {
           "id": "c",
-          "text": "DHCP server role only"
+          "text": "MTBF"
         },
         {
           "id": "d",
-          "text": "SMTP relay"
+          "text": "Git-backed repo or NCM tool"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Controllers provision lightweight APs at scale.",
       "docs": [
@@ -1822,23 +1822,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sev 1 / P1 critical"
+          "text": "Sustained high utilization/errors on SNMP ifInOctets"
         },
         {
           "id": "b",
-          "text": "Low cosmetic"
+          "text": "Vertical/horizontal managers and dress paths"
         },
         {
           "id": "c",
-          "text": "Enhancement request"
+          "text": "Sev 1 / P1 critical"
         },
         {
           "id": "d",
-          "text": "Training ticket"
+          "text": "Synthetic queries and DNSSEC validation where used"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "P1 incidents are business-critical outages.",
       "docs": [
@@ -1856,23 +1856,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Wireshark/tcpdump"
+          "text": "Site survey software with AP on a map"
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "Wireshark/tcpdump"
         },
         {
           "id": "c",
-          "text": "Tracert only"
+          "text": "Synthetic queries and DNSSEC validation where used"
         },
         {
           "id": "d",
-          "text": "Speedtest alone"
+          "text": "Vertical/horizontal managers and dress paths"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Packet captures decode conversations on the wire.",
       "docs": [
@@ -1930,23 +1930,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DoS/DDoS"
+          "text": "802.1X with posture assessment"
         },
         {
           "id": "b",
-          "text": "Phishing email only"
+          "text": "Next-generation firewall (NGFW)"
         },
         {
           "id": "c",
-          "text": "Shoulder surfing"
+          "text": "DoS/DDoS"
         },
         {
           "id": "d",
-          "text": "Dumpster diving"
+          "text": "VPN then RDP over private network"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Volume-based attacks overwhelm resources.",
       "docs": [
@@ -1964,23 +1964,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Port security sticky/learned limits"
+          "text": "802.1X with posture assessment"
         },
         {
           "id": "b",
-          "text": "VLAN hopping always desired"
+          "text": "DHCP starvation/spoofing (rogue server)"
         },
         {
           "id": "c",
-          "text": "STP root guard off"
+          "text": "Port security sticky/learned limits"
         },
         {
           "id": "d",
-          "text": "Open DHCP"
+          "text": "SNMPv3 authPriv"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Port security restricts learned MAC count.",
       "docs": [
@@ -1998,23 +1998,23 @@
       "options": [
         {
           "id": "a",
-          "text": "OpenVPN or SSL VPN variants"
+          "text": "Next-generation firewall (NGFW)"
         },
         {
           "id": "b",
-          "text": "PPTP only"
+          "text": "VPN then RDP over private network"
         },
         {
           "id": "c",
-          "text": "Telnet VPN"
+          "text": "OpenVPN or SSL VPN variants"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "DoS/DDoS"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SSL VPNs traverse firewalls using HTTPS port.",
       "docs": [
@@ -2032,23 +2032,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Evil twin"
+          "text": "VPN then RDP over private network"
         },
         {
           "id": "b",
-          "text": "Bluejacking only"
+          "text": "OpenVPN or SSL VPN variants"
         },
         {
           "id": "c",
-          "text": "Tailgating physical"
+          "text": "Micro-segmentation / VLAN ACLs"
         },
         {
           "id": "d",
-          "text": "SQL injection"
+          "text": "Evil twin"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Evil twins trick clients into malicious APs.",
       "docs": [
@@ -2066,23 +2066,23 @@
       "options": [
         {
           "id": "a",
-          "text": "802.1X with posture assessment"
+          "text": "DHCP starvation/spoofing (rogue server)"
         },
         {
           "id": "b",
-          "text": "WEP rotation"
+          "text": "DoS/DDoS"
         },
         {
           "id": "c",
-          "text": "MAC spoof allowed"
+          "text": "802.1X with posture assessment"
         },
         {
           "id": "d",
-          "text": "Open guest always"
+          "text": "WIPS scanning and ACL on wired uplinks"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "NAC validates compliance before admission.",
       "docs": [
@@ -2100,23 +2100,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AES-CCMP"
+          "text": "Micro-segmentation / VLAN ACLs"
         },
         {
           "id": "b",
-          "text": "WEP RC4"
+          "text": "VPN then RDP over private network"
         },
         {
           "id": "c",
-          "text": "Plaintext"
+          "text": "AES-CCMP"
         },
         {
           "id": "d",
-          "text": "ROT13"
+          "text": "Evil twin"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "WPA2 personal uses AES with CCMP.",
       "docs": [
@@ -2134,23 +2134,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Next-generation firewall (NGFW)"
+          "text": "Port security sticky/learned limits"
         },
         {
           "id": "b",
-          "text": "Layer 1 hub"
+          "text": "Next-generation firewall (NGFW)"
         },
         {
           "id": "c",
-          "text": "Passive patch panel"
+          "text": "802.1X with posture assessment"
         },
         {
           "id": "d",
-          "text": "Repeater"
+          "text": "VPN then RDP over private network"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "NGFWs include app-aware policies.",
       "docs": [
@@ -2168,23 +2168,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Expired or untrusted CA signature"
+          "text": "SPF/DKIM/DMARC"
         },
         {
           "id": "b",
-          "text": "Valid SAN match"
+          "text": "Expired or untrusted CA signature"
         },
         {
           "id": "c",
-          "text": "Correct chain"
+          "text": "Something you have"
         },
         {
           "id": "d",
-          "text": "Trusted root"
+          "text": "OSSEC/Wazuh-class HIDS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Browsers warn on bad cert chains or expiry.",
       "docs": [
@@ -2202,23 +2202,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Micro-segmentation / VLAN ACLs"
+          "text": "SPF/DKIM/DMARC"
         },
         {
           "id": "b",
-          "text": "Flat network one VLAN"
+          "text": "Next-generation firewall (NGFW)"
         },
         {
           "id": "c",
-          "text": "Shared admin password"
+          "text": "WIPS scanning and ACL on wired uplinks"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Micro-segmentation / VLAN ACLs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Segmentation contains lateral movement.",
       "docs": [
@@ -2240,15 +2240,15 @@
         },
         {
           "id": "b",
-          "text": "RDP port-forwarded open to internet"
+          "text": "DoS/DDoS"
         },
         {
           "id": "c",
-          "text": "Telnet admin"
+          "text": "AES-CCMP"
         },
         {
           "id": "d",
-          "text": "FTP admin"
+          "text": "RDP port-forwarded open to internet"
         }
       ],
       "correct": [
@@ -2270,23 +2270,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DHCP starvation/spoofing (rogue server)"
+          "text": "OSSEC/Wazuh-class HIDS"
         },
         {
           "id": "b",
-          "text": "ARP only unrelated"
+          "text": "802.1X with posture assessment"
         },
         {
           "id": "c",
-          "text": "DNSSEC"
+          "text": "DHCP starvation/spoofing (rogue server)"
         },
         {
           "id": "d",
-          "text": "NTP leap"
+          "text": "Port security sticky/learned limits"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Rogue DHCP can redirect traffic via bad gateway.",
       "docs": [
@@ -2304,23 +2304,23 @@
       "options": [
         {
           "id": "a",
-          "text": "OSSEC/Wazuh-class HIDS"
+          "text": "Micro-segmentation / VLAN ACLs"
         },
         {
           "id": "b",
-          "text": "Unmanaged hub"
+          "text": "Evil twin"
         },
         {
           "id": "c",
-          "text": "Cable tester"
+          "text": "OSSEC/Wazuh-class HIDS"
         },
         {
           "id": "d",
-          "text": "Label maker"
+          "text": "Next-generation firewall (NGFW)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "HIDS agents detect file and log anomalies.",
       "docs": [
@@ -2338,23 +2338,23 @@
       "options": [
         {
           "id": "a",
-          "text": "WIPS scanning and ACL on wired uplinks"
+          "text": "VPN then RDP over private network"
         },
         {
           "id": "b",
-          "text": "Hide SSID only"
+          "text": "DoS/DDoS"
         },
         {
           "id": "c",
-          "text": "WEP"
+          "text": "WIPS scanning and ACL on wired uplinks"
         },
         {
           "id": "d",
-          "text": "Disable encryption for speed"
+          "text": "SPF/DKIM/DMARC"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Wireless IPS detects unauthorized APs.",
       "docs": [
@@ -2372,23 +2372,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Something you have"
+          "text": "Port security sticky/learned limits"
         },
         {
           "id": "b",
-          "text": "Something you are only"
+          "text": "802.1X with posture assessment"
         },
         {
           "id": "c",
-          "text": "Somewhere you are always"
+          "text": "Something you have"
         },
         {
           "id": "d",
-          "text": "Something you ignore"
+          "text": "Micro-segmentation / VLAN ACLs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Tokens are possession factors.",
       "docs": [
@@ -2406,23 +2406,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SNMPv3 authPriv"
+          "text": "802.1X with posture assessment"
         },
         {
           "id": "b",
-          "text": "SNMPv1 public/private defaults"
+          "text": "Micro-segmentation / VLAN ACLs"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "SNMPv3 authPriv"
         },
         {
           "id": "d",
-          "text": "HTTP basic only"
+          "text": "OpenVPN or SSL VPN variants"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SNMPv3 encrypts and authenticates messages.",
       "docs": [
@@ -2440,23 +2440,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SPF/DKIM/DMARC"
+          "text": "Evil twin"
         },
         {
           "id": "b",
-          "text": "MX only"
+          "text": "Micro-segmentation / VLAN ACLs"
         },
         {
           "id": "c",
-          "text": "A record only"
+          "text": "Expired or untrusted CA signature"
         },
         {
           "id": "d",
-          "text": "CNAME loop"
+          "text": "SPF/DKIM/DMARC"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Email auth records reduce forged sender mail.",
       "docs": [
@@ -2513,23 +2513,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Measure path with traceroute/MTR and check link utilization"
+          "text": "Compare gateway, DNS, and ACL on host vs working peer"
         },
         {
           "id": "b",
-          "text": "Replace all PCs"
+          "text": "Private MAC/Wi-Fi privacy randomization breaking portal auth"
         },
         {
           "id": "c",
-          "text": "Change DNS MX"
+          "text": "Negotiated speed/duplex and cable category"
         },
         {
           "id": "d",
-          "text": "Disable STP globally"
+          "text": "Measure path with traceroute/MTR and check link utilization"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Path and congestion analysis isolates WAN issues.",
       "docs": [
@@ -2551,15 +2551,15 @@
         },
         {
           "id": "b",
-          "text": "GPU driver"
+          "text": "Negotiated speed/duplex and cable category"
         },
         {
           "id": "c",
-          "text": "Low ink"
+          "text": "ICMP/time-exceeded filtered \u2014 not always outage"
         },
         {
           "id": "d",
-          "text": "Monitor refresh"
+          "text": "Implement QoS marking/queuing for voice VLAN"
         }
       ],
       "correct": [
@@ -2585,15 +2585,15 @@
         },
         {
           "id": "b",
-          "text": "Update desktop wallpaper"
+          "text": "Private MAC/Wi-Fi privacy randomization breaking portal auth"
         },
         {
           "id": "c",
-          "text": "Flash BIOS on laptops"
+          "text": "DNS and firewall rules for walled garden URLs"
         },
         {
           "id": "d",
-          "text": "Change AD password policy"
+          "text": "Internal CA not trusted on client or cert name mismatch"
         }
       ],
       "correct": [
@@ -2615,23 +2615,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DNS and firewall rules for walled garden URLs"
+          "text": "Advertise/install correct phase 2 selectors/static routes"
         },
         {
           "id": "b",
-          "text": "Printer queue"
+          "text": "DNS and firewall rules for walled garden URLs"
         },
         {
           "id": "c",
-          "text": "RAID rebuild"
+          "text": "Replace patch cable and inspect SFP/transceiver"
         },
         {
           "id": "d",
-          "text": "CPU paste"
+          "text": "Implement QoS marking/queuing for voice VLAN"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Portals require DNS/HTTP allow lists to redirect.",
       "docs": [
@@ -2649,23 +2649,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compare gateway, DNS, and ACL on host vs working peer"
+          "text": "Internal CA not trusted on client or cert name mismatch"
         },
         {
           "id": "b",
-          "text": "Replace core router first"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Reinstall building OS"
+          "text": "Compare gateway, DNS, and ACL on host vs working peer"
         },
         {
           "id": "d",
-          "text": "Disable DHCP globally"
+          "text": "Dirty connectors, bend radius, and optical power levels"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Host-specific config or ACL differs from working stations.",
       "docs": [
@@ -2683,23 +2683,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Identify conflicting static/DHCP leases and reconcile"
+          "text": "TCP 179 blocked between peers"
         },
         {
           "id": "b",
-          "text": "Add second default gateway randomly"
+          "text": "Identify conflicting static/DHCP leases and reconcile"
         },
         {
           "id": "c",
-          "text": "Disable ARP"
+          "text": "Internal CA not trusted on client or cert name mismatch"
         },
         {
           "id": "d",
-          "text": "Enable WEP"
+          "text": "Add second default gateway randomly (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Duplicate addresses break connectivity for both hosts.",
       "docs": [
@@ -2721,15 +2721,15 @@
         },
         {
           "id": "b",
-          "text": "Toner level"
+          "text": "Dirty connectors, bend radius, and optical power levels"
         },
         {
           "id": "c",
-          "text": "Keyboard layout"
+          "text": "Implement QoS marking/queuing for voice VLAN"
         },
         {
           "id": "d",
-          "text": "BIOS date"
+          "text": "Internal CA not trusted on client or cert name mismatch"
         }
       ],
       "correct": [
@@ -2755,15 +2755,15 @@
         },
         {
           "id": "b",
-          "text": "DNS failure"
+          "text": "Replace patch cable and inspect SFP/transceiver"
         },
         {
           "id": "c",
-          "text": "SMTP relay"
+          "text": "Mis-scoped DHCP or relay pointing to old server"
         },
         {
           "id": "d",
-          "text": "Printer spooler"
+          "text": "ICMP/time-exceeded filtered \u2014 not always outage"
         }
       ],
       "correct": [
@@ -2785,23 +2785,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Implement QoS marking/queuing for voice VLAN"
+          "text": "ICMP/time-exceeded filtered \u2014 not always outage"
         },
         {
           "id": "b",
-          "text": "Disable VLANs"
+          "text": "Implement QoS marking/queuing for voice VLAN"
         },
         {
           "id": "c",
-          "text": "Remove PoE"
+          "text": "Measure path with traceroute/MTR and check link utilization"
         },
         {
           "id": "d",
-          "text": "Use hub"
+          "text": "Identify conflicting static/DHCP leases and reconcile"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Priority queuing protects real-time traffic.",
       "docs": [
@@ -2823,15 +2823,15 @@
         },
         {
           "id": "b",
-          "text": "Change SSID"
+          "text": "Dirty connectors, bend radius, and optical power levels"
         },
         {
           "id": "c",
-          "text": "Replace mouse"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Update GPU driver"
+          "text": "Replace patch cable and inspect SFP/transceiver"
         }
       ],
       "correct": [
@@ -2853,23 +2853,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Internal CA not trusted on client or cert name mismatch"
+          "text": "Compare gateway, DNS, and ACL on host vs working peer"
         },
         {
           "id": "b",
-          "text": "External DNS root issue only always"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Low RAM"
+          "text": "Implement QoS marking/queuing for voice VLAN"
         },
         {
           "id": "d",
-          "text": "Wrong keyboard"
+          "text": "Internal CA not trusted on client or cert name mismatch"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Trust store or SAN mismatch causes local HTTPS warnings.",
       "docs": [
@@ -2887,23 +2887,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IGMP snooping and PIM routing configured"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "Disable STP"
+          "text": "DNS and firewall rules for walled garden URLs"
         },
         {
           "id": "c",
-          "text": "Use WEP"
+          "text": "IGMP snooping and PIM routing configured"
         },
         {
           "id": "d",
-          "text": "Flat single VLAN only always wrong for large net"
+          "text": "Advertise/install correct phase 2 selectors/static routes"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Multicast routing controls group membership across VLANs.",
       "docs": [
@@ -2921,23 +2921,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Dirty connectors, bend radius, and optical power levels"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "DNS TTL"
+          "text": "Replace patch cable and inspect SFP/transceiver"
         },
         {
           "id": "c",
-          "text": "SMTP banner"
+          "text": "Private MAC/Wi-Fi privacy randomization breaking portal auth"
         },
         {
           "id": "d",
-          "text": "User GPO wallpaper"
+          "text": "Dirty connectors, bend radius, and optical power levels"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Physical layer issues cause intermittent fiber links.",
       "docs": [
@@ -2955,23 +2955,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Check PoE budget, damaged ports, and redundant power"
+          "text": "ICMP/time-exceeded filtered \u2014 not always outage"
         },
         {
           "id": "b",
-          "text": "Format laptops"
+          "text": "Internal CA not trusted on client or cert name mismatch"
         },
         {
           "id": "c",
-          "text": "Renew DHCP on clients only"
+          "text": "Mis-scoped DHCP or relay pointing to old server"
         },
         {
           "id": "d",
-          "text": "Disable UPS"
+          "text": "Check PoE budget, damaged ports, and redundant power"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Power surges damage ports/modules; verify hardware health.",
       "docs": [
@@ -2989,23 +2989,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Private MAC/Wi-Fi privacy randomization breaking portal auth"
+          "text": "Check PoE budget, damaged ports, and redundant power"
         },
         {
           "id": "b",
-          "text": "RAID level"
+          "text": "Dirty connectors, bend radius, and optical power levels"
         },
         {
           "id": "c",
-          "text": "Printer driver"
+          "text": "Private MAC/Wi-Fi privacy randomization breaking portal auth"
         },
         {
           "id": "d",
-          "text": "CPU socket"
+          "text": "Implement QoS marking/queuing for voice VLAN"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Random MAC features can break MAC-based portal policies.",
       "docs": [
@@ -3027,15 +3027,15 @@
         },
         {
           "id": "b",
-          "text": "Target definitely down always"
+          "text": "Identify conflicting static/DHCP leases and reconcile"
         },
         {
           "id": "c",
-          "text": "DNS broken always"
+          "text": "Mis-scoped DHCP or relay pointing to old server"
         },
         {
           "id": "d",
-          "text": "Cable bad always"
+          "text": "Internal CA not trusted on client or cert name mismatch"
         }
       ],
       "correct": [
@@ -3057,23 +3057,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Implement QoS marking/queuing for voice VLAN"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Identify conflicting static/DHCP leases and reconcile"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Replace patch cable and inspect SFP/transceiver"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -3091,23 +3091,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Dirty connectors, bend radius, and optical power levels"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "DNS and firewall rules for walled garden URLs"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Mis-scoped DHCP or relay pointing to old server"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [

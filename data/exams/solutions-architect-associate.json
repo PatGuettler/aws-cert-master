@@ -86,23 +86,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Elastic Load Balancing"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "c",
-          "text": "AWS Glue"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ELB health-checks targets and routes traffic.",
       "docs": [
@@ -120,23 +120,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Route 53"
+          "text": "Amazon DynamoDB global tables or Aurora Global Database"
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "AWS Batch"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "d",
-          "text": "Amazon Polly"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Route 53 supports multiple routing policies for resilience.",
       "docs": [
@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon RDS Multi-AZ"
+          "text": "Amazon Route 53"
         },
         {
           "id": "b",
@@ -162,15 +162,15 @@
         },
         {
           "id": "c",
-          "text": "S3 Standard only"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "d",
-          "text": "On-premises tape"
+          "text": "Amazon S3 with Amazon CloudFront"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Multi-AZ synchronously replicates for HA within a Region.",
       "docs": [
@@ -188,23 +188,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 with Amazon CloudFront"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "b",
-          "text": "Amazon EBS only"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "Instance store only"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "d",
-          "text": "Amazon MQ"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "S3 plus CloudFront delivers durable storage and edge caching.",
       "docs": [
@@ -226,15 +226,15 @@
         },
         {
           "id": "b",
-          "text": "Manual SSH fixes only"
+          "text": "Amazon DynamoDB global tables or Aurora Global Database"
         },
         {
           "id": "c",
-          "text": "Single instance"
+          "text": "Amazon Route 53"
         },
         {
           "id": "d",
-          "text": "Disabling health checks"
+          "text": "Amazon S3 with Amazon CloudFront"
         }
       ],
       "correct": [
@@ -256,23 +256,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon ElastiCache"
+          "text": "AWS Backup or AWS Elastic Disaster Recovery"
         },
         {
           "id": "b",
-          "text": "Amazon Glacier"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "c",
-          "text": "AWS Snowball"
+          "text": "Amazon ElastiCache"
         },
         {
           "id": "d",
-          "text": "Amazon WorkDocs"
+          "text": "Elastic Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "ElastiCache (Redis/Memcached) reduces database load.",
       "docs": [
@@ -294,15 +294,15 @@
         },
         {
           "id": "b",
-          "text": "Direct tight coupling only"
+          "text": "Amazon DynamoDB global tables or Aurora Global Database"
         },
         {
           "id": "c",
-          "text": "Shared local disk"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
@@ -324,23 +324,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Backup or AWS Elastic Disaster Recovery"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "b",
-          "text": "Deleting snapshots"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "c",
-          "text": "Single AZ only"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "d",
-          "text": "No RTO planning"
+          "text": "AWS Backup or AWS Elastic Disaster Recovery"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "AWS Backup centralizes backup policies across services.",
       "docs": [
@@ -358,23 +358,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon DynamoDB global tables or Aurora Global Database"
+          "text": "AWS Backup or AWS Elastic Disaster Recovery"
         },
         {
           "id": "b",
-          "text": "Single laptop SQLite"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "Unreplicated EBS"
+          "text": "Amazon DynamoDB global tables or Aurora Global Database"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "Elastic Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Global databases support multi-Region resilience.",
       "docs": [
@@ -396,15 +396,15 @@
         },
         {
           "id": "b",
-          "text": "Public SSH on port 22"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "c",
-          "text": "Disabled logging"
+          "text": "Public SSH on port 22 (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Root keys in Git"
+          "text": "Amazon Route 53"
         }
       ],
       "correct": [
@@ -426,23 +426,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Elastic Load Balancing"
+          "text": "Amazon Route 53"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "c",
-          "text": "AWS Glue"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "Amazon SQS or Amazon SNS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ELB health-checks targets and routes traffic.",
       "docs": [
@@ -460,23 +460,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Elastic Load Balancing"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         },
         {
           "id": "c",
-          "text": "AWS Glue"
+          "text": "Amazon Route 53"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "Elastic Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "ELB health-checks targets and routes traffic.",
       "docs": [
@@ -494,23 +494,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Elastic Load Balancing"
+          "text": "Amazon Route 53"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "c",
-          "text": "AWS Glue"
+          "text": "Amazon ElastiCache"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ELB health-checks targets and routes traffic.",
       "docs": [
@@ -528,23 +528,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Route 53"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "c",
-          "text": "AWS Batch"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "d",
-          "text": "Amazon Polly"
+          "text": "Amazon Route 53"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Route 53 supports multiple routing policies for resilience.",
       "docs": [
@@ -562,23 +562,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Route 53"
+          "text": "Amazon ElastiCache"
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "AWS Batch"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "d",
-          "text": "Amazon Polly"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Route 53 supports multiple routing policies for resilience.",
       "docs": [
@@ -596,23 +596,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Route 53"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "AWS Batch"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         },
         {
           "id": "d",
-          "text": "Amazon Polly"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Route 53 supports multiple routing policies for resilience.",
       "docs": [
@@ -630,23 +630,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon RDS Multi-AZ"
-        },
-        {
-          "id": "b",
           "text": "Single-AZ RDS with no backups"
         },
         {
+          "id": "b",
+          "text": "Amazon S3 with Amazon CloudFront"
+        },
+        {
           "id": "c",
-          "text": "S3 Standard only"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "d",
-          "text": "On-premises tape"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Multi-AZ synchronously replicates for HA within a Region.",
       "docs": [
@@ -664,23 +664,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon RDS Multi-AZ"
+          "text": "Amazon Route 53"
         },
         {
           "id": "b",
-          "text": "Single-AZ RDS with no backups"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         },
         {
           "id": "c",
-          "text": "S3 Standard only"
+          "text": "Single-AZ RDS with no backups"
         },
         {
           "id": "d",
-          "text": "On-premises tape"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Multi-AZ synchronously replicates for HA within a Region.",
       "docs": [
@@ -698,23 +698,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon RDS Multi-AZ"
-        },
-        {
-          "id": "b",
           "text": "Single-AZ RDS with no backups"
         },
         {
+          "id": "b",
+          "text": "Amazon RDS Multi-AZ"
+        },
+        {
           "id": "c",
-          "text": "S3 Standard only"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         },
         {
           "id": "d",
-          "text": "On-premises tape"
+          "text": "Elastic Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multi-AZ synchronously replicates for HA within a Region.",
       "docs": [
@@ -736,15 +736,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EBS only"
+          "text": "Amazon DynamoDB global tables or Aurora Global Database"
         },
         {
           "id": "c",
-          "text": "Instance store only"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "d",
-          "text": "Amazon MQ"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         }
       ],
       "correct": [
@@ -766,23 +766,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 with Amazon CloudFront"
+          "text": "Amazon SQS or Amazon SNS"
         },
         {
           "id": "b",
-          "text": "Amazon EBS only"
+          "text": "Amazon Route 53"
         },
         {
           "id": "c",
-          "text": "Instance store only"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "d",
-          "text": "Amazon MQ"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "S3 plus CloudFront delivers durable storage and edge caching.",
       "docs": [
@@ -800,23 +800,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 with Amazon CloudFront"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         },
         {
           "id": "b",
-          "text": "Amazon EBS only"
+          "text": "Amazon S3 with Amazon CloudFront"
         },
         {
           "id": "c",
-          "text": "Instance store only"
+          "text": "Amazon Route 53"
         },
         {
           "id": "d",
-          "text": "Amazon MQ"
+          "text": "Elastic Load Balancing"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "S3 plus CloudFront delivers durable storage and edge caching.",
       "docs": [
@@ -834,23 +834,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EC2 Auto Scaling with ELB"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "b",
-          "text": "Manual SSH fixes only"
+          "text": "Amazon ElastiCache"
         },
         {
           "id": "c",
-          "text": "Single instance"
+          "text": "Amazon SQS or Amazon SNS"
         },
         {
           "id": "d",
-          "text": "Disabling health checks"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Auto Scaling maintains desired capacity using health checks.",
       "docs": [
@@ -868,23 +868,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EC2 Auto Scaling with ELB"
+          "text": "Amazon Route 53"
         },
         {
           "id": "b",
-          "text": "Manual SSH fixes only"
+          "text": "Elastic Load Balancing"
         },
         {
           "id": "c",
-          "text": "Single instance"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "d",
-          "text": "Disabling health checks"
+          "text": "Amazon EC2 Auto Scaling with ELB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Auto Scaling maintains desired capacity using health checks.",
       "docs": [
@@ -902,23 +902,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon CloudFront"
+          "text": "AWS Lambda"
         },
         {
           "id": "b",
-          "text": "Amazon RDS"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "c",
-          "text": "AWS Config"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "d",
-          "text": "Amazon Inspector"
+          "text": "Amazon CloudFront"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CloudFront is AWS's global CDN.",
       "docs": [
@@ -936,23 +936,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Lambda"
-        },
-        {
-          "id": "b",
-          "text": "Physical colocation only"
-        },
-        {
-          "id": "c",
           "text": "Single large EC2 with no scaling"
         },
         {
+          "id": "b",
+          "text": "Amazon EBS volume types"
+        },
+        {
+          "id": "c",
+          "text": "EC2 cluster placement groups"
+        },
+        {
           "id": "d",
-          "text": "Tape backup"
+          "text": "AWS Lambda"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Lambda scales automatically with request volume.",
       "docs": [
@@ -970,23 +970,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon DynamoDB"
+          "text": "EC2 cluster placement groups"
         },
         {
           "id": "b",
-          "text": "Self-hosted FTP"
+          "text": "Amazon EBS volume types"
         },
         {
           "id": "c",
-          "text": "Amazon EBS"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "d",
-          "text": "Amazon WorkSpaces"
+          "text": "Amazon DynamoDB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "DynamoDB scales horizontally for high-throughput workloads.",
       "docs": [
@@ -1004,23 +1004,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "b",
-          "text": "Batch-only cron on one server"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "c",
-          "text": "S3 Glacier for hot path"
+          "text": "Amazon Redshift"
         },
         {
           "id": "d",
-          "text": "Email polling"
+          "text": "Amazon ElastiCache for Redis"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Kinesis ingests and processes streaming data.",
       "docs": [
@@ -1042,15 +1042,15 @@
         },
         {
           "id": "b",
-          "text": "Serial floppy disks"
+          "text": "Amazon CloudFront"
         },
         {
           "id": "c",
-          "text": "Uncompressed HTTP only"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "d",
-          "text": "Disabling multipart upload"
+          "text": "Amazon DynamoDB"
         }
       ],
       "correct": [
@@ -1072,23 +1072,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EBS volume types"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "b",
-          "text": "Instance store for all backups"
+          "text": "Amazon EBS volume types"
         },
         {
           "id": "c",
-          "text": "S3 for block IO"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "d",
-          "text": "Route 53"
+          "text": "Instance store for all backups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "EBS offers SSD volumes tuned for throughput and IOPS.",
       "docs": [
@@ -1106,23 +1106,23 @@
       "options": [
         {
           "id": "a",
-          "text": "EC2 cluster placement groups"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "b",
-          "text": "Random regions"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "c",
-          "text": "Single thread only"
+          "text": "EC2 cluster placement groups"
         },
         {
           "id": "d",
-          "text": "No networking"
+          "text": "Amazon CloudFront"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cluster placement minimizes latency between instances.",
       "docs": [
@@ -1144,15 +1144,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon SNS"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "Amazon Cognito"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "Amazon CloudFront"
         }
       ],
       "correct": [
@@ -1174,23 +1174,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon ElastiCache for Redis"
+          "text": "Amazon Redshift"
         },
         {
           "id": "b",
-          "text": "Amazon Glacier"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "c",
-          "text": "AWS Snowcone only"
+          "text": "Amazon ElastiCache for Redis"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "AWS Lambda"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Redis provides sub-millisecond in-memory data access.",
       "docs": [
@@ -1208,23 +1208,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon API Gateway"
+          "text": "AWS Lambda"
         },
         {
           "id": "b",
-          "text": "Raw TCP to database"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "S3 as API server only"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "AWS DataSync or S3 Transfer Acceleration"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "API Gateway manages REST/HTTP APIs at scale.",
       "docs": [
@@ -1242,23 +1242,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon CloudFront"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "b",
-          "text": "Amazon RDS"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "c",
-          "text": "AWS Config"
+          "text": "Amazon CloudFront"
         },
         {
           "id": "d",
-          "text": "Amazon Inspector"
+          "text": "EC2 cluster placement groups"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CloudFront is AWS's global CDN.",
       "docs": [
@@ -1276,23 +1276,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon CloudFront"
+          "text": "Amazon ElastiCache for Redis"
         },
         {
           "id": "b",
-          "text": "Amazon RDS"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "c",
-          "text": "AWS Config"
+          "text": "Amazon Redshift"
         },
         {
           "id": "d",
-          "text": "Amazon Inspector"
+          "text": "Amazon CloudFront"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CloudFront is AWS's global CDN.",
       "docs": [
@@ -1310,23 +1310,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon CloudFront"
+          "text": "AWS DataSync or S3 Transfer Acceleration"
         },
         {
           "id": "b",
-          "text": "Amazon RDS"
+          "text": "Amazon CloudFront"
         },
         {
           "id": "c",
-          "text": "AWS Config"
+          "text": "Amazon ElastiCache for Redis"
         },
         {
           "id": "d",
-          "text": "Amazon Inspector"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CloudFront is AWS's global CDN.",
       "docs": [
@@ -1348,15 +1348,15 @@
         },
         {
           "id": "b",
-          "text": "Physical colocation only"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "Single large EC2 with no scaling"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "d",
-          "text": "Tape backup"
+          "text": "Single large EC2 with no scaling"
         }
       ],
       "correct": [
@@ -1382,7 +1382,7 @@
         },
         {
           "id": "b",
-          "text": "Physical colocation only"
+          "text": "Amazon CloudFront"
         },
         {
           "id": "c",
@@ -1390,7 +1390,7 @@
         },
         {
           "id": "d",
-          "text": "Tape backup"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         }
       ],
       "correct": [
@@ -1412,23 +1412,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Lambda"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "b",
-          "text": "Physical colocation only"
-        },
-        {
-          "id": "c",
           "text": "Single large EC2 with no scaling"
         },
         {
+          "id": "c",
+          "text": "Amazon CloudFront"
+        },
+        {
           "id": "d",
-          "text": "Tape backup"
+          "text": "AWS Lambda"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Lambda scales automatically with request volume.",
       "docs": [
@@ -1446,23 +1446,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon DynamoDB"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "b",
-          "text": "Self-hosted FTP"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "Amazon EBS"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "d",
-          "text": "Amazon WorkSpaces"
+          "text": "AWS Lambda"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "DynamoDB scales horizontally for high-throughput workloads.",
       "docs": [
@@ -1484,15 +1484,15 @@
         },
         {
           "id": "b",
-          "text": "Self-hosted FTP"
+          "text": "Amazon EBS volume types"
         },
         {
           "id": "c",
-          "text": "Amazon EBS"
+          "text": "AWS Lambda"
         },
         {
           "id": "d",
-          "text": "Amazon WorkSpaces"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         }
       ],
       "correct": [
@@ -1514,23 +1514,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon DynamoDB"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "b",
-          "text": "Self-hosted FTP"
+          "text": "Amazon CloudFront"
         },
         {
           "id": "c",
-          "text": "Amazon EBS"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "d",
-          "text": "Amazon WorkSpaces"
+          "text": "EC2 cluster placement groups"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "DynamoDB scales horizontally for high-throughput workloads.",
       "docs": [
@@ -1548,23 +1548,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
+          "text": "Amazon Redshift"
         },
         {
           "id": "b",
-          "text": "Batch-only cron on one server"
+          "text": "Amazon CloudFront"
         },
         {
           "id": "c",
-          "text": "S3 Glacier for hot path"
+          "text": "AWS Lambda"
         },
         {
           "id": "d",
-          "text": "Email polling"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Kinesis ingests and processes streaming data.",
       "docs": [
@@ -1582,23 +1582,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
+          "text": "AWS Lambda"
         },
         {
           "id": "b",
-          "text": "Batch-only cron on one server"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "c",
-          "text": "S3 Glacier for hot path"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "d",
-          "text": "Email polling"
+          "text": "Amazon ElastiCache for Redis"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Kinesis ingests and processes streaming data.",
       "docs": [
@@ -1616,23 +1616,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
+          "text": "Amazon DynamoDB"
         },
         {
           "id": "b",
-          "text": "Batch-only cron on one server"
+          "text": "Amazon Kinesis Data Streams or Managed Service for Apache Flink"
         },
         {
           "id": "c",
-          "text": "S3 Glacier for hot path"
+          "text": "Amazon CloudFront"
         },
         {
           "id": "d",
-          "text": "Email polling"
+          "text": "AWS Lambda"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Kinesis ingests and processes streaming data.",
       "docs": [
@@ -1650,23 +1650,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS IAM with MFA"
+          "text": "SSE-KMS on Amazon S3"
         },
         {
           "id": "b",
-          "text": "Shared root credentials"
+          "text": "AWS Security Hub"
         },
         {
           "id": "c",
-          "text": "Wildcard admin for all users"
+          "text": "AWS IAM with MFA"
         },
         {
           "id": "d",
-          "text": "Public S3 ACLs"
+          "text": "Wildcard admin for all users"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "IAM policies and MFA protect account access.",
       "docs": [
@@ -1688,15 +1688,15 @@
         },
         {
           "id": "b",
-          "text": "Unencrypted public buckets"
+          "text": "AWS IAM with MFA"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "AWS WAF"
         },
         {
           "id": "d",
-          "text": "Disable versioning"
+          "text": "IAM roles with STS"
         }
       ],
       "correct": [
@@ -1718,23 +1718,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF"
+          "text": "AWS Security Hub"
         },
         {
           "id": "b",
-          "text": "Security groups only for L7 rules"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "c",
-          "text": "NACL for app logic"
+          "text": "SSE-KMS on Amazon S3"
         },
         {
           "id": "d",
-          "text": "S3 lifecycle"
+          "text": "AWS WAF"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WAF protects web applications at Layer 7.",
       "docs": [
@@ -1760,11 +1760,11 @@
         },
         {
           "id": "c",
-          "text": "Root user for apps"
+          "text": "AWS Security Hub"
         },
         {
           "id": "d",
-          "text": "Passwords in AMIs"
+          "text": "SSE-KMS on Amazon S3"
         }
       ],
       "correct": [
@@ -1786,23 +1786,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon GuardDuty"
+          "text": "AWS Certificate Manager"
         },
         {
           "id": "b",
-          "text": "Amazon Polly"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "c",
-          "text": "AWS Budgets"
+          "text": "SSE-KMS on Amazon S3"
         },
         {
           "id": "d",
-          "text": "Amazon Lightsail"
+          "text": "VPC interface endpoints (AWS PrivateLink)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "GuardDuty analyzes CloudTrail, VPC Flow Logs, and DNS.",
       "docs": [
@@ -1820,23 +1820,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC interface endpoints (AWS PrivateLink)"
+          "text": "SSE-KMS on Amazon S3"
         },
         {
           "id": "b",
-          "text": "0.0.0.0/0 on database port"
+          "text": "AWS IAM with MFA"
         },
         {
           "id": "c",
-          "text": "Public subnets for DB only"
+          "text": "0.0.0.0/0 on database port"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "VPC interface endpoints (AWS PrivateLink)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Interface endpoints keep traffic on the AWS network.",
       "docs": [
@@ -1858,15 +1858,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Rekognition for CVEs"
+          "text": "SSE-KMS on Amazon S3"
         },
         {
           "id": "c",
-          "text": "S3 analytics only"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "d",
-          "text": "Route 53"
+          "text": "AWS IAM with MFA"
         }
       ],
       "correct": [
@@ -1888,23 +1888,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CloudTrail"
+          "text": "VPC interface endpoints (AWS PrivateLink)"
         },
         {
           "id": "b",
-          "text": "Deleting logs daily"
+          "text": "AWS WAF"
         },
         {
           "id": "c",
-          "text": "No IAM"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "d",
-          "text": "Disable encryption"
+          "text": "AWS Security Hub"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CloudTrail logs management events across services.",
       "docs": [
@@ -1922,23 +1922,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Certificate Manager"
+          "text": "VPC interface endpoints (AWS PrivateLink)"
         },
         {
           "id": "b",
-          "text": "Self-signed only in prod without rotation"
+          "text": "AWS Certificate Manager"
         },
         {
           "id": "c",
-          "text": "FTP certificates"
+          "text": "AWS IAM with MFA"
         },
         {
           "id": "d",
-          "text": "SSH keys for HTTPS"
+          "text": "AWS WAF"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ACM provisions and renews TLS certificates.",
       "docs": [
@@ -1956,23 +1956,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network ACLs combined with security groups"
+          "text": "AWS Security Hub"
         },
         {
           "id": "b",
-          "text": "Open SG 0.0.0.0/0 on all ports"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "c",
-          "text": "No segmentation"
+          "text": "Network ACLs combined with security groups"
         },
         {
           "id": "d",
-          "text": "Public RDS"
+          "text": "Open SG 0.0.0.0/0 on all ports"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Defense in depth uses NACLs and security groups.",
       "docs": [
@@ -1990,23 +1990,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS IAM with MFA"
+          "text": "VPC interface endpoints (AWS PrivateLink)"
         },
         {
           "id": "b",
-          "text": "Shared root credentials"
+          "text": "AWS IAM with MFA"
         },
         {
           "id": "c",
-          "text": "Wildcard admin for all users"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "d",
-          "text": "Public S3 ACLs"
+          "text": "Wildcard admin for all users"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IAM policies and MFA protect account access.",
       "docs": [
@@ -2028,7 +2028,7 @@
         },
         {
           "id": "b",
-          "text": "Shared root credentials"
+          "text": "SSE-KMS on Amazon S3"
         },
         {
           "id": "c",
@@ -2036,7 +2036,7 @@
         },
         {
           "id": "d",
-          "text": "Public S3 ACLs"
+          "text": "AWS WAF"
         }
       ],
       "correct": [
@@ -2058,23 +2058,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS IAM with MFA"
+          "text": "SSE-KMS on Amazon S3"
         },
         {
           "id": "b",
-          "text": "Shared root credentials"
-        },
-        {
-          "id": "c",
           "text": "Wildcard admin for all users"
         },
         {
+          "id": "c",
+          "text": "AWS WAF"
+        },
+        {
           "id": "d",
-          "text": "Public S3 ACLs"
+          "text": "AWS IAM with MFA"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "IAM policies and MFA protect account access.",
       "docs": [
@@ -2092,23 +2092,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS on Amazon S3"
+          "text": "AWS WAF"
         },
         {
           "id": "b",
-          "text": "Unencrypted public buckets"
+          "text": "SSE-KMS on Amazon S3"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "AWS Certificate Manager"
         },
         {
           "id": "d",
-          "text": "Disable versioning"
+          "text": "AWS IAM with MFA"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SSE-KMS integrates with AWS KMS for key control.",
       "docs": [
@@ -2130,15 +2130,15 @@
         },
         {
           "id": "b",
-          "text": "Unencrypted public buckets"
+          "text": "AWS IAM with MFA"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "AWS WAF"
         },
         {
           "id": "d",
-          "text": "Disable versioning"
+          "text": "VPC interface endpoints (AWS PrivateLink)"
         }
       ],
       "correct": [
@@ -2160,23 +2160,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSE-KMS on Amazon S3"
+          "text": "AWS WAF"
         },
         {
           "id": "b",
-          "text": "Unencrypted public buckets"
+          "text": "SSE-KMS on Amazon S3"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "AWS IAM with MFA"
         },
         {
           "id": "d",
-          "text": "Disable versioning"
+          "text": "IAM roles with STS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SSE-KMS integrates with AWS KMS for key control.",
       "docs": [
@@ -2194,23 +2194,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF"
+          "text": "AWS IAM with MFA"
         },
         {
           "id": "b",
-          "text": "Security groups only for L7 rules"
+          "text": "AWS WAF"
         },
         {
           "id": "c",
-          "text": "NACL for app logic"
+          "text": "Network ACLs combined with security groups"
         },
         {
           "id": "d",
-          "text": "S3 lifecycle"
+          "text": "SSE-KMS on Amazon S3"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "WAF protects web applications at Layer 7.",
       "docs": [
@@ -2232,15 +2232,15 @@
         },
         {
           "id": "b",
-          "text": "Security groups only for L7 rules"
+          "text": "Network ACLs combined with security groups"
         },
         {
           "id": "c",
-          "text": "NACL for app logic"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "d",
-          "text": "S3 lifecycle"
+          "text": "SSE-KMS on Amazon S3"
         }
       ],
       "correct": [
@@ -2262,23 +2262,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS WAF"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "b",
-          "text": "Security groups only for L7 rules"
+          "text": "AWS IAM with MFA"
         },
         {
           "id": "c",
-          "text": "NACL for app logic"
+          "text": "Amazon GuardDuty"
         },
         {
           "id": "d",
-          "text": "S3 lifecycle"
+          "text": "AWS WAF"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WAF protects web applications at Layer 7.",
       "docs": [
@@ -2296,23 +2296,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Savings Plans or Reserved Instances"
+          "text": "Amazon EC2 Spot Instances"
         },
         {
           "id": "b",
-          "text": "On-Demand only for steady 24/7"
+          "text": "AWS Savings Plans or Reserved Instances"
         },
         {
           "id": "c",
-          "text": "Ignoring rightsizing"
+          "text": "Instance scheduling with Lambda or Instance Scheduler"
         },
         {
           "id": "d",
-          "text": "Over-provisioning always"
+          "text": "AWS Compute Optimizer"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Commitment discounts reduce compute cost for steady workloads.",
       "docs": [
@@ -2330,7 +2330,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EC2 Spot Instances"
+          "text": "AWS Savings Plans or Reserved Instances"
         },
         {
           "id": "b",
@@ -2338,15 +2338,15 @@
         },
         {
           "id": "c",
-          "text": "On-Demand for interruptible only"
+          "text": "Amazon S3 static website hosting with CloudFront"
         },
         {
           "id": "d",
-          "text": "Largest instance always"
+          "text": "Amazon EC2 Spot Instances"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Spot offers unused capacity at lower prices.",
       "docs": [
@@ -2364,23 +2364,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Cost Explorer"
+          "text": "AWS Savings Plans or Reserved Instances"
         },
         {
           "id": "b",
-          "text": "Disabling CUR"
+          "text": "AWS Compute Optimizer"
         },
         {
           "id": "c",
-          "text": "No tags"
+          "text": "AWS Cost Explorer"
         },
         {
           "id": "d",
-          "text": "Ignoring recommendations"
+          "text": "Amazon S3 static website hosting with CloudFront"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cost Explorer visualizes and forecasts AWS spend.",
       "docs": [
@@ -2402,15 +2402,15 @@
         },
         {
           "id": "b",
-          "text": "Standard for all archival"
+          "text": "AWS Organizations consolidated billing"
         },
         {
           "id": "c",
-          "text": "Deleting objects instead of tiering"
+          "text": "AWS Savings Plans or Reserved Instances"
         },
         {
           "id": "d",
-          "text": "No lifecycle"
+          "text": "Deleting objects instead of tiering (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2432,23 +2432,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Instance scheduling with Lambda or Instance Scheduler"
+          "text": "Amazon S3 Intelligent-Tiering or Glacier classes"
         },
         {
           "id": "b",
-          "text": "Leave dev running 24/7"
+          "text": "Leave dev running 24/7 (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No monitoring"
+          "text": "Instance scheduling with Lambda or Instance Scheduler"
         },
         {
           "id": "d",
-          "text": "Maximum size always"
+          "text": "Amazon EC2 Spot Instances"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Scheduling reduces off-hours waste.",
       "docs": [
@@ -2470,15 +2470,15 @@
         },
         {
           "id": "b",
-          "text": "Never review metrics"
+          "text": "AWS Savings Plans or Reserved Instances"
         },
         {
           "id": "c",
-          "text": "One size fits all"
+          "text": "Instance scheduling with Lambda or Instance Scheduler"
         },
         {
           "id": "d",
-          "text": "Ignore CPU graphs"
+          "text": "Snapshot lifecycle policies"
         }
       ],
       "correct": [
@@ -2504,15 +2504,15 @@
         },
         {
           "id": "b",
-          "text": "Separate unlinked accounts only"
+          "text": "Amazon S3 static website hosting with CloudFront"
         },
         {
           "id": "c",
-          "text": "No CUR"
+          "text": "Amazon Aurora Serverless v2"
         },
         {
           "id": "d",
-          "text": "Disable Cost Allocation Tags"
+          "text": "AWS Savings Plans or Reserved Instances"
         }
       ],
       "correct": [
@@ -2534,23 +2534,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Snapshot lifecycle policies"
+          "text": "AWS Savings Plans or Reserved Instances"
         },
         {
           "id": "b",
-          "text": "Infinite snapshots"
+          "text": "AWS Organizations consolidated billing"
         },
         {
           "id": "c",
-          "text": "No lifecycle"
+          "text": "Amazon EC2 Spot Instances"
         },
         {
           "id": "d",
-          "text": "Public snapshots"
+          "text": "Snapshot lifecycle policies"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Lifecycle policies delete stale snapshots to save cost.",
       "docs": [
@@ -2568,23 +2568,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Aurora Serverless v2"
-        },
-        {
-          "id": "b",
           "text": "Largest provisioned instance 24/7 for spiky dev"
         },
         {
+          "id": "b",
+          "text": "Amazon Aurora Serverless v2"
+        },
+        {
           "id": "c",
-          "text": "Self-managed on laptop"
+          "text": "Instance scheduling with Lambda or Instance Scheduler"
         },
         {
           "id": "d",
-          "text": "No auto pause/scaling"
+          "text": "Amazon EC2 Spot Instances"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Serverless v2 scales ACUs with demand.",
       "docs": [
@@ -2602,23 +2602,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 static website hosting with CloudFront"
+          "text": "Amazon EC2 Spot Instances"
         },
         {
           "id": "b",
-          "text": "EC2 fleet for static PNGs only"
+          "text": "AWS Savings Plans or Reserved Instances"
         },
         {
           "id": "c",
-          "text": "EFS for HTML only at highest tier"
+          "text": "Amazon S3 static website hosting with CloudFront"
         },
         {
           "id": "d",
-          "text": "VPN for images"
+          "text": "Amazon Aurora Serverless v2"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "S3 + CloudFront minimizes compute for static sites.",
       "docs": [
@@ -2636,23 +2636,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Savings Plans or Reserved Instances"
+          "text": "AWS Cost Explorer"
         },
         {
           "id": "b",
-          "text": "On-Demand only for steady 24/7"
+          "text": "Amazon EC2 Spot Instances"
         },
         {
           "id": "c",
-          "text": "Ignoring rightsizing"
+          "text": "AWS Organizations consolidated billing"
         },
         {
           "id": "d",
-          "text": "Over-provisioning always"
+          "text": "AWS Savings Plans or Reserved Instances"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Commitment discounts reduce compute cost for steady workloads.",
       "docs": [
@@ -2670,23 +2670,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Savings Plans or Reserved Instances"
+          "text": "Amazon Aurora Serverless v2"
         },
         {
           "id": "b",
-          "text": "On-Demand only for steady 24/7"
+          "text": "Amazon S3 Intelligent-Tiering or Glacier classes"
         },
         {
           "id": "c",
-          "text": "Ignoring rightsizing"
+          "text": "AWS Savings Plans or Reserved Instances"
         },
         {
           "id": "d",
-          "text": "Over-provisioning always"
+          "text": "Amazon S3 static website hosting with CloudFront"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Commitment discounts reduce compute cost for steady workloads.",
       "docs": [
@@ -2704,23 +2704,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Savings Plans or Reserved Instances"
+          "text": "AWS Cost Explorer"
         },
         {
           "id": "b",
-          "text": "On-Demand only for steady 24/7"
+          "text": "AWS Organizations consolidated billing"
         },
         {
           "id": "c",
-          "text": "Ignoring rightsizing"
+          "text": "AWS Savings Plans or Reserved Instances"
         },
         {
           "id": "d",
-          "text": "Over-provisioning always"
+          "text": "Amazon S3 static website hosting with CloudFront"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Commitment discounts reduce compute cost for steady workloads.",
       "docs": [
@@ -2746,11 +2746,11 @@
         },
         {
           "id": "c",
-          "text": "On-Demand for interruptible only"
+          "text": "AWS Compute Optimizer"
         },
         {
           "id": "d",
-          "text": "Largest instance always"
+          "text": "AWS Savings Plans or Reserved Instances"
         }
       ],
       "correct": [
@@ -2772,23 +2772,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EC2 Spot Instances"
-        },
-        {
-          "id": "b",
           "text": "Dedicated Hosts for all stateful DBs without DR"
         },
         {
+          "id": "b",
+          "text": "AWS Savings Plans or Reserved Instances"
+        },
+        {
           "id": "c",
-          "text": "On-Demand for interruptible only"
+          "text": "Amazon EC2 Spot Instances"
         },
         {
           "id": "d",
-          "text": "Largest instance always"
+          "text": "Amazon Aurora Serverless v2"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Spot offers unused capacity at lower prices.",
       "docs": [
@@ -2835,45 +2835,6 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "saa-q082",
-      "domain": "resilient-architectures",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Associate? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "SAA-C03 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Reliability pillar"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "SAA-C03 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
         }
       ]
     },

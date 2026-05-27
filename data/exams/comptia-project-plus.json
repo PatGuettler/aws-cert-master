@@ -59,142 +59,6 @@
   ],
   "questions": [
     {
-      "id": "cptprj-q001",
-      "domain": "concepts",
-      "type": "multiple-choice",
-      "text": "You are preparing for CompTIA Project+ and reviewing Project Management Concepts. Which source aligns with official CompTIA exam objectives and study resources?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Project+ Exam Objectives"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Project+ Exam Objectives and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Project+ Exam Objectives",
-          "url": "https://www.comptia.org/en-us/certifications/project"
-        }
-      ]
-    },
-    {
-      "id": "cptprj-q002",
-      "domain": "lifecycle",
-      "type": "multiple-choice",
-      "text": "You are preparing for CompTIA Project+ and reviewing Project Life Cycle Phases. Which source aligns with official CompTIA exam objectives and study resources?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Project+ lifecycle objectives"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Project+ lifecycle objectives and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Project+ lifecycle objectives",
-          "url": "https://www.comptia.org/en-us/certifications/project"
-        }
-      ]
-    },
-    {
-      "id": "cptprj-q003",
-      "domain": "tools",
-      "type": "multiple-choice",
-      "text": "You are preparing for CompTIA Project+ and reviewing Tools and Documentation. Which source aligns with official CompTIA exam objectives and study resources?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Project+ tools objectives"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Project+ tools objectives and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Project+ tools objectives",
-          "url": "https://www.comptia.org/en-us/certifications/project"
-        }
-      ]
-    },
-    {
-      "id": "cptprj-q004",
-      "domain": "communication",
-      "type": "multiple-choice",
-      "text": "You are preparing for CompTIA Project+ and reviewing Basics of IT and Architecture. Which source aligns with official CompTIA exam objectives and study resources?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Project+ communication objectives"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Project+ communication objectives and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Project+ communication objectives",
-          "url": "https://www.comptia.org/en-us/certifications/project"
-        }
-      ]
-    },
-    {
       "id": "cptprj-q005",
       "domain": "concepts",
       "type": "multiple-choice",
@@ -202,23 +66,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Project management triangle trade-offs"
+          "text": "No stakeholders (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore scope"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "c",
-          "text": "No stakeholders"
+          "text": "Skip planning (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Skip planning"
+          "text": "Project management triangle trade-offs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Constraints guide decisions.",
       "docs": [
@@ -236,23 +100,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Stakeholder register and analysis"
+          "text": "Project+ Exam Objectives"
         },
         {
           "id": "b",
-          "text": "Start coding first"
+          "text": "Project management triangle trade-offs"
         },
         {
           "id": "c",
-          "text": "No communication"
+          "text": "Hide risks (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Hide risks"
+          "text": "Stakeholder register and analysis"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Stakeholders influence requirements.",
       "docs": [
@@ -274,15 +138,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore scope"
+          "text": "Project+ Exam Objectives"
         },
         {
           "id": "c",
-          "text": "No stakeholders"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "d",
-          "text": "Skip planning"
+          "text": "Skip planning (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -308,15 +172,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore scope"
+          "text": "Project+ Exam Objectives"
         },
         {
           "id": "c",
-          "text": "No stakeholders"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "d",
-          "text": "Skip planning"
+          "text": "Skip planning (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -338,23 +202,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Project management triangle trade-offs"
+          "text": "No stakeholders (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore scope"
+          "text": "Project management triangle trade-offs"
         },
         {
           "id": "c",
-          "text": "No stakeholders"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "d",
-          "text": "Skip planning"
+          "text": "Skip planning (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Constraints guide decisions.",
       "docs": [
@@ -372,23 +236,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Stakeholder register and analysis"
+          "text": "Hide risks (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Start coding first"
+          "text": "Project management triangle trade-offs"
         },
         {
           "id": "c",
-          "text": "No communication"
+          "text": "No communication (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Hide risks"
+          "text": "Stakeholder register and analysis"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Stakeholders influence requirements.",
       "docs": [
@@ -410,15 +274,15 @@
         },
         {
           "id": "b",
-          "text": "Start coding first"
+          "text": "Project+ Exam Objectives"
         },
         {
           "id": "c",
-          "text": "No communication"
+          "text": "Hide risks (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Hide risks"
+          "text": "Project management triangle trade-offs"
         }
       ],
       "correct": [
@@ -444,15 +308,15 @@
         },
         {
           "id": "b",
-          "text": "Start coding first"
+          "text": "No communication (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No communication"
+          "text": "Hide risks (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Hide risks"
+          "text": "Project management triangle trade-offs"
         }
       ],
       "correct": [
@@ -478,15 +342,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore scope"
+          "text": "Skip planning (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No stakeholders"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "d",
-          "text": "Skip planning"
+          "text": "No stakeholders (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -512,15 +376,15 @@
         },
         {
           "id": "b",
-          "text": "Start coding first"
+          "text": "Hide risks (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No communication"
+          "text": "Project management triangle trade-offs"
         },
         {
           "id": "d",
-          "text": "Hide risks"
+          "text": "No communication (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -542,23 +406,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Project management triangle trade-offs"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "b",
-          "text": "Ignore scope"
+          "text": "Skip planning (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No stakeholders"
+          "text": "Project management triangle trade-offs"
         },
         {
           "id": "d",
-          "text": "Skip planning"
+          "text": "No stakeholders (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Constraints guide decisions.",
       "docs": [
@@ -576,23 +440,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Stakeholder register and analysis"
+          "text": "Project management triangle trade-offs"
         },
         {
           "id": "b",
-          "text": "Start coding first"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "c",
-          "text": "No communication"
+          "text": "Hide risks (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Hide risks"
+          "text": "Project+ Exam Objectives"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Stakeholders influence requirements.",
       "docs": [
@@ -610,7 +474,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Project management triangle trade-offs"
+          "text": "Project+ Exam Objectives"
         },
         {
           "id": "b",
@@ -618,15 +482,15 @@
         },
         {
           "id": "c",
-          "text": "Ignore scope"
+          "text": "Project management triangle trade-offs"
         },
         {
           "id": "d",
-          "text": "No stakeholders"
+          "text": "No stakeholders (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Constraints guide decisions. Compare with Stakeholder register and analysis: Stakeholders influence requirements.",
       "docs": [
@@ -648,23 +512,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Stakeholder register and analysis"
+          "text": "Project+ Exam Objectives"
         },
         {
           "id": "b",
-          "text": "Project management triangle trade-offs"
+          "text": "No communication (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Start coding first"
+          "text": "Project management triangle trade-offs"
         },
         {
           "id": "d",
-          "text": "No communication"
+          "text": "Stakeholder register and analysis"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Stakeholders influence requirements. Compare with Project management triangle trade-offs: Constraints guide decisions.",
       "docs": [
@@ -690,15 +554,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore scope"
+          "text": "Skip planning (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No stakeholders"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "d",
-          "text": "Skip planning"
+          "text": "No stakeholders (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -720,23 +584,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Stakeholder register and analysis"
+          "text": "Project+ Exam Objectives"
         },
         {
           "id": "b",
-          "text": "Start coding first"
+          "text": "Hide risks (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No communication"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "d",
-          "text": "Hide risks"
+          "text": "Project management triangle trade-offs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Stakeholders influence requirements.",
       "docs": [
@@ -754,23 +618,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Project management triangle trade-offs"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "b",
-          "text": "Ignore scope"
+          "text": "No stakeholders (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No stakeholders"
+          "text": "Skip planning (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Skip planning"
+          "text": "Project management triangle trade-offs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Constraints guide decisions.",
       "docs": [
@@ -792,15 +656,15 @@
         },
         {
           "id": "b",
-          "text": "Start coding first"
+          "text": "Hide risks (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No communication"
+          "text": "No communication (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Hide risks"
+          "text": "Project management triangle trade-offs"
         }
       ],
       "correct": [
@@ -822,23 +686,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Project management triangle trade-offs"
+          "text": "Stakeholder register and analysis"
         },
         {
           "id": "b",
-          "text": "Ignore scope"
+          "text": "Project+ Exam Objectives"
         },
         {
           "id": "c",
-          "text": "No stakeholders"
+          "text": "Skip planning (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Skip planning"
+          "text": "Project management triangle trade-offs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Constraints guide decisions.",
       "docs": [
@@ -860,15 +724,15 @@
         },
         {
           "id": "b",
-          "text": "Build first"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "c",
-          "text": "Change daily"
+          "text": "No sign-off"
         },
         {
           "id": "d",
-          "text": "No sign-off"
+          "text": "Work breakdown structure decomposition"
         }
       ],
       "correct": [
@@ -894,15 +758,15 @@
         },
         {
           "id": "b",
-          "text": "Flat todo list only"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "c",
-          "text": "No estimates"
+          "text": "Ignore dependencies (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore dependencies"
+          "text": "Approved requirements baseline"
         }
       ],
       "correct": [
@@ -924,23 +788,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk register with owners and responses"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "No mitigation (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Hide issues"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "d",
-          "text": "No mitigation"
+          "text": "Risk register with owners and responses"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Risk management reduces surprises.",
       "docs": [
@@ -958,23 +822,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Approved requirements baseline"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "b",
-          "text": "Build first"
+          "text": "No sign-off"
         },
         {
           "id": "c",
-          "text": "Change daily"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "d",
-          "text": "No sign-off"
+          "text": "Work breakdown structure decomposition"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Baselines control scope creep.",
       "docs": [
@@ -996,15 +860,15 @@
         },
         {
           "id": "b",
-          "text": "Build first"
+          "text": "Project+ lifecycle objectives"
         },
         {
           "id": "c",
-          "text": "Change daily"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "d",
-          "text": "No sign-off"
+          "text": "Work breakdown structure decomposition"
         }
       ],
       "correct": [
@@ -1026,15 +890,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Approved requirements baseline"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "b",
-          "text": "Build first"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "c",
-          "text": "Change daily"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "d",
@@ -1042,7 +906,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Baselines control scope creep.",
       "docs": [
@@ -1060,23 +924,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Work breakdown structure decomposition"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "b",
-          "text": "Flat todo list only"
+          "text": "Ignore dependencies (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No estimates"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "d",
-          "text": "Ignore dependencies"
+          "text": "Work breakdown structure decomposition"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WBS clarifies deliverables.",
       "docs": [
@@ -1094,23 +958,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Work breakdown structure decomposition"
+          "text": "Project+ lifecycle objectives"
         },
         {
           "id": "b",
-          "text": "Flat todo list only"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "c",
-          "text": "No estimates"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "d",
-          "text": "Ignore dependencies"
+          "text": "Work breakdown structure decomposition"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "WBS clarifies deliverables.",
       "docs": [
@@ -1128,23 +992,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Work breakdown structure decomposition"
+          "text": "Ignore dependencies (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Flat todo list only"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "c",
-          "text": "No estimates"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "d",
-          "text": "Ignore dependencies"
+          "text": "Approved requirements baseline"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "WBS clarifies deliverables.",
       "docs": [
@@ -1162,23 +1026,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk register with owners and responses"
+          "text": "No mitigation (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "c",
-          "text": "Hide issues"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "d",
-          "text": "No mitigation"
+          "text": "Risk register with owners and responses"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Risk management reduces surprises.",
       "docs": [
@@ -1196,23 +1060,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk register with owners and responses"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Project+ lifecycle objectives"
         },
         {
           "id": "c",
-          "text": "Hide issues"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "d",
-          "text": "No mitigation"
+          "text": "Risk register with owners and responses"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Risk management reduces surprises.",
       "docs": [
@@ -1230,23 +1094,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk register with owners and responses"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "c",
-          "text": "Hide issues"
+          "text": "No mitigation (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No mitigation"
+          "text": "Risk register with owners and responses"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Risk management reduces surprises.",
       "docs": [
@@ -1264,23 +1128,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Approved requirements baseline"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "b",
-          "text": "Build first"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "c",
-          "text": "Change daily"
+          "text": "Project+ lifecycle objectives"
         },
         {
           "id": "d",
-          "text": "No sign-off"
+          "text": "Approved requirements baseline"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Baselines control scope creep.",
       "docs": [
@@ -1302,15 +1166,15 @@
         },
         {
           "id": "b",
-          "text": "Flat todo list only"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "c",
-          "text": "No estimates"
+          "text": "Ignore dependencies (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore dependencies"
+          "text": "Approved requirements baseline"
         }
       ],
       "correct": [
@@ -1332,23 +1196,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk register with owners and responses"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "c",
-          "text": "Hide issues"
+          "text": "Project+ lifecycle objectives"
         },
         {
           "id": "d",
-          "text": "No mitigation"
+          "text": "Work breakdown structure decomposition"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Risk management reduces surprises.",
       "docs": [
@@ -1366,15 +1230,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Approved requirements baseline"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "b",
-          "text": "Build first"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "c",
-          "text": "Change daily"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "d",
@@ -1382,7 +1246,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Baselines control scope creep.",
       "docs": [
@@ -1404,15 +1268,15 @@
         },
         {
           "id": "b",
-          "text": "Flat todo list only"
+          "text": "Ignore dependencies (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No estimates"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "d",
-          "text": "Ignore dependencies"
+          "text": "No estimates (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1434,23 +1298,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk register with owners and responses"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "c",
-          "text": "Hide issues"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "d",
-          "text": "No mitigation"
+          "text": "No mitigation (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Risk management reduces surprises.",
       "docs": [
@@ -1468,23 +1332,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Approved requirements baseline"
+          "text": "No sign-off"
         },
         {
           "id": "b",
-          "text": "Build first"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "c",
-          "text": "Change daily"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "d",
-          "text": "No sign-off"
+          "text": "Approved requirements baseline"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Baselines control scope creep.",
       "docs": [
@@ -1502,23 +1366,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Work breakdown structure decomposition"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "b",
-          "text": "Flat todo list only"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "c",
-          "text": "No estimates"
+          "text": "Ignore dependencies (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore dependencies"
+          "text": "Risk register with owners and responses"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "WBS clarifies deliverables.",
       "docs": [
@@ -1536,23 +1400,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk register with owners and responses"
+          "text": "Approved requirements baseline"
         },
         {
           "id": "b",
-          "text": "Hope for best"
+          "text": "Project+ lifecycle objectives"
         },
         {
           "id": "c",
-          "text": "Hide issues"
+          "text": "Risk register with owners and responses"
         },
         {
           "id": "d",
-          "text": "No mitigation"
+          "text": "Work breakdown structure decomposition"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Risk management reduces surprises.",
       "docs": [
@@ -1574,15 +1438,15 @@
         },
         {
           "id": "b",
-          "text": "Build first"
+          "text": "Project+ lifecycle objectives"
         },
         {
           "id": "c",
-          "text": "Change daily"
+          "text": "Work breakdown structure decomposition"
         },
         {
           "id": "d",
-          "text": "No sign-off"
+          "text": "Risk register with owners and responses"
         }
       ],
       "correct": [
@@ -1608,15 +1472,15 @@
         },
         {
           "id": "b",
-          "text": "Email dates only"
+          "text": "Ignore slack (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No critical path"
+          "text": "Project+ tools objectives"
         },
         {
           "id": "d",
-          "text": "Ignore slack"
+          "text": "Lessons learned documentation"
         }
       ],
       "correct": [
@@ -1638,15 +1502,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Lessons learned documentation"
+          "text": "Timeline with dependencies and milestones"
         },
         {
           "id": "b",
-          "text": "Skip closeout"
+          "text": "Project+ tools objectives"
         },
         {
           "id": "c",
-          "text": "Blame only"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "d",
@@ -1654,7 +1518,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Retrospectives improve future delivery.",
       "docs": [
@@ -1672,23 +1536,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Timeline with dependencies and milestones"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "b",
-          "text": "Email dates only"
+          "text": "Timeline with dependencies and milestones"
         },
         {
           "id": "c",
-          "text": "No critical path"
+          "text": "Ignore slack (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore slack"
+          "text": "Project+ tools objectives"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Schedules coordinate resources.",
       "docs": [
@@ -1706,23 +1570,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Timeline with dependencies and milestones"
+          "text": "Project+ tools objectives"
         },
         {
           "id": "b",
-          "text": "Email dates only"
+          "text": "Ignore slack (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No critical path"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "d",
-          "text": "Ignore slack"
+          "text": "Timeline with dependencies and milestones"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Schedules coordinate resources.",
       "docs": [
@@ -1740,23 +1604,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Timeline with dependencies and milestones"
+          "text": "Project+ tools objectives"
         },
         {
           "id": "b",
-          "text": "Email dates only"
+          "text": "Ignore slack (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No critical path"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "d",
-          "text": "Ignore slack"
+          "text": "Timeline with dependencies and milestones"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Schedules coordinate resources.",
       "docs": [
@@ -1774,15 +1638,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Lessons learned documentation"
+          "text": "Blame only"
         },
         {
           "id": "b",
-          "text": "Skip closeout"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "c",
-          "text": "Blame only"
+          "text": "Timeline with dependencies and milestones"
         },
         {
           "id": "d",
@@ -1790,7 +1654,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Retrospectives improve future delivery.",
       "docs": [
@@ -1812,15 +1676,15 @@
         },
         {
           "id": "b",
-          "text": "Skip closeout"
-        },
-        {
-          "id": "c",
           "text": "Blame only"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "No changes"
+        },
+        {
+          "id": "d",
+          "text": "Timeline with dependencies and milestones"
         }
       ],
       "correct": [
@@ -1842,23 +1706,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lessons learned documentation"
+          "text": "No changes"
         },
         {
           "id": "b",
-          "text": "Skip closeout"
-        },
-        {
-          "id": "c",
           "text": "Blame only"
         },
         {
+          "id": "c",
+          "text": "Lessons learned documentation"
+        },
+        {
           "id": "d",
-          "text": "No changes"
+          "text": "Timeline with dependencies and milestones"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Retrospectives improve future delivery.",
       "docs": [
@@ -1880,15 +1744,15 @@
         },
         {
           "id": "b",
-          "text": "Email dates only"
+          "text": "No critical path (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No critical path"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "d",
-          "text": "Ignore slack"
+          "text": "Ignore slack (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1910,11 +1774,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Lessons learned documentation"
+          "text": "Timeline with dependencies and milestones"
         },
         {
           "id": "b",
-          "text": "Skip closeout"
+          "text": "No changes"
         },
         {
           "id": "c",
@@ -1922,11 +1786,11 @@
         },
         {
           "id": "d",
-          "text": "No changes"
+          "text": "Lessons learned documentation"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Retrospectives improve future delivery.",
       "docs": [
@@ -1944,23 +1808,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Timeline with dependencies and milestones"
+          "text": "Ignore slack (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Email dates only"
+          "text": "Timeline with dependencies and milestones"
         },
         {
           "id": "c",
-          "text": "No critical path"
+          "text": "Project+ tools objectives"
         },
         {
           "id": "d",
-          "text": "Ignore slack"
+          "text": "Lessons learned documentation"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Schedules coordinate resources.",
       "docs": [
@@ -1982,15 +1846,15 @@
         },
         {
           "id": "b",
-          "text": "Skip closeout"
+          "text": "No changes"
         },
         {
           "id": "c",
-          "text": "Blame only"
+          "text": "Timeline with dependencies and milestones"
         },
         {
           "id": "d",
-          "text": "No changes"
+          "text": "Blame only"
         }
       ],
       "correct": [
@@ -2012,23 +1876,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Timeline with dependencies and milestones"
-        },
-        {
-          "id": "b",
           "text": "Lessons learned documentation"
         },
         {
+          "id": "b",
+          "text": "No critical path (not recommended for production workloads)"
+        },
+        {
           "id": "c",
-          "text": "Email dates only"
+          "text": "Project+ tools objectives"
         },
         {
           "id": "d",
-          "text": "No critical path"
+          "text": "Timeline with dependencies and milestones"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Schedules coordinate resources. Compare with Lessons learned documentation: Retrospectives improve future delivery.",
       "docs": [
@@ -2050,7 +1914,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Lessons learned documentation"
+          "text": "Project+ tools objectives"
         },
         {
           "id": "b",
@@ -2058,15 +1922,15 @@
         },
         {
           "id": "c",
-          "text": "Skip closeout"
+          "text": "Blame only"
         },
         {
           "id": "d",
-          "text": "Blame only"
+          "text": "Lessons learned documentation"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Retrospectives improve future delivery. Compare with Timeline with dependencies and milestones: Schedules coordinate resources.",
       "docs": [
@@ -2088,23 +1952,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Timeline with dependencies and milestones"
+          "text": "Ignore slack (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Email dates only"
+          "text": "Timeline with dependencies and milestones"
         },
         {
           "id": "c",
-          "text": "No critical path"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "d",
-          "text": "Ignore slack"
+          "text": "No critical path (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Schedules coordinate resources.",
       "docs": [
@@ -2122,23 +1986,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lessons learned documentation"
+          "text": "No changes"
         },
         {
           "id": "b",
-          "text": "Skip closeout"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "c",
-          "text": "Blame only"
+          "text": "Timeline with dependencies and milestones"
         },
         {
           "id": "d",
-          "text": "No changes"
+          "text": "Project+ tools objectives"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Retrospectives improve future delivery.",
       "docs": [
@@ -2156,23 +2020,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Timeline with dependencies and milestones"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "b",
-          "text": "Email dates only"
+          "text": "Ignore slack (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No critical path"
+          "text": "Project+ tools objectives"
         },
         {
           "id": "d",
-          "text": "Ignore slack"
+          "text": "Timeline with dependencies and milestones"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Schedules coordinate resources.",
       "docs": [
@@ -2194,11 +2058,11 @@
         },
         {
           "id": "b",
-          "text": "Skip closeout"
+          "text": "Project+ tools objectives"
         },
         {
           "id": "c",
-          "text": "Blame only"
+          "text": "Timeline with dependencies and milestones"
         },
         {
           "id": "d",
@@ -2224,23 +2088,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Timeline with dependencies and milestones"
+          "text": "Ignore slack (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Email dates only"
+          "text": "Lessons learned documentation"
         },
         {
           "id": "c",
-          "text": "No critical path"
+          "text": "No critical path (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ignore slack"
+          "text": "Timeline with dependencies and milestones"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Schedules coordinate resources.",
       "docs": [
@@ -2258,23 +2122,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Status report with impact and choices"
+          "text": "No data (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Surprise at deadline"
+          "text": "Status report with impact and choices"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "d",
-          "text": "Vague updates"
+          "text": "Vague updates (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Escalation enables decisions.",
       "docs": [
@@ -2296,15 +2160,15 @@
         },
         {
           "id": "b",
-          "text": "Handshake only"
+          "text": "No SLAs (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No SLAs"
+          "text": "Pay on hope"
         },
         {
           "id": "d",
-          "text": "Pay on hope"
+          "text": "Status report with impact and choices"
         }
       ],
       "correct": [
@@ -2330,15 +2194,15 @@
         },
         {
           "id": "b",
-          "text": "Surprise at deadline"
+          "text": "Vague updates (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "Project+ communication objectives"
         },
         {
           "id": "d",
-          "text": "Vague updates"
+          "text": "SOW and acceptance criteria"
         }
       ],
       "correct": [
@@ -2360,23 +2224,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Status report with impact and choices"
+          "text": "No data (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Surprise at deadline"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "Vague updates (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Vague updates"
+          "text": "Status report with impact and choices"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Escalation enables decisions.",
       "docs": [
@@ -2394,23 +2258,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Status report with impact and choices"
+          "text": "Vague updates (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Surprise at deadline"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "No data (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Vague updates"
+          "text": "Status report with impact and choices"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Escalation enables decisions.",
       "docs": [
@@ -2432,15 +2296,15 @@
         },
         {
           "id": "b",
-          "text": "Handshake only"
+          "text": "No SLAs (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No SLAs"
+          "text": "Pay on hope"
         },
         {
           "id": "d",
-          "text": "Pay on hope"
+          "text": "Status report with impact and choices"
         }
       ],
       "correct": [
@@ -2466,15 +2330,15 @@
         },
         {
           "id": "b",
-          "text": "Handshake only"
+          "text": "Status report with impact and choices"
         },
         {
           "id": "c",
-          "text": "No SLAs"
+          "text": "Pay on hope"
         },
         {
           "id": "d",
-          "text": "Pay on hope"
+          "text": "Project+ communication objectives"
         }
       ],
       "correct": [
@@ -2496,15 +2360,15 @@
       "options": [
         {
           "id": "a",
-          "text": "SOW and acceptance criteria"
+          "text": "No SLAs (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Handshake only"
+          "text": "Status report with impact and choices"
         },
         {
           "id": "c",
-          "text": "No SLAs"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "d",
@@ -2512,7 +2376,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Contracts define deliverables.",
       "docs": [
@@ -2530,23 +2394,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Status report with impact and choices"
+          "text": "Vague updates (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Surprise at deadline"
+          "text": "No data (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "d",
-          "text": "Vague updates"
+          "text": "Status report with impact and choices"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Escalation enables decisions.",
       "docs": [
@@ -2564,15 +2428,15 @@
       "options": [
         {
           "id": "a",
-          "text": "SOW and acceptance criteria"
+          "text": "Project+ communication objectives"
         },
         {
           "id": "b",
-          "text": "Handshake only"
+          "text": "Status report with impact and choices"
         },
         {
           "id": "c",
-          "text": "No SLAs"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "d",
@@ -2580,7 +2444,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Contracts define deliverables.",
       "docs": [
@@ -2598,23 +2462,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Status report with impact and choices"
+          "text": "Vague updates (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Surprise at deadline"
+          "text": "Project+ communication objectives"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "Status report with impact and choices"
         },
         {
           "id": "d",
-          "text": "Vague updates"
+          "text": "SOW and acceptance criteria"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Escalation enables decisions.",
       "docs": [
@@ -2632,15 +2496,15 @@
       "options": [
         {
           "id": "a",
-          "text": "SOW and acceptance criteria"
+          "text": "Status report with impact and choices"
         },
         {
           "id": "b",
-          "text": "Handshake only"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "c",
-          "text": "No SLAs"
+          "text": "No SLAs (not recommended for production workloads)"
         },
         {
           "id": "d",
@@ -2648,7 +2512,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Contracts define deliverables.",
       "docs": [
@@ -2670,15 +2534,15 @@
         },
         {
           "id": "b",
-          "text": "SOW and acceptance criteria"
+          "text": "Project+ communication objectives"
         },
         {
           "id": "c",
-          "text": "Surprise at deadline"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "d",
-          "text": "No data"
+          "text": "No data (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2704,23 +2568,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SOW and acceptance criteria"
-        },
-        {
-          "id": "b",
           "text": "Status report with impact and choices"
         },
         {
+          "id": "b",
+          "text": "Handshake only (not recommended for production workloads)"
+        },
+        {
           "id": "c",
-          "text": "Handshake only"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "d",
-          "text": "No SLAs"
+          "text": "No SLAs (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Contracts define deliverables. Compare with Status report with impact and choices: Escalation enables decisions.",
       "docs": [
@@ -2746,15 +2610,15 @@
         },
         {
           "id": "b",
-          "text": "Surprise at deadline"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "c",
-          "text": "No data"
+          "text": "Project+ communication objectives"
         },
         {
           "id": "d",
-          "text": "Vague updates"
+          "text": "Vague updates (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2776,15 +2640,15 @@
       "options": [
         {
           "id": "a",
-          "text": "SOW and acceptance criteria"
+          "text": "Status report with impact and choices"
         },
         {
           "id": "b",
-          "text": "Handshake only"
+          "text": "SOW and acceptance criteria"
         },
         {
           "id": "c",
-          "text": "No SLAs"
+          "text": "No SLAs (not recommended for production workloads)"
         },
         {
           "id": "d",
@@ -2792,7 +2656,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Contracts define deliverables.",
       "docs": [

@@ -90,15 +90,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EC2 only"
+          "text": "Amazon SNS"
         },
         {
           "id": "c",
-          "text": "AWS Snowball"
+          "text": "Amazon Cognito"
         },
         {
           "id": "d",
-          "text": "Amazon WorkDocs"
+          "text": "AWS Elastic Beanstalk or CodeDeploy"
         }
       ],
       "correct": [
@@ -124,15 +124,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Amazon SNS"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Amazon Macie"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "Amazon SQS"
         }
       ],
       "correct": [
@@ -158,15 +158,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "Amazon EFS for static sites only"
+          "text": "DynamoDB Accelerator (DAX)"
         },
         {
           "id": "d",
-          "text": "Amazon RDS"
+          "text": "AWS Fargate"
         }
       ],
       "correct": [
@@ -188,23 +188,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SQS"
+          "text": "AWS Lambda"
         },
         {
           "id": "b",
-          "text": "Amazon Redshift"
+          "text": "Amazon SQS"
         },
         {
           "id": "c",
-          "text": "Amazon Inspector"
+          "text": "Amazon SNS"
         },
         {
           "id": "d",
-          "text": "AWS Budgets"
+          "text": "AWS Elastic Beanstalk or CodeDeploy"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SQS decouples producers and consumers.",
       "docs": [
@@ -226,15 +226,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Glacier only"
+          "text": "AWS Elastic Beanstalk or CodeDeploy"
         },
         {
           "id": "c",
-          "text": "Route 53 only"
+          "text": "AWS Fargate"
         },
         {
           "id": "d",
-          "text": "AWS Snowmobile"
+          "text": "Amazon S3"
         }
       ],
       "correct": [
@@ -256,23 +256,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Step Functions"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "b",
-          "text": "Amazon MQ only"
+          "text": "Amazon SQS"
         },
         {
           "id": "c",
-          "text": "Amazon EBS"
+          "text": "Amazon SNS"
         },
         {
           "id": "d",
-          "text": "AWS Artifact"
+          "text": "AWS Step Functions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Step Functions coordinates Lambda and other services.",
       "docs": [
@@ -290,23 +290,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Cognito"
+          "text": "DynamoDB Accelerator (DAX)"
         },
         {
           "id": "b",
-          "text": "Amazon VPC"
+          "text": "Amazon S3"
         },
         {
           "id": "c",
-          "text": "AWS WAF only"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "d",
-          "text": "Amazon Redshift"
+          "text": "Amazon Cognito"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cognito provides user pools and identity pools.",
       "docs": [
@@ -324,23 +324,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DynamoDB Accelerator (DAX)"
+          "text": "Amazon S3"
         },
         {
           "id": "b",
-          "text": "Amazon ElastiCache for all DynamoDB writes"
+          "text": "DynamoDB Accelerator (DAX)"
         },
         {
           "id": "c",
-          "text": "S3"
+          "text": "AWS Fargate"
         },
         {
           "id": "d",
-          "text": "CloudTrail"
+          "text": "Amazon ElastiCache for all DynamoDB writes"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "DAX is an in-memory cache for DynamoDB.",
       "docs": [
@@ -362,15 +362,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Lightsail only for K8s control plane"
+          "text": "Amazon S3"
         },
         {
           "id": "c",
-          "text": "Snowball"
+          "text": "AWS Lambda"
         },
         {
           "id": "d",
-          "text": "Artifact"
+          "text": "Amazon SNS"
         }
       ],
       "correct": [
@@ -392,23 +392,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Elastic Beanstalk or CodeDeploy"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Amazon SQS"
         },
         {
           "id": "c",
-          "text": "Unversioned AMIs only"
+          "text": "Amazon S3"
         },
         {
           "id": "d",
-          "text": "Route 53"
+          "text": "AWS Elastic Beanstalk or CodeDeploy"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CodeDeploy automates deployments to compute.",
       "docs": [
@@ -426,23 +426,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Lambda"
+          "text": "AWS Step Functions"
         },
         {
           "id": "b",
-          "text": "Amazon EC2 only"
+          "text": "Amazon SNS"
         },
         {
           "id": "c",
-          "text": "AWS Snowball"
+          "text": "Amazon S3"
         },
         {
           "id": "d",
-          "text": "Amazon WorkDocs"
+          "text": "AWS Lambda"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Lambda executes code in response to events.",
       "docs": [
@@ -464,15 +464,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EC2 only"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "AWS Snowball"
+          "text": "Amazon SQS"
         },
         {
           "id": "d",
-          "text": "Amazon WorkDocs"
+          "text": "AWS Elastic Beanstalk or CodeDeploy"
         }
       ],
       "correct": [
@@ -494,23 +494,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Lambda"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "b",
-          "text": "Amazon EC2 only"
+          "text": "AWS Lambda"
         },
         {
           "id": "c",
-          "text": "AWS Snowball"
+          "text": "AWS Fargate"
         },
         {
           "id": "d",
-          "text": "Amazon WorkDocs"
+          "text": "Amazon S3"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Lambda executes code in response to events.",
       "docs": [
@@ -528,23 +528,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon API Gateway"
+          "text": "AWS Lambda"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Amazon SNS"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "Amazon SQS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "API Gateway manages HTTP APIs and integrations.",
       "docs": [
@@ -562,23 +562,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon API Gateway"
+          "text": "AWS Fargate"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "AWS Lambda"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Amazon SNS"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "Amazon API Gateway"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "API Gateway manages HTTP APIs and integrations.",
       "docs": [
@@ -596,23 +596,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon API Gateway"
+          "text": "AWS Lambda"
         },
         {
           "id": "b",
-          "text": "Amazon S3"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "AWS Artifact"
+          "text": "Amazon S3"
         },
         {
           "id": "d",
-          "text": "Amazon Macie"
+          "text": "AWS Elastic Beanstalk or CodeDeploy"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "API Gateway manages HTTP APIs and integrations.",
       "docs": [
@@ -634,15 +634,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "Amazon EFS for static sites only"
+          "text": "AWS Lambda"
         },
         {
           "id": "d",
-          "text": "Amazon RDS"
+          "text": "AWS Fargate"
         }
       ],
       "correct": [
@@ -668,15 +668,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "AWS Lambda"
         },
         {
           "id": "c",
-          "text": "Amazon EFS for static sites only"
+          "text": "Amazon SNS"
         },
         {
           "id": "d",
-          "text": "Amazon RDS"
+          "text": "Amazon API Gateway"
         }
       ],
       "correct": [
@@ -698,23 +698,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "b",
-          "text": "Amazon EBS"
+          "text": "Amazon S3"
         },
         {
           "id": "c",
-          "text": "Amazon EFS for static sites only"
+          "text": "Amazon RDS"
         },
         {
           "id": "d",
-          "text": "Amazon RDS"
+          "text": "Amazon SNS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "S3 hosts static assets and user uploads.",
       "docs": [
@@ -732,23 +732,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SQS"
+          "text": "DynamoDB Accelerator (DAX)"
         },
         {
           "id": "b",
-          "text": "Amazon Redshift"
+          "text": "Amazon SQS"
         },
         {
           "id": "c",
-          "text": "Amazon Inspector"
+          "text": "Amazon SNS"
         },
         {
           "id": "d",
-          "text": "AWS Budgets"
+          "text": "AWS Lambda"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SQS decouples producers and consumers.",
       "docs": [
@@ -766,23 +766,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SQS"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "b",
-          "text": "Amazon Redshift"
+          "text": "AWS Step Functions"
         },
         {
           "id": "c",
-          "text": "Amazon Inspector"
+          "text": "Amazon SQS"
         },
         {
           "id": "d",
-          "text": "AWS Budgets"
+          "text": "AWS Elastic Beanstalk or CodeDeploy"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SQS decouples producers and consumers.",
       "docs": [
@@ -800,23 +800,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SQS"
+          "text": "Amazon S3"
         },
         {
           "id": "b",
-          "text": "Amazon Redshift"
+          "text": "Amazon API Gateway"
         },
         {
           "id": "c",
-          "text": "Amazon Inspector"
+          "text": "Amazon SQS"
         },
         {
           "id": "d",
-          "text": "AWS Budgets"
+          "text": "DynamoDB Accelerator (DAX)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SQS decouples producers and consumers.",
       "docs": [
@@ -834,23 +834,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SNS"
+          "text": "AWS Fargate"
         },
         {
           "id": "b",
-          "text": "Amazon Glacier only"
+          "text": "Amazon SQS"
         },
         {
           "id": "c",
-          "text": "Route 53 only"
+          "text": "AWS Step Functions"
         },
         {
           "id": "d",
-          "text": "AWS Snowmobile"
+          "text": "Amazon SNS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SNS is a pub/sub messaging service.",
       "docs": [
@@ -868,23 +868,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon SNS"
+          "text": "Amazon S3"
         },
         {
           "id": "b",
-          "text": "Amazon Glacier only"
+          "text": "Amazon SQS"
         },
         {
           "id": "c",
-          "text": "Route 53 only"
+          "text": "Amazon SNS"
         },
         {
           "id": "d",
-          "text": "AWS Snowmobile"
+          "text": "AWS Lambda"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SNS is a pub/sub messaging service.",
       "docs": [
@@ -906,15 +906,15 @@
         },
         {
           "id": "b",
-          "text": "Amazon Glacier only"
+          "text": "Amazon S3"
         },
         {
           "id": "c",
-          "text": "Route 53 only"
+          "text": "Amazon SQS"
         },
         {
           "id": "d",
-          "text": "AWS Snowmobile"
+          "text": "AWS Lambda"
         }
       ],
       "correct": [
@@ -936,23 +936,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Secrets Manager"
+          "text": "IAM instance profiles"
         },
         {
           "id": "b",
-          "text": "Plaintext in Git"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "c",
-          "text": "S3 public ACL"
+          "text": "AWS KMS with Lambda"
         },
         {
           "id": "d",
-          "text": "Email"
+          "text": "AWS Secrets Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Secrets Manager rotates secrets securely.",
       "docs": [
@@ -970,23 +970,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS KMS with Lambda"
+          "text": "S3 Block Public Access"
         },
         {
           "id": "b",
-          "text": "HTTP"
+          "text": "IAM instance profiles"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "Root keys"
+          "text": "AWS KMS with Lambda"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS encrypts secrets at rest for Lambda.",
       "docs": [
@@ -1004,23 +1004,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Signature Version 4 (SigV4)"
+          "text": "IAM policies on table/index ARNs"
         },
         {
           "id": "b",
-          "text": "Basic auth in URL only"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "c",
-          "text": "No auth"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "IAM instance profiles"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SigV4 signs AWS API requests.",
       "docs": [
@@ -1038,23 +1038,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM instance profiles"
+          "text": "AWS KMS with Lambda"
         },
         {
           "id": "b",
-          "text": "Long-term user keys on disk"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "c",
-          "text": "Root user"
+          "text": "Long-term user keys on disk"
         },
         {
           "id": "d",
-          "text": "Shared passwords"
+          "text": "IAM instance profiles"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Instance profiles deliver role credentials to EC2.",
       "docs": [
@@ -1072,23 +1072,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 Block Public Access"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "b",
-          "text": "Open ACLs everywhere"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "c",
-          "text": "Disable encryption"
+          "text": "S3 Block Public Access"
         },
         {
           "id": "d",
-          "text": "Public RDS"
+          "text": "IAM instance profiles"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Block Public Access prevents accidental exposure.",
       "docs": [
@@ -1106,23 +1106,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Inspector or third-party in pipeline"
+          "text": "AWS KMS with Lambda"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "c",
-          "text": "Disable tests"
+          "text": "IAM instance profiles"
         },
         {
           "id": "d",
-          "text": "Prod keys in dev"
+          "text": "Amazon Inspector or third-party in pipeline"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Shift-left security tests artifacts before deploy.",
       "docs": [
@@ -1140,23 +1140,23 @@
       "options": [
         {
           "id": "a",
-          "text": "ACM certificates with API Gateway"
+          "text": "Telnet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Self-signed expired certs"
+          "text": "ACM certificates with API Gateway"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "IAM instance profiles"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "AWS Secrets Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ACM integrates with API Gateway for TLS.",
       "docs": [
@@ -1174,23 +1174,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM policies on table/index ARNs"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "b",
-          "text": "Anonymous dynamodb:*"
+          "text": "IAM instance profiles"
         },
         {
           "id": "c",
-          "text": "Root daily driver"
+          "text": "AWS KMS with Lambda"
         },
         {
           "id": "d",
-          "text": "No conditions"
+          "text": "IAM policies on table/index ARNs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Resource-level IAM controls DynamoDB access.",
       "docs": [
@@ -1208,23 +1208,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Secrets Manager"
+          "text": "AWS KMS with Lambda"
         },
         {
           "id": "b",
-          "text": "Plaintext in Git"
+          "text": "S3 Block Public Access"
         },
         {
           "id": "c",
-          "text": "S3 public ACL"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "Email"
+          "text": "IAM instance profiles"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Secrets Manager rotates secrets securely.",
       "docs": [
@@ -1242,23 +1242,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Secrets Manager"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "b",
-          "text": "Plaintext in Git"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "c",
-          "text": "S3 public ACL"
+          "text": "IAM instance profiles"
         },
         {
           "id": "d",
-          "text": "Email"
+          "text": "IAM policies on table/index ARNs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secrets Manager rotates secrets securely.",
       "docs": [
@@ -1280,15 +1280,15 @@
         },
         {
           "id": "b",
-          "text": "Plaintext in Git"
+          "text": "IAM instance profiles"
         },
         {
           "id": "c",
-          "text": "S3 public ACL"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "d",
-          "text": "Email"
+          "text": "ACM certificates with API Gateway"
         }
       ],
       "correct": [
@@ -1310,23 +1310,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS KMS with Lambda"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "b",
-          "text": "HTTP"
+          "text": "IAM instance profiles"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "ACM certificates with API Gateway"
         },
         {
           "id": "d",
-          "text": "Root keys"
+          "text": "AWS KMS with Lambda"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "KMS encrypts secrets at rest for Lambda.",
       "docs": [
@@ -1344,23 +1344,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS KMS with Lambda"
+          "text": "Amazon Inspector or third-party in pipeline"
         },
         {
           "id": "b",
-          "text": "HTTP"
+          "text": "AWS KMS with Lambda"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "S3 Block Public Access"
         },
         {
           "id": "d",
-          "text": "Root keys"
+          "text": "AWS Secrets Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "KMS encrypts secrets at rest for Lambda.",
       "docs": [
@@ -1382,15 +1382,15 @@
         },
         {
           "id": "b",
-          "text": "HTTP"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "d",
-          "text": "Root keys"
+          "text": "IAM policies on table/index ARNs"
         }
       ],
       "correct": [
@@ -1412,23 +1412,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Signature Version 4 (SigV4)"
+          "text": "IAM instance profiles"
         },
         {
           "id": "b",
-          "text": "Basic auth in URL only"
+          "text": "S3 Block Public Access"
         },
         {
           "id": "c",
-          "text": "No auth"
+          "text": "AWS KMS with Lambda"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "AWS Signature Version 4 (SigV4)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SigV4 signs AWS API requests.",
       "docs": [
@@ -1446,23 +1446,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Signature Version 4 (SigV4)"
+          "text": "IAM instance profiles"
         },
         {
           "id": "b",
-          "text": "Basic auth in URL only"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "c",
-          "text": "No auth"
+          "text": "AWS KMS with Lambda"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "AWS Secrets Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SigV4 signs AWS API requests.",
       "docs": [
@@ -1480,23 +1480,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Signature Version 4 (SigV4)"
+          "text": "Amazon Inspector or third-party in pipeline"
         },
         {
           "id": "b",
-          "text": "Basic auth in URL only"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "c",
-          "text": "No auth"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "IAM instance profiles"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SigV4 signs AWS API requests.",
       "docs": [
@@ -1514,23 +1514,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM instance profiles"
-        },
-        {
-          "id": "b",
           "text": "Long-term user keys on disk"
         },
         {
+          "id": "b",
+          "text": "AWS Secrets Manager"
+        },
+        {
           "id": "c",
-          "text": "Root user"
+          "text": "IAM instance profiles"
         },
         {
           "id": "d",
-          "text": "Shared passwords"
+          "text": "AWS KMS with Lambda"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Instance profiles deliver role credentials to EC2.",
       "docs": [
@@ -1548,23 +1548,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM instance profiles"
-        },
-        {
-          "id": "b",
           "text": "Long-term user keys on disk"
         },
         {
+          "id": "b",
+          "text": "IAM instance profiles"
+        },
+        {
           "id": "c",
-          "text": "Root user"
+          "text": "AWS Secrets Manager"
         },
         {
           "id": "d",
-          "text": "Shared passwords"
+          "text": "S3 Block Public Access"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Instance profiles deliver role credentials to EC2.",
       "docs": [
@@ -1582,23 +1582,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM instance profiles"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "b",
-          "text": "Long-term user keys on disk"
+          "text": "AWS KMS with Lambda"
         },
         {
           "id": "c",
-          "text": "Root user"
+          "text": "Long-term user keys on disk"
         },
         {
           "id": "d",
-          "text": "Shared passwords"
+          "text": "IAM instance profiles"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Instance profiles deliver role credentials to EC2.",
       "docs": [
@@ -1616,23 +1616,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 Block Public Access"
+          "text": "IAM instance profiles"
         },
         {
           "id": "b",
-          "text": "Open ACLs everywhere"
+          "text": "AWS Signature Version 4 (SigV4)"
         },
         {
           "id": "c",
-          "text": "Disable encryption"
+          "text": "S3 Block Public Access"
         },
         {
           "id": "d",
-          "text": "Public RDS"
+          "text": "AWS Secrets Manager"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Block Public Access prevents accidental exposure.",
       "docs": [
@@ -1650,23 +1650,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodePipeline"
+          "text": "AWS CodeBuild"
         },
         {
           "id": "b",
-          "text": "Manual copy to prod"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "c",
-          "text": "Email attachments"
+          "text": "AWS CloudFormation or AWS CDK"
         },
         {
           "id": "d",
-          "text": "FTP only"
+          "text": "AWS CodePipeline"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CodePipeline orchestrates CI/CD stages.",
       "docs": [
@@ -1684,23 +1684,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodeBuild"
+          "text": "AWS CloudFormation or AWS CDK"
         },
         {
           "id": "b",
-          "text": "Hand-compile on laptops only"
+          "text": "CloudFormation stacks per branch"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "AWS CodePipeline"
         },
         {
           "id": "d",
-          "text": "Skip artifacts"
+          "text": "AWS CodeBuild"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CodeBuild runs managed build environments.",
       "docs": [
@@ -1718,23 +1718,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodeCommit or external Git with CodeStar Connections"
+          "text": "AWS CodeBuild"
         },
         {
           "id": "b",
-          "text": "Public pastebin"
+          "text": "AWS CodePipeline"
         },
         {
           "id": "c",
-          "text": "Unencrypted USB"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "No branches"
+          "text": "AWS CloudFormation or AWS CDK"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CodeCommit hosts private Git repos on AWS.",
       "docs": [
@@ -1756,15 +1756,15 @@
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "AWS CodeBuild"
         },
         {
           "id": "c",
-          "text": "Undocumented changes"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "Snowball"
+          "text": "Lambda aliases and CodeDeploy"
         }
       ],
       "correct": [
@@ -1786,23 +1786,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lambda aliases and CodeDeploy"
+          "text": "Single alias for all traffic"
         },
         {
           "id": "b",
-          "text": "Overwrite $LATEST only in prod"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "AWS CodeBuild"
         },
         {
           "id": "d",
-          "text": "Single alias for all traffic"
+          "text": "Lambda aliases and CodeDeploy"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Aliases route traffic between versions.",
       "docs": [
@@ -1824,15 +1824,15 @@
         },
         {
           "id": "b",
-          "text": "Manual zip uploads only forever"
+          "text": "AWS CloudFormation or AWS CDK"
         },
         {
           "id": "c",
-          "text": "No templates"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "Disable rollback"
+          "text": "Lambda aliases and CodeDeploy"
         }
       ],
       "correct": [
@@ -1854,23 +1854,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudFormation stacks per branch"
+          "text": "AWS CodeBuild"
         },
         {
           "id": "b",
-          "text": "Shared prod for tests"
+          "text": "CodeDeploy deployment groups"
         },
         {
           "id": "c",
-          "text": "No teardown"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "Root in CI"
+          "text": "CloudFormation stacks per branch"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Ephemeral stacks isolate test environments.",
       "docs": [
@@ -1888,23 +1888,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CodeDeploy deployment groups"
+          "text": "AWS CodeBuild"
         },
         {
           "id": "b",
-          "text": "Silent failures"
+          "text": "CodeDeploy deployment groups"
         },
         {
           "id": "c",
-          "text": "No logs"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "Disable CloudWatch"
+          "text": "AWS CodePipeline"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CodeDeploy reports instance deployment status.",
       "docs": [
@@ -1926,15 +1926,15 @@
         },
         {
           "id": "b",
-          "text": "Manual copy to prod"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "c",
-          "text": "Email attachments"
+          "text": "CodeDeploy deployment groups"
         },
         {
           "id": "d",
-          "text": "FTP only"
+          "text": "Lambda aliases and CodeDeploy"
         }
       ],
       "correct": [
@@ -1960,15 +1960,15 @@
         },
         {
           "id": "b",
-          "text": "Manual copy to prod"
+          "text": "AWS CodeBuild"
         },
         {
           "id": "c",
-          "text": "Email attachments"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "FTP only"
+          "text": "CloudFormation stacks per branch"
         }
       ],
       "correct": [
@@ -1990,23 +1990,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodePipeline"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "b",
-          "text": "Manual copy to prod"
+          "text": "CodeDeploy deployment groups"
         },
         {
           "id": "c",
-          "text": "Email attachments"
+          "text": "AWS CodePipeline"
         },
         {
           "id": "d",
-          "text": "FTP only"
+          "text": "AWS CloudFormation or AWS CDK"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CodePipeline orchestrates CI/CD stages.",
       "docs": [
@@ -2024,23 +2024,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodeBuild"
+          "text": "AWS CodePipeline"
         },
         {
           "id": "b",
-          "text": "Hand-compile on laptops only"
+          "text": "AWS CodeBuild"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "Skip artifacts"
+          "text": "AWS SAM CLI"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CodeBuild runs managed build environments.",
       "docs": [
@@ -2062,15 +2062,15 @@
         },
         {
           "id": "b",
-          "text": "Hand-compile on laptops only"
+          "text": "Skip artifacts"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "Skip artifacts"
+          "text": "AWS CloudFormation or AWS CDK"
         }
       ],
       "correct": [
@@ -2096,15 +2096,15 @@
         },
         {
           "id": "b",
-          "text": "Hand-compile on laptops only"
+          "text": "AWS SAM CLI"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "Lambda aliases and CodeDeploy"
         },
         {
           "id": "d",
-          "text": "Skip artifacts"
+          "text": "CloudFormation stacks per branch"
         }
       ],
       "correct": [
@@ -2126,23 +2126,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodeCommit or external Git with CodeStar Connections"
+          "text": "Lambda aliases and CodeDeploy"
         },
         {
           "id": "b",
-          "text": "Public pastebin"
+          "text": "AWS CloudFormation or AWS CDK"
         },
         {
           "id": "c",
-          "text": "Unencrypted USB"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "No branches"
+          "text": "AWS SAM CLI"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CodeCommit hosts private Git repos on AWS.",
       "docs": [
@@ -2160,23 +2160,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodeCommit or external Git with CodeStar Connections"
+          "text": "AWS CodePipeline"
         },
         {
           "id": "b",
-          "text": "Public pastebin"
+          "text": "AWS CloudFormation or AWS CDK"
         },
         {
           "id": "c",
-          "text": "Unencrypted USB"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "d",
-          "text": "No branches"
+          "text": "AWS CodeBuild"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CodeCommit hosts private Git repos on AWS.",
       "docs": [
@@ -2194,23 +2194,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodeCommit or external Git with CodeStar Connections"
+          "text": "AWS CodePipeline"
         },
         {
           "id": "b",
-          "text": "Public pastebin"
+          "text": "AWS CloudFormation or AWS CDK"
         },
         {
           "id": "c",
-          "text": "Unencrypted USB"
+          "text": "AWS CodeBuild"
         },
         {
           "id": "d",
-          "text": "No branches"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CodeCommit hosts private Git repos on AWS.",
       "docs": [
@@ -2232,15 +2232,15 @@
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "CloudFormation stacks per branch"
         },
         {
           "id": "c",
-          "text": "Undocumented changes"
+          "text": "Lambda aliases and CodeDeploy"
         },
         {
           "id": "d",
-          "text": "Snowball"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         }
       ],
       "correct": [
@@ -2266,15 +2266,15 @@
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "AWS CodeCommit or external Git with CodeStar Connections"
         },
         {
           "id": "c",
-          "text": "Undocumented changes"
+          "text": "CloudFormation stacks per branch"
         },
         {
           "id": "d",
-          "text": "Snowball"
+          "text": "AWS CodePipeline"
         }
       ],
       "correct": [
@@ -2300,15 +2300,15 @@
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "CloudWatch alarms on Lambda metrics"
         },
         {
           "id": "c",
-          "text": "No correlation IDs"
+          "text": "API Gateway stage caching"
         },
         {
           "id": "d",
-          "text": "Disable logs"
+          "text": "Better partition key design"
         }
       ],
       "correct": [
@@ -2330,23 +2330,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch Logs Insights"
+          "text": "AWS X-Ray"
         },
         {
           "id": "b",
-          "text": "SSH grep only"
+          "text": "Lambda Power Tuning or CloudWatch metrics"
         },
         {
           "id": "c",
-          "text": "Delete logs hourly"
+          "text": "CloudWatch alarms on Lambda metrics"
         },
         {
           "id": "d",
-          "text": "No structured logging"
+          "text": "CloudWatch Logs Insights"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Logs Insights queries log groups at scale.",
       "docs": [
@@ -2368,15 +2368,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore errors"
+          "text": "CloudWatch Logs Insights"
         },
         {
           "id": "c",
-          "text": "No dashboards"
+          "text": "Better partition key design"
         },
         {
           "id": "d",
-          "text": "Email nobody"
+          "text": "AWS X-Ray"
         }
       ],
       "correct": [
@@ -2402,15 +2402,15 @@
         },
         {
           "id": "b",
-          "text": "Max memory only always"
+          "text": "AWS X-Ray"
         },
         {
           "id": "c",
-          "text": "Disable init"
+          "text": "API Gateway stage caching"
         },
         {
           "id": "d",
-          "text": "Run in VPC unnecessarily"
+          "text": "SQS dead-letter queues"
         }
       ],
       "correct": [
@@ -2432,23 +2432,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Better partition key design"
+          "text": "CloudWatch alarms on Lambda metrics"
         },
         {
           "id": "b",
-          "text": "Monotonic keys only"
+          "text": "AWS X-Ray"
         },
         {
           "id": "c",
-          "text": "Single item table"
+          "text": "Scan entire table per request"
         },
         {
           "id": "d",
-          "text": "Scan entire table per request"
+          "text": "Better partition key design"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "High-cardinality partition keys spread load.",
       "docs": [
@@ -2466,23 +2466,23 @@
       "options": [
         {
           "id": "a",
-          "text": "API Gateway stage caching"
+          "text": "Cache POST by default unsafely"
         },
         {
           "id": "b",
-          "text": "Hit origin every time"
+          "text": "AWS X-Ray"
         },
         {
           "id": "c",
-          "text": "Disable TTL"
+          "text": "CloudWatch Logs Insights"
         },
         {
           "id": "d",
-          "text": "Cache POST by default unsafely"
+          "text": "API Gateway stage caching"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Caching reduces backend load for idempotent reads.",
       "docs": [
@@ -2504,15 +2504,15 @@
         },
         {
           "id": "b",
-          "text": "Always 128 MB"
+          "text": "API Gateway stage caching"
         },
         {
           "id": "c",
-          "text": "No profiling"
+          "text": "CloudWatch Logs Insights"
         },
         {
           "id": "d",
-          "text": "Infinite timeout"
+          "text": "Better partition key design"
         }
       ],
       "correct": [
@@ -2534,23 +2534,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SQS dead-letter queues"
+          "text": "AWS X-Ray"
         },
         {
           "id": "b",
-          "text": "Drop messages"
+          "text": "SQS dead-letter queues"
         },
         {
           "id": "c",
-          "text": "Infinite retries forever"
+          "text": "Provisioned concurrency"
         },
         {
           "id": "d",
-          "text": "No DLQ"
+          "text": "CloudWatch Logs Insights"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "DLQs isolate poison messages for analysis.",
       "docs": [
@@ -2568,23 +2568,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS X-Ray"
+          "text": "API Gateway stage caching"
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "CloudWatch alarms on Lambda metrics"
         },
         {
           "id": "c",
-          "text": "No correlation IDs"
+          "text": "CloudWatch Logs Insights"
         },
         {
           "id": "d",
-          "text": "Disable logs"
+          "text": "AWS X-Ray"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "X-Ray maps latency across service graph.",
       "docs": [
@@ -2602,23 +2602,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS X-Ray"
+          "text": "Lambda Power Tuning or CloudWatch metrics"
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "CloudWatch Logs Insights"
         },
         {
           "id": "c",
-          "text": "No correlation IDs"
+          "text": "SQS dead-letter queues"
         },
         {
           "id": "d",
-          "text": "Disable logs"
+          "text": "AWS X-Ray"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "X-Ray maps latency across service graph.",
       "docs": [
@@ -2636,23 +2636,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS X-Ray"
+          "text": "SQS dead-letter queues"
         },
         {
           "id": "b",
-          "text": "Ping only"
+          "text": "Lambda Power Tuning or CloudWatch metrics"
         },
         {
           "id": "c",
-          "text": "No correlation IDs"
+          "text": "AWS X-Ray"
         },
         {
           "id": "d",
-          "text": "Disable logs"
+          "text": "CloudWatch alarms on Lambda metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "X-Ray maps latency across service graph.",
       "docs": [
@@ -2670,23 +2670,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch Logs Insights"
+          "text": "CloudWatch alarms on Lambda metrics"
         },
         {
           "id": "b",
-          "text": "SSH grep only"
+          "text": "CloudWatch Logs Insights"
         },
         {
           "id": "c",
-          "text": "Delete logs hourly"
+          "text": "SQS dead-letter queues"
         },
         {
           "id": "d",
-          "text": "No structured logging"
+          "text": "AWS X-Ray"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Logs Insights queries log groups at scale.",
       "docs": [
@@ -2704,23 +2704,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch Logs Insights"
+          "text": "Better partition key design"
         },
         {
           "id": "b",
-          "text": "SSH grep only"
+          "text": "AWS X-Ray"
         },
         {
           "id": "c",
-          "text": "Delete logs hourly"
+          "text": "Provisioned concurrency"
         },
         {
           "id": "d",
-          "text": "No structured logging"
+          "text": "CloudWatch Logs Insights"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Logs Insights queries log groups at scale.",
       "docs": [
@@ -2738,23 +2738,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch Logs Insights"
+          "text": "Provisioned concurrency"
         },
         {
           "id": "b",
-          "text": "SSH grep only"
+          "text": "SQS dead-letter queues"
         },
         {
           "id": "c",
-          "text": "Delete logs hourly"
+          "text": "CloudWatch Logs Insights"
         },
         {
           "id": "d",
-          "text": "No structured logging"
+          "text": "CloudWatch alarms on Lambda metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Logs Insights queries log groups at scale.",
       "docs": [
@@ -2776,15 +2776,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore errors"
+          "text": "Provisioned concurrency"
         },
         {
           "id": "c",
-          "text": "No dashboards"
+          "text": "CloudWatch Logs Insights"
         },
         {
           "id": "d",
-          "text": "Email nobody"
+          "text": "AWS X-Ray"
         }
       ],
       "correct": [
@@ -2874,45 +2874,6 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "dva-q083",
-      "domain": "development-services",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Developer \u2013 Associate? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "DVA-C02 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "AWS Lambda"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "DVA-C02 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-developer-associate/"
         }
       ]
     }

@@ -63,142 +63,6 @@
   ],
   "questions": [
     {
-      "id": "ai9-q001",
-      "domain": "ai-workloads",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure AI Fundamentals and reviewing Describe AI workloads and considerations. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AI-900 study guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use AI-900 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "AI-900 study guide",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900"
-        }
-      ]
-    },
-    {
-      "id": "ai9-q002",
-      "domain": "machine-learning",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure AI Fundamentals and reviewing Describe fundamental ML principles. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Machine Learning"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Machine Learning and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Machine Learning",
-          "url": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
-        }
-      ]
-    },
-    {
-      "id": "ai9-q003",
-      "domain": "computer-vision",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure AI Fundamentals and reviewing Describe computer vision workloads. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure AI Vision"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure AI Vision and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure AI Vision",
-          "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
-        }
-      ]
-    },
-    {
-      "id": "ai9-q004",
-      "domain": "nlp",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure AI Fundamentals and reviewing Describe natural language processing workloads. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure OpenAI"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure OpenAI and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure OpenAI",
-          "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
-        }
-      ]
-    },
-    {
       "id": "ai9-q005",
       "domain": "ai-workloads",
       "type": "multiple-choice",
@@ -206,11 +70,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Responsible AI principles"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "b",
-          "text": "Ignore bias"
+          "text": "Responsible AI principles"
         },
         {
           "id": "c",
@@ -222,7 +86,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Microsoft documents responsible AI practices.",
       "docs": [
@@ -240,23 +104,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency notes and data sheets"
+          "text": "Responsible AI principles"
         },
         {
           "id": "b",
-          "text": "Hide failures"
+          "text": "Overpromise (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No testing"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "d",
-          "text": "Overpromise"
+          "text": "AI-900 study guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -274,15 +138,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Responsible AI principles"
+          "text": "Black box only"
         },
         {
           "id": "b",
-          "text": "Ignore bias"
+          "text": "Responsible AI principles"
         },
         {
           "id": "c",
-          "text": "Black box only"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "d",
@@ -290,7 +154,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Microsoft documents responsible AI practices.",
       "docs": [
@@ -308,15 +172,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Responsible AI principles"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "b",
-          "text": "Ignore bias"
+          "text": "AI-900 study guide"
         },
         {
           "id": "c",
-          "text": "Black box only"
+          "text": "Responsible AI principles"
         },
         {
           "id": "d",
@@ -324,7 +188,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Microsoft documents responsible AI practices.",
       "docs": [
@@ -342,15 +206,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Responsible AI principles"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "b",
-          "text": "Ignore bias"
+          "text": "AI-900 study guide"
         },
         {
           "id": "c",
-          "text": "Black box only"
+          "text": "Responsible AI principles"
         },
         {
           "id": "d",
@@ -358,7 +222,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Microsoft documents responsible AI practices.",
       "docs": [
@@ -376,23 +240,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency notes and data sheets"
+          "text": "Responsible AI principles"
         },
         {
           "id": "b",
-          "text": "Hide failures"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "c",
-          "text": "No testing"
+          "text": "AI-900 study guide"
         },
         {
           "id": "d",
-          "text": "Overpromise"
+          "text": "Overpromise (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -410,23 +274,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency notes and data sheets"
+          "text": "Overpromise (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hide failures"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "c",
-          "text": "No testing"
+          "text": "AI-900 study guide"
         },
         {
           "id": "d",
-          "text": "Overpromise"
+          "text": "Responsible AI principles"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -444,23 +308,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency notes and data sheets"
+          "text": "Responsible AI principles"
         },
         {
           "id": "b",
-          "text": "Hide failures"
+          "text": "AI-900 study guide"
         },
         {
           "id": "c",
-          "text": "No testing"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "d",
-          "text": "Overpromise"
+          "text": "Overpromise (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -482,11 +346,11 @@
         },
         {
           "id": "b",
-          "text": "Ignore bias"
+          "text": "AI-900 study guide"
         },
         {
           "id": "c",
-          "text": "Black box only"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "d",
@@ -512,23 +376,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency notes and data sheets"
+          "text": "Overpromise (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hide failures"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "c",
-          "text": "No testing"
+          "text": "Responsible AI principles"
         },
         {
           "id": "d",
-          "text": "Overpromise"
+          "text": "AI-900 study guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -546,23 +410,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Responsible AI principles"
+          "text": "No documentation"
         },
         {
           "id": "b",
-          "text": "Ignore bias"
+          "text": "AI-900 study guide"
         },
         {
           "id": "c",
-          "text": "Black box only"
+          "text": "Responsible AI principles"
         },
         {
           "id": "d",
-          "text": "No documentation"
+          "text": "Transparency notes and data sheets"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Microsoft documents responsible AI practices.",
       "docs": [
@@ -580,23 +444,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency notes and data sheets"
+          "text": "AI-900 study guide"
         },
         {
           "id": "b",
-          "text": "Hide failures"
+          "text": "Overpromise (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No testing"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "d",
-          "text": "Overpromise"
+          "text": "Responsible AI principles"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -622,7 +486,7 @@
         },
         {
           "id": "c",
-          "text": "Ignore bias"
+          "text": "AI-900 study guide"
         },
         {
           "id": "d",
@@ -652,23 +516,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency notes and data sheets"
-        },
-        {
-          "id": "b",
           "text": "Responsible AI principles"
         },
         {
+          "id": "b",
+          "text": "No testing (not recommended for production workloads)"
+        },
+        {
           "id": "c",
-          "text": "Hide failures"
+          "text": "Hide failures (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No testing"
+          "text": "Transparency notes and data sheets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Transparency builds trust. Compare with Responsible AI principles: Microsoft documents responsible AI practices.",
       "docs": [
@@ -690,23 +554,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Responsible AI principles"
+          "text": "AI-900 study guide"
         },
         {
           "id": "b",
-          "text": "Ignore bias"
+          "text": "No documentation"
         },
         {
           "id": "c",
-          "text": "Black box only"
+          "text": "Responsible AI principles"
         },
         {
           "id": "d",
-          "text": "No documentation"
+          "text": "Transparency notes and data sheets"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Microsoft documents responsible AI practices.",
       "docs": [
@@ -724,23 +588,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency notes and data sheets"
+          "text": "Overpromise (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Hide failures"
+          "text": "Responsible AI principles"
         },
         {
           "id": "c",
-          "text": "No testing"
+          "text": "AI-900 study guide"
         },
         {
           "id": "d",
-          "text": "Overpromise"
+          "text": "Transparency notes and data sheets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -758,23 +622,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Responsible AI principles"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "b",
-          "text": "Ignore bias"
+          "text": "AI-900 study guide"
         },
         {
           "id": "c",
-          "text": "Black box only"
+          "text": "No documentation"
         },
         {
           "id": "d",
-          "text": "No documentation"
+          "text": "Responsible AI principles"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Microsoft documents responsible AI practices.",
       "docs": [
@@ -796,15 +660,15 @@
         },
         {
           "id": "b",
-          "text": "Hide failures"
+          "text": "AI-900 study guide"
         },
         {
           "id": "c",
-          "text": "No testing"
+          "text": "Overpromise (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Overpromise"
+          "text": "Responsible AI principles"
         }
       ],
       "correct": [
@@ -826,23 +690,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Responsible AI principles"
+          "text": "AI-900 study guide"
         },
         {
           "id": "b",
-          "text": "Ignore bias"
+          "text": "No documentation"
         },
         {
           "id": "c",
-          "text": "Black box only"
+          "text": "Transparency notes and data sheets"
         },
         {
           "id": "d",
-          "text": "No documentation"
+          "text": "Responsible AI principles"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Microsoft documents responsible AI practices.",
       "docs": [
@@ -860,23 +724,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Transparency notes and data sheets"
+          "text": "Responsible AI principles"
         },
         {
           "id": "b",
-          "text": "Hide failures"
+          "text": "Overpromise (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No testing"
+          "text": "AI-900 study guide"
         },
         {
           "id": "d",
-          "text": "Overpromise"
+          "text": "Transparency notes and data sheets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Transparency builds trust.",
       "docs": [
@@ -894,23 +758,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning"
-        },
-        {
-          "id": "b",
-          "text": "Manual Excel regression only"
-        },
-        {
-          "id": "c",
           "text": "No versioning"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Azure Machine Learning AutoML"
+        },
+        {
+          "id": "c",
           "text": "FTP datasets"
+        },
+        {
+          "id": "d",
+          "text": "Azure Machine Learning"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure ML covers training, deployment, monitoring.",
       "docs": [
@@ -928,23 +792,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning AutoML"
+          "text": "No validation (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Manual guess only"
+          "text": "Leak labels (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "Azure Machine Learning AutoML"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "AutoML searches algorithms and hyperparameters.",
       "docs": [
@@ -966,15 +830,15 @@
         },
         {
           "id": "b",
-          "text": "Manual Excel regression only"
-        },
-        {
-          "id": "c",
           "text": "No versioning"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "FTP datasets"
+        },
+        {
+          "id": "d",
+          "text": "Azure Machine Learning AutoML"
         }
       ],
       "correct": [
@@ -996,11 +860,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning"
+          "text": "FTP datasets"
         },
         {
           "id": "b",
-          "text": "Manual Excel regression only"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "c",
@@ -1008,11 +872,11 @@
         },
         {
           "id": "d",
-          "text": "FTP datasets"
+          "text": "Azure Machine Learning AutoML"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure ML covers training, deployment, monitoring.",
       "docs": [
@@ -1030,23 +894,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning"
+          "text": "FTP datasets"
         },
         {
           "id": "b",
-          "text": "Manual Excel regression only"
-        },
-        {
-          "id": "c",
           "text": "No versioning"
         },
         {
+          "id": "c",
+          "text": "Azure Machine Learning"
+        },
+        {
           "id": "d",
-          "text": "FTP datasets"
+          "text": "Azure Machine Learning AutoML"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure ML covers training, deployment, monitoring.",
       "docs": [
@@ -1064,23 +928,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning AutoML"
+          "text": "Leak labels (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Manual guess only"
+          "text": "No validation (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "Azure Machine Learning"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AutoML searches algorithms and hyperparameters.",
       "docs": [
@@ -1098,23 +962,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning AutoML"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "b",
-          "text": "Manual guess only"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "No validation (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "Leak labels (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "AutoML searches algorithms and hyperparameters.",
       "docs": [
@@ -1132,23 +996,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning AutoML"
+          "text": "Leak labels (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Manual guess only"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "No validation (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AutoML searches algorithms and hyperparameters.",
       "docs": [
@@ -1166,23 +1030,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "b",
-          "text": "Manual Excel regression only"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "FTP datasets"
         },
         {
           "id": "d",
-          "text": "FTP datasets"
+          "text": "No versioning"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure ML covers training, deployment, monitoring.",
       "docs": [
@@ -1200,23 +1064,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning AutoML"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "b",
-          "text": "Manual guess only"
+          "text": "No validation (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "Leak labels (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "Azure Machine Learning AutoML"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "AutoML searches algorithms and hyperparameters.",
       "docs": [
@@ -1234,23 +1098,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "b",
-          "text": "Manual Excel regression only"
+          "text": "FTP datasets"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "d",
-          "text": "FTP datasets"
+          "text": "No versioning"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure ML covers training, deployment, monitoring.",
       "docs": [
@@ -1272,15 +1136,15 @@
         },
         {
           "id": "b",
-          "text": "Manual guess only"
+          "text": "No validation (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "Leak labels (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "Azure Machine Learning"
         }
       ],
       "correct": [
@@ -1306,11 +1170,11 @@
         },
         {
           "id": "b",
-          "text": "Azure Machine Learning AutoML"
+          "text": "Manual Excel regression only"
         },
         {
           "id": "c",
-          "text": "Manual Excel regression only"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "d",
@@ -1340,23 +1204,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning AutoML"
-        },
-        {
-          "id": "b",
           "text": "Azure Machine Learning"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Manual guess only"
         },
         {
+          "id": "c",
+          "text": "Azure Machine Learning AutoML"
+        },
+        {
           "id": "d",
-          "text": "No validation"
+          "text": "No validation (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AutoML searches algorithms and hyperparameters. Compare with Azure Machine Learning: Azure ML covers training, deployment, monitoring.",
       "docs": [
@@ -1378,15 +1242,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning"
+          "text": "No versioning"
         },
         {
           "id": "b",
-          "text": "Manual Excel regression only"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "d",
@@ -1394,7 +1258,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure ML covers training, deployment, monitoring.",
       "docs": [
@@ -1412,23 +1276,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning AutoML"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "b",
-          "text": "Manual guess only"
+          "text": "No validation (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "Leak labels (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "Azure Machine Learning AutoML"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "AutoML searches algorithms and hyperparameters.",
       "docs": [
@@ -1446,11 +1310,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "b",
-          "text": "Manual Excel regression only"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "c",
@@ -1462,7 +1326,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure ML covers training, deployment, monitoring.",
       "docs": [
@@ -1480,23 +1344,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning AutoML"
+          "text": "Leak labels (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Manual guess only"
+          "text": "No validation (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "Azure Machine Learning"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AutoML searches algorithms and hyperparameters.",
       "docs": [
@@ -1514,15 +1378,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning"
+          "text": "No versioning"
         },
         {
           "id": "b",
-          "text": "Manual Excel regression only"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "c",
-          "text": "No versioning"
+          "text": "Azure Machine Learning AutoML"
         },
         {
           "id": "d",
@@ -1530,7 +1394,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure ML covers training, deployment, monitoring.",
       "docs": [
@@ -1548,23 +1412,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Machine Learning AutoML"
+          "text": "Azure Machine Learning"
         },
         {
           "id": "b",
-          "text": "Manual guess only"
+          "text": "Leak labels (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No validation"
+          "text": "No validation (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Leak labels"
+          "text": "Azure Machine Learning AutoML"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "AutoML searches algorithms and hyperparameters.",
       "docs": [
@@ -1582,15 +1446,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Vision"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ping utility"
+          "text": "Azure AI Vision Read API"
         },
         {
           "id": "c",
-          "text": "SNMP"
+          "text": "Azure AI Vision"
         },
         {
           "id": "d",
@@ -1598,7 +1462,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Vision APIs classify and detect objects.",
       "docs": [
@@ -1616,23 +1480,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Vision Read API"
+          "text": "Manual typing (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "OCR via telnet"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual typing"
+          "text": "Azure AI Vision"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure AI Vision Read API"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Read API extracts printed and handwritten text.",
       "docs": [
@@ -1650,23 +1514,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Vision"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ping utility"
+          "text": "Azure AI Vision"
         },
         {
           "id": "c",
-          "text": "SNMP"
+          "text": "DNS only"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Azure AI Vision Read API"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Vision APIs classify and detect objects.",
       "docs": [
@@ -1688,15 +1552,15 @@
         },
         {
           "id": "b",
-          "text": "Ping utility"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "SNMP"
+          "text": "DNS only"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Azure AI Vision Read API"
         }
       ],
       "correct": [
@@ -1718,23 +1582,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Vision"
+          "text": "Azure AI Vision Read API"
         },
         {
           "id": "b",
-          "text": "Ping utility"
+          "text": "DNS only"
         },
         {
           "id": "c",
-          "text": "SNMP"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Azure AI Vision"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Vision APIs classify and detect objects.",
       "docs": [
@@ -1756,15 +1620,15 @@
         },
         {
           "id": "b",
-          "text": "OCR via telnet"
+          "text": "Azure AI Vision"
         },
         {
           "id": "c",
-          "text": "Manual typing"
+          "text": "Manual typing (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "ICMP (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1786,23 +1650,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Vision Read API"
+          "text": "Azure AI Vision"
         },
         {
           "id": "b",
-          "text": "OCR via telnet"
+          "text": "Azure AI Vision Read API"
         },
         {
           "id": "c",
-          "text": "Manual typing"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Manual typing (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Read API extracts printed and handwritten text.",
       "docs": [
@@ -1820,23 +1684,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Vision Read API"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "OCR via telnet"
+          "text": "Azure AI Vision"
         },
         {
           "id": "c",
-          "text": "Manual typing"
+          "text": "Manual typing (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure AI Vision Read API"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Read API extracts printed and handwritten text.",
       "docs": [
@@ -1854,15 +1718,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Vision"
+          "text": "Azure AI Vision Read API"
         },
         {
           "id": "b",
-          "text": "Ping utility"
+          "text": "Azure AI Vision"
         },
         {
           "id": "c",
-          "text": "SNMP"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "d",
@@ -1870,7 +1734,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Vision APIs classify and detect objects.",
       "docs": [
@@ -1892,15 +1756,15 @@
         },
         {
           "id": "b",
-          "text": "OCR via telnet"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual typing"
+          "text": "Manual typing (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure AI Vision"
         }
       ],
       "correct": [
@@ -1922,23 +1786,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Vision"
+          "text": "DNS only"
         },
         {
           "id": "b",
-          "text": "Ping utility"
+          "text": "Azure AI Vision"
         },
         {
           "id": "c",
-          "text": "SNMP"
+          "text": "SNMP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Azure AI Vision Read API"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Vision APIs classify and detect objects.",
       "docs": [
@@ -1956,23 +1820,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Vision Read API"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "OCR via telnet"
+          "text": "Manual typing (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual typing"
+          "text": "Azure AI Vision"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Azure AI Vision Read API"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Read API extracts printed and handwritten text.",
       "docs": [
@@ -1994,15 +1858,15 @@
         },
         {
           "id": "b",
-          "text": "Azure AI Vision Read API"
-        },
-        {
-          "id": "c",
           "text": "Ping utility"
         },
         {
+          "id": "c",
+          "text": "Azure AI Vision Read API"
+        },
+        {
           "id": "d",
-          "text": "SNMP"
+          "text": "SNMP (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2032,15 +1896,15 @@
         },
         {
           "id": "b",
-          "text": "Azure AI Vision"
+          "text": "OCR via telnet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "OCR via telnet"
+          "text": "Manual typing (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Manual typing"
+          "text": "Azure AI Vision"
         }
       ],
       "correct": [
@@ -2070,15 +1934,15 @@
         },
         {
           "id": "b",
-          "text": "Telnet to router"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "c",
-          "text": "ICMP flood"
+          "text": "Archive tier only"
         },
         {
           "id": "d",
-          "text": "Archive tier only"
+          "text": "Azure OpenAI"
         }
       ],
       "correct": [
@@ -2100,23 +1964,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Language + Bot Service patterns"
+          "text": "ICMP bot (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Telnet chat"
+          "text": "Azure OpenAI Service"
         },
         {
           "id": "c",
-          "text": "ICMP bot"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "FTP (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Language services power NLU for bots.",
       "docs": [
@@ -2134,23 +1998,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure OpenAI Service"
+          "text": "Azure OpenAI"
         },
         {
           "id": "b",
-          "text": "Telnet to router"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "c",
-          "text": "ICMP flood"
+          "text": "Archive tier only"
         },
         {
           "id": "d",
-          "text": "Archive tier only"
+          "text": "Azure OpenAI Service"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
       "docs": [
@@ -2168,23 +2032,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure OpenAI Service"
+          "text": "Archive tier only"
         },
         {
           "id": "b",
-          "text": "Telnet to router"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "c",
-          "text": "ICMP flood"
+          "text": "Azure OpenAI Service"
         },
         {
           "id": "d",
-          "text": "Archive tier only"
+          "text": "Azure OpenAI"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
       "docs": [
@@ -2206,11 +2070,11 @@
         },
         {
           "id": "b",
-          "text": "Telnet to router"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "c",
-          "text": "ICMP flood"
+          "text": "Azure OpenAI"
         },
         {
           "id": "d",
@@ -2236,23 +2100,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Language + Bot Service patterns"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Telnet chat"
+          "text": "Azure OpenAI"
         },
         {
           "id": "c",
-          "text": "ICMP bot"
+          "text": "Azure OpenAI Service"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure AI Language + Bot Service patterns"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Language services power NLU for bots.",
       "docs": [
@@ -2270,23 +2134,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Language + Bot Service patterns"
+          "text": "Azure OpenAI"
         },
         {
           "id": "b",
-          "text": "Telnet chat"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "c",
-          "text": "ICMP bot"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure OpenAI Service"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Language services power NLU for bots.",
       "docs": [
@@ -2304,23 +2168,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Language + Bot Service patterns"
+          "text": "Azure OpenAI Service"
         },
         {
           "id": "b",
-          "text": "Telnet chat"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "ICMP bot"
+          "text": "Azure OpenAI"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure AI Language + Bot Service patterns"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Language services power NLU for bots.",
       "docs": [
@@ -2338,23 +2202,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure OpenAI Service"
+          "text": "Archive tier only"
         },
         {
           "id": "b",
-          "text": "Telnet to router"
+          "text": "Azure OpenAI Service"
         },
         {
           "id": "c",
-          "text": "ICMP flood"
+          "text": "Azure OpenAI"
         },
         {
           "id": "d",
-          "text": "Archive tier only"
+          "text": "Azure AI Language + Bot Service patterns"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
       "docs": [
@@ -2372,23 +2236,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Language + Bot Service patterns"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Telnet chat"
+          "text": "Azure OpenAI Service"
         },
         {
           "id": "c",
-          "text": "ICMP bot"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "ICMP bot (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Language services power NLU for bots.",
       "docs": [
@@ -2406,15 +2270,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure OpenAI Service"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "b",
-          "text": "Telnet to router"
+          "text": "Azure OpenAI Service"
         },
         {
           "id": "c",
-          "text": "ICMP flood"
+          "text": "Azure OpenAI"
         },
         {
           "id": "d",
@@ -2422,7 +2286,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure OpenAI hosts foundation models with enterprise controls.",
       "docs": [
@@ -2440,23 +2304,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Language + Bot Service patterns"
+          "text": "Azure OpenAI"
         },
         {
           "id": "b",
-          "text": "Telnet chat"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "c",
-          "text": "ICMP bot"
+          "text": "FTP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "FTP"
+          "text": "Azure OpenAI Service"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Language services power NLU for bots.",
       "docs": [
@@ -2474,23 +2338,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure OpenAI Service"
-        },
-        {
-          "id": "b",
-          "text": "Azure AI Language + Bot Service patterns"
-        },
-        {
-          "id": "c",
           "text": "Telnet to router"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "ICMP flood"
+        },
+        {
+          "id": "c",
+          "text": "Azure AI Language + Bot Service patterns"
+        },
+        {
+          "id": "d",
+          "text": "Azure OpenAI Service"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure OpenAI hosts foundation models with enterprise controls. Compare with Azure AI Language + Bot Service patterns: Language services power NLU for bots.",
       "docs": [
@@ -2512,23 +2376,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure AI Language + Bot Service patterns"
+          "text": "ICMP bot (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Azure OpenAI Service"
+          "text": "Azure AI Language + Bot Service patterns"
         },
         {
           "id": "c",
-          "text": "Telnet chat"
+          "text": "Azure OpenAI"
         },
         {
           "id": "d",
-          "text": "ICMP bot"
+          "text": "Azure OpenAI Service"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Language services power NLU for bots. Compare with Azure OpenAI Service: Azure OpenAI hosts foundation models with enterprise controls.",
       "docs": [

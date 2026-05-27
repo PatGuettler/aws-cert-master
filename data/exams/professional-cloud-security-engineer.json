@@ -71,142 +71,6 @@
   ],
   "questions": [
     {
-      "id": "pcse-q001",
-      "domain": "org-governance",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud Security Engineer and reviewing Configuring access within a cloud solution environment. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "PCSE exam guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use PCSE exam guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "PCSE exam guide",
-          "url": "https://cloud.google.com/learn/certification/guides/cloud-security-engineer"
-        }
-      ]
-    },
-    {
-      "id": "pcse-q002",
-      "domain": "network-security",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud Security Engineer and reviewing Configuring network security. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud Armor"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Cloud Armor and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Cloud Armor",
-          "url": "https://cloud.google.com/armor/docs/cloud-armor-overview"
-        }
-      ]
-    },
-    {
-      "id": "pcse-q003",
-      "domain": "data-protection",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud Security Engineer and reviewing Ensuring data protection. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cloud KMS"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Cloud KMS and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Cloud KMS",
-          "url": "https://cloud.google.com/kms/docs"
-        }
-      ]
-    },
-    {
-      "id": "pcse-q004",
-      "domain": "operations",
-      "type": "multiple-choice",
-      "text": "You are preparing for Google Professional Cloud Security Engineer and reviewing Managing operations in a cloud solution environment. Which source aligns with official Google Cloud documentation and exam guides?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Security Command Center"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Security Command Center and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Security Command Center",
-          "url": "https://cloud.google.com/security-command-center/docs"
-        }
-      ]
-    },
-    {
       "id": "pcse-q005",
       "domain": "org-governance",
       "type": "multiple-choice",
@@ -214,23 +78,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Public admin"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "Organization policies"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No constraints"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Org policies enforce guardrails.",
       "docs": [
@@ -252,15 +116,15 @@
         },
         {
           "id": "b",
-          "text": "Open buckets"
+          "text": "Organization policies"
         },
         {
           "id": "c",
-          "text": "ACL 777"
+          "text": "No audit (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "ACL 777 (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -282,23 +146,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "PCSE exam guide"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Public admin"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "Organization policies"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "Organization policy constraints on public access"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Org policies enforce guardrails.",
       "docs": [
@@ -320,15 +184,15 @@
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Public admin"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "PCSE exam guide"
         }
       ],
       "correct": [
@@ -350,23 +214,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Organization policies"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "Public admin"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "PCSE exam guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Org policies enforce guardrails.",
       "docs": [
@@ -384,23 +248,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policy constraints on public access"
+          "text": "No audit (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Open buckets"
+          "text": "Organization policies"
         },
         {
           "id": "c",
-          "text": "ACL 777"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "ACL 777 (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Org constraints prevent data exposure.",
       "docs": [
@@ -418,23 +282,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policy constraints on public access"
+          "text": "No audit (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Open buckets"
+          "text": "PCSE exam guide"
         },
         {
           "id": "c",
-          "text": "ACL 777"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "Organization policies"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Org constraints prevent data exposure.",
       "docs": [
@@ -452,23 +316,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policy constraints on public access"
+          "text": "PCSE exam guide"
         },
         {
           "id": "b",
-          "text": "Open buckets"
+          "text": "Organization policies"
         },
         {
           "id": "c",
-          "text": "ACL 777"
+          "text": "No audit (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "Organization policy constraints on public access"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Org constraints prevent data exposure.",
       "docs": [
@@ -486,11 +350,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Public admin"
         },
         {
           "id": "c",
@@ -498,11 +362,11 @@
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "Organization policies"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Org policies enforce guardrails.",
       "docs": [
@@ -524,15 +388,15 @@
         },
         {
           "id": "b",
-          "text": "Open buckets"
+          "text": "No audit (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "ACL 777"
+          "text": "Organization policies"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "ACL 777 (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -558,7 +422,7 @@
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Public admin"
         },
         {
           "id": "c",
@@ -566,7 +430,7 @@
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "Organization policy constraints on public access"
         }
       ],
       "correct": [
@@ -592,15 +456,15 @@
         },
         {
           "id": "b",
-          "text": "Open buckets"
+          "text": "Organization policies"
         },
         {
           "id": "c",
-          "text": "ACL 777"
+          "text": "No audit (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "ACL 777 (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -622,23 +486,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "PCSE exam guide"
         },
         {
           "id": "b",
-          "text": "Organization policy constraints on public access"
+          "text": "Organization policies"
         },
         {
           "id": "c",
-          "text": "Allow all regions"
+          "text": "No constraints"
         },
         {
           "id": "d",
-          "text": "No constraints"
+          "text": "Organization policy constraints on public access"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Org policies enforce guardrails. Compare with Organization policy constraints on public access: Org constraints prevent data exposure.",
       "docs": [
@@ -664,15 +528,15 @@
         },
         {
           "id": "b",
-          "text": "Organization policies"
+          "text": "ACL 777 (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Open buckets"
+          "text": "Organization policies"
         },
         {
           "id": "d",
-          "text": "ACL 777"
+          "text": "PCSE exam guide"
         }
       ],
       "correct": [
@@ -698,23 +562,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Public admin"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "Organization policies"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "PCSE exam guide"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Org policies enforce guardrails.",
       "docs": [
@@ -732,23 +596,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policy constraints on public access"
+          "text": "ACL 777 (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Open buckets"
+          "text": "Organization policies"
         },
         {
           "id": "c",
-          "text": "ACL 777"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "d",
-          "text": "No audit"
+          "text": "No audit (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Org constraints prevent data exposure.",
       "docs": [
@@ -766,23 +630,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organization policies"
+          "text": "Public admin"
         },
         {
           "id": "b",
-          "text": "Allow all regions"
+          "text": "Organization policy constraints on public access"
         },
         {
           "id": "c",
-          "text": "No constraints"
+          "text": "Organization policies"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "No constraints"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Org policies enforce guardrails.",
       "docs": [
@@ -800,23 +664,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Armor"
+          "text": "VPC Service Controls"
         },
         {
           "id": "b",
-          "text": "Open all ports"
+          "text": "ICMP only"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "d",
-          "text": "ICMP only"
+          "text": "Cloud Armor"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Armor filters malicious traffic.",
       "docs": [
@@ -834,23 +698,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Service Controls"
+          "text": "Cloud Armor"
         },
         {
           "id": "b",
-          "text": "Public internet egress always"
+          "text": "No logs"
         },
         {
           "id": "c",
-          "text": "Shared keys"
+          "text": "VPC Service Controls"
         },
         {
           "id": "d",
-          "text": "No logs"
+          "text": "SSL policies on load balancers"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VPC SC limits API-based data movement.",
       "docs": [
@@ -868,23 +732,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSL policies on load balancers"
+          "text": "VPC Service Controls"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "c",
-          "text": "Weak ciphers"
+          "text": "Cloud Armor"
         },
         {
           "id": "d",
-          "text": "Self-signed only"
+          "text": "Self-signed only (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SSL policies enforce cipher standards.",
       "docs": [
@@ -902,15 +766,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Armor"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "b",
-          "text": "Open all ports"
+          "text": "VPC Service Controls"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "Cloud Armor"
         },
         {
           "id": "d",
@@ -918,7 +782,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cloud Armor filters malicious traffic.",
       "docs": [
@@ -936,23 +800,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Armor"
+          "text": "ICMP only"
         },
         {
           "id": "b",
-          "text": "Open all ports"
-        },
-        {
-          "id": "c",
           "text": "Disable TLS"
         },
         {
+          "id": "c",
+          "text": "VPC Service Controls"
+        },
+        {
           "id": "d",
-          "text": "ICMP only"
+          "text": "Cloud Armor"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Armor filters malicious traffic.",
       "docs": [
@@ -970,23 +834,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Armor"
+          "text": "ICMP only"
         },
         {
           "id": "b",
-          "text": "Open all ports"
+          "text": "Cloud Armor"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "d",
-          "text": "ICMP only"
+          "text": "VPC Service Controls"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud Armor filters malicious traffic.",
       "docs": [
@@ -1004,23 +868,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Service Controls"
+          "text": "Cloud Armor"
         },
         {
           "id": "b",
-          "text": "Public internet egress always"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "c",
-          "text": "Shared keys"
+          "text": "No logs"
         },
         {
           "id": "d",
-          "text": "No logs"
+          "text": "VPC Service Controls"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VPC SC limits API-based data movement.",
       "docs": [
@@ -1042,15 +906,15 @@
         },
         {
           "id": "b",
-          "text": "Public internet egress always"
+          "text": "No logs"
         },
         {
           "id": "c",
-          "text": "Shared keys"
+          "text": "Cloud Armor"
         },
         {
           "id": "d",
-          "text": "No logs"
+          "text": "SSL policies on load balancers"
         }
       ],
       "correct": [
@@ -1076,15 +940,15 @@
         },
         {
           "id": "b",
-          "text": "Public internet egress always"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "c",
-          "text": "Shared keys"
+          "text": "No logs"
         },
         {
           "id": "d",
-          "text": "No logs"
+          "text": "Cloud Armor"
         }
       ],
       "correct": [
@@ -1106,23 +970,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSL policies on load balancers"
+          "text": "Cloud Armor"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "VPC Service Controls"
         },
         {
           "id": "c",
-          "text": "Weak ciphers"
+          "text": "Self-signed only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Self-signed only"
+          "text": "SSL policies on load balancers"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SSL policies enforce cipher standards.",
       "docs": [
@@ -1140,23 +1004,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSL policies on load balancers"
+          "text": "Self-signed only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "Cloud Armor"
         },
         {
           "id": "c",
-          "text": "Weak ciphers"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "d",
-          "text": "Self-signed only"
+          "text": "VPC Service Controls"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SSL policies enforce cipher standards.",
       "docs": [
@@ -1174,23 +1038,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSL policies on load balancers"
+          "text": "Cloud Armor"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "VPC Service Controls"
         },
         {
           "id": "c",
-          "text": "Weak ciphers"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "d",
-          "text": "Self-signed only"
+          "text": "Self-signed only (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SSL policies enforce cipher standards.",
       "docs": [
@@ -1208,23 +1072,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Armor"
+          "text": "ICMP only"
         },
         {
           "id": "b",
-          "text": "Open all ports"
+          "text": "Cloud Armor"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "VPC Service Controls"
         },
         {
           "id": "d",
-          "text": "ICMP only"
+          "text": "SSL policies on load balancers"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud Armor filters malicious traffic.",
       "docs": [
@@ -1242,23 +1106,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Service Controls"
+          "text": "Cloud Armor"
         },
         {
           "id": "b",
-          "text": "Public internet egress always"
+          "text": "No logs"
         },
         {
           "id": "c",
-          "text": "Shared keys"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "d",
-          "text": "No logs"
+          "text": "VPC Service Controls"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VPC SC limits API-based data movement.",
       "docs": [
@@ -1276,23 +1140,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSL policies on load balancers"
+          "text": "Cloud Armor"
         },
         {
           "id": "b",
-          "text": "HTTP only"
+          "text": "VPC Service Controls"
         },
         {
           "id": "c",
-          "text": "Weak ciphers"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "d",
-          "text": "Self-signed only"
+          "text": "Self-signed only (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SSL policies enforce cipher standards.",
       "docs": [
@@ -1310,23 +1174,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud Armor"
+          "text": "VPC Service Controls"
         },
         {
           "id": "b",
-          "text": "Open all ports"
+          "text": "ICMP only"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "SSL policies on load balancers"
         },
         {
           "id": "d",
-          "text": "ICMP only"
+          "text": "Cloud Armor"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud Armor filters malicious traffic.",
       "docs": [
@@ -1344,23 +1208,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Service Controls"
+          "text": "Cloud Armor"
         },
         {
           "id": "b",
-          "text": "Public internet egress always"
+          "text": "No logs"
         },
         {
           "id": "c",
-          "text": "Shared keys"
+          "text": "VPC Service Controls"
         },
         {
           "id": "d",
-          "text": "No logs"
+          "text": "SSL policies on load balancers"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VPC SC limits API-based data movement.",
       "docs": [
@@ -1378,23 +1242,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Email passwords"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Secret Manager"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Secret Manager versions secrets.",
       "docs": [
@@ -1412,23 +1276,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS automatic rotation"
+          "text": "Email keys (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Never rotate"
-        },
-        {
-          "id": "c",
           "text": "Keys in git"
         },
         {
+          "id": "c",
+          "text": "Secret Manager"
+        },
+        {
           "id": "d",
-          "text": "Email keys"
+          "text": "Cloud KMS automatic rotation"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Rotation limits key compromise window.",
       "docs": [
@@ -1446,15 +1310,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Env in public bucket"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Secret Manager"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "d",
@@ -1462,7 +1326,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secret Manager versions secrets.",
       "docs": [
@@ -1480,23 +1344,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Email passwords"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Secret Manager"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Env in public bucket"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secret Manager versions secrets.",
       "docs": [
@@ -1514,15 +1378,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Env in public bucket"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Secret Manager"
         },
         {
           "id": "d",
@@ -1530,7 +1394,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Secret Manager versions secrets.",
       "docs": [
@@ -1548,23 +1412,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS automatic rotation"
+          "text": "Secret Manager"
         },
         {
           "id": "b",
-          "text": "Never rotate"
-        },
-        {
-          "id": "c",
           "text": "Keys in git"
         },
         {
+          "id": "c",
+          "text": "Cloud KMS automatic rotation"
+        },
+        {
           "id": "d",
-          "text": "Email keys"
+          "text": "Email keys (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Rotation limits key compromise window.",
       "docs": [
@@ -1586,15 +1450,15 @@
         },
         {
           "id": "b",
-          "text": "Never rotate"
+          "text": "Secret Manager"
         },
         {
           "id": "c",
-          "text": "Keys in git"
+          "text": "Email keys (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
@@ -1620,15 +1484,15 @@
         },
         {
           "id": "b",
-          "text": "Never rotate"
+          "text": "Secret Manager"
         },
         {
           "id": "c",
-          "text": "Keys in git"
+          "text": "Email keys (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Keys in git"
         }
       ],
       "correct": [
@@ -1650,23 +1514,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
-        },
-        {
-          "id": "b",
-          "text": "Git commit secrets"
-        },
-        {
-          "id": "c",
           "text": "Env in public bucket"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "c",
           "text": "Email passwords"
+        },
+        {
+          "id": "d",
+          "text": "Cloud KMS automatic rotation"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secret Manager versions secrets.",
       "docs": [
@@ -1688,15 +1552,15 @@
         },
         {
           "id": "b",
-          "text": "Never rotate"
-        },
-        {
-          "id": "c",
           "text": "Keys in git"
         },
         {
+          "id": "c",
+          "text": "Secret Manager"
+        },
+        {
           "id": "d",
-          "text": "Email keys"
+          "text": "Email keys (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -1722,15 +1586,15 @@
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
-        },
-        {
-          "id": "c",
           "text": "Env in public bucket"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Email passwords"
+        },
+        {
+          "id": "d",
+          "text": "Cloud KMS automatic rotation"
         }
       ],
       "correct": [
@@ -1756,15 +1620,15 @@
         },
         {
           "id": "b",
-          "text": "Never rotate"
+          "text": "Secret Manager"
         },
         {
           "id": "c",
-          "text": "Keys in git"
+          "text": "Email keys (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Keys in git"
         }
       ],
       "correct": [
@@ -1786,23 +1650,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
-        },
-        {
-          "id": "b",
-          "text": "Cloud KMS automatic rotation"
-        },
-        {
-          "id": "c",
           "text": "Git commit secrets"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "Env in public bucket"
+        },
+        {
+          "id": "c",
+          "text": "Secret Manager"
+        },
+        {
+          "id": "d",
+          "text": "Cloud KMS automatic rotation"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Secret Manager versions secrets. Compare with Cloud KMS automatic rotation: Rotation limits key compromise window.",
       "docs": [
@@ -1824,23 +1688,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS automatic rotation"
-        },
-        {
-          "id": "b",
           "text": "Secret Manager"
         },
         {
+          "id": "b",
+          "text": "Keys in git"
+        },
+        {
           "id": "c",
-          "text": "Never rotate"
+          "text": "Never rotate (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Keys in git"
+          "text": "Cloud KMS automatic rotation"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Rotation limits key compromise window. Compare with Secret Manager: Secret Manager versions secrets.",
       "docs": [
@@ -1862,23 +1726,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Email passwords"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
-        },
-        {
-          "id": "c",
           "text": "Env in public bucket"
         },
         {
+          "id": "c",
+          "text": "Secret Manager"
+        },
+        {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Cloud KMS automatic rotation"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Secret Manager versions secrets.",
       "docs": [
@@ -1896,23 +1760,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cloud KMS automatic rotation"
+          "text": "Secret Manager"
         },
         {
           "id": "b",
-          "text": "Never rotate"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "c",
-          "text": "Keys in git"
+          "text": "Email keys (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Email keys"
+          "text": "Cloud KMS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Rotation limits key compromise window.",
       "docs": [
@@ -1930,15 +1794,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Secret Manager"
+          "text": "Cloud KMS automatic rotation"
         },
         {
           "id": "b",
-          "text": "Git commit secrets"
+          "text": "Env in public bucket"
         },
         {
           "id": "c",
-          "text": "Env in public bucket"
+          "text": "Secret Manager"
         },
         {
           "id": "d",
@@ -1946,7 +1810,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Secret Manager versions secrets.",
       "docs": [
@@ -1968,15 +1832,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "No scanning"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Spreadsheet (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "Google Security Operations (Chronicle)"
         }
       ],
       "correct": [
@@ -1998,23 +1862,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Security Operations (Chronicle)"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Security Command Center"
         },
         {
           "id": "c",
-          "text": "Delete events"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Delete events (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
@@ -2032,23 +1896,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Spreadsheet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Security Command Center"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "No scanning"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "Google Security Operations (Chronicle)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SCC aggregates risk findings.",
       "docs": [
@@ -2066,15 +1930,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Spreadsheet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Security Command Center"
         },
         {
           "id": "d",
@@ -2082,7 +1946,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SCC aggregates risk findings.",
       "docs": [
@@ -2104,11 +1968,11 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Spreadsheet (not recommended for production workloads)"
         },
         {
           "id": "d",
@@ -2138,15 +2002,15 @@
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Delete events"
+          "text": "Delete events (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Security Command Center"
         }
       ],
       "correct": [
@@ -2168,23 +2032,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Security Operations (Chronicle)"
+          "text": "Security Command Center"
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Delete events"
+          "text": "Delete events (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Google Security Operations (Chronicle)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
@@ -2202,23 +2066,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Security Operations (Chronicle)"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Delete events (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Delete events"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Security Command Center"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
@@ -2236,23 +2100,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "No scanning"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Security Command Center"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "Spreadsheet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SCC aggregates risk findings.",
       "docs": [
@@ -2274,15 +2138,15 @@
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Delete events (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Delete events"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Security Command Center"
         }
       ],
       "correct": [
@@ -2304,23 +2168,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Security Command Center"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "No scanning"
         },
         {
           "id": "d",
-          "text": "No scanning"
+          "text": "Spreadsheet (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SCC aggregates risk findings.",
       "docs": [
@@ -2338,23 +2202,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Security Operations (Chronicle)"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "c",
-          "text": "Delete events"
+          "text": "Security Command Center"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Delete events (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
@@ -2372,7 +2236,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Spreadsheet (not recommended for production workloads)"
         },
         {
           "id": "b",
@@ -2380,15 +2244,15 @@
         },
         {
           "id": "c",
-          "text": "Ignore CVEs"
+          "text": "Security Command Center"
         },
         {
           "id": "d",
-          "text": "Spreadsheet"
+          "text": "Ignore CVEs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SCC aggregates risk findings. Compare with Google Security Operations (Chronicle): Chronicle analyzes security telemetry.",
       "docs": [
@@ -2414,15 +2278,15 @@
         },
         {
           "id": "b",
-          "text": "Security Command Center"
+          "text": "Delete events (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Notepad logs"
+          "text": "Security Command Center"
         },
         {
           "id": "d",
-          "text": "Delete events"
+          "text": "Notepad logs (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2448,15 +2312,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Spreadsheet (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Security Command Center"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "d",
@@ -2464,7 +2328,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SCC aggregates risk findings.",
       "docs": [
@@ -2482,23 +2346,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Google Security Operations (Chronicle)"
+          "text": "Security Command Center"
         },
         {
           "id": "b",
-          "text": "Notepad logs"
+          "text": "ICMP (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Delete events"
+          "text": "Delete events (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "ICMP"
+          "text": "Google Security Operations (Chronicle)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Chronicle analyzes security telemetry.",
       "docs": [
@@ -2516,15 +2380,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Security Command Center"
+          "text": "Google Security Operations (Chronicle)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Spreadsheet (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Security Command Center"
         },
         {
           "id": "d",
@@ -2532,7 +2396,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SCC aggregates risk findings.",
       "docs": [

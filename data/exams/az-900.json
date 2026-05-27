@@ -60,108 +60,6 @@
   ],
   "questions": [
     {
-      "id": "az9-q001",
-      "domain": "cloud-concepts",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Fundamentals and reviewing Describe cloud concepts. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AZ-900 study guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use AZ-900 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "AZ-900 study guide",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
-        }
-      ]
-    },
-    {
-      "id": "az9-q002",
-      "domain": "azure-architecture",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Fundamentals and reviewing Describe Azure architecture and services. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure compute options"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure compute options and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure compute options",
-          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree"
-        }
-      ]
-    },
-    {
-      "id": "az9-q003",
-      "domain": "azure-management",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Fundamentals and reviewing Describe Azure management and governance. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Microsoft Entra ID"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Microsoft Entra ID and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"
-        }
-      ]
-    },
-    {
       "id": "az9-q004",
       "domain": "cloud-concepts",
       "type": "multiple-choice",
@@ -169,23 +67,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pay-as-you-go model"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "b",
-          "text": "Fixed perpetual license only"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "c",
-          "text": "CapEx data center only"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "d",
-          "text": "No metering"
+          "text": "Scale resources up or down on demand"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cloud shifts spend to operational usage-based billing.",
       "docs": [
@@ -207,15 +105,15 @@
         },
         {
           "id": "b",
-          "text": "Private cloud is always on laptops only"
+          "text": "Availability sets and zones"
         },
         {
           "id": "c",
-          "text": "Hybrid removes all networking"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "Edge replaces cloud"
+          "text": "Scale resources up or down on demand"
         }
       ],
       "correct": [
@@ -237,23 +135,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Availability sets and zones"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "b",
-          "text": "Single VM always sufficient"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "c",
-          "text": "Disable redundancy"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Availability sets and zones"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Zones isolate failure domains within a region.",
       "docs": [
@@ -271,23 +169,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scale resources up or down on demand"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "b",
-          "text": "Fixed capacity only"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "c",
-          "text": "Manual hardware orders"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "d",
-          "text": "No automation"
+          "text": "Availability sets and zones"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Elasticity matches workload changes.",
       "docs": [
@@ -309,15 +207,15 @@
         },
         {
           "id": "b",
-          "text": "Microsoft patches all apps"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "c",
-          "text": "No customer duties"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Pay-as-you-go model (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -339,23 +237,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pay-as-you-go model"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "b",
-          "text": "Fixed perpetual license only"
+          "text": "Microsoft secures the cloud; customers secure workloads \u2014 alternative 3"
         },
         {
           "id": "c",
-          "text": "CapEx data center only"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "d",
-          "text": "No metering"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cloud shifts spend to operational usage-based billing.",
       "docs": [
@@ -373,23 +271,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pay-as-you-go model"
+          "text": "Availability sets and zones"
         },
         {
           "id": "b",
-          "text": "Fixed perpetual license only"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "c",
-          "text": "CapEx data center only"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "No metering"
+          "text": "Public cloud shared tenancy with isolation controls"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cloud shifts spend to operational usage-based billing.",
       "docs": [
@@ -407,23 +305,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pay-as-you-go model"
+          "text": "Availability sets and zones"
         },
         {
           "id": "b",
-          "text": "Fixed perpetual license only"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "c",
-          "text": "CapEx data center only"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "d",
-          "text": "No metering"
+          "text": "Pay-as-you-go model"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cloud shifts spend to operational usage-based billing.",
       "docs": [
@@ -441,23 +339,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Public cloud shared tenancy with isolation controls"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Private cloud is always on laptops only"
+          "text": "Pay-as-you-go model (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Hybrid removes all networking"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "Edge replaces cloud"
+          "text": "Public cloud shared tenancy with isolation controls"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Public cloud offers elastic shared infrastructure.",
       "docs": [
@@ -475,23 +373,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Public cloud shared tenancy with isolation controls"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Private cloud is always on laptops only"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "c",
-          "text": "Hybrid removes all networking"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "Edge replaces cloud"
+          "text": "Availability sets and zones"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Public cloud offers elastic shared infrastructure.",
       "docs": [
@@ -509,23 +407,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Public cloud shared tenancy with isolation controls"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Private cloud is always on laptops only"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "c",
-          "text": "Hybrid removes all networking"
+          "text": "Pay-as-you-go model (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Edge replaces cloud"
+          "text": "Public cloud shared tenancy with isolation controls"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Public cloud offers elastic shared infrastructure.",
       "docs": [
@@ -543,23 +441,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Availability sets and zones"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Single VM always sufficient"
+          "text": "Availability sets and zones"
         },
         {
           "id": "c",
-          "text": "Disable redundancy"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Zones isolate failure domains within a region.",
       "docs": [
@@ -581,15 +479,15 @@
         },
         {
           "id": "b",
-          "text": "Single VM always sufficient"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "c",
-          "text": "Disable redundancy"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Scale resources up or down on demand"
         }
       ],
       "correct": [
@@ -611,23 +509,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Availability sets and zones"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Single VM always sufficient"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "c",
-          "text": "Disable redundancy"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "d",
-          "text": "Ignore SLAs"
+          "text": "Availability sets and zones"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Zones isolate failure domains within a region.",
       "docs": [
@@ -645,23 +543,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scale resources up or down on demand"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "b",
-          "text": "Fixed capacity only"
+          "text": "No automation (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Manual hardware orders"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "d",
-          "text": "No automation"
+          "text": "Public cloud shared tenancy with isolation controls"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Elasticity matches workload changes.",
       "docs": [
@@ -683,15 +581,15 @@
         },
         {
           "id": "b",
-          "text": "Fixed capacity only"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "c",
-          "text": "Manual hardware orders"
+          "text": "Pay-as-you-go model (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No automation"
+          "text": "Pay-as-you-go model"
         }
       ],
       "correct": [
@@ -713,23 +611,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scale resources up or down on demand"
+          "text": "Public cloud shared tenancy with isolation controls"
         },
         {
           "id": "b",
-          "text": "Fixed capacity only"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "c",
-          "text": "Manual hardware orders"
+          "text": "Pay-as-you-go model (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No automation"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Elasticity matches workload changes.",
       "docs": [
@@ -747,23 +645,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft secures the cloud; customers secure workloads"
+          "text": "Scale resources up or down on demand"
         },
         {
           "id": "b",
-          "text": "Microsoft patches all apps"
+          "text": "Pay-as-you-go model (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No customer duties"
+          "text": "Pay-as-you-go model"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Shared responsibility splits security tasks.",
       "docs": [
@@ -781,23 +679,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft secures the cloud; customers secure workloads"
+          "text": "Pay-as-you-go model (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Microsoft patches all apps"
+          "text": "Public cloud shared tenancy with isolation controls \u2014 alternative 3"
         },
         {
           "id": "c",
-          "text": "No customer duties"
+          "text": "Microsoft secures the cloud; customers secure workloads"
         },
         {
           "id": "d",
-          "text": "Disable updates"
+          "text": "Public cloud shared tenancy with isolation controls"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Shared responsibility splits security tasks.",
       "docs": [
@@ -815,23 +713,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Blob Storage"
+          "text": "Azure Functions"
         },
         {
           "id": "b",
-          "text": "Azure SQL only for blobs"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "Azure App Service"
         },
         {
           "id": "d",
-          "text": "Entra group mail"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Blob Storage is object storage for files and media.",
       "docs": [
@@ -849,23 +747,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Virtual Machines"
+          "text": "Azure App Service"
         },
         {
           "id": "b",
-          "text": "Blob Storage"
+          "text": "Azure Functions"
         },
         {
           "id": "c",
-          "text": "Logic Apps only"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "DNS zones only"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VMs provide IaaS compute.",
       "docs": [
@@ -887,15 +785,15 @@
         },
         {
           "id": "b",
-          "text": "Virtual Network peering only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "c",
-          "text": "ExpressRoute only"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "d",
-          "text": "Archive tier only"
+          "text": "Azure App Service"
         }
       ],
       "correct": [
@@ -917,23 +815,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure App Service"
+          "text": "Azure SQL Database"
         },
         {
           "id": "b",
-          "text": "Blob Storage only"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "c",
-          "text": "VPN SKU"
+          "text": "Azure App Service"
         },
         {
           "id": "d",
-          "text": "ICMP probe"
+          "text": "Azure Functions"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "App Service is PaaS for web apps.",
       "docs": [
@@ -951,23 +849,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure App Service"
         },
         {
           "id": "b",
-          "text": "CSV files only"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Azure Functions"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure SQL Database is managed PaaS SQL.",
       "docs": [
@@ -989,15 +887,15 @@
         },
         {
           "id": "b",
-          "text": "Azure SQL only for blobs"
+          "text": "Azure Functions"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "Entra group mail"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
@@ -1023,15 +921,15 @@
         },
         {
           "id": "b",
-          "text": "Azure SQL only for blobs"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Entra group mail"
+          "text": "Azure Functions"
         }
       ],
       "correct": [
@@ -1053,23 +951,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Blob Storage"
+          "text": "Azure App Service"
         },
         {
           "id": "b",
-          "text": "Azure SQL only for blobs"
+          "text": "Azure Functions"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Entra group mail"
+          "text": "Azure Blob Storage"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Blob Storage is object storage for files and media.",
       "docs": [
@@ -1087,23 +985,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Virtual Machines"
+          "text": "Azure Functions"
         },
         {
           "id": "b",
-          "text": "Blob Storage"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "Logic Apps only"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "DNS zones only"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VMs provide IaaS compute.",
       "docs": [
@@ -1125,15 +1023,15 @@
         },
         {
           "id": "b",
-          "text": "Blob Storage"
+          "text": "Azure SQL Database"
         },
         {
           "id": "c",
-          "text": "Logic Apps only"
+          "text": "Azure Functions"
         },
         {
           "id": "d",
-          "text": "DNS zones only"
+          "text": "Azure Blob Storage"
         }
       ],
       "correct": [
@@ -1159,15 +1057,15 @@
         },
         {
           "id": "b",
-          "text": "Blob Storage"
+          "text": "Azure Functions"
         },
         {
           "id": "c",
-          "text": "Logic Apps only"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "d",
-          "text": "DNS zones only"
+          "text": "Azure Functions \u2014 alternative 3"
         }
       ],
       "correct": [
@@ -1189,23 +1087,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Functions"
+          "text": "Azure App Service"
         },
         {
           "id": "b",
-          "text": "Virtual Network peering only"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "c",
-          "text": "ExpressRoute only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Archive tier only"
+          "text": "Azure Functions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Functions run event-driven code without managing servers.",
       "docs": [
@@ -1223,23 +1121,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Functions"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "b",
-          "text": "Virtual Network peering only"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "c",
-          "text": "ExpressRoute only"
+          "text": "Azure App Service"
         },
         {
           "id": "d",
-          "text": "Archive tier only"
+          "text": "Azure Functions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Functions run event-driven code without managing servers.",
       "docs": [
@@ -1257,23 +1155,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Functions"
+          "text": "Azure SQL Database"
         },
         {
           "id": "b",
-          "text": "Virtual Network peering only"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "c",
-          "text": "ExpressRoute only"
+          "text": "Azure App Service"
         },
         {
           "id": "d",
-          "text": "Archive tier only"
+          "text": "Azure Functions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Functions run event-driven code without managing servers.",
       "docs": [
@@ -1295,15 +1193,15 @@
         },
         {
           "id": "b",
-          "text": "Blob Storage only"
+          "text": "Azure Functions"
         },
         {
           "id": "c",
-          "text": "VPN SKU"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "ICMP probe"
+          "text": "Azure Blob Storage"
         }
       ],
       "correct": [
@@ -1325,23 +1223,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure App Service"
+          "text": "Azure Functions"
         },
         {
           "id": "b",
-          "text": "Blob Storage only"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "VPN SKU"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "ICMP probe"
+          "text": "Azure Blob Storage"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "App Service is PaaS for web apps.",
       "docs": [
@@ -1359,23 +1257,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure App Service"
+          "text": "Azure SQL Database"
         },
         {
           "id": "b",
-          "text": "Blob Storage only"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "VPN SKU"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "ICMP probe"
+          "text": "Azure Blob Storage"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "App Service is PaaS for web apps.",
       "docs": [
@@ -1393,23 +1291,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure App Service"
         },
         {
           "id": "b",
-          "text": "CSV files only"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure SQL Database is managed PaaS SQL.",
       "docs": [
@@ -1427,23 +1325,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Functions"
         },
         {
           "id": "b",
-          "text": "CSV files only"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure Virtual Machines"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure SQL Database is managed PaaS SQL.",
       "docs": [
@@ -1461,23 +1359,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Functions"
         },
         {
           "id": "b",
-          "text": "CSV files only"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure SQL Database is managed PaaS SQL.",
       "docs": [
@@ -1495,23 +1393,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Blob Storage"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "b",
-          "text": "Azure SQL only for blobs"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "VPN gateway"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Entra group mail"
+          "text": "Azure Blob Storage"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Blob Storage is object storage for files and media.",
       "docs": [
@@ -1529,23 +1427,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Virtual Machines"
+          "text": "Azure SQL Database"
         },
         {
           "id": "b",
-          "text": "Blob Storage"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "c",
-          "text": "Logic Apps only"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "d",
-          "text": "DNS zones only"
+          "text": "Azure Functions"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "VMs provide IaaS compute.",
       "docs": [
@@ -1563,23 +1461,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Functions"
+          "text": "Azure App Service"
         },
         {
           "id": "b",
-          "text": "Virtual Network peering only"
+          "text": "Azure Functions"
         },
         {
           "id": "c",
-          "text": "ExpressRoute only"
+          "text": "Azure SQL Database"
         },
         {
           "id": "d",
-          "text": "Archive tier only"
+          "text": "Azure Virtual Machines"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Functions run event-driven code without managing servers.",
       "docs": [
@@ -1597,23 +1495,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure App Service"
+          "text": "Azure Functions"
         },
         {
           "id": "b",
-          "text": "Blob Storage only"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "VPN SKU"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "d",
-          "text": "ICMP probe"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "App Service is PaaS for web apps.",
       "docs": [
@@ -1631,23 +1529,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure SQL Database"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "b",
-          "text": "CSV files only"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "FTP share"
+          "text": "Azure Functions"
         },
         {
           "id": "d",
-          "text": "Telnet"
+          "text": "Azure SQL Database"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure SQL Database is managed PaaS SQL.",
       "docs": [
@@ -1669,15 +1567,15 @@
         },
         {
           "id": "b",
-          "text": "Manual portal clicks only policy"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "c",
-          "text": "Local AD only"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "d",
-          "text": "FTP deploy"
+          "text": "Azure resource tags on subscriptions and resources"
         }
       ],
       "correct": [
@@ -1699,23 +1597,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "b",
-          "text": "Blob lease only"
+          "text": "Azure hierarchy with management groups"
         },
         {
           "id": "c",
-          "text": "NIC teaming"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "d",
-          "text": "VPN SKU only"
+          "text": "Microsoft Entra ID"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Entra ID is the identity platform for Azure.",
       "docs": [
@@ -1733,23 +1631,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure hierarchy with management groups"
-        },
-        {
-          "id": "b",
           "text": "Flat tenant with no RBAC"
         },
         {
+          "id": "b",
+          "text": "Azure hierarchy with management groups"
+        },
+        {
           "id": "c",
-          "text": "Single shared root password"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "d",
-          "text": "No policies"
+          "text": "Microsoft Entra ID"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Management groups scale governance across subscriptions.",
       "docs": [
@@ -1767,23 +1665,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure resource tags on subscriptions and resources"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "b",
-          "text": "Hide all costs"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "c",
-          "text": "One tag for tenant"
+          "text": "No reporting (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No reporting"
+          "text": "Azure hierarchy with management groups (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Tags enable chargeback and FinOps.",
       "docs": [
@@ -1801,23 +1699,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Cost Management"
+          "text": "Azure hierarchy with management groups"
         },
         {
           "id": "b",
-          "text": "Spreadsheet guesses"
+          "text": "Azure hierarchy with management groups \u2014 alternative 3"
         },
         {
           "id": "c",
-          "text": "Ignore invoices"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "d",
-          "text": "Email CSV only"
+          "text": "Microsoft Entra ID"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cost Management analyzes Azure usage.",
       "docs": [
@@ -1835,23 +1733,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Resource Manager templates"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "b",
-          "text": "Manual portal clicks only policy"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "c",
-          "text": "Local AD only"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "d",
-          "text": "FTP deploy"
+          "text": "Azure hierarchy with management groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "ARM provides declarative infrastructure deployment.",
       "docs": [
@@ -1873,15 +1771,15 @@
         },
         {
           "id": "b",
-          "text": "Manual portal clicks only policy"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "Local AD only"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "d",
-          "text": "FTP deploy"
+          "text": "Azure hierarchy with management groups"
         }
       ],
       "correct": [
@@ -1903,23 +1801,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Resource Manager templates"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Manual portal clicks only policy"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "c",
-          "text": "Local AD only"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "d",
-          "text": "FTP deploy"
+          "text": "Azure Resource Manager templates"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "ARM provides declarative infrastructure deployment.",
       "docs": [
@@ -1937,23 +1835,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "b",
-          "text": "Blob lease only"
+          "text": "Azure hierarchy with management groups"
         },
         {
           "id": "c",
-          "text": "NIC teaming"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "d",
-          "text": "VPN SKU only"
+          "text": "Azure Resource Manager templates"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Entra ID is the identity platform for Azure.",
       "docs": [
@@ -1971,23 +1869,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Azure hierarchy with management groups"
         },
         {
           "id": "b",
-          "text": "Blob lease only"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "c",
-          "text": "NIC teaming"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "d",
-          "text": "VPN SKU only"
+          "text": "Microsoft Entra ID"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Entra ID is the identity platform for Azure.",
       "docs": [
@@ -2005,23 +1903,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "b",
-          "text": "Blob lease only"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "NIC teaming"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "d",
-          "text": "VPN SKU only"
+          "text": "Azure hierarchy with management groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Entra ID is the identity platform for Azure.",
       "docs": [
@@ -2039,7 +1937,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure hierarchy with management groups"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "b",
@@ -2047,15 +1945,15 @@
         },
         {
           "id": "c",
-          "text": "Single shared root password"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "d",
-          "text": "No policies"
+          "text": "Azure hierarchy with management groups"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Management groups scale governance across subscriptions.",
       "docs": [
@@ -2077,15 +1975,15 @@
         },
         {
           "id": "b",
-          "text": "Flat tenant with no RBAC"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "c",
-          "text": "Single shared root password"
+          "text": "Flat tenant with no RBAC"
         },
         {
           "id": "d",
-          "text": "No policies"
+          "text": "Microsoft Cost Management"
         }
       ],
       "correct": [
@@ -2107,23 +2005,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure hierarchy with management groups"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "b",
-          "text": "Flat tenant with no RBAC"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "Single shared root password"
+          "text": "Azure hierarchy with management groups"
         },
         {
           "id": "d",
-          "text": "No policies"
+          "text": "Flat tenant with no RBAC"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Management groups scale governance across subscriptions.",
       "docs": [
@@ -2145,15 +2043,15 @@
         },
         {
           "id": "b",
-          "text": "Hide all costs"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "c",
-          "text": "One tag for tenant"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "d",
-          "text": "No reporting"
+          "text": "Azure hierarchy with management groups"
         }
       ],
       "correct": [
@@ -2175,23 +2073,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure resource tags on subscriptions and resources"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Hide all costs"
+          "text": "Azure hierarchy with management groups (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "One tag for tenant"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "d",
-          "text": "No reporting"
+          "text": "Microsoft Cost Management"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Tags enable chargeback and FinOps.",
       "docs": [
@@ -2209,23 +2107,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure resource tags on subscriptions and resources"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Hide all costs"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "c",
-          "text": "One tag for tenant"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "d",
-          "text": "No reporting"
+          "text": "Azure hierarchy with management groups (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Tags enable chargeback and FinOps.",
       "docs": [
@@ -2243,23 +2141,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Cost Management"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "b",
-          "text": "Spreadsheet guesses"
+          "text": "Azure hierarchy with management groups"
         },
         {
           "id": "c",
-          "text": "Ignore invoices"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "d",
-          "text": "Email CSV only"
+          "text": "Microsoft Cost Management"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cost Management analyzes Azure usage.",
       "docs": [
@@ -2277,23 +2175,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Cost Management"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "b",
-          "text": "Spreadsheet guesses"
+          "text": "Microsoft Cost Management"
         },
         {
           "id": "c",
-          "text": "Ignore invoices"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "d",
-          "text": "Email CSV only"
+          "text": "Azure resource tags on subscriptions and resources \u2014 alternative 3"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cost Management analyzes Azure usage.",
       "docs": [
@@ -2311,23 +2209,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Cost Management"
+          "text": "Azure hierarchy with management groups"
         },
         {
           "id": "b",
-          "text": "Spreadsheet guesses"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "c",
-          "text": "Ignore invoices"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "d",
-          "text": "Email CSV only"
+          "text": "Microsoft Cost Management"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Cost Management analyzes Azure usage.",
       "docs": [
@@ -2345,23 +2243,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Resource Manager templates"
+          "text": "Azure resource tags on subscriptions and resources \u2014 alternative 2"
         },
         {
           "id": "b",
-          "text": "Manual portal clicks only policy"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "c",
-          "text": "Local AD only"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "d",
-          "text": "FTP deploy"
+          "text": "Microsoft Cost Management"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "ARM provides declarative infrastructure deployment.",
       "docs": [
@@ -2379,23 +2277,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra ID"
+          "text": "Azure resource tags on subscriptions and resources"
         },
         {
           "id": "b",
-          "text": "Blob lease only"
+          "text": "Microsoft Entra ID"
         },
         {
           "id": "c",
-          "text": "NIC teaming"
+          "text": "Azure Resource Manager templates"
         },
         {
           "id": "d",
-          "text": "VPN SKU only"
+          "text": "Azure hierarchy with management groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Entra ID is the identity platform for Azure.",
       "docs": [

@@ -66,23 +66,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DNS logs / passive DNS"
+          "text": "Initial Access"
         },
         {
           "id": "b",
-          "text": "Printer queue"
+          "text": "Query proxy/DNS for rare newly seen domains"
         },
         {
           "id": "c",
-          "text": "GPU temp"
+          "text": "DNS logs / passive DNS"
         },
         {
           "id": "d",
-          "text": "Keyboard layout"
+          "text": "Same account logins from distant geos quickly"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "DNS telemetry reveals C2 and exfil domains.",
       "docs": [
@@ -100,23 +100,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multiple failed logins followed by success from same IP"
+          "text": "Query proxy/DNS for rare newly seen domains"
         },
         {
           "id": "b",
-          "text": "Single successful login"
+          "text": "DNS logs / passive DNS"
         },
         {
           "id": "c",
-          "text": "User changed wallpaper"
+          "text": "Multiple failed logins followed by success from same IP"
         },
         {
           "id": "d",
-          "text": "DHCP renew"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Failed-then-success patterns indicate guessing.",
       "docs": [
@@ -134,23 +134,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Forensic scanner / sandbox"
+          "text": "LSASS access by unusual process"
         },
         {
           "id": "b",
-          "text": "Cable tester"
+          "text": "STIX/TAXII intel feeds"
         },
         {
           "id": "c",
-          "text": "Label maker"
+          "text": "Forensic scanner / sandbox"
         },
         {
           "id": "d",
-          "text": "Projector"
+          "text": "API-based log ingestion with OAuth/service account"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "YARA matches malware signatures and patterns.",
       "docs": [
@@ -168,23 +168,23 @@
       "options": [
         {
           "id": "a",
-          "text": "LSASS access by unusual process"
+          "text": "/var/log/auth.log or secure"
         },
         {
           "id": "b",
-          "text": "User opened Excel"
+          "text": "LSASS access by unusual process"
         },
         {
           "id": "c",
-          "text": "Windows Update"
+          "text": "STIX/TAXII intel feeds"
         },
         {
           "id": "d",
-          "text": "Screen lock"
+          "text": "DNS logs / passive DNS"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Credential tools touch LSASS memory.",
       "docs": [
@@ -206,15 +206,15 @@
         },
         {
           "id": "b",
-          "text": "Full PCAP always required"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "BIOS version"
+          "text": "New service listening on workstation"
         },
         {
           "id": "d",
-          "text": "Monitor serial"
+          "text": "X-Forwarded-For or internal IP in proxy logs"
         }
       ],
       "correct": [
@@ -240,15 +240,15 @@
         },
         {
           "id": "b",
-          "text": "User works late once"
+          "text": "Query proxy/DNS for rare newly seen domains"
         },
         {
           "id": "c",
-          "text": "Patch reboot"
+          "text": "4625"
         },
         {
           "id": "d",
-          "text": "DNS cache flush"
+          "text": "/var/log/auth.log or secure"
         }
       ],
       "correct": [
@@ -270,23 +270,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Emergency (0)"
+          "text": "Query proxy/DNS for rare newly seen domains"
         },
         {
           "id": "b",
-          "text": "Debug only"
+          "text": "Emergency (0)"
         },
         {
           "id": "c",
-          "text": "Informational 6"
+          "text": "DNS logs / passive DNS"
         },
         {
           "id": "d",
-          "text": "Notice 5"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Severity 0 is highest urgency.",
       "docs": [
@@ -304,23 +304,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Query proxy/DNS for rare newly seen domains"
+          "text": "Multiple failed logins followed by success from same IP"
         },
         {
           "id": "b",
-          "text": "Delete all logs"
+          "text": "Hot/warm/cold tiered log storage"
         },
         {
           "id": "c",
-          "text": "Disable AV"
+          "text": "Query proxy/DNS for rare newly seen domains"
         },
         {
           "id": "d",
-          "text": "Ignore TLS"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Rare domains may indicate C2 beacons.",
       "docs": [
@@ -342,15 +342,15 @@
         },
         {
           "id": "b",
-          "text": "4624 success logon"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "1102 audit cleared maybe"
+          "text": "Same account logins from distant geos quickly"
         },
         {
           "id": "d",
-          "text": "7045 service installed"
+          "text": "/var/log/auth.log or secure"
         }
       ],
       "correct": [
@@ -372,23 +372,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/var/log/auth.log or secure"
+          "text": "New service listening on workstation"
         },
         {
           "id": "b",
-          "text": "/var/log/cups"
+          "text": "Initial Access"
         },
         {
           "id": "c",
-          "text": "/var/log/wtmp only sessions list"
+          "text": "/var/log/auth.log or secure"
         },
         {
           "id": "d",
-          "text": "/etc/hosts"
+          "text": "Flow records (src/dst IP, port, bytes)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Auth log captures sshd events.",
       "docs": [
@@ -406,23 +406,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Automated containment playbook"
+          "text": "Same account logins from distant geos quickly"
         },
         {
           "id": "b",
-          "text": "Manual email only"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Weekly report only"
+          "text": "Automated containment playbook"
         },
         {
           "id": "d",
-          "text": "Ignore alert"
+          "text": "STIX/TAXII intel feeds"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "SOAR integrates with firewalls for blocking.",
       "docs": [
@@ -440,23 +440,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IOC hash (MD5/SHA256)"
+          "text": "Forensic scanner / sandbox"
         },
         {
           "id": "b",
-          "text": "Employee ID badge"
+          "text": "4625"
         },
         {
           "id": "c",
-          "text": "Desk number"
+          "text": "IOC hash (MD5/SHA256)"
         },
         {
           "id": "d",
-          "text": "Cable color"
+          "text": "Multiple failed logins followed by success from same IP"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hashes identify known malicious files.",
       "docs": [
@@ -474,23 +474,23 @@
       "options": [
         {
           "id": "a",
-          "text": "X-Forwarded-For or internal IP in proxy logs"
+          "text": "STIX/TAXII intel feeds"
         },
         {
           "id": "b",
-          "text": "TTL only always unique"
+          "text": "Same account logins from distant geos quickly"
         },
         {
           "id": "c",
-          "text": "Ethernet brand"
+          "text": "X-Forwarded-For or internal IP in proxy logs"
         },
         {
           "id": "d",
-          "text": "Keyboard language"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Proxy logs preserve internal client identity.",
       "docs": [
@@ -508,23 +508,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Initial Access"
+          "text": "Query proxy/DNS for rare newly seen domains"
         },
         {
           "id": "b",
-          "text": "Impact only"
+          "text": "Initial Access"
         },
         {
           "id": "c",
-          "text": "Exfil only always first"
+          "text": "IOC hash (MD5/SHA256)"
         },
         {
           "id": "d",
-          "text": "None"
+          "text": "STIX/TAXII intel feeds"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Initial Access covers entry vectors.",
       "docs": [
@@ -542,23 +542,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Hot/warm/cold tiered log storage"
+          "text": "DNS logs / passive DNS"
         },
         {
           "id": "b",
-          "text": "Delete after 1 hour always"
+          "text": "New service listening on workstation"
         },
         {
           "id": "c",
-          "text": "Paper printouts only"
+          "text": "Hot/warm/cold tiered log storage"
         },
         {
           "id": "d",
-          "text": "No timestamps"
+          "text": "Multiple failed logins followed by success from same IP"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Retention enables historical correlation.",
       "docs": [
@@ -580,15 +580,15 @@
         },
         {
           "id": "b",
-          "text": "Scheduled backup success"
+          "text": "LSASS access by unusual process"
         },
         {
           "id": "c",
-          "text": "Expected patch reboot"
+          "text": "Query proxy/DNS for rare newly seen domains"
         },
         {
           "id": "d",
-          "text": "Normal login 9am"
+          "text": "/var/log/auth.log or secure"
         }
       ],
       "correct": [
@@ -610,23 +610,23 @@
       "options": [
         {
           "id": "a",
-          "text": "STIX/TAXII intel feeds"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "Random blog only"
+          "text": "Automated containment playbook"
         },
         {
           "id": "c",
-          "text": "Weather API"
+          "text": "STIX/TAXII intel feeds"
         },
         {
           "id": "d",
-          "text": "Stock ticker"
+          "text": "New service listening on workstation"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Structured feeds add context to IOCs.",
       "docs": [
@@ -644,23 +644,23 @@
       "options": [
         {
           "id": "a",
-          "text": "API-based log ingestion with OAuth/service account"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "Public FTP anonymous"
+          "text": "Hot/warm/cold tiered log storage"
         },
         {
           "id": "c",
-          "text": "Email logs unencrypted"
+          "text": "API-based log ingestion with OAuth/service account"
         },
         {
           "id": "d",
-          "text": "Disable TLS"
+          "text": "4625"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Vendor APIs pull audit logs securely.",
       "docs": [
@@ -722,15 +722,15 @@
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "DNS logs / passive DNS"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "4625"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "IOC hash (MD5/SHA256)"
         }
       ],
       "correct": [
@@ -752,23 +752,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Hot/warm/cold tiered log storage"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "LSASS access by unusual process"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "IOC hash (MD5/SHA256)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -790,15 +790,15 @@
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "STIX/TAXII intel feeds"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "4625"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "LSASS access by unusual process"
         }
       ],
       "correct": [
@@ -820,23 +820,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Forensic scanner / sandbox"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Emergency (0)"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "IOC hash (MD5/SHA256)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -854,23 +854,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Forensic scanner / sandbox"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "DNS logs / passive DNS"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Emergency (0)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -892,15 +892,15 @@
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "IOC hash (MD5/SHA256)"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "X-Forwarded-For or internal IP in proxy logs"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Automated containment playbook"
         }
       ],
       "correct": [
@@ -922,23 +922,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "/var/log/auth.log or secure"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Multiple failed logins followed by success from same IP"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "IOC hash (MD5/SHA256)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -956,23 +956,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Query proxy/DNS for rare newly seen domains"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Emergency (0)"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "LSASS access by unusual process"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -994,7 +994,7 @@
         },
         {
           "id": "b",
-          "text": "Ping sweep only"
+          "text": "Cloud access security broker / DNS logs"
         },
         {
           "id": "c",
@@ -1002,7 +1002,7 @@
         },
         {
           "id": "d",
-          "text": "Social media scan"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
@@ -1024,23 +1024,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Exploitability subscore / EPSS context"
+          "text": "VM platform database / ticketing integration"
         },
         {
           "id": "b",
-          "text": "Color of server"
+          "text": "Exploitability subscore / EPSS context"
         },
         {
           "id": "c",
-          "text": "Rack unit height"
+          "text": "Authenticated vulnerability scan"
         },
         {
           "id": "d",
-          "text": "Cable length"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Exploitability indicates ease of abuse.",
       "docs": [
@@ -1058,23 +1058,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk-based vulnerability management"
+          "text": "Exploitability subscore / EPSS context"
         },
         {
           "id": "b",
-          "text": "Scan once never remediate"
+          "text": "Crowdsourced coordinated disclosure"
         },
         {
           "id": "c",
-          "text": "Fix alphabetically"
+          "text": "Risk-based vulnerability management"
         },
         {
           "id": "d",
-          "text": "Ignore internet facing"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Context prioritizes real risk over raw count.",
       "docs": [
@@ -1096,15 +1096,15 @@
         },
         {
           "id": "b",
-          "text": "Only runtime EDR always enough"
+          "text": "Open critical count over time"
         },
         {
           "id": "c",
-          "text": "Ignore base image"
+          "text": "Exploitability subscore / EPSS context"
         },
         {
           "id": "d",
-          "text": "Scan only README"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
@@ -1126,23 +1126,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Manual validation / PoC in lab"
+          "text": "Authenticated vulnerability scan"
         },
         {
           "id": "b",
-          "text": "Auto-close all highs"
+          "text": "Manual validation / PoC in lab"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Delete tickets"
+          "text": "Critical with active exploitation"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Validation confirms exploitable issues.",
       "docs": [
@@ -1160,23 +1160,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Script reflected in immediate response"
+          "text": "Crowdsourced coordinated disclosure"
         },
         {
           "id": "b",
-          "text": "Stored in DB only"
+          "text": "Script reflected in immediate response"
         },
         {
           "id": "c",
-          "text": "DOM-based client only"
+          "text": "Network segmentation and WAF"
         },
         {
           "id": "d",
-          "text": "SQL error"
+          "text": "Critical with active exploitation"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Reflected XSS echoes input in page.",
       "docs": [
@@ -1198,15 +1198,15 @@
         },
         {
           "id": "b",
-          "text": "Aggressive exploit mode peak hours"
+          "text": "Manual validation / PoC in lab"
         },
         {
           "id": "c",
-          "text": "Denial scan unlimited"
+          "text": "Cloud access security broker / DNS logs"
         },
         {
           "id": "d",
-          "text": "No change control"
+          "text": "Aggressive exploit mode peak hours"
         }
       ],
       "correct": [
@@ -1228,23 +1228,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MTTR for vulns"
+          "text": "Exploitability subscore / EPSS context"
         },
         {
           "id": "b",
-          "text": "Printer uptime"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Coffee budget"
+          "text": "Crowdsourced coordinated disclosure"
         },
         {
           "id": "d",
-          "text": "Desk count"
+          "text": "MTTR for vulns"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Remediation SLAs measure fix speed.",
       "docs": [
@@ -1266,15 +1266,15 @@
         },
         {
           "id": "b",
-          "text": "Spreadsheet on USB only"
+          "text": "Risk-based vulnerability management"
         },
         {
           "id": "c",
-          "text": "Paper binder"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Sticky note"
+          "text": "Critical with active exploitation"
         }
       ],
       "correct": [
@@ -1296,23 +1296,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SCAP/CIS-CAT class tools"
+          "text": "CI registry image scanning"
         },
         {
           "id": "b",
-          "text": "Ping"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Traceroute"
+          "text": "SCAP/CIS-CAT class tools"
         },
         {
           "id": "d",
-          "text": "WHOIS only"
+          "text": "Ring / phased deployment"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Benchmark tools compare settings to CIS.",
       "docs": [
@@ -1330,23 +1330,23 @@
       "options": [
         {
           "id": "a",
-          "text": "X-Frame-Options or CSP frame-ancestors"
+          "text": "Crowdsourced coordinated disclosure"
         },
         {
           "id": "b",
-          "text": "Server: Apache only"
+          "text": "Cloud access security broker / DNS logs"
         },
         {
           "id": "c",
-          "text": "ETag"
+          "text": "X-Frame-Options or CSP frame-ancestors"
         },
         {
           "id": "d",
-          "text": "Expires past"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Frame control headers reduce UI redress.",
       "docs": [
@@ -1368,15 +1368,15 @@
         },
         {
           "id": "b",
-          "text": "All prod at once no pilot"
+          "text": "SCAP/CIS-CAT class tools"
         },
         {
           "id": "c",
-          "text": "Never patch"
+          "text": "Critical with active exploitation"
         },
         {
           "id": "d",
-          "text": "Random daily reboots"
+          "text": "All prod at once no pilot"
         }
       ],
       "correct": [
@@ -1402,15 +1402,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore SaaS"
+          "text": "Network segmentation and WAF"
         },
         {
           "id": "c",
-          "text": "Only AD computers"
+          "text": "Exploitability subscore / EPSS context"
         },
         {
           "id": "d",
-          "text": "Manual guess"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
@@ -1432,23 +1432,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Critical with active exploitation"
+          "text": "VM platform database / ticketing integration"
         },
         {
           "id": "b",
-          "text": "Informational open port banner"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Low informational typo"
+          "text": "X-Frame-Options or CSP frame-ancestors"
         },
         {
           "id": "d",
-          "text": "Cosmetic"
+          "text": "Critical with active exploitation"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Active exploitation elevates urgency.",
       "docs": [
@@ -1470,15 +1470,15 @@
         },
         {
           "id": "b",
-          "text": "Printer ink"
+          "text": "Crowdsourced coordinated disclosure"
         },
         {
           "id": "c",
-          "text": "Monitor brightness"
+          "text": "Open critical count over time"
         },
         {
           "id": "d",
-          "text": "Keyboard firmware"
+          "text": "Manual validation / PoC in lab"
         }
       ],
       "correct": [
@@ -1500,23 +1500,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network segmentation and WAF"
+          "text": "Cloud access security broker / DNS logs"
         },
         {
           "id": "b",
-          "text": "Publish to internet"
+          "text": "Service detection / SSL cipher tests"
         },
         {
           "id": "c",
-          "text": "Share admin password"
+          "text": "Open critical count over time"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "Network segmentation and WAF"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Segmentation limits exposure when patch impossible.",
       "docs": [
@@ -1534,23 +1534,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Crowdsourced coordinated disclosure"
+          "text": "Manual validation / PoC in lab"
         },
         {
           "id": "b",
-          "text": "Ignore researchers"
+          "text": "Crowdsourced coordinated disclosure"
         },
         {
           "id": "c",
-          "text": "Threaten reporters"
+          "text": "X-Frame-Options or CSP frame-ancestors"
         },
         {
           "id": "d",
-          "text": "No process"
+          "text": "CI registry image scanning"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Bug bounties harness external talent legally.",
       "docs": [
@@ -1572,15 +1572,15 @@
         },
         {
           "id": "b",
-          "text": "Number of cables"
+          "text": "MTTR for vulns"
         },
         {
           "id": "c",
-          "text": "Desk plants"
+          "text": "Critical with active exploitation"
         },
         {
           "id": "d",
-          "text": "Font size"
+          "text": "VM platform database / ticketing integration"
         }
       ],
       "correct": [
@@ -1642,23 +1642,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "VM platform database / ticketing integration"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Cloud access security broker / DNS logs"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Crowdsourced coordinated disclosure"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -1676,23 +1676,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Network segmentation and WAF"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "CI registry image scanning"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "X-Frame-Options or CSP frame-ancestors"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -1710,23 +1710,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Crowdsourced coordinated disclosure"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Open critical count over time"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Cloud access security broker / DNS logs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -1748,15 +1748,15 @@
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Script reflected in immediate response"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Approved maintenance window with rate limits"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Exploitability subscore / EPSS context"
         }
       ],
       "correct": [
@@ -1778,23 +1778,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "SCAP/CIS-CAT class tools"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Approved maintenance window with rate limits"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Critical with active exploitation"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -1812,23 +1812,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "VM platform database / ticketing integration"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Critical with active exploitation"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "SCAP/CIS-CAT class tools"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -1846,23 +1846,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Eradication"
+          "text": "Incident commander with technical leads"
         },
         {
           "id": "b",
-          "text": "Preparation only loop"
+          "text": "Disconnect from network / EDR isolate"
         },
         {
           "id": "c",
-          "text": "Ignore"
+          "text": "Scan restored systems before reconnecting"
         },
         {
           "id": "d",
-          "text": "Marketing"
+          "text": "Eradication"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "After containment, remove threat and recover.",
       "docs": [
@@ -1880,23 +1880,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Memory dump before power off"
+          "text": "Incident chronology / war room notes"
         },
         {
           "id": "b",
-          "text": "Delete logs first"
+          "text": "Memory dump before power off"
         },
         {
           "id": "c",
-          "text": "Reimage immediately no capture"
+          "text": "Regulatory deadlines (e.g., 72-hour GDPR class)"
         },
         {
           "id": "d",
-          "text": "Ship disk unencrypted"
+          "text": "Separate phone bridge not on compromised email"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "RAM holds encryption keys and malware.",
       "docs": [
@@ -1914,23 +1914,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Notification obligations and liability"
+          "text": "Scan restored systems before reconnecting"
         },
         {
           "id": "b",
-          "text": "Logo color"
+          "text": "Notification obligations and liability"
         },
         {
           "id": "c",
-          "text": "Office layout"
+          "text": "Incident commander with technical leads"
         },
         {
           "id": "d",
-          "text": "Coffee brand"
+          "text": "Eradication"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Legal guides regulatory notifications.",
       "docs": [
@@ -1948,23 +1948,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Disconnect from network / EDR isolate"
+          "text": "Separate phone bridge not on compromised email"
         },
         {
           "id": "b",
-          "text": "Pay immediately always first"
+          "text": "Regulatory deadlines (e.g., 72-hour GDPR class)"
         },
         {
           "id": "c",
-          "text": "Delete backups"
+          "text": "Email all customers unverified link"
         },
         {
           "id": "d",
-          "text": "Email all customers unverified link"
+          "text": "Disconnect from network / EDR isolate"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Isolation prevents spread.",
       "docs": [
@@ -1982,23 +1982,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SHA-256 of image"
+          "text": "Memory dump before power off"
         },
         {
           "id": "b",
-          "text": "Rename file"
+          "text": "SHA-256 of image"
         },
         {
           "id": "c",
-          "text": "Edit metadata"
+          "text": "Incident commander with technical leads"
         },
         {
           "id": "d",
-          "text": "Compress with password only"
+          "text": "Lessons learned / after-action review"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cryptographic hashes detect tampering.",
       "docs": [
@@ -2020,15 +2020,15 @@
         },
         {
           "id": "b",
-          "text": "Original email thread only"
+          "text": "Incident commander with technical leads"
         },
         {
           "id": "c",
-          "text": "Attacker chat"
+          "text": "Notification obligations and liability"
         },
         {
           "id": "d",
-          "text": "Public social post first"
+          "text": "Memory dump before power off"
         }
       ],
       "correct": [
@@ -2050,23 +2050,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Incident commander with technical leads"
+          "text": "Notification obligations and liability"
         },
         {
           "id": "b",
-          "text": "Uninvolved intern alone"
+          "text": "Incident commander with technical leads"
         },
         {
           "id": "c",
-          "text": "Sales team only"
+          "text": "Lessons learned / after-action review"
         },
         {
           "id": "d",
-          "text": "Random user"
+          "text": "Eradication"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "IC coordinates technical responders.",
       "docs": [
@@ -2084,23 +2084,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Incident chronology / war room notes"
+          "text": "Separate phone bridge not on compromised email"
         },
         {
           "id": "b",
-          "text": "Verbal only"
+          "text": "Scan restored systems before reconnecting"
         },
         {
           "id": "c",
-          "text": "No notes"
+          "text": "Eradication"
         },
         {
           "id": "d",
-          "text": "After action only no realtime"
+          "text": "Incident chronology / war room notes"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Timelines support forensics and compliance.",
       "docs": [
@@ -2118,23 +2118,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Isolated lab sandbox network"
+          "text": "Email forensics preserving headers"
         },
         {
           "id": "b",
-          "text": "Run on domain controller"
+          "text": "Incident chronology / war room notes"
         },
         {
           "id": "c",
-          "text": "Execute on CFO laptop"
+          "text": "Isolated lab sandbox network"
         },
         {
           "id": "d",
-          "text": "Disable AV prod"
+          "text": "Eradication"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Sandboxes detonate samples safely.",
       "docs": [
@@ -2152,23 +2152,23 @@
       "options": [
         {
           "id": "a",
-          "text": "STIX 2.x"
+          "text": "SHA-256 of image"
         },
         {
           "id": "b",
-          "text": "Plain email only"
+          "text": "STIX 2.x"
         },
         {
           "id": "c",
-          "text": "Fax"
+          "text": "Disconnect from network / EDR isolate"
         },
         {
           "id": "d",
-          "text": "Sticky note"
+          "text": "Isolated lab sandbox network"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "STIX standardizes threat intel.",
       "docs": [
@@ -2190,15 +2190,15 @@
         },
         {
           "id": "b",
-          "text": "Immediately join production VLAN"
+          "text": "Lessons learned / after-action review"
         },
         {
           "id": "c",
-          "text": "Disable backups"
+          "text": "STIX 2.x"
         },
         {
           "id": "d",
-          "text": "Skip verification"
+          "text": "Forensic disk image (E01/DD)"
         }
       ],
       "correct": [
@@ -2224,15 +2224,15 @@
         },
         {
           "id": "b",
-          "text": "Delete message"
+          "text": "Disconnect from network / EDR isolate"
         },
         {
           "id": "c",
-          "text": "Click links to test"
+          "text": "Incident chronology / war room notes"
         },
         {
           "id": "d",
-          "text": "Forward to all staff"
+          "text": "Isolated lab sandbox network"
         }
       ],
       "correct": [
@@ -2254,23 +2254,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lessons learned / after-action review"
+          "text": "Incident chronology / war room notes"
         },
         {
           "id": "b",
-          "text": "Hide report"
+          "text": "Lessons learned / after-action review"
         },
         {
           "id": "c",
-          "text": "Punish reporters"
+          "text": "Incident commander with technical leads"
         },
         {
           "id": "d",
-          "text": "Skip documentation"
+          "text": "Email forensics preserving headers"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "AAR updates playbooks and controls.",
       "docs": [
@@ -2292,15 +2292,15 @@
         },
         {
           "id": "b",
-          "text": "Never notify"
+          "text": "Silent blocking via firewall vs loud shutdown"
         },
         {
           "id": "c",
-          "text": "Wait one year always"
+          "text": "Notification obligations and liability"
         },
         {
           "id": "d",
-          "text": "Only if press asks"
+          "text": "Incident chronology / war room notes"
         }
       ],
       "correct": [
@@ -2322,23 +2322,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Silent blocking via firewall vs loud shutdown"
+          "text": "Scan restored systems before reconnecting"
         },
         {
           "id": "b",
-          "text": "Email attacker hello"
+          "text": "Silent blocking via firewall vs loud shutdown"
         },
         {
           "id": "c",
-          "text": "Public tweet details"
+          "text": "Regulatory deadlines (e.g., 72-hour GDPR class)"
         },
         {
           "id": "d",
-          "text": "Delete evidence"
+          "text": "Forensic disk image (E01/DD)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Stealthy containment preserves investigation.",
       "docs": [
@@ -2356,23 +2356,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Forensic disk image (E01/DD)"
+          "text": "Separate phone bridge not on compromised email"
         },
         {
           "id": "b",
-          "text": "Copied loose files only"
+          "text": "Isolated lab sandbox network"
         },
         {
           "id": "c",
-          "text": "Screenshot only"
+          "text": "Silent blocking via firewall vs loud shutdown"
         },
         {
           "id": "d",
-          "text": "Printed PDF"
+          "text": "Forensic disk image (E01/DD)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Bit-for-bit images include slack/unallocated.",
       "docs": [
@@ -2429,23 +2429,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Leadership / board"
+          "text": "Risk heat map / residual risk chart"
         },
         {
           "id": "b",
-          "text": "Cable installers only"
+          "text": "Leadership / board"
         },
         {
           "id": "c",
-          "text": "Intern hobby club"
+          "text": "Assigned owner and due date"
         },
         {
           "id": "d",
-          "text": "Random internet"
+          "text": "Redact personal data not needed"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Executives need risk and impact summary.",
       "docs": [
@@ -2467,15 +2467,15 @@
         },
         {
           "id": "b",
-          "text": "Pie of coffee flavors"
+          "text": "SOC / IR team"
         },
         {
           "id": "c",
-          "text": "Org chart"
+          "text": "Monthly or quarterly dashboard"
         },
         {
           "id": "d",
-          "text": "Floor plan"
+          "text": "Post-incident report (PIR)"
         }
       ],
       "correct": [
@@ -2497,23 +2497,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Compliance crosswalk matrix"
+          "text": "Leadership / board"
         },
         {
           "id": "b",
-          "text": "Meme collection"
+          "text": "Risk heat map / residual risk chart"
         },
         {
           "id": "c",
-          "text": "Vacation schedule"
+          "text": "Post-incident report (PIR)"
         },
         {
           "id": "d",
-          "text": "Lunch menu"
+          "text": "Compliance crosswalk matrix"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Crosswalks show control coverage.",
       "docs": [
@@ -2531,23 +2531,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MTTD"
+          "text": "FP rate of detection rules"
         },
         {
           "id": "b",
-          "text": "MTBF hardware"
+          "text": "Monthly or quarterly dashboard"
         },
         {
           "id": "c",
-          "text": "Pages per minute printer"
+          "text": "Risk heat map / residual risk chart"
         },
         {
           "id": "d",
-          "text": "Nits brightness"
+          "text": "MTTD"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Mean Time To Detect measures detection speed.",
       "docs": [
@@ -2569,15 +2569,15 @@
         },
         {
           "id": "b",
-          "text": "Full malware source public"
+          "text": "Communications plan in IR plan"
         },
         {
           "id": "c",
-          "text": "Credentials in press release"
+          "text": "Post-incident report (PIR)"
         },
         {
           "id": "d",
-          "text": "Live C2 keys"
+          "text": "Risk heat map / residual risk chart"
         }
       ],
       "correct": [
@@ -2603,15 +2603,15 @@
         },
         {
           "id": "b",
-          "text": "Blank assignee"
+          "text": "Monthly or quarterly dashboard"
         },
         {
           "id": "c",
-          "text": "No priority ever"
+          "text": "FP rate of detection rules"
         },
         {
           "id": "d",
-          "text": "Closed immediately"
+          "text": "Risk heat map / residual risk chart"
         }
       ],
       "correct": [
@@ -2633,23 +2633,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Post-incident report (PIR)"
+          "text": "Monthly or quarterly dashboard"
         },
         {
           "id": "b",
-          "text": "Marketing brochure"
+          "text": "Line chart of open criticals"
         },
         {
           "id": "c",
-          "text": "Holiday party"
+          "text": "Risk heat map / residual risk chart"
         },
         {
           "id": "d",
-          "text": "Org picnic"
+          "text": "Post-incident report (PIR)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "PIR documents timeline and improvements.",
       "docs": [
@@ -2671,15 +2671,15 @@
         },
         {
           "id": "b",
-          "text": "Clicks only without reporting"
+          "text": "Risk heat map / residual risk chart"
         },
         {
           "id": "c",
-          "text": "Ignore reports"
+          "text": "PCI incident reporting to brands/acquirer"
         },
         {
           "id": "d",
-          "text": "Delete button usage"
+          "text": "Sanitized public statement"
         }
       ],
       "correct": [
@@ -2701,23 +2701,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Risk heat map / residual risk chart"
+          "text": "SOC / IR team"
         },
         {
           "id": "b",
-          "text": "Random word cloud only"
+          "text": "Monthly or quarterly dashboard"
         },
         {
           "id": "c",
-          "text": "Logo sheet"
+          "text": "Line chart of open criticals"
         },
         {
           "id": "d",
-          "text": "Font sample"
+          "text": "Risk heat map / residual risk chart"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Heat maps show risk movement.",
       "docs": [
@@ -2735,23 +2735,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SOC / IR team"
+          "text": "Leadership / board"
         },
         {
           "id": "b",
-          "text": "All public Twitter"
+          "text": "Users reporting suspicious email percentage"
         },
         {
           "id": "c",
-          "text": "Untrained users raw"
+          "text": "Redact personal data not needed"
         },
         {
           "id": "d",
-          "text": "Competitors"
+          "text": "SOC / IR team"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Technical teams consume IOC details securely.",
       "docs": [
@@ -2769,23 +2769,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Monthly or quarterly dashboard"
+          "text": "Line chart of open criticals"
         },
         {
           "id": "b",
-          "text": "Never"
+          "text": "Redact personal data not needed"
         },
         {
           "id": "c",
-          "text": "Every minute"
+          "text": "Monthly or quarterly dashboard"
         },
         {
           "id": "d",
-          "text": "Once per decade"
+          "text": "Communications plan in IR plan"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Regular cadence keeps leadership informed.",
       "docs": [
@@ -2803,23 +2803,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Communications plan in IR plan"
+          "text": "Sanitized public statement"
         },
         {
           "id": "b",
-          "text": "Ad hoc rumors"
+          "text": "Post-incident report (PIR)"
         },
         {
           "id": "c",
-          "text": "Only verbal"
+          "text": "Users reporting suspicious email percentage"
         },
         {
           "id": "d",
-          "text": "Ignore legal"
+          "text": "Communications plan in IR plan"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Comms plans define spokespeople and channels.",
       "docs": [
@@ -2837,23 +2837,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Redact personal data not needed"
+          "text": "FP rate of detection rules"
         },
         {
           "id": "b",
-          "text": "Publish all employee SSNs"
+          "text": "Redact personal data not needed"
         },
         {
           "id": "c",
-          "text": "Share medical records freely"
+          "text": "PCI incident reporting to brands/acquirer"
         },
         {
           "id": "d",
-          "text": "Post passwords"
+          "text": "Line chart of open criticals"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Reports must minimize sensitive personal data.",
       "docs": [
@@ -2871,23 +2871,23 @@
       "options": [
         {
           "id": "a",
-          "text": "FP rate of detection rules"
+          "text": "Post-incident report (PIR)"
         },
         {
           "id": "b",
-          "text": "Number of monitors"
+          "text": "FP rate of detection rules"
         },
         {
           "id": "c",
-          "text": "Desk size"
+          "text": "Line chart of open criticals"
         },
         {
           "id": "d",
-          "text": "Cable color"
+          "text": "Technical retrospective"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "FP rate tunes detection efficiency.",
       "docs": [
@@ -2905,23 +2905,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Technical retrospective"
+          "text": "Redact personal data not needed"
         },
         {
           "id": "b",
-          "text": "Only HR gossip"
+          "text": "Technical retrospective"
         },
         {
           "id": "c",
-          "text": "Unrelated finance"
+          "text": "Users reporting suspicious email percentage"
         },
         {
           "id": "d",
-          "text": "Cafeteria review"
+          "text": "MTTD"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Engineers need technical fixes and root cause.",
       "docs": [
@@ -2939,23 +2939,23 @@
       "options": [
         {
           "id": "a",
-          "text": "PCI incident reporting to brands/acquirer"
+          "text": "Monthly or quarterly dashboard"
         },
         {
           "id": "b",
-          "text": "Ignore PCI"
+          "text": "Users reporting suspicious email percentage"
         },
         {
           "id": "c",
-          "text": "Only blog post"
+          "text": "Risk heat map / residual risk chart"
         },
         {
           "id": "d",
-          "text": "Tweet only"
+          "text": "PCI incident reporting to brands/acquirer"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "PCI has specific breach reporting paths.",
       "docs": [

@@ -66,23 +66,23 @@
       "options": [
         {
           "id": "a",
-          "text": "uname -r"
+          "text": "RAID 5"
         },
         {
           "id": "b",
-          "text": "lsblk"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "whoami"
+          "text": "uname -r"
         },
         {
           "id": "d",
-          "text": "date"
+          "text": "mount or findmnt"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "uname -r prints the running kernel release.",
       "docs": [
@@ -100,23 +100,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/etc/hostname"
+          "text": "useradd -m username"
         },
         {
           "id": "b",
-          "text": "/etc/hosts only mappings"
+          "text": "fdisk or parted"
         },
         {
           "id": "c",
-          "text": "/boot/grub.cfg"
+          "text": "RAID 5"
         },
         {
           "id": "d",
-          "text": "/var/log/messages"
+          "text": "/etc/hostname"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "/etc/hostname sets the system hostname.",
       "docs": [
@@ -134,23 +134,23 @@
       "options": [
         {
           "id": "a",
-          "text": "dnf or yum"
+          "text": "/var/log/journal/ with journalctl"
         },
         {
           "id": "b",
-          "text": "apt on Debian"
+          "text": "dnf or yum"
         },
         {
           "id": "c",
-          "text": "pacman Arch only"
+          "text": "crontab -e per user"
         },
         {
           "id": "d",
-          "text": "zypper always on RHEL"
+          "text": "/etc/default/grub then grub2-mkconfig"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "RHEL derivatives use dnf/yum.",
       "docs": [
@@ -172,15 +172,15 @@
         },
         {
           "id": "b",
-          "text": "640"
+          "text": "000"
         },
         {
           "id": "c",
-          "text": "777 always secure"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "000"
+          "text": "chown user:group file"
         }
       ],
       "correct": [
@@ -202,23 +202,23 @@
       "options": [
         {
           "id": "a",
-          "text": "systemctl enable servicename"
+          "text": "744"
         },
         {
           "id": "b",
-          "text": "service start only temp"
+          "text": "dnf or yum"
         },
         {
           "id": "c",
-          "text": "init.d only legacy always required"
+          "text": "uname -r"
         },
         {
           "id": "d",
-          "text": "kill -9"
+          "text": "systemctl enable servicename"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "enable creates boot-time symlink.",
       "docs": [
@@ -240,15 +240,15 @@
         },
         {
           "id": "b",
-          "text": "/boot firmware always on home"
+          "text": "mount or findmnt"
         },
         {
           "id": "c",
-          "text": "/proc virtual"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "/dev device nodes"
+          "text": "dnf or yum"
         }
       ],
       "correct": [
@@ -270,23 +270,23 @@
       "options": [
         {
           "id": "a",
-          "text": "lsblk -f"
+          "text": "/etc/default/grub then grub2-mkconfig"
         },
         {
           "id": "b",
-          "text": "ps aux"
+          "text": "RAID 5"
         },
         {
           "id": "c",
-          "text": "free -h memory only"
+          "text": "lsblk -f"
         },
         {
           "id": "d",
-          "text": "id"
+          "text": "crontab -e per user"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "lsblk shows disks, partitions, and FS types.",
       "docs": [
@@ -304,23 +304,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/etc/default/grub then grub2-mkconfig"
+          "text": "useradd -m username"
         },
         {
           "id": "b",
-          "text": "/etc/fstab mounts"
+          "text": "mount or findmnt"
         },
         {
           "id": "c",
-          "text": "/etc/passwd users"
+          "text": "RAID 5"
         },
         {
           "id": "d",
-          "text": "/etc/motd banner"
+          "text": "/etc/default/grub then grub2-mkconfig"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "GRUB defaults live in /etc/default/grub.",
       "docs": [
@@ -342,15 +342,15 @@
         },
         {
           "id": "b",
-          "text": "RAID 0 mirror"
+          "text": "/var/log/journal/ with journalctl"
         },
         {
           "id": "c",
-          "text": "RAID 1 stripe only"
+          "text": "SIGTERM (15)"
         },
         {
           "id": "d",
-          "text": "RAID 10 always parity"
+          "text": "dnf or yum"
         }
       ],
       "correct": [
@@ -376,15 +376,15 @@
         },
         {
           "id": "b",
-          "text": "userdel"
+          "text": "/home"
         },
         {
           "id": "c",
-          "text": "groupadd only"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "passwd only without account"
+          "text": "dnf or yum"
         }
       ],
       "correct": [
@@ -406,23 +406,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Volume Group (VG)"
+          "text": "RAID 5"
         },
         {
           "id": "b",
-          "text": "Logical Volume only"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Partition table MBR only"
+          "text": "Volume Group (VG)"
         },
         {
           "id": "d",
-          "text": "Inode table"
+          "text": "lsblk -f"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VG pools PVs for LV allocation.",
       "docs": [
@@ -444,15 +444,15 @@
         },
         {
           "id": "b",
-          "text": "/etc/issue"
+          "text": "dnf or yum"
         },
         {
           "id": "c",
-          "text": "/etc/hosts"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "/boot/vmlinuz"
+          "text": "/etc/locale.conf or /etc/default/locale"
         }
       ],
       "correct": [
@@ -474,23 +474,23 @@
       "options": [
         {
           "id": "a",
-          "text": "mount or findmnt"
+          "text": "dnf or yum"
         },
         {
           "id": "b",
-          "text": "uname"
+          "text": "mount or findmnt"
         },
         {
           "id": "c",
-          "text": "history"
+          "text": "Volume Group (VG)"
         },
         {
           "id": "d",
-          "text": "alias"
+          "text": "uname -r"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "mount/findmnt list active mounts.",
       "docs": [
@@ -508,23 +508,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SIGTERM (15)"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "SIGKILL first always required"
+          "text": "/home"
         },
         {
           "id": "c",
-          "text": "SIGSTOP to terminate"
+          "text": "lsblk -f"
         },
         {
           "id": "d",
-          "text": "SIGHUP only logs"
+          "text": "SIGTERM (15)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SIGTERM allows cleanup before exit.",
       "docs": [
@@ -542,23 +542,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/etc/locale.conf or /etc/default/locale"
+          "text": "lsblk -f"
         },
         {
           "id": "b",
-          "text": "/etc/shadow passwords"
+          "text": "/etc/locale.conf or /etc/default/locale"
         },
         {
           "id": "c",
-          "text": "/etc/sudoers"
+          "text": "crontab -e per user"
         },
         {
           "id": "d",
-          "text": "/root/.bashrc only one user"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "System locale configured in locale files.",
       "docs": [
@@ -576,7 +576,7 @@
       "options": [
         {
           "id": "a",
-          "text": "chown user:group file"
+          "text": "/var/log/journal/ with journalctl"
         },
         {
           "id": "b",
@@ -584,15 +584,15 @@
         },
         {
           "id": "c",
-          "text": "chgrp only group sometimes"
+          "text": "Volume Group (VG)"
         },
         {
           "id": "d",
-          "text": "umask shell default"
+          "text": "chown user:group file"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "chown sets user and group ownership.",
       "docs": [
@@ -610,23 +610,23 @@
       "options": [
         {
           "id": "a",
-          "text": "fdisk or parted"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "nano text only"
+          "text": "fdisk or parted"
         },
         {
           "id": "c",
-          "text": "curl download"
+          "text": "/etc/default/grub then grub2-mkconfig"
         },
         {
           "id": "d",
-          "text": "ssh remote shell"
+          "text": "uname -r"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "fdisk/parted manage partition tables.",
       "docs": [
@@ -648,11 +648,11 @@
         },
         {
           "id": "b",
-          "text": "/tmp only volatile always"
+          "text": "744"
         },
         {
           "id": "c",
-          "text": "/etc/motd"
+          "text": "uname -r"
         },
         {
           "id": "d",
@@ -718,23 +718,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "/etc/default/grub then grub2-mkconfig"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "uname -r"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "mount or findmnt"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -752,23 +752,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "dnf or yum"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Volume Group (VG)"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "/home"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -786,23 +786,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "/etc/locale.conf or /etc/default/locale"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "lsblk -f"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "RAID 5"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -820,23 +820,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "dnf or yum"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "crontab -e per user"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "uname -r"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -858,15 +858,15 @@
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "fdisk or parted"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "mount or findmnt"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "crontab -e per user"
         }
       ],
       "correct": [
@@ -888,23 +888,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "systemctl enable servicename"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "mount or findmnt"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "/etc/locale.conf or /etc/default/locale"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -922,23 +922,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "fdisk or parted"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "744"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "/home"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -956,23 +956,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/etc/shadow"
+          "text": "600"
         },
         {
           "id": "b",
-          "text": "/etc/passwd public fields"
+          "text": "net.ipv4.ip_forward=0"
         },
         {
           "id": "c",
-          "text": "/etc/group"
+          "text": "ls -Z"
         },
         {
           "id": "d",
-          "text": "/etc/hosts"
+          "text": "/etc/shadow"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Shadow stores password hashes readable by root.",
       "docs": [
@@ -990,23 +990,23 @@
       "options": [
         {
           "id": "a",
-          "text": "setenforce 1"
+          "text": "ban IP via iptables/nftables integration"
         },
         {
           "id": "b",
-          "text": "getenforce only view"
+          "text": "600"
         },
         {
           "id": "c",
-          "text": "semanage only persistent"
+          "text": "MaxAuthTries in sshd_config"
         },
         {
           "id": "d",
-          "text": "iptables"
+          "text": "setenforce 1"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "setenforce toggles enforcing/permissive until reboot if not persistent.",
       "docs": [
@@ -1024,23 +1024,23 @@
       "options": [
         {
           "id": "a",
-          "text": "PermitRootLogin no in sshd_config"
+          "text": "SELinux"
         },
         {
           "id": "b",
-          "text": "Port 22 only change"
+          "text": "vendor scanner / trivy on packages"
         },
         {
           "id": "c",
-          "text": "AllowUsers root only"
+          "text": "ban IP via iptables/nftables integration"
         },
         {
           "id": "d",
-          "text": "PasswordAuthentication yes always"
+          "text": "PermitRootLogin no in sshd_config"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Disabling root SSH reduces brute force risk.",
       "docs": [
@@ -1062,15 +1062,15 @@
         },
         {
           "id": "b",
-          "text": "iptables legacy only always"
+          "text": "/etc/shadow"
         },
         {
           "id": "c",
-          "text": "ufw on RHEL default"
+          "text": "/etc/passwd and critical system files"
         },
         {
           "id": "d",
-          "text": "Windows Defender"
+          "text": "ls -Z"
         }
       ],
       "correct": [
@@ -1096,15 +1096,15 @@
         },
         {
           "id": "b",
-          "text": "777"
+          "text": "ban IP via iptables/nftables integration"
         },
         {
           "id": "c",
-          "text": "644 world readable private key bad"
+          "text": "RPM/DEB repository signing"
         },
         {
           "id": "d",
-          "text": "1777 sticky"
+          "text": "644 world readable private key bad"
         }
       ],
       "correct": [
@@ -1126,23 +1126,23 @@
       "options": [
         {
           "id": "a",
-          "text": "pam_tally2/faillock class"
+          "text": "PermitRootLogin no in sshd_config"
         },
         {
           "id": "b",
-          "text": "pam_loginui GUI"
+          "text": "ls -Z"
         },
         {
           "id": "c",
-          "text": "pam_coffee"
+          "text": "MaxAuthTries in sshd_config"
         },
         {
           "id": "d",
-          "text": "pam_printer"
+          "text": "pam_tally2/faillock class"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Account lockout modules limit guessing.",
       "docs": [
@@ -1164,15 +1164,15 @@
         },
         {
           "id": "b",
-          "text": "ls -l only DAC"
+          "text": "ban IP via iptables/nftables integration"
         },
         {
           "id": "c",
-          "text": "chmod"
+          "text": "/etc/shadow"
         },
         {
           "id": "d",
-          "text": "df -h"
+          "text": "SELinux"
         }
       ],
       "correct": [
@@ -1194,23 +1194,23 @@
       "options": [
         {
           "id": "a",
-          "text": "RPM/DEB repository signing"
+          "text": "auditd"
         },
         {
           "id": "b",
-          "text": "Disk defrag"
+          "text": "MaxAuthTries in sshd_config"
         },
         {
           "id": "c",
-          "text": "CPU governor"
+          "text": "RPM/DEB repository signing"
         },
         {
           "id": "d",
-          "text": "Wi-Fi SSID"
+          "text": "600"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Signed repos prevent tampered packages.",
       "docs": [
@@ -1228,23 +1228,23 @@
       "options": [
         {
           "id": "a",
-          "text": "user ALL=(ALL) ALL carefully scoped"
+          "text": "auditd"
         },
         {
           "id": "b",
-          "text": "NOPASSWD: ALL for everyone always"
+          "text": "/etc/shadow"
         },
         {
           "id": "c",
-          "text": "Allow any binary"
+          "text": "ed25519"
         },
         {
           "id": "d",
-          "text": "Disable logging"
+          "text": "user ALL=(ALL) ALL carefully scoped"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "sudo grants elevated commands with audit.",
       "docs": [
@@ -1262,23 +1262,23 @@
       "options": [
         {
           "id": "a",
-          "text": "auditd"
+          "text": "600"
         },
         {
           "id": "b",
-          "text": "cups printing"
+          "text": "/etc/shadow"
         },
         {
           "id": "c",
-          "text": "bluetoothd"
+          "text": "auditd"
         },
         {
           "id": "d",
-          "text": "cron only"
+          "text": "SELinux"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "auditd records security-relevant events.",
       "docs": [
@@ -1296,23 +1296,23 @@
       "options": [
         {
           "id": "a",
-          "text": "ed25519"
+          "text": "RPM/DEB repository signing"
         },
         {
           "id": "b",
-          "text": "RSA 512 weak"
+          "text": "ed25519"
         },
         {
           "id": "c",
-          "text": "DSA deprecated"
+          "text": "ls -Z"
         },
         {
           "id": "d",
-          "text": "HTTP key"
+          "text": "vendor scanner / trivy on packages"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Ed25519 offers strong security and performance.",
       "docs": [
@@ -1330,23 +1330,23 @@
       "options": [
         {
           "id": "a",
-          "text": "MaxAuthTries in sshd_config"
+          "text": "net.ipv4.ip_forward=0"
         },
         {
           "id": "b",
-          "text": "PermitEmptyPasswords yes bad"
+          "text": "firewalld (nftables backend)"
         },
         {
           "id": "c",
-          "text": "X11Forwarding only"
+          "text": "auditd"
         },
         {
           "id": "d",
-          "text": "Banner only"
+          "text": "MaxAuthTries in sshd_config"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "MaxAuthTries caps authentication attempts.",
       "docs": [
@@ -1368,15 +1368,15 @@
         },
         {
           "id": "b",
-          "text": "apt update"
+          "text": "ls -Z"
         },
         {
           "id": "c",
-          "text": "grub-install"
+          "text": "600"
         },
         {
           "id": "d",
-          "text": "fsck"
+          "text": "RPM/DEB repository signing"
         }
       ],
       "correct": [
@@ -1398,23 +1398,23 @@
       "options": [
         {
           "id": "a",
-          "text": "net.ipv4.ip_forward=0"
+          "text": "auditd"
         },
         {
           "id": "b",
-          "text": "enable always"
+          "text": "user ALL=(ALL) ALL carefully scoped"
         },
         {
           "id": "c",
-          "text": "ignore routing"
+          "text": "net.ipv4.ip_forward=0"
         },
         {
           "id": "d",
-          "text": "disable firewall"
+          "text": "ban IP via iptables/nftables integration"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Disable forwarding on non-router hosts.",
       "docs": [
@@ -1436,15 +1436,15 @@
         },
         {
           "id": "b",
-          "text": "figlet banner"
+          "text": "PermitRootLogin no in sshd_config"
         },
         {
           "id": "c",
-          "text": " cowsay"
+          "text": "firewalld (nftables backend)"
         },
         {
           "id": "d",
-          "text": "fortune"
+          "text": "SELinux"
         }
       ],
       "correct": [
@@ -1470,15 +1470,15 @@
         },
         {
           "id": "b",
-          "text": "UAC Windows"
+          "text": "/etc/passwd and critical system files"
         },
         {
           "id": "c",
-          "text": "Gatekeeper macOS only"
+          "text": "firewalld (nftables backend)"
         },
         {
           "id": "d",
-          "text": "BIOS password only"
+          "text": "auditd"
         }
       ],
       "correct": [
@@ -1500,23 +1500,23 @@
       "options": [
         {
           "id": "a",
-          "text": "ban IP via iptables/nftables integration"
+          "text": "net.ipv4.ip_forward=0"
         },
         {
           "id": "b",
-          "text": "send postcard"
+          "text": "ban IP via iptables/nftables integration"
         },
         {
           "id": "c",
-          "text": "print ticket"
+          "text": "/etc/passwd and critical system files"
         },
         {
           "id": "d",
-          "text": "change wallpaper"
+          "text": "update-ca-trust"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "fail2ban triggers firewall blocks on abuse.",
       "docs": [
@@ -1534,23 +1534,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/etc/passwd and critical system files"
-        },
-        {
-          "id": "b",
           "text": "/tmp can be sticky 1777"
         },
         {
+          "id": "b",
+          "text": "ban IP via iptables/nftables integration"
+        },
+        {
           "id": "c",
-          "text": "world writable shadow good"
+          "text": "/etc/passwd and critical system files"
         },
         {
           "id": "d",
-          "text": "777 /etc/shadow"
+          "text": "auditd"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Critical system files must not be world-writable.",
       "docs": [
@@ -1608,23 +1608,23 @@
       "options": [
         {
           "id": "a",
-          "text": "#!/bin/bash"
+          "text": "Roles"
         },
         {
           "id": "b",
-          "text": "#!/bin/python always bash"
+          "text": "git status"
         },
         {
           "id": "c",
-          "text": "#!/bin/sh only forbidden"
+          "text": "#!/bin/bash"
         },
         {
           "id": "d",
-          "text": "#!no shebang required always"
+          "text": "kubectl apply -f file.yaml"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Shebang selects interpreter.",
       "docs": [
@@ -1646,15 +1646,15 @@
         },
         {
           "id": "b",
-          "text": "Inventory only hosts list"
+          "text": "docker run -it image /bin/bash"
         },
         {
           "id": "c",
-          "text": "ansible.cfg only"
+          "text": "pre-commit hook"
         },
         {
           "id": "d",
-          "text": "hosts file DNS"
+          "text": "Roles"
         }
       ],
       "correct": [
@@ -1680,15 +1680,15 @@
         },
         {
           "id": "b",
-          "text": "git push deploy"
+          "text": "Rootless containers without central daemon"
         },
         {
           "id": "c",
-          "text": "git init first time only"
+          "text": "@daily"
         },
         {
           "id": "d",
-          "text": "git remote"
+          "text": "[ -f file ]"
         }
       ],
       "correct": [
@@ -1710,23 +1710,23 @@
       "options": [
         {
           "id": "a",
-          "text": "docker run -it image /bin/bash"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "docker delete only"
+          "text": "FROM"
         },
         {
           "id": "c",
-          "text": "docker network only"
+          "text": "for item in list:"
         },
         {
           "id": "d",
-          "text": "docker volume only always"
+          "text": "docker run -it image /bin/bash"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "docker run -it starts interactive container.",
       "docs": [
@@ -1748,15 +1748,15 @@
         },
         {
           "id": "b",
-          "text": ".socket only network"
+          "text": "$?"
         },
         {
           "id": "c",
-          "text": ".mount only"
+          "text": "docker run -it image /bin/bash"
         },
         {
           "id": "d",
-          "text": ".path only always required"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
@@ -1778,23 +1778,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CI pipeline test stage"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "Manual fax only"
+          "text": "$?"
         },
         {
           "id": "c",
-          "text": "Production deploy only always first"
+          "text": "CI pipeline test stage"
         },
         {
           "id": "d",
-          "text": "Ignore hooks"
+          "text": "Rootless containers without central daemon"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CI runs tests on each change.",
       "docs": [
@@ -1812,23 +1812,23 @@
       "options": [
         {
           "id": "a",
-          "text": "for item in list:"
+          "text": "kubectl apply -f file.yaml"
         },
         {
           "id": "b",
-          "text": "while True infinite only"
+          "text": "Feature branch workflow"
         },
         {
           "id": "c",
-          "text": "goto"
+          "text": "Roles"
         },
         {
           "id": "d",
-          "text": "switch case native"
+          "text": "for item in list:"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "for loops iterate sequences in Python.",
       "docs": [
@@ -1850,15 +1850,15 @@
         },
         {
           "id": "b",
-          "text": "kubectl delete only"
+          "text": "pyenv class tool"
         },
         {
           "id": "c",
-          "text": "kubectl config only"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "kubectl version only"
+          "text": "@daily"
         }
       ],
       "correct": [
@@ -1884,15 +1884,15 @@
         },
         {
           "id": "b",
-          "text": "Manual click ops only"
+          "text": "Roles"
         },
         {
           "id": "c",
-          "text": "Spreadsheet CMDB only"
+          "text": "Playbook YAML"
         },
         {
           "id": "d",
-          "text": "Sticky note diagram"
+          "text": "FROM"
         }
       ],
       "correct": [
@@ -1918,15 +1918,15 @@
         },
         {
           "id": "b",
-          "text": "$$ PID"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "$# arg count"
+          "text": "FROM"
         },
         {
           "id": "d",
-          "text": "$0 script name"
+          "text": "#!/bin/bash"
         }
       ],
       "correct": [
@@ -1948,23 +1948,23 @@
       "options": [
         {
           "id": "a",
-          "text": "FROM"
+          "text": "Infrastructure as Code (Terraform/Ansible class)"
         },
         {
           "id": "b",
-          "text": "RUN executes build step"
+          "text": "FROM"
         },
         {
           "id": "c",
-          "text": "CMD default command"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "d",
-          "text": "COPY files"
+          "text": "kubectl apply -f file.yaml"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "FROM selects starting image layer.",
       "docs": [
@@ -1982,23 +1982,23 @@
       "options": [
         {
           "id": "a",
-          "text": "@daily"
+          "text": "Feature branch workflow"
         },
         {
           "id": "b",
-          "text": "@reboot only startup"
+          "text": "#!/bin/bash"
         },
         {
           "id": "c",
-          "text": "@yearly only"
+          "text": "@daily"
         },
         {
           "id": "d",
-          "text": "@manual"
+          "text": "kubectl apply -f file.yaml"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "@daily is midnight shortcut.",
       "docs": [
@@ -2016,23 +2016,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Feature branch workflow"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "b",
-          "text": "No branches ever"
+          "text": "Feature branch workflow"
         },
         {
           "id": "c",
-          "text": "Single commit only"
+          "text": "Playbook YAML"
         },
         {
           "id": "d",
-          "text": "Delete history daily"
+          "text": "docker run -it image /bin/bash"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Feature branches isolate work.",
       "docs": [
@@ -2050,23 +2050,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Rootless containers without central daemon"
+          "text": "#!/bin/bash"
         },
         {
           "id": "b",
-          "text": "Requires Windows only"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "No OCI support"
+          "text": "for item in list:"
         },
         {
           "id": "d",
-          "text": "Cannot run containers"
+          "text": "Rootless containers without central daemon"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Podman can run rootless without dockerd.",
       "docs": [
@@ -2088,15 +2088,15 @@
         },
         {
           "id": "b",
-          "text": "Handlers only notify"
+          "text": "@daily"
         },
         {
           "id": "c",
-          "text": "Inventory groups only"
+          "text": "pre-commit hook"
         },
         {
           "id": "d",
-          "text": "Vault only encrypt"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
@@ -2118,23 +2118,23 @@
       "options": [
         {
           "id": "a",
-          "text": "[ -f file ]"
+          "text": "$?"
         },
         {
           "id": "b",
-          "text": "[ -d directory only ]"
+          "text": "Infrastructure as Code (Terraform/Ansible class)"
         },
         {
           "id": "c",
-          "text": "grep file"
+          "text": "pyenv class tool"
         },
         {
           "id": "d",
-          "text": "echo file"
+          "text": "[ -f file ]"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "-f tests regular file existence.",
       "docs": [
@@ -2156,15 +2156,15 @@
         },
         {
           "id": "b",
-          "text": "only system python frozen"
+          "text": "[ -f file ]"
         },
         {
           "id": "c",
-          "text": "notepad"
+          "text": "Playbook YAML"
         },
         {
           "id": "d",
-          "text": "cups"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
@@ -2190,15 +2190,15 @@
         },
         {
           "id": "b",
-          "text": "post-merge only"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "pre-push only deploy"
+          "text": "pyenv class tool"
         },
         {
           "id": "d",
-          "text": "no hooks exist"
+          "text": "FROM"
         }
       ],
       "correct": [
@@ -2260,23 +2260,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Infrastructure as Code (Terraform/Ansible class)"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Rootless containers without central daemon"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "git status"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -2294,23 +2294,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Rootless containers without central daemon"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Follow change control and monitor metrics"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "Playbook YAML"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Infrastructure as Code (Terraform/Ansible class)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -2332,15 +2332,15 @@
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Rootless containers without central daemon"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "for item in list:"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Roles"
         }
       ],
       "correct": [
@@ -2362,23 +2362,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "pre-commit hook"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "docker run -it image /bin/bash"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "#!/bin/bash"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -2396,23 +2396,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Follow change control and monitor metrics"
+          "text": "Feature branch workflow"
         },
         {
           "id": "b",
-          "text": "Disable all logging"
+          "text": "Roles"
         },
         {
           "id": "c",
-          "text": "Skip backups"
+          "text": "$?"
         },
         {
           "id": "d",
-          "text": "Ignore vendor docs"
+          "text": "Follow change control and monitor metrics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Operational discipline reduces outages and misconfigurations.",
       "docs": [
@@ -2434,15 +2434,15 @@
         },
         {
           "id": "b",
-          "text": "touch file"
+          "text": "Enable chronyd/systemd-timesyncd sync"
         },
         {
           "id": "c",
-          "text": "mkdir"
+          "text": "Non-root cannot bind privileged ports or port in use"
         },
         {
           "id": "d",
-          "text": "cal calendar"
+          "text": "dmesg for disk errors and smartctl health"
         }
       ],
       "correct": [
@@ -2468,15 +2468,15 @@
         },
         {
           "id": "b",
-          "text": "debug only"
+          "text": "du -sh /* and journalctl --disk-usage"
         },
         {
           "id": "c",
-          "text": "info only"
+          "text": "chmod +x script or invoke with bash"
         },
         {
           "id": "d",
-          "text": "user mail"
+          "text": "/etc/resolv.conf nameservers and dig test"
         }
       ],
       "correct": [
@@ -2498,23 +2498,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/etc/fstab UUID typo prevents mount"
+          "text": "Non-root cannot bind privileged ports or port in use"
         },
         {
           "id": "b",
-          "text": "GPU driver marketing"
+          "text": "traceroute or tracepath"
         },
         {
           "id": "c",
-          "text": "User typo in email"
+          "text": "Crontab syntax, service crond active, and paths"
         },
         {
           "id": "d",
-          "text": "DNS MX wrong"
+          "text": "/etc/fstab UUID typo prevents mount"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Bad fstab entries trigger emergency mode.",
       "docs": [
@@ -2536,15 +2536,15 @@
         },
         {
           "id": "b",
-          "text": "df -h disk"
+          "text": "Non-root cannot bind privileged ports or port in use"
         },
         {
           "id": "c",
-          "text": "free -m"
+          "text": "kern crit in dmesg/journal"
         },
         {
           "id": "d",
-          "text": "who"
+          "text": "Crontab syntax, service crond active, and paths"
         }
       ],
       "correct": [
@@ -2570,15 +2570,15 @@
         },
         {
           "id": "b",
-          "text": "CPU always at fault"
+          "text": "Enable chronyd/systemd-timesyncd sync"
         },
         {
           "id": "c",
-          "text": "Network cable color"
+          "text": "traceroute or tracepath"
         },
         {
           "id": "d",
-          "text": "Monitor brightness"
+          "text": "Crontab syntax, service crond active, and paths"
         }
       ],
       "correct": [
@@ -2600,23 +2600,23 @@
       "options": [
         {
           "id": "a",
-          "text": "chmod +x script or invoke with bash"
+          "text": "dmesg for disk errors and smartctl health"
         },
         {
           "id": "b",
-          "text": "Delete script"
+          "text": "Crontab syntax, service crond active, and paths"
         },
         {
           "id": "c",
-          "text": "Rename only"
+          "text": "chmod +x script or invoke with bash"
         },
         {
           "id": "d",
-          "text": "Disable SELinux always first"
+          "text": "du -sh /* and journalctl --disk-usage"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Execute bit or explicit interpreter needed.",
       "docs": [
@@ -2634,23 +2634,23 @@
       "options": [
         {
           "id": "a",
-          "text": "/etc/resolv.conf nameservers and dig test"
+          "text": "/etc/fstab UUID typo prevents mount"
         },
         {
           "id": "b",
-          "text": "/etc/shadow"
+          "text": "Verify out-of-band before accepting new key"
         },
         {
           "id": "c",
-          "text": "/boot only"
+          "text": "/etc/resolv.conf nameservers and dig test"
         },
         {
           "id": "d",
-          "text": "/dev/random"
+          "text": "ausearch / audit2why and booleans"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Resolver config and queries diagnose DNS.",
       "docs": [
@@ -2672,15 +2672,15 @@
         },
         {
           "id": "b",
-          "text": "format disk immediately"
+          "text": "chmod +x script or invoke with bash"
         },
         {
           "id": "c",
-          "text": "ignore"
+          "text": "Non-root cannot bind privileged ports or port in use"
         },
         {
           "id": "d",
-          "text": "disable logging always only fix"
+          "text": "top/htop or ps aux --sort=-%mem"
         }
       ],
       "correct": [
@@ -2702,23 +2702,23 @@
       "options": [
         {
           "id": "a",
-          "text": "ausearch / audit2why and booleans"
+          "text": "chmod +x script or invoke with bash"
         },
         {
           "id": "b",
-          "text": "turn off SELinux permanently first always"
+          "text": "ausearch / audit2why and booleans"
         },
         {
           "id": "c",
-          "text": "delete logs"
+          "text": "Enable chronyd/systemd-timesyncd sync"
         },
         {
           "id": "d",
-          "text": "chmod 777"
+          "text": "traceroute or tracepath"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Audit logs and booleans address SELinux denials.",
       "docs": [
@@ -2736,23 +2736,23 @@
       "options": [
         {
           "id": "a",
-          "text": "ONBOOT=yes in ifcfg or netplan config"
+          "text": "/etc/fstab UUID typo prevents mount"
         },
         {
           "id": "b",
-          "text": "random reboot again only"
+          "text": "Non-root cannot bind privileged ports or port in use"
         },
         {
           "id": "c",
-          "text": "change hostname only"
+          "text": "chmod +x script or invoke with bash"
         },
         {
           "id": "d",
-          "text": "edit /etc/shadow"
+          "text": "ONBOOT=yes in ifcfg or netplan config"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Persistent config must enable interface at boot.",
       "docs": [
@@ -2770,23 +2770,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Crontab syntax, service crond active, and paths"
+          "text": "Assume cron broken OS-wide (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Assume cron broken OS-wide"
+          "text": "Crontab syntax, service crond active, and paths"
         },
         {
           "id": "c",
-          "text": "Disable firewalld only fix"
+          "text": "Non-root cannot bind privileged ports or port in use"
         },
         {
           "id": "d",
-          "text": "Reinstall kernel daily"
+          "text": "ausearch / audit2why and booleans"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cron issues often syntax, service, or environment PATH.",
       "docs": [
@@ -2804,23 +2804,23 @@
       "options": [
         {
           "id": "a",
-          "text": "top/htop or ps aux --sort=-%mem"
+          "text": "du -sh /* and journalctl --disk-usage"
         },
         {
           "id": "b",
-          "text": "fdisk"
+          "text": "top/htop or ps aux --sort=-%mem"
         },
         {
           "id": "c",
-          "text": "parted"
+          "text": "Crontab syntax, service crond active, and paths"
         },
         {
           "id": "d",
-          "text": "cal"
+          "text": "ONBOOT=yes in ifcfg or netplan config"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Process monitors show RSS growth over time.",
       "docs": [
@@ -2838,23 +2838,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Require tty, expired password, or sudoers rule"
+          "text": "Crontab syntax, service crond active, and paths"
         },
         {
           "id": "b",
-          "text": "GPU driver"
+          "text": "Non-root cannot bind privileged ports or port in use"
         },
         {
           "id": "c",
-          "text": "Monitor cable"
+          "text": "Require tty, expired password, or sudoers rule"
         },
         {
           "id": "d",
-          "text": "Printer queue"
+          "text": "du -sh /* and journalctl --disk-usage"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "sudoers and PAM settings restrict elevation.",
       "docs": [
@@ -2872,23 +2872,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Verify out-of-band before accepting new key"
+          "text": "Enable chronyd/systemd-timesyncd sync"
         },
         {
           "id": "b",
-          "text": "Always accept blindly"
+          "text": "dmesg for disk errors and smartctl health"
         },
         {
           "id": "c",
-          "text": "Disable encryption"
+          "text": "Verify out-of-band before accepting new key"
         },
         {
           "id": "d",
-          "text": "Share private key"
+          "text": "traceroute or tracepath"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Host key changes may indicate MITM.",
       "docs": [
@@ -2906,23 +2906,23 @@
       "options": [
         {
           "id": "a",
-          "text": "dmesg for disk errors and smartctl health"
+          "text": "/etc/resolv.conf nameservers and dig test"
         },
         {
           "id": "b",
-          "text": "DNS"
+          "text": "dmesg for disk errors and smartctl health"
         },
         {
           "id": "c",
-          "text": "NTP only"
+          "text": "chmod +x script or invoke with bash"
         },
         {
           "id": "d",
-          "text": "Locale"
+          "text": "I/O wait or blocked processes"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Disk errors trigger read-only remounts protecting data.",
       "docs": [
@@ -2940,23 +2940,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Non-root cannot bind privileged ports or port in use"
+          "text": "dmesg for disk errors and smartctl health"
         },
         {
           "id": "b",
-          "text": "Always kernel bug"
+          "text": "/etc/fstab UUID typo prevents mount"
         },
         {
           "id": "c",
-          "text": "Need more RGB"
+          "text": "Non-root cannot bind privileged ports or port in use"
         },
         {
           "id": "d",
-          "text": "Disable network"
+          "text": "/etc/resolv.conf nameservers and dig test"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Ports below 1024 or conflicts block bind.",
       "docs": [
@@ -2978,15 +2978,15 @@
         },
         {
           "id": "b",
-          "text": "Set random time"
+          "text": "/etc/resolv.conf nameservers and dig test"
         },
         {
           "id": "c",
-          "text": "Disable TLS"
+          "text": "traceroute or tracepath"
         },
         {
           "id": "d",
-          "text": "Ignore certificates"
+          "text": "ss -tlnp"
         }
       ],
       "correct": [

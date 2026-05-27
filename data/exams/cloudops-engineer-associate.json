@@ -101,15 +101,15 @@
         },
         {
           "id": "b",
-          "text": "Ping script only"
+          "text": "AWS Config"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         },
         {
           "id": "d",
-          "text": "Email logs"
+          "text": "AWS CloudTrail"
         }
       ],
       "correct": [
@@ -131,23 +131,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Systems Manager"
+          "text": "Amazon CloudWatch"
         },
         {
           "id": "b",
-          "text": "SSH each host manually"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         },
         {
           "id": "c",
-          "text": "Disable patching"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "d",
-          "text": "Shared root SSH"
+          "text": "CloudWatch dashboards and alarms"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Systems Manager automates fleet operations.",
       "docs": [
@@ -165,23 +165,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch cross-account observability or Centralized logging"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "b",
-          "text": "Local disk only"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         },
         {
           "id": "d",
-          "text": "No subscription filters"
+          "text": "VPC Flow Logs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Observability links accounts for unified views.",
       "docs": [
@@ -203,15 +203,15 @@
         },
         {
           "id": "b",
-          "text": "Guess only"
+          "text": "AWS Config"
         },
         {
           "id": "c",
-          "text": "Disable trail"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "d",
-          "text": "No S3 bucket policy"
+          "text": "CloudWatch Synthetics"
         }
       ],
       "correct": [
@@ -233,23 +233,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VPC Flow Logs"
+          "text": "Amazon CloudWatch"
         },
         {
           "id": "b",
-          "text": "Packet sniff all prod without policy"
+          "text": "VPC Flow Logs"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "d",
-          "text": "Disable NACLs"
+          "text": "Packet sniff all prod without policy"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Flow Logs capture IP traffic metadata.",
       "docs": [
@@ -271,15 +271,15 @@
         },
         {
           "id": "b",
-          "text": "No visualization"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "c",
-          "text": "Ignore latency"
+          "text": "VPC Flow Logs"
         },
         {
           "id": "d",
-          "text": "No on-call"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         }
       ],
       "correct": [
@@ -301,23 +301,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch Synthetics"
+          "text": "VPC Flow Logs"
         },
         {
           "id": "b",
-          "text": "Manual browser checks only"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "c",
-          "text": "No alerting"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "d",
-          "text": "Ignore SSL expiry"
+          "text": "CloudWatch Synthetics"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Canaries run scheduled tests against URLs.",
       "docs": [
@@ -335,23 +335,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Config"
+          "text": "Amazon CloudWatch"
         },
         {
           "id": "b",
-          "text": "Undocumented drift"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "c",
-          "text": "No rules"
+          "text": "AWS Config"
         },
         {
           "id": "d",
-          "text": "Disable recording"
+          "text": "VPC Flow Logs"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Config tracks resource configuration over time.",
       "docs": [
@@ -369,23 +369,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon CloudWatch"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "b",
-          "text": "Ping script only"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Amazon CloudWatch"
         },
         {
           "id": "d",
-          "text": "Email logs"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CloudWatch is the primary monitoring service.",
       "docs": [
@@ -403,23 +403,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon CloudWatch"
+          "text": "AWS Config"
         },
         {
           "id": "b",
-          "text": "Ping script only"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Amazon CloudWatch"
         },
         {
           "id": "d",
-          "text": "Email logs"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CloudWatch is the primary monitoring service.",
       "docs": [
@@ -441,15 +441,15 @@
         },
         {
           "id": "b",
-          "text": "Ping script only"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         },
         {
           "id": "d",
-          "text": "Email logs"
+          "text": "AWS CloudTrail"
         }
       ],
       "correct": [
@@ -471,23 +471,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Systems Manager"
+          "text": "VPC Flow Logs"
         },
         {
           "id": "b",
-          "text": "SSH each host manually"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "c",
-          "text": "Disable patching"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "d",
-          "text": "Shared root SSH"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Systems Manager automates fleet operations.",
       "docs": [
@@ -505,23 +505,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Systems Manager"
+          "text": "VPC Flow Logs"
         },
         {
           "id": "b",
-          "text": "SSH each host manually"
+          "text": "CloudWatch dashboards and alarms"
         },
         {
           "id": "c",
-          "text": "Disable patching"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         },
         {
           "id": "d",
-          "text": "Shared root SSH"
+          "text": "AWS Systems Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Systems Manager automates fleet operations.",
       "docs": [
@@ -543,15 +543,15 @@
         },
         {
           "id": "b",
-          "text": "SSH each host manually"
+          "text": "Amazon CloudWatch"
         },
         {
           "id": "c",
-          "text": "Disable patching"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         },
         {
           "id": "d",
-          "text": "Shared root SSH"
+          "text": "CloudWatch Synthetics"
         }
       ],
       "correct": [
@@ -577,15 +577,15 @@
         },
         {
           "id": "b",
-          "text": "Local disk only"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "Amazon CloudWatch"
         },
         {
           "id": "d",
-          "text": "No subscription filters"
+          "text": "VPC Flow Logs"
         }
       ],
       "correct": [
@@ -611,15 +611,15 @@
         },
         {
           "id": "b",
-          "text": "Local disk only"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "AWS Config"
         },
         {
           "id": "d",
-          "text": "No subscription filters"
+          "text": "CloudWatch Synthetics"
         }
       ],
       "correct": [
@@ -641,23 +641,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch cross-account observability or Centralized logging"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "b",
-          "text": "Local disk only"
+          "text": "CloudWatch dashboards and alarms"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         },
         {
           "id": "d",
-          "text": "No subscription filters"
+          "text": "CloudWatch Synthetics"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Observability links accounts for unified views.",
       "docs": [
@@ -675,23 +675,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CloudTrail"
+          "text": "Amazon CloudWatch"
         },
         {
           "id": "b",
-          "text": "Guess only"
+          "text": "AWS Systems Manager"
         },
         {
           "id": "c",
-          "text": "Disable trail"
+          "text": "AWS CloudTrail"
         },
         {
           "id": "d",
-          "text": "No S3 bucket policy"
+          "text": "CloudWatch cross-account observability or Centralized logging"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CloudTrail records API activity.",
       "docs": [
@@ -709,23 +709,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Backup"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "b",
-          "text": "Manual snapshots only"
+          "text": "AWS Backup"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Automated RDS backups"
         },
         {
           "id": "d",
-          "text": "Single AZ"
+          "text": "Route 53 health checks and failover routing"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "AWS Backup applies plans to multiple resources.",
       "docs": [
@@ -743,23 +743,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Elastic Disaster Recovery"
+          "text": "AWS Backup"
         },
         {
           "id": "b",
-          "text": "Tape only"
+          "text": "EC2 Auto Scaling policies"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "Elastic Load Balancing across AZs"
         },
         {
           "id": "d",
-          "text": "Ignore networking"
+          "text": "AWS Elastic Disaster Recovery"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Elastic DR replicates and orchestrates failover.",
       "docs": [
@@ -777,23 +777,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Automated RDS backups"
+          "text": "S3 versioning and MFA Delete"
         },
         {
           "id": "b",
-          "text": "No backups"
+          "text": "CloudFormation stack sets in DR Region"
         },
         {
           "id": "c",
-          "text": "Delete snapshots"
+          "text": "AWS Backup"
         },
         {
           "id": "d",
-          "text": "Single AZ prod only"
+          "text": "Automated RDS backups"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "RDS backups enable PITR within retention.",
       "docs": [
@@ -815,15 +815,15 @@
         },
         {
           "id": "b",
-          "text": "Static DNS never changes"
+          "text": "Automated RDS backups"
         },
         {
           "id": "c",
-          "text": "Ignore app health"
+          "text": "CloudFormation stack sets in DR Region"
         },
         {
           "id": "d",
-          "text": "No secondary Region"
+          "text": "AWS Backup"
         }
       ],
       "correct": [
@@ -849,15 +849,15 @@
         },
         {
           "id": "b",
-          "text": "Fixed capacity forever"
+          "text": "AWS Backup"
         },
         {
           "id": "c",
-          "text": "Manual scale at 3am"
+          "text": "Route 53 health checks and failover routing"
         },
         {
           "id": "d",
-          "text": "Disable alarms"
+          "text": "AWS Elastic Disaster Recovery"
         }
       ],
       "correct": [
@@ -883,15 +883,15 @@
         },
         {
           "id": "b",
-          "text": "Single instance"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Sticky to unhealthy (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Sticky to unhealthy"
+          "text": "AWS Backup"
         }
       ],
       "correct": [
@@ -913,23 +913,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 versioning and MFA Delete"
+          "text": "EC2 Auto Scaling policies"
         },
         {
           "id": "b",
-          "text": "No versioning"
+          "text": "S3 versioning and MFA Delete"
         },
         {
           "id": "c",
-          "text": "Public delete API"
+          "text": "Route 53 health checks and failover routing"
         },
         {
           "id": "d",
-          "text": "Ignore lifecycle"
+          "text": "Elastic Load Balancing across AZs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Versioning retains prior object versions.",
       "docs": [
@@ -947,23 +947,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudFormation stack sets in DR Region"
+          "text": "Elastic Load Balancing across AZs"
         },
         {
           "id": "b",
-          "text": "Untested runbooks"
+          "text": "Automated RDS backups"
         },
         {
           "id": "c",
-          "text": "Hope"
+          "text": "AWS Backup"
         },
         {
           "id": "d",
-          "text": "Same credentials no rotation"
+          "text": "CloudFormation stack sets in DR Region"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Regular DR exercises validate RTO/RPO.",
       "docs": [
@@ -985,15 +985,15 @@
         },
         {
           "id": "b",
-          "text": "Manual snapshots only"
+          "text": "CloudFormation stack sets in DR Region"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Automated RDS backups"
         },
         {
           "id": "d",
-          "text": "Single AZ"
+          "text": "AWS Elastic Disaster Recovery"
         }
       ],
       "correct": [
@@ -1015,23 +1015,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Backup"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "b",
-          "text": "Manual snapshots only"
+          "text": "Elastic Load Balancing across AZs"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "AWS Backup"
         },
         {
           "id": "d",
-          "text": "Single AZ"
+          "text": "Automated RDS backups"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AWS Backup applies plans to multiple resources.",
       "docs": [
@@ -1049,23 +1049,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Backup"
+          "text": "EC2 Auto Scaling policies"
         },
         {
           "id": "b",
-          "text": "Manual snapshots only"
+          "text": "Elastic Load Balancing across AZs"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "AWS Backup"
         },
         {
           "id": "d",
-          "text": "Single AZ"
+          "text": "AWS Elastic Disaster Recovery"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "AWS Backup applies plans to multiple resources.",
       "docs": [
@@ -1083,23 +1083,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Elastic Disaster Recovery"
+          "text": "CloudFormation stack sets in DR Region"
         },
         {
           "id": "b",
-          "text": "Tape only"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "Automated RDS backups"
         },
         {
           "id": "d",
-          "text": "Ignore networking"
+          "text": "AWS Backup"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Elastic DR replicates and orchestrates failover.",
       "docs": [
@@ -1117,23 +1117,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Elastic Disaster Recovery"
+          "text": "AWS Backup"
         },
         {
           "id": "b",
-          "text": "Tape only"
+          "text": "EC2 Auto Scaling policies"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "d",
-          "text": "Ignore networking"
+          "text": "Route 53 health checks and failover routing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Elastic DR replicates and orchestrates failover.",
       "docs": [
@@ -1151,23 +1151,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Elastic Disaster Recovery"
+          "text": "AWS Backup"
         },
         {
           "id": "b",
-          "text": "Tape only"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "c",
-          "text": "No RPO"
+          "text": "Route 53 health checks and failover routing"
         },
         {
           "id": "d",
-          "text": "Ignore networking"
+          "text": "CloudFormation stack sets in DR Region"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Elastic DR replicates and orchestrates failover.",
       "docs": [
@@ -1185,23 +1185,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Automated RDS backups"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "b",
-          "text": "No backups"
+          "text": "AWS Backup"
         },
         {
           "id": "c",
-          "text": "Delete snapshots"
+          "text": "Automated RDS backups"
         },
         {
           "id": "d",
-          "text": "Single AZ prod only"
+          "text": "Route 53 health checks and failover routing"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RDS backups enable PITR within retention.",
       "docs": [
@@ -1223,15 +1223,15 @@
         },
         {
           "id": "b",
-          "text": "No backups"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "c",
-          "text": "Delete snapshots"
+          "text": "AWS Backup"
         },
         {
           "id": "d",
-          "text": "Single AZ prod only"
+          "text": "CloudFormation stack sets in DR Region"
         }
       ],
       "correct": [
@@ -1257,15 +1257,15 @@
         },
         {
           "id": "b",
-          "text": "No backups"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "c",
-          "text": "Delete snapshots"
+          "text": "Route 53 health checks and failover routing"
         },
         {
           "id": "d",
-          "text": "Single AZ prod only"
+          "text": "Elastic Load Balancing across AZs"
         }
       ],
       "correct": [
@@ -1291,15 +1291,15 @@
         },
         {
           "id": "b",
-          "text": "Static DNS never changes"
+          "text": "AWS Backup"
         },
         {
           "id": "c",
-          "text": "Ignore app health"
+          "text": "AWS Elastic Disaster Recovery"
         },
         {
           "id": "d",
-          "text": "No secondary Region"
+          "text": "EC2 Auto Scaling policies"
         }
       ],
       "correct": [
@@ -1325,15 +1325,15 @@
         },
         {
           "id": "b",
-          "text": "Manual console only"
+          "text": "Systems Manager Patch Manager"
         },
         {
           "id": "c",
-          "text": "Undocumented"
+          "text": "Systems Manager State Manager"
         },
         {
           "id": "d",
-          "text": "Snowball"
+          "text": "Systems Manager Parameter Store and Secrets Manager"
         }
       ],
       "correct": [
@@ -1355,23 +1355,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager Patch Manager"
+          "text": "Systems Manager State Manager"
         },
         {
           "id": "b",
-          "text": "Never patch"
+          "text": "Systems Manager Parameter Store and Secrets Manager"
         },
         {
           "id": "c",
-          "text": "Ad hoc SSH"
+          "text": "AWS CloudFormation"
         },
         {
           "id": "d",
-          "text": "Disable SSM agent"
+          "text": "Systems Manager Patch Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Patch Manager automates compliance baselines.",
       "docs": [
@@ -1393,15 +1393,15 @@
         },
         {
           "id": "b",
-          "text": "Drift forever"
+          "text": "AWS CloudFormation"
         },
         {
           "id": "c",
-          "text": "Manual config"
+          "text": "Systems Manager Patch Manager"
         },
         {
           "id": "d",
-          "text": "Golden AMI only no updates"
+          "text": "EC2 Image Builder"
         }
       ],
       "correct": [
@@ -1427,15 +1427,15 @@
         },
         {
           "id": "b",
-          "text": "Hard-code in user data public"
+          "text": "Systems Manager State Manager"
         },
         {
           "id": "c",
-          "text": "Git secrets"
+          "text": "Hard-code in user data public"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "EC2 Image Builder"
         }
       ],
       "correct": [
@@ -1457,23 +1457,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager Run Command"
+          "text": "Systems Manager State Manager"
         },
         {
           "id": "b",
-          "text": "Shared SSH keys in wiki"
+          "text": "0.0.0.0/0 SSH"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "Shared SSH keys in wiki"
         },
         {
           "id": "d",
-          "text": "0.0.0.0/0 SSH"
+          "text": "Systems Manager Run Command"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Run Command executes securely via SSM agent.",
       "docs": [
@@ -1491,23 +1491,23 @@
       "options": [
         {
           "id": "a",
-          "text": "EC2 Image Builder"
+          "text": "Systems Manager State Manager"
         },
         {
           "id": "b",
-          "text": "Manual one-off AMIs untracked"
+          "text": "EC2 Image Builder"
         },
         {
           "id": "c",
-          "text": "No scanning"
+          "text": "Manual one-off AMIs untracked"
         },
         {
           "id": "d",
-          "text": "Public AMIs"
+          "text": "Systems Manager Parameter Store and Secrets Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Image Builder pipelines produce hardened images.",
       "docs": [
@@ -1525,23 +1525,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Elastic Beanstalk"
+          "text": "AWS CloudFormation"
         },
         {
           "id": "b",
-          "text": "FTP deploy"
+          "text": "AWS Elastic Beanstalk"
         },
         {
           "id": "c",
-          "text": "Manual jar copy prod"
+          "text": "EC2 Image Builder"
         },
         {
           "id": "d",
-          "text": "No health reporting"
+          "text": "AWS OpsWorks"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Beanstalk manages app platform layers.",
       "docs": [
@@ -1563,15 +1563,15 @@
         },
         {
           "id": "b",
-          "text": "Unmanaged snowflake servers"
+          "text": "AWS Elastic Beanstalk"
         },
         {
           "id": "c",
-          "text": "No config management"
+          "text": "Systems Manager State Manager"
         },
         {
           "id": "d",
-          "text": "Disable logs"
+          "text": "EC2 Image Builder"
         }
       ],
       "correct": [
@@ -1593,23 +1593,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CloudFormation"
+          "text": "Snowball"
         },
         {
           "id": "b",
-          "text": "Manual console only"
+          "text": "AWS CloudFormation"
         },
         {
           "id": "c",
-          "text": "Undocumented"
+          "text": "Systems Manager State Manager"
         },
         {
           "id": "d",
-          "text": "Snowball"
+          "text": "Systems Manager Patch Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CloudFormation automates resource provisioning.",
       "docs": [
@@ -1627,23 +1627,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CloudFormation"
+          "text": "Systems Manager Parameter Store and Secrets Manager"
         },
         {
           "id": "b",
-          "text": "Manual console only"
+          "text": "AWS CloudFormation"
         },
         {
           "id": "c",
-          "text": "Undocumented"
+          "text": "Systems Manager Patch Manager"
         },
         {
           "id": "d",
-          "text": "Snowball"
+          "text": "Systems Manager State Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CloudFormation automates resource provisioning.",
       "docs": [
@@ -1665,15 +1665,15 @@
         },
         {
           "id": "b",
-          "text": "Manual console only"
+          "text": "Systems Manager Parameter Store and Secrets Manager"
         },
         {
           "id": "c",
-          "text": "Undocumented"
+          "text": "AWS OpsWorks"
         },
         {
           "id": "d",
-          "text": "Snowball"
+          "text": "AWS Elastic Beanstalk"
         }
       ],
       "correct": [
@@ -1695,23 +1695,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager Patch Manager"
+          "text": "AWS OpsWorks"
         },
         {
           "id": "b",
-          "text": "Never patch"
+          "text": "Systems Manager Patch Manager"
         },
         {
           "id": "c",
-          "text": "Ad hoc SSH"
+          "text": "AWS CloudFormation"
         },
         {
           "id": "d",
-          "text": "Disable SSM agent"
+          "text": "Systems Manager State Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Patch Manager automates compliance baselines.",
       "docs": [
@@ -1729,23 +1729,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager Patch Manager"
+          "text": "EC2 Image Builder"
         },
         {
           "id": "b",
-          "text": "Never patch"
+          "text": "AWS CloudFormation"
         },
         {
           "id": "c",
-          "text": "Ad hoc SSH"
+          "text": "Systems Manager Run Command"
         },
         {
           "id": "d",
-          "text": "Disable SSM agent"
+          "text": "Systems Manager Patch Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Patch Manager automates compliance baselines.",
       "docs": [
@@ -1763,23 +1763,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager Patch Manager"
+          "text": "EC2 Image Builder"
         },
         {
           "id": "b",
-          "text": "Never patch"
+          "text": "AWS OpsWorks"
         },
         {
           "id": "c",
-          "text": "Ad hoc SSH"
+          "text": "Systems Manager Patch Manager"
         },
         {
           "id": "d",
-          "text": "Disable SSM agent"
+          "text": "Systems Manager Parameter Store and Secrets Manager"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Patch Manager automates compliance baselines.",
       "docs": [
@@ -1797,23 +1797,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager State Manager"
+          "text": "AWS CloudFormation"
         },
         {
           "id": "b",
-          "text": "Drift forever"
+          "text": "Systems Manager Patch Manager"
         },
         {
           "id": "c",
-          "text": "Manual config"
+          "text": "Systems Manager State Manager"
         },
         {
           "id": "d",
-          "text": "Golden AMI only no updates"
+          "text": "Systems Manager Run Command"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "State Manager applies consistent configurations.",
       "docs": [
@@ -1831,23 +1831,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager State Manager"
+          "text": "AWS CloudFormation"
         },
         {
           "id": "b",
-          "text": "Drift forever"
+          "text": "Systems Manager Patch Manager"
         },
         {
           "id": "c",
-          "text": "Manual config"
+          "text": "Systems Manager Parameter Store and Secrets Manager"
         },
         {
           "id": "d",
-          "text": "Golden AMI only no updates"
+          "text": "Systems Manager State Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "State Manager applies consistent configurations.",
       "docs": [
@@ -1869,15 +1869,15 @@
         },
         {
           "id": "b",
-          "text": "Drift forever"
+          "text": "Systems Manager Patch Manager"
         },
         {
           "id": "c",
-          "text": "Manual config"
+          "text": "AWS Elastic Beanstalk"
         },
         {
           "id": "d",
-          "text": "Golden AMI only no updates"
+          "text": "AWS CloudFormation"
         }
       ],
       "correct": [
@@ -1899,7 +1899,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager Parameter Store and Secrets Manager"
+          "text": "Systems Manager State Manager"
         },
         {
           "id": "b",
@@ -1907,15 +1907,15 @@
         },
         {
           "id": "c",
-          "text": "Git secrets"
+          "text": "Systems Manager Patch Manager"
         },
         {
           "id": "d",
-          "text": "Email passwords"
+          "text": "Systems Manager Parameter Store and Secrets Manager"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Parameter Store provides hierarchical config.",
       "docs": [
@@ -1937,15 +1937,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Account-level EBS encryption by default"
         },
         {
           "id": "c",
-          "text": "No scanning"
+          "text": "EC2 instance profiles"
         },
         {
           "id": "d",
-          "text": "Disable agent"
+          "text": "Systems Manager compliance and Config rules"
         }
       ],
       "correct": [
@@ -1967,23 +1967,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager compliance and Config rules"
+          "text": "Account-level EBS encryption by default"
         },
         {
           "id": "b",
-          "text": "No baseline"
+          "text": "Systems Manager compliance and Config rules"
         },
         {
           "id": "c",
-          "text": "Allow any port"
+          "text": "AWS Organizations SCP"
         },
         {
           "id": "d",
-          "text": "Shared admin"
+          "text": "Amazon Inspector"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Compliance reports drift from desired state.",
       "docs": [
@@ -2001,23 +2001,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Secrets Manager rotation"
+          "text": "Amazon Inspector"
         },
         {
           "id": "b",
-          "text": "Static password 10 years"
+          "text": "Secrets Manager rotation"
         },
         {
           "id": "c",
-          "text": "Wiki password"
+          "text": "EC2 instance profiles"
         },
         {
           "id": "d",
-          "text": "Email creds"
+          "text": "Systems Manager compliance and Config rules"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Rotation limits credential exposure window.",
       "docs": [
@@ -2039,15 +2039,15 @@
         },
         {
           "id": "b",
-          "text": "Allow cloudtrail:StopLogging everywhere"
+          "text": "EC2 instance profiles"
         },
         {
           "id": "c",
-          "text": "Root daily"
+          "text": "GuardDuty organization admin account"
         },
         {
           "id": "d",
-          "text": "No org"
+          "text": "Systems Manager compliance and Config rules"
         }
       ],
       "correct": [
@@ -2069,23 +2069,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GuardDuty organization admin account"
+          "text": "Secrets Manager rotation"
         },
         {
           "id": "b",
-          "text": "Isolated blind accounts"
+          "text": "GuardDuty organization admin account"
         },
         {
           "id": "c",
-          "text": "Ignore findings"
+          "text": "Amazon Inspector"
         },
         {
           "id": "d",
-          "text": "Disable S3 protection"
+          "text": "Systems Manager compliance and Config rules"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Delegated admin centralizes threat detection.",
       "docs": [
@@ -2103,23 +2103,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Account-level EBS encryption by default"
+          "text": "Secrets Manager rotation"
         },
         {
           "id": "b",
-          "text": "Plaintext volumes"
+          "text": "Account-level EBS encryption by default"
         },
         {
           "id": "c",
-          "text": "Public snapshots"
+          "text": "AWS Organizations SCP"
         },
         {
           "id": "d",
-          "text": "Disable KMS"
+          "text": "Amazon Inspector"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Default encryption protects new volumes.",
       "docs": [
@@ -2137,23 +2137,23 @@
       "options": [
         {
           "id": "a",
-          "text": "EC2 instance profiles"
+          "text": "Systems Manager compliance and Config rules"
         },
         {
           "id": "b",
-          "text": "Keys in user data"
+          "text": "Amazon Inspector"
         },
         {
           "id": "c",
-          "text": "Keys in AMI"
+          "text": "EC2 instance profiles"
         },
         {
           "id": "d",
-          "text": "Shared keys"
+          "text": "AWS Config rules and CloudTrail"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Roles provide temporary credentials.",
       "docs": [
@@ -2171,23 +2171,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Config rules and CloudTrail"
+          "text": "Account-level EBS encryption by default"
         },
         {
           "id": "b",
-          "text": "No trail"
+          "text": "Amazon Inspector"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "Systems Manager compliance and Config rules"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "AWS Config rules and CloudTrail"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Config rules detect noncompliant buckets.",
       "docs": [
@@ -2209,15 +2209,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "EC2 instance profiles"
         },
         {
           "id": "c",
-          "text": "No scanning"
+          "text": "GuardDuty organization admin account"
         },
         {
           "id": "d",
-          "text": "Disable agent"
+          "text": "Systems Manager compliance and Config rules"
         }
       ],
       "correct": [
@@ -2239,23 +2239,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Inspector"
+          "text": "Account-level EBS encryption by default"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "EC2 instance profiles"
         },
         {
           "id": "c",
-          "text": "No scanning"
+          "text": "Amazon Inspector"
         },
         {
           "id": "d",
-          "text": "Disable agent"
+          "text": "Systems Manager compliance and Config rules"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Inspector assesses EC2 and ECR.",
       "docs": [
@@ -2273,23 +2273,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon Inspector"
+          "text": "GuardDuty organization admin account"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Amazon Inspector"
         },
         {
           "id": "c",
-          "text": "No scanning"
+          "text": "Systems Manager compliance and Config rules"
         },
         {
           "id": "d",
-          "text": "Disable agent"
+          "text": "Secrets Manager rotation"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Inspector assesses EC2 and ECR.",
       "docs": [
@@ -2307,23 +2307,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager compliance and Config rules"
+          "text": "Account-level EBS encryption by default"
         },
         {
           "id": "b",
-          "text": "No baseline"
+          "text": "Systems Manager compliance and Config rules"
         },
         {
           "id": "c",
-          "text": "Allow any port"
+          "text": "Secrets Manager rotation"
         },
         {
           "id": "d",
-          "text": "Shared admin"
+          "text": "Amazon Inspector"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Compliance reports drift from desired state.",
       "docs": [
@@ -2341,23 +2341,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager compliance and Config rules"
+          "text": "Amazon Inspector"
         },
         {
           "id": "b",
-          "text": "No baseline"
+          "text": "EC2 instance profiles"
         },
         {
           "id": "c",
-          "text": "Allow any port"
+          "text": "Systems Manager compliance and Config rules"
         },
         {
           "id": "d",
-          "text": "Shared admin"
+          "text": "Secrets Manager rotation"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Compliance reports drift from desired state.",
       "docs": [
@@ -2375,23 +2375,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Systems Manager compliance and Config rules"
+          "text": "GuardDuty organization admin account"
         },
         {
           "id": "b",
-          "text": "No baseline"
+          "text": "Systems Manager compliance and Config rules"
         },
         {
           "id": "c",
-          "text": "Allow any port"
+          "text": "Amazon Inspector"
         },
         {
           "id": "d",
-          "text": "Shared admin"
+          "text": "Account-level EBS encryption by default"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Compliance reports drift from desired state.",
       "docs": [
@@ -2409,23 +2409,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon VPC"
+          "text": "CloudFront with ACM certificates"
         },
         {
           "id": "b",
-          "text": "Public DB only"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         },
         {
           "id": "c",
-          "text": "Flat network"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "d",
-          "text": "No routing"
+          "text": "Amazon VPC"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VPC isolates networks in AWS.",
       "docs": [
@@ -2443,23 +2443,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Site-to-Site VPN or Direct Connect"
+          "text": "RDP 0.0.0.0/0 (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Public RDS over internet"
+          "text": "Route 53 private hosted zones"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         },
         {
           "id": "d",
-          "text": "RDP 0.0.0.0/0"
+          "text": "Amazon VPC"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Hybrid connectivity links data centers to VPC.",
       "docs": [
@@ -2477,23 +2477,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudFront with ACM certificates"
-        },
-        {
-          "id": "b",
           "text": "Single EC2 in one AZ for world"
         },
         {
+          "id": "b",
+          "text": "Amazon VPC"
+        },
+        {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Traffic mirroring or Network Firewall"
         },
         {
           "id": "d",
-          "text": "Self-signed expired"
+          "text": "CloudFront with ACM certificates"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CloudFront caches at edge locations.",
       "docs": [
@@ -2511,23 +2511,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Gateway VPC endpoint for S3"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         },
         {
           "id": "b",
-          "text": "NAT for all S3"
+          "text": "Gateway VPC endpoint for S3"
         },
         {
           "id": "c",
-          "text": "Public buckets"
+          "text": "AWS Global Accelerator"
         },
         {
           "id": "d",
-          "text": "Disable endpoint policy"
+          "text": "Traffic mirroring or Network Firewall"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Gateway endpoints keep S3 traffic private.",
       "docs": [
@@ -2545,23 +2545,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Application Load Balancer"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         },
         {
           "id": "b",
-          "text": "Round-robin DNS to changing IPs only"
+          "text": "Amazon VPC"
         },
         {
           "id": "c",
-          "text": "Single instance"
+          "text": "Application Load Balancer"
         },
         {
           "id": "d",
-          "text": "No health check"
+          "text": "Route 53 private hosted zones"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "ALB operates at Layer 7 across AZs.",
       "docs": [
@@ -2579,7 +2579,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Route 53 private hosted zones"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         },
         {
           "id": "b",
@@ -2587,15 +2587,15 @@
         },
         {
           "id": "c",
-          "text": "/etc/hosts fleet"
+          "text": "Gateway VPC endpoint for S3"
         },
         {
           "id": "d",
-          "text": "No DNS"
+          "text": "Route 53 private hosted zones"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Private zones provide internal DNS.",
       "docs": [
@@ -2617,15 +2617,15 @@
         },
         {
           "id": "b",
-          "text": "No visibility"
+          "text": "Gateway VPC endpoint for S3"
         },
         {
           "id": "c",
-          "text": "Disable flow logs"
+          "text": "Route 53 private hosted zones"
         },
         {
           "id": "d",
-          "text": "Allow all"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         }
       ],
       "correct": [
@@ -2651,15 +2651,15 @@
         },
         {
           "id": "b",
-          "text": "Single Region only for global users"
+          "text": "Application Load Balancer"
         },
         {
           "id": "c",
-          "text": "Ignore routing"
+          "text": "Amazon VPC"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "Route 53 private hosted zones"
         }
       ],
       "correct": [
@@ -2681,23 +2681,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon VPC"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         },
         {
           "id": "b",
-          "text": "Public DB only"
+          "text": "Gateway VPC endpoint for S3"
         },
         {
           "id": "c",
-          "text": "Flat network"
+          "text": "Route 53 private hosted zones"
         },
         {
           "id": "d",
-          "text": "No routing"
+          "text": "Amazon VPC"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VPC isolates networks in AWS.",
       "docs": [
@@ -2715,23 +2715,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon VPC"
+          "text": "Traffic mirroring or Network Firewall"
         },
         {
           "id": "b",
-          "text": "Public DB only"
+          "text": "Amazon VPC"
         },
         {
           "id": "c",
-          "text": "Flat network"
+          "text": "Gateway VPC endpoint for S3"
         },
         {
           "id": "d",
-          "text": "No routing"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "VPC isolates networks in AWS.",
       "docs": [
@@ -2753,15 +2753,15 @@
         },
         {
           "id": "b",
-          "text": "Public DB only"
+          "text": "Traffic mirroring or Network Firewall"
         },
         {
           "id": "c",
-          "text": "Flat network"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         },
         {
           "id": "d",
-          "text": "No routing"
+          "text": "CloudFront with ACM certificates"
         }
       ],
       "correct": [
@@ -2783,23 +2783,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Site-to-Site VPN or Direct Connect"
+          "text": "Gateway VPC endpoint for S3"
         },
         {
           "id": "b",
-          "text": "Public RDS over internet"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "RDP 0.0.0.0/0 (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "RDP 0.0.0.0/0"
+          "text": "Amazon VPC"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Hybrid connectivity links data centers to VPC.",
       "docs": [
@@ -2817,23 +2817,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Site-to-Site VPN or Direct Connect"
+          "text": "Gateway VPC endpoint for S3"
         },
         {
           "id": "b",
-          "text": "Public RDS over internet"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "RDP 0.0.0.0/0 (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "RDP 0.0.0.0/0"
+          "text": "Amazon VPC"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Hybrid connectivity links data centers to VPC.",
       "docs": [
@@ -2851,23 +2851,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Site-to-Site VPN or Direct Connect"
+          "text": "CloudFront with ACM certificates"
         },
         {
           "id": "b",
-          "text": "Public RDS over internet"
+          "text": "Amazon VPC"
         },
         {
           "id": "c",
-          "text": "Telnet"
+          "text": "RDP 0.0.0.0/0 (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "RDP 0.0.0.0/0"
+          "text": "AWS Site-to-Site VPN or Direct Connect"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Hybrid connectivity links data centers to VPC.",
       "docs": [
@@ -2885,68 +2885,29 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudFront with ACM certificates"
+          "text": "Gateway VPC endpoint for S3"
         },
         {
           "id": "b",
-          "text": "Single EC2 in one AZ for world"
+          "text": "CloudFront with ACM certificates"
         },
         {
           "id": "c",
-          "text": "HTTP only"
+          "text": "Single EC2 in one AZ for world"
         },
         {
           "id": "d",
-          "text": "Self-signed expired"
+          "text": "Traffic mirroring or Network Firewall"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CloudFront caches at edge locations.",
       "docs": [
         {
           "title": "CloudFront",
           "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
-        }
-      ]
-    },
-    {
-      "id": "soa-q084",
-      "domain": "monitoring-logging",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified CloudOps Engineer \u2013 Associate? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "Amazon CloudWatch"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "AWS Systems Manager"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "Amazon CloudWatch",
-          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
         }
       ]
     },

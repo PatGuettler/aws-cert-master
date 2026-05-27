@@ -21,6 +21,7 @@ def main() -> int:
     scripts = [
         ROOT / "scripts" / "generate_all_aws_exams.py",
         ROOT / "scripts" / "generate_all_vendors.py",
+        ROOT / "scripts" / "generate-questions.py",
         ROOT / "scripts" / "generate_key_training_exams.py",
     ]
     for script in scripts:

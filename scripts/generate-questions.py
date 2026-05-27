@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate data/cloud-practitioner.json — run from repo root."""
 import json
+import random
 import sys
 from pathlib import Path
 
@@ -10,6 +11,10 @@ OUT = EXAMS_DIR / "cloud-practitioner.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from question_bank.clf_c02_extended import EXTENDED  # noqa: E402
+from question_bank.vendor_mcq_hardening import (  # noqa: E402
+    finalize_vendor_mcq_row,
+    harden_exam_payload,
+)
 
 DOMAINS = [
     {
@@ -464,10 +469,28 @@ EXAM_DOMAIN_MIN = {
 ALL_RAW = RAW + EXTENDED
 
 
+def _clf_peer_map() -> dict[str, list[str]]:
+    peers: dict[str, list[str]] = {}
+    for row in ALL_RAW:
+        if row[1] != "multiple-choice":
+            continue
+        opts = dict(row[3])
+        for cid in row[4]:
+            peers.setdefault(row[0], []).append(opts[cid])
+    return peers
+
+
 def build_questions():
+    rng = random.Random(42)
+    peer_map = _clf_peer_map()
     questions = []
     for i, row in enumerate(ALL_RAW, start=1):
         domain, qtype, text, opts, correct, explanation, docs = row
+        if qtype == "multiple-choice":
+            row = finalize_vendor_mcq_row(
+                row, peer_map.get(domain, []), "aws", rng
+            )
+            domain, qtype, text, opts, correct, explanation, docs = row
         questions.append({
             "id": f"clf-q{i:03d}",
             "domain": domain,
@@ -498,22 +521,25 @@ def main():
     questions = build_questions()
     validate_pool(questions)
 
-    payload = {
-        "id": "cloud-practitioner",
-        "name": "AWS Certified Cloud Practitioner",
-        "code": "CLF-C02",
-        "vendor": "aws",
-        "exam": {
-            "totalQuestions": 65,
-            "scoredQuestions": 50,
-            "timeLimitMinutes": 90,
-            "passingScore": 700,
-            "maxScore": 1000,
-            "selectionMode": "weighted-random",
+    payload = harden_exam_payload(
+        {
+            "id": "cloud-practitioner",
+            "name": "AWS Certified Cloud Practitioner",
+            "code": "CLF-C02",
+            "vendor": "aws",
+            "exam": {
+                "totalQuestions": 65,
+                "scoredQuestions": 50,
+                "timeLimitMinutes": 90,
+                "passingScore": 700,
+                "maxScore": 1000,
+                "selectionMode": "weighted-random",
+            },
+            "domains": DOMAINS,
+            "questions": questions,
         },
-        "domains": DOMAINS,
-        "questions": questions,
-    }
+        seed=42,
+    )
     EXAMS_DIR.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     by_domain = {}

@@ -112,7 +112,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Update the template to set every property (including former defaults). Create a Lambda function that detects stack drift and updates the stack from the template. Schedule it daily with Amazon EventBridge."
+          "text": "Update the template to set every property (including former defaults). Use the cloudformation-stack-drift-detection-check AWS Config rule with automatic remediation via the AWS-UpdateCloudFormationStack Systems Manager Automation runbook."
         },
         {
           "id": "b",
@@ -120,11 +120,11 @@
         },
         {
           "id": "c",
-          "text": "Update the template to set every property (including former defaults). Use the cloudformation-stack-drift-detection-check AWS Config rule with automatic remediation via the AWS-UpdateCloudFormationStack Systems Manager Automation runbook."
+          "text": "AWS CDK constructs or CloudFormation modules"
         },
         {
           "id": "d",
-          "text": "Use the cloudformation-stack-drift-detection-check AWS Config rule with automatic remediation via the AWS-UpdateCloudFormationStack Systems Manager Automation runbook only."
+          "text": "Update the template to set every property (including former defaults). Create a Lambda function that detects stack drift and updates the stack from the template. Schedule it daily with Amazon EventBridge."
         }
       ],
       "correct": [
@@ -150,23 +150,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Publish a custom Amazon CloudWatch metric: visible SQS messages divided by in-service instances. Scale the Auto Scaling group on that metric against an acceptable target."
+          "text": "API Gateway throttling and client retries with jitter"
         },
         {
           "id": "b",
-          "text": "Place an Application Load Balancer in front of the group and scale on ALBRequestCountPerTarget."
+          "text": "Route 53 failover + AMIs/Launch templates in DR Region"
         },
         {
           "id": "c",
-          "text": "Change the target tracking policy to use the SQS NumberOfMessagesReceived metric instead of CPU."
+          "text": "AWS Fault Injection Simulator"
         },
         {
           "id": "d",
-          "text": "Lower the CPU target percentage and shorten the warm-up period on the existing policy."
+          "text": "Publish a custom Amazon CloudWatch metric: visible SQS messages divided by in-service instances. Scale the Auto Scaling group on that metric against an acceptable target."
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Queue depth per running instance reflects worker backlog; CPU is a weak signal for queue consumers.",
       "docs": [
@@ -188,23 +188,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Enable trusted access between Service Quotas and Organizations. Create a CloudWatch alarm per needed service at 80% of quota utilization. Send Amazon SNS notifications when the alarm enters ALARM."
+          "text": "CodePipeline CloudWatch events and notifications"
         },
         {
           "id": "b",
-          "text": "Deploy a Lambda function in each account that calls DescribeTrustedAdvisorCheckResult and opens support cases for WARN quota checks. Schedule it daily from the management account over EventBridge."
+          "text": "Deploy a Lambda function in each account that calls DescribeTrustedAdvisorCheckResult and opens support cases for WARN quota checks. Schedule it daily from the management account over EventBridge. (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Enable Service Quotas trusted access and create 80% CloudWatch alarms, but route ALARM events through EventBridge instead of SNS."
+          "text": "CloudWatch composite alarms"
         },
         {
           "id": "d",
-          "text": "Refresh Trusted Advisor checks daily with Lambda and publish to SNS when checks report 80% usage."
+          "text": "Enable trusted access between Service Quotas and Organizations. Create a CloudWatch alarm per needed service at 80% of quota utilization. Send Amazon SNS notifications when the alarm enters ALARM."
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Service Quotas integrates with Organizations and exposes utilization metrics for CloudWatch alarms; SNS is the standard notification channel.",
       "docs": [
@@ -269,23 +269,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Default service values cannot be overridden by .ebextensions."
+          "text": "AWS OpsWorks or SSM State Manager"
         },
         {
           "id": "b",
-          "text": "Values passed through the Elastic Beanstalk CLI/API (recommended values) take precedence over .ebextensions for settings such as instance type."
+          "text": "cfn-lint and CloudFormation change sets"
         },
         {
           "id": "c",
-          "text": "Instance type cannot be configured in .ebextensions."
+          "text": "Systems Manager Compliance and AWS Config"
         },
         {
           "id": "d",
-          "text": "The launching IAM principal lacks permission for t3.medium."
+          "text": "Values passed through the Elastic Beanstalk CLI/API (recommended values) take precedence over .ebextensions for settings such as instance type."
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Precedence is direct environment/API settings, saved configuration, .ebextensions, then defaults. CLI launches can apply recommended values that win over extensions.",
       "docs": [
@@ -303,23 +303,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Deploy a new API stage and custom domain; use a simple Route 53 record to split 10%/90% traffic."
-        },
-        {
-          "id": "b",
           "text": "Add a canary release on the existing production stage: 10% to the new Lambda integration and 90% to the current integration."
         },
         {
+          "id": "b",
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
+        },
+        {
           "id": "c",
-          "text": "Create a second API and second Route 53 domain; use weighted routing 10%/90%."
+          "text": "Associate the Git repository with Amazon CodeGuru Reviewer."
         },
         {
           "id": "d",
-          "text": "Switch to Lambda proxy integration and route 10% of requests inside the function."
+          "text": "Deploy a new API stage and custom domain; use a simple Route 53 record to split 10%/90% traffic. (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "b"
+        "a"
       ],
       "explanation": "API Gateway canary deployments on the same stage shift traffic without client-side hostname changes.",
       "docs": [
@@ -337,15 +337,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Central syslog on EC2; AWS Batch copies filtered logs to Amazon S3 once per day."
+          "text": "CodePipeline CloudWatch events and notifications"
         },
         {
           "id": "b",
-          "text": "CloudWatch agent to CloudWatch Logs; Lambda writes all events to an always-on OpenSearch cluster; share OpenSearch Dashboards with the vendor."
+          "text": "CloudWatch agent directly to Amazon Data Firehose; Lambda transformation drops non-event lines; deliver to S3. (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "CloudWatch agent directly to Amazon Data Firehose; Lambda transformation drops non-event lines; deliver to S3."
+          "text": "Central syslog on EC2; AWS Batch copies filtered logs to Amazon S3 once per day. (not recommended for production workloads)"
         },
         {
           "id": "d",
@@ -371,23 +371,23 @@
       "options": [
         {
           "id": "a",
-          "text": "EventBridge global endpoints with replication to a security account; Lambda removes public access."
+          "text": "AWS Config rule in each account (or organization) for public ACLs/policies with automated remediation via a Systems Manager Automation runbook."
         },
         {
           "id": "b",
-          "text": "Organization CloudTrail to a security-account bucket; EventBridge rules on that bus for all accounts."
+          "text": "Create an EventBridge rule on aws.ecs for STOPPED tasks with that stoppedReason; target the SNS topic."
         },
         {
           "id": "c",
-          "text": "Enable S3 EventBridge notifications on every bucket for ACL and policy changes."
+          "text": "Organization CloudTrail to a security-account bucket; EventBridge rules on that bus for all accounts. (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "AWS Config rule in each account (or organization) for public ACLs/policies with automated remediation via a Systems Manager Automation runbook."
+          "text": "AWS Config rule detecting noncompliant instances with remediation that terminates them."
         }
       ],
       "correct": [
-        "d"
+        "a"
       ],
       "explanation": "Managed Config rules such as s3-bucket-level-public-access-prohibited detect public access; runbooks like AWS-DisableS3BucketPublicReadWrite remediate automatically.",
       "docs": [
@@ -409,15 +409,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Lambda validates artifacts; reuse one CodeBuild project in both pipelines; CodeDeploy deploys each environment."
+          "text": "IAM role with STS AssumeRole; refresh credentials on a schedule; install the CodeDeploy agent; register on-premises instances; tag-based deployment group."
         },
         {
           "id": "b",
-          "text": "One pipeline builds to S3; S3 events invoke validation Lambda; two pipelines deploy from S3."
+          "text": "CodeDeploy for Lambda"
         },
         {
           "id": "c",
-          "text": "Shared CodeBuild with different buildspec overrides per environment via --buildspec-override."
+          "text": "Notation/Cosign with ECR and admission controls"
         },
         {
           "id": "d",
@@ -443,23 +443,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lambda authorizer"
+          "text": "Lambda compares artifact SHA-256 checksums across pipelines after the UAT build; both deployment stages use the same AWS CloudFormation template to provision environments."
         },
         {
           "id": "b",
-          "text": "Amazon Cognito user pool"
+          "text": "Lambda authorizer"
         },
         {
           "id": "c",
-          "text": "Amazon Cognito identity pool"
+          "text": "API key for API Gateway"
         },
         {
           "id": "d",
-          "text": "API key for API Gateway"
+          "text": "CodeStar Connections with IAM"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "A Lambda authorizer calls your existing auth service and returns an IAM policy for allow or deny.",
       "docs": [
@@ -477,23 +477,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM user access keys in a local credentials file; register instance IDs with the deployment group."
-        },
-        {
-          "id": "b",
-          "text": "IAM user access keys in a file; tag servers; tag-based deployment group."
-        },
-        {
-          "id": "c",
           "text": "IAM role with STS AssumeRole; refresh credentials on a schedule; install the CodeDeploy agent; register on-premises instances; tag-based deployment group."
         },
         {
+          "id": "b",
+          "text": "IAM user access keys in a local credentials file; register instance IDs with the deployment group. (not recommended for production workloads)"
+        },
+        {
+          "id": "c",
+          "text": "CloudFormation Guard or cfn-nag in CodeBuild"
+        },
+        {
           "id": "d",
-          "text": "Same as (c) but register a list of instance IDs instead of tags."
+          "text": "AWS CodePipeline with manual approval actions"
         }
       ],
       "correct": [
-        "c"
+        "a"
       ],
       "explanation": "Temporary credentials from AssumeRole avoid long-lived keys; CodeDeploy deployment groups target tags.",
       "docs": [
@@ -511,23 +511,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Add a lifecycle hook to put new instances in Pending:Wait; run a registration script; complete the lifecycle action with CONTINUE or ABANDON."
+          "text": "AWS Resilience Hub"
         },
         {
           "id": "b",
-          "text": "User data bootstrap script registers the instance; return a non-zero exit code on failure."
+          "text": "Add a lifecycle hook to put new instances in Pending:Wait; run a registration script; complete the lifecycle action with CONTINUE or ABANDON."
         },
         {
           "id": "c",
-          "text": "EventBridge schedule every 5 minutes invokes Lambda to register any new instances."
+          "text": "Route 53 failover + AMIs/Launch templates in DR Region"
         },
         {
           "id": "d",
-          "text": "EventBridge rule on EC2 launch invokes Lambda to register asynchronously."
+          "text": "Auto Scaling with golden AMI/Image Builder"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Lifecycle hooks block the Auto Scaling group until registration succeeds or the instance is abandoned.",
       "docs": [
@@ -584,23 +584,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Configure ECS cluster notification options for lastStatus STOPPED."
+          "text": "SNS to AWS Chatbot or PagerDuty integration"
         },
         {
           "id": "b",
-          "text": "Create an EventBridge rule on aws.ecs for STOPPED tasks with that stoppedReason; target the SNS topic."
+          "text": "Lambda polls DescribeTasks on a schedule and publishes matching tasks to SNS. (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Lambda polls DescribeTasks on a schedule and publishes matching tasks to SNS."
+          "text": "SSM Automation snapshot volumes with preservation"
         },
         {
           "id": "d",
-          "text": "Set notifications=true on essential containers in the task definition."
+          "text": "Create an EventBridge rule on aws.ecs for STOPPED tasks with that stoppedReason; target the SNS topic."
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "EventBridge captures ECS task state changes natively; SNS delivers email without custom polling code.",
       "docs": [
@@ -618,23 +618,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Deploy all infrastructure with one AWS Serverless Application Model (AWS SAM) template."
+          "text": "CloudFormation for ElastiCache; SAM for the remaining components. (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Deploy everything with CloudFormation and custom resources for API, Lambda, and DynamoDB."
+          "text": "Deploy all infrastructure with one AWS Serverless Application Model (AWS SAM) template."
         },
         {
           "id": "c",
-          "text": "CloudFormation for ElastiCache; SAM for the remaining components."
+          "text": "Deploy everything with CloudFormation and custom resources for API, Lambda, and DynamoDB."
         },
         {
           "id": "d",
-          "text": "CloudFormation template without the SAM transform."
+          "text": "CodeStar Connections with IAM"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "SAM extends CloudFormation for serverless workloads in a single maintainable template.",
       "docs": [
@@ -652,7 +652,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Approved AWS Service Catalog products only."
+          "text": "Organization-wide AWS Config conformance pack with public access rules and remediation"
         },
         {
           "id": "b",
@@ -660,15 +660,15 @@
         },
         {
           "id": "c",
-          "text": "AWS Config rule detecting noncompliant instances with remediation that terminates them."
+          "text": "Runbooks and knowledge base in Incident Manager"
         },
         {
           "id": "d",
-          "text": "CloudFormation templates developers launch manually."
+          "text": "AWS Config rule detecting noncompliant instances with remediation that terminates them."
         }
       ],
       "correct": [
-        "c"
+        "d"
       ],
       "explanation": "Config continuously evaluates instances; remediation can terminate hosts that violate the AMI rule.",
       "docs": [
@@ -686,23 +686,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Golden AMI per OS update; NewestInstance termination policy; disable console access; Systems Manager maintenance."
+          "text": "SSM Parameter Store hierarchies per env"
         },
         {
           "id": "b",
-          "text": "Use the default AWS AMI and patch in user data on each launch; OldestLaunchConfiguration policy."
+          "text": "Create a Lambda function that detects drift on the existing stack and updates the stack using the current template. Invoke it on a daily schedule with Amazon EventBridge."
         },
         {
           "id": "c",
-          "text": "Golden AMI; OldestLaunchConfiguration; double capacity then scale in; use AWS Config for emergency maintenance."
+          "text": "Golden AMI per update; OldestLaunchConfiguration termination; double capacity then return to original size; disable OS console access; use AWS Systems Manager for maintenance."
         },
         {
           "id": "d",
-          "text": "Golden AMI per update; OldestLaunchConfiguration termination; double capacity then return to original size; disable OS console access; use AWS Systems Manager for maintenance."
+          "text": "Systems Manager Compliance and AWS Config"
         }
       ],
       "correct": [
-        "d"
+        "c"
       ],
       "explanation": "Immutable AMIs plus replacing oldest instances removes drift; Systems Manager supports controlled changes without ad hoc SSH.",
       "docs": [
@@ -724,15 +724,15 @@
       "options": [
         {
           "id": "a",
-          "text": "New API integrated with the new Lambda; keep the old API and Lambda unchanged."
+          "text": "Notation/Cosign with ECR and admission controls"
         },
         {
           "id": "b",
-          "text": "Integrate the existing API with the new Lambda and delete the old function immediately."
+          "text": "AWS CodeBuild with privileged mode only when needed"
         },
         {
           "id": "c",
-          "text": "New API for new clients; existing API unchanged so legacy calls still omit language."
+          "text": "IAM role with STS AssumeRole; refresh credentials on a schedule; install the CodeDeploy agent; register on-premises instances; tag-based deployment group."
         },
         {
           "id": "d",
@@ -758,7 +758,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Elastic Beanstalk environment in the DR Region; swap environment URLs; promote a cross-Region read replica."
+          "text": "Multi-AZ worker nodes and pod topology spread"
         },
         {
           "id": "b",
@@ -766,11 +766,11 @@
         },
         {
           "id": "c",
-          "text": "Hourly Lambda copies EBS and RDS snapshots to the DR Region; rebuild from snapshots on disaster."
+          "text": "Multi-Region active-passive or active-active"
         },
         {
           "id": "d",
-          "text": "Active web tier in both Regions; Aurora global database with manual promotion in DR."
+          "text": "AWS Fault Injection Simulator experiment templates"
         }
       ],
       "correct": [
@@ -796,23 +796,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Associate the Git repo with Amazon CodeGuru Profiler and review pull requests."
+          "text": "New API for clients that send language; add a mapping template on the existing API integration that injects \"language\": \"English\"; delete the old Lambda after cutover."
         },
         {
           "id": "b",
-          "text": "Run CodeGuru Profiler in the CodeBuild prebuild phase."
-        },
-        {
-          "id": "c",
           "text": "Associate the Git repository with Amazon CodeGuru Reviewer."
         },
         {
+          "id": "c",
+          "text": "Run CodeGuru Profiler in the CodeBuild prebuild phase."
+        },
+        {
           "id": "d",
-          "text": "Run CodeGuru Reviewer only in CodeBuild without associating the repository."
+          "text": "Associate the Git repo with Amazon CodeGuru Profiler and review pull requests."
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "CodeGuru Reviewer analyzes pull requests for defects and best practices in Python and Java.",
       "docs": [
@@ -830,11 +830,11 @@
       "options": [
         {
           "id": "a",
-          "text": "DetectStackDrift Lambda on a cron only"
+          "text": "SSM Parameter Store hierarchies per env"
         },
         {
           "id": "b",
-          "text": "Stack policy denying updates"
+          "text": "AWS CDK constructs or CloudFormation modules"
         },
         {
           "id": "c",
@@ -842,7 +842,7 @@
         },
         {
           "id": "d",
-          "text": "CloudTrail alone"
+          "text": "AWS OpsWorks or SSM State Manager"
         }
       ],
       "correct": [
@@ -864,23 +864,23 @@
       "options": [
         {
           "id": "a",
-          "text": "ALB HTTPCode_Target_5XX_Count alone"
+          "text": "CloudTrail management events and CloudTrail Lake"
         },
         {
           "id": "b",
-          "text": "Deployment group linked to a log-derived error metric alarm"
+          "text": "CloudWatch composite alarms"
         },
         {
           "id": "c",
-          "text": "Manual SNS email to operators only"
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
         },
         {
           "id": "d",
-          "text": "EC2 CPUUtilization alarm"
+          "text": "Deployment group linked to a log-derived error metric alarm"
         }
       ],
       "correct": [
-        "b"
+        "d"
       ],
       "explanation": "Application errors may appear only in logs; metric filters surface them to CodeDeploy alarms.",
       "docs": [
@@ -898,23 +898,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 Inventory only"
+          "text": "SSM Automation documents triggered by Config"
         },
         {
           "id": "b",
-          "text": "Macie for every object daily"
-        },
-        {
-          "id": "c",
           "text": "Organization-wide AWS Config conformance pack with public access rules and remediation"
         },
         {
+          "id": "c",
+          "text": "Create an EventBridge rule on aws.ecs for STOPPED tasks with that stoppedReason; target the SNS topic."
+        },
+        {
           "id": "d",
-          "text": "CloudFront in front of all buckets"
+          "text": "Security group isolation runbook or NACL deny"
         }
       ],
       "correct": [
-        "c"
+        "b"
       ],
       "explanation": "Conformance packs roll Config rules and remediation to all accounts in the organization.",
       "docs": [
@@ -932,23 +932,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Fault Injection Simulator experiment templates"
+          "text": "CodeDeploy hooks and health checks"
         },
         {
           "id": "b",
-          "text": "Random SSH reboot scripts"
+          "text": "Distributed Load Testing on AWS or third-party in VPC"
         },
         {
           "id": "c",
-          "text": "Disable Auto Scaling"
+          "text": "Separate clusters/accounts per cell"
         },
         {
           "id": "d",
-          "text": "Delete the VPC"
+          "text": "AWS Fault Injection Simulator experiment templates"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "FIS provides controlled fault injection experiments with safety controls.",
       "docs": [
@@ -966,7 +966,7 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodePipeline with manual approval actions"
+          "text": "Shared prod creds in repo"
         },
         {
           "id": "b",
@@ -974,15 +974,15 @@
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "CloudFormation Guard or cfn-nag in CodeBuild"
         },
         {
           "id": "d",
-          "text": "Shared prod creds in repo"
+          "text": "AWS CodePipeline with manual approval actions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Manual approvals gate production.",
       "docs": [
@@ -1004,15 +1004,15 @@
         },
         {
           "id": "b",
-          "text": "Build on prod server"
+          "text": "CodeDeploy for Lambda"
         },
         {
           "id": "c",
-          "text": "Disable tests"
+          "text": "Deploy all infrastructure with one AWS Serverless Application Model (AWS SAM) template."
         },
         {
           "id": "d",
-          "text": "Cache secrets in logs"
+          "text": "CodeStar Connections with IAM"
         }
       ],
       "correct": [
@@ -1034,23 +1034,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
+          "text": "Associate the Git repository with Amazon CodeGuru Reviewer."
         },
         {
           "id": "b",
-          "text": "kubectl apply from laptops prod"
+          "text": "IAM role with STS AssumeRole; refresh credentials on a schedule; install the CodeDeploy agent; register on-premises instances; tag-based deployment group."
         },
         {
           "id": "c",
-          "text": "No drift detection"
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
         },
         {
           "id": "d",
-          "text": "Shared kubeconfig"
+          "text": "New API for clients that send language; add a mapping template on the existing API integration that injects \"language\": \"English\"; delete the old Lambda after cutover."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "GitOps reconciles cluster state from Git.",
       "docs": [
@@ -1068,23 +1068,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Notation/Cosign with ECR and admission controls"
+          "text": "CodeDeploy for Lambda"
         },
         {
           "id": "b",
-          "text": "Pull :latest unsigned"
+          "text": "CodePipeline S3 artifact store with encryption"
         },
         {
           "id": "c",
-          "text": "Ignore digest pinning"
+          "text": "Notation/Cosign with ECR and admission controls"
         },
         {
           "id": "d",
-          "text": "Public registry trust all"
+          "text": "Lambda authorizer"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Image signing prevents tampered deploys.",
       "docs": [
@@ -1106,15 +1106,15 @@
         },
         {
           "id": "b",
-          "text": "All-at-once always"
+          "text": "IAM role with STS AssumeRole; refresh credentials on a schedule; install the CodeDeploy agent; register on-premises instances; tag-based deployment group."
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "AWS CodeBuild with privileged mode only when needed"
         },
         {
           "id": "d",
-          "text": "Ignore alarms"
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
         }
       ],
       "correct": [
@@ -1136,23 +1136,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CodePipeline S3 artifact store with encryption"
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
         },
         {
           "id": "b",
-          "text": "Mutable latest overwrite"
+          "text": "CodePipeline S3 artifact store with encryption"
         },
         {
           "id": "c",
-          "text": "No KMS"
+          "text": "CodeStar Connections with IAM"
         },
         {
           "id": "d",
-          "text": "Public artifact bucket"
+          "text": "AWS CodePipeline with manual approval actions"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Artifacts should be versioned and encrypted.",
       "docs": [
@@ -1174,15 +1174,15 @@
         },
         {
           "id": "b",
-          "text": "Open webhook no secret"
+          "text": "Lambda compares artifact SHA-256 checksums across pipelines after the UAT build; both deployment stages use the same AWS CloudFormation template to provision environments."
         },
         {
           "id": "c",
-          "text": "SSH keys in repo"
+          "text": "Lambda authorizer"
         },
         {
           "id": "d",
-          "text": "Disable TLS"
+          "text": "Deploy all infrastructure with one AWS Serverless Application Model (AWS SAM) template."
         }
       ],
       "correct": [
@@ -1204,23 +1204,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudFormation Guard or cfn-nag in CodeBuild"
+          "text": "CodeDeploy for Lambda"
         },
         {
           "id": "b",
-          "text": "Skip policy checks"
+          "text": "CodePipeline S3 artifact store with encryption"
         },
         {
           "id": "c",
-          "text": "Allow 0.0.0.0/0 always"
+          "text": "Notation/Cosign with ECR and admission controls"
         },
         {
           "id": "d",
-          "text": "No SAR"
+          "text": "CloudFormation Guard or cfn-nag in CodeBuild"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Policy-as-code catches misconfigurations early.",
       "docs": [
@@ -1238,23 +1238,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodePipeline with manual approval actions"
-        },
-        {
-          "id": "b",
-          "text": "AWS CodeBuild with privileged mode only when needed"
-        },
-        {
-          "id": "c",
           "text": "Direct prod deploy on commit"
         },
         {
+          "id": "b",
+          "text": "Associate the Git repository with Amazon CodeGuru Reviewer."
+        },
+        {
+          "id": "c",
+          "text": "AWS CodePipeline with manual approval actions"
+        },
+        {
           "id": "d",
-          "text": "No tests"
+          "text": "Add a canary release on the existing production stage: 10% to the new Lambda integration and 90% to the current integration."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Manual approvals gate production. Compare with AWS CodeBuild with privileged mode only when needed: CodeBuild scales build fleet elastically.",
       "docs": [
@@ -1276,23 +1276,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CodeBuild with privileged mode only when needed"
+          "text": "Add a canary release on the existing production stage: 10% to the new Lambda integration and 90% to the current integration."
         },
         {
           "id": "b",
-          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
+          "text": "Lambda compares artifact SHA-256 checksums across pipelines after the UAT build; both deployment stages use the same AWS CloudFormation template to provision environments."
         },
         {
           "id": "c",
-          "text": "Build on prod server"
+          "text": "Flux/Argo CD on EKS or CodePipeline to cluster"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "AWS CodeBuild with privileged mode only when needed"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CodeBuild scales build fleet elastically. Compare with Flux/Argo CD on EKS or CodePipeline to cluster: GitOps reconciles cluster state from Git.",
       "docs": [
@@ -1314,23 +1314,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CDK constructs or CloudFormation modules"
+          "text": "SSM Parameter Store hierarchies per env"
         },
         {
           "id": "b",
-          "text": "Copy-paste templates"
+          "text": "Values passed through the Elastic Beanstalk CLI/API (recommended values) take precedence over .ebextensions for settings such as instance type."
         },
         {
           "id": "c",
-          "text": "Undocumented params"
+          "text": "AWS CDK constructs or CloudFormation modules"
         },
         {
           "id": "d",
-          "text": "No versioning"
+          "text": "AWS::Serverless transform"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Modules promote reuse and standards.",
       "docs": [
@@ -1352,15 +1352,15 @@
         },
         {
           "id": "b",
-          "text": "Snowflake servers"
+          "text": "Golden AMI per update; OldestLaunchConfiguration termination; double capacity then return to original size; disable OS console access; use AWS Systems Manager for maintenance."
         },
         {
           "id": "c",
-          "text": "No inventory"
+          "text": "Explicit properties in the template plus AWS Config drift detection with AWS-UpdateCloudFormationStack remediation"
         },
         {
           "id": "d",
-          "text": "Ignore drift"
+          "text": "CloudFormation StackSets"
         }
       ],
       "correct": [
@@ -1382,23 +1382,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS OpsWorks or SSM State Manager"
+          "text": "AWS CDK constructs or CloudFormation modules"
         },
         {
           "id": "b",
-          "text": "Manual SSH config"
+          "text": "AWS OpsWorks or SSM State Manager"
         },
         {
           "id": "c",
-          "text": "No idempotency"
+          "text": "Golden AMI per update; OldestLaunchConfiguration termination; double capacity then return to original size; disable OS console access; use AWS Systems Manager for maintenance."
         },
         {
           "id": "d",
-          "text": "Shared root"
+          "text": "SSM Parameter Store hierarchies per env"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Configuration management enforces desired state.",
       "docs": [
@@ -1416,23 +1416,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudFormation resource import"
+          "text": "Golden AMI per update; OldestLaunchConfiguration termination; double capacity then return to original size; disable OS console access; use AWS Systems Manager for maintenance."
         },
         {
           "id": "b",
-          "text": "Recreate prod destroy"
+          "text": "CloudFormation resource import"
         },
         {
           "id": "c",
-          "text": "Ignore dependencies"
+          "text": "AWS CDK constructs or CloudFormation modules"
         },
         {
           "id": "d",
-          "text": "Manual only"
+          "text": "Values passed through the Elastic Beanstalk CLI/API (recommended values) take precedence over .ebextensions for settings such as instance type."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Resource import brings legacy under management.",
       "docs": [
@@ -1454,15 +1454,15 @@
         },
         {
           "id": "b",
-          "text": "Click each account"
+          "text": "SSM Parameter Store hierarchies per env"
         },
         {
           "id": "c",
-          "text": "Email templates"
+          "text": "Golden AMI per update; OldestLaunchConfiguration termination; double capacity then return to original size; disable OS console access; use AWS Systems Manager for maintenance."
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "Explicit properties in the template plus AWS Config drift detection with AWS-UpdateCloudFormationStack remediation"
         }
       ],
       "correct": [
@@ -1488,15 +1488,15 @@
         },
         {
           "id": "b",
-          "text": "Prod params in dev account shared"
+          "text": "Create a Lambda function that detects drift on the existing stack and updates the stack using the current template. Invoke it on a daily schedule with Amazon EventBridge."
         },
         {
           "id": "c",
-          "text": "Hard-code secrets"
+          "text": "AWS CDK constructs or CloudFormation modules"
         },
         {
           "id": "d",
-          "text": "Git prod passwords"
+          "text": "Prod params in dev account shared"
         }
       ],
       "correct": [
@@ -1518,23 +1518,23 @@
       "options": [
         {
           "id": "a",
-          "text": "cfn-lint and CloudFormation change sets"
+          "text": "Systems Manager Compliance and AWS Config"
         },
         {
           "id": "b",
-          "text": "Deploy untested template prod"
+          "text": "cfn-lint and CloudFormation change sets"
         },
         {
           "id": "c",
-          "text": "Disable rollback"
+          "text": "AWS CDK constructs or CloudFormation modules"
         },
         {
           "id": "d",
-          "text": "No change set"
+          "text": "Values passed through the Elastic Beanstalk CLI/API (recommended values) take precedence over .ebextensions for settings such as instance type."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Change sets preview modifications.",
       "docs": [
@@ -1552,23 +1552,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS::Serverless transform"
+          "text": "SSM Parameter Store hierarchies per env"
         },
         {
           "id": "b",
-          "text": "Zip upload manual only forever"
+          "text": "AWS OpsWorks or SSM State Manager"
         },
         {
           "id": "c",
-          "text": "No template"
+          "text": "CloudFormation StackSets"
         },
         {
           "id": "d",
-          "text": "Disable rollback"
+          "text": "AWS::Serverless transform"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SAM simplifies Lambda/API definitions.",
       "docs": [
@@ -1586,23 +1586,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS CDK constructs or CloudFormation modules"
-        },
-        {
-          "id": "b",
           "text": "Systems Manager Compliance and AWS Config"
         },
         {
+          "id": "b",
+          "text": "CloudFormation resource import"
+        },
+        {
           "id": "c",
-          "text": "Copy-paste templates"
+          "text": "CloudFormation StackSets"
         },
         {
           "id": "d",
-          "text": "Undocumented params"
+          "text": "AWS CDK constructs or CloudFormation modules"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Modules promote reuse and standards. Compare with Systems Manager Compliance and AWS Config: Compliance reports deviations.",
       "docs": [
@@ -1624,23 +1624,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Fault Injection Simulator"
-        },
-        {
-          "id": "b",
           "text": "Chaos in prod without guardrails"
         },
         {
+          "id": "b",
+          "text": "Publish a custom Amazon CloudWatch metric: visible SQS messages divided by in-service instances. Scale the Auto Scaling group on that metric against an acceptable target."
+        },
+        {
           "id": "c",
-          "text": "No rollback"
+          "text": "Add a lifecycle hook to put new instances in Pending:Wait; run a registration script; complete the lifecycle action with CONTINUE or ABANDON."
         },
         {
           "id": "d",
-          "text": "Ignore blast radius"
+          "text": "AWS Fault Injection Simulator"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "FIS injects controlled failures.",
       "docs": [
@@ -1658,23 +1658,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Resilience Hub"
+          "text": "Add a lifecycle hook to put new instances in Pending:Wait; run a registration script; complete the lifecycle action with CONTINUE or ABANDON."
         },
         {
           "id": "b",
-          "text": "No targets"
+          "text": "Route 53 failover + AMIs/Launch templates in DR Region"
         },
         {
           "id": "c",
-          "text": "Hope"
+          "text": "AWS Resilience Hub"
         },
         {
           "id": "d",
-          "text": "Never test DR"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Resilience Hub assesses apps against policies.",
       "docs": [
@@ -1692,23 +1692,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon RDS Multi-AZ"
+          "text": "Auto Scaling with golden AMI/Image Builder"
         },
         {
           "id": "b",
-          "text": "Single AZ prod"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "c",
-          "text": "No backups"
+          "text": "AWS Resilience Hub"
         },
         {
           "id": "d",
-          "text": "Manual DNS only"
+          "text": "API Gateway throttling and client retries with jitter"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multi-AZ fails over to standby.",
       "docs": [
@@ -1726,23 +1726,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SQS with Auto Scaling on queue depth"
+          "text": "AWS Resilience Hub"
         },
         {
           "id": "b",
-          "text": "Scale on hope"
+          "text": "AWS Fault Injection Simulator"
         },
         {
           "id": "c",
-          "text": "No DLQ"
+          "text": "SQS with Auto Scaling on queue depth"
         },
         {
           "id": "d",
-          "text": "Unbounded queue no alarm"
+          "text": "Add a lifecycle hook to put new instances in Pending:Wait; run a registration script; complete the lifecycle action with CONTINUE or ABANDON."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Backpressure protects downstream systems.",
       "docs": [
@@ -1760,23 +1760,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Route 53 failover + AMIs/Launch templates in DR Region"
+          "text": "AWS Fault Injection Simulator"
         },
         {
           "id": "b",
-          "text": "Single Region stateless still"
+          "text": "Route 53 failover + AMIs/Launch templates in DR Region"
         },
         {
           "id": "c",
-          "text": "No automation"
+          "text": "SQS with Auto Scaling on queue depth"
         },
         {
           "id": "d",
-          "text": "Ignore health"
+          "text": "Amazon RDS Multi-AZ"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Stateless tiers are easier to failover.",
       "docs": [
@@ -1794,23 +1794,23 @@
       "options": [
         {
           "id": "a",
-          "text": "API Gateway throttling and client retries with jitter"
+          "text": "SQS with Auto Scaling on queue depth"
         },
         {
           "id": "b",
-          "text": "Retry storm infinite"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "c",
-          "text": "No timeouts"
+          "text": "API Gateway throttling and client retries with jitter"
         },
         {
           "id": "d",
-          "text": "Cascade failure"
+          "text": "AWS Resilience Hub"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Circuit breakers prevent cascading outages.",
       "docs": [
@@ -1832,15 +1832,15 @@
         },
         {
           "id": "b",
-          "text": "Single AZ tasks"
+          "text": "AWS Resilience Hub"
         },
         {
           "id": "c",
-          "text": "No health check"
+          "text": "API Gateway throttling and client retries with jitter"
         },
         {
           "id": "d",
-          "text": "Desired count 1 prod"
+          "text": "Add a lifecycle hook to put new instances in Pending:Wait; run a registration script; complete the lifecycle action with CONTINUE or ABANDON."
         }
       ],
       "correct": [
@@ -1862,23 +1862,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Auto Scaling with golden AMI/Image Builder"
+          "text": "SQS with Auto Scaling on queue depth"
         },
         {
           "id": "b",
-          "text": "SSH mutate prod"
+          "text": "Auto Scaling with golden AMI/Image Builder"
         },
         {
           "id": "c",
-          "text": "No rolling update"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "d",
-          "text": "Shared snowflake"
+          "text": "ECS service scheduler spread"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Immutable deploys replace instances instead of patching live.",
       "docs": [
@@ -1900,7 +1900,7 @@
         },
         {
           "id": "b",
-          "text": "AWS Resilience Hub"
+          "text": "Amazon RDS Multi-AZ"
         },
         {
           "id": "c",
@@ -1908,7 +1908,7 @@
         },
         {
           "id": "d",
-          "text": "No rollback"
+          "text": "ECS service scheduler spread"
         }
       ],
       "correct": [
@@ -1934,23 +1934,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Resilience Hub"
-        },
-        {
-          "id": "b",
           "text": "Amazon RDS Multi-AZ"
         },
         {
+          "id": "b",
+          "text": "SQS with Auto Scaling on queue depth"
+        },
+        {
           "id": "c",
-          "text": "No targets"
+          "text": "AWS Resilience Hub"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "API Gateway throttling and client retries with jitter"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Resilience Hub assesses apps against policies. Compare with Amazon RDS Multi-AZ: Multi-AZ fails over to standby.",
       "docs": [
@@ -1972,23 +1972,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon RDS Multi-AZ"
-        },
-        {
-          "id": "b",
           "text": "SQS with Auto Scaling on queue depth"
         },
         {
+          "id": "b",
+          "text": "Amazon RDS Multi-AZ"
+        },
+        {
           "id": "c",
-          "text": "Single AZ prod"
+          "text": "AWS Fault Injection Simulator"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "AWS Resilience Hub"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multi-AZ fails over to standby. Compare with SQS with Auto Scaling on queue depth: Backpressure protects downstream systems.",
       "docs": [
@@ -2010,23 +2010,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch Application Signals / X-Ray / Logs"
+          "text": "Deployment group linked to a log-derived error metric alarm"
         },
         {
           "id": "b",
-          "text": "grep only"
+          "text": "CloudWatch Synthetics canaries"
         },
         {
           "id": "c",
-          "text": "No tracing"
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "CloudWatch Application Signals / X-Ray / Logs"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Unified observability speeds incident response.",
       "docs": [
@@ -2044,23 +2044,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch composite alarms"
+          "text": "Enable trusted access between Service Quotas and Organizations. Create a CloudWatch alarm per needed service at 80% of quota utilization. Send Amazon SNS notifications when the alarm enters ALARM."
         },
         {
           "id": "b",
-          "text": "Alert on every blip"
+          "text": "CloudWatch composite alarms"
         },
         {
           "id": "c",
-          "text": "No runbooks"
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
         },
         {
           "id": "d",
-          "text": "Pager for dev metrics"
+          "text": "CloudWatch Application Signals / X-Ray / Logs"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Composite alarms combine child alarms logically.",
       "docs": [
@@ -2078,23 +2078,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
+          "text": "CloudWatch composite alarms"
         },
         {
           "id": "b",
-          "text": "Manual copy logs"
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
         },
         {
           "id": "c",
-          "text": "Public log bucket"
+          "text": "CloudWatch agent to CloudWatch Logs; subscription filter and Lambda write only application events to Amazon S3; grant the vendor S3 access."
         },
         {
           "id": "d",
-          "text": "No encryption"
+          "text": "CloudTrail management events and CloudTrail Lake"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Streaming exports integrate with analytics/SIEM.",
       "docs": [
@@ -2112,23 +2112,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudTrail management events and CloudTrail Lake"
+          "text": "CodePipeline CloudWatch events and notifications"
         },
         {
           "id": "b",
-          "text": "Disable trail"
+          "text": "CloudTrail management events and CloudTrail Lake"
         },
         {
           "id": "c",
-          "text": "No integrity validation"
+          "text": "CloudWatch agent to CloudWatch Logs; subscription filter and Lambda write only application events to Amazon S3; grant the vendor S3 access."
         },
         {
           "id": "d",
-          "text": "Shared root"
+          "text": "Enable trusted access between Service Quotas and Organizations. Create a CloudWatch alarm per needed service at 80% of quota utilization. Send Amazon SNS notifications when the alarm enters ALARM."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "CloudTrail Lake enables SQL analytics on events.",
       "docs": [
@@ -2146,23 +2146,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CodePipeline CloudWatch events and notifications"
+          "text": "CloudWatch Application Signals / X-Ray / Logs"
         },
         {
           "id": "b",
-          "text": "Silent fail prod"
+          "text": "CloudWatch agent to CloudWatch Logs; subscription filter and Lambda write only application events to Amazon S3; grant the vendor S3 access."
         },
         {
           "id": "c",
-          "text": "No SNS"
+          "text": "CloudWatch composite alarms"
         },
         {
           "id": "d",
-          "text": "Ignore broken builds"
+          "text": "CodePipeline CloudWatch events and notifications"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Event-driven notifications alert owners.",
       "docs": [
@@ -2184,15 +2184,15 @@
         },
         {
           "id": "b",
-          "text": "No metrics"
+          "text": "CloudTrail management events and CloudTrail Lake"
         },
         {
           "id": "c",
-          "text": "Yearly deploy"
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
         },
         {
           "id": "d",
-          "text": "Manual spreadsheet only"
+          "text": "CodePipeline CloudWatch events and notifications"
         }
       ],
       "correct": [
@@ -2218,15 +2218,15 @@
         },
         {
           "id": "b",
-          "text": "No probing"
+          "text": "CodePipeline CloudWatch events and notifications"
         },
         {
           "id": "c",
-          "text": "Ignore 5xx"
+          "text": "CloudWatch composite alarms"
         },
         {
           "id": "d",
-          "text": "Test only localhost"
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
         }
       ],
       "correct": [
@@ -2252,15 +2252,15 @@
         },
         {
           "id": "b",
-          "text": "Silent scale fail"
+          "text": "CloudWatch agent to CloudWatch Logs; subscription filter and Lambda write only application events to Amazon S3; grant the vendor S3 access."
         },
         {
           "id": "c",
-          "text": "No capacity"
+          "text": "CodePipeline CloudWatch events and notifications"
         },
         {
           "id": "d",
-          "text": "Ignore launch errors"
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
         }
       ],
       "correct": [
@@ -2282,23 +2282,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch Application Signals / X-Ray / Logs"
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
         },
         {
           "id": "b",
-          "text": "CloudWatch composite alarms"
+          "text": "CloudWatch Application Signals / X-Ray / Logs"
         },
         {
           "id": "c",
-          "text": "grep only"
+          "text": "CloudTrail management events and CloudTrail Lake"
         },
         {
           "id": "d",
-          "text": "No tracing"
+          "text": "CloudWatch Synthetics canaries"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Unified observability speeds incident response. Compare with CloudWatch composite alarms: Composite alarms combine child alarms logically.",
       "docs": [
@@ -2320,7 +2320,7 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch composite alarms"
+          "text": "CloudTrail management events and CloudTrail Lake"
         },
         {
           "id": "b",
@@ -2328,15 +2328,15 @@
         },
         {
           "id": "c",
-          "text": "Alert on every blip"
+          "text": "CodePipeline + custom metrics to CloudWatch"
         },
         {
           "id": "d",
-          "text": "No runbooks"
+          "text": "CloudWatch composite alarms"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Composite alarms combine child alarms logically. Compare with CloudWatch subscription filters to Kinesis/Firehose/OpenSearch: Streaming exports integrate with analytics/SIEM.",
       "docs": [
@@ -2358,23 +2358,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
+          "text": "CloudWatch Synthetics canaries"
         },
         {
           "id": "b",
-          "text": "CloudTrail management events and CloudTrail Lake"
+          "text": "Enable trusted access between Service Quotas and Organizations. Create a CloudWatch alarm per needed service at 80% of quota utilization. Send Amazon SNS notifications when the alarm enters ALARM."
         },
         {
           "id": "c",
-          "text": "Manual copy logs"
+          "text": "CloudTrail management events and CloudTrail Lake"
         },
         {
           "id": "d",
-          "text": "Public log bucket"
+          "text": "CloudWatch subscription filters to Kinesis/Firehose/OpenSearch"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Streaming exports integrate with analytics/SIEM. Compare with CloudTrail management events and CloudTrail Lake: CloudTrail Lake enables SQL analytics on events.",
       "docs": [
@@ -2396,23 +2396,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CloudTrail management events and CloudTrail Lake"
-        },
-        {
-          "id": "b",
           "text": "CodePipeline CloudWatch events and notifications"
         },
         {
+          "id": "b",
+          "text": "CodePipeline + custom metrics to CloudWatch"
+        },
+        {
           "id": "c",
-          "text": "Disable trail"
+          "text": "CloudWatch composite alarms"
         },
         {
           "id": "d",
-          "text": "No integrity validation"
+          "text": "CloudTrail management events and CloudTrail Lake"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "CloudTrail Lake enables SQL analytics on events. Compare with CodePipeline CloudWatch events and notifications: Event-driven notifications alert owners.",
       "docs": [
@@ -2438,15 +2438,15 @@
         },
         {
           "id": "b",
-          "text": "Email one person only"
+          "text": "Organization-wide AWS Config conformance pack with public access rules and remediation"
         },
         {
           "id": "c",
-          "text": "No automation"
+          "text": "Runbooks and knowledge base in Incident Manager"
         },
         {
           "id": "d",
-          "text": "Ignore events"
+          "text": "SSM Automation snapshot volumes with preservation"
         }
       ],
       "correct": [
@@ -2472,15 +2472,15 @@
         },
         {
           "id": "b",
-          "text": "Ad hoc war room only"
+          "text": "Amazon EventBridge rules to SNS/Lambda/SSM"
         },
         {
           "id": "c",
-          "text": "No roles"
+          "text": "Organization-wide AWS Config conformance pack with public access rules and remediation"
         },
         {
           "id": "d",
-          "text": "No timelines"
+          "text": "AWS Config rule in each account (or organization) for public ACLs/policies with automated remediation via a Systems Manager Automation runbook."
         }
       ],
       "correct": [
@@ -2502,23 +2502,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSM Automation documents triggered by Config"
+          "text": "Create an EventBridge rule on aws.ecs for STOPPED tasks with that stoppedReason; target the SNS topic."
         },
         {
           "id": "b",
-          "text": "Manual fix months later"
+          "text": "Organization-wide AWS Config conformance pack with public access rules and remediation"
         },
         {
           "id": "c",
-          "text": "Ignore Config"
+          "text": "AWS Security Hub"
         },
         {
           "id": "d",
-          "text": "Disable rules"
+          "text": "SSM Automation documents triggered by Config"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Automation executes approved remediation.",
       "docs": [
@@ -2540,15 +2540,15 @@
         },
         {
           "id": "b",
-          "text": "Leave instance in prod VLAN"
+          "text": "Create an EventBridge rule on aws.ecs for STOPPED tasks with that stoppedReason; target the SNS topic."
         },
         {
           "id": "c",
-          "text": "No snapshot"
+          "text": "AWS Config rule in each account (or organization) for public ACLs/policies with automated remediation via a Systems Manager Automation runbook."
         },
         {
           "id": "d",
-          "text": "Delete logs"
+          "text": "Leave instance in prod VLAN (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2570,23 +2570,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Security Hub"
+          "text": "Runbooks and knowledge base in Incident Manager"
         },
         {
           "id": "b",
-          "text": "Siloed tools only"
+          "text": "Organization-wide AWS Config conformance pack with public access rules and remediation"
         },
         {
           "id": "c",
-          "text": "Ignore critical"
+          "text": "AWS Security Hub"
         },
         {
           "id": "d",
-          "text": "No ticketing"
+          "text": "AWS Config rule detecting noncompliant instances with remediation that terminates them."
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Security Hub prioritizes findings.",
       "docs": [
@@ -2604,23 +2604,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SSM Automation snapshot volumes with preservation"
+          "text": "Security group isolation runbook or NACL deny"
         },
         {
           "id": "b",
-          "text": "Overwrite disks"
+          "text": "SSM Automation snapshot volumes with preservation"
         },
         {
           "id": "c",
-          "text": "Terminate immediately"
+          "text": "Systems Manager Incident Manager"
         },
         {
           "id": "d",
-          "text": "No chain of custody"
+          "text": "SSM Automation documents triggered by Config"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Preserve evidence before remediation.",
       "docs": [
@@ -2638,23 +2638,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SNS to AWS Chatbot or PagerDuty integration"
+          "text": "SSM Automation snapshot volumes with preservation"
         },
         {
           "id": "b",
-          "text": "Email only no escalation"
+          "text": "SNS to AWS Chatbot or PagerDuty integration"
         },
         {
           "id": "c",
-          "text": "Ignore pages"
+          "text": "SSM Automation documents triggered by Config"
         },
         {
           "id": "d",
-          "text": "No runbook link"
+          "text": "Runbooks and knowledge base in Incident Manager"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Integrations route alerts to on-call.",
       "docs": [
@@ -2676,15 +2676,15 @@
         },
         {
           "id": "b",
-          "text": "No blameless postmortem"
+          "text": "Systems Manager Incident Manager"
         },
         {
           "id": "c",
-          "text": "Repeat same incident"
+          "text": "AWS Config rule in each account (or organization) for public ACLs/policies with automated remediation via a Systems Manager Automation runbook."
         },
         {
           "id": "d",
-          "text": "Hide timeline"
+          "text": "SSM Automation documents triggered by Config"
         }
       ],
       "correct": [
@@ -2706,23 +2706,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scheduled DR drills with CloudFormation"
+          "text": "Multi-Region active-passive or active-active"
         },
         {
           "id": "b",
-          "text": "Never test restore"
+          "text": "Scheduled DR drills with CloudFormation"
         },
         {
           "id": "c",
-          "text": "Hope"
+          "text": "Separate clusters/accounts per cell"
         },
         {
           "id": "d",
-          "text": "Outdated runbook"
+          "text": "Adjust visibility to processing time"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Testing confirms RTO/RPO assumptions.",
       "docs": [
@@ -2740,23 +2740,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Separate clusters/accounts per cell"
+          "text": "AWS Fault Injection Simulator experiment templates"
         },
         {
           "id": "b",
-          "text": "One cluster everything"
+          "text": "Scheduled DR drills with CloudFormation"
         },
         {
           "id": "c",
-          "text": "Cluster-admin for all devs prod"
+          "text": "Separate clusters/accounts per cell"
         },
         {
           "id": "d",
-          "text": "No network policy"
+          "text": "Cluster-admin for all devs prod"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cells contain failures.",
       "docs": [
@@ -2774,23 +2774,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Multi-Region active-passive or active-active"
+          "text": "Separate clusters/accounts per cell"
         },
         {
           "id": "b",
-          "text": "Single Region"
+          "text": "Multi-Region active-passive or active-active"
         },
         {
           "id": "c",
-          "text": "No backups cross-Region"
+          "text": "Adjust visibility to processing time"
         },
         {
           "id": "d",
-          "text": "Ignore DNS failover"
+          "text": "Maintain current AMIs for the web tier in the DR Region; cross-Region RDS read replica; on disaster launch a CloudFormation stack, promote the replica, update DNS to the new load balancer."
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multi-Region designs address Regional disasters.",
       "docs": [
@@ -2808,23 +2808,23 @@
       "options": [
         {
           "id": "a",
-          "text": "CodeDeploy hooks and health checks"
+          "text": "AWS Fault Injection Simulator experiment templates"
         },
         {
           "id": "b",
-          "text": "Deploy twice corrupts data"
+          "text": "Multi-AZ worker nodes and pod topology spread"
         },
         {
           "id": "c",
-          "text": "No rollback"
+          "text": "Velero backups to S3"
         },
         {
           "id": "d",
-          "text": "Ignore health"
+          "text": "CodeDeploy hooks and health checks"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Idempotency makes retries safe.",
       "docs": [
@@ -2842,23 +2842,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Distributed Load Testing on AWS or third-party in VPC"
+          "text": "Separate clusters/accounts per cell"
         },
         {
           "id": "b",
-          "text": "Hope capacity enough"
+          "text": "Distributed Load Testing on AWS or third-party in VPC"
         },
         {
           "id": "c",
-          "text": "Test prod users unaware"
+          "text": "Velero backups to S3"
         },
         {
           "id": "d",
-          "text": "No metrics"
+          "text": "AWS Fault Injection Simulator experiment templates"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Load testing validates scaling policies.",
       "docs": [
@@ -2876,23 +2876,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Adjust visibility to processing time"
+          "text": "Scheduled DR drills with CloudFormation"
         },
         {
           "id": "b",
-          "text": "Too short duplicate processing"
+          "text": "Separate clusters/accounts per cell"
         },
         {
           "id": "c",
-          "text": "Too long stuck messages"
+          "text": "Multi-Region active-passive or active-active"
         },
         {
           "id": "d",
-          "text": "No DLQ"
+          "text": "Adjust visibility to processing time"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Visibility timeout prevents duplicate work.",
       "docs": [
@@ -2914,15 +2914,15 @@
         },
         {
           "id": "b",
-          "text": "Single node cluster prod"
+          "text": "Multi-Region active-passive or active-active"
         },
         {
           "id": "c",
-          "text": "No PDB"
+          "text": "AWS Fault Injection Simulator experiment templates"
         },
         {
           "id": "d",
-          "text": "Ignore kube-proxy"
+          "text": "Separate clusters/accounts per cell"
         }
       ],
       "correct": [
@@ -2944,23 +2944,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Velero backups to S3"
+          "text": "CodeDeploy hooks and health checks"
         },
         {
           "id": "b",
-          "text": "No backups"
+          "text": "Velero backups to S3"
         },
         {
           "id": "c",
-          "text": "Only etcd default (managed by AWS)"
+          "text": "Multi-AZ worker nodes and pod topology spread"
         },
         {
           "id": "d",
-          "text": "Ignore PV snapshots"
+          "text": "Multi-Region active-passive or active-active"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Velero backs up Kubernetes resources and PVs.",
       "docs": [
@@ -2978,23 +2978,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Scheduled DR drills with CloudFormation"
+          "text": "CodeDeploy hooks and health checks"
         },
         {
           "id": "b",
-          "text": "Separate clusters/accounts per cell"
+          "text": "Scheduled DR drills with CloudFormation"
         },
         {
           "id": "c",
-          "text": "Never test restore"
+          "text": "AWS Fault Injection Simulator experiment templates"
         },
         {
           "id": "d",
-          "text": "Hope"
+          "text": "Separate clusters/accounts per cell"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Testing confirms RTO/RPO assumptions. Compare with Separate clusters/accounts per cell: Cells contain failures.",
       "docs": [
@@ -3016,23 +3016,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Separate clusters/accounts per cell"
-        },
-        {
-          "id": "b",
           "text": "Multi-Region active-passive or active-active"
         },
         {
+          "id": "b",
+          "text": "Cluster-admin for all devs prod"
+        },
+        {
           "id": "c",
-          "text": "One cluster everything"
+          "text": "Separate clusters/accounts per cell"
         },
         {
           "id": "d",
-          "text": "Cluster-admin for all devs prod"
+          "text": "Distributed Load Testing on AWS or third-party in VPC"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cells contain failures. Compare with Multi-Region active-passive or active-active: Multi-Region designs address Regional disasters.",
       "docs": [

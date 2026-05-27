@@ -90,176 +90,6 @@
   ],
   "questions": [
     {
-      "id": "az104-q001",
-      "domain": "identity-governance",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Administrator and reviewing Manage Azure identities and governance. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AZ-104 study guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use AZ-104 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "AZ-104 study guide",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104"
-        }
-      ]
-    },
-    {
-      "id": "az104-q002",
-      "domain": "storage",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Administrator and reviewing Implement and manage storage. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Blob Storage"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Blob Storage and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Blob Storage",
-          "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview"
-        }
-      ]
-    },
-    {
-      "id": "az104-q003",
-      "domain": "compute",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Administrator and reviewing Deploy and manage Azure compute resources. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Virtual Machines"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Virtual Machines and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Virtual Machines",
-          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
-        }
-      ]
-    },
-    {
-      "id": "az104-q004",
-      "domain": "networking",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Administrator and reviewing Implement and manage virtual networking. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Virtual Network"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Virtual Network and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Virtual Network",
-          "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
-        }
-      ]
-    },
-    {
-      "id": "az104-q005",
-      "domain": "monitor-backup",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure Administrator and reviewing Monitor and maintain Azure resources. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Monitor"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Monitor and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Monitor",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
-        }
-      ]
-    },
-    {
       "id": "az104-q006",
       "domain": "identity-governance",
       "type": "multiple-choice",
@@ -267,23 +97,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure RBAC role assignments"
+          "text": "Privileged Identity Management"
         },
         {
           "id": "b",
-          "text": "Shared admin password"
+          "text": "Azure Policy"
         },
         {
           "id": "c",
-          "text": "Public blob ACL only"
+          "text": "Azure RBAC role assignments"
         },
         {
           "id": "d",
-          "text": "Disable MFA"
+          "text": "Microsoft Entra Connect"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RBAC grants least-privilege access to Azure resources.",
       "docs": [
@@ -305,15 +135,15 @@
         },
         {
           "id": "b",
-          "text": "Manual spreadsheet tracking"
+          "text": "Azure RBAC role assignments"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Privileged Identity Management"
         },
         {
           "id": "d",
-          "text": "Guest accounts only"
+          "text": "Microsoft Entra Connect"
         }
       ],
       "correct": [
@@ -339,15 +169,15 @@
         },
         {
           "id": "b",
-          "text": "Duplicate passwords manually"
+          "text": "AZ-104 study guide"
         },
         {
           "id": "c",
-          "text": "Disable sync"
+          "text": "Azure RBAC role assignments"
         },
         {
           "id": "d",
-          "text": "Public LDAP"
+          "text": "Privileged Identity Management"
         }
       ],
       "correct": [
@@ -369,23 +199,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Privileged Identity Management"
+          "text": "Azure Policy"
         },
         {
           "id": "b",
-          "text": "Permanent Global Admin"
+          "text": "Microsoft Entra Connect"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "Azure RBAC role assignments"
         },
         {
           "id": "d",
-          "text": "No reviews"
+          "text": "Privileged Identity Management"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "PIM provides just-in-time elevation.",
       "docs": [
@@ -403,23 +233,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure RBAC role assignments"
+          "text": "Microsoft Entra Connect"
         },
         {
           "id": "b",
-          "text": "Shared admin password"
+          "text": "AZ-104 study guide"
         },
         {
           "id": "c",
-          "text": "Public blob ACL only"
+          "text": "Azure RBAC role assignments"
         },
         {
           "id": "d",
-          "text": "Disable MFA"
+          "text": "Azure Policy"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RBAC grants least-privilege access to Azure resources.",
       "docs": [
@@ -437,23 +267,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure RBAC role assignments"
+          "text": "Microsoft Entra Connect"
         },
         {
           "id": "b",
-          "text": "Shared admin password"
+          "text": "AZ-104 study guide"
         },
         {
           "id": "c",
-          "text": "Public blob ACL only"
+          "text": "Azure RBAC role assignments"
         },
         {
           "id": "d",
-          "text": "Disable MFA"
+          "text": "Azure Policy"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RBAC grants least-privilege access to Azure resources.",
       "docs": [
@@ -475,15 +305,15 @@
         },
         {
           "id": "b",
-          "text": "Shared admin password"
+          "text": "Microsoft Entra Connect"
         },
         {
           "id": "c",
-          "text": "Public blob ACL only"
+          "text": "AZ-104 study guide"
         },
         {
           "id": "d",
-          "text": "Disable MFA"
+          "text": "Azure Policy"
         }
       ],
       "correct": [
@@ -505,23 +335,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Policy"
+          "text": "AZ-104 study guide"
         },
         {
           "id": "b",
-          "text": "Manual spreadsheet tracking"
+          "text": "Microsoft Entra Connect"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Privileged Identity Management"
         },
         {
           "id": "d",
-          "text": "Guest accounts only"
+          "text": "Azure Policy"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure Policy enforces organizational standards.",
       "docs": [
@@ -539,23 +369,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Policy"
+          "text": "Privileged Identity Management"
         },
         {
           "id": "b",
-          "text": "Manual spreadsheet tracking"
+          "text": "Azure Policy"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Azure RBAC role assignments"
         },
         {
           "id": "d",
-          "text": "Guest accounts only"
+          "text": "Microsoft Entra Connect"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure Policy enforces organizational standards.",
       "docs": [
@@ -573,23 +403,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Policy"
+          "text": "AZ-104 study guide"
         },
         {
           "id": "b",
-          "text": "Manual spreadsheet tracking"
+          "text": "Privileged Identity Management"
         },
         {
           "id": "c",
-          "text": "Ignore compliance"
+          "text": "Azure Policy"
         },
         {
           "id": "d",
-          "text": "Guest accounts only"
+          "text": "Microsoft Entra Connect"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure Policy enforces organizational standards.",
       "docs": [
@@ -607,23 +437,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra Connect"
+          "text": "Privileged Identity Management"
         },
         {
           "id": "b",
-          "text": "Duplicate passwords manually"
+          "text": "Microsoft Entra Connect"
         },
         {
           "id": "c",
-          "text": "Disable sync"
+          "text": "Azure RBAC role assignments"
         },
         {
           "id": "d",
-          "text": "Public LDAP"
+          "text": "Azure Policy"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Entra Connect syncs directory identities.",
       "docs": [
@@ -641,23 +471,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra Connect"
+          "text": "AZ-104 study guide"
         },
         {
           "id": "b",
-          "text": "Duplicate passwords manually"
+          "text": "Microsoft Entra Connect"
         },
         {
           "id": "c",
-          "text": "Disable sync"
+          "text": "Azure RBAC role assignments"
         },
         {
           "id": "d",
-          "text": "Public LDAP"
+          "text": "Azure Policy"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Entra Connect syncs directory identities.",
       "docs": [
@@ -675,23 +505,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Entra Connect"
+          "text": "Azure Policy"
         },
         {
           "id": "b",
-          "text": "Duplicate passwords manually"
+          "text": "Microsoft Entra Connect"
         },
         {
           "id": "c",
-          "text": "Disable sync"
+          "text": "Public LDAP"
         },
         {
           "id": "d",
-          "text": "Public LDAP"
+          "text": "Azure RBAC role assignments"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Entra Connect syncs directory identities.",
       "docs": [
@@ -713,15 +543,15 @@
         },
         {
           "id": "b",
-          "text": "Permanent Global Admin"
+          "text": "Microsoft Entra Connect"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "Azure Policy"
         },
         {
           "id": "d",
-          "text": "No reviews"
+          "text": "Azure RBAC role assignments"
         }
       ],
       "correct": [
@@ -743,23 +573,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Files"
+          "text": "Cool or Archive access tiers"
         },
         {
           "id": "b",
-          "text": "Blob block only for SMB"
+          "text": "Azure Files"
         },
         {
           "id": "c",
-          "text": "VPN only"
+          "text": "Soft delete and versioning"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Azure File Sync"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure Files provides managed SMB/NFS shares.",
       "docs": [
@@ -777,23 +607,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cool or Archive access tiers"
-        },
-        {
-          "id": "b",
           "text": "Premium SSD VM disks for archives"
         },
         {
+          "id": "b",
+          "text": "Soft delete and versioning"
+        },
+        {
           "id": "c",
-          "text": "Hot tier only always"
+          "text": "Cool or Archive access tiers"
         },
         {
           "id": "d",
-          "text": "Delete all versions"
+          "text": "Azure File Sync"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Access tiers optimize blob storage cost.",
       "docs": [
@@ -815,15 +645,15 @@
         },
         {
           "id": "b",
-          "text": "USB sneaker net"
+          "text": "Soft delete and versioning"
         },
         {
           "id": "c",
-          "text": "FTP only"
+          "text": "Azure Files"
         },
         {
           "id": "d",
-          "text": "Email attachments"
+          "text": "Cool or Archive access tiers"
         }
       ],
       "correct": [
@@ -849,15 +679,15 @@
         },
         {
           "id": "b",
-          "text": "Disable recovery"
+          "text": "Cool or Archive access tiers"
         },
         {
           "id": "c",
-          "text": "Public write ACL"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "Azure File Sync"
         }
       ],
       "correct": [
@@ -879,23 +709,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Files"
+          "text": "Azure File Sync"
         },
         {
           "id": "b",
-          "text": "Blob block only for SMB"
+          "text": "Azure Files"
         },
         {
           "id": "c",
-          "text": "VPN only"
+          "text": "Cool or Archive access tiers"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Soft delete and versioning"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure Files provides managed SMB/NFS shares.",
       "docs": [
@@ -917,15 +747,15 @@
         },
         {
           "id": "b",
-          "text": "Blob block only for SMB"
+          "text": "Azure File Sync"
         },
         {
           "id": "c",
-          "text": "VPN only"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Cool or Archive access tiers"
         }
       ],
       "correct": [
@@ -947,23 +777,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Files"
+          "text": "Azure File Sync"
         },
         {
           "id": "b",
-          "text": "Blob block only for SMB"
+          "text": "Soft delete and versioning"
         },
         {
           "id": "c",
-          "text": "VPN only"
+          "text": "Cool or Archive access tiers"
         },
         {
           "id": "d",
-          "text": "DNS only"
+          "text": "Azure Files"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure Files provides managed SMB/NFS shares.",
       "docs": [
@@ -981,7 +811,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Cool or Archive access tiers"
+          "text": "Azure Files"
         },
         {
           "id": "b",
@@ -989,15 +819,15 @@
         },
         {
           "id": "c",
-          "text": "Hot tier only always"
+          "text": "Azure File Sync"
         },
         {
           "id": "d",
-          "text": "Delete all versions"
+          "text": "Cool or Archive access tiers"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Access tiers optimize blob storage cost.",
       "docs": [
@@ -1015,7 +845,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Cool or Archive access tiers"
+          "text": "Soft delete and versioning"
         },
         {
           "id": "b",
@@ -1023,15 +853,15 @@
         },
         {
           "id": "c",
-          "text": "Hot tier only always"
+          "text": "Azure Blob Storage"
         },
         {
           "id": "d",
-          "text": "Delete all versions"
+          "text": "Cool or Archive access tiers"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Access tiers optimize blob storage cost.",
       "docs": [
@@ -1053,15 +883,15 @@
         },
         {
           "id": "b",
-          "text": "Premium SSD VM disks for archives"
+          "text": "Azure Files"
         },
         {
           "id": "c",
-          "text": "Hot tier only always"
+          "text": "Premium SSD VM disks for archives"
         },
         {
           "id": "d",
-          "text": "Delete all versions"
+          "text": "Soft delete and versioning"
         }
       ],
       "correct": [
@@ -1083,23 +913,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure File Sync"
+          "text": "Azure Files"
         },
         {
           "id": "b",
-          "text": "USB sneaker net"
+          "text": "Soft delete and versioning"
         },
         {
           "id": "c",
-          "text": "FTP only"
+          "text": "Cool or Archive access tiers"
         },
         {
           "id": "d",
-          "text": "Email attachments"
+          "text": "Azure File Sync"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "File Sync extends file shares to Azure.",
       "docs": [
@@ -1121,15 +951,15 @@
         },
         {
           "id": "b",
-          "text": "USB sneaker net"
+          "text": "Email attachments"
         },
         {
           "id": "c",
-          "text": "FTP only"
+          "text": "Cool or Archive access tiers"
         },
         {
           "id": "d",
-          "text": "Email attachments"
+          "text": "Azure Files"
         }
       ],
       "correct": [
@@ -1151,23 +981,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure File Sync"
+          "text": "Cool or Archive access tiers"
         },
         {
           "id": "b",
-          "text": "USB sneaker net"
+          "text": "Azure Files"
         },
         {
           "id": "c",
-          "text": "FTP only"
+          "text": "Soft delete and versioning"
         },
         {
           "id": "d",
-          "text": "Email attachments"
+          "text": "Azure File Sync"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "File Sync extends file shares to Azure.",
       "docs": [
@@ -1189,15 +1019,15 @@
         },
         {
           "id": "b",
-          "text": "Disable recovery"
+          "text": "Cool or Archive access tiers"
         },
         {
           "id": "c",
-          "text": "Public write ACL"
+          "text": "Azure Files"
         },
         {
           "id": "d",
-          "text": "No backups"
+          "text": "Azure File Sync"
         }
       ],
       "correct": [
@@ -1219,23 +1049,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Virtual Machine Scale Sets"
+          "text": "Azure Container Apps"
         },
         {
           "id": "b",
-          "text": "Single VM manual resize only"
+          "text": "Azure Update Manager"
         },
         {
           "id": "c",
-          "text": "Static HTML only"
+          "text": "Azure App Service"
         },
         {
           "id": "d",
-          "text": "ExpressRoute circuit"
+          "text": "Virtual Machine Scale Sets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VMSS provides autoscale for identical VMs.",
       "docs": [
@@ -1253,23 +1083,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure App Service"
+          "text": "Azure Update Manager"
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "On-prem IIS only"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure Container Apps"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "App Service is PaaS for web workloads.",
       "docs": [
@@ -1287,23 +1117,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Update Manager"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "b",
-          "text": "Manual RDP each"
+          "text": "Azure Container Apps"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Azure Update Manager"
         },
         {
           "id": "d",
-          "text": "Ignore CVEs"
+          "text": "Virtual Machine Scale Sets"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Update Manager orchestrates patching.",
       "docs": [
@@ -1321,23 +1151,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Container Apps"
+          "text": "Azure App Service"
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "c",
-          "text": "Telnet deploy"
+          "text": "Azure Update Manager"
         },
         {
           "id": "d",
-          "text": "ICMP mesh"
+          "text": "Azure Container Apps"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Container Apps is serverless containers.",
       "docs": [
@@ -1355,23 +1185,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Virtual Machine Scale Sets"
+          "text": "Azure App Service"
         },
         {
           "id": "b",
-          "text": "Single VM manual resize only"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "c",
-          "text": "Static HTML only"
+          "text": "Azure Container Apps"
         },
         {
           "id": "d",
-          "text": "ExpressRoute circuit"
+          "text": "Virtual Machine Scale Sets"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VMSS provides autoscale for identical VMs.",
       "docs": [
@@ -1389,23 +1219,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Virtual Machine Scale Sets"
+          "text": "Azure Container Apps"
         },
         {
           "id": "b",
-          "text": "Single VM manual resize only"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "c",
-          "text": "Static HTML only"
+          "text": "Azure Update Manager"
         },
         {
           "id": "d",
-          "text": "ExpressRoute circuit"
+          "text": "Azure App Service"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "VMSS provides autoscale for identical VMs.",
       "docs": [
@@ -1423,23 +1253,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Virtual Machine Scale Sets"
+          "text": "Azure Container Apps"
         },
         {
           "id": "b",
-          "text": "Single VM manual resize only"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "Static HTML only"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "d",
-          "text": "ExpressRoute circuit"
+          "text": "Azure Virtual Machines"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VMSS provides autoscale for identical VMs.",
       "docs": [
@@ -1457,23 +1287,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure App Service"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Azure Update Manager"
         },
         {
           "id": "c",
-          "text": "On-prem IIS only"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure App Service"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "App Service is PaaS for web workloads.",
       "docs": [
@@ -1491,23 +1321,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure App Service"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "On-prem IIS only"
+          "text": "Azure Update Manager"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure Container Apps"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "App Service is PaaS for web workloads.",
       "docs": [
@@ -1529,15 +1359,15 @@
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Azure Update Manager"
         },
         {
           "id": "c",
-          "text": "On-prem IIS only"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "d",
-          "text": "Archive tier"
+          "text": "Azure Container Apps"
         }
       ],
       "correct": [
@@ -1563,15 +1393,15 @@
         },
         {
           "id": "b",
-          "text": "Manual RDP each"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Azure Virtual Machines"
         },
         {
           "id": "d",
-          "text": "Ignore CVEs"
+          "text": "Azure Container Apps"
         }
       ],
       "correct": [
@@ -1597,15 +1427,15 @@
         },
         {
           "id": "b",
-          "text": "Manual RDP each"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Azure Container Apps"
         },
         {
           "id": "d",
-          "text": "Ignore CVEs"
+          "text": "Azure App Service"
         }
       ],
       "correct": [
@@ -1627,23 +1457,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Update Manager"
+          "text": "Azure Container Apps"
         },
         {
           "id": "b",
-          "text": "Manual RDP each"
+          "text": "Azure Update Manager"
         },
         {
           "id": "c",
-          "text": "Disable updates"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "d",
-          "text": "Ignore CVEs"
+          "text": "Azure App Service"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Update Manager orchestrates patching.",
       "docs": [
@@ -1665,15 +1495,15 @@
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Azure App Service"
         },
         {
           "id": "c",
-          "text": "Telnet deploy"
+          "text": "Azure Update Manager"
         },
         {
           "id": "d",
-          "text": "ICMP mesh"
+          "text": "Virtual Machine Scale Sets"
         }
       ],
       "correct": [
@@ -1699,15 +1529,15 @@
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "Azure Update Manager"
         },
         {
           "id": "c",
-          "text": "Telnet deploy"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "d",
-          "text": "ICMP mesh"
+          "text": "Azure Virtual Machines"
         }
       ],
       "correct": [
@@ -1729,23 +1559,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Container Apps"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "b",
-          "text": "Bare metal only"
+          "text": "ICMP mesh"
         },
         {
           "id": "c",
-          "text": "Telnet deploy"
+          "text": "Azure Update Manager"
         },
         {
           "id": "d",
-          "text": "ICMP mesh"
+          "text": "Azure Container Apps"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Container Apps is serverless containers.",
       "docs": [
@@ -1763,23 +1593,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Virtual Machine Scale Sets"
+          "text": "Azure Update Manager"
         },
         {
           "id": "b",
-          "text": "Single VM manual resize only"
+          "text": "Azure Container Apps"
         },
         {
           "id": "c",
-          "text": "Static HTML only"
+          "text": "Virtual Machine Scale Sets"
         },
         {
           "id": "d",
-          "text": "ExpressRoute circuit"
+          "text": "Azure App Service"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VMSS provides autoscale for identical VMs.",
       "docs": [
@@ -1797,23 +1627,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Virtual Network"
+          "text": "Azure Private Link"
         },
         {
           "id": "b",
-          "text": "Public internet only design"
+          "text": "Network security groups"
         },
         {
           "id": "c",
-          "text": "Blob containers"
+          "text": "Azure Virtual Network"
         },
         {
           "id": "d",
-          "text": "Key Vault secrets only"
+          "text": "Site-to-site VPN or ExpressRoute"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VNets provide private RFC1918 networking in Azure.",
       "docs": [
@@ -1831,23 +1661,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Site-to-site VPN or ExpressRoute"
+          "text": "Disable encryption (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Email attachments"
+          "text": "Network security groups"
         },
         {
           "id": "c",
-          "text": "Public RDP only"
+          "text": "Azure Virtual Network"
         },
         {
           "id": "d",
-          "text": "Disable encryption"
+          "text": "Site-to-site VPN or ExpressRoute"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VPN/ExpressRoute extend hybrid connectivity.",
       "docs": [
@@ -1865,23 +1695,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network security groups"
+          "text": "Site-to-site VPN or ExpressRoute"
         },
         {
           "id": "b",
-          "text": "Allow all ports"
+          "text": "Network security groups"
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Azure Private Link"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "Azure Virtual Network"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "NSGs filter subnet traffic.",
       "docs": [
@@ -1899,11 +1729,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Private Link"
+          "text": "Azure Virtual Network"
         },
         {
           "id": "b",
-          "text": "Expose SQL to internet"
+          "text": "Network security groups"
         },
         {
           "id": "c",
@@ -1911,11 +1741,11 @@
         },
         {
           "id": "d",
-          "text": "FTP admin"
+          "text": "Azure Private Link"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Private Link keeps traffic on Microsoft backbone.",
       "docs": [
@@ -1933,23 +1763,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Virtual Network"
+          "text": "Site-to-site VPN or ExpressRoute"
         },
         {
           "id": "b",
-          "text": "Public internet only design"
+          "text": "Azure Private Link"
         },
         {
           "id": "c",
-          "text": "Blob containers"
+          "text": "Network security groups"
         },
         {
           "id": "d",
-          "text": "Key Vault secrets only"
+          "text": "Azure Virtual Network"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VNets provide private RFC1918 networking in Azure.",
       "docs": [
@@ -1967,23 +1797,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Virtual Network"
+          "text": "Key Vault secrets only"
         },
         {
           "id": "b",
-          "text": "Public internet only design"
+          "text": "Site-to-site VPN or ExpressRoute"
         },
         {
           "id": "c",
-          "text": "Blob containers"
+          "text": "Network security groups"
         },
         {
           "id": "d",
-          "text": "Key Vault secrets only"
+          "text": "Azure Virtual Network"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "VNets provide private RFC1918 networking in Azure.",
       "docs": [
@@ -2005,15 +1835,15 @@
         },
         {
           "id": "b",
-          "text": "Public internet only design"
+          "text": "Site-to-site VPN or ExpressRoute"
         },
         {
           "id": "c",
-          "text": "Blob containers"
+          "text": "Network security groups"
         },
         {
           "id": "d",
-          "text": "Key Vault secrets only"
+          "text": "Azure Private Link"
         }
       ],
       "correct": [
@@ -2035,23 +1865,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Site-to-site VPN or ExpressRoute"
+          "text": "Azure Virtual Network"
         },
         {
           "id": "b",
-          "text": "Email attachments"
+          "text": "Site-to-site VPN or ExpressRoute"
         },
         {
           "id": "c",
-          "text": "Public RDP only"
+          "text": "Azure Private Link"
         },
         {
           "id": "d",
-          "text": "Disable encryption"
+          "text": "Network security groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "VPN/ExpressRoute extend hybrid connectivity.",
       "docs": [
@@ -2073,15 +1903,15 @@
         },
         {
           "id": "b",
-          "text": "Email attachments"
+          "text": "Network security groups"
         },
         {
           "id": "c",
-          "text": "Public RDP only"
+          "text": "Azure Virtual Network"
         },
         {
           "id": "d",
-          "text": "Disable encryption"
+          "text": "Azure Private Link"
         }
       ],
       "correct": [
@@ -2103,23 +1933,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Site-to-site VPN or ExpressRoute"
+          "text": "Azure Private Link"
         },
         {
           "id": "b",
-          "text": "Email attachments"
+          "text": "Site-to-site VPN or ExpressRoute"
         },
         {
           "id": "c",
-          "text": "Public RDP only"
+          "text": "Azure Virtual Network"
         },
         {
           "id": "d",
-          "text": "Disable encryption"
+          "text": "Network security groups"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "VPN/ExpressRoute extend hybrid connectivity.",
       "docs": [
@@ -2137,23 +1967,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network security groups"
+          "text": "Azure Virtual Network"
         },
         {
           "id": "b",
-          "text": "Allow all ports"
+          "text": "Site-to-site VPN or ExpressRoute"
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Azure Private Link"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "Network security groups"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "NSGs filter subnet traffic.",
       "docs": [
@@ -2175,15 +2005,15 @@
         },
         {
           "id": "b",
-          "text": "Allow all ports"
+          "text": "Site-to-site VPN or ExpressRoute"
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Public admin"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "Azure Virtual Network"
         }
       ],
       "correct": [
@@ -2205,23 +2035,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Network security groups"
+          "text": "Azure Virtual Network"
         },
         {
           "id": "b",
-          "text": "Allow all ports"
+          "text": "Network security groups"
         },
         {
           "id": "c",
-          "text": "Disable NSGs"
+          "text": "Site-to-site VPN or ExpressRoute"
         },
         {
           "id": "d",
-          "text": "Public admin"
+          "text": "Azure Private Link"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "NSGs filter subnet traffic.",
       "docs": [
@@ -2239,23 +2069,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Private Link"
-        },
-        {
-          "id": "b",
-          "text": "Expose SQL to internet"
-        },
-        {
-          "id": "c",
           "text": "RDP 0.0.0.0"
         },
         {
+          "id": "b",
+          "text": "Site-to-site VPN or ExpressRoute"
+        },
+        {
+          "id": "c",
+          "text": "Azure Private Link"
+        },
+        {
           "id": "d",
-          "text": "FTP admin"
+          "text": "Azure Virtual Network"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Private Link keeps traffic on Microsoft backbone.",
       "docs": [
@@ -2273,23 +2103,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor"
+          "text": "Azure Monitor alert rules"
         },
         {
           "id": "b",
-          "text": "Spreadsheet polling"
+          "text": "Azure Activity Log"
         },
         {
           "id": "c",
-          "text": "Disable diagnostics"
+          "text": "Azure Monitor"
         },
         {
           "id": "d",
-          "text": "SNMP only on-prem"
+          "text": "Azure Backup"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure Monitor aggregates platform and app telemetry.",
       "docs": [
@@ -2307,23 +2137,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Backup"
+          "text": "Azure Monitor"
         },
         {
           "id": "b",
-          "text": "Manual USB only policy"
+          "text": "Public snapshots"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Azure Backup"
         },
         {
           "id": "d",
-          "text": "Public snapshots"
+          "text": "Azure Monitor alert rules"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure Backup provides policy-driven recovery points.",
       "docs": [
@@ -2341,23 +2171,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor alert rules"
+          "text": "Azure Backup"
         },
         {
           "id": "b",
-          "text": "Check logs yearly"
+          "text": "Azure Activity Log"
         },
         {
           "id": "c",
-          "text": "No notifications"
+          "text": "Azure Monitor"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "Azure Monitor alert rules"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Alerts automate incident detection.",
       "docs": [
@@ -2375,23 +2205,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Activity Log"
+          "text": "Azure Monitor"
         },
         {
           "id": "b",
-          "text": "Delete audit trail"
+          "text": "Azure Activity Log"
         },
         {
           "id": "c",
-          "text": "Shared password"
+          "text": "Azure Backup"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "Azure Monitor alert rules"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Activity Log records control-plane operations.",
       "docs": [
@@ -2413,15 +2243,15 @@
         },
         {
           "id": "b",
-          "text": "Spreadsheet polling"
+          "text": "Azure Backup"
         },
         {
           "id": "c",
-          "text": "Disable diagnostics"
+          "text": "Azure Monitor alert rules"
         },
         {
           "id": "d",
-          "text": "SNMP only on-prem"
+          "text": "Azure Activity Log"
         }
       ],
       "correct": [
@@ -2443,23 +2273,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor"
+          "text": "Azure Backup"
         },
         {
           "id": "b",
-          "text": "Spreadsheet polling"
+          "text": "Azure Monitor"
         },
         {
           "id": "c",
-          "text": "Disable diagnostics"
+          "text": "Azure Activity Log"
         },
         {
           "id": "d",
-          "text": "SNMP only on-prem"
+          "text": "Azure Monitor alert rules"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure Monitor aggregates platform and app telemetry.",
       "docs": [
@@ -2481,15 +2311,15 @@
         },
         {
           "id": "b",
-          "text": "Spreadsheet polling"
+          "text": "SNMP only on-prem"
         },
         {
           "id": "c",
-          "text": "Disable diagnostics"
+          "text": "Azure Backup"
         },
         {
           "id": "d",
-          "text": "SNMP only on-prem"
+          "text": "Azure Monitor alert rules"
         }
       ],
       "correct": [
@@ -2515,11 +2345,11 @@
         },
         {
           "id": "b",
-          "text": "Manual USB only policy"
+          "text": "Azure Monitor"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Azure Activity Log"
         },
         {
           "id": "d",
@@ -2545,23 +2375,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Backup"
+          "text": "Public snapshots"
         },
         {
           "id": "b",
-          "text": "Manual USB only policy"
+          "text": "Azure Backup"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Azure Monitor alert rules"
         },
         {
           "id": "d",
-          "text": "Public snapshots"
+          "text": "Azure Monitor"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Azure Backup provides policy-driven recovery points.",
       "docs": [
@@ -2579,23 +2409,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Backup"
+          "text": "Azure Monitor"
         },
         {
           "id": "b",
-          "text": "Manual USB only policy"
+          "text": "Azure Monitor alert rules"
         },
         {
           "id": "c",
-          "text": "No retention"
+          "text": "Public snapshots"
         },
         {
           "id": "d",
-          "text": "Public snapshots"
+          "text": "Azure Backup"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure Backup provides policy-driven recovery points.",
       "docs": [
@@ -2613,23 +2443,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor alert rules"
+          "text": "Azure Monitor"
         },
         {
           "id": "b",
-          "text": "Check logs yearly"
+          "text": "Azure Monitor alert rules"
         },
         {
           "id": "c",
-          "text": "No notifications"
+          "text": "Azure Activity Log"
         },
         {
           "id": "d",
-          "text": "Ping script"
+          "text": "Azure Backup"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Alerts automate incident detection.",
       "docs": [

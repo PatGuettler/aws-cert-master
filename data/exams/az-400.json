@@ -74,176 +74,6 @@
   ],
   "questions": [
     {
-      "id": "az400-q001",
-      "domain": "devops-process",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure DevOps Engineer Expert and reviewing Design and implement DevOps processes. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "AZ-400 study guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use AZ-400 study guide and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "AZ-400 study guide",
-          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400"
-        }
-      ]
-    },
-    {
-      "id": "az400-q002",
-      "domain": "source-control",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure DevOps Engineer Expert and reviewing Implement source control. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Git workflows"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Git workflows and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Git workflows",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/git/gitworkflow"
-        }
-      ]
-    },
-    {
-      "id": "az400-q003",
-      "domain": "ci-cd",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure DevOps Engineer Expert and reviewing Design and implement build and release pipelines. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Azure Pipelines"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Azure Pipelines and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines"
-        }
-      ]
-    },
-    {
-      "id": "az400-q004",
-      "domain": "dependency-security",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure DevOps Engineer Expert and reviewing Develop security and compliance plan. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Microsoft Defender for Cloud"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Microsoft Defender for Cloud and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Microsoft Defender for Cloud",
-          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
-        }
-      ]
-    },
-    {
-      "id": "az400-q005",
-      "domain": "instrumentation",
-      "type": "multiple-choice",
-      "text": "You are preparing for Microsoft Azure DevOps Engineer Expert and reviewing Implement instrumentation strategy. Which source aligns with official Microsoft Learn and Azure documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Monitor Azure Pipelines"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "Anonymous forum answer keys only"
-        },
-        {
-          "id": "d",
-          "text": "Random blogs without vendor citations"
-        }
-      ],
-      "correct": [
-        "a"
-      ],
-      "explanation": "Use Monitor Azure Pipelines and other official materials listed in the exam guide\u2014not copied exam items.",
-      "docs": [
-        {
-          "title": "Monitor Azure Pipelines",
-          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/integrations/azure-monitor"
-        }
-      ]
-    },
-    {
       "id": "az400-q006",
       "domain": "devops-process",
       "type": "multiple-choice",
@@ -255,15 +85,15 @@
         },
         {
           "id": "b",
-          "text": "Email zip deployments"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "c",
-          "text": "Shared prod password"
+          "text": "No CI"
         },
         {
           "id": "d",
-          "text": "No CI"
+          "text": "Azure Boards"
         }
       ],
       "correct": [
@@ -285,23 +115,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Boards"
+          "text": "AZ-400 study guide"
         },
         {
           "id": "b",
-          "text": "Sticky notes only"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "c",
-          "text": "Email tasks"
+          "text": "Azure Boards"
         },
         {
           "id": "d",
-          "text": "No traceability"
+          "text": "Azure DevOps organization"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Boards connect work to code and builds.",
       "docs": [
@@ -319,23 +149,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bicep or Terraform modules"
+          "text": "Azure Boards"
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "c",
-          "text": "USB scripts"
+          "text": "Azure DevOps organization"
         },
         {
           "id": "d",
-          "text": "No review"
+          "text": "AZ-400 study guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Modules standardize environment definitions.",
       "docs": [
@@ -353,15 +183,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure DevOps organization"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "b",
-          "text": "Email zip deployments"
+          "text": "Azure Boards"
         },
         {
           "id": "c",
-          "text": "Shared prod password"
+          "text": "Azure DevOps organization"
         },
         {
           "id": "d",
@@ -369,7 +199,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Azure DevOps covers plan/build/release.",
       "docs": [
@@ -387,23 +217,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure DevOps organization"
+          "text": "AZ-400 study guide"
         },
         {
           "id": "b",
-          "text": "Email zip deployments"
+          "text": "Azure Boards"
         },
         {
           "id": "c",
-          "text": "Shared prod password"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "d",
-          "text": "No CI"
+          "text": "Azure DevOps organization"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure DevOps covers plan/build/release.",
       "docs": [
@@ -421,23 +251,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure DevOps organization"
+          "text": "Azure Boards"
         },
         {
           "id": "b",
-          "text": "Email zip deployments"
+          "text": "No CI"
         },
         {
           "id": "c",
-          "text": "Shared prod password"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "d",
-          "text": "No CI"
+          "text": "Azure DevOps organization"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure DevOps covers plan/build/release.",
       "docs": [
@@ -459,15 +289,15 @@
         },
         {
           "id": "b",
-          "text": "Sticky notes only"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "c",
-          "text": "Email tasks"
+          "text": "Azure DevOps organization"
         },
         {
           "id": "d",
-          "text": "No traceability"
+          "text": "AZ-400 study guide"
         }
       ],
       "correct": [
@@ -493,15 +323,15 @@
         },
         {
           "id": "b",
-          "text": "Sticky notes only"
+          "text": "No traceability"
         },
         {
           "id": "c",
-          "text": "Email tasks"
+          "text": "Azure DevOps organization"
         },
         {
           "id": "d",
-          "text": "No traceability"
+          "text": "Bicep or Terraform modules"
         }
       ],
       "correct": [
@@ -527,15 +357,15 @@
         },
         {
           "id": "b",
-          "text": "Sticky notes only"
+          "text": "Azure DevOps organization"
         },
         {
           "id": "c",
-          "text": "Email tasks"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "d",
-          "text": "No traceability"
+          "text": "AZ-400 study guide"
         }
       ],
       "correct": [
@@ -561,15 +391,15 @@
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "No review (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "USB scripts"
+          "text": "Azure Boards"
         },
         {
           "id": "d",
-          "text": "No review"
+          "text": "Azure DevOps organization"
         }
       ],
       "correct": [
@@ -591,23 +421,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bicep or Terraform modules"
+          "text": "Azure Boards"
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "c",
-          "text": "USB scripts"
+          "text": "Azure DevOps organization"
         },
         {
           "id": "d",
-          "text": "No review"
+          "text": "AZ-400 study guide"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Modules standardize environment definitions.",
       "docs": [
@@ -625,23 +455,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Bicep or Terraform modules"
+          "text": "Azure Boards"
         },
         {
           "id": "b",
-          "text": "ClickOps only"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "c",
-          "text": "USB scripts"
+          "text": "Azure DevOps organization"
         },
         {
           "id": "d",
-          "text": "No review"
+          "text": "No review (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Modules standardize environment definitions.",
       "docs": [
@@ -659,23 +489,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure DevOps organization"
+          "text": "No CI"
         },
         {
           "id": "b",
-          "text": "Email zip deployments"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "c",
-          "text": "Shared prod password"
+          "text": "Azure Boards"
         },
         {
           "id": "d",
-          "text": "No CI"
+          "text": "Azure DevOps organization"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Azure DevOps covers plan/build/release.",
       "docs": [
@@ -693,23 +523,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Boards"
+          "text": "Bicep or Terraform modules"
         },
         {
           "id": "b",
-          "text": "Sticky notes only"
+          "text": "No traceability"
         },
         {
           "id": "c",
-          "text": "Email tasks"
+          "text": "Azure Boards"
         },
         {
           "id": "d",
-          "text": "No traceability"
+          "text": "Azure DevOps organization"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Boards connect work to code and builds.",
       "docs": [
@@ -727,23 +557,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Delete history (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "Branch policies with permissions"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Branch policies enforce reviews and builds.",
       "docs": [
@@ -765,15 +595,15 @@
         },
         {
           "id": "b",
-          "text": "Everyone force pushes"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "Git workflows"
         }
       ],
       "correct": [
@@ -795,23 +625,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GitHub Advanced Security for Azure DevOps"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "b",
-          "text": "Commit passwords"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "c",
-          "text": "Ignore alerts"
+          "text": "Branch policies with permissions"
         },
         {
           "id": "d",
-          "text": "Public keys"
+          "text": "Public keys (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secret scanning prevents credential leaks.",
       "docs": [
@@ -829,23 +659,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "Git workflows"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "Branch policies with permissions"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Branch policies enforce reviews and builds.",
       "docs": [
@@ -863,23 +693,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "Delete history (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "Branch policies with permissions"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Branch policies enforce reviews and builds.",
       "docs": [
@@ -897,23 +727,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Repos branch policies"
+          "text": "Branch policies with permissions"
         },
         {
           "id": "b",
-          "text": "Force push to main always"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Git workflows"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "GitHub Advanced Security for Azure DevOps"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Branch policies enforce reviews and builds.",
       "docs": [
@@ -931,23 +761,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Branch policies with permissions"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "b",
-          "text": "Everyone force pushes"
+          "text": "Branch policies with permissions"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Delete history (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "GitHub Advanced Security for Azure DevOps"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Policies enforce quality gates.",
       "docs": [
@@ -965,23 +795,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Branch policies with permissions"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "b",
-          "text": "Everyone force pushes"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Delete history (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "Branch policies with permissions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Policies enforce quality gates.",
       "docs": [
@@ -999,23 +829,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Branch policies with permissions"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "b",
-          "text": "Everyone force pushes"
+          "text": "Git workflows"
         },
         {
           "id": "c",
-          "text": "No reviews"
+          "text": "Delete history (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Delete history"
+          "text": "Branch policies with permissions"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Policies enforce quality gates.",
       "docs": [
@@ -1033,23 +863,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GitHub Advanced Security for Azure DevOps"
+          "text": "Branch policies with permissions"
         },
         {
           "id": "b",
-          "text": "Commit passwords"
+          "text": "Git workflows"
         },
         {
           "id": "c",
-          "text": "Ignore alerts"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "d",
-          "text": "Public keys"
+          "text": "GitHub Advanced Security for Azure DevOps"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Secret scanning prevents credential leaks.",
       "docs": [
@@ -1067,23 +897,23 @@
       "options": [
         {
           "id": "a",
-          "text": "GitHub Advanced Security for Azure DevOps"
+          "text": "Git workflows"
         },
         {
           "id": "b",
-          "text": "Commit passwords"
+          "text": "GitHub Advanced Security for Azure DevOps"
         },
         {
           "id": "c",
-          "text": "Ignore alerts"
+          "text": "Azure Repos branch policies"
         },
         {
           "id": "d",
-          "text": "Public keys"
+          "text": "Branch policies with permissions"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Secret scanning prevents credential leaks.",
       "docs": [
@@ -1101,23 +931,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Azure Pipelines"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Azure Pipelines YAML"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "YAML pipelines version CI/CD definitions.",
       "docs": [
@@ -1139,11 +969,11 @@
         },
         {
           "id": "b",
-          "text": "Download every run"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "c",
-          "text": "No cache"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
@@ -1169,23 +999,23 @@
       "options": [
         {
           "id": "a",
-          "text": "YAML environments and approvals"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "b",
-          "text": "Deploy straight to prod"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "Shared password (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Environments add deployment controls.",
       "docs": [
@@ -1203,15 +1033,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Copy binaries email"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "d",
@@ -1219,7 +1049,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "YAML pipelines version CI/CD definitions.",
       "docs": [
@@ -1237,15 +1067,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "d",
@@ -1253,7 +1083,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "YAML pipelines version CI/CD definitions.",
       "docs": [
@@ -1275,15 +1105,15 @@
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Azure Pipelines"
         }
       ],
       "correct": [
@@ -1305,23 +1135,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline caching tasks"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "b",
-          "text": "Download every run"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "c",
-          "text": "No cache"
+          "text": "FTP deps"
         },
         {
           "id": "d",
-          "text": "FTP deps"
+          "text": "Pipeline caching tasks"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Caching speeds up builds.",
       "docs": [
@@ -1339,15 +1169,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline caching tasks"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "b",
-          "text": "Download every run"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "c",
-          "text": "No cache"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "d",
@@ -1355,7 +1185,7 @@
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Caching speeds up builds.",
       "docs": [
@@ -1373,23 +1203,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline caching tasks"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Download every run"
+          "text": "FTP deps"
         },
         {
           "id": "c",
-          "text": "No cache"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
-          "text": "FTP deps"
+          "text": "Pipeline caching tasks"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Caching speeds up builds.",
       "docs": [
@@ -1407,23 +1237,23 @@
       "options": [
         {
           "id": "a",
-          "text": "YAML environments and approvals"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Deploy straight to prod"
+          "text": "Shared password (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "YAML environments and approvals"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Environments add deployment controls.",
       "docs": [
@@ -1441,23 +1271,23 @@
       "options": [
         {
           "id": "a",
-          "text": "YAML environments and approvals"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Deploy straight to prod"
+          "text": "Shared password (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "YAML environments and approvals"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Environments add deployment controls.",
       "docs": [
@@ -1479,15 +1309,15 @@
         },
         {
           "id": "b",
-          "text": "Deploy straight to prod"
+          "text": "Azure Pipelines"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "Pipeline caching tasks"
         }
       ],
       "correct": [
@@ -1509,23 +1339,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "Disable tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Pipeline caching tasks"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "YAML pipelines version CI/CD definitions.",
       "docs": [
@@ -1543,23 +1373,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline caching tasks"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "b",
-          "text": "Download every run"
+          "text": "FTP deps"
         },
         {
           "id": "c",
-          "text": "No cache"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "d",
-          "text": "FTP deps"
+          "text": "Pipeline caching tasks"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Caching speeds up builds.",
       "docs": [
@@ -1577,23 +1407,23 @@
       "options": [
         {
           "id": "a",
-          "text": "YAML environments and approvals"
+          "text": "Shared password (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Deploy straight to prod"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "No tests (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "YAML environments and approvals"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Environments add deployment controls.",
       "docs": [
@@ -1611,23 +1441,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "Disable tests"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Azure Pipelines YAML"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "YAML pipelines version CI/CD definitions.",
       "docs": [
@@ -1645,23 +1475,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline caching tasks"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
-          "text": "Download every run"
+          "text": "FTP deps"
         },
         {
           "id": "c",
-          "text": "No cache"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
-          "text": "FTP deps"
+          "text": "Pipeline caching tasks"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Caching speeds up builds.",
       "docs": [
@@ -1679,23 +1509,23 @@
       "options": [
         {
           "id": "a",
-          "text": "YAML environments and approvals"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "b",
-          "text": "Deploy straight to prod"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "Azure Pipelines"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Environments add deployment controls.",
       "docs": [
@@ -1717,15 +1547,15 @@
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "Disable tests"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "d",
-          "text": "Disable tests"
+          "text": "Pipeline caching tasks"
         }
       ],
       "correct": [
@@ -1751,15 +1581,15 @@
         },
         {
           "id": "b",
-          "text": "Download every run"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "c",
-          "text": "No cache"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
-          "text": "FTP deps"
+          "text": "Azure Pipelines"
         }
       ],
       "correct": [
@@ -1781,23 +1611,23 @@
       "options": [
         {
           "id": "a",
-          "text": "YAML environments and approvals"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Deploy straight to prod"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "Shared password (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Environments add deployment controls.",
       "docs": [
@@ -1815,15 +1645,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "b",
-          "text": "Manual FTP"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "c",
-          "text": "Copy binaries email"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
@@ -1831,7 +1661,7 @@
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "YAML pipelines version CI/CD definitions.",
       "docs": [
@@ -1853,15 +1683,15 @@
         },
         {
           "id": "b",
-          "text": "Download every run"
+          "text": "Azure Pipelines"
         },
         {
           "id": "c",
-          "text": "No cache"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "d",
-          "text": "FTP deps"
+          "text": "YAML environments and approvals"
         }
       ],
       "correct": [
@@ -1883,23 +1713,23 @@
       "options": [
         {
           "id": "a",
-          "text": "YAML environments and approvals"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "b",
-          "text": "Deploy straight to prod"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "c",
-          "text": "No tests"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "d",
-          "text": "Shared password"
+          "text": "Shared password (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Environments add deployment controls.",
       "docs": [
@@ -1917,7 +1747,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Pipelines YAML"
+          "text": "YAML environments and approvals"
         },
         {
           "id": "b",
@@ -1925,15 +1755,15 @@
         },
         {
           "id": "c",
-          "text": "Manual FTP"
+          "text": "Azure Pipelines"
         },
         {
           "id": "d",
-          "text": "Copy binaries email"
+          "text": "Azure Pipelines YAML"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "YAML pipelines version CI/CD definitions. Compare with Pipeline caching tasks: Caching speeds up builds.",
       "docs": [
@@ -1955,7 +1785,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Pipeline caching tasks"
+          "text": "Azure Pipelines YAML"
         },
         {
           "id": "b",
@@ -1963,15 +1793,15 @@
         },
         {
           "id": "c",
-          "text": "Download every run"
+          "text": "Pipeline caching tasks"
         },
         {
           "id": "d",
-          "text": "No cache"
+          "text": "Azure Pipelines"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Caching speeds up builds. Compare with YAML environments and approvals: Environments add deployment controls.",
       "docs": [
@@ -1997,15 +1827,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Defender for Cloud container scanning"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Public storage keys"
         },
         {
           "id": "d",
-          "text": "Public storage keys"
+          "text": "Disable scanning (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2031,15 +1861,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Latest tag only (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Latest tag only"
+          "text": "No base updates (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No base updates"
+          "text": "Microsoft Defender for Cloud"
         }
       ],
       "correct": [
@@ -2065,11 +1895,11 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Defender for Cloud container scanning"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Disable scanning (not recommended for production workloads)"
         },
         {
           "id": "d",
@@ -2095,23 +1925,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud"
+          "text": "Disable scanning (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Microsoft Defender for Cloud"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Public storage keys"
         },
         {
           "id": "d",
-          "text": "Public storage keys"
+          "text": "Defender for Cloud container scanning"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Defender for Cloud assesses workload security.",
       "docs": [
@@ -2129,23 +1959,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Microsoft Defender for Cloud"
+          "text": "Public storage keys"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Microsoft Defender for Cloud"
         },
         {
           "id": "c",
-          "text": "Disable scanning"
+          "text": "Disable scanning (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Public storage keys"
+          "text": "Defender for Cloud container scanning"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Defender for Cloud assesses workload security.",
       "docs": [
@@ -2167,15 +1997,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Microsoft Defender for Cloud"
         },
         {
           "id": "c",
-          "text": "Latest tag only"
+          "text": "No base updates (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No base updates"
+          "text": "Latest tag only (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2197,23 +2027,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Defender for Cloud container scanning"
+          "text": "No base updates (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Latest tag only (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Latest tag only"
+          "text": "Defender for Cloud container scanning"
         },
         {
           "id": "d",
-          "text": "No base updates"
+          "text": "Microsoft Defender for Cloud"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Image scanning finds known vulnerabilities.",
       "docs": [
@@ -2231,23 +2061,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Defender for Cloud container scanning"
+          "text": "Latest tag only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Ignore CVEs"
+          "text": "Defender for Cloud container scanning"
         },
         {
           "id": "c",
-          "text": "Latest tag only"
+          "text": "No base updates (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No base updates"
+          "text": "Microsoft Defender for Cloud"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Image scanning finds known vulnerabilities.",
       "docs": [
@@ -2265,23 +2095,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Monitor Azure Pipelines"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Azure Monitor integration with Pipelines"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Monitor links pipeline failures to alerts.",
       "docs": [
@@ -2299,23 +2129,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Log Analytics workspace integration"
+          "text": "Monitor Azure Pipelines"
         },
         {
           "id": "b",
-          "text": "Local text files"
+          "text": "Azure Monitor integration with Pipelines"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "No retention (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Central logs support RCA.",
       "docs": [
@@ -2333,23 +2163,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Azure Monitor integration with Pipelines"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Monitor Azure Pipelines"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Monitor links pipeline failures to alerts.",
       "docs": [
@@ -2367,23 +2197,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Monitor Azure Pipelines"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Azure Monitor integration with Pipelines"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Monitor links pipeline failures to alerts.",
       "docs": [
@@ -2401,23 +2231,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Azure Monitor integration with Pipelines"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Monitor Azure Pipelines"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Monitor links pipeline failures to alerts.",
       "docs": [
@@ -2435,23 +2265,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Log Analytics workspace integration"
+          "text": "No retention (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Local text files"
+          "text": "Delete logs (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "Azure Monitor integration with Pipelines"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Central logs support RCA.",
       "docs": [
@@ -2473,15 +2303,15 @@
         },
         {
           "id": "b",
-          "text": "Local text files"
+          "text": "Azure Monitor integration with Pipelines"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "No retention (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "Monitor Azure Pipelines"
         }
       ],
       "correct": [
@@ -2503,23 +2333,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Log Analytics workspace integration"
+          "text": "Azure Monitor integration with Pipelines"
         },
         {
           "id": "b",
-          "text": "Local text files"
+          "text": "No retention (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "Monitor Azure Pipelines"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "Log Analytics workspace integration"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Central logs support RCA.",
       "docs": [
@@ -2537,23 +2367,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Azure Monitor integration with Pipelines"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Ping only (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Monitor Azure Pipelines"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Monitor links pipeline failures to alerts.",
       "docs": [
@@ -2575,15 +2405,15 @@
         },
         {
           "id": "b",
-          "text": "Local text files"
+          "text": "Azure Monitor integration with Pipelines"
         },
         {
           "id": "c",
-          "text": "Delete logs"
+          "text": "No retention (not recommended for production workloads)"
         },
         {
           "id": "d",
-          "text": "No retention"
+          "text": "Delete logs (not recommended for production workloads)"
         }
       ],
       "correct": [
@@ -2605,23 +2435,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Azure Monitor integration with Pipelines"
+          "text": "Monitor Azure Pipelines"
         },
         {
           "id": "b",
-          "text": "No logs"
+          "text": "Log Analytics workspace integration"
         },
         {
           "id": "c",
-          "text": "Spreadsheet"
+          "text": "Azure Monitor integration with Pipelines"
         },
         {
           "id": "d",
-          "text": "Ping only"
+          "text": "Ping only (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Monitor links pipeline failures to alerts.",
       "docs": [

@@ -9,6 +9,7 @@ from question_bank.comptia_catalog import COMPTIA_BY_ID
 from question_bank.comptia_fact_banks import FACT_BANKS
 from question_bank.comptia_acronyms import ACRONYMS_BY_EXAM
 from question_bank.open_source_import import merge_for_exam
+from question_bank.vendor_mcq_hardening import finalize_vendor_raw_pool, harden_exam_payload
 
 
 def _mcq(
@@ -77,6 +78,15 @@ def build_comptia_payload(exam_id: str) -> dict[str, Any]:
     raw = dedupe_raw(_expand_bank(exam_id, bank))
     seen = {r[2] for r in raw}
     merge_for_exam(exam_id, raw, seen, max_add=60)
+    peer_map: dict[str, list[str]] = {}
+    for domain_id, items in bank.items():
+        peers: list[str] = []
+        for item in items:
+            if len(item) >= 3 and isinstance(item[1], str):
+                peers.append(item[1])
+        peer_map[domain_id] = peers
+    seed = 42 + hash(exam_id) % 10000
+    raw = finalize_vendor_raw_pool(raw, peer_map, "comptia", seed)
     prefix = exam_id.replace("comptia-", "cpt").replace("-", "")[:6]
     questions = build_questions(raw, prefix)
 
@@ -90,4 +100,4 @@ def build_comptia_payload(exam_id: str) -> dict[str, Any]:
         "questions": questions,
         "acronyms": ACRONYMS_BY_EXAM.get(exam_id, []),
     }
-    return payload
+    return harden_exam_payload(payload, seed=seed)

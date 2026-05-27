@@ -82,23 +82,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Organizations"
+          "text": "AWS Resource Access Manager (RAM)"
         },
         {
           "id": "b",
-          "text": "Single account only"
+          "text": "AWS Organizations"
         },
         {
           "id": "c",
-          "text": "Email-based approvals"
+          "text": "AWS Service Catalog"
         },
         {
           "id": "d",
-          "text": "No SCPs"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Organizations provides multi-account governance.",
       "docs": [
@@ -120,15 +120,15 @@
         },
         {
           "id": "b",
-          "text": "Manual account vending only"
+          "text": "AWS Resource Access Manager (RAM)"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "Route 53 Resolver endpoints and rules"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
@@ -150,23 +150,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Resource Access Manager (RAM)"
-        },
-        {
-          "id": "b",
           "text": "Hard-coded VPC peering mesh chaos"
         },
         {
+          "id": "b",
+          "text": "AWS Organizations"
+        },
+        {
           "id": "c",
-          "text": "Public CIDR overlap"
+          "text": "AWS Service Catalog"
         },
         {
           "id": "d",
-          "text": "Open SG"
+          "text": "AWS Resource Access Manager (RAM)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "RAM shares VPC subnets for shared services.",
       "docs": [
@@ -184,23 +184,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Route 53 Resolver endpoints and rules"
+          "text": "AWS Resource Access Manager (RAM)"
         },
         {
           "id": "b",
-          "text": "/etc/hosts fleet"
+          "text": "Route 53 Resolver endpoints and rules"
         },
         {
           "id": "c",
-          "text": "Public DNS for internal only"
+          "text": "AWS Organizations"
         },
         {
           "id": "d",
-          "text": "No forwarding"
+          "text": "AWS Control Tower"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Resolver rules route DNS between on-prem and VPC.",
       "docs": [
@@ -218,23 +218,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Transit Gateway"
+          "text": "AWS Organizations"
         },
         {
           "id": "b",
-          "text": "Full mesh peering n^2"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "c",
-          "text": "Single flat VPC"
+          "text": "AWS Control Tower"
         },
         {
           "id": "d",
-          "text": "Internet-only routing"
+          "text": "Full mesh peering n^2"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Transit Gateway connects VPCs and on-prem.",
       "docs": [
@@ -252,23 +252,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Organizations SCPs and permission boundaries"
+          "text": "AWS Organizations"
         },
         {
           "id": "b",
-          "text": "Admin * for everyone"
+          "text": "Route 53 Resolver endpoints and rules"
         },
         {
           "id": "c",
-          "text": "Disable CloudTrail org-wide"
+          "text": "AWS Resource Access Manager (RAM)"
         },
         {
           "id": "d",
-          "text": "No separation"
+          "text": "Organizations SCPs and permission boundaries"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "SCPs limit maximum permissions per OU.",
       "docs": [
@@ -286,23 +286,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Service Catalog"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "b",
-          "text": "Unvetted CloudFormation any user"
+          "text": "Route 53 Resolver endpoints and rules"
         },
         {
           "id": "c",
-          "text": "No portfolio"
+          "text": "AWS Service Catalog"
         },
         {
           "id": "d",
-          "text": "Shared prod creds"
+          "text": "AWS Organizations"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Service Catalog standardizes vetted deployments.",
       "docs": [
@@ -320,23 +320,23 @@
       "options": [
         {
           "id": "a",
-          "text": "IAM Access Analyzer and CloudTrail"
+          "text": "AWS Resource Access Manager (RAM)"
         },
         {
           "id": "b",
-          "text": "No logging"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "c",
-          "text": "Anonymous cross-account"
+          "text": "IAM Access Analyzer and CloudTrail"
         },
         {
           "id": "d",
-          "text": "Ignore findings"
+          "text": "AWS Organizations"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Access Analyzer finds external access.",
       "docs": [
@@ -354,23 +354,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Organizations"
+          "text": "AWS Resource Access Manager (RAM)"
         },
         {
           "id": "b",
-          "text": "Single account only"
+          "text": "AWS Organizations"
         },
         {
           "id": "c",
-          "text": "Email-based approvals"
+          "text": "AWS Control Tower"
         },
         {
           "id": "d",
-          "text": "No SCPs"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Organizations provides multi-account governance.",
       "docs": [
@@ -392,15 +392,15 @@
         },
         {
           "id": "b",
-          "text": "Single account only"
+          "text": "Organizations SCPs and permission boundaries"
         },
         {
           "id": "c",
-          "text": "Email-based approvals"
+          "text": "Route 53 Resolver endpoints and rules"
         },
         {
           "id": "d",
-          "text": "No SCPs"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
@@ -422,23 +422,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Organizations"
+          "text": "AWS Control Tower"
         },
         {
           "id": "b",
-          "text": "Single account only"
+          "text": "AWS Organizations"
         },
         {
           "id": "c",
-          "text": "Email-based approvals"
+          "text": "Organizations SCPs and permission boundaries"
         },
         {
           "id": "d",
-          "text": "No SCPs"
+          "text": "AWS Resource Access Manager (RAM)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Organizations provides multi-account governance.",
       "docs": [
@@ -460,15 +460,15 @@
         },
         {
           "id": "b",
-          "text": "Manual account vending only"
+          "text": "AWS Organizations"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "AWS Resource Access Manager (RAM)"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
@@ -490,23 +490,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Control Tower"
+          "text": "Organizations SCPs and permission boundaries"
         },
         {
           "id": "b",
-          "text": "Manual account vending only"
+          "text": "AWS Service Catalog"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "AWS Organizations"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "AWS Control Tower"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Control Tower automates multi-account setup.",
       "docs": [
@@ -528,15 +528,15 @@
         },
         {
           "id": "b",
-          "text": "Manual account vending only"
+          "text": "AWS Resource Access Manager (RAM)"
         },
         {
           "id": "c",
-          "text": "Shared root"
+          "text": "AWS Service Catalog"
         },
         {
           "id": "d",
-          "text": "No logging"
+          "text": "AWS Organizations"
         }
       ],
       "correct": [
@@ -558,7 +558,7 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Resource Access Manager (RAM)"
+          "text": "AWS Organizations"
         },
         {
           "id": "b",
@@ -566,15 +566,15 @@
         },
         {
           "id": "c",
-          "text": "Public CIDR overlap"
+          "text": "AWS Resource Access Manager (RAM)"
         },
         {
           "id": "d",
-          "text": "Open SG"
+          "text": "Route 53 Resolver endpoints and rules"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "RAM shares VPC subnets for shared services.",
       "docs": [
@@ -592,23 +592,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Resource Access Manager (RAM)"
-        },
-        {
-          "id": "b",
           "text": "Hard-coded VPC peering mesh chaos"
         },
         {
+          "id": "b",
+          "text": "Route 53 Resolver endpoints and rules"
+        },
+        {
           "id": "c",
-          "text": "Public CIDR overlap"
+          "text": "AWS Control Tower"
         },
         {
           "id": "d",
-          "text": "Open SG"
+          "text": "AWS Resource Access Manager (RAM)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "RAM shares VPC subnets for shared services.",
       "docs": [
@@ -626,23 +626,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Resource Access Manager (RAM)"
-        },
-        {
-          "id": "b",
           "text": "Hard-coded VPC peering mesh chaos"
         },
         {
+          "id": "b",
+          "text": "Route 53 Resolver endpoints and rules"
+        },
+        {
           "id": "c",
-          "text": "Public CIDR overlap"
+          "text": "AWS Service Catalog"
         },
         {
           "id": "d",
-          "text": "Open SG"
+          "text": "AWS Resource Access Manager (RAM)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "RAM shares VPC subnets for shared services.",
       "docs": [
@@ -660,23 +660,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Route 53 Resolver endpoints and rules"
+          "text": "AWS Control Tower"
         },
         {
           "id": "b",
-          "text": "/etc/hosts fleet"
+          "text": "Route 53 Resolver endpoints and rules"
         },
         {
           "id": "c",
-          "text": "Public DNS for internal only"
+          "text": "AWS Transit Gateway"
         },
         {
           "id": "d",
-          "text": "No forwarding"
+          "text": "AWS Organizations"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Resolver rules route DNS between on-prem and VPC.",
       "docs": [
@@ -694,23 +694,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Route 53 Resolver endpoints and rules"
+          "text": "AWS Control Tower"
         },
         {
           "id": "b",
-          "text": "/etc/hosts fleet"
+          "text": "Route 53 Resolver endpoints and rules"
         },
         {
           "id": "c",
-          "text": "Public DNS for internal only"
+          "text": "AWS Organizations"
         },
         {
           "id": "d",
-          "text": "No forwarding"
+          "text": "IAM Access Analyzer and CloudTrail"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Resolver rules route DNS between on-prem and VPC.",
       "docs": [
@@ -732,15 +732,15 @@
         },
         {
           "id": "b",
-          "text": "/etc/hosts fleet"
+          "text": "AWS Control Tower"
         },
         {
           "id": "c",
-          "text": "Public DNS for internal only"
+          "text": "AWS Organizations"
         },
         {
           "id": "d",
-          "text": "No forwarding"
+          "text": "AWS Resource Access Manager (RAM)"
         }
       ],
       "correct": [
@@ -762,23 +762,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Transit Gateway"
-        },
-        {
-          "id": "b",
           "text": "Full mesh peering n^2"
         },
         {
+          "id": "b",
+          "text": "AWS Resource Access Manager (RAM)"
+        },
+        {
           "id": "c",
-          "text": "Single flat VPC"
+          "text": "Route 53 Resolver endpoints and rules"
         },
         {
           "id": "d",
-          "text": "Internet-only routing"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Transit Gateway connects VPCs and on-prem.",
       "docs": [
@@ -796,23 +796,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Transit Gateway"
-        },
-        {
-          "id": "b",
           "text": "Full mesh peering n^2"
         },
         {
+          "id": "b",
+          "text": "AWS Control Tower"
+        },
+        {
           "id": "c",
-          "text": "Single flat VPC"
+          "text": "AWS Organizations"
         },
         {
           "id": "d",
-          "text": "Internet-only routing"
+          "text": "AWS Transit Gateway"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Transit Gateway connects VPCs and on-prem.",
       "docs": [
@@ -834,15 +834,15 @@
         },
         {
           "id": "b",
-          "text": "Tight coupling only"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         },
         {
           "id": "c",
-          "text": "FTP batch"
+          "text": "DynamoDB global tables or Aurora Global Database"
         },
         {
           "id": "d",
-          "text": "Shared DB monolith"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         }
       ],
       "correct": [
@@ -864,23 +864,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lake Formation tags and federated governance"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "b",
-          "text": "One team owns all data"
+          "text": "Lake Formation tags and federated governance"
         },
         {
           "id": "c",
-          "text": "Public lake"
+          "text": "AWS PrivateLink and SaaS marketplace offerings"
         },
         {
           "id": "d",
-          "text": "No contracts"
+          "text": "One team owns all data"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data mesh decentralizes ownership with standards.",
       "docs": [
@@ -902,15 +902,15 @@
         },
         {
           "id": "b",
-          "text": "Single global stack"
+          "text": "Amazon EventBridge with cross-account buses"
         },
         {
           "id": "c",
-          "text": "No fault isolation"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         },
         {
           "id": "d",
-          "text": "Shared state everywhere"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         }
       ],
       "correct": [
@@ -932,23 +932,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Route 53 + CloudFront + multi-Region ALB"
-        },
-        {
-          "id": "b",
           "text": "Single Region for global users"
         },
         {
+          "id": "b",
+          "text": "Amazon EventBridge with cross-account buses"
+        },
+        {
           "id": "c",
-          "text": "No health checks"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         },
         {
           "id": "d",
-          "text": "Manual failover only"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Multi-Region designs improve availability.",
       "docs": [
@@ -966,23 +966,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 with prefix scaling and lifecycle"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "b",
-          "text": "One giant EBS volume"
+          "text": "Amazon EventBridge with cross-account buses"
         },
         {
           "id": "c",
-          "text": "EFS for static web only wrong tier"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         },
         {
           "id": "d",
-          "text": "Glacier for hot path"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "S3 scales key prefixes automatically.",
       "docs": [
@@ -1004,15 +1004,15 @@
         },
         {
           "id": "b",
-          "text": "One shared notebook prod"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         },
         {
           "id": "c",
-          "text": "Root in notebooks"
+          "text": "Amazon EventBridge with cross-account buses"
         },
         {
           "id": "d",
-          "text": "No isolation"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         }
       ],
       "correct": [
@@ -1034,23 +1034,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS PrivateLink and SaaS marketplace offerings"
-        },
-        {
-          "id": "b",
-          "text": "Public DB over internet"
-        },
-        {
-          "id": "c",
           "text": "0.0.0.0/0 database"
         },
         {
+          "id": "b",
+          "text": "AWS PrivateLink and SaaS marketplace offerings"
+        },
+        {
+          "id": "c",
+          "text": "Route 53 + CloudFront + multi-Region ALB"
+        },
+        {
           "id": "d",
-          "text": "VPN hairpin all traffic"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "PrivateLink keeps consumer traffic off the public internet.",
       "docs": [
@@ -1068,23 +1068,23 @@
       "options": [
         {
           "id": "a",
-          "text": "DynamoDB global tables or Aurora Global Database"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         },
         {
           "id": "b",
-          "text": "Single-AZ MySQL on EC2"
+          "text": "Single-AZ MySQL on EC2 (not recommended for production workloads)"
         },
         {
           "id": "c",
-          "text": "No replication"
+          "text": "DynamoDB global tables or Aurora Global Database"
         },
         {
           "id": "d",
-          "text": "Synchronous cross-Region app locks"
+          "text": "Synchronous cross-Region app locks (not recommended for production workloads)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Global databases target multi-Region apps.",
       "docs": [
@@ -1102,23 +1102,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EventBridge with cross-account buses"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         },
         {
           "id": "b",
-          "text": "Tight coupling only"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "c",
-          "text": "FTP batch"
+          "text": "Amazon EventBridge with cross-account buses"
         },
         {
           "id": "d",
-          "text": "Shared DB monolith"
+          "text": "DynamoDB global tables or Aurora Global Database"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "EventBridge routes events between services and accounts.",
       "docs": [
@@ -1140,15 +1140,15 @@
         },
         {
           "id": "b",
-          "text": "Tight coupling only"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         },
         {
           "id": "c",
-          "text": "FTP batch"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         },
         {
           "id": "d",
-          "text": "Shared DB monolith"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         }
       ],
       "correct": [
@@ -1170,23 +1170,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon EventBridge with cross-account buses"
+          "text": "Lake Formation tags and federated governance"
         },
         {
           "id": "b",
-          "text": "Tight coupling only"
+          "text": "Amazon EventBridge with cross-account buses"
         },
         {
           "id": "c",
-          "text": "FTP batch"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "d",
-          "text": "Shared DB monolith"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "EventBridge routes events between services and accounts.",
       "docs": [
@@ -1204,7 +1204,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Lake Formation tags and federated governance"
+          "text": "AWS PrivateLink and SaaS marketplace offerings"
         },
         {
           "id": "b",
@@ -1212,15 +1212,15 @@
         },
         {
           "id": "c",
-          "text": "Public lake"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         },
         {
           "id": "d",
-          "text": "No contracts"
+          "text": "Lake Formation tags and federated governance"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Data mesh decentralizes ownership with standards.",
       "docs": [
@@ -1238,23 +1238,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lake Formation tags and federated governance"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "b",
-          "text": "One team owns all data"
+          "text": "Lake Formation tags and federated governance"
         },
         {
           "id": "c",
-          "text": "Public lake"
+          "text": "One team owns all data"
         },
         {
           "id": "d",
-          "text": "No contracts"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Data mesh decentralizes ownership with standards.",
       "docs": [
@@ -1272,23 +1272,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Lake Formation tags and federated governance"
-        },
-        {
-          "id": "b",
           "text": "One team owns all data"
         },
         {
+          "id": "b",
+          "text": "Sharding workloads by cell (account/VPC/Region)"
+        },
+        {
           "id": "c",
-          "text": "Public lake"
+          "text": "Lake Formation tags and federated governance"
         },
         {
           "id": "d",
-          "text": "No contracts"
+          "text": "Amazon EventBridge with cross-account buses"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Data mesh decentralizes ownership with standards.",
       "docs": [
@@ -1306,23 +1306,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sharding workloads by cell (account/VPC/Region)"
+          "text": "Shared state everywhere (not recommended for production workloads)"
         },
         {
           "id": "b",
-          "text": "Single global stack"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "c",
-          "text": "No fault isolation"
+          "text": "Amazon EventBridge with cross-account buses"
         },
         {
           "id": "d",
-          "text": "Shared state everywhere"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cells limit failure impact to a partition.",
       "docs": [
@@ -1340,23 +1340,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sharding workloads by cell (account/VPC/Region)"
+          "text": "Lake Formation tags and federated governance"
         },
         {
           "id": "b",
-          "text": "Single global stack"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "c",
-          "text": "No fault isolation"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         },
         {
           "id": "d",
-          "text": "Shared state everywhere"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Cells limit failure impact to a partition.",
       "docs": [
@@ -1374,23 +1374,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Sharding workloads by cell (account/VPC/Region)"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         },
         {
           "id": "b",
-          "text": "Single global stack"
+          "text": "AWS PrivateLink and SaaS marketplace offerings"
         },
         {
           "id": "c",
-          "text": "No fault isolation"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "d",
-          "text": "Shared state everywhere"
+          "text": "Amazon EventBridge with cross-account buses"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Cells limit failure impact to a partition.",
       "docs": [
@@ -1408,23 +1408,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Route 53 + CloudFront + multi-Region ALB"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         },
         {
           "id": "b",
-          "text": "Single Region for global users"
+          "text": "Lake Formation tags and federated governance"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         },
         {
           "id": "d",
-          "text": "Manual failover only"
+          "text": "Single Region for global users"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Multi-Region designs improve availability.",
       "docs": [
@@ -1442,23 +1442,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Route 53 + CloudFront + multi-Region ALB"
-        },
-        {
-          "id": "b",
           "text": "Single Region for global users"
         },
         {
+          "id": "b",
+          "text": "Sharding workloads by cell (account/VPC/Region)"
+        },
+        {
           "id": "c",
-          "text": "No health checks"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         },
         {
           "id": "d",
-          "text": "Manual failover only"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Multi-Region designs improve availability.",
       "docs": [
@@ -1476,23 +1476,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Route 53 + CloudFront + multi-Region ALB"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         },
         {
           "id": "b",
-          "text": "Single Region for global users"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         },
         {
           "id": "c",
-          "text": "No health checks"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         },
         {
           "id": "d",
-          "text": "Manual failover only"
+          "text": "Single Region for global users"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multi-Region designs improve availability.",
       "docs": [
@@ -1510,23 +1510,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 with prefix scaling and lifecycle"
+          "text": "Amazon EventBridge with cross-account buses"
         },
         {
           "id": "b",
-          "text": "One giant EBS volume"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         },
         {
           "id": "c",
-          "text": "EFS for static web only wrong tier"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         },
         {
           "id": "d",
-          "text": "Glacier for hot path"
+          "text": "Lake Formation tags and federated governance"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "S3 scales key prefixes automatically.",
       "docs": [
@@ -1544,23 +1544,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 with prefix scaling and lifecycle"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "b",
-          "text": "One giant EBS volume"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         },
         {
           "id": "c",
-          "text": "EFS for static web only wrong tier"
+          "text": "Amazon EventBridge with cross-account buses"
         },
         {
           "id": "d",
-          "text": "Glacier for hot path"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "S3 scales key prefixes automatically.",
       "docs": [
@@ -1578,23 +1578,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon S3 with prefix scaling and lifecycle"
+          "text": "Amazon EventBridge with cross-account buses"
         },
         {
           "id": "b",
-          "text": "One giant EBS volume"
+          "text": "Route 53 + CloudFront + multi-Region ALB"
         },
         {
           "id": "c",
-          "text": "EFS for static web only wrong tier"
+          "text": "Amazon S3 with prefix scaling and lifecycle"
         },
         {
           "id": "d",
-          "text": "Glacier for hot path"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "S3 scales key prefixes automatically.",
       "docs": [
@@ -1612,23 +1612,23 @@
       "options": [
         {
           "id": "a",
-          "text": "SageMaker Studio domains with separate VPC and roles"
+          "text": "DynamoDB global tables or Aurora Global Database"
         },
         {
           "id": "b",
-          "text": "One shared notebook prod"
+          "text": "SageMaker Studio domains with separate VPC and roles"
         },
         {
           "id": "c",
-          "text": "Root in notebooks"
+          "text": "Sharding workloads by cell (account/VPC/Region)"
         },
         {
           "id": "d",
-          "text": "No isolation"
+          "text": "Amazon EventBridge with cross-account buses"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Multi-tenant ML platforms need account/VPC isolation.",
       "docs": [
@@ -1646,23 +1646,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Compute Optimizer at scale"
+          "text": "Cost allocation tags and Athena on CUR"
         },
         {
           "id": "b",
-          "text": "Ignore metrics"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "c",
-          "text": "largest instance always"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         },
         {
           "id": "d",
-          "text": "No CUR"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Compute Optimizer analyzes utilization patterns.",
       "docs": [
@@ -1680,23 +1680,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Strangler fig with API Gateway and ECS/Lambda"
+          "text": "Pilot light or warm standby DR patterns"
         },
         {
           "id": "b",
-          "text": "Big bang rewrite only"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "c",
-          "text": "No observability"
+          "text": "AWS Step Functions Express/Standard workflows"
         },
         {
           "id": "d",
-          "text": "Shared schema forever"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Incremental extraction reduces migration risk.",
       "docs": [
@@ -1714,23 +1714,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 Gateway endpoints and interface endpoints design"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "b",
-          "text": "All traffic via NAT"
+          "text": "Aurora Serverless v2 scaling"
         },
         {
           "id": "c",
-          "text": "Public S3 only"
+          "text": "Cost allocation tags and Athena on CUR"
         },
         {
           "id": "d",
-          "text": "Ignore endpoint policies"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Endpoints remove NAT charges for AWS service traffic.",
       "docs": [
@@ -1748,23 +1748,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon ECS on AWS Fargate or App2Container"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "b",
-          "text": "Lift-and-shift only forever"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "c",
-          "text": "Ignore licensing"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Containerization improves portability and density.",
       "docs": [
@@ -1782,23 +1782,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Cost allocation tags and Athena on CUR"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "b",
-          "text": "No tags"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         },
         {
           "id": "c",
-          "text": "One undifferentiated bill"
+          "text": "Cost allocation tags and Athena on CUR"
         },
         {
           "id": "d",
-          "text": "Ignore anomalies"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "CUR plus tags enables chargeback/showback.",
       "docs": [
@@ -1816,23 +1816,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Pilot light or warm standby DR patterns"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         },
         {
           "id": "b",
-          "text": "Backup only no restore test"
+          "text": "Pilot light or warm standby DR patterns"
         },
         {
           "id": "c",
-          "text": "Single AZ"
+          "text": "AWS Step Functions Express/Standard workflows"
         },
         {
           "id": "d",
-          "text": "No automation"
+          "text": "AWS Compute Optimizer at scale"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "DR strategies trade cost vs RTO/RPO.",
       "docs": [
@@ -1850,7 +1850,7 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Step Functions Express/Standard workflows"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "b",
@@ -1858,15 +1858,15 @@
         },
         {
           "id": "c",
-          "text": "No state machine"
+          "text": "AWS Step Functions Express/Standard workflows"
         },
         {
           "id": "d",
-          "text": "Ignore idempotency"
+          "text": "Cost allocation tags and Athena on CUR"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Step Functions manage orchestration and retries.",
       "docs": [
@@ -1884,23 +1884,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Aurora Serverless v2 scaling"
-        },
-        {
-          "id": "b",
           "text": "Fixed biggest instance 24/7 for dev"
         },
         {
+          "id": "b",
+          "text": "Aurora Serverless v2 scaling"
+        },
+        {
           "id": "c",
-          "text": "No reader endpoints"
+          "text": "AWS Step Functions Express/Standard workflows"
         },
         {
           "id": "d",
-          "text": "Ignore cache"
+          "text": "Cost allocation tags and Athena on CUR"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Serverless v2 scales ACUs with workload.",
       "docs": [
@@ -1922,15 +1922,15 @@
         },
         {
           "id": "b",
-          "text": "Ignore metrics"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "c",
-          "text": "largest instance always"
+          "text": "Pilot light or warm standby DR patterns"
         },
         {
           "id": "d",
-          "text": "No CUR"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         }
       ],
       "correct": [
@@ -1952,23 +1952,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Compute Optimizer at scale"
+          "text": "Pilot light or warm standby DR patterns"
         },
         {
           "id": "b",
-          "text": "Ignore metrics"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         },
         {
           "id": "c",
-          "text": "largest instance always"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "d",
-          "text": "No CUR"
+          "text": "AWS Compute Optimizer at scale"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Compute Optimizer analyzes utilization patterns.",
       "docs": [
@@ -1986,23 +1986,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Compute Optimizer at scale"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "b",
-          "text": "Ignore metrics"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "c",
-          "text": "largest instance always"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         },
         {
           "id": "d",
-          "text": "No CUR"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Compute Optimizer analyzes utilization patterns.",
       "docs": [
@@ -2020,23 +2020,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Strangler fig with API Gateway and ECS/Lambda"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "b",
-          "text": "Big bang rewrite only"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "c",
-          "text": "No observability"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         },
         {
           "id": "d",
-          "text": "Shared schema forever"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Incremental extraction reduces migration risk.",
       "docs": [
@@ -2054,23 +2054,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Strangler fig with API Gateway and ECS/Lambda"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "b",
-          "text": "Big bang rewrite only"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         },
         {
           "id": "c",
-          "text": "No observability"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "d",
-          "text": "Shared schema forever"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Incremental extraction reduces migration risk.",
       "docs": [
@@ -2088,23 +2088,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Strangler fig with API Gateway and ECS/Lambda"
+          "text": "AWS Step Functions Express/Standard workflows"
         },
         {
           "id": "b",
-          "text": "Big bang rewrite only"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         },
         {
           "id": "c",
-          "text": "No observability"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         },
         {
           "id": "d",
-          "text": "Shared schema forever"
+          "text": "Cost allocation tags and Athena on CUR"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Incremental extraction reduces migration risk.",
       "docs": [
@@ -2122,23 +2122,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 Gateway endpoints and interface endpoints design"
+          "text": "Cost allocation tags and Athena on CUR"
         },
         {
           "id": "b",
-          "text": "All traffic via NAT"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "c",
-          "text": "Public S3 only"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         },
         {
           "id": "d",
-          "text": "Ignore endpoint policies"
+          "text": "AWS Compute Optimizer at scale"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Endpoints remove NAT charges for AWS service traffic.",
       "docs": [
@@ -2156,23 +2156,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 Gateway endpoints and interface endpoints design"
+          "text": "Pilot light or warm standby DR patterns"
         },
         {
           "id": "b",
-          "text": "All traffic via NAT"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         },
         {
           "id": "c",
-          "text": "Public S3 only"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         },
         {
           "id": "d",
-          "text": "Ignore endpoint policies"
+          "text": "AWS Compute Optimizer at scale"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Endpoints remove NAT charges for AWS service traffic.",
       "docs": [
@@ -2190,23 +2190,23 @@
       "options": [
         {
           "id": "a",
-          "text": "S3 Gateway endpoints and interface endpoints design"
+          "text": "Cost allocation tags and Athena on CUR"
         },
         {
           "id": "b",
-          "text": "All traffic via NAT"
+          "text": "AWS Step Functions Express/Standard workflows"
         },
         {
           "id": "c",
-          "text": "Public S3 only"
+          "text": "AWS Compute Optimizer at scale"
         },
         {
           "id": "d",
-          "text": "Ignore endpoint policies"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Endpoints remove NAT charges for AWS service traffic.",
       "docs": [
@@ -2224,23 +2224,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon ECS on AWS Fargate or App2Container"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         },
         {
           "id": "b",
-          "text": "Lift-and-shift only forever"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         },
         {
           "id": "c",
-          "text": "Ignore licensing"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "AWS Step Functions Express/Standard workflows"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Containerization improves portability and density.",
       "docs": [
@@ -2258,23 +2258,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon ECS on AWS Fargate or App2Container"
+          "text": "Aurora Serverless v2 scaling"
         },
         {
           "id": "b",
-          "text": "Lift-and-shift only forever"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         },
         {
           "id": "c",
-          "text": "Ignore licensing"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "AWS Compute Optimizer at scale"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Containerization improves portability and density.",
       "docs": [
@@ -2292,23 +2292,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Amazon ECS on AWS Fargate or App2Container"
+          "text": "S3 Gateway endpoints and interface endpoints design"
         },
         {
           "id": "b",
-          "text": "Lift-and-shift only forever"
+          "text": "Strangler fig with API Gateway and ECS/Lambda"
         },
         {
           "id": "c",
-          "text": "Ignore licensing"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "d",
-          "text": "No health checks"
+          "text": "AWS Step Functions Express/Standard workflows"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Containerization improves portability and density.",
       "docs": [
@@ -2330,15 +2330,15 @@
         },
         {
           "id": "b",
-          "text": "No tags"
+          "text": "Pilot light or warm standby DR patterns"
         },
         {
           "id": "c",
-          "text": "One undifferentiated bill"
+          "text": "Amazon ECS on AWS Fargate or App2Container"
         },
         {
           "id": "d",
-          "text": "Ignore anomalies"
+          "text": "AWS Compute Optimizer at scale"
         }
       ],
       "correct": [
@@ -2360,23 +2360,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Application Discovery Service and Migration Hub"
+          "text": "AWS Migration Hub"
         },
         {
           "id": "b",
-          "text": "Spreadsheet guesses"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "c",
-          "text": "No dependency map"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "d",
-          "text": "Skip assessment"
+          "text": "AWS Application Migration Service (MGN)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Discovery collects utilization and dependencies.",
       "docs": [
@@ -2394,23 +2394,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Application Migration Service (MGN)"
+          "text": "AWS Snowball Edge or Snowmobile"
         },
         {
           "id": "b",
-          "text": "Manual copy VMDK USB only"
+          "text": "AWS Application Migration Service (MGN)"
         },
         {
           "id": "c",
-          "text": "No replication"
+          "text": "AWS Migration Hub"
         },
         {
           "id": "d",
-          "text": "Ignore networking"
+          "text": "AWS DMS homogeneous/heterogeneous"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "MGN replicates and cuts over servers.",
       "docs": [
@@ -2428,23 +2428,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS DMS homogeneous/heterogeneous"
+          "text": "AWS Migration Hub"
         },
         {
           "id": "b",
-          "text": "Dump SQL stop business days"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "c",
-          "text": "No CDC"
+          "text": "VMware Cloud on AWS or MGN"
         },
         {
           "id": "d",
-          "text": "Ignore charset"
+          "text": "AWS Application Migration Service (MGN)"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "DMS supports ongoing replication.",
       "docs": [
@@ -2462,23 +2462,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Snowball Edge or Snowmobile"
+          "text": "AWS Transfer Family"
         },
         {
           "id": "b",
-          "text": "Slow consumer ISP upload only"
+          "text": "AWS Snowball Edge or Snowmobile"
         },
         {
           "id": "c",
-          "text": "Email disks"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "d",
-          "text": "Ignore encryption"
+          "text": "AWS DMS homogeneous/heterogeneous"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Snow devices transfer huge datasets offline.",
       "docs": [
@@ -2496,23 +2496,23 @@
       "options": [
         {
           "id": "a",
-          "text": "VMware Cloud on AWS or MGN"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "b",
-          "text": "Rebuild hypervisor manually"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "c",
-          "text": "Ignore networking"
+          "text": "VMware Cloud on AWS or MGN"
         },
         {
           "id": "d",
-          "text": "No DR"
+          "text": "AWS Migration Hub"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "VMC extends vSphere to AWS.",
       "docs": [
@@ -2534,15 +2534,15 @@
         },
         {
           "id": "b",
-          "text": "Open FTP anonymous"
+          "text": "AWS App2Container and ECS/EKS"
         },
         {
           "id": "c",
-          "text": "Email zip"
+          "text": "AWS Snowball Edge or Snowmobile"
         },
         {
           "id": "d",
-          "text": "Public bucket uploads"
+          "text": "AWS Application Discovery Service and Migration Hub"
         }
       ],
       "correct": [
@@ -2564,23 +2564,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS App2Container and ECS/EKS"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "b",
-          "text": "Keep snowflake servers forever"
+          "text": "AWS Snowball Edge or Snowmobile"
         },
         {
           "id": "c",
-          "text": "No CI/CD"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "d",
-          "text": "Manual deploy"
+          "text": "AWS App2Container and ECS/EKS"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Containers standardize packaging for cloud.",
       "docs": [
@@ -2598,23 +2598,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Migration Hub"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "b",
-          "text": "Ad hoc spreadsheets only"
+          "text": "AWS Migration Hub"
         },
         {
           "id": "c",
-          "text": "No status"
+          "text": "AWS Application Migration Service (MGN)"
         },
         {
           "id": "d",
-          "text": "Ignore waves"
+          "text": "AWS DMS homogeneous/heterogeneous"
         }
       ],
       "correct": [
-        "a"
+        "b"
       ],
       "explanation": "Migration Hub aggregates progress.",
       "docs": [
@@ -2632,23 +2632,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Application Discovery Service and Migration Hub"
+          "text": "AWS App2Container and ECS/EKS"
         },
         {
           "id": "b",
-          "text": "Spreadsheet guesses"
+          "text": "AWS Transfer Family"
         },
         {
           "id": "c",
-          "text": "No dependency map"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "d",
-          "text": "Skip assessment"
+          "text": "AWS Application Discovery Service and Migration Hub"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "Discovery collects utilization and dependencies.",
       "docs": [
@@ -2666,23 +2666,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Application Discovery Service and Migration Hub"
+          "text": "AWS Transfer Family"
         },
         {
           "id": "b",
-          "text": "Spreadsheet guesses"
+          "text": "AWS Application Migration Service (MGN)"
         },
         {
           "id": "c",
-          "text": "No dependency map"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "d",
-          "text": "Skip assessment"
+          "text": "VMware Cloud on AWS or MGN"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Discovery collects utilization and dependencies.",
       "docs": [
@@ -2700,23 +2700,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Application Discovery Service and Migration Hub"
+          "text": "AWS Application Migration Service (MGN)"
         },
         {
           "id": "b",
-          "text": "Spreadsheet guesses"
+          "text": "AWS Migration Hub"
         },
         {
           "id": "c",
-          "text": "No dependency map"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "d",
-          "text": "Skip assessment"
+          "text": "VMware Cloud on AWS or MGN"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "Discovery collects utilization and dependencies.",
       "docs": [
@@ -2734,23 +2734,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Application Migration Service (MGN)"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "b",
-          "text": "Manual copy VMDK USB only"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "c",
-          "text": "No replication"
+          "text": "AWS Transfer Family"
         },
         {
           "id": "d",
-          "text": "Ignore networking"
+          "text": "AWS Application Migration Service (MGN)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "MGN replicates and cuts over servers.",
       "docs": [
@@ -2768,23 +2768,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Application Migration Service (MGN)"
+          "text": "AWS Migration Hub"
         },
         {
           "id": "b",
-          "text": "Manual copy VMDK USB only"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "c",
-          "text": "No replication"
+          "text": "AWS Application Migration Service (MGN)"
         },
         {
           "id": "d",
-          "text": "Ignore networking"
+          "text": "AWS App2Container and ECS/EKS"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "MGN replicates and cuts over servers.",
       "docs": [
@@ -2802,23 +2802,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS Application Migration Service (MGN)"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "b",
-          "text": "Manual copy VMDK USB only"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "c",
-          "text": "No replication"
+          "text": "AWS Snowball Edge or Snowmobile"
         },
         {
           "id": "d",
-          "text": "Ignore networking"
+          "text": "AWS Application Migration Service (MGN)"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "MGN replicates and cuts over servers.",
       "docs": [
@@ -2836,23 +2836,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS DMS homogeneous/heterogeneous"
+          "text": "AWS Application Migration Service (MGN)"
         },
         {
           "id": "b",
-          "text": "Dump SQL stop business days"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "c",
-          "text": "No CDC"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "d",
-          "text": "Ignore charset"
+          "text": "AWS Snowball Edge or Snowmobile"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "DMS supports ongoing replication.",
       "docs": [
@@ -2870,23 +2870,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS DMS homogeneous/heterogeneous"
+          "text": "AWS Transfer Family"
         },
         {
           "id": "b",
-          "text": "Dump SQL stop business days"
+          "text": "AWS Migration Hub"
         },
         {
           "id": "c",
-          "text": "No CDC"
+          "text": "AWS Application Discovery Service and Migration Hub"
         },
         {
           "id": "d",
-          "text": "Ignore charset"
+          "text": "AWS DMS homogeneous/heterogeneous"
         }
       ],
       "correct": [
-        "a"
+        "d"
       ],
       "explanation": "DMS supports ongoing replication.",
       "docs": [
@@ -2904,23 +2904,23 @@
       "options": [
         {
           "id": "a",
-          "text": "AWS DMS homogeneous/heterogeneous"
+          "text": "VMware Cloud on AWS or MGN"
         },
         {
           "id": "b",
-          "text": "Dump SQL stop business days"
+          "text": "AWS Snowball Edge or Snowmobile"
         },
         {
           "id": "c",
-          "text": "No CDC"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "d",
-          "text": "Ignore charset"
+          "text": "AWS Application Migration Service (MGN)"
         }
       ],
       "correct": [
-        "a"
+        "c"
       ],
       "explanation": "DMS supports ongoing replication.",
       "docs": [
@@ -2942,15 +2942,15 @@
         },
         {
           "id": "b",
-          "text": "Slow consumer ISP upload only"
+          "text": "AWS Application Migration Service (MGN)"
         },
         {
           "id": "c",
-          "text": "Email disks"
+          "text": "AWS DMS homogeneous/heterogeneous"
         },
         {
           "id": "d",
-          "text": "Ignore encryption"
+          "text": "AWS Migration Hub"
         }
       ],
       "correct": [
@@ -3001,45 +3001,6 @@
         {
           "title": "Well-Architected Framework",
           "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
-        }
-      ]
-    },
-    {
-      "id": "sap-q087",
-      "domain": "organizational-complexity",
-      "type": "multiple-response",
-      "text": "Which TWO official AWS resources help you prepare for AWS Certified Solutions Architect \u2013 Professional? (Select TWO.)",
-      "options": [
-        {
-          "id": "a",
-          "text": "SAP-C02 Exam Guide"
-        },
-        {
-          "id": "b",
-          "text": "Unofficial leaked exam dumps"
-        },
-        {
-          "id": "c",
-          "text": "AWS Organizations"
-        },
-        {
-          "id": "d",
-          "text": "Disable all logging"
-        },
-        {
-          "id": "e",
-          "text": "Share root account keys"
-        }
-      ],
-      "correct": [
-        "a",
-        "c"
-      ],
-      "explanation": "Use official AWS exam guides, Skill Builder, and AWS documentation\u2014not real exam content.",
-      "docs": [
-        {
-          "title": "SAP-C02 Exam Guide",
-          "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/"
         }
       ]
     },
